@@ -1,5 +1,6 @@
 from typing import Any, Dict, List
 from abc import ABC, abstractmethod
+import re
 
 class AnswerProcessor(ABC):
     @abstractmethod
@@ -14,10 +15,16 @@ class Evaluator(ABC):
 class SimpleAnswerProcessor(AnswerProcessor):
     def __call__(self, answer: str) -> int:
         _answer = answer.lower()
-        if "Yes" in answer:
-            return 1
-        elif "No" in answer:
-            return 0
+        match = re.findall(r"\b(yes|no)\b", _answer)
+        if len(match) > 0:
+            if 'yes' == match[-1]:
+                rt = 1
+            else:
+                # 'no' is the last match
+                rt = 0
+        else:
+            rt = -1 # no yes or no is detected
+        return rt
 
 class AccuracyEvaluator(Evaluator):
     def __call__(self, predictions: List[int], truths: List[int]):
