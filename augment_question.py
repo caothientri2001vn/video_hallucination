@@ -2,7 +2,8 @@
 # requires-python = ">=3.10"
 # dependencies = [
 #     "google-genai>=1.67.0",
-#     "python-dotenv>=1.2.2"
+#     "python-dotenv>=1.2.2",
+#     "tqdm>=4.67.3"
 # ]
 # ///
 """
@@ -19,34 +20,72 @@ import random
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
+from dataclasses import dataclass
+from typing import List, Any, Tuple, Dict, Optional
+from tqdm import tqdm
+
+@dataclass
+class PredicateType:
+    predicate_type: str
+    predicate_definition: str
+
+class PromptCacheSystem:
+    def __init__(self, cache_dir: str = "prompt_library"):
+        self.cache_dir = cache_dir
+        os.makedirs(self.cache_dir, exist_ok=True)
+
+    def push(self, sample_idx: str, prompt: str, response: List[Any]):
+        cache_path = os.path.join(self.cache_dir, f"sample_{sample_idx}.json")
+        with open(cache_path, 'w+', encoding='utf-8') as fout:
+            json.dump({"prompt": prompt, "response": response}, fout)
+
+    def get(self, sample_idx: str) -> Optional[List[str]]:
+        if not self.exist(sample_idx):
+            return None
+        cache_path = os.path.join(self.cache_dir, f"sample_{sample_idx}.json")
+        with open(cache_path, encoding='utf-8') as fin:
+            data = json.load(fin)
+
+        return data
+
+    def exist(self, sample_idx: str) -> bool:
+        cache_path = os.path.join(self.cache_dir, f"sample_{sample_idx}.json")
+        return os.path.exists(cache_path)
 
 # Load environment variables from the .env file
 load_dotenv()
 
-DECOMPOSITION_PROMPT = """You are helping build a video understanding benchmark.
+SINGLE_PREDICATE_DECOMPOSITION_PROMPT = """You are helping build a video understanding benchmark.
 
-Given a yes/no question about a video and its ground-truth answer, your job is to
-decompose the question into atomic facts that MUST ALL be true for the answer to be 
-correct, then convert each fact into an independent yes/no sub-question.
+Given a yes/no question about a video and its ground-truth answer, decompose the question
+into atomic facts that are necessary for the target answer, but ONLY for the predicate type:
+{predicate_type}
 
-Rules:
-1. Each sub-question must be answerable from the video alone.
-2. Each sub-question must be yes/no with a definite answer.
-3. Tag each sub-question with its predicate type: 
-   IDENTITY | STATE | RELATION | TEMPORAL | COUNT | EXISTENCE
-4. The sub-question's answer must be logically NECESSARY for the 
-   target answer to hold. If the target is "No", the sub-questions 
-   should test the individual facts whose combination would be needed 
-   for "Yes" — some of these facts will be true and some false.
-5. Generate 2-4 sub-questions. Prefer fewer, higher-quality ones.
-6. Do NOT generate sub-questions that are trivially obvious 
-   (e.g., "Is this a video?" or "Are there people in the video?").
+Your job:
+- Identify 1-4 necessary atomic facts that belong strictly to the predicate type {predicate_type}.
+- Convert each atomic fact into an independent yes/no sub-question.
+- Every sub-question must be answerable from the video alone.
+- Every sub-question must have a definite expected answer.
+- Every sub-question must be logically necessary for the original target answer.
+
+Important constraints:
+1. Use ONLY predicate type: {predicate_type}
+2. Do NOT mix in other predicate types.
+3. If this target question cannot be meaningfully decomposed into necessary sub-questions of type {predicate_type},
+   return an empty decomposition.
+4. If the target answer is "No", decompose the facts that would need to hold for the answer to be "Yes".
+   Some expected answers may therefore be "No".
+5. Prefer fewer, high-quality sub-questions over many weak ones.
+6. Do NOT generate trivial or generic sub-questions.
+
+Predicate type definition:
+{predicate_definition}
 
 Output ONLY valid JSON matching this structure:
 {{
+  "predicate_type": "{predicate_type}",
   "decomposition": [
     {{
-      "predicate_type": "IDENTITY|STATE|RELATION|TEMPORAL|COUNT|EXISTENCE",
       "atomic_fact": "description of the fact being tested",
       "sub_question": "the yes/no question",
       "expected_answer": "Yes|No",
@@ -59,6 +98,113 @@ Target question: {question}
 Ground-truth answer: {answer}
 Video context (if available): {context}
 """
+
+identity_predicate_type = PredicateType(
+    predicate_type="IDENTITY",
+    predicate_definition=(
+        "IDENTITY checks who or what an entity is, or whether an entity at one moment "
+        "is the same as an entity at another moment. Use this only for entity identity, "
+        "coreference, re-identification, role assignment, or object/person matching across time."
+    ),
+)
+
+state_predicate_type = PredicateType(
+    predicate_type="STATE",
+    predicate_definition=(
+        "STATE checks an attribute, condition, pose, location, status, or property of an entity "
+        "at a relevant moment or across moments. Use this only for facts like open/closed, "
+        "standing/sitting, holding/not holding, on/off, inside/outside, or changed state."
+    ),
+)
+
+relation_predicate_type = PredicateType(
+    predicate_type="RELATION",
+    predicate_definition=(
+        "RELATION checks how two or more entities are connected in space, action, contact, "
+        "ownership, interaction, or other dependency. Use this only for facts like next to, "
+        "holding, touching, following, facing, giving to, or interacting with."
+    ),
+)
+
+temporal_predicate_type = PredicateType(
+    predicate_type="TEMPORAL",
+    predicate_definition=(
+        "TEMPORAL checks ordering, before/after relations, duration-sensitive facts, sequence, "
+        "or change over time. Use this only for facts involving event order, whether something "
+        "happened first/last, before/after another event, or whether a change occurred over time."
+    ),
+)
+
+count_predicate_type = PredicateType(
+    predicate_type="COUNT",
+    predicate_definition=(
+        "COUNT checks how many entities, events, or occurrences are present. Use this only for "
+        "facts involving exact number, plurality, repetition, or numerical comparison."
+    ),
+)
+
+existence_predicate_type = PredicateType(
+    predicate_type="EXISTENCE",
+    predicate_definition=(
+        "EXISTENCE checks whether an entity, event, action, or situation appears or occurs in the video. "
+        "Use this only for presence/absence questions, not for identity, state, relation, order, or count."
+    ),
+)
+
+PREDICATE_TYPES: List[PredicateType] = [
+    identity_predicate_type,
+    state_predicate_type,
+    relation_predicate_type,
+    temporal_predicate_type,
+    count_predicate_type,
+    existence_predicate_type
+]
+
+cache_sys = PromptCacheSystem()
+
+def call_llm(client: "API", model_id: str, cache_sys: PromptCacheSystem, query: Dict, predicate_type: PredicateType, counter: int, recompute: bool = False) -> Dict:
+    qid = query['question_id']
+    cache_id = f"{qid}_{predicate_type.predicate_type}"
+    if cache_sys.exist(cache_id) and not recompute:
+        output = cache_sys.get(cache_id)
+        subs = output['response']
+    else:
+        prompt = SINGLE_PREDICATE_DECOMPOSITION_PROMPT.format(
+            predicate_type=predicate_type.predicate_type,
+            predicate_definition=predicate_type.predicate_definition,
+            question=query["question"],
+            answer=query["answer"],
+            context=query.get("video_title", "No additional context"),
+        )
+        try:
+            # Call Gemini API with JSON enforcement using the new SDK syntax
+            response = client.models.generate_content(
+                model=model_id,
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    temperature=0.3,
+                    max_output_tokens=8000,
+                    response_mime_type="application/json",
+                )
+            )
+            
+            text = response.text.strip()
+            
+            # Fallback cleanup just in case
+            if text.startswith("```"):
+                text = text.split("```")[1]
+                if text.startswith("json"):
+                    text = text[4:]
+                    
+            parsed = json.loads(text)
+            subs = parsed.get("decomposition", [])
+            
+        except Exception as e:
+            print(f"  [{counter}] Error for Q{query.get('question_id', 'Unknown')} with predicate type: {predicate_type.predicate_type}: {e}")
+            subs = []
+        if len(subs) > 0:
+            cache_sys.push(cache_id, prompt, subs)
+    return {"subs": subs, "predicate_type": predicate_type.predicate_type}
 
 
 def generate_sub_questions(
@@ -76,56 +222,33 @@ def generate_sub_questions(
     
     results = []
 
-    for i, q in enumerate(questions):
-        context = q.get("video_title", "No additional context")
-        prompt = DECOMPOSITION_PROMPT.format(
-            question=q["question"],
-            answer=q["answer"],
-            context=context,
-        )
-        try:
-            # Call Gemini API with JSON enforcement using the new SDK syntax
-            response = client.models.generate_content(
-                model=model,
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    temperature=0.3,
-                    max_output_tokens=4000,
-                    response_mime_type="application/json",
-                )
+    for i, q in enumerate(tqdm(questions)):
+        for pred_type in PREDICATE_TYPES:
+            output = call_llm(
+                client,
+                model,
+                cache_sys,
+                q,
+                pred_type,
+                counter=i+1
             )
-            
-            text = response.text.strip()
-            
-            # Fallback cleanup just in case
-            if text.startswith("```"):
-                text = text.split("```")[1]
-                if text.startswith("json"):
-                    text = text[4:]
-                    
-            parsed = json.loads(text)
-            subs = parsed.get("decomposition", [])
-            
-        except Exception as e:
-            print(f"  [{i+1}] Error for Q{q.get('question_id', 'Unknown')}: {e}")
-            subs = []
-
-        results.append({
-            **q,
-            "candidate_sub_questions": [
-                {
-                    "sub_question": s["sub_question"],
-                    "expected_answer": s["expected_answer"],
-                    "predicate_type": s["predicate_type"],
-                    "atomic_fact": s["atomic_fact"],
-                    "reasoning": s.get("reasoning", ""),
-                    "annotator_verdict": None,
-                    "annotator_corrected_answer": None,
-                    "annotator_corrected_text": None,
-                }
-                for s in subs
-            ],
-        })
+            subs = output['subs']
+            results.append({
+                **q,
+                "candidate_sub_questions": [
+                    {
+                        "sub_question": s["sub_question"],
+                        "expected_answer": s["expected_answer"],
+                        "predicate_type": pred_type.predicate_type,
+                        "atomic_fact": s["atomic_fact"],
+                        "reasoning": s.get("reasoning", ""),
+                        "annotator_verdict": None,
+                        "annotator_corrected_answer": None,
+                        "annotator_corrected_text": None,
+                    }
+                    for s in subs
+                ],
+            })
         if (i + 1) % 10 == 0:
             print(f"  Processed {i+1}/{len(questions)}")
 
@@ -274,23 +397,19 @@ if __name__ == "__main__":
     #         "answer": "No",
     #         "video_path": "videos/0046.mp4",
     #         "video_title": "Box of Lies with Chris Pratt",
-    #     },
-    #     {
-    #         "question_id": 12,
-    #         "question": "Did he go to the laundry room before visiting his dorm room?",
-    #         "answer": "Yes",
-    #         "video_path": "videos/0048.mp4",
-    #         "video_title": "College Dorm Tour 2025 | Stanford University",
-    #     },
+    #     }
     # ]
     with open("reproducible_sample_questions.json", encoding='utf-8') as fin:
         sample_questions = json.load(fin)
+    # sample_questions = sample_questions[:10]
 
     # Make sure you have the GEMINI_API_KEY environment variable set!
     # export GEMINI_API_KEY="your-api-key-here"
     
     # Step 1: Auto-generate candidates
-    generated = generate_sub_questions(sample_questions, model = "gemini-3-flash-preview")
+    # generated = generate_sub_questions(sample_questions, model = "gemini-3-flash-preview")
+    # generated = generate_sub_questions(sample_questions, model = "gemini-2.5-pro")
+    generated = generate_sub_questions(sample_questions, model = "gemini-3-pro-preview")
     
     # Step 2: Create annotation file
     build_annotation_file(generated, "annotation_tasks.json")

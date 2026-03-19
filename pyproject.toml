@@ -1,15 +1,29 @@
 [project]
 name = "video-hallucination"
 version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "accelerate>=1.13.0",
+    "av==16.1.0",
     "loguru>=0.7.3",
     "opencv-python>=4.13.0.92",
+    "python-dotenv>=1.2.2",
     "qwen-vl-utils>=0.0.14",
     "torch>=2.10.0",
     "torchvision>=0.25.0",
-    "transformers==4.57.1",
+    # transformers removed from here
+]
+
+[dependency-groups]
+legacy = ["transformers==4.57.1"]
+qwen35 = [
+    "transformers @ git+https://github.com/huggingface/transformers.git@d64a6d6"
+]
+
+[tool.uv]
+conflicts = [
+    [
+        { group = "legacy" },
+        { group = "qwen35" },
+    ]
 ]

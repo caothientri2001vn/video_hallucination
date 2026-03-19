@@ -1,11 +1,17 @@
 import os
 import json
-from typing import List, Optional
+from typing import List, Optional, Any
+
+def get_cache_id(video_name: str) -> str:
+    cache_id = video_name[:4]
+    if cache_id == '0036':
+        cache_id = "_".join(video_name.split("_")[:2])
+    return cache_id
 
 class AnswerCacheSystem:
     def __init__(self, model_id: str, cache_dir: str = "cache"):
         self.model_id = model_id.replace("/", "__")
-        self.cache_dir = cache_dir
+        self.cache_dir = os.path.join(cache_dir, self.model_id)
         os.makedirs(self.cache_dir, exist_ok=True)
 
     def push(self, sample_idx: str, answers: List[str]):
@@ -25,9 +31,3 @@ class AnswerCacheSystem:
     def exist(self, sample_idx) -> bool:
         cache_path = os.path.join(self.cache_dir, f"sample_{sample_idx}.json")
         return os.path.exists(cache_path)
-
-def get_cache_id(video_name: str) -> str:
-    cache_id = video_name[:4]
-    if cache_id == '0036':
-        cache_id = "_".join(video_name.split("_")[:2])
-    return cache_id
