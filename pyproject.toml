@@ -15,7 +15,10 @@ dependencies = [
 ]
 
 [dependency-groups]
-legacy = ["transformers==4.57.1"]
+legacy = [
+    "matplotlib>=3.10.8",
+    "transformers==4.57.1",
+]
 qwen35 = [
     "transformers @ git+https://github.com/huggingface/transformers.git@d64a6d6"
 ]
