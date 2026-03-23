@@ -22,6 +22,18 @@ uv sync --group legacy
 source .venv/bin/activate
 ```
 
+## Run
+
+```shell
+CUDA_VISIBLE_DEVICES=0 python benchmark.py \
+    --model_id weights/qwen3_vl_8b_inst \
+    --max_new_tokens 1024
+```
+
+**NOTE**: You can read `benchmark.py` to understand the flow of the code before hitting run it. This makes it easier to develop custom pipeline for other baselines to utilize the benchmark.
+
+**NOTE**: The consitency and sub-questions are currently under development. Future work may expand the benchmark structure but backward compatibility is ensure.
+
 ## Prompt for augmentation
 
 1. Create a `.env` file
