@@ -9,6 +9,7 @@ class PromptTemplate:
         self.content = content
 
 PromptTemplateCollections = {
-    "extract_fact": PromptTemplate("prompt_asset/extract_fact.txt", "extract_fact")
+    "extract_fact": PromptTemplate("prompt_asset/extract_fact.txt", "extract_fact"),
+    "augment_question": PromptTemplate("prompt_asset/augment_question.txt", "augment_question")
 }
         
