@@ -1,6 +1,6 @@
 import os
 import json
-from typing import List, Optional, Any
+from typing import List, Optional, Any, Dict
 
 def get_cache_id(video_name: str) -> str:
     cache_id = video_name[:4]
@@ -31,3 +31,17 @@ class AnswerCacheSystem:
     def exist(self, sample_idx) -> bool:
         cache_path = os.path.join(self.cache_dir, f"sample_{sample_idx}.json")
         return os.path.exists(cache_path)
+
+    def dyn_push(self, sample_id: str, obj: Dict):
+        cache_path = os.path.join(self.cache_dir, f"sample_{sample_id}.json")
+        with open(cache_path, 'w+', encoding='utf-8') as fout:
+            json.dump(obj, fout, ensure_ascii=False)
+
+    def dyn_get(self, sample_id: str) -> Optional[Dict]:
+        if not self.exist(sample_id):
+            return None
+        cache_path = os.path.join(self.cache_dir, f"sample_{sample_id}.json")
+        with open(cache_path, encoding='utf-8') as fin:
+            data = json.load(fin)
+
+        return data
