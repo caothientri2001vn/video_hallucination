@@ -48,12 +48,13 @@ def main(args):
                     debug_with_n_frames=args.debug_with_n_frames,
                     max_new_tokens=args.max_new_tokens,
                 )
-                sub_samples['sub-ansers'].append(sub_answers)
+                sub_samples['sub-answers'].append(sub_answers)
             sub_cache_sys.dyn_push(cache_id, sub_samples)
         else:
+            tqdm.write("Cache hit")
             sub_samples = sub_cache_sys.dyn_get(cache_id)
-        _sub_answers_pr = [answer for answer in answers for answers in sub_samples['sub-answers']]
-        _sub_answers_gt = [answer for answer in answers for answers in benchmark_sample['sub-answers']]
+        _sub_answers_pr = [answer for answers in sub_samples['sub-answers'] for answer in answers]
+        _sub_answers_gt = [answer for answers in benchmark_sample['sub-answers'] for answer in answers]
         eval_master.batch_push(predictions = _sub_answers_pr, truths = _sub_answers_gt)
 
         sub_result = eval_master.compute_result()
