@@ -34,6 +34,15 @@ CUDA_VISIBLE_DEVICES=0 python benchmark.py \
 
 **NOTE**: The consitency and sub-questions are currently under development. Future work may expand the benchmark structure but backward compatibility is ensure.
 
+## Beta version
+
+```shell
+CUDA_VISIBLE_DEVICES=0 python benchmark_sub.py \
+    --model_id weights/qwen3_vl_8b_inst \
+    --metrics all \
+    --questions_dir benchmark_subq
+```
+
 ## Prompt for augmentation
 
 1. Create a `.env` file
