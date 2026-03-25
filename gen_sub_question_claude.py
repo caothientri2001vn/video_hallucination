@@ -94,11 +94,14 @@ if __name__ == "__main__":
     batch_size = 5
 
     # get a subset
-    benchmarks = benchmarks[:6]
+    # benchmarks = benchmarks[:80]
+    with open('note.txt') as fin:
+        content = fin.read().strip()
+    list_of_fail = content.split("\n")
     for sample in tqdm(benchmarks):
         sub_questions = []
         cache_id = get_cache_id(sample['video_name'])
-        if cache_sys.exist(cache_id):
+        if cache_sys.exist(cache_id) and cache_id not in list_of_fail:
             continue
 
         # get atomic facts
@@ -111,6 +114,7 @@ if __name__ == "__main__":
 
         for i in range(0, len(original_qa_data), batch_size):
             batch_ori_qa_data = original_qa_data[i : i + batch_size]
+            breakpoint()
             qa_string = "\n".join(
                 f"- Question: {item['question']} | Answer: {item['answer']}"
                 for item in batch_ori_qa_data
