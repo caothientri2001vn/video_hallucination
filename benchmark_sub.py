@@ -1,76 +1,199 @@
-from src.run_model import load_model, run_model
-from src.load_data import load_benchmark
-from src.eval_module import EvaluationMaster, EvalModule, SimpleAnswerProcessor, AccuracyEvaluator
-from src.cache_sys import AnswerCacheSystem, get_cache_id
+"""
+benchmark_sub.py
+-----------------
+Main benchmark runner.  Evaluates a model on the sub-question benchmark and
+reports the requested metrics.
+
+Example usage
+-------------
+# Run Qwen3-VL with default settings, report all metrics
+python benchmark_sub.py --model_id Qwen/Qwen3-VL-8B-Instruct --metrics all
+
+# Report only accuracy and Cons@TC
+python benchmark_sub.py --model_id Qwen/Qwen3-VL-8B-Instruct --metrics accuracy consistency_tc
+
+# Use a different prompt method (creates a separate cache namespace)
+python benchmark_sub.py --model_id Qwen/Qwen3-VL-8B-Instruct --prompt_method cot --metrics all
+
+# API model (stub — will raise NotImplementedError until implemented)
+python benchmark_sub.py --model_id claude-3-7-sonnet-20250219 --metrics accuracy consistency
+
+Available metric keys
+---------------------
+  all               → every metric below
+  accuracy          → target-question accuracy
+  sub_accuracy      → sub-question accuracy
+  consistency_all   → Cons@All
+  consistency_tc    → Cons@TC  (target-correct groups only)
+  consistency_tw    → Cons@TW  (target-wrong groups only)
+  consistency       → all three Cons metrics at once
+"""
+
+import json
 from argparse import ArgumentParser
+from collections import defaultdict
+from typing import Dict, List
+
 from tqdm import tqdm
 
-def main(args):
-    benchmark_data = load_benchmark(args.video_dir, args.mode, args.questions_dir)
-    model_manager = load_model(args.model_id, args.debug_with_n_frames)
-    cache_system = AnswerCacheSystem(args.model_id, args.cache_dir)
-    sub_cache_sys = AnswerCacheSystem(args.model_id, "cache/sub_questions")
-    # eval_master = EvaluationMaster([
-    #     EvalModule("accuracy", processor=SimpleAnswerProcessor(), evaluator=AccuracyEvaluator()),
-    # ])
-    accs = []
-    for idx, benchmark_sample in enumerate(tqdm(benchmark_data)):
-        eval_master = EvaluationMaster([
-            EvalModule("accuracy", processor=SimpleAnswerProcessor(), evaluator=AccuracyEvaluator()),
-        ])
-        cache_id = get_cache_id(benchmark_sample['video_name'])
-        # if not cache_system.exist(cache_id):
-        #     answers = run_model(
-        #         model_manager, 
-        #         args.model_id, 
-        #         benchmark_sample, 
-        #         sample_id=idx, 
-        #         debug_with_n_frames=args.debug_with_n_frames,
-        #         max_new_tokens=args.max_new_tokens
-        #     )
-        #     cache_system.push(cache_id, answers)
-        # else:
-        #     answers = cache_system.get(cache_id)
+from src.cache import make_cache
+from src.eval_module import build_question_groups, evaluate, fill_predictions
+from src.load_data import load_benchmark
+from src.metrics import build_metrics
+from src.models import load_model
 
-        # we make a snicky hack here, replace each list of sub-questions to become a questions field
-        # then keep the same old code
-        sub_samples = {"sub-questions": [], "sub-answers": []}
-        if not sub_cache_sys.exist(cache_id):
-            original_questions = benchmark_sample['questions']
-            for sub_queries in benchmark_sample['sub-questions']:
-                sub_samples['sub-questions'].append(sub_queries)
-                benchmark_sample['questions'] = sub_queries
-                sub_answers = run_model(
-                    model_manager,
-                    args.model_id,
-                    benchmark_sample,
-                    sample_id=idx,
-                    debug_with_n_frames=args.debug_with_n_frames,
-                    max_new_tokens=args.max_new_tokens,
-                )
-                sub_samples['sub-answers'].append(sub_answers)
-            sub_cache_sys.dyn_push(cache_id, sub_samples)
+
+# ---------------------------------------------------------------------------
+# Result helpers
+# ---------------------------------------------------------------------------
+
+def _aggregate_results(per_sample_results: List[Dict[str, float]]) -> Dict[str, float]:
+    """Average per-sample metric dicts into a single summary dict."""
+    if not per_sample_results:
+        return {}
+    totals: Dict[str, float] = defaultdict(float)
+    counts: Dict[str, int] = defaultdict(int)
+    for r in per_sample_results:
+        for k, v in r.items():
+            if v == v:  # skip NaN
+                totals[k] += v
+                counts[k] += 1
+    return {k: totals[k] / counts[k] for k in totals}
+
+
+def _print_results(results: Dict[str, float]) -> None:
+    max_key_len = max(len(k) for k in results) if results else 0
+    print("\n" + "=" * 50)
+    print("  Benchmark Results")
+    print("=" * 50)
+    for key, value in sorted(results.items()):
+        if value != value:  # NaN
+            print(f"  {key:<{max_key_len}}  =  N/A (no qualifying groups)")
         else:
-            tqdm.write("Cache hit")
-            sub_samples = sub_cache_sys.dyn_get(cache_id)
-        _sub_answers_pr = [answer for answers in sub_samples['sub-answers'] for answer in answers]
-        _sub_answers_gt = [answer for answers in benchmark_sample['sub-answers'] for answer in answers]
-        eval_master.batch_push(predictions = _sub_answers_pr, truths = _sub_answers_gt)
+            print(f"  {key:<{max_key_len}}  =  {value:.4f}")
+    print("=" * 50 + "\n")
 
-        sub_result = eval_master.compute_result()
-        accs.append(sub_result['accuracy'])
-        
-    acc = sum(accs) / len(accs)
-    print(acc)
+
+# ---------------------------------------------------------------------------
+# Main
+# ---------------------------------------------------------------------------
+
+def main(args) -> None:
+    # ------------------------------------------------------------------
+    # 1. Load data, model, cache, metrics
+    # ------------------------------------------------------------------
+    benchmark_data = load_benchmark(args.video_dir, args.mode, args.questions_dir)
+
+    model = load_model(
+        model_id=args.model_id,
+        prompt_method=args.prompt_method,
+        debug_with_n_frames=args.debug_with_n_frames,
+    )
+    cache = make_cache(model, cache_root=args.cache_dir)
+    metrics = build_metrics(args.metrics)
+
+    tqdm.write(f"Model     : {model}")
+    tqdm.write(f"Namespace : {model.cache_namespace}")
+    tqdm.write(f"Metrics   : {[m.name for m in metrics]}")
+    tqdm.write(f"Samples   : {len(benchmark_data)}\n")
+
+    # ------------------------------------------------------------------
+    # 2. Run per sample
+    # ------------------------------------------------------------------
+    per_sample_results: List[Dict[str, float]] = []
+
+    for idx, sample in enumerate(tqdm(benchmark_data, desc="Evaluating")):
+        groups = build_question_groups(sample)
+
+        fill_predictions(
+            groups=groups,
+            sample=sample,
+            model=model,
+            cache=cache,
+            max_new_tokens=args.max_new_tokens,
+        )
+
+        sample_result = evaluate(groups, metrics)
+        per_sample_results.append(sample_result)
+
+        tqdm.write(
+            f"[{idx + 1:>4}/{len(benchmark_data)}] "
+            + "  ".join(f"{k}={v:.3f}" for k, v in sample_result.items() if v == v)
+        )
+
+    # ------------------------------------------------------------------
+    # 3. Aggregate and report
+    # ------------------------------------------------------------------
+    final = _aggregate_results(per_sample_results)
+    _print_results(final)
+
+    if args.output_json:
+        with open(args.output_json, "w", encoding="utf-8") as f:
+            json.dump(
+                {
+                    "model_id": args.model_id,
+                    "prompt_method": args.prompt_method,
+                    "cache_namespace": model.cache_namespace,
+                    "metrics": final,
+                    "per_sample": per_sample_results,
+                },
+                f,
+                indent=2,
+                ensure_ascii=False,
+            )
+        tqdm.write(f"Results saved to {args.output_json}")
+
+
+# ---------------------------------------------------------------------------
+# CLI
+# ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
-    parser = ArgumentParser(description="Run model against benchmark")
-    parser.add_argument("--model_id", type=str, default="Qwen/Qwen3-VL-8B-Instruct")
+    parser = ArgumentParser(description="Run model against the sub-question benchmark")
+
+    # Model
+    parser.add_argument(
+        "--model_id", type=str, default="Qwen/Qwen3-VL-8B-Instruct",
+        help="HuggingFace repo ID or API model name (e.g. claude-3-7-sonnet-20250219)"
+    )
+    parser.add_argument(
+        "--prompt_method", type=str, default="vanilla",
+        help=(
+            "Short label for the prompt template.  Changing this creates a "
+            "separate cache namespace so old results are not reused.  "
+            "Default: 'vanilla'"
+        ),
+    )
+
+    # Metrics  ← key new flag
+    parser.add_argument(
+        "--metrics",
+        nargs="+",
+        default=["all"],
+        metavar="METRIC",
+        help=(
+            "Which metrics to compute.  Pass 'all' for everything, or a "
+            "space-separated list from: accuracy sub_accuracy consistency_all "
+            "consistency_tc consistency_tw consistency.  "
+            "Default: all"
+        ),
+    )
+
+    # Paths
     parser.add_argument("--cache_dir", type=str, default="cache")
     parser.add_argument("--video_dir", type=str, default="raw_data")
     parser.add_argument("--questions_dir", type=str, default="benchmark")
+    parser.add_argument(
+        "--output_json", type=str, default=None,
+        help="Optional path to write full results as JSON"
+    )
+
+    # Benchmark mode
     parser.add_argument("--mode", type=str, default="all")
+
+    # Model tuning
     parser.add_argument("--debug_with_n_frames", type=int, default=None)
     parser.add_argument("--max_new_tokens", type=int, default=256)
+
     args = parser.parse_args()
     main(args)

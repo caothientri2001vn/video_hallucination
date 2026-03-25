@@ -1,0 +1,64 @@
+# configs/models.yaml
+# --------------------
+# Per-model configuration.
+# API keys are NEVER stored here — only the name of the environment variable
+# that holds each key.  Set the env var in your shell or .env file:
+#   export ANTHROPIC_API_KEY="sk-ant-..."
+#   export GOOGLE_API_KEY="AIza..."
+#   export OPENAI_API_KEY="sk-..."
+
+# ---------------------------------------------------------------------------
+# Local HuggingFace models
+# ---------------------------------------------------------------------------
+
+"Qwen/Qwen3-VL-8B-Instruct":
+  device_map: auto
+  torch_dtype: auto
+  # Number of frames to sample for debug mode (null = use model default)
+  debug_n_frames: null
+
+"Qwen/Qwen3-VL-72B-Instruct":
+  device_map: auto
+  torch_dtype: auto
+  debug_n_frames: null
+
+# ---------------------------------------------------------------------------
+# Anthropic Claude  (API — stub, not yet implemented)
+# ---------------------------------------------------------------------------
+
+"claude-3-7-sonnet-20250219":
+  api_key_env: ANTHROPIC_API_KEY
+  # Number of evenly-spaced frames to extract and send as images
+  n_frames: 16
+
+"claude-3-5-haiku-20241022":
+  api_key_env: ANTHROPIC_API_KEY
+  n_frames: 16
+
+# ---------------------------------------------------------------------------
+# Google Gemini  (API — stub, not yet implemented)
+# ---------------------------------------------------------------------------
+
+"gemini-2.5-pro":
+  api_key_env: GOOGLE_API_KEY
+  # true  → upload whole video via Files API (better for long videos)
+  # false → extract frames and base64-encode them
+  video_upload: true
+  n_frames: 16   # used only when video_upload is false
+
+"gemini-2.0-flash":
+  api_key_env: GOOGLE_API_KEY
+  video_upload: true
+  n_frames: 16
+
+# ---------------------------------------------------------------------------
+# OpenAI  (API — stub, not yet implemented)
+# ---------------------------------------------------------------------------
+
+"gpt-4o":
+  api_key_env: OPENAI_API_KEY
+  n_frames: 16
+
+"gpt-4o-mini":
+  api_key_env: OPENAI_API_KEY
+  n_frames: 16
