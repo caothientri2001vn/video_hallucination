@@ -18,8 +18,31 @@ curl -O https://link/to/file.mp4
 ```shell
 sudo apt update
 sudo apt install -y libgl1
-uv sync --group legacy
+```
+
+Each model backend has its own dependency group. Install only what you need:
+
+| Use-case                                 | Command                                                                |
+| ---------------------------------------- | ---------------------------------------------------------------------- |
+| Qwen3-VL-8B (local GPU)                  | `uv sync --group qwen3vl`                                              |
+| Qwen3.5-VL (local GPU, dev transformers) | `uv sync --group qwen35vl`                                             |
+| Claude API only                          | `uv sync --group claude`                                               |
+| Gemini API only                          | `uv sync --group gemini`                                               |
+| OpenAI API only                          | `uv sync --group openai`                                               |
+| Qwen3-VL + all API backends              | `uv sync --group qwen3vl --group claude --group gemini --group openai` |
+
+Then activate:
+
+```shell
 source .venv/bin/activate
+```
+
+For API backends, add the relevant key(s) to a `.env` file:
+
+```text
+ANTHROPIC_API_KEY=...
+GOOGLE_API_KEY=...
+OPENAI_API_KEY=...
 ```
 
 ## Run
@@ -36,16 +59,126 @@ CUDA_VISIBLE_DEVICES=0 python benchmark.py \
 
 ## Beta version
 
+### Local models
+
 ```shell
+# Qwen3-VL-8B
 CUDA_VISIBLE_DEVICES=0 python benchmark_sub.py \
     --model_id weights/qwen3_vl_8b_inst \
     --metrics all \
     --questions_dir benchmark_subq
+
+# Qwen3.5-VL (auto-detected by model_id prefix)
+CUDA_VISIBLE_DEVICES=3 python benchmark_sub.py \
+    --model_id Qwen/Qwen3.5-2B \
+    --metrics all \
+    --questions_dir benchmark_subq
+
+# Qwen3.5-VL with thinking mode
+CUDA_VISIBLE_DEVICES=0 python benchmark_sub.py \
+    --model_id Qwen/Qwen3.5-VL-7B-Instruct \
+    --prompt_method thinking \
+    --metrics all \
+    --questions_dir benchmark_subq
 ```
+
+### API models
+
+No GPU required. Make sure the relevant key is set in `.env` first.
+
+```shell
+# Gemini (direct)
+python benchmark_sub.py \
+    --model_id gemini-2.5-pro \
+    --metrics all \
+    --questions_dir benchmark_subq
+
+# Claude (direct)
+python benchmark_sub.py \
+    --model_id claude-3-7-sonnet-20250219 \
+    --metrics all \
+    --questions_dir benchmark_subq
+
+# OpenAI (direct)
+python benchmark_sub.py \
+    --model_id gpt-4o \
+    --metrics all \
+    --questions_dir benchmark_subq
+```
+
+### OpenRouter
+
+Prefix `openrouter/` routes any model through OpenRouter (single API key, OpenAI-compatible).
+Add `OPENROUTER_API_KEY` to `.env`. No extra dependency group needed beyond `openai`.
+
+```shell
+uv sync --group openai
+```
+
+```shell
+# Gemini 2.5 Pro via OpenRouter
+python benchmark_sub.py \
+    --model_id openrouter/google/gemini-2.5-pro \
+    --metrics all \
+    --questions_dir benchmark_subq
+
+# GPT-5 via OpenRouter
+python benchmark_sub.py \
+    --model_id openrouter/openai/gpt-5 \
+    --metrics all \
+    --questions_dir benchmark_subq
+
+# Claude Sonnet 4.6 via OpenRouter
+python benchmark_sub.py \
+    --model_id openrouter/anthropic/claude-sonnet-4-6 \
+    --metrics all \
+    --questions_dir benchmark_subq
+
+# Qwen3-VL-32B via OpenRouter
+python benchmark_sub.py \
+    --model_id openrouter/qwen/qwen3-vl-32b-instruct \
+    --metrics all \
+    --questions_dir benchmark_subq
+
+# InternVL3.5-78B via OpenRouter
+python benchmark_sub.py \
+    --model_id openrouter/internvl/internvl3.5-78b \
+    --metrics all \
+    --questions_dir benchmark_subq
+```
+
+> The `openrouter/` prefix is stripped automatically before calling the API,
+> so `openrouter/google/gemini-2.5-pro` → model slug `google/gemini-2.5-pro`
+> (exactly as shown on openrouter.ai).
+
+### Common flags
+
+| Flag               | Default                     | Description                                                                                      |
+| ------------------ | --------------------------- | ------------------------------------------------------------------------------------------------ |
+| `--model_id`       | `Qwen/Qwen3-VL-8B-Instruct` | Model to evaluate                                                                                |
+| `--metrics`        | `all`                       | Metrics: `accuracy`, `sub_accuracy`, `consistency`, `consistency_tc`, `consistency_tw`, or `all` |
+| `--questions_dir`  | `benchmark`                 | Folder containing benchmark JSON files                                                           |
+| `--prompt_method`  | `vanilla`                   | Prompt variant label (also used as cache namespace suffix)                                       |
+| `--max_new_tokens` | `256`                       | Max tokens per answer                                                                            |
+| `--output_json`    | _(none)_                    | Write full results to a JSON file                                                                |
+| `--cache_dir`      | `cache`                     | Directory for caching model predictions                                                          |
+| `--video_dir`      | `raw_data`                  | Directory containing video files                                                                 |
+
+Model routing is automatic based on the `--model_id` prefix:
+
+| Prefix | Backend | Required group | API key env |
+|---|---|---|---|
+| `openrouter/*` | `OpenAIModel` → OpenRouter | `uv sync --group openai` | `OPENROUTER_API_KEY` |
+| `gemini-*` | `GeminiModel` | `uv sync --group gemini` | `GOOGLE_API_KEY` |
+| `claude-*` | `ClaudeModel` | `uv sync --group claude` | `ANTHROPIC_API_KEY` |
+| `gpt-*` / `o1-*` / `o3-*` | `OpenAIModel` | `uv sync --group openai` | `OPENAI_API_KEY` |
+| `Qwen/Qwen3.5-*` / `qwen3.5-*` | `Qwen35VLModel` | `uv sync --group qwen35vl` | — |
+| anything else | `Qwen3VLModel` | `uv sync --group qwen3vl` | — |
 
 ## Prompt for augmentation
 
 1. Create a `.env` file
+
 ```text
 GEMINI_API_KEY=....
 ```

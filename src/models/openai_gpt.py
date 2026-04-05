@@ -37,25 +37,31 @@ Example skeleton (do not delete — fill in when ready)
 """
 
 import os
-from typing import List
+from typing import List, Optional
 
 from .base import BaseVideoQAModel
 
 
 class OpenAIModel(BaseVideoQAModel):
     """
-    OpenAI GPT-4o / GPT-4-vision API backend (stub).
+    OpenAI-compatible API backend (GPT-4o, or any OpenRouter model).
 
     Parameters
     ----------
     model_id : str
-        OpenAI model name, e.g. ``"gpt-4o"``.
+        Model name, e.g. ``"gpt-4o"`` or an OpenRouter slug like
+        ``"openrouter/google/gemini-2.5-pro"``.
     prompt_method : str
         Prompt template label (affects cache namespace).  Default: "vanilla".
     n_frames : int
         Number of evenly-spaced frames to extract from the video.  Default: 16.
     api_key_env : str
-        Env-var name for the OpenAI API key.  Default: ``"OPENAI_API_KEY"``.
+        Env-var name for the API key.  Default: ``"OPENAI_API_KEY"``.
+        For OpenRouter set to ``"OPENROUTER_API_KEY"``.
+    base_url : str | None
+        Override the API base URL.  Pass ``"https://openrouter.ai/api/v1"``
+        to route through OpenRouter.  Default: None (uses the openai SDK
+        default, i.e. ``"https://api.openai.com/v1"``).
     """
 
     def __init__(
@@ -64,10 +70,12 @@ class OpenAIModel(BaseVideoQAModel):
         prompt_method: str = "vanilla",
         n_frames: int = 16,
         api_key_env: str = "OPENAI_API_KEY",
+        base_url: Optional[str] = None,
     ) -> None:
         super().__init__(model_id, prompt_method)
         self.n_frames = n_frames
         self.api_key_env = api_key_env
+        self.base_url = base_url
 
     def answer_questions(
         self,
