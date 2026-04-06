@@ -20,7 +20,9 @@ except Exception as exc:
     ) from exc
 
 from .base import BaseVideoQAModel
-
+# load API key
+from dotenv import load_dotenv
+load_dotenv()
 
 _DEFAULT_N_FRAMES = 32
 _DEFAULT_MAX_CONCURRENCY = 4
