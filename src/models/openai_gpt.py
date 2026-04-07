@@ -7,12 +7,19 @@ OpenAI GPT-4o / GPT-4-vision API backend.
 import base64
 import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 import cv2
+import numpy as np
 
 try:
-    from openai import OpenAI
+    from qwen_vl_utils.vision_process import fetch_video
+except Exception:
+    fetch_video = None
+
+try:
+    from openai import BadRequestError, OpenAI
 except Exception as exc:
     raise RuntimeError(
         "Failed to import the OpenAI SDK. Install with: uv sync --group openai\n"
@@ -23,6 +30,7 @@ from .base import BaseVideoQAModel
 
 _FALLBACK_N_FRAMES = 32
 _DEFAULT_MAX_CONCURRENCY = 4
+_MIN_RETRY_FRAMES = 4
 
 
 def _encode_frame_b64(frame: Any) -> str:
@@ -30,6 +38,82 @@ def _encode_frame_b64(frame: Any) -> str:
     if not ok:
         raise ValueError("Failed to encode sampled video frame as JPEG")
     return base64.b64encode(buf.tobytes()).decode("ascii")
+
+
+def _sample_evenly(items: List[str], n: int) -> List[str]:
+    if not items:
+        raise ValueError("Cannot sample from an empty frame list")
+    if n <= 1:
+        return [items[len(items) // 2]]
+    if len(items) == 1:
+        return items * n
+    indices = [round(i * (len(items) - 1) / (n - 1)) for i in range(n)]
+    return [items[idx] for idx in indices]
+
+
+def _extract_frames_b64_sequential(video_path: str, n_frames: int) -> List[str]:
+    cap = cv2.VideoCapture(video_path)
+    if not cap.isOpened():
+        raise ValueError(f"Failed to open video for sequential decode: {video_path}")
+
+    try:
+        decoded: List[str] = []
+        while True:
+            ok, frame = cap.read()
+            if not ok or frame is None:
+                break
+            decoded.append(_encode_frame_b64(frame))
+
+        if not decoded:
+            raise ValueError(f"Failed to decode any frames sequentially from video: {video_path}")
+
+        return _sample_evenly(decoded, n_frames)
+    finally:
+        cap.release()
+
+
+def _tensor_frame_to_bgr_uint8(frame: Any) -> Any:
+    if hasattr(frame, "detach"):
+        arr = frame.detach().cpu().numpy()
+    else:
+        arr = np.asarray(frame)
+
+    if arr.ndim != 3:
+        raise ValueError(f"Expected 3D frame tensor/array, got shape {arr.shape}")
+
+    if arr.shape[0] in {1, 3} and arr.shape[-1] not in {1, 3}:
+        arr = np.transpose(arr, (1, 2, 0))
+
+    if arr.dtype != np.uint8:
+        if arr.max() <= 1.0:
+            arr = arr * 255.0
+        arr = np.clip(arr, 0, 255).astype(np.uint8)
+
+    if arr.shape[-1] == 3:
+        return cv2.cvtColor(arr, cv2.COLOR_RGB2BGR)
+    return arr
+
+
+def _extract_frames_b64_with_qwen(video_path: str, n_frames: int) -> Optional[List[str]]:
+    if fetch_video is None:
+        return None
+
+    video_uri = Path(video_path).expanduser().resolve().as_uri()
+    video, _sample_fps = fetch_video(
+        {"type": "video", "video": video_uri, "nframes": n_frames},
+        return_video_sample_fps=True,
+    )
+
+    frames_b64: List[str] = []
+    for frame in video:
+        frames_b64.append(_encode_frame_b64(_tensor_frame_to_bgr_uint8(frame)))
+
+    if not frames_b64:
+        return None
+
+    if len(frames_b64) < n_frames:
+        frames_b64.extend([frames_b64[-1]] * (n_frames - len(frames_b64)))
+    return frames_b64
 
 
 def _extract_frames_b64(video_path: str, n_frames: int) -> List[str]:
@@ -46,6 +130,13 @@ def _extract_frames_b64(video_path: str, n_frames: int) -> List[str]:
     if not os.path.exists(video_path):
         raise FileNotFoundError(f"Video file not found: {video_path}")
 
+    try:
+        qwen_frames = _extract_frames_b64_with_qwen(video_path, n_frames)
+        if qwen_frames:
+            return qwen_frames
+    except Exception:
+        pass
+
     cap = cv2.VideoCapture(video_path)
     if not cap.isOpened():
         raise ValueError(f"Failed to open video: {video_path}")
@@ -55,7 +146,7 @@ def _extract_frames_b64(video_path: str, n_frames: int) -> List[str]:
         if total_frames <= 0:
             ok, frame = cap.read()
             if not ok or frame is None:
-                raise ValueError(f"Could not read any frames from video: {video_path}")
+                return _extract_frames_b64_sequential(video_path, n_frames)
             encoded = _encode_frame_b64(frame)
             return [encoded] * n_frames
 
@@ -79,10 +170,13 @@ def _extract_frames_b64(video_path: str, n_frames: int) -> List[str]:
             frames_b64.append(cache[idx])
 
         if not frames_b64:
-            raise ValueError(f"Failed to extract frames from video: {video_path}")
+            return _extract_frames_b64_sequential(video_path, n_frames)
 
         if len(frames_b64) < n_frames:
-            frames_b64.extend([frames_b64[-1]] * (n_frames - len(frames_b64)))
+            try:
+                return _extract_frames_b64_sequential(video_path, n_frames)
+            except Exception:
+                frames_b64.extend([frames_b64[-1]] * (n_frames - len(frames_b64)))
 
         return frames_b64
     finally:
@@ -123,6 +217,20 @@ def _extract_response_text(response: Any) -> str:
 
     payload = response.model_dump() if hasattr(response, "model_dump") else repr(response)
     raise RuntimeError(f"API response did not contain text content: {payload}")
+
+
+def _is_input_too_long_error(exc: Exception) -> bool:
+    message = str(exc).lower()
+    patterns = (
+        "range of input length should be",
+        "maximum context length",
+        "context length",
+        "input length",
+        "request too large",
+        "payload too large",
+        "invalid_parameter_error",
+    )
+    return any(pattern in message for pattern in patterns)
 
 
 class OpenAIModel(BaseVideoQAModel):
@@ -232,12 +340,24 @@ class OpenAIModel(BaseVideoQAModel):
         max_new_tokens: int,
     ) -> str:
         client = self._get_client()
-        response = client.chat.completions.create(
-            model=self.model_id,
-            messages=[{"role": "user", "content": self._build_content(question, frames_b64)}],
-            max_tokens=int(max_new_tokens),
-        )
-        return _extract_response_text(response)
+        current_frames = list(frames_b64)
+
+        while True:
+            try:
+                response = client.chat.completions.create(
+                    model=self.model_id,
+                    messages=[{"role": "user", "content": self._build_content(question, current_frames)}],
+                    max_tokens=int(max_new_tokens),
+                )
+                return _extract_response_text(response)
+            except BadRequestError as exc:
+                if not _is_input_too_long_error(exc) or len(current_frames) <= _MIN_RETRY_FRAMES:
+                    raise
+
+                next_n_frames = max(_MIN_RETRY_FRAMES, len(current_frames) // 2)
+                if next_n_frames >= len(current_frames):
+                    raise
+                current_frames = current_frames[:next_n_frames]
 
     def _build_content(self, question: str, frames_b64: List[str]) -> List[Dict[str, Any]]:
         grounding = (
