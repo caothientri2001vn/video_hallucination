@@ -5,17 +5,11 @@
         "Does the man play the game last?",
         "Does the woman play the game first?",
         "Does the woman play the game last?",
-        "Does the man reveal number 8 first in his first turn?",
-        "Does the woman reveal number 3 first in her first turn?",
         "Does the man reveal number 0 first in his first turn?",
-        "Does the woman reveal number 8 first in her first turn?",
         "Does the man win the game?",
         "Does the woman win the game?"
     ],
     "answers": [
-        "No",
-        "Yes",
-        "Yes",
         "No",
         "Yes",
         "Yes",
@@ -27,7 +21,8 @@
     "sub-questions": [
         [
             "Does the man play the game?",
-            "Does the woman play the game before the man?"
+            "Does the woman play the game before the man?",
+            "Does the woman take her first turn before the man?"
         ],
         [
             "Does the man play the game?",
@@ -39,26 +34,28 @@
         ],
         [
             "Does the woman play the game?",
-            "Does the man play the game after the woman?"
+            "Does the man play the game after the woman?",
+            "Is the woman the final person to take a turn in the game?"
         ],
-        [],
-        [],
         [
             "Does the man play the game?",
-            "Does the man reveal number 8 in his first turn?"
+            "Does the man reveal number 8 in his first turn?",
+            "Is there a number that the woman reveals before number 0?"
         ],
-        [],
         [
             "Does the man play the game?",
-            "Does the woman win the game?"
+            "Does the woman win the game?",
+            "Does the woman lose the game?"
         ],
         [
             "Does the woman play the game?",
-            "Is there a winner in the game?"
+            "Is there a winner in the game?",
+            "Does the man lose the game?"
         ]
     ],
     "sub-answers": [
         [
+            "Yes",
             "Yes",
             "Yes"
         ],
@@ -72,20 +69,21 @@
         ],
         [
             "Yes",
-            "Yes"
+            "Yes",
+            "No"
         ],
-        [],
-        [],
         [
             "Yes",
-            "Yes"
-        ],
-        [],
-        [
             "Yes",
             "Yes"
         ],
         [
+            "Yes",
+            "Yes",
+            "No"
+        ],
+        [
+            "Yes",
             "Yes",
             "Yes"
         ]
