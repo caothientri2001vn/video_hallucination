@@ -1,15 +1,14 @@
 """
-src/models/openai_gpt.py
--------------------------
-OpenAI GPT-4o / GPT-4-vision API backend.
+src/models/openrouter_gemini.py
+------------------------------
+OpenRouter Gemini backend using raw video input with frame fallback.
 """
 
 import base64
+import mimetypes
 import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any, Dict, List, Optional
-
-import cv2
 
 try:
     from openai import OpenAI
@@ -20,84 +19,72 @@ except Exception as exc:
     ) from exc
 
 from .base import BaseVideoQAModel
+from .openai_gpt import _extract_frames_b64
 
-_FALLBACK_N_FRAMES = 32
 _DEFAULT_MAX_CONCURRENCY = 4
+_FALLBACK_N_FRAMES = 32
+_SUPPORTED_VIDEO_MIME_TYPES = {
+    "video/mp4",
+    "video/mpeg",
+    "video/quicktime",
+    "video/webm",
+}
 
 
-def _encode_frame_b64(frame: Any) -> str:
-    ok, buf = cv2.imencode(".jpg", frame)
-    if not ok:
-        raise ValueError("Failed to encode sampled video frame as JPEG")
-    return base64.b64encode(buf.tobytes()).decode("ascii")
+def _guess_video_mime_type(video_path: str) -> str:
+    mime_type, _ = mimetypes.guess_type(video_path)
+    if mime_type in _SUPPORTED_VIDEO_MIME_TYPES:
+        return mime_type
+    return "video/mp4"
 
 
-def _extract_frames_b64(video_path: str, n_frames: int) -> List[str]:
-    """
-    Sample exactly ``n_frames`` uniformly-spaced frame slots and return them as
-    base64-encoded JPEG strings.
-
-    If the source video has fewer than ``n_frames`` decoded frames, some slots
-    will map to the same underlying frame. This preserves a fixed-size visual
-    prompt for the API backend.
-    """
-    if n_frames <= 0:
-        raise ValueError(f"n_frames must be positive, got {n_frames}")
+def _encode_video_data_url(video_path: str) -> str:
     if not os.path.exists(video_path):
         raise FileNotFoundError(f"Video file not found: {video_path}")
 
-    cap = cv2.VideoCapture(video_path)
-    if not cap.isOpened():
-        raise ValueError(f"Failed to open video: {video_path}")
+    with open(video_path, "rb") as handle:
+        video_bytes = handle.read()
 
-    try:
-        total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT) or 0)
-        if total_frames <= 0:
-            ok, frame = cap.read()
-            if not ok or frame is None:
-                raise ValueError(f"Could not read any frames from video: {video_path}")
-            encoded = _encode_frame_b64(frame)
-            return [encoded] * n_frames
+    if not video_bytes:
+        raise ValueError(f"Video file is empty: {video_path}")
 
-        if n_frames == 1:
-            indices = [total_frames // 2]
-        else:
-            indices = [
-                round(i * (total_frames - 1) / (n_frames - 1))
-                for i in range(n_frames)
-            ]
+    mime_type = _guess_video_mime_type(video_path)
+    encoded = base64.b64encode(video_bytes).decode("ascii")
+    return f"data:{mime_type};base64,{encoded}"
 
-        frames_b64: List[str] = []
-        cache: Dict[int, str] = {}
-        for idx in indices:
-            if idx not in cache:
-                cap.set(cv2.CAP_PROP_POS_FRAMES, idx)
-                ok, frame = cap.read()
-                if not ok or frame is None:
-                    continue
-                cache[idx] = _encode_frame_b64(frame)
-            frames_b64.append(cache[idx])
 
-        if not frames_b64:
-            raise ValueError(f"Failed to extract frames from video: {video_path}")
+def _serialize_response(response: Any) -> Any:
+    return response.model_dump() if hasattr(response, "model_dump") else repr(response)
 
-        if len(frames_b64) < n_frames:
-            frames_b64.extend([frames_b64[-1]] * (n_frames - len(frames_b64)))
 
-        return frames_b64
-    finally:
-        cap.release()
+def _response_error_payload(response: Any) -> Optional[Dict[str, Any]]:
+    payload = _serialize_response(response)
+    if isinstance(payload, dict):
+        error = payload.get("error")
+        if isinstance(error, dict):
+            return error
+    return None
+
+
+def _should_fallback_to_frames(response: Any) -> bool:
+    error = _response_error_payload(response)
+    if not error:
+        return False
+
+    code = error.get("code")
+    message = str(error.get("message") or "").lower()
+    return code in {502, 503, 504} or "aborted" in message or "timeout" in message
 
 
 def _extract_response_text(response: Any) -> str:
     choices = getattr(response, "choices", None)
     if not choices:
-        payload = response.model_dump() if hasattr(response, "model_dump") else repr(response)
+        payload = _serialize_response(response)
         raise RuntimeError(f"API response did not include any choices: {payload}")
 
     message = getattr(choices[0], "message", None)
     if message is None:
-        payload = response.model_dump() if hasattr(response, "model_dump") else repr(response)
+        payload = _serialize_response(response)
         raise RuntimeError(f"API response choice did not include a message: {payload}")
 
     content = getattr(message, "content", None)
@@ -121,54 +108,35 @@ def _extract_response_text(response: Any) -> str:
     if isinstance(refusal, str) and refusal.strip():
         return refusal.strip()
 
-    payload = response.model_dump() if hasattr(response, "model_dump") else repr(response)
+    payload = _serialize_response(response)
     raise RuntimeError(f"API response did not contain text content: {payload}")
 
 
-class OpenAIModel(BaseVideoQAModel):
+class OpenRouterGeminiModel(BaseVideoQAModel):
     """
-    OpenAI-compatible API backend (GPT-4o, GPT-5, or any OpenRouter model).
-
-    Parameters
-    ----------
-    model_id : str
-        Model name, e.g. ``"gpt-4o"``, ``"gpt-5"`` or an OpenRouter slug like
-        ``"openrouter/google/gemini-2.5-pro"``.
-    prompt_method : str
-        Prompt template label (affects cache namespace).  Default: "vanilla".
-    n_frames : int
-        Number of uniformly-spaced frame slots to send for every video.
-        The preferred default should be injected by ``load_model`` based on the
-        model family.  This constructor keeps a fallback default of 32 for
-        direct instantiation.
-    api_key_env : str
-        Env-var name for the API key.  Default: ``"OPENAI_API_KEY"``.
-        For OpenRouter set to ``"OPENROUTER_API_KEY"``.
-    base_url : str | None
-        Override the API base URL.  Pass ``"https://openrouter.ai/api/v1"``
-        to route through OpenRouter.  Default: None (uses the openai SDK
-        default, i.e. ``"https://api.openai.com/v1"``).
-    max_concurrency : int
-        Maximum number of per-question API calls to run in parallel.
-        Default: 4.
+    OpenRouter Gemini backend that prefers raw video and falls back to frames.
     """
 
     def __init__(
         self,
         model_id: str,
         prompt_method: str = "vanilla",
-        n_frames: int = _FALLBACK_N_FRAMES,
-        api_key_env: str = "OPENAI_API_KEY",
-        base_url: Optional[str] = None,
+        api_key_env: str = "OPENROUTER_API_KEY",
+        base_url: str = "https://openrouter.ai/api/v1",
         max_concurrency: int = _DEFAULT_MAX_CONCURRENCY,
+        n_frames: int = _FALLBACK_N_FRAMES,
+        prefer_video: bool = True,
     ) -> None:
         super().__init__(model_id, prompt_method)
         if max_concurrency <= 0:
             raise ValueError(f"max_concurrency must be positive, got {max_concurrency}")
-        self.n_frames = n_frames
+        if n_frames <= 0:
+            raise ValueError(f"n_frames must be positive, got {n_frames}")
         self.api_key_env = api_key_env
         self.base_url = base_url
         self.max_concurrency = max_concurrency
+        self.n_frames = n_frames
+        self.prefer_video = prefer_video
         self._client: Optional[OpenAI] = None
 
     def answer_questions(
@@ -187,18 +155,19 @@ class OpenAIModel(BaseVideoQAModel):
                 raise ValueError(f"Empty question passed to {self!r}")
             normalized_questions.append(question)
 
+        video_data_url = _encode_video_data_url(video_path) if self.prefer_video else None
         frames_b64 = _extract_frames_b64(video_path, self.n_frames)
         results = [""] * len(normalized_questions)
         worker_count = min(self.max_concurrency, len(normalized_questions))
 
         if worker_count == 1:
             for idx, question in enumerate(normalized_questions):
-                results[idx] = self._answer_one(question, frames_b64, max_new_tokens)
+                results[idx] = self._answer_one(question, video_data_url, frames_b64, max_new_tokens)
             return results
 
         with ThreadPoolExecutor(max_workers=worker_count) as executor:
             future_to_idx = {
-                executor.submit(self._answer_one, question, frames_b64, max_new_tokens): idx
+                executor.submit(self._answer_one, question, video_data_url, frames_b64, max_new_tokens): idx
                 for idx, question in enumerate(normalized_questions)
             }
             for future in as_completed(future_to_idx):
@@ -218,34 +187,50 @@ class OpenAIModel(BaseVideoQAModel):
                 f"required for model {self.model_id!r}."
             )
 
-        kwargs: Dict[str, Any] = {"api_key": api_key}
-        if self.base_url:
-            kwargs["base_url"] = self.base_url
-
-        self._client = OpenAI(**kwargs)
+        self._client = OpenAI(api_key=api_key, base_url=self.base_url)
         return self._client
 
     def _answer_one(
         self,
         question: str,
+        video_data_url: Optional[str],
         frames_b64: List[str],
         max_new_tokens: int,
     ) -> str:
         client = self._get_client()
+        if video_data_url is not None:
+            response = client.chat.completions.create(
+                model=self.model_id,
+                messages=[{"role": "user", "content": self._build_video_content(question, video_data_url)}],
+                max_tokens=int(max_new_tokens),
+            )
+            if not _should_fallback_to_frames(response):
+                return _extract_response_text(response)
+
         response = client.chat.completions.create(
             model=self.model_id,
-            messages=[{"role": "user", "content": self._build_content(question, frames_b64)}],
+            messages=[{"role": "user", "content": self._build_frame_content(question, frames_b64)}],
             max_tokens=int(max_new_tokens),
         )
         return _extract_response_text(response)
 
-    def _build_content(self, question: str, frames_b64: List[str]) -> List[Dict[str, Any]]:
+    def _build_video_content(self, question: str, video_data_url: str) -> List[Dict[str, Any]]:
+        grounding = (
+            "IMPORTANT: only use information you can directly verify from the "
+            "video. Answer the question directly. When possible, cite rough timestamps."
+        )
+        prompt = f"{grounding}\n\nQuestion: {question}"
+        return [
+            {"type": "text", "text": prompt},
+            {"type": "video_url", "video_url": {"url": video_data_url}},
+        ]
+
+    def _build_frame_content(self, question: str, frames_b64: List[str]) -> List[Dict[str, Any]]:
         grounding = (
             "IMPORTANT: only use information you can directly verify from the "
             "video frames. Answer the question directly. When possible, cite rough timestamps."
         )
         prompt = f"{grounding}\n\nQuestion: {question}"
-
         content: List[Dict[str, Any]] = [
             {
                 "type": "image_url",

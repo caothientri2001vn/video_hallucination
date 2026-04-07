@@ -28,7 +28,7 @@ Adding a new backend
    returns the class, then add the routing prefix string.
 """
 
-from typing import Callable, Optional, Type
+from typing import Any, Callable, Optional, Type
 
 from .base import BaseVideoQAModel
 
@@ -36,6 +36,13 @@ __all__ = [
     "BaseVideoQAModel",
     "load_model",
 ]
+
+_OPENAI_FAMILY_DEFAULT_N_FRAMES = 32
+_OPENROUTER_ANTHROPIC_DEFAULT_N_FRAMES = 64
+_OPENROUTER_QWEN_DEFAULT_N_FRAMES = 64
+_OPENROUTER_INTERNVL_DEFAULT_N_FRAMES = 64
+_OPENROUTER_GEMINI_DEFAULT_N_FRAMES = 128
+
 
 # ---------------------------------------------------------------------------
 # Lazy loader helpers — each value is a zero-arg callable that imports and
@@ -58,6 +65,9 @@ def _load_openai() -> Type[BaseVideoQAModel]:
     return OpenAIModel
 
 
+def _load_openrouter_gemini() -> Type[BaseVideoQAModel]:
+    from .openrouter_gemini import OpenRouterGeminiModel  # requires: openai
+    return OpenRouterGeminiModel
 
 
 def _load_qwen3vl() -> Type[BaseVideoQAModel]:
@@ -93,6 +103,25 @@ _LAZY_PREFIX_MAP: dict[str, Callable[[], Type[BaseVideoQAModel]]] = {
 # ---------------------------------------------------------------------------
 _OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 _OPENROUTER_PREFIX = "openrouter/"
+_OPENROUTER_ANTHROPIC_PREFIX = "openrouter/anthropic/"
+_OPENROUTER_GOOGLE_GEMINI_PREFIX = "openrouter/google/gemini"
+_OPENROUTER_QWEN_PREFIX = "openrouter/qwen/"
+_OPENROUTER_INTERNVL_PREFIX = "openrouter/internvl/"
+
+
+def _with_openai_compatible_defaults(model_id: str, kwargs: dict[str, Any]) -> dict[str, Any]:
+    resolved = dict(kwargs)
+    if "n_frames" not in resolved:
+        lower = model_id.lower()
+        if lower.startswith(_OPENROUTER_ANTHROPIC_PREFIX):
+            resolved["n_frames"] = _OPENROUTER_ANTHROPIC_DEFAULT_N_FRAMES
+        elif lower.startswith(_OPENROUTER_QWEN_PREFIX):
+            resolved["n_frames"] = _OPENROUTER_QWEN_DEFAULT_N_FRAMES
+        elif lower.startswith(_OPENROUTER_INTERNVL_PREFIX):
+            resolved["n_frames"] = _OPENROUTER_INTERNVL_DEFAULT_N_FRAMES
+        else:
+            resolved["n_frames"] = _OPENAI_FAMILY_DEFAULT_N_FRAMES
+    return resolved
 
 
 def load_model(
@@ -138,22 +167,39 @@ def load_model(
 
     # 1. OpenRouter
     if lower.startswith(_OPENROUTER_PREFIX):
-        from .openai_gpt import OpenAIModel
-        # Strip the "openrouter/" prefix — the real slug goes to the API
         real_model_id = model_id[len(_OPENROUTER_PREFIX):]
+        if lower.startswith(_OPENROUTER_GOOGLE_GEMINI_PREFIX):
+            cls = _load_openrouter_gemini()
+            resolved_kwargs = dict(kwargs)
+            resolved_kwargs.setdefault("n_frames", _OPENROUTER_GEMINI_DEFAULT_N_FRAMES)
+            resolved_kwargs.setdefault("prefer_video", False)
+            return cls(
+                model_id=real_model_id,
+                prompt_method=prompt_method,
+                api_key_env="OPENROUTER_API_KEY",
+                base_url=_OPENROUTER_BASE_URL,
+                **resolved_kwargs,
+            )
+
+        from .openai_gpt import OpenAIModel
+
+        resolved_kwargs = _with_openai_compatible_defaults(model_id, kwargs)
         return OpenAIModel(
             model_id=real_model_id,
             prompt_method=prompt_method,
             api_key_env="OPENROUTER_API_KEY",
             base_url=_OPENROUTER_BASE_URL,
-            **kwargs,
+            **resolved_kwargs,
         )
 
     # 2. Named API backends
     for prefix, loader in _LAZY_PREFIX_MAP.items():
         if lower.startswith(prefix):
             cls = loader()
-            return cls(model_id=model_id, prompt_method=prompt_method, **kwargs)
+            resolved_kwargs = kwargs
+            if prefix in {"gpt", "o1", "o3"}:
+                resolved_kwargs = _with_openai_compatible_defaults(model_id, kwargs)
+            return cls(model_id=model_id, prompt_method=prompt_method, **resolved_kwargs)
 
     # 3. Default: local HuggingFace model
     cls = _load_qwen3vl()

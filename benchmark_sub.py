@@ -34,6 +34,7 @@ from argparse import ArgumentParser
 from collections import defaultdict
 from typing import Dict, List
 
+from dotenv import load_dotenv
 from tqdm import tqdm
 
 from src.cache import make_cache
@@ -149,6 +150,8 @@ def main(args) -> None:
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
+    load_dotenv()
+
     parser = ArgumentParser(description="Run model against the sub-question benchmark")
 
     # Model
