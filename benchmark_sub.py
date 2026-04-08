@@ -102,17 +102,27 @@ def main(args) -> None:
     # 2. Run per sample
     # ------------------------------------------------------------------
     per_sample_results: List[Dict[str, float]] = []
+    skipped_examples: List[str] = []
 
     for idx, sample in enumerate(tqdm(benchmark_data, desc="Evaluating")):
         groups = build_question_groups(sample)
+        example_path = sample.get("example_path", sample.get("video_path", "<unknown>"))
 
-        fill_predictions(
-            groups=groups,
-            sample=sample,
-            model=model,
-            cache=cache,
-            max_new_tokens=args.max_new_tokens,
-        )
+        try:
+            fill_predictions(
+                groups=groups,
+                sample=sample,
+                model=model,
+                cache=cache,
+                max_new_tokens=args.max_new_tokens,
+            )
+        except Exception as exc:
+            skipped_examples.append(str(example_path))
+            tqdm.write(
+                f"[{idx + 1:>4}/{len(benchmark_data)}] Skipping sample due to model/API error: {example_path}"
+            )
+            tqdm.write(f"Error: {exc}")
+            continue
 
         sample_result = evaluate(groups, metrics)
         per_sample_results.append(sample_result)
@@ -121,6 +131,9 @@ def main(args) -> None:
             f"[{idx + 1:>4}/{len(benchmark_data)}] "
             + "  ".join(f"{k}={v:.3f}" for k, v in sample_result.items() if v == v)
         )
+
+    if skipped_examples:
+        tqdm.write(f"Skipped {len(skipped_examples)} samples due to model/API errors.")
 
     # ------------------------------------------------------------------
     # 3. Aggregate and report
