@@ -2668,7 +2668,10 @@ legacy = [
     { name = "transformers", version = "4.57.1", source = { registry = "https://pypi.org/simple" } },
 ]
 openai = [
+<<<<<<< HEAD
+=======
     { name = "av" },
+>>>>>>> origin/khoi
     { name = "openai" },
     { name = "requests" },
 ]
@@ -2705,12 +2708,36 @@ gemini = [{ name = "google-genai", specifier = ">=1.16.0" }]
 legacy = [
     { name = "accelerate", specifier = ">=1.13.0" },
     { name = "av", specifier = "==16.1.0" },
+<<<<<<< HEAD
     { name = "matplotlib", specifier = ">=3.10.8" },
     { name = "qwen-vl-utils", specifier = ">=0.0.14" },
     { name = "torch", specifier = ">=2.10.0" },
     { name = "torchvision", specifier = ">=0.25.0" },
     { name = "transformers", specifier = "==4.57.1" },
 ]
+openai = [{ name = "openai", specifier = ">=1.30.0" }]
+qwen35vl = [
+    { name = "accelerate", specifier = ">=1.13.0" },
+    { name = "av", specifier = "==16.1.0" },
+    { name = "matplotlib", specifier = ">=3.10.8" },
+    { name = "qwen-vl-utils", specifier = ">=0.0.14" },
+    { name = "torch", specifier = ">=2.10.0" },
+    { name = "torchvision", specifier = ">=0.25.0" },
+    { name = "transformers", git = "https://github.com/huggingface/transformers.git?rev=d64a6d6" },
+]
+qwen3vl = [
+    { name = "accelerate", specifier = ">=1.13.0" },
+    { name = "av", specifier = "==16.1.0" },
+=======
+>>>>>>> origin/khoi
+    { name = "matplotlib", specifier = ">=3.10.8" },
+    { name = "qwen-vl-utils", specifier = ">=0.0.14" },
+    { name = "torch", specifier = ">=2.10.0" },
+    { name = "torchvision", specifier = ">=0.25.0" },
+    { name = "transformers", specifier = "==4.57.1" },
+]
+<<<<<<< HEAD
+=======
 openai = [
     { name = "av", specifier = "==16.1.0" },
     { name = "openai", specifier = ">=1.30.0" },
@@ -2734,6 +2761,7 @@ qwen3vl = [
     { name = "torchvision", specifier = ">=0.25.0" },
     { name = "transformers", specifier = "==4.57.1" },
 ]
+>>>>>>> origin/khoi
 
 [[package]]
 name = "websockets"
