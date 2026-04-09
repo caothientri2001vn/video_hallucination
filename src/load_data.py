@@ -18,6 +18,7 @@ def load_benchmark(video_dir: str, data_mode: str, questions_dir: str) -> List[D
         with open(json_file, encoding='utf-8') as fin:
             data = json.load(fin)
             data['video_path'] = str(os.path.join(video_dir, data['video_name']))
+            data['example_path'] = os.path.abspath(json_file)
             results.append(data)
 
     return results

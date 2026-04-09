@@ -9,10 +9,12 @@ if/elif chains in the calling code.
 
 Routing rules (checked in order)
 ---------------------------------
-1. Starts with ``"claude"``                    → ClaudeModel   (Anthropic API)
-2. Starts with ``"gemini"``                    → GeminiModel   (Google API)
-3. Starts with ``"gpt"`` or ``"o1"``/``"o3"`` → OpenAIModel   (OpenAI API)
-4. Anything else                               → Qwen3VLModel  (local HuggingFace)
+1. Starts with ``"vllm/"``                     → VLLMOpenAIModel (local vLLM)
+2. Starts with ``"openrouter/"``               → OpenAIModel     (OpenRouter API)
+3. Starts with ``"claude"``                    → ClaudeModel     (Anthropic API)
+4. Starts with ``"gemini"``                    → GeminiModel     (Google API)
+5. Starts with ``"gpt"`` or ``"o1"``/``"o3"`` → OpenAIModel     (OpenAI API)
+6. Anything else                               → Qwen3VLModel    (local HuggingFace)
 
 Lazy imports
 ------------
@@ -39,7 +41,7 @@ __all__ = [
 
 _OPENAI_FAMILY_DEFAULT_N_FRAMES = 32
 _OPENROUTER_ANTHROPIC_DEFAULT_N_FRAMES = 64
-_OPENROUTER_QWEN_DEFAULT_N_FRAMES = 32
+_OPENROUTER_QWEN_DEFAULT_N_FRAMES = 64
 _OPENROUTER_INTERNVL_DEFAULT_N_FRAMES = 64
 _OPENROUTER_GEMINI_DEFAULT_N_FRAMES = 128
 
@@ -63,6 +65,11 @@ def _load_gemini() -> Type[BaseVideoQAModel]:
 def _load_openai() -> Type[BaseVideoQAModel]:
     from .openai_gpt import OpenAIModel  # requires: openai
     return OpenAIModel
+
+
+def _load_vllm_openai() -> Type[BaseVideoQAModel]:
+    from .vllm_openai import VLLMOpenAIModel  # requires: openai
+    return VLLMOpenAIModel
 
 
 def _load_openrouter_gemini() -> Type[BaseVideoQAModel]:
@@ -101,6 +108,7 @@ _LAZY_PREFIX_MAP: dict[str, Callable[[], Type[BaseVideoQAModel]]] = {
 # Routed separately because we need to pass extra kwargs (base_url, api_key_env)
 # to the OpenAIModel constructor rather than just swapping the class.
 # ---------------------------------------------------------------------------
+_VLLM_PREFIX = "vllm/"
 _OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 _OPENROUTER_PREFIX = "openrouter/"
 _OPENROUTER_ANTHROPIC_PREFIX = "openrouter/anthropic/"
@@ -142,9 +150,10 @@ def load_model(
     model_id : str
         Model identifier.  Routing rules (checked in order):
 
-        1. Starts with ``"openrouter/"``           → OpenAIModel via OpenRouter API
-        2. Matches a prefix in ``_LAZY_PREFIX_MAP`` → corresponding API backend
-        3. Anything else                            → Qwen3VLModel (local HuggingFace)
+        1. Starts with ``"vllm/"``                 → VLLMOpenAIModel via local vLLM
+        2. Starts with ``"openrouter/"``           → OpenAIModel via OpenRouter API
+        3. Matches a prefix in ``_LAZY_PREFIX_MAP`` → corresponding API backend
+        4. Anything else                            → Qwen3VLModel (local HuggingFace)
 
         OpenRouter model IDs use the convention ``"openrouter/<provider>/<slug>"``,
         e.g. ``"openrouter/google/gemini-2.5-pro"``.  The ``"openrouter/"`` prefix
@@ -165,7 +174,18 @@ def load_model(
     """
     lower = model_id.lower()
 
-    # 1. OpenRouter
+    # 1. Local vLLM
+    if lower.startswith(_VLLM_PREFIX):
+        real_model_id = model_id[len(_VLLM_PREFIX):]
+        cls = _load_vllm_openai()
+        resolved_kwargs = _with_openai_compatible_defaults(model_id, kwargs)
+        return cls(
+            model_id=real_model_id,
+            prompt_method=prompt_method,
+            **resolved_kwargs,
+        )
+
+    # 2. OpenRouter
     if lower.startswith(_OPENROUTER_PREFIX):
         real_model_id = model_id[len(_OPENROUTER_PREFIX):]
         if lower.startswith(_OPENROUTER_GOOGLE_GEMINI_PREFIX):
@@ -192,7 +212,7 @@ def load_model(
             **resolved_kwargs,
         )
 
-    # 2. Named API backends
+    # 3. Named API backends
     for prefix, loader in _LAZY_PREFIX_MAP.items():
         if lower.startswith(prefix):
             cls = loader()
@@ -201,7 +221,7 @@ def load_model(
                 resolved_kwargs = _with_openai_compatible_defaults(model_id, kwargs)
             return cls(model_id=model_id, prompt_method=prompt_method, **resolved_kwargs)
 
-    # 3. Default: local HuggingFace model
+    # 4. Default: local HuggingFace model
     cls = _load_qwen3vl()
     return cls(
         model_id=model_id,

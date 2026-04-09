@@ -151,6 +151,36 @@ python benchmark_sub.py \
 > so `openrouter/google/gemini-2.5-pro` → model slug `google/gemini-2.5-pro`
 > (exactly as shown on openrouter.ai).
 
+### vLLM (localhost)
+
+Prefix `vllm/` routes any model through a local vLLM OpenAI-compatible server.
+This uses a separate backend file and leaves `src/models/openai_gpt.py` unchanged.
+
+Add these to `.env` if needed:
+
+```text
+VLLM_BASE_URL=http://localhost:8000/v1
+VLLM_API_KEY=EMPTY
+```
+
+`VLLM_API_KEY` is optional for the common localhost setup; the vLLM backend falls
+back to `EMPTY` if it is unset.
+
+```shell
+uv sync --group openai
+```
+
+```shell
+# Qwen3-VL-32B-Thinking via local vLLM
+python benchmark_sub.py \
+    --model_id vllm/Qwen/Qwen3-VL-32B-Thinking \
+    --metrics all \
+    --questions_dir benchmark_subq
+```
+
+> The `vllm/` prefix is stripped automatically before calling the API, so
+> `vllm/Qwen/Qwen3-VL-32B-Thinking` → model ID `Qwen/Qwen3-VL-32B-Thinking`.
+
 ### Common flags
 
 | Flag               | Default                     | Description                                                                                      |
@@ -168,6 +198,7 @@ Model routing is automatic based on the `--model_id` prefix:
 
 | Prefix | Backend | Required group | API key env |
 |---|---|---|---|
+| `vllm/*` | `VLLMOpenAIModel` | `uv sync --group openai` | `VLLM_API_KEY` |
 | `openrouter/*` | `OpenAIModel` → OpenRouter | `uv sync --group openai` | `OPENROUTER_API_KEY` |
 | `gemini-*` | `GeminiModel` | `uv sync --group gemini` | `GOOGLE_API_KEY` |
 | `claude-*` | `ClaudeModel` | `uv sync --group claude` | `ANTHROPIC_API_KEY` |

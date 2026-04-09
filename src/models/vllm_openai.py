@@ -1,24 +1,26 @@
 """
-src/models/openai_gpt.py
+src/models/vllm_openai.py
 -------------------------
-OpenAI GPT-4o / GPT-4-vision API backend.
+OpenAI-compatible backend for locally served vLLM models.
+
+This file intentionally mirrors the OpenAI/OpenRouter backend in a separate
+module so vLLM-specific defaults can evolve without touching
+``src/models/openai_gpt.py``.
 """
 
 import base64
 import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from collections import Counter
+from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-try:
-    import av
-except Exception as exc:
-    raise RuntimeError(
-        "Failed to import PyAV. Install with: uv sync --group openai\n"
-        f"Error: {exc}"
-    ) from exc
-
 import cv2
+import numpy as np
+
+try:
+    from qwen_vl_utils.vision_process import fetch_video
+except Exception:
+    fetch_video = None
 
 try:
     from openai import BadRequestError, OpenAI
@@ -33,11 +35,12 @@ from .base import BaseVideoQAModel
 _FALLBACK_N_FRAMES = 32
 _DEFAULT_MAX_CONCURRENCY = 4
 _MIN_RETRY_FRAMES = 4
+_DEFAULT_VLLM_API_KEY = "EMPTY"
+_DEFAULT_VLLM_BASE_URL = "http://localhost:8000/v1"
 
 
-def _encode_frame_b64(frame: av.VideoFrame) -> str:
-    bgr_frame = frame.to_ndarray(format="bgr24")
-    ok, buf = cv2.imencode(".jpg", bgr_frame)
+def _encode_frame_b64(frame: Any) -> str:
+    ok, buf = cv2.imencode(".jpg", frame)
     if not ok:
         raise ValueError("Failed to encode sampled video frame as JPEG")
     return base64.b64encode(buf.tobytes()).decode("ascii")
@@ -54,23 +57,69 @@ def _sample_evenly(items: List[str], n: int) -> List[str]:
     return [items[idx] for idx in indices]
 
 
-def _get_video_stream(container: av.container.input.InputContainer) -> av.video.stream.VideoStream:
-    if not container.streams.video:
-        raise ValueError("Video file does not contain any video streams")
-    return container.streams.video[0]
-
-
 def _extract_frames_b64_sequential(video_path: str, n_frames: int) -> List[str]:
-    with av.open(video_path) as container:
-        stream = _get_video_stream(container)
+    cap = cv2.VideoCapture(video_path)
+    if not cap.isOpened():
+        raise ValueError(f"Failed to open video for sequential decode: {video_path}")
+
+    try:
         decoded: List[str] = []
-        for frame in container.decode(stream):
+        while True:
+            ok, frame = cap.read()
+            if not ok or frame is None:
+                break
             decoded.append(_encode_frame_b64(frame))
 
         if not decoded:
             raise ValueError(f"Failed to decode any frames sequentially from video: {video_path}")
 
         return _sample_evenly(decoded, n_frames)
+    finally:
+        cap.release()
+
+
+def _tensor_frame_to_bgr_uint8(frame: Any) -> Any:
+    if hasattr(frame, "detach"):
+        arr = frame.detach().cpu().numpy()
+    else:
+        arr = np.asarray(frame)
+
+    if arr.ndim != 3:
+        raise ValueError(f"Expected 3D frame tensor/array, got shape {arr.shape}")
+
+    if arr.shape[0] in {1, 3} and arr.shape[-1] not in {1, 3}:
+        arr = np.transpose(arr, (1, 2, 0))
+
+    if arr.dtype != np.uint8:
+        if arr.max() <= 1.0:
+            arr = arr * 255.0
+        arr = np.clip(arr, 0, 255).astype(np.uint8)
+
+    if arr.shape[-1] == 3:
+        return cv2.cvtColor(arr, cv2.COLOR_RGB2BGR)
+    return arr
+
+
+def _extract_frames_b64_with_qwen(video_path: str, n_frames: int) -> Optional[List[str]]:
+    if fetch_video is None:
+        return None
+
+    video_uri = Path(video_path).expanduser().resolve().as_uri()
+    video, _sample_fps = fetch_video(
+        {"type": "video", "video": video_uri, "nframes": n_frames},
+        return_video_sample_fps=True,
+    )
+
+    frames_b64: List[str] = []
+    for frame in video:
+        frames_b64.append(_encode_frame_b64(_tensor_frame_to_bgr_uint8(frame)))
+
+    if not frames_b64:
+        return None
+
+    if len(frames_b64) < n_frames:
+        frames_b64.extend([frames_b64[-1]] * (n_frames - len(frames_b64)))
+    return frames_b64
 
 
 def _extract_frames_b64(video_path: str, n_frames: int) -> List[str]:
@@ -87,11 +136,25 @@ def _extract_frames_b64(video_path: str, n_frames: int) -> List[str]:
     if not os.path.exists(video_path):
         raise FileNotFoundError(f"Video file not found: {video_path}")
 
-    with av.open(video_path) as container:
-        stream = _get_video_stream(container)
-        total_frames = int(stream.frames or 0)
+    try:
+        qwen_frames = _extract_frames_b64_with_qwen(video_path, n_frames)
+        if qwen_frames:
+            return qwen_frames
+    except Exception:
+        pass
+
+    cap = cv2.VideoCapture(video_path)
+    if not cap.isOpened():
+        raise ValueError(f"Failed to open video: {video_path}")
+
+    try:
+        total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT) or 0)
         if total_frames <= 0:
-            return _extract_frames_b64_sequential(video_path, n_frames)
+            ok, frame = cap.read()
+            if not ok or frame is None:
+                return _extract_frames_b64_sequential(video_path, n_frames)
+            encoded = _encode_frame_b64(frame)
+            return [encoded] * n_frames
 
         if n_frames == 1:
             indices = [total_frames // 2]
@@ -101,25 +164,29 @@ def _extract_frames_b64(video_path: str, n_frames: int) -> List[str]:
                 for i in range(n_frames)
             ]
 
-        wanted = Counter(indices)
+        frames_b64: List[str] = []
         cache: Dict[int, str] = {}
-        last_needed = max(wanted)
+        for idx in indices:
+            if idx not in cache:
+                cap.set(cv2.CAP_PROP_POS_FRAMES, idx)
+                ok, frame = cap.read()
+                if not ok or frame is None:
+                    continue
+                cache[idx] = _encode_frame_b64(frame)
+            frames_b64.append(cache[idx])
 
-        for frame_idx, frame in enumerate(container.decode(stream)):
-            if frame_idx > last_needed:
-                break
-            if frame_idx in wanted and frame_idx not in cache:
-                cache[frame_idx] = _encode_frame_b64(frame)
-                if len(cache) == len(wanted):
-                    break
-
-        if not cache:
+        if not frames_b64:
             return _extract_frames_b64_sequential(video_path, n_frames)
 
-        if any(idx not in cache for idx in wanted):
-            return _extract_frames_b64_sequential(video_path, n_frames)
+        if len(frames_b64) < n_frames:
+            try:
+                return _extract_frames_b64_sequential(video_path, n_frames)
+            except Exception:
+                frames_b64.extend([frames_b64[-1]] * (n_frames - len(frames_b64)))
 
-        return [cache[idx] for idx in indices]
+        return frames_b64
+    finally:
+        cap.release()
 
 
 def _extract_response_text(response: Any) -> str:
@@ -172,32 +239,35 @@ def _is_input_too_long_error(exc: Exception) -> bool:
     return any(pattern in message for pattern in patterns)
 
 
-class OpenAIModel(BaseVideoQAModel):
+class VLLMOpenAIModel(BaseVideoQAModel):
     """
-    OpenAI-compatible API backend (GPT-4o, GPT-5, or any OpenRouter model).
+    OpenAI-compatible API backend for vLLM-served models.
 
     Parameters
     ----------
     model_id : str
-        Model name, e.g. ``"gpt-4o"``, ``"gpt-5"`` or an OpenRouter slug like
-        ``"openrouter/google/gemini-2.5-pro"``.
+        Model name exposed by the vLLM server, e.g.
+        ``"Qwen/Qwen3-VL-32B-Thinking"``.
     prompt_method : str
-        Prompt template label (affects cache namespace).  Default: "vanilla".
+        Prompt template label (affects cache namespace). Default: "vanilla".
     n_frames : int
         Number of uniformly-spaced frame slots to send for every video.
         The preferred default should be injected by ``load_model`` based on the
-        model family.  This constructor keeps a fallback default of 32 for
+        model family. This constructor keeps a fallback default of 32 for
         direct instantiation.
     api_key_env : str
-        Env-var name for the API key.  Default: ``"OPENAI_API_KEY"``.
-        For OpenRouter set to ``"OPENROUTER_API_KEY"``.
+        Env-var name for the API key. Default: ``"VLLM_API_KEY"``.
+        If unset, the client falls back to ``"EMPTY"`` which matches the
+        standard vLLM localhost examples.
     base_url : str | None
-        Override the API base URL.  Pass ``"https://openrouter.ai/api/v1"``
-        to route through OpenRouter.  Default: None (uses the openai SDK
-        default, i.e. ``"https://api.openai.com/v1"``).
+        Override the API base URL. If unset, falls back to the env var
+        ``VLLM_BASE_URL`` and finally ``"http://localhost:8000/v1"``.
     max_concurrency : int
         Maximum number of per-question API calls to run in parallel.
         Default: 4.
+    extra_body : dict[str, Any] | None
+        Optional vLLM-specific extra request parameters, e.g.
+        ``{"chat_template_kwargs": {"enable_thinking": False}}``.
     """
 
     def __init__(
@@ -205,9 +275,10 @@ class OpenAIModel(BaseVideoQAModel):
         model_id: str,
         prompt_method: str = "vanilla",
         n_frames: int = _FALLBACK_N_FRAMES,
-        api_key_env: str = "OPENAI_API_KEY",
+        api_key_env: str = "VLLM_API_KEY",
         base_url: Optional[str] = None,
         max_concurrency: int = _DEFAULT_MAX_CONCURRENCY,
+        extra_body: Optional[Dict[str, Any]] = None,
     ) -> None:
         super().__init__(model_id, prompt_method)
         if max_concurrency <= 0:
@@ -216,6 +287,7 @@ class OpenAIModel(BaseVideoQAModel):
         self.api_key_env = api_key_env
         self.base_url = base_url
         self.max_concurrency = max_concurrency
+        self.extra_body = dict(extra_body) if extra_body else None
         self._client: Optional[OpenAI] = None
 
     def answer_questions(
@@ -258,18 +330,10 @@ class OpenAIModel(BaseVideoQAModel):
         if self._client is not None:
             return self._client
 
-        api_key = os.environ.get(self.api_key_env)
-        if not api_key:
-            raise RuntimeError(
-                f"Environment variable {self.api_key_env!r} is not set; "
-                f"required for model {self.model_id!r}."
-            )
+        api_key = os.environ.get(self.api_key_env, _DEFAULT_VLLM_API_KEY)
+        base_url = self.base_url or os.environ.get("VLLM_BASE_URL", _DEFAULT_VLLM_BASE_URL)
 
-        kwargs: Dict[str, Any] = {"api_key": api_key}
-        if self.base_url:
-            kwargs["base_url"] = self.base_url
-
-        self._client = OpenAI(**kwargs)
+        self._client = OpenAI(api_key=api_key, base_url=base_url)
         return self._client
 
     def _answer_one(
@@ -283,11 +347,15 @@ class OpenAIModel(BaseVideoQAModel):
 
         while True:
             try:
-                response = client.chat.completions.create(
-                    model=self.model_id,
-                    messages=[{"role": "user", "content": self._build_content(question, current_frames)}],
-                    max_tokens=int(max_new_tokens),
-                )
+                request_kwargs: Dict[str, Any] = {
+                    "model": self.model_id,
+                    "messages": [{"role": "user", "content": self._build_content(question, current_frames)}],
+                    "max_tokens": int(max_new_tokens),
+                }
+                if self.extra_body:
+                    request_kwargs["extra_body"] = self.extra_body
+
+                response = client.chat.completions.create(**request_kwargs)
                 return _extract_response_text(response)
             except BadRequestError as exc:
                 if not _is_input_too_long_error(exc) or len(current_frames) <= _MIN_RETRY_FRAMES:
@@ -310,7 +378,6 @@ class OpenAIModel(BaseVideoQAModel):
                 "type": "image_url",
                 "image_url": {
                     "url": f"data:image/jpeg;base64,{frame_b64}",
-                    "detail": "low",
                 },
             }
             for frame_b64 in frames_b64
