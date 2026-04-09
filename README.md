@@ -41,7 +41,7 @@ For API backends, add the relevant key(s) to a `.env` file:
 
 ```text
 ANTHROPIC_API_KEY=...
-GOOGLE_API_KEY=...
+GEMINI_API_KEY=...
 OPENAI_API_KEY=...
 ```
 
@@ -208,7 +208,7 @@ Model routing is automatic based on the `--model_id` prefix:
 |---|---|---|---|
 | `vllm/*` | `VLLMOpenAIModel` | `uv sync --group openai` | `VLLM_API_KEY` |
 | `openrouter/*` | `OpenAIModel` → OpenRouter | `uv sync --group openai` | `OPENROUTER_API_KEY` |
-| `gemini-*` | `GeminiModel` | `uv sync --group gemini` | `GOOGLE_API_KEY` |
+| `gemini-*` | `GeminiModel` | `uv sync --group gemini` | `GEMINI_API_KEY` |
 | `claude-*` | `ClaudeModel` | `uv sync --group claude` | `ANTHROPIC_API_KEY` |
 | `gpt-*` / `o1-*` / `o3-*` | `OpenAIModel` | `uv sync --group openai` | `OPENAI_API_KEY` |
 | `Qwen/Qwen3.5-*` / `qwen3.5-*` | `Qwen35VLModel` | `uv sync --group qwen35vl` | — |

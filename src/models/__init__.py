@@ -62,6 +62,11 @@ def _load_gemini() -> Type[BaseVideoQAModel]:
     return GeminiModel
 
 
+def _load_pseudo_gemini() -> Type[BaseVideoQAModel]:
+    from .pseudo_gemini import PseudoGeminiModel  # requires: google-genai
+    return PseudoGeminiModel
+
+
 def _load_openai() -> Type[BaseVideoQAModel]:
     from .openai_gpt import OpenAIModel  # requires: openai
     return OpenAIModel
@@ -115,6 +120,7 @@ _OPENROUTER_ANTHROPIC_PREFIX = "openrouter/anthropic/"
 _OPENROUTER_GOOGLE_GEMINI_PREFIX = "openrouter/google/gemini"
 _OPENROUTER_QWEN_PREFIX = "openrouter/qwen/"
 _OPENROUTER_INTERNVL_PREFIX = "openrouter/internvl/"
+_PSEUDO_GEMINI_PREFIXES = ("pseudo_gemini/", "pseudo-gemini/")
 
 
 def _with_openai_compatible_defaults(model_id: str, kwargs: dict[str, Any]) -> dict[str, Any]:
@@ -216,7 +222,21 @@ def load_model(
             **resolved_kwargs,
         )
 
-    # 3. Named API backends
+    # 3. Pseudo Gemini estimator
+    for prefix in _PSEUDO_GEMINI_PREFIXES:
+        if lower.startswith(prefix):
+            real_model_id = model_id[len(prefix):]
+            cls = _load_pseudo_gemini()
+            resolved_kwargs = dict(kwargs)
+            resolved_kwargs.setdefault("n_frames", _OPENROUTER_GEMINI_DEFAULT_N_FRAMES)
+            return cls(
+                model_id=model_id,
+                api_model_id=real_model_id,
+                prompt_method=prompt_method,
+                **resolved_kwargs,
+            )
+
+    # 4. Named API backends
     for prefix, loader in _LAZY_PREFIX_MAP.items():
         if lower.startswith(prefix):
             cls = loader()
@@ -225,7 +245,7 @@ def load_model(
                 resolved_kwargs = _with_openai_compatible_defaults(model_id, kwargs)
             return cls(model_id=model_id, prompt_method=prompt_method, **resolved_kwargs)
 
-    # 4. Default: local HuggingFace model
+    # 5. Default: local HuggingFace model
     cls = _load_qwen3vl()
     return cls(
         model_id=model_id,
