@@ -68,6 +68,13 @@ CUDA_VISIBLE_DEVICES=0 python benchmark_sub.py \
     --metrics all \
     --questions_dir benchmark_subq
 
+# Qwen3-compatible checkpoint that expects a fixed FPS (for example, 4 FPS)
+CUDA_VISIBLE_DEVICES=0 python benchmark_sub.py \
+    --model_id /path/to/Cosmos-Reason2 \
+    --force_fps 4 \
+    --metrics all \
+    --questions_dir benchmark_subq
+
 # Qwen3.5-VL (auto-detected by model_id prefix)
 CUDA_VISIBLE_DEVICES=3 python benchmark_sub.py \
     --model_id Qwen/Qwen3.5-2B \
@@ -189,6 +196,7 @@ python benchmark_sub.py \
 | `--metrics`        | `all`                       | Metrics: `accuracy`, `sub_accuracy`, `consistency`, `consistency_tc`, `consistency_tw`, or `all` |
 | `--questions_dir`  | `benchmark`                 | Folder containing benchmark JSON files                                                           |
 | `--prompt_method`  | `vanilla`                   | Prompt variant label (also used as cache namespace suffix)                                       |
+| `--force_fps`      | _(none)_                    | Force the local Qwen3-VL backend to use a fixed FPS, e.g. `4` for Cosmos-Reason2                |
 | `--max_new_tokens` | `256`                       | Max tokens per answer                                                                            |
 | `--output_json`    | _(none)_                    | Write full results to a JSON file                                                                |
 | `--cache_dir`      | `cache`                     | Directory for caching model predictions                                                          |
