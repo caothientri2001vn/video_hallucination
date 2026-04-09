@@ -89,6 +89,7 @@ def main(args) -> None:
         model_id=args.model_id,
         prompt_method=args.prompt_method,
         debug_with_n_frames=args.debug_with_n_frames,
+        force_fps=args.force_fps,
     )
     cache = make_cache(model, cache_root=args.cache_dir)
     metrics = build_metrics(args.metrics)
@@ -147,6 +148,7 @@ def main(args) -> None:
                 {
                     "model_id": args.model_id,
                     "prompt_method": args.prompt_method,
+                    "force_fps": args.force_fps,
                     "cache_namespace": model.cache_namespace,
                     "metrics": final,
                     "per_sample": per_sample_results,
@@ -209,6 +211,16 @@ if __name__ == "__main__":
 
     # Model tuning
     parser.add_argument("--debug_with_n_frames", type=int, default=None)
+    parser.add_argument(
+        "--force_fps",
+        type=float,
+        default=None,
+        help=(
+            "Force a specific FPS for the local Qwen3-VL video path. "
+            "Useful for Qwen3-compatible checkpoints like Cosmos-Reason2 "
+            "that expect FPS=4."
+        ),
+    )
     parser.add_argument("--max_new_tokens", type=int, default=256)
 
     args = parser.parse_args()

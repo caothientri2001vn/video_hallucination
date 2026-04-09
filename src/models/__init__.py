@@ -40,7 +40,7 @@ __all__ = [
 ]
 
 _OPENAI_FAMILY_DEFAULT_N_FRAMES = 32
-_OPENROUTER_ANTHROPIC_DEFAULT_N_FRAMES = 64
+_OPENROUTER_ANTHROPIC_DEFAULT_N_FRAMES = 128
 _OPENROUTER_QWEN_DEFAULT_N_FRAMES = 64
 _OPENROUTER_INTERNVL_DEFAULT_N_FRAMES = 64
 _OPENROUTER_GEMINI_DEFAULT_N_FRAMES = 128
@@ -136,6 +136,7 @@ def load_model(
     model_id: str,
     prompt_method: str = "vanilla",
     debug_with_n_frames: Optional[int] = None,
+    force_fps: Optional[float] = None,
     **kwargs,
 ) -> BaseVideoQAModel:
     """
@@ -163,6 +164,9 @@ def load_model(
         it flows through to the cache namespace.  Default: ``"vanilla"``.
     debug_with_n_frames : int | None
         Only meaningful for local (Qwen3VL) models.  Ignored by API backends.
+    force_fps : float | None
+        Only meaningful for the local Qwen3-VL backend. When set, injects a
+        fixed FPS into video preprocessing, e.g. ``4`` for Cosmos-Reason2.
     **kwargs
         Forwarded to the backend constructor.  Useful for overriding
         per-model defaults like ``n_frames``, ``video_upload``, etc.
@@ -227,5 +231,6 @@ def load_model(
         model_id=model_id,
         prompt_method=prompt_method,
         debug_with_n_frames=debug_with_n_frames,
+        force_fps=force_fps,
         **kwargs,
     )

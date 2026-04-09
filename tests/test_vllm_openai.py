@@ -37,3 +37,27 @@ def test_vllm_client_defaults_to_localhost_and_empty_key(monkeypatch):
         "api_key": "EMPTY",
         "base_url": "http://localhost:8000/v1",
     }
+
+
+def test_load_model_passes_force_fps_to_local_qwen_backend(monkeypatch):
+    from src import models as models_module
+
+    captured = {}
+
+    class DummyLocalModel:
+        def __init__(self, **kwargs):
+            captured.update(kwargs)
+
+    monkeypatch.setattr(models_module, "_load_qwen3vl", lambda: DummyLocalModel)
+
+    model = models_module.load_model(
+        "weights/cosmos_reason2",
+        prompt_method="vanilla",
+        debug_with_n_frames=8,
+        force_fps=4,
+    )
+
+    assert isinstance(model, DummyLocalModel)
+    assert captured["model_id"] == "weights/cosmos_reason2"
+    assert captured["debug_with_n_frames"] == 8
+    assert captured["force_fps"] == 4

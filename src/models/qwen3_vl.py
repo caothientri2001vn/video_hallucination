@@ -2,8 +2,8 @@
 src/models/qwen3_vl.py
 -----------------------
 Local HuggingFace backend for Qwen3-VL models.
-Refactored from the original src/run_model.py with no behaviour changes —
-only the public surface has changed to match BaseVideoQAModel.
+Supports optional fixed-FPS injection for Qwen3-compatible checkpoints that
+expect a specific video sampling rate.
 """
 
 import os
@@ -44,6 +44,13 @@ def _to_file_uri(p: str) -> str:
     return Path(p).expanduser().resolve().as_uri()
 
 
+def _format_fps_tag(fps: float) -> str:
+    fps = float(fps)
+    if fps.is_integer():
+        return str(int(fps))
+    return str(fps).replace(".", "p")
+
+
 @dataclass
 class _LoadedWeights:
     model_id: str
@@ -66,6 +73,10 @@ class Qwen3VLModel(BaseVideoQAModel):
     debug_with_n_frames : int | None
         When set, only this many evenly-spaced frames are sampled from the
         video and written to ``sampled_frames/`` for inspection.
+    force_fps : float | None
+        When set, inject this FPS into the video message and processor kwargs.
+        Useful for Qwen3-compatible checkpoints that expect a fixed sampling
+        rate, such as Cosmos-Reason2 at 4 FPS.
     """
 
     def __init__(
@@ -73,9 +84,13 @@ class Qwen3VLModel(BaseVideoQAModel):
         model_id: str,
         prompt_method: str = "vanilla",
         debug_with_n_frames: Optional[int] = None,
+        force_fps: Optional[float] = None,
     ) -> None:
         super().__init__(model_id, prompt_method)
         self.debug_with_n_frames = debug_with_n_frames
+        if force_fps is not None and float(force_fps) <= 0:
+            raise ValueError("force_fps must be > 0 when provided")
+        self.force_fps = float(force_fps) if force_fps is not None else None
         self._loaded: Optional[_LoadedWeights] = None
 
     # ------------------------------------------------------------------
@@ -94,9 +109,20 @@ class Qwen3VLModel(BaseVideoQAModel):
             if not question:
                 raise ValueError(f"Empty question passed to {self!r}")
             messages = self._build_messages(video_path, question)
-            answer, _ = self._generate_one(messages, max_new_tokens)
+            answer, _ = self._generate_one(
+                messages,
+                max_new_tokens,
+                force_fps=self.force_fps,
+            )
             results.append(answer.strip())
         return results
+
+    @property
+    def cache_namespace(self) -> str:
+        base_namespace = super().cache_namespace
+        if self.force_fps is None:
+            return base_namespace
+        return f"{base_namespace}__fps{_format_fps_tag(self.force_fps)}"
 
     # ------------------------------------------------------------------
     # Internal helpers
@@ -128,15 +154,50 @@ class Qwen3VLModel(BaseVideoQAModel):
             "rough timestamps."
         )
         prompt = f"{grounding}\n\nQuestion: {question}"
+        video_content: Dict[str, Any] = {
+            "type": "video",
+            "video": _to_file_uri(video_path),
+        }
+        if self.debug_with_n_frames is not None:
+            video_content["nframes"] = self.debug_with_n_frames
+        if self.force_fps is not None:
+            video_content["fps"] = self.force_fps
+
         content: List[Dict[str, Any]] = [
-            {
-                "type": "video",
-                "video": _to_file_uri(video_path),
-                **({"nframes": self.debug_with_n_frames} if self.debug_with_n_frames else {}),
-            },
+            video_content,
             {"type": "text", "text": prompt},
         ]
         return [{"role": "user", "content": content}]
+
+    @staticmethod
+    def _inject_force_fps(
+        messages: List[Dict[str, Any]],
+        force_fps: Optional[float],
+    ) -> List[Dict[str, Any]]:
+        if force_fps is None:
+            return messages
+
+        injected_messages: List[Dict[str, Any]] = []
+        for message in messages:
+            new_message = dict(message)
+            content = message.get("content")
+            if not isinstance(content, list):
+                injected_messages.append(new_message)
+                continue
+
+            new_content: List[Dict[str, Any]] = []
+            for item in content:
+                if not isinstance(item, dict):
+                    new_content.append(item)
+                    continue
+
+                new_item = dict(item)
+                if new_item.get("type") == "video":
+                    new_item["fps"] = float(force_fps)
+                new_content.append(new_item)
+            new_message["content"] = new_content
+            injected_messages.append(new_message)
+        return injected_messages
 
     def _generate_one(
         self,
@@ -146,6 +207,8 @@ class Qwen3VLModel(BaseVideoQAModel):
     ) -> Tuple[str, Dict[str, Any]]:
         loaded = self._load_weights()
         model, processor = loaded.model, loaded.processor
+        effective_fps = self.force_fps if force_fps is None else float(force_fps)
+        messages = self._inject_force_fps(messages, effective_fps)
 
         text = processor.apply_chat_template(
             messages, tokenize=False, add_generation_prompt=True
@@ -169,9 +232,12 @@ class Qwen3VLModel(BaseVideoQAModel):
             videos, video_metadatas = zip(*videos)
             videos, video_metadatas = list(videos), list(video_metadatas)
 
-        if force_fps is not None:
-            video_kwargs = dict(video_kwargs or {})
-            video_kwargs["fps"] = float(force_fps)
+        video_kwargs = dict(video_kwargs or {})
+        if "fps" in video_kwargs and isinstance(video_kwargs["fps"], list):
+            video_kwargs["fps"] = video_kwargs["fps"][0]
+
+        if effective_fps is not None:
+            video_kwargs["fps"] = effective_fps
 
         inputs = processor(
             text=text,
@@ -207,7 +273,7 @@ class Qwen3VLModel(BaseVideoQAModel):
             "model_id": self.model_id,
             "max_new_tokens": int(max_new_tokens),
             "greedy": True,
-            "force_fps": force_fps,
+            "force_fps": effective_fps,
             "latency_sec": round(dt, 3),
         }
         return out_text, debug
