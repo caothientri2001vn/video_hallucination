@@ -74,6 +74,17 @@ openai = [
     "openai>=1.30.0",
 ]
 
+# VideoRFT (QiWang98/VideoRFT) — Qwen2.5-VL-7B fine-tuned with RFT
+# Uses the same deps as qwen3vl (stable transformers ≥ 4.51 includes Qwen2.5-VL).
+videorft = [
+    "accelerate>=1.13.0",
+    "av==16.1.0",
+    "qwen-vl-utils>=0.0.14",
+    "torch>=2.10.0",
+    "torchvision>=0.25.0",
+    "transformers>=4.51.0",
+]
+
 # --- Legacy alias (kept for backward-compat with old README command) -------
 legacy = [{ include-group = "qwen3vl" }]
 

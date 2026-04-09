@@ -60,6 +60,16 @@ def _load_openai() -> Type[BaseVideoQAModel]:
 
 
 
+def _load_videorft() -> Type[BaseVideoQAModel]:
+    from .video_rft import VideoRFTModel  # requires: transformers>=4.51, qwen-vl-utils
+    return VideoRFTModel
+
+
+def _load_videor1() -> Type[BaseVideoQAModel]:
+    from .video_r1 import VideoR1Model  # requires: transformers>=4.51, qwen-vl-utils
+    return VideoR1Model
+
+
 def _load_qwen3vl() -> Type[BaseVideoQAModel]:
     from .qwen3_vl import Qwen3VLModel  # requires: transformers==4.57.1, qwen-vl-utils
     return Qwen3VLModel
@@ -111,6 +121,8 @@ _LAZY_PREFIX_MAP: dict[str, Callable[[], Type[BaseVideoQAModel]]] = {
     "o3": _load_openai,
     "qwen/qwen3.5": _load_qwen35vl,
     "qwen3.5": _load_qwen35vl,
+    "qiwang98/": _load_videorft,
+    "video-r1/": _load_videor1,
 }
 
 # ---------------------------------------------------------------------------

@@ -26,6 +26,8 @@ Each model backend has its own dependency group. Install only what you need:
 |---|---|---|
 | Qwen3-VL-8B (local GPU) | `uv sync --group qwen3vl` | |
 | Qwen3.5-VL + frame selectors (local GPU) | `uv sync --group qwen35vl` | dev transformers |
+| VideoRFT (local GPU) | `uv sync --group videorft` | Qwen2.5-VL fine-tuned w/ RFT |
+| Video-R1 (local GPU) | `uv sync --group videorft` | Qwen2.5-VL + RL with CoT reasoning |
 | TraveLER (vLLM server) | `uv sync --group openai` | vLLM served separately |
 | Claude API | `uv sync --group claude` | |
 | Gemini API | `uv sync --group gemini` | |
@@ -90,6 +92,38 @@ CUDA_VISIBLE_DEVICES=0 python benchmark_sub.py \
     --prompt_method thinking \
     --metrics all \
     --questions_dir benchmark_subq
+```
+
+### VideoRFT (Qwen2.5-VL fine-tuned with Reinforced Fine-Tuning)
+> Available model IDs:
+> - `QiWang98/VideoRFT` — 7B, full RFT (recommended)
+> - `QiWang98/VideoRFT-SFT` — 7B, SFT only
+
+```shell
+uv sync --group videorft
+```
+
+```shell
+# VideoRFT-7B
+CUDA_VISIBLE_DEVICES=0 python benchmark_sub.py \
+    --model_id QiWang98/VideoRFT \
+    --metrics all \
+    --questions_dir benchmark_subq \
+    --max_new_tokens 512
+```
+
+### Video-R1 (Qwen2.5-VL fine-tuned with RL + CoT reasoning)
+
+```shell
+uv sync --group videorft
+```
+
+```shell
+CUDA_VISIBLE_DEVICES=0 python benchmark_sub.py \
+    --model_id Video-R1/Video-R1-7B \
+    --metrics all \
+    --questions_dir benchmark_subq \
+    --max_new_tokens 1024
 ```
 
 ### Frame-selection pipelines
