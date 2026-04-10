@@ -42,7 +42,7 @@ For API backends, add the relevant key(s) to a `.env` file:
 
 ```text
 ANTHROPIC_API_KEY=...
-GOOGLE_API_KEY=...
+GEMINI_API_KEY=...
 OPENAI_API_KEY=...
 OPENROUTER_API_KEY=...
 
@@ -242,6 +242,29 @@ python benchmark_sub.py \
 # Custom server URL
 VLLM_BASE_URL=http://my-server:8123/v1 python benchmark_sub.py \
     --model_id traveler/Qwen/Qwen3.5-2B \
+### vLLM (localhost)
+
+Prefix `vllm/` routes any model through a local vLLM OpenAI-compatible server.
+This uses a separate backend file and leaves `src/models/openai_gpt.py` unchanged.
+
+Add these to `.env` if needed:
+
+```text
+VLLM_BASE_URL=http://localhost:8000/v1
+VLLM_API_KEY=EMPTY
+```
+
+`VLLM_API_KEY` is optional for the common localhost setup; the vLLM backend falls
+back to `EMPTY` if it is unset.
+
+```shell
+uv sync --group openai
+```
+
+```shell
+# Qwen3-VL-32B-Thinking via local vLLM
+python benchmark_sub.py \
+    --model_id vllm/Qwen/Qwen3-VL-32B-Thinking \
     --metrics all \
     --questions_dir benchmark_subq
 ```
@@ -253,6 +276,8 @@ VLLM_BASE_URL=http://my-server:8123/v1 python benchmark_sub.py \
 > **Pipeline hyperparams** can be overridden via `load_model(**kwargs)` in
 > Python code: `max_iters` (default 3), `view_range` (2 s), `num_questions` (3),
 > `init_frames` (5), `video_fps` (10).
+> The `vllm/` prefix is stripped automatically before calling the API, so
+> `vllm/Qwen/Qwen3-VL-32B-Thinking` → model ID `Qwen/Qwen3-VL-32B-Thinking`.
 
 ### Common flags
 
@@ -279,6 +304,13 @@ Model routing is automatic based on the `--model_id` prefix:
 | `<sel>+<model>` | `FramePipelineModel` | `uv sync --group qwen35vl` | sel = uniform / clip / aks / efs |
 | `Qwen/Qwen3.5-*` / `qwen3.5-*` | `Qwen35VLModel` | `uv sync --group qwen35vl` | Internal video sampling |
 | anything else | `Qwen3VLModel` | `uv sync --group qwen3vl` | Internal video sampling |
+| `vllm/*` | `VLLMOpenAIModel` | `uv sync --group openai` | `VLLM_API_KEY` |
+| `openrouter/*` | `OpenAIModel` → OpenRouter | `uv sync --group openai` | `OPENROUTER_API_KEY` |
+| `gemini-*` | `GeminiModel` | `uv sync --group gemini` | `GEMINI_API_KEY` |
+| `claude-*` | `ClaudeModel` | `uv sync --group claude` | `ANTHROPIC_API_KEY` |
+| `gpt-*` / `o1-*` / `o3-*` | `OpenAIModel` | `uv sync --group openai` | `OPENAI_API_KEY` |
+| `Qwen/Qwen3.5-*` / `qwen3.5-*` | `Qwen35VLModel` | `uv sync --group qwen35vl` | — |
+| anything else | `Qwen3VLModel` | `uv sync --group qwen3vl` | — |
 
 ## Prompt for augmentation
 

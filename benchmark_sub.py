@@ -34,6 +34,7 @@ from argparse import ArgumentParser
 from collections import defaultdict
 from typing import Dict, List
 
+from dotenv import load_dotenv
 from tqdm import tqdm
 
 from src.cache import make_cache
@@ -88,6 +89,7 @@ def main(args) -> None:
         model_id=args.model_id,
         prompt_method=args.prompt_method,
         debug_with_n_frames=args.debug_with_n_frames,
+        force_fps=args.force_fps,
     )
     cache = make_cache(model, cache_root=args.cache_dir)
     metrics = build_metrics(args.metrics)
@@ -101,17 +103,27 @@ def main(args) -> None:
     # 2. Run per sample
     # ------------------------------------------------------------------
     per_sample_results: List[Dict[str, float]] = []
+    skipped_examples: List[str] = []
 
     for idx, sample in enumerate(tqdm(benchmark_data, desc="Evaluating")):
         groups = build_question_groups(sample)
+        example_path = sample.get("example_path", sample.get("video_path", "<unknown>"))
 
-        fill_predictions(
-            groups=groups,
-            sample=sample,
-            model=model,
-            cache=cache,
-            max_new_tokens=args.max_new_tokens,
-        )
+        try:
+            fill_predictions(
+                groups=groups,
+                sample=sample,
+                model=model,
+                cache=cache,
+                max_new_tokens=args.max_new_tokens,
+            )
+        except Exception as exc:
+            skipped_examples.append(str(example_path))
+            tqdm.write(
+                f"[{idx + 1:>4}/{len(benchmark_data)}] Skipping sample due to model/API error: {example_path}"
+            )
+            tqdm.write(f"Error: {exc}")
+            continue
 
         sample_result = evaluate(groups, metrics)
         per_sample_results.append(sample_result)
@@ -120,6 +132,9 @@ def main(args) -> None:
             f"[{idx + 1:>4}/{len(benchmark_data)}] "
             + "  ".join(f"{k}={v:.3f}" for k, v in sample_result.items() if v == v)
         )
+
+    if skipped_examples:
+        tqdm.write(f"Skipped {len(skipped_examples)} samples due to model/API errors.")
 
     # ------------------------------------------------------------------
     # 3. Aggregate and report
@@ -133,6 +148,7 @@ def main(args) -> None:
                 {
                     "model_id": args.model_id,
                     "prompt_method": args.prompt_method,
+                    "force_fps": args.force_fps,
                     "cache_namespace": model.cache_namespace,
                     "metrics": final,
                     "per_sample": per_sample_results,
@@ -149,6 +165,8 @@ def main(args) -> None:
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
+    load_dotenv()
+
     parser = ArgumentParser(description="Run model against the sub-question benchmark")
 
     # Model
@@ -193,6 +211,16 @@ if __name__ == "__main__":
 
     # Model tuning
     parser.add_argument("--debug_with_n_frames", type=int, default=None)
+    parser.add_argument(
+        "--force_fps",
+        type=float,
+        default=None,
+        help=(
+            "Force a specific FPS for the local Qwen3-VL video path. "
+            "Useful for Qwen3-compatible checkpoints like Cosmos-Reason2 "
+            "that expect FPS=4."
+        ),
+    )
     parser.add_argument("--max_new_tokens", type=int, default=256)
 
     args = parser.parse_args()

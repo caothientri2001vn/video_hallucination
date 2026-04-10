@@ -4,7 +4,7 @@
 # API keys are NEVER stored here — only the name of the environment variable
 # that holds each key.  Set the env var in your shell or .env file:
 #   export ANTHROPIC_API_KEY="sk-ant-..."
-#   export GOOGLE_API_KEY="AIza..."
+#   export GEMINI_API_KEY="AIza..."
 #   export OPENAI_API_KEY="sk-..."
 
 # ---------------------------------------------------------------------------
@@ -40,14 +40,14 @@
 # ---------------------------------------------------------------------------
 
 "gemini-2.5-pro":
-  api_key_env: GOOGLE_API_KEY
+  api_key_env: GEMINI_API_KEY
   # true  → upload whole video via Files API (better for long videos)
   # false → extract frames and base64-encode them
   video_upload: true
   n_frames: 16   # used only when video_upload is false
 
 "gemini-2.0-flash":
-  api_key_env: GOOGLE_API_KEY
+  api_key_env: GEMINI_API_KEY
   video_upload: true
   n_frames: 16
 
@@ -57,8 +57,8 @@
 
 "gpt-4o":
   api_key_env: OPENAI_API_KEY
-  n_frames: 16
+  n_frames: 32
 
 "gpt-4o-mini":
   api_key_env: OPENAI_API_KEY
-  n_frames: 16
+  n_frames: 32

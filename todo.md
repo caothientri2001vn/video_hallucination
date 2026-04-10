@@ -1,3 +1,0 @@
-- [ ] Use Yes answer to create a list of facts
-- [ ] Repeat facts, bold the facts (**FACT**)
-- [ ] Prompt for 1 question for each type

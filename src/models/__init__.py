@@ -9,10 +9,12 @@ if/elif chains in the calling code.
 
 Routing rules (checked in order)
 ---------------------------------
-1. Starts with ``"claude"``                    → ClaudeModel   (Anthropic API)
-2. Starts with ``"gemini"``                    → GeminiModel   (Google API)
-3. Starts with ``"gpt"`` or ``"o1"``/``"o3"`` → OpenAIModel   (OpenAI API)
-4. Anything else                               → Qwen3VLModel  (local HuggingFace)
+1. Starts with ``"vllm/"``                     → VLLMOpenAIModel (local vLLM)
+2. Starts with ``"openrouter/"``               → OpenAIModel     (OpenRouter API)
+3. Starts with ``"claude"``                    → ClaudeModel     (Anthropic API)
+4. Starts with ``"gemini"``                    → GeminiModel     (Google API)
+5. Starts with ``"gpt"`` or ``"o1"``/``"o3"`` → OpenAIModel     (OpenAI API)
+6. Anything else                               → Qwen3VLModel    (local HuggingFace)
 
 Lazy imports
 ------------
@@ -28,7 +30,7 @@ Adding a new backend
    returns the class, then add the routing prefix string.
 """
 
-from typing import Callable, Optional, Type
+from typing import Any, Callable, Optional, Type
 
 from .base import BaseVideoQAModel
 
@@ -36,6 +38,13 @@ __all__ = [
     "BaseVideoQAModel",
     "load_model",
 ]
+
+_OPENAI_FAMILY_DEFAULT_N_FRAMES = 32
+_OPENROUTER_ANTHROPIC_DEFAULT_N_FRAMES = 128
+_OPENROUTER_QWEN_DEFAULT_N_FRAMES = 64
+_OPENROUTER_INTERNVL_DEFAULT_N_FRAMES = 64
+_OPENROUTER_GEMINI_DEFAULT_N_FRAMES = 128
+
 
 # ---------------------------------------------------------------------------
 # Lazy loader helpers — each value is a zero-arg callable that imports and
@@ -53,11 +62,24 @@ def _load_gemini() -> Type[BaseVideoQAModel]:
     return GeminiModel
 
 
+def _load_pseudo_gemini() -> Type[BaseVideoQAModel]:
+    from .pseudo_gemini import PseudoGeminiModel  # requires: google-genai
+    return PseudoGeminiModel
+
+
 def _load_openai() -> Type[BaseVideoQAModel]:
     from .openai_gpt import OpenAIModel  # requires: openai
     return OpenAIModel
 
 
+def _load_vllm_openai() -> Type[BaseVideoQAModel]:
+    from .vllm_openai import VLLMOpenAIModel  # requires: openai
+    return VLLMOpenAIModel
+
+
+def _load_openrouter_gemini() -> Type[BaseVideoQAModel]:
+    from .openrouter_gemini import OpenRouterGeminiModel  # requires: openai
+    return OpenRouterGeminiModel
 
 
 def _load_qwen3vl() -> Type[BaseVideoQAModel]:
@@ -118,14 +140,36 @@ _LAZY_PREFIX_MAP: dict[str, Callable[[], Type[BaseVideoQAModel]]] = {
 # Routed separately because we need to pass extra kwargs (base_url, api_key_env)
 # to the OpenAIModel constructor rather than just swapping the class.
 # ---------------------------------------------------------------------------
+_VLLM_PREFIX = "vllm/"
 _OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 _OPENROUTER_PREFIX = "openrouter/"
+_OPENROUTER_ANTHROPIC_PREFIX = "openrouter/anthropic/"
+_OPENROUTER_GOOGLE_GEMINI_PREFIX = "openrouter/google/gemini"
+_OPENROUTER_QWEN_PREFIX = "openrouter/qwen/"
+_OPENROUTER_INTERNVL_PREFIX = "openrouter/internvl/"
+_PSEUDO_GEMINI_PREFIXES = ("pseudo_gemini/", "pseudo-gemini/")
+
+
+def _with_openai_compatible_defaults(model_id: str, kwargs: dict[str, Any]) -> dict[str, Any]:
+    resolved = dict(kwargs)
+    if "n_frames" not in resolved:
+        lower = model_id.lower()
+        if lower.startswith(_OPENROUTER_ANTHROPIC_PREFIX):
+            resolved["n_frames"] = _OPENROUTER_ANTHROPIC_DEFAULT_N_FRAMES
+        elif lower.startswith(_OPENROUTER_QWEN_PREFIX):
+            resolved["n_frames"] = _OPENROUTER_QWEN_DEFAULT_N_FRAMES
+        elif lower.startswith(_OPENROUTER_INTERNVL_PREFIX):
+            resolved["n_frames"] = _OPENROUTER_INTERNVL_DEFAULT_N_FRAMES
+        else:
+            resolved["n_frames"] = _OPENAI_FAMILY_DEFAULT_N_FRAMES
+    return resolved
 
 
 def load_model(
     model_id: str,
     prompt_method: str = "vanilla",
     debug_with_n_frames: Optional[int] = None,
+    force_fps: Optional[float] = None,
     **kwargs,
 ) -> BaseVideoQAModel:
     """
@@ -140,9 +184,10 @@ def load_model(
     model_id : str
         Model identifier.  Routing rules (checked in order):
 
-        1. Starts with ``"openrouter/"``           → OpenAIModel via OpenRouter API
-        2. Matches a prefix in ``_LAZY_PREFIX_MAP`` → corresponding API backend
-        3. Anything else                            → Qwen3VLModel (local HuggingFace)
+        1. Starts with ``"vllm/"``                 → VLLMOpenAIModel via local vLLM
+        2. Starts with ``"openrouter/"``           → OpenAIModel via OpenRouter API
+        3. Matches a prefix in ``_LAZY_PREFIX_MAP`` → corresponding API backend
+        4. Anything else                            → Qwen3VLModel (local HuggingFace)
 
         OpenRouter model IDs use the convention ``"openrouter/<provider>/<slug>"``,
         e.g. ``"openrouter/google/gemini-2.5-pro"``.  The ``"openrouter/"`` prefix
@@ -152,6 +197,9 @@ def load_model(
         it flows through to the cache namespace.  Default: ``"vanilla"``.
     debug_with_n_frames : int | None
         Only meaningful for local (Qwen3VL) models.  Ignored by API backends.
+    force_fps : float | None
+        Only meaningful for the local Qwen3-VL backend. When set, injects a
+        fixed FPS into video preprocessing, e.g. ``4`` for Cosmos-Reason2.
     **kwargs
         Forwarded to the backend constructor.  Useful for overriding
         per-model defaults like ``n_frames``, ``video_upload``, etc.
@@ -176,31 +224,73 @@ def load_model(
                 prompt_method=prompt_method,
                 **kwargs,
             )
+    # 1. Local vLLM
+    if lower.startswith(_VLLM_PREFIX):
+        real_model_id = model_id[len(_VLLM_PREFIX):]
+        cls = _load_vllm_openai()
+        resolved_kwargs = _with_openai_compatible_defaults(model_id, kwargs)
+        return cls(
+            model_id=real_model_id,
+            prompt_method=prompt_method,
+            **resolved_kwargs,
+        )
 
     # 2. OpenRouter
     if lower.startswith(_OPENROUTER_PREFIX):
-        from .openai_gpt import OpenAIModel
-        # Strip the "openrouter/" prefix — the real slug goes to the API
         real_model_id = model_id[len(_OPENROUTER_PREFIX):]
+        if lower.startswith(_OPENROUTER_GOOGLE_GEMINI_PREFIX):
+            cls = _load_openrouter_gemini()
+            resolved_kwargs = dict(kwargs)
+            resolved_kwargs.setdefault("n_frames", _OPENROUTER_GEMINI_DEFAULT_N_FRAMES)
+            resolved_kwargs.setdefault("prefer_video", False)
+            return cls(
+                model_id=real_model_id,
+                prompt_method=prompt_method,
+                api_key_env="OPENROUTER_API_KEY",
+                base_url=_OPENROUTER_BASE_URL,
+                **resolved_kwargs,
+            )
+
+        from .openai_gpt import OpenAIModel
+
+        resolved_kwargs = _with_openai_compatible_defaults(model_id, kwargs)
         return OpenAIModel(
             model_id=real_model_id,
             prompt_method=prompt_method,
             api_key_env="OPENROUTER_API_KEY",
             base_url=_OPENROUTER_BASE_URL,
-            **kwargs,
+            **resolved_kwargs,
         )
 
-    # 2. Named API backends
+    # 3. Pseudo Gemini estimator
+    for prefix in _PSEUDO_GEMINI_PREFIXES:
+        if lower.startswith(prefix):
+            real_model_id = model_id[len(prefix):]
+            cls = _load_pseudo_gemini()
+            resolved_kwargs = dict(kwargs)
+            resolved_kwargs.setdefault("n_frames", _OPENROUTER_GEMINI_DEFAULT_N_FRAMES)
+            return cls(
+                model_id=model_id,
+                api_model_id=real_model_id,
+                prompt_method=prompt_method,
+                **resolved_kwargs,
+            )
+
+    # 4. Named API backends
     for prefix, loader in _LAZY_PREFIX_MAP.items():
         if lower.startswith(prefix):
             cls = loader()
-            return cls(model_id=model_id, prompt_method=prompt_method, **kwargs)
+            resolved_kwargs = kwargs
+            if prefix in {"gpt", "o1", "o3"}:
+                resolved_kwargs = _with_openai_compatible_defaults(model_id, kwargs)
+            return cls(model_id=model_id, prompt_method=prompt_method, **resolved_kwargs)
 
-    # 3. Default: local HuggingFace model
+    # 5. Default: local HuggingFace model
     cls = _load_qwen3vl()
     return cls(
         model_id=model_id,
         prompt_method=prompt_method,
         debug_with_n_frames=debug_with_n_frames,
+        force_fps=force_fps,
         **kwargs,
     )
