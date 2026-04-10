@@ -92,6 +92,33 @@ def _load_qwen35vl() -> Type[BaseVideoQAModel]:
     return Qwen35VLModel
 
 
+def _load_traveler(model_id: str, prompt_method: str, **kwargs) -> BaseVideoQAModel:
+    """Instantiate TraveLERModel. model_id format: ``"traveler/<vllm_model_name>"``."""
+    from .traveler import TraveLERModel  # requires: openai
+    return TraveLERModel(model_id=model_id, prompt_method=prompt_method, **kwargs)
+
+
+def _load_frame_pipeline(
+    model_id: str,
+    prompt_method: str,
+    **kwargs,
+) -> BaseVideoQAModel:
+    """
+    Parse ``"<selector>+<backbone>"`` and return a ``FramePipelineModel`` instance.
+    Called directly from ``load_model`` — returns an instance, not a class.
+    """
+    from .frame_pipeline import FramePipelineModel
+    selector_name, backbone_model_id = model_id.split("+", 1)
+    return FramePipelineModel(
+        selector_name=selector_name.lower(),
+        backbone_model_id=backbone_model_id,
+        prompt_method=prompt_method,
+        **kwargs,
+    )
+
+
+_FRAME_SELECTOR_NAMES = {"uniform", "clip", "aks", "efs"}
+
 # ---------------------------------------------------------------------------
 # Prefix map for regular backends (prefix → lazy class loader).
 # NOTE: longer prefixes must come first so they match before shorter ones
@@ -184,6 +211,19 @@ def load_model(
     """
     lower = model_id.lower()
 
+    # 1. TraveLER multi-agent pipeline: "traveler/<vllm_model_name>"
+    if lower.startswith("traveler/"):
+        return _load_traveler(model_id=model_id, prompt_method=prompt_method, **kwargs)
+
+    # 2. Frame-selection pipeline: "<selector>+<backbone_model_id>"
+    if "+" in model_id:
+        prefix = model_id.split("+", 1)[0].lower()
+        if prefix in _FRAME_SELECTOR_NAMES:
+            return _load_frame_pipeline(
+                model_id=model_id,
+                prompt_method=prompt_method,
+                **kwargs,
+            )
     # 1. Local vLLM
     if lower.startswith(_VLLM_PREFIX):
         real_model_id = model_id[len(_VLLM_PREFIX):]
