@@ -171,6 +171,93 @@ class Qwen35VLModel(BaseVideoQAModel):
         self._loaded = _LoadedWeights(self.model_id, model, processor)
         return self._loaded
 
+    # ------------------------------------------------------------------
+    # Frame-based inference (used by FramePipelineModel)
+    # ------------------------------------------------------------------
+
+    def answer_from_frames(
+        self,
+        frames: List[Any],
+        question: str,
+        max_new_tokens: int = 256,
+    ) -> str:
+        """
+        Run inference on pre-extracted PIL Image frames instead of a video path.
+        Called by ``FramePipelineModel`` after a frame selector has run.
+        """
+        question = question.strip()
+        messages = self._build_messages_from_frames(frames, question)
+        answer, _ = self._generate_one_from_frames(messages, max_new_tokens)
+        return answer
+
+    def _build_messages_from_frames(
+        self, frames: List[Any], question: str
+    ) -> List[Dict[str, Any]]:
+        grounding = (
+            "IMPORTANT: only use information you can directly verify from the "
+            "video. If you are unsure, say 'Not sure'. When possible, cite "
+            "rough timestamps."
+        )
+        suffix = "/think" if self.thinking else "/no_think"
+        prompt = f"{grounding}\n\nQuestion: {question} {suffix}"
+        content: List[Dict[str, Any]] = [
+            *[{"type": "image", "image": f} for f in frames],
+            {"type": "text", "text": prompt},
+        ]
+        return [{"role": "user", "content": content}]
+
+    def _generate_one_from_frames(
+        self,
+        messages: List[Dict[str, Any]],
+        max_new_tokens: int,
+    ) -> Tuple[str, Dict[str, Any]]:
+        """Like _generate_one but for image-frame messages (no video_kwargs)."""
+        loaded = self._load_weights()
+        model, processor = loaded.model, loaded.processor
+
+        text = processor.apply_chat_template(
+            messages, tokenize=False, add_generation_prompt=True
+        )
+        # process_vision_info without return_video_kwargs — frames are images
+        image_inputs, video_inputs = process_vision_info(messages)
+
+        inputs = processor(
+            text=[text],
+            images=image_inputs,
+            videos=video_inputs,
+            padding=True,
+            return_tensors="pt",
+        ).to(next(model.parameters()).device)
+
+        gen_kwargs: Dict[str, Any] = dict(
+            max_new_tokens=max_new_tokens,
+            do_sample=True,
+            temperature=0.6 if self.thinking else 0.7,
+            top_p=0.95 if self.thinking else 0.80,
+            top_k=20,
+        )
+
+        t0 = time.time()
+        with torch.inference_mode():
+            generated_ids = model.generate(**inputs, **gen_kwargs)
+        dt = time.time() - t0
+
+        trimmed = [out[len(inp):] for inp, out in zip(inputs.input_ids, generated_ids)]
+        raw = processor.batch_decode(
+            trimmed, skip_special_tokens=False, clean_up_tokenization_spaces=False
+        )[0]
+        answer = self._parse_answer(raw)
+
+        debug = {
+            "model_id": self.model_id,
+            "max_new_tokens": int(max_new_tokens),
+            "thinking": self.thinking,
+            "latency_sec": round(dt, 3),
+        }
+        return answer, debug
+
+    # ------------------------------------------------------------------
+
     def _build_messages(
         self, video_path: str, question: str
     ) -> List[Dict[str, Any]]:
