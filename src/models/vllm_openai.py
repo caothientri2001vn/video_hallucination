@@ -10,17 +10,19 @@ module so vLLM-specific defaults can evolve without touching
 
 import base64
 import os
+from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 import cv2
-import numpy as np
 
 try:
-    from qwen_vl_utils.vision_process import fetch_video
-except Exception:
-    fetch_video = None
+    import av
+except Exception as exc:
+    raise RuntimeError(
+        "Failed to import PyAV. Install with: uv sync --group openai\n"
+        f"Error: {exc}"
+    ) from exc
 
 try:
     from openai import BadRequestError, OpenAI
@@ -39,8 +41,9 @@ _DEFAULT_VLLM_API_KEY = "EMPTY"
 _DEFAULT_VLLM_BASE_URL = "http://localhost:8000/v1"
 
 
-def _encode_frame_b64(frame: Any) -> str:
-    ok, buf = cv2.imencode(".jpg", frame)
+def _encode_frame_b64(frame: av.VideoFrame) -> str:
+    bgr_frame = frame.to_ndarray(format="bgr24")
+    ok, buf = cv2.imencode(".jpg", bgr_frame)
     if not ok:
         raise ValueError("Failed to encode sampled video frame as JPEG")
     return base64.b64encode(buf.tobytes()).decode("ascii")
@@ -57,69 +60,23 @@ def _sample_evenly(items: List[str], n: int) -> List[str]:
     return [items[idx] for idx in indices]
 
 
-def _extract_frames_b64_sequential(video_path: str, n_frames: int) -> List[str]:
-    cap = cv2.VideoCapture(video_path)
-    if not cap.isOpened():
-        raise ValueError(f"Failed to open video for sequential decode: {video_path}")
+def _get_video_stream(container: av.container.input.InputContainer) -> av.video.stream.VideoStream:
+    if not container.streams.video:
+        raise ValueError("Video file does not contain any video streams")
+    return container.streams.video[0]
 
-    try:
+
+def _extract_frames_b64_sequential(video_path: str, n_frames: int) -> List[str]:
+    with av.open(video_path) as container:
+        stream = _get_video_stream(container)
         decoded: List[str] = []
-        while True:
-            ok, frame = cap.read()
-            if not ok or frame is None:
-                break
+        for frame in container.decode(stream):
             decoded.append(_encode_frame_b64(frame))
 
         if not decoded:
             raise ValueError(f"Failed to decode any frames sequentially from video: {video_path}")
 
         return _sample_evenly(decoded, n_frames)
-    finally:
-        cap.release()
-
-
-def _tensor_frame_to_bgr_uint8(frame: Any) -> Any:
-    if hasattr(frame, "detach"):
-        arr = frame.detach().cpu().numpy()
-    else:
-        arr = np.asarray(frame)
-
-    if arr.ndim != 3:
-        raise ValueError(f"Expected 3D frame tensor/array, got shape {arr.shape}")
-
-    if arr.shape[0] in {1, 3} and arr.shape[-1] not in {1, 3}:
-        arr = np.transpose(arr, (1, 2, 0))
-
-    if arr.dtype != np.uint8:
-        if arr.max() <= 1.0:
-            arr = arr * 255.0
-        arr = np.clip(arr, 0, 255).astype(np.uint8)
-
-    if arr.shape[-1] == 3:
-        return cv2.cvtColor(arr, cv2.COLOR_RGB2BGR)
-    return arr
-
-
-def _extract_frames_b64_with_qwen(video_path: str, n_frames: int) -> Optional[List[str]]:
-    if fetch_video is None:
-        return None
-
-    video_uri = Path(video_path).expanduser().resolve().as_uri()
-    video, _sample_fps = fetch_video(
-        {"type": "video", "video": video_uri, "nframes": n_frames},
-        return_video_sample_fps=True,
-    )
-
-    frames_b64: List[str] = []
-    for frame in video:
-        frames_b64.append(_encode_frame_b64(_tensor_frame_to_bgr_uint8(frame)))
-
-    if not frames_b64:
-        return None
-
-    if len(frames_b64) < n_frames:
-        frames_b64.extend([frames_b64[-1]] * (n_frames - len(frames_b64)))
-    return frames_b64
 
 
 def _extract_frames_b64(video_path: str, n_frames: int) -> List[str]:
@@ -136,25 +93,11 @@ def _extract_frames_b64(video_path: str, n_frames: int) -> List[str]:
     if not os.path.exists(video_path):
         raise FileNotFoundError(f"Video file not found: {video_path}")
 
-    try:
-        qwen_frames = _extract_frames_b64_with_qwen(video_path, n_frames)
-        if qwen_frames:
-            return qwen_frames
-    except Exception:
-        pass
-
-    cap = cv2.VideoCapture(video_path)
-    if not cap.isOpened():
-        raise ValueError(f"Failed to open video: {video_path}")
-
-    try:
-        total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT) or 0)
+    with av.open(video_path) as container:
+        stream = _get_video_stream(container)
+        total_frames = int(stream.frames or 0)
         if total_frames <= 0:
-            ok, frame = cap.read()
-            if not ok or frame is None:
-                return _extract_frames_b64_sequential(video_path, n_frames)
-            encoded = _encode_frame_b64(frame)
-            return [encoded] * n_frames
+            return _extract_frames_b64_sequential(video_path, n_frames)
 
         if n_frames == 1:
             indices = [total_frames // 2]
@@ -164,29 +107,45 @@ def _extract_frames_b64(video_path: str, n_frames: int) -> List[str]:
                 for i in range(n_frames)
             ]
 
-        frames_b64: List[str] = []
+        wanted = Counter(indices)
         cache: Dict[int, str] = {}
-        for idx in indices:
-            if idx not in cache:
-                cap.set(cv2.CAP_PROP_POS_FRAMES, idx)
-                ok, frame = cap.read()
-                if not ok or frame is None:
-                    continue
-                cache[idx] = _encode_frame_b64(frame)
-            frames_b64.append(cache[idx])
+        last_needed = max(wanted)
 
-        if not frames_b64:
+        for frame_idx, frame in enumerate(container.decode(stream)):
+            if frame_idx > last_needed:
+                break
+            if frame_idx in wanted and frame_idx not in cache:
+                cache[frame_idx] = _encode_frame_b64(frame)
+                if len(cache) == len(wanted):
+                    break
+
+        if not cache:
             return _extract_frames_b64_sequential(video_path, n_frames)
 
-        if len(frames_b64) < n_frames:
-            try:
-                return _extract_frames_b64_sequential(video_path, n_frames)
-            except Exception:
-                frames_b64.extend([frames_b64[-1]] * (n_frames - len(frames_b64)))
+        if any(idx not in cache for idx in wanted):
+            return _extract_frames_b64_sequential(video_path, n_frames)
 
-        return frames_b64
-    finally:
-        cap.release()
+        return [cache[idx] for idx in indices]
+
+
+def _get_message_field(message: Any, name: str) -> Any:
+    if isinstance(message, dict):
+        return message.get(name)
+
+    value = getattr(message, name, None)
+    if value is not None:
+        return value
+
+    model_extra = getattr(message, "model_extra", None)
+    if isinstance(model_extra, dict) and name in model_extra:
+        return model_extra[name]
+
+    if hasattr(message, "model_dump"):
+        payload = message.model_dump()
+        if isinstance(payload, dict):
+            return payload.get(name)
+
+    return None
 
 
 def _extract_response_text(response: Any) -> str:
@@ -200,8 +159,8 @@ def _extract_response_text(response: Any) -> str:
         payload = response.model_dump() if hasattr(response, "model_dump") else repr(response)
         raise RuntimeError(f"API response choice did not include a message: {payload}")
 
-    content = getattr(message, "content", None)
-    if isinstance(content, str):
+    content = _get_message_field(message, "content")
+    if isinstance(content, str) and content.strip():
         return content.strip()
     if isinstance(content, list):
         parts: List[str] = []
@@ -217,7 +176,14 @@ def _extract_response_text(response: Any) -> str:
         if parts:
             return "\n".join(parts)
 
-    refusal = getattr(message, "refusal", None)
+    # Some vLLM/Qwen reasoning-parser responses put the assistant text here
+    # with ``content=None``.
+    for attr_name in ("reasoning", "reasoning_content"):
+        reasoning = _get_message_field(message, attr_name)
+        if isinstance(reasoning, str) and reasoning.strip():
+            return reasoning.strip()
+
+    refusal = _get_message_field(message, "refusal")
     if isinstance(refusal, str) and refusal.strip():
         return refusal.strip()
 

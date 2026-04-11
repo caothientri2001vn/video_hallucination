@@ -249,6 +249,18 @@ python benchmark_sub.py \
 # Custom server URL
 VLLM_BASE_URL=http://my-server:8123/v1 python benchmark_sub.py \
     --model_id traveler/Qwen/Qwen3.5-2B \
+    --metrics all \
+    --questions_dir benchmark_subq
+```
+
+> **Cost**: TraveLER runs the full pipeline once **per question** (not per video),
+> so it makes many more API calls than a single-pass model.  Use the built-in
+> caching (`--cache_dir`) to avoid re-running completed questions.
+
+> **Pipeline hyperparams** can be overridden via `load_model(**kwargs)` in
+> Python code: `max_iters` (default 3), `view_range` (2 s), `num_questions` (3),
+> `init_frames` (5), `video_fps` (10).
+
 ### vLLM (localhost)
 
 Prefix `vllm/` routes any model through a local vLLM OpenAI-compatible server.
@@ -268,23 +280,34 @@ back to `EMPTY` if it is unset.
 uv sync --group openai
 ```
 
+For the 32B served model setup:
+
 ```shell
-# Qwen3-VL-32B-Thinking via local vLLM
+OMP_NUM_THREADS=1 \
+vllm serve weights/qwen3_vl_32b_inst \
+    --served-model-name qwen3_vl_32b_inst \
+    --tensor-parallel-size 8 \
+    --mm-encoder-tp-mode data \
+    --async-scheduling \
+    --reasoning-parser qwen3 \
+    --limit-mm-per-prompt.image 64 \
+    --limit-mm-per-prompt.video 0 \
+    --max-model-len 128000
+```
+
+Then call the served model name with the `vllm/` prefix:
+
+```shell
 python benchmark_sub.py \
-    --model_id vllm/Qwen/Qwen3-VL-32B-Thinking \
+    --model_id vllm/qwen3_vl_32b_inst \
     --metrics all \
     --questions_dir benchmark_subq
 ```
 
-> **Cost**: TraveLER runs the full pipeline once **per question** (not per video),
-> so it makes many more API calls than a single-pass model.  Use the built-in
-> caching (`--cache_dir`) to avoid re-running completed questions.
-
-> **Pipeline hyperparams** can be overridden via `load_model(**kwargs)` in
-> Python code: `max_iters` (default 3), `view_range` (2 s), `num_questions` (3),
-> `init_frames` (5), `video_fps` (10).
 > The `vllm/` prefix is stripped automatically before calling the API, so
-> `vllm/Qwen/Qwen3-VL-32B-Thinking` → model ID `Qwen/Qwen3-VL-32B-Thinking`.
+> `vllm/qwen3_vl_32b_inst` -> model ID `qwen3_vl_32b_inst`.
+> If `--reasoning-parser qwen3` returns `content=None` with text in `reasoning`,
+> the vLLM backend reads that field as the answer.
 
 ### Common flags
 
