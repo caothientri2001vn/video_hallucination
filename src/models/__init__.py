@@ -9,12 +9,13 @@ if/elif chains in the calling code.
 
 Routing rules (checked in order)
 ---------------------------------
-1. Starts with ``"vllm/"``                     → VLLMOpenAIModel (local vLLM)
-2. Starts with ``"openrouter/"``               → OpenAIModel     (OpenRouter API)
-3. Starts with ``"claude"``                    → ClaudeModel     (Anthropic API)
-4. Starts with ``"gemini"``                    → GeminiModel     (Google API)
-5. Starts with ``"gpt"`` or ``"o1"``/``"o3"`` → OpenAIModel     (OpenAI API)
-6. Anything else                               → Qwen3VLModel    (local HuggingFace)
+1. Starts with ``"vllm_video/"``               → VLLMVideoModel  (local vLLM, video URL)
+2. Starts with ``"vllm/"``                     → VLLMOpenAIModel (local vLLM, image frames)
+3. Starts with ``"openrouter/"``               → OpenAIModel     (OpenRouter API)
+4. Starts with ``"claude"``                    → ClaudeModel     (Anthropic API)
+5. Starts with ``"gemini"``                    → GeminiModel     (Google API)
+6. Starts with ``"gpt"`` or ``"o1"``/``"o3"`` → OpenAIModel     (OpenAI API)
+7. Anything else                               → Qwen3VLModel    (local HuggingFace)
 
 Lazy imports
 ------------
@@ -75,6 +76,11 @@ def _load_openai() -> Type[BaseVideoQAModel]:
 def _load_vllm_openai() -> Type[BaseVideoQAModel]:
     from .vllm_openai import VLLMOpenAIModel  # requires: openai
     return VLLMOpenAIModel
+
+
+def _load_vllm_video() -> Type[BaseVideoQAModel]:
+    from .vllm_video import VLLMVideoModel  # requires: openai, av
+    return VLLMVideoModel
 
 
 def _load_openrouter_gemini() -> Type[BaseVideoQAModel]:
@@ -140,6 +146,7 @@ _LAZY_PREFIX_MAP: dict[str, Callable[[], Type[BaseVideoQAModel]]] = {
 # Routed separately because we need to pass extra kwargs (base_url, api_key_env)
 # to the OpenAIModel constructor rather than just swapping the class.
 # ---------------------------------------------------------------------------
+_VLLM_VIDEO_PREFIX = "vllm_video/"
 _VLLM_PREFIX = "vllm/"
 _OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 _OPENROUTER_PREFIX = "openrouter/"
@@ -184,10 +191,11 @@ def load_model(
     model_id : str
         Model identifier.  Routing rules (checked in order):
 
-        1. Starts with ``"vllm/"``                 → VLLMOpenAIModel via local vLLM
-        2. Starts with ``"openrouter/"``           → OpenAIModel via OpenRouter API
-        3. Matches a prefix in ``_LAZY_PREFIX_MAP`` → corresponding API backend
-        4. Anything else                            → Qwen3VLModel (local HuggingFace)
+        1. Starts with ``"vllm_video/"``           → VLLMVideoModel via local vLLM
+        2. Starts with ``"vllm/"``                 → VLLMOpenAIModel via local vLLM
+        3. Starts with ``"openrouter/"``           → OpenAIModel via OpenRouter API
+        4. Matches a prefix in ``_LAZY_PREFIX_MAP`` → corresponding API backend
+        5. Anything else                            → Qwen3VLModel (local HuggingFace)
 
         OpenRouter model IDs use the convention ``"openrouter/<provider>/<slug>"``,
         e.g. ``"openrouter/google/gemini-2.5-pro"``.  The ``"openrouter/"`` prefix
@@ -224,7 +232,17 @@ def load_model(
                 prompt_method=prompt_method,
                 **kwargs,
             )
-    # 1. Local vLLM
+    # 1. Native-video local vLLM
+    if lower.startswith(_VLLM_VIDEO_PREFIX):
+        real_model_id = model_id[len(_VLLM_VIDEO_PREFIX):]
+        cls = _load_vllm_video()
+        return cls(
+            model_id=real_model_id,
+            prompt_method=prompt_method,
+            **dict(kwargs),
+        )
+
+    # 2. Frame-based local vLLM
     if lower.startswith(_VLLM_PREFIX):
         real_model_id = model_id[len(_VLLM_PREFIX):]
         cls = _load_vllm_openai()
@@ -235,7 +253,7 @@ def load_model(
             **resolved_kwargs,
         )
 
-    # 2. OpenRouter
+    # 3. OpenRouter
     if lower.startswith(_OPENROUTER_PREFIX):
         real_model_id = model_id[len(_OPENROUTER_PREFIX):]
         if lower.startswith(_OPENROUTER_GOOGLE_GEMINI_PREFIX):

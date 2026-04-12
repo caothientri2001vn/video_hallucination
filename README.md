@@ -248,8 +248,18 @@ python benchmark_sub.py \
 
 # Custom server URL
 VLLM_BASE_URL=http://my-server:8123/v1 python benchmark_sub.py \
-    --model_id traveler/Qwen/Qwen3.5-2B
+    --model_id traveler/Qwen/Qwen3.5-2B \
+    --metrics all \
+    --questions_dir benchmark_subq
 ```
+
+> **Cost**: TraveLER runs the full pipeline once **per question** (not per video),
+> so it makes many more API calls than a single-pass model.  Use the built-in
+> caching (`--cache_dir`) to avoid re-running completed questions.
+
+> **Pipeline hyperparams** can be overridden via `load_model(**kwargs)` in
+> Python code: `max_iters` (default 3), `view_range` (2 s), `num_questions` (3),
+> `init_frames` (5), `video_fps` (10).
 
 ### vLLM (localhost)
 
@@ -270,23 +280,62 @@ back to `EMPTY` if it is unset.
 uv sync --group openai
 ```
 
+For the 32B served model setup:
+
 ```shell
-# Qwen3-VL-32B-Thinking via local vLLM
+OMP_NUM_THREADS=1 \
+vllm serve weights/qwen3_vl_32b_inst \
+    --served-model-name qwen3_vl_32b_inst \
+    --tensor-parallel-size 8 \
+    --mm-encoder-tp-mode data \
+    --async-scheduling \
+    --reasoning-parser qwen3 \
+    --limit-mm-per-prompt.image 64 \
+    --limit-mm-per-prompt.video 0 \
+    --max-model-len 128000
+```
+
+Then call the served model name with the `vllm/` prefix:
+
+```shell
 python benchmark_sub.py \
-    --model_id vllm/Qwen/Qwen3-VL-32B-Thinking \
+    --model_id vllm/qwen3_vl_32b_inst \
     --metrics all \
     --questions_dir benchmark_subq
 ```
 
-> **Cost**: TraveLER runs the full pipeline once **per question** (not per video),
-> so it makes many more API calls than a single-pass model.  Use the built-in
-> caching (`--cache_dir`) to avoid re-running completed questions.
+Use `vllm_video/` when the vLLM server is on the same machine and can read the
+video path directly. Launch the server with local media access and video inputs
+enabled:
 
-> **Pipeline hyperparams** can be overridden via `load_model(**kwargs)` in
-> Python code: `max_iters` (default 3), `view_range` (2 s), `num_questions` (3),
-> `init_frames` (5), `video_fps` (10).
-> The `vllm/` prefix is stripped automatically before calling the API, so
-> `vllm/Qwen/Qwen3-VL-32B-Thinking` → model ID `Qwen/Qwen3-VL-32B-Thinking`.
+```shell
+OMP_NUM_THREADS=1 \
+vllm serve weights/qwen3_vl_32b_inst \
+    --served-model-name qwen3_vl_32b_inst \
+    --tensor-parallel-size 8 \
+    --mm-encoder-tp-mode data \
+    --async-scheduling \
+    --reasoning-parser qwen3 \
+    --limit-mm-per-prompt.image 0 \
+    --limit-mm-per-prompt.video 1 \
+    --allowed-local-media-path /path/to/raw_data \
+    --max-model-len 128000
+```
+
+Then run:
+
+```shell
+python benchmark_sub.py \
+    --model_id vllm_video/qwen3_vl_32b_inst \
+    --metrics all \
+    --questions_dir benchmark_subq
+```
+
+> The `vllm/` and `vllm_video/` prefixes are stripped automatically before
+> calling the API, so `vllm_video/qwen3_vl_32b_inst` -> model ID
+> `qwen3_vl_32b_inst`.
+> If `--reasoning-parser qwen3` returns `content=None` with text in `reasoning`,
+> the vLLM backends read that field as the answer.
 
 ### Common flags
 
@@ -314,7 +363,8 @@ Model routing is automatic based on the `--model_id` prefix:
 | `<sel>+<model>` | `FramePipelineModel` | `uv sync --group qwen35vl` | sel = uniform / clip / aks / efs |
 | `Qwen/Qwen3.5-*` / `qwen3.5-*` | `Qwen35VLModel` | `uv sync --group qwen35vl` | Internal video sampling |
 | anything else | `Qwen3VLModel` | `uv sync --group qwen3vl` | Internal video sampling |
-| `vllm/*` | `VLLMOpenAIModel` | `uv sync --group openai` | `VLLM_API_KEY` |
+| `vllm_video/*` | `VLLMVideoModel` | `uv sync --group openai` | Native `video_url`; server needs `--allowed-local-media-path` |
+| `vllm/*` | `VLLMOpenAIModel` | `uv sync --group openai` | Frame-based image prompts; `VLLM_API_KEY` |
 | `openrouter/*` | `OpenAIModel` → OpenRouter | `uv sync --group openai` | `OPENROUTER_API_KEY` |
 | `gemini-*` | `GeminiModel` | `uv sync --group gemini` | `GEMINI_API_KEY` |
 | `claude-*` | `ClaudeModel` | `uv sync --group claude` | `ANTHROPIC_API_KEY` |
