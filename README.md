@@ -248,7 +248,9 @@ python benchmark_sub.py \
 
 # Custom server URL
 VLLM_BASE_URL=http://my-server:8123/v1 python benchmark_sub.py \
-    --model_id traveler/Qwen/Qwen3.5-2B \
+    --model_id traveler/Qwen/Qwen3.5-2B
+```
+
 ### vLLM (localhost)
 
 Prefix `vllm/` routes any model through a local vLLM OpenAI-compatible server.
