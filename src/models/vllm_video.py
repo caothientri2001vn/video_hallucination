@@ -28,7 +28,7 @@ except Exception as exc:
 
 from .base import BaseVideoQAModel
 
-_DEFAULT_MAX_CONCURRENCY = 4
+_DEFAULT_MAX_CONCURRENCY = 1
 _DEFAULT_VLLM_API_KEY = "EMPTY"
 _DEFAULT_VLLM_BASE_URL = "http://localhost:8000/v1"
 
@@ -200,7 +200,10 @@ class VLLMVideoModel(BaseVideoQAModel):
         }
         if self.extra_body:
             request_kwargs["extra_body"] = self.extra_body
+        else:
+            request_kwargs["extra_body"] = {"mm_processor_kwargs": {"fps": 2 ,"do_sample_frames": True}}
 
+        # breakpoint()
         response = client.chat.completions.create(**request_kwargs)
         return _extract_response_text(response)
 
