@@ -5,7 +5,9 @@ requires-python = ">=3.10"
 # Core deps shared by ALL setups (no heavy ML framework here).
 dependencies = [
     "loguru>=0.7.3",
+    "numpy>=1.24.0",
     "opencv-python>=4.13.0.92",
+    "pillow>=10.0.0",
     "python-dotenv>=1.2.2",
     "tqdm>=4.66.0",
 ]
@@ -44,12 +46,15 @@ qwen3vl = [
     "transformers==4.57.1",
 ]
 
-# Qwen3.5-VL (requires unreleased transformers HEAD)
+# Qwen3.5-VL + frame-selection pipelines (CLIP, AKS, EFS)
+# scipy and scikit-learn are needed by EFS (scene segmentation + MMR)
 qwen35vl = [
     "accelerate>=1.13.0",
     "av==16.1.0",
     "matplotlib>=3.10.8",
     "qwen-vl-utils>=0.0.14",
+    "scikit-learn>=1.4.0",
+    "scipy>=1.13.0",
     "torch>=2.10.0",
     "torchvision>=0.25.0",
     "transformers @ git+https://github.com/huggingface/transformers.git@d64a6d6",
@@ -62,6 +67,7 @@ claude = [
 ]
 
 gemini = [
+    "av==16.1.0",
     "google-genai>=1.16.0",
 ]
 

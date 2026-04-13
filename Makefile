@@ -9,3 +9,9 @@ openai_env_dry_run:
 
 openai_env:
 	UV_PROJECT_ENVIRONMENT=.venv-openai uv sync --group openai
+
+google_env_dry_run:
+	UV_PROJECT_ENVIRONMENT=.venv-google uv sync --group gemini --dry-run
+
+google_env:
+	UV_PROJECT_ENVIRONMENT=.venv-google uv sync --group gemini
