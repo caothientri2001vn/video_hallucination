@@ -15,3 +15,9 @@ google_env_dry_run:
 
 google_env:
 	UV_PROJECT_ENVIRONMENT=.venv-google uv sync --group gemini
+
+qwen35vl_env_dry_run:
+	UV_PROJECT_ENVIRONMENT=.venv_qwen35vl uv sync --group qwen35vl --dry-run
+
+qwen35vl_env:
+	UV_PROJECT_ENVIRONMENT=.venv_qwen35vl uv sync --group qwen35vl
