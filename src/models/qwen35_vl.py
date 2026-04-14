@@ -12,8 +12,9 @@ Key differences from Qwen3VLModel (qwen3_vl.py)
   ``Qwen3VLForConditionalGeneration``.
 * Supports thinking mode: append ``/think`` or ``/no_think`` to the prompt.
   Controlled via the ``thinking`` constructor flag.
-* ``process_vision_info`` returns fps as a list; this file normalises it to a
-  scalar before calling the processor (upstream quirk).
+* Video-mode inference samples at ``force_fps``; the default is 2 FPS.
+* ``process_vision_info`` can return fps as a list; this file normalises it to
+  a scalar before calling the processor when metadata is not requested.
 * Torchvision ≥ 0.21 removed ``torchvision.io.read_video``; patched via PyAV
   at import time so the transformers video loader does not crash.
 * Generation uses sampling by default (temperature / top_p / top_k) to match
@@ -87,6 +88,13 @@ def _to_file_uri(p: str) -> str:
     return Path(p).expanduser().resolve().as_uri()
 
 
+def _format_fps_tag(fps: float) -> str:
+    fps = float(fps)
+    if fps.is_integer():
+        return str(int(fps))
+    return str(fps).replace(".", "p")
+
+
 @dataclass
 class _LoadedWeights:
     model_id: str
@@ -116,6 +124,9 @@ class Qwen35VLModel(BaseVideoQAModel):
         Max pixels per frame passed to the processor.  Default: 360 × 420.
     debug_with_n_frames : int | None
         When set, overrides ``max_frames`` (mirrors the Qwen3VL CLI flag).
+    force_fps : float | None
+        When set, sample video inputs at this FPS.  Default: 2.0.  Set to
+        None to use fixed ``nframes`` sampling via ``max_frames``.
     """
 
     def __init__(
@@ -126,11 +137,16 @@ class Qwen35VLModel(BaseVideoQAModel):
         max_frames: int = 16,
         max_pixels: int = 360 * 420,
         debug_with_n_frames: Optional[int] = None,
+        force_fps: Optional[float] = 2.0,
     ) -> None:
         super().__init__(model_id, prompt_method)
         self.thinking = thinking
+        self.debug_with_n_frames = debug_with_n_frames
         self.max_frames = debug_with_n_frames if debug_with_n_frames is not None else max_frames
         self.max_pixels = max_pixels
+        if force_fps is not None and float(force_fps) <= 0:
+            raise ValueError("force_fps must be > 0 when provided")
+        self.force_fps = float(force_fps) if force_fps is not None else None
         self._loaded: Optional[_LoadedWeights] = None
 
     # ------------------------------------------------------------------
@@ -152,6 +168,13 @@ class Qwen35VLModel(BaseVideoQAModel):
             answer, _ = self._generate_one(messages, max_new_tokens)
             results.append(answer)
         return results
+
+    @property
+    def cache_namespace(self) -> str:
+        base_namespace = super().cache_namespace
+        if self.force_fps is None:
+            return base_namespace
+        return f"{base_namespace}__fps{_format_fps_tag(self.force_fps)}"
 
     # ------------------------------------------------------------------
     # Internal helpers
@@ -269,13 +292,21 @@ class Qwen35VLModel(BaseVideoQAModel):
         suffix = "/think" if self.thinking else "/no_think"
         prompt = f"{grounding}\n\nQuestion: {question} {suffix}"
 
+        video_content: Dict[str, Any] = {
+            "type": "video",
+            "video": _to_file_uri(video_path),
+            "max_pixels": self.max_pixels,
+        }
+        if self.debug_with_n_frames is not None:
+            video_content["nframes"] = self.debug_with_n_frames
+        elif self.force_fps is not None:
+            video_content["fps"] = self.force_fps
+            video_content["max_frames"] = self.max_frames
+        else:
+            video_content["nframes"] = self.max_frames
+
         content: List[Dict[str, Any]] = [
-            {
-                "type": "video",
-                "video": _to_file_uri(video_path),
-                "max_pixels": self.max_pixels,
-                "nframes": self.max_frames,
-            },
+            video_content,
             {"type": "text", "text": prompt},
         ]
         return [{"role": "user", "content": content}]
@@ -292,10 +323,16 @@ class Qwen35VLModel(BaseVideoQAModel):
             messages, tokenize=False, add_generation_prompt=True
         )
         image_inputs, video_inputs, video_kwargs = process_vision_info(
-            messages, return_video_kwargs=True
+            messages, return_video_kwargs=True, return_video_metadata=True
         )
 
-        # process_vision_info may return fps as a list; processor needs a scalar
+        video_metadatas = None
+        if video_inputs is not None:
+            video_inputs, video_metadatas = zip(*video_inputs)
+            video_inputs, video_metadatas = list(video_inputs), list(video_metadatas)
+
+        video_kwargs = dict(video_kwargs or {})
+        # process_vision_info may return fps as a list when metadata is not requested.
         if "fps" in video_kwargs and isinstance(video_kwargs["fps"], list):
             video_kwargs["fps"] = video_kwargs["fps"][0]
 
@@ -303,6 +340,7 @@ class Qwen35VLModel(BaseVideoQAModel):
             text=[text],
             images=image_inputs,
             videos=video_inputs,
+            video_metadata=video_metadatas,
             padding=True,
             return_tensors="pt",
             **video_kwargs,
@@ -346,6 +384,7 @@ class Qwen35VLModel(BaseVideoQAModel):
             "model_id": self.model_id,
             "max_new_tokens": int(max_new_tokens),
             "thinking": self.thinking,
+            "force_fps": self.force_fps,
             "latency_sec": round(dt, 3),
         }
         return answer, debug

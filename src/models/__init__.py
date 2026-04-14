@@ -15,7 +15,8 @@ Routing rules (checked in order)
 4. Starts with ``"claude"``                    → ClaudeModel     (Anthropic API)
 5. Starts with ``"gemini"``                    → GeminiModel     (Google API)
 6. Starts with ``"gpt"`` or ``"o1"``/``"o3"`` → OpenAIModel     (OpenAI API)
-7. Anything else                               → Qwen3VLModel    (local HuggingFace)
+7. Looks like Qwen3.5 / qwen3p5 / qwen35      → Qwen35VLModel   (local HuggingFace)
+8. Anything else                               → Qwen3VLModel    (local HuggingFace)
 
 Lazy imports
 ------------
@@ -45,6 +46,7 @@ _OPENROUTER_ANTHROPIC_DEFAULT_N_FRAMES = 128
 _OPENROUTER_QWEN_DEFAULT_N_FRAMES = 64
 _OPENROUTER_INTERNVL_DEFAULT_N_FRAMES = 64
 _OPENROUTER_GEMINI_DEFAULT_N_FRAMES = 128
+_QWEN35_MODEL_ID_MARKERS = ("qwen3.5", "qwen3p5", "qwen35", "qwen_3_5", "qwen_3p5")
 
 
 # ---------------------------------------------------------------------------
@@ -172,6 +174,24 @@ def _with_openai_compatible_defaults(model_id: str, kwargs: dict[str, Any]) -> d
     return resolved
 
 
+def _looks_like_qwen35_model_id(model_id: str) -> bool:
+    normalized = model_id.lower().replace("-", "_").replace("/", "_")
+    return any(marker in normalized for marker in _QWEN35_MODEL_ID_MARKERS)
+
+
+def _with_local_qwen_kwargs(
+    kwargs: dict[str, Any],
+    debug_with_n_frames: Optional[int],
+    force_fps: Optional[float],
+) -> dict[str, Any]:
+    resolved = dict(kwargs)
+    if debug_with_n_frames is not None:
+        resolved["debug_with_n_frames"] = debug_with_n_frames
+    if force_fps is not None:
+        resolved["force_fps"] = force_fps
+    return resolved
+
+
 def load_model(
     model_id: str,
     prompt_method: str = "vanilla",
@@ -194,8 +214,9 @@ def load_model(
         1. Starts with ``"vllm_video/"``           → VLLMVideoModel via local vLLM
         2. Starts with ``"vllm/"``                 → VLLMOpenAIModel via local vLLM
         3. Starts with ``"openrouter/"``           → OpenAIModel via OpenRouter API
-        4. Matches a prefix in ``_LAZY_PREFIX_MAP`` → corresponding API backend
-        5. Anything else                            → Qwen3VLModel (local HuggingFace)
+        4. Looks like Qwen3.5 / qwen3p5 / qwen35   → Qwen35VLModel (local HuggingFace)
+        5. Matches a prefix in ``_LAZY_PREFIX_MAP`` → corresponding API backend
+        6. Anything else                            → Qwen3VLModel (local HuggingFace)
 
         OpenRouter model IDs use the convention ``"openrouter/<provider>/<slug>"``,
         e.g. ``"openrouter/google/gemini-2.5-pro"``.  The ``"openrouter/"`` prefix
@@ -204,10 +225,11 @@ def load_model(
         Short label for the prompt template.  Injected into every backend so
         it flows through to the cache namespace.  Default: ``"vanilla"``.
     debug_with_n_frames : int | None
-        Only meaningful for local (Qwen3VL) models.  Ignored by API backends.
+        Only meaningful for local Qwen video backends.  Ignored by API backends.
     force_fps : float | None
-        Only meaningful for the local Qwen3-VL backend. When set, injects a
+        Only meaningful for local Qwen video backends. When set, injects a
         fixed FPS into video preprocessing, e.g. ``4`` for Cosmos-Reason2.
+        Qwen3.5 defaults to 2 FPS when this is not overridden.
     **kwargs
         Forwarded to the backend constructor.  Useful for overriding
         per-model defaults like ``n_frames``, ``video_upload``, etc.
@@ -294,7 +316,17 @@ def load_model(
                 **resolved_kwargs,
             )
 
-    # 4. Named API backends
+    # 4. Local Qwen3.5/HF checkpoints, including local paths like weights/qwen3p5_9b
+    if _looks_like_qwen35_model_id(model_id):
+        cls = _load_qwen35vl()
+        resolved_kwargs = _with_local_qwen_kwargs(
+            kwargs,
+            debug_with_n_frames=debug_with_n_frames,
+            force_fps=force_fps,
+        )
+        return cls(model_id=model_id, prompt_method=prompt_method, **resolved_kwargs)
+
+    # 5. Named API backends
     for prefix, loader in _LAZY_PREFIX_MAP.items():
         if lower.startswith(prefix):
             cls = loader()
@@ -303,12 +335,15 @@ def load_model(
                 resolved_kwargs = _with_openai_compatible_defaults(model_id, kwargs)
             return cls(model_id=model_id, prompt_method=prompt_method, **resolved_kwargs)
 
-    # 5. Default: local HuggingFace model
+    # 6. Default: local HuggingFace Qwen3-VL model
     cls = _load_qwen3vl()
+    resolved_kwargs = _with_local_qwen_kwargs(
+        kwargs,
+        debug_with_n_frames=debug_with_n_frames,
+        force_fps=force_fps,
+    )
     return cls(
         model_id=model_id,
         prompt_method=prompt_method,
-        debug_with_n_frames=debug_with_n_frames,
-        force_fps=force_fps,
-        **kwargs,
+        **resolved_kwargs,
     )
