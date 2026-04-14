@@ -13,6 +13,7 @@ import os
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any, Dict, List, Optional
+import numpy as np
 
 import cv2
 
@@ -39,11 +40,48 @@ _DEFAULT_MAX_CONCURRENCY = 4
 _MIN_RETRY_FRAMES = 4
 _DEFAULT_VLLM_API_KEY = "EMPTY"
 _DEFAULT_VLLM_BASE_URL = "http://localhost:8000/v1"
+_INTERNVL_IMAGE_SIZE = 448
 
 
-def _encode_frame_b64(frame: av.VideoFrame) -> str:
+# def _encode_frame_b64(frame: av.VideoFrame) -> str:
+#     bgr_frame = frame.to_ndarray(format="bgr24")
+#     ok, buf = cv2.imencode(".jpg", bgr_frame)
+#     if not ok:
+#         raise ValueError("Failed to encode sampled video frame as JPEG")
+#     return base64.b64encode(buf.tobytes()).decode("ascii")
+
+def _should_resize_frames_for_model(model_id: str) -> bool:
+    return "internvl" in model_id.lower()
+
+def _resize_and_pad_to_square_bgr(
+    img: np.ndarray,
+    size: int = _INTERNVL_IMAGE_SIZE,
+) -> np.ndarray:
+    h, w = img.shape[:2]
+    if h <= 0 or w <= 0:
+        raise ValueError(f"Invalid frame shape: {img.shape}")
+
+    scale = min(size / w, size / h)
+    new_w = max(1, int(round(w * scale)))
+    new_h = max(1, int(round(h * scale)))
+
+    resized = cv2.resize(img, (new_w, new_h), interpolation=cv2.INTER_AREA)
+
+    canvas = np.zeros((size, size, 3), dtype=np.uint8)
+    y0 = (size - new_h) // 2
+    x0 = (size - new_w) // 2
+    canvas[y0:y0 + new_h, x0:x0 + new_w] = resized
+    return canvas
+
+def _encode_frame_b64(
+    frame: av.VideoFrame,
+    resize_to_square: Optional[int] = None,
+) -> str:
     bgr_frame = frame.to_ndarray(format="bgr24")
-    ok, buf = cv2.imencode(".jpg", bgr_frame)
+    if resize_to_square is not None:
+        bgr_frame = _resize_and_pad_to_square_bgr(bgr_frame, resize_to_square)
+
+    ok, buf = cv2.imencode(".jpg", bgr_frame, [int(cv2.IMWRITE_JPEG_QUALITY), 90])
     if not ok:
         raise ValueError("Failed to encode sampled video frame as JPEG")
     return base64.b64encode(buf.tobytes()).decode("ascii")
@@ -66,20 +104,27 @@ def _get_video_stream(container: av.container.input.InputContainer) -> av.video.
     return container.streams.video[0]
 
 
-def _extract_frames_b64_sequential(video_path: str, n_frames: int) -> List[str]:
+def _extract_frames_b64_sequential(
+    video_path: str,
+    n_frames: int,
+    resize_to_square: Optional[int] = None,
+) -> List[str]:
     with av.open(video_path) as container:
         stream = _get_video_stream(container)
         decoded: List[str] = []
         for frame in container.decode(stream):
-            decoded.append(_encode_frame_b64(frame))
+            decoded.append(_encode_frame_b64(frame, resize_to_square=resize_to_square))
 
         if not decoded:
             raise ValueError(f"Failed to decode any frames sequentially from video: {video_path}")
 
         return _sample_evenly(decoded, n_frames)
 
-
-def _extract_frames_b64(video_path: str, n_frames: int) -> List[str]:
+def _extract_frames_b64(
+    video_path: str,
+    n_frames: int,
+    resize_to_square: Optional[int] = None,
+) -> List[str]:
     """
     Sample exactly ``n_frames`` uniformly-spaced frame slots and return them as
     base64-encoded JPEG strings.
@@ -97,7 +142,11 @@ def _extract_frames_b64(video_path: str, n_frames: int) -> List[str]:
         stream = _get_video_stream(container)
         total_frames = int(stream.frames or 0)
         if total_frames <= 0:
-            return _extract_frames_b64_sequential(video_path, n_frames)
+            return _extract_frames_b64_sequential(
+                video_path,
+                n_frames,
+                resize_to_square=resize_to_square,
+            )
 
         if n_frames == 1:
             indices = [total_frames // 2]
@@ -115,18 +164,28 @@ def _extract_frames_b64(video_path: str, n_frames: int) -> List[str]:
             if frame_idx > last_needed:
                 break
             if frame_idx in wanted and frame_idx not in cache:
-                cache[frame_idx] = _encode_frame_b64(frame)
+                cache[frame_idx] = _encode_frame_b64(
+                    frame,
+                    resize_to_square=resize_to_square,
+                )
                 if len(cache) == len(wanted):
                     break
 
         if not cache:
-            return _extract_frames_b64_sequential(video_path, n_frames)
+            return _extract_frames_b64_sequential(
+                video_path,
+                n_frames,
+                resize_to_square=resize_to_square,
+            )
 
         if any(idx not in cache for idx in wanted):
-            return _extract_frames_b64_sequential(video_path, n_frames)
+            return _extract_frames_b64_sequential(
+                video_path,
+                n_frames,
+                resize_to_square=resize_to_square,
+            )
 
         return [cache[idx] for idx in indices]
-
 
 def _get_message_field(message: Any, name: str) -> Any:
     if isinstance(message, dict):
@@ -272,7 +331,17 @@ class VLLMOpenAIModel(BaseVideoQAModel):
                 raise ValueError(f"Empty question passed to {self!r}")
             normalized_questions.append(question)
 
-        frames_b64 = _extract_frames_b64(video_path, self.n_frames)
+        resize_to_square = (
+            _INTERNVL_IMAGE_SIZE
+            if _should_resize_frames_for_model(self.model_id)
+            else None
+        )
+        frames_b64 = _extract_frames_b64(
+            video_path,
+            self.n_frames,
+            resize_to_square=resize_to_square,
+        )
+
         results = [""] * len(normalized_questions)
         worker_count = min(self.max_concurrency, len(normalized_questions))
 
