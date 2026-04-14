@@ -35,8 +35,32 @@ _DEFAULT_MAX_CONCURRENCY = 4
 _MIN_RETRY_FRAMES = 4
 
 
-def _encode_frame_b64(frame: av.VideoFrame) -> str:
+def _resize_longest_side_bgr(bgr_frame: Any, max_longest_side: Optional[int]) -> Any:
+    if max_longest_side is None:
+        return bgr_frame
+    if max_longest_side <= 0:
+        raise ValueError(f"max_longest_side must be positive, got {max_longest_side}")
+
+    h, w = bgr_frame.shape[:2]
+    if h <= 0 or w <= 0:
+        raise ValueError(f"Invalid frame shape: {bgr_frame.shape}")
+
+    longest_side = max(h, w)
+    if longest_side <= max_longest_side:
+        return bgr_frame
+
+    scale = max_longest_side / longest_side
+    new_w = max(1, int(round(w * scale)))
+    new_h = max(1, int(round(h * scale)))
+    return cv2.resize(bgr_frame, (new_w, new_h), interpolation=cv2.INTER_AREA)
+
+
+def _encode_frame_b64(
+    frame: av.VideoFrame,
+    max_longest_side: Optional[int] = None,
+) -> str:
     bgr_frame = frame.to_ndarray(format="bgr24")
+    bgr_frame = _resize_longest_side_bgr(bgr_frame, max_longest_side)
     ok, buf = cv2.imencode(".jpg", bgr_frame)
     if not ok:
         raise ValueError("Failed to encode sampled video frame as JPEG")
@@ -60,12 +84,16 @@ def _get_video_stream(container: av.container.input.InputContainer) -> av.video.
     return container.streams.video[0]
 
 
-def _extract_frames_b64_sequential(video_path: str, n_frames: int) -> List[str]:
+def _extract_frames_b64_sequential(
+    video_path: str,
+    n_frames: int,
+    max_longest_side: Optional[int] = None,
+) -> List[str]:
     with av.open(video_path) as container:
         stream = _get_video_stream(container)
         decoded: List[str] = []
         for frame in container.decode(stream):
-            decoded.append(_encode_frame_b64(frame))
+            decoded.append(_encode_frame_b64(frame, max_longest_side=max_longest_side))
 
         if not decoded:
             raise ValueError(f"Failed to decode any frames sequentially from video: {video_path}")
@@ -73,14 +101,19 @@ def _extract_frames_b64_sequential(video_path: str, n_frames: int) -> List[str]:
         return _sample_evenly(decoded, n_frames)
 
 
-def _extract_frames_b64(video_path: str, n_frames: int) -> List[str]:
+def _extract_frames_b64(
+    video_path: str,
+    n_frames: int,
+    max_longest_side: Optional[int] = None,
+) -> List[str]:
     """
     Sample exactly ``n_frames`` uniformly-spaced frame slots and return them as
     base64-encoded JPEG strings.
 
     If the source video has fewer than ``n_frames`` decoded frames, some slots
     will map to the same underlying frame. This preserves a fixed-size visual
-    prompt for the API backend.
+    prompt for the API backend. When ``max_longest_side`` is set, larger sampled
+    frames are downscaled before JPEG encoding.
     """
     if n_frames <= 0:
         raise ValueError(f"n_frames must be positive, got {n_frames}")
@@ -91,7 +124,11 @@ def _extract_frames_b64(video_path: str, n_frames: int) -> List[str]:
         stream = _get_video_stream(container)
         total_frames = int(stream.frames or 0)
         if total_frames <= 0:
-            return _extract_frames_b64_sequential(video_path, n_frames)
+            return _extract_frames_b64_sequential(
+                video_path,
+                n_frames,
+                max_longest_side=max_longest_side,
+            )
 
         if n_frames == 1:
             indices = [total_frames // 2]
@@ -109,15 +146,26 @@ def _extract_frames_b64(video_path: str, n_frames: int) -> List[str]:
             if frame_idx > last_needed:
                 break
             if frame_idx in wanted and frame_idx not in cache:
-                cache[frame_idx] = _encode_frame_b64(frame)
+                cache[frame_idx] = _encode_frame_b64(
+                    frame,
+                    max_longest_side=max_longest_side,
+                )
                 if len(cache) == len(wanted):
                     break
 
         if not cache:
-            return _extract_frames_b64_sequential(video_path, n_frames)
+            return _extract_frames_b64_sequential(
+                video_path,
+                n_frames,
+                max_longest_side=max_longest_side,
+            )
 
         if any(idx not in cache for idx in wanted):
-            return _extract_frames_b64_sequential(video_path, n_frames)
+            return _extract_frames_b64_sequential(
+                video_path,
+                n_frames,
+                max_longest_side=max_longest_side,
+            )
 
         return [cache[idx] for idx in indices]
 
@@ -198,6 +246,9 @@ class OpenAIModel(BaseVideoQAModel):
     max_concurrency : int
         Maximum number of per-question API calls to run in parallel.
         Default: 4.
+    max_frame_longest_side : int | None
+        Optional cap for the longest side of sampled JPEG frames. When set,
+        larger frames are resized before being encoded and sent to the API.
     """
 
     def __init__(
@@ -208,14 +259,20 @@ class OpenAIModel(BaseVideoQAModel):
         api_key_env: str = "OPENAI_API_KEY",
         base_url: Optional[str] = None,
         max_concurrency: int = _DEFAULT_MAX_CONCURRENCY,
+        max_frame_longest_side: Optional[int] = None,
     ) -> None:
         super().__init__(model_id, prompt_method)
         if max_concurrency <= 0:
             raise ValueError(f"max_concurrency must be positive, got {max_concurrency}")
+        if max_frame_longest_side is not None and max_frame_longest_side <= 0:
+            raise ValueError(
+                f"max_frame_longest_side must be positive, got {max_frame_longest_side}"
+            )
         self.n_frames = n_frames
         self.api_key_env = api_key_env
         self.base_url = base_url
         self.max_concurrency = max_concurrency
+        self.max_frame_longest_side = max_frame_longest_side
         self._client: Optional[OpenAI] = None
 
     def answer_questions(
@@ -234,7 +291,11 @@ class OpenAIModel(BaseVideoQAModel):
                 raise ValueError(f"Empty question passed to {self!r}")
             normalized_questions.append(question)
 
-        frames_b64 = _extract_frames_b64(video_path, self.n_frames)
+        frames_b64 = _extract_frames_b64(
+            video_path,
+            self.n_frames,
+            max_longest_side=self.max_frame_longest_side,
+        )
         results = [""] * len(normalized_questions)
         worker_count = min(self.max_concurrency, len(normalized_questions))
 

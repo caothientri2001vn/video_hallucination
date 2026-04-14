@@ -23,6 +23,7 @@ from .openai_gpt import _extract_frames_b64
 
 _DEFAULT_MAX_CONCURRENCY = 4
 _FALLBACK_N_FRAMES = 32
+_DEFAULT_MAX_FRAME_LONGEST_SIDE = 480
 _SUPPORTED_VIDEO_MIME_TYPES = {
     "video/mp4",
     "video/mpeg",
@@ -126,17 +127,23 @@ class OpenRouterGeminiModel(BaseVideoQAModel):
         max_concurrency: int = _DEFAULT_MAX_CONCURRENCY,
         n_frames: int = _FALLBACK_N_FRAMES,
         prefer_video: bool = True,
+        max_frame_longest_side: Optional[int] = _DEFAULT_MAX_FRAME_LONGEST_SIDE,
     ) -> None:
         super().__init__(model_id, prompt_method)
         if max_concurrency <= 0:
             raise ValueError(f"max_concurrency must be positive, got {max_concurrency}")
         if n_frames <= 0:
             raise ValueError(f"n_frames must be positive, got {n_frames}")
+        if max_frame_longest_side is not None and max_frame_longest_side <= 0:
+            raise ValueError(
+                f"max_frame_longest_side must be positive, got {max_frame_longest_side}"
+            )
         self.api_key_env = api_key_env
         self.base_url = base_url
         self.max_concurrency = max_concurrency
         self.n_frames = n_frames
         self.prefer_video = prefer_video
+        self.max_frame_longest_side = max_frame_longest_side
         self._client: Optional[OpenAI] = None
 
     def answer_questions(
@@ -156,7 +163,11 @@ class OpenRouterGeminiModel(BaseVideoQAModel):
             normalized_questions.append(question)
 
         video_data_url = _encode_video_data_url(video_path) if self.prefer_video else None
-        frames_b64 = _extract_frames_b64(video_path, self.n_frames)
+        frames_b64 = _extract_frames_b64(
+            video_path,
+            self.n_frames,
+            max_longest_side=self.max_frame_longest_side,
+        )
         results = [""] * len(normalized_questions)
         worker_count = min(self.max_concurrency, len(normalized_questions))
 
