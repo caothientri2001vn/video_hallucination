@@ -43,6 +43,8 @@ __all__ = [
 ]
 
 _OPENAI_FAMILY_DEFAULT_N_FRAMES = 32
+_GEMINI_DEFAULT_N_FRAMES = 64
+_GEMINI_MAX_FRAME_LONGEST_SIDE = 480
 _OPENROUTER_ANTHROPIC_DEFAULT_N_FRAMES = 64
 _OPENROUTER_QWEN_DEFAULT_N_FRAMES = 64
 _OPENROUTER_INTERNVL_DEFAULT_N_FRAMES = 64
@@ -133,6 +135,7 @@ def _load_frame_pipeline(
 
 
 _FRAME_SELECTOR_NAMES = {"uniform", "clip", "aks", "efs"}
+_GEMINI_PREFIX = "gemini"
 
 # ---------------------------------------------------------------------------
 # Prefix map for regular backends (prefix → lazy class loader).
@@ -142,7 +145,6 @@ _FRAME_SELECTOR_NAMES = {"uniform", "clip", "aks", "efs"}
 # ---------------------------------------------------------------------------
 _LAZY_PREFIX_MAP: dict[str, Callable[[], Type[BaseVideoQAModel]]] = {
     "claude": _load_claude,
-    "gemini": _load_gemini,
     "gpt": _load_openai,
     "o1": _load_openai,
     "o3": _load_openai,
@@ -193,6 +195,14 @@ def _with_litellm_defaults(model_id: str, kwargs: dict[str, Any]) -> dict[str, A
     return resolved
 
 
+def _with_gemini_defaults(kwargs: dict[str, Any]) -> dict[str, Any]:
+    resolved = dict(kwargs)
+    resolved.setdefault("n_frames", _GEMINI_DEFAULT_N_FRAMES)
+    resolved.setdefault("video_upload", False)
+    resolved.setdefault("max_frame_longest_side", _GEMINI_MAX_FRAME_LONGEST_SIDE)
+    return resolved
+
+
 def _looks_like_qwen35_model_id(model_id: str) -> bool:
     normalized = model_id.lower().replace("-", "_").replace("/", "_")
     return any(marker in normalized for marker in _QWEN35_MODEL_ID_MARKERS)
@@ -235,8 +245,9 @@ def load_model(
         3. Starts with ``"litellm/"``              → LiteLLMModel via LiteLLM proxy
         4. Starts with ``"openrouter/"``           → OpenAIModel via OpenRouter API
         5. Looks like Qwen3.5 / qwen3p5 / qwen35   → Qwen35VLModel (local HuggingFace)
-        6. Matches a prefix in ``_LAZY_PREFIX_MAP`` → corresponding API backend
-        7. Anything else                            → Qwen3VLModel (local HuggingFace)
+        6. Starts with ``"gemini"``              → GeminiModel via native Gemini API
+        7. Matches a prefix in ``_LAZY_PREFIX_MAP`` → corresponding API backend
+        8. Anything else                            → Qwen3VLModel (local HuggingFace)
 
         OpenRouter model IDs use the convention ``"openrouter/<provider>/<slug>"``,
         e.g. ``"openrouter/google/gemini-2.5-pro"``.  The ``"openrouter/"`` prefix
@@ -367,7 +378,13 @@ def load_model(
         )
         return cls(model_id=model_id, prompt_method=prompt_method, **resolved_kwargs)
 
-    # 7. Named API backends
+    # 7. Native Gemini API
+    if lower.startswith(_GEMINI_PREFIX):
+        cls = _load_gemini()
+        resolved_kwargs = _with_gemini_defaults(kwargs)
+        return cls(model_id=model_id, prompt_method=prompt_method, **resolved_kwargs)
+
+    # 8. Named API backends
     for prefix, loader in _LAZY_PREFIX_MAP.items():
         if lower.startswith(prefix):
             cls = loader()
@@ -376,7 +393,7 @@ def load_model(
                 resolved_kwargs = _with_openai_compatible_defaults(model_id, kwargs)
             return cls(model_id=model_id, prompt_method=prompt_method, **resolved_kwargs)
 
-    # 8. Default: local HuggingFace Qwen3-VL model
+    # 9. Default: local HuggingFace Qwen3-VL model
     cls = _load_qwen3vl()
     resolved_kwargs = _with_local_qwen_kwargs(
         kwargs,

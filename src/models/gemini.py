@@ -7,8 +7,8 @@ This backend supports two Gemini-native input modes:
 
 1. Upload the whole video once via the Files API and reuse the uploaded asset
    across all questions in the batch.
-2. Extract evenly-spaced JPEG frames locally and send them inline as image
-   parts when ``video_upload=False``.
+2. Extract evenly-spaced JPEG frames locally, downscale them, and send them
+   inline as image parts when ``video_upload=False``.
 
 Authentication uses the native Gemini env var ``GEMINI_API_KEY`` by default.
 """
@@ -42,7 +42,8 @@ except Exception as exc:
 
 from .base import BaseVideoQAModel
 
-_DEFAULT_N_FRAMES = 128
+_DEFAULT_N_FRAMES = 64
+_DEFAULT_MAX_FRAME_LONGEST_SIDE = 480
 _DEFAULT_MAX_CONCURRENCY = 4
 _DEFAULT_UPLOAD_TIMEOUT_S = 300.0
 _DEFAULT_UPLOAD_POLL_INTERVAL_S = 2.0
@@ -57,8 +58,32 @@ _USAGE_KEYS = (
 )
 
 
-def _encode_frame_jpeg_bytes(frame: Any) -> bytes:
+def _resize_longest_side_bgr(bgr_frame: Any, max_longest_side: Optional[int]) -> Any:
+    if max_longest_side is None:
+        return bgr_frame
+    if max_longest_side <= 0:
+        raise ValueError(f"max_longest_side must be positive, got {max_longest_side}")
+
+    h, w = bgr_frame.shape[:2]
+    if h <= 0 or w <= 0:
+        raise ValueError(f"Invalid frame shape: {bgr_frame.shape}")
+
+    longest_side = max(h, w)
+    if longest_side <= max_longest_side:
+        return bgr_frame
+
+    scale = max_longest_side / longest_side
+    new_w = max(1, int(round(w * scale)))
+    new_h = max(1, int(round(h * scale)))
+    return cv2.resize(bgr_frame, (new_w, new_h), interpolation=cv2.INTER_AREA)
+
+
+def _encode_frame_jpeg_bytes(
+    frame: av.VideoFrame,
+    max_longest_side: Optional[int] = _DEFAULT_MAX_FRAME_LONGEST_SIDE,
+) -> bytes:
     bgr_frame = frame.to_ndarray(format="bgr24")
+    bgr_frame = _resize_longest_side_bgr(bgr_frame, max_longest_side)
     ok, buf = cv2.imencode(".jpg", bgr_frame)
     if not ok:
         raise ValueError("Failed to encode sampled video frame as JPEG")
@@ -76,12 +101,16 @@ def _sample_evenly(items: List[bytes], n: int) -> List[bytes]:
     return [items[idx] for idx in indices]
 
 
-def _extract_frames_bytes_sequential(video_path: str, n_frames: int) -> List[bytes]:
+def _extract_frames_bytes_sequential(
+    video_path: str,
+    n_frames: int,
+    max_longest_side: Optional[int] = _DEFAULT_MAX_FRAME_LONGEST_SIDE,
+) -> List[bytes]:
     with av.open(video_path) as container:
         stream = _get_video_stream(container)
         decoded: List[bytes] = []
         for frame in container.decode(stream):
-            decoded.append(_encode_frame_jpeg_bytes(frame))
+            decoded.append(_encode_frame_jpeg_bytes(frame, max_longest_side=max_longest_side))
 
         if not decoded:
             raise ValueError(f"Failed to decode any frames sequentially from video: {video_path}")
@@ -95,12 +124,18 @@ def _get_video_stream(container: av.container.input.InputContainer) -> av.video.
     return container.streams.video[0]
 
 
-def _extract_frames_bytes(video_path: str, n_frames: int) -> List[bytes]:
+def _extract_frames_bytes(
+    video_path: str,
+    n_frames: int,
+    max_longest_side: Optional[int] = _DEFAULT_MAX_FRAME_LONGEST_SIDE,
+) -> List[bytes]:
     """
     Sample exactly ``n_frames`` uniformly-spaced frame slots as JPEG bytes.
 
     If the source video has fewer than ``n_frames`` decoded frames, some slots
     may map to the same underlying frame so the prompt remains a fixed size.
+    When ``max_longest_side`` is set, larger sampled frames are downscaled
+    before JPEG encoding.
     """
     if n_frames <= 0:
         raise ValueError(f"n_frames must be positive, got {n_frames}")
@@ -111,7 +146,11 @@ def _extract_frames_bytes(video_path: str, n_frames: int) -> List[bytes]:
         stream = _get_video_stream(container)
         total_frames = int(stream.frames or 0)
         if total_frames <= 0:
-            return _extract_frames_bytes_sequential(video_path, n_frames)
+            return _extract_frames_bytes_sequential(
+                video_path,
+                n_frames,
+                max_longest_side=max_longest_side,
+            )
 
         if n_frames == 1:
             indices = [total_frames // 2]
@@ -129,15 +168,26 @@ def _extract_frames_bytes(video_path: str, n_frames: int) -> List[bytes]:
             if frame_idx > last_needed:
                 break
             if frame_idx in wanted and frame_idx not in cache:
-                cache[frame_idx] = _encode_frame_jpeg_bytes(frame)
+                cache[frame_idx] = _encode_frame_jpeg_bytes(
+                    frame,
+                    max_longest_side=max_longest_side,
+                )
                 if len(cache) == len(wanted):
                     break
 
         if not cache:
-            return _extract_frames_bytes_sequential(video_path, n_frames)
+            return _extract_frames_bytes_sequential(
+                video_path,
+                n_frames,
+                max_longest_side=max_longest_side,
+            )
 
         if any(idx not in cache for idx in wanted):
-            return _extract_frames_bytes_sequential(video_path, n_frames)
+            return _extract_frames_bytes_sequential(
+                video_path,
+                n_frames,
+                max_longest_side=max_longest_side,
+            )
 
         return [cache[idx] for idx in indices]
 
@@ -259,11 +309,16 @@ class GeminiModel(BaseVideoQAModel):
     prompt_method : str
         Prompt template label (affects cache namespace).  Default: "vanilla".
     n_frames : int
-        Frames to extract when NOT using the Files API.  Default: 128.
+        Frames to extract when NOT using the Files API.  Default: 64.
     video_upload : bool
-        If True, upload the whole video via the Files API.  Default: True.
+        If True, upload the whole video via the Files API instead of sending
+        resized inline frames.  Default: False.
     api_key_env : str
         Env-var name for the Gemini API key.  Default: ``"GEMINI_API_KEY"``.
+    max_frame_longest_side : int | None
+        Optional cap for the longest side of sampled JPEG frames. When set,
+        larger frames are resized before being encoded and sent to Gemini.
+        Default: 480.
     print_usage : bool
         If True, print token-usage summaries for every answer batch. Default: True.
     usage_log_path : str | None
@@ -275,9 +330,10 @@ class GeminiModel(BaseVideoQAModel):
         model_id: str,
         prompt_method: str = "vanilla",
         n_frames: int = _DEFAULT_N_FRAMES,
-        video_upload: bool = True,
+        video_upload: bool = False,
         api_key_env: str = "GEMINI_API_KEY",
         max_concurrency: int = _DEFAULT_MAX_CONCURRENCY,
+        max_frame_longest_side: Optional[int] = _DEFAULT_MAX_FRAME_LONGEST_SIDE,
         upload_timeout_s: float = _DEFAULT_UPLOAD_TIMEOUT_S,
         upload_poll_interval_s: float = _DEFAULT_UPLOAD_POLL_INTERVAL_S,
         print_usage: bool = True,
@@ -286,6 +342,10 @@ class GeminiModel(BaseVideoQAModel):
         super().__init__(model_id, prompt_method)
         if n_frames <= 0:
             raise ValueError(f"n_frames must be positive, got {n_frames}")
+        if max_frame_longest_side is not None and max_frame_longest_side <= 0:
+            raise ValueError(
+                f"max_frame_longest_side must be positive, got {max_frame_longest_side}"
+            )
         if max_concurrency <= 0:
             raise ValueError(f"max_concurrency must be positive, got {max_concurrency}")
         if upload_timeout_s <= 0:
@@ -298,6 +358,7 @@ class GeminiModel(BaseVideoQAModel):
         self.video_upload = video_upload
         self.api_key_env = api_key_env
         self.max_concurrency = max_concurrency
+        self.max_frame_longest_side = max_frame_longest_side
         self.upload_timeout_s = upload_timeout_s
         self.upload_poll_interval_s = upload_poll_interval_s
         self.print_usage = print_usage
@@ -340,7 +401,11 @@ class GeminiModel(BaseVideoQAModel):
             )
             return answers
 
-        frames = _extract_frames_bytes(video_path, self.n_frames)
+        frames = _extract_frames_bytes(
+            video_path,
+            self.n_frames,
+            max_longest_side=self.max_frame_longest_side,
+        )
         answers, batch_usage = self._answer_questions_with_frames(
             normalized_questions,
             frames,
