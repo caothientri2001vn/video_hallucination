@@ -42,7 +42,8 @@ __all__ = [
     "load_model",
 ]
 
-_OPENAI_FAMILY_DEFAULT_N_FRAMES = 32
+_OPENAI_FAMILY_DEFAULT_N_FRAMES = 64
+_OPENAI_MAX_FRAME_LONGEST_SIDE = 480
 _GEMINI_DEFAULT_N_FRAMES = 64
 _GEMINI_MAX_FRAME_LONGEST_SIDE = 480
 _OPENROUTER_ANTHROPIC_DEFAULT_N_FRAMES = 64
@@ -391,6 +392,10 @@ def load_model(
             resolved_kwargs = kwargs
             if prefix in {"gpt", "o1", "o3"}:
                 resolved_kwargs = _with_openai_compatible_defaults(model_id, kwargs)
+                resolved_kwargs.setdefault(
+                    "max_frame_longest_side",
+                    _OPENAI_MAX_FRAME_LONGEST_SIDE,
+                )
             return cls(model_id=model_id, prompt_method=prompt_method, **resolved_kwargs)
 
     # 9. Default: local HuggingFace Qwen3-VL model
