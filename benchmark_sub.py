@@ -32,7 +32,7 @@ Available metric keys
 import json
 from argparse import ArgumentParser
 from collections import defaultdict
-from typing import Dict, List
+from typing import Dict, List, Optional, Tuple
 
 from dotenv import load_dotenv
 from tqdm import tqdm
@@ -48,8 +48,17 @@ from src.models import load_model
 # Result helpers
 # ---------------------------------------------------------------------------
 
-def _aggregate_results(per_sample_results: List[Dict[str, float]]) -> Dict[str, float]:
-    """Average per-sample metric dicts into a single summary dict."""
+def _aggregate_results(
+    per_sample_results: List[Dict[str, float]],
+    accuracy_counts: Optional[List[Tuple[int, int]]] = None,
+) -> Dict[str, float]:
+    """
+    Average per-sample metric dicts into a single summary dict.
+
+    The target accuracy metric is optionally aggregated as a pooled
+    question-level score so videos with more target questions carry the right
+    weight. Other metrics remain sample-level macro averages.
+    """
     if not per_sample_results:
         return {}
     totals: Dict[str, float] = defaultdict(float)
@@ -59,7 +68,15 @@ def _aggregate_results(per_sample_results: List[Dict[str, float]]) -> Dict[str, 
             if v == v:  # skip NaN
                 totals[k] += v
                 counts[k] += 1
-    return {k: totals[k] / counts[k] for k in totals}
+    result = {k: totals[k] / counts[k] for k in totals}
+
+    if accuracy_counts and "accuracy" in result:
+        total_correct = sum(correct for correct, _ in accuracy_counts)
+        total_targets = sum(total for _, total in accuracy_counts)
+        if total_targets:
+            result["accuracy"] = total_correct / total_targets
+
+    return result
 
 
 def _print_results(results: Dict[str, float]) -> None:
@@ -103,6 +120,7 @@ def main(args) -> None:
     # 2. Run per sample
     # ------------------------------------------------------------------
     per_sample_results: List[Dict[str, float]] = []
+    accuracy_counts: List[Tuple[int, int]] = []
     skipped_examples: List[str] = []
 
     for idx, sample in enumerate(tqdm(benchmark_data, desc="Evaluating")):
@@ -127,6 +145,10 @@ def main(args) -> None:
 
         sample_result = evaluate(groups, metrics)
         per_sample_results.append(sample_result)
+        if "accuracy" in sample_result:
+            accuracy_counts.append(
+                (sum(1 for group in groups if group.is_target_correct()), len(groups))
+            )
 
         tqdm.write(
             f"[{idx + 1:>4}/{len(benchmark_data)}] "
@@ -139,7 +161,7 @@ def main(args) -> None:
     # ------------------------------------------------------------------
     # 3. Aggregate and report
     # ------------------------------------------------------------------
-    final = _aggregate_results(per_sample_results)
+    final = _aggregate_results(per_sample_results, accuracy_counts=accuracy_counts)
     _print_results(final)
 
     if args.output_json:
