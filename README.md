@@ -33,10 +33,7 @@ The benchmark lives under `benchmark/` and `benchmark_*/`, organised by difficul
 
 | Directory               | Use                                                |
 | ----------------------- | -------------------------------------------------- |
-| `benchmark_small/`      | Smoke-test set (a handful of samples)              |
 | `benchmark/`            | Standard set (~88 samples)                         |
-| `benchmark_hard/`       | Harder set: longer videos, more compositional Qs   |
-| `benchmark_super_hard/` | Hardest set, used to stress-test the pipeline      |
 
 Each sample is a JSON file describing a video + a list of questions. Videos themselves are referenced from a sibling directory and exposed via the `normalized_videos`, `raw_data`, and `videos` symlinks at the repo root.
 
