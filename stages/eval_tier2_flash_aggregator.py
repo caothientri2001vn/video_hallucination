@@ -372,14 +372,14 @@ def load_samples(questions_dir: str, video_dir: str) -> List[Dict[str, Any]]:
 # ---------------------------------------------------------------------------
 
 def _build_gemini_client(api_key_env: str) -> genai.Client:
-    api_key = "AIzaSyAlsof7ZPkQIedrRQVHa7wFo8sBUffqOdY"
+    api_key = ""
     if not api_key:
         raise RuntimeError(f"Environment variable {api_key_env!r} is not set.")
     return genai.Client(api_key=api_key)
 
 
 def _build_openrouter_client(api_key_env: str) -> OpenAI:
-    api_key = "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"
+    api_key = ""
     if not api_key:
         raise RuntimeError(f"Environment variable {api_key_env!r} is not set.")
     default_headers: Dict[str, str] = {}
