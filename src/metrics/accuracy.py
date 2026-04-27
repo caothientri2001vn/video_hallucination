@@ -1,9 +1,14 @@
 """
 src/metrics/accuracy.py
 ------------------------
-Simple accuracy over target questions only.
+Per-sample (per-video) accuracy over the target questions answered by
+the pipeline. Sub-questions are never sent to the answerer, so they are
+not part of the score.
 
-accuracy = (number of groups where target_pred == target_gt) / N
+accuracy_v = (correct target answers in video v) / (target questions in video v)
+
+The cross-video aggregation is a macro-average — each video contributes
+equally regardless of its target-question count.
 """
 
 from typing import List
@@ -12,11 +17,7 @@ from .base import BaseMetric, QuestionGroup
 
 
 class TargetAccuracy(BaseMetric):
-    """
-    Fraction of question groups where the model's target answer is correct.
-
-    This is the vanilla accuracy metric — it ignores sub-questions entirely.
-    """
+    """Per-video target-question accuracy. Macro-averaged across videos."""
 
     @property
     def name(self) -> str:

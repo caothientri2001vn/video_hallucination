@@ -1,385 +1,219 @@
-# Video hallucination detection
+# Video Hallucination
 
-## Download model
+A three-stage pipeline for long-form video question answering, designed to localise and mitigate hallucination in monolithic vision-language models.
 
-```shell
-hf download Qwen/Qwen3-VL-8B-Instruct --local-dir ./weights/qwen3_vl_8b_inst
-```
+## Pipeline
 
-## Download data
+The pipeline decomposes video QA into three stages, each of which can be filled by a different model:
 
-```shell
-cd raw_data
-curl -O https://link/to/file.mp4
-```
+1. **Stage A1 — Extractor (VLM).** Splits the video into 15 s chunks (60 frames each) and runs a VLM with a structured-extraction prompt. Output: per-chunk JSON "states" with fields `event_type`, `description`, `sub_events`, `outcome`, `start_time`, `end_time`. All chunk states for a video are concatenated into one text document.
+2. **Stage B — Filter + identity linking (text LLM).** Takes the question and the concatenated states, and produces (a) a filtered list of relevant events whose description / sub_events match the question, and (b) a cross-chunk identity table that links recurring entities across chunks.
+3. **Stage C — Answerer (VLM).** Takes the question + the filtered events text + 64 video frames, and emits a short reasoning trace formatted as `Evidence: … / Answer: …`.
+
+Each slot is model-agnostic. Supported backends include Gemini 3 Flash (native API), Qwen3-VL-235B-A22B-Thinking (OpenRouter / vLLM), Qwen3-235B-A22B (text-only, OpenRouter), and others reachable through OpenAI-compatible APIs.
 
 ## Setup
 
 ```shell
-sudo apt update
 sudo apt install -y libgl1
-```
-
-Each model backend has its own dependency group. Install only what you need:
-
-| Use-case | Command | Notes |
-|---|---|---|
-| Qwen3-VL-8B (local GPU) | `uv sync --group qwen3vl` | |
-| Qwen3.5-VL + frame selectors (local GPU) | `uv sync --group qwen35vl` | dev transformers |
-| TraveLER (vLLM server) | `uv sync --group openai` | vLLM served separately |
-| Claude API | `uv sync --group claude` | |
-| Gemini API | `uv sync --group gemini` | |
-| OpenAI / OpenRouter | `uv sync --group openai` | |
-| Qwen3-VL + all API backends | `uv sync --group qwen3vl --group claude --group gemini --group openai` | |
-
-Then activate:
-
-```shell
+make env          # uv sync --group openai --group gemini  →  .venv/
 source .venv/bin/activate
 ```
 
-For API backends, add the relevant key(s) to a `.env` file:
+Add API keys to `.env` at the repo root:
 
 ```text
-ANTHROPIC_API_KEY=...
-GEMINI_API_KEY=...
-OPENAI_API_KEY=...
-OPENROUTER_API_KEY=...
-
-# TraveLER: URL of the running vLLM server (default: http://localhost:8123/v1)
-VLLM_BASE_URL=http://localhost:8123/v1
+GOOGLE_API_KEY=...        # Gemini native API
+OPENROUTER_API_KEY=...    # OpenRouter (Qwen3-VL, Qwen3 text, anything else)
 ```
 
-## Run
+## Data
 
-```shell
-CUDA_VISIBLE_DEVICES=0 python benchmark.py \
-    --model_id weights/qwen3_vl_8b_inst \
-    --max_new_tokens 1024
+The benchmark lives under `benchmark/` and `benchmark_*/`, organised by difficulty:
+
+| Directory               | Use                                                |
+| ----------------------- | -------------------------------------------------- |
+| `benchmark_small/`      | Smoke-test set (a handful of samples)              |
+| `benchmark/`            | Standard set (~88 samples)                         |
+| `benchmark_hard/`       | Harder set: longer videos, more compositional Qs   |
+| `benchmark_super_hard/` | Hardest set, used to stress-test the pipeline      |
+
+Each sample is a JSON file describing a video + a list of questions. Videos themselves are referenced from a sibling directory and exposed via the `normalized_videos`, `raw_data`, and `videos` symlinks at the repo root.
+
+## Repo layout
+
+```
+.
+├── benchmark_sub_with_states.py    # main pipeline runner (Stages A1 → B → C)
+├── analyze_failures.py             # failure-mode analysis
+├── llm_judge_accuracy.py           # LLM-judge accuracy scoring
+├── judge_vanilla.py                # vanilla (no-pipeline) baseline judge
+├── inspect_outputs.py              # quick-look at cached answers
+├── inspect_accuracy.py             # accuracy summary helper
+├── stages/                         # core stage implementations
+│   ├── eval_tier2_flash_aggregator.py          # Stage A1 + Stage B + helpers
+│   ├── eval_tier2_flash_aggregator_planner.py  # extractor planner
+│   └── stage_a_planner.py                      # biased-timeline builder
+├── src/
+│   ├── eval_module.py              # eval orchestration + scoring
+│   ├── load_data.py                # benchmark loader
+│   ├── answer_processing.py        # yes/no extraction, answer matching
+│   ├── cache/                      # AnswerCache
+│   ├── metrics/                    # accuracy, consistency
+│   └── models/
+│       ├── base.py                 # BaseVideoQAModel ABC
+│       └── vllm_openai.py          # OpenAI-compatible / vLLM client
+├── benchmark/                      # standard difficulty samples (~88)
+├── benchmark_hard/, benchmark_super_hard/, benchmark_small/
+├── tests/                          # tests for the live core
+├── normalized_videos/, raw_data/, videos/  →  symlinks to video files
+├── cache/                          # stage outputs (gitignored)
+├── pyproject.toml, uv.lock, Makefile
+└── README.md
 ```
 
-**NOTE**: You can read `benchmark.py` to understand the flow of the code before hitting run it. This makes it easier to develop custom pipeline for other baselines to utilize the benchmark.
+## Running experiments
 
-**NOTE**: The consitency and sub-questions are currently under development. Future work may expand the benchmark structure but backward compatibility is ensure.
+### Model tags
 
-## Beta version
+| Tag    | Slug / model                            | Role                                          |
+| ------ | --------------------------------------- | --------------------------------------------- |
+| `gfl`  | `gemini-3-flash-preview`                | proprietary VLM/LLM (any slot)                |
+| `q3vl` | `qwen/qwen3-vl-235b-a22b-thinking`      | open-source VLM (Stage A1 extractor / Stage C answerer) |
+| `q3t`  | `qwen/qwen3-235b-a22b`                  | open-source text MoE (Stage B filter + identity linking) |
 
-### Local models
+### Experiment matrix
 
-> **Default frame sampling**: `Qwen3VLModel` and `Qwen35VLModel` pass the raw
-> video file directly to the model and let the processor sample frames
-> internally (no explicit frame selector).  Use the `<selector>+<model>` syntax
-> below if you want explicit frame selection strategies.
+| ID           | A1 Extractor | B Filter + IdLink | C Answerer | Cache dir                  |
+| ------------ | ------------ | ----------------- | ---------- | -------------------------- |
+| **Baseline** | `gfl`        | `gfl`             | `gfl`      | `cache/pipeline_baseline/` |
+| **A1**       | `gfl`        | `q3t`             | `q3vl`     | `cache/pipeline_a1/`       |
+| **B1**       | `q3vl`       | `gfl`             | `q3vl`     | `cache/pipeline_b1_d1/`    |
+| **C1**       | `q3vl`       | `q3t`             | `gfl`      | `cache/pipeline_c1/`       |
+| **D1**       | `q3vl`       | `q3t`             | `q3vl`     | `cache/pipeline_b1_d1/`    |
 
-```shell
-# Qwen3-VL-8B  (internal video sampling — default)
-CUDA_VISIBLE_DEVICES=0 python benchmark_sub.py \
-    --model_id weights/qwen3_vl_8b_inst \
-    --metrics all \
-    --questions_dir benchmark_subq
+Baseline, A1, and C1 each have their own dedicated state cache directory. **B1 and D1 share `cache/pipeline_b1_d1/`** — both have a `q3vl` answerer, but they use different filters (`gfl` vs. `q3t`) and different `--prompt_method` tags, so their Stage-B and Stage-C outputs land in distinct subdirectories within the shared cache.
 
-# Qwen3-compatible checkpoint that expects a fixed FPS (for example, 4 FPS)
-CUDA_VISIBLE_DEVICES=0 python benchmark_sub.py \
-    --model_id /path/to/Cosmos-Reason2 \
-    --force_fps 4 \
-    --metrics all \
-    --questions_dir benchmark_subq
+### Baseline (all-Gemini)
 
-# Qwen3.5-VL (auto-detected by model_id prefix)
-CUDA_VISIBLE_DEVICES=3 python benchmark_sub.py \
-    --model_id Qwen/Qwen3.5-2B \
-    --metrics all \
-    --questions_dir benchmark_subq
-
-# Qwen3.5-VL with thinking mode
-CUDA_VISIBLE_DEVICES=0 python benchmark_sub.py \
-    --model_id Qwen/Qwen3.5-VL-7B-Instruct \
-    --prompt_method thinking \
-    --metrics all \
-    --questions_dir benchmark_subq
+```bash
+python benchmark_sub_with_states.py \
+  --state_strategy filter --aggregator_backend concat \
+  --stage_b_backend gemini --stage_b_model gemini-3-flash-preview \
+  --state_extractor_backend gemini --state_extractor_model gemini-3-flash-preview \
+  --states_cache_dir cache/pipeline_baseline \
+  --chunk_prompt_version v6 --answerer_prompt_version v3 \
+  --enable_identity_link --aggregation_routing \
+  --answerer_backend gemini --model_id gemini-3-flash-preview \
+  --gemini_answerer_thinking_budget 0 --gemini_answerer_max_concurrency 4 \
+  --vllm_n_frames 64 --frames_per_chunk 60 \
+  --prompt_method filter_v3_gemini \
+  --mode all --metrics accuracy \
+  --max_new_tokens 4096 \
+  --questions_dir benchmark
 ```
 
-### Frame-selection pipelines
+### A1 — Gemini extractor + Qwen filter + Qwen answerer
 
-Use `<selector>+<model_id>` to run an explicit frame selection strategy before
-inference.  The selector extracts PIL frames and feeds them to the backbone as
-images instead of a raw video file.
-
-| Selector | Strategy |
-|---|---|
-| `uniform` | Uniform temporal sampling (baseline, query-agnostic) |
-| `clip` | CLIP cosine similarity — top-K frames most relevant to the question |
-| `aks` | Adaptive Keyframe Selection — recursive segment splitting via CLIP scores |
-| `efs` | Event-anchored Frame Selection — DINOv2 scene segmentation + CLIP scoring |
-
-```shell
-# Uniform  (no CLIP needed — fastest)
-CUDA_VISIBLE_DEVICES=0 python benchmark_sub.py \
-    --model_id uniform+Qwen/Qwen3.5-2B \
-    --metrics all \
-    --questions_dir benchmark_subq
-
-# CLIP Retrieval
-CUDA_VISIBLE_DEVICES=0 python benchmark_sub.py \
-    --model_id clip+Qwen/Qwen3.5-2B \
-    --metrics all \
-    --questions_dir benchmark_subq
-
-# AKS
-CUDA_VISIBLE_DEVICES=0 python benchmark_sub.py \
-    --model_id aks+Qwen/Qwen3.5-2B \
-    --metrics all \
-    --questions_dir benchmark_subq
-
-# EFS  (also loads DINOv2 — slowest selector but most scene-aware)
-CUDA_VISIBLE_DEVICES=0 python benchmark_sub.py \
-    --model_id efs+Qwen/Qwen3.5-2B \
-    --metrics all \
-    --questions_dir benchmark_subq
+```bash
+python benchmark_sub_with_states.py \
+  --state_strategy filter --aggregator_backend concat \
+  --stage_b_backend openrouter --stage_b_model qwen/qwen3-235b-a22b \
+  --state_extractor_backend gemini --state_extractor_model gemini-3-flash-preview \
+  --states_cache_dir cache/pipeline_a1 \
+  --chunk_prompt_version v6 --answerer_prompt_version v3 \
+  --enable_identity_link --aggregation_routing \
+  --answerer_backend vllm --model_id vllm/qwen/qwen3-vl-235b-a22b-thinking \
+  --vllm_base_url https://openrouter.ai/api/v1 \
+  --vllm_api_key_env OPENROUTER_API_KEY \
+  --vllm_n_frames 64 --vllm_max_concurrency 4 \
+  --frames_per_chunk 60 \
+  --prompt_method filter_q3t_v3_q3vl \
+  --mode all --metrics accuracy \
+  --max_new_tokens 16384 \
+  --questions_dir benchmark
 ```
 
-### API models
+### B1 — Qwen extractor + Gemini filter + Qwen answerer
 
-No GPU required. Make sure the relevant key is set in `.env` first.
-
-```shell
-# Gemini (direct)
-python benchmark_sub.py \
-    --model_id gemini-2.5-pro \
-    --metrics all \
-    --questions_dir benchmark_subq
-
-# Claude (direct)
-python benchmark_sub.py \
-    --model_id claude-3-7-sonnet-20250219 \
-    --metrics all \
-    --questions_dir benchmark_subq
-
-# OpenAI (direct)
-python benchmark_sub.py \
-    --model_id gpt-4o \
-    --metrics all \
-    --questions_dir benchmark_subq
+```bash
+python benchmark_sub_with_states.py \
+  --state_strategy filter --aggregator_backend concat \
+  --stage_b_backend gemini --stage_b_model gemini-3-flash-preview \
+  --state_extractor_backend openrouter --state_extractor_model qwen/qwen3-vl-235b-a22b-thinking \
+  --states_cache_dir cache/pipeline_b1_d1 \
+  --chunk_prompt_version v6 --answerer_prompt_version v3 \
+  --enable_identity_link --aggregation_routing \
+  --answerer_backend vllm --model_id vllm/qwen/qwen3-vl-235b-a22b-thinking \
+  --vllm_base_url https://openrouter.ai/api/v1 \
+  --vllm_api_key_env OPENROUTER_API_KEY \
+  --vllm_n_frames 64 --vllm_max_concurrency 4 \
+  --frames_per_chunk 60 \
+  --prompt_method filter_gfl_v3_q3vl \
+  --mode all --metrics accuracy \
+  --max_new_tokens 16384 \
+  --questions_dir benchmark
 ```
 
-### OpenRouter
+### C1 — Qwen extractor + Qwen filter + Gemini answerer
 
-Prefix `openrouter/` routes any model through OpenRouter (single API key, OpenAI-compatible).
-Add `OPENROUTER_API_KEY` to `.env`. No extra dependency group needed beyond `openai`.
-
-```shell
-uv sync --group openai
+```bash
+python benchmark_sub_with_states.py \
+  --state_strategy filter --aggregator_backend concat \
+  --stage_b_backend openrouter --stage_b_model qwen/qwen3-235b-a22b \
+  --state_extractor_backend openrouter --state_extractor_model qwen/qwen3-vl-235b-a22b-thinking \
+  --states_cache_dir cache/pipeline_c1 \
+  --chunk_prompt_version v6 --answerer_prompt_version v3 \
+  --enable_identity_link --aggregation_routing \
+  --answerer_backend gemini --model_id gemini-3-flash-preview \
+  --gemini_answerer_thinking_budget 0 --gemini_answerer_max_concurrency 4 \
+  --vllm_n_frames 64 --frames_per_chunk 60 \
+  --prompt_method filter_q3t_v3_gfl \
+  --mode all --metrics accuracy \
+  --max_new_tokens 4096 \
+  --questions_dir benchmark
 ```
 
-```shell
-# Gemini 2.5 Pro via OpenRouter
-python benchmark_sub.py \
-    --model_id openrouter/google/gemini-2.5-pro \
-    --metrics all \
-    --questions_dir benchmark_subq
+### D1 — All open-source (no Gemini)
 
-# GPT-5 via OpenRouter
-python benchmark_sub.py \
-    --model_id openrouter/openai/gpt-5 \
-    --metrics all \
-    --questions_dir benchmark_subq
-
-# Claude Sonnet 4.6 via OpenRouter
-python benchmark_sub.py \
-    --model_id openrouter/anthropic/claude-sonnet-4-6 \
-    --metrics all \
-    --questions_dir benchmark_subq
-
-# Qwen3-VL-32B via OpenRouter
-python benchmark_sub.py \
-    --model_id openrouter/qwen/qwen3-vl-32b-instruct \
-    --metrics all \
-    --questions_dir benchmark_subq
-
-# InternVL3.5-78B via OpenRouter
-python benchmark_sub.py \
-    --model_id openrouter/internvl/internvl3.5-78b \
-    --metrics all \
-    --questions_dir benchmark_subq
+```bash
+python benchmark_sub_with_states.py \
+  --state_strategy filter --aggregator_backend concat \
+  --stage_b_backend openrouter --stage_b_model qwen/qwen3-235b-a22b \
+  --state_extractor_backend openrouter --state_extractor_model qwen/qwen3-vl-235b-a22b-thinking \
+  --states_cache_dir cache/pipeline_b1_d1 \
+  --chunk_prompt_version v6 --answerer_prompt_version v3 \
+  --enable_identity_link --aggregation_routing \
+  --answerer_backend vllm --model_id vllm/qwen/qwen3-vl-235b-a22b-thinking \
+  --vllm_base_url https://openrouter.ai/api/v1 \
+  --vllm_api_key_env OPENROUTER_API_KEY \
+  --vllm_n_frames 64 --vllm_max_concurrency 4 \
+  --frames_per_chunk 60 \
+  --prompt_method filter_q3t_v3_q3vl \
+  --mode all --metrics accuracy \
+  --max_new_tokens 16384 \
+  --questions_dir benchmark
 ```
 
-> The `openrouter/` prefix is stripped automatically before calling the API,
-> so `openrouter/google/gemini-2.5-pro` → model slug `google/gemini-2.5-pro`
-> (exactly as shown on openrouter.ai).
+## Cache layout
 
-### TraveLER (multi-agent structured pipeline)
+Stage outputs are cached under `--states_cache_dir`. Layout per video:
 
-TraveLER runs an iterative **Planner → Retriever → Extractor → Summarizer → Evaluator**
-loop instead of a single forward pass.  The model is served externally by vLLM
-and communicated with via the OpenAI-compatible API — no GPU memory is used
-by the benchmark process itself.
-
-**Environment**: only needs the `openai` group (no transformers).
-
-```shell
-uv sync --group openai
+```
+<cache_dir>/<video_stem>/
+├── chunks.json                     # Stage A1 per-chunk states
+├── stage_a_concat.txt              # concatenated states text
+├── plan.json                       # extractor plan
+├── aliases.txt, aliases.json       # cross-chunk identity table (one per video)
+├── filter[<model_tag>]/<qid>.json  # Stage B filter outputs (suffixed by model)
+└── answers_<prompt_method>/<qid>.json  # Stage C final answers
 ```
 
-**Step 1 — serve the model** (separate terminal, runs persistently):
+**Aliases caveat.** `aliases.txt` / `aliases.json` are written once per video by the first run that reaches the identity-link step, and reused unconditionally by every subsequent run regardless of which Stage-B backend is configured. If you need strict per-config alias semantics, delete `aliases.txt` and `aliases.json` from each `<video_stem>/` directory before the run.
 
-```shell
-# Install vLLM (one-time, separate from uv env)
-pip install vllm --torch-backend=auto --extra-index-url https://wheels.vllm.ai/nightly
+## Notes
 
-# Serve Qwen3.5-2B on GPU 0
-CUDA_VISIBLE_DEVICES=0 vllm serve Qwen/Qwen3.5-2B \
-    --port 8123 \
-    --gpu-memory-utilization 0.25 \
-    --max-model-len 8192 \
-    --reasoning-parser qwen3 \
-    --default-chat-template-kwargs '{"enable_thinking": false}' \
-    --enable-prefix-caching \
-    --max-cudagraph-capture-size 256
-```
-
-**Step 2 — run the benchmark** (in a different terminal, server must be running):
-
-```shell
-# Default: connects to http://localhost:8123/v1
-python benchmark_sub.py \
-    --model_id traveler/Qwen/Qwen3.5-2B \
-    --metrics all \
-    --questions_dir benchmark_subq
-
-# Custom server URL
-VLLM_BASE_URL=http://my-server:8123/v1 python benchmark_sub.py \
-    --model_id traveler/Qwen/Qwen3.5-2B \
-    --metrics all \
-    --questions_dir benchmark_subq
-```
-
-> **Cost**: TraveLER runs the full pipeline once **per question** (not per video),
-> so it makes many more API calls than a single-pass model.  Use the built-in
-> caching (`--cache_dir`) to avoid re-running completed questions.
-
-> **Pipeline hyperparams** can be overridden via `load_model(**kwargs)` in
-> Python code: `max_iters` (default 3), `view_range` (2 s), `num_questions` (3),
-> `init_frames` (5), `video_fps` (10).
-
-### vLLM (localhost)
-
-Prefix `vllm/` routes any model through a local vLLM OpenAI-compatible server.
-This uses a separate backend file and leaves `src/models/openai_gpt.py` unchanged.
-
-Add these to `.env` if needed:
-
-```text
-VLLM_BASE_URL=http://localhost:8000/v1
-VLLM_API_KEY=EMPTY
-```
-
-`VLLM_API_KEY` is optional for the common localhost setup; the vLLM backend falls
-back to `EMPTY` if it is unset.
-
-```shell
-uv sync --group openai
-```
-
-For the 32B served model setup:
-
-```shell
-OMP_NUM_THREADS=1 \
-vllm serve weights/qwen3_vl_32b_inst \
-    --served-model-name qwen3_vl_32b_inst \
-    --tensor-parallel-size 8 \
-    --mm-encoder-tp-mode data \
-    --async-scheduling \
-    --reasoning-parser qwen3 \
-    --limit-mm-per-prompt.image 64 \
-    --limit-mm-per-prompt.video 0 \
-    --max-model-len 128000
-```
-
-Then call the served model name with the `vllm/` prefix:
-
-```shell
-python benchmark_sub.py \
-    --model_id vllm/qwen3_vl_32b_inst \
-    --metrics all \
-    --questions_dir benchmark_subq
-```
-
-Use `vllm_video/` when the vLLM server is on the same machine and can read the
-video path directly. Launch the server with local media access and video inputs
-enabled:
-
-```shell
-OMP_NUM_THREADS=1 \
-vllm serve weights/qwen3_vl_32b_inst \
-    --served-model-name qwen3_vl_32b_inst \
-    --tensor-parallel-size 8 \
-    --mm-encoder-tp-mode data \
-    --async-scheduling \
-    --reasoning-parser qwen3 \
-    --limit-mm-per-prompt.image 0 \
-    --limit-mm-per-prompt.video 1 \
-    --allowed-local-media-path /path/to/raw_data \
-    --max-model-len 128000
-```
-
-Then run:
-
-```shell
-python benchmark_sub.py \
-    --model_id vllm_video/qwen3_vl_32b_inst \
-    --metrics all \
-    --questions_dir benchmark_subq
-```
-
-> The `vllm/` and `vllm_video/` prefixes are stripped automatically before
-> calling the API, so `vllm_video/qwen3_vl_32b_inst` -> model ID
-> `qwen3_vl_32b_inst`.
-> If `--reasoning-parser qwen3` returns `content=None` with text in `reasoning`,
-> the vLLM backends read that field as the answer.
-
-### Common flags
-
-| Flag               | Default                     | Description                                                                                      |
-| ------------------ | --------------------------- | ------------------------------------------------------------------------------------------------ |
-| `--model_id`       | `Qwen/Qwen3-VL-8B-Instruct` | Model to evaluate                                                                                |
-| `--metrics`        | `all`                       | Metrics: `accuracy`, `sub_accuracy`, `consistency`, `consistency_tc`, `consistency_tw`, or `all` |
-| `--questions_dir`  | `benchmark`                 | Folder containing benchmark JSON files                                                           |
-| `--prompt_method`  | `vanilla`                   | Prompt variant label (also used as cache namespace suffix)                                       |
-| `--force_fps`      | _(none)_                    | Force the local Qwen3-VL backend to use a fixed FPS, e.g. `4` for Cosmos-Reason2                |
-| `--max_new_tokens` | `256`                       | Max tokens per answer                                                                            |
-| `--output_json`    | _(none)_                    | Write full results to a JSON file                                                                |
-| `--cache_dir`      | `cache`                     | Directory for caching model predictions                                                          |
-| `--video_dir`      | `raw_data`                  | Directory containing video files                                                                 |
-
-Model routing is automatic based on the `--model_id` prefix:
-
-| Prefix | Backend | Required group | Notes |
-|---|---|---|---|
-| `traveler/*` | `TraveLERModel` | `uv sync --group openai` | vLLM server must be running; set `VLLM_BASE_URL` |
-| `openrouter/*` | `OpenAIModel` → OpenRouter | `uv sync --group openai` | Set `OPENROUTER_API_KEY` |
-| `gemini-*` | `GeminiModel` | `uv sync --group gemini` | Set `GOOGLE_API_KEY` |
-| `claude-*` | `ClaudeModel` | `uv sync --group claude` | Set `ANTHROPIC_API_KEY` |
-| `gpt-*` / `o1-*` / `o3-*` | `OpenAIModel` | `uv sync --group openai` | Set `OPENAI_API_KEY` |
-| `<sel>+<model>` | `FramePipelineModel` | `uv sync --group qwen35vl` | sel = uniform / clip / aks / efs |
-| `Qwen/Qwen3.5-*` / `qwen3.5-*` | `Qwen35VLModel` | `uv sync --group qwen35vl` | Internal video sampling |
-| anything else | `Qwen3VLModel` | `uv sync --group qwen3vl` | Internal video sampling |
-| `vllm_video/*` | `VLLMVideoModel` | `uv sync --group openai` | Native `video_url`; server needs `--allowed-local-media-path` |
-| `vllm/*` | `VLLMOpenAIModel` | `uv sync --group openai` | Frame-based image prompts; `VLLM_API_KEY` |
-| `openrouter/*` | `OpenAIModel` → OpenRouter | `uv sync --group openai` | `OPENROUTER_API_KEY` |
-| `gemini-*` | `GeminiModel` | `uv sync --group gemini` | `GEMINI_API_KEY` |
-| `claude-*` | `ClaudeModel` | `uv sync --group claude` | `ANTHROPIC_API_KEY` |
-| `gpt-*` / `o1-*` / `o3-*` | `OpenAIModel` | `uv sync --group openai` | `OPENAI_API_KEY` |
-| `Qwen/Qwen3.5-*` / `qwen3.5-*` | `Qwen35VLModel` | `uv sync --group qwen35vl` | — |
-| anything else | `Qwen3VLModel` | `uv sync --group qwen3vl` | — |
-
-## Prompt for augmentation
-
-1. Create a `.env` file
-
-```text
-GEMINI_API_KEY=....
-```
-
-```shell
-uv run augmnet_question.py
-```
+- `--max_new_tokens 16384` is required when the answerer is `q3vl` (a thinking model — reasoning tokens consume budget before the final `Evidence:` / `Answer:` lines). Use `4096` for non-thinking answerers.
+- `OPENROUTER_API_KEY` must be set whenever any Stage uses an open-source model.
+- B1 and D1 share `cache/pipeline_b1_d1/` so the `q3vl` Stage-A1 chunks are extracted once and reused. Within that directory, B1 and D1 use different filters and different `--prompt_method` tags, which means Stage-B outputs (`filter/` for B1's gemini filter vs. `filter_qwen3-235b-a22b/` for D1's q3t filter) and Stage-C outputs (`answers_filter_gfl_v3_q3vl/` vs. `answers_filter_q3t_v3_q3vl/`) live in distinct subdirectories and never collide.
+- C1 runs Stage A1 fresh against its own `cache/pipeline_c1/` directory. To avoid paying for re-extraction, symlink `chunks.json`, `stage_a_concat.txt`, and `plan.json` from `cache/pipeline_b1_d1/<video>/` into `cache/pipeline_c1/<video>/` before running C1.
