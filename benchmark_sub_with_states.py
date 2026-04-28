@@ -624,7 +624,7 @@ def _stage_b_suffix(filter_backend: str, filter_model: Optional[str]) -> str:
     providers never clobber each other."""
     if filter_backend == BACKEND_OPENROUTER and filter_model:
         return f"_{_sanitize_model_tag(filter_model)}"
-    if filter_backend == BACKEND_LITELLM and filter_model:
+    if filter_backend == BACKEND_LITELLM and filter_model != 'gemini-3-flash':
         return f"_litellm_{_sanitize_model_tag(filter_model)}"
     return ""
 
