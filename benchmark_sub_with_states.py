@@ -102,8 +102,9 @@ DEFAULT_STAGE_B_MODEL = "gemini-3-flash-preview"
 
 BACKEND_GEMINI = "gemini"
 BACKEND_OPENROUTER = "openrouter"
+BACKEND_LITELLM = "litellm"
 BACKEND_CONCAT = "concat"
-BACKENDS = (BACKEND_GEMINI, BACKEND_OPENROUTER)
+BACKENDS = (BACKEND_GEMINI, BACKEND_OPENROUTER, BACKEND_LITELLM)
 AGGREGATOR_BACKENDS = (BACKEND_GEMINI, BACKEND_OPENROUTER, BACKEND_CONCAT)
 
 STRATEGY_NARRATIVE = "narrative"
@@ -113,6 +114,9 @@ STRATEGIES = (STRATEGY_NARRATIVE, STRATEGY_FILTER, STRATEGY_PLANNER)
 
 PLANNER_BACKENDS = (BACKEND_GEMINI, BACKEND_OPENROUTER)
 DEFAULT_PLANNER_MODEL = "gemini-3-flash-preview"
+LITELLM_PROXY_URL_ENV = "LITELLM_PROXY_URL"
+LITELLM_BASE_URL_ENV = "LITELLM_BASE_URL"
+LITELLM_MODEL_PREFIX = "litellm/"
 
 
 # ---------------------------------------------------------------------------
@@ -156,6 +160,7 @@ def _build_aliases_if_missing(
     timeline_str: str,
     gemini_client,
     openrouter_client,
+    litellm_client,
     aliases_model: str,
     aliases_backend: str,
     max_new_tokens: int,
@@ -163,10 +168,16 @@ def _build_aliases_if_missing(
     """Build (or load) the alias header for one video. Returns the header
     string, possibly empty. One model call per video, cached.
 
-    When aliases_backend == 'openrouter', uses identity_link_via_openrouter
-    with openrouter_client; otherwise falls back to Gemini Flash."""
-    use_openrouter = (aliases_backend == BACKEND_OPENROUTER and openrouter_client is not None)
-    if not use_openrouter and not gemini_client:
+    When aliases_backend is OpenAI-compatible (OpenRouter or LiteLLM), uses
+    identity_link_via_openrouter with that client; otherwise falls back to
+    Gemini Flash."""
+    openai_client = None
+    if aliases_backend == BACKEND_OPENROUTER:
+        openai_client = openrouter_client
+    elif aliases_backend == BACKEND_LITELLM:
+        openai_client = litellm_client
+    use_openai_compatible = openai_client is not None
+    if not use_openai_compatible and not gemini_client:
         return ""
     cache_path = _aliases_path(states_cache_dir, video_name)
     if cache_path.exists():
@@ -175,9 +186,14 @@ def _build_aliases_if_missing(
         except OSError:
             pass
     try:
-        if use_openrouter:
+        if use_openai_compatible:
+            model_name = (
+                _litellm_model_name(aliases_model)
+                if aliases_backend == BACKEND_LITELLM
+                else aliases_model
+            )
             alias_map = identity_link_via_openrouter(
-                openrouter_client, aliases_model, timeline_str,
+                openai_client, model_name, timeline_str,
                 max_new_tokens=max_new_tokens,
             )
         else:
@@ -424,7 +440,7 @@ def aggregator_openrouter(
 
 
 # ---------------------------------------------------------------------------
-# Stage B: shared text helpers (Gemini Flash + OpenRouter Qwen).
+# Stage B: shared text helpers (Gemini Flash + OpenAI-compatible backends).
 # ---------------------------------------------------------------------------
 
 def _gemini_text_call(
@@ -460,14 +476,17 @@ def _gemini_text_call(
     raise RuntimeError(f"Flash call failed after {max_retries} retries: {last_err}")
 
 
-def _openrouter_text_call(
+def _openai_compatible_text_call(
     client,
     model: str,
     prompt: str,
     *,
     max_new_tokens: int,
+    backend_label: str,
     max_retries: int = 4,
 ) -> str:
+    if client is None:
+        raise RuntimeError(f"{backend_label} text call requested without a client")
     last_err: Optional[Exception] = None
     for attempt in range(max_retries):
         try:
@@ -479,7 +498,7 @@ def _openrouter_text_call(
             )
         except Exception as e:
             print(
-                f"[openrouter][text] attempt {attempt} failed: "
+                f"[{backend_label}][text] attempt {attempt} failed: "
                 f"{type(e).__name__}: {e}",
                 flush=True,
             )
@@ -489,11 +508,11 @@ def _openrouter_text_call(
         choices = getattr(resp, "choices", None) or []
         if not choices:
             print(
-                f"[openrouter][text] attempt {attempt} empty choices; "
+                f"[{backend_label}][text] attempt {attempt} empty choices; "
                 f"raw resp={resp!r}",
                 flush=True,
             )
-            last_err = RuntimeError("OpenRouter text call: no choices in response")
+            last_err = RuntimeError(f"{backend_label} text call: no choices in response")
             time.sleep(2 ** attempt)
             continue
         msg = choices[0].message
@@ -506,19 +525,62 @@ def _openrouter_text_call(
         finish_reason = str(getattr(choices[0], "finish_reason", None) or "UNKNOWN").upper()
         if finish_reason == "LENGTH":
             raise _NonRetryableError(
-                f"OpenRouter text call hit token cap ({max_new_tokens})."
+                f"{backend_label} text call hit token cap ({max_new_tokens})."
             )
         text = _strip_code_fence(_strip_thinking(content))
         if text:
             return text
         print(
-            f"[openrouter][text] attempt {attempt} empty text "
+            f"[{backend_label}][text] attempt {attempt} empty text "
             f"(finish_reason={finish_reason}); raw content[:500]={str(content)[:500]!r}",
             flush=True,
         )
-        last_err = RuntimeError(f"Empty OpenRouter response (finish_reason={finish_reason})")
+        last_err = RuntimeError(f"Empty {backend_label} response (finish_reason={finish_reason})")
         time.sleep(2 ** attempt)
-    raise RuntimeError(f"OpenRouter text call failed after {max_retries} retries: {last_err}")
+    raise RuntimeError(f"{backend_label} text call failed after {max_retries} retries: {last_err}")
+
+
+def _openrouter_text_call(
+    client,
+    model: str,
+    prompt: str,
+    *,
+    max_new_tokens: int,
+    max_retries: int = 4,
+) -> str:
+    return _openai_compatible_text_call(
+        client,
+        model,
+        prompt,
+        max_new_tokens=max_new_tokens,
+        backend_label=BACKEND_OPENROUTER,
+        max_retries=max_retries,
+    )
+
+
+def _resolve_litellm_base_url(cli_value: Optional[str]) -> str:
+    base_url = (
+        cli_value
+        or os.environ.get(LITELLM_PROXY_URL_ENV)
+        or os.environ.get(LITELLM_BASE_URL_ENV)
+    )
+    if not base_url:
+        raise RuntimeError(
+            f"--litellm_base_url or environment variable {LITELLM_PROXY_URL_ENV!r} "
+            f"/ {LITELLM_BASE_URL_ENV!r} is required for --stage_b_backend litellm."
+        )
+    return base_url
+
+
+def _build_litellm_client(*, base_url: Optional[str], api_key_env: str) -> Tuple[OpenAI, str]:
+    resolved_base_url = _resolve_litellm_base_url(base_url)
+    api_key = os.environ.get(api_key_env)
+    if not api_key:
+        raise RuntimeError(
+            f"Environment variable {api_key_env!r} is required for "
+            "--stage_b_backend litellm."
+        )
+    return OpenAI(api_key=api_key, base_url=resolved_base_url), resolved_base_url
 
 
 # ---------------------------------------------------------------------------
@@ -548,14 +610,34 @@ def _sanitize_model_tag(model: str) -> str:
     return tag
 
 
+def _litellm_model_name(model: str) -> str:
+    """Allow either 'gemini/...' or 'litellm/gemini/...' on the CLI."""
+    if model.startswith(LITELLM_MODEL_PREFIX):
+        return model[len(LITELLM_MODEL_PREFIX):]
+    return model
+
+
 def _stage_b_suffix(filter_backend: str, filter_model: Optional[str]) -> str:
     """Cache-path suffix for Stage B artifacts. Gemini keeps the empty
-    suffix (backward-compatible with existing ``filter/`` caches); any
-    OpenRouter model gets its own namespace so runs with different Qwen
-    / DeepSeek / etc. variants never clobber each other."""
+    suffix (backward-compatible with existing ``filter/`` caches);
+    OpenRouter and LiteLLM get backend/model-specific namespaces so
+    providers never clobber each other."""
     if filter_backend == BACKEND_OPENROUTER and filter_model:
         return f"_{_sanitize_model_tag(filter_model)}"
+    if filter_backend == BACKEND_LITELLM and filter_model:
+        return f"_litellm_{_sanitize_model_tag(filter_model)}"
     return ""
+
+
+def _uses_qwen_filter_prompt(filter_backend: str, model: str) -> bool:
+    """Preserve the historical OpenRouter prompt, and use it for LiteLLM
+    Qwen models too. LiteLLM Gemini/OpenAI-style models use the generic
+    filter prompt."""
+    if filter_backend == BACKEND_OPENROUTER:
+        return True
+    if filter_backend == BACKEND_LITELLM:
+        return "qwen" in (model or "").lower()
+    return False
 
 
 def _narrative_cache_path(
@@ -575,6 +657,7 @@ def _stage_b_narrative(
     states_cache_dir: Path,
     gemini_client,
     openrouter_client,
+    litellm_client,
     filter_backend: str,
     model: str,
     max_new_tokens: int,
@@ -586,6 +669,14 @@ def _stage_b_narrative(
     if filter_backend == BACKEND_OPENROUTER:
         text = _openrouter_text_call(
             openrouter_client, model, prompt, max_new_tokens=max_new_tokens,
+        )
+    elif filter_backend == BACKEND_LITELLM:
+        text = _openai_compatible_text_call(
+            litellm_client,
+            _litellm_model_name(model),
+            prompt,
+            max_new_tokens=max_new_tokens,
+            backend_label=BACKEND_LITELLM,
         )
     else:
         text = _gemini_text_call(
@@ -769,6 +860,7 @@ def _stage_b_filter_indices(
     states_cache_dir: Path,
     gemini_client,
     openrouter_client,
+    litellm_client,
     filter_backend: str,
     model: str,
     max_new_tokens: int,
@@ -785,12 +877,22 @@ def _stage_b_filter_indices(
             _atomic_write_json(cache_path, cached)
         return indices
     prompt_template = (
-        _FILTER_PROMPT_QWEN if filter_backend == BACKEND_OPENROUTER else _FILTER_PROMPT
+        _FILTER_PROMPT_QWEN
+        if _uses_qwen_filter_prompt(filter_backend, model)
+        else _FILTER_PROMPT
     )
     prompt = prompt_template.format(timeline=timeline, question=question, top_k=top_k)
     if filter_backend == BACKEND_OPENROUTER:
         text = _openrouter_text_call(
             openrouter_client, model, prompt, max_new_tokens=max_new_tokens,
+        )
+    elif filter_backend == BACKEND_LITELLM:
+        text = _openai_compatible_text_call(
+            litellm_client,
+            _litellm_model_name(model),
+            prompt,
+            max_new_tokens=max_new_tokens,
+            backend_label=BACKEND_LITELLM,
         )
     else:
         text = _gemini_text_call(
@@ -1592,35 +1694,6 @@ class GeminiAnswerer:
 # Reporting helpers (mirror top-level benchmark_sub.py).
 # ---------------------------------------------------------------------------
 
-def _global_flat_accuracy(states_cache_dir: Path, prompt_method: str) -> Optional[float]:
-    """Flat micro-average of ``is_correct`` across every cached answer file
-    under ``<states_cache_dir>/<video>/answers_<prompt_method>/``. Mirrors
-    the post-hoc computation in ``inspect_accuracy.py`` exactly: every
-    answered question contributes equally, ``is_correct == None`` counts
-    as 0. Returns ``None`` if no answer files are found."""
-    if not states_cache_dir.is_dir():
-        return None
-    flags: List[int] = []
-    for video_dir in sorted(states_cache_dir.iterdir()):
-        if not video_dir.is_dir():
-            continue
-        ans_dir = video_dir / f"answers_{prompt_method}"
-        if not ans_dir.is_dir():
-            continue
-        for ans_file in ans_dir.iterdir():
-            if ans_file.suffix != ".json":
-                continue
-            try:
-                rec = json.loads(ans_file.read_text(encoding="utf-8"))
-            except Exception:
-                continue
-            ic = rec.get("is_correct")
-            flags.append(0 if ic is None else int(bool(ic)))
-    if not flags:
-        return None
-    return sum(flags) / len(flags)
-
-
 def _print_results(strategy: str, results: Dict[str, float]) -> None:
     if not results:
         return
@@ -1654,7 +1727,16 @@ def _is_correct(pred: str, gt: str) -> Optional[bool]:
     return p == g
 
 
-def _aggregate_metrics(per_sample_metrics: List[Dict[str, float]]) -> Dict[str, float]:
+def _aggregate_metrics(
+    per_sample_metrics: List[Dict[str, float]],
+    accuracy_counts: Optional[List[Tuple[int, int]]] = None,
+) -> Dict[str, float]:
+    """Aggregate per-sample metrics.
+
+    Accuracy is pooled across target questions, matching benchmark_sub.py:
+    total_correct_targets / total_target_questions. Other metrics remain
+    sample-level macro averages.
+    """
     if not per_sample_metrics:
         return {}
     keys = {k for r in per_sample_metrics for k in r}
@@ -1663,7 +1745,17 @@ def _aggregate_metrics(per_sample_metrics: List[Dict[str, float]]) -> Dict[str, 
         vals = [r[k] for r in per_sample_metrics if k in r and r[k] == r[k]]
         if vals:
             final[k] = sum(vals) / len(vals)
+    if accuracy_counts and "accuracy" in final:
+        total_correct = sum(correct for correct, _ in accuracy_counts)
+        total_targets = sum(total for _, total in accuracy_counts)
+        if total_targets:
+            final["accuracy"] = total_correct / total_targets
     return final
+
+
+def _metrics_require_subquestions(metrics: List[Any]) -> bool:
+    """Return True when the selected metrics need sub-question predictions."""
+    return any(metric.name != "accuracy" for metric in metrics)
 
 
 def _answer_dir(
@@ -1735,10 +1827,12 @@ def _fill_predictions_per_file(
     answer_dir: Path,
     max_new_tokens: int,
     state_map: Optional[Dict[str, Any]] = None,
+    include_subquestions: bool = False,
 ) -> None:
-    """Answer each target question once, writing one JSON file per answer
-    under ``answer_dir``. Questions whose file already exists are reused
-    (skip-on-rerun). Writes are independent per file so no lock is needed.
+    """Answer selected questions once, writing one JSON file per answer under
+    ``answer_dir``. Questions whose file already exists are reused
+    (skip-on-rerun). When ``include_subquestions`` is true, sub-question
+    predictions are filled too, matching benchmark_sub.py's metric inputs.
 
     ``state_map`` optionally maps ``question -> state`` (events list for the
     filter strategy, narrative string for the narrative strategy). The value
@@ -1750,11 +1844,18 @@ def _fill_predictions_per_file(
     seen = set()
     unique: List[str] = []
     for g in groups:
-        if g.target_question not in seen:
-            seen.add(g.target_question)
-            unique.append(g.target_question)
+        questions = g.all_questions if include_subquestions else [g.target_question]
+        for question in questions:
+            if question not in seen:
+                seen.add(question)
+                unique.append(question)
 
-    gt_map = {g.target_question: g.target_gt for g in groups}
+    gt_map: Dict[str, str] = {}
+    for g in groups:
+        gt_map.setdefault(g.target_question, g.target_gt)
+        if include_subquestions:
+            for sq, sa in zip(g.sub_questions, g.sub_gts):
+                gt_map.setdefault(sq, sa)
     path_map = {q: _answer_file(answer_dir, q) for q in unique}
     answer_map: Dict[str, str] = {}
 
@@ -1783,16 +1884,21 @@ def _fill_predictions_per_file(
 
     for g in groups:
         g.target_pred = answer_map[g.target_question]
-        g.sub_preds = ["" for _ in g.sub_questions]
+        if include_subquestions:
+            g.sub_preds = [answer_map[sq] for sq in g.sub_questions]
+        else:
+            g.sub_preds = ["" for _ in g.sub_questions]
 
 
-def _collect_unique_questions(groups) -> List[str]:
+def _collect_unique_questions(groups, include_subquestions: bool = False) -> List[str]:
     seen = set()
     out: List[str] = []
     for g in groups:
-        if g.target_question not in seen:
-            seen.add(g.target_question)
-            out.append(g.target_question)
+        questions = g.all_questions if include_subquestions else [g.target_question]
+        for question in questions:
+            if question not in seen:
+                seen.add(question)
+                out.append(question)
     return out
 
 
@@ -1858,8 +1964,8 @@ def main() -> None:
     parser.add_argument("--stage_b_model", default=DEFAULT_STAGE_B_MODEL)
     parser.add_argument(
         "--stage_b_backend", choices=BACKENDS, default=BACKEND_GEMINI,
-        help="Backend for the Stage B filter/narrative text call. Mirrors "
-             "--aggregator_backend.",
+        help="Backend for the Stage B filter/narrative text call. 'litellm' "
+             "uses an OpenAI-compatible LiteLLM proxy.",
     )
     parser.add_argument("--planner_model", default=DEFAULT_PLANNER_MODEL)
     parser.add_argument(
@@ -1956,6 +2062,20 @@ def main() -> None:
     parser.add_argument("--max_concurrency_filter", type=int, default=8)
     parser.add_argument("--google_api_key_env", default="GOOGLE_API_KEY")
     parser.add_argument("--openrouter_api_key_env", default="OPENROUTER_API_KEY")
+    parser.add_argument(
+        "--litellm_base_url",
+        default=None,
+        help=(
+            "OpenAI-compatible LiteLLM proxy base URL for "
+            "--stage_b_backend litellm. Falls back to LITELLM_PROXY_URL, "
+            "then LITELLM_BASE_URL."
+        ),
+    )
+    parser.add_argument(
+        "--litellm_api_key_env",
+        default="LITELLM_API_KEY",
+        help="Env var holding the LiteLLM proxy API key.",
+    )
 
     parser.add_argument("--model_id", default=DEFAULT_MODEL_ID,
                         help="Answerer model. Must start with 'vllm/'.")
@@ -2010,7 +2130,9 @@ def main() -> None:
     args = parser.parse_args()
 
     if args.filter_top_k is None:
-        args.filter_top_k = 15 if args.stage_b_backend == BACKEND_OPENROUTER else 10
+        args.filter_top_k = (
+            15 if _uses_qwen_filter_prompt(args.stage_b_backend, args.stage_b_model) else 10
+        )
     if args.filter_top_k_aggregation is None:
         # ~2.5x the base top_k, capped at 40 to keep prompt size bounded.
         args.filter_top_k_aggregation = min(40, max(args.filter_top_k, int(round(args.filter_top_k * 2.5))))
@@ -2049,8 +2171,34 @@ def main() -> None:
 
     benchmark_data = load_benchmark(args.video_dir, args.mode, args.questions_dir)
     metrics = build_metrics(args.metrics)
+    include_subquestions = _metrics_require_subquestions(metrics)
 
-    gemini_client = _build_gemini_client(args.google_api_key_env)
+    needs_gemini = (
+        args.state_extractor_backend == BACKEND_GEMINI
+        or args.aggregator_backend == BACKEND_GEMINI
+        or args.stage_b_backend == BACKEND_GEMINI
+        or args.answerer_backend == BACKEND_GEMINI
+        or (
+            args.state_strategy == STRATEGY_PLANNER
+            and args.planner_backend == BACKEND_GEMINI
+        )
+        or (
+            args.enable_identity_link
+            and args.stage_b_backend == BACKEND_GEMINI
+        )
+    )
+    gemini_client = (
+        _build_gemini_client(args.google_api_key_env)
+        if needs_gemini
+        else None
+    )
+    litellm_client = None
+    litellm_base_url = None
+    if args.stage_b_backend == BACKEND_LITELLM:
+        litellm_client, litellm_base_url = _build_litellm_client(
+            base_url=args.litellm_base_url,
+            api_key_env=args.litellm_api_key_env,
+        )
     if args.state_extractor_backend == "vllm":
         extractor_client = OpenAI(
             api_key=os.environ.get(args.state_extractor_vllm_api_key_env) or "EMPTY",
@@ -2105,6 +2253,8 @@ def main() -> None:
     tqdm.write(f"State extractor  : {extractor_label}")
     tqdm.write(f"Aggregator       : {args.aggregator_model} ({args.aggregator_backend})")
     tqdm.write(f"Stage B model    : {args.stage_b_model} ({args.stage_b_backend})")
+    if litellm_base_url:
+        tqdm.write(f"LiteLLM Stage B  : {litellm_base_url}")
     tqdm.write(f"Chunk prompt     : {args.chunk_prompt_version}")
     tqdm.write(f"Answerer (vLLM)  : {real_model_id} @ {base_url}")
     tqdm.write(f"Answerer prompt  : {args.answerer_prompt_version}")
@@ -2114,9 +2264,11 @@ def main() -> None:
     tqdm.write(f"States cache dir : {states_cache_dir}")
     tqdm.write(f"Answers under    : {states_cache_dir}/<video_stem>/answers_{prompt_method}/")
     tqdm.write(f"Metrics          : {[m.name for m in metrics]}")
+    tqdm.write(f"Sub-questions    : {'enabled' if include_subquestions else 'disabled'}")
     tqdm.write(f"Samples          : {len(benchmark_data)}\n")
 
     per_sample_metrics: List[Dict[str, float]] = []
+    accuracy_counts: List[Tuple[int, int]] = []
     skipped_examples: List[str] = []
 
     for idx, sample in enumerate(tqdm(benchmark_data, desc="Evaluating")):
@@ -2180,6 +2332,7 @@ def main() -> None:
                 timeline_str=timeline,
                 gemini_client=gemini_client,
                 openrouter_client=openrouter_client,
+                litellm_client=litellm_client,
                 aliases_model=(args.identity_link_model or args.stage_b_model),
                 aliases_backend=_aliases_backend,
                 max_new_tokens=args.max_new_tokens_identity_link,
@@ -2197,14 +2350,22 @@ def main() -> None:
                     states_cache_dir=states_cache_dir,
                     gemini_client=gemini_client,
                     openrouter_client=openrouter_client,
+                    litellm_client=litellm_client,
                     filter_backend=args.stage_b_backend,
                     model=args.stage_b_model,
                     max_new_tokens=args.max_new_tokens_narrative,
                 )
                 model.set_video_state(narrative)
-                state_map = {g.target_question: narrative for g in groups}
+                state_map = {
+                    q: narrative
+                    for q in _collect_unique_questions(
+                        groups, include_subquestions=include_subquestions
+                    )
+                }
             elif args.state_strategy == STRATEGY_PLANNER:
-                unique_qs = _collect_unique_questions(groups)
+                unique_qs = _collect_unique_questions(
+                    groups, include_subquestions=include_subquestions
+                )
                 slices: Dict[str, str] = {}
                 planner_bar = tqdm(
                     unique_qs,
@@ -2259,7 +2420,9 @@ def main() -> None:
                         state_map[q] = timeline_q
                 model.set_per_question_state(slices)
             else:
-                unique_qs = _collect_unique_questions(groups)
+                unique_qs = _collect_unique_questions(
+                    groups, include_subquestions=include_subquestions
+                )
                 workers = max(1, min(args.max_concurrency_filter, len(unique_qs)))
                 slices: Dict[str, str] = {}
                 # Aggregation routing: for agg/ordinal/counting questions
@@ -2292,6 +2455,7 @@ def main() -> None:
                                 states_cache_dir=states_cache_dir,
                                 gemini_client=gemini_client,
                                 openrouter_client=openrouter_client,
+                                litellm_client=litellm_client,
                                 filter_backend=args.stage_b_backend,
                                 model=args.stage_b_model,
                                 max_new_tokens=args.max_new_tokens_filter,
@@ -2334,6 +2498,7 @@ def main() -> None:
                 answer_dir=answer_dir,
                 max_new_tokens=args.max_new_tokens,
                 state_map=state_map,
+                include_subquestions=include_subquestions,
             )
         except Exception as exc:
             skipped_examples.append(str(example_path))
@@ -2345,6 +2510,10 @@ def main() -> None:
 
         sample_result = evaluate(groups, metrics)
         per_sample_metrics.append(sample_result)
+        if "accuracy" in sample_result:
+            accuracy_counts.append(
+                (sum(1 for group in groups if group.is_target_correct()), len(groups))
+            )
 
         tqdm.write(
             f"[{idx + 1:>4}/{len(benchmark_data)}] "
@@ -2354,11 +2523,7 @@ def main() -> None:
     if skipped_examples:
         tqdm.write(f"Skipped {len(skipped_examples)} samples due to errors.")
 
-    final = _aggregate_metrics(per_sample_metrics)
-    if "accuracy" in final or any("accuracy" in r for r in per_sample_metrics):
-        global_acc = _global_flat_accuracy(states_cache_dir, prompt_method)
-        if global_acc is not None:
-            final["accuracy"] = global_acc
+    final = _aggregate_metrics(per_sample_metrics, accuracy_counts=accuracy_counts)
     _print_results(args.state_strategy, final)
 
     tqdm.write(
