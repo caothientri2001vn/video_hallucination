@@ -2084,6 +2084,19 @@ def main() -> None:
     parser.add_argument("--vllm_api_key_env", default="VLLM_API_KEY")
     parser.add_argument("--vllm_n_frames", type=int, default=64)
     parser.add_argument("--vllm_max_concurrency", type=int, default=4)
+    parser.add_argument(
+        "--vllm_fallback_base_url", default=None,
+        help="Optional secondary OpenAI-compatible endpoint. When the "
+             "primary --vllm_base_url raises a non-BadRequest exception "
+             "for an answerer call (e.g. OpenRouter returns content=None "
+             "or a malformed response), the request is retried once "
+             "against this URL with --vllm_fallback_model_id.",
+    )
+    parser.add_argument(
+        "--vllm_fallback_model_id", default=None,
+        help="Model id to use against --vllm_fallback_base_url. "
+             "Required if --vllm_fallback_base_url is set.",
+    )
     parser.add_argument("--max_new_tokens", type=int, default=2048)
     parser.add_argument(
         "--answerer_backend", choices=("vllm", "gemini"), default="vllm",
@@ -2234,6 +2247,8 @@ def main() -> None:
             max_concurrency=args.vllm_max_concurrency,
             answerer_prompt_version=args.answerer_prompt_version,
             redact_tokens=redact_tokens,
+            fallback_model_id=args.vllm_fallback_model_id,
+            fallback_base_url=args.vllm_fallback_base_url,
         )
     else:  # gemini
         model = GeminiAnswerer(

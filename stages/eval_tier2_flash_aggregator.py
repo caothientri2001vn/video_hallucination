@@ -372,14 +372,14 @@ def load_samples(questions_dir: str, video_dir: str) -> List[Dict[str, Any]]:
 # ---------------------------------------------------------------------------
 
 def _build_gemini_client(api_key_env: str) -> genai.Client:
-    api_key = ""
+    api_key = os.environ.get(api_key_env, "")
     if not api_key:
         raise RuntimeError(f"Environment variable {api_key_env!r} is not set.")
     return genai.Client(api_key=api_key)
 
 
 def _build_openrouter_client(api_key_env: str) -> OpenAI:
-    api_key = ""
+    api_key = os.environ.get(api_key_env, "")
     if not api_key:
         raise RuntimeError(f"Environment variable {api_key_env!r} is not set.")
     default_headers: Dict[str, str] = {}
@@ -2352,7 +2352,6 @@ def stage_a1_reextract_chunk(
     extra_body: Dict[str, Any] = {}
     if "thinking" in model.lower():
         extra_body["provider"] = {"order": ["novita"], "allow_fallbacks": False}
-
     last_err: Exception | None = None
     for attempt in range(max_retries):
         try:
