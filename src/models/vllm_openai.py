@@ -10,6 +10,7 @@ module so vLLM-specific defaults can evolve without touching
 
 import base64
 import os
+import sys
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any, Dict, List, Optional
@@ -304,6 +305,8 @@ class VLLMOpenAIModel(BaseVideoQAModel):
         base_url: Optional[str] = None,
         max_concurrency: int = _DEFAULT_MAX_CONCURRENCY,
         extra_body: Optional[Dict[str, Any]] = None,
+        fallback_model_id: Optional[str] = None,
+        fallback_base_url: Optional[str] = None,
     ) -> None:
         super().__init__(model_id, prompt_method)
         if max_concurrency <= 0:
@@ -314,6 +317,9 @@ class VLLMOpenAIModel(BaseVideoQAModel):
         self.max_concurrency = max_concurrency
         self.extra_body = dict(extra_body) if extra_body else None
         self._client: Optional[OpenAI] = None
+        self.fallback_model_id = fallback_model_id
+        self.fallback_base_url = fallback_base_url
+        self._fallback_client: Optional[OpenAI] = None
 
     def answer_questions(
         self,
@@ -371,6 +377,20 @@ class VLLMOpenAIModel(BaseVideoQAModel):
         self._client = OpenAI(api_key=api_key, base_url=base_url)
         return self._client
 
+    def _get_fallback_client(self) -> Optional[OpenAI]:
+        """Return a secondary OpenAI-compatible client used when the primary
+        endpoint raises a non-BadRequest exception. Returns None if no
+        fallback was configured at construction time. Assumes the fallback
+        is an unauthenticated localhost vLLM."""
+        if not self.fallback_base_url or not self.fallback_model_id:
+            return None
+        if self._fallback_client is not None:
+            return self._fallback_client
+        self._fallback_client = OpenAI(
+            api_key=_DEFAULT_VLLM_API_KEY, base_url=self.fallback_base_url
+        )
+        return self._fallback_client
+
     def _answer_one(
         self,
         question: str,
@@ -390,7 +410,24 @@ class VLLMOpenAIModel(BaseVideoQAModel):
                 if self.extra_body:
                     request_kwargs["extra_body"] = self.extra_body
 
-                response = client.chat.completions.create(**request_kwargs)
+                # Use with_raw_response so we can dump the bytes if JSON
+                # parsing fails — otherwise the JSONDecodeError gives us
+                # a column number with no body to look at.
+                raw_resp = client.chat.completions.with_raw_response.create(**request_kwargs)
+                try:
+                    response = raw_resp.parse()
+                except Exception as parse_exc:
+                    body = (raw_resp.text or "") if hasattr(raw_resp, "text") else ""
+                    sys.stderr.write(
+                        f"[vllm_openai] response parse failed: "
+                        f"{type(parse_exc).__name__}: {parse_exc}\n"
+                        f"  status={getattr(raw_resp, 'status_code', '?')}  "
+                        f"len={len(body)}\n"
+                        f"  body[:1500]={body[:1500]!r}\n"
+                        f"  body[-500:]={body[-500:]!r}\n"
+                    )
+                    sys.stderr.flush()
+                    raise
                 return _extract_response_text(response)
             except BadRequestError as exc:
                 if not _is_input_too_long_error(exc) or len(current_frames) <= _MIN_RETRY_FRAMES:
@@ -400,6 +437,34 @@ class VLLMOpenAIModel(BaseVideoQAModel):
                 if next_n_frames >= len(current_frames):
                     raise
                 current_frames = current_frames[:next_n_frames]
+            except Exception as primary_exc:
+                fallback_client = self._get_fallback_client()
+                if fallback_client is None:
+                    raise
+                sys.stderr.write(
+                    f"[vllm_openai] primary endpoint failed "
+                    f"({type(primary_exc).__name__}: {primary_exc}); "
+                    f"retrying via fallback {self.fallback_base_url} "
+                    f"model={self.fallback_model_id}\n"
+                )
+                sys.stderr.flush()
+                try:
+                    fallback_kwargs: Dict[str, Any] = {
+                        "model": self.fallback_model_id,
+                        "messages": [
+                            {"role": "user", "content": self._build_content(question, current_frames)}
+                        ],
+                        "max_tokens": int(max_new_tokens),
+                    }
+                    response = fallback_client.chat.completions.create(**fallback_kwargs)
+                    return _extract_response_text(response)
+                except Exception as fallback_exc:
+                    sys.stderr.write(
+                        f"[vllm_openai] fallback also failed: "
+                        f"{type(fallback_exc).__name__}: {fallback_exc}\n"
+                    )
+                    sys.stderr.flush()
+                    raise primary_exc
 
     def _build_content(self, question: str, frames_b64: List[str]) -> List[Dict[str, Any]]:
         grounding = (

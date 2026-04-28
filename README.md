@@ -78,6 +78,7 @@ Each sample is a JSON file describing a video + a list of questions. Videos them
 | `gfl`  | `gemini-3-flash-preview`                | proprietary VLM/LLM (any slot)                |
 | `q3vl` | `qwen/qwen3-vl-235b-a22b-thinking`      | open-source VLM (Stage A1 extractor / Stage C answerer) |
 | `q3t`  | `qwen/qwen3-235b-a22b`                  | open-source text MoE (Stage B filter + identity linking) |
+| `q35`  | `qwen/qwen3.5-27b`                      | open-source dense VLM (any slot)              |
 
 ### Experiment matrix
 
@@ -88,8 +89,9 @@ Each sample is a JSON file describing a video + a list of questions. Videos them
 | **B1**       | `q3vl`       | `gfl`             | `q3vl`     | `cache/pipeline_b1_d1/`    |
 | **C1**       | `q3vl`       | `q3t`             | `gfl`      | `cache/pipeline_c1/`       |
 | **D1**       | `q3vl`       | `q3t`             | `q3vl`     | `cache/pipeline_b1_d1/`    |
+| **D1-Cans**  | `q3vl`       | `q3t`             | `q35`      | `cache/pipeline_b1_d1/`    |
 
-Baseline, A1, and C1 each have their own dedicated state cache directory. **B1 and D1 share `cache/pipeline_b1_d1/`** — both have a `q3vl` answerer, but they use different filters (`gfl` vs. `q3t`) and different `--prompt_method` tags, so their Stage-B and Stage-C outputs land in distinct subdirectories within the shared cache.
+Baseline, A1, and C1 each have their own dedicated state cache directory. **B1, D1, and D1-Cans all share `cache/pipeline_b1_d1/`** — all three have a `q3vl` extractor, and use different `--prompt_method` tags so their Stage-C answers land in distinct `answers_<prompt_method>/` subdirectories within the shared cache. D1-Cans additionally reuses D1's `q3t` filter cache and only re-runs Stage C with the `q35` answerer.
 
 ### Baseline (all-Gemini)
 
@@ -192,6 +194,31 @@ python benchmark_sub_with_states.py \
   --questions_dir benchmark
 ```
 
+### D1-Cans — Qwen3.5-27B replaces the Stage C answerer
+
+Reuses D1's chunks AND q3t filter outputs. Only Stage C runs fresh. The `--vllm_fallback_*` flags are optional but recommended: they make the answerer transparently retry against a local vLLM (here at `http://localhost:8900/v1`) when OpenRouter returns a malformed or empty response, which is otherwise frequent enough on q35 to lose ~30/88 videos to fallback-less skips. To use the fallback, start a vLLM instance with the matching `--served-model-name` and bump `--max-model-len` high enough for 64 frames + thinking (we recommend 131072).
+
+```bash
+python benchmark_sub_with_states.py \
+  --state_strategy filter --aggregator_backend concat \
+  --stage_b_backend openrouter --stage_b_model qwen/qwen3-235b-a22b \
+  --state_extractor_backend openrouter --state_extractor_model qwen/qwen3-vl-235b-a22b-thinking \
+  --states_cache_dir cache/pipeline_b1_d1 \
+  --chunk_prompt_version v6 --answerer_prompt_version v3 \
+  --enable_identity_link --aggregation_routing \
+  --answerer_backend vllm --model_id vllm/qwen/qwen3.5-27b \
+  --vllm_base_url https://openrouter.ai/api/v1 \
+  --vllm_api_key_env OPENROUTER_API_KEY \
+  --vllm_n_frames 64 --vllm_max_concurrency 4 \
+  --frames_per_chunk 60 \
+  --vllm_fallback_base_url http://localhost:8900/v1 \
+  --vllm_fallback_model_id Qwen3.5-27B \
+  --prompt_method filter_q3t_v3_q35 \
+  --mode all --metrics accuracy \
+  --max_new_tokens 32768 \
+  --questions_dir benchmark
+```
+
 ## Cache layout
 
 Stage outputs are cached under `--states_cache_dir`. Layout per video:
@@ -214,3 +241,6 @@ Stage outputs are cached under `--states_cache_dir`. Layout per video:
 - `OPENROUTER_API_KEY` must be set whenever any Stage uses an open-source model.
 - B1 and D1 share `cache/pipeline_b1_d1/` so the `q3vl` Stage-A1 chunks are extracted once and reused. Within that directory, B1 and D1 use different filters and different `--prompt_method` tags, which means Stage-B outputs (`filter/` for B1's gemini filter vs. `filter_qwen3-235b-a22b/` for D1's q3t filter) and Stage-C outputs (`answers_filter_gfl_v3_q3vl/` vs. `answers_filter_q3t_v3_q3vl/`) live in distinct subdirectories and never collide.
 - C1 runs Stage A1 fresh against its own `cache/pipeline_c1/` directory. To avoid paying for re-extraction, symlink `chunks.json`, `stage_a_concat.txt`, and `plan.json` from `cache/pipeline_b1_d1/<video>/` into `cache/pipeline_c1/<video>/` before running C1.
+
+
+python benchmark_sub_with_states.py --state_strategy filter --aggregator_backend concat --stage_b_backend openrouter --stage_b_model qwen/qwen3-235b-a22b --state_extractor_backend openrouter --state_extractor_model qwen/qwen3-vl-235b-a22b-thinking --states_cache_dir cache/pipeline_b1_d1 --chunk_prompt_version v6 --answerer_prompt_version v3 --enable_identity_link --aggregation_routing --answerer_backend vllm --model_id vllm/qwen/qwen3.5-27b --vllm_base_url https://openrouter.ai/api/v1 --vllm_api_key_env OPENROUTER_API_KEY --vllm_n_frames 64 --vllm_max_concurrency 4 --frames_per_chunk 60 --vllm_fallback_base_url http://localhost:8900/v1 --vllm_fallback_model_id Qwen3.5-27B --prompt_method filter_q3t_v3_q35 --mode all --metrics accuracy --max_new_tokens 16384 --questions_dir benchmark

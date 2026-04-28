@@ -6,6 +6,9 @@ import numpy as np
 
 def extract_pipeline_accuracy(output_folder_path, answer_folder, pipeline_name):
     # baseline
+    if not os.path.isdir(output_folder_path):
+        print(f"{pipeline_name} accuracy: N/A — cache dir {output_folder_path} does not exist  (pipeline not run yet)")
+        return
     video_id_list = sorted(os.listdir(output_folder_path))
     accuracy_list = []
     target_video_id_set = set()
@@ -62,6 +65,12 @@ def main():
         "cache/pipeline_b1_d1",
         "answers_filter_q3t_v3_q3vl",
         "D1",
+    )
+
+    extract_pipeline_accuracy(
+        "cache/pipeline_b1_d1",
+        "answers_filter_q3t_v3_q35",
+        "D1-Cans",
     )
 
 
