@@ -1,0 +1,3747 @@
+{
+  "video_name": "0071_MCWJNOfJoSM.mp4",
+  "video_duration_sec": 459.0,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:12",
+          "event_type": "camera_rotation",
+          "description": "Aerial camera rotates around the stadium showing different angles of the field and crowd",
+          "participants": [],
+          "actor": "camera",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "Stadium View",
+          "continuation_hint": "starts_before_chunk",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "00:13",
+          "local_end": "00:13",
+          "event_type": "look",
+          "description": "Player in blue shirt turns head to the right, mouth slightly open",
+          "participants": [
+            "blue-shirt player"
+          ],
+          "actor": "blue-shirt player",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "Player Focus",
+          "continuation_hint": "middle",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "00:14",
+          "local_end": "00:14",
+          "event_type": "look",
+          "description": "Player in blue shirt turns head forward, mouth closed",
+          "participants": [
+            "blue-shirt player"
+          ],
+          "actor": "blue-shirt player",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "Player Focus",
+          "continuation_hint": "middle",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "00:15",
+          "local_end": "00:15",
+          "event_type": "penalty_setup",
+          "description": "Player in blue shirt with number 10 stands at penalty spot preparing to take kick, referee in orange stands nearby, goalkeeper in yellow positioned in goal",
+          "participants": [
+            "blue-shirt player",
+            "orange-shirt referee",
+            "yellow-shirt goalkeeper"
+          ],
+          "actor": "blue-shirt player",
+          "object": "",
+          "segment_boundary": "start",
+          "segment_label": "Penalty Kick",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            },
+            {
+              "text": "10",
+              "location": "jersey_number"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 30.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:30",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:19",
+          "event_type": "look",
+          "description": "goalkeeper in yellow jersey scans the field by looking left and right",
+          "participants": [
+            "yellow-jersey goalkeeper",
+            "blue-jersey player",
+            "orange-shirt officials"
+          ],
+          "actor": "yellow-jersey goalkeeper",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:20",
+          "local_end": "00:25",
+          "event_type": "head_movement",
+          "description": "goalkeeper in yellow jersey lowers his head to look at the ground",
+          "participants": [
+            "yellow-jersey goalkeeper"
+          ],
+          "actor": "yellow-jersey goalkeeper",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:26",
+          "local_end": "00:28",
+          "event_type": "head_movement",
+          "description": "goalkeeper in yellow jersey raises his head up from looking down",
+          "participants": [
+            "yellow-jersey goalkeeper"
+          ],
+          "actor": "yellow-jersey goalkeeper",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:29",
+          "local_end": "00:29",
+          "event_type": "run",
+          "description": "player in blue jersey begins running toward the ball for the penalty kick",
+          "participants": [
+            "blue-jersey player"
+          ],
+          "actor": "blue-jersey player",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:30",
+          "local_end": "00:30",
+          "event_type": "kick",
+          "description": "player in blue jersey kicks the ball toward the goal",
+          "participants": [
+            "blue-jersey player",
+            "yellow-jersey goalkeeper"
+          ],
+          "actor": "blue-jersey player",
+          "object": "white ball",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 2,
+      "chunk_start_sec": 30.0,
+      "chunk_end_sec": 45.0,
+      "chunk_start_mmss": "00:30",
+      "chunk_end_mmss": "00:45",
+      "events": [
+        {
+          "local_start": "00:30",
+          "local_end": "00:32",
+          "event_type": "goal",
+          "description": "Player in dark blue jersey scores a goal as the goalkeeper in green dives but fails to stop the ball",
+          "participants": [
+            "dark blue jersey player",
+            "green jersey goalkeeper"
+          ],
+          "actor": "dark blue jersey player",
+          "object": "white soccer ball",
+          "outcome": "scored",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:32",
+          "local_end": "00:34",
+          "event_type": "celebration",
+          "description": "Player in dark blue jersey runs while raising right fist in celebration",
+          "participants": [
+            "dark blue jersey player"
+          ],
+          "actor": "dark blue jersey player",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:34",
+          "local_end": "00:36",
+          "event_type": "point",
+          "description": "Player in dark blue jersey points upward with right index finger while running",
+          "participants": [
+            "dark blue jersey player"
+          ],
+          "actor": "dark blue jersey player",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:36",
+          "local_end": "00:38",
+          "event_type": "hand_raise",
+          "description": "Multiple fans in the stands raise their fists in celebration",
+          "participants": [
+            "stadium fans"
+          ],
+          "actor": "stadium fans",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:38",
+          "local_end": "00:41",
+          "event_type": "react",
+          "description": "Player in dark blue jersey looks focused while walking on the field",
+          "participants": [
+            "dark blue jersey player"
+          ],
+          "actor": "dark blue jersey player",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:41",
+          "local_end": "00:45",
+          "event_type": "game",
+          "description": "Players position themselves for a free kick with one team lined up in a wall formation",
+          "participants": [
+            "white jersey player",
+            "dark blue jersey players",
+            "referee"
+          ],
+          "actor": "white jersey player",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 3,
+      "chunk_start_sec": 45.0,
+      "chunk_end_sec": 60.0,
+      "chunk_start_mmss": "00:45",
+      "chunk_end_mmss": "01:00",
+      "events": [
+        {
+          "local_start": "00:45",
+          "local_end": "00:52",
+          "event_type": "walk",
+          "description": "Argentine player in blue and white striped jersey walks across the field toward the penalty area",
+          "participants": [
+            "Argentine player in blue and white striped jersey"
+          ],
+          "actor": "Argentine player in blue and white striped jersey",
+          "on_screen_text": [
+            {
+              "text": "ARGENTINA 0 - 1 FRANCE",
+              "location": "scoreboard"
+            },
+            {
+              "text": "PENALTY SHOOTOUT",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:52",
+          "local_end": "00:55",
+          "event_type": "react",
+          "description": "Argentine player in blue and white striped jersey lowers head, showing concentration or disappointment",
+          "participants": [
+            "Argentine player in blue and white striped jersey"
+          ],
+          "actor": "Argentine player in blue and white striped jersey",
+          "on_screen_text": [
+            {
+              "text": "ARGENTINA 0 - 1 FRANCE",
+              "location": "scoreboard"
+            },
+            {
+              "text": "PENALTY SHOOTOUT",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:55",
+          "local_end": "00:57",
+          "event_type": "hand_raise",
+          "description": "French player in dark blue jersey with number 10 raises right hand while walking on the field",
+          "participants": [
+            "French player in dark blue jersey with number 10"
+          ],
+          "actor": "French player in dark blue jersey with number 10",
+          "on_screen_text": [
+            {
+              "text": "ARGENTINA 0 - 1 FRANCE",
+              "location": "scoreboard"
+            },
+            {
+              "text": "PENALTY SHOOTOUT",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:57",
+          "local_end": "00:58",
+          "event_type": "high_five",
+          "description": "French player in dark blue jersey with number 10 high-fives teammate wearing jersey with name COMAN and number 20",
+          "participants": [
+            "French player in dark blue jersey with number 10",
+            "French player with name COMAN"
+          ],
+          "actor": "French player in dark blue jersey with number 10",
+          "on_screen_text": [
+            {
+              "text": "ARGENTINA 0 - 1 FRANCE",
+              "location": "scoreboard"
+            },
+            {
+              "text": "PENALTY SHOOTOUT",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:58",
+          "local_end": "01:00",
+          "event_type": "celebration",
+          "description": "Multiple French players in dark blue jerseys embrace and celebrate together",
+          "participants": [
+            "French player in dark blue jersey with number 10",
+            "French player with name COMAN",
+            "Other French players in dark blue jerseys"
+          ],
+          "actor": "Multiple French players",
+          "on_screen_text": [
+            {
+              "text": "ARGENTINA 0 - 1 FRANCE",
+              "location": "scoreboard"
+            },
+            {
+              "text": "PENALTY SHOOTOUT",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 4,
+      "chunk_start_sec": 60.0,
+      "chunk_end_sec": 75.0,
+      "chunk_start_mmss": "01:00",
+      "chunk_end_mmss": "01:15",
+      "events": [
+        {
+          "local_start": "01:00",
+          "local_end": "01:02",
+          "event_type": "stand",
+          "description": "The player in white uniform stands up from bending over the ball",
+          "participants": [
+            "white uniform player"
+          ],
+          "actor": "white uniform player",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Penalty Kick",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "01:00",
+          "local_end": "01:08",
+          "event_type": "walk",
+          "description": "The referee in orange uniform walks backward from near the penalty spot toward the penalty area line",
+          "participants": [
+            "referee in orange uniform"
+          ],
+          "actor": "referee in orange uniform",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Penalty Kick",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:02",
+          "local_end": "01:08",
+          "event_type": "step_back",
+          "description": "The player in white uniform takes multiple steps backward to prepare for the penalty kick run-up",
+          "participants": [
+            "white uniform player"
+          ],
+          "actor": "white uniform player",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Penalty Kick",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:08",
+          "local_end": "01:11",
+          "event_type": "run",
+          "description": "The player in white uniform begins running toward the ball to take the penalty kick",
+          "participants": [
+            "white uniform player"
+          ],
+          "actor": "white uniform player",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Penalty Kick",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 5,
+      "chunk_start_sec": 75.0,
+      "chunk_end_sec": 90.0,
+      "chunk_start_mmss": "01:15",
+      "chunk_end_mmss": "01:30",
+      "events": [
+        {
+          "local_start": "01:15",
+          "local_end": "01:17",
+          "event_type": "penalty_kick",
+          "description": "The player in white and blue striped jersey takes a penalty kick as the goalkeeper in yellow prepares to defend",
+          "participants": [
+            "white and blue striped jersey player",
+            "yellow jersey goalkeeper",
+            "orange jersey referee"
+          ],
+          "actor": "white and blue striped jersey player",
+          "object": "white soccer ball",
+          "outcome": "scored",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "01:17",
+          "local_end": "01:18",
+          "event_type": "dive",
+          "description": "The goalkeeper in yellow dives to the left but fails to stop the penalty kick",
+          "participants": [
+            "yellow jersey goalkeeper"
+          ],
+          "actor": "yellow jersey goalkeeper",
+          "object": "white soccer goal net",
+          "outcome": "miss",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:18",
+          "local_end": "01:20",
+          "event_type": "celebration",
+          "description": "The player in white and blue striped jersey celebrates after scoring the penalty by running with arms outstretched",
+          "participants": [
+            "white and blue striped jersey player"
+          ],
+          "actor": "white and blue striped jersey player",
+          "object": "",
+          "outcome": "celebration",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:20",
+          "local_end": "01:23",
+          "event_type": "applaud",
+          "description": "Teammates in white and blue striped jerseys on the sideline begin clapping and celebrating the goal",
+          "participants": [
+            "white and blue striped jersey teammates"
+          ],
+          "actor": "white and blue striped jersey teammates",
+          "object": "",
+          "outcome": "applauding",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:23",
+          "local_end": "01:26",
+          "event_type": "react",
+          "description": "Fans in the stands are shown reacting to the goal, with some covering their faces and others celebrating",
+          "participants": [
+            "spectators in stands"
+          ],
+          "actor": "spectators in stands",
+          "object": "",
+          "outcome": "emotional reaction",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:26",
+          "local_end": "01:28",
+          "event_type": "hand_raise",
+          "description": "A man in white and blue striped jersey raises his hands to his head in celebration",
+          "participants": [
+            "white and blue striped jersey man"
+          ],
+          "actor": "white and blue striped jersey man",
+          "object": "",
+          "outcome": "celebration",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:28",
+          "local_end": "01:30",
+          "event_type": "view",
+          "description": "An aerial view of the stadium showing the entire field and crowd after the goal",
+          "participants": [],
+          "actor": "camera",
+          "object": "",
+          "outcome": "stadium view",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 6,
+      "chunk_start_sec": 90.0,
+      "chunk_end_sec": 105.0,
+      "chunk_start_mmss": "01:30",
+      "chunk_end_mmss": "01:45",
+      "events": [
+        {
+          "local_start": "01:30",
+          "local_end": "01:32",
+          "event_type": "scoreboard_update",
+          "description": "Scoreboard graphic appears showing equal score between teams",
+          "participants": [],
+          "actor": "",
+          "on_screen_text": [
+            {
+              "text": "ARGENTINA 1 - 1 FRANCE",
+              "location": "lower_third"
+            },
+            {
+              "text": "fifaplus.com",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:32",
+          "local_end": "01:33",
+          "event_type": "graphic",
+          "description": "White horizontal bar appears at bottom of screen",
+          "participants": [],
+          "actor": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:33",
+          "local_end": "01:35",
+          "event_type": "graphic",
+          "description": "Red horizontal bar with team names replaces white bar at bottom of screen",
+          "participants": [],
+          "actor": "",
+          "on_screen_text": [
+            {
+              "text": "ARGENTINA 1 - 1 FRANCE",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:35",
+          "local_end": "01:37",
+          "event_type": "transition",
+          "description": "Camera transitions from wide field view to close-up of players on field",
+          "participants": [],
+          "actor": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:37",
+          "local_end": "01:39",
+          "event_type": "walk",
+          "description": "Player in Argentina jersey number 10 walks toward teammates",
+          "participants": [
+            "blue-and-white striped jersey player"
+          ],
+          "actor": "blue-and-white striped jersey player",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:39",
+          "local_end": "01:41",
+          "event_type": "gesture",
+          "description": "Player in Argentina jersey number 10 raises hands while walking",
+          "participants": [
+            "blue-and-white striped jersey player"
+          ],
+          "actor": "blue-and-white striped jersey player",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:41",
+          "local_end": "01:43",
+          "event_type": "high_five",
+          "description": "Player in Argentina jersey number 10 high-fives player with jersey number 19 (Otamendi)",
+          "participants": [
+            "blue-and-white striped jersey player",
+            "blue-and-white striped jersey player"
+          ],
+          "actor": "blue-and-white striped jersey player",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:42",
+          "local_end": "01:43",
+          "event_type": "high_five",
+          "description": "Player in Argentina jersey number 10 high-fives player with jersey number 22 (L. Martinez)",
+          "participants": [
+            "blue-and-white striped jersey player",
+            "blue-and-white striped jersey player"
+          ],
+          "actor": "blue-and-white striped jersey player",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:43",
+          "local_end": "01:45",
+          "event_type": "high_five",
+          "description": "Player in Argentina jersey number 10 high-fives another teammate with visible tattoos",
+          "participants": [
+            "blue-and-white striped jersey player",
+            "blue-and-white striped jersey player"
+          ],
+          "actor": "blue-and-white striped jersey player",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:44",
+          "local_end": "01:45",
+          "event_type": "celebration",
+          "description": "Group of Argentina players gather and pat each other on the back while celebrating",
+          "participants": [
+            "blue-and-white striped jersey players"
+          ],
+          "actor": "blue-and-white striped jersey players",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 7,
+      "chunk_start_sec": 105.0,
+      "chunk_end_sec": 120.0,
+      "chunk_start_mmss": "01:45",
+      "chunk_end_mmss": "02:00",
+      "events": [
+        {
+          "local_start": "01:45",
+          "local_end": "01:51",
+          "event_type": "stand",
+          "description": "Player in dark blue jersey stands at the penalty spot preparing to take the kick",
+          "participants": [
+            "dark blue jersey player"
+          ],
+          "actor": "dark blue jersey player",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:51",
+          "local_end": "01:54",
+          "event_type": "run",
+          "description": "Player in dark blue jersey runs toward the ball to take the penalty kick",
+          "participants": [
+            "dark blue jersey player"
+          ],
+          "actor": "dark blue jersey player",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:54",
+          "local_end": "01:55",
+          "event_type": "kick",
+          "description": "Player in dark blue jersey strikes the ball with their right foot",
+          "participants": [
+            "dark blue jersey player",
+            "soccer ball"
+          ],
+          "actor": "dark blue jersey player",
+          "object": "white soccer ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:54",
+          "local_end": "01:56",
+          "event_type": "dive",
+          "description": "Goalkeeper in green jersey dives to their right to save the penalty",
+          "participants": [
+            "green jersey goalkeeper"
+          ],
+          "actor": "green jersey goalkeeper",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:55",
+          "local_end": "01:57",
+          "event_type": "save",
+          "description": "Goalkeeper successfully blocks the penalty kick with their hands",
+          "participants": [
+            "green jersey goalkeeper",
+            "soccer ball"
+          ],
+          "actor": "green jersey goalkeeper",
+          "object": "white soccer ball",
+          "outcome": "saved",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:56",
+          "local_end": "01:59",
+          "event_type": "celebration",
+          "description": "Goalkeeper in green jersey jumps and celebrates after making the save",
+          "participants": [
+            "green jersey goalkeeper"
+          ],
+          "actor": "green jersey goalkeeper",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:56",
+          "local_end": "02:00",
+          "event_type": "applaud",
+          "description": "Stadium crowd applauds and celebrates the successful save",
+          "participants": [
+            "stadium crowd"
+          ],
+          "actor": "stadium crowd",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 8,
+      "chunk_start_sec": 120.0,
+      "chunk_end_sec": 135.0,
+      "chunk_start_mmss": "02:00",
+      "chunk_end_mmss": "02:15",
+      "events": [
+        {
+          "local_start": "02:00",
+          "local_end": "02:02",
+          "event_type": "preparation",
+          "description": "green-uniform goalkeeper adjusts gloves and takes position in goal",
+          "participants": [
+            "green-uniform goalkeeper"
+          ],
+          "actor": "green-uniform goalkeeper",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "02:02",
+          "local_end": "02:03",
+          "event_type": "preparation",
+          "description": "blue-uniform player positions himself to take penalty kick",
+          "participants": [
+            "blue-uniform player"
+          ],
+          "actor": "blue-uniform player",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:03",
+          "local_end": "02:04",
+          "event_type": "kick",
+          "description": "blue-uniform player runs up and strikes the white soccer ball toward the goal",
+          "participants": [
+            "blue-uniform player"
+          ],
+          "actor": "blue-uniform player",
+          "object": "white soccer ball",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:04",
+          "local_end": "02:05",
+          "event_type": "dive",
+          "description": "green-uniform goalkeeper dives to his right to save the penalty kick",
+          "participants": [
+            "green-uniform goalkeeper"
+          ],
+          "actor": "green-uniform goalkeeper",
+          "object": "white soccer ball",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:05",
+          "local_end": "02:06",
+          "event_type": "save",
+          "description": "green-uniform goalkeeper successfully stops the white soccer ball from entering the goal",
+          "participants": [
+            "green-uniform goalkeeper"
+          ],
+          "actor": "green-uniform goalkeeper",
+          "object": "white soccer ball",
+          "outcome": "saved",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:06",
+          "local_end": "02:08",
+          "event_type": "celebration",
+          "description": "green-uniform goalkeeper gets up from the ground and celebrates the save",
+          "participants": [
+            "green-uniform goalkeeper"
+          ],
+          "actor": "green-uniform goalkeeper",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:08",
+          "local_end": "02:10",
+          "event_type": "reaction",
+          "description": "blue-uniform player reacts with disappointment after the missed penalty",
+          "participants": [
+            "blue-uniform player"
+          ],
+          "actor": "blue-uniform player",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:10",
+          "local_end": "02:15",
+          "event_type": "celebration",
+          "description": "blue-and-white-striped player with number 19 raises arms and shouts in celebration",
+          "participants": [
+            "blue-and-white-striped player"
+          ],
+          "actor": "blue-and-white-striped player",
+          "on_screen_text": [
+            {
+              "text": "19",
+              "location": "jersey_number"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 9,
+      "chunk_start_sec": 135.0,
+      "chunk_end_sec": 150.0,
+      "chunk_start_mmss": "02:15",
+      "chunk_end_mmss": "02:30",
+      "events": [
+        {
+          "local_start": "02:15",
+          "local_end": "02:19",
+          "event_type": "walk",
+          "description": "Argentina jersey player walks toward the penalty spot on the field",
+          "participants": [
+            "Argentina jersey player",
+            "referee in orange",
+            "goalkeeper in yellow"
+          ],
+          "actor": "Argentina jersey player",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "02:19",
+          "local_end": "02:22",
+          "event_type": "place",
+          "description": "Argentina jersey player places the soccer ball on the penalty spot",
+          "participants": [
+            "Argentina jersey player",
+            "referee in orange",
+            "goalkeeper in yellow"
+          ],
+          "actor": "Argentina jersey player",
+          "object": "white soccer ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:20",
+          "local_end": "02:30",
+          "event_type": "on_screen_text",
+          "description": "Scoreboard graphic shows the current score and team names",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "ARGENTINA 1 - 1 FRANCE",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:21",
+          "local_end": "02:25",
+          "event_type": "walk",
+          "description": "Argentina jersey player steps backward away from the ball to prepare for the penalty run-up",
+          "participants": [
+            "Argentina jersey player",
+            "referee in orange",
+            "goalkeeper in yellow"
+          ],
+          "actor": "Argentina jersey player",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:24",
+          "local_end": "02:30",
+          "event_type": "stand",
+          "description": "Argentina jersey player stands still, facing the goal while preparing to take the penalty kick",
+          "participants": [
+            "Argentina jersey player",
+            "referee in orange",
+            "goalkeeper in yellow"
+          ],
+          "actor": "Argentina jersey player",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 10,
+      "chunk_start_sec": 150.0,
+      "chunk_end_sec": 165.0,
+      "chunk_start_mmss": "02:30",
+      "chunk_end_mmss": "02:45",
+      "events": [
+        {
+          "local_start": "02:30",
+          "local_end": "02:34",
+          "event_type": "celebration",
+          "description": "player in Argentina jersey with white and blue stripes celebrates with mouth wide open",
+          "participants": [
+            "white and blue striped jersey player"
+          ],
+          "actor": "white and blue striped jersey player",
+          "object": "",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:34",
+          "local_end": "02:38",
+          "event_type": "hand_raise",
+          "description": "player in Argentina jersey raises right hand in fist pump gesture while celebrating",
+          "participants": [
+            "white and blue striped jersey player"
+          ],
+          "actor": "white and blue striped jersey player",
+          "object": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:38",
+          "local_end": "02:42",
+          "event_type": "emotion_display",
+          "description": "player in blue jacket with purple accents covers face with both hands on the bench",
+          "participants": [
+            "blue jacket player"
+          ],
+          "actor": "blue jacket player",
+          "object": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:42",
+          "local_end": "02:45",
+          "event_type": "celebration",
+          "description": "player in Argentina jersey continues celebrating with mouth open and head turned to the side",
+          "participants": [
+            "white and blue striped jersey player"
+          ],
+          "actor": "white and blue striped jersey player",
+          "object": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 11,
+      "chunk_start_sec": 165.0,
+      "chunk_end_sec": 180.0,
+      "chunk_start_mmss": "02:45",
+      "chunk_end_mmss": "03:00",
+      "events": [
+        {
+          "local_start": "02:45",
+          "local_end": "02:48",
+          "event_type": "high_five",
+          "description": "Argentina player with number 19 high-fives another teammate",
+          "participants": [
+            "blue-white striped jersey player (19)",
+            "blue-white striped jersey player"
+          ],
+          "actor": "blue-white striped jersey player (19)",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:47",
+          "local_end": "02:51",
+          "event_type": "shoulder_tap",
+          "description": "Argentina player with visible tattoos on arm taps teammate's shoulder",
+          "participants": [
+            "tattooed blue-white striped jersey player",
+            "blue-white striped jersey player (22)"
+          ],
+          "actor": "tattooed blue-white striped jersey player",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:48",
+          "local_end": "02:52",
+          "event_type": "arm_around",
+          "description": "Multiple Argentina players place arms around each other's shoulders in a group celebration",
+          "participants": [
+            "blue-white striped jersey players"
+          ],
+          "actor": "multiple blue-white striped jersey players",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:52",
+          "local_end": "02:55",
+          "event_type": "scoreboard_update",
+          "description": "Scoreboard displays Argentina leading France 2-1 in penalty shootout",
+          "participants": [],
+          "actor": "scoreboard",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "ARGENTINA 2 - 1 FRANCE",
+              "location": "scoreboard"
+            },
+            {
+              "text": "PENALTY SHOOTOUT",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:55",
+          "local_end": "02:58",
+          "event_type": "walk",
+          "description": "French player in blue jersey walks toward the penalty spot",
+          "participants": [
+            "blue jersey player"
+          ],
+          "actor": "blue jersey player",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:58",
+          "local_end": "03:00",
+          "event_type": "react",
+          "description": "French player shows serious facial expression while looking forward",
+          "participants": [
+            "blue jersey player"
+          ],
+          "actor": "blue jersey player",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 12,
+      "chunk_start_sec": 180.0,
+      "chunk_end_sec": 195.0,
+      "chunk_start_mmss": "03:00",
+      "chunk_end_mmss": "03:15",
+      "events": [
+        {
+          "local_start": "03:00",
+          "local_end": "03:03",
+          "event_type": "look",
+          "description": "goalkeeper in green jersey looks around the field while standing",
+          "participants": [
+            "green-jersey goalkeeper"
+          ],
+          "actor": "green-jersey goalkeeper",
+          "on_screen_text": [
+            {
+              "text": "E. MARTINEZ",
+              "location": "jersey_number"
+            },
+            {
+              "text": "23",
+              "location": "jersey_number"
+            },
+            {
+              "text": "FIFA+",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:04",
+          "local_end": "03:07",
+          "event_type": "stadium_view",
+          "description": "wide aerial view of the soccer stadium showing the field and crowd",
+          "participants": [],
+          "actor": null,
+          "on_screen_text": [
+            {
+              "text": "FIFA+",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:08",
+          "local_end": "03:11",
+          "event_type": "stand",
+          "description": "goalkeeper in green jersey stands near goal net looking toward field",
+          "participants": [
+            "green-jersey goalkeeper",
+            "orange-shirt referee"
+          ],
+          "actor": "green-jersey goalkeeper",
+          "on_screen_text": [
+            {
+              "text": "23",
+              "location": "jersey_number"
+            },
+            {
+              "text": "FIFA+",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:12",
+          "local_end": "03:15",
+          "event_type": "walk",
+          "description": "goalkeeper in green jersey walks across the field toward the center",
+          "participants": [
+            "green-jersey goalkeeper",
+            "orange-shirt referee"
+          ],
+          "actor": "green-jersey goalkeeper",
+          "on_screen_text": [
+            {
+              "text": "23",
+              "location": "jersey_number"
+            },
+            {
+              "text": "FIFA+",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 13,
+      "chunk_start_sec": 195.0,
+      "chunk_end_sec": 210.0,
+      "chunk_start_mmss": "03:15",
+      "chunk_end_mmss": "03:30",
+      "events": [
+        {
+          "local_start": "03:15",
+          "local_end": "03:20",
+          "event_type": "walk",
+          "description": "player in blue jersey walks toward the penalty spot",
+          "participants": [
+            "blue-jersey player"
+          ],
+          "actor": "blue-jersey player",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:20",
+          "local_end": "03:25",
+          "event_type": "positioning",
+          "description": "player in blue jersey positions himself for the penalty kick",
+          "participants": [
+            "blue-jersey player"
+          ],
+          "actor": "blue-jersey player",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:15",
+          "local_end": "03:30",
+          "event_type": "prepare",
+          "description": "goalkeeper in green jersey prepares in goal for the penalty kick",
+          "participants": [
+            "green-jersey goalkeeper"
+          ],
+          "actor": "green-jersey goalkeeper",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:15",
+          "local_end": "03:30",
+          "event_type": "observe",
+          "description": "referee in orange shirt stands at the side observing the penalty preparation",
+          "participants": [
+            "orange-shirt referee"
+          ],
+          "actor": "orange-shirt referee",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:25",
+          "local_end": "03:30",
+          "event_type": "kick",
+          "description": "player in blue jersey takes the penalty kick toward the goal",
+          "participants": [
+            "blue-jersey player"
+          ],
+          "actor": "blue-jersey player",
+          "object": "white soccer ball",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            },
+            {
+              "text": "QATAR AIRWAYS",
+              "location": "other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_idx": 14,
+      "chunk_start_sec": 210.0,
+      "chunk_end_sec": 225.0,
+      "chunk_start_mmss": "03:30",
+      "chunk_end_mmss": "03:45",
+      "events": [
+        {
+          "local_start": "03:30",
+          "local_end": "03:32",
+          "event_type": "kick",
+          "description": "player in blue jersey runs toward and strikes the penalty ball",
+          "participants": [
+            "blue-jersey player (number 8)"
+          ],
+          "actor": "blue-jersey player (number 8)",
+          "object": "white ball",
+          "outcome": "scored",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:32",
+          "local_end": "03:33",
+          "event_type": "dive",
+          "description": "goalkeeper in green jersey dives to the side but fails to save the penalty",
+          "participants": [
+            "green-jersey goalkeeper"
+          ],
+          "actor": "green-jersey goalkeeper",
+          "object": "goal",
+          "outcome": "miss",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:33",
+          "local_end": "03:35",
+          "event_type": "walk",
+          "description": "blue-jersey player walks away from the penalty spot after scoring",
+          "participants": [
+            "blue-jersey player (number 8)"
+          ],
+          "actor": "blue-jersey player (number 8)",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:35",
+          "local_end": "03:37",
+          "event_type": "react",
+          "description": "blue-jersey player shows emotional reaction with mouth open",
+          "participants": [
+            "blue-jersey player (number 8)"
+          ],
+          "actor": "blue-jersey player (number 8)",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:37",
+          "local_end": "03:39",
+          "event_type": "react",
+          "description": "coaches on sideline show emotional reactions with hands near faces",
+          "participants": [
+            "gray-haired coach",
+            "bald coach"
+          ],
+          "actor": "gray-haired coach",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:39",
+          "local_end": "03:42",
+          "event_type": "applaud",
+          "description": "group of blue-jersey players clap while standing in a line on the field",
+          "participants": [
+            "blue-jersey players"
+          ],
+          "actor": "blue-jersey player with hand on face",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:42",
+          "local_end": "03:45",
+          "event_type": "react",
+          "description": "man in crowd with patterned headband holds fingers near eye, appearing emotional",
+          "participants": [
+            "man with patterned headband",
+            "child in blue cap"
+          ],
+          "actor": "man with patterned headband",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 15,
+      "chunk_start_sec": 225.0,
+      "chunk_end_sec": 240.0,
+      "chunk_start_mmss": "03:45",
+      "chunk_end_mmss": "04:00",
+      "events": [
+        {
+          "local_start": "03:45",
+          "local_end": "03:48",
+          "event_type": "scoreboard_update",
+          "description": "Scoreboard displays match information showing Argentina 2 - 1 France in penalty shootout",
+          "participants": [],
+          "actor": "scoreboard",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "ARGENTINA 2 - 1 FRANCE",
+              "location": "scoreboard"
+            },
+            {
+              "text": "PENALTY SHOOTOUT",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:45",
+          "local_end": "03:50",
+          "event_type": "walk",
+          "description": "French player #8 walks on the field with serious expression",
+          "participants": [
+            "dark blue jersey player #8"
+          ],
+          "actor": "dark blue jersey player #8",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:45",
+          "local_end": "03:52",
+          "event_type": "high_five",
+          "description": "French player #8 high-fives French player #26 (Thuram)",
+          "participants": [
+            "dark blue jersey player #8",
+            "dark blue jersey player #26"
+          ],
+          "actor": "dark blue jersey player #8",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:48",
+          "local_end": "03:55",
+          "event_type": "walk",
+          "description": "French player #25 walks on the field with serious expression",
+          "participants": [
+            "dark blue jersey player #25"
+          ],
+          "actor": "dark blue jersey player #25",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:48",
+          "local_end": "03:55",
+          "event_type": "walk",
+          "description": "French player #26 (Thuram) walks toward the penalty area",
+          "participants": [
+            "dark blue jersey player #26"
+          ],
+          "actor": "dark blue jersey player #26",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:50",
+          "local_end": "03:55",
+          "event_type": "high_five",
+          "description": "French player #26 (Thuram) high-fives teammate",
+          "participants": [
+            "dark blue jersey player #26",
+            "dark blue jersey player"
+          ],
+          "actor": "dark blue jersey player #26",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:53",
+          "local_end": "03:58",
+          "event_type": "react",
+          "description": "French player covers mouth showing anxiety or disappointment",
+          "participants": [
+            "dark blue jersey player"
+          ],
+          "actor": "dark blue jersey player",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:55",
+          "local_end": "04:00",
+          "event_type": "react",
+          "description": "French player puts hand on head showing disappointment",
+          "participants": [
+            "dark blue jersey player"
+          ],
+          "actor": "dark blue jersey player",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 16,
+      "chunk_start_sec": 240.0,
+      "chunk_end_sec": 255.0,
+      "chunk_start_mmss": "04:00",
+      "chunk_end_mmss": "04:15",
+      "events": [
+        {
+          "local_start": "04:00",
+          "local_end": "04:02",
+          "event_type": "hug",
+          "description": "Blue-shirt player with braided hair places arm around teammate's shoulder",
+          "participants": [
+            "blue-shirt player with braided hair",
+            "blue-shirt player with curly hair"
+          ],
+          "actor": "blue-shirt player with braided hair",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:00",
+          "local_end": "04:03",
+          "event_type": "hug",
+          "description": "Blue-shirt player with curly hair is hugged by multiple teammates as he keeps head bowed",
+          "participants": [
+            "blue-shirt player with curly hair",
+            "blue-shirt players"
+          ],
+          "actor": "blue-shirt player with curly hair",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:02",
+          "local_end": "04:03",
+          "event_type": "hug",
+          "description": "Additional blue-shirt players join the group hug around the player with curly hair",
+          "participants": [
+            "multiple blue-shirt players"
+          ],
+          "actor": "blue-shirt player (unspecified)",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:04",
+          "local_end": "04:05",
+          "event_type": "transition",
+          "description": "Camera shifts focus to show an Argentine player in white/blue striped jersey",
+          "participants": [],
+          "actor": "camera",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:06",
+          "local_end": "04:09",
+          "event_type": "focus",
+          "description": "Argentine player in white/blue striped jersey stands still while focusing on the goal",
+          "participants": [
+            "white/blue striped jersey player"
+          ],
+          "actor": "white/blue striped jersey player",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:10",
+          "local_end": "04:12",
+          "event_type": "walk",
+          "description": "Argentine player walks toward the penalty spot ball",
+          "participants": [
+            "white/blue striped jersey player"
+          ],
+          "actor": "white/blue striped jersey player",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:13",
+          "local_end": "04:15",
+          "event_type": "penalty_kick",
+          "description": "Argentine player takes a penalty kick toward the goal",
+          "participants": [
+            "white/blue striped jersey player",
+            "goalkeeper"
+          ],
+          "actor": "white/blue striped jersey player",
+          "object": "white soccer ball",
+          "outcome": "kicked",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 17,
+      "chunk_start_sec": 255.0,
+      "chunk_end_sec": 270.0,
+      "chunk_start_mmss": "04:15",
+      "chunk_end_mmss": "04:30",
+      "events": [
+        {
+          "local_start": "04:15",
+          "local_end": "04:18",
+          "event_type": "kick",
+          "description": "Player Paredes #5 runs toward the ball and kicks it toward the goal",
+          "participants": [
+            "white-and-blue-striped player",
+            "yellow-jersey goalkeeper",
+            "orange-jersey official"
+          ],
+          "actor": "white-and-blue-striped player",
+          "object": "white soccer ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            },
+            {
+              "text": "QatarEnergy",
+              "location": "banner"
+            },
+            {
+              "text": "5",
+              "location": "jersey_number"
+            },
+            {
+              "text": "PAREDES",
+              "location": "name_tag"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "04:18",
+          "local_end": "04:21",
+          "event_type": "celebration",
+          "description": "Paredes #5 runs toward the goalkeeper after scoring",
+          "participants": [
+            "white-and-blue-striped player"
+          ],
+          "actor": "white-and-blue-striped player",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:21",
+          "local_end": "04:26",
+          "event_type": "hug",
+          "description": "Paredes #5 and goalkeeper E. Martinez #23 embrace each other in celebration",
+          "participants": [
+            "white-and-blue-striped player",
+            "green-jersey goalkeeper"
+          ],
+          "actor": "white-and-blue-striped player",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:25",
+          "local_end": "04:28",
+          "event_type": "pat",
+          "description": "The goalkeeper pats Paredes on the head while they continue embracing",
+          "participants": [
+            "green-jersey goalkeeper",
+            "white-and-blue-striped player"
+          ],
+          "actor": "green-jersey goalkeeper",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:27",
+          "local_end": "04:30",
+          "event_type": "walk",
+          "description": "Paredes and the goalkeeper separate and walk away from each other",
+          "participants": [
+            "white-and-blue-striped player",
+            "green-jersey goalkeeper"
+          ],
+          "actor": "white-and-blue-striped player",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 18,
+      "chunk_start_sec": 270.0,
+      "chunk_end_sec": 285.0,
+      "chunk_start_mmss": "04:30",
+      "chunk_end_mmss": "04:45",
+      "events": [
+        {
+          "local_start": "04:30",
+          "local_end": "04:33",
+          "event_type": "kick",
+          "description": "Argentina player in blue and white striped jersey kicks the soccer ball toward the goal",
+          "participants": [
+            "blue and white striped jersey player",
+            "yellow jersey goalkeeper"
+          ],
+          "actor": "blue and white striped jersey player",
+          "object": "white soccer ball",
+          "outcome": "in",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:32",
+          "local_end": "04:35",
+          "event_type": "dive",
+          "description": "Goalkeeper in yellow jersey dives to the right but fails to stop the ball",
+          "participants": [
+            "yellow jersey goalkeeper",
+            "blue and white striped jersey player"
+          ],
+          "actor": "yellow jersey goalkeeper",
+          "object": "white soccer ball",
+          "outcome": "miss",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:33",
+          "local_end": "04:36",
+          "event_type": "score",
+          "description": "The soccer ball enters the goal net past the diving goalkeeper",
+          "participants": [
+            "yellow jersey goalkeeper",
+            "white soccer ball"
+          ],
+          "actor": "white soccer ball",
+          "object": "white soccer ball",
+          "outcome": "scored",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:36",
+          "local_end": "04:39",
+          "event_type": "reaction",
+          "description": "Goalkeeper in yellow jersey shows a smiling expression through the goal net",
+          "participants": [
+            "yellow jersey goalkeeper"
+          ],
+          "actor": "yellow jersey goalkeeper",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:39",
+          "local_end": "04:42",
+          "event_type": "scoreboard_update",
+          "description": "Scoreboard graphic appears showing Argentina leading France in penalty shootout",
+          "participants": [],
+          "actor": "scoreboard graphic",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "ARGENTINA 3 - 1 FRANCE",
+              "location": "scoreboard"
+            },
+            {
+              "text": "PENALTY SHOOTOUT",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:41",
+          "local_end": "04:45",
+          "event_type": "position",
+          "description": "Players reposition on the field preparing for the next penalty kick",
+          "participants": [
+            "blue and white striped jersey players",
+            "opponent team players"
+          ],
+          "actor": "blue and white striped jersey players",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "ARGENTINA 3 - 1 FRANCE",
+              "location": "scoreboard"
+            },
+            {
+              "text": "PENALTY SHOOTOUT",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 19,
+      "chunk_start_sec": 285.0,
+      "chunk_end_sec": 300.0,
+      "chunk_start_mmss": "04:45",
+      "chunk_end_mmss": "05:00",
+      "events": [
+        {
+          "local_start": "04:45",
+          "local_end": "04:47",
+          "event_type": "high_five",
+          "description": "Player wearing jersey #19 (Otamendi) high-fives player wearing jersey #22 (L. Martinez)",
+          "participants": [
+            "#19 jersey player",
+            "#22 jersey player"
+          ],
+          "actor": "#19 jersey player",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:46",
+          "local_end": "04:48",
+          "event_type": "high_five",
+          "description": "Player wearing jersey #6 (Pezzella) high-fives teammates including player wearing jersey #21",
+          "participants": [
+            "#6 jersey player",
+            "#21 jersey player",
+            "other teammates"
+          ],
+          "actor": "#6 jersey player",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:47",
+          "local_end": "04:49",
+          "event_type": "pat",
+          "description": "Player wearing jersey #19 pats player wearing jersey #22 on the back",
+          "participants": [
+            "#19 jersey player",
+            "#22 jersey player"
+          ],
+          "actor": "#19 jersey player",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:48",
+          "local_end": "04:50",
+          "event_type": "group_celebration",
+          "description": "Multiple Argentina players including those wearing jerseys #8 and #4 gather and raise hands together in celebration",
+          "participants": [
+            "#8 jersey player",
+            "#4 jersey player",
+            "other teammates"
+          ],
+          "actor": "multiple players",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:50",
+          "local_end": "04:53",
+          "event_type": "react",
+          "description": "French fan with hand on head showing concern while watching the match",
+          "participants": [
+            "blue jersey fan with hand on head"
+          ],
+          "actor": "blue jersey fan with hand on head",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:50",
+          "local_end": "04:53",
+          "event_type": "react",
+          "description": "French fan with hand on chin showing concern while watching the match",
+          "participants": [
+            "blue jersey fan with hand on chin"
+          ],
+          "actor": "blue jersey fan with hand on chin",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:53",
+          "local_end": "04:56",
+          "event_type": "react",
+          "description": "Wide view of French fans in the stands showing concern with various expressions of disappointment",
+          "participants": [
+            "French fans in stands"
+          ],
+          "actor": "French fans in stands",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:56",
+          "local_end": "04:58",
+          "event_type": "react",
+          "description": "French fan with red hair and blue jersey looking down with disappointment",
+          "participants": [
+            "red-haired French fan"
+          ],
+          "actor": "red-haired French fan",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:58",
+          "local_end": "05:00",
+          "event_type": "react",
+          "description": "French player wearing dark blue jersey looking serious and focused",
+          "participants": [
+            "dark blue jersey player"
+          ],
+          "actor": "dark blue jersey player",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:00",
+          "local_end": "05:00",
+          "event_type": "prepare",
+          "description": "Player standing at penalty spot preparing for kick with ball positioned on the spot",
+          "participants": [
+            "player at penalty spot"
+          ],
+          "actor": "player at penalty spot",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match - Penalty",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 20,
+      "chunk_start_sec": 300.0,
+      "chunk_end_sec": 315.0,
+      "chunk_start_mmss": "05:00",
+      "chunk_end_mmss": "05:15",
+      "events": [
+        {
+          "local_start": "05:00",
+          "local_end": "05:03",
+          "event_type": "penalty_kick",
+          "description": "blue-jersey player #12 runs up to take a penalty kick while goalkeeper stands ready in goal",
+          "participants": [
+            "blue-jersey player",
+            "goalkeeper",
+            "referee"
+          ],
+          "actor": "blue-jersey player",
+          "object": "white soccer ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "05:03",
+          "local_end": "05:04",
+          "event_type": "goal",
+          "description": "the white soccer ball enters the net as the goalkeeper dives to the left",
+          "participants": [
+            "goalkeeper"
+          ],
+          "actor": "none",
+          "object": "white soccer ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:04",
+          "local_end": "05:06",
+          "event_type": "celebration",
+          "description": "blue-jersey player raises both arms in celebration after scoring",
+          "participants": [
+            "blue-jersey player"
+          ],
+          "actor": "blue-jersey player",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:06",
+          "local_end": "05:08",
+          "event_type": "close_up",
+          "description": "camera shows close-up of blue-jersey player with name KOLO MUANI visible on back of jersey",
+          "participants": [
+            "KOLO MUANI"
+          ],
+          "actor": "KOLO MUANI",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            },
+            {
+              "text": "KOLO MUANI",
+              "location": "jersey_name"
+            },
+            {
+              "text": "12",
+              "location": "jersey_number"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:08",
+          "local_end": "05:11",
+          "event_type": "stand",
+          "description": "players wearing yellow vests with 'WORLD CUP Qatar 2022' text stand together on the field",
+          "participants": [
+            "yellow-vest players"
+          ],
+          "actor": "yellow-vest players",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            },
+            {
+              "text": "WORLD CUP Qatar 2022",
+              "location": "vest_text"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:11",
+          "local_end": "05:13",
+          "event_type": "close_up",
+          "description": "camera shows close-up of blue-jersey player wearing French national team emblem",
+          "participants": [
+            "blue-jersey player"
+          ],
+          "actor": "blue-jersey player",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:13",
+          "local_end": "05:15",
+          "event_type": "react",
+          "description": "two coaches, one in white jacket with French emblem and one in blue suit, react to the play",
+          "participants": [
+            "white-jacket coach",
+            "blue-suit coach"
+          ],
+          "actor": "white-jacket coach",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 21,
+      "chunk_start_sec": 315.0,
+      "chunk_end_sec": 330.0,
+      "chunk_start_mmss": "05:15",
+      "chunk_end_mmss": "05:30",
+      "events": [
+        {
+          "local_start": "05:15",
+          "local_end": "05:17",
+          "event_type": "hand_raise",
+          "description": "man in blue suit raises his hand to cover his mouth",
+          "participants": [
+            "bald man in white jacket",
+            "gray-haired man in blue suit"
+          ],
+          "actor": "gray-haired man in blue suit",
+          "object": "",
+          "object_before": "",
+          "object_after": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "05:17",
+          "local_end": "05:19",
+          "event_type": "game",
+          "description": "goalkeeper in bright green uniform positions himself for a penalty kick",
+          "participants": [
+            "goalkeeper in green uniform",
+            "kicker in dark uniform"
+          ],
+          "actor": "goalkeeper in green uniform",
+          "object": "white soccer ball",
+          "object_before": "",
+          "object_after": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:19",
+          "local_end": "05:21",
+          "event_type": "game",
+          "description": "kicker in dark uniform runs toward and strikes the soccer ball",
+          "participants": [
+            "kicker in dark uniform",
+            "goalkeeper in green uniform"
+          ],
+          "actor": "kicker in dark uniform",
+          "object": "white soccer ball",
+          "object_before": "",
+          "object_after": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:20",
+          "local_end": "05:23",
+          "event_type": "game",
+          "description": "goalkeeper in green uniform dives to his right attempting to save the penalty kick",
+          "participants": [
+            "goalkeeper in green uniform"
+          ],
+          "actor": "goalkeeper in green uniform",
+          "object": "white soccer ball",
+          "object_before": "",
+          "object_after": "",
+          "outcome": "miss",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:22",
+          "local_end": "05:24",
+          "event_type": "game",
+          "description": "soccer ball enters the goal net after the penalty kick",
+          "participants": [
+            "goalkeeper in green uniform",
+            "kicker in dark uniform"
+          ],
+          "actor": "soccer ball",
+          "object": "white soccer ball",
+          "object_before": "",
+          "object_after": "",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:23",
+          "local_end": "05:25",
+          "event_type": "game",
+          "description": "goalkeeper in green uniform falls to the ground after diving for the penalty",
+          "participants": [
+            "goalkeeper in green uniform"
+          ],
+          "actor": "goalkeeper in green uniform",
+          "object": "",
+          "object_before": "",
+          "object_after": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:24",
+          "local_end": "05:28",
+          "event_type": "walk",
+          "description": "player in Argentina's light blue and white striped uniform walks toward the penalty spot",
+          "participants": [
+            "Argentina player in blue and white striped uniform",
+            "goalkeeper in green uniform"
+          ],
+          "actor": "Argentina player in blue and white striped uniform",
+          "object": "",
+          "object_before": "",
+          "object_after": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:25",
+          "local_end": "05:30",
+          "event_type": "scoreboard_update",
+          "description": "scoreboard displays Argentina leading France 3-2 in the penalty shootout",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "object_before": "",
+          "object_after": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "ARGENTINA 3 - 2 FRANCE",
+              "location": "scoreboard"
+            },
+            {
+              "text": "PENALTY SHOOTOUT",
+              "location": "scoreboard"
+            },
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:28",
+          "local_end": "05:30",
+          "event_type": "look",
+          "description": "close-up of Argentina player showing focused expression with neck tattoo visible",
+          "participants": [
+            "Argentina player in blue and white striped uniform"
+          ],
+          "actor": "Argentina player in blue and white striped uniform",
+          "object": "",
+          "object_before": "",
+          "object_after": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 22,
+      "chunk_start_sec": 330.0,
+      "chunk_end_sec": 345.0,
+      "chunk_start_mmss": "05:30",
+      "chunk_end_mmss": "05:45",
+      "events": [
+        {
+          "local_start": "05:30",
+          "local_end": "05:33",
+          "event_type": "prepare",
+          "description": "player in blue and white striped jersey looks down while preparing for penalty kick",
+          "participants": [
+            "blue and white striped jersey player"
+          ],
+          "actor": "blue and white striped jersey player",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "starts_before_chunk",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "05:33",
+          "local_end": "05:35",
+          "event_type": "oversee",
+          "description": "referee in orange shirt stands near penalty taker overseeing the procedure",
+          "participants": [
+            "orange shirt referee"
+          ],
+          "actor": "orange shirt referee",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "05:35",
+          "local_end": "05:38",
+          "event_type": "position",
+          "description": "goalkeeper in yellow jersey positions himself on the goal line preparing to defend",
+          "participants": [
+            "yellow jersey goalkeeper"
+          ],
+          "actor": "yellow jersey goalkeeper",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "05:38",
+          "local_end": "05:40",
+          "event_type": "kick",
+          "description": "player in blue and white striped jersey runs up and strikes the soccer ball for the penalty kick",
+          "participants": [
+            "blue and white striped jersey player"
+          ],
+          "actor": "blue and white striped jersey player",
+          "object": "soccer ball",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "05:40",
+          "local_end": "05:42",
+          "event_type": "dive",
+          "description": "goalkeeper in yellow jersey dives to the left to save the penalty kick",
+          "participants": [
+            "yellow jersey goalkeeper"
+          ],
+          "actor": "yellow jersey goalkeeper",
+          "object": "soccer ball",
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "05:42",
+          "local_end": "05:45",
+          "event_type": "react",
+          "description": "goalkeeper in yellow jersey stands and looks toward the field after making the save",
+          "participants": [
+            "yellow jersey goalkeeper"
+          ],
+          "actor": "yellow jersey goalkeeper",
+          "segment_boundary": "end",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_idx": 23,
+      "chunk_start_sec": 345.0,
+      "chunk_end_sec": 360.0,
+      "chunk_start_mmss": "05:45",
+      "chunk_end_mmss": "06:00",
+      "events": [
+        {
+          "local_start": "05:45",
+          "local_end": "05:48",
+          "event_type": "remove_clothing",
+          "description": "player begins pulling blue and white striped jersey over his head",
+          "participants": [
+            "blue-and-white striped jersey player"
+          ],
+          "actor": "blue-and-white striped jersey player",
+          "object": "blue and white striped jersey",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match - Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:48",
+          "local_end": "05:51",
+          "event_type": "remove_clothing",
+          "description": "player continues removing jersey, revealing bare back with visible tattoos",
+          "participants": [
+            "blue-and-white striped jersey player"
+          ],
+          "actor": "blue-and-white striped jersey player",
+          "object": "blue and white striped jersey",
+          "object_before": "blue and white striped jersey",
+          "object_after": "not_visible",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match - Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:51",
+          "local_end": "05:54",
+          "event_type": "remove_clothing",
+          "description": "player fully removes jersey, exposing bare back showing tattoo",
+          "participants": [
+            "blue-and-white striped jersey player"
+          ],
+          "actor": "blue-and-white striped jersey player",
+          "object": "blue and white striped jersey",
+          "object_before": "blue and white striped jersey",
+          "object_after": "not_visible",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match - Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:54",
+          "local_end": "05:57",
+          "event_type": "hold_clothing",
+          "description": "player holds jersey above his head with both hands",
+          "participants": [
+            "shirtless player"
+          ],
+          "actor": "shirtless player",
+          "object": "blue and white striped jersey",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match - Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:57",
+          "local_end": "06:00",
+          "event_type": "cover_face",
+          "description": "player pulls jersey down to cover his face",
+          "participants": [
+            "shirtless player"
+          ],
+          "actor": "shirtless player",
+          "object": "blue and white striped jersey",
+          "object_before": "blue and white striped jersey",
+          "object_after": "blue and white striped jersey",
+          "object_before_pattern": "vertical stripes",
+          "object_after_pattern": "vertical stripes",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match - Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 24,
+      "chunk_start_sec": 360.0,
+      "chunk_end_sec": 375.0,
+      "chunk_start_mmss": "06:00",
+      "chunk_end_mmss": "06:15",
+      "events": [
+        {
+          "local_start": "06:00",
+          "local_end": "06:03",
+          "event_type": "hug",
+          "description": "Shirtless player with visible tattoos embraces another player wearing a white and blue striped jersey",
+          "participants": [
+            "shirtless player with tattoos",
+            "player in white and blue striped jersey"
+          ],
+          "actor": "shirtless player with tattoos",
+          "object": "",
+          "object_before": "",
+          "object_after": "",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "06:03",
+          "local_end": "06:05",
+          "event_type": "hug",
+          "description": "Additional player joins the embrace, forming a group hug with three players",
+          "participants": [
+            "shirtless player with tattoos",
+            "player in white and blue striped jersey",
+            "player in white jersey with black stripes"
+          ],
+          "actor": "player in white jersey with black stripes",
+          "object": "",
+          "object_before": "",
+          "object_after": "",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:05",
+          "local_end": "06:07",
+          "event_type": "walk",
+          "description": "Players wearing yellow vests with FIFA World Cup branding walk across the field while embracing",
+          "participants": [
+            "player with yellow vest",
+            "player with yellow vest"
+          ],
+          "actor": "player with yellow vest",
+          "object": "",
+          "object_before": "",
+          "object_after": "",
+          "on_screen_text": [
+            {
+              "text": "FIFA WORLD CUP Qatar 2022",
+              "location": "other"
+            },
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:07",
+          "local_end": "06:10",
+          "event_type": "stadium_view",
+          "description": "Aerial view of a packed soccer stadium showing the field and stands filled with spectators",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "object_before": "",
+          "object_after": "",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:10",
+          "local_end": "06:13",
+          "event_type": "run",
+          "description": "Two players wearing yellow FIFA World Cup vests run across the field while embracing",
+          "participants": [
+            "player with yellow vest",
+            "player with yellow vest"
+          ],
+          "actor": "player with yellow vest",
+          "object": "",
+          "object_before": "",
+          "object_after": "",
+          "on_screen_text": [
+            {
+              "text": "FIFA WORLD CUP Qatar 2022",
+              "location": "other"
+            },
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:13",
+          "local_end": "06:15",
+          "event_type": "group_celebration",
+          "description": "Multiple players gather in a pile formation at the center circle of the soccer field while celebrating",
+          "participants": [
+            "multiple players in white jerseys",
+            "multiple players in blue jerseys"
+          ],
+          "actor": "multiple players",
+          "object": "",
+          "object_before": "",
+          "object_after": "",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 25,
+      "chunk_start_sec": 375.0,
+      "chunk_end_sec": 390.0,
+      "chunk_start_mmss": "06:15",
+      "chunk_end_mmss": "06:30",
+      "events": [
+        {
+          "local_start": "06:15",
+          "local_end": "06:18",
+          "event_type": "celebration",
+          "description": "A group of soccer players in white and light blue striped jerseys are huddling together in a group celebration near the center of the field",
+          "participants": [
+            "white and blue striped jersey players"
+          ],
+          "actor": "white and blue striped jersey players",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:18",
+          "local_end": "06:21",
+          "event_type": "run",
+          "description": "One player in white and blue striped jersey separates from the group and runs toward the stands with arms raised",
+          "participants": [
+            "white and blue striped jersey player"
+          ],
+          "actor": "white and blue striped jersey player",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:21",
+          "local_end": "06:25",
+          "event_type": "walk",
+          "description": "Two photographers with cameras walk across the field from right to left while filming the celebration",
+          "participants": [
+            "photographer in blue shirt",
+            "photographer in black and white shirt"
+          ],
+          "actor": "photographer in blue shirt",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:25",
+          "local_end": "06:28",
+          "event_type": "applaud",
+          "description": "The crowd in the stands is shown cheering and raising their arms in celebration",
+          "participants": [
+            "stadium crowd"
+          ],
+          "actor": "stadium crowd",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "06:28",
+          "local_end": "06:30",
+          "event_type": "hug",
+          "description": "Close-up view of multiple players in white and light blue striped jerseys tightly hugging in a group",
+          "participants": [
+            "white and blue striped jersey players"
+          ],
+          "actor": "white and blue striped jersey players",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 26,
+      "chunk_start_sec": 390.0,
+      "chunk_end_sec": 405.0,
+      "chunk_start_mmss": "06:30",
+      "chunk_end_mmss": "06:45",
+      "events": [
+        {
+          "local_start": "06:30",
+          "local_end": "06:32",
+          "event_type": "hug",
+          "description": "Multiple players in white and blue striped jerseys embrace in a tight group hug on the field",
+          "participants": [
+            "white and blue striped jersey players"
+          ],
+          "actor": "white and blue striped jersey players",
+          "segment_boundary": "end",
+          "segment_label": "Soccer Match Conclusion",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:30",
+          "local_end": "06:32",
+          "event_type": "pat",
+          "description": "One white and blue striped jersey player pats another teammate on the back while in the huddle",
+          "participants": [
+            "white and blue striped jersey players"
+          ],
+          "actor": "white and blue striped jersey player",
+          "segment_boundary": "end",
+          "segment_label": "Soccer Match Conclusion",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:32",
+          "local_end": "06:35",
+          "event_type": "hand_raise",
+          "description": "Stadium crowd members raise their hands in celebration",
+          "participants": [
+            "stadium crowd"
+          ],
+          "actor": "stadium crowd",
+          "segment_boundary": "end",
+          "segment_label": "Soccer Match Conclusion",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:32",
+          "local_end": "06:35",
+          "event_type": "jump",
+          "description": "Stadium fans jump up and down while cheering",
+          "participants": [
+            "stadium crowd"
+          ],
+          "actor": "stadium crowd",
+          "segment_boundary": "end",
+          "segment_label": "Soccer Match Conclusion",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:36",
+          "local_end": "06:39",
+          "event_type": "hug",
+          "description": "Players in white and blue striped jerseys along with players in blue and yellow training bibs continue to embrace in celebration",
+          "participants": [
+            "white and blue striped jersey players",
+            "blue and yellow training bib players"
+          ],
+          "actor": "white and blue striped jersey players and blue and yellow training bib players",
+          "segment_boundary": "end",
+          "segment_label": "Soccer Match Conclusion",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:36",
+          "local_end": "06:38",
+          "event_type": "arm_raise",
+          "description": "One player in white and blue striped jersey raises their arms in celebration while hugging teammates",
+          "participants": [
+            "white and blue striped jersey player"
+          ],
+          "actor": "white and blue striped jersey player",
+          "segment_boundary": "end",
+          "segment_label": "Soccer Match Conclusion",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:40",
+          "local_end": "06:43",
+          "event_type": "face_cover",
+          "description": "Player in dark blue jersey covers their face with the jersey",
+          "participants": [
+            "dark blue jersey player"
+          ],
+          "actor": "dark blue jersey player",
+          "segment_boundary": "end",
+          "segment_label": "Soccer Match Conclusion",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:40",
+          "local_end": "06:45",
+          "event_type": "look_down",
+          "description": "Player in dark blue jersey looks down with a disappointed expression",
+          "participants": [
+            "dark blue jersey player"
+          ],
+          "actor": "dark blue jersey player",
+          "segment_boundary": "end",
+          "segment_label": "Soccer Match Conclusion",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:41",
+          "local_end": "06:43",
+          "event_type": "hand_to_face",
+          "description": "Player in dark blue jersey places hand over their face showing emotion",
+          "participants": [
+            "dark blue jersey player"
+          ],
+          "actor": "dark blue jersey player",
+          "segment_boundary": "end",
+          "segment_label": "Soccer Match Conclusion",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 27,
+      "chunk_start_sec": 405.0,
+      "chunk_end_sec": 420.0,
+      "chunk_start_mmss": "06:45",
+      "chunk_end_mmss": "07:00",
+      "events": [
+        {
+          "local_start": "06:45",
+          "local_end": "06:47",
+          "event_type": "hand_raise",
+          "description": "multiple fans in blue and white striped jerseys raise their hands in celebration in the stands",
+          "participants": [
+            "blue-and-white striped jersey fans"
+          ],
+          "actor": "multiple fans",
+          "segment_boundary": "middle",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:45",
+          "local_end": "06:47",
+          "event_type": "wave",
+          "description": "a fan waves a light blue and white flag in the stands",
+          "participants": [
+            "blue-and-white striped jersey fan"
+          ],
+          "actor": "a fan",
+          "object": "light blue and white flag",
+          "segment_boundary": "middle",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:45",
+          "local_end": "06:47",
+          "event_type": "hug",
+          "description": "multiple fans in blue and white striped jerseys hug each other in celebration in the stands",
+          "participants": [
+            "blue-and-white striped jersey fans"
+          ],
+          "actor": "multiple fans",
+          "segment_boundary": "middle",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:50",
+          "local_end": "06:53",
+          "event_type": "hug",
+          "description": "players in blue and white striped jerseys hug each other on the field",
+          "participants": [
+            "blue-and-white striped jersey players"
+          ],
+          "actor": "players",
+          "segment_boundary": "middle",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:50",
+          "local_end": "06:53",
+          "event_type": "lie_down",
+          "description": "some players in blue and white striped jerseys lie on the field in celebration",
+          "participants": [
+            "blue-and-white striped jersey players"
+          ],
+          "actor": "some players",
+          "segment_boundary": "middle",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:50",
+          "local_end": "06:53",
+          "event_type": "walk",
+          "description": "a player in a yellow jersey walks away from the celebration area",
+          "participants": [
+            "yellow jersey player"
+          ],
+          "actor": "a player",
+          "segment_boundary": "middle",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:55",
+          "local_end": "06:58",
+          "event_type": "hug",
+          "description": "two players in blue and white striped jerseys embrace on the field",
+          "participants": [
+            "blue-and-white striped jersey players"
+          ],
+          "actor": "two players",
+          "segment_boundary": "middle",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:55",
+          "local_end": "07:00",
+          "event_type": "walk",
+          "description": "a player in blue and white striped jersey walks alone on the field with emotional expression",
+          "participants": [
+            "blue-and-white striped jersey player"
+          ],
+          "actor": "a player",
+          "segment_boundary": "middle",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:45",
+          "local_end": "07:00",
+          "event_type": "on_screen_text",
+          "description": "the text 'ARGENTINA' is visible on the stadium boards",
+          "participants": [],
+          "actor": "stadium display",
+          "on_screen_text": [
+            {
+              "text": "ARGENTINA",
+              "location": "stadium board"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:45",
+          "local_end": "07:00",
+          "event_type": "on_screen_text",
+          "description": "the text 'FIFA WORLD CUP' is visible on the stadium boards",
+          "participants": [],
+          "actor": "stadium display",
+          "on_screen_text": [
+            {
+              "text": "FIFA WORLD CUP",
+              "location": "stadium board"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:55",
+          "local_end": "07:00",
+          "event_type": "on_screen_text",
+          "description": "the text 'PALERMO' is visible on a fan's sign in the stands",
+          "participants": [],
+          "actor": "fan sign",
+          "on_screen_text": [
+            {
+              "text": "PALERMO",
+              "location": "fan sign"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:50",
+          "local_end": "07:00",
+          "event_type": "object_visible",
+          "description": "a water bottle is visible on the soccer field",
+          "participants": [],
+          "actor": "water bottle",
+          "segment_boundary": "middle",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:50",
+          "local_end": "07:00",
+          "event_type": "move",
+          "description": "a photographer moves along the sideline with camera equipment",
+          "participants": [
+            "photographer"
+          ],
+          "actor": "photographer",
+          "segment_boundary": "middle",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:50",
+          "local_end": "06:53",
+          "event_type": "hug",
+          "description": "a player in blue training top joins and hugs celebrating players",
+          "participants": [
+            "player in blue training top",
+            "blue-and-white striped jersey players"
+          ],
+          "actor": "player in blue training top",
+          "segment_boundary": "middle",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:57",
+          "local_end": "07:00",
+          "event_type": "hand_raise",
+          "description": "players in blue and white striped jerseys raise their hands in celebration",
+          "participants": [
+            "blue-and-white striped jersey players"
+          ],
+          "actor": "players",
+          "segment_boundary": "middle",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:50",
+          "local_end": "07:00",
+          "event_type": "stand",
+          "description": "a person in a yellow vest stands near the sideline observing the celebration",
+          "participants": [
+            "person in yellow vest"
+          ],
+          "actor": "a person",
+          "segment_boundary": "middle",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:55",
+          "local_end": "06:58",
+          "event_type": "hand_raise",
+          "description": "a player in blue and white striped jersey raises their hands while walking",
+          "participants": [
+            "blue-and-white striped jersey player"
+          ],
+          "actor": "a player",
+          "segment_boundary": "middle",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 28,
+      "chunk_start_sec": 420.0,
+      "chunk_end_sec": 435.0,
+      "chunk_start_mmss": "07:00",
+      "chunk_end_mmss": "07:15",
+      "events": [
+        {
+          "local_start": "07:00",
+          "local_end": "07:04",
+          "event_type": "medical_attention",
+          "description": "Medical staff attend to a player lying on the field near the sideline",
+          "participants": [
+            "medical staff",
+            "player on ground",
+            "player in yellow jersey"
+          ],
+          "actor": "medical staff",
+          "segment_boundary": "middle",
+          "segment_label": "Post-match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:01",
+          "local_end": "07:05",
+          "event_type": "walk",
+          "description": "Player in light blue and white striped jersey walks along the sideline",
+          "participants": [
+            "player in light blue and white striped jersey"
+          ],
+          "actor": "player in light blue and white striped jersey",
+          "segment_boundary": "middle",
+          "segment_label": "Post-match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:03",
+          "local_end": "07:07",
+          "event_type": "hand_raise",
+          "description": "Player in light blue and white striped jersey raises both hands to acknowledge the crowd",
+          "participants": [
+            "player in light blue and white striped jersey",
+            "crowd"
+          ],
+          "actor": "player in light blue and white striped jersey",
+          "on_screen_text": [
+            {
+              "text": "MESSI",
+              "location": "jersey"
+            },
+            {
+              "text": "10",
+              "location": "jersey"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Post-match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:06",
+          "local_end": "07:10",
+          "event_type": "applaud",
+          "description": "Player in light blue and white striped jersey claps hands while facing the crowd",
+          "participants": [
+            "player in light blue and white striped jersey",
+            "crowd"
+          ],
+          "actor": "player in light blue and white striped jersey",
+          "on_screen_text": [
+            {
+              "text": "MESSI",
+              "location": "jersey"
+            },
+            {
+              "text": "10",
+              "location": "jersey"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Post-match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:08",
+          "local_end": "07:12",
+          "event_type": "emotional_reaction",
+          "description": "Player in dark blue jersey places hand over face while looking toward the field",
+          "participants": [
+            "player in dark blue jersey"
+          ],
+          "actor": "player in dark blue jersey",
+          "on_screen_text": [
+            {
+              "text": "MBAPPE",
+              "location": "jersey"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Post-match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:10",
+          "local_end": "07:15",
+          "event_type": "look",
+          "description": "Player in dark blue jersey turns head while keeping hand near face",
+          "participants": [
+            "player in dark blue jersey"
+          ],
+          "actor": "player in dark blue jersey",
+          "on_screen_text": [
+            {
+              "text": "MBAPPE",
+              "location": "jersey"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Post-match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "07:02",
+          "local_end": "07:06",
+          "event_type": "walk",
+          "description": "Player in yellow jersey walks away from the medical attention area",
+          "participants": [
+            "player in yellow jersey"
+          ],
+          "actor": "player in yellow jersey",
+          "segment_boundary": "middle",
+          "segment_label": "Post-match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 29,
+      "chunk_start_sec": 435.0,
+      "chunk_end_sec": 450.0,
+      "chunk_start_mmss": "07:15",
+      "chunk_end_mmss": "07:30",
+      "events": [
+        {
+          "local_start": "07:15",
+          "local_end": "07:18",
+          "event_type": "celebration",
+          "description": "Player in blue and white striped jersey raises arms and shouts with emotional expression",
+          "participants": [
+            "blue and white striped jersey player"
+          ],
+          "actor": "blue and white striped jersey player",
+          "segment_boundary": "middle",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "07:18",
+          "local_end": "07:22",
+          "event_type": "celebration",
+          "description": "Player wearing jersey number 10 with 'MESSI' on back raises both arms in celebration while facing crowd",
+          "participants": [
+            "jersey number 10 player"
+          ],
+          "actor": "jersey number 10 player",
+          "segment_boundary": "middle",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "07:22",
+          "local_end": "07:25",
+          "event_type": "hug",
+          "description": "Two players in blue and white striped jerseys embrace in a celebratory hug on the field",
+          "participants": [
+            "jersey number 10 player",
+            "teammate player"
+          ],
+          "actor": "jersey number 10 player",
+          "segment_boundary": "middle",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "07:25",
+          "local_end": "07:28",
+          "event_type": "banner_display",
+          "description": "Fans hold up a large colorful banner featuring a player in blue jersey with circular motifs surrounding it",
+          "participants": [
+            "stadium fans"
+          ],
+          "actor": "stadium fans",
+          "segment_boundary": "middle",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "07:28",
+          "local_end": "07:29",
+          "event_type": "crowd_celebration",
+          "description": "Stadium crowd with many wearing blue and white jerseys raises arms and cheers collectively",
+          "participants": [
+            "stadium crowd"
+          ],
+          "actor": "stadium crowd",
+          "segment_boundary": "middle",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "07:29",
+          "local_end": "07:30",
+          "event_type": "transition",
+          "description": "Screen fades to dark with FIFA logo appearing in white text",
+          "participants": [],
+          "actor": "",
+          "segment_boundary": "end",
+          "segment_label": "Post-match celebration",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "center"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_idx": 30,
+      "chunk_start_sec": 450.0,
+      "chunk_end_sec": 459.0,
+      "chunk_start_mmss": "07:30",
+      "chunk_end_mmss": "07:39",
+      "events": [
+        {
+          "local_start": "07:30",
+          "local_end": "07:33",
+          "event_type": "graphic",
+          "description": "The FIFA logo appears with a cross-pattern arrangement of white dots to the right of the text",
+          "participants": [],
+          "actor": "",
+          "object_before": "",
+          "object_after": "",
+          "object_before_pattern": "",
+          "object_after_pattern": "",
+          "cover": "",
+          "hidden": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:33",
+          "local_end": "07:36",
+          "event_type": "transition",
+          "description": "The dots arrangement next to the FIFA logo transforms from a cross pattern to a cluster pattern",
+          "participants": [],
+          "actor": "",
+          "object_before": "white dots",
+          "object_after": "white dots",
+          "object_before_pattern": "cross pattern",
+          "object_after_pattern": "cluster pattern",
+          "cover": "",
+          "hidden": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "FIFA",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:36",
+          "local_end": "07:39",
+          "event_type": "transition",
+          "description": "The FIFA logo shrinks and blurs until it disappears, followed by the appearance of 'Watch More On' and 'Watch Next' text",
+          "participants": [],
+          "actor": "",
+          "object_before": "FIFA logo",
+          "object_after": "text elements",
+          "object_before_pattern": "",
+          "object_after_pattern": "",
+          "cover": "",
+          "hidden": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "Watch More On",
+              "location": "other"
+            },
+            {
+              "text": "Watch Next",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        }
+      ]
+    }
+  ]
+}

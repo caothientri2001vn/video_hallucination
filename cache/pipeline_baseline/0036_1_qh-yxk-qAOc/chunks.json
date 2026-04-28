@@ -1,0 +1,298 @@
+{
+  "video_name": "0036_1_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 23.6,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "gemini-3-flash-preview",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:01",
+          "event_type": "transition",
+          "description": "A blue light flare expands horizontally across a black screen.",
+          "participants": [],
+          "on_screen_text": [],
+          "segment_boundary": "start",
+          "segment_label": "Intro",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:01",
+          "local_end": "00:03",
+          "event_type": "graphic",
+          "description": "Two orange and red smoke clouds collide in the center of the screen, revealing a circular logo.",
+          "participants": [],
+          "on_screen_text": [
+            {
+              "text": "TK",
+              "location": "logo"
+            },
+            {
+              "text": "HD",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Intro",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:03",
+          "local_end": "00:07",
+          "event_type": "title_card",
+          "description": "The logo 'TK HD' settles in the center with the text 'TARAFTAR KANALI HD' appearing below it as smoke dissipates.",
+          "participants": [],
+          "on_screen_text": [
+            {
+              "text": "TK",
+              "location": "logo"
+            },
+            {
+              "text": "HD",
+              "location": "logo"
+            },
+            {
+              "text": "TARAFTAR KANALI HD",
+              "location": "title"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Intro",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:08",
+          "event_type": "transition",
+          "description": "A solid green screen transition wipes across the frame.",
+          "participants": [],
+          "on_screen_text": [],
+          "segment_boundary": "end",
+          "segment_label": "Intro",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:08",
+          "local_end": "00:10",
+          "event_type": "game",
+          "description": "The green-shirt team (Tottenham) attacks the goal defended by the red-and-white-shirt team (Ajax) in a wide stadium shot.",
+          "participants": [
+            "green-shirt team",
+            "red-and-white-shirt team",
+            "yellow-shirt goalkeeper"
+          ],
+          "on_screen_text": [
+            {
+              "text": "Nissan",
+              "location": "other"
+            },
+            {
+              "text": "Mastercard",
+              "location": "other"
+            },
+            {
+              "text": "Gazprom",
+              "location": "other"
+            },
+            {
+              "text": "Pepsi MAX",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Football Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:10",
+          "local_end": "00:11",
+          "event_type": "kick",
+          "description": "A green-shirt player (Lucas Moura) kicks the ball toward the goal from inside the penalty area.",
+          "participants": [
+            "green-shirt player",
+            "red-and-white-shirt player"
+          ],
+          "actor": "green-shirt player",
+          "object": "white and orange ball",
+          "on_screen_text": [
+            {
+              "text": "LUCAS MOURA",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:11",
+          "local_end": "00:12",
+          "event_type": "scored",
+          "description": "The ball enters the bottom left corner of the net as the yellow-shirt goalkeeper dives but fails to reach it.",
+          "participants": [
+            "yellow-shirt goalkeeper"
+          ],
+          "actor": "yellow-shirt goalkeeper",
+          "object": "white and orange ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "LUCAS MOURA",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:12",
+          "local_end": "00:15",
+          "event_type": "celebration",
+          "description": "The green-shirt player (Lucas Moura) runs toward the sideline, shouting and jumping in celebration.",
+          "participants": [
+            "green-shirt player"
+          ],
+          "actor": "green-shirt player",
+          "on_screen_text": [
+            {
+              "text": "LUCAS MOURA",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 23.6,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:24",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:17",
+          "event_type": "celebration",
+          "description": "the green-jersey player (number 27) jumps and celebrates on the field",
+          "participants": [
+            "green-jersey player (number 27)",
+            "green-jersey player (number 20)"
+          ],
+          "actor": "green-jersey player (number 27)",
+          "object": "soccer field",
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:17",
+          "local_end": "00:19",
+          "event_type": "celebration",
+          "description": "the green-jersey player (number 20) jumps onto the back of the green-jersey player (number 27) in celebration",
+          "participants": [
+            "green-jersey player (number 20)",
+            "green-jersey player (number 27)"
+          ],
+          "actor": "green-jersey player (number 20)",
+          "object": "soccer field",
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:19",
+          "local_end": "00:21",
+          "event_type": "celebration",
+          "description": "the green-jersey player (number 27) slides on his knees while being hugged by teammates",
+          "participants": [
+            "green-jersey player (number 27)",
+            "green-jersey player (number 4)",
+            "green-jersey player (number 20)"
+          ],
+          "actor": "green-jersey player (number 27)",
+          "object": "soccer field",
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:21",
+          "local_end": "00:22",
+          "event_type": "react",
+          "description": "several red-and-white-jersey players lie face down on the grass in disappointment",
+          "participants": [
+            "red-and-white-jersey player",
+            "red-and-white-jersey player",
+            "red-and-white-jersey player",
+            "red-and-white-jersey player"
+          ],
+          "actor": "red-and-white-jersey player",
+          "object": "soccer field",
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Reaction",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:22",
+          "local_end": "00:24",
+          "event_type": "react",
+          "description": "the man in the dark blue shirt drops to his knees and puts his head to the grass in an emotional reaction",
+          "participants": [
+            "dark-blue-shirt man"
+          ],
+          "actor": "dark-blue-shirt man",
+          "object": "soccer field",
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Reaction",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

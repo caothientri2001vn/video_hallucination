@@ -1,0 +1,233 @@
+{
+  "question": "Was the box containing the doll placed on top of the box containing the lipstick?",
+  "pred": "The video shows a game where objects are revealed from numbered boxes. According to the Context and frames:\n\n1.  **Lipstick:** The \"grey-suit man\" (Jimmy Fallon) holds up a \"gold lipstick tube\" at 02:30 (Event 64). This object was revealed from **Box 7**, which he then places back on the shelf at 02:42 (Event 69).\n2.  **Doll:** At 06:37 (Event 175), the \"blue-suit man\" places a \"red and blue doll\" on top of **Box 7**.\n\nThe doll is placed on top of the box that previously contained the lipstick (Box 7).\n\nEvidence: Event 175 states \"the blue-suit man places the red and blue doll on top of the white box (Box 7)\".\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "lift",
+      "description": "the blue-suit man lifts the fourth box from the left (Box 4) from the middle shelf",
+      "participants": [
+        "blue-suit man"
+      ],
+      "actor": "blue-suit man",
+      "object": "white box (Box 4)",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "complete",
+      "event_index": 14,
+      "start_time": "00:31",
+      "end_time": "00:33",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "What's In The Box"
+    },
+    {
+      "event_type": "place",
+      "description": "the blue-suit man places the white box on the left side of the table",
+      "participants": [
+        "blue-suit man"
+      ],
+      "actor": "blue-suit man",
+      "object": "white box",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "complete",
+      "event_index": 16,
+      "start_time": "00:35",
+      "end_time": "00:37",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "What's In The Box"
+    },
+    {
+      "event_type": "gesture",
+      "description": "the grey-suit man holds up a small gold lipstick tube with a tiny hand emerging from it",
+      "participants": [
+        "grey-suit man"
+      ],
+      "actor": "grey-suit man",
+      "object": "gold lipstick tube",
+      "on_screen_text": [
+        {
+          "text": "6",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 64,
+      "start_time": "02:30",
+      "end_time": "02:31",
+      "sub_events": [],
+      "subtype_order": 15,
+      "subtype_total": 46,
+      "round_index": 1,
+      "segment_label_resolved": "What's In The Box"
+    },
+    {
+      "event_type": "speak",
+      "description": "the grey-suit man speaks while holding the lipstick tube and looking into the silver frame",
+      "participants": [
+        "grey-suit man"
+      ],
+      "actor": "grey-suit man",
+      "object": "gold lipstick tube",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "complete",
+      "event_index": 66,
+      "start_time": "02:35",
+      "end_time": "02:39",
+      "sub_events": [],
+      "subtype_order": 21,
+      "subtype_total": 54,
+      "round_index": 1,
+      "segment_label_resolved": "What's In The Box"
+    },
+    {
+      "event_type": "place",
+      "description": "the blue-suit man places the white box (Box 7) back onto the shelf",
+      "participants": [
+        "blue-suit man"
+      ],
+      "actor": "blue-suit man",
+      "object": "white box",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "other"
+        },
+        {
+          "text": "2",
+          "location": "other"
+        },
+        {
+          "text": "3",
+          "location": "other"
+        },
+        {
+          "text": "5",
+          "location": "other"
+        },
+        {
+          "text": "6",
+          "location": "other"
+        },
+        {
+          "text": "8",
+          "location": "other"
+        },
+        {
+          "text": "9",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "complete",
+      "event_index": 69,
+      "start_time": "02:42",
+      "end_time": "02:44",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "What's In The Box"
+    },
+    {
+      "event_type": "lift",
+      "description": "the blue-suit man lifts the leftmost box (Box 1) from the top shelf",
+      "participants": [
+        "blue-suit man",
+        "grey-suit man"
+      ],
+      "actor": "blue-suit man",
+      "object": "white box (Box 1)",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "complete",
+      "event_index": 129,
+      "start_time": "04:53",
+      "end_time": "04:55",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "What's In The Box"
+    },
+    {
+      "event_type": "place",
+      "description": "the blue-suit man places the white box (Box 1) on the table",
+      "participants": [
+        "blue-suit man",
+        "grey-suit man"
+      ],
+      "actor": "blue-suit man",
+      "object": "white box (Box 1)",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "complete",
+      "event_index": 130,
+      "start_time": "04:55",
+      "end_time": "04:57",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "What's In The Box"
+    },
+    {
+      "event_type": "place",
+      "description": "the blue-suit man places the red and blue doll on top of the white box (Box 7)",
+      "participants": [
+        "blue-suit man"
+      ],
+      "actor": "blue-suit man",
+      "object": "red and blue doll",
+      "on_screen_text": [
+        {
+          "text": "2",
+          "location": "podium"
+        },
+        {
+          "text": "5",
+          "location": "podium"
+        },
+        {
+          "text": "6",
+          "location": "podium"
+        },
+        {
+          "text": "8",
+          "location": "podium"
+        },
+        {
+          "text": "9",
+          "location": "podium"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 175,
+      "start_time": "06:37",
+      "end_time": "06:39",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "What's In The Box"
+    }
+  ]
+}

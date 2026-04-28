@@ -1,0 +1,814 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0065_XFkuT7_ts_E.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0065_XFkuT7_ts_E.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0065_XFkuT7_ts_E",
+    "n_target": 24,
+    "n_sub": 58,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.625,
+    "sub_accuracy": 0.46551724137931033
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Did the fifth pouring stage include only one container of juice?",
+      "gt": "Yes",
+      "pred": "No. In the fifth pouring stage (around the 43rd frame), two containers of juice (one red, one green) are poured into the pitcher.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a fifth pouring stage in the video?",
+      "gt": "Yes",
+      "pred": "No. The video shows pouring stages as follows: ice added (38), two liquids poured (39), a red liquid poured (40), and coconut water poured (41). There is no fifth pouring stage.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the fifth pouring stage involve a single container?",
+      "gt": "Yes",
+      "pred": "So, let's check the video frames. The fifth pouring stage—first, we need to identify what the pouring stages are. Let's look at the pouring steps. The frames show pouring into a pitcher. Let's see the sequence:\n\n- The first pouring (frame 41-42) shows two containers pouring (red and green). \n- Then frame 43: single container (red). \n- Frame 44: pouring from a coconut (so that's a different container). \n- The fifth pouring stage—wait, the question is about the fifth. Let's count the pouring steps.\n\nWait, the question is \"Did the fifth pouring stage involve a single container?\" Let's list the pouring actions:\n\n1. Frame 41-42: two containers (red and green) pouring into the pitcher. So that's two containers.\n2. Frame 43: one container (red) pouring.\n3. Frame 44: pouring from the coconut (one container).\n4. Then frame 45: the pitcher with the mix. Wait, maybe the pouring stages are the times when liquid is poured into the pitcher.\n\nWait, let's check the frames:\n\n- Frame 41: two jugs pouring (red and green) → two containers.\n- Frame 42: one jug pouring (red) → one container.\n- Frame 43: pouring from the coconut (one container) → that's the third pouring?\n- Then frame 44: the pitcher is shown, then frame 45: the glass with the drink.\n\nWait, the question is about the fifth pouring stage. Let's check the order of the frames related to pouring:\n\n1. Frame 41: two containers (red and green) → first stage (two containers)\n2. Frame 42: one container (red) → second stage (one container)\n3. Frame 43: one container (coconut) → third stage (one container)\n4. Then frame 44: the pitcher is filled, so maybe the next steps are not pouring.\n\nWait, the user says \"fifth pouring stage\". Let's check all the frames that show pouring:\n\n- Frame 41: two containers (1st pouring stage)\n- Frame 42: one container (2nd)\n- Frame 43: one container (3rd)\n- Frame 44: no, frame 44 is the coconut pouring (4th? Wait, frame 44 is \"pouring from the coconut\", which is a separate step.\n\nWait, let's count the pouring actions:\n\n1. Frame 41: two jugs (red and green) pouring → 1st stage\n2. Frame 42: one jug (red) pouring → 2nd stage\n3. Frame 43: coconut pouring → 3rd stage\n4. Then, are there more? The next frames are the pitcher being held, then the glass.\n\nWait, the question is about the fifth. But maybe the user is referring to the order in the video. Let's check the frames in order:\n\nLooking at the frames provided, the pouring into the pitcher happens in:\n\n- Frame 41: two containers (1st pouring action)\n- Frame 42: one container (2nd)\n- Frame 43: one container (3rd)\n- Then, is there a 4th or 5th? Let's see. The frames after that are the pitcher being filled and the final drink.\n\nWait, the question says \"fifth pouring stage\". But in the video, the pouring stages are:\n\n1. Two containers (frame 41)\n2. One container (frame 42)\n3. Coconut (frame 44)\n4. Then, maybe other steps? Let's check the order of the frames:\n\nThe frames are numbered in the user's input, but we need to check the sequence. Let's list the relevant frames:\n\n- Frame 41: two jugs pouring (1st)\n- Frame 42: one jug pouring (2nd)\n- Frame 43: one jug pouring (3rd)\n- Frame 44: coconut pouring (4th)\n- Then, is there a 5th? The next frame is 45: pitcher with the mix, then 46: glass with the drink.\n\nWait, maybe the user's count is different. Let's check the exact question: \"Did the fifth pouring stage involve a single container?\"\n\nBut in the video, the pouring into the pitcher:\n\n- First: two containers (frame 41)\n- Second: one container (frame 42)\n- Third: one container (frame 43)\n- Fourth: one container (coconut, frame 44)\n- Fifth: ?\n\nWait, no, the frames after the coconut pouring (frame 44) is the pitcher being held (45), then the glass (",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Were multiple containers poured during the fifth pouring stage?",
+      "gt": "No",
+      "pred": "So, let's check the fifth pouring stage. First, I need to identify the pouring stages. The video shows a sequence where different juices are poured. Let's look at the frames:\n\n- The fifth pouring stage: Let's count the pouring actions. The first pour is ice (not a container, but adding ice), then multiple pours of different juices. Let's see the frames with pouring:\n\nFrame 43: Pouring two different colored liquids (red and green) into a pitcher. So that's one stage where two containers are poured. Then frame 44: pouring a red liquid (one container), frame 45: pouring coconut water (one container), etc.\n\nWait, the question is about the fifth pouring stage. Let's list the pouring steps:\n\n1. Ice added (frame 42: adding ice to pitcher)\n2. Pouring red and green (frame 43: two containers)\n3. Pouring red (frame 44: one container)\n4. Pouring coconut water (frame 45: one container)\n5. Then the next step is the pitcher with the mix, then serving.\n\nWait, maybe the \"fifth pouring stage\" refers to the sequence of pouring different juices. Let's check the frames where pouring happens:\n\n- Frame 43: two containers (red and green) are poured. So that's one stage with multiple containers.\n- Frame 44: one container (red) poured.\n- Frame 45: one container (coconut water) poured.\n\nWait, the question is \"fifth pouring stage\". Let's count the pouring actions:\n\n1. Pouring green (from the grape mashing, but that's mashing, not pouring into pitcher. The pouring into the pitcher starts at frame 42 with ice, then frame 43 is first pour of two colors, then frame 44 is another pour, etc.)\n\nWait, the key is the fifth pouring stage. Let's check the frames:\n\nThe pouring into the pitcher:\n\n- Frame 42: adding ice (not a liquid pour, but ice)\n- Frame 43: two liquids poured (red and green) → that's one stage with multiple containers.\n- Frame 44: red liquid poured (one container)\n- Frame 45: coconut water poured (one container)\n- Then frame 46: the pitcher with the mix.\n\nWait, the question is about the fifth pouring stage. Maybe the \"fifth\" refers to the order of pouring the different fruit juices. Let's count the fruit juices being poured into the pitcher:\n\n1. Green (kiwi?) → but in frame 43, green and red are poured.\n2. Red (from the first red juice, maybe the cherry one)\n3. Then another red (strawberry?)\n4. Then orange (from the orange mashing)\n5. Then the fifth? Wait, no, the pouring into the pitcher is:\n\nLooking at the frames:\n\n- Frame 43: two different colors (red and green) are poured. So that's the first pouring stage where two containers are used.\n- Then frame 44: a single red liquid is poured (second stage)\n- Frame 45: coconut water (third stage)\n- Then the next step is the pitcher.\n\nWait, the question is \"fifth pouring stage\". Let's check the exact sequence of pouring into the pitcher:\n\n1. Ice added (frame 42)\n2. Pouring red and green (frame 43) → this is the first pouring of multiple containers\n3. Pouring red (frame 44) → second stage\n4. Pouring coconut water (frame 45) → third stage\n5. Then... but the question is about the fifth stage. Maybe the \"fifth\" is a miscount, but the key is: in the fifth pouring stage, were multiple containers used?\n\nWait, the user says \"fifth pouring stage\". Let's check the frames where pouring happens (excluding ice):\n\n- 1. Frame 43: two containers (red and green) → multiple\n- 2. Frame 44: one container (red) → single\n- 3. Frame 45: one container (coconut water) → single\n- 4. Then maybe other pours? But the next frames are the pitcher being held, then serving.\n\nWait, maybe the question is about the frame where the fifth pouring occurs. Let's count the pouring actions into the pitcher:\n\n1. Pouring the red and green (frame 43) → 1st\n2. Pouring the red (frame 44) → 2nd\n3. Pouring the coconut water (frame 45) → 3rd\n4. Then maybe the next pour? But there's no more. Wait, the frames after that are the pitcher with the mix, then a glass.\n\nWait, the user's question:",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Was the drink stirred before it was poured into the final serving glass?",
+      "gt": "Yes",
+      "pred": "No. The video shows the pitcher with ice and various fruit purees/coconut water added, but there is no frame depicting stirring before pouring into the final serving glass (e.g., frames 28:30–29:40 show addition of ingredients and then direct pouring into the serving glass without stirring).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was the drink stirred at any point in the video?",
+      "gt": "Yes",
+      "pred": "No, the video does not show the drink being stirred at any point. All actions depicted involve mashing fruits, adding to a pitcher, pouring liquids (including coconut water), and serving, but there is no frame showing a stirring motion.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the drink poured into a final serving glass?",
+      "gt": "Yes",
+      "pred": "Yes, the drink was poured into a final serving glass, as seen in the last frame (timestamp of the final image).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Did an orange-colored juice appear during the early pouring stages?",
+      "gt": "Yes",
+      "pred": "No. During the early pouring stages (e.g., when juices are first added to the pitcher), the visible juices are red and green (e.g., frame 30: two streams of red and green liquid poured into the pitcher). The orange-colored juice appears in a separate glass earlier (e.g., frame 18–19) but is not poured into the pitcher during the early stages of mixing.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did an orange-colored juice appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, an orange - colored juice appeared in the video. It can be seen in the frames around 17.9s (when mashing orange pieces) and 18.6s (the resulting orange juice in the glass).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Were there multiple pouring stages in the video?",
+      "gt": "Yes",
+      "pred": "Yes. There were multiple pouring stages: red and green liquids were poured into the pitcher (frame 44), then red liquid was poured (frame 45), and finally coconut water was poured (frame 46).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Did the video include four separate dual-pour rounds before the final single-pour round?",
+      "gt": "Yes",
+      "pred": "No. The video shows only one dual - pour round (where two different liquids are poured simultaneously, e.g., the frame showing two jiggers pouring red and green liquids) before the final single - pour round. There are not four separate dual - pour rounds.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the video include dual-pour rounds?",
+      "gt": "Yes",
+      "pred": "Yes. A dual-pour round is shown when two jiggers simultaneously pour different colored liquids into the pitcher (e.g., red and green liquids), as seen in the frame sequence around the 20th image.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Were there four separate dual-pour rounds in the video?",
+      "gt": "Yes",
+      "pred": "No. Only one dual-pour round is visible in the video, where two liquids (one red and one green) are poured simultaneously into the pitcher (frame 41). There are no four separate dual-pour rounds.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was there a final single-pour round in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there was a final single-pour round into a single glass (evident in the frame showing a glass filled with the red liquid, timestamp ~27).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Was the fifth pouring stage the only stage where a single container was poured?",
+      "gt": "Yes",
+      "pred": "No. Multiple pouring stages involved a single container: for example, the second stage (frame 26, red liquid poured from one container), third stage (frame 27, coconut water poured), and fourth stage (frame 28, additional liquid poured). The fifth stage (final pour into the glass) was not the only single-container pour.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the fifth pouring stage involve a single container?",
+      "gt": "Yes",
+      "pred": "So, let's check the video frames. The fifth pouring stage—first, we need to identify what the pouring stages are. Let's look at the pouring steps. The frames show pouring into a pitcher. Let's see the sequence:\n\n- The first pouring (frame 41-42) shows two containers pouring (red and green). \n- Then frame 43: single container (red). \n- Frame 44: pouring from a coconut (so that's a different container). \n- The fifth pouring stage—wait, the question is about the fifth. Let's count the pouring steps.\n\nWait, the question is \"Did the fifth pouring stage involve a single container?\" Let's list the pouring actions:\n\n1. Frame 41-42: two containers (red and green) pouring into the pitcher. So that's two containers.\n2. Frame 43: one container (red) pouring.\n3. Frame 44: pouring from the coconut (one container).\n4. Then frame 45: the pitcher with the mix. Wait, maybe the pouring stages are the times when liquid is poured into the pitcher.\n\nWait, let's check the frames:\n\n- Frame 41: two jugs pouring (red and green) → two containers.\n- Frame 42: one jug pouring (red) → one container.\n- Frame 43: pouring from the coconut (one container) → that's the third pouring?\n- Then frame 44: the pitcher is shown, then frame 45: the glass with the drink.\n\nWait, the question is about the fifth pouring stage. Let's check the order of the frames related to pouring:\n\n1. Frame 41: two containers (red and green) → first stage (two containers)\n2. Frame 42: one container (red) → second stage (one container)\n3. Frame 43: one container (coconut) → third stage (one container)\n4. Then frame 44: the pitcher is filled, so maybe the next steps are not pouring.\n\nWait, the user says \"fifth pouring stage\". Let's check all the frames that show pouring:\n\n- Frame 41: two containers (1st pouring stage)\n- Frame 42: one container (2nd)\n- Frame 43: one container (3rd)\n- Frame 44: no, frame 44 is the coconut pouring (4th? Wait, frame 44 is \"pouring from the coconut\", which is a separate step.\n\nWait, let's count the pouring actions:\n\n1. Frame 41: two jugs (red and green) pouring → 1st stage\n2. Frame 42: one jug (red) pouring → 2nd stage\n3. Frame 43: coconut pouring → 3rd stage\n4. Then, are there more? The next frames are the pitcher being held, then the glass.\n\nWait, the question is about the fifth. But maybe the user is referring to the order in the video. Let's check the frames in order:\n\nLooking at the frames provided, the pouring into the pitcher happens in:\n\n- Frame 41: two containers (1st pouring action)\n- Frame 42: one container (2nd)\n- Frame 43: one container (3rd)\n- Then, is there a 4th or 5th? Let's see. The frames after that are the pitcher being filled and the final drink.\n\nWait, the question says \"fifth pouring stage\". But in the video, the pouring stages are:\n\n1. Two containers (frame 41)\n2. One container (frame 42)\n3. Coconut (frame 44)\n4. Then, maybe other steps? Let's check the order of the frames:\n\nThe frames are numbered in the user's input, but we need to check the sequence. Let's list the relevant frames:\n\n- Frame 41: two jugs pouring (1st)\n- Frame 42: one jug pouring (2nd)\n- Frame 43: one jug pouring (3rd)\n- Frame 44: coconut pouring (4th)\n- Then, is there a 5th? The next frame is 45: pitcher with the mix, then 46: glass with the drink.\n\nWait, maybe the user's count is different. Let's check the exact question: \"Did the fifth pouring stage involve a single container?\"\n\nBut in the video, the pouring into the pitcher:\n\n- First: two containers (frame 41)\n- Second: one container (frame 42)\n- Third: one container (frame 43)\n- Fourth: one container (coconut, frame 44)\n- Fifth: ?\n\nWait, no, the frames after the coconut pouring (frame 44) is the pitcher being held (45), then the glass (",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Were there other pouring stages besides the fifth stage?",
+      "gt": "Yes",
+      "pred": "Yes, there were other pouring stages. For example, frame 42 shows two different colored liquids being poured into the pitcher, frame 43 shows a red liquid being poured, frame 44 shows liquid from a cut fruit being poured, and frame 46 shows the final liquid being poured into a glass.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the other pouring stages involve dual-pour rounds?",
+      "gt": "Yes",
+      "pred": "No. The only dual-pour round is shown in the 44th frame (26.81s), where two jiggers pour different colored liquids simultaneously. Subsequent pouring stages (e.g., 45th frame: 27.55s, 46th frame: 28.19s) involve single pours.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Was the drink stirred before it was served in the final glass?",
+      "gt": "Yes",
+      "pred": "No. The video shows the drink being poured from the pitcher into the final glass (around timestamp 33-34) without any visible stirring action prior to serving.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was the drink stirred at any point in the video?",
+      "gt": "Yes",
+      "pred": "No, the video does not show the drink being stirred at any point. All actions depicted involve mashing fruits, adding to a pitcher, pouring liquids (including coconut water), and serving, but there is no frame showing a stirring motion.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the drink poured into a final serving glass?",
+      "gt": "Yes",
+      "pred": "Yes, the drink was poured into a final serving glass, as seen in the last frame (timestamp of the final image).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Did the video include more than three pouring rounds before the stirring step?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows four pouring rounds before the stirring step: two liquids poured simultaneously (46th frame), one red liquid poured (47th frame), and coconut water poured (48th frame), totaling more than three.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the video include more than three pouring rounds?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows multiple pouring actions:  \n- A red liquid and a green liquid are poured simultaneously (47th frame, two distinct pours).  \n- A red liquid is poured again (48th frame).  \n- Coconut water is poured (49th frame).  \nThis totals at least four pouring rounds (more than three).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the pouring rounds occur before the stirring step?",
+      "gt": "Yes",
+      "pred": "No, the video does not show a stirring step. The pouring rounds (adding various juices to the pitcher) occur, but there is no visible stirring action in the sequence. Since a stirring step is not present in the video, the pouring rounds could not have occurred before it.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the stirring step appear in the video?",
+      "gt": "Yes",
+      "pred": "No, the stirring step did not appear in the video. The video shows mashing fruits, adding ice, pouring various fruit mixtures and coconut water, but there is no frame depicting a stirring action.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Did the pitcher receive liquid from more than five different containers in total?",
+      "gt": "Yes",
+      "pred": "So, let's count how many different containers poured liquid into the pitcher. \n\nFirst, looking at the frames:\n\n- Frame 39 (the one where two jiggers pour red and green liquids) shows two containers. \n- Then frame 40: another jigger pouring red liquid. \n- Frame 42: a coconut pouring liquid. \n- Also, we need to check if there are others. Let's see:\n\nIn the sequence, the steps are: \n\n1. Ice added (frame 38) – not a liquid container, just ice.\n2. Then two jiggers pour (frame 39: red and green, so two containers).\n3. Then another jigger (red, frame 40) – third container.\n4. Then coconut (frame 42) – fourth container.\n\nWait, are there more? Let's check the previous steps where different fruits were muddled and then poured into jiggers. Each fruit's muddled liquid would be in a jigger. Let's count the different fruit juices:\n\n- Green grapes (frame 5: muddled, then probably poured into a jigger)\n- Cherries (frames 6-8: muddled, then jigger)\n- Blackberries (frames 9-10: muddled, jigger)\n- Watermelon (frames 11-12: muddled, jigger)\n- Blueberries (frames 13-14: muddled, jigger)\n- Kiwi (frames 15-17: muddled, jigger)\n- Raspberries (frames 18-19: muddled, jigger)\n- Oranges (frames 20-21: muddled, jigger)\n- Strawberries (frames 22-23: muddled, jigger)\n- Then coconut (frames 24-27: cut, then pour liquid)\n\nBut when they pour into the pitcher, the question is how many different containers. Let's look at the pouring frames:\n\n- In frame 39: two jiggers (red and green) – so two containers.\n- Frame 40: another jigger (red) – third container.\n- Frame 42: coconut – fourth container.\n\nWait, but maybe some of the jiggers are the same? No, each different fruit's juice is in a separate jigger. Let's count the pouring actions into the pitcher:\n\n1. First, the two jiggers in frame 39 (2 containers).\n2. Then the jigger in frame 40 (3rd container).\n3. Then the coconut in frame 42 (4th container).\n\nWait, but let's check the exact frames where liquid is poured into the pitcher:\n\n- Frame 39: two jiggers (so two containers)\n- Frame 40: one jigger (1 container)\n- Frame 41: another jigger (1 container) – wait, frame 41 is a jigger pouring red liquid, that's another one.\n- Frame 42: coconut (1 container)\n\nWait, let's list all the pouring into the pitcher:\n\n- Frame 39: two jiggers (2)\n- Frame 40: one jigger (1)\n- Frame 41: one jigger (1)\n- Frame 42: coconut (1)\nTotal: 2+1+1+1=5? Wait, no, each jigger is a container. Let's count the number of times a container pours into the pitcher:\n\n1. Red liquid from jigger (frame 39 left)\n2. Green liquid from jigger (frame 39 right)\n3. Red liquid from jigger (frame 40)\n4. Red liquid from jigger (frame 41)\n5. Coconut (frame 42)\n\nSo that's 5 containers. The question is \"more than five\". So 5 is not more than five. Wait, but let's check again.\n\nWait, the frames:\n\n39: two containers (2)\n40: one container (1)\n41: one container (1)\n42: one container (1)\nTotal: 2+1+1+1=5. So 5 containers. The question is \"more than five\", so no.\n\nWait, but maybe I missed some. Let's check the video sequence:\n\n- After muddling each fruit, they are poured into a jigger, and then the jiggers pour into the pitcher. How many fruits were muddled?\n\nLet's count the muddling steps (where a muddler is used on a fruit in a glass):\n\n1. Grapes (frames 3-5)\n2. Cherries (6-8)\n3. Blackberries (9-10)\n4. Watermelon (11-12)\n5. Blueberries (13-14)\n6. Kiwi",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a pitcher receive liquid from multiple containers?",
+      "gt": "Yes",
+      "pred": "Yes. In the frame showing the pitcher being filled, two containers (one with red liquid, one with green liquid) pour into the pitcher simultaneously. This occurs around the 49th frame.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the pitcher receive liquid from nine containers total?",
+      "gt": "Yes",
+      "pred": "So, let's count how many containers poured into the pitcher. Looking at the video:\n\n- First, two containers pour (red and green) in frame 29 (the one with two shakers). Then, more red liquid from another container (frame 30), then the coconut water (frame 31). Wait, let's check each pour:\n\n1. The first pour: two shakers (red and green) – that's two containers.\n2. Then, another red liquid pour (frame 30) – that's a third container.\n3. Then, the coconut water (frame 31) – that's a fourth container.\n\nWait, but the question is nine. Let's count all the different fruit purees. Let's list the fruits processed:\n\n- Grapes (green) → 1\n- Cherries → 2\n- Blackberries → 3\n- Watermelon → 4\n- Blueberries → 5\n- Kiwi → 6\n- Raspberries → 7\n- Oranges → 8\n- Strawberries → 9\n\nAh, each of these 9 fruits is processed into a puree, and then some are poured into the pitcher. Let's check the pouring steps:\n\n- The two shakers in frame 29: maybe two of the purees (like maybe two different ones, but let's see). But the key is, how many containers were used to pour into the pitcher.\n\nLooking at the frames:\n\n- Frame 29: two shakers (so two containers)\n- Frame 30: one shaker (red liquid, so a third)\n- Frame 31: coconut (fourth)\n\nWait, but the question is \"nine containers total\". Let's see the process: each fruit is processed into a puree, which is then poured. There are 9 fruits: green grapes, cherries, blackberries, watermelon, blueberries, kiwi, raspberries, oranges, strawberries. That's 9. So each of these 9 would be a container (the shaker or container holding the puree). Then, when pouring into the pitcher, how many times do they pour?\n\nIn frame 29: two shakers (so two containers)\nFrame 30: one shaker (third)\nFrame 31: coconut (fourth, but coconut is not a fruit puree from the 9, it's a different step)\n\nWait, no. The 9 fruits are all processed. Let's check the video:\n\n1. Grapes (1)\n2. Cherries (2)\n3. Blackberries (3)\n4. Watermelon (4)\n5. Blueberries (5)\n6. Kiwi (6)\n7. Raspberries (7)\n8. Oranges (8)\n9. Strawberries (9)\n\nEach of these 9 fruits is processed into a puree (as shown in their respective frames). Then, when they pour into the pitcher, how many of these 9 are used?\n\nLooking at frame 29: two colors (red and green) → two of the 9.\n\nFrame 30: red liquid (another one, maybe the third).\n\nBut the question is \"did the pitcher receive liquid from nine containers total?\" So we need to count how many containers (each with a different fruit puree) were poured.\n\nLet's check the pouring steps:\n\n- The first pour: two containers (2)\n- Then, another pour (1 more, total 3)\n- Then, coconut (1, total 4)\n- But what about the other fruits? The video might not show all 9 being poured, but the question is about the number of containers.\n\nWait, the key is: the video shows 9 different fruit processing steps (1-9), but when pouring into the pitcher, how many containers are used?\n\nLooking at the frames where liquid is poured into the pitcher:\n\n- Frame 29: two containers (2)\n- Frame 30: one container (3)\n- Frame 31: one container (4) → but that's coconut, not a fruit puree from the 9.\n\nBut the 9 fruits are all processed, but maybe not all are used in the final pitcher. The question is whether the pitcher received from nine containers.\n\nWait, the video shows that the first 9 fruits are processed (1-9), but when they pour, they might not use all 9. Let's count the pouring steps:\n\n1. Frame 29: two shakers (2)\n2. Frame 30: one shaker (3)\n3. Frame 31: coconut (4)\n\nSo only 4 containers. Therefore, the answer is no, it's not nine.\n\nBut wait, the question is \"did the pitcher receive liquid from nine containers total?\" So we need to check if 9 different containers poured into the pitcher.\n\nLooking at the video:\n\n-",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 8,
+      "kind": "target",
+      "question": "Did the stirring happen after every pouring stage had finished?",
+      "gt": "No",
+      "pred": "No. The video frames do not show any stirring action occurring after any of the pouring stages. After each pour (e.g., adding fruit purees, coconut water), the next step is either another pour or the final presentation of the drink, with no stirring visible in the sequence.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did stirring occur in the video?",
+      "gt": "Yes",
+      "pred": "No. The video shows actions like mashing fruits, adding ice, and pouring liquids, but there is no frame depicting stirring.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Were there multiple pouring stages in the video?",
+      "gt": "Yes",
+      "pred": "Yes. There were multiple pouring stages: red and green liquids were poured into the pitcher (frame 44), then red liquid was poured (frame 45), and finally coconut water was poured (frame 46).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the stirring happen after all pouring stages had finished?",
+      "gt": "Yes",
+      "pred": "No. The video does not show any stirring action occurring after the pouring stages. All pouring (ice, various fruit purees, and coconut water) concludes by the frame where the pitcher is filled (e.g., frame ~42–43), and subsequent frames show the pitcher and glass with no stirring depicted. Thus, stirring is not verified to have occurred after all pouring stages.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did any stirring occur during the pouring stages?",
+      "gt": "No",
+      "pred": "No. The video shows pouring of liquids (e.g., juices, coconut water) into the pitcher, but there is no visible stirring action occurring during these pouring stages. Stirring is not depicted in the frames corresponding to the pouring actions (e.g., timestamps for pouring: ~45-52 seconds, 53-57 seconds, etc.).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "target",
+      "question": "Was watermelon processed before blackberries?",
+      "gt": "No",
+      "pred": "No. Blackberries were processed before watermelon. Blackberry muddling appears in frames 9-10, while watermelon muddling occurs in frames 11-12.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was watermelon mentioned or shown in the video?",
+      "gt": "No",
+      "pred": "Yes, watermelon was shown in the video. It is visible in the frame where watermelon chunks are being muddled (around the 11th frame in the sequence).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Were blackberries mentioned or shown in the video?",
+      "gt": "No",
+      "pred": "Yes, blackberries were shown in the video. They were muddled in a glass (visible in the 9th and 10th frames of the provided sequence).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 10,
+      "kind": "target",
+      "question": "Were blueberries processed before watermelon?",
+      "gt": "No",
+      "pred": "No. Blueberries were processed after watermelon. Watermelon was muddled in the 12th and 13th frames (watermelon chunks in glass, then muddled), while blueberries were muddled in the 14th and 15th frames. Thus, blueberries were not processed before watermelon.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Were blueberries processed in the video?",
+      "gt": "Yes",
+      "pred": "Yes. Blueberries were processed (muddled) in the video, as seen in the frames showing blueberries in a glass with a muddler (e.g., around the 12–14 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was watermelon processed in the video?",
+      "gt": "Yes",
+      "pred": "Yes. Watermelon was processed; it is shown being muddled in a glass (e.g., frames with watermelon chunks and muddling action).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "target",
+      "question": "Was kiwi processed before blueberries?",
+      "gt": "No",
+      "pred": "No. Blueberries were processed (frames 13-14) before kiwi (frames 15-17).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was kiwi shown being processed in the video?",
+      "gt": "No",
+      "pred": "Yes. Kiwi was shown being processed: slices of kiwi were placed in a glass (15th frame), then muddled (16th frame), resulting in a green mixture (17th frame).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Were blueberries shown being processed in the video?",
+      "gt": "No",
+      "pred": "Yes. Blueberries were shown being processed in the video (e.g., frames 13-14 show blueberries being muddled).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 12,
+      "kind": "target",
+      "question": "Were raspberries processed before kiwi?",
+      "gt": "No",
+      "pred": "No. Raspberries were processed after kiwi. Kiwi processing occurs in frames 15–17 (e.g., kiwi being muddled in a glass), while raspberries are processed in frames 18–19 (e.g., raspberries being muddled). Thus, kiwi was processed before raspberries.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Were raspberries shown being processed in the video?",
+      "gt": "No",
+      "pred": "Yes. Raspberries were shown being processed (muddled) in the video, as seen in the frames where a muddler is used on red raspberries in a glass (e.g., around the 19th and 20th frames in the sequence).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was kiwi shown being processed in the video?",
+      "gt": "No",
+      "pred": "Yes. Kiwi was shown being processed: slices of kiwi were placed in a glass (15th frame), then muddled (16th frame), resulting in a green mixture (17th frame).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 13,
+      "kind": "target",
+      "question": "Were mandarins processed before raspberries?",
+      "gt": "No",
+      "pred": "No. Raspberries are processed before mandarins. Raspberries are muddled (e.g., frames 17-18) and mandarins are processed later (e.g., frame 20).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Were mandarins shown being processed in the video?",
+      "gt": "No",
+      "pred": "Yes. A frame shows orange-colored fruit (mandarins) being muddled in a glass (e.g., the sequence with the orange liquid, where the fruit is processed before becoming the orange liquid).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Were raspberries shown being processed in the video?",
+      "gt": "No",
+      "pred": "Yes. Raspberries were shown being processed (muddled) in the video, as seen in the frames where a muddler is used on red raspberries in a glass (e.g., around the 19th and 20th frames in the sequence).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 14,
+      "kind": "target",
+      "question": "Were two juices poured during the fifth pouring stage?",
+      "gt": "No",
+      "pred": "Yes. In the frame showing the pouring into the pitcher with ice (roughly the 29th frame in the sequence), two different colored juices (red and green) were poured simultaneously.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a fifth pouring stage in the video?",
+      "gt": "Yes",
+      "pred": "No. The video shows pouring stages as follows: ice added (38), two liquids poured (39), a red liquid poured (40), and coconut water poured (41). There is no fifth pouring stage.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the fifth pouring stage include only one container of juice?",
+      "gt": "Yes",
+      "pred": "No. In the fifth pouring stage (around the 43rd frame), two containers of juice (one red, one green) are poured into the pitcher.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the fifth pouring stage a single-pour round?",
+      "gt": "Yes",
+      "pred": "So, let's check the video frames. The question is about the fifth pouring stage. First, we need to identify what the \"fifth pouring stage\" refers to. Let's list the pouring steps:\n\n1. Pouring red and green liquids (frame 47-48: two jugs pouring into the pitcher)\n2. Pouring more red liquid (frame 49: single jug)\n3. Pouring coconut water (frame 50: single pour from coconut)\n4. Then the next steps are the final pitcher and glass. Wait, let's count the pouring stages:\n\nLooking at the frames:\n\n- Frame 47: two jugs (red and green) pouring into pitcher → that's one stage (but two streams, so maybe two pours? But the question is \"single-pour round\")\n- Frame 49: single jug (red) pouring into pitcher → second stage\n- Frame 50: coconut water pouring → third stage\n- Then frame 51: the pitcher is full, so maybe no more pouring.\n\nWait, the question is \"fifth pouring stage\". But the video's pouring steps are:\n\n1. The initial two jugs (47) → but that's two pours, but maybe considered one stage? Or the question is about the order of pouring into the pitcher.\n\nLet's check the sequence:\n\n- 47: two different liquids being poured (so maybe this is the first stage, two pours)\n- 49: another red liquid (second stage, single pour)\n- 50: coconut water (third stage, single pour)\n\nWait, the user says \"fifth pouring stage\". But how many pouring stages are there?\n\nWait, the frames:\n\n47: two jugs (red and green) → first stage (two pours, but maybe the question is about the number of times liquid is poured, regardless of how many jugs)\n49: one jug (red) → second stage\n50: coconut water → third stage\n\nBut the question is \"fifth pouring stage\". Maybe I miscounted.\n\nWait, let's list all pouring actions:\n\n1. Frame 47: two jugs (red and green) → first pouring stage (two separate pours, but the stage is the act of pouring multiple into the pitcher)\n2. Frame 49: red liquid (from a single jug) → second pouring stage\n3. Frame 50: coconut water (from the coconut) → third pouring stage\n\nBut the question is \"fifth pouring stage\". That seems too high. Wait, maybe the question is referring to the order of the pouring steps in the video.\n\nWait, the user's question: \"When possible, cite rough timestamps.\" The frames are numbered, but the actual timestamps in the video might not be given, but the user says \"rough timestamps\" as in the frame numbers.\n\nWait, let's check the frames again. The pouring into the pitcher:\n\n- Frame 47: two jugs (red and green) → this is a stage where two different liquids are poured at the same time (so it's one stage with two pours)\n- Frame 49: one jug (red) → another stage\n- Frame 50: coconut water → another stage\n\nSo there are three pouring stages into the pitcher. The \"fifth\" stage doesn't exist. But the question is \"Was the fifth pouring stage a single-pour round?\"\n\nWait, maybe the user made a mistake, but we need to check. Alternatively, maybe the \"fifth\" refers to something else. Wait, no, the video shows:\n\nLooking at the frames:\n\n- The first pouring into the pitcher (frame 47) is two different liquids (so two pours, but the stage is one action)\n- Then frame 49: another pour (single)\n- Then frame 50: another pour (single)\n\nSo total three pouring stages. The fifth doesn't exist. But the question is asking if the fifth was a single-pour round. Since there is no fifth pouring stage, the answer would be that there is no fifth pouring stage, so the question is invalid. But the user says \"only use information you can directly verify from the video frames\".\n\nWait, let's count the pouring actions:\n\n1. Frame 47: two liquids (so this is one stage, but two pours)\n2. Frame 49: one liquid (second stage)\n3. Frame 50: one liquid (third stage)\n\nSo there are three pouring stages. The fifth is not present. Therefore, the answer is no, because there is no fifth pouring stage. But the question is \"Was the fifth pouring stage a single-pour round?\" Since there is no fifth, the answer is that it doesn't exist, so the statement is not applicable. But the user wants a direct answer.\n\nWait, maybe the \"fifth\" is a mistake, but we have to go by the",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 15,
+      "kind": "target",
+      "question": "Were blueberries crushed after kiwi?",
+      "gt": "No",
+      "pred": "No. Blueberries were crushed (frames 13-14) before kiwi (frames 15-17).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Were blueberries crushed in the video?",
+      "gt": "Yes",
+      "pred": "Yes. Blueberries were crushed, as seen in the sequence where blueberries are placed in a glass and then muddled (approximately frames 13-14).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was kiwi crushed in the video?",
+      "gt": "Yes",
+      "pred": "Yes, kiwi was crushed. This is shown in the sequence where kiwi slices are placed in a glass (15th frame), then a muddler is used to crush them (16th frame), and the resulting crushed kiwi is visible (17th frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 16,
+      "kind": "target",
+      "question": "Were raspberries crushed before kiwi?",
+      "gt": "No",
+      "pred": "No. Raspberries were crushed after kiwi. The kiwi is shown being crushed in images 15-17 (muddling and resulting juice), while raspberries are crushed in images 18-20. Thus, kiwi was crushed before raspberries.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 16,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Were raspberries crushed in the video?",
+      "gt": "Yes",
+      "pred": "Yes. Raspberries were crushed, as shown in the frames where a muddler is used on raspberries in a glass (e.g., the 19th and 20th images in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 16,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was kiwi crushed in the video?",
+      "gt": "Yes",
+      "pred": "Yes, kiwi was crushed. This is shown in the sequence where kiwi slices are placed in a glass (15th frame), then a muddler is used to crush them (16th frame), and the resulting crushed kiwi is visible (17th frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 17,
+      "kind": "target",
+      "question": "Were blueberries processed before watermelon?",
+      "gt": "No",
+      "pred": "No. Blueberries were processed after watermelon. Watermelon was muddled in the 12th and 13th frames (watermelon chunks in glass, then muddled), while blueberries were muddled in the 14th and 15th frames. Thus, blueberries were not processed before watermelon.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 17,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Were blueberries processed in the video?",
+      "gt": "Yes",
+      "pred": "Yes. Blueberries were processed (muddled) in the video, as seen in the frames showing blueberries in a glass with a muddler (e.g., around the 12–14 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 17,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was watermelon processed in the video?",
+      "gt": "Yes",
+      "pred": "Yes. Watermelon was processed; it is shown being muddled in a glass (e.g., frames with watermelon chunks and muddling action).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 18,
+      "kind": "target",
+      "question": "Was watermelon processed after blueberries?",
+      "gt": "No",
+      "pred": "No. Watermelon was processed before blueberries. Watermelon processing occurs in frames 12–14 (watermelon in glass, muddling, muddled watermelon), while blueberry processing occurs in frames 15–17 (blueberries in glass, muddling, muddled blueberries). Thus, watermelon was processed prior to blueberries.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 18,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was watermelon processed in the video?",
+      "gt": "Yes",
+      "pred": "Yes. Watermelon was processed; it is shown being muddled in a glass (e.g., frames with watermelon chunks and muddling action).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 18,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Were blueberries processed in the video?",
+      "gt": "Yes",
+      "pred": "Yes. Blueberries were processed (muddled) in the video, as seen in the frames showing blueberries in a glass with a muddler (e.g., around the 12–14 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 19,
+      "kind": "target",
+      "question": "Were mandarins crushed before raspberries?",
+      "gt": "No",
+      "pred": "No. Raspberries are crushed before mandarins. Raspberries are processed in frames 18-19, while mandarins are processed in frames 20-21.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 19,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Were mandarins crushed in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A frame shows orange - colored fruit (mandarins) being crushed with a muddler (frame 23).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 19,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Were raspberries crushed in the video?",
+      "gt": "Yes",
+      "pred": "Yes. Raspberries were crushed, as shown in the frames where a muddler is used on raspberries in a glass (e.g., the 19th and 20th images in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 20,
+      "kind": "target",
+      "question": "Was ice added after the first juice had already been poured?",
+      "gt": "No",
+      "pred": "No. Ice was added to the pitcher (as seen in the frame where ice is being scooped into the pitcher, around timestamp 35-36) before any juice was poured into it (juice pouring starts at timestamp 37-39). Thus, ice was not added after the first juice had been poured.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 20,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the video show ice?",
+      "gt": "No",
+      "pred": "Yes, the video showed ice. For example, in the frame where ice is being added to a glass pitcher (around the 40th frame in the sequence).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 20,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the video show ice added?",
+      "gt": "No",
+      "pred": "Yes, the video showed ice added. This is visible in the frame where ice is being placed into a glass pitcher (around timestamp 37).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 20,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did any ice addition occur after the pouring stages began?",
+      "gt": "No",
+      "pred": "No. Ice is added to the pitcher in frame 25, and the pouring of the fruit mixtures and coconut water (pouring stages) occurs afterward (frames 26-29). There is no ice addition after these pouring stages.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 21,
+      "kind": "target",
+      "question": "Did the fifth pouring stage involve two containers being poured simultaneously?",
+      "gt": "No",
+      "pred": "So, let's check the video frames. The question is about the fifth pouring stage. First, I need to identify which part is the fifth pouring. Let's look at the sequence:\n\n1. The first pouring: the frame where two jugs pour (red and green) into the pitcher. That's the 41st frame (the one with two jugs). Then the next is pouring more red, then coconut water, etc.\n\nWait, the \"fifth pouring stage\"—let's count the pouring actions:\n\n- 41: two jugs (red and green) poured simultaneously → that's one stage (but two containers)\n- 42: red liquid poured (one container)\n- 43: coconut water poured (one container)\n- 44: the pitcher with the mix (no pouring, just holding)\n- 45: the final drink in a glass (no pouring)\n\nWait, the question is about the \"fifth pouring stage\". Let's check the frames:\n\nThe frames showing pouring are:\n\n- Frame 41: two containers (red and green) being poured into the pitcher. That's a simultaneous pour.\n- Then frame 42: single container (red) pouring.\n- Frame 43: coconut water (single)\n- Then the rest are not pouring (44,45,46,47)\n\nWait, the user is asking if the fifth pouring stage had two containers. Let's count the pouring steps:\n\n1. Grapes mashing (not pouring)\n2. Cherries mashing (not)\n3. Blackberries mashing (not)\n4. Watermelon mashing (not)\n5. Blueberries mashing (not)\n6. Kiwi mashing (not)\n7. Raspberries mashing (not)\n8. Oranges mashing (not)\n9. Strawberries mashing (not)\n10. Slicing the fruit (not)\n11. Adding ice (not)\n12. Pouring two jugs (41) → 1st pouring stage (two containers)\n13. Pouring red liquid (42) → 2nd\n14. Pouring coconut water (43) → 3rd\n\nWait, maybe the \"fifth pouring stage\" refers to the 5th time something is poured. But in the video, the pouring steps are:\n\n- 41: two jugs (1st pouring action, two containers)\n- 42: one jug (2nd)\n- 43: coconut water (3rd)\n\nSo there are only three pouring actions. But the question is about \"fifth\". Maybe I miscounted.\n\nWait, the user says \"fifth pouring stage\". Let's check the frames again. The key is the frame where two containers are poured. The first pouring stage where two containers are poured is frame 41. The question is whether the fifth pouring stage involved two containers. But in the video, the only time two containers are poured is in frame 41 (the 41st image in the sequence, which is the first pouring into the pitcher). So if the fifth pouring stage is not that one, then no.\n\nWait, the question is: \"Did the fifth pouring stage involve two containers being poured simultaneously?\"\n\nTo find the fifth pouring stage, we need to count all pouring actions. Let's list all frames that show pouring:\n\n- Frame 41: two jugs (red and green) pouring into pitcher → 1st pouring stage (two containers)\n- Frame 42: red liquid (one container) → 2nd\n- Frame 43: coconut water (one container) → 3rd\n\nThere are only three pouring actions. So there is no fifth pouring stage. But maybe the user's count is different. Wait, maybe the \"pouring stage\" refers to the steps where you pour the mashed fruits. Let's see:\n\n1. Grapes mashed (5th frame: green mash)\n2. Cherries mashed (8th frame: red mash)\n3. Blackberries mashed (10th frame: dark mash)\n4. Watermelon mashed (13th frame: red liquid)\n5. Blueberries mashed (15th frame: purple mash)\n6. Kiwi mashed (18th frame: green mash)\n7. Raspberries mashed (20th frame: red mash)\n8. Oranges mashed (22nd frame: orange liquid)\n9. Strawberries mashed (25th frame: red mash)\n\nThen, the pouring into the pitcher:\n\n- 41: two jugs (1st pour)\n- 42: another pour (2nd)\n- 43: coconut water (3rd)\n\nSo the \"fifth pouring stage\" would be... but there are only three. So the answer is no, because there's no fifth pouring stage, and the only stage with two containers is the first one (4",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 21,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a fifth pouring stage in the video?",
+      "gt": "Yes",
+      "pred": "No. The video shows pouring stages as follows: ice added (38), two liquids poured (39), a red liquid poured (40), and coconut water poured (41). There is no fifth pouring stage.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 21,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the fifth pouring stage include only one container of juice?",
+      "gt": "Yes",
+      "pred": "No. In the fifth pouring stage (around the 43rd frame), two containers of juice (one red, one green) are poured into the pitcher.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 21,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Were there any dual-pour rounds in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A dual-pour round occurred when two different colored liquids (one red, one green) were simultaneously poured from jiggers into the pitcher (visible in the frame showing two streams of liquid being added).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 21,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the fifth pouring stage a dual-pour round?",
+      "gt": "No",
+      "pred": "So, let's check the video frames. The question is about the fifth pouring stage being a dual-pour round. First, I need to find which frame corresponds to the pouring stages. Looking at the frames:\n\n- The pouring into the pitcher: there's a frame where two jiggers pour different liquids (red and green) into the pitcher. Let's see the timestamps. The frame with two jiggers pouring is the one where it says \"two jiggers pour red and green liquids\". Now, we need to count the pouring stages. Let's list the pouring steps:\n\n1. Ice added to pitcher (frame with ice being added)\n2. First pour: two jiggers (red and green) - that's a dual-pour\n3. Second pour: red liquid from a jigger\n4. Third pour: coconut water\n5. ... Wait, the question is about the fifth pouring stage. Wait, let's check the order of pouring steps:\n\n- Frame 39: Ice added (1st step)\n- Frame 40: Two jiggers pour red and green (2nd step, dual-pour)\n- Frame 41: Red liquid poured (3rd step)\n- Frame 42: Coconut water poured (4th step)\n- Then the next is the final pitcher and glass. Wait, maybe the pouring stages are the ones where liquid is poured. Let's count:\n\n1. Ice (not liquid, but step)\n2. Dual-pour (2 jiggers)\n3. Single red pour\n4. Coconut water pour\n5. ... Wait, maybe the \"fifth pouring stage\" is a specific step. Wait, the question says \"fifth pouring stage\". Let's check the frames where liquid is poured into the pitcher:\n\n- Frame 40: Two jiggers pour (dual)\n- Frame 41: One jigger pours red (single)\n- Frame 42: Coconut water (single)\n- Then, are there more? The next is the final glass. Wait, maybe the count is different. Let's check the video frames in order:\n\nThe pouring into the pitcher happens in frames 39 (ice), 40 (dual pour), 41 (red), 42 (coconut). Now, the question is \"fifth pouring stage\". Wait, maybe the user's \"fifth\" refers to a specific step. Wait, the frame where two jiggers pour is a dual-pour. Now, the question is: was the fifth pouring stage a dual-pour round?\n\nWait, let's check the sequence of pouring actions:\n\n1. Ice added (not a pouring of liquid, but step)\n2. First pour: two jiggers (dual, red and green)\n3. Second pour: red liquid (single)\n4. Third pour: coconut water (single)\n5. ... Wait, maybe the \"fifth\" is a miscount, but let's look at the frames. The frame with dual-pour is frame 40 (the one with two jiggers). Now, the question is about the fifth pouring stage. But in the video, the dual-pour is the second pouring step (after ice). So if the fifth pouring stage is not the dual-pour, then the answer is no. But let's check the exact frames.\n\nWait, the user is asking \"Was the fifth pouring stage a dual-pour round?\" So we need to find which pouring stage is the fifth. Let's count all pouring actions (where liquid is poured into the pitcher):\n\n1. Ice (1st step: adding ice, but not liquid)\n2. Dual-pour (2 jiggers: red and green) - 2nd step\n3. Single red pour - 3rd step\n4. Coconut water pour - 4th step\n5. ... Wait, there's no fifth pouring stage. Wait, maybe the \"fifth\" is a mistake, but let's check the frames again.\n\nWait, the frames where liquid is poured into the pitcher:\n\n- Frame 40: two jiggers pour (dual)\n- Frame 41: one jigger pours red (single)\n- Frame 42: coconut water (single)\n- Then the next frames are the pitcher with the mixture and the glass. So there are only three pouring steps of liquid (dual, single, single). So the fifth pouring stage doesn't exist, but the question is about whether the fifth was dual. But maybe the \"fifth\" refers to a different count. Wait, maybe the user counts the ice as a step, but ice is not a pouring of liquid. Let's re-express:\n\nThe video shows:\n\n- Step 1: Ice added to pitcher (frame 39)\n- Step 2: Dual-pour (two jiggers: red and green) (frame 40)\n- Step 3: Single red pour (frame 41)\n- Step 4: Coconut",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 22,
+      "kind": "target",
+      "question": "Did the video show the serving glass before the pitcher was stirred?",
+      "gt": "No",
+      "pred": "No. The serving glass (shown in the final frame, ~36) appears after the pitcher has been filled with ingredients and processed (including stirring, which occurs before the serving glass is presented). The video does not show the serving glass prior to the pitcher being stirred.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 22,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was the drink stirred at some point in the video?",
+      "gt": "Yes",
+      "pred": "No. The video frames do not show any stirring action. The sequence includes mashing fruits, adding ice, pouring liquids, and holding the pitcher, but there is no frame depicting stirring.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 22,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the drink poured into a final serving glass?",
+      "gt": "Yes",
+      "pred": "Yes, the drink was poured into a final serving glass, as seen in the last frame (timestamp of the final image).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 23,
+      "kind": "target",
+      "question": "Was the stirring step performed before the final liquid ingredient was added?",
+      "gt": "Yes",
+      "pred": "No. The sequence shows ice added first (frame 36), then various fruit purees (e.g., frames 37–38), followed by the final liquid ingredient (coconut water) being added (frame 40). No stirring step is shown before the coconut water is added.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 23,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the video include a stirring step?",
+      "gt": "Yes",
+      "pred": "No, the video did not include a stirring step. All observed actions involved mashing fruits, adding ice, pouring fruit mixtures, and adding coconut water, with no frames showing a stirring motion.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 23,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the video include a liquid ingredient adding?",
+      "gt": "Yes",
+      "pred": "Yes, the video included adding a liquid ingredient: coconut water was poured into the pitcher (evident in the frame where a hollowed coconut is pouring liquid into the pitcher, around the 20th image in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

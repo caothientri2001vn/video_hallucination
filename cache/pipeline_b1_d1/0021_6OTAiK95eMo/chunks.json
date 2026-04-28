@@ -1,0 +1,168 @@
+{
+  "video_name": "0021_6OTAiK95eMo.mp4",
+  "video_duration_sec": 21.366666666666667,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:03",
+          "event_type": "manipulate",
+          "description": "Ethan (in white t-shirt) positions his hands on the red cup and strings on the table",
+          "participants": [
+            "white-shirt man",
+            "blue-sweatshirt woman",
+            "black-shirt man",
+            "black-hoodie woman"
+          ],
+          "actor": "white-shirt man",
+          "segment_boundary": "middle",
+          "segment_label": "Mystery String!",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:03",
+          "local_end": "00:06",
+          "event_type": "pull_string",
+          "description": "Ethan pulls the left string attached to the red cup in the center of the table",
+          "participants": [
+            "white-shirt man",
+            "blue-sweatshirt woman",
+            "black-shirt man",
+            "black-hoodie woman"
+          ],
+          "actor": "white-shirt man",
+          "object": "black string",
+          "segment_boundary": "middle",
+          "segment_label": "Mystery String!"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:09",
+          "event_type": "reveal",
+          "description": "The left plate with money is pulled toward the center as a result of the string being pulled",
+          "participants": [
+            "white-shirt man",
+            "blue-sweatshirt woman",
+            "black-shirt man",
+            "black-hoodie woman"
+          ],
+          "actor": "white-shirt man",
+          "cover": "red cup",
+          "hidden": "paper money",
+          "segment_boundary": "middle",
+          "segment_label": "Mystery String!"
+        },
+        {
+          "local_start": "00:09",
+          "local_end": "00:12",
+          "event_type": "graphic",
+          "description": "Text \"$2\" appears on screen indicating the value of the revealed prize",
+          "participants": [
+            "white-shirt man",
+            "blue-sweatshirt woman",
+            "black-shirt man",
+            "black-hoodie woman"
+          ],
+          "actor": "system",
+          "on_screen_text": [
+            {
+              "text": "$2",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Mystery String!"
+        },
+        {
+          "local_start": "00:12",
+          "local_end": "00:15",
+          "event_type": "collect_prize",
+          "description": "Ethan picks up the stack of $2 bills from the left plate",
+          "participants": [
+            "white-shirt man",
+            "blue-sweatshirt woman",
+            "black-shirt man",
+            "black-hoodie woman"
+          ],
+          "actor": "white-shirt man",
+          "object": "paper money",
+          "segment_boundary": "middle",
+          "segment_label": "Mystery String!"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 21.366666666666667,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:21",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:18",
+          "event_type": "adjust",
+          "description": "The man in the black LEGACY t-shirt adjusts his blue and white baseball cap while standing at the table",
+          "participants": [
+            "black-shirt man",
+            "white-shirt man",
+            "blue-sweatshirt woman",
+            "long-hair woman"
+          ],
+          "actor": "black-shirt man",
+          "object": "blue and white baseball cap",
+          "segment_boundary": "middle",
+          "segment_label": "Whip Cream Face",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:18",
+          "local_end": "00:20",
+          "event_type": "remove",
+          "description": "The man in the black LEGACY t-shirt takes off his blue and white baseball cap completely and holds it in his hand",
+          "participants": [
+            "black-shirt man",
+            "white-shirt man",
+            "blue-sweatshirt woman",
+            "long-hair woman"
+          ],
+          "actor": "black-shirt man",
+          "object": "blue and white baseball cap",
+          "segment_boundary": "middle",
+          "segment_label": "Whip Cream Face",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:20",
+          "local_end": "00:21",
+          "event_type": "look",
+          "description": "The man in the black LEGACY t-shirt looks down at the plate containing white whipped cream on the table",
+          "participants": [
+            "black-shirt man",
+            "white-shirt man",
+            "blue-sweatshirt woman",
+            "long-hair woman"
+          ],
+          "actor": "black-shirt man",
+          "segment_boundary": "middle",
+          "segment_label": "Whip Cream Face",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

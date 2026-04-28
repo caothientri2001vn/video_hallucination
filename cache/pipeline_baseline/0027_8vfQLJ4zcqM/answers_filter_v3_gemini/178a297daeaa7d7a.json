@@ -1,0 +1,1232 @@
+{
+  "question": "In the first experiment, did the second silver ball go to the middle door?",
+  "pred": "The first experiment (Round 1) features three doors in the background: a lime green door on the left, a purple door in the middle, and a light green door on the right. The first silver ball is launched by an orange catapult (event 8) and rolls down a track. The second silver ball is launched by a wooden catapult (event 13) after the first ball lands in its cup. This second ball triggers a chain reaction of red dominoes that eventually causes the rightmost door (light green) to open, revealing a yellow interior (event 21). The middle door (purple) remains closed throughout the first experiment.\n\nEvidence: Event 21 states \"The rightmost green door opens to reveal a bright yellow interior.\"\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "game": 33,
+      "graphic": 8,
+      "reveal": 4,
+      "transition": 4,
+      "title_card": 2,
+      "look": 1
+    },
+    "events": [
+      {
+        "event_type": "graphic",
+        "description": "A red stage curtain is shown with spotlights moving across it.",
+        "participants": [],
+        "actor": "red curtain",
+        "object": "red curtain",
+        "on_screen_text": [],
+        "segment_boundary": "start",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:03",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "reveal",
+        "description": "The red stage curtain opens to reveal a complex Rube Goldberg machine setup on a table.",
+        "participants": [],
+        "actor": "red curtain",
+        "object_before": "red curtain",
+        "object_after": "Rube Goldberg machine",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 2,
+        "start_time": "00:03",
+        "end_time": "00:06",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "look",
+        "description": "The camera provides a wide view of the Rube Goldberg machine, featuring red dominoes, nutcracker figures, and colorful doors.",
+        "participants": [
+          "nutcracker figure (left)",
+          "nutcracker figure (right)"
+        ],
+        "actor": "camera",
+        "object": "Rube Goldberg machine",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 3,
+        "start_time": "00:06",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The red dominoes continue to fall in a sequence across the table.",
+        "participants": [
+          "red dominoes"
+        ],
+        "actor": "red dominoes",
+        "object": "red dominoes",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Domino Chain Reaction",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 4,
+        "start_time": "00:15",
+        "end_time": "00:18",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The falling red dominoes reach and tip over a small black domino.",
+        "participants": [
+          "red dominoes",
+          "black domino"
+        ],
+        "actor": "red dominoes",
+        "object": "black domino",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Domino Chain Reaction",
+        "continuation_hint": "complete",
+        "event_index": 5,
+        "start_time": "00:18",
+        "end_time": "00:20",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The black dominoes fall in sequence, leading towards the catapult mechanism.",
+        "participants": [
+          "black dominoes"
+        ],
+        "actor": "black dominoes",
+        "object": "black dominoes",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Domino Chain Reaction",
+        "continuation_hint": "complete",
+        "event_index": 6,
+        "start_time": "00:20",
+        "end_time": "00:23",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The last black domino falls onto the grey square switcher plate.",
+        "participants": [
+          "black domino",
+          "grey square switcher"
+        ],
+        "actor": "black domino",
+        "object": "grey square switcher",
+        "on_screen_text": [
+          {
+            "text": "Hey look the catapult has a switcher",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Domino Chain Reaction",
+        "continuation_hint": "complete",
+        "event_index": 7,
+        "start_time": "00:23",
+        "end_time": "00:25",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The catapult mechanism is triggered and launches the silver ball.",
+        "participants": [
+          "orange catapult",
+          "silver ball"
+        ],
+        "actor": "orange catapult",
+        "object": "silver ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Domino Chain Reaction",
+        "continuation_hint": "complete",
+        "event_index": 8,
+        "start_time": "00:25",
+        "end_time": "00:28",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The silver ball flies through the air towards the right side of the table.",
+        "participants": [
+          "silver ball"
+        ],
+        "actor": "silver ball",
+        "object": "silver ball",
+        "on_screen_text": [
+          {
+            "text": "Go back if you need more time",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Domino Chain Reaction",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 9,
+        "start_time": "00:28",
+        "end_time": "00:30",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "A silver ball rolls down a curved track on the right side of the table.",
+        "participants": [
+          "silver ball"
+        ],
+        "actor": "silver ball",
+        "object": "silver ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 10,
+        "start_time": "00:30",
+        "end_time": "00:31",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The silver ball hits a wooden ramp and is launched into the air.",
+        "participants": [
+          "silver ball",
+          "wooden ramp"
+        ],
+        "actor": "silver ball",
+        "object": "silver ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 11,
+        "start_time": "00:31",
+        "end_time": "00:32",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The silver ball lands in the yellow cup of a wooden catapult.",
+        "participants": [
+          "silver ball",
+          "wooden catapult"
+        ],
+        "actor": "silver ball",
+        "object": "silver ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 12,
+        "start_time": "00:32",
+        "end_time": "00:33",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The weight of the ball triggers the catapult, launching another silver ball forward.",
+        "participants": [
+          "wooden catapult",
+          "silver ball"
+        ],
+        "actor": "wooden catapult",
+        "object": "silver ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 13,
+        "start_time": "00:33",
+        "end_time": "00:34",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The launched silver ball rolls across the table and hits a line of red dominoes.",
+        "participants": [
+          "silver ball",
+          "red dominoes"
+        ],
+        "actor": "silver ball",
+        "object": "silver ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 14,
+        "start_time": "00:34",
+        "end_time": "00:35",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The red dominoes begin to fall in a chain reaction across the table.",
+        "participants": [
+          "red dominoes"
+        ],
+        "actor": "red dominoes",
+        "object": "red dominoes",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 15,
+        "start_time": "00:35",
+        "end_time": "00:45",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "A silver ball is launched high into the air from behind the green door.",
+        "participants": [
+          "silver ball"
+        ],
+        "actor": "silver ball",
+        "object": "silver ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 16,
+        "start_time": "00:44",
+        "end_time": "00:45",
+        "sub_events": [],
+        "subtype_order": 13,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The red dominoes continue to fall in a chain reaction across the table.",
+        "participants": [
+          "red dominoes"
+        ],
+        "actor": "red dominoes",
+        "object": "red dominoes",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Domino Chain Reaction",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 17,
+        "start_time": "00:45",
+        "end_time": "00:46",
+        "sub_events": [],
+        "subtype_order": 14,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "A silver ball is triggered by the falling dominoes and rolls toward the right.",
+        "participants": [
+          "silver ball"
+        ],
+        "actor": "silver ball",
+        "object": "silver ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Domino Chain Reaction",
+        "continuation_hint": "middle",
+        "event_index": 18,
+        "start_time": "00:46",
+        "end_time": "00:47",
+        "sub_events": [],
+        "subtype_order": 15,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The silver ball hits another set of red dominoes, continuing the chain.",
+        "participants": [
+          "silver ball",
+          "red dominoes"
+        ],
+        "actor": "silver ball",
+        "object": "red dominoes",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Domino Chain Reaction",
+        "continuation_hint": "middle",
+        "event_index": 19,
+        "start_time": "00:47",
+        "end_time": "00:48",
+        "sub_events": [],
+        "subtype_order": 16,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The dominoes fall toward the leftmost green door, triggering a mechanism.",
+        "participants": [
+          "red dominoes",
+          "green door"
+        ],
+        "actor": "red dominoes",
+        "object": "green door",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Domino Chain Reaction",
+        "continuation_hint": "middle",
+        "event_index": 20,
+        "start_time": "00:48",
+        "end_time": "00:50",
+        "sub_events": [],
+        "subtype_order": 17,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "reveal",
+        "description": "The rightmost green door opens to reveal a bright yellow interior.",
+        "participants": [
+          "green door"
+        ],
+        "actor": "green door",
+        "object_before": "green door",
+        "object_after": "yellow interior",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Domino Chain Reaction",
+        "continuation_hint": "middle",
+        "event_index": 21,
+        "start_time": "00:50",
+        "end_time": "00:52",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "transition",
+        "description": "A red curtain begins to descend from the top of the frame, covering the scene.",
+        "participants": [
+          "red curtain"
+        ],
+        "actor": "red curtain",
+        "object": "red curtain",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Domino Chain Reaction",
+        "continuation_hint": "middle",
+        "event_index": 22,
+        "start_time": "00:52",
+        "end_time": "00:54",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "graphic",
+        "description": "A 'LOADING...' text graphic appears on a black background with white particles.",
+        "participants": [],
+        "actor": "on-screen graphic",
+        "on_screen_text": [
+          {
+            "text": "LOADING...",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Loading Screen",
+        "continuation_hint": "middle",
+        "event_index": 23,
+        "start_time": "00:54",
+        "end_time": "00:56",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "graphic",
+        "description": "A small humorous text 'ofc I'm kidding :)' appears in the bottom right corner.",
+        "participants": [],
+        "actor": "on-screen graphic",
+        "on_screen_text": [
+          {
+            "text": "LOADING...",
+            "location": "other"
+          },
+          {
+            "text": "ofc I'm kidding :)",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Loading Screen",
+        "continuation_hint": "middle",
+        "event_index": 24,
+        "start_time": "00:56",
+        "end_time": "00:58",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "transition",
+        "description": "The red curtain is shown fully closed with spotlights moving across it.",
+        "participants": [
+          "red curtain"
+        ],
+        "actor": "red curtain",
+        "object": "red curtain",
+        "on_screen_text": [],
+        "segment_boundary": "end",
+        "segment_label": "Domino Chain Reaction",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 25,
+        "start_time": "00:58",
+        "end_time": "01:00",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "reveal",
+        "description": "The red stage curtains part to reveal a complex Rube Goldberg machine setup.",
+        "participants": [
+          "red curtains"
+        ],
+        "object_before": "red curtains",
+        "object_after": "Rube Goldberg machine",
+        "on_screen_text": [],
+        "segment_boundary": "start",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 26,
+        "start_time": "01:00",
+        "end_time": "01:02",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "A silver ball rolls down a wooden track on the right side of the machine.",
+        "participants": [
+          "silver ball"
+        ],
+        "actor": "silver ball",
+        "object": "silver ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 27,
+        "start_time": "01:02",
+        "end_time": "01:05",
+        "sub_events": [],
+        "subtype_order": 18,
+        "subtype_total": 33,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The silver ball falls into a wooden funnel on the left side of the machine.",
+        "participants": [
+          "silver ball",
+          "wooden funnel"
+        ],
+        "actor": "silver ball",
+        "object": "silver ball",
+        "on_screen_text": [
+          {
+            "text": "START",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 28,
+        "start_time": "01:05",
+        "end_time": "01:07",
+        "sub_events": [],
+        "subtype_order": 19,
+        "subtype_total": 33,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The silver ball triggers a mechanism that launches another silver ball into the air.",
+        "participants": [
+          "silver ball"
+        ],
+        "actor": "silver ball",
+        "object": "silver ball",
+        "on_screen_text": [
+          {
+            "text": "START",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 29,
+        "start_time": "01:07",
+        "end_time": "01:10",
+        "sub_events": [],
+        "subtype_order": 20,
+        "subtype_total": 33,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The launched silver ball hits a series of red dominos, causing them to fall in a chain reaction.",
+        "participants": [
+          "silver ball",
+          "red dominos"
+        ],
+        "actor": "silver ball",
+        "object": "red dominos",
+        "on_screen_text": [
+          {
+            "text": "START",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 30,
+        "start_time": "01:10",
+        "end_time": "01:13",
+        "sub_events": [],
+        "subtype_order": 21,
+        "subtype_total": 33,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The falling dominos trigger a lever that releases a third silver ball onto a curved track.",
+        "participants": [
+          "red dominos",
+          "silver ball"
+        ],
+        "actor": "red dominos",
+        "object": "silver ball",
+        "on_screen_text": [
+          {
+            "text": "START",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 31,
+        "start_time": "01:13",
+        "end_time": "01:15",
+        "sub_events": [],
+        "subtype_order": 22,
+        "subtype_total": 33,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "A silver ball rolls down a wooden ramp and hits a red domino, starting a chain reaction.",
+        "participants": [
+          "silver ball",
+          "red domino"
+        ],
+        "actor": "silver ball",
+        "object": "silver ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 32,
+        "start_time": "01:15",
+        "end_time": "01:17",
+        "sub_events": [],
+        "subtype_order": 23,
+        "subtype_total": 33,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The red dominoes fall in sequence, eventually hitting a silver ball on a platform.",
+        "participants": [
+          "red dominoes",
+          "silver ball"
+        ],
+        "actor": "red dominoes",
+        "object": "red dominoes",
+        "on_screen_text": [
+          {
+            "text": "Go back if you need more time",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 33,
+        "start_time": "01:17",
+        "end_time": "01:19",
+        "sub_events": [],
+        "subtype_order": 24,
+        "subtype_total": 33,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The silver ball rolls off the platform and falls onto a lower level, hitting more red dominoes.",
+        "participants": [
+          "silver ball",
+          "red dominoes"
+        ],
+        "actor": "silver ball",
+        "object": "silver ball",
+        "on_screen_text": [
+          {
+            "text": "Go back if you need more time",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 34,
+        "start_time": "01:19",
+        "end_time": "01:21",
+        "sub_events": [],
+        "subtype_order": 25,
+        "subtype_total": 33,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The red dominoes fall and hit a blue lever, which swings and hits another silver ball.",
+        "participants": [
+          "red dominoes",
+          "blue lever",
+          "silver ball"
+        ],
+        "actor": "red dominoes",
+        "object": "red dominoes",
+        "on_screen_text": [
+          {
+            "text": "Go back if you need more time",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 35,
+        "start_time": "01:21",
+        "end_time": "01:23",
+        "sub_events": [],
+        "subtype_order": 26,
+        "subtype_total": 33,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The silver ball rolls along a curved track and hits a set of black dominoes.",
+        "participants": [
+          "silver ball",
+          "black dominoes"
+        ],
+        "actor": "silver ball",
+        "object": "silver ball",
+        "on_screen_text": [
+          {
+            "text": "Go back if you need more time",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 36,
+        "start_time": "01:23",
+        "end_time": "01:25",
+        "sub_events": [],
+        "subtype_order": 27,
+        "subtype_total": 33,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The black dominoes fall and hit a silver ball, which rolls into a funnel.",
+        "participants": [
+          "black dominoes",
+          "silver ball",
+          "funnel"
+        ],
+        "actor": "black dominoes",
+        "object": "black dominoes",
+        "on_screen_text": [
+          {
+            "text": "Go back if you need more time",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 37,
+        "start_time": "01:25",
+        "end_time": "01:27",
+        "sub_events": [],
+        "subtype_order": 28,
+        "subtype_total": 33,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The silver ball falls through the funnel and hits a final red domino, which falls and triggers a small explosion.",
+        "participants": [
+          "silver ball",
+          "red domino",
+          "explosion"
+        ],
+        "actor": "silver ball",
+        "object": "silver ball",
+        "on_screen_text": [
+          {
+            "text": "Go back if you need more time",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 38,
+        "start_time": "01:27",
+        "end_time": "01:30",
+        "sub_events": [],
+        "subtype_order": 29,
+        "subtype_total": 33,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "A silver ball rolls along a wooden track, knocking over a series of red dominoes.",
+        "participants": [],
+        "actor": "silver ball",
+        "object": "red dominoes",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 39,
+        "start_time": "01:30",
+        "end_time": "01:31",
+        "sub_events": [],
+        "subtype_order": 30,
+        "subtype_total": 33,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The falling red dominoes trigger a blue lever to rotate clockwise.",
+        "participants": [],
+        "actor": "red dominoes",
+        "object": "blue lever",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 40,
+        "start_time": "01:31",
+        "end_time": "01:32",
+        "sub_events": [],
+        "subtype_order": 31,
+        "subtype_total": 33,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The rotating blue lever hits another silver ball, sending it rolling toward the back of the table.",
+        "participants": [],
+        "actor": "blue lever",
+        "object": "silver ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 41,
+        "start_time": "01:32",
+        "end_time": "01:33",
+        "sub_events": [],
+        "subtype_order": 32,
+        "subtype_total": 33,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "The silver ball rolls into a small wooden structure, which then tips over to hit a purple door.",
+        "participants": [],
+        "actor": "silver ball",
+        "object": "purple door",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 42,
+        "start_time": "01:33",
+        "end_time": "01:34",
+        "sub_events": [],
+        "subtype_order": 33,
+        "subtype_total": 33,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "reveal",
+        "description": "The purple door opens to reveal a bright yellow interior with red splatters.",
+        "participants": [],
+        "actor": "wooden structure",
+        "object_before": "purple door",
+        "object_after": "yellow interior",
+        "object_after_pattern": "red splatters",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 43,
+        "start_time": "01:34",
+        "end_time": "01:35",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "transition",
+        "description": "The scene begins to fade to black as white particles like snow fall across the screen.",
+        "participants": [],
+        "actor": "camera",
+        "object": "screen",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 44,
+        "start_time": "01:35",
+        "end_time": "01:37",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "title_card",
+        "description": "A title card appears on a black background with white text saying 'WELL DONE!' and 'Created by Vincent'.",
+        "participants": [],
+        "actor": "screen",
+        "object": "title card",
+        "on_screen_text": [
+          {
+            "text": "WELL DONE!",
+            "location": "title"
+          },
+          {
+            "text": "Created by",
+            "location": "other"
+          },
+          {
+            "text": "Vincent",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 45,
+        "start_time": "01:37",
+        "end_time": "01:40",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "title_card",
+        "description": "A final title card appears on a black background with white text saying 'SUBSCRIBE' and a small note about inspiration.",
+        "participants": [],
+        "actor": "screen",
+        "object": "title card",
+        "on_screen_text": [
+          {
+            "text": "SUBSCRIBE",
+            "location": "title"
+          },
+          {
+            "text": "Inspired by the great Joseph's Machines",
+            "location": "other"
+          },
+          {
+            "text": "one of my favourite artist since I was a kid",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "unknown",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 46,
+        "start_time": "01:40",
+        "end_time": "01:45",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "graphic",
+        "description": "A title card with the word 'SUBSCRIBE' and a message about Joseph's Machines is displayed against a black background with white particles.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "SUBSCRIBE",
+            "location": "title"
+          },
+          {
+            "text": "Inspired by the great Joseph's Machines one of my favourite artist since I was a kid",
+            "location": "subtitle"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "End Screen",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 47,
+        "start_time": "01:45",
+        "end_time": "01:47",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 8,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The 'SUBSCRIBE' text remains on screen as the white particles continue to drift across the black background.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "SUBSCRIBE",
+            "location": "title"
+          },
+          {
+            "text": "Inspired by the great Joseph's Machines one of my favourite artist since I was a kid",
+            "location": "subtitle"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "End Screen",
+        "continuation_hint": "complete",
+        "event_index": 48,
+        "start_time": "01:47",
+        "end_time": "01:50",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 8,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The 'SUBSCRIBE' text begins to fade out while the white particles continue their motion.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "SUBSCRIBE",
+            "location": "title"
+          },
+          {
+            "text": "Inspired by the great Joseph's Machines one of my favourite artist since I was a kid",
+            "location": "subtitle"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "End Screen",
+        "continuation_hint": "complete",
+        "event_index": 49,
+        "start_time": "01:50",
+        "end_time": "01:53",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 8,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The text has completely faded, leaving only the white particles moving against the black background.",
+        "participants": [],
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "End Screen",
+        "continuation_hint": "complete",
+        "event_index": 50,
+        "start_time": "01:53",
+        "end_time": "01:56",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 8,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The white particles continue to drift and slowly fade away into the black background.",
+        "participants": [],
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "End Screen",
+        "continuation_hint": "complete",
+        "event_index": 51,
+        "start_time": "01:56",
+        "end_time": "01:58",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 8,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      },
+      {
+        "event_type": "transition",
+        "description": "The screen fades to a solid black color as the video segment concludes.",
+        "participants": [],
+        "on_screen_text": [],
+        "segment_boundary": "end",
+        "segment_label": "End Screen",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 52,
+        "start_time": "01:58",
+        "end_time": "02:00",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 2,
+        "segment_label_resolved": "Rube Goldberg Machine"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Rube Goldberg Machine",
+        "event_index_range": [
+          1,
+          25
+        ]
+      },
+      {
+        "round_index": 2,
+        "label": "Rube Goldberg Machine",
+        "event_index_range": [
+          26,
+          52
+        ]
+      }
+    ]
+  }
+}

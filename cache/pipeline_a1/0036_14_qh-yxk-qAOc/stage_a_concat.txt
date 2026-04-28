@@ -1,0 +1,228 @@
+[
+  {
+    "event_type": "transition",
+    "description": "The video transitions from a black screen to a live football match.",
+    "participants": [
+      "black-shirt man",
+      "white-shirt man",
+      "green-shirt man"
+    ],
+    "segment_boundary": "start",
+    "segment_label": "Football Match",
+    "continuation_hint": "complete",
+    "event_index": 1,
+    "start_time": "00:00",
+    "end_time": "00:01",
+    "sub_events": []
+  },
+  {
+    "event_type": "run",
+    "description": "A black-shirt man runs with the ball towards the goal while being chased by green-shirt players.",
+    "participants": [
+      "black-shirt man",
+      "green-shirt man"
+    ],
+    "actor": "black-shirt man",
+    "object": "football",
+    "segment_boundary": "middle",
+    "segment_label": "Football Match",
+    "continuation_hint": "starts_before_chunk",
+    "event_index": 2,
+    "start_time": "00:01",
+    "end_time": "00:03",
+    "sub_events": []
+  },
+  {
+    "event_type": "dive",
+    "description": "The white-shirt goalkeeper dives to block the black-shirt man's shot.",
+    "participants": [
+      "white-shirt man",
+      "black-shirt man"
+    ],
+    "actor": "white-shirt man",
+    "object": "football",
+    "segment_boundary": "middle",
+    "segment_label": "Football Match",
+    "continuation_hint": "complete",
+    "event_index": 3,
+    "start_time": "00:03",
+    "end_time": "00:05",
+    "sub_events": []
+  },
+  {
+    "event_type": "dribble",
+    "description": "The black-shirt man dribbles the ball past the diving goalkeeper.",
+    "participants": [
+      "black-shirt man",
+      "white-shirt man"
+    ],
+    "actor": "black-shirt man",
+    "object": "football",
+    "segment_boundary": "middle",
+    "segment_label": "Football Match",
+    "continuation_hint": "complete",
+    "event_index": 4,
+    "start_time": "00:05",
+    "end_time": "00:07",
+    "sub_events": []
+  },
+  {
+    "event_type": "slide",
+    "description": "Two green-shirt defenders slide in an attempt to tackle the black-shirt man.",
+    "participants": [
+      "green-shirt man",
+      "black-shirt man"
+    ],
+    "actor": "green-shirt man",
+    "object": "football",
+    "segment_boundary": "middle",
+    "segment_label": "Football Match",
+    "continuation_hint": "complete",
+    "event_index": 5,
+    "start_time": "00:07",
+    "end_time": "00:09",
+    "sub_events": []
+  },
+  {
+    "event_type": "dribble",
+    "description": "The black-shirt man continues to dribble the ball past the sliding defenders.",
+    "participants": [
+      "black-shirt man",
+      "green-shirt man"
+    ],
+    "actor": "black-shirt man",
+    "object": "football",
+    "segment_boundary": "middle",
+    "segment_label": "Football Match",
+    "continuation_hint": "complete",
+    "event_index": 6,
+    "start_time": "00:09",
+    "end_time": "00:11",
+    "sub_events": []
+  },
+  {
+    "event_type": "kick",
+    "description": "The black-shirt man kicks the ball into the empty goal.",
+    "participants": [
+      "black-shirt man"
+    ],
+    "actor": "black-shirt man",
+    "object": "football",
+    "segment_boundary": "middle",
+    "segment_label": "Football Match",
+    "continuation_hint": "complete",
+    "event_index": 7,
+    "start_time": "00:11",
+    "end_time": "00:13",
+    "sub_events": []
+  },
+  {
+    "event_type": "celebration",
+    "description": "The black-shirt man starts to celebrate after scoring the goal.",
+    "participants": [
+      "black-shirt man"
+    ],
+    "actor": "black-shirt man",
+    "on_screen_text": [
+      {
+        "text": "MESUT ÖZIL",
+        "location": "lower_third"
+      }
+    ],
+    "segment_boundary": "end",
+    "segment_label": "Football Match",
+    "continuation_hint": "continues_after_chunk",
+    "event_index": 8,
+    "start_time": "00:13",
+    "end_time": "00:15",
+    "sub_events": []
+  },
+  {
+    "event_type": "game",
+    "description": "The black-and-yellow-kit player dribbles the ball past two sliding green-kit defenders.",
+    "participants": [
+      "black-and-yellow-kit player",
+      "green-kit player",
+      "green-kit player"
+    ],
+    "actor": "black-and-yellow-kit player",
+    "object": "white ball",
+    "on_screen_text": [],
+    "segment_boundary": "middle",
+    "segment_label": "football match",
+    "continuation_hint": "starts_before_chunk",
+    "event_index": 9,
+    "start_time": "00:15",
+    "end_time": "00:16",
+    "sub_events": []
+  },
+  {
+    "event_type": "game",
+    "description": "The black-and-yellow-kit player continues dribbling toward the goal as the goalkeeper in white approaches.",
+    "participants": [
+      "black-and-yellow-kit player",
+      "white-kit goalkeeper"
+    ],
+    "actor": "black-and-yellow-kit player",
+    "object": "white ball",
+    "on_screen_text": [],
+    "segment_boundary": "middle",
+    "segment_label": "football match",
+    "continuation_hint": "middle",
+    "event_index": 10,
+    "start_time": "00:16",
+    "end_time": "00:17",
+    "sub_events": []
+  },
+  {
+    "event_type": "game",
+    "description": "The black-and-yellow-kit player shoots the ball past the diving goalkeeper.",
+    "participants": [
+      "black-and-yellow-kit player",
+      "white-kit goalkeeper"
+    ],
+    "actor": "black-and-yellow-kit player",
+    "object": "white ball",
+    "on_screen_text": [],
+    "segment_boundary": "middle",
+    "segment_label": "football match",
+    "continuation_hint": "middle",
+    "event_index": 11,
+    "start_time": "00:17",
+    "end_time": "00:18",
+    "sub_events": []
+  },
+  {
+    "event_type": "game",
+    "description": "The ball enters the net as the black-and-yellow-kit player runs past the goal line.",
+    "participants": [
+      "black-and-yellow-kit player"
+    ],
+    "actor": "black-and-yellow-kit player",
+    "object": "white ball",
+    "on_screen_text": [],
+    "segment_boundary": "middle",
+    "segment_label": "football match",
+    "continuation_hint": "middle",
+    "event_index": 12,
+    "start_time": "00:18",
+    "end_time": "00:19",
+    "sub_events": []
+  },
+  {
+    "event_type": "celebration",
+    "description": "The black-and-yellow-kit player performs a knee slide celebration near the corner flag.",
+    "participants": [
+      "black-and-yellow-kit player"
+    ],
+    "actor": "black-and-yellow-kit player",
+    "on_screen_text": [],
+    "segment_boundary": "middle",
+    "segment_label": "football match",
+    "continuation_hint": "continues_after_chunk",
+    "event_index": 13,
+    "start_time": "00:19",
+    "end_time": "00:21",
+    "sub_events": []
+  }
+]

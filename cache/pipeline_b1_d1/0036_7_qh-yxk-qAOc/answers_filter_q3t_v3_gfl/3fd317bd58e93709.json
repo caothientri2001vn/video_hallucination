@@ -1,0 +1,156 @@
+{
+  "question": "Does the player with black shirt and yellow strip number 7 score the goal?",
+  "pred": "The video shows a player in a white jersey with number 9 (identified in Context as \"white-jersey player 14\" in some segments, but clearly wearing #9 in the frames showing the goal action) taking a free kick and scoring. Players in black shirts with yellow trim are visible on the field as opponents, but they are observing the play, not taking the shot. Specifically, a player in a black shirt with yellow trim and number 7 is seen standing in the defensive wall or nearby, but he does not score the goal.\n\nEvidence: Frames at ~00:13 show the player in the white jersey #9 scoring the goal while the players in black-and-yellow jerseys observe.\n\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "game",
+      "description": "Player wearing white jersey with number 14 and red shorts prepares to take a shot with orange cleats",
+      "participants": [
+        "white-jersey player 14",
+        "white-jersey player"
+      ],
+      "actor": "white-jersey player 14",
+      "object": "white soccer ball",
+      "outcome": "",
+      "on_screen_text": [
+        {
+          "text": "TARAFTR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "complete",
+      "event_index": 3,
+      "start_time": "00:02",
+      "end_time": "00:06",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "game",
+      "description": "Player in white jersey with number 14 kicks the ball toward goal",
+      "participants": [
+        "white-jersey player 14"
+      ],
+      "actor": "white-jersey player 14",
+      "object": "white soccer ball",
+      "outcome": "",
+      "on_screen_text": [
+        {
+          "text": "TARAFTR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "complete",
+      "event_index": 4,
+      "start_time": "00:06",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "game",
+      "description": "Soccer ball travels through the air toward the goal while players in black and yellow jerseys observe",
+      "participants": [
+        "black-and-yellow jersey players"
+      ],
+      "actor": "white soccer ball",
+      "object": "white soccer ball",
+      "outcome": "",
+      "on_screen_text": [
+        {
+          "text": "TARAFTR KANALI",
+          "location": "logo"
+        },
+        {
+          "text": "HAKAN ÇALHANOĞLU",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "complete",
+      "event_index": 5,
+      "start_time": "00:08",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "game",
+      "description": "Goalkeeper in green uniform dives to save the ball",
+      "participants": [
+        "green-uniform goalkeeper"
+      ],
+      "actor": "green-uniform goalkeeper",
+      "object": "white soccer ball",
+      "outcome": "",
+      "on_screen_text": [
+        {
+          "text": "TARAFTR KANALI",
+          "location": "logo"
+        },
+        {
+          "text": "HAKAN ÇALHANOĞLU",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "complete",
+      "event_index": 6,
+      "start_time": "00:12",
+      "end_time": "00:13",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "game",
+      "description": "Ball enters the goal net as goalkeeper fails to make the save",
+      "participants": [
+        "green-uniform goalkeeper"
+      ],
+      "actor": "white soccer ball",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "TARAFTR KANALI",
+          "location": "logo"
+        },
+        {
+          "text": "HAKAN ÇALHANOĞLU",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "complete",
+      "event_index": 7,
+      "start_time": "00:13",
+      "end_time": "00:14",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    }
+  ]
+}

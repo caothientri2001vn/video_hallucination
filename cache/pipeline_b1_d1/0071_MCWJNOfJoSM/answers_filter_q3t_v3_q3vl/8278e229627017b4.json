@@ -1,0 +1,175 @@
+{
+  "question": "Did number 20 score successfully in Round 2?",
+  "pred": "Evidence: Frames show blue-jersey player #20 taking a penalty kick (frame 25), the ball entering the net (frame 26), and French players celebrating (frame 27), indicating a successful score during the penalty shootout segment.\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "penalty_kick",
+      "description": "blue-jersey player #12 runs up to take a penalty kick while goalkeeper stands ready in goal",
+      "participants": [
+        "blue-jersey player",
+        "goalkeeper",
+        "referee"
+      ],
+      "actor": "blue-jersey player",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "start",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 124,
+      "start_time": "05:00",
+      "end_time": "05:03",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "close_up",
+      "description": "camera shows close-up of blue-jersey player with name KOLO MUANI visible on back of jersey",
+      "participants": [
+        "KOLO MUANI"
+      ],
+      "actor": "KOLO MUANI",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        },
+        {
+          "text": "KOLO MUANI",
+          "location": "jersey_name"
+        },
+        {
+          "text": "12",
+          "location": "jersey_number"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 127,
+      "start_time": "05:06",
+      "end_time": "05:08",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "kicker in dark uniform runs toward and strikes the soccer ball",
+      "participants": [
+        "kicker in dark uniform",
+        "goalkeeper in green uniform"
+      ],
+      "actor": "kicker in dark uniform",
+      "object": "white soccer ball",
+      "object_before": "",
+      "object_after": "",
+      "outcome": "",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 133,
+      "start_time": "05:19",
+      "end_time": "05:21",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "kick",
+      "description": "player in blue and white striped jersey runs up and strikes the soccer ball for the penalty kick",
+      "participants": [
+        "blue and white striped jersey player"
+      ],
+      "actor": "blue and white striped jersey player",
+      "object": "soccer ball",
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "event_index": 143,
+      "start_time": "05:38",
+      "end_time": "05:40",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 8,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "hand_raise",
+      "description": "Player in light blue and white striped jersey raises both hands to acknowledge the crowd",
+      "participants": [
+        "player in light blue and white striped jersey",
+        "crowd"
+      ],
+      "actor": "player in light blue and white striped jersey",
+      "on_screen_text": [
+        {
+          "text": "MESSI",
+          "location": "jersey"
+        },
+        {
+          "text": "10",
+          "location": "jersey"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Post-match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 190,
+      "start_time": "07:03",
+      "end_time": "07:07",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 10,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "celebration",
+      "description": "Player wearing jersey number 10 with 'MESSI' on back raises both arms in celebration while facing crowd",
+      "participants": [
+        "jersey number 10 player"
+      ],
+      "actor": "jersey number 10 player",
+      "segment_boundary": "middle",
+      "segment_label": "Post-match celebration",
+      "continuation_hint": "complete",
+      "event_index": 196,
+      "start_time": "07:18",
+      "end_time": "07:22",
+      "sub_events": [],
+      "subtype_order": 14,
+      "subtype_total": 14,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

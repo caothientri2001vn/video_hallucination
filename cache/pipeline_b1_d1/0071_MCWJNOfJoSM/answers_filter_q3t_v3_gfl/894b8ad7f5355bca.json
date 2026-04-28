@@ -1,0 +1,64 @@
+{
+  "question": "Did the player wearing blue number 12 fail in Round 4?",
+  "pred": "The video shows a penalty shootout. To determine if the player wearing blue number 12 failed in Round 4, we identify the sequence of kicks:\n\n1.  **Round 1:** French player #10 scores (frames at ~05:04).\n2.  **Round 1 (Argentina):** Argentina player #10 scores (frames at ~05:11).\n3.  **Round 2:** French player #20 misses/save (frames at ~05:15).\n4.  **Round 2 (Argentina):** Argentina player #21 scores (frames at ~05:21).\n5.  **Round 3:** French player #8 misses (frames at ~05:27).\n6.  **Round 3 (Argentina):** Argentina player #5 scores (frames at ~05:33).\n7.  **Round 4:** French player #12 takes his turn. The Context (event 124) and frames at ~05:38 show the player in blue jersey #12 running up to take the kick. The ball enters the net (event 125, frames at ~05:39), and the scoreboard graphic at ~05:40 updates the France tally to 2, indicating a successful score.\n\nSince the player wearing blue number 12 scored his kick in Round 4, he did not fail.\n\nEvidence: frames at ~05:39 show the ball from blue-jersey player #12 entering the net, and the scoreboard at ~05:40 confirms the goal.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "penalty_kick",
+      "description": "blue-jersey player #12 runs up to take a penalty kick while goalkeeper stands ready in goal",
+      "participants": [
+        "blue-jersey player",
+        "goalkeeper",
+        "referee"
+      ],
+      "actor": "blue-jersey player",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "start",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 124,
+      "start_time": "05:00",
+      "end_time": "05:03",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "goal",
+      "description": "the white soccer ball enters the net as the goalkeeper dives to the left",
+      "participants": [
+        "goalkeeper"
+      ],
+      "actor": "none",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 125,
+      "start_time": "05:03",
+      "end_time": "05:04",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

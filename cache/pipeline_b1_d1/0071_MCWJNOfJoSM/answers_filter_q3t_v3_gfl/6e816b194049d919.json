@@ -1,0 +1,200 @@
+{
+  "question": "Did the player wearing white number 10 shoot toward the right side?",
+  "pred": "The video shows a penalty shootout between two teams. The player wearing a white and blue striped jersey with number 10 (identified as an Argentina player) takes his turn in the first round of the shootout. Frames at approximately 04:45 show him striking the ball toward the left side of the goal (from the kicker's perspective), while the goalkeeper in yellow dives to his own right (the kicker's left) and fails to save it.\n\nEvidence: Frames at ~04:45 show the player in white jersey #10 kicking the ball toward the left side of the goal.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "walk",
+      "description": "player in Argentina's light blue and white striped uniform walks toward the penalty spot",
+      "participants": [
+        "Argentina player in blue and white striped uniform",
+        "goalkeeper in green uniform"
+      ],
+      "actor": "Argentina player in blue and white striped uniform",
+      "object": "",
+      "object_before": "",
+      "object_after": "",
+      "outcome": "",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 137,
+      "start_time": "05:24",
+      "end_time": "05:28",
+      "sub_events": [],
+      "subtype_order": 15,
+      "subtype_total": 21,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "prepare",
+      "description": "player in blue and white striped jersey looks down while preparing for penalty kick",
+      "participants": [
+        "blue and white striped jersey player"
+      ],
+      "actor": "blue and white striped jersey player",
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "event_index": 140,
+      "start_time": "05:30",
+      "end_time": "05:33",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "kick",
+      "description": "player in blue and white striped jersey runs up and strikes the soccer ball for the penalty kick",
+      "participants": [
+        "blue and white striped jersey player"
+      ],
+      "actor": "blue and white striped jersey player",
+      "object": "soccer ball",
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "event_index": 143,
+      "start_time": "05:38",
+      "end_time": "05:40",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 8,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "dive",
+      "description": "goalkeeper in yellow jersey dives to the left to save the penalty kick",
+      "participants": [
+        "yellow jersey goalkeeper"
+      ],
+      "actor": "yellow jersey goalkeeper",
+      "object": "soccer ball",
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "event_index": 144,
+      "start_time": "05:40",
+      "end_time": "05:42",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "remove_clothing",
+      "description": "player begins pulling blue and white striped jersey over his head",
+      "participants": [
+        "blue-and-white striped jersey player"
+      ],
+      "actor": "blue-and-white striped jersey player",
+      "object": "blue and white striped jersey",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match - Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 146,
+      "start_time": "05:45",
+      "end_time": "05:48",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "remove_clothing",
+      "description": "player continues removing jersey, revealing bare back with visible tattoos",
+      "participants": [
+        "blue-and-white striped jersey player"
+      ],
+      "actor": "blue-and-white striped jersey player",
+      "object": "blue and white striped jersey",
+      "object_before": "blue and white striped jersey",
+      "object_after": "not_visible",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match - Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 147,
+      "start_time": "05:48",
+      "end_time": "05:51",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "remove_clothing",
+      "description": "player fully removes jersey, exposing bare back showing tattoo",
+      "participants": [
+        "blue-and-white striped jersey player"
+      ],
+      "actor": "blue-and-white striped jersey player",
+      "object": "blue and white striped jersey",
+      "object_before": "blue and white striped jersey",
+      "object_after": "not_visible",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match - Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 148,
+      "start_time": "05:51",
+      "end_time": "05:54",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

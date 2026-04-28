@@ -1,0 +1,339 @@
+{
+  "question": "Does the man on the left side win the game?",
+  "pred": "The video shows a cup-stacking competition called \"Fall Into Place\" featuring three contestants: a blue-shirt man (left), a black-shirt woman (middle), and a gray-shirt man (right). As the game progresses, the scoreboard tracks their successful placements. The black-shirt woman (Sarah) reaches a score of 10 first (event 69), at which point she raises her arms in celebration. The blue-shirt man is shown with a \"GAME OVER\" graphic over him (event near 02:15), and the final segment shows the host standing between the woman and the gray-shirt man, confirming the blue-shirt man did not win.\n\nEvidence: event 69 shows the black-shirt woman (Sarah) celebrating with a score of 10, while the blue-shirt man is later shown with a \"GAME OVER\" graphic.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "stack_cups",
+      "description": "Sarah (woman in black) places a red cup on top of her existing red cup stack on the blue platform",
+      "participants": [
+        "blue-shirt man",
+        "black-shirt woman (Sarah)",
+        "gray-shirt man (Nonong)"
+      ],
+      "actor": "black-shirt woman (Sarah)",
+      "object": "red cup",
+      "cover": "red cup",
+      "hidden": "uncertain: red cup",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "SARAH",
+          "location": "scoreboard"
+        },
+        {
+          "text": "2",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 54,
+      "start_time": "01:30",
+      "end_time": "01:32",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 8,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "Scoreboard updates to show Sarah's score increasing from 2 to 3 after successful cup placement",
+      "participants": [],
+      "actor": "",
+      "object_before": "red cup stack with score 2",
+      "object_after": "red cup stack with score 3",
+      "on_screen_text": [
+        {
+          "text": "SARAH",
+          "location": "scoreboard"
+        },
+        {
+          "text": "3",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 55,
+      "start_time": "01:32",
+      "end_time": "01:34",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 8,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "stack_cups",
+      "description": "Sarah (woman in black) places another red cup on her stack, adding to her previous placement",
+      "participants": [
+        "blue-shirt man",
+        "black-shirt woman (Sarah)",
+        "gray-shirt man (Nonong)"
+      ],
+      "actor": "black-shirt woman (Sarah)",
+      "object": "red cup",
+      "cover": "red cup",
+      "hidden": "uncertain: red cup",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "SARAH",
+          "location": "scoreboard"
+        },
+        {
+          "text": "3",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 58,
+      "start_time": "01:38",
+      "end_time": "01:41",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 8,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "Scoreboard updates to show Sarah's score increasing from 3 to 4 after successful cup placement",
+      "participants": [],
+      "actor": "",
+      "object_before": "red cup stack with score 3",
+      "object_after": "red cup stack with score 4",
+      "on_screen_text": [
+        {
+          "text": "SARAH",
+          "location": "scoreboard"
+        },
+        {
+          "text": "4",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 59,
+      "start_time": "01:41",
+      "end_time": "01:43",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 8,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "The scoreboard updates from 'SARAH 5' to 'SARAH 6' on the lower right of the screen",
+      "participants": [],
+      "actor": "",
+      "object_before": "SARAH 5",
+      "object_after": "SARAH 6",
+      "on_screen_text": [
+        {
+          "text": "SARAH 6",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Competition",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 62,
+      "start_time": "01:47",
+      "end_time": "01:49",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 8,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "The scoreboard updates from 'SARAH 6' to 'SARAH 7' on the lower right of the screen",
+      "participants": [],
+      "actor": "",
+      "object_before": "SARAH 6",
+      "object_after": "SARAH 7",
+      "on_screen_text": [
+        {
+          "text": "SARAH 7",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Competition",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 64,
+      "start_time": "01:51",
+      "end_time": "01:53",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 8,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "The scoreboard updates from 'SARAH 7' to 'SARAH 8' on the lower right of the screen",
+      "participants": [],
+      "actor": "",
+      "object_before": "SARAH 7",
+      "object_after": "SARAH 8",
+      "on_screen_text": [
+        {
+          "text": "SARAH 8",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Competition",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 65,
+      "start_time": "01:53",
+      "end_time": "01:55",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 8,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "The scoreboard updates from 'NONONG 8' to 'NONONG 9' on the lower right of the screen",
+      "participants": [],
+      "actor": "",
+      "object_before": "NONONG 8",
+      "object_after": "NONONG 9",
+      "on_screen_text": [
+        {
+          "text": "NONONG 9",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Competition",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 67,
+      "start_time": "01:57",
+      "end_time": "01:59",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 8,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "stack_cups",
+      "description": "The blue-shirt man stacks a red cup on top of the existing red cup stack on the leftmost blue cylinder",
+      "participants": [
+        "black-shirt woman",
+        "blue-shirt man",
+        "gray-shirt man"
+      ],
+      "actor": "blue-shirt man",
+      "object": "red cup",
+      "on_screen_text": [
+        {
+          "text": "Kapamilya Online Live",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Competition",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 68,
+      "start_time": "01:59",
+      "end_time": "02:00",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 8,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "celebration",
+      "description": "black-shirt woman raises both arms high in celebration while standing on the blue platform",
+      "participants": [
+        "black-shirt woman"
+      ],
+      "actor": "black-shirt woman",
+      "on_screen_text": [
+        {
+          "text": "SARAH 10",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Last Man Standing",
+      "continuation_hint": "complete",
+      "event_index": 69,
+      "start_time": "02:00",
+      "end_time": "02:05",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "celebration",
+      "description": "black-shirt woman turns around while keeping arms raised, showing back to the camera",
+      "participants": [
+        "black-shirt woman"
+      ],
+      "actor": "black-shirt woman",
+      "on_screen_text": [
+        {
+          "text": "SARAH 10",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Last Man Standing",
+      "continuation_hint": "complete",
+      "event_index": 70,
+      "start_time": "02:05",
+      "end_time": "02:10",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "celebration",
+      "description": "black-shirt woman lowers arms and turns back toward the game area",
+      "participants": [
+        "black-shirt woman"
+      ],
+      "actor": "black-shirt woman",
+      "on_screen_text": [
+        {
+          "text": "SARAH 10",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Last Man Standing",
+      "continuation_hint": "complete",
+      "event_index": 71,
+      "start_time": "02:10",
+      "end_time": "02:15",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    }
+  ]
+}

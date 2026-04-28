@@ -1,0 +1,1625 @@
+{
+  "video_name": "0105_QB1P6Wjyb6o.mp4",
+  "video_duration_sec": 344.27726666666666,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:04",
+          "event_type": "place",
+          "description": "places the yellow Kelly's chip bag into the clear container",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow Kelly's chip bag",
+          "segment_boundary": "start",
+          "segment_label": "Chip Bag Vacuum Experiment",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:04",
+          "local_end": "00:06",
+          "event_type": "release",
+          "description": "releases the yellow Kelly's chip bag inside the clear container",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow Kelly's chip bag",
+          "segment_boundary": "middle",
+          "segment_label": "Chip Bag Vacuum Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:09",
+          "event_type": "seal",
+          "description": "places the red base with pressure gauge on top of the clear container",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "red base with pressure gauge",
+          "segment_boundary": "middle",
+          "segment_label": "Chip Bag Vacuum Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:09",
+          "local_end": "00:12",
+          "event_type": "adjust",
+          "description": "adjusts the pressure gauge on the red base to begin vacuum process",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "pressure gauge",
+          "segment_boundary": "middle",
+          "segment_label": "Chip Bag Vacuum Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:12",
+          "local_end": "00:15",
+          "event_type": "inflation",
+          "description": "the yellow Kelly's chip bag inflates as air is removed from the container",
+          "participants": [],
+          "actor": null,
+          "object_before": "flat yellow Kelly's chip bag",
+          "object_after": "inflated yellow Kelly's chip bag",
+          "segment_boundary": "middle",
+          "segment_label": "Chip Bag Vacuum Experiment",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 30.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:30",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:17",
+          "event_type": "liquid_flow_start",
+          "description": "Brown liquid begins flowing from both cartons through straws into the previously empty glass",
+          "participants": [],
+          "actor": "",
+          "object_before": "empty glass",
+          "object_after": "glass with small amount of brown liquid",
+          "object_before_pattern": "",
+          "object_after_pattern": "",
+          "cover": "",
+          "hidden": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "Pöttyös KAKAO",
+              "location": "product_label"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Liquid Dispensing Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:17",
+          "local_end": "00:30",
+          "event_type": "liquid_filling",
+          "description": "Brown liquid continues to flow from both cartons through straws, gradually filling the glass with chocolate beverage",
+          "participants": [],
+          "actor": "",
+          "object_before": "glass with small amount of brown liquid",
+          "object_after": "glass approximately one-third full of brown liquid",
+          "object_before_pattern": "",
+          "object_after_pattern": "",
+          "cover": "",
+          "hidden": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "Pöttyös KAKAO",
+              "location": "product_label"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Liquid Dispensing Experiment",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 2,
+      "chunk_start_sec": 30.0,
+      "chunk_end_sec": 45.0,
+      "chunk_start_mmss": "00:30",
+      "chunk_end_mmss": "00:45",
+      "events": [
+        {
+          "local_start": "00:30",
+          "local_end": "00:38",
+          "event_type": "liquid_flow",
+          "description": "Chocolate liquid flows from both cartons into the glass through straws, gradually increasing the liquid level in the glass",
+          "participants": [],
+          "actor": "chocolate liquid",
+          "object": "chocolate liquid",
+          "segment_boundary": "middle",
+          "segment_label": "Chocolate Liquid Flow Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:38",
+          "local_end": "00:40",
+          "event_type": "straw_position_change",
+          "description": "The white straws change position, appearing to bend upward from the glass",
+          "participants": [],
+          "actor": "straws",
+          "object": "straws",
+          "segment_boundary": "middle",
+          "segment_label": "Chocolate Liquid Flow Experiment",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:40",
+          "local_end": "00:45",
+          "event_type": "overflow",
+          "description": "The glass overflows as the liquid level exceeds capacity, causing chocolate liquid to spill over the sides and onto the surface below",
+          "participants": [],
+          "actor": "chocolate liquid",
+          "object": "chocolate liquid",
+          "segment_boundary": "middle",
+          "segment_label": "Chocolate Liquid Flow Experiment",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 3,
+      "chunk_start_sec": 45.0,
+      "chunk_end_sec": 60.0,
+      "chunk_start_mmss": "00:45",
+      "chunk_end_mmss": "01:00",
+      "events": [
+        {
+          "local_start": "00:45",
+          "local_end": "00:52",
+          "event_type": "liquid_expansion",
+          "description": "chocolate liquid continues to bubble and foam, with the liquid level rising to cover the middle glass",
+          "participants": [],
+          "actor": "",
+          "object": "chocolate liquid",
+          "object_before": "bubbly chocolate liquid in glass",
+          "object_after": "overflowing chocolate liquid covering glass",
+          "object_before_pattern": "foamy surface with small bubbles",
+          "object_after_pattern": "increasing foam with larger bubbles",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "chocolate liquid expansion",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:52",
+          "local_end": "00:57",
+          "event_type": "liquid_rise",
+          "description": "liquid level continues rising to submerge the lower portions of both chocolate cartons",
+          "participants": [],
+          "actor": "",
+          "object": "chocolate liquid",
+          "object_before": "overflowing chocolate liquid covering glass",
+          "object_after": "chocolate liquid covering bottom third of cartons",
+          "object_before_pattern": "increasing foam with larger bubbles",
+          "object_after_pattern": "thick foam with visible bubble formation",
+          "on_screen_text": [
+            {
+              "text": "speed 10x",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "chocolate liquid expansion",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:57",
+          "local_end": "01:00",
+          "event_type": "container_fill",
+          "description": "chocolate liquid continues expanding until it fills the entire container with foam",
+          "participants": [],
+          "actor": "",
+          "object": "chocolate liquid",
+          "object_before": "chocolate liquid covering bottom third of cartons",
+          "object_after": "chocolate foam filling entire container",
+          "object_before_pattern": "thick foam with visible bubble formation",
+          "object_after_pattern": "dense foam with large bubbles throughout",
+          "on_screen_text": [
+            {
+              "text": "speed 10x",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "chocolate liquid expansion",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 4,
+      "chunk_start_sec": 60.0,
+      "chunk_end_sec": 75.0,
+      "chunk_start_mmss": "01:00",
+      "chunk_end_mmss": "01:15",
+      "events": [
+        {
+          "local_start": "01:00",
+          "local_end": "01:07",
+          "event_type": "foam_reduction",
+          "description": "The foam level in the vacuum chamber gradually decreases, revealing more of the internal contents.",
+          "participants": [],
+          "actor": "",
+          "object": "foam",
+          "object_before": "abundant brown foam",
+          "object_after": "reduced brown foam",
+          "on_screen_text": [
+            {
+              "text": "speed 10x",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Foam Reduction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:07",
+          "local_end": "01:10",
+          "event_type": "text_disappearance",
+          "description": "The 'speed 10x' text disappears from the upper right corner of the frame.",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "object_before": "visible text",
+          "object_after": "no text",
+          "on_screen_text": [
+            {
+              "text": "speed 10x",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Foam Reduction",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:00",
+          "local_end": "01:12",
+          "event_type": "content_visibility",
+          "description": "The carton-like objects and glass become increasingly visible as the foam level decreases in the vacuum chamber.",
+          "participants": [],
+          "actor": "",
+          "object": "cartons and glass",
+          "object_before": "submerged cartons and glass",
+          "object_after": "fully visible cartons and glass",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Foam Reduction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:13",
+          "local_end": "01:15",
+          "event_type": "setup_change",
+          "description": "The vacuum chamber is cleared of foam and liquid, and a new container labeled 'ANTIPERSPIRANT' is placed inside the chamber.",
+          "participants": [],
+          "actor": "",
+          "object": "container",
+          "object_before": "foam-filled chamber with cartons",
+          "object_after": "clear chamber with antiperspirant container",
+          "on_screen_text": [],
+          "segment_boundary": "start",
+          "segment_label": "Antiperspirant Container Test",
+          "continuation_hint": "starts_before_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 5,
+      "chunk_start_sec": 75.0,
+      "chunk_end_sec": 90.0,
+      "chunk_start_mmss": "01:15",
+      "chunk_end_mmss": "01:30",
+      "events": [
+        {
+          "local_start": "01:15",
+          "local_end": "01:24",
+          "event_type": "state_change",
+          "description": "Ice crystals begin forming and expanding across the top surface of the liquid in the clear container",
+          "participants": [],
+          "actor": "",
+          "object_before": "clear liquid",
+          "object_after": "ice crystals forming",
+          "segment_boundary": "middle",
+          "segment_label": "Freezing Process",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:25",
+          "local_end": "01:29",
+          "event_type": "state_change",
+          "description": "Ice crystals continue to grow and become more prominent, covering a larger area of the container's surface",
+          "participants": [],
+          "actor": "",
+          "object_before": "partially frozen liquid",
+          "object_after": "more extensive ice formation",
+          "segment_boundary": "middle",
+          "segment_label": "Freezing Process",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:29",
+          "local_end": "01:30",
+          "event_type": "transition",
+          "description": "Scene transitions from the antiperspirant container to a vacuum chamber containing raw meat",
+          "participants": [],
+          "actor": "",
+          "segment_boundary": "start",
+          "segment_label": "Vacuum Sealing Experiment",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 6,
+      "chunk_start_sec": 90.0,
+      "chunk_end_sec": 105.0,
+      "chunk_start_mmss": "01:30",
+      "chunk_end_mmss": "01:45",
+      "events": [
+        {
+          "local_start": "01:30",
+          "local_end": "01:35",
+          "event_type": "vacuum_seal",
+          "description": "The plastic wrap over the meat continues to tighten as vacuum is applied, compressing the meat further in the tray",
+          "participants": [],
+          "actor": "",
+          "object": "meat package",
+          "object_before": "meat with loosely wrapped plastic",
+          "object_after": "meat with moderately tight plastic wrap",
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Sealing Process",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:35",
+          "local_end": "01:37",
+          "event_type": "scene_transition",
+          "description": "The view changes from meat vacuum sealing to a clear vacuum chamber containing a jar of preserves",
+          "participants": [],
+          "actor": "",
+          "object": "vacuum chamber",
+          "segment_boundary": "start",
+          "segment_label": "Jar Vacuum Experiment",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:37",
+          "local_end": "01:41",
+          "event_type": "bubble_formation",
+          "description": "The contents of the jar begin to bubble and expand as vacuum is applied, with small bubbles forming at the surface",
+          "participants": [],
+          "actor": "",
+          "object": "honey jar",
+          "object_before": "jar with still contents",
+          "object_after": "jar with beginning bubble formation",
+          "segment_boundary": "middle",
+          "segment_label": "Jar Vacuum Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:41",
+          "local_end": "01:45",
+          "event_type": "bubble_intensification",
+          "description": "Bubbling in the jar intensifies significantly, with the liquid rising and expanding in volume as vacuum continues to be applied",
+          "participants": [],
+          "actor": "",
+          "object": "honey jar",
+          "object_before": "jar with beginning bubble formation",
+          "object_after": "jar with vigorous bubbling and expanded contents",
+          "segment_boundary": "middle",
+          "segment_label": "Jar Vacuum Experiment",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 7,
+      "chunk_start_sec": 105.0,
+      "chunk_end_sec": 120.0,
+      "chunk_start_mmss": "01:45",
+      "chunk_end_mmss": "02:00",
+      "events": [
+        {
+          "local_start": "01:45",
+          "local_end": "01:53",
+          "event_type": "state_change",
+          "description": "The amber-colored substance inside the jar bubbles and foams with increasing intensity and changing patterns",
+          "participants": [],
+          "actor": "",
+          "object": "jar",
+          "object_before": "amber-colored substance with minimal bubbles",
+          "object_after": "amber-colored substance with active bubbling",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:54",
+          "local_end": "01:54",
+          "event_type": "transition",
+          "description": "The camera view shifts from close-up to wide angle showing the entire chamber setup",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:54",
+          "local_end": "01:59",
+          "event_type": "recording",
+          "description": "A hand holds a smartphone to record the jar inside the chamber",
+          "participants": [
+            "hand holding smartphone"
+          ],
+          "actor": "hand holding smartphone",
+          "object": "smartphone",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:54",
+          "local_end": "01:59",
+          "event_type": "state_change",
+          "description": "The substance in the jar continues bubbling with varying intensity patterns",
+          "participants": [],
+          "actor": "",
+          "object": "jar",
+          "object_before": "amber-colored substance with moderate bubbles",
+          "object_after": "amber-colored substance with changing bubble patterns",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:00",
+          "local_end": "02:00",
+          "event_type": "transition",
+          "description": "The scene transitions to show a green can and a glass with foamy liquid inside the chamber",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "start",
+          "segment_label": "Can and Glass Setup",
+          "continuation_hint": "starts_before_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 8,
+      "chunk_start_sec": 120.0,
+      "chunk_end_sec": 135.0,
+      "chunk_start_mmss": "02:00",
+      "chunk_end_mmss": "02:15",
+      "events": [
+        {
+          "local_start": "02:00",
+          "local_end": "02:15",
+          "event_type": "liquid_spread",
+          "description": "The foamy liquid overflow from the glass spreads across the base of the transparent container",
+          "participants": [],
+          "actor": "",
+          "object": "foamy liquid",
+          "object_before": "small amount of foamy liquid at base of glass",
+          "object_after": "widespread foamy liquid across container base",
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:08",
+          "local_end": "02:15",
+          "event_type": "foam_formation",
+          "description": "Foam begins to form on top of the green beer can",
+          "participants": [],
+          "actor": "",
+          "object": "foam",
+          "object_before": "no foam on can",
+          "object_after": "foam on top of can",
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Experiment",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 9,
+      "chunk_start_sec": 135.0,
+      "chunk_end_sec": 150.0,
+      "chunk_start_mmss": "02:15",
+      "chunk_end_mmss": "02:30",
+      "events": [
+        {
+          "local_start": "02:15",
+          "local_end": "02:20",
+          "event_type": "foam_expansion",
+          "description": "The foam head on the green beer can expands from a small cap to cover approximately one-third of the can's upper portion.",
+          "participants": [],
+          "actor": "green beer can",
+          "object_before": "small white foam cap on can",
+          "object_after": "medium white foam head covering upper third of can",
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Foam Experiment",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "02:20",
+          "local_end": "02:25",
+          "event_type": "foam_spread",
+          "description": "The foam spreads from the can to the adjacent glass, covering the upper portion of the glass with white foam.",
+          "participants": [],
+          "actor": "foam",
+          "object_before": "foam only on can",
+          "object_after": "foam on both can and glass",
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Foam Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:25",
+          "local_end": "02:30",
+          "event_type": "foam_rise",
+          "description": "The foam level in the chamber rises to cover approximately 70% of the chamber base, surrounding both the can and glass with a thick layer of white foam.",
+          "participants": [],
+          "actor": "foam",
+          "object_before": "foam covering approximately 40% of chamber base",
+          "object_after": "foam covering approximately 70% of chamber base",
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Foam Experiment",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 10,
+      "chunk_start_sec": 150.0,
+      "chunk_end_sec": 165.0,
+      "chunk_start_mmss": "02:30",
+      "chunk_end_mmss": "02:45",
+      "events": [
+        {
+          "local_start": "02:30",
+          "local_end": "02:45",
+          "event_type": "foam_volume_change",
+          "description": "The foam volume inside the clear container decreases gradually, revealing more of the can while the liquid level remains stable at the bottom.",
+          "participants": [],
+          "actor": "None",
+          "object": "foam",
+          "object_before": "abundant white foam",
+          "object_after": "reduced white foam",
+          "segment_boundary": "middle",
+          "segment_label": "Foam volume experiment",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 11,
+      "chunk_start_sec": 165.0,
+      "chunk_end_sec": 180.0,
+      "chunk_start_mmss": "02:45",
+      "chunk_end_mmss": "03:00",
+      "events": [
+        {
+          "local_start": "02:45",
+          "local_end": "02:51",
+          "event_type": "foam_settling",
+          "description": "Foam inside the transparent container gradually decreases in volume and settles toward the bottom",
+          "participants": [],
+          "actor": "",
+          "object": "foam",
+          "object_before": "white foam",
+          "object_after": "reduced white foam",
+          "segment_boundary": "middle",
+          "segment_label": "Pressure Chamber Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:52",
+          "local_end": "02:58",
+          "event_type": "hand_manipulation",
+          "description": "A hand adjusts control valves on the red lid of the transparent container",
+          "participants": [
+            "tan-skinned hand"
+          ],
+          "actor": "tan-skinned hand",
+          "object": "control valves",
+          "segment_boundary": "middle",
+          "segment_label": "Pressure Chamber Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:52",
+          "local_end": "03:00",
+          "event_type": "liquid_transfer",
+          "description": "Liquid flows from the green beer can into the clear glass, causing the liquid level in the glass to rise",
+          "participants": [],
+          "actor": "",
+          "object": "liquid",
+          "object_before": "separate liquid in can and minimal liquid in glass",
+          "object_after": "increased liquid level in glass",
+          "segment_boundary": "middle",
+          "segment_label": "Pressure Chamber Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:59",
+          "local_end": "03:00",
+          "event_type": "scene_transition",
+          "description": "The scene changes to show food items in vacuum-sealed packaging inside the transparent container",
+          "participants": [],
+          "actor": "",
+          "object": "vacuum-sealed food",
+          "segment_boundary": "end",
+          "segment_label": "Pressure Chamber Experiment",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 12,
+      "chunk_start_sec": 180.0,
+      "chunk_end_sec": 195.0,
+      "chunk_start_mmss": "03:00",
+      "chunk_end_mmss": "03:15",
+      "events": [
+        {
+          "local_start": "03:00",
+          "local_end": "03:08",
+          "event_type": "vacuum_process",
+          "description": "food in plastic bag inside vacuum chamber experiences air removal as evidenced by the bag tightening around the contents",
+          "participants": [],
+          "actor": null,
+          "object": "plastic bag with food",
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Process",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:09",
+          "local_end": "03:10",
+          "event_type": "introduce_object",
+          "description": "a hand enters the frame holding a jar labeled \"ROYAL LUMP FISH CAVIAR\"",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "glass jar",
+          "on_screen_text": [
+            {
+              "text": "ROYAL",
+              "location": "logo"
+            },
+            {
+              "text": "LUMP FISH CAVIAR",
+              "location": "label"
+            }
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Caviar Presentation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:11",
+          "local_end": "03:15",
+          "event_type": "reveal_contents",
+          "description": "the jar is opened to show red caviar inside with individual eggs visible",
+          "participants": [],
+          "actor": null,
+          "object_before": "sealed jar",
+          "object_after": "open jar",
+          "object": "caviar",
+          "segment_boundary": "middle",
+          "segment_label": "Caviar Presentation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 13,
+      "chunk_start_sec": 195.0,
+      "chunk_end_sec": 210.0,
+      "chunk_start_mmss": "03:15",
+      "chunk_end_mmss": "03:30",
+      "events": [
+        {
+          "local_start": "03:15",
+          "local_end": "03:23",
+          "event_type": "visual_state_change",
+          "description": "red caviar in a glass jar shifts position with slight movement between frames",
+          "participants": [],
+          "actor": "",
+          "object_before": "red caviar",
+          "object_after": "red caviar",
+          "object_before_pattern": "small round spheres in liquid",
+          "object_after_pattern": "small round spheres in liquid",
+          "segment_boundary": "middle",
+          "segment_label": "Caviar Observation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:24",
+          "local_end": "03:25",
+          "event_type": "place",
+          "description": "a light-skinned hand appears holding a watermelon above a clear container",
+          "participants": [
+            "light-skinned hand"
+          ],
+          "actor": "light-skinned hand",
+          "object": "green watermelon",
+          "segment_boundary": "start",
+          "segment_label": "Watermelon Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:25",
+          "local_end": "03:28",
+          "event_type": "place",
+          "description": "the hand lowers the watermelon into the clear acrylic container",
+          "participants": [
+            "light-skinned hand"
+          ],
+          "actor": "light-skinned hand",
+          "object": "green watermelon",
+          "segment_boundary": "middle",
+          "segment_label": "Watermelon Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:28",
+          "local_end": "03:30",
+          "event_type": "visual_state_change",
+          "description": "watermelon settles fully inside the clear container with hand removed",
+          "participants": [],
+          "actor": "",
+          "object_before": "green watermelon being lowered",
+          "object_after": "green watermelon fully in container",
+          "segment_boundary": "middle",
+          "segment_label": "Watermelon Experiment",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 14,
+      "chunk_start_sec": 210.0,
+      "chunk_end_sec": 225.0,
+      "chunk_start_mmss": "03:30",
+      "chunk_end_mmss": "03:45",
+      "events": [
+        {
+          "local_start": "03:39",
+          "local_end": "03:40",
+          "event_type": "state_change",
+          "description": "watermelon cracks open due to pressure, exposing red flesh and scattering seeds",
+          "participants": [],
+          "actor": "",
+          "object_before": "intact green watermelon",
+          "object_after": "cracked green watermelon with exposed red flesh",
+          "segment_boundary": "middle",
+          "segment_label": "watermelon pressure test",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:40",
+          "local_end": "03:45",
+          "event_type": "state_change",
+          "description": "cracked watermelon remains in damaged state with continued seed and flesh exposure",
+          "participants": [],
+          "actor": "",
+          "object_before": "cracked green watermelon with exposed red flesh",
+          "object_after": "cracked green watermelon with scattered seeds and water droplets",
+          "segment_boundary": "middle",
+          "segment_label": "watermelon pressure test",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 15,
+      "chunk_start_sec": 225.0,
+      "chunk_end_sec": 240.0,
+      "chunk_start_mmss": "03:45",
+      "chunk_end_mmss": "04:00",
+      "events": [
+        {
+          "local_start": "03:45",
+          "local_end": "03:48",
+          "event_type": "ketchup_emerge",
+          "description": "Ketchup begins to emerge from the bottle opening as a small drop",
+          "participants": [],
+          "actor": "ketchup bottle",
+          "object_before": "ketchup bottle with cap slightly open",
+          "object_after": "ketchup bottle with small red drop emerging from opening",
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:48",
+          "local_end": "03:51",
+          "event_type": "mound_formation",
+          "description": "The small drop of ketchup grows into a small mound on the bottle cap",
+          "participants": [],
+          "actor": "ketchup",
+          "object_before": "ketchup bottle with small red drop emerging",
+          "object_after": "ketchup bottle with small red mound formed on cap",
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:51",
+          "local_end": "03:54",
+          "event_type": "mound_growth",
+          "description": "The ketchup mound continues to grow larger and more rounded on top of the cap",
+          "participants": [],
+          "actor": "ketchup",
+          "object_before": "ketchup bottle with small red mound formed on cap",
+          "object_after": "ketchup bottle with larger rounded red mound on cap",
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:54",
+          "local_end": "03:57",
+          "event_type": "overflow_begin",
+          "description": "Ketchup begins to overflow from the mound and drip down the side of the bottle cap",
+          "participants": [],
+          "actor": "ketchup",
+          "object_before": "ketchup bottle with larger rounded red mound on cap",
+          "object_after": "ketchup bottle with overflow beginning on side of cap",
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:57",
+          "local_end": "04:00",
+          "event_type": "overflow_progression",
+          "description": "Ketchup overflow continues with more liquid dripping down the side of the bottle cap",
+          "participants": [],
+          "actor": "ketchup",
+          "object_before": "ketchup bottle with overflow beginning on side of cap",
+          "object_after": "ketchup bottle with significant overflow dripping down side",
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Experiment",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 16,
+      "chunk_start_sec": 240.0,
+      "chunk_end_sec": 255.0,
+      "chunk_start_mmss": "04:00",
+      "chunk_end_mmss": "04:15",
+      "events": [
+        {
+          "local_start": "04:00",
+          "local_end": "04:03",
+          "event_type": "bottle_collapse",
+          "description": "The plastic bottle in the vacuum chamber begins to deform slightly as air is removed.",
+          "participants": [],
+          "actor": "",
+          "object": "plastic bottle",
+          "object_before": "intact plastic bottle",
+          "object_after": "slightly deformed plastic bottle",
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:03",
+          "local_end": "04:06",
+          "event_type": "bottle_collapse",
+          "description": "The plastic bottle continues to collapse with more noticeable deformation along its sides.",
+          "participants": [],
+          "actor": "",
+          "object": "plastic bottle",
+          "object_before": "slightly deformed plastic bottle",
+          "object_after": "moderately deformed plastic bottle",
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:06",
+          "local_end": "04:09",
+          "event_type": "bottle_collapse",
+          "description": "The plastic bottle shows significant crushing with visible wrinkles in the label and body.",
+          "participants": [],
+          "actor": "",
+          "object": "plastic bottle",
+          "object_before": "moderately deformed plastic bottle",
+          "object_after": "significantly crushed plastic bottle",
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:09",
+          "local_end": "04:12",
+          "event_type": "bottle_collapse",
+          "description": "The plastic bottle is almost completely flattened against the bottom of the chamber.",
+          "participants": [],
+          "actor": "",
+          "object": "plastic bottle",
+          "object_before": "significantly crushed plastic bottle",
+          "object_after": "almost completely flattened plastic bottle",
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:12",
+          "local_end": "04:13",
+          "event_type": "scene_transition",
+          "description": "The scene transitions from the collapsed bottle to three glasses of milk with different fat percentages.",
+          "participants": [],
+          "actor": "",
+          "object": "milk glasses",
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Experiment",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "MILK",
+              "location": "title"
+            },
+            {
+              "text": "0.1% Fat",
+              "location": "caption"
+            },
+            {
+              "text": "1.5% Fat",
+              "location": "caption"
+            },
+            {
+              "text": "3.5% Fat",
+              "location": "caption"
+            }
+          ]
+        },
+        {
+          "local_start": "04:13",
+          "local_end": "04:15",
+          "event_type": "milk_reaction",
+          "description": "Bubbles begin to form and rise in the 1.5% fat milk as the vacuum pressure increases.",
+          "participants": [],
+          "actor": "",
+          "object": "milk",
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Experiment",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 17,
+      "chunk_start_sec": 255.0,
+      "chunk_end_sec": 270.0,
+      "chunk_start_mmss": "04:15",
+      "chunk_end_mmss": "04:30",
+      "events": [
+        {
+          "local_start": "04:15",
+          "local_end": "04:19",
+          "event_type": "foam_formation",
+          "description": "Foam significantly increases in the middle milk glass labeled '1.5% Fat' with foam volume expanding upward",
+          "participants": [],
+          "object_before": "white milk with small foam layer",
+          "object_after": "white milk with large foam volume",
+          "on_screen_text": [
+            {
+              "text": "MILK",
+              "location": "title"
+            },
+            {
+              "text": "0.1% Fat",
+              "location": "label"
+            },
+            {
+              "text": "1.5% Fat",
+              "location": "label"
+            },
+            {
+              "text": "3.5% Fat",
+              "location": "label"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Milk Foam Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:16",
+          "local_end": "04:20",
+          "event_type": "foam_formation",
+          "description": "Foam begins forming in the leftmost milk glass labeled '0.1% Fat' starting from the surface",
+          "participants": [],
+          "object_before": "clear white milk",
+          "object_after": "white milk with small foam layer",
+          "on_screen_text": [
+            {
+              "text": "MILK",
+              "location": "title"
+            },
+            {
+              "text": "0.1% Fat",
+              "location": "label"
+            },
+            {
+              "text": "1.5% Fat",
+              "location": "label"
+            },
+            {
+              "text": "3.5% Fat",
+              "location": "label"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Milk Foam Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:20",
+          "local_end": "04:24",
+          "event_type": "foam_overflow",
+          "description": "Foam overflows from the middle milk glass labeled '1.5% Fat', spilling over the rim onto the tray",
+          "participants": [],
+          "object_before": "white milk with large foam volume",
+          "object_after": "white milk with foam overflowing the glass",
+          "on_screen_text": [
+            {
+              "text": "MILK",
+              "location": "title"
+            },
+            {
+              "text": "0.1% Fat",
+              "location": "label"
+            },
+            {
+              "text": "1.5% Fat",
+              "location": "label"
+            },
+            {
+              "text": "3.5% Fat",
+              "location": "label"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Milk Foam Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:21",
+          "local_end": "04:25",
+          "event_type": "foam_formation",
+          "description": "Foam significantly increases in the leftmost milk glass labeled '0.1% Fat' with foam volume rapidly expanding",
+          "participants": [],
+          "object_before": "white milk with small foam layer",
+          "object_after": "white milk with large foam volume",
+          "on_screen_text": [
+            {
+              "text": "MILK",
+              "location": "title"
+            },
+            {
+              "text": "0.1% Fat",
+              "location": "label"
+            },
+            {
+              "text": "1.5% Fat",
+              "location": "label"
+            },
+            {
+              "text": "3.5% Fat",
+              "location": "label"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Milk Foam Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:23",
+          "local_end": "04:27",
+          "event_type": "foam_overflow",
+          "description": "Foam overflows from the leftmost milk glass labeled '0.1% Fat', spilling over the rim onto the tray",
+          "participants": [],
+          "object_before": "white milk with large foam volume",
+          "object_after": "white milk with foam overflowing the glass",
+          "on_screen_text": [
+            {
+              "text": "MILK",
+              "location": "title"
+            },
+            {
+              "text": "0.1% Fat",
+              "location": "label"
+            },
+            {
+              "text": "1.5% Fat",
+              "location": "label"
+            },
+            {
+              "text": "3.5% Fat",
+              "location": "label"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Milk Foam Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:15",
+          "local_end": "04:30",
+          "event_type": "state_change",
+          "description": "The rightmost milk glass labeled '3.5% Fat' shows minimal foam formation throughout the segment with no overflow",
+          "participants": [],
+          "object_before": "clear white milk",
+          "object_after": "white milk with minimal foam",
+          "on_screen_text": [
+            {
+              "text": "MILK",
+              "location": "title"
+            },
+            {
+              "text": "0.1% Fat",
+              "location": "label"
+            },
+            {
+              "text": "1.5% Fat",
+              "location": "label"
+            },
+            {
+              "text": "3.5% Fat",
+              "location": "label"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Milk Foam Experiment",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 18,
+      "chunk_start_sec": 270.0,
+      "chunk_end_sec": 285.0,
+      "chunk_start_mmss": "04:30",
+      "chunk_end_mmss": "04:45",
+      "events": [
+        {
+          "local_start": "04:30",
+          "local_end": "04:38",
+          "event_type": "milk_foam_expansion",
+          "description": "Milk foam in all three containers (0.1%, 1.5%, and 3.5% fat) rapidly expands and increases in volume, with bubbles growing larger and more numerous.",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "object_before": "white milk foam",
+          "object_after": "expanded white milk foam",
+          "object_before_pattern": "bubbly foam covering milk surface",
+          "object_after_pattern": "dense bubbles filling more of the container space",
+          "cover": "",
+          "hidden": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "MILK",
+              "location": "title"
+            },
+            {
+              "text": "0.1% Fat",
+              "location": "caption"
+            },
+            {
+              "text": "1.5% Fat",
+              "location": "caption"
+            },
+            {
+              "text": "3.5% Fat",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Milk Foam Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:38",
+          "local_end": "04:40",
+          "event_type": "milk_overflow",
+          "description": "Milk foam completely overflows the containers and spreads across the entire surface, obscuring the view of the individual containers.",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "object_before": "expanded white milk foam",
+          "object_after": "overflowing white milk foam",
+          "object_before_pattern": "bubbles filling container space",
+          "object_after_pattern": "foam covering entire visible surface",
+          "cover": "",
+          "hidden": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "MILK",
+              "location": "title"
+            },
+            {
+              "text": "0.1% Fat",
+              "location": "caption"
+            },
+            {
+              "text": "1.5% Fat",
+              "location": "caption"
+            },
+            {
+              "text": "3.5% Fat",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Milk Foam Experiment",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "04:40",
+          "local_end": "04:45",
+          "event_type": "scene_transition",
+          "description": "The scene changes from the milk foam experiment to a vacuum chamber setup containing a tilted blue Pepsi bottle and an empty glass.",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "object_before": "overflowing white milk foam",
+          "object_after": "clear vacuum chamber with blue bottle",
+          "cover": "",
+          "hidden": "",
+          "outcome": "",
+          "on_screen_text": [],
+          "segment_boundary": "start",
+          "segment_label": "Vacuum Chamber Experiment",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "04:40",
+          "local_end": "04:45",
+          "event_type": "liquid_dispensing",
+          "description": "Blue liquid flows from the tilted Pepsi bottle into the empty glass inside the vacuum chamber, with the liquid level in the glass gradually increasing.",
+          "participants": [],
+          "actor": "",
+          "object": "blue liquid",
+          "cover": "",
+          "hidden": "",
+          "outcome": "liquid accumulates in glass",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:42",
+          "local_end": "04:45",
+          "event_type": "gauge_adjustment",
+          "description": "A hand appears and turns the valve on the pressure gauge of the vacuum chamber, adjusting the pressure settings.",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "pressure gauge valve",
+          "cover": "",
+          "hidden": "",
+          "outcome": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Experiment",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 19,
+      "chunk_start_sec": 285.0,
+      "chunk_end_sec": 300.0,
+      "chunk_start_mmss": "04:45",
+      "chunk_end_mmss": "05:00",
+      "events": [
+        {
+          "local_start": "04:45",
+          "local_end": "04:59",
+          "event_type": "liquid_pouring",
+          "description": "Blue liquid continues to pour from the tilted Pepsi bottle into the glass with varying levels of foam and bubbles visible throughout the sequence",
+          "participants": [],
+          "actor": "blue Pepsi bottle",
+          "object": "blue liquid",
+          "segment_boundary": "middle",
+          "segment_label": "Soda Bottle Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:59",
+          "local_end": "05:00",
+          "event_type": "adjust_gauge",
+          "description": "A hand reaches down from above and manipulates the pressure gauge on top of the container",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "pressure gauge",
+          "segment_boundary": "middle",
+          "segment_label": "Soda Bottle Experiment",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 20,
+      "chunk_start_sec": 300.0,
+      "chunk_end_sec": 315.0,
+      "chunk_start_mmss": "05:00",
+      "chunk_end_mmss": "05:15",
+      "events": [
+        {
+          "local_start": "05:00",
+          "local_end": "05:08",
+          "event_type": "state_change",
+          "description": "Ice spheres continue to melt with moderate water accumulation visible under the ice in both environments, with more meltwater under normal air ice spheres",
+          "participants": [],
+          "actor": "none",
+          "object_before": "white ice spheres",
+          "object_after": "white ice spheres with visible meltwater",
+          "on_screen_text": [
+            {
+              "text": "VACUUM CHAMBER",
+              "location": "title"
+            },
+            {
+              "text": "NORMAL AIR",
+              "location": "title"
+            },
+            {
+              "text": "Hour 5 Minute 246",
+              "location": "timer"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Ice Melting Comparison",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:08",
+          "local_end": "05:15",
+          "event_type": "state_change",
+          "description": "Ice spheres show further melting with increased water accumulation, particularly under the normal air ice spheres which now show significantly more meltwater than vacuum chamber ice spheres",
+          "participants": [],
+          "actor": "none",
+          "object_before": "white ice spheres with visible meltwater",
+          "object_after": "white ice spheres with increased meltwater",
+          "on_screen_text": [
+            {
+              "text": "VACUUM CHAMBER",
+              "location": "title"
+            },
+            {
+              "text": "NORMAL AIR",
+              "location": "title"
+            },
+            {
+              "text": "Hour 5 Minute 254",
+              "location": "timer"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Ice Melting Comparison",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 21,
+      "chunk_start_sec": 315.0,
+      "chunk_end_sec": 330.0,
+      "chunk_start_mmss": "05:15",
+      "chunk_end_mmss": "05:30",
+      "events": [
+        {
+          "local_start": "05:15",
+          "local_end": "05:30",
+          "event_type": "state",
+          "description": "a plant in a white pot with black patterns remains inside a clear vacuum chamber with red top, with a pressure gauge and metallic hose connected",
+          "participants": [],
+          "actor": "",
+          "object": "clear vacuum chamber",
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Plant Experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:28",
+          "local_end": "05:30",
+          "event_type": "adjust",
+          "description": "a hand enters the frame from the top right and adjusts a valve on the red top of the vacuum chamber",
+          "participants": [
+            "unidentified person's hand"
+          ],
+          "actor": "unidentified person",
+          "object": "valve",
+          "segment_boundary": "middle",
+          "segment_label": "Vacuum Chamber Plant Experiment",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 22,
+      "chunk_start_sec": 330.0,
+      "chunk_end_sec": 344.27726666666666,
+      "chunk_start_mmss": "05:30",
+      "chunk_end_mmss": "05:44",
+      "events": [
+        {
+          "local_start": "05:30",
+          "local_end": "05:32",
+          "event_type": "adjust",
+          "description": "Hand adjusts the valves on top of the transparent container",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "valves",
+          "segment_boundary": "middle",
+          "segment_label": "Plant container experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:33",
+          "local_end": "05:38",
+          "event_type": "state_change",
+          "description": "Pressure gauge needle moves without visible hand interaction",
+          "participants": [],
+          "actor": "pressure_gauge",
+          "object": "pressure_gauge",
+          "object_before": "pressure gauge showing low pressure",
+          "object_after": "pressure gauge showing increasing pressure",
+          "segment_boundary": "middle",
+          "segment_label": "Plant container experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:39",
+          "local_end": "05:40",
+          "event_type": "adjust",
+          "description": "Hand returns to adjust valves on top of the container",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "valves",
+          "segment_boundary": "middle",
+          "segment_label": "Plant container experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:40",
+          "local_end": "05:41",
+          "event_type": "lift",
+          "description": "Hand lifts the red lid off the transparent container",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "red lid",
+          "segment_boundary": "middle",
+          "segment_label": "Plant container experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:41",
+          "local_end": "05:42",
+          "event_type": "reach",
+          "description": "Hand reaches into the container toward the potted plant",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "potted plant",
+          "segment_boundary": "middle",
+          "segment_label": "Plant container experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:42",
+          "local_end": "05:43",
+          "event_type": "lift",
+          "description": "Hand lifts the potted plant out of the transparent container",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "potted plant with black and white patterned pot",
+          "segment_boundary": "middle",
+          "segment_label": "Plant container experiment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:43",
+          "local_end": "05:44",
+          "event_type": "place",
+          "description": "Hand places the potted plant back into the transparent container",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "potted plant with black and white patterned pot",
+          "segment_boundary": "end",
+          "segment_label": "Plant container experiment",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "05:44",
+          "local_end": "05:44",
+          "event_type": "graphic",
+          "description": "On-screen text appears saying \"Thanks for staying until the end! You're awesome!\"",
+          "participants": [],
+          "actor": "text",
+          "object": "on-screen text",
+          "on_screen_text": [
+            {
+              "text": "Thanks for staying until the end! You're awesome!",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Plant container experiment",
+          "continuation_hint": "complete"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "question": "When the black team plays against the green team, does the player with black shirt and yellow stripes number 11 ride the ball pass the white shirt goalkeeper and score?",
+  "top_k": 10,
+  "indices": [
+    4,
+    5,
+    6,
+    7,
+    10,
+    11,
+    12
+  ],
+  "events": [
+    {
+      "event_type": "dribble",
+      "description": "The black-shirt man dribbles the ball past the diving goalkeeper.",
+      "participants": [
+        "black-shirt man",
+        "white-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "football",
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "complete",
+      "event_index": 4,
+      "start_time": "00:05",
+      "end_time": "00:07",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "slide",
+      "description": "Two green-shirt defenders slide in an attempt to tackle the black-shirt man.",
+      "participants": [
+        "green-shirt man",
+        "black-shirt man"
+      ],
+      "actor": "green-shirt man",
+      "object": "football",
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "complete",
+      "event_index": 5,
+      "start_time": "00:07",
+      "end_time": "00:09",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "dribble",
+      "description": "The black-shirt man continues to dribble the ball past the sliding defenders.",
+      "participants": [
+        "black-shirt man",
+        "green-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "football",
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "complete",
+      "event_index": 6,
+      "start_time": "00:09",
+      "end_time": "00:11",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "kick",
+      "description": "The black-shirt man kicks the ball into the empty goal.",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "football",
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "complete",
+      "event_index": 7,
+      "start_time": "00:11",
+      "end_time": "00:13",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "game",
+      "description": "The black-and-yellow-kit player continues dribbling toward the goal as the goalkeeper in white approaches.",
+      "participants": [
+        "black-and-yellow-kit player",
+        "white-kit goalkeeper"
+      ],
+      "actor": "black-and-yellow-kit player",
+      "object": "white ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "football match",
+      "continuation_hint": "middle",
+      "event_index": 10,
+      "start_time": "00:16",
+      "end_time": "00:17",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "game",
+      "description": "The black-and-yellow-kit player shoots the ball past the diving goalkeeper.",
+      "participants": [
+        "black-and-yellow-kit player",
+        "white-kit goalkeeper"
+      ],
+      "actor": "black-and-yellow-kit player",
+      "object": "white ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "football match",
+      "continuation_hint": "middle",
+      "event_index": 11,
+      "start_time": "00:17",
+      "end_time": "00:18",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "game",
+      "description": "The ball enters the net as the black-and-yellow-kit player runs past the goal line.",
+      "participants": [
+        "black-and-yellow-kit player"
+      ],
+      "actor": "black-and-yellow-kit player",
+      "object": "white ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "football match",
+      "continuation_hint": "middle",
+      "event_index": 12,
+      "start_time": "00:18",
+      "end_time": "00:19",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    }
+  ]
+}

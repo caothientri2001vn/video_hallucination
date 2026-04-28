@@ -1,0 +1,339 @@
+{
+  "video_name": "0036_11_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 16.7,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "gemini-3-flash-preview",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:01",
+          "event_type": "celebration",
+          "description": "The Real Madrid team celebrates on a podium with confetti falling, while a player in a green jersey lifts the Champions League trophy.",
+          "participants": [
+            "white-jersey players",
+            "green-jersey player"
+          ],
+          "actor": "green-jersey player",
+          "object": "silver trophy",
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Champions League Trophy Presentation",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:01",
+          "local_end": "00:02",
+          "event_type": "transition",
+          "description": "The screen fades to black.",
+          "participants": [],
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Transition",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:04",
+          "event_type": "game",
+          "description": "A football match is shown with players in light blue and black jerseys moving on the pitch.",
+          "participants": [
+            "light-blue-jersey players",
+            "black-jersey players"
+          ],
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Football Match: Uruguay vs Germany",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:04",
+          "local_end": "00:06",
+          "event_type": "kick",
+          "description": "The light-blue-jersey player (number 10) kicks the ball toward the goal.",
+          "participants": [
+            "light-blue-jersey player"
+          ],
+          "actor": "light-blue-jersey player",
+          "object": "white ball",
+          "on_screen_text": [
+            {
+              "text": "DIEGO FORLÁN",
+              "location": "lower_third"
+            },
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match: Uruguay vs Germany",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:08",
+          "event_type": "goal",
+          "description": "The ball flies into the top right corner of the net as the red-jersey goalkeeper dives but misses.",
+          "participants": [
+            "red-jersey goalkeeper"
+          ],
+          "actor": "red-jersey goalkeeper",
+          "object": "white ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "DIEGO FORLÁN",
+              "location": "lower_third"
+            },
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match: Uruguay vs Germany",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:08",
+          "local_end": "00:10",
+          "event_type": "celebration",
+          "description": "The light-blue-jersey player (number 10) runs with his arms outstretched to celebrate the goal.",
+          "participants": [
+            "light-blue-jersey player"
+          ],
+          "actor": "light-blue-jersey player",
+          "on_screen_text": [
+            {
+              "text": "DIEGO FORLÁN",
+              "location": "lower_third"
+            },
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match: Uruguay vs Germany",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:10",
+          "local_end": "00:12",
+          "event_type": "replay",
+          "description": "A slow-motion replay shows the light-blue-jersey player (number 10) striking the ball with his right foot.",
+          "participants": [
+            "light-blue-jersey player"
+          ],
+          "actor": "light-blue-jersey player",
+          "object": "white ball",
+          "on_screen_text": [
+            {
+              "text": "DIEGO FORLÁN",
+              "location": "lower_third"
+            },
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match: Uruguay vs Germany",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:12",
+          "local_end": "00:14",
+          "event_type": "replay",
+          "description": "Another replay angle shows the ball hitting the back of the net.",
+          "participants": [
+            "red-jersey goalkeeper"
+          ],
+          "object": "white ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match: Uruguay vs Germany",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:14",
+          "local_end": "00:15",
+          "event_type": "celebration",
+          "description": "The light-blue-jersey player (number 10) is embraced by a teammate (number 17) in celebration.",
+          "participants": [
+            "light-blue-jersey player (number 10)",
+            "light-blue-jersey player (number 17)"
+          ],
+          "actor": "light-blue-jersey player (number 17)",
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match: Uruguay vs Germany",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 16.7,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:17",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:17",
+          "event_type": "celebration",
+          "description": "the blue-shirt man (number 10) celebrates with his teammates",
+          "participants": [
+            "blue-shirt man (number 10)",
+            "blue-shirt man (number 17)",
+            "blue-shirt man (number 9)"
+          ],
+          "actor": "blue-shirt man (number 10)",
+          "on_screen_text": [
+            {
+              "text": "Forlán",
+              "location": "jersey_number"
+            },
+            {
+              "text": "10",
+              "location": "jersey_number"
+            },
+            {
+              "text": "17",
+              "location": "jersey_number"
+            },
+            {
+              "text": "9",
+              "location": "jersey_number"
+            },
+            {
+              "text": "TARAF TAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "football match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:15",
+          "local_end": "00:17",
+          "event_type": "hand_raise",
+          "description": "the blue-shirt man (number 17) raises his hands in celebration",
+          "participants": [
+            "blue-shirt man (number 17)"
+          ],
+          "actor": "blue-shirt man (number 17)",
+          "on_screen_text": [
+            {
+              "text": "17",
+              "location": "jersey_number"
+            },
+            {
+              "text": "TARAF TAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "football match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:15",
+          "local_end": "00:17",
+          "event_type": "speak",
+          "description": "the blue-shirt man (number 17) smiles and speaks while celebrating",
+          "participants": [
+            "blue-shirt man (number 17)"
+          ],
+          "actor": "blue-shirt man (number 17)",
+          "on_screen_text": [
+            {
+              "text": "17",
+              "location": "jersey_number"
+            },
+            {
+              "text": "TARAF TAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "football match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:16",
+          "local_end": "00:17",
+          "event_type": "hug",
+          "description": "the blue-shirt man (number 9) joins the celebration and hugs the blue-shirt man (number 10)",
+          "participants": [
+            "blue-shirt man (number 9)",
+            "blue-shirt man (number 10)"
+          ],
+          "actor": "blue-shirt man (number 9)",
+          "on_screen_text": [
+            {
+              "text": "9",
+              "location": "jersey_number"
+            },
+            {
+              "text": "Forlán",
+              "location": "jersey_number"
+            },
+            {
+              "text": "10",
+              "location": "jersey_number"
+            },
+            {
+              "text": "TARAF TAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "football match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "question": "Did the curly-haired girl in black transform from the guy who was wearing a yellow shirt?",
+  "pred": "The video shows a magic performance where a man in a yellow shirt and blue pants is placed inside a black cage structure on a table. After the cage is covered and several spears are thrust through it, a performer with voluminous curly hair and a black costume is revealed to be the one now inside (or emerging from) the structure, while the man in the yellow shirt is later revealed to be back on the bed.\n\nEvidence: Frames at ~02:45 show the curly-haired performer in black emerging from the structure where the yellow-shirt man had just been enclosed.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "performer_reveal",
+      "description": "The main performer stands on the bed structure with one arm raised as the blue cloth falls away",
+      "participants": [
+        "main performer with voluminous curly hair",
+        "bed structure"
+      ],
+      "actor": "main performer with voluminous curly hair",
+      "object": "blue cloth",
+      "on_screen_text": [
+        {
+          "text": "MAGUS UTOPIA",
+          "location": "lower_third"
+        },
+        {
+          "text": "AGED 24-40",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Britain's Got Talent performance",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 14,
+      "start_time": "01:00",
+      "end_time": "01:02",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Bed Performance Setup"
+    },
+    {
+      "event_type": "performance",
+      "description": "Multiple performers in dark costumes move quickly around the stage perimeter while the main performer in yellow approaches the circular structure",
+      "participants": [
+        "yellow-shirt performer",
+        "dark-costume performers"
+      ],
+      "actor": "dark-costume performers",
+      "segment_boundary": "middle",
+      "segment_label": "Circus Stunt Performance",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 26,
+      "start_time": "01:30",
+      "end_time": "01:33",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Bed Performance Setup"
+    },
+    {
+      "event_type": "final_pose",
+      "description": "The central performer in yellow shirt holds a final pose in the center with arms outstretched while performers in dark clothing maintain their positions around him",
+      "participants": [
+        "yellow-shirt performer",
+        "dark-clothing performers"
+      ],
+      "actor": "all performers",
+      "segment_boundary": "middle",
+      "segment_label": "Theatrical Performance",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 48,
+      "start_time": "01:59",
+      "end_time": "02:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Bed Performance Setup"
+    },
+    {
+      "event_type": "emerge",
+      "description": "The main performer emerges from the hanging black box structure with arrows through it",
+      "participants": [
+        "purple-hair performer",
+        "black-outfit assistant"
+      ],
+      "actor": "purple-hair performer",
+      "segment_boundary": "middle",
+      "segment_label": "Dangerous Box Act",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 70,
+      "start_time": "02:45",
+      "end_time": "02:48",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Bed Performance Setup"
+    },
+    {
+      "event_type": "reveal",
+      "description": "Two performers in black costumes pull back a blue cloth to reveal a person lying on a bed",
+      "participants": [
+        "black-costume performer",
+        "black-costume performer"
+      ],
+      "actor": "black-costume performer",
+      "object": "blue cloth",
+      "cover": "blue cloth",
+      "hidden": "person on bed",
+      "segment_boundary": "middle",
+      "segment_label": "Britain's Got Talent performance",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 80,
+      "start_time": "03:00",
+      "end_time": "03:03",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Bed Performance Setup"
+    },
+    {
+      "event_type": "adjust",
+      "description": "The performer in comic book print shirt adjusts the bed cover with both hands",
+      "participants": [
+        "comic-book-shirt performer"
+      ],
+      "actor": "comic-book-shirt performer",
+      "object": "bed cover",
+      "segment_boundary": "middle",
+      "segment_label": "Bed Performance",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 87,
+      "start_time": "03:15",
+      "end_time": "03:17",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Bed Performance Setup"
+    }
+  ]
+}

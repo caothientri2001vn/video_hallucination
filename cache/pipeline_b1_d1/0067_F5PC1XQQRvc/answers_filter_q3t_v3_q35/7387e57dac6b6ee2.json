@@ -1,0 +1,92 @@
+{
+  "question": "Did the red embroidered dress appear closer to the white off-shoulder dress than to the first yellow dress?",
+  "pred": "Evidence: The red embroidered dress appears in the sequence from roughly 00:42 to 00:46, immediately followed by the white off-shoulder dress from 00:47 to 00:51. The first yellow dress appears much earlier, from 00:11 to 00:15. Therefore, the red embroidered dress is adjacent to the white off-shoulder dress and separated from the yellow dress by several other outfits.\n\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "hold": 1,
+      "posture_shift": 1,
+      "reveal": 1
+    },
+    "events": [
+      {
+        "event_type": "hold",
+        "description": "A woman holds multiple dresses in front of her with both hands",
+        "participants": [
+          "white-tshirt woman"
+        ],
+        "actor": "white-tshirt woman",
+        "object": "multiple dresses",
+        "on_screen_text": [
+          {
+            "text": "my top 10 dresses of 2024",
+            "location": "center"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Dress showcase",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:03",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Dress showcase"
+      },
+      {
+        "event_type": "posture_shift",
+        "description": "The woman shifts her stance, causing the dresses to move slightly",
+        "participants": [
+          "white-tshirt woman"
+        ],
+        "actor": "white-tshirt woman",
+        "object": "multiple dresses",
+        "segment_boundary": "middle",
+        "segment_label": "Dress showcase",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 2,
+        "start_time": "00:03",
+        "end_time": "00:06",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Dress showcase"
+      },
+      {
+        "event_type": "reveal",
+        "description": "The woman's purple slippers with cat designs become visible as she shifts position",
+        "participants": [
+          "white-tshirt woman"
+        ],
+        "actor": "white-tshirt woman",
+        "object": "slippers",
+        "object_after": "purple slippers with cat designs",
+        "segment_boundary": "middle",
+        "segment_label": "Dress showcase",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 3,
+        "start_time": "00:06",
+        "end_time": "00:09",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Dress showcase"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Dress showcase",
+        "event_index_range": [
+          1,
+          3
+        ]
+      }
+    ]
+  }
+}

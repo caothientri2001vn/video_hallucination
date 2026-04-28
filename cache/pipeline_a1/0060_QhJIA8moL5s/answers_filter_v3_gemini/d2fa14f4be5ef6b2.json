@@ -1,0 +1,257 @@
+{
+  "question": "Did the woman on the left open box number 9?",
+  "pred": "The video shows a game where two people sit across from each other at a table with a shelf of numbered boxes behind them. The woman in the blue dress is on the left side of the screen. According to the Context and visual evidence:\n\n1.  At approximately 00:50, the woman in the blue dress (left) stands up and lifts a box from the bottom-right position on the shelf.\n2.  The Context (event 25) explicitly identifies this as \"Box 9\".\n3.  She places it on the table and, at 00:59 (event 31), she opens the lid of this box to look inside.\n4.  Later in the video, she also opens a box from the bottom-left shelf position (labeled \"7\" on screen), but the initial action involves Box 9.\n\nEvidence: the blue-dress woman lifts the bottom-right box (Box 9) from the shelf and opens the lid of the white box (Box 9) at 00:59.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "lift",
+      "description": "the blue-dress woman lifts the bottom-right box (Box 9) from the shelf",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "object": "white box",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 25,
+      "start_time": "00:50",
+      "end_time": "00:52",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Box of Lies"
+    },
+    {
+      "event_type": "place",
+      "description": "the blue-dress woman places the white box (Box 9) on the table",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "object": "white box",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 26,
+      "start_time": "00:52",
+      "end_time": "00:54",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Box of Lies"
+    },
+    {
+      "event_type": "sit",
+      "description": "the blue-dress woman sits back down on her stool",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "object": "",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 27,
+      "start_time": "00:54",
+      "end_time": "00:55",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Box of Lies"
+    },
+    {
+      "event_type": "speak",
+      "description": "the black-suit man speaks to the blue-dress woman",
+      "participants": [
+        "black-suit man",
+        "blue-dress woman"
+      ],
+      "actor": "black-suit man",
+      "object": "",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 28,
+      "start_time": "00:55",
+      "end_time": "00:57",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 37,
+      "round_index": 1,
+      "segment_label_resolved": "Box of Lies"
+    },
+    {
+      "event_type": "look",
+      "description": "the blue-dress woman looks down at the box",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "object": "white box",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 29,
+      "start_time": "00:57",
+      "end_time": "00:58",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 21,
+      "round_index": 1,
+      "segment_label_resolved": "Box of Lies"
+    },
+    {
+      "event_type": "look",
+      "description": "the black-suit man looks at the blue-dress woman through the partition",
+      "participants": [
+        "black-suit man",
+        "blue-dress woman"
+      ],
+      "actor": "black-suit man",
+      "object": "",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 30,
+      "start_time": "00:58",
+      "end_time": "00:59",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 21,
+      "round_index": 1,
+      "segment_label_resolved": "Box of Lies"
+    },
+    {
+      "event_type": "open_box",
+      "description": "the blue-dress woman opens the lid of the white box (Box 9)",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "object": "white box",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 31,
+      "start_time": "00:59",
+      "end_time": "01:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Box of Lies"
+    },
+    {
+      "event_type": "look",
+      "description": "the black-suit man looks at the blue-dress woman across the table",
+      "participants": [
+        "black-suit man",
+        "blue-dress woman"
+      ],
+      "actor": "black-suit man",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "other"
+        },
+        {
+          "text": "2",
+          "location": "other"
+        },
+        {
+          "text": "3",
+          "location": "other"
+        },
+        {
+          "text": "4",
+          "location": "other"
+        },
+        {
+          "text": "5",
+          "location": "other"
+        },
+        {
+          "text": "6",
+          "location": "other"
+        },
+        {
+          "text": "8",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 32,
+      "start_time": "01:00",
+      "end_time": "01:02",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 21,
+      "round_index": 1,
+      "segment_label_resolved": "Box of Lies"
+    },
+    {
+      "event_type": "gesture",
+      "description": "the blue-dress woman reaches into the box on the table",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "object": "box",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "other"
+        },
+        {
+          "text": "2",
+          "location": "other"
+        },
+        {
+          "text": "3",
+          "location": "other"
+        },
+        {
+          "text": "4",
+          "location": "other"
+        },
+        {
+          "text": "5",
+          "location": "other"
+        },
+        {
+          "text": "6",
+          "location": "other"
+        },
+        {
+          "text": "8",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 33,
+      "start_time": "01:00",
+      "end_time": "01:03",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 32,
+      "round_index": 1,
+      "segment_label_resolved": "Box of Lies"
+    }
+  ]
+}

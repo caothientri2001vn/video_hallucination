@@ -1,0 +1,92 @@
+{
+  "question": "Did the man on the right open exactly one box?",
+  "pred": "Evidence: The man in the suit (identified as the RIGHT player) lifts and opens the box labeled 3 (events 63, 64, 68, 75). The woman is seen opening a different box later in the video (frame 03:00), but the man does not open any other box.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "reach",
+      "description": "the man in the suit reaches toward the top-right box labeled 3",
+      "participants": [
+        "man in suit",
+        "woman in blue dress"
+      ],
+      "actor": "man in suit",
+      "object": "top-right box labeled 3",
+      "segment_boundary": "middle",
+      "segment_label": "mystery box game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 63,
+      "start_time": "02:17",
+      "end_time": "02:19",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "place",
+      "description": "the man in the suit lifts the top-right box labeled 3 from the shelf and places it on the table",
+      "participants": [
+        "man in suit",
+        "woman in blue dress"
+      ],
+      "actor": "man in suit",
+      "object": "top-right box labeled 3",
+      "segment_boundary": "middle",
+      "segment_label": "mystery box game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 64,
+      "start_time": "02:19",
+      "end_time": "02:22",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "manipulate_object",
+      "description": "the man in the suit opens the box and reaches inside to examine its contents",
+      "participants": [
+        "man in suit",
+        "woman in blue dress"
+      ],
+      "actor": "man in suit",
+      "object": "box contents",
+      "segment_boundary": "middle",
+      "segment_label": "mystery box game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 68,
+      "start_time": "02:25",
+      "end_time": "02:30",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "Jimmy opens the white box on the table and removes a flat object from inside",
+      "participants": [
+        "dark-dress woman",
+        "suit-man"
+      ],
+      "actor": "suit-man",
+      "object": "white box",
+      "segment_boundary": "middle",
+      "segment_label": "Game Show Segment",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 75,
+      "start_time": "02:45",
+      "end_time": "02:51",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "question": "Did the teacher pull down the middle board?",
+  "pred": "Evidence: Context states \"Professor pulls down the middle section of the three-panel chalkboard\" (event 42)\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "walk",
+      "description": "Professor walks from right side of classroom toward the chalkboard",
+      "participants": [
+        "gray-suited professor"
+      ],
+      "actor": "gray-suited professor",
+      "segment_boundary": "middle",
+      "segment_label": "classroom lecture",
+      "continuation_hint": "complete",
+      "event_index": 41,
+      "start_time": "01:33",
+      "end_time": "01:36",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "lecture"
+    },
+    {
+      "event_type": "pull_board",
+      "description": "Professor pulls down the middle section of the three-panel chalkboard",
+      "participants": [
+        "gray-suited professor",
+        "chalkboard"
+      ],
+      "actor": "gray-suited professor",
+      "object": "chalkboard",
+      "segment_boundary": "middle",
+      "segment_label": "classroom lecture",
+      "continuation_hint": "complete",
+      "event_index": 42,
+      "start_time": "01:36",
+      "end_time": "01:38",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "lecture"
+    },
+    {
+      "event_type": "write_on_board",
+      "description": "Professor writes on the middle chalkboard section with chalk",
+      "participants": [
+        "gray-suited professor",
+        "chalkboard"
+      ],
+      "actor": "gray-suited professor",
+      "object": "chalk",
+      "segment_boundary": "middle",
+      "segment_label": "classroom lecture",
+      "continuation_hint": "complete",
+      "event_index": 43,
+      "start_time": "01:38",
+      "end_time": "01:42",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "lecture"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0036_10_qh-yxk-qAOc.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0036_10_qh-yxk-qAOc.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0036_10_qh-yxk-qAOc",
+    "n_target": 2,
+    "n_sub": 7,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.5,
+    "sub_accuracy": 0.7142857142857143
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Does the player with white shirt number 4 score the goal?",
+      "gt": "Yes",
+      "pred": "Yes, the player with white shirt number 4 (Sergio Ramos, as indicated by the on-screen text) scores the goal. This is verified by the sequence where the ball is headed into the net by the player wearing the number 4 white jersey, with \"SERGIO RAMOS\" text displayed during the goal sequence (e.g., frames showing the goal being scored and the text overlay).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a player wearing a white shirt?",
+      "gt": "Yes",
+      "pred": "Yes, there are players wearing white shirts visible in multiple frames (e.g., throughout the match sequences and celebrations).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player wearing the white shirt have the number 4?",
+      "gt": "Yes",
+      "pred": "Yes, the player wearing the white shirt with the number 4 is visible in the video (e.g., in frames showing the goal area during the corner kick sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the player wearing the white shirt number 4 score a goal?",
+      "gt": "Yes",
+      "pred": "Yes. The player wearing the white shirt with number 4 (Sergio Ramos, as indicated by the on-screen text “SERGIO RAMOS” in multiple frames) scores a goal. This is evident in the sequence where the ball enters the net (e.g., frames 5–9 show the goal being scored and celebrated, with the player in white jersey number 4 involved in the scoring action).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Does the player with white shirt number 7 score the goal?",
+      "gt": "No",
+      "pred": "Yes, the player with white shirt number 7 scores the goal. This is evident from the sequence where the ball is seen entering the net and the player (wearing number 7) is involved in the play leading to the goal, followed by celebration scenes. The goal occurs around the middle portion of the video (e.g., in frames showing the ball in the net and the player’s immediate reaction).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a player wearing a white shirt?",
+      "gt": "Yes",
+      "pred": "Yes, there are players wearing white shirts visible in multiple frames (e.g., throughout the match sequences and celebrations).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player wearing the white shirt have the number 7?",
+      "gt": "No",
+      "pred": "Yes, the player wearing the white shirt has the number 7. This can be observed in multiple frames, such as when the player is seen celebrating and during the goal-scoring sequence (e.g., frames showing the player with the number 7 on their back).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does a player with shirt number 7 score a goal?",
+      "gt": "No",
+      "pred": "Yes, a player with shirt number 7 scores a goal (evident in frames showing the ball entering the net with the number 7 player involved, e.g., around the 4-8 second mark).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does the player who scores the goal wear shirt number 4?",
+      "gt": "Yes",
+      "pred": "Yes, the player who scores the goal wears shirt number 4. This can be verified in the video frames where the goal is scored (e.g., around the 12-16 second mark in the sequence), with the player in a white jersey marked \"4\" (Sergio Ramos, as indicated by the on-screen text \"SERGIO RAMOS\" in some frames) being the one to score.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

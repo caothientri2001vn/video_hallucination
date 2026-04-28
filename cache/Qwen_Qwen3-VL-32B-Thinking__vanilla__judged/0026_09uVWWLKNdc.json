@@ -1,0 +1,574 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0026_09uVWWLKNdc.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0026_09uVWWLKNdc.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0026_09uVWWLKNdc",
+    "n_target": 14,
+    "n_sub": 43,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.8571428571428571,
+    "sub_accuracy": 0.9534883720930233
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "In the first experiment, did the yellow ball go to door number 1?",
+      "gt": "No",
+      "pred": "No. In the first experiment (with the countdown starting at 9), the yellow ball goes into door number 2, not door 1. This can be observed in the sequence where the ball travels through the setup and ends in the middle door (labeled \"2\").",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a yellow ball in the first experiment?",
+      "gt": "Yes",
+      "pred": "Yes, there was a yellow ball in the first experiment. This is visible in the sequence of frames showing the first setup (e.g., the frame with the number “9” and the ball on the track, around the 4th frame in the provided sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "In the first experiment, did the yellow ball go to door number 2?",
+      "gt": "Yes",
+      "pred": "Yes. In the first experiment (with the countdown starting at 9), the yellow ball ends up in door number 2, as seen in the frame where the ball is inside the door labeled \"2\".",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "In the first experiment, did the yellow ball go to door number 1?",
+      "gt": "No",
+      "pred": "No. In the first experiment (with the countdown starting at 9), the yellow ball goes into door number 2, not door 1. This can be observed in the sequence where the ball travels through the setup and ends in the middle door (labeled \"2\").",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "In the first experiment, did the yellow ball go to door number 2?",
+      "gt": "Yes",
+      "pred": "Yes. In the first experiment (with the countdown starting at 9), the yellow ball ends up in door number 2, as seen in the frame where the ball is inside the door labeled \"2\".",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a yellow ball appear in the first experiment?",
+      "gt": "Yes",
+      "pred": "Yes, a yellow ball appeared in the first experiment. This is visible in the initial setup frames (e.g., the 4th image in the sequence, where the countdown starts at \"9\" and the yellow ball is present on the contraption).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "In the first experiment, did the yellow ball reach door number 2?",
+      "gt": "Yes",
+      "pred": "Yes, in the first experiment, the yellow ball reached door number 2. This is visible in the frame where the ball is positioned inside the door labeled \"2\" (the 11th frame of the provided sequence, showing the ball in the middle door).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was door number 2 the destination of the yellow ball in the first experiment?",
+      "gt": "Yes",
+      "pred": "Yes, in the first experiment, the yellow ball ended up in door number 2. This can be observed in the sequence of frames showing the ball's path, where the final position of the ball is in the compartment labeled \"2\" (e.g., around the 10-12 second mark in the first experiment segment).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "In the first experiment, did the yellow ball go to door number 3?",
+      "gt": "No",
+      "pred": "No. In the first experiment (with the countdown starting at 9), the yellow ball ends up in door number 2, not door number 3. This is visible in the frame where the ball is positioned at the doors after moving through the setup (e.g., around the 10-11 second mark in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a yellow ball in the first experiment?",
+      "gt": "Yes",
+      "pred": "Yes, there was a yellow ball in the first experiment. This is visible in the sequence of frames showing the first setup (e.g., the frame with the number “9” and the ball on the track, around the 4th frame in the provided sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "In the first experiment, did the yellow ball go to door number 2?",
+      "gt": "Yes",
+      "pred": "Yes. In the first experiment (with the countdown starting at 9), the yellow ball ends up in door number 2, as seen in the frame where the ball is inside the door labeled \"2\".",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "In the first experiment, did the yellow ball go to door number 3?",
+      "gt": "No",
+      "pred": "No. In the first experiment (with the countdown starting at 9), the yellow ball ends up in door number 2, not door number 3. This is visible in the frame where the ball is positioned at the doors after moving through the setup (e.g., around the 10-11 second mark in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "In the first experiment, did the white ball go to door number 1?",
+      "gt": "No",
+      "pred": "No. In the first experiment (the sequence with the countdown from 9, 7, etc.), the yellow ball ends up in door number 2, not door 1. This is visible in the frame where the ball is positioned within the numbered doors (e.g., the frame showing the ball in the middle door, labeled \"2\").",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a white ball in the first experiment?",
+      "gt": "No",
+      "pred": "No. In the first experiment (e.g., frames showing the setup with the \"9\" countdown, the \"7\" countdown, etc.), the ball is yellow, not white.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did any ball go to door number 1 in the first experiment?",
+      "gt": "No",
+      "pred": "No. In the first experiment (the sequence with the countdown starting at 9, shown in frames 4-11), the ball ends up in door number 2, not door number 1. This can be verified by observing the final position of the ball in the sequence (e.g., frame 11 shows the ball in door 2).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "In the first experiment, did a white ball go to any door?",
+      "gt": "No",
+      "pred": "No. In the first experiment (the sequence starting with the setup showing \"9\" and \"7\" in the countdown), the ball used is yellow, and there is no white ball that goes into any door. The frames show a yellow ball moving through the course and ending in one of the doors (e.g., in frame 11, the yellow ball is in door 2). No white ball is present in this experiment.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "In the first experiment, did the white ball go to door number 2?",
+      "gt": "No",
+      "pred": "Yes. In the first experiment (the sequence with the countdown starting at 9, as seen in the frames with the number 9 and the ball setup), the white ball goes into door number 2 (evident when the ball is shown in the door section, specifically in the frame where the ball is in the middle door labeled \"2\").",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a white ball appear in the first experiment?",
+      "gt": "No",
+      "pred": "No. In the first experiment (e.g., the sequence starting with the countdown \"9\" and the setup with numbered doors 1-3), the ball is yellow, not white. This is directly observable in the video frames showing the first experimental setup.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "In the first experiment, did a yellow ball go to door number 2?",
+      "gt": "Yes",
+      "pred": "Yes. In the first experiment, the yellow ball goes into door number 2 (as seen in the sequence of frames showing the ball's movement through the setup, with the ball ending in the door labeled \"2\").",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "In the first experiment, did a white ball reach door number 2?",
+      "gt": "No",
+      "pred": "No. In the first experiment (e.g., frames showing the setup with the \"9\" countdown and the yellow ball), the ball is yellow, not white. No white ball is observed reaching any door in that sequence.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "In the first experiment, did the white ball go to door number 3?",
+      "gt": "No",
+      "pred": "No. In the first experiment (the sequence with the countdown starting at 9), the yellow ball ends up in door number 2, not door 3. This is visible in the frame where the ball is positioned inside the door sections (e.g., around the 12th frame of the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a white ball appear in the first experiment?",
+      "gt": "No",
+      "pred": "No. In the first experiment (e.g., the sequence starting with the countdown \"9\" and the setup with numbered doors 1-3), the ball is yellow, not white. This is directly observable in the video frames showing the first experimental setup.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "In the first experiment, did the yellow ball go to door number 3?",
+      "gt": "No",
+      "pred": "No. In the first experiment (with the countdown starting at 9), the yellow ball ends up in door number 2, not door number 3. This is visible in the frame where the ball is positioned at the doors after moving through the setup (e.g., around the 10-11 second mark in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "In the first experiment, did the yellow ball go to door number 2?",
+      "gt": "Yes",
+      "pred": "Yes. In the first experiment (with the countdown starting at 9), the yellow ball ends up in door number 2, as seen in the frame where the ball is inside the door labeled \"2\".",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "In the second experiment, did the yellow ball go to door number 1?",
+      "gt": "No",
+      "pred": "No. In the second experiment, the yellow ball went to door number 2 (evident in the frame where the ball is positioned within the door labeled \"2\").",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a yellow ball appear in the second experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment (e.g., around the frame showing the setup with the \"9\" countdown and the \"Ball Will Go In Which Door?\" text), a yellow ball is visible.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "In the second experiment, did the yellow ball go to door number 2?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment (the setup with the red car and the line of bottles), the yellow ball ends up in door number 2, as seen in the frame where the ball is positioned in the second door (timestamp corresponding to the final state of that experiment's sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "In the second experiment, did the yellow ball go to door number 1?",
+      "gt": "No",
+      "pred": "No. In the second experiment, the yellow ball went to door number 2 (evident in the frame where the ball is positioned within the door labeled \"2\").",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "In the second experiment, did the yellow ball go to door number 2?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment (the setup with the red car and the line of bottles), the yellow ball ends up in door number 2, as seen in the frame where the ball is positioned in the second door (timestamp corresponding to the final state of that experiment's sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a yellow ball appear in the second experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment (e.g., around the frame showing the setup with the \"9\" countdown and the \"Ball Will Go In Which Door?\" text), a yellow ball is visible.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was there a door number 2 in the second experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment (e.g., frames showing the setup with \"9\" and \"7\" countdowns), the doors are labeled 1, 2, and 3, and the ball is shown entering door 2 (e.g., in the frame where the ball is in door 2 after the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "In the second experiment, did the yellow ball reach door number 2?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment, the yellow ball reaches door number 2 (evident in the frame showing the ball positioned within door 2 after the experiment's sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "target",
+      "question": "In the second experiment, did the yellow ball go to door number 3?",
+      "gt": "No",
+      "pred": "No. In the second experiment (featuring the red car and multiple white tubes), the yellow ball goes into door number 2, not door number 3. This is visible in the sequence where the ball’s path is traced through the setup (e.g., the frame showing the ball in the door area confirms it is in door 2).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a yellow ball appear in the second experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment (e.g., around the frame showing the setup with the \"9\" countdown and the \"Ball Will Go In Which Door?\" text), a yellow ball is visible.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "In the second experiment, did the yellow ball go to door number 2?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment (the setup with the red car and the line of bottles), the yellow ball ends up in door number 2, as seen in the frame where the ball is positioned in the second door (timestamp corresponding to the final state of that experiment's sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "In the second experiment, did the yellow ball go to door number 3?",
+      "gt": "No",
+      "pred": "No. In the second experiment (featuring the red car and multiple white tubes), the yellow ball goes into door number 2, not door number 3. This is visible in the sequence where the ball’s path is traced through the setup (e.g., the frame showing the ball in the door area confirms it is in door 2).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "target",
+      "question": "In the second experiment, did the red car hit the yellow ball?",
+      "gt": "No",
+      "pred": "To determine if the red car hit the yellow ball in the second experiment, we analyze the relevant frames:  \n\n- The second experiment (featuring the red car) begins with a countdown (e.g., frame 12: \"9\" countdown, red car on a ramp, yellow ball at \"START\").  \n- As the yellow ball moves through the setup (e.g., frames 16–18), the red car remains stationary on the ramp. The ball’s path and the car’s position show no interaction (e.g., the ball reaches the doors without the car moving or colliding with it).  \n\nThus, the red car did not hit the yellow ball.  \n\n**Answer:** No, the red car did not hit the yellow ball.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a red car appear in the second experiment?",
+      "gt": "Yes",
+      "pred": "Yes, a red car appeared in the second experiment. This is visible in the frames showing the setup with the countdown (e.g., around timestamp 11-18, where a red car is present on the cardboard structure).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a yellow ball appear in the second experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment (e.g., around the frame showing the setup with the \"9\" countdown and the \"Ball Will Go In Which Door?\" text), a yellow ball is visible.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "In the second experiment, did the red car hit the brown obstacle?",
+      "gt": "Yes",
+      "pred": "No. In the second experiment (featuring the red car, seen in frames 12-19), the red car remains on the cardboard ramp and does not make contact with the brown obstacle during the ball's movement.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "In the second experiment, did the red car hit the yellow ball?",
+      "gt": "No",
+      "pred": "To determine if the red car hit the yellow ball in the second experiment, we analyze the relevant frames:  \n\n- The second experiment (featuring the red car) begins with a countdown (e.g., frame 12: \"9\" countdown, red car on a ramp, yellow ball at \"START\").  \n- As the yellow ball moves through the setup (e.g., frames 16–18), the red car remains stationary on the ramp. The ball’s path and the car’s position show no interaction (e.g., the ball reaches the doors without the car moving or colliding with it).  \n\nThus, the red car did not hit the yellow ball.  \n\n**Answer:** No, the red car did not hit the yellow ball.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "target",
+      "question": "In the second experiment, did the red car hit the brown obstacle?",
+      "gt": "Yes",
+      "pred": "No. In the second experiment (featuring the red car, seen in frames 12-19), the red car remains on the cardboard ramp and does not make contact with the brown obstacle during the ball's movement.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a red car in the second experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment setup (e.g., frame showing countdown with the red car), a red car is visible on the cardboard structure.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was there a brown obstacle in the second experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment setup (e.g., frames showing the countdown with \"9\" and the ball path), brown cardboard obstacles are visible (e.g., the large cardboard sheet and other brown structures in the path). This is directly observable in frames like the one with the \"9\" countdown (e.g., the 12th frame in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the red car make contact with the brown obstacle in the second experiment?",
+      "gt": "Yes",
+      "pred": "No. In the second experiment (featuring the red car), the red car remains on its cardboard platform and does not make contact with the brown obstacle (the cardboard structure guiding the ball). This is observable in the sequence of frames where the ball travels through the setup (e.g., frames 12–19).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 11,
+      "kind": "target",
+      "question": "In the third experiment, did the yellow ball go to door number 1?",
+      "gt": "No",
+      "pred": "To determine if the yellow ball went to door number 1 in the third experiment, we analyze the relevant frames:  \n\n- The third experiment features a setup with multiple white tubes (with colored tops) and a countdown (e.g., \"8\", \"6\" visible in frames).  \n- In the final frame of this experiment (where the ball’s path is completed), the yellow ball is positioned in **door number 2** (as seen in the frame showing the ball inside the \"2\" door).  \n\nThus, the yellow ball did not go to door number 1.  \n\n**Answer:** No.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a yellow ball in the third experiment?",
+      "gt": "Yes",
+      "pred": "Yes, there was a yellow ball in the third experiment. In the frames showing the third setup (e.g., frame 19, 20, 21, 22, 23, 24, 25, 26, 27, 28), a yellow ball is visible on the right side of the structure.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the yellow ball go to door number 2 in the third experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the third experiment (with the countdown starting at 8), the yellow ball ends up in door number 2, as seen in the frame where the ball is positioned within the second door (labeled \"2\").",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the yellow ball go to door number 1 in the third experiment?",
+      "gt": "No",
+      "pred": "No. In the third experiment (the setup with the countdown starting from 8, visible in frames with \"8\" and \"6\" countdowns), the yellow ball goes into door number 2, not door 1. This is evident in the frame where the ball is positioned within the door slots (e.g., the frame showing the ball in the second slot from the left, labeled \"2\").",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "target",
+      "question": "In the third experiment, did the yellow ball go to door number 2?",
+      "gt": "Yes",
+      "pred": "Yes. In the third experiment, the yellow ball is shown entering door number 2 (evident in the frame where the ball is positioned within the \"2\" labeled door section).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a yellow ball appear in the third experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the third experiment (evident from the setup with multiple white cylindrical objects, a red car, and the \"1 2 3\" doors), a yellow ball is visible at the \"START\" position and moves through the setup (e.g., frames showing the countdown from 9 to 2 in the third experiment sequence, where the yellow ball is present).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the yellow ball reach door number 2 in the third experiment?",
+      "gt": "Yes",
+      "pred": "Yes, in the third experiment (the setup with the countdown from 8 to 6, seen in frames 19-26), the yellow ball reached door number 2. This is visible in frame 26, where the ball is positioned inside the middle compartment labeled \"2\".",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the yellow ball reach door number 3 in the third experiment?",
+      "gt": "No",
+      "pred": "No. In the third experiment (corresponding to the setup with the countdown showing \"8\" and \"6\" in the video), the yellow ball ends in door number 2, not door number 3. This can be verified from the frame where the ball is positioned in the doors (e.g., around the 27-28 second mark in the video sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "target",
+      "question": "In the third experiment, did the yellow ball go to door number 3",
+      "gt": "No",
+      "pred": "No. In the third experiment (the setup with the countdown starting at 8), the yellow ball goes into door number 2, as seen in the frame where the ball is positioned in door 2 after the release (around timestamp 27).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a yellow ball in the third experiment?",
+      "gt": "Yes",
+      "pred": "Yes, there was a yellow ball in the third experiment. In the frames showing the third setup (e.g., frame 19, 20, 21, 22, 23, 24, 25, 26, 27, 28), a yellow ball is visible on the right side of the structure.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the yellow ball go to door number 2 in the third experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the third experiment (with the countdown starting at 8), the yellow ball ends up in door number 2, as seen in the frame where the ball is positioned within the second door (labeled \"2\").",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the yellow ball go to door number 3 in the third experiment?",
+      "gt": "No",
+      "pred": "No. In the third experiment (frames 20-28), the yellow ball ends up in door number 2, not door number 3 (as seen in frame 27).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

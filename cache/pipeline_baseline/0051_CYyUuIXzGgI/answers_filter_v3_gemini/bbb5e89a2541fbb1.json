@@ -1,0 +1,68 @@
+{
+  "question": "Did the teacher pull up the right board?",
+  "pred": "The question asks if the teacher pulled up the right board. According to the Context (event 40) and visual evidence in the frames, the professor (grey-suit man) interacts with the chalkboard structure. Specifically, at approximately 01:36-01:38, he pulls **DOWN** the **MIDDLE** chalkboard section to reveal diagrams. There is no evidence in the Context or the frames of him pulling up the right board.\n\nEvidence: Context event 40 states \"The professor pulls DOWN the MIDDLE chalkboard section to reveal more diagrams.\"\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "point",
+      "description": "The professor points with his right hand toward the students while lecturing.",
+      "participants": [
+        "grey-suit man"
+      ],
+      "actor": "grey-suit man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Math Lecture",
+      "continuation_hint": "complete",
+      "event_index": 39,
+      "start_time": "01:34",
+      "end_time": "01:36",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 13,
+      "round_index": 1,
+      "segment_label_resolved": "Mathematics Lecture"
+    },
+    {
+      "event_type": "pull_board",
+      "description": "The professor pulls DOWN the MIDDLE chalkboard section to reveal more diagrams.",
+      "participants": [
+        "grey-suit man"
+      ],
+      "actor": "grey-suit man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Math Lecture",
+      "continuation_hint": "complete",
+      "event_index": 40,
+      "start_time": "01:36",
+      "end_time": "01:38",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Mathematics Lecture"
+    },
+    {
+      "event_type": "point",
+      "description": "The professor points at the newly revealed diagrams on the middle chalkboard section.",
+      "participants": [
+        "grey-suit man"
+      ],
+      "actor": "grey-suit man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Math Lecture",
+      "continuation_hint": "complete",
+      "event_index": 41,
+      "start_time": "01:38",
+      "end_time": "01:40",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 13,
+      "round_index": 1,
+      "segment_label_resolved": "Mathematics Lecture"
+    }
+  ]
+}

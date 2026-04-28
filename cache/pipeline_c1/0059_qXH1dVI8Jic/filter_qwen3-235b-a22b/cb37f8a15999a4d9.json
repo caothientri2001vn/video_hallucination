@@ -1,0 +1,98 @@
+{
+  "question": "Was the woman standing in the center on the same team as the host?",
+  "top_k": 15,
+  "indices": [
+    1,
+    60,
+    126,
+    130
+  ],
+  "events": [
+    {
+      "event_type": "stand",
+      "description": "Four people stand in front of blue curtain with Charades board visible",
+      "participants": [
+        "checkered-jumpsuit woman",
+        "black-outfit man",
+        "corset-top woman",
+        "suit man"
+      ],
+      "actor": "all",
+      "segment_boundary": "start",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:02",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "gesture",
+      "description": "The man in the suit gestures with both hands while speaking to the guests",
+      "participants": [
+        "suit man",
+        "black and gold top woman",
+        "checkered jumpsuit woman",
+        "black outfit man"
+      ],
+      "actor": "suit man",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 60,
+      "start_time": "01:45",
+      "end_time": "01:55",
+      "sub_events": [],
+      "subtype_order": 27,
+      "subtype_total": 53,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "manipulate_panel",
+      "description": "The woman in the checkered jumpsuit touches panel 7 on the Charades board",
+      "participants": [
+        "checkered jumpsuit woman",
+        "suit man"
+      ],
+      "actor": "checkered jumpsuit woman",
+      "object": "panel 7",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 126,
+      "start_time": "04:30",
+      "end_time": "04:34",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "game",
+      "description": "man holds up wooden tile with number 7 to show the charade prompt",
+      "participants": [
+        "checkered-jumpsuit woman",
+        "suit-man man"
+      ],
+      "actor": "suit-man man",
+      "object": "wooden tile with number 7",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 130,
+      "start_time": "04:45",
+      "end_time": "04:50",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    }
+  ]
+}

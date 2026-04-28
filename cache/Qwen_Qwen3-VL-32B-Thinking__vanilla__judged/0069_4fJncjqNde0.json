@@ -1,0 +1,233 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0069_4fJncjqNde0.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0069_4fJncjqNde0.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0069_4fJncjqNde0",
+    "n_target": 5,
+    "n_sub": 17,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.6,
+    "sub_accuracy": 0.47058823529411764
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Did the spaghetti-strap short dress appear before the strapless flared mini dress?",
+      "gt": "Yes",
+      "pred": "Yes. The spaghetti-strap short dress appears in the sequence before the strapless flared mini dress. For example, the spaghetti-strap short dress is shown in the frames around the 15th image (e.g., the frame with the black mini dress with thin straps), while the strapless flared mini dress appears later in the sequence (e.g., the frame with the strapless black mini dress with a flared skirt).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a spaghetti-strap short dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A spaghetti-strap short dress appears in the video, visible in frames around the 14-18 second mark (e.g., the 15th image in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a strapless flared mini dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A strapless flared mini dress appears in the video (e.g., in the sequence of frames showing the person in a black strapless mini dress with a flared skirt, around the 19 - 23 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the spaghetti-strap short dress appear before the strapless flared mini dress?",
+      "gt": "Yes",
+      "pred": "Yes. The spaghetti-strap short dress appears in the sequence before the strapless flared mini dress. For example, the spaghetti-strap short dress is shown in the frames around the 15th image (e.g., the frame with the black mini dress with thin straps), while the strapless flared mini dress appears later in the sequence (e.g., the frame with the strapless black mini dress with a flared skirt).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Did the longest black dress appear before any of the shorter dresses?",
+      "gt": "No",
+      "pred": "Yes. The longest black dress (with white ruffle and high slit) appears first in the sequence of black dresses shown, as seen in the frames starting around the 10th frame (when she transitions from holding the dresses to wearing the first one). Shorter dresses (e.g., mini dresses) appear later.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a long black dress appear in the video?",
+      "gt": "No",
+      "pred": "Yes. A long black dress (with a white ruffled asymmetrical skirt) appears in the video, visible in frames starting around the 10th frame (e.g., \"10.0s\" and subsequent frames). Additionally, an off-the-shoulder black midi-length dress is shown later (e.g., \"21.0s\" and subsequent frames).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did multiple short dresses appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. Multiple short dresses appear: a short black dress with thin straps (e.g., around the 15-20 second mark) and a strapless short black dress (e.g., around the 20-25 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was there any black dress that appeared before the shorter dresses?",
+      "gt": "No",
+      "pred": "Yes. The first black dress shown (a strapless black dress with a white ruffled asymmetrical hem) appears before the shorter black dresses. This occurs in the sequence following the initial frames where the person holds the dresses, with the first outfit display of the black dress (long with white ruffle) appearing before the shorter styles (e.g., the strapless mini dress, the spaghetti-strap mini dress, etc.).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Did the off-shoulder dress appear between the strapless dress with the white layered skirt and the spaghetti-strap dress?",
+      "gt": "No",
+      "pred": "No. The off-shoulder dress appears after the spaghetti-strap dress, not between the strapless dress with the white layered skirt and the spaghetti-strap dress. The sequence is: strapless dress with white layered skirt (10-17 frames) → spaghetti-strap dress (18-22 frames) → strapless short dress (23-27 frames) → off-shoulder dress (28-33 frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did an off-shoulder dress appear in the video?",
+      "gt": "No",
+      "pred": "Yes, an off-shoulder dress appeared in the video (visible in the final sequence of frames).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a strapless dress with a white layered skirt appear in the video?",
+      "gt": "No",
+      "pred": "Yes, a strapless dress with a white layered skirt appeared in the video (e.g., around the 10th frame sequence).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did a spaghetti-strap dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A spaghetti-strap dress (a short black dress with thin straps) appears in the video, visible in the sequence of frames showing the woman in a short black dress with thin straps (e.g., around the 14th–18th frames of the provided sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Were there three or more different dresses shown in sequence?",
+      "gt": "No",
+      "pred": "Yes. The video shows at least four distinct black dresses in sequence: a strapless black dress with a white ruffled side (e.g., around the 10th frame), a black mini dress with thin straps (e.g., 16th frame), a strapless black mini dress (e.g., 21st frame), and an off-the-shoulder black midi dress (e.g., 26th frame).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Did the off-shoulder dress appear between two mini dresses?",
+      "gt": "No",
+      "pred": "No. The off-shoulder dress appears after two mini dresses: the thin-strapped mini dress (16–22s) and the strapless mini dress (23–28s). The off-shoulder dress (29–35s) is shown after both mini dresses, not between them.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did an off-shoulder dress appear in the video?",
+      "gt": "No",
+      "pred": "Yes, an off-shoulder dress appeared in the video (visible in the final sequence of frames).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did at least two mini dresses appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. Two mini dresses are visible: a black mini dress with thin straps (e.g., in frames showing the short, form-fitting dress with a deep neckline) and a strapless black mini dress (e.g., in frames showing the short, flared strapless dress).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was there any dress that appeared between the two mini dresses?",
+      "gt": "No",
+      "pred": "No. The two mini dresses are the strappy mini dress (shown around the 16–20 second mark) and the strapless mini dress (shown around the 20–24 second mark). There is no dress shown between these two mini dresses.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Did the longest dress appear before the shortest dresses?",
+      "gt": "No",
+      "pred": "Yes. The longest dress (with the white ruffled asymmetrical hem) appears first in the sequence of dresses (around the 10-second mark), while the shortest dresses (mini dresses) appear later (e.g., around the 17–31 second marks).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a long dress appear in the video?",
+      "gt": "No",
+      "pred": "Yes, a long dress appeared. For example, in the sequence where the person wears a black strapless dress with a white ruffled asymmetrical skirt that extends to the floor (approximately from the 10th frame to the 16th frame).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did short dresses appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, short dresses appeared in the video. For example, frames showing a black mini dress with thin straps (e.g., around the 15th frame) and a strapless black mini dress (e.g., around the 20th frame) confirm this.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Were there dresses of varying lengths shown in the video?",
+      "gt": "No",
+      "pred": "Yes. The video shows dresses of varying lengths: a long dress with a white ruffled detail (e.g., around 10 seconds), a short mini dress (e.g., around 17 seconds), another short strapless mini dress (e.g., around 24 seconds), and a midi-length off-shoulder dress (e.g., around 31 seconds).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did any long dress appear before the short dresses?",
+      "gt": "No",
+      "pred": "Yes. A long black dress with a white ruffled asymmetrical skirt appears first (around the 10th frame), followed by short dresses (e.g., the black mini dress with spaghetti straps appears later, around the 18th frame).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    }
+  ]
+}

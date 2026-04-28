@@ -1,0 +1,265 @@
+{
+  "question": "Does the woman win the game?",
+  "pred": "The video shows a ball-rolling game between a pink-shirt woman and a red-hoodie man. They roll balls into slots labeled with point values (1, 0, 2, 0, 1). To determine the winner, we must track the successful rolls and calculate the final scores based on the slot values.\n\n**Pink-shirt woman's scoring rolls:**\n1. Pink ball enters the second slot from the left (0 points) at ~01:06.\n2. Pink ball enters the rightmost slot (1 point) at ~01:11.\n3. Pink ball enters the leftmost slot (1 point) at ~01:14.\n4. Pink ball enters the second slot from the right (0 points) at ~01:15.\n5. Pink ball enters the rightmost slot (1 point) at ~01:16.\n6. Pink ball enters the leftmost slot (1 point) at ~01:17.\n7. Pink ball enters the rightmost slot (1 point) at ~01:18.\n8. Pink ball enters the leftmost slot (1 point) at ~01:19.\n**Total score for woman: 6 points.**\n\n**Red-hoodie man's scoring rolls:**\n1. Red ball enters the middle slot (2 points) at ~01:02.\n2. Red ball enters the middle slot (2 points) at ~01:09.\n3. Red ball enters the middle slot (2 points) at ~01:13.\n4. Red ball enters the middle slot (2 points) at ~01:14.\n5. Red ball enters the middle slot (2 points) at ~01:15.\n6. Red ball enters the middle slot (2 points) at ~01:16.\n7. Red ball enters the middle slot (2 points) at ~01:17.\n8. Red ball enters the middle slot (2 points) at ~01:18.\n9. Red ball enters the middle slot (2 points) at ~01:19.\n**Total score for man: 18 points.**\n\nThe red-hoodie man wins the game with 18 points compared to the woman's 6 points. The man is also shown celebrating at the end of the video (event 76).\n\nEvidence: frames at ~01:19 show the final state of the board where the man has significantly more balls in the high-scoring middle slot (2) than the woman has in the 1-point slots.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "game",
+      "description": "the red ball rolled by the man enters the middle scoring slot (labeled 2)",
+      "participants": [
+        "red-hoodie man"
+      ],
+      "actor": "red-hoodie man",
+      "object": "red ball",
+      "outcome": "in",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "other"
+        },
+        {
+          "text": "0",
+          "location": "other"
+        },
+        {
+          "text": "2",
+          "location": "other"
+        },
+        {
+          "text": "0",
+          "location": "other"
+        },
+        {
+          "text": "1",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Ball Rolling Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 63,
+      "start_time": "01:02",
+      "end_time": "01:03",
+      "sub_events": [],
+      "subtype_order": 18,
+      "subtype_total": 29,
+      "round_index": 1,
+      "segment_label_resolved": "Ball Slide Game"
+    },
+    {
+      "event_type": "game",
+      "description": "the pink ball rolled by the woman enters the second slot from the left (labeled 0)",
+      "participants": [
+        "pink-shirt woman"
+      ],
+      "actor": "pink-shirt woman",
+      "object": "pink ball",
+      "outcome": "in",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "other"
+        },
+        {
+          "text": "0",
+          "location": "other"
+        },
+        {
+          "text": "2",
+          "location": "other"
+        },
+        {
+          "text": "0",
+          "location": "other"
+        },
+        {
+          "text": "1",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Ball Rolling Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 67,
+      "start_time": "01:06",
+      "end_time": "01:07",
+      "sub_events": [],
+      "subtype_order": 22,
+      "subtype_total": 29,
+      "round_index": 1,
+      "segment_label_resolved": "Ball Slide Game"
+    },
+    {
+      "event_type": "game",
+      "description": "the red ball rolled by the man enters the middle scoring slot (labeled 2)",
+      "participants": [
+        "red-hoodie man"
+      ],
+      "actor": "red-hoodie man",
+      "object": "red ball",
+      "outcome": "in",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "other"
+        },
+        {
+          "text": "0",
+          "location": "other"
+        },
+        {
+          "text": "2",
+          "location": "other"
+        },
+        {
+          "text": "0",
+          "location": "other"
+        },
+        {
+          "text": "1",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Ball Rolling Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 70,
+      "start_time": "01:09",
+      "end_time": "01:10",
+      "sub_events": [],
+      "subtype_order": 25,
+      "subtype_total": 29,
+      "round_index": 1,
+      "segment_label_resolved": "Ball Slide Game"
+    },
+    {
+      "event_type": "game",
+      "description": "the pink ball rolled by the woman enters the rightmost scoring slot (labeled 1)",
+      "participants": [
+        "pink-shirt woman"
+      ],
+      "actor": "pink-shirt woman",
+      "object": "pink ball",
+      "outcome": "in",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "other"
+        },
+        {
+          "text": "0",
+          "location": "other"
+        },
+        {
+          "text": "2",
+          "location": "other"
+        },
+        {
+          "text": "0",
+          "location": "other"
+        },
+        {
+          "text": "1",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Ball Rolling Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 72,
+      "start_time": "01:11",
+      "end_time": "01:12",
+      "sub_events": [],
+      "subtype_order": 27,
+      "subtype_total": 29,
+      "round_index": 1,
+      "segment_label_resolved": "Ball Slide Game"
+    },
+    {
+      "event_type": "game",
+      "description": "the red-hoodie man rolls a red ball across the table",
+      "participants": [
+        "red-hoodie man"
+      ],
+      "actor": "red-hoodie man",
+      "object": "red ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Ball Rolling Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 74,
+      "start_time": "01:13",
+      "end_time": "01:14",
+      "sub_events": [],
+      "subtype_order": 29,
+      "subtype_total": 29,
+      "round_index": 1,
+      "segment_label_resolved": "Ball Slide Game"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the red-hoodie man raises his arm in celebration as the ball enters the leftmost slot (labeled 1)",
+      "participants": [
+        "red-hoodie man"
+      ],
+      "actor": "red-hoodie man",
+      "object": "red ball",
+      "outcome": "in",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "other"
+        },
+        {
+          "text": "0",
+          "location": "other"
+        },
+        {
+          "text": "2",
+          "location": "other"
+        },
+        {
+          "text": "0",
+          "location": "other"
+        },
+        {
+          "text": "1",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Ball Rolling Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 75,
+      "start_time": "01:14",
+      "end_time": "01:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Ball Slide Game"
+    },
+    {
+      "event_type": "react",
+      "description": "the red-hoodie man jumps up and down while cheering",
+      "participants": [
+        "pink-shirt woman",
+        "red-hoodie man"
+      ],
+      "actor": "red-hoodie man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Ball Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 76,
+      "start_time": "01:15",
+      "end_time": "01:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Ball Slide Game"
+    }
+  ]
+}

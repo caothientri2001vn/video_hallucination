@@ -1,0 +1,154 @@
+{
+  "question": "Did the man on the right open one box?",
+  "pred": "The question asks if the man on the right opened at least one box. According to the alias map in the Context, the \"RIGHT player\" is Jimmy Fallon, also described as the \"grey-suit man\", \"blue-suit man\", \"brown-suit man\", or \"black-suit man\".\n\nReviewing the Context for box-opening events by this person:\n1. At 02:50 (event 75), the \"black-suit man\" (RIGHT player) lifts Box 3 from the shelf.\n2. At 03:04 (event 81), the \"grey-suit man\" (RIGHT player) \"opens the lid of the box on the table to reveal its contents\".\n3. At 03:08 (event 83), he lifts the contents out of the box.\n\nFollowing Rule 3, these events describe the manipulation of a single box (Box 3). Since the RIGHT player performed the action of opening the lid to reveal the contents, he opened at least one box.\n\nEvidence: at 03:04 the grey-suit man opens the lid of the box on the table to reveal its contents.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "lift",
+      "description": "the black-suit man lifts the top-right box (Box 3) from the shelf",
+      "participants": [
+        "blue-suit man",
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "object": "white box (Box 3)",
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 75,
+      "start_time": "02:50",
+      "end_time": "02:53",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "What's In The Box"
+    },
+    {
+      "event_type": "place",
+      "description": "the black-suit man places the white box (Box 3) on the table in front of him",
+      "participants": [
+        "blue-suit man",
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "object": "white box (Box 3)",
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 76,
+      "start_time": "02:53",
+      "end_time": "02:55",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "What's In The Box"
+    },
+    {
+      "event_type": "look",
+      "description": "the black-suit man looks closely at the box on the table",
+      "participants": [
+        "blue-suit man",
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "object": "white box (Box 3)",
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 77,
+      "start_time": "02:55",
+      "end_time": "02:57",
+      "sub_events": [],
+      "subtype_order": 11,
+      "subtype_total": 24,
+      "round_index": 1,
+      "segment_label_resolved": "What's In The Box"
+    },
+    {
+      "event_type": "speak",
+      "description": "the black-suit man speaks while looking at the box",
+      "participants": [
+        "blue-suit man",
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 78,
+      "start_time": "02:57",
+      "end_time": "03:00",
+      "sub_events": [],
+      "subtype_order": 24,
+      "subtype_total": 54,
+      "round_index": 1,
+      "segment_label_resolved": "What's In The Box"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the grey-suit man opens the lid of the box on the table to reveal its contents",
+      "participants": [
+        "grey-suit man"
+      ],
+      "actor": "grey-suit man",
+      "cover": "white box",
+      "hidden": "uncertain: green and yellow object",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Box Reveal",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 81,
+      "start_time": "03:04",
+      "end_time": "03:06",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "What's In The Box"
+    },
+    {
+      "event_type": "react",
+      "description": "the grey-suit man looks down at the revealed object and laughs",
+      "participants": [
+        "grey-suit man"
+      ],
+      "actor": "grey-suit man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Box Reveal",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 82,
+      "start_time": "03:06",
+      "end_time": "03:08",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 30,
+      "round_index": 1,
+      "segment_label_resolved": "What's In The Box"
+    },
+    {
+      "event_type": "lift",
+      "description": "the grey-suit man lifts a grey platform containing two green mantises and two yellow-and-black bees out of the box",
+      "participants": [
+        "grey-suit man"
+      ],
+      "actor": "grey-suit man",
+      "object": "grey platform with insect figures",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Box Reveal",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 83,
+      "start_time": "03:08",
+      "end_time": "03:11",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "What's In The Box"
+    }
+  ]
+}

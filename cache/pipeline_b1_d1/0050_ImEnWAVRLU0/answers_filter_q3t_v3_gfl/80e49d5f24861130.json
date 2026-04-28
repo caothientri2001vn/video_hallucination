@@ -1,0 +1,27 @@
+{
+  "question": "Did he take the elevator to go upstairs?",
+  "pred": "The video shows the dark-suited man entering an elevator at approximately 01:26 (Event 31). However, later frames (around 01:38) show him exiting a stairwell and walking up a flight of stairs to reach a hallway where a bellhop and another man are standing. There is no visual evidence that the elevator trip itself took him upstairs; rather, he is explicitly shown using the stairs to reach his destination.\n\nEvidence: Frames at ~01:38 show the dark-suited man exiting a door and walking up a flight of stairs.\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "enter",
+      "description": "The man in dark suit enters an elevator with his briefcase",
+      "participants": [
+        "dark-suited man"
+      ],
+      "actor": "dark-suited man",
+      "segment_boundary": "middle",
+      "segment_label": "",
+      "continuation_hint": "complete",
+      "event_index": 31,
+      "start_time": "01:26",
+      "end_time": "01:28",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 3,
+      "segment_label_resolved": "Street View Sequence"
+    }
+  ]
+}

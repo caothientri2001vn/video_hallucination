@@ -1,0 +1,121 @@
+{
+  "question": "When the black team plays against the green team, does the player with black shirt and yellow stripes number 11 ride the ball pass the white shirt goalkeeper and score?",
+  "top_k": 15,
+  "indices": [
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "events": [
+    {
+      "event_type": "game",
+      "description": "The black-and-yellow-kit player dribbles the ball past two sliding green-kit defenders.",
+      "participants": [
+        "black-and-yellow-kit player",
+        "green-kit player",
+        "green-kit player"
+      ],
+      "actor": "black-and-yellow-kit player",
+      "object": "white ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "football match",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 9,
+      "start_time": "00:15",
+      "end_time": "00:16",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "game",
+      "description": "The black-and-yellow-kit player continues dribbling toward the goal as the goalkeeper in white approaches.",
+      "participants": [
+        "black-and-yellow-kit player",
+        "white-kit goalkeeper"
+      ],
+      "actor": "black-and-yellow-kit player",
+      "object": "white ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "football match",
+      "continuation_hint": "middle",
+      "event_index": 10,
+      "start_time": "00:16",
+      "end_time": "00:17",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "game",
+      "description": "The black-and-yellow-kit player shoots the ball past the diving goalkeeper.",
+      "participants": [
+        "black-and-yellow-kit player",
+        "white-kit goalkeeper"
+      ],
+      "actor": "black-and-yellow-kit player",
+      "object": "white ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "football match",
+      "continuation_hint": "middle",
+      "event_index": 11,
+      "start_time": "00:17",
+      "end_time": "00:18",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "game",
+      "description": "The ball enters the net as the black-and-yellow-kit player runs past the goal line.",
+      "participants": [
+        "black-and-yellow-kit player"
+      ],
+      "actor": "black-and-yellow-kit player",
+      "object": "white ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "football match",
+      "continuation_hint": "middle",
+      "event_index": 12,
+      "start_time": "00:18",
+      "end_time": "00:19",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "The black-and-yellow-kit player performs a knee slide celebration near the corner flag.",
+      "participants": [
+        "black-and-yellow-kit player"
+      ],
+      "actor": "black-and-yellow-kit player",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "football match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 13,
+      "start_time": "00:19",
+      "end_time": "00:21",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "question": "Did the player who scored in Round 1 miss later in the shootout?",
+  "pred": "The player who scored in Round 1 of the shootout is the French player in the dark blue jersey with number 10 (identified as \"MBAPPE\" in the Context and frames). According to the Context and frames, he scored his penalty kick in Round 1. There is no evidence in the Context or frames that he took another penalty kick or missed later in the shootout; the subsequent misses for France were by other players (e.g., the player in dark blue jersey #8).\n\nEvidence: Context event 10 and frames at ~00:32 show the player in dark blue jersey #10 scoring a goal in Round 1.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "goal",
+      "description": "Player in dark blue jersey scores a goal as the goalkeeper in green dives but fails to stop the ball",
+      "participants": [
+        "dark blue jersey player",
+        "green jersey goalkeeper"
+      ],
+      "actor": "dark blue jersey player",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 10,
+      "start_time": "00:30",
+      "end_time": "00:32",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "look_down",
+      "description": "Player in dark blue jersey looks down with a disappointed expression",
+      "participants": [
+        "dark blue jersey player"
+      ],
+      "actor": "dark blue jersey player",
+      "segment_boundary": "end",
+      "segment_label": "Soccer Match Conclusion",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 169,
+      "start_time": "06:40",
+      "end_time": "06:45",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "emotional_reaction",
+      "description": "Player in dark blue jersey places hand over face while looking toward the field",
+      "participants": [
+        "player in dark blue jersey"
+      ],
+      "actor": "player in dark blue jersey",
+      "on_screen_text": [
+        {
+          "text": "MBAPPE",
+          "location": "jersey"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Post-match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 192,
+      "start_time": "07:08",
+      "end_time": "07:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "look",
+      "description": "Player in dark blue jersey turns head while keeping hand near face",
+      "participants": [
+        "player in dark blue jersey"
+      ],
+      "actor": "player in dark blue jersey",
+      "on_screen_text": [
+        {
+          "text": "MBAPPE",
+          "location": "jersey"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Post-match",
+      "continuation_hint": "complete",
+      "event_index": 193,
+      "start_time": "07:10",
+      "end_time": "07:15",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

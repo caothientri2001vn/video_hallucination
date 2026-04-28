@@ -1,0 +1,272 @@
+{
+  "question": "Were there no balls potted between the brown ball and the blue ball?",
+  "pred": "The video shows a snooker match where a player in a black vest (O'Sullivan) is on a high break. To determine if any balls were potted between the brown ball and the blue ball, we track the sequence of shots:\n\n1.  **Brown ball shot:** At approximately 08:24 (Event 249), the player strikes the white cue ball to pot the brown ball. The scoreboard updates from 122 to 125 (Event 250).\n2.  **Blue ball shot:** At approximately 08:47 (Event 262), the player strikes the white cue ball to hit the blue ball. The scoreboard at 08:42 (Event 258) had already updated to 129, which is the score after potting the blue ball (blue is worth 5 points, but in this sequence, it follows the brown (4) and a preceding sequence; the jump from 125 to 129 indicates a 4-point ball was potted, which is the brown, and the blue is the next target).\n\nBetween these two specific events in the Context and frames, there are no other potting events or scoreboard updates recorded for other balls (like reds or other colors). The player moves directly from the brown ball to the blue ball as part of clearing the colors in their standard order (yellow, green, brown, blue, pink, black).\n\nEvidence: Event 249 shows the brown ball being hit at 08:24, and the next scoring action is the blue ball sequence starting at 08:40 (Event 257) and 08:47 (Event 262).\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "game",
+      "description": "The black-vest man strikes the white cue ball, which then hits the brown ball.",
+      "participants": [
+        "black-vest man"
+      ],
+      "actor": "black-vest man",
+      "object": "white cue ball",
+      "on_screen_text": [
+        {
+          "text": "15",
+          "location": "scoreboard"
+        },
+        {
+          "text": "1",
+          "location": "scoreboard"
+        },
+        {
+          "text": "15",
+          "location": "scoreboard"
+        },
+        {
+          "text": "Break 122",
+          "location": "scoreboard"
+        },
+        {
+          "text": "DING",
+          "location": "scoreboard"
+        },
+        {
+          "text": "0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "3 (17) 8",
+          "location": "scoreboard"
+        },
+        {
+          "text": "122",
+          "location": "scoreboard"
+        },
+        {
+          "text": "O'SULLIVAN",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "middle",
+      "event_index": 249,
+      "start_time": "08:24",
+      "end_time": "08:26",
+      "sub_events": [],
+      "subtype_order": 86,
+      "subtype_total": 101,
+      "round_index": 1,
+      "segment_label_resolved": "Snooker Match"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "The scoreboard updates to show a break of 125 for O'Sullivan.",
+      "participants": [
+        "black-vest man"
+      ],
+      "on_screen_text": [
+        {
+          "text": "15",
+          "location": "scoreboard"
+        },
+        {
+          "text": "1",
+          "location": "scoreboard"
+        },
+        {
+          "text": "15",
+          "location": "scoreboard"
+        },
+        {
+          "text": "Break 125",
+          "location": "scoreboard"
+        },
+        {
+          "text": "DING",
+          "location": "scoreboard"
+        },
+        {
+          "text": "0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "3 (17) 8",
+          "location": "scoreboard"
+        },
+        {
+          "text": "125",
+          "location": "scoreboard"
+        },
+        {
+          "text": "O'SULLIVAN",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "middle",
+      "event_index": 250,
+      "start_time": "08:26",
+      "end_time": "08:28",
+      "sub_events": [],
+      "subtype_order": 33,
+      "subtype_total": 35,
+      "round_index": 1,
+      "segment_label_resolved": "Snooker Match"
+    },
+    {
+      "event_type": "game",
+      "description": "the black-shirt man hits the white ball with the cue",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "BETVICTOR Welsh Open",
+          "location": "other"
+        },
+        {
+          "text": "DING JUNHUI",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 257,
+      "start_time": "08:40",
+      "end_time": "08:42",
+      "sub_events": [],
+      "subtype_order": 87,
+      "subtype_total": 101,
+      "round_index": 1,
+      "segment_label_resolved": "Snooker Match"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "the scoreboard updates from 125 to 129",
+      "participants": [],
+      "object_before": "125",
+      "object_after": "129",
+      "on_screen_text": [
+        {
+          "text": "DING",
+          "location": "scoreboard"
+        },
+        {
+          "text": "0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "3 (17) 8",
+          "location": "scoreboard"
+        },
+        {
+          "text": "129",
+          "location": "scoreboard"
+        },
+        {
+          "text": "O'SULLIVAN",
+          "location": "scoreboard"
+        },
+        {
+          "text": "Break 129",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 258,
+      "start_time": "08:42",
+      "end_time": "08:43",
+      "sub_events": [],
+      "subtype_order": 34,
+      "subtype_total": 35,
+      "round_index": 1,
+      "segment_label_resolved": "Snooker Match"
+    },
+    {
+      "event_type": "game",
+      "description": "the black-shirt man hits the white ball with a cue",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "DING",
+          "location": "lower_third"
+        },
+        {
+          "text": "0",
+          "location": "lower_third"
+        },
+        {
+          "text": "3 (17) 8",
+          "location": "lower_third"
+        },
+        {
+          "text": "129",
+          "location": "lower_third"
+        },
+        {
+          "text": "O'SULLIVAN",
+          "location": "lower_third"
+        },
+        {
+          "text": "Break 129",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 260,
+      "start_time": "08:45",
+      "end_time": "08:46",
+      "sub_events": [],
+      "subtype_order": 88,
+      "subtype_total": 101,
+      "round_index": 1,
+      "segment_label_resolved": "Snooker Match"
+    },
+    {
+      "event_type": "game",
+      "description": "the white ball hits the blue ball on the green table",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "BETVICTOR 伟德 WELSH OPEN",
+          "location": "other"
+        },
+        {
+          "text": "DING JUNHUI",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "complete",
+      "event_index": 262,
+      "start_time": "08:47",
+      "end_time": "08:48",
+      "sub_events": [],
+      "subtype_order": 89,
+      "subtype_total": 101,
+      "round_index": 1,
+      "segment_label_resolved": "Snooker Match"
+    }
+  ]
+}

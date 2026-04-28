@@ -1,0 +1,184 @@
+{
+  "question": "Is the number 4 statue a cacke?",
+  "pred": "The question asks if the statue on pedestal number 4 is a cake. According to the provided Context and frames, the \"black-suit man\" (host) performs a reveal by cutting into a tombstone-shaped structure with a knife. While the Context explicitly describes him cutting into a tombstone at 02:30 (event 76), the frames at ~02:30-02:36 and the final split-screen frame clearly show that the object being cut and revealed as a layered cake is the one on pedestal number 2. The statue on pedestal number 4 remains intact and is not shown being cut or revealed as cake in the provided evidence.\n\nEvidence: Frames at ~02:30 and the final split-screen frame show the host cutting into the statue on pedestal 2 to reveal cake, while statue 4 remains uncut.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "visual_state_change",
+      "description": "The number on the pedestal changes from 3 to 4",
+      "participants": [],
+      "actor": "pedestal",
+      "object_before": "3",
+      "object_after": "4",
+      "on_screen_text": [
+        {
+          "text": "3",
+          "location": "pedestal"
+        },
+        {
+          "text": "4",
+          "location": "pedestal"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Pedestal Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 26,
+      "start_time": "00:45",
+      "end_time": "00:48",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake? Halloween"
+    },
+    {
+      "event_type": "graphic",
+      "description": "Wide shot shows all four numbered pedestals (1, 2, 3, 4) on a circular stage with blue background",
+      "participants": [],
+      "actor": "stage",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "pedestal"
+        },
+        {
+          "text": "2",
+          "location": "pedestal"
+        },
+        {
+          "text": "3",
+          "location": "pedestal"
+        },
+        {
+          "text": "4",
+          "location": "pedestal"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Pedestal Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 31,
+      "start_time": "00:57",
+      "end_time": "01:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake? Halloween"
+    },
+    {
+      "event_type": "graphic",
+      "description": "displays tombstone objects on numbered pedestals with starry background",
+      "participants": [],
+      "actor": "none",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "3",
+          "location": "podium"
+        },
+        {
+          "text": "2",
+          "location": "podium"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Gravestone Competition",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 35,
+      "start_time": "01:07",
+      "end_time": "01:09",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake? Halloween"
+    },
+    {
+      "event_type": "reveal",
+      "description": "A person in a black suit cuts into a tombstone-shaped structure with a knife, revealing it is made of cake with visible layers",
+      "participants": [
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "object": "tombstone-shaped cake",
+      "object_before": "gray tombstone structure",
+      "object_after": "layered cake",
+      "object_before_pattern": "RIP engraving with grim reaper figure",
+      "segment_boundary": "middle",
+      "segment_label": "Tombstone Cake Reveal",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 76,
+      "start_time": "02:30",
+      "end_time": "02:36",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake? Halloween"
+    },
+    {
+      "event_type": "cut",
+      "description": "The person continues cutting through the cake structure, revealing more of the layered cake interior",
+      "participants": [
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "object": "cake layers",
+      "segment_boundary": "middle",
+      "segment_label": "Tombstone Cake Reveal",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 77,
+      "start_time": "02:36",
+      "end_time": "02:40",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake? Halloween"
+    },
+    {
+      "event_type": "applaud",
+      "description": "Two contestants in black aprons with orange ties begin clapping their hands",
+      "participants": [
+        "blue-shirt contestant",
+        "orange-shirt contestant"
+      ],
+      "actor": "blue-shirt contestant",
+      "segment_boundary": "middle",
+      "segment_label": "Tombstone Cake Reveal",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 78,
+      "start_time": "02:40",
+      "end_time": "02:43",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake? Halloween"
+    },
+    {
+      "event_type": "applaud",
+      "description": "Three hosts/judges at podiums with spiderweb decorations begin clapping",
+      "participants": [
+        "red-shirt woman",
+        "yellow-striped-suit man",
+        "glasses woman"
+      ],
+      "actor": "red-shirt woman",
+      "segment_boundary": "end",
+      "segment_label": "Tombstone Cake Reveal",
+      "continuation_hint": "complete",
+      "event_index": 79,
+      "start_time": "02:43",
+      "end_time": "02:45",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake? Halloween"
+    }
+  ]
+}

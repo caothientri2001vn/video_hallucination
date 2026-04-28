@@ -1,0 +1,112 @@
+{
+  "question": "Did the blue hoodie woman win cookie?",
+  "pred": "The video shows a game called \"Mystery String!\" where participants pull strings connected to a central red cup to reveal prizes on plates. According to the Context and frames, the \"blue-sweatshirt woman\" (also identified as \"Lauren\" in on-screen text) takes her turn in the second round of the game.\n\n1. In the first round, a man in a white shirt (Ethan) pulls a string and wins $2.\n2. In the second round, the woman in the blue sweatshirt (Lauren) pulls a string.\n3. This action reveals cookies on the leftmost plate.\n4. She reacts with joy and is seen picking up a cookie to eat.\n\nEvidence: event 5 and 6 in Context describe the blue-sweatshirt woman revealing and picking up cookies to eat; frames at the end of the video show her eating a cookie.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "pull_string",
+      "description": "the blue-sweatshirt woman pulls a string connected to the red cup",
+      "participants": [
+        "blue-sweatshirt woman",
+        "white-shirt man",
+        "black-hoodie woman",
+        "black-shirt man"
+      ],
+      "actor": "blue-sweatshirt woman",
+      "object": "black string",
+      "on_screen_text": [
+        {
+          "text": "Mystery String!",
+          "location": "other"
+        },
+        {
+          "text": "Lauren",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Mystery String",
+      "continuation_hint": "complete",
+      "event_index": 4,
+      "start_time": "00:03",
+      "end_time": "00:04",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the blue-sweatshirt woman reveals cookies on the leftmost plate",
+      "participants": [
+        "blue-sweatshirt woman",
+        "white-shirt man",
+        "black-hoodie woman",
+        "black-shirt man"
+      ],
+      "actor": "blue-sweatshirt woman",
+      "object": "brown cookies",
+      "on_screen_text": [
+        {
+          "text": "Mystery String!",
+          "location": "other"
+        },
+        {
+          "text": "Lauren",
+          "location": "other"
+        },
+        {
+          "text": "Cookies",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Mystery String",
+      "continuation_hint": "complete",
+      "event_index": 5,
+      "start_time": "00:04",
+      "end_time": "00:05",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String"
+    },
+    {
+      "event_type": "react",
+      "description": "the blue-sweatshirt woman reacts with joy and picks up a cookie to eat",
+      "participants": [
+        "blue-sweatshirt woman"
+      ],
+      "actor": "blue-sweatshirt woman",
+      "object": "brown cookie",
+      "on_screen_text": [
+        {
+          "text": "Mystery String!",
+          "location": "other"
+        },
+        {
+          "text": "Lauren",
+          "location": "other"
+        },
+        {
+          "text": "Cookies",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Mystery String",
+      "continuation_hint": "complete",
+      "event_index": 6,
+      "start_time": "00:05",
+      "end_time": "00:07",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String"
+    }
+  ]
+}

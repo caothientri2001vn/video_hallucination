@@ -1,0 +1,295 @@
+{
+  "question": "Did number 4 secure the 4-2 victory for Argentina?",
+  "pred": "The video shows a penalty shootout between Argentina and France. To determine if player #4 secured a 4-2 victory, we track the score and the final kick:\n\n1.  **Initial Score:** At 04:39, the scoreboard shows \"ARGENTINA 3 - 1 FRANCE\".\n2.  **France's Turn:** At 05:04, a French player scores, and at 05:25, the scoreboard updates to \"ARGENTINA 3 - 2 FRANCE\".\n3.  **Argentina's Final Turn:** At 05:38, a player in a blue and white striped jersey runs up to take a penalty. Frames at 05:38 clearly show this player is wearing jersey **number 4**.\n4.  **The Goal:** The player (#4) strikes the ball and scores (confirmed by the \"scored\" outcome in event 146 and the subsequent mass celebration starting at 05:45).\n5.  **Final Score:** Adding this goal to Argentina's previous 3 makes the final score 4-2. The immediate group celebration and the end of the shootout segment confirm this was the winning kick.\n\nEvidence: Frames at 05:38 show the player in the Argentina jersey with number 4 taking the penalty kick that leads to the final celebration.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "scoreboard_update",
+      "description": "Scoreboard graphic appears showing Argentina leading France in penalty shootout",
+      "participants": [],
+      "actor": "scoreboard graphic",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 3 - 1 FRANCE",
+          "location": "scoreboard"
+        },
+        {
+          "text": "PENALTY SHOOTOUT",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 112,
+      "start_time": "04:39",
+      "end_time": "04:42",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "pat",
+      "description": "Player wearing jersey #19 pats player wearing jersey #22 on the back",
+      "participants": [
+        "#19 jersey player",
+        "#22 jersey player"
+      ],
+      "actor": "#19 jersey player",
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match Celebration",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 116,
+      "start_time": "04:47",
+      "end_time": "04:49",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "group_celebration",
+      "description": "Multiple Argentina players including those wearing jerseys #8 and #4 gather and raise hands together in celebration",
+      "participants": [
+        "#8 jersey player",
+        "#4 jersey player",
+        "other teammates"
+      ],
+      "actor": "multiple players",
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match Celebration",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 117,
+      "start_time": "04:48",
+      "end_time": "04:50",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "react",
+      "description": "French fan with hand on head showing concern while watching the match",
+      "participants": [
+        "blue jersey fan with hand on head"
+      ],
+      "actor": "blue jersey fan with hand on head",
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 118,
+      "start_time": "04:50",
+      "end_time": "04:53",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 16,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "celebration",
+      "description": "blue-jersey player raises both arms in celebration after scoring",
+      "participants": [
+        "blue-jersey player"
+      ],
+      "actor": "blue-jersey player",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 126,
+      "start_time": "05:04",
+      "end_time": "05:06",
+      "sub_events": [],
+      "subtype_order": 11,
+      "subtype_total": 14,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "scoreboard displays Argentina leading France 3-2 in the penalty shootout",
+      "participants": [],
+      "actor": "",
+      "object": "",
+      "object_before": "",
+      "object_after": "",
+      "outcome": "",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 3 - 2 FRANCE",
+          "location": "scoreboard"
+        },
+        {
+          "text": "PENALTY SHOOTOUT",
+          "location": "scoreboard"
+        },
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 138,
+      "start_time": "05:25",
+      "end_time": "05:30",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 5,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "kick",
+      "description": "player in blue and white striped jersey runs up and strikes the soccer ball for the penalty kick",
+      "participants": [
+        "blue and white striped jersey player"
+      ],
+      "actor": "blue and white striped jersey player",
+      "object": "soccer ball",
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "event_index": 143,
+      "start_time": "05:38",
+      "end_time": "05:40",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 8,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "remove_clothing",
+      "description": "player begins pulling blue and white striped jersey over his head",
+      "participants": [
+        "blue-and-white striped jersey player"
+      ],
+      "actor": "blue-and-white striped jersey player",
+      "object": "blue and white striped jersey",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match - Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 146,
+      "start_time": "05:45",
+      "end_time": "05:48",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "group_celebration",
+      "description": "Multiple players gather in a pile formation at the center circle of the soccer field while celebrating",
+      "participants": [
+        "multiple players in white jerseys",
+        "multiple players in blue jerseys"
+      ],
+      "actor": "multiple players",
+      "object": "",
+      "object_before": "",
+      "object_after": "",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Soccer Match Celebration",
+      "continuation_hint": "complete",
+      "event_index": 156,
+      "start_time": "06:13",
+      "end_time": "06:15",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "hug",
+      "description": "Multiple players in white and blue striped jerseys embrace in a tight group hug on the field",
+      "participants": [
+        "white and blue striped jersey players"
+      ],
+      "actor": "white and blue striped jersey players",
+      "segment_boundary": "end",
+      "segment_label": "Soccer Match Conclusion",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 162,
+      "start_time": "06:30",
+      "end_time": "06:32",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 14,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "hug",
+      "description": "players in blue and white striped jerseys hug each other on the field",
+      "participants": [
+        "blue-and-white striped jersey players"
+      ],
+      "actor": "players",
+      "segment_boundary": "middle",
+      "segment_label": "Post-match celebration",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 174,
+      "start_time": "06:50",
+      "end_time": "06:53",
+      "sub_events": [],
+      "subtype_order": 11,
+      "subtype_total": 14,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "celebration",
+      "description": "Player wearing jersey number 10 with 'MESSI' on back raises both arms in celebration while facing crowd",
+      "participants": [
+        "jersey number 10 player"
+      ],
+      "actor": "jersey number 10 player",
+      "segment_boundary": "middle",
+      "segment_label": "Post-match celebration",
+      "continuation_hint": "complete",
+      "event_index": 196,
+      "start_time": "07:18",
+      "end_time": "07:22",
+      "sub_events": [],
+      "subtype_order": 14,
+      "subtype_total": 14,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

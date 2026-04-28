@@ -1,0 +1,117 @@
+{
+  "question": "Did both players open the same number of boxes?",
+  "top_k": 15,
+  "indices": [
+    23,
+    25,
+    75,
+    114,
+    118
+  ],
+  "events": [
+    {
+      "event_type": "open_box",
+      "description": "The woman pulls out the bottom-right box labeled 9",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "object": "box 9",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 23,
+      "start_time": "00:51",
+      "end_time": "00:53",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "The woman opens the box to reveal its contents",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "object": "box 9",
+      "object_before": "closed box 9",
+      "object_after": "open box 9",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 25,
+      "start_time": "00:55",
+      "end_time": "00:57",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "Jimmy opens the white box on the table and removes a flat object from inside",
+      "participants": [
+        "dark-dress woman",
+        "suit-man"
+      ],
+      "actor": "suit-man",
+      "object": "white box",
+      "segment_boundary": "middle",
+      "segment_label": "Game Show Segment",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 75,
+      "start_time": "02:45",
+      "end_time": "02:51",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "The woman opens the leftmost box (Box 4) on the middle shelf by pulling it forward",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "segment_boundary": "middle",
+      "segment_label": "Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "object": "beige box",
+      "cover": "beige box",
+      "hidden": "uncertain: interior contents",
+      "event_index": 114,
+      "start_time": "04:18",
+      "end_time": "04:21",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "Jennifer opens the leftmost box on the table",
+      "participants": [
+        "blue-dress woman",
+        "black-suit man"
+      ],
+      "actor": "blue-dress woman",
+      "object": "beige box",
+      "segment_boundary": "middle",
+      "segment_label": "Game show segment",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 118,
+      "start_time": "04:15",
+      "end_time": "04:18",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    }
+  ]
+}

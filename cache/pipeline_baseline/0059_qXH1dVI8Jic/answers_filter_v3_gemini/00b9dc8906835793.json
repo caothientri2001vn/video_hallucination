@@ -1,0 +1,241 @@
+{
+  "question": "Did both teams fail exactly once during the game?",
+  "pred": "The game consists of four turns (rounds) of charades. A \"fail\" occurs when the timer reaches zero before the team guesses the answer.\n\n1.  **Round 1 (Team 1):** The floral-top woman (Gal Gadot) acts out \"BORN TO RUN\". The timer reaches zero (01:44) without a successful guess. This is a fail for Team 1.\n2.  **Round 2 (Team 2):** The checkered-jumpsuit woman (Miley Cyrus) acts out \"RING OF FIRE\". The team successfully guesses it with time remaining (02:42).\n3.  **Round 3 (Team 1):** The black-jacket man (The Roots' Tariq Trotter) acts out \"JURASSIC PARK\". The team successfully guesses it with time remaining (04:19).\n4.  **Round 4 (Team 2):** The suit-man (Jimmy Fallon) acts out \"DANCING ON THE CEILING\". The team successfully guesses it with time remaining (05:37).\n\nTeam 1 failed exactly once (Round 1). Team 2 did not fail at all. Therefore, it is not true that both teams failed exactly once.\n\nEvidence: event 75 shows the black-suit man speaking while the timer for \"BORN TO RUN\" reaches 0, marking the only fail in the game.\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "gesture",
+      "description": "the floral-top woman (Gal Gadot) begins gesturing to start her charade",
+      "participants": [
+        "floral-top woman"
+      ],
+      "actor": "floral-top woman",
+      "on_screen_text": [
+        {
+          "text": "\"BORN TO RUN\"",
+          "location": "subtitle"
+        },
+        {
+          "text": ":30",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 30,
+      "start_time": "00:54",
+      "end_time": "01:00",
+      "sub_events": [],
+      "subtype_order": 11,
+      "subtype_total": 104,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "speak",
+      "description": "the black-suit man continues speaking and leans forward slightly",
+      "participants": [
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "on_screen_text": [
+        {
+          "text": "\" BORN TO RUN \"",
+          "location": "subtitle"
+        },
+        {
+          "text": ": 0",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 75,
+      "start_time": "01:44",
+      "end_time": "01:45",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 15,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "gesture",
+      "description": "The checkered-jumpsuit woman makes a circular gesture with her fingers.",
+      "participants": [
+        "checkered-jumpsuit woman"
+      ],
+      "actor": "checkered-jumpsuit woman",
+      "on_screen_text": [
+        {
+          "text": "\" RING OF FIRE \"",
+          "location": "subtitle"
+        },
+        {
+          "text": ":18",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "complete",
+      "event_index": 105,
+      "start_time": "02:27",
+      "end_time": "02:29",
+      "sub_events": [],
+      "subtype_order": 59,
+      "subtype_total": 104,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "react",
+      "description": "the black-jacket man smiles while sitting on the couch",
+      "participants": [
+        "black-jacket man"
+      ],
+      "actor": "black-jacket man",
+      "on_screen_text": [
+        {
+          "text": "\" RING OF FIRE \"",
+          "location": "subtitle"
+        },
+        {
+          "text": ":08",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 114,
+      "start_time": "02:42",
+      "end_time": "02:43",
+      "sub_events": [],
+      "subtype_order": 11,
+      "subtype_total": 31,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "gesture",
+      "description": "the black-jacket man mimics a dinosaur by curling his hands like claws and opening his mouth wide",
+      "participants": [
+        "black-jacket man"
+      ],
+      "actor": "black-jacket man",
+      "on_screen_text": [
+        {
+          "text": "CHARADES",
+          "location": "other"
+        },
+        {
+          "text": "JURASSIC PARK",
+          "location": "subtitle"
+        },
+        {
+          "text": ":22",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 166,
+      "start_time": "04:10",
+      "end_time": "04:13",
+      "sub_events": [],
+      "subtype_order": 83,
+      "subtype_total": 104,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the grey-suit man and black-trousers woman celebrate together",
+      "participants": [
+        "grey-suit man",
+        "black-trousers woman"
+      ],
+      "actor": "grey-suit man",
+      "on_screen_text": [
+        {
+          "text": "CHARADES",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 171,
+      "start_time": "04:19",
+      "end_time": "04:21",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "gesture",
+      "description": "the suit man gestures with his hands near his face",
+      "participants": [
+        "suit man"
+      ],
+      "actor": "suit man",
+      "on_screen_text": [
+        {
+          "text": "\"DANCING ON THE CEILING \"",
+          "location": "subtitle"
+        },
+        {
+          "text": ": 0",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 215,
+      "start_time": "05:35",
+      "end_time": "05:36",
+      "sub_events": [],
+      "subtype_order": 104,
+      "subtype_total": 104,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the checkered-jumpsuit woman and suit man cheer with raised fists",
+      "participants": [
+        "checkered-jumpsuit woman",
+        "suit man"
+      ],
+      "on_screen_text": [
+        {
+          "text": "\"DANCING ON THE CEILING \"",
+          "location": "subtitle"
+        },
+        {
+          "text": ": 0",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 217,
+      "start_time": "05:37",
+      "end_time": "05:38",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    }
+  ]
+}

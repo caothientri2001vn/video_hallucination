@@ -1,0 +1,265 @@
+{
+  "video_name": "0036_12_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 19.9,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "gemini-3-flash-preview",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:01",
+          "event_type": "look",
+          "description": "The white-shirt player (number 7) looks at the ball on the ground.",
+          "participants": [
+            "white-shirt player (number 7)"
+          ],
+          "actor": "white-shirt player (number 7)",
+          "object": "ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Free Kick",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:01",
+          "local_end": "00:03",
+          "event_type": "walk",
+          "description": "The white-shirt player (number 7) walks toward the ball.",
+          "participants": [
+            "white-shirt player (number 7)"
+          ],
+          "actor": "white-shirt player (number 7)",
+          "object": "ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Free Kick",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:03",
+          "local_end": "00:04",
+          "event_type": "kick",
+          "description": "The white-shirt player (number 7) kicks the ball toward the goal.",
+          "participants": [
+            "white-shirt player (number 7)"
+          ],
+          "actor": "white-shirt player (number 7)",
+          "object": "ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Free Kick",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:04",
+          "local_end": "00:05",
+          "event_type": "jump",
+          "description": "The wall of dark-green-shirt players jumps to block the ball.",
+          "participants": [
+            "dark-green-shirt players"
+          ],
+          "actor": "dark-green-shirt players",
+          "object": "ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Free Kick",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:06",
+          "event_type": "dive",
+          "description": "The red-shirt goalkeeper dives to his right to save the ball.",
+          "participants": [
+            "red-shirt goalkeeper"
+          ],
+          "actor": "red-shirt goalkeeper",
+          "object": "ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Free Kick",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:07",
+          "event_type": "goal",
+          "description": "The ball enters the top right corner of the goal net.",
+          "participants": [
+            "white-shirt player (number 7)"
+          ],
+          "actor": "white-shirt player (number 7)",
+          "object": "ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Free Kick",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:10",
+          "event_type": "celebration",
+          "description": "The white-shirt player (number 7) runs away from the goal, shouting in celebration.",
+          "participants": [
+            "white-shirt player (number 7)"
+          ],
+          "actor": "white-shirt player (number 7)",
+          "on_screen_text": [
+            {
+              "text": "RIYAD MAHREZ",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Free Kick",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:10",
+          "local_end": "00:12",
+          "event_type": "kick",
+          "description": "A slow-motion replay shows the white-shirt player (number 7) kicking the ball.",
+          "participants": [
+            "white-shirt player (number 7)"
+          ],
+          "actor": "white-shirt player (number 7)",
+          "object": "ball",
+          "on_screen_text": [
+            {
+              "text": "RIYAD MAHREZ",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Free Kick Replay",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:12",
+          "local_end": "00:14",
+          "event_type": "goal",
+          "description": "A slow-motion replay shows the ball flying over the wall and into the goal.",
+          "participants": [
+            "white-shirt player (number 7)",
+            "red-shirt goalkeeper"
+          ],
+          "actor": "white-shirt player (number 7)",
+          "object": "ball",
+          "on_screen_text": [
+            {
+              "text": "RIYAD MAHREZ",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Free Kick Replay",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:14",
+          "local_end": "00:15",
+          "event_type": "celebration",
+          "description": "The white-shirt player (number 7) continues his celebratory run.",
+          "participants": [
+            "white-shirt player (number 7)"
+          ],
+          "actor": "white-shirt player (number 7)",
+          "on_screen_text": [
+            {
+              "text": "RIYAD MAHREZ",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Free Kick",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 19.9,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:20",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:16",
+          "event_type": "celebration",
+          "description": "the white-jersey player (number 7) shouts and runs with arms outstretched",
+          "participants": [
+            "white-jersey player (number 7)"
+          ],
+          "actor": "white-jersey player (number 7)",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "football match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:16",
+          "local_end": "00:18",
+          "event_type": "react",
+          "description": "the dark-green-jersey player (number 8) crouches on the field looking dejected",
+          "participants": [
+            "dark-green-jersey player (number 8)"
+          ],
+          "actor": "dark-green-jersey player (number 8)",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "football match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:18",
+          "local_end": "00:20",
+          "event_type": "celebration",
+          "description": "a group of players and staff in white jerseys and brown vests huddle and jump together in celebration",
+          "participants": [
+            "white-jersey player (number 7)",
+            "white-jersey player (number 11)",
+            "white-jersey player (number 3)",
+            "staff in black shirt",
+            "staff in brown vest"
+          ],
+          "actor": "staff in black shirt",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "football match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

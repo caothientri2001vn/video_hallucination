@@ -1,0 +1,390 @@
+{
+  "question": "Did France's number 10 shoot toward the right side?",
+  "top_k": 15,
+  "indices": [
+    4,
+    8,
+    9,
+    26,
+    70,
+    71,
+    80,
+    81,
+    82,
+    89,
+    90,
+    124,
+    125,
+    132,
+    133
+  ],
+  "events": [
+    {
+      "event_type": "penalty_setup",
+      "description": "Player in blue shirt with number 10 stands at penalty spot preparing to take kick, referee in orange stands nearby, goalkeeper in yellow positioned in goal",
+      "participants": [
+        "blue-shirt player",
+        "orange-shirt referee",
+        "yellow-shirt goalkeeper"
+      ],
+      "actor": "blue-shirt player",
+      "object": "",
+      "segment_boundary": "start",
+      "segment_label": "Penalty Kick",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        },
+        {
+          "text": "10",
+          "location": "jersey_number"
+        }
+      ],
+      "event_index": 4,
+      "start_time": "00:15",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "run",
+      "description": "player in blue jersey begins running toward the ball for the penalty kick",
+      "participants": [
+        "blue-jersey player"
+      ],
+      "actor": "blue-jersey player",
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 8,
+      "start_time": "00:29",
+      "end_time": "00:29",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "kick",
+      "description": "player in blue jersey kicks the ball toward the goal",
+      "participants": [
+        "blue-jersey player",
+        "yellow-jersey goalkeeper"
+      ],
+      "actor": "blue-jersey player",
+      "object": "white ball",
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 9,
+      "start_time": "00:30",
+      "end_time": "00:30",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "dive",
+      "description": "The goalkeeper in yellow dives to the left but fails to stop the penalty kick",
+      "participants": [
+        "yellow jersey goalkeeper"
+      ],
+      "actor": "yellow jersey goalkeeper",
+      "object": "white soccer goal net",
+      "outcome": "miss",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 26,
+      "start_time": "01:17",
+      "end_time": "01:18",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "walk",
+      "description": "French player in blue jersey walks toward the penalty spot",
+      "participants": [
+        "blue jersey player"
+      ],
+      "actor": "blue jersey player",
+      "object": "",
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 70,
+      "start_time": "02:55",
+      "end_time": "02:58",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 21,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "react",
+      "description": "French player shows serious facial expression while looking forward",
+      "participants": [
+        "blue jersey player"
+      ],
+      "actor": "blue jersey player",
+      "object": "",
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 71,
+      "start_time": "02:58",
+      "end_time": "03:00",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 16,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "kick",
+      "description": "player in blue jersey takes the penalty kick toward the goal",
+      "participants": [
+        "blue-jersey player"
+      ],
+      "actor": "blue-jersey player",
+      "object": "white soccer ball",
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        },
+        {
+          "text": "QATAR AIRWAYS",
+          "location": "other"
+        }
+      ],
+      "event_index": 80,
+      "start_time": "03:25",
+      "end_time": "03:30",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "kick",
+      "description": "player in blue jersey runs toward and strikes the penalty ball",
+      "participants": [
+        "blue-jersey player (number 8)"
+      ],
+      "actor": "blue-jersey player (number 8)",
+      "object": "white ball",
+      "outcome": "scored",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 81,
+      "start_time": "03:30",
+      "end_time": "03:32",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "dive",
+      "description": "goalkeeper in green jersey dives to the side but fails to save the penalty",
+      "participants": [
+        "green-jersey goalkeeper"
+      ],
+      "actor": "green-jersey goalkeeper",
+      "object": "goal",
+      "outcome": "miss",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 82,
+      "start_time": "03:32",
+      "end_time": "03:33",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "walk",
+      "description": "French player #8 walks on the field with serious expression",
+      "participants": [
+        "dark blue jersey player #8"
+      ],
+      "actor": "dark blue jersey player #8",
+      "object": "",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 89,
+      "start_time": "03:45",
+      "end_time": "03:50",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 21,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "high_five",
+      "description": "French player #8 high-fives French player #26 (Thuram)",
+      "participants": [
+        "dark blue jersey player #8",
+        "dark blue jersey player #26"
+      ],
+      "actor": "dark blue jersey player #8",
+      "object": "",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 90,
+      "start_time": "03:45",
+      "end_time": "03:52",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "penalty_kick",
+      "description": "blue-jersey player #12 runs up to take a penalty kick while goalkeeper stands ready in goal",
+      "participants": [
+        "blue-jersey player",
+        "goalkeeper",
+        "referee"
+      ],
+      "actor": "blue-jersey player",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "start",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 124,
+      "start_time": "05:00",
+      "end_time": "05:03",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "goal",
+      "description": "the white soccer ball enters the net as the goalkeeper dives to the left",
+      "participants": [
+        "goalkeeper"
+      ],
+      "actor": "none",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 125,
+      "start_time": "05:03",
+      "end_time": "05:04",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "goalkeeper in bright green uniform positions himself for a penalty kick",
+      "participants": [
+        "goalkeeper in green uniform",
+        "kicker in dark uniform"
+      ],
+      "actor": "goalkeeper in green uniform",
+      "object": "white soccer ball",
+      "object_before": "",
+      "object_after": "",
+      "outcome": "",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 132,
+      "start_time": "05:17",
+      "end_time": "05:19",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "kicker in dark uniform runs toward and strikes the soccer ball",
+      "participants": [
+        "kicker in dark uniform",
+        "goalkeeper in green uniform"
+      ],
+      "actor": "kicker in dark uniform",
+      "object": "white soccer ball",
+      "object_before": "",
+      "object_after": "",
+      "outcome": "",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 133,
+      "start_time": "05:19",
+      "end_time": "05:21",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0036_2_qh-yxk-qAOc.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0036_2_qh-yxk-qAOc.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0036_2_qh-yxk-qAOc",
+    "n_target": 3,
+    "n_sub": 12,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.6666666666666666,
+    "sub_accuracy": 0.6666666666666666
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Does the player in white shirt number 11 score goal?",
+      "gt": "Yes",
+      "pred": "Yes, the player in the white shirt number 11 (Gareth Bale) scores a goal. This is evident from the sequence where the ball is seen entering the goal, followed by his celebration and the subsequent reactions of the coaching staff and teammates (e.g., the coach in a black suit celebrating, and the player in white number 11 shown with arms outstretched in celebration). The text “GARETH BALE” also appears during the play leading to the goal.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a player wearing a white shirt?",
+      "gt": "Yes",
+      "pred": "Yes, there are multiple players wearing white shirts visible in the video frames (e.g., players with numbers 10, 11, 14, etc., across various frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player in the white shirt have the number 11?",
+      "gt": "Yes",
+      "pred": "Yes, the player in the white shirt has the number 11, as seen in the celebration frames (e.g., around the 22-26 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does a goal get scored in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a goal is scored. This is evident from the sequence where the ball enters the goal (e.g., frames showing the ball in the net, the goalkeeper’s reaction, and subsequent celebrations by players and the coach). For example, in the later frames (around the 10-15 second mark in the sequence), the ball is seen crossing the goal line, followed by player and coach celebrations.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Is the player who scores the goal wearing a white shirt?",
+      "gt": "Yes",
+      "pred": "Yes, the player who scores the goal is wearing a white shirt. This is evident in the frames showing the goal (e.g., the player with the number 11 in white jersey celebrating after scoring).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Does the player in white shirt number 14 score goal?",
+      "gt": "No",
+      "pred": "No. The player in the white shirt with number 14 (Casemiro) does not score the goal. The goal is scored by the player in the white shirt with number 11 (Gareth Bale), as evidenced by the \"GARETH BALE\" text overlay in the video and the celebration sequences showing the number 11 player.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a player wearing a white shirt?",
+      "gt": "Yes",
+      "pred": "Yes, there are multiple players wearing white shirts visible in the video frames (e.g., players with numbers 10, 11, 14, etc., across various frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player in the white shirt have the number 14?",
+      "gt": "No",
+      "pred": "Yes. In multiple frames, such as when the text \"GARETH BALE\" is displayed (e.g., the second image in the sequence), a player in a white shirt with the number 14 is visible.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does a player with shirt number 14 appear in the video?",
+      "gt": "No",
+      "pred": "Yes, a player with shirt number 14 appears in the video (e.g., visible in multiple frames, such as when the player with the name “Casemiro” and number 14 is on the field).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does a goal get scored in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a goal is scored. This is evident from the sequence where the ball enters the goal (e.g., frames showing the ball in the net, the goalkeeper’s reaction, and subsequent celebrations by players and the coach). For example, in the later frames (around the 10-15 second mark in the sequence), the ball is seen crossing the goal line, followed by player and coach celebrations.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Does the player in white shirt number 7 score goal?",
+      "gt": "No",
+      "pred": "Yes, the player in white shirt number 7 (Gareth Bale, as indicated by the text \"GARETH BALE\" in multiple frames) scores a goal. This is evident from the sequence where he takes a shot, the ball enters the net, and subsequent celebrations (e.g., the coach’s reaction, players’ celebrations) confirm the goal. The goal occurs around the transition from the mid- to late frames (e.g., when the ball is shown in the net and the goalkeeper is seen diving in vain).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a player wearing a white shirt?",
+      "gt": "Yes",
+      "pred": "Yes, there are multiple players wearing white shirts visible in the video frames (e.g., players with numbers 10, 11, 14, etc., across various frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player in the white shirt have the number 7?",
+      "gt": "No",
+      "pred": "Yes, there is a player in the white shirt with the number 7 visible in multiple frames (e.g., early frames show a white-shirted player with number 7, and during the celebration sequence, a player in white with number 7 is also visible).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does a player with shirt number 7 appear in the video?",
+      "gt": "No",
+      "pred": "Yes, a player with shirt number 7 appears in the video (e.g., in multiple frames where a red-shirted player with number 7 is visible).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does a goal get scored in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a goal is scored. This is evident from the sequence where the ball enters the goal (e.g., frames showing the ball in the net, the goalkeeper’s reaction, and subsequent celebrations by players and the coach). For example, in the later frames (around the 10-15 second mark in the sequence), the ball is seen crossing the goal line, followed by player and coach celebrations.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

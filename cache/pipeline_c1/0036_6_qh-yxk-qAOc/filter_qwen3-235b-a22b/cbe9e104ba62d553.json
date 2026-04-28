@@ -1,0 +1,112 @@
+{
+  "question": "Does the player with red and blue shirt number 10 score the goal?",
+  "top_k": 15,
+  "indices": [
+    4,
+    6,
+    9
+  ],
+  "events": [
+    {
+      "event_type": "shoot",
+      "description": "a red and blue striped jersey player shoots the ball toward the goal",
+      "participants": [
+        "red and blue striped jersey player",
+        "goalkeeper"
+      ],
+      "actor": "red and blue striped jersey player",
+      "object": "yellow ball",
+      "outcome": "shot",
+      "on_screen_text": [
+        {
+          "text": "ANDROS TOWNSEND",
+          "location": "lower_third"
+        },
+        {
+          "text": "TARAFINDAN KANAL",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 4,
+      "start_time": "00:06",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "goal",
+      "description": "the ball enters the goal net past the diving goalkeeper",
+      "participants": [
+        "yellow ball",
+        "goal net"
+      ],
+      "actor": "yellow ball",
+      "object": "yellow ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "ANDROS TOWNSEND",
+          "location": "lower_third"
+        },
+        {
+          "text": "TARAFINDAN KANAL",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Soccer Match - Goal Scoring Play",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:10",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "The player with jersey number 10 runs forward with mouth open, shouting and showing excited body language",
+      "participants": [
+        "blue-and-red striped jersey player"
+      ],
+      "actor": "blue-and-red striped jersey player",
+      "on_screen_text": [
+        {
+          "text": "TOWNSEND",
+          "location": "jersey_number"
+        },
+        {
+          "text": "10",
+          "location": "jersey_number"
+        },
+        {
+          "text": "ManBetX",
+          "location": "logo"
+        },
+        {
+          "text": "TRABZONSPOR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 9,
+      "start_time": "00:15",
+      "end_time": "00:17",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "video_name": "0036_2_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 23.7,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:02",
+          "event_type": "pass",
+          "description": "A player in white jersey receives a pass from a teammate",
+          "participants": [
+            "white-jersey player",
+            "white-jersey teammate"
+          ],
+          "actor": "white-jersey teammate",
+          "object": "white soccer ball",
+          "outcome": "received",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:04",
+          "event_type": "jump",
+          "description": "The white-jersey player jumps to perform a bicycle kick",
+          "participants": [
+            "white-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "object": "white soccer ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:04",
+          "local_end": "00:06",
+          "event_type": "bicycle_kick",
+          "description": "The white-jersey player executes a bicycle kick toward the goal",
+          "participants": [
+            "white-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "object": "white soccer ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:07",
+          "event_type": "dive",
+          "description": "The goalkeeper dives to the right to attempt a save",
+          "participants": [
+            "goalkeeper"
+          ],
+          "actor": "goalkeeper",
+          "object": "white soccer ball",
+          "outcome": "miss",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:08",
+          "event_type": "goal",
+          "description": "The ball enters the goal net past the diving goalkeeper",
+          "participants": [
+            "white soccer ball",
+            "goal net"
+          ],
+          "actor": "white soccer ball",
+          "object": "white soccer ball",
+          "outcome": "scored",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:09",
+          "event_type": "fall",
+          "description": "The white-jersey player falls to the ground after completing the bicycle kick",
+          "participants": [
+            "white-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:09",
+          "local_end": "00:11",
+          "event_type": "celebration",
+          "description": "White-jersey players begin celebrating the goal",
+          "participants": [
+            "white-jersey players"
+          ],
+          "actor": "white-jersey players",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:09",
+          "local_end": "00:11",
+          "event_type": "reaction",
+          "description": "Red-jersey players show disappointment with body language",
+          "participants": [
+            "red-jersey players"
+          ],
+          "actor": "red-jersey players",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:10",
+          "local_end": "00:15",
+          "event_type": "on_screen_text",
+          "description": "Text identifying the player appears on screen",
+          "participants": [],
+          "actor": "",
+          "on_screen_text": [
+            {
+              "text": "GARETH BALE",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:11",
+          "local_end": "00:15",
+          "event_type": "crowd_reaction",
+          "description": "Spectators in the stands react with excitement to the goal",
+          "participants": [
+            "stadium crowd"
+          ],
+          "actor": "stadium crowd",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 23.7,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:24",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:17",
+          "event_type": "walk",
+          "description": "Man in black suit walks along sideline with right hand on head",
+          "participants": [
+            "black-suit man"
+          ],
+          "actor": "black-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:17",
+          "local_end": "00:19",
+          "event_type": "hand_raise",
+          "description": "Man in black suit raises right hand while walking",
+          "participants": [
+            "black-suit man"
+          ],
+          "actor": "black-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:19",
+          "local_end": "00:21",
+          "event_type": "gesture",
+          "description": "Man in black suit gestures with both hands while standing",
+          "participants": [
+            "black-suit man"
+          ],
+          "actor": "black-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:20",
+          "local_end": "00:22",
+          "event_type": "celebration",
+          "description": "Players in blue jackets run toward sideline while celebrating",
+          "participants": [
+            "blue-jacket players"
+          ],
+          "actor": "blue-jacket players",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:20",
+          "local_end": "00:24",
+          "event_type": "walk",
+          "description": "Referee in yellow uniform walks across field carrying checkered flag",
+          "participants": [
+            "yellow-referee"
+          ],
+          "actor": "yellow-referee",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:22",
+          "local_end": "00:24",
+          "event_type": "celebration",
+          "description": "Soccer player in white jersey runs with arms outstretched celebrating",
+          "participants": [
+            "white-jersey player #11"
+          ],
+          "actor": "white-jersey player #11",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:22",
+          "local_end": "00:24",
+          "event_type": "run",
+          "description": "Multiple players in white jerseys run across field toward celebrating player",
+          "participants": [
+            "white-jersey players"
+          ],
+          "actor": "white-jersey players",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:15",
+          "local_end": "00:24",
+          "event_type": "applaud",
+          "description": "Crowd in stadium stands cheering and raising hands",
+          "participants": [
+            "stadium crowd"
+          ],
+          "actor": "stadium crowd",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "FINAL KYIV 2018",
+              "location": "barrier"
+            },
+            {
+              "text": "UEFA CHAMPIONS LEAGUE",
+              "location": "barrier"
+            },
+            {
+              "text": "TIV",
+              "location": "logo"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

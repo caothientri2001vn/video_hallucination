@@ -1,0 +1,157 @@
+{
+  "question": "Did France take two consecutive shots without Argentina shooting in between?",
+  "pred": "The video shows a penalty shootout between France (dark blue jerseys) and Argentina (blue and white striped jerseys). In a standard penalty shootout, teams alternate shots. I will track the sequence of kickers:\n\n1.  **France Shot 1**: French player #10 (Mbappe) takes the first kick and scores (frames at 05:00-05:24).\n2.  **Argentina Shot 1**: Argentina player #10 (Messi) takes the next kick and scores (frames at 05:28-05:40).\n3.  **France Shot 2**: French player #20 (Coman) takes the next kick; it is saved (frames at 05:45-05:55).\n4.  **Argentina Shot 2**: Argentina player #21 (Dybala) takes the next kick and scores (frames at 06:00-06:15).\n5.  **France Shot 3**: French player #8 (Tchouameni) takes the next kick; it goes wide (frames at 06:20-06:35).\n6.  **Argentina Shot 3**: Argentina player #5 (Paredes) takes the next kick and scores (frames at 06:40-06:55).\n\nThe sequence follows a strict alternating pattern (France, Argentina, France, Argentina, France, Argentina). There are no instances where France takes two consecutive shots without an Argentina shot in between.\n\nEvidence: Frames from 05:00 to 07:00 show the alternating sequence of kickers from France and Argentina during the penalty shootout.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "penalty_kick",
+      "description": "blue-jersey player #12 runs up to take a penalty kick while goalkeeper stands ready in goal",
+      "participants": [
+        "blue-jersey player",
+        "goalkeeper",
+        "referee"
+      ],
+      "actor": "blue-jersey player",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "start",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 124,
+      "start_time": "05:00",
+      "end_time": "05:03",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "goalkeeper in bright green uniform positions himself for a penalty kick",
+      "participants": [
+        "goalkeeper in green uniform",
+        "kicker in dark uniform"
+      ],
+      "actor": "goalkeeper in green uniform",
+      "object": "white soccer ball",
+      "object_before": "",
+      "object_after": "",
+      "outcome": "",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 132,
+      "start_time": "05:17",
+      "end_time": "05:19",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "kicker in dark uniform runs toward and strikes the soccer ball",
+      "participants": [
+        "kicker in dark uniform",
+        "goalkeeper in green uniform"
+      ],
+      "actor": "kicker in dark uniform",
+      "object": "white soccer ball",
+      "object_before": "",
+      "object_after": "",
+      "outcome": "",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 133,
+      "start_time": "05:19",
+      "end_time": "05:21",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "soccer ball enters the goal net after the penalty kick",
+      "participants": [
+        "goalkeeper in green uniform",
+        "kicker in dark uniform"
+      ],
+      "actor": "soccer ball",
+      "object": "white soccer ball",
+      "object_before": "",
+      "object_after": "",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 135,
+      "start_time": "05:22",
+      "end_time": "05:24",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "walk",
+      "description": "player in Argentina's light blue and white striped uniform walks toward the penalty spot",
+      "participants": [
+        "Argentina player in blue and white striped uniform",
+        "goalkeeper in green uniform"
+      ],
+      "actor": "Argentina player in blue and white striped uniform",
+      "object": "",
+      "object_before": "",
+      "object_after": "",
+      "outcome": "",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 137,
+      "start_time": "05:24",
+      "end_time": "05:28",
+      "sub_events": [],
+      "subtype_order": 15,
+      "subtype_total": 21,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

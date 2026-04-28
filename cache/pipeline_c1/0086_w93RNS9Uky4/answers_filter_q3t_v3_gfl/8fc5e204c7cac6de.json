@@ -1,0 +1,139 @@
+{
+  "question": "Did the woman win the game?",
+  "pred": "The video shows a game where a man and a woman take turns using the air from a balloon to knock cups off a table. The on-screen text at the beginning states, \"Last color standing wins!\". The man is playing with the red cups, and the woman is playing with the purple cups. Throughout the video, they successfully knock down several of each other's cups. In the final sequence, the woman uses her balloon to knock the last remaining red cup off the table, while her purple cup stack remains on the table. She then celebrates by raising her arms and cheering.\n\nEvidence: The final frames of the video show the woman celebrating after knocking the last red cup off the table while a stack of purple cups remains.\n\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "game",
+      "description": "Two people stand behind a table with red cups on left and purple cups on right; woman holds orange balloon",
+      "participants": [
+        "black-jacket man",
+        "gray-shirt woman"
+      ],
+      "actor": "both",
+      "on_screen_text": [
+        {
+          "text": "Last color standing wins!",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "start",
+      "segment_label": "Cup Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:01",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "arrange",
+      "description": "Woman arranges fallen cups on the table, placing purple cups in a stack on the left and red cups in a stack on the right",
+      "participants": [
+        "gray-shirt woman",
+        "black-jacket man"
+      ],
+      "actor": "gray-shirt woman",
+      "object": "purple cups, red cups",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 55,
+      "start_time": "01:45",
+      "end_time": "01:52",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "arrange",
+      "description": "Woman finishes cup arrangement, adjusts the stacks of cups, and claps her hands",
+      "participants": [
+        "gray-shirt woman"
+      ],
+      "actor": "gray-shirt woman",
+      "object": "purple cups, red cups",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 56,
+      "start_time": "01:52",
+      "end_time": "01:58",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "lift",
+      "description": "The woman lifts the leftmost purple cup stack from the table",
+      "participants": [
+        "gray-shirt woman",
+        "black-jacket man"
+      ],
+      "actor": "gray-shirt woman",
+      "object": "purple cup stack",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 61,
+      "start_time": "02:02",
+      "end_time": "02:03",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "stack",
+      "description": "The woman places the purple cup stack on top of the red cup stack",
+      "participants": [
+        "gray-shirt woman",
+        "black-jacket man"
+      ],
+      "actor": "gray-shirt woman",
+      "cover": "purple cup stack",
+      "hidden": "red cup stack",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 62,
+      "start_time": "02:02",
+      "end_time": "02:03",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "catch",
+      "description": "The woman catches the descending orange balloon with both hands",
+      "participants": [
+        "gray-shirt woman",
+        "black-jacket man"
+      ],
+      "actor": "gray-shirt woman",
+      "object": "orange balloon",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 64,
+      "start_time": "02:03",
+      "end_time": "02:04",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    }
+  ]
+}

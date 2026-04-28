@@ -1,0 +1,252 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0107_LGzCMQy5d0w.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0107_LGzCMQy5d0w.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0107_LGzCMQy5d0w",
+    "n_target": 6,
+    "n_sub": 18,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 1.0,
+    "sub_accuracy": 0.9444444444444444
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Did the man start playing first?",
+      "gt": "Yes",
+      "pred": "Yes. In the first frame (0.0s), the man is holding a blue piece and appears to be the first to place a piece.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Were there only a man and a woman playing in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The video consistently shows only a man and a woman interacting with the game board across all frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man start playing before the woman?",
+      "gt": "Yes",
+      "pred": "Yes. In the first frame (0.00s), the man is placing a blue piece, while the woman's first action (placing a white piece) occurs later (e.g., around 1.00s). Thus, the man started playing before the woman.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Did the woman start playing first?",
+      "gt": "No",
+      "pred": "No. The man is seen placing a blue piece first (e.g., in the initial frames where he holds and positions blue blocks), while the woman’s actions (e.g., placing white blocks) occur later in the sequence. Thus, the woman did not start playing first.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Were there only a man and a woman playing in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The video consistently shows only a man and a woman interacting with the game board across all frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the woman start playing before the man?",
+      "gt": "No",
+      "pred": "No. In the first frame, the man is placing a blue piece, and in the second frame, the woman begins placing a white piece. Thus, the man started playing before the woman.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Did the woman win the game?",
+      "gt": "Yes",
+      "pred": "Yes. The woman placed the final block (evident in the frame just before the high - five at approximately 22.6s), and they then high - fived, indicating she won.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Were there only a man and a woman playing in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The video consistently shows only a man and a woman interacting with the game board across all frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was a game completed in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a game was completed. This is indicated by the final frames where the two individuals high - five (around the 31st frame), and the game board is filled with blocks, suggesting the completion of the game.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "In the end, did the man have no more space to drop his block?",
+      "gt": "Yes",
+      "pred": "Yes. In the final frames (around the 28-32 second mark), the board is filled such that there is no remaining space for the man to place his block, leading to the high - five indicating the completion of the game.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Did the man win the game?",
+      "gt": "No",
+      "pred": "So, let's check the video. The last frame shows them high-fiving, but we need to see who placed the last piece. Wait, the question is if the man won. Let's look at the sequence. The game is about placing blocks, and the final state: the board is filled except for a few spaces? Wait, no, the last frames show they're celebrating. But how do we know who won?\n\nWait, in the video, the man and woman are taking turns. The final high-five suggests they completed the board. But the question is if the man won. Let's check the actions. The last move: in the frame before the high-five, who placed the last piece? Let's see. The 31st frame (the one with the high-five) is after the last move. Let's check the previous frames.\n\nLooking at the frames: the 28th frame shows the woman placing a white piece, then 29th the man places a blue, 30th the woman places a white, then 31st high-five. Wait, but the game might be about filling the board, and the last move determines the winner. But the problem is, the question is \"Did the man win the game?\" We need to see if the man's last move completed the board or if he was the one who made the winning move.\n\nWait, but in the video, the two players are taking turns, and the game ends when the board is filled. The high-five suggests they both won or it's a tie? But the question is specifically if the man won. Let's check the final state. The board has a few empty spaces? No, looking at the frames: in the last frame (32nd), the board is almost full, but there are two black spaces. Wait, no, the black spaces might be the ones not filled. Wait, the game is probably to fill the board with their blocks, and the last person to place a block wins. But how do we know?\n\nWait, the key is: in the sequence, the man and woman alternate. Let's count the moves. But maybe the answer is no, because the high-five is mutual, but the question is \"did the man win\". Wait, no—let's check the video. The last action before the high-five: the man places a blue block (frame 30), then the woman places a white (frame 31), then they high-five. Wait, no, let's check the frame numbers.\n\nWait, the frames are numbered 1 to 32. Let's check the 32nd frame: they are high-fiving. The 31st frame shows the board with two black spaces (empty). The 30th frame: man places a blue block (the one with the blue piece being placed), 29th: woman places white, 28th: man places blue, etc. But the problem is, we need to see who made the last move that completed the game. However, the question is \"Did the man win the game?\".\n\nWait, the video shows that they end with a high-five, which suggests they both succeeded, but the game might have a specific win condition. However, from the video, we can't directly see who won unless the last move was by the man. Let's check the 30th frame: the man is placing a blue block. Then 31st: the woman places a white block (the frame before high-five). Then 32nd: high-five. So the woman made the last move. But the question is about the man. So if the man didn't make the last move, then he didn't win. But wait, maybe the game is won by the one who fills the board. Let's check the board state.\n\nLooking at the 32nd frame: the board has two black spaces (empty), so it's not fully filled. Wait, no, the game might not require filling the board. Maybe the win condition is different. But the problem is, the question is whether the man won. Since the video shows them high-fiving, which is a sign of mutual victory or a tie, but the question is \"did the man win\". However, the answer might be no, because the woman placed the last piece (the one before the high-five). Let's check the 31st frame: the woman is placing a white block (the frame where her hand is placing the white piece). Then 32nd: high-five. So the woman made the last move, so she might have won. Therefore, the man did not win.\n\nWait, but let's confirm. The 31st frame: \"a hand (woman's) is placing a white block on the top left\". Then the next frame (32nd) is high-five. So the last move was by the woman, so she won.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Were there only a man and a woman playing in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The video consistently shows only a man and a woman interacting with the game board across all frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was a game completed in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a game was completed. This is indicated by the final frames where the two individuals high - five (around the 31st frame), and the game board is filled with blocks, suggesting the completion of the game.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "In the end, did the woman have no more space to drop her block?",
+      "gt": "No",
+      "pred": "So, let's check the video. The question is about whether the woman had no more space to drop her block at the end. Looking at the last frames, especially the one where they high-five, but we need to see the block placement. Wait, in the sequence, when they're placing blocks, the game is like Tetris. The last part—let's check the frame where they finish. The final frame before high-five shows the board is full except maybe some spots, but the key is: did she have space? Wait, no, the question is \"in the end, did the woman have no more space to drop her block?\" Let's see the last action. In the frame where the woman is placing a block, maybe the board was full. Wait, looking at the last few frames: the 25th image (the one with the high-five) is after they finished. But the previous frame (24th) shows the board with some empty spaces? Wait no, let's check. Wait, the video shows that as they place blocks, eventually the board fills up. The key is, in the final step, when the woman tries to place her block, is there space? Let's check the frame where the woman is holding a block. The 22nd frame: \"a woman's hand holding a white block over the board\"—then the next frame (23) shows the block placed. Then 24: the board is full. Wait, but the question is about the end. Let's check the last frames. The 26th frame: the board has a few empty spots? No, the 27th frame (the one with the man and woman smiling) shows the board is almost full. The 28th frame: the board has two empty spots (black areas). Then 29th: high-five. So, the question is, in the end, did she have no space? Wait, the last action before high-five—did she have space? Let's check the frame where the woman is placing a block. The 22nd frame: she's placing a white block. Then the next frame (23) shows it's placed. Then the 24th frame: the board is filled with blue and white blocks, but there are two black spaces (empty). So, maybe the last block she placed was the one that filled it, but the question is \"in the end, did the woman have no more space to drop her block?\" So, if at the end, there's no space, then yes. Let's check the frame where they finish. The 26th frame (the one with the man making a face) shows the board with two black squares (empty), but then the 27th frame (next) shows the same. The 28th frame: high-five. So, the last block placed was by the woman? Wait, no. Let's check the sequence:\n\nLooking at the images:\n\n- The 22nd image: woman's hand with white block over the board (top of the board, maybe the last row)\n- 23rd: the block is placed, now the board has that block\n- 24th: the board shows the block placed, and there's a black space (empty) on the right side? No, in 24th, the board has some empty spots (black areas). Then 25th: the board is more filled. Wait, maybe the answer is no, because there were empty spaces. But the question is \"in the end, did the woman have no more space to drop her block?\"\n\nWait, the key is: in the final step, when she tried to drop, was there space? Let's check the frame where the woman is holding a block. The 22nd image: \"a woman's hand holding a white block over the board\"—so that's when she's about to place it. Then the next frame (23) shows it's placed. So, there was space for that block. But the question is \"in the end, did the woman have no more space to drop her block?\" So, if the final state has no space, then yes. But looking at the 27th image (the one where they are smiling), the board has two black squares (empty). So, there was still space. Wait, but maybe I'm miscounting.\n\nAlternatively, the last action: the 25th image shows the man placing a block, then the 26th shows the board with two empty spots. Then 27th: same. 28th: high-five. So, the woman did have space to place her block. Wait, no. Let's check the 22nd image: woman placing a block, then 23rd: placed. Then 24th: the board is filled. Wait, maybe",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Did the man start playing before the woman?",
+      "gt": "Yes",
+      "pred": "Yes. In the first frame (0.00s), the man is placing a blue piece, while the woman's first action (placing a white piece) occurs later (e.g., around 1.00s). Thus, the man started playing before the woman.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did only a man and a woman play in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The video only shows a man and a woman playing with the blocks; no other individuals are present in any of the frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man start playing?",
+      "gt": "Yes",
+      "pred": "Yes, the man started playing. In the first frame (timestamp 0), he is seen placing a blue block onto the game board.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the woman start playing?",
+      "gt": "Yes",
+      "pred": "Yes. The woman is seen placing white blocks (e.g., in the second frame where she holds a white block above the board, and subsequent frames where she adds white blocks to the structure).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was there a moment when the man had started playing but the woman had not yet started playing?",
+      "gt": "Yes",
+      "pred": "Yes. In the initial frames (e.g., the first image), the man is placing blue pieces while the woman is not yet placing any pieces (her hand is not shown placing a piece until later frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Did the man start playing after the woman?",
+      "gt": "No",
+      "pred": "No. The man is seen placing the first piece (a blue block) in the initial frames, while the woman's first move occurs later. For example, in the first image, the man is holding a blue block to place, whereas the woman’s first action (placing a white block) is visible in subsequent frames (e.g., around the second image). Thus, the man started playing before the woman.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the man start playing in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the man started playing; in the first frame (0:00), he is holding a blue piece above the game board.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the woman start playing in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the woman started playing. In the second frame (roughly the second image in the sequence), she is seen placing a white block into the board.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did only a man and a woman play in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The video only shows a man and a woman playing with the blocks; no other individuals are present in any of the frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was there a moment when the woman had started playing but the man had not yet started playing?",
+      "gt": "No",
+      "pred": "No. The man's first action (placing a blue piece) occurs before the woman's first action (placing a white piece), as seen in the sequence of frames (e.g., the man is shown placing a piece in the first frame, and the woman begins placing a piece in the second frame). Thus, there is no moment where the woman had started playing while the man had not yet started.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

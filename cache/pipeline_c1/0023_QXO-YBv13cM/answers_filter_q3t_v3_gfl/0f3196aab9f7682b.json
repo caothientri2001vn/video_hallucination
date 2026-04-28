@@ -1,0 +1,165 @@
+{
+  "question": "Is the last ball got sorted orange?",
+  "pred": "The video shows a color-matching activity where balls are moved from a bowl into matching colored cups. By observing the sequence of actions in the frames:\n\n1.  A white ball is placed into the white cup.\n2.  A pink ball is placed into the pink cup.\n3.  A yellow ball is placed into the yellow cup.\n4.  A blue ball is placed into the blue cup.\n5.  A green ball is placed into the green cup.\n6.  A purple ball is placed into the purple cup.\n7.  A red ball is placed into the red cup.\n8.  A light-blue ball is placed into the light-blue cup.\n9.  An orange ball is picked up from the bowl and placed into the orange cup (final action).\n\nThe last ball to be sorted is indeed orange.\n\nEvidence: The final frames of the video show the hand using a spoon to place the orange ball into the orange cup, completing the set.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "place": 5,
+      "hand_raise": 1,
+      "lift": 1
+    },
+    "events": [
+      {
+        "event_type": "hand_raise",
+        "description": "a hand holding a wooden spoon enters the frame from the right side",
+        "participants": [
+          "hand holding spoon"
+        ],
+        "actor": "hand holding spoon",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "Color Matching Activity",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:02",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Color Matching Activity"
+      },
+      {
+        "event_type": "place",
+        "description": "the spoon picks up a white ball from the bowl",
+        "participants": [
+          "hand holding spoon"
+        ],
+        "actor": "hand holding spoon",
+        "object": "white ball",
+        "segment_boundary": "middle",
+        "segment_label": "Color Matching Activity",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 2,
+        "start_time": "00:02",
+        "end_time": "00:05",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Color Matching Activity"
+      },
+      {
+        "event_type": "place",
+        "description": "the hand moves the spoon with the white ball toward the white cup in the center of the circle",
+        "participants": [
+          "hand holding spoon"
+        ],
+        "actor": "hand holding spoon",
+        "object": "white ball",
+        "segment_boundary": "middle",
+        "segment_label": "Color Matching Activity",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 3,
+        "start_time": "00:05",
+        "end_time": "00:08",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Color Matching Activity"
+      },
+      {
+        "event_type": "place",
+        "description": "the white ball is placed into the white cup in the center position of the circular arrangement",
+        "participants": [
+          "hand holding spoon"
+        ],
+        "actor": "hand holding spoon",
+        "object": "white ball",
+        "segment_boundary": "middle",
+        "segment_label": "Color Matching Activity",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 4,
+        "start_time": "00:08",
+        "end_time": "00:10",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Color Matching Activity"
+      },
+      {
+        "event_type": "place",
+        "description": "the spoon picks up a pink ball from the bowl",
+        "participants": [
+          "hand holding spoon"
+        ],
+        "actor": "hand holding spoon",
+        "object": "pink ball",
+        "segment_boundary": "middle",
+        "segment_label": "Color Matching Activity",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 5,
+        "start_time": "00:10",
+        "end_time": "00:12",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Color Matching Activity"
+      },
+      {
+        "event_type": "place",
+        "description": "the hand moves the spoon with the pink ball toward the pink cup on the right side of the circle and places the pink ball inside it",
+        "participants": [
+          "hand holding spoon"
+        ],
+        "actor": "hand holding spoon",
+        "object": "pink ball",
+        "segment_boundary": "middle",
+        "segment_label": "Color Matching Activity",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 6,
+        "start_time": "00:12",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Color Matching Activity"
+      },
+      {
+        "event_type": "lift",
+        "description": "lifts the orange ball from the wooden bowl using a white spoon",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "orange ball",
+        "segment_boundary": "middle",
+        "segment_label": "Color Ball Matching Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 7,
+        "start_time": "00:15",
+        "end_time": "00:17",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Color Matching Activity"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Color Matching Activity",
+        "event_index_range": [
+          1,
+          7
+        ]
+      }
+    ]
+  }
+}

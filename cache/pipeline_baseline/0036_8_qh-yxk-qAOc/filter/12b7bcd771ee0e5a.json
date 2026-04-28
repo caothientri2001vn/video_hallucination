@@ -1,0 +1,169 @@
+{
+  "question": "Does the player with red shirt, red pant number 27 score the goal?",
+  "top_k": 10,
+  "indices": [
+    5,
+    6,
+    9,
+    10,
+    11,
+    12
+  ],
+  "events": [
+    {
+      "event_type": "kick",
+      "description": "The red-jersey player (#66 Alexander-Arnold) quickly takes a low corner kick toward the center of the box.",
+      "participants": [
+        "red-jersey player (#66 Alexander-Arnold)"
+      ],
+      "actor": "red-jersey player (#66 Alexander-Arnold)",
+      "object": "white and red ball",
+      "on_screen_text": [
+        {
+          "text": "DIVOCK ORIGI",
+          "location": "subtitle"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Corner Kick Execution",
+      "continuation_hint": "complete",
+      "event_index": 5,
+      "start_time": "00:06",
+      "end_time": "00:07",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Corner Kick Setup"
+    },
+    {
+      "event_type": "kick",
+      "description": "The red-jersey player (#27 Origi) kicks the ball into the net from the center of the box.",
+      "participants": [
+        "red-jersey player (#27 Origi)"
+      ],
+      "actor": "red-jersey player (#27 Origi)",
+      "object": "white and red ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "DIVOCK ORIGI",
+          "location": "subtitle"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Goal Scoring",
+      "continuation_hint": "complete",
+      "event_index": 6,
+      "start_time": "00:07",
+      "end_time": "00:09",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Corner Kick Setup"
+    },
+    {
+      "event_type": "kick",
+      "description": "A replay shows the red-jersey player (#27 Origi) scoring the goal from a high-angle view.",
+      "participants": [
+        "red-jersey player (#27 Origi)"
+      ],
+      "actor": "red-jersey player (#27 Origi)",
+      "object": "white and red ball",
+      "outcome": "scored",
+      "on_screen_text": [],
+      "segment_boundary": "end",
+      "segment_label": "Goal Replay",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 9,
+      "start_time": "00:13",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Corner Kick Setup"
+    },
+    {
+      "event_type": "game",
+      "description": "the red-jersey player (number 27) kicks the ball toward the goal",
+      "participants": [
+        "red-jersey player",
+        "yellow-jersey goalkeeper",
+        "yellow-jersey defender"
+      ],
+      "actor": "red-jersey player",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "TARAFTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 10,
+      "start_time": "00:15",
+      "end_time": "00:16",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Corner Kick Setup"
+    },
+    {
+      "event_type": "game",
+      "description": "the yellow-jersey goalkeeper dives to his right but the ball goes into the net",
+      "participants": [
+        "yellow-jersey goalkeeper"
+      ],
+      "actor": "yellow-jersey goalkeeper",
+      "object": "white ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "TARAFTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "middle",
+      "event_index": 11,
+      "start_time": "00:16",
+      "end_time": "00:17",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Corner Kick Setup"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the red-jersey player (number 27) runs toward the sideline with arms outstretched",
+      "participants": [
+        "red-jersey player"
+      ],
+      "actor": "red-jersey player",
+      "on_screen_text": [
+        {
+          "text": "TARAFTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "middle",
+      "event_index": 12,
+      "start_time": "00:17",
+      "end_time": "00:19",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Corner Kick Setup"
+    }
+  ]
+}

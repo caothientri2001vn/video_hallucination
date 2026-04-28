@@ -1,0 +1,209 @@
+{
+  "question": "Does the man on the left side win the game?",
+  "pred": "The man on the left side (blue-shirt man) does not win the game. According to the Context and frames, the game \"Fall Into Place\" is won by the woman in the black outfit (Sarah). The blue-shirt man (Hideo) is shown completing his stack later, but a \"GAME OVER\" graphic appears over him, and he is seen walking away from the stage while the others celebrate.\n\nEvidence: event 134 states a \"'GAME OVER' graphic appears on screen over the blue-shirt man\" at 02:40.\n\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "celebration",
+      "description": "The black-shirt woman raises both arms in celebration after completing her stack.",
+      "participants": [
+        "black-shirt woman"
+      ],
+      "actor": "black-shirt woman",
+      "on_screen_text": [
+        {
+          "text": "SARAH 10",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Last Man Standing",
+      "continuation_hint": "complete",
+      "event_index": 118,
+      "start_time": "02:13",
+      "end_time": "02:14",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 2,
+      "segment_label_resolved": "Fall Into Place -- Level 4"
+    },
+    {
+      "event_type": "place",
+      "description": "the blue-shirt man places a purple cup on top of a red cup on the leftmost pedestal",
+      "participants": [
+        "blue-shirt man"
+      ],
+      "actor": "blue-shirt man",
+      "cover": "purple cup",
+      "hidden": "red cup",
+      "on_screen_text": [
+        {
+          "text": "HIDEO",
+          "location": "banner"
+        },
+        {
+          "text": "5",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Hideo",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 123,
+      "start_time": "02:20",
+      "end_time": "02:22",
+      "sub_events": [],
+      "subtype_order": 62,
+      "subtype_total": 63,
+      "round_index": 2,
+      "segment_label_resolved": "Fall Into Place -- Level 4"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the black-outfit woman jumps and cheers as the blue-shirt man completes his stack",
+      "participants": [
+        "black-outfit woman"
+      ],
+      "actor": "black-outfit woman",
+      "on_screen_text": [
+        {
+          "text": "HIDEO",
+          "location": "banner"
+        },
+        {
+          "text": "5",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Hideo",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 124,
+      "start_time": "02:22",
+      "end_time": "02:24",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 2,
+      "segment_label_resolved": "Fall Into Place -- Level 4"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the blue-shirt man claps and celebrates his performance",
+      "participants": [
+        "blue-shirt man"
+      ],
+      "actor": "blue-shirt man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Hideo",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 128,
+      "start_time": "02:28",
+      "end_time": "02:30",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 2,
+      "segment_label_resolved": "Fall Into Place -- Level 4"
+    },
+    {
+      "event_type": "look",
+      "description": "the blue-shirt man looks at the camera and smiles",
+      "participants": [
+        "blue-shirt man"
+      ],
+      "actor": "blue-shirt man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Last Man Standing",
+      "continuation_hint": "complete",
+      "event_index": 133,
+      "start_time": "02:37",
+      "end_time": "02:40",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 13,
+      "round_index": 2,
+      "segment_label_resolved": "Fall Into Place -- Level 4"
+    },
+    {
+      "event_type": "graphic",
+      "description": "a 'GAME OVER' graphic appears on screen over the blue-shirt man",
+      "participants": [
+        "blue-shirt man"
+      ],
+      "actor": "blue-shirt man",
+      "on_screen_text": [
+        {
+          "text": "GAME OVER",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Last Man Standing",
+      "continuation_hint": "complete",
+      "event_index": 134,
+      "start_time": "02:40",
+      "end_time": "02:42",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 10,
+      "round_index": 2,
+      "segment_label_resolved": "Fall Into Place -- Level 4"
+    },
+    {
+      "event_type": "handshake",
+      "description": "the blue-shirt man shakes hands with the grey-shirt man",
+      "participants": [
+        "blue-shirt man",
+        "grey-shirt man"
+      ],
+      "actor": "blue-shirt man",
+      "on_screen_text": [
+        {
+          "text": "#MTWILastManStanding",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Last Man Standing",
+      "continuation_hint": "complete",
+      "event_index": 136,
+      "start_time": "02:43",
+      "end_time": "02:44",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "Fall Into Place -- Level 4"
+    },
+    {
+      "event_type": "walk",
+      "description": "the blue-shirt man walks away from the center stage",
+      "participants": [
+        "blue-shirt man"
+      ],
+      "actor": "blue-shirt man",
+      "on_screen_text": [
+        {
+          "text": "#MTWILastManStanding",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Minute to Win It",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 142,
+      "start_time": "02:51",
+      "end_time": "02:53",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "Fall Into Place -- Level 4"
+    }
+  ]
+}

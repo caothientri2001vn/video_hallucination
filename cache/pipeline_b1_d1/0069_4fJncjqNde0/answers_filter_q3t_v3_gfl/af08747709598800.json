@@ -1,0 +1,63 @@
+{
+  "question": "Did the off-shoulder dress appear between two mini dresses?",
+  "pred": "The video shows a woman showcasing several black dresses in sequence. Based on the frames and Context:\n\n1.  The first dress shown is a **strapless black dress with a white ruffled detail** (long/asymmetric length), appearing from approximately 00:07 to 00:09 (Event 4).\n2.  The second dress is a **short black mini dress with thin straps** and a deep V-neckline, appearing from approximately 00:09 to 00:10 (Event 5).\n3.  The third dress is a **strapless black mini dress** with a flared skirt, appearing after the first mini dress.\n4.  The final dress is a **black off-shoulder midi/maxi dress**, which appears at the very end of the sequence.\n\nThe off-shoulder dress appears last, not between two mini dresses. The dresses that appear between others are the strapless ruffled dress and the mini dresses themselves.\n\nEvidence: Event 5 shows the woman transitions to a short black dress with thin straps (mini dress) at 00:09, followed by other dresses, with the off-shoulder dress appearing at the end of the video.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "costume_change",
+      "description": "woman transitions from holding black clothing to wearing a black strapless dress with white ruffled detail",
+      "participants": [
+        "woman"
+      ],
+      "actor": "woman",
+      "object_before": "light blue top and white skirt",
+      "object_after": "black strapless dress with white ruffle",
+      "event_index": 3,
+      "start_time": "00:06",
+      "end_time": "00:07",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "fashion showcase"
+    },
+    {
+      "event_type": "pose",
+      "description": "woman stands in black strapless dress with white ruffled detail, making small posture adjustments",
+      "participants": [
+        "woman in black strapless dress"
+      ],
+      "actor": "woman in black strapless dress",
+      "segment_boundary": "middle",
+      "segment_label": "fashion showcase",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 4,
+      "start_time": "00:07",
+      "end_time": "00:09",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "fashion showcase"
+    },
+    {
+      "event_type": "costume_change",
+      "description": "woman transitions to wearing a short black dress with thin straps",
+      "participants": [
+        "woman"
+      ],
+      "actor": "woman",
+      "object_before": "black strapless dress with white ruffle",
+      "object_after": "short black dress with thin straps",
+      "event_index": 5,
+      "start_time": "00:09",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "fashion showcase"
+    }
+  ]
+}

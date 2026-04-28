@@ -1,0 +1,126 @@
+{
+  "question": "Did the goalkeeper in green fail to save the shot in Round 2?",
+  "pred": "The video shows a penalty shootout. According to Rule 3d, the \"round\" refers to the sequence of penalty kicks. In the first round, the French player (number 10) scores and the Argentine player (number 10) scores. In the second round, the French player (number 20) takes his shot, and the goalkeeper in green (identified as the \"green-uniform goalkeeper\" in the alias map) successfully saves it.\n\n1. Round 1, France: French player #10 scores (05:22).\n2. Round 1, Argentina: Argentina player #10 scores (05:35).\n3. Round 2, France: French player #20 takes a shot; the goalkeeper in green dives to his right and saves the ball (05:45).\n\nEvidence: frames at ~05:45 show the goalkeeper in green diving to his right and blocking the shot by the French player in jersey #20.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "game",
+      "description": "goalkeeper in bright green uniform positions himself for a penalty kick",
+      "participants": [
+        "goalkeeper in green uniform",
+        "kicker in dark uniform"
+      ],
+      "actor": "goalkeeper in green uniform",
+      "object": "white soccer ball",
+      "object_before": "",
+      "object_after": "",
+      "outcome": "",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 132,
+      "start_time": "05:17",
+      "end_time": "05:19",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "goalkeeper in green uniform dives to his right attempting to save the penalty kick",
+      "participants": [
+        "goalkeeper in green uniform"
+      ],
+      "actor": "goalkeeper in green uniform",
+      "object": "white soccer ball",
+      "object_before": "",
+      "object_after": "",
+      "outcome": "miss",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 134,
+      "start_time": "05:20",
+      "end_time": "05:23",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "soccer ball enters the goal net after the penalty kick",
+      "participants": [
+        "goalkeeper in green uniform",
+        "kicker in dark uniform"
+      ],
+      "actor": "soccer ball",
+      "object": "white soccer ball",
+      "object_before": "",
+      "object_after": "",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 135,
+      "start_time": "05:22",
+      "end_time": "05:24",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "goalkeeper in green uniform falls to the ground after diving for the penalty",
+      "participants": [
+        "goalkeeper in green uniform"
+      ],
+      "actor": "goalkeeper in green uniform",
+      "object": "",
+      "object_before": "",
+      "object_after": "",
+      "outcome": "",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 136,
+      "start_time": "05:23",
+      "end_time": "05:25",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

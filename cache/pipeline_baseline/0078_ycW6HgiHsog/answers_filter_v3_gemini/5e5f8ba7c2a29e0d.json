@@ -1,0 +1,218 @@
+{
+  "question": "Does the woman win the game with number 3?",
+  "pred": "The video shows a bottle flip game where a woman in a striped dress and a man in a plaid shirt take turns flipping a bottle to reveal numbers hidden under plates.\n\n1.  At approximately 01:16, the woman successfully flips the bottle (as indicated by the man's reaction and her subsequent action).\n2.  She then lifts a purple plate from the table.\n3.  The Context (event 58) and the frames at 01:17 clearly show that lifting this plate reveals a white plate with the number '3' written on it.\n4.  Following this reveal, the woman celebrates and the man claps (event 60), and she proceeds to pick up the food containers from the table (event 61), indicating she has won that prize.\n\nEvidence: the striped-dress woman lifts the purple plate (third from the left in the middle row) to reveal a white plate with the number '3' written on it\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "gesture",
+      "description": "the striped-dress woman gestures with her hands while looking at the table",
+      "participants": [
+        "striped-dress woman",
+        "plaid-shirt man"
+      ],
+      "actor": "striped-dress woman",
+      "on_screen_text": [
+        {
+          "text": "Wow how can you miss",
+          "location": "caption"
+        },
+        {
+          "text": "All that chances 🤣",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Bottle Flip Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 56,
+      "start_time": "01:15",
+      "end_time": "01:16",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Bottle Flip Game"
+    },
+    {
+      "event_type": "react",
+      "description": "the plaid-shirt man covers his mouth with his hands while watching the woman",
+      "participants": [
+        "plaid-shirt man",
+        "striped-dress woman"
+      ],
+      "actor": "plaid-shirt man",
+      "on_screen_text": [
+        {
+          "text": "Wow how can you miss",
+          "location": "caption"
+        },
+        {
+          "text": "All that chances 🤣",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Bottle Flip Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 57,
+      "start_time": "01:15",
+      "end_time": "01:17",
+      "sub_events": [],
+      "subtype_order": 16,
+      "subtype_total": 16,
+      "round_index": 1,
+      "segment_label_resolved": "Bottle Flip Game"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the striped-dress woman lifts the purple plate (third from the left in the middle row) to reveal a white plate with the number '3' written on it",
+      "participants": [
+        "striped-dress woman"
+      ],
+      "actor": "striped-dress woman",
+      "cover": "purple plate",
+      "hidden": "white plate",
+      "on_screen_text": [
+        {
+          "text": "Wow how can you miss",
+          "location": "caption"
+        },
+        {
+          "text": "All that chances 🤣",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Bottle Flip Game",
+      "continuation_hint": "middle",
+      "event_index": 58,
+      "start_time": "01:16",
+      "end_time": "01:17",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Bottle Flip Game"
+    },
+    {
+      "event_type": "gesture",
+      "description": "the striped-dress woman gestures toward the revealed plate",
+      "participants": [
+        "striped-dress woman"
+      ],
+      "actor": "striped-dress woman",
+      "on_screen_text": [
+        {
+          "text": "Wow how can you miss",
+          "location": "caption"
+        },
+        {
+          "text": "All that chances 🤣",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Bottle Flip Game",
+      "continuation_hint": "middle",
+      "event_index": 59,
+      "start_time": "01:17",
+      "end_time": "01:18",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Bottle Flip Game"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the plaid-shirt man raises his hands and claps while laughing",
+      "participants": [
+        "plaid-shirt man"
+      ],
+      "actor": "plaid-shirt man",
+      "on_screen_text": [
+        {
+          "text": "Wow how can you miss",
+          "location": "caption"
+        },
+        {
+          "text": "All that chances 🤣",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Bottle Flip Game",
+      "continuation_hint": "middle",
+      "event_index": 60,
+      "start_time": "01:17",
+      "end_time": "01:20",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Bottle Flip Game"
+    },
+    {
+      "event_type": "lift",
+      "description": "the striped-dress woman lifts a black food container from the table and moves it out of frame to the left",
+      "participants": [
+        "striped-dress woman"
+      ],
+      "actor": "striped-dress woman",
+      "object": "black food container",
+      "on_screen_text": [
+        {
+          "text": "Wow how can you miss",
+          "location": "caption"
+        },
+        {
+          "text": "All that chances 🤣",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Bottle Flip Game",
+      "continuation_hint": "middle",
+      "event_index": 61,
+      "start_time": "01:18",
+      "end_time": "01:21",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Bottle Flip Game"
+    },
+    {
+      "event_type": "throw",
+      "description": "the plaid-shirt man flips a clear plastic water bottle onto the table",
+      "participants": [
+        "plaid-shirt man"
+      ],
+      "actor": "plaid-shirt man",
+      "object": "clear water bottle",
+      "outcome": "miss",
+      "on_screen_text": [
+        {
+          "text": "Wow how can you miss",
+          "location": "caption"
+        },
+        {
+          "text": "All that chances 🤣",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Bottle Flip Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 62,
+      "start_time": "01:20",
+      "end_time": "01:21",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 10,
+      "round_index": 1,
+      "segment_label_resolved": "Bottle Flip Game"
+    }
+  ]
+}

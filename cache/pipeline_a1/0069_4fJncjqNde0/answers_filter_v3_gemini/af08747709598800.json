@@ -1,0 +1,95 @@
+{
+  "question": "Did the off-shoulder dress appear between two mini dresses?",
+  "pred": "The video showcases a series of black dresses worn by a woman. Based on the chronological sequence of events:\n\n1.  The woman first appears in a **mini dress** (short black dress with thin straps) at approximately 00:03 (Event 4).\n2.  She then transitions to a second **mini dress** (short strapless flared dress) at approximately 00:04 (Event 5).\n3.  Finally, she transitions to the **off-shoulder dress** (mid-length off-the-shoulder dress) at approximately 00:06 (Event 6).\n\nThe off-shoulder dress appears *after* two mini dresses, not *between* them.\n\nEvidence: Context events 4, 5, and 6 show the sequence: short dress with straps -> short strapless flared dress -> mid-length off-the-shoulder dress.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "reveal",
+      "description": "the woman transitions to wearing a short black dress with thin straps",
+      "participants": [
+        "white-shirt woman"
+      ],
+      "actor": "white-shirt woman",
+      "object_before": "black dress",
+      "object_before_pattern": "white ruffled hem",
+      "object_after": "black dress",
+      "object_after_pattern": "short with thin straps",
+      "on_screen_text": [
+        {
+          "text": "this trend but it's my favourite black dresses",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Black Dress Showcase",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 4,
+      "start_time": "00:03",
+      "end_time": "00:04",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Black Dress Showcase"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the woman transitions to wearing a short black strapless dress with a flared skirt",
+      "participants": [
+        "white-shirt woman"
+      ],
+      "actor": "white-shirt woman",
+      "object_before": "black dress",
+      "object_before_pattern": "short with thin straps",
+      "object_after": "black dress",
+      "object_after_pattern": "short strapless flared",
+      "on_screen_text": [
+        {
+          "text": "this trend but it's my favourite black dresses",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Black Dress Showcase",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 5,
+      "start_time": "00:04",
+      "end_time": "00:06",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Black Dress Showcase"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the woman transitions to wearing a mid-length black off-the-shoulder dress",
+      "participants": [
+        "white-shirt woman"
+      ],
+      "actor": "white-shirt woman",
+      "object_before": "black dress",
+      "object_before_pattern": "short strapless flared",
+      "object_after": "black dress",
+      "object_after_pattern": "mid-length off-the-shoulder",
+      "on_screen_text": [
+        {
+          "text": "this trend but it's my favourite black dresses",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Black Dress Showcase",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:06",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Black Dress Showcase"
+    }
+  ]
+}

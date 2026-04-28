@@ -1,0 +1,74 @@
+{
+  "question": "Did the black lace dress appear between the white lace halter dress and the pink one-shoulder dress?",
+  "pred": "The video shows a sequence of dresses being presented by a woman. According to the Context and the visual evidence in the frames:\n\n1.  The woman is shown in a **white lace halter dress** (identified as \"white lace dress\" in event 5 and visible in frames around 00:04-00:05).\n2.  Immediately following this, she transitions into a **black lace dress** (event 6, visible in frames around 00:05-00:06).\n3.  Immediately after the black lace dress, she transitions into a **pink one-shoulder dress** (event 7, visible in frames around 00:06-00:07).\n\nThe black lace dress appears directly between the white lace halter dress and the pink one-shoulder dress in the chronological sequence of the video.\n\nEvidence: event 6 transitions from the woman in a white lace dress to her wearing a black lace dress, followed by event 7 transitioning to a pink dress.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "transition",
+      "description": "The scene transitions from the woman in a light blue dress to her wearing a white lace dress.",
+      "participants": [
+        "white-lace-dress woman"
+      ],
+      "actor": "white-lace-dress woman",
+      "object_before": "light blue dress",
+      "object_after": "white lace dress",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Top 10 Dresses of 2024",
+      "continuation_hint": "complete",
+      "event_index": 5,
+      "start_time": "00:04",
+      "end_time": "00:05",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Top 10 Dresses of 2024"
+    },
+    {
+      "event_type": "transition",
+      "description": "The scene transitions from the woman in a white lace dress to her wearing a black lace dress.",
+      "participants": [
+        "black-lace-dress woman"
+      ],
+      "actor": "black-lace-dress woman",
+      "object_before": "white lace dress",
+      "object_after": "black lace dress",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Top 10 Dresses of 2024",
+      "continuation_hint": "complete",
+      "event_index": 6,
+      "start_time": "00:05",
+      "end_time": "00:06",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Top 10 Dresses of 2024"
+    },
+    {
+      "event_type": "transition",
+      "description": "The scene transitions from the woman in a black lace dress to her wearing a pink one-shoulder dress.",
+      "participants": [
+        "pink-dress woman"
+      ],
+      "actor": "pink-dress woman",
+      "object_before": "black lace dress",
+      "object_after": "pink dress",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Top 10 Dresses of 2024",
+      "continuation_hint": "complete",
+      "event_index": 7,
+      "start_time": "00:06",
+      "end_time": "00:07",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Top 10 Dresses of 2024"
+    }
+  ]
+}

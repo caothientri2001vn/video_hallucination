@@ -1,0 +1,175 @@
+{
+  "question": "In the penalty short, does the bold head player with white shirt number 10 score the goal?",
+  "pred": "The video shows a penalty kick sequence. A player with a shaved head, wearing a white jersey with the number 10 (identified in the Context as \"white-jersey player (number 10)\"), takes the penalty kick. The ball hits the underside of the crossbar and crosses the goal line before bouncing back out, which is recorded in the Context as a successful goal.\n\nEvidence: event 6 states \"the ball enters the net as the goalkeeper in yellow lies on the ground\" with the outcome \"scored\", and frames at ~00:15-00:17 show the white-jersey player #10 taking the shot and the ball crossing the line.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "concentration",
+      "description": "Player with shaved head shows serious expression while looking downward",
+      "participants": [
+        "shaved-head player"
+      ],
+      "actor": "shaved-head player",
+      "object": "",
+      "outcome": "",
+      "on_screen_text": [
+        {
+          "text": "TRT SPOR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match - Penalty Kick",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 4,
+      "start_time": "00:09",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match - Penalty Kick"
+    },
+    {
+      "event_type": "penalty_kick_setup",
+      "description": "Player in white uniform prepares to take a penalty kick while goalkeeper in yellow positions in goal",
+      "participants": [
+        "white-uniform player",
+        "yellow-uniform goalkeeper",
+        "referee"
+      ],
+      "actor": "white-uniform player",
+      "object": "soccer ball",
+      "outcome": "",
+      "on_screen_text": [
+        {
+          "text": "TRT SPOR KANALI",
+          "location": "logo"
+        },
+        {
+          "text": "ZINÉDINE ZIDANE",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match - Penalty Kick",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 5,
+      "start_time": "00:11",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match - Penalty Kick"
+    },
+    {
+      "event_type": "goal_scored",
+      "description": "the ball enters the net as the goalkeeper in yellow lies on the ground",
+      "participants": [
+        "blue-jersey players",
+        "white-jersey players",
+        "yellow-jersey goalkeeper"
+      ],
+      "actor": "white-jersey player",
+      "object": "white ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "TARAFINDIR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:15",
+      "end_time": "00:17",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match - Penalty Kick"
+    },
+    {
+      "event_type": "hand_raise",
+      "description": "a white-jersey player (number 10) raises their arm in celebration",
+      "participants": [
+        "white-jersey player"
+      ],
+      "actor": "white-jersey player",
+      "object": "white jersey with blue and red stripes",
+      "on_screen_text": [
+        {
+          "text": "TARAFINDIR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 7,
+      "start_time": "00:17",
+      "end_time": "00:18",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match - Penalty Kick"
+    },
+    {
+      "event_type": "point",
+      "description": "a white-jersey player (number 10) points with their index finger while celebrating",
+      "participants": [
+        "white-jersey player"
+      ],
+      "actor": "white-jersey player",
+      "object": "white jersey with blue and red stripes",
+      "on_screen_text": [
+        {
+          "text": "TARAFINDIR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 8,
+      "start_time": "00:18",
+      "end_time": "00:19",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match - Penalty Kick"
+    },
+    {
+      "event_type": "run",
+      "description": "a white-jersey player (number 10) runs while celebrating",
+      "participants": [
+        "white-jersey player"
+      ],
+      "actor": "white-jersey player",
+      "object": "white jersey with blue and red stripes",
+      "on_screen_text": [
+        {
+          "text": "TARAFINDIR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 9,
+      "start_time": "00:19",
+      "end_time": "00:20",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match - Penalty Kick"
+    }
+  ]
+}

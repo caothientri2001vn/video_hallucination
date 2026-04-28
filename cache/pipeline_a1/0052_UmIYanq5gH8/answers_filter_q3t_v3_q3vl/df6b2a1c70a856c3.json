@@ -1,0 +1,87 @@
+{
+  "question": "Is it correct that the gold-medal team swam in lane 4?",
+  "pred": "Evidence: Context explicitly states \"The start list graphic updates to show United States of America in lane 5\" and the frame showing the pool with lane assignments confirms USA in lane 5. The gold medal team (USA) did not swim in lane 4.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "graphic",
+      "description": "The start list graphic updates to show Great Britain in lane 4.",
+      "participants": [],
+      "on_screen_text": [
+        {
+          "text": "4",
+          "location": "lower_third"
+        },
+        {
+          "text": "GREAT BRITAIN",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Men's 4 x 100m Medley Relay Final",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:09",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 18,
+      "round_index": 1,
+      "segment_label_resolved": "Men's 4 x 100m Medley Relay Final"
+    },
+    {
+      "event_type": "graphic",
+      "description": "The start list graphic updates to show United States of America in lane 5.",
+      "participants": [],
+      "on_screen_text": [
+        {
+          "text": "5",
+          "location": "lower_third"
+        },
+        {
+          "text": "UNITED STATES OF AMERICA",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Men's 4 x 100m Medley Relay Final",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 7,
+      "start_time": "00:10",
+      "end_time": "00:11",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 18,
+      "round_index": 1,
+      "segment_label_resolved": "Men's 4 x 100m Medley Relay Final"
+    },
+    {
+      "event_type": "medal_ceremony",
+      "description": "The blonde-haired woman in a black blazer places a gold medal around the neck of the first swimmer from the left (Ryan Murphy).",
+      "participants": [
+        "blonde-haired woman",
+        "Ryan Murphy"
+      ],
+      "actor": "blonde-haired woman",
+      "object": "gold medal",
+      "on_screen_text": [
+        {
+          "text": "Rio2016",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Men's 4x100m Medley Relay Medal Ceremony",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 188,
+      "start_time": "06:45",
+      "end_time": "06:47",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 2,
+      "segment_label_resolved": "Men's 4 x 100m Medley Relay"
+    }
+  ]
+}

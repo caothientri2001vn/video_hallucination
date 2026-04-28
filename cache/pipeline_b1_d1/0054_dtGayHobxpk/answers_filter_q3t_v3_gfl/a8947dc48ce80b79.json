@@ -1,0 +1,147 @@
+{
+  "question": "Were there three balls potted between the yellow ball and the pink ball?",
+  "pred": "The question asks if three balls were potted between the yellow ball and the pink ball. In snooker, the yellow ball is typically the first of the \"colors\" potted after the final red, and the pink ball is the second-to-last.\n\n1.  **Yellow ball potted:** At approximately 08:03 (Event 198), the yellow ball is potted.\n2.  **Green ball potted:** Following the yellow, the green ball is potted (visible in frames around 08:10).\n3.  **Brown ball potted:** Next, the brown ball is potted (visible in frames around 08:15).\n4.  **Blue ball potted:** At 08:25 (Event 206), the blue ball is potted.\n5.  **Pink ball potted:** Finally, the pink ball is potted (visible in frames around 08:40).\n\nThe balls potted between the yellow and the pink were the green, brown, and blue balls, totaling exactly three.\n\nEvidence: Frames between 08:03 and 08:40 show the green, brown, and blue balls being potted in sequence after the yellow ball and before the pink ball.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "ball_movement",
+      "description": "Cue ball moves across the table and hits the yellow ball",
+      "participants": [
+        "black-suit man",
+        "referee"
+      ],
+      "actor": "cue ball",
+      "object": "cue ball",
+      "outcome": "contact",
+      "on_screen_text": [
+        {
+          "text": "DING 0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "O'SULLIVAN 120",
+          "location": "scoreboard"
+        },
+        {
+          "text": "Break 120",
+          "location": "scoreboard"
+        },
+        {
+          "text": "3 (17) 8",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 198,
+      "start_time": "08:03",
+      "end_time": "08:05",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "game",
+      "description": "Cue ball collides with the blue ball on the table",
+      "participants": [],
+      "actor": "",
+      "object": "blue ball",
+      "outcome": "hit",
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "complete",
+      "event_index": 205,
+      "start_time": "08:24",
+      "end_time": "08:25",
+      "sub_events": [],
+      "subtype_order": 46,
+      "subtype_total": 54,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "game",
+      "description": "Blue ball moves toward and enters the corner pocket",
+      "participants": [],
+      "actor": "",
+      "object": "blue ball",
+      "outcome": "scored",
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "complete",
+      "event_index": 206,
+      "start_time": "08:25",
+      "end_time": "08:27",
+      "sub_events": [],
+      "subtype_order": 47,
+      "subtype_total": 54,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "game",
+      "description": "Player O'Sullivan takes a shot, cue stick makes contact with white cue ball which moves toward blue ball",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "white cue ball and blue ball",
+      "on_screen_text": [
+        {
+          "text": "DING JUNHUI",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 216,
+      "start_time": "08:52",
+      "end_time": "08:55",
+      "sub_events": [],
+      "subtype_order": 53,
+      "subtype_total": 54,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "game",
+      "description": "The player in black leans over the table and strikes the white ball with his cue stick",
+      "participants": [
+        "black-shirt player"
+      ],
+      "actor": "black-shirt player",
+      "object": "white ball, red ball, black ball",
+      "outcome": "red ball pocketed",
+      "on_screen_text": [
+        {
+          "text": "BETVICTOR",
+          "location": "lower_third"
+        },
+        {
+          "text": "Dinas Casnewydd",
+          "location": "lower_third"
+        },
+        {
+          "text": "STAR Strachan",
+          "location": "table"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 219,
+      "start_time": "09:00",
+      "end_time": "09:02",
+      "sub_events": [],
+      "subtype_order": 54,
+      "subtype_total": 54,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    }
+  ]
+}

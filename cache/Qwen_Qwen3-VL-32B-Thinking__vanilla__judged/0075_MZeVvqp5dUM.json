@@ -1,0 +1,418 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0075_MZeVvqp5dUM.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0075_MZeVvqp5dUM.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0075_MZeVvqp5dUM",
+    "n_target": 10,
+    "n_sub": 31,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.5,
+    "sub_accuracy": 0.4838709677419355
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Does the man prick a balloon first?",
+      "gt": "No",
+      "pred": "No, the video frames do not show the man pricking a balloon first. The first frame depicts the three people looking up at balloons, but no action of pricking a balloon is visible in any of the provided frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does a man appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A man in a yellow sweater appears in multiple frames (e.g., the first frame and the frame with gumball machines at approximately 24 seconds).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man prick a balloon?",
+      "gt": "Yes",
+      "pred": "No, there is no frame showing the man pricking a balloon. The video does not depict this action.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the woman wearing a green T-shirt prick a balloon before anyone else?",
+      "gt": "Yes",
+      "pred": "No. The woman in the orange top is the one who pricks a balloon (evident in the second frame where she holds a pin near a balloon), while the woman in the green T - shirt is not shown pricking a balloon before anyone else.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Does the man prick a balloon last?",
+      "gt": "No",
+      "pred": "No. The video shows the woman in the orange top using a stick to prick a balloon (evident in the second frame), and there is no visual evidence of the man pricking a balloon at any point, let alone last.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does a man appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A man in a yellow sweater appears in multiple frames (e.g., the first frame and the frame with gumball machines at approximately 24 seconds).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man prick a balloon?",
+      "gt": "Yes",
+      "pred": "No, there is no frame showing the man pricking a balloon. The video does not depict this action.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the woman wearing an orange T-shirt prick a balloon last?",
+      "gt": "Yes",
+      "pred": "No, the woman in the orange T - shirt pricked a balloon in an early segment (evident in the second frame where she holds a needle), and there are many subsequent frames showing other activities, so this was not the last action.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Does the woman wearing a green T-shirt prick a balloon first?",
+      "gt": "Yes",
+      "pred": "No. None of the provided video frames show a balloon being pricked by any character, including the woman in the green T-shirt. Therefore, the action of pricking a balloon does not occur in the visible sequence.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a woman wearing a green T-shirt in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there is a woman wearing a green T-shirt in the video (e.g., visible in multiple frames including the first frame and subsequent frames showing her in green).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the woman wearing a green T-shirt prick a balloon?",
+      "gt": "Yes",
+      "pred": "No, the video frames do not show the woman wearing a green T - shirt pricking a balloon. The only frame with a needle (frame 2) shows the woman in the orange top holding it, not the woman in the green T - shirt.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the woman wearing a green T-shirt the first person to prick a balloon?",
+      "gt": "Yes",
+      "pred": "No. The woman in the orange top is the first to hold a stick (likely for pricking a balloon) in the second frame, while the woman in the green T-shirt appears later in the sequence.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Does the woman wearing a green T-shirt prick a balloon last?",
+      "gt": "No",
+      "pred": "No. The video frames do not show the woman in the green T - shirt pricking a balloon at any point, let alone as the last action. The final frames (e.g., frame 29) depict her holding a small black object with an Apple logo, not interacting with a balloon.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the woman wearing a green T-shirt prick a balloon?",
+      "gt": "Yes",
+      "pred": "No, the video frames do not show the woman wearing a green T - shirt pricking a balloon. The only frame with a needle (frame 2) shows the woman in the orange top holding it, not the woman in the green T - shirt.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the woman wearing an orange T-shirt prick a balloon after the woman wearing a green T-shirt?",
+      "gt": "No",
+      "pred": "No, the video frames do not show the woman in the orange T - shirt pricking a balloon after the woman in the green T - shirt. There is no direct visual evidence in the provided frames of a balloon - pricking action by either woman in the sequence described.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the woman wearing a green T-shirt the last person to prick a balloon?",
+      "gt": "No",
+      "pred": "No. The woman in the orange top (not the green T - shirt) is shown pricking a balloon with a stick in the second frame (roughly 0:01 - 0:02). There is no evidence in the video that the woman in the green T - shirt pricked a balloon, let alone being the last to do so.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Does the woman wearing a orange T-shirt prick a balloon first?",
+      "gt": "No",
+      "pred": "Yes, the woman in the orange top is the first to prick a balloon (as seen in the second frame where she holds a needle).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a woman wearing an orange T-shirt in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there is a woman wearing an orange top (off-shoulder style) in multiple frames, such as the first frame and others (e.g., frame 17 shows her with a popcorn machine).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the woman wearing an orange T-shirt prick a balloon?",
+      "gt": "Yes",
+      "pred": "Yes. In the second frame (around 0:02), the woman wearing an orange top is holding a needle, which is used to prick a balloon.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the woman wearing an orange T-shirt the first person to prick a balloon?",
+      "gt": "No",
+      "pred": "Yes. In the sequence, the woman in the orange top is shown holding a needle (second frame), which indicates she was the first to attempt pricking a balloon.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the woman wearing a green T-shirt prick a balloon before the woman wearing an orange T-shirt?",
+      "gt": "No",
+      "pred": "No. The woman wearing an orange T-shirt is shown holding a thin stick (likely to prick a balloon) in frame 2, while there is no visual evidence of the woman in the green T-shirt pricking a balloon before this. Thus, the orange T-shirt woman acted first.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Does the woman wearing a orange T-shirt prick a balloon last?",
+      "gt": "Yes",
+      "pred": "Yes, the woman wearing an orange T-shirt is shown pricking a balloon with a pin in the second frame (approx. early in the sequence, as the frame depicts her holding the pin and the balloon is implied to be the target).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a woman wearing an orange T-shirt in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there is a woman wearing an orange top (off-shoulder style) in multiple frames, such as the first frame and others (e.g., frame 17 shows her with a popcorn machine).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the woman wearing an orange T-shirt prick a balloon?",
+      "gt": "Yes",
+      "pred": "No, there is no frame showing the woman in the orange T - shirt pricking a balloon. The frames depict various activities (e.g., handling candies, popcorn, gumball machines), but no action of pricking a balloon is visible for her.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Is the woman wearing an orange T-shirt the last person to prick a balloon?",
+      "gt": "Yes",
+      "pred": "Yes. The woman in the orange T - shirt is seen holding a stick and pricking a balloon in the second frame (0:02), and there are no subsequent frames showing another person pricking a balloon. Thus, she is the last person to prick a balloon.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Does the man eat a orange candy first?",
+      "gt": "Yes",
+      "pred": "No. The green-shirted woman is first seen holding an orange candy (frame 3), and there is no direct evidence the man eats an orange candy before other actions. The sequence of candy-related actions (e.g., using tweezers on candies, gumball machines) does not show the man eating an orange candy first.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does a man appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A man in a yellow sweater appears in multiple frames (e.g., the first frame and the frame with gumball machines at approximately 24 seconds).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the man eat an orange candy?",
+      "gt": "Yes",
+      "pred": "No. The video does not show the man eating an orange candy. The orange candy is held by the woman in the green shirt (e.g., frame 3), and there is no frame depicting the man consuming an orange candy.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Is the man the first person to eat an orange candy?",
+      "gt": "Yes",
+      "pred": "No. The woman in the green top is first seen holding an orange candy (third frame). The man is not the first to eat an orange candy.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Does the man eat a orange candy last?",
+      "gt": "No",
+      "pred": "No. The video frames do not show the man eating an orange candy at any point, especially not last. The sequence of actions involves the women (in green and orange) interacting with candies, popcorn, and gumball machines, but there is no direct evidence of the man eating an orange candy as the final action.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the man eat an orange candy?",
+      "gt": "Yes",
+      "pred": "No. The video does not show the man eating an orange candy. The orange candy is held by the woman in the green shirt (e.g., frame 3), and there is no frame depicting the man consuming an orange candy.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is the man the last person to eat an orange candy?",
+      "gt": "No",
+      "pred": "So, let's check the video frames. First, we need to find when each person eats an orange candy. Let's look at the relevant scenes.\n\nIn the frames, there's a part where the woman in green is holding an orange candy (around frame 3, but let's check the sequence). Wait, the question is about the man being the last to eat an orange candy. Let's see:\n\n- The woman in orange: in frame 2, she's holding a stick, but maybe not eating. Then, in frame 19, the woman in orange is holding a lollipop, but that's not orange candy. Wait, the orange candy is part of the gumball machine or other candies.\n\nWait, looking at the frames: the man in yellow—when does he eat an orange candy? Let's check the frames where people are eating. \n\nIn frame 7, the woman in green is using a yellow straw, but that's not candy. Frame 12: the woman in green is holding a tiny popcorn, but not orange candy. Frame 14: the woman in green is holding a small popcorn box. \n\nWait, the gumball machine scenes: frame 20, the woman in orange is using a gumball machine. Frame 22, she's eating a red gummy (frame 22: \"22. a woman in orange with a red gummy on her face\"). Then frame 23: the woman in green is trying the gumball machine. \n\nWait, maybe the orange candy is part of the sequence where they're handling candies. Let's check the order of eating:\n\n- The woman in green (frame 3) is holding an orange candy and looks at it, then maybe eats it later. The man in yellow—does he eat an orange candy? Let's see if there's a frame where the man is eating an orange candy. \n\nWait, the question is \"Is the man the last person to eat an orange candy?\" So we need to check the order. Let's see:\n\n1. The woman in green (frame 3) holds an orange candy, then in frame 15, she's holding a tiny popcorn, but not orange candy. \n\n2. The woman in orange: in frame 22, she's eating a red gummy (not orange). \n\n3. The man: is there a frame where he eats an orange candy? Let's check frame 25: the man in yellow is making a face, but not eating. Frame 26: the man is holding a gumball machine. \n\nWait, maybe the sequence of eating the orange candy is: first the woman in green, then the woman in orange, then the man? But the question is if the man is the last. Let's check the frames again.\n\nWait, in frame 2: the woman in orange is holding a stick (maybe for a candy). In frame 3: the woman in green holds an orange candy. Then, in the gumball machine scene (frame 20-26), the woman in orange uses the machine, then the man, then the woman in green. But when they eat, the order of eating the orange candy: \n\n- The woman in green (frame 3) has an orange candy, then maybe she eats it. Then the woman in orange: in frame 22, she has a red gummy, but not orange. Then the man: is there a frame where he eats an orange candy? Let's check frame 10: the man is in a yellow shirt, looking at the woman in green (who has black hair, but that's a different scene). \n\nWait, maybe the orange candy is part of the gumball machine. The gumball machine has various colors. The man is the one holding the gumball machine (frame 26), but does he eat an orange one? The question is about eating an orange candy. \n\nWait, the key is to check if the man is the last to eat an orange candy. Let's see the order of eating:\n\n- The woman in green (frame 3) holds an orange candy, then in frame 8, she's making a face (maybe after eating). Then the woman in orange: in frame 19, she's holding a lollipop (not orange). Then the man: is there a frame where he eats an orange candy? \n\nLooking at frame 25: the man in yellow is making a face, but not eating. Frame 26: the man is holding the gumball machine. Then frame 27: the woman in orange is eating a red gummy. \n\nWait, maybe the answer is no. But let's check the frames again. The question is \"Is the man the last person to eat an orange candy?\" So we need to see if the man is the last to eat it. \n\nIn",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the man eat an orange candy first?",
+      "gt": "Yes",
+      "pred": "So, let's check the video frames. First, we need to see when the man eats a candy. Looking at the frames: \n\n- In the 5th frame (tweezers picking candy), but that's a hand, not the man. \n- The 6th frame: green shirt woman with a straw. \n- 7th frame: man with purple napkin, holding tweezers, and the green woman with a straw. So the man is using tweezers, maybe eating? Wait, the question is if he eats an orange candy first. \n\nWait, let's check the order. The 3rd frame: green shirt woman holding a small orange candy, looking at it (disgusted). Then 4th frame: hand putting something into a yellow cup. 5th frame: tweezers picking an orange candy. 6th frame: green woman with straw. 7th frame: man with purple napkin, holding tweezers. So maybe the man is the one using tweezers to pick a candy. \n\nBut the question is \"does the man eat an orange candy first?\" Let's see if there's a frame where the man is eating. The 7th frame: man is holding tweezers, but is he eating? The 14th frame: green woman holding a small popcorn container, then 15th: holding a tiny popcorn and a tiny Apple card. 16th: same green woman. 17th: orange woman with popcorn machine. 18th: bowl with popcorn and marshmallows. 19th: orange woman with a lollipop (popcorn on stick). 20th: foil-covered thing. 21st: all three behind a big pile of popcorn. 22nd: orange woman with gumball machine (blowing into it). 23rd: same, now with a gumball. 24th: orange woman surprised. 25th: man with a pouty face. 26th: all three with gumball machines. 27th: orange woman with a red gummy thing. 28th: green woman with gumball machine. 29th: green woman pouting. 30th: green woman holding \"1$\" sign. 31st: green woman crying. 32nd: all three with a timer (00:05:11). 33rd: green woman with \"1$\" and a card. \n\nWait, the man's actions: in frame 7, he's holding a fork (tweezers?) and a purple napkin. Is he eating? The 25th frame shows the man with a pouty face, but not eating. The 26th frame: he's holding a gumball machine. The 32nd frame: he's there with the timer. \n\nWait, the question is about the man eating an orange candy first. Let's check if any frame shows the man eating a candy. The 3rd frame: green woman holding an orange candy (but not eating, just holding). The 5th frame: tweezers picking an orange candy. Then, in frame 7, the man is holding a fork (tweezers) and a purple napkin, so maybe he's eating a candy. But is it the first time? The 3rd frame is green woman with orange candy, so the man might not be the first. Also, the 5th frame is a hand (could be anyone) picking the orange candy. \n\nWait, the key is \"does the man eat an orange candy first?\" To check if he's the first one to eat an orange candy. Let's see the sequence:\n\n- Frame 3: green woman holds orange candy (not eating, looks disgusted)\n- Frame 5: hand (tweezers) picks orange candy (so someone is using tweezers to pick it, maybe to eat)\n- Then, frame 7: man with tweezers (so he's the one using tweezers, maybe eating the candy he picked)\n\nBut the first person to eat an orange candy: the green woman in frame 3 is holding it, but not eating. The 5th frame is a hand picking, so the person picking (could be the man) then eats. But is there a frame where the man is eating? \n\nWait, the 26th frame: all three with gumball machines. The 27th frame: orange woman with a red gummy thing (not orange candy, red). The 28th frame: green woman with gumball machine. The 29th: green woman pouting. The 30th: green woman with 1$ sign. The 31st: green woman crying. The",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 8,
+      "kind": "target",
+      "question": "Does the woman wearing a green T-shirt steal candies from the man?",
+      "gt": "Yes",
+      "pred": "No, there is no evidence in the video frames that the woman wearing a green T - shirt steals candies from the man. The video shows various interactions with candies and gumball machines, but no instance of her taking candies from the man is visible.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a woman wearing a green T-shirt in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there is a woman wearing a green T-shirt in the video (e.g., visible in multiple frames including the first frame and subsequent frames showing her in green).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the woman wearing a green T-shirt take candies from the man?",
+      "gt": "Yes",
+      "pred": "No. The video frames do not show the woman in the green T - shirt taking candies from the man.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the man have candies that get taken?",
+      "gt": "Yes",
+      "pred": "Yes. In the sequence with gumball machines (around timestamp 23-26), the man holds a pink gumball machine, and candies from such machines are interacted with (e.g., the orange-clad woman eats a red gumball in frame 26, and the green-clad woman interacts with a gumball machine in frame 27). This indicates the man's candies (in the machine he holds) are involved in being taken.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "target",
+      "question": "Does the man steal candies from the woman wearing a green T-shirt?",
+      "gt": "No",
+      "pred": "No, the video does not show the man stealing candies from the woman wearing a green T - shirt. There is no visual evidence in the provided frames of such an action.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the man take candies from the woman wearing a green T-shirt?",
+      "gt": "No",
+      "pred": "No, the video frames do not show the man taking candies from the woman wearing a green T-shirt.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the woman wearing a green T-shirt steal candies from the man?",
+      "gt": "Yes",
+      "pred": "No, there is no evidence in the video frames that the woman wearing a green T - shirt steals candies from the man. The video shows various interactions with candies and gumball machines, but no instance of her taking candies from the man is visible.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the man steal any candies in the video?",
+      "gt": "No",
+      "pred": "No, there is no direct evidence in the video frames that the man steals any candies. The frames show interactions with gumball machines and candies (e.g., the man holds a gumball machine in one frame, but no action of stealing is depicted). No scene shows the man taking candies without permission or in a manner constituting theft.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

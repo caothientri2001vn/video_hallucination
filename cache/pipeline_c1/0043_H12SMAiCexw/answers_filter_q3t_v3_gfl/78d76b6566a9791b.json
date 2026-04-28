@@ -1,0 +1,252 @@
+{
+  "question": "Is the number 2 sewing machine a cake?",
+  "pred": "The video shows a competition where contestants must determine if objects are real or made of cake. There are four sewing machines on podiums labeled 1 through 4. At approximately 02:00, the woman in the pink top (contestant) uses a large knife to cut into the base of the sewing machine at podium #2. However, the frames and Context (event 63, 65) show that the sewing machine at podium #1 is the one that is actually cut into and revealed to be a cake with exposed interior layers. The sewing machine at podium #2 is not shown being cut or revealed as a cake.\n\nEvidence: frames at ~02:15 and ~02:45 show the sewing machine at podium #1 being cut to reveal cake layers, while the machine at podium #2 remains intact.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "manipulate_object",
+      "description": "Woman in pink top uses a large knife-like tool on the sewing machine at podium #2",
+      "participants": [
+        "pink-top woman",
+        "black-suited man"
+      ],
+      "actor": "pink-top woman",
+      "object": "large knife-like tool",
+      "on_screen_text": [
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        },
+        {
+          "text": "2",
+          "location": "podium"
+        },
+        {
+          "text": "3",
+          "location": "podium"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Sewing Machine Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 57,
+      "start_time": "02:00",
+      "end_time": "02:03",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Sewing Machine Competition"
+    },
+    {
+      "event_type": "cut",
+      "description": "A woman cuts into the front edge of a wooden base beneath a sewing machine, revealing it is a cake",
+      "participants": [
+        "pink-and-black-shirt woman"
+      ],
+      "actor": "pink-and-black-shirt woman",
+      "object": "wooden base cake",
+      "on_screen_text": [
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cake Reveal",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 63,
+      "start_time": "02:15",
+      "end_time": "02:18",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Sewing Machine Competition"
+    },
+    {
+      "event_type": "react",
+      "description": "Three people behind blue podiums react to the cake reveal with varying expressions",
+      "participants": [
+        "gray-shirt woman",
+        "blue-shirt man",
+        "black-shirt man"
+      ],
+      "actor": "gray-shirt woman",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cake Reveal",
+      "continuation_hint": "complete",
+      "event_index": 64,
+      "start_time": "02:18",
+      "end_time": "02:22",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 12,
+      "round_index": 1,
+      "segment_label_resolved": "Sewing Machine Competition"
+    },
+    {
+      "event_type": "cut",
+      "description": "The woman continues cutting deeper into the cake, exposing more interior layers",
+      "participants": [
+        "pink-and-black-shirt woman"
+      ],
+      "actor": "pink-and-black-shirt woman",
+      "object": "wooden base cake",
+      "object_before": "brown wooden base cake",
+      "object_after": "brown wooden base cake with exposed layers",
+      "on_screen_text": [
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cake Reveal",
+      "continuation_hint": "complete",
+      "event_index": 65,
+      "start_time": "02:22",
+      "end_time": "02:25",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Sewing Machine Competition"
+    },
+    {
+      "event_type": "react",
+      "description": "A woman with glasses and black shirt shows changing facial expressions while observing",
+      "participants": [
+        "black-shirt woman with glasses"
+      ],
+      "actor": "black-shirt woman with glasses",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cake Reveal",
+      "continuation_hint": "complete",
+      "event_index": 66,
+      "start_time": "02:25",
+      "end_time": "02:28",
+      "sub_events": [],
+      "subtype_order": 11,
+      "subtype_total": 12,
+      "round_index": 1,
+      "segment_label_resolved": "Sewing Machine Competition"
+    },
+    {
+      "event_type": "carry",
+      "description": "woman in pink top carries two plates of cake across the set",
+      "participants": [
+        "pink-top woman"
+      ],
+      "actor": "pink-top woman",
+      "object": "cake plates",
+      "segment_boundary": "middle",
+      "segment_label": "Cake Tasting",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 68,
+      "start_time": "02:30",
+      "end_time": "02:35",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Sewing Machine Competition"
+    },
+    {
+      "event_type": "serve",
+      "description": "woman in pink top serves a plate of cake to a woman in black outfit",
+      "participants": [
+        "pink-top woman",
+        "black-outfit woman"
+      ],
+      "actor": "pink-top woman",
+      "object": "cake plate",
+      "segment_boundary": "middle",
+      "segment_label": "Cake Tasting",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 69,
+      "start_time": "02:32",
+      "end_time": "02:37",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Sewing Machine Competition"
+    },
+    {
+      "event_type": "eat",
+      "description": "man in blue shirt eats cake from a plate using a fork",
+      "participants": [
+        "blue-shirt man"
+      ],
+      "actor": "blue-shirt man",
+      "object": "cake",
+      "segment_boundary": "middle",
+      "segment_label": "Cake Tasting",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 70,
+      "start_time": "02:35",
+      "end_time": "02:40",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Sewing Machine Competition"
+    },
+    {
+      "event_type": "eat",
+      "description": "man in black shirt and cap eats cake and smiles",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "cake",
+      "segment_boundary": "middle",
+      "segment_label": "Cake Tasting",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 71,
+      "start_time": "02:38",
+      "end_time": "02:45",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Sewing Machine Competition"
+    },
+    {
+      "event_type": "react",
+      "description": "man in black shirt and cap laughs while holding a plate of cake",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "cake plate",
+      "segment_boundary": "middle",
+      "segment_label": "Cake Tasting",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 73,
+      "start_time": "02:38",
+      "end_time": "02:45",
+      "sub_events": [],
+      "subtype_order": 12,
+      "subtype_total": 12,
+      "round_index": 1,
+      "segment_label_resolved": "Sewing Machine Competition"
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "question": "Did the goalkeeper in yellow save the shot in Round 3?",
+  "pred": "The video shows a penalty shootout between Argentina and France. To determine what happened in Round 3, we identify the third pair of kickers:\n\n1.  **Round 1:** France #10 scores; Argentina #10 (Messi) scores.\n2.  **Round 2:** France #20's shot is saved by the green-shirt goalkeeper (Martinez); Argentina #21 (Dybala) scores.\n3.  **Round 3:** France #8 (Tchouameni) steps up. The yellow-shirt goalkeeper (Lloris) is at the other end of the pitch; the goalkeeper facing the shot is the green-shirt goalkeeper (Martinez). France #8 kicks the ball wide of the left post (a miss, not a save). Argentina #5 (Paredes) then scores against the yellow-shirt goalkeeper.\n\nThe yellow-shirt goalkeeper (Lloris) did not make a save in Round 3; he conceded a goal to Argentina #5.\n\nEvidence: Frames at ~03:10 show Argentina player #5 scoring a goal past the yellow-shirt goalkeeper in the third round of kicks.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "walk",
+      "description": "The white-and-blue-striped-shirt player (number 21) walks toward the ball on the penalty spot.",
+      "participants": [
+        "white-and-blue-striped-shirt player",
+        "yellow-shirt goalkeeper",
+        "orange-shirt referee"
+      ],
+      "actor": "white-and-blue-striped-shirt player",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        },
+        {
+          "text": "HYUNDAI",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 78,
+      "start_time": "02:30",
+      "end_time": "02:31",
+      "sub_events": [],
+      "subtype_order": 12,
+      "subtype_total": 27,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "The white-and-blue-striped-shirt player (number 21) runs toward the ball and kicks it toward the center of the goal.",
+      "participants": [
+        "white-and-blue-striped-shirt player",
+        "yellow-shirt goalkeeper"
+      ],
+      "actor": "white-and-blue-striped-shirt player",
+      "object": "white ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        },
+        {
+          "text": "HYUNDAI",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 79,
+      "start_time": "02:31",
+      "end_time": "02:33",
+      "sub_events": [],
+      "subtype_order": 14,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "The yellow-shirt goalkeeper dives to his right as the ball goes into the center of the net.",
+      "participants": [
+        "yellow-shirt goalkeeper",
+        "white-and-blue-striped-shirt player"
+      ],
+      "actor": "yellow-shirt goalkeeper",
+      "object": "white ball",
+      "outcome": "miss",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        },
+        {
+          "text": "HYUNDAI",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 80,
+      "start_time": "02:32",
+      "end_time": "02:33",
+      "sub_events": [],
+      "subtype_order": 15,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "celebration",
+      "description": "The white-and-blue-striped-shirt player (number 21) shouts and pumps his fist in celebration after scoring.",
+      "participants": [
+        "white-and-blue-striped-shirt player"
+      ],
+      "actor": "white-and-blue-striped-shirt player",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 81,
+      "start_time": "02:33",
+      "end_time": "02:36",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 35,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "react",
+      "description": "A blue-jacket man on the sidelines covers his face with his jacket collar.",
+      "participants": [
+        "blue-jacket man",
+        "yellow-vest man"
+      ],
+      "actor": "blue-jacket man",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 82,
+      "start_time": "02:36",
+      "end_time": "02:39",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 27,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "celebration",
+      "description": "The white-and-blue-striped-shirt player (number 21) continues to shout and celebrate while running.",
+      "participants": [
+        "white-and-blue-striped-shirt player"
+      ],
+      "actor": "white-and-blue-striped-shirt player",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 83,
+      "start_time": "02:39",
+      "end_time": "02:42",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 35,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "A replay shows the white-and-blue-striped-shirt player (number 21) kicking the ball into the net from behind the goal.",
+      "participants": [
+        "white-and-blue-striped-shirt player",
+        "yellow-shirt goalkeeper"
+      ],
+      "actor": "white-and-blue-striped-shirt player",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 84,
+      "start_time": "02:42",
+      "end_time": "02:45",
+      "sub_events": [],
+      "subtype_order": 16,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "question": "Is the team in the top-right swimming lane Germany?",
+  "pred": "The provided Context and frames contain explicit evidence regarding the lane assignments for the Men's 4 x 100m Medley Relay.\n\n1.  **Lane Identification**: The start list graphic (Context event 12, frames at 00:15-00:22) lists eight countries with their corresponding lane numbers.\n2.  **Germany's Lane**: The graphic explicitly assigns lane 8 to Germany.\n3.  **Spatial Position**: In a standard eight-lane swimming pool viewed from the starting blocks or a high-angle perspective (as seen in frames at 00:15 and 00:23), lane 8 is the rightmost lane. In the overhead and perspective shots, this corresponds to the top-right lane of the pool structure.\n4.  **Verification**: Frame 00:23 shows the lane labels on the pool deck, with lane 8 being the rightmost lane, and the graphic confirms \"8 GERMANY\".\n\nEvidence: Context event 12 and frames at 00:22 show the start list graphic where lane 8 is assigned to Germany.\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "graphic",
+      "description": "The start list graphic for Men's 4 x 100m Medley Relay is displayed showing all eight participating countries with their respective lane assignments",
+      "participants": [],
+      "actor": null,
+      "on_screen_text": [
+        {
+          "text": "Men's 4 x 100m Medley Relay",
+          "location": "title"
+        },
+        {
+          "text": "START LIST - FINAL",
+          "location": "sub_title"
+        },
+        {
+          "text": "1",
+          "location": "name_tag"
+        },
+        {
+          "text": "BRAZIL",
+          "location": "name_tag"
+        },
+        {
+          "text": "2",
+          "location": "name_tag"
+        },
+        {
+          "text": "People's Republic of China",
+          "location": "name_tag"
+        },
+        {
+          "text": "3",
+          "location": "name_tag"
+        },
+        {
+          "text": "JAPAN",
+          "location": "name_tag"
+        },
+        {
+          "text": "4",
+          "location": "name_tag"
+        },
+        {
+          "text": "GREAT BRITAIN",
+          "location": "name_tag"
+        },
+        {
+          "text": "5",
+          "location": "name_tag"
+        },
+        {
+          "text": "UNITED STATES OF AMERICA",
+          "location": "name_tag"
+        },
+        {
+          "text": "6",
+          "location": "name_tag"
+        },
+        {
+          "text": "AUSTRALIA",
+          "location": "name_tag"
+        },
+        {
+          "text": "7",
+          "location": "name_tag"
+        },
+        {
+          "text": "RUSSIAN FEDERATION",
+          "location": "name_tag"
+        },
+        {
+          "text": "8",
+          "location": "name_tag"
+        },
+        {
+          "text": "GERMANY",
+          "location": "name_tag"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Men's 4 x 100m Medley Relay",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 12,
+      "start_time": "00:15",
+      "end_time": "00:22",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 13,
+      "round_index": 1,
+      "segment_label_resolved": "Men's 4 x 100m Medley Relay"
+    }
+  ]
+}

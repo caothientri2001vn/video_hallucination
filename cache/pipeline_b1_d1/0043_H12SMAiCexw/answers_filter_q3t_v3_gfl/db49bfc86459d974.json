@@ -1,0 +1,205 @@
+{
+  "question": "Is the number 3 sewing machine a cake?",
+  "pred": "The video features a competition where contestants must determine if objects are real or made of cake. There are four sewing machines on display, labeled 1 through 4.\n\n1.  **Machine 1:** Shown in close-up; it is a dark, weathered-looking machine on a wooden base.\n2.  **Machine 2:** A greyish-green machine. At approximately 02:15, a woman in a pink shirt cuts into the wooden base of this machine, revealing interior cake layers (Event 63).\n3.  **Machine 3:** A black, shiny sewing machine with gold floral patterns. It is shown clearly in several frames (e.g., at 00:30 and in the grid layout at 00:45).\n4.  **Machine 4:** Another dark machine, similar in style to Machine 1.\n\nWhile Machine 2 is explicitly revealed to be a cake when the woman cuts into its base, Machine 3 remains intact on its podium throughout the segment. There is no evidence in the Context or the frames showing Machine 3 being cut or identified as a cake.\n\nEvidence: Frames at 02:15-02:25 show the woman cutting into the base of Machine 2 to reveal cake, while Machine 3 remains untouched.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "rotate",
+      "description": "sewing machine on platform 3 rotates on display",
+      "participants": [],
+      "actor": "platform 3 sewing machine",
+      "object": "sewing machine",
+      "on_screen_text": [
+        {
+          "text": "3",
+          "location": "podium"
+        },
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Sewing Machine Display",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 18,
+      "start_time": "00:30",
+      "end_time": "00:33",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Sewing Machine Competition"
+    },
+    {
+      "event_type": "graphic",
+      "description": "The video transitions to a grid layout displaying four sewing machines, each in a separate box labeled 1 to 4.",
+      "participants": [],
+      "actor": null,
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "podium"
+        },
+        {
+          "text": "2",
+          "location": "podium"
+        },
+        {
+          "text": "3",
+          "location": "podium"
+        },
+        {
+          "text": "4",
+          "location": "podium"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Sewing Machine Selection",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 24,
+      "start_time": "00:45",
+      "end_time": "00:50",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Sewing Machine Competition"
+    },
+    {
+      "event_type": "cut",
+      "description": "A woman cuts into the front edge of a wooden base beneath a sewing machine, revealing it is a cake",
+      "participants": [
+        "pink-and-black-shirt woman"
+      ],
+      "actor": "pink-and-black-shirt woman",
+      "object": "wooden base cake",
+      "on_screen_text": [
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cake Reveal",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 63,
+      "start_time": "02:15",
+      "end_time": "02:18",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Sewing Machine Competition"
+    },
+    {
+      "event_type": "react",
+      "description": "Three people behind blue podiums react to the cake reveal with varying expressions",
+      "participants": [
+        "gray-shirt woman",
+        "blue-shirt man",
+        "black-shirt man"
+      ],
+      "actor": "gray-shirt woman",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cake Reveal",
+      "continuation_hint": "complete",
+      "event_index": 64,
+      "start_time": "02:18",
+      "end_time": "02:22",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 12,
+      "round_index": 1,
+      "segment_label_resolved": "Sewing Machine Competition"
+    },
+    {
+      "event_type": "cut",
+      "description": "The woman continues cutting deeper into the cake, exposing more interior layers",
+      "participants": [
+        "pink-and-black-shirt woman"
+      ],
+      "actor": "pink-and-black-shirt woman",
+      "object": "wooden base cake",
+      "object_before": "brown wooden base cake",
+      "object_after": "brown wooden base cake with exposed layers",
+      "on_screen_text": [
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cake Reveal",
+      "continuation_hint": "complete",
+      "event_index": 65,
+      "start_time": "02:22",
+      "end_time": "02:25",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Sewing Machine Competition"
+    },
+    {
+      "event_type": "react",
+      "description": "A woman with glasses and black shirt shows changing facial expressions while observing",
+      "participants": [
+        "black-shirt woman with glasses"
+      ],
+      "actor": "black-shirt woman with glasses",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cake Reveal",
+      "continuation_hint": "complete",
+      "event_index": 66,
+      "start_time": "02:25",
+      "end_time": "02:28",
+      "sub_events": [],
+      "subtype_order": 11,
+      "subtype_total": 12,
+      "round_index": 1,
+      "segment_label_resolved": "Sewing Machine Competition"
+    },
+    {
+      "event_type": "speak",
+      "description": "A man in a black suit speaks while gesturing with his hand",
+      "participants": [
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cake Reveal",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 67,
+      "start_time": "02:28",
+      "end_time": "02:30",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 13,
+      "round_index": 1,
+      "segment_label_resolved": "Sewing Machine Competition"
+    }
+  ]
+}

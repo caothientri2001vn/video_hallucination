@@ -1,0 +1,1200 @@
+{
+  "question": "Is the meat pierced with a fork first?",
+  "pred": "Evidence: The context shows \"The black-gloved person repeatedly presses a metal fork into the top surface of the raw beef block\" as event #2, occurring immediately after placing the beef on the cutting board.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "gesture": 15,
+      "place": 13,
+      "cut": 12,
+      "lift": 10,
+      "pour": 2,
+      "transition": 1,
+      "cook": 1,
+      "lecture": 1
+    },
+    "events": [
+      {
+        "event_type": "place",
+        "description": "The black-gloved person places a rectangular block of raw marbled beef onto a dark wooden cutting board.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "raw marbled beef",
+        "on_screen_text": [],
+        "segment_boundary": "start",
+        "segment_label": "Beef Preparation",
+        "continuation_hint": "complete",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:01",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 13,
+        "round_index": 1,
+        "segment_label_resolved": "Beef Preparation"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The black-gloved person repeatedly presses a metal fork into the top surface of the raw beef block.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "metal fork",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Beef Preparation",
+        "continuation_hint": "complete",
+        "event_index": 2,
+        "start_time": "00:01",
+        "end_time": "00:03",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 15,
+        "round_index": 1,
+        "segment_label_resolved": "Beef Preparation"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The black-gloved person sprinkles white salt over the top and sides of the raw beef block.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "white salt",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Beef Preparation",
+        "continuation_hint": "complete",
+        "event_index": 3,
+        "start_time": "00:03",
+        "end_time": "00:05",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 15,
+        "round_index": 1,
+        "segment_label_resolved": "Beef Preparation"
+      },
+      {
+        "event_type": "lift",
+        "description": "The black-gloved person lifts the salted beef block from the cutting board.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "salted beef block",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Beef Preparation",
+        "continuation_hint": "complete",
+        "event_index": 4,
+        "start_time": "00:05",
+        "end_time": "00:06",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Beef Preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "The black-gloved person carefully lowers the beef block into a pan of hot oil, causing it to splash.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "beef block",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Beef Preparation",
+        "continuation_hint": "complete",
+        "event_index": 5,
+        "start_time": "00:06",
+        "end_time": "00:08",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 13,
+        "round_index": 1,
+        "segment_label_resolved": "Beef Preparation"
+      },
+      {
+        "event_type": "lift",
+        "description": "The black-gloved person uses metal tongs to lift the now-seared, brown beef block out of the hot oil.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object_before": "raw beef block",
+        "object_after": "seared beef block",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Beef Preparation",
+        "continuation_hint": "complete",
+        "event_index": 6,
+        "start_time": "00:08",
+        "end_time": "00:11",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Beef Preparation"
+      },
+      {
+        "event_type": "transition",
+        "description": "The video cuts to a shot of a metal strainer being placed over a glass bowl.",
+        "participants": [],
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rice Preparation",
+        "continuation_hint": "complete",
+        "event_index": 7,
+        "start_time": "00:11",
+        "end_time": "00:12",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Beef Preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "A stream of white rice is poured into the metal strainer.",
+        "participants": [],
+        "object": "white rice",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rice Preparation",
+        "continuation_hint": "complete",
+        "event_index": 8,
+        "start_time": "00:12",
+        "end_time": "00:13",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 13,
+        "round_index": 1,
+        "segment_label_resolved": "Beef Preparation"
+      },
+      {
+        "event_type": "gesture",
+        "description": "Clear water is poured over the white rice in the strainer to rinse it.",
+        "participants": [],
+        "object": "clear water",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rice Preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 9,
+        "start_time": "00:13",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 15,
+        "round_index": 1,
+        "segment_label_resolved": "Beef Preparation"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the black-gloved person stirs the white rice in the silver strainer with their hand",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "white rice",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "preparing rice",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 10,
+        "start_time": "00:15",
+        "end_time": "00:16",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 15,
+        "round_index": 1,
+        "segment_label_resolved": "Beef Preparation"
+      },
+      {
+        "event_type": "lift",
+        "description": "the black-gloved person lifts the silver strainer containing white rice from the glass bowl",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "silver strainer",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "preparing rice",
+        "continuation_hint": "complete",
+        "event_index": 11,
+        "start_time": "00:16",
+        "end_time": "00:17",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Beef Preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "the black-gloved person pours the white rice from the silver strainer into the black rice cooker pot",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "white rice",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "preparing rice",
+        "continuation_hint": "complete",
+        "event_index": 12,
+        "start_time": "00:17",
+        "end_time": "00:18",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 13,
+        "round_index": 1,
+        "segment_label_resolved": "Beef Preparation"
+      },
+      {
+        "event_type": "gesture",
+        "description": "water is poured into the black rice cooker pot containing white rice",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "water",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "preparing rice",
+        "continuation_hint": "complete",
+        "event_index": 13,
+        "start_time": "00:18",
+        "end_time": "00:20",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 15,
+        "round_index": 1,
+        "segment_label_resolved": "Beef Preparation"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the black-gloved person closes the lid of the black rice cooker",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "black rice cooker",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "preparing rice",
+        "continuation_hint": "complete",
+        "event_index": 14,
+        "start_time": "00:20",
+        "end_time": "00:21",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 15,
+        "round_index": 1,
+        "segment_label_resolved": "Beef Preparation"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the black-gloved person presses a button on the black rice cooker",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "black rice cooker",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "preparing rice",
+        "continuation_hint": "complete",
+        "event_index": 15,
+        "start_time": "00:21",
+        "end_time": "00:22",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 15,
+        "round_index": 1,
+        "segment_label_resolved": "Beef Preparation"
+      },
+      {
+        "event_type": "lift",
+        "description": "the black-gloved person lifts a brown egg from a white egg carton",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "brown egg",
+        "on_screen_text": [],
+        "segment_boundary": "start",
+        "segment_label": "separating egg yolk",
+        "continuation_hint": "complete",
+        "event_index": 16,
+        "start_time": "00:22",
+        "end_time": "00:23",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "separating egg yolk"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the black-gloved person cracks the brown egg over a yellow and white basketball hoop-shaped egg separator",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "brown egg",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "separating egg yolk",
+        "continuation_hint": "complete",
+        "event_index": 17,
+        "start_time": "00:23",
+        "end_time": "00:24",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 15,
+        "round_index": 2,
+        "segment_label_resolved": "separating egg yolk"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the egg white drains through the white net of the egg separator into a glass bowl while the orange yolk remains in the hoop",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "egg",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "separating egg yolk",
+        "continuation_hint": "complete",
+        "event_index": 18,
+        "start_time": "00:24",
+        "end_time": "00:28",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 15,
+        "round_index": 2,
+        "segment_label_resolved": "separating egg yolk"
+      },
+      {
+        "event_type": "lift",
+        "description": "the black-gloved person lifts the yellow and white egg separator containing the orange yolk",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "egg separator",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "separating egg yolk",
+        "continuation_hint": "complete",
+        "event_index": 19,
+        "start_time": "00:28",
+        "end_time": "00:29",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "separating egg yolk"
+      },
+      {
+        "event_type": "place",
+        "description": "the black-gloved person places a scoop of white rice into a dark brown wooden bowl",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "white rice",
+        "on_screen_text": [],
+        "segment_boundary": "end",
+        "segment_label": "separating egg yolk",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 20,
+        "start_time": "00:29",
+        "end_time": "00:30",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 13,
+        "round_index": 2,
+        "segment_label_resolved": "separating egg yolk"
+      },
+      {
+        "event_type": "place",
+        "description": "the black-gloved person places a piece of raw meat on the wooden cutting board",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "raw meat",
+        "on_screen_text": [],
+        "segment_boundary": "start",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "complete",
+        "event_index": 21,
+        "start_time": "00:30",
+        "end_time": "00:31",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 13,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "the black-gloved person places two blue and white patterned chopsticks on either side of the meat",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "blue and white chopsticks",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "complete",
+        "event_index": 22,
+        "start_time": "00:31",
+        "end_time": "00:32",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 13,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "cut",
+        "description": "the black-gloved person makes the first partial cut into the top of the meat using a silver knife",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "silver knife",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "complete",
+        "event_index": 23,
+        "start_time": "00:32",
+        "end_time": "00:33",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 12,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "cut",
+        "description": "the black-gloved person makes a second partial cut into the meat",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "silver knife",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "complete",
+        "event_index": 24,
+        "start_time": "00:33",
+        "end_time": "00:34",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 12,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "cut",
+        "description": "the black-gloved person makes a third partial cut into the meat",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "silver knife",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "complete",
+        "event_index": 25,
+        "start_time": "00:34",
+        "end_time": "00:35",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 12,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "cut",
+        "description": "the black-gloved person makes a fourth partial cut into the meat",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "silver knife",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "complete",
+        "event_index": 26,
+        "start_time": "00:35",
+        "end_time": "00:36",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 12,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "cut",
+        "description": "the black-gloved person makes a fifth partial cut into the meat",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "silver knife",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "complete",
+        "event_index": 27,
+        "start_time": "00:36",
+        "end_time": "00:37",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 12,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "cut",
+        "description": "the black-gloved person makes a sixth partial cut into the meat",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "silver knife",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "complete",
+        "event_index": 28,
+        "start_time": "00:37",
+        "end_time": "00:38",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 12,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "cut",
+        "description": "the black-gloved person makes a seventh partial cut into the meat",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "silver knife",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "complete",
+        "event_index": 29,
+        "start_time": "00:38",
+        "end_time": "00:39",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 12,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "cut",
+        "description": "the black-gloved person makes an eighth partial cut into the meat",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "silver knife",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "complete",
+        "event_index": 30,
+        "start_time": "00:39",
+        "end_time": "00:40",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 12,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "cut",
+        "description": "the black-gloved person makes a ninth partial cut into the meat",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "silver knife",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "complete",
+        "event_index": 31,
+        "start_time": "00:40",
+        "end_time": "00:41",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 12,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "cut",
+        "description": "the black-gloved person makes a tenth partial cut into the meat",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "silver knife",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "complete",
+        "event_index": 32,
+        "start_time": "00:41",
+        "end_time": "00:42",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 12,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "cut",
+        "description": "the black-gloved person makes an eleventh partial cut into the meat",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "silver knife",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "complete",
+        "event_index": 33,
+        "start_time": "00:42",
+        "end_time": "00:43",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 12,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "lift",
+        "description": "the black-gloved person lifts the two chopsticks away from the meat",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "blue and white chopsticks",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "complete",
+        "event_index": 34,
+        "start_time": "00:43",
+        "end_time": "00:44",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 10,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "lift",
+        "description": "the black-gloved person lifts the partially sliced meat from the cutting board",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "raw meat",
+        "on_screen_text": [],
+        "segment_boundary": "end",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 35,
+        "start_time": "00:44",
+        "end_time": "00:45",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 10,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the black-gloved person holds and stretches a piece of raw meat to show its texture",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "raw meat",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 36,
+        "start_time": "00:45",
+        "end_time": "00:46",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 15,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "pour",
+        "description": "the black-gloved person pours a clear liquid from an orange-capped bottle onto a piece of raw meat",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "clear liquid",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "complete",
+        "event_index": 37,
+        "start_time": "00:46",
+        "end_time": "00:48",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the black-gloved person rubs the clear liquid into the raw meat with their hand",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "raw meat",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "complete",
+        "event_index": 38,
+        "start_time": "00:48",
+        "end_time": "00:49",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 15,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "pour",
+        "description": "the black-gloved person pours more clear liquid from the orange-capped bottle onto the meat",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "clear liquid",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "complete",
+        "event_index": 39,
+        "start_time": "00:49",
+        "end_time": "00:50",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the black-gloved person picks up the meat and stretches it again",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "raw meat",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "complete",
+        "event_index": 40,
+        "start_time": "00:50",
+        "end_time": "00:51",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 15,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "the black-gloved person places the meat into a black pan",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "raw meat",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "complete",
+        "event_index": 41,
+        "start_time": "00:51",
+        "end_time": "00:52",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 13,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "cook",
+        "description": "the black-gloved person uses a blowtorch to sear the surface of the meat in the pan",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "blowtorch",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "complete",
+        "event_index": 42,
+        "start_time": "00:52",
+        "end_time": "00:56",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "lift",
+        "description": "the black-gloved person uses tongs to lift the seared meat out of the pan",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "seared meat",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "complete",
+        "event_index": 43,
+        "start_time": "00:56",
+        "end_time": "00:57",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 10,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "the black-gloved person places a plate of cooked meat onto a wooden surface",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "plate of meat",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Meat Preparation",
+        "continuation_hint": "complete",
+        "event_index": 44,
+        "start_time": "00:57",
+        "end_time": "00:58",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 13,
+        "round_index": 3,
+        "segment_label_resolved": "Meat Preparation"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the black-gloved person holds a bunch of green onions on a dark wooden board",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "green onions",
+        "on_screen_text": [],
+        "segment_boundary": "start",
+        "segment_label": "Vegetable Preparation",
+        "continuation_hint": "complete",
+        "event_index": 45,
+        "start_time": "00:58",
+        "end_time": "00:59",
+        "sub_events": [],
+        "subtype_order": 13,
+        "subtype_total": 15,
+        "round_index": 4,
+        "segment_label_resolved": "Vegetable Preparation"
+      },
+      {
+        "event_type": "cut",
+        "description": "the black-gloved person uses a knife to cut the ends off the green onions",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "knife",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Vegetable Preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 46,
+        "start_time": "00:59",
+        "end_time": "01:00",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 12,
+        "round_index": 4,
+        "segment_label_resolved": "Vegetable Preparation"
+      },
+      {
+        "event_type": "lecture",
+        "description": "The black-gloved person continues chopping green onions on a dark wooden board.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "green onions",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Food Preparation",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 47,
+        "start_time": "01:00",
+        "end_time": "01:02",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 4,
+        "segment_label_resolved": "Vegetable Preparation"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The black-gloved person uses a wooden spatula to scrape the chopped green onions off the board.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "wooden spatula",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Food Preparation",
+        "continuation_hint": "complete",
+        "event_index": 48,
+        "start_time": "01:02",
+        "end_time": "01:04",
+        "sub_events": [],
+        "subtype_order": 14,
+        "subtype_total": 15,
+        "round_index": 4,
+        "segment_label_resolved": "Vegetable Preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "The black-gloved person sprinkles chopped green onions over a grilled steak on a black plate.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "green onions",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Food Preparation",
+        "continuation_hint": "complete",
+        "event_index": 49,
+        "start_time": "01:04",
+        "end_time": "01:06",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 13,
+        "round_index": 4,
+        "segment_label_resolved": "Vegetable Preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "The black-gloved person places an orange egg yolk onto the center of the steak.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "orange egg yolk",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Food Preparation",
+        "continuation_hint": "complete",
+        "event_index": 50,
+        "start_time": "01:06",
+        "end_time": "01:08",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 13,
+        "round_index": 4,
+        "segment_label_resolved": "Vegetable Preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "A brown sauce is poured over the egg yolk and steak.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "brown sauce",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Food Preparation",
+        "continuation_hint": "complete",
+        "event_index": 51,
+        "start_time": "01:08",
+        "end_time": "01:11",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 13,
+        "round_index": 4,
+        "segment_label_resolved": "Vegetable Preparation"
+      },
+      {
+        "event_type": "gesture",
+        "description": "A pair of wooden chopsticks breaks the egg yolk and lifts a piece of the steak.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "wooden chopsticks",
+        "on_screen_text": [],
+        "segment_boundary": "end",
+        "segment_label": "Food Preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 52,
+        "start_time": "01:11",
+        "end_time": "01:15",
+        "sub_events": [],
+        "subtype_order": 15,
+        "subtype_total": 15,
+        "round_index": 4,
+        "segment_label_resolved": "Vegetable Preparation"
+      },
+      {
+        "event_type": "lift",
+        "description": "The person lifts a piece of glazed meat topped with green onions from a black plate using wooden chopsticks.",
+        "participants": [
+          "person in black gloves"
+        ],
+        "actor": "person in black gloves",
+        "object": "glazed meat",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "food preparation",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 53,
+        "start_time": "01:15",
+        "end_time": "01:15",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 10,
+        "round_index": 4,
+        "segment_label_resolved": "Vegetable Preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "The person places the piece of glazed meat onto a bowl of white rice.",
+        "participants": [
+          "person in black gloves"
+        ],
+        "actor": "person in black gloves",
+        "object": "glazed meat",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "food preparation",
+        "continuation_hint": "complete",
+        "event_index": 54,
+        "start_time": "01:15",
+        "end_time": "01:16",
+        "sub_events": [],
+        "subtype_order": 13,
+        "subtype_total": 13,
+        "round_index": 4,
+        "segment_label_resolved": "Vegetable Preparation"
+      },
+      {
+        "event_type": "lift",
+        "description": "The person lifts the piece of glazed meat slightly off the rice with the chopsticks, leaving some sauce on the rice.",
+        "participants": [
+          "person in black gloves"
+        ],
+        "actor": "person in black gloves",
+        "object": "glazed meat",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "food preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 55,
+        "start_time": "01:16",
+        "end_time": "01:16",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 10,
+        "round_index": 4,
+        "segment_label_resolved": "Vegetable Preparation"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Beef Preparation",
+        "event_index_range": [
+          1,
+          15
+        ]
+      },
+      {
+        "round_index": 2,
+        "label": "separating egg yolk",
+        "event_index_range": [
+          16,
+          20
+        ]
+      },
+      {
+        "round_index": 3,
+        "label": "Meat Preparation",
+        "event_index_range": [
+          21,
+          44
+        ]
+      },
+      {
+        "round_index": 4,
+        "label": "Vegetable Preparation",
+        "event_index_range": [
+          45,
+          55
+        ]
+      }
+    ]
+  }
+}

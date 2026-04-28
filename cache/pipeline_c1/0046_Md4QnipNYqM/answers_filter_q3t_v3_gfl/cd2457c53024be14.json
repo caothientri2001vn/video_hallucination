@@ -1,0 +1,99 @@
+{
+  "question": "Did the man on the left open three boxes?",
+  "pred": "The man on the left (plaid-shirt guest) opened exactly three boxes during the game:\n\n1.  **Box 4**: At ~00:30, he lifts Box 4 from the middle shelf and places it on the table to reveal its contents (a miniature yoga studio).\n2.  **Box 1**: At ~04:00, he lifts Box 1 from the top shelf and places it on the table to reveal its contents (a dinosaur in a tutu).\n3.  **Box 7**: At ~05:10, he lifts Box 7 from the bottom shelf and places it on the table to reveal its contents (a miniature scene with a green object).\n\nEvidence: Frames at ~00:30, ~04:00, and ~05:10 show the man on the left lifting and opening boxes 4, 1, and 7 respectively.\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "open_box",
+      "description": "the blue-shirted man opens the leftmost box in the middle row (Box 4)",
+      "participants": [
+        "blue-shirted man",
+        "black-suited man"
+      ],
+      "actor": "blue-shirted man",
+      "object": "box",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 12,
+      "start_time": "00:30",
+      "end_time": "00:35",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "the blue-shirted man opens the white box that's now on the table",
+      "participants": [
+        "blue-shirted man",
+        "black-suited man"
+      ],
+      "actor": "blue-shirted man",
+      "object": "white box",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 16,
+      "start_time": "00:42",
+      "end_time": "00:44",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "the dark-suited man opens the rightmost box on the table",
+      "participants": [
+        "dark-suited man",
+        "plaid-shirt man"
+      ],
+      "actor": "dark-suited man",
+      "object_before": "closed box",
+      "object_after": "open box",
+      "on_screen_text": [
+        {
+          "text": "9",
+          "location": "box label"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Box Opening Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 57,
+      "start_time": "02:50",
+      "end_time": "02:53",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Talk Show Segment"
+    },
+    {
+      "event_type": "open_box",
+      "description": "The man in the dark suit with plaid shirt opens the leftmost box (Box 1) on the table",
+      "participants": [
+        "dark-suit man with plaid shirt",
+        "dark-suit man with white shirt"
+      ],
+      "actor": "dark-suit man with plaid shirt",
+      "object": "box labeled 1",
+      "segment_boundary": "middle",
+      "segment_label": "Box Reveal Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 83,
+      "start_time": "04:00",
+      "end_time": "04:03",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Talk Show Segment"
+    }
+  ]
+}

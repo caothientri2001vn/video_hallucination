@@ -1,0 +1,144 @@
+{
+  "question": "Does the player with red and blue shirt number 18 score the goal?",
+  "top_k": 15,
+  "indices": [
+    7,
+    9,
+    10,
+    11,
+    15
+  ],
+  "events": [
+    {
+      "event_type": "kick",
+      "description": "the blue-and-red-jersey player (number 10) kicks the ball with a powerful volley",
+      "participants": [
+        "blue-and-red-jersey player (number 10)"
+      ],
+      "actor": "blue-and-red-jersey player (number 10)",
+      "object": "yellow ball",
+      "on_screen_text": [
+        {
+          "text": "ANDROS TOWNSEND",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 7,
+      "start_time": "00:06",
+      "end_time": "00:07",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "dive",
+      "description": "the yellow-jersey goalkeeper dives to his right to attempt a save",
+      "participants": [
+        "yellow-jersey goalkeeper"
+      ],
+      "actor": "yellow-jersey goalkeeper",
+      "object": "yellow ball",
+      "on_screen_text": [
+        {
+          "text": "ANDROS TOWNSEND",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 9,
+      "start_time": "00:08",
+      "end_time": "00:09",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "goal",
+      "description": "the ball enters the top corner of the net for a goal",
+      "participants": [
+        "yellow-jersey goalkeeper"
+      ],
+      "actor": "blue-and-red-jersey player (number 10)",
+      "object": "yellow ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "ANDROS TOWNSEND",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 10,
+      "start_time": "00:09",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the blue-and-red-jersey player (number 10) begins to run in celebration",
+      "participants": [
+        "blue-and-red-jersey player (number 10)"
+      ],
+      "actor": "blue-and-red-jersey player (number 10)",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "ANDROS TOWNSEND",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 11,
+      "start_time": "00:10",
+      "end_time": "00:11",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "graphic",
+      "description": "a close-up shot of the back of the blue-and-red jersey showing 'TOWNSEND 10'",
+      "participants": [
+        "blue-and-red-jersey player (number 10)"
+      ],
+      "actor": "blue-and-red-jersey player (number 10)",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "TOWNSEND 10",
+          "location": "jersey_number"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 15,
+      "start_time": "00:14",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    }
+  ]
+}

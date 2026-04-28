@@ -1,0 +1,112 @@
+{
+  "question": "Did the black hoodie woman win the black chocolate?",
+  "pred": "Evidence: The black-hoodie woman (Mattie) pulled a string and revealed \"$300\" in green bills on the middle plate, as shown by on-screen text and her celebration with money. There is no evidence of her winning \"black chocolate\" in any frame or Context event.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "pull_string",
+      "description": "the black-hoodie woman pulls a string connected to the red cup",
+      "participants": [
+        "black-hoodie woman",
+        "white-shirt man",
+        "blue-sweatshirt woman",
+        "black-shirt man"
+      ],
+      "actor": "black-hoodie woman",
+      "object": "black string",
+      "on_screen_text": [
+        {
+          "text": "Mystery String!",
+          "location": "other"
+        },
+        {
+          "text": "Mattie",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Mystery String",
+      "continuation_hint": "complete",
+      "event_index": 7,
+      "start_time": "00:07",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the black-hoodie woman reveals a stack of $100 bills on the middle plate",
+      "participants": [
+        "black-hoodie woman",
+        "white-shirt man",
+        "blue-sweatshirt woman",
+        "black-shirt man"
+      ],
+      "actor": "black-hoodie woman",
+      "object": "green bills",
+      "on_screen_text": [
+        {
+          "text": "Mystery String!",
+          "location": "other"
+        },
+        {
+          "text": "Mattie",
+          "location": "other"
+        },
+        {
+          "text": "$300",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Mystery String",
+      "continuation_hint": "complete",
+      "event_index": 8,
+      "start_time": "00:08",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the black-hoodie woman celebrates excitedly and picks up the money",
+      "participants": [
+        "black-hoodie woman"
+      ],
+      "actor": "black-hoodie woman",
+      "object": "green bills",
+      "on_screen_text": [
+        {
+          "text": "Mystery String!",
+          "location": "other"
+        },
+        {
+          "text": "Mattie",
+          "location": "other"
+        },
+        {
+          "text": "$300",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Mystery String",
+      "continuation_hint": "complete",
+      "event_index": 9,
+      "start_time": "00:10",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String"
+    }
+  ]
+}

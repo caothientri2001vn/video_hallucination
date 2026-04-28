@@ -1,0 +1,925 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0062_9ytWA13i464.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0062_9ytWA13i464.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0062_9ytWA13i464",
+    "n_target": 23,
+    "n_sub": 70,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.8260869565217391,
+    "sub_accuracy": 0.9428571428571428
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Did the outfit with headphones around her neck occur before the ponytail stage?",
+      "gt": "Yes",
+      "pred": "Yes. The outfit with headphones around her neck appears in the \"TWO\" segment (e.g., around the 18-22 second mark), which occurs before the ponytail stage in the \"THREE\" segment (e.g., around the 23-28 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she wear headphones around her neck in any outfit?",
+      "gt": "Yes",
+      "pred": "Yes, in the outfit labeled \"TWO\" (e.g., frames showing the \"TWO\" text with a blue lightning outline), she wore headphones around her neck.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did she wear her hair in a ponytail in any outfit?",
+      "gt": "Yes",
+      "pred": "Yes, in the outfit labeled \"THREE\" (visible in the frames around 20-25 seconds), she wore her hair in a ponytail.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Did the headphones disappear immediately after being worn on her head?",
+      "gt": "Yes",
+      "pred": "No. The headphones are visible in multiple frames during the \"THREE\" segment (e.g., around the 15–20 second mark), and they do not disappear immediately after being worn. The transition to the \"FOUR\" segment (where headphones are not present) occurs after several frames where the headphones are clearly on her head.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she wear headphones on her head in any outfit?",
+      "gt": "Yes",
+      "pred": "Yes. In the \"THREE\" outfit sequence (e.g., around the frames with the orange outline and \"THREE\" text), she wore headphones on her head.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the headphones disappear?",
+      "gt": "Yes",
+      "pred": "Yes. The headphones were present during the \"THREE\" segment (e.g., timestamp 22-27) but are not visible in the \"FOUR\" segment (e.g., timestamp 28-29).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did she wear headphones in more than one outfit?",
+      "gt": "Yes",
+      "pred": "Yes. She wore headphones in two different outfits: \n- In the \"TWO\" segment (e.g., around the 21st frame), she wore black-and-white headphones around her neck with a black top and red skirt. \n- In the \"THREE\" segment (e.g., around the 29th frame), she wore large over-ear headphones with a black top, choker, and jacket.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Did she appear with loose hair in exactly four outfits?",
+      "gt": "Yes",
+      "pred": "Yes. She appeared with loose hair in four outfits:  \n- The initial white and gray sweater (before the \"ONE\" segment).  \n- The \"ONE\" black outfit (purple outline).  \n- The \"TWO\" black top and red skirt (blue outline).  \n- The \"FOUR\" white jacket (with a beanie, but hair is loose).  \n\n(Confirmed by observing hair style in each segment: \"THREE\" features a ponytail, so not counted.)",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she wear loose hair in at least one outfit?",
+      "gt": "Yes",
+      "pred": "Yes. In multiple outfits, such as when wearing the white and gray sweatshirt (e.g., first several frames) and in the \"ONE\" section, her hair is loose.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did she appear in exactly five distinct outfits total?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows five distinct outfits:  \n1. A white and gray sweatshirt (0–12 seconds).  \n2. A black outfit with a large bow (15–19 seconds).  \n3. A black top, red skirt, and headphones around the neck (20–24 seconds).  \n4. A black top, choker, headphones on the head, and a black jacket (25–30 seconds).  \n5. A white jacket with a hat (31–32 seconds).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did she wear a hairstyle other than loose hair in at least one outfit?",
+      "gt": "Yes",
+      "pred": "Yes. In the \"THREE\" segment (e.g., around 19-24 seconds), she wears her hair in a ponytail.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did she wear loose hair in more than three outfits?",
+      "gt": "Yes",
+      "pred": "Yes. She wore loose hair in the sweater outfit (initial frames), the \"ONE\" outfit, the \"TWO\" outfit, and the \"FOUR\" outfit — totaling four outfits, which is more than three.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Did she tie her hair up exactly once?",
+      "gt": "Yes",
+      "pred": "Yes. She tied her hair up in the \"THREE\" segment (approximately 21 - 25 seconds), and no other frames show her hair tied up.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she tie her hair up in any outfit?",
+      "gt": "Yes",
+      "pred": "Yes. In the \"THREE\" segment (roughly 21–26 seconds), her hair is tied up in a ponytail.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did she wear a ponytail in any outfit?",
+      "gt": "Yes",
+      "pred": "Yes, she wore a ponytail in the outfit labeled \"THREE\" (visible in the frames with the \"THREE\" text overlay, e.g., around the 21-26 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did she tie her hair up in more than one outfit?",
+      "gt": "No",
+      "pred": "No. She only tied her hair up in the \"THREE\" outfit (e.g., the segment with the orange lightning effect and headphones, around the 25-30 second mark). No other outfit shows her hair tied up.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did she wear loose hair in multiple outfits?",
+      "gt": "Yes",
+      "pred": "Yes. In multiple outfits, her hair was loose:  \n- In the \"ONE\" section (e.g., frames with pink outline, starting around the 15th frame), hair is loose.  \n- In the \"TWO\" section (e.g., frames with blue outline, starting around the 20th frame), hair is loose.  \n- In the \"THREE\" section (e.g., frames with orange outline, starting around the 25th frame), hair is loose.  \n- In the \"FOUR\" section (e.g., frames with \"FOUR\" text, starting around the 30th frame), hair is loose.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Did she wear headphones in exactly two outfits?",
+      "gt": "Yes",
+      "pred": "Yes. She wore headphones in two outfits:  \n- In the \"TWO\" section (e.g., frames with \"TWO\" text), she wore headphones around her neck.  \n- In the \"THREE\" section (e.g., frames with \"THREE\" text), she wore large over-ear headphones.  \n\nNo other outfits in the video feature headphones.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she wear headphones around her neck in any outfit?",
+      "gt": "Yes",
+      "pred": "Yes, in the outfit labeled \"TWO\" (e.g., frames showing the \"TWO\" text with a blue lightning outline), she wore headphones around her neck.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did she wear headphones on her head in any outfit?",
+      "gt": "Yes",
+      "pred": "Yes. In the \"THREE\" outfit sequence (e.g., around the frames with the orange outline and \"THREE\" text), she wore headphones on her head.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did she wear headphones in more than two outfits?",
+      "gt": "No",
+      "pred": "No. She wore headphones in two outfits:  \n- In the \"TWO\" segment (blue outline), she had headphones around her neck (e.g., timestamps with \"TWO\" text).  \n- In the \"THREE\" segment (orange outline), she wore headphones on her head (e.g., timestamps with \"THREE\" text).  \n\nSince two is not more than two, the answer is no.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Did she wear headphones around her neck exactly once?",
+      "gt": "Yes",
+      "pred": "Yes. She wore headphones around her neck only during the \"TWO\" segment (e.g., around the 20-25 second mark in the sequence of frames showing the \"TWO\" label with blue lightning effects). No other frames show headphones around her neck.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she wear headphones around her neck?",
+      "gt": "Yes",
+      "pred": "Yes. In the frames labeled \"TWO\" (with blue lightning effects), she is wearing headphones around her neck.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did she wear headphones?",
+      "gt": "Yes",
+      "pred": "Yes. She wore headphones in the segments labeled \"THREE\" (e.g., around the 20-25 second mark, as seen in the frames with the orange lightning effect and the word \"THREE\" on screen).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Did she wear headphones on her head exactly once?",
+      "gt": "Yes",
+      "pred": "Yes. She wore headphones on her head only in the \"THREE\" segment (the sequence with orange lightning effects), and no other frames show headphones on her head (e.g., \"TWO\" has headphones around her neck, other segments have no headphones on head).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she wear headphones on her head in the video?",
+      "gt": "Yes",
+      "pred": "Yes. In the \"THREE\" segment (e.g., frames with the text \"THREE\" and orange lightning effects), she is seen wearing headphones on her head.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did she wear headphones in the video?",
+      "gt": "Yes",
+      "pred": "Yes. She wore headphones in the video, as seen in the \"THREE\" segment (e.g., frames with orange lightning effects) where she has large headphones on her head, and in the \"TWO\" segment where headphones are around her neck.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Did she appear in exactly five distinct outfits?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows five distinct outfits:  \n1. White and gray sweater (e.g., first 10 frames).  \n2. Black outfit with “ONE” text (e.g., 10–15 frames).  \n3. Black top with red skirt and headphones around the neck for “TWO” (e.g., 15–20 frames).  \n4. Black top with jeans and headphones on the head for “THREE” (e.g., 20–25 frames).  \n5. White jacket with black top and beanie for “FOUR” (e.g., 25–28 frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she wear more than one outfit in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows multiple outfit changes:  \n- A white and gray sweatshirt (in the initial frames).  \n- A black outfit with a pink neon outline labeled \"ONE\" (e.g., ~15th frame).  \n- A black top with red skirt and headphones labeled \"TWO\" (e.g., ~25th frame).  \n- A black top with headphones, choker, and denim shorts labeled \"THREE\" (e.g., ~35th frame).  \n- A white jacket with a beanie labeled \"FOUR\" (e.g., ~45th frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did she appear in fewer than five distinct outfits?",
+      "gt": "No",
+      "pred": "No. She appeared in five distinct outfits: the white and gray sweater (initial frames), the black leather top with black skirt (labeled \"ONE\"), the black top with red skirt and headphones (labeled \"TWO\"), the black top with denim and headphones (labeled \"THREE\"), and the white coat with a beanie-like hat (labeled \"FOUR\"). Since five is not fewer than five, the answer is no.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did she appear in more than five distinct outfits?",
+      "gt": "No",
+      "pred": "No. She appeared in 5 distinct outfits:  \n1. The white and gray sweater (initial frames).  \n2. The black leather outfit (labeled \"ONE\").  \n3. The black top with red skirt and headphones (labeled \"TWO\").  \n4. The black top with jeans and headphones (labeled \"THREE\").  \n5. The white jacket with a hat (labeled \"FOUR\").  \n\nSince 5 is not more than five, the answer is no.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did she wear a sweater in the first outfit?",
+      "gt": "Yes",
+      "pred": "Yes. In the initial frames (before the \"ONE\" text appears), she is wearing a white and gray sweater with a cat design.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "target",
+      "question": "Did the sporty look appear before the softer final look?",
+      "gt": "Yes",
+      "pred": "Yes. The sporty look (labeled \"THREE\" with headphones and a more energetic aesthetic) appears before the softer final look (labeled \"FOUR\" with a white beanie and relaxed style). The sequence of labeled segments is \"ONE\" → \"TWO\" → \"THREE\" → \"FOUR\", so the sporty look (THREE) precedes the final look (FOUR).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she wear a sporty outfit in the video?",
+      "gt": "Yes",
+      "pred": "No. The video shows multiple outfits (e.g., a sweatshirt, a black dress with a bow, a black top with red skirt, a black top with headphones, a white jacket), but none of these are sporty (e.g., athletic wear like sports bras, shorts, or sneakers). All outfits are casual or fashion-oriented.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was there a final outfit with a softer look?",
+      "gt": "Yes",
+      "pred": "Yes, the final outfit (labeled \"FOUR\" in the video) featured a white hooded garment, which presented a softer look compared to the previous outfits. This is visible in the frames showing the \"FOUR\" segment.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "target",
+      "question": "Did the ponytail stage occur before the headscarf stage?",
+      "gt": "Yes",
+      "pred": "Yes. The ponytail stage is associated with the \"THREE\" segment (e.g., frames showing \"THREE\" with a ponytail), and the headscarf stage is associated with the \"FOUR\" segment (e.g., frames showing \"FOUR\" with a headscarf). Since \"THREE\" appears before \"FOUR\" in the sequence, the ponytail stage occurred before the headscarf stage.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she wear a ponytail during the video?",
+      "gt": "Yes",
+      "pred": "Yes, she wore a ponytail during the video. This is visible in the frames labeled \"THREE\" (e.g., around the segment with the orange lightning effect and the word \"THREE\" on screen).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did she wear a headscarf during the video?",
+      "gt": "Yes",
+      "pred": "Yes, she wore a headscarf during the \"FOUR\" segment (e.g., the frame with \"FOUR\" text shows her wearing a white headscarf).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "target",
+      "question": "Did she wear a headscarf only in the final stage?",
+      "gt": "Yes",
+      "pred": "Yes, she wore a headscarf only in the final stage (labeled \"FOUR\" in the video).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she wear a headscarf in the video?",
+      "gt": "Yes",
+      "pred": "Yes, she wore a headscarf in the \"FOUR\" segment (e.g., around the 21st frame and subsequent frames in that segment).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did she wear a headscarf in the final outfit?",
+      "gt": "Yes",
+      "pred": "Yes. In the \"FOUR\" segment (the final outfit), she wears a white headscarf. This is visible in the frames where \"FOUR\" is displayed (e.g., the frame with \"FOUR\" text shows her with a white headscarf).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "target",
+      "question": "Did she remove the ponytail in the final outfit?",
+      "gt": "Yes",
+      "pred": "In the \"FOUR\" segment (final outfit), her hair is down and not in a ponytail, indicating she removed the ponytail. This is visible in the frames with the \"FOUR\" text overlay (e.g., the first frame of the \"FOUR\" segment shows her hair loose). \n\nAnswer: Yes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she wear a ponytail before the final outfit?",
+      "gt": "Yes",
+      "pred": "Yes. In the \"THREE\" segment (before the \"FOUR\" final outfit), she is wearing a ponytail.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the ponytail absent in the final outfit?",
+      "gt": "Yes",
+      "pred": "Yes. In the \"FOUR\" segment (final outfit), the person's hair is down, not in a ponytail. This is visible in the frames labeled \"FOUR\" (e.g., around the 21st image in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did she tie her hair up in more than one outfit?",
+      "gt": "No",
+      "pred": "No. She only tied her hair up in the \"THREE\" outfit (e.g., the segment with the orange lightning effect and headphones, around the 25-30 second mark). No other outfit shows her hair tied up.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "target",
+      "question": "Did the red skirt appear before she tied her hair up?",
+      "gt": "Yes",
+      "pred": "Yes. The red skirt appears in the \"TWO\" segment (e.g., around the 18-22 second mark), and she ties her hair up in the \"THREE\" segment (e.g., around the 23-27 second mark). Thus, the red skirt appears before she ties her hair up.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she wear a red skirt in any outfit?",
+      "gt": "Yes",
+      "pred": "Yes. In the \"TWO\" outfit sequence (with the blue lightning effect), she wore a red skirt.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did she tie her hair up at any point in the video?",
+      "gt": "Yes",
+      "pred": "Yes, she tied her hair up in the segment labeled \"THREE\" (e.g., around timestamps 22-26, where her hair is styled in a ponytail).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the red skirt appear before she tied her hair up?",
+      "gt": "Yes",
+      "pred": "Yes. The red skirt appears in the \"TWO\" segment (e.g., around the 18-22 second mark), and she ties her hair up in the \"THREE\" segment (e.g., around the 23-27 second mark). Thus, the red skirt appears before she ties her hair up.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "target",
+      "question": "Did she change from a dress to a sporty outfit afterward?",
+      "gt": "Yes",
+      "pred": "Yes. She changed from a black dress (in the \"ONE\" segment, e.g., around the 15-20 second mark) to a sporty outfit (e.g., in the \"THREE\" segment, featuring a black top, jeans, and headphones, around the 25-30 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she wear a dress in the video?",
+      "gt": "Yes",
+      "pred": "No, she did not wear a dress in the video. All visible outfits consist of separate top and bottom pieces (e.g., tops with skirts, jeans, or pants) or a sweatshirt. No single-piece dress is evident in any frame.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did she wear a sporty outfit in the video?",
+      "gt": "Yes",
+      "pred": "No. The video shows multiple outfits (e.g., a sweatshirt, a black dress with a bow, a black top with red skirt, a black top with headphones, a white jacket), but none of these are sporty (e.g., athletic wear like sports bras, shorts, or sneakers). All outfits are casual or fashion-oriented.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the sporty outfit appear after the dress?",
+      "gt": "Yes",
+      "pred": "To determine if the sporty outfit appeared after the dress, we analyze the sequence of labeled segments:  \n\n- The segment labeled “TWO” features a dress-like outfit (black top with a red skirt, headphones around the neck).  \n- The segment labeled “THREE” features a sporty outfit (headphones on the head, black top with a bow, and a choker).  \n\nSince “THREE” occurs after “TWO” in the video sequence, the sporty outfit appeared after the dress.  \n\n**Answer:** Yes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 14,
+      "kind": "target",
+      "question": "Did she switch from a sweater to a dress after the first outfit?",
+      "gt": "Yes",
+      "pred": "Yes. After the initial sweater outfit (seen in the first sequence of frames), she transitions to a black dress when the text \"ONE\" appears (around the 15-20 second mark in the sequence of frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she wear a sweater in the first outfit?",
+      "gt": "Yes",
+      "pred": "Yes. In the initial frames (before the \"ONE\" text appears), she is wearing a white and gray sweater with a cat design.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did she wear a dress after the sweater outfit?",
+      "gt": "Yes",
+      "pred": "Yes. After the sweater outfit (seen in the initial frames), she wears a black dress - like outfit in the \"ONE\" segment (e.g., frames with \"ONE\" text overlay, starting around the 15th frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the dress worn after the first outfit?",
+      "gt": "Yes",
+      "pred": "Yes. The first outfit is the white and gray sweater (seen in the initial frames). The \"ONE\" segment (with the black outfit) appears later, so the dress/outfit in the \"ONE\" segment was worn after the first outfit.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "target",
+      "question": "Did the white outer layer appear before the headphone stages?",
+      "gt": "No",
+      "pred": "Yes. The white outer layer (shark-themed sweater) is visible in the initial frames (e.g., 0:00 - 0:15), while the headphone stages begin later (e.g., \"THREE\" segment starting around 0:50). Thus, the white outer layer appeared before the headphone stages.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she wear headphones in any outfit?",
+      "gt": "Yes",
+      "pred": "Yes, she wore headphones in the outfit labeled \"THREE\" (e.g., frames with \"THREE\" text, such as around the 20-25 second mark in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did she wear a layered look with an outer layer?",
+      "gt": "Yes",
+      "pred": "Yes. For example, in the \"THREE\" segment (e.g., around the 20th frame and later), she wears a black outer layer (jacket) over a black top. In the \"FOUR\" segment (e.g., 21st frame), she wears a white outer layer (jacket) over a black top.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the layered look appear before she wore headphones?",
+      "gt": "No",
+      "pred": "No. The layered look (wearing a black jacket over a black top) first appears in the \"THREE\" segment (roughly frames 25–30), while she first wears headphones (around her neck) in the \"TWO\" segment (roughly frames 20–24). Thus, the layered look appears after she began wearing headphones.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the outfit with headphones around her neck occur before the layered look?",
+      "gt": "Yes",
+      "pred": "Yes. The outfit with headphones around her neck appears in the \"TWO\" segment (with blue neon outline), while the layered look (with a jacket over a top) appears in the \"THREE\" segment (with orange neon outline). Since the \"TWO\" segment precedes the \"THREE\" segment in the video sequence, the headphones outfit occurred first.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 16,
+      "kind": "target",
+      "question": "Did she wear headphones in the final outfit?",
+      "gt": "No",
+      "pred": "No, in the \"FOUR\" outfit (the final outfit shown), she is not wearing headphones. The frames for the \"FOUR\" section show her wearing a white beanie - style hat, a white jacket, and a black top with a bow, with no headphones present.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 16,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she wear headphones in exactly two outfits?",
+      "gt": "Yes",
+      "pred": "Yes. She wore headphones in two outfits:  \n- In the \"TWO\" section (e.g., frames with \"TWO\" text), she wore headphones around her neck.  \n- In the \"THREE\" section (e.g., frames with \"THREE\" text), she wore large over-ear headphones.  \n\nNo other outfits in the video feature headphones.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 16,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did she wear a headscarf in the final outfit?",
+      "gt": "Yes",
+      "pred": "Yes. In the \"FOUR\" segment (the final outfit), she wears a white headscarf. This is visible in the frames where \"FOUR\" is displayed (e.g., the frame with \"FOUR\" text shows her with a white headscarf).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 16,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did she wear headphones in the final outfit?",
+      "gt": "No",
+      "pred": "No, in the \"FOUR\" outfit (the final outfit shown), she is not wearing headphones. The frames for the \"FOUR\" section show her wearing a white beanie - style hat, a white jacket, and a black top with a bow, with no headphones present.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 17,
+      "kind": "target",
+      "question": "Did she tie her hair up in more than one outfit?",
+      "gt": "No",
+      "pred": "No. She only tied her hair up in the \"THREE\" outfit (e.g., the segment with the orange lightning effect and headphones, around the 25-30 second mark). No other outfit shows her hair tied up.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 17,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she tie her hair up at any point in the video?",
+      "gt": "Yes",
+      "pred": "Yes, she tied her hair up in the segment labeled \"THREE\" (e.g., around timestamps 22-26, where her hair is styled in a ponytail).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 17,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did she wear a ponytail in exactly one outfit?",
+      "gt": "Yes",
+      "pred": "Yes. She wore a ponytail only in the outfit labeled \"THREE\" (e.g., around the frames with \"THREE\" text). No other outfit in the video features a ponytail.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 17,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did she tie her hair up in two or more different outfits?",
+      "gt": "No",
+      "pred": "No. She tied her hair up only in the \"THREE\" outfit section (e.g., around the frames with the word \"THREE\" and a ponytail), which is a single outfit instance. No other outfits show her hair tied up.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 18,
+      "kind": "target",
+      "question": "Did she end the video wearing headphones?",
+      "gt": "No",
+      "pred": "No. The final segment (labeled \"FOUR\") shows her without headphones; she is wearing a white hat and a white jacket over a black top. The frames for \"FOUR\" (e.g., the last two images provided) do not include headphones.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 18,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she wear headphones in any outfit during the video?",
+      "gt": "Yes",
+      "pred": "Yes. She wore headphones as a necklace in the \"TWO\" outfit (e.g., around the 20-24 second mark) and wore large headphones on her head in the \"THREE\" outfit (e.g., around the 25-29 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 18,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did she wear a headscarf in the final outfit?",
+      "gt": "Yes",
+      "pred": "Yes. In the \"FOUR\" segment (the final outfit), she wears a white headscarf. This is visible in the frames where \"FOUR\" is displayed (e.g., the frame with \"FOUR\" text shows her with a white headscarf).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 18,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did she wear headphones in the final outfit?",
+      "gt": "No",
+      "pred": "No, in the \"FOUR\" outfit (the final outfit shown), she is not wearing headphones. The frames for the \"FOUR\" section show her wearing a white beanie - style hat, a white jacket, and a black top with a bow, with no headphones present.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 19,
+      "kind": "target",
+      "question": "Between Outfit 1 and Outfit 3, did she wear glasses at any point?",
+      "gt": "No",
+      "pred": "Yes. She wore glasses while in Outfit 1 (the white and gray sweater), which is before Outfit 3. This is visible in the initial frames of the video (e.g., the first several frames where she is in the sweater).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 19,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she wear glasses at any point in the video?",
+      "gt": "No",
+      "pred": "Yes, she wore glasses in the early part of the video (e.g., the first several frames before the \"ONE\" segment).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 19,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did she appear without glasses between the sweater outfit and the final outfit?",
+      "gt": "Yes",
+      "pred": "Yes. Between the sweater outfit (early frames) and the final \"FOUR\" outfit, she appears without glasses in the \"ONE\", \"TWO\", and \"THREE\" segments (e.g., in the \"ONE\" segment starting around frame 15, she is not wearing glasses).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 19,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did she wear a sweater in Outfit 1?",
+      "gt": "Yes",
+      "pred": "Yes. In the initial frames (before the \"ONE\" text appears, approximately 0:00–0:16), she is wearing a white and gray sweater with a shark design, which corresponds to Outfit 1.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 20,
+      "kind": "target",
+      "question": "Did she wear headphones on her head in more than one outfit?",
+      "gt": "No",
+      "pred": "No. She wore headphones on her head only in the outfit corresponding to the \"THREE\" segment (e.g., frames with the orange outline and \"THREE\" text). In the \"TWO\" segment, headphones were around her neck, and no other outfit shows headphones on her head. Thus, she did not wear headphones on her head in more than one outfit.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 20,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she wear headphones on her head in any outfit?",
+      "gt": "Yes",
+      "pred": "Yes. In the \"THREE\" outfit sequence (e.g., around the frames with the orange outline and \"THREE\" text), she wore headphones on her head.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 20,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did she wear headphones on her head in exactly one outfit?",
+      "gt": "Yes",
+      "pred": "Yes. She wore headphones on her head in the \"THREE\" outfit (e.g., around the 22nd - 26th frames), and not in any other outfit (e.g., in \"TWO\" they were around her neck, and other outfits had no headphones on her head).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 20,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did she wear headphones on her head in two or more outfits?",
+      "gt": "No",
+      "pred": "No. She wore headphones on her head only in the \"THREE\" outfit segment (e.g., frames with \"THREE\" text and orange outline). In the \"TWO\" segment, headphones were",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 21,
+      "kind": "target",
+      "question": "Did she wear headphones around her neck after the ponytail stage?",
+      "gt": "No",
+      "pred": "No. The headphones around her neck appeared in the \"TWO\" segment (before the ponytail \"THREE\" segment), and after the ponytail stage (THREE), the subsequent look (FOUR) does not show headphones around her neck.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 21,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she wear headphones around her neck in any outfit?",
+      "gt": "Yes",
+      "pred": "Yes, in the outfit labeled \"TWO\" (e.g., frames showing the \"TWO\" text with a blue lightning outline), she wore headphones around her neck.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 21,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did she wear a ponytail in any outfit?",
+      "gt": "Yes",
+      "pred": "Yes, she wore a ponytail in the outfit labeled \"THREE\" (visible in the frames with the \"THREE\" text overlay, e.g., around the 21-26 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 21,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the outfit with headphones around her neck occur before the ponytail stage?",
+      "gt": "Yes",
+      "pred": "Yes. The outfit with headphones around her neck appears in the \"TWO\" segment (e.g., around the 18-22 second mark), which occurs before the ponytail stage in the \"THREE\" segment (e.g., around the 23-28 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 21,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the ponytail stage occur before the outfit with headphones around her neck?",
+      "gt": "No",
+      "pred": "No. The \"TWO\" stage (with headphones around her neck) occurs before the \"THREE\" stage (with a ponytail and headphones on her head). For example, the \"TWO\" segment appears earlier in the sequence (e.g., frames with \"TWO\" text) than the \"THREE\" segment (e.g., frames with \"THREE\" text).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 22,
+      "kind": "target",
+      "question": "Did she wear headphones in Outfit 2?",
+      "gt": "No",
+      "pred": "Yes. In the frames labeled \"TWO\" (Outfit 2), she is wearing headphones around her neck.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 22,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did she appear in an Outfit 2?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows her in an outfit labeled \"TWO\" (e.g., frames with the text \"TWO\" and a black top, red skirt, headphones around the neck, and a bag).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 22,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did she wear headphones in exactly two outfits throughout the video?",
+      "gt": "Yes",
+      "pred": "Yes. She wore headphones in two outfits:  \n- In the \"TWO\" sequence (blue outline), headphones are around her neck (e.g., frame 21-25).  \n- In the \"THREE\" sequence (orange outline), headphones are on her head (e.g., frame 26-30).  \n\nNo other outfits in the video feature headphones.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 22,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did she have loose hair in Outfit 2?",
+      "gt": "Yes",
+      "pred": "Yes. In the frames for Outfit 2 (labeled \"TWO\" with blue lightning effect, e.g., timestamps around 17-21 seconds), her red hair is long and loose.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 22,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did she wear headphones around her neck before the ponytail stage?",
+      "gt": "Yes",
+      "pred": "Yes. In the \"TWO\" stage (with blue lightning effects, timestamps around the frames showing \"TWO\"), she wore headphones around her neck, and this occurs before the \"THREE\" stage (with orange lightning effects) where she has a ponytail.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 22,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Did she wear a ponytail in Outfit 2?",
+      "gt": "No",
+      "pred": "No. In the frames labeled \"TWO\" (Outfit 2), the person's hair is down and not styled in a ponytail. The ponytail appears in the frames labeled \"THREE\" (Outfit 3).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

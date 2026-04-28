@@ -1,0 +1,550 @@
+{
+  "question": "Did the bottom-left girl complete all her transformations before the bottom-right girl started?",
+  "pred": "The video is a four-panel split-screen showing different women performing outfit transformations. To determine if the bottom-left girl completed all her transformations before the bottom-right girl started, we look at the timeline of their respective \"outfit_change\" events:\n\n1.  **Bottom-left woman:** Her transformations are recorded in the Context as starting at 00:30 (event 20: purple dress to red outfit) and 00:34 (event 21: red outfit to beige dress).\n2.  **Bottom-right woman:** Her first recorded transformation starts at 00:38 (event 23: black outfit to white top and denim shorts).\n\nSince the bottom-left woman's final transformation (event 21) ends at 00:38, and the bottom-right woman's first transformation (event 23) begins at 00:38, the bottom-left woman completed her sequence of transformations just as or before the bottom-right woman began hers.\n\nEvidence: Context events 20-21 show the bottom-left woman's transformations occurring from 00:30 to 00:38, while event 23 shows the bottom-right woman's first transformation starting at 00:38.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "outfit_change": 12,
+      "pose": 5,
+      "dance_move": 4,
+      "dance": 2,
+      "costume_change": 2,
+      "adjust_clothing": 1
+    },
+    "events": [
+      {
+        "event_type": "pose",
+        "description": "woman in white crop top stands with hand on hip, showing side profile",
+        "participants": [
+          "white-crop-top woman"
+        ],
+        "actor": "white-crop-top woman",
+        "segment_boundary": "start",
+        "segment_label": "Outfit Sequence 1",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:03",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "adjust_clothing",
+        "description": "white-crop-top woman adjusts her striped pants with both hands",
+        "participants": [
+          "white-crop-top woman"
+        ],
+        "actor": "white-crop-top woman",
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Sequence 1",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 2,
+        "start_time": "00:03",
+        "end_time": "00:05",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "dance_move",
+        "description": "white-crop-top woman stands with hands on waist, slightly swaying",
+        "participants": [
+          "white-crop-top woman"
+        ],
+        "actor": "white-crop-top woman",
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Sequence 1",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 3,
+        "start_time": "00:05",
+        "end_time": "00:08",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "dance_move",
+        "description": "white-crop-top woman raises arms outward with palms up",
+        "participants": [
+          "white-crop-top woman"
+        ],
+        "actor": "white-crop-top woman",
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Sequence 1",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 4,
+        "start_time": "00:08",
+        "end_time": "00:11",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "dance_move",
+        "description": "white-crop-top woman raises arms above head, then lowers them to sides",
+        "participants": [
+          "white-crop-top woman"
+        ],
+        "actor": "white-crop-top woman",
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Sequence 1",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 5,
+        "start_time": "00:11",
+        "end_time": "00:14",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "outfit_change",
+        "description": "white-crop-top woman changes from striped pants outfit to sailor uniform",
+        "participants": [
+          "white-crop-top woman"
+        ],
+        "actor": "white-crop-top woman",
+        "object_before": "white crop top and striped pants",
+        "object_after": "white sailor uniform with blue accents",
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Sequence 2",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 6,
+        "start_time": "00:14",
+        "end_time": "00:16",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "pose",
+        "description": "woman in sailor uniform poses with one hand on hip, showing side profile",
+        "participants": [
+          "sailor-uniform woman"
+        ],
+        "actor": "sailor-uniform woman",
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Sequence 2",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 7,
+        "start_time": "00:16",
+        "end_time": "00:20",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "outfit_change",
+        "description": "sailor-uniform woman changes to white shirt with plaid skirt and cat ears",
+        "participants": [
+          "sailor-uniform woman"
+        ],
+        "actor": "sailor-uniform woman",
+        "object_before": "white sailor uniform with blue accents",
+        "object_after": "white shirt, plaid skirt, and cat ears",
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Sequence 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 8,
+        "start_time": "00:20",
+        "end_time": "00:24",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "pose",
+        "description": "woman in white shirt and plaid skirt poses with hands on hips",
+        "participants": [
+          "plaid-skirt woman"
+        ],
+        "actor": "plaid-skirt woman",
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Sequence 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 9,
+        "start_time": "00:24",
+        "end_time": "00:28",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "outfit_change",
+        "description": "plaid-skirt woman changes to purple lace dress",
+        "participants": [
+          "plaid-skirt woman"
+        ],
+        "actor": "plaid-skirt woman",
+        "object_before": "white shirt, plaid skirt, and cat ears",
+        "object_after": "purple lace dress",
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Sequence 4",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 10,
+        "start_time": "00:28",
+        "end_time": "00:31",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "pose",
+        "description": "woman in purple lace dress poses with one hand on hip",
+        "participants": [
+          "purple-dress woman"
+        ],
+        "actor": "purple-dress woman",
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Sequence 4",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 11,
+        "start_time": "00:31",
+        "end_time": "00:35",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "outfit_change",
+        "description": "purple-dress woman changes to black dress with cutout",
+        "participants": [
+          "purple-dress woman"
+        ],
+        "actor": "purple-dress woman",
+        "object_before": "purple lace dress",
+        "object_after": "black dress with cutout",
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Sequence 5",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 12,
+        "start_time": "00:35",
+        "end_time": "00:40",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "dance_move",
+        "description": "woman in top-right quadrant raises arms above head and sways",
+        "participants": [
+          "blue-shirt woman"
+        ],
+        "actor": "blue-shirt woman",
+        "segment_boundary": "middle",
+        "segment_label": "Top-Right Dance",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 13,
+        "start_time": "00:35",
+        "end_time": "00:40",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "outfit_change",
+        "description": "The top-right person changes from a blue/white long-sleeve shirt to a white shirt with blue sleeves",
+        "participants": [
+          "blue-shirt person"
+        ],
+        "actor": "blue-shirt person",
+        "object_before": "blue and white shirt",
+        "object_after": "white shirt with blue sleeves",
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Change Sequence",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 14,
+        "start_time": "00:15",
+        "end_time": "00:18",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "outfit_change",
+        "description": "The top-right person changes to a white school shirt with blue bow and plaid skirt",
+        "participants": [
+          "blue-shirt person"
+        ],
+        "actor": "blue-shirt person",
+        "object_before": "white shirt with blue sleeves",
+        "object_after": "white school shirt with blue bow and plaid skirt",
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Change Sequence",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 15,
+        "start_time": "00:18",
+        "end_time": "00:21",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "outfit_change",
+        "description": "The top-right person changes to a black shiny outfit",
+        "participants": [
+          "blue-shirt person"
+        ],
+        "actor": "blue-shirt person",
+        "object_before": "white school shirt with blue bow and plaid skirt",
+        "object_after": "black outfit",
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Change Sequence",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 16,
+        "start_time": "00:21",
+        "end_time": "00:24",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "outfit_change",
+        "description": "The top-right person changes to a white button-up shirt with beige pants",
+        "participants": [
+          "blue-shirt person"
+        ],
+        "actor": "blue-shirt person",
+        "object_before": "black outfit",
+        "object_after": "white shirt with beige pants",
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Change Sequence",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 17,
+        "start_time": "00:24",
+        "end_time": "00:27",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "outfit_change",
+        "description": "The top-right person changes to a black maid outfit with white cat ears",
+        "participants": [
+          "blue-shirt person"
+        ],
+        "actor": "blue-shirt person",
+        "object_before": "white shirt with beige pants",
+        "object_after": "black maid outfit with cat ears",
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Change Sequence",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 18,
+        "start_time": "00:27",
+        "end_time": "00:29",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "dance",
+        "description": "The bottom-left person begins dancing by raising hands and moving arms",
+        "participants": [
+          "white-top person"
+        ],
+        "actor": "white-top person",
+        "segment_boundary": "middle",
+        "segment_label": "Dance Performance",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 19,
+        "start_time": "00:29",
+        "end_time": "00:30",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "outfit_change",
+        "description": "Woman in bottom-left quadrant changes from purple dress to red short-sleeve top and red skirt",
+        "participants": [
+          "bottom-left woman"
+        ],
+        "actor": "bottom-left woman",
+        "object_before": "purple dress",
+        "object_after": "red outfit",
+        "segment_boundary": "middle",
+        "segment_label": "outfit showcase",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 20,
+        "start_time": "00:30",
+        "end_time": "00:34",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "outfit_change",
+        "description": "Woman in bottom-left quadrant changes from red outfit to beige off-shoulder dress with cutouts and tassels",
+        "participants": [
+          "bottom-left woman"
+        ],
+        "actor": "bottom-left woman",
+        "object_before": "red outfit",
+        "object_after": "beige dress",
+        "segment_boundary": "middle",
+        "segment_label": "outfit showcase",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 21,
+        "start_time": "00:34",
+        "end_time": "00:38",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "dance",
+        "description": "Woman in bottom-right quadrant performs dance moves while wearing black outfit with fur accessory",
+        "participants": [
+          "bottom-right woman"
+        ],
+        "actor": "bottom-right woman",
+        "segment_boundary": "middle",
+        "segment_label": "outfit showcase",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 22,
+        "start_time": "00:35",
+        "end_time": "00:40",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "outfit_change",
+        "description": "Woman in bottom-right quadrant changes from black outfit to white sleeveless top and denim shorts",
+        "participants": [
+          "bottom-right woman"
+        ],
+        "actor": "bottom-right woman",
+        "object_before": "black outfit",
+        "object_after": "white top and denim shorts",
+        "segment_boundary": "middle",
+        "segment_label": "outfit showcase",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 23,
+        "start_time": "00:38",
+        "end_time": "00:42",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "pose",
+        "description": "Woman in bottom-right quadrant adjusts her pose while wearing white top and denim shorts",
+        "participants": [
+          "bottom-right woman"
+        ],
+        "actor": "bottom-right woman",
+        "segment_boundary": "middle",
+        "segment_label": "outfit showcase",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 24,
+        "start_time": "00:40",
+        "end_time": "00:45",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "costume_change",
+        "description": "woman changes from white top and denim shorts to white and black outfit with cap",
+        "participants": [
+          "woman in white top and denim shorts"
+        ],
+        "actor": "woman in white top and denim shorts",
+        "object_before": "white top and denim shorts",
+        "object_after": "white and black outfit with cap",
+        "segment_boundary": "middle",
+        "segment_label": "fashion showcase",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 25,
+        "start_time": "00:45",
+        "end_time": "00:46",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      },
+      {
+        "event_type": "costume_change",
+        "description": "woman changes from white and black outfit with cap back to white top and denim shorts",
+        "participants": [
+          "woman in white and black outfit with cap"
+        ],
+        "actor": "woman in white and black outfit with cap",
+        "object_before": "white and black outfit with cap",
+        "object_after": "white top and denim shorts",
+        "segment_boundary": "middle",
+        "segment_label": "fashion showcase",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 26,
+        "start_time": "00:47",
+        "end_time": "00:48",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Sequence 1"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Outfit Sequence 1",
+        "event_index_range": [
+          1,
+          26
+        ]
+      }
+    ]
+  }
+}

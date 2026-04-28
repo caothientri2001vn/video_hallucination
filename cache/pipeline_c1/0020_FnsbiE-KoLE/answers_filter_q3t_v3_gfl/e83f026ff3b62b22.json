@@ -1,0 +1,47 @@
+{
+  "question": "Did the red shirt boy fall into the pool?",
+  "pred": "The video shows a contestant referred to as the \"red-top contestant\" or \"red-shirt male contestant\" (identified as Kody Hazan in on-screen graphics) competing on an obstacle course. According to the Context and visual evidence, this contestant fails an obstacle and falls into the water.\n\n1. At approximately 05:15, the red-shirt contestant slips and falls into the pool (Event 123).\n2. At 05:17, he is shown emerging from the water and holding onto the pool edge (Event 124).\n\nEvidence: Event 123 states \"Contestant falls into the water after failing an obstacle\" with actor \"red-top contestant\".\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "fall",
+      "description": "Contestant falls into the water after failing an obstacle",
+      "participants": [
+        "red-top contestant"
+      ],
+      "actor": "red-top contestant",
+      "outcome": "slipped",
+      "segment_boundary": "end",
+      "segment_label": "American Ninja Warrior course",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 123,
+      "start_time": "05:15",
+      "end_time": "05:16",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 9,
+      "segment_label_resolved": "Obstacle Course Challenge"
+    },
+    {
+      "event_type": "emerge",
+      "description": "Contestant emerges from the water and holds onto the pool edge",
+      "participants": [
+        "red-top contestant"
+      ],
+      "actor": "red-top contestant",
+      "segment_boundary": "end",
+      "segment_label": "American Ninja Warrior course",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 124,
+      "start_time": "05:17",
+      "end_time": "05:18",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 9,
+      "segment_label_resolved": "Obstacle Course Challenge"
+    }
+  ]
+}

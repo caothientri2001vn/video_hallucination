@@ -1,0 +1,97 @@
+{
+  "question": "Did the woman win the game?",
+  "pred": "Evidence: The on-screen text explicitly states \"Winner: Justice!\" in the final frames, indicating the man won the game.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "stop",
+      "description": "colorful wheel slows down and comes to a stop on a red section with the number 3",
+      "participants": [
+        "blue-shirt man",
+        "red-shirt woman"
+      ],
+      "actor": "colorful wheel",
+      "object": "colorful wheel",
+      "object_before": "spinning colorful wheel",
+      "object_after": "stationary colorful wheel",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 23,
+      "start_time": "00:56",
+      "end_time": "00:58",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Last Color Standing Wins"
+    },
+    {
+      "event_type": "arrange",
+      "description": "red-shirt woman adjusts the yellow cups on the right side of the table, rearranging their stack configuration by moving the middle yellow cup stack to the right",
+      "participants": [
+        "blue-shirt man",
+        "red-shirt woman"
+      ],
+      "actor": "red-shirt woman",
+      "object": "yellow cups",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 24,
+      "start_time": "00:58",
+      "end_time": "01:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Last Color Standing Wins"
+    },
+    {
+      "event_type": "graphic",
+      "description": "Text \"Winner: Justice!\" appears as a banner overlay on the screen",
+      "participants": [
+        "blue-shirt man",
+        "red-shirt woman"
+      ],
+      "actor": "graphic",
+      "on_screen_text": [
+        {
+          "text": "Winner: Justice!",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Cup Stacking Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 25,
+      "start_time": "01:00",
+      "end_time": "01:04",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Last Color Standing Wins"
+    },
+    {
+      "event_type": "gesture",
+      "description": "The man in the light blue shirt gives a thumbs-up gesture with both hands",
+      "participants": [
+        "blue-shirt man"
+      ],
+      "actor": "blue-shirt man",
+      "segment_boundary": "end",
+      "segment_label": "Cup Stacking Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 26,
+      "start_time": "01:07",
+      "end_time": "01:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Last Color Standing Wins"
+    }
+  ]
+}

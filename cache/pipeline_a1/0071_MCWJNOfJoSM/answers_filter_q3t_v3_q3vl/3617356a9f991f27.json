@@ -1,0 +1,94 @@
+{
+  "question": "Did exactly two goals occur between France's two misses?",
+  "pred": "Evidence: The sequence shows France's first miss (Event 60), followed by one Argentina goal (Event 79), then France's second miss (Event 102). The scoreboard in Event 102 shows \"ARGENTINA 2 - 1 FRANCE\", confirming only one goal was added between the two France misses.\n\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "game",
+      "description": "The green-jersey goalkeeper (Emiliano Martínez) dives to his right and saves the penalty.",
+      "participants": [
+        "green-jersey goalkeeper"
+      ],
+      "actor": "green-jersey goalkeeper",
+      "object": "white ball",
+      "outcome": "miss",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 60,
+      "start_time": "01:55",
+      "end_time": "01:56",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "The white-and-blue-striped-shirt player (number 21) runs toward the ball and kicks it toward the center of the goal.",
+      "participants": [
+        "white-and-blue-striped-shirt player",
+        "yellow-shirt goalkeeper"
+      ],
+      "actor": "white-and-blue-striped-shirt player",
+      "object": "white ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        },
+        {
+          "text": "HYUNDAI",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 79,
+      "start_time": "02:31",
+      "end_time": "02:33",
+      "sub_events": [],
+      "subtype_order": 14,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "the green-jersey goalkeeper dives to his right as the ball goes wide of the post",
+      "participants": [
+        "green-jersey goalkeeper"
+      ],
+      "actor": "green-jersey goalkeeper",
+      "object": "white ball",
+      "outcome": "miss",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 2 - 1 FRANCE",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "middle",
+      "event_index": 102,
+      "start_time": "03:32",
+      "end_time": "03:33",
+      "sub_events": [],
+      "subtype_order": 19,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

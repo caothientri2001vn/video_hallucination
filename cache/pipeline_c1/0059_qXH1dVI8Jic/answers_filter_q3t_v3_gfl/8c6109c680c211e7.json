@@ -1,0 +1,199 @@
+{
+  "question": "Did the host play exactly two individual rounds?",
+  "pred": "To determine if the host played exactly two individual rounds, we identify each game turn (round) by the action of a player lifting a prompt tile from the Charades board:\n\n1.  **Round 1:** The floral-top woman lifts tile #1 from the board at ~01:10 and performs her charade.\n2.  **Round 2:** The checkered-jumpsuit woman lifts tile #3 from the board at ~02:05 and performs her charade.\n3.  **Round 3:** The host (dark-suit man) lifts tile #8 from the board at ~02:45 and performs his charade.\n4.  **Round 4:** The black-outfit man lifts tile #5 from the board at ~03:55 and performs his charade.\n5.  **Round 5:** The host (dark-suit man) and checkered-jumpsuit woman together lift tile #7 from the board at ~04:45 and perform a joint charade.\n\nThe host participated in two rounds: Round 3 (individually) and Round 5 (as a pair). The question asks if he played exactly two *individual* rounds. Since Round 5 was a joint effort with another contestant, he only played one individual round.\n\nEvidence: the host opens panel 8 at 02:45 for his individual turn, and later joins the checkered-jumpsuit woman to open panel 7 at 04:45 for a joint turn.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "open_box",
+      "description": "the host opens the right-column fourth-row panel (labeled '8') on the Charades board",
+      "participants": [
+        "man in dark suit"
+      ],
+      "actor": "man in dark suit",
+      "object": "wooden panel",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 81,
+      "start_time": "02:45",
+      "end_time": "02:48",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "speak",
+      "description": "the host reads from the opened panel 8 while facing the audience",
+      "participants": [
+        "man in dark suit"
+      ],
+      "actor": "man in dark suit",
+      "object": "",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 86,
+      "start_time": "02:48",
+      "end_time": "02:58",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "walk",
+      "description": "dark-suit host walks from the game board to stand in the center of the stage facing the seated guests",
+      "participants": [
+        "dark-suit host"
+      ],
+      "actor": "dark-suit host",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": ":30",
+          "location": "timer"
+        },
+        {
+          "text": "IT",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 89,
+      "start_time": "03:07",
+      "end_time": "03:10",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "gesture",
+      "description": "dark-suit host makes hand gestures while addressing the seated guests",
+      "participants": [
+        "dark-suit host"
+      ],
+      "actor": "dark-suit host",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": ":30",
+          "location": "timer"
+        },
+        {
+          "text": "IT",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 91,
+      "start_time": "03:09",
+      "end_time": "03:12",
+      "sub_events": [],
+      "subtype_order": 34,
+      "subtype_total": 53,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "gesture",
+      "description": "The host in black suit raises both hands in an animated celebratory gesture",
+      "participants": [
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 100,
+      "start_time": "03:30",
+      "end_time": "03:33",
+      "sub_events": [],
+      "subtype_order": 38,
+      "subtype_total": 53,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "gesture",
+      "description": "the host in suit gestures with his right hand while speaking to the contestants",
+      "participants": [
+        "host in suit"
+      ],
+      "actor": "host in suit",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 121,
+      "start_time": "04:18",
+      "end_time": "04:22",
+      "sub_events": [],
+      "subtype_order": 46,
+      "subtype_total": 53,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "game",
+      "description": "man holds up wooden tile with number 7 to show the charade prompt",
+      "participants": [
+        "checkered-jumpsuit woman",
+        "suit-man man"
+      ],
+      "actor": "suit-man man",
+      "object": "wooden tile with number 7",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 130,
+      "start_time": "04:45",
+      "end_time": "04:50",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "gesture",
+      "description": "Man in suit (host) points his right index finger upward while looking at the woman in striped outfit",
+      "participants": [
+        "man in suit",
+        "striped-outfit woman",
+        "black-outfit woman",
+        "man in black"
+      ],
+      "actor": "man in suit",
+      "on_screen_text": [
+        {
+          "text": "\"DANCING ON THE CEILING\"",
+          "location": "caption"
+        },
+        {
+          "text": ":8",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 159,
+      "start_time": "05:23",
+      "end_time": "05:25",
+      "sub_events": [],
+      "subtype_order": 53,
+      "subtype_total": 53,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    }
+  ]
+}

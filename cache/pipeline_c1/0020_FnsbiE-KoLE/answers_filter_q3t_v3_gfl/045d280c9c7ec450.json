@@ -1,0 +1,30 @@
+{
+  "question": "Did the red shirt girl fall into the pool?",
+  "pred": "The video shows a girl in a red tank top (identified as Gabby Romano in the on-screen graphics) competing on a Ninja Warrior obstacle course. During her run, she loses her grip on the cylinders and falls into the water pool below.\n\nEvidence: Event 131 in the Context states \"The girl loses grip on the cylinders and falls backward into the water below\" at 05:38, which is confirmed by the frames showing the red-shirt girl falling into the pool.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "fall",
+      "description": "The girl loses grip on the cylinders and falls backward into the water below",
+      "participants": [
+        "red-shirt girl"
+      ],
+      "actor": "red-shirt girl",
+      "object": "",
+      "on_screen_text": [],
+      "segment_boundary": "end",
+      "segment_label": "Ninja Warrior obstacle course",
+      "continuation_hint": "complete",
+      "outcome": "slipped",
+      "event_index": 131,
+      "start_time": "05:38",
+      "end_time": "05:40",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 10,
+      "segment_label_resolved": "Ninja Warrior obstacle course"
+    }
+  ]
+}

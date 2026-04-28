@@ -1,0 +1,128 @@
+{
+  "question": "Was the lipstick inside the box opened by the man on the left?",
+  "pred": "The video shows a game involving numbered boxes on a shelf. The man on the left (guest in a blue suit) and the man on the right (host in a dark suit) take turns selecting boxes.\n\n1.  The man on the left selects a box from the shelf (frames at ~02:05 show him reaching for a box on the left side of the shelf).\n2.  He places it on the table and opens it.\n3.  Inside the box is a small golden object, which the Context identifies as a \"gold lipstick tube\" (Event 66).\n4.  The man on the left removes the lipstick from the box and eventually hands it to the man on the right (Event 61, 62).\n5.  The man on the right then displays the lipstick to the camera and opens it (Event 65, 66).\n\nEvidence: frames at ~02:10 show the man on the left opening a box on the table to reveal a gold lipstick tube inside.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "hand_raise",
+      "description": "blue-suited person raises their hand (holding an object) toward the screen",
+      "participants": [
+        "blue-suited person",
+        "gray-suited person"
+      ],
+      "actor": "blue-suited person",
+      "object": "small object",
+      "segment_boundary": "middle",
+      "segment_label": "Object Exchange",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 61,
+      "start_time": "02:15",
+      "end_time": "02:17",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 10,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "hand_raise",
+      "description": "blue-suited person extends arm further holding a small golden object toward the screen",
+      "participants": [
+        "blue-suited person",
+        "gray-suited person"
+      ],
+      "actor": "blue-suited person",
+      "object": "golden object",
+      "segment_boundary": "middle",
+      "segment_label": "Object Exchange",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 62,
+      "start_time": "02:17",
+      "end_time": "02:19",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 10,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_object",
+      "description": "gray-suited person opens the small golden object revealing a light-colored product inside",
+      "participants": [
+        "gray-suited person"
+      ],
+      "actor": "gray-suited person",
+      "object_before": "closed golden object",
+      "object_after": "open golden object",
+      "segment_boundary": "middle",
+      "segment_label": "Object Exchange",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 65,
+      "start_time": "02:25",
+      "end_time": "02:30",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "hold_object",
+      "description": "The hand of the man in the dark suit holds and displays a lipstick to the camera, with slight movements of the hand.",
+      "participants": [
+        "dark-suit man"
+      ],
+      "actor": "dark-suit man",
+      "object": "gold lipstick tube",
+      "segment_boundary": "middle",
+      "segment_label": "Lipstick Display Segment",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 66,
+      "start_time": "02:30",
+      "end_time": "02:33",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "speak",
+      "description": "The man in the dark suit speaks while holding the lipstick and looking toward the screen displaying the man in the blue suit.",
+      "participants": [
+        "dark-suit man"
+      ],
+      "actor": "dark-suit man",
+      "object": "gold lipstick tube",
+      "segment_boundary": "middle",
+      "segment_label": "Lipstick Display Segment",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 69,
+      "start_time": "02:37",
+      "end_time": "02:39",
+      "sub_events": [],
+      "subtype_order": 22,
+      "subtype_total": 47,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "graphic",
+      "description": "Close-up view of a display featuring two green praying mantises holding a red and blue hula hoop with two bees suspended in the middle",
+      "participants": [],
+      "actor": null,
+      "segment_boundary": "middle",
+      "segment_label": "Game Show Segment",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 84,
+      "start_time": "03:26",
+      "end_time": "03:27",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    }
+  ]
+}

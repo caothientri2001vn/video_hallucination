@@ -1,0 +1,4726 @@
+{
+  "question": "Does the first cat hit the wall then travel back to the original point?",
+  "pred": "Evidence: The context shows the first cat (black cat) navigating the maze in events 4, 115-120, 122-123, etc., with instances of pausing (\"stops moving and looks around\" in event 126), appearing trapped (\"I'm trapped!\" text in event 137), and calling for help (\"somebody help me!\" in event 156). However, there is no explicit description of the cat hitting a wall and then traveling back to its original starting point. The frames and event descriptions only show forward progression through the maze without the specific backtracking to the original position.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "walk": 52,
+      "graphic": 20,
+      "on_screen_text": 10,
+      "look": 9,
+      "navigate": 7,
+      "sniff": 6,
+      "cat_navigate_maze": 5,
+      "turn": 4,
+      "camera_change": 4,
+      "caption": 4,
+      "move": 4,
+      "camera_transition": 3,
+      "maze_navigation": 3,
+      "transition": 3,
+      "explore": 3,
+      "text_overlay": 3,
+      "text_appears": 3,
+      "camera_shift": 3,
+      "pause": 2,
+      "gesture": 2,
+      "position_change": 2,
+      "enter": 2,
+      "title_card": 2,
+      "measure_and_cut": 1,
+      "position_cardboard": 1,
+      "attach_tape": 1,
+      "assemble_structure": 1,
+      "entrance": 1,
+      "time_update": 1,
+      "no_content_available": 1,
+      "timer_reset": 1,
+      "enter_maze": 1,
+      "tail_move": 1,
+      "react": 1,
+      "look_up": 1,
+      "eat": 1,
+      "exit": 1,
+      "head_movement": 1,
+      "stand": 1,
+      "emerge": 1,
+      "approach": 1,
+      "take": 1,
+      "cat_approach_food": 1,
+      "cat_eat_food": 1,
+      "view_change": 1,
+      "remain_still": 1,
+      "cat_move": 1,
+      "scoreboard_update": 1,
+      "appear": 1,
+      "reposition": 1,
+      "movement": 1
+    },
+    "events": [
+      {
+        "event_type": "walk",
+        "description": "A black and white Husky dog walks through an arched cardboard doorway toward the camera with its tongue out.",
+        "participants": [],
+        "actor": "Husky dog",
+        "object": "",
+        "on_screen_text": [],
+        "segment_boundary": "start",
+        "segment_label": "Maze Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:01",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 52,
+        "round_index": 1,
+        "segment_label_resolved": "Maze Challenge"
+      },
+      {
+        "event_type": "walk",
+        "description": "The same black and white Husky dog continues walking through the archway with the text 'THREE DOGS' displayed on screen.",
+        "participants": [],
+        "actor": "Husky dog",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "THREE DOGS",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Three Dogs",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 2,
+        "start_time": "00:02",
+        "end_time": "00:07",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 52,
+        "round_index": 1,
+        "segment_label_resolved": "Maze Challenge"
+      },
+      {
+        "event_type": "walk",
+        "description": "The same Husky dog is viewed from overhead walking through a cardboard maze structure.",
+        "participants": [],
+        "actor": "Husky dog",
+        "object": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Three Dogs",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 3,
+        "start_time": "00:08",
+        "end_time": "00:13",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 52,
+        "round_index": 1,
+        "segment_label_resolved": "Maze Challenge"
+      },
+      {
+        "event_type": "walk",
+        "description": "A black cat walks through a narrow cardboard corridor toward the camera with the text 'TWO CATS' displayed on screen.",
+        "participants": [],
+        "actor": "black cat",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "TWO CATS",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Two Cats",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 4,
+        "start_time": "00:14",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 52,
+        "round_index": 2,
+        "segment_label_resolved": "Two Cats"
+      },
+      {
+        "event_type": "measure_and_cut",
+        "description": "measures cardboard with a tape measure and cuts it with a utility knife",
+        "participants": [
+          "gray-shirt person"
+        ],
+        "actor": "gray-shirt person",
+        "object": "cardboard",
+        "segment_boundary": "middle",
+        "segment_label": "cardboard assembly",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 5,
+        "start_time": "00:15",
+        "end_time": "00:18",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Two Cats"
+      },
+      {
+        "event_type": "position_cardboard",
+        "description": "positions multiple cardboard pieces to assemble a structure",
+        "participants": [
+          "gray-shirt person"
+        ],
+        "actor": "gray-shirt person",
+        "object": "cardboard pieces",
+        "segment_boundary": "middle",
+        "segment_label": "cardboard assembly",
+        "continuation_hint": "complete",
+        "event_index": 6,
+        "start_time": "00:18",
+        "end_time": "00:22",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Two Cats"
+      },
+      {
+        "event_type": "attach_tape",
+        "description": "places yellow adhesive tape on cardboard edges",
+        "participants": [
+          "gray-shirt person"
+        ],
+        "actor": "gray-shirt person",
+        "object": "yellow tape",
+        "segment_boundary": "middle",
+        "segment_label": "cardboard assembly",
+        "continuation_hint": "complete",
+        "event_index": 7,
+        "start_time": "00:22",
+        "end_time": "00:27",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Two Cats"
+      },
+      {
+        "event_type": "assemble_structure",
+        "description": "adjusts cardboard pieces to align them together forming a structure",
+        "participants": [
+          "gray-shirt person"
+        ],
+        "actor": "gray-shirt person",
+        "object": "cardboard structure",
+        "segment_boundary": "middle",
+        "segment_label": "cardboard assembly",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 8,
+        "start_time": "00:27",
+        "end_time": "00:30",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Two Cats"
+      },
+      {
+        "event_type": "graphic",
+        "description": "Overhead view of cardboard maze with 'START' and 'FINISH' labels and a white dashed path showing the route through the maze",
+        "participants": [],
+        "actor": "",
+        "object": "",
+        "object_before": "",
+        "object_after": "",
+        "on_screen_text": [
+          {
+            "text": "START",
+            "location": "other"
+          },
+          {
+            "text": "FINISH",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Maze Navigation Challenge",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 9,
+        "start_time": "00:30",
+        "end_time": "00:35",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 20,
+        "round_index": 3,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "entrance",
+        "description": "Husky dog appears at the arched entrance of the cardboard maze",
+        "participants": [],
+        "actor": "Husky dog",
+        "object": "",
+        "object_before": "",
+        "object_after": "",
+        "on_screen_text": [
+          {
+            "text": "Yuki",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Maze Navigation Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 10,
+        "start_time": "00:36",
+        "end_time": "00:38",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 3,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "walk",
+        "description": "Husky dog walks through the cardboard maze structure",
+        "participants": [],
+        "actor": "Husky dog",
+        "object": "",
+        "object_before": "",
+        "object_after": "",
+        "on_screen_text": [
+          {
+            "text": "00:00",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Maze Navigation Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 11,
+        "start_time": "00:39",
+        "end_time": "00:42",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 52,
+        "round_index": 3,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "time_update",
+        "description": "Timer display updates from 00:00 to 00:02 as the dog continues navigating the maze",
+        "participants": [],
+        "actor": "",
+        "object": "",
+        "object_before": "",
+        "object_after": "",
+        "on_screen_text": [
+          {
+            "text": "00:02",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Maze Navigation Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 12,
+        "start_time": "00:43",
+        "end_time": "00:45",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 3,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "walk",
+        "description": "dog walks forward through a cardboard maze corridor",
+        "participants": [
+          "husky dog"
+        ],
+        "actor": "husky dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "01:00",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 13,
+        "start_time": "01:00",
+        "end_time": "01:03",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 52,
+        "round_index": 3,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "sniff",
+        "description": "dog lowers head to sniff floor of the maze corridor",
+        "participants": [
+          "husky dog"
+        ],
+        "actor": "husky dog",
+        "object": "floor",
+        "on_screen_text": [
+          {
+            "text": "01:03",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 14,
+        "start_time": "01:03",
+        "end_time": "01:06",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 6,
+        "round_index": 3,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "turn",
+        "description": "dog makes a right turn at a maze intersection",
+        "participants": [
+          "husky dog"
+        ],
+        "actor": "husky dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "01:06",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 15,
+        "start_time": "01:06",
+        "end_time": "01:08",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 3,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "sniff",
+        "description": "dog continues sniffing along the right wall of the maze corridor",
+        "participants": [
+          "husky dog"
+        ],
+        "actor": "husky dog",
+        "object": "cardboard wall",
+        "on_screen_text": [
+          {
+            "text": "01:08",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 16,
+        "start_time": "01:08",
+        "end_time": "01:12",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 6,
+        "round_index": 3,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "pause",
+        "description": "dog stops movement and looks around the maze intersection",
+        "participants": [
+          "husky dog"
+        ],
+        "actor": "husky dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "01:15",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 17,
+        "start_time": "01:12",
+        "end_time": "01:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 3,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "no_content_available",
+        "description": "No video frames provided for this time segment; unable to identify any observable events",
+        "participants": [],
+        "actor": "",
+        "segment_boundary": "unknown",
+        "segment_label": "",
+        "continuation_hint": "complete",
+        "event_index": 18,
+        "start_time": "01:30",
+        "end_time": "01:45",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 3,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "on_screen_text",
+        "description": "Text \"Monty\" appears on screen identifying the dog standing in the archway",
+        "participants": [],
+        "actor": "on_screen_text",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "Monty",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Maze Navigation Challenge",
+        "continuation_hint": "complete",
+        "event_index": 19,
+        "start_time": "01:45",
+        "end_time": "01:49",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 10,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "timer_reset",
+        "description": "The timer on screen resets to 00:00",
+        "participants": [],
+        "actor": "on_screen_text",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "00:00",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Maze Navigation Challenge",
+        "continuation_hint": "complete",
+        "event_index": 20,
+        "start_time": "01:49",
+        "end_time": "01:49",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "camera_transition",
+        "description": "The camera view transitions from the archway perspective to an overhead view of the cardboard maze",
+        "participants": [],
+        "actor": "camera",
+        "object": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Maze Navigation Challenge",
+        "continuation_hint": "complete",
+        "event_index": 21,
+        "start_time": "01:50",
+        "end_time": "01:50",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "enter_maze",
+        "description": "The dog enters the cardboard maze through the starting section at the top of the frame",
+        "participants": [],
+        "actor": "dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "00:00",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Maze Navigation Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 22,
+        "start_time": "01:51",
+        "end_time": "01:51",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "maze_navigation",
+        "description": "The dog moves downward from the starting section into the first corridor of the cardboard maze as the timer advances to 00:01",
+        "participants": [],
+        "actor": "dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "00:01",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Maze Navigation Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 23,
+        "start_time": "01:52",
+        "end_time": "01:52",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "maze_navigation",
+        "description": "The dog turns right and continues through the cardboard maze as the timer advances to 00:02",
+        "participants": [],
+        "actor": "dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "00:02",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Maze Navigation Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 24,
+        "start_time": "01:53",
+        "end_time": "01:53",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "maze_navigation",
+        "description": "The dog continues moving through the cardboard maze, navigating toward the center as the timer advances to 00:03",
+        "participants": [],
+        "actor": "dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "00:03",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Maze Navigation Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 25,
+        "start_time": "01:54",
+        "end_time": "01:55",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "walk",
+        "description": "black and white dog walks through cardboard maze from left side toward center corridor",
+        "participants": [
+          "black and white dog"
+        ],
+        "actor": "black and white dog",
+        "segment_label": "Cardboard Maze Challenge",
+        "segment_boundary": "middle",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 26,
+        "start_time": "00:03",
+        "end_time": "00:07",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 52,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "transition",
+        "description": "camera angle changes from overhead view to close-up view of dog in maze",
+        "participants": [],
+        "actor": "",
+        "segment_label": "Cardboard Maze Challenge",
+        "segment_boundary": "middle",
+        "continuation_hint": "complete",
+        "event_index": 27,
+        "start_time": "00:07",
+        "end_time": "00:08",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "text \"Dad built a lab\" appears centered on screen",
+        "participants": [],
+        "actor": "",
+        "on_screen_text": [
+          {
+            "text": "Dad built a lab",
+            "location": "other"
+          }
+        ],
+        "segment_label": "Cardboard Maze Challenge",
+        "segment_boundary": "middle",
+        "continuation_hint": "complete",
+        "event_index": 28,
+        "start_time": "00:08",
+        "end_time": "00:09",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 20,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "look",
+        "description": "dog looks up at camera from within cardboard maze corridor",
+        "participants": [
+          "black and white dog"
+        ],
+        "actor": "black and white dog",
+        "segment_label": "Cardboard Maze Challenge",
+        "segment_boundary": "middle",
+        "continuation_hint": "complete",
+        "event_index": 29,
+        "start_time": "00:08",
+        "end_time": "00:09",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 9,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "gesture",
+        "description": "dog licks its nose while looking up at camera",
+        "participants": [
+          "black and white dog"
+        ],
+        "actor": "black and white dog",
+        "segment_label": "Cardboard Maze Challenge",
+        "segment_boundary": "middle",
+        "continuation_hint": "complete",
+        "event_index": 30,
+        "start_time": "00:08",
+        "end_time": "00:08",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "gesture",
+        "description": "dog wags its tail while standing in cardboard maze corridor",
+        "participants": [
+          "black and white dog"
+        ],
+        "actor": "black and white dog",
+        "segment_label": "Cardboard Maze Challenge",
+        "segment_boundary": "middle",
+        "continuation_hint": "complete",
+        "event_index": 31,
+        "start_time": "00:09",
+        "end_time": "00:09",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "text \"I've become a mouse?\" appears centered on screen",
+        "participants": [],
+        "actor": "",
+        "on_screen_text": [
+          {
+            "text": "I've become a mouse?",
+            "location": "other"
+          }
+        ],
+        "segment_label": "Cardboard Maze Challenge",
+        "segment_boundary": "middle",
+        "continuation_hint": "complete",
+        "event_index": 32,
+        "start_time": "00:10",
+        "end_time": "00:11",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 20,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "walk",
+        "description": "black and white dog walks through cardboard maze from center toward left corridor",
+        "participants": [
+          "black and white dog"
+        ],
+        "actor": "black and white dog",
+        "segment_label": "Cardboard Maze Challenge",
+        "segment_boundary": "middle",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 33,
+        "start_time": "00:12",
+        "end_time": "00:18",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 52,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "look",
+        "description": "dog stands still and looks up at camera with head slightly tilted",
+        "participants": [
+          "black and white dog"
+        ],
+        "actor": "black and white dog",
+        "segment_boundary": "middle",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "00:18",
+            "location": "timer"
+          }
+        ],
+        "event_index": 34,
+        "start_time": "00:18",
+        "end_time": "00:19",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 9,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "tail_move",
+        "description": "dog's tail moves from lower position to higher position",
+        "participants": [
+          "black and white dog"
+        ],
+        "actor": "black and white dog",
+        "segment_boundary": "middle",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "00:19",
+            "location": "timer"
+          }
+        ],
+        "event_index": 35,
+        "start_time": "00:19",
+        "end_time": "00:20",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "camera_change",
+        "description": "camera angle shifts from eye-level to overhead view of maze",
+        "participants": [],
+        "actor": "camera",
+        "segment_boundary": "middle",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "00:20",
+            "location": "timer"
+          }
+        ],
+        "event_index": 36,
+        "start_time": "00:20",
+        "end_time": "00:21",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "navigate",
+        "description": "dog navigates through the cardboard maze from overhead perspective",
+        "participants": [
+          "black and white dog"
+        ],
+        "actor": "black and white dog",
+        "segment_boundary": "middle",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "00:21",
+            "location": "timer"
+          },
+          {
+            "text": "00:22",
+            "location": "timer"
+          },
+          {
+            "text": "00:23",
+            "location": "timer"
+          },
+          {
+            "text": "00:24",
+            "location": "timer"
+          },
+          {
+            "text": "00:25",
+            "location": "timer"
+          },
+          {
+            "text": "00:26",
+            "location": "timer"
+          }
+        ],
+        "event_index": 37,
+        "start_time": "00:21",
+        "end_time": "00:26",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 7,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "position_change",
+        "description": "dog emerges from behind cardboard wall and looks directly at camera",
+        "participants": [
+          "black and white dog"
+        ],
+        "actor": "black and white dog",
+        "segment_boundary": "middle",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "00:27",
+            "location": "timer"
+          }
+        ],
+        "event_index": 38,
+        "start_time": "00:27",
+        "end_time": "00:28",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "text 'activating a superpower' appears on screen in upper right corner",
+        "participants": [],
+        "actor": "on-screen graphic",
+        "segment_boundary": "middle",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "00:28",
+            "location": "timer"
+          },
+          {
+            "text": "activating a superpower",
+            "location": "other"
+          }
+        ],
+        "event_index": 39,
+        "start_time": "00:28",
+        "end_time": "00:29",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 20,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "walk",
+        "description": "dog continues walking through the cardboard maze corridor",
+        "participants": [
+          "black and white dog"
+        ],
+        "actor": "black and white dog",
+        "segment_boundary": "middle",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "00:29",
+            "location": "timer"
+          },
+          {
+            "text": "00:30",
+            "location": "timer"
+          },
+          {
+            "text": "00:31",
+            "location": "timer"
+          },
+          {
+            "text": "00:32",
+            "location": "timer"
+          },
+          {
+            "text": "00:33",
+            "location": "timer"
+          }
+        ],
+        "event_index": 40,
+        "start_time": "00:29",
+        "end_time": "00:33",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 52,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "walk",
+        "description": "dog navigates through the cardboard maze structure",
+        "participants": [
+          "black and white dog"
+        ],
+        "actor": "black and white dog",
+        "object": "cardboard maze",
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 41,
+        "start_time": "02:30",
+        "end_time": "02:35",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 52,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "look",
+        "description": "dog looks upward at camera while standing in the maze corridor",
+        "participants": [
+          "black and white dog"
+        ],
+        "actor": "black and white dog",
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "middle",
+        "event_index": 42,
+        "start_time": "02:35",
+        "end_time": "02:37",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 9,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "text overlay appears on screen reading \"my nose let me down\"",
+        "participants": [],
+        "actor": "text overlay",
+        "on_screen_text": [
+          {
+            "text": "my nose let me down",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "middle",
+        "event_index": 43,
+        "start_time": "02:37",
+        "end_time": "02:39",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 20,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "react",
+        "description": "dog looks around the maze corridor with mouth slightly open",
+        "participants": [
+          "black and white dog"
+        ],
+        "actor": "black and white dog",
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "middle",
+        "event_index": 44,
+        "start_time": "02:39",
+        "end_time": "02:41",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "walk",
+        "description": "dog continues navigating through the cardboard maze, moving forward through the corridor",
+        "participants": [
+          "black and white dog"
+        ],
+        "actor": "black and white dog",
+        "object": "cardboard maze",
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 45,
+        "start_time": "02:41",
+        "end_time": "02:45",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 52,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "walk",
+        "description": "dog navigates through the cardboard maze, sniffing along the walls",
+        "participants": [
+          "black and white dog"
+        ],
+        "actor": "black and white dog",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "02:45",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 46,
+        "start_time": "02:45",
+        "end_time": "02:51",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 52,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "sniff",
+        "description": "dog stops and sniffs the ground in a corner of the maze",
+        "participants": [
+          "black and white dog"
+        ],
+        "actor": "black and white dog",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "02:51-02:58",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "middle",
+        "event_index": 47,
+        "start_time": "02:51",
+        "end_time": "02:58",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 6,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "look_up",
+        "description": "dog looks up toward the camera with an expression of confusion",
+        "participants": [
+          "black and white dog"
+        ],
+        "actor": "black and white dog",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "02:58-03:00",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 48,
+        "start_time": "02:58",
+        "end_time": "03:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "walk",
+        "description": "black and white dog navigates through cardboard maze structure",
+        "participants": [],
+        "actor": "black and white dog",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "01:03",
+            "location": "timer"
+          },
+          {
+            "text": "01:04",
+            "location": "timer"
+          },
+          {
+            "text": "01:05",
+            "location": "timer"
+          },
+          {
+            "text": "01:06",
+            "location": "timer"
+          },
+          {
+            "text": "01:07",
+            "location": "timer"
+          },
+          {
+            "text": "01:08",
+            "location": "timer"
+          },
+          {
+            "text": "01:09",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 49,
+        "start_time": "03:00",
+        "end_time": "03:10",
+        "sub_events": [],
+        "subtype_order": 13,
+        "subtype_total": 52,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "sniff",
+        "description": "dog sniffs a treat on a red plate",
+        "participants": [],
+        "actor": "black and white dog",
+        "object": "red plate with treat",
+        "on_screen_text": [
+          {
+            "text": "01:10",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 50,
+        "start_time": "03:10",
+        "end_time": "03:12",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 6,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "eat",
+        "description": "dog picks up and eats the treat from the red plate",
+        "participants": [],
+        "actor": "black and white dog",
+        "object": "treat",
+        "on_screen_text": [
+          {
+            "text": "01:10",
+            "location": "timer"
+          },
+          {
+            "text": "oh, I got out",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 51,
+        "start_time": "03:12",
+        "end_time": "03:14",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "walk",
+        "description": "dog walks away from the empty red plate with the treat in its mouth",
+        "participants": [],
+        "actor": "black and white dog",
+        "object": "red plate",
+        "on_screen_text": [
+          {
+            "text": "01:10",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 52,
+        "start_time": "03:14",
+        "end_time": "03:15",
+        "sub_events": [],
+        "subtype_order": 14,
+        "subtype_total": 52,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "navigate",
+        "description": "light-colored dog navigates cardboard maze with timer showing 00:01",
+        "participants": [],
+        "actor": "dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "00:01",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 53,
+        "start_time": "03:15",
+        "end_time": "03:17",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 7,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "look",
+        "description": "dog looks around at maze intersection while navigating",
+        "participants": [],
+        "actor": "dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "00:02",
+            "location": "timer"
+          },
+          {
+            "text": "00:03",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 54,
+        "start_time": "03:18",
+        "end_time": "03:22",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 9,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "text \"where's the tour guide?\" appears on screen while dog looks around",
+        "participants": [],
+        "actor": "text",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "where's the tour guide?",
+            "location": "caption"
+          },
+          {
+            "text": "00:05",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 55,
+        "start_time": "03:23",
+        "end_time": "03:25",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 20,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "navigate",
+        "description": "dog continues navigating maze as timer progresses from 00:06 to 00:10",
+        "participants": [],
+        "actor": "dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "00:06",
+            "location": "timer"
+          },
+          {
+            "text": "00:07",
+            "location": "timer"
+          },
+          {
+            "text": "00:08",
+            "location": "timer"
+          },
+          {
+            "text": "00:09",
+            "location": "timer"
+          },
+          {
+            "text": "00:10",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 56,
+        "start_time": "03:26",
+        "end_time": "03:30",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 7,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "walk",
+        "description": "dog navigates through the cardboard maze, turning left and right while exploring different paths",
+        "participants": [
+          "husky dog"
+        ],
+        "actor": "husky dog",
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "starts_before_chunk",
+        "on_screen_text": [
+          {
+            "text": "00:10",
+            "location": "timer"
+          }
+        ],
+        "event_index": 57,
+        "start_time": "03:30",
+        "end_time": "03:35",
+        "sub_events": [],
+        "subtype_order": 15,
+        "subtype_total": 52,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "walk",
+        "description": "dog approaches the right side of the maze, attempting to find an exit path",
+        "participants": [
+          "husky dog"
+        ],
+        "actor": "husky dog",
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "00:18",
+            "location": "timer"
+          }
+        ],
+        "event_index": 58,
+        "start_time": "03:36",
+        "end_time": "03:38",
+        "sub_events": [],
+        "subtype_order": 16,
+        "subtype_total": 52,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "text overlay appears on screen stating \"I found a VIP exit\" while dog is near the exit",
+        "participants": [],
+        "actor": "",
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "I found a VIP exit",
+            "location": "banner"
+          },
+          {
+            "text": "00:19",
+            "location": "timer"
+          }
+        ],
+        "event_index": 59,
+        "start_time": "03:39",
+        "end_time": "03:40",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 20,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "exit",
+        "description": "dog successfully exits the maze through the VIP exit path on the right side",
+        "participants": [
+          "husky dog"
+        ],
+        "actor": "husky dog",
+        "segment_boundary": "end",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "complete",
+        "on_screen_text": [
+          {
+            "text": "00:25",
+            "location": "timer"
+          }
+        ],
+        "event_index": 60,
+        "start_time": "03:41",
+        "end_time": "03:45",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "text 'dead end!' appears on screen while dog is in a dead end of the cardboard maze",
+        "participants": [],
+        "actor": "dog",
+        "on_screen_text": [
+          {
+            "text": "dead end!",
+            "location": "banner"
+          },
+          {
+            "text": "00:35",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 61,
+        "start_time": "00:35",
+        "end_time": "00:35",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 20,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "position_change",
+        "description": "dog is now positioned inside a cardboard box looking at camera",
+        "participants": [],
+        "actor": "dog",
+        "on_screen_text": [
+          {
+            "text": "00:35",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 62,
+        "start_time": "00:35",
+        "end_time": "00:35",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 4,
+        "segment_label_resolved": "Maze Navigation Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "text 'a great place for philosophical musings' appears on screen",
+        "participants": [],
+        "actor": "dog",
+        "on_screen_text": [
+          {
+            "text": "a great place for philosophical musings",
+            "location": "caption"
+          },
+          {
+            "text": "00:36",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Philosophical Reflection",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 63,
+        "start_time": "00:36",
+        "end_time": "00:36",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 20,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "graphic",
+        "description": "text 'a great place for philosophical musings' remains on screen",
+        "participants": [],
+        "actor": "dog",
+        "on_screen_text": [
+          {
+            "text": "a great place for philosophical musings",
+            "location": "caption"
+          },
+          {
+            "text": "00:37",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Philosophical Reflection",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 64,
+        "start_time": "00:37",
+        "end_time": "00:37",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 20,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "graphic",
+        "description": "text 'a great place for philosophical musings' remains on screen",
+        "participants": [],
+        "actor": "dog",
+        "on_screen_text": [
+          {
+            "text": "a great place for philosophical musings",
+            "location": "caption"
+          },
+          {
+            "text": "00:38",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Philosophical Reflection",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 65,
+        "start_time": "00:38",
+        "end_time": "00:38",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 20,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "graphic",
+        "description": "text 'a great place for philosophical musings' disappears from screen",
+        "participants": [],
+        "actor": "dog",
+        "on_screen_text": [
+          {
+            "text": "00:39",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Philosophical Reflection",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 66,
+        "start_time": "00:39",
+        "end_time": "00:39",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 20,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "head_movement",
+        "description": "dog turns its head to the side while standing in the cardboard box",
+        "participants": [],
+        "actor": "dog",
+        "on_screen_text": [
+          {
+            "text": "00:39",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Philosophical Reflection",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 67,
+        "start_time": "00:39",
+        "end_time": "00:40",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "stand",
+        "description": "The dog stands still in the cardboard maze, looking to the left",
+        "participants": [],
+        "actor": "husky dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "00:40",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 68,
+        "start_time": "00:40",
+        "end_time": "00:41",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "The dog begins walking forward through the cardboard maze corridor",
+        "participants": [],
+        "actor": "husky dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "00:41",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "middle",
+        "event_index": 69,
+        "start_time": "00:41",
+        "end_time": "00:42",
+        "sub_events": [],
+        "subtype_order": 17,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "The dog continues walking forward through the central corridor of the cardboard maze",
+        "participants": [],
+        "actor": "husky dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "00:42",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "middle",
+        "event_index": 70,
+        "start_time": "00:42",
+        "end_time": "00:44",
+        "sub_events": [],
+        "subtype_order": 18,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "turn",
+        "description": "The dog makes a left turn from the central corridor into a side corridor of the cardboard maze",
+        "participants": [],
+        "actor": "husky dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "00:45",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "middle",
+        "event_index": 71,
+        "start_time": "00:45",
+        "end_time": "00:47",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "explore",
+        "description": "The dog explores the left corner corridor of the cardboard maze, sniffing the ground",
+        "participants": [],
+        "actor": "husky dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "00:47",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "middle",
+        "event_index": 72,
+        "start_time": "00:47",
+        "end_time": "00:49",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "The dog walks forward from the corner corridor back into the central area of the cardboard maze",
+        "participants": [],
+        "actor": "husky dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "00:50",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "middle",
+        "event_index": 73,
+        "start_time": "00:50",
+        "end_time": "00:51",
+        "sub_events": [],
+        "subtype_order": 19,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "emerge",
+        "description": "The dog emerges from behind a cardboard wall, looking toward the camera",
+        "participants": [],
+        "actor": "husky dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "00:52",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "middle",
+        "event_index": 74,
+        "start_time": "00:52",
+        "end_time": "00:53",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "The dog walks directly toward the camera, filling the frame with its face",
+        "participants": [],
+        "actor": "husky dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "00:54",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 75,
+        "start_time": "00:54",
+        "end_time": "00:55",
+        "sub_events": [],
+        "subtype_order": 20,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "navigate",
+        "description": "A white and gray dog navigates through a cardboard maze, sniffing the floor as it moves forward through the passages",
+        "participants": [
+          "white and gray dog"
+        ],
+        "actor": "white and gray dog",
+        "on_screen_text": [
+          {
+            "text": "01:00",
+            "location": "timer"
+          },
+          {
+            "text": "01:01",
+            "location": "timer"
+          },
+          {
+            "text": "01:02",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 76,
+        "start_time": "04:15",
+        "end_time": "04:20",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 7,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "look",
+        "description": "The dog briefly looks up toward the camera while paused in the maze",
+        "participants": [
+          "white and gray dog"
+        ],
+        "actor": "white and gray dog",
+        "on_screen_text": [
+          {
+            "text": "01:02",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 77,
+        "start_time": "04:20",
+        "end_time": "04:21",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 9,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "graphic",
+        "description": "On-screen text appears saying \"I'm not lost, I'm pondering\" while the dog is paused in the maze",
+        "participants": [],
+        "actor": null,
+        "on_screen_text": [
+          {
+            "text": "I'm not lost, I'm pondering",
+            "location": "caption"
+          },
+          {
+            "text": "01:02",
+            "location": "timer"
+          },
+          {
+            "text": "01:03",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 78,
+        "start_time": "04:20",
+        "end_time": "04:25",
+        "sub_events": [],
+        "subtype_order": 13,
+        "subtype_total": 20,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "navigate",
+        "description": "The dog resumes navigating through the cardboard maze, turning corners and checking different paths",
+        "participants": [
+          "white and gray dog"
+        ],
+        "actor": "white and gray dog",
+        "on_screen_text": [
+          {
+            "text": "01:04",
+            "location": "timer"
+          },
+          {
+            "text": "01:05",
+            "location": "timer"
+          },
+          {
+            "text": "01:06",
+            "location": "timer"
+          },
+          {
+            "text": "01:07",
+            "location": "timer"
+          },
+          {
+            "text": "01:08",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 79,
+        "start_time": "04:25",
+        "end_time": "04:30",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 7,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "dog navigates through cardboard maze from overhead view",
+        "participants": [
+          "white and gray dog"
+        ],
+        "actor": "white and gray dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "01:10-01:18",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "cardboard maze navigation",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 80,
+        "start_time": "04:30",
+        "end_time": "04:38",
+        "sub_events": [],
+        "subtype_order": 21,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "camera_transition",
+        "description": "camera angle shifts from overhead view to closer side view of the maze",
+        "participants": [],
+        "actor": "",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "01:19",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "cardboard maze navigation",
+        "continuation_hint": "middle",
+        "event_index": 81,
+        "start_time": "04:38",
+        "end_time": "04:39",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "text_overlay",
+        "description": "text \"the traces of someone's panic\" appears on screen",
+        "participants": [],
+        "actor": "",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "the traces of someone's panic",
+            "location": "caption"
+          },
+          {
+            "text": "01:20-01:22",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "cardboard maze navigation",
+        "continuation_hint": "middle",
+        "event_index": 82,
+        "start_time": "04:39",
+        "end_time": "04:42",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "camera_transition",
+        "description": "camera angle shifts back from closer side view to overhead view of the maze",
+        "participants": [],
+        "actor": "",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "01:23",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "cardboard maze navigation",
+        "continuation_hint": "middle",
+        "event_index": 83,
+        "start_time": "04:42",
+        "end_time": "04:43",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "dog continues navigating through cardboard maze from overhead view",
+        "participants": [
+          "white and gray dog"
+        ],
+        "actor": "white and gray dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "01:24-01:25",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "cardboard maze navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 84,
+        "start_time": "04:43",
+        "end_time": "04:45",
+        "sub_events": [],
+        "subtype_order": 22,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "look",
+        "description": "dog looks up from the maze directly at the camera with a questioning expression",
+        "participants": [
+          "Husky dog"
+        ],
+        "actor": "Husky dog",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "isn't this a trap?",
+            "location": "caption"
+          },
+          {
+            "text": "01:27",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 85,
+        "start_time": "04:45",
+        "end_time": "04:48",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 9,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "dog continues navigating through the cardboard maze structure, moving forward and turning corners",
+        "participants": [
+          "Husky dog"
+        ],
+        "actor": "Husky dog",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "01:28",
+            "location": "timer"
+          },
+          {
+            "text": "01:29",
+            "location": "timer"
+          },
+          {
+            "text": "01:30",
+            "location": "timer"
+          },
+          {
+            "text": "01:31",
+            "location": "timer"
+          },
+          {
+            "text": "01:32",
+            "location": "timer"
+          },
+          {
+            "text": "01:33",
+            "location": "timer"
+          },
+          {
+            "text": "01:34",
+            "location": "timer"
+          },
+          {
+            "text": "01:35",
+            "location": "timer"
+          },
+          {
+            "text": "01:36",
+            "location": "timer"
+          },
+          {
+            "text": "01:37",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 86,
+        "start_time": "04:48",
+        "end_time": "04:57",
+        "sub_events": [],
+        "subtype_order": 23,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "approach",
+        "description": "dog approaches a red plate with a treat, stopping to observe the object",
+        "participants": [
+          "Husky dog"
+        ],
+        "actor": "Husky dog",
+        "object": "red plate",
+        "on_screen_text": [
+          {
+            "text": "it's like cheese in a mousetrap",
+            "location": "caption"
+          },
+          {
+            "text": "01:39",
+            "location": "timer"
+          },
+          {
+            "text": "01:40",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 87,
+        "start_time": "04:58",
+        "end_time": "05:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "look",
+        "description": "Husky dog stands in cardboard structure looking at treat on red plate",
+        "participants": [
+          "Husky dog"
+        ],
+        "actor": "Husky dog",
+        "object": "red plate",
+        "on_screen_text": [
+          {
+            "text": "it's like cheese in a mousetrap",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Dog Treat Challenge",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 88,
+        "start_time": "05:00",
+        "end_time": "05:03",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 9,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Husky dog steps forward through cardboard structure toward the red plate",
+        "participants": [
+          "Husky dog"
+        ],
+        "actor": "Husky dog",
+        "segment_boundary": "middle",
+        "segment_label": "Dog Treat Challenge",
+        "continuation_hint": "middle",
+        "event_index": 89,
+        "start_time": "05:03",
+        "end_time": "05:06",
+        "sub_events": [],
+        "subtype_order": 24,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "look",
+        "description": "Husky dog continues to observe the treat while standing in the cardboard structure",
+        "participants": [
+          "Husky dog"
+        ],
+        "actor": "Husky dog",
+        "on_screen_text": [
+          {
+            "text": "I'll grab it and run away",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Dog Treat Challenge",
+        "continuation_hint": "middle",
+        "event_index": 90,
+        "start_time": "05:06",
+        "end_time": "05:09",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 9,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "sniff",
+        "description": "Husky dog lowers head to sniff the treat on the red plate",
+        "participants": [
+          "Husky dog"
+        ],
+        "actor": "Husky dog",
+        "object": "treat",
+        "segment_boundary": "middle",
+        "segment_label": "Dog Treat Challenge",
+        "continuation_hint": "middle",
+        "event_index": 91,
+        "start_time": "05:09",
+        "end_time": "05:12",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 6,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "take",
+        "description": "Husky dog picks up the treat from the red plate with its mouth",
+        "participants": [
+          "Husky dog"
+        ],
+        "actor": "Husky dog",
+        "object": "treat",
+        "segment_boundary": "middle",
+        "segment_label": "Dog Treat Challenge",
+        "continuation_hint": "middle",
+        "event_index": 92,
+        "start_time": "05:12",
+        "end_time": "05:14",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "graphic",
+        "description": "Small image of another Husky dog appears in the bottom left corner with a red SUBSCRIBE banner",
+        "participants": [],
+        "actor": "graphic",
+        "on_screen_text": [
+          {
+            "text": "SUBSCRIBE",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Dog Treat Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 93,
+        "start_time": "05:14",
+        "end_time": "05:15",
+        "sub_events": [],
+        "subtype_order": 14,
+        "subtype_total": 20,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Cat continues walking through the cardboard maze, visible from a side angle with wooden flooring",
+        "participants": [
+          "long-haired tabby cat"
+        ],
+        "actor": "long-haired tabby cat",
+        "on_screen_text": [
+          {
+            "text": "00:05",
+            "location": "timer"
+          },
+          {
+            "text": "Belka",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 94,
+        "start_time": "05:15",
+        "end_time": "05:16",
+        "sub_events": [],
+        "subtype_order": 25,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Cat moves toward the right side of the maze, tail visible as it navigates the cardboard structure",
+        "participants": [
+          "long-haired tabby cat"
+        ],
+        "actor": "long-haired tabby cat",
+        "on_screen_text": [
+          {
+            "text": "00:06",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 95,
+        "start_time": "05:16",
+        "end_time": "05:17",
+        "sub_events": [],
+        "subtype_order": 26,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Cat turns a corner in the cardboard maze, moving from a side view to a position where it's partially obscured by walls",
+        "participants": [
+          "long-haired tabby cat"
+        ],
+        "actor": "long-haired tabby cat",
+        "on_screen_text": [
+          {
+            "text": "00:07",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 96,
+        "start_time": "05:17",
+        "end_time": "05:18",
+        "sub_events": [],
+        "subtype_order": 27,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Cat continues navigating the maze, with its tail visible as it disappears behind a cardboard wall",
+        "participants": [
+          "long-haired tabby cat"
+        ],
+        "actor": "long-haired tabby cat",
+        "on_screen_text": [
+          {
+            "text": "00:08",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 97,
+        "start_time": "05:18",
+        "end_time": "05:19",
+        "sub_events": [],
+        "subtype_order": 28,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Cat reappears from behind a wall, walking through a corridor section of the cardboard maze",
+        "participants": [
+          "long-haired tabby cat"
+        ],
+        "actor": "long-haired tabby cat",
+        "on_screen_text": [
+          {
+            "text": "00:09",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 98,
+        "start_time": "05:19",
+        "end_time": "05:20",
+        "sub_events": [],
+        "subtype_order": 29,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Cat walks through a wider section of the maze, moving from left to right in the frame with camera angle showing more of the structure",
+        "participants": [
+          "long-haired tabby cat"
+        ],
+        "actor": "long-haired tabby cat",
+        "on_screen_text": [
+          {
+            "text": "00:10",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 99,
+        "start_time": "05:20",
+        "end_time": "05:22",
+        "sub_events": [],
+        "subtype_order": 30,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Top-down view shows cat navigating through the center section of the maze, moving toward the bottom-right area of the frame",
+        "participants": [
+          "long-haired tabby cat"
+        ],
+        "actor": "long-haired tabby cat",
+        "on_screen_text": [
+          {
+            "text": "00:11",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 100,
+        "start_time": "05:22",
+        "end_time": "05:24",
+        "sub_events": [],
+        "subtype_order": 31,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Top-down view shows cat continuing through the maze, approaching a corner section where it disappears from the current camera angle",
+        "participants": [
+          "long-haired tabby cat"
+        ],
+        "actor": "long-haired tabby cat",
+        "on_screen_text": [
+          {
+            "text": "00:12",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 101,
+        "start_time": "05:24",
+        "end_time": "05:26",
+        "sub_events": [],
+        "subtype_order": 32,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Side view shows cat walking through a narrow corridor of the maze, moving from the back toward the camera",
+        "participants": [
+          "long-haired tabby cat"
+        ],
+        "actor": "long-haired tabby cat",
+        "on_screen_text": [
+          {
+            "text": "00:13",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 102,
+        "start_time": "05:26",
+        "end_time": "05:28",
+        "sub_events": [],
+        "subtype_order": 33,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Cat continues walking through the maze corridor, approaching the camera with visible wooden flooring",
+        "participants": [
+          "long-haired tabby cat"
+        ],
+        "actor": "long-haired tabby cat",
+        "on_screen_text": [
+          {
+            "text": "00:13",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 103,
+        "start_time": "05:28",
+        "end_time": "05:30",
+        "sub_events": [],
+        "subtype_order": 34,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "text_overlay",
+        "description": "On-screen text \"it's so cozy in here\" appears",
+        "participants": [],
+        "actor": "text",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "Cat Maze Exploration",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "it's so cozy in here",
+            "location": "caption"
+          }
+        ],
+        "event_index": 104,
+        "start_time": "05:30",
+        "end_time": "05:32",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Cat walks through the cardboard maze corridor toward a corner",
+        "participants": [
+          "cat"
+        ],
+        "actor": "cat",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "Cat Maze Exploration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 105,
+        "start_time": "05:30",
+        "end_time": "05:35",
+        "sub_events": [],
+        "subtype_order": 35,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "explore",
+        "description": "Cat stops at a corner of the maze and looks around",
+        "participants": [
+          "cat"
+        ],
+        "actor": "cat",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "Cat Maze Exploration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 106,
+        "start_time": "05:32",
+        "end_time": "05:35",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "camera_change",
+        "description": "Camera perspective shifts from side view to top-down view of the maze",
+        "participants": [],
+        "actor": "camera",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "Cat Maze Exploration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 107,
+        "start_time": "05:35",
+        "end_time": "05:37",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Cat continues walking through the maze from top-down perspective",
+        "participants": [
+          "cat"
+        ],
+        "actor": "cat",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "Cat Maze Exploration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 108,
+        "start_time": "05:37",
+        "end_time": "05:41",
+        "sub_events": [],
+        "subtype_order": 36,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "text_overlay",
+        "description": "On-screen text \"another cozy corner\" appears",
+        "participants": [],
+        "actor": "text",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "Cat Maze Exploration",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "another cozy corner",
+            "location": "caption"
+          }
+        ],
+        "event_index": 109,
+        "start_time": "05:41",
+        "end_time": "05:43",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "explore",
+        "description": "Cat enters and explores a new corner section of the cardboard maze",
+        "participants": [
+          "cat"
+        ],
+        "actor": "cat",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "Cat Maze Exploration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 110,
+        "start_time": "05:43",
+        "end_time": "05:45",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "cat_navigate_maze",
+        "description": "cat walks through narrow cardboard maze corridors from side view",
+        "participants": [
+          "cat"
+        ],
+        "actor": "cat",
+        "on_screen_text": [
+          {
+            "text": "00:28",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 111,
+        "start_time": "05:45",
+        "end_time": "05:48",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 5,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "cat_navigate_maze",
+        "description": "cat navigates cardboard maze from top-down view",
+        "participants": [
+          "cat"
+        ],
+        "actor": "cat",
+        "on_screen_text": [
+          {
+            "text": "00:29",
+            "location": "timer"
+          },
+          {
+            "text": "00:30",
+            "location": "timer"
+          },
+          {
+            "text": "00:31",
+            "location": "timer"
+          },
+          {
+            "text": "00:32",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "middle",
+        "event_index": 112,
+        "start_time": "05:48",
+        "end_time": "05:58",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 5,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "cat_approach_food",
+        "description": "cat approaches red plate with food at the end of the maze",
+        "participants": [
+          "cat"
+        ],
+        "actor": "cat",
+        "on_screen_text": [
+          {
+            "text": "00:33",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "middle",
+        "event_index": 113,
+        "start_time": "05:58",
+        "end_time": "05:59",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "cat_eat_food",
+        "description": "cat begins eating food from red plate with text overlay 'all my dreams are coming true'",
+        "participants": [
+          "cat"
+        ],
+        "actor": "cat",
+        "on_screen_text": [
+          {
+            "text": "00:34",
+            "location": "timer"
+          },
+          {
+            "text": "all my dreams are coming true",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "complete",
+        "event_index": 114,
+        "start_time": "05:59",
+        "end_time": "06:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Black cat begins navigating a cardboard maze from the upper left section",
+        "participants": [
+          "black cat"
+        ],
+        "actor": "black cat",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "00:07",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Maze Navigation",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 115,
+        "start_time": "06:00",
+        "end_time": "06:01",
+        "sub_events": [],
+        "subtype_order": 37,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Black cat continues moving through the cardboard maze toward the center",
+        "participants": [
+          "black cat"
+        ],
+        "actor": "black cat",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "00:08",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Maze Navigation",
+        "continuation_hint": "middle",
+        "event_index": 116,
+        "start_time": "06:01",
+        "end_time": "06:03",
+        "sub_events": [],
+        "subtype_order": 38,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Black cat walks through a narrow corridor in the cardboard maze toward the camera",
+        "participants": [
+          "black cat"
+        ],
+        "actor": "black cat",
+        "object": "cardboard corridor",
+        "on_screen_text": [
+          {
+            "text": "00:08",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Maze Navigation",
+        "continuation_hint": "middle",
+        "event_index": 117,
+        "start_time": "06:03",
+        "end_time": "06:05",
+        "sub_events": [],
+        "subtype_order": 39,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Black cat continues walking through the maze corridor, getting closer to the camera",
+        "participants": [
+          "black cat"
+        ],
+        "actor": "black cat",
+        "object": "cardboard corridor",
+        "on_screen_text": [
+          {
+            "text": "00:09",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Maze Navigation",
+        "continuation_hint": "middle",
+        "event_index": 118,
+        "start_time": "06:05",
+        "end_time": "06:07",
+        "sub_events": [],
+        "subtype_order": 40,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "view_change",
+        "description": "Camera perspective switches from ground-level to top-down view of the maze",
+        "participants": [],
+        "actor": "camera",
+        "object": "top-down view",
+        "on_screen_text": [
+          {
+            "text": "00:10",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Maze Navigation",
+        "continuation_hint": "middle",
+        "event_index": 119,
+        "start_time": "06:07",
+        "end_time": "06:08",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Black cat navigates from the lower right section of the cardboard maze toward the center",
+        "participants": [
+          "black cat"
+        ],
+        "actor": "black cat",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "00:10",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Maze Navigation",
+        "continuation_hint": "middle",
+        "event_index": 120,
+        "start_time": "06:08",
+        "end_time": "06:10",
+        "sub_events": [],
+        "subtype_order": 41,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Black cat continues moving through the cardboard maze structure",
+        "participants": [
+          "black cat"
+        ],
+        "actor": "black cat",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "00:11",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 121,
+        "start_time": "06:10",
+        "end_time": "06:12",
+        "sub_events": [],
+        "subtype_order": 42,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "The black cat walks forward in the right section of the cardboard maze.",
+        "participants": [
+          "black cat"
+        ],
+        "actor": "black cat",
+        "object": "cardboard maze",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 122,
+        "start_time": "06:15",
+        "end_time": "06:17",
+        "sub_events": [],
+        "subtype_order": 43,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "turn",
+        "description": "The black cat turns right while navigating the cardboard maze.",
+        "participants": [
+          "black cat"
+        ],
+        "actor": "black cat",
+        "object": "cardboard maze",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 123,
+        "start_time": "06:17",
+        "end_time": "06:18",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "camera_change",
+        "description": "The camera angle shifts from top-down to a more side-on view of the cat and the maze.",
+        "participants": [],
+        "actor": "camera",
+        "object": "camera angle",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 124,
+        "start_time": "06:18",
+        "end_time": "06:19",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "text_appears",
+        "description": "The text 'these boxes are too big' appears on screen.",
+        "participants": [],
+        "actor": "text",
+        "object": "on-screen text",
+        "on_screen_text": [
+          {
+            "text": "these boxes are too big",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 125,
+        "start_time": "06:19",
+        "end_time": "06:21",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "pause",
+        "description": "The black cat stops moving and looks around while the text 'these boxes are too big' is on screen.",
+        "participants": [
+          "black cat"
+        ],
+        "actor": "black cat",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "these boxes are too big",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 126,
+        "start_time": "06:19",
+        "end_time": "06:21",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "camera_change",
+        "description": "The camera angle shifts back to a top-down view of the cat and the maze.",
+        "participants": [],
+        "actor": "camera",
+        "object": "camera angle",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 127,
+        "start_time": "06:21",
+        "end_time": "06:23",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "The black cat resumes moving forward in the right section of the cardboard maze.",
+        "participants": [
+          "black cat"
+        ],
+        "actor": "black cat",
+        "object": "cardboard maze",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 128,
+        "start_time": "06:21",
+        "end_time": "06:23",
+        "sub_events": [],
+        "subtype_order": 44,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "text_appears",
+        "description": "The text 'I can smell food' appears on screen.",
+        "participants": [],
+        "actor": "text",
+        "object": "on-screen text",
+        "on_screen_text": [
+          {
+            "text": "I can smell food",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 129,
+        "start_time": "06:23",
+        "end_time": "06:25",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "sniff",
+        "description": "The black cat pauses its movement and appears to sniff the air while the text 'I can smell food' is on screen.",
+        "participants": [
+          "black cat"
+        ],
+        "actor": "black cat",
+        "object": "air",
+        "on_screen_text": [
+          {
+            "text": "I can smell food",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 130,
+        "start_time": "06:23",
+        "end_time": "06:25",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 6,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "text_appears",
+        "description": "The text 'this place is enchanted' appears on screen.",
+        "participants": [],
+        "actor": "text",
+        "object": "on-screen text",
+        "on_screen_text": [
+          {
+            "text": "this place is enchanted",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "complete",
+        "event_index": 131,
+        "start_time": "06:25",
+        "end_time": "06:30",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "remain_still",
+        "description": "The black cat stays in place while the text 'this place is enchanted' is on screen.",
+        "participants": [
+          "black cat"
+        ],
+        "actor": "black cat",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "this place is enchanted",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "complete",
+        "event_index": 132,
+        "start_time": "06:25",
+        "end_time": "06:30",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "graphic",
+        "description": "On-screen text \"this place is enchanted\" appears over the maze scene",
+        "participants": [],
+        "actor": null,
+        "on_screen_text": [
+          {
+            "text": "this place is enchanted",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 133,
+        "start_time": "06:30",
+        "end_time": "06:36",
+        "sub_events": [],
+        "subtype_order": 15,
+        "subtype_total": 20,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "transition",
+        "description": "Camera angle changes from overhead view of the entire maze to closer view of the cat",
+        "participants": [],
+        "actor": null,
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "complete",
+        "event_index": 134,
+        "start_time": "06:31",
+        "end_time": "06:32",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Black cat navigates through the cardboard maze",
+        "participants": [],
+        "actor": "black cat",
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 135,
+        "start_time": "06:30",
+        "end_time": "06:45",
+        "sub_events": [],
+        "subtype_order": 45,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "look",
+        "description": "Black cat looks around while standing in a narrow section of the maze",
+        "participants": [],
+        "actor": "black cat",
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "complete",
+        "event_index": 136,
+        "start_time": "06:35",
+        "end_time": "06:37",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 9,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "graphic",
+        "description": "On-screen text \"I'm trapped!\" appears while the cat is in a narrow section of the maze",
+        "participants": [],
+        "actor": null,
+        "on_screen_text": [
+          {
+            "text": "I'm trapped!",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "complete",
+        "event_index": 137,
+        "start_time": "06:37",
+        "end_time": "06:38",
+        "sub_events": [],
+        "subtype_order": 16,
+        "subtype_total": 20,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "black cat walks through cardboard maze from upper right section toward the bottom of the frame",
+        "participants": [],
+        "actor": "black cat",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "00:41",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cat Maze Navigation",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 138,
+        "start_time": "06:45",
+        "end_time": "06:51",
+        "sub_events": [],
+        "subtype_order": 46,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "graphic",
+        "description": "text 'I'm being punished' appears on the right side of the screen",
+        "participants": [],
+        "actor": "on-screen text",
+        "on_screen_text": [
+          {
+            "text": "00:47",
+            "location": "timer"
+          },
+          {
+            "text": "I'm being punished",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cat Maze Navigation",
+        "continuation_hint": "complete",
+        "event_index": 139,
+        "start_time": "06:47",
+        "end_time": "06:49",
+        "sub_events": [],
+        "subtype_order": 17,
+        "subtype_total": 20,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "graphic",
+        "description": "text 'for my love of boxes' appears on the right side of the screen",
+        "participants": [],
+        "actor": "on-screen text",
+        "on_screen_text": [
+          {
+            "text": "00:49",
+            "location": "timer"
+          },
+          {
+            "text": "for my love of boxes",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cat Maze Navigation",
+        "continuation_hint": "complete",
+        "event_index": 140,
+        "start_time": "06:49",
+        "end_time": "06:50",
+        "sub_events": [],
+        "subtype_order": 18,
+        "subtype_total": 20,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "black cat exits the cardboard maze structure and moves onto the open floor area",
+        "participants": [],
+        "actor": "black cat",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "00:51",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cat Maze Navigation",
+        "continuation_hint": "complete",
+        "event_index": 141,
+        "start_time": "06:51",
+        "end_time": "06:52",
+        "sub_events": [],
+        "subtype_order": 47,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "graphic",
+        "description": "text 'I won't send Belka away anymore' appears centered on the screen",
+        "participants": [],
+        "actor": "on-screen text",
+        "on_screen_text": [
+          {
+            "text": "00:53",
+            "location": "timer"
+          },
+          {
+            "text": "I won't send Belka away anymore",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Cat Maze Navigation",
+        "continuation_hint": "complete",
+        "event_index": 142,
+        "start_time": "06:53",
+        "end_time": "06:55",
+        "sub_events": [],
+        "subtype_order": 19,
+        "subtype_total": 20,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "caption",
+        "description": "On-screen text 'I won't send Belka away anymore' appears",
+        "participants": [],
+        "actor": "text",
+        "on_screen_text": [
+          {
+            "text": "I won't send Belka away anymore",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cat and Boxes",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 143,
+        "start_time": "07:00",
+        "end_time": "07:01",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "caption",
+        "description": "On-screen text 'I won't send Belka away anymore' disappears",
+        "participants": [],
+        "actor": "text",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Cat and Boxes",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 144,
+        "start_time": "07:01",
+        "end_time": "07:01",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "caption",
+        "description": "On-screen text 'I'll give her all the boxes!' appears",
+        "participants": [],
+        "actor": "text",
+        "on_screen_text": [
+          {
+            "text": "I'll give her all the boxes!",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cat and Boxes",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 145,
+        "start_time": "07:01",
+        "end_time": "07:03",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "move",
+        "description": "Black cat moves toward the cardboard box structure",
+        "participants": [],
+        "actor": "black cat",
+        "segment_boundary": "middle",
+        "segment_label": "Cat and Boxes",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 146,
+        "start_time": "07:02",
+        "end_time": "07:04",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "enter",
+        "description": "Black cat enters the cardboard box structure",
+        "participants": [],
+        "actor": "black cat",
+        "segment_boundary": "middle",
+        "segment_label": "Cat and Boxes",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 147,
+        "start_time": "07:04",
+        "end_time": "07:05",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "on_screen_text",
+        "description": "Timer progresses from 00:59 to 01:00",
+        "participants": [],
+        "actor": "timer",
+        "on_screen_text": [
+          {
+            "text": "00:59",
+            "location": "timer"
+          },
+          {
+            "text": "01:00",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cat and Boxes",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 148,
+        "start_time": "07:04",
+        "end_time": "07:05",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 10,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "on_screen_text",
+        "description": "Timer progresses from 01:00 to 01:01",
+        "participants": [],
+        "actor": "timer",
+        "on_screen_text": [
+          {
+            "text": "01:00",
+            "location": "timer"
+          },
+          {
+            "text": "01:01",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cat and Boxes",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 149,
+        "start_time": "07:05",
+        "end_time": "07:06",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 10,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "graphic",
+        "description": "Husky dog image and red 'SUBSCRIBE' button appear in the bottom right corner",
+        "participants": [],
+        "actor": "graphic",
+        "on_screen_text": [
+          {
+            "text": "SUBSCRIBE",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cat and Boxes",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 150,
+        "start_time": "07:05",
+        "end_time": "07:07",
+        "sub_events": [],
+        "subtype_order": 20,
+        "subtype_total": 20,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "transition",
+        "description": "Camera view changes from side angle to overhead view showing the complete maze structure",
+        "participants": [],
+        "actor": "camera",
+        "segment_boundary": "middle",
+        "segment_label": "Cat and Boxes",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 151,
+        "start_time": "07:06",
+        "end_time": "07:07",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "move",
+        "description": "Black cat is visible in the overhead view of the cardboard maze structure",
+        "participants": [],
+        "actor": "black cat",
+        "segment_boundary": "middle",
+        "segment_label": "Cat and Boxes",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 152,
+        "start_time": "07:06",
+        "end_time": "07:08",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "on_screen_text",
+        "description": "Timer progresses from 01:04 to 01:05",
+        "participants": [],
+        "actor": "timer",
+        "on_screen_text": [
+          {
+            "text": "01:04",
+            "location": "timer"
+          },
+          {
+            "text": "01:05",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cat and Boxes",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 153,
+        "start_time": "07:07",
+        "end_time": "07:08",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 10,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "on_screen_text",
+        "description": "Timer progresses from 01:05 to 01:06",
+        "participants": [],
+        "actor": "timer",
+        "on_screen_text": [
+          {
+            "text": "01:05",
+            "location": "timer"
+          },
+          {
+            "text": "01:06",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cat and Boxes",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 154,
+        "start_time": "07:08",
+        "end_time": "07:09",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 10,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "on_screen_text",
+        "description": "Timer progresses from 01:06 to 01:07",
+        "participants": [],
+        "actor": "timer",
+        "on_screen_text": [
+          {
+            "text": "01:06",
+            "location": "timer"
+          },
+          {
+            "text": "01:07",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cat and Boxes",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 155,
+        "start_time": "07:09",
+        "end_time": "07:10",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 10,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "caption",
+        "description": "On-screen text 'somebody help me!' appears",
+        "participants": [],
+        "actor": "text",
+        "on_screen_text": [
+          {
+            "text": "somebody help me!",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cat and Boxes",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 156,
+        "start_time": "07:10",
+        "end_time": "07:12",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "on_screen_text",
+        "description": "Timer progresses from 01:09 to 01:10",
+        "participants": [],
+        "actor": "timer",
+        "on_screen_text": [
+          {
+            "text": "01:09",
+            "location": "timer"
+          },
+          {
+            "text": "01:10",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cat and Boxes",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 157,
+        "start_time": "07:10",
+        "end_time": "07:11",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 10,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "on_screen_text",
+        "description": "Timer progresses from 01:10 to 01:11",
+        "participants": [],
+        "actor": "timer",
+        "on_screen_text": [
+          {
+            "text": "01:10",
+            "location": "timer"
+          },
+          {
+            "text": "01:11",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cat and Boxes",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 158,
+        "start_time": "07:11",
+        "end_time": "07:12",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 10,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "navigate",
+        "description": "Black cat walks through the cardboard maze structure",
+        "participants": [],
+        "actor": "black cat",
+        "segment_boundary": "middle",
+        "segment_label": "Cat and Boxes",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 159,
+        "start_time": "07:07",
+        "end_time": "07:12",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 7,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "cat_navigate_maze",
+        "description": "Black cat navigates through cardboard maze corridors while 'somebody help me!' text is displayed on screen",
+        "participants": [
+          "black cat"
+        ],
+        "actor": "black cat",
+        "on_screen_text": [
+          {
+            "text": "somebody help me!",
+            "location": "caption"
+          },
+          {
+            "text": "01:11",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 160,
+        "start_time": "01:11",
+        "end_time": "01:12",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 5,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "camera_shift",
+        "description": "Camera perspective changes from close-up to overhead view of the cardboard maze",
+        "participants": [],
+        "actor": "camera",
+        "on_screen_text": [
+          {
+            "text": "01:13",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 161,
+        "start_time": "01:13",
+        "end_time": "01:13",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "cat_navigate_maze",
+        "description": "Black cat continues navigating through the overhead view of the cardboard maze, moving from right to left sections",
+        "participants": [
+          "black cat"
+        ],
+        "actor": "black cat",
+        "on_screen_text": [
+          {
+            "text": "01:13-01:19",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 162,
+        "start_time": "01:13",
+        "end_time": "01:19",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 5,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "camera_shift",
+        "description": "Camera perspective changes from overhead view to close-up view of the black cat in a maze corridor",
+        "participants": [],
+        "actor": "camera",
+        "on_screen_text": [
+          {
+            "text": "01:20",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 163,
+        "start_time": "01:20",
+        "end_time": "01:20",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "cat_move",
+        "description": "Black cat turns its head right, then walks toward and exits through the right corridor of the maze",
+        "participants": [
+          "black cat"
+        ],
+        "actor": "black cat",
+        "on_screen_text": [
+          {
+            "text": "01:21-01:22",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 164,
+        "start_time": "01:21",
+        "end_time": "01:22",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "camera_shift",
+        "description": "Camera perspective returns to overhead view showing the cardboard maze",
+        "participants": [],
+        "actor": "camera",
+        "on_screen_text": [
+          {
+            "text": "01:23",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 165,
+        "start_time": "01:23",
+        "end_time": "01:23",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "cat_navigate_maze",
+        "description": "Black cat re-enters the overhead view of the maze from the right side and continues navigating through the corridors",
+        "participants": [
+          "black cat"
+        ],
+        "actor": "black cat",
+        "on_screen_text": [
+          {
+            "text": "01:23-01:26",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 166,
+        "start_time": "01:23",
+        "end_time": "01:26",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 5,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "scoreboard_update",
+        "description": "Scoreboard displays completion times for five cats in the maze challenge",
+        "participants": [],
+        "actor": "scoreboard",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "1 Belka......00.34",
+            "location": "scoreboard"
+          },
+          {
+            "text": "2 Yuki.......01.04",
+            "location": "scoreboard"
+          },
+          {
+            "text": "3 Monty......01.10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "4 Bat.........01.28",
+            "location": "scoreboard"
+          },
+          {
+            "text": "5 Olive.......01.46",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Cat Maze Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 167,
+        "start_time": "07:30",
+        "end_time": "07:45",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Black and white cat navigates through the cardboard maze",
+        "participants": [
+          "black and white cat"
+        ],
+        "actor": "black and white cat",
+        "object": "cardboard maze",
+        "on_screen_text": [],
+        "segment_boundary": "end",
+        "segment_label": "Cat Maze Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 168,
+        "start_time": "07:30",
+        "end_time": "07:45",
+        "sub_events": [],
+        "subtype_order": 48,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Tabby cat navigates through the cardboard maze",
+        "participants": [
+          "tabby cat"
+        ],
+        "actor": "tabby cat",
+        "object": "cardboard maze",
+        "on_screen_text": [],
+        "segment_boundary": "end",
+        "segment_label": "Cat Maze Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 169,
+        "start_time": "07:30",
+        "end_time": "07:45",
+        "sub_events": [],
+        "subtype_order": 49,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "on_screen_text",
+        "description": "Text \"Thank you for spending this time with us!\" appears at the bottom of the screen",
+        "participants": [],
+        "actor": "",
+        "object": "",
+        "object_before": "",
+        "object_after": "",
+        "object_before_pattern": "",
+        "object_after_pattern": "",
+        "cover": "",
+        "hidden": "",
+        "outcome": "",
+        "on_screen_text": [
+          {
+            "text": "Thank you for spending this time with us!",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Cat Maze Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 170,
+        "start_time": "07:45",
+        "end_time": "07:52",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 10,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Black cat exits bottom-left box and walks through bottom corridor",
+        "participants": [
+          "black cat"
+        ],
+        "actor": "black cat",
+        "object": "",
+        "object_before": "",
+        "object_after": "",
+        "object_before_pattern": "",
+        "object_after_pattern": "",
+        "cover": "",
+        "hidden": "",
+        "outcome": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Cat Maze Challenge",
+        "continuation_hint": "complete",
+        "event_index": 171,
+        "start_time": "07:46",
+        "end_time": "07:50",
+        "sub_events": [],
+        "subtype_order": 50,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Light-colored cat with white and gray fur walks from left corridor toward center of maze",
+        "participants": [
+          "light-colored cat"
+        ],
+        "actor": "light-colored cat",
+        "object": "",
+        "object_before": "",
+        "object_after": "",
+        "object_before_pattern": "",
+        "object_after_pattern": "",
+        "cover": "",
+        "hidden": "",
+        "outcome": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Cat Maze Challenge",
+        "continuation_hint": "complete",
+        "event_index": 172,
+        "start_time": "07:47",
+        "end_time": "07:53",
+        "sub_events": [],
+        "subtype_order": 51,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "walk",
+        "description": "Black and white cat walks from top corridor downward through the center path",
+        "participants": [
+          "black and white cat"
+        ],
+        "actor": "black and white cat",
+        "object": "",
+        "object_before": "",
+        "object_after": "",
+        "object_before_pattern": "",
+        "object_after_pattern": "",
+        "cover": "",
+        "hidden": "",
+        "outcome": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Cat Maze Challenge",
+        "continuation_hint": "complete",
+        "event_index": 173,
+        "start_time": "07:48",
+        "end_time": "07:52",
+        "sub_events": [],
+        "subtype_order": 52,
+        "subtype_total": 52,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "on_screen_text",
+        "description": "Text changes to \"Go to our channel to see other fun videos of our pets\" at the bottom of the screen",
+        "participants": [],
+        "actor": "",
+        "object": "",
+        "object_before": "",
+        "object_after": "",
+        "object_before_pattern": "",
+        "object_after_pattern": "",
+        "cover": "",
+        "hidden": "",
+        "outcome": "",
+        "on_screen_text": [
+          {
+            "text": "Go to our channel to see other fun videos of our pets",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Cat Maze Challenge",
+        "continuation_hint": "complete",
+        "event_index": 174,
+        "start_time": "07:58",
+        "end_time": "08:00",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 10,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "move",
+        "description": "Light-colored dog moves from top-middle compartment to left-middle compartment of the cardboard maze",
+        "participants": [
+          "light-colored dog"
+        ],
+        "actor": "light-colored dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "Go to our channel to see other fun videos of our pets",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 175,
+        "start_time": "08:00",
+        "end_time": "08:02",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "turn",
+        "description": "Black and white dog turns around within its middle-right compartment",
+        "participants": [
+          "black and white dog"
+        ],
+        "actor": "black and white dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "Go to our channel to see other fun videos of our pets",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 176,
+        "start_time": "08:01",
+        "end_time": "08:03",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "move",
+        "description": "Dark gray and white dog moves from bottom-right compartment to middle-right compartment",
+        "participants": [
+          "dark gray and white dog"
+        ],
+        "actor": "dark gray and white dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "Go to our channel to see other fun videos of our pets",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 177,
+        "start_time": "08:02",
+        "end_time": "08:05",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "appear",
+        "description": "Black dog appears in the rightmost side compartment of the maze",
+        "participants": [
+          "black dog"
+        ],
+        "actor": "black dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "Go to our channel to see other fun videos of our pets",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 178,
+        "start_time": "08:03",
+        "end_time": "08:05",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "enter",
+        "description": "Light-colored dog enters the left-middle compartment from the left side",
+        "participants": [
+          "light-colored dog"
+        ],
+        "actor": "light-colored dog",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "Go to our channel to see other fun videos of our pets",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 179,
+        "start_time": "08:05",
+        "end_time": "08:07",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "reposition",
+        "description": "Multiple dogs adjust their positions within their respective compartments",
+        "participants": [
+          "light-colored dog",
+          "black and white dog",
+          "dark gray and white dog",
+          "black dog"
+        ],
+        "actor": "multiple dogs",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "Go to our channel to see other fun videos of our pets",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 180,
+        "start_time": "08:07",
+        "end_time": "08:09",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "navigate",
+        "description": "Dogs continue navigating through different compartments of the maze structure",
+        "participants": [
+          "light-colored dog",
+          "black and white dog",
+          "dark gray and white dog",
+          "black dog"
+        ],
+        "actor": "multiple dogs",
+        "object": "cardboard maze",
+        "on_screen_text": [
+          {
+            "text": "Go to our channel to see other fun videos of our pets",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Cardboard Maze Navigation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 181,
+        "start_time": "08:10",
+        "end_time": "08:15",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 7,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "movement",
+        "description": "Dogs move through cardboard maze structure with varying positions across frames",
+        "participants": [
+          "black and white dog",
+          "black dog"
+        ],
+        "actor": "black and white dog",
+        "segment_boundary": "end",
+        "segment_label": "Cardboard Maze Exploration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 182,
+        "start_time": "08:15",
+        "end_time": "08:16",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "title_card",
+        "description": "Black screen displays 'THANK YOU TO OUR MEMBERS!' text with list of member names that gradually fades",
+        "on_screen_text": [
+          {
+            "text": "THANK YOU TO OUR MEMBERS!",
+            "location": "title"
+          },
+          {
+            "text": "hhjukk",
+            "location": "other"
+          },
+          {
+            "text": "Pon ran",
+            "location": "other"
+          },
+          {
+            "text": "Tammy Cheney",
+            "location": "other"
+          },
+          {
+            "text": "Katea Katea",
+            "location": "other"
+          },
+          {
+            "text": "Carmen Berube",
+            "location": "other"
+          },
+          {
+            "text": "There6ellion",
+            "location": "other"
+          },
+          {
+            "text": "エリ",
+            "location": "other"
+          },
+          {
+            "text": "Kelli Harter",
+            "location": "other"
+          },
+          {
+            "text": "Jujuu Bug",
+            "location": "other"
+          },
+          {
+            "text": "Autotronic1286",
+            "location": "other"
+          },
+          {
+            "text": "L Scott",
+            "location": "other"
+          },
+          {
+            "text": "The Interested Reader",
+            "location": "other"
+          },
+          {
+            "text": "Ana Galvao",
+            "location": "other"
+          },
+          {
+            "text": "Jeanette Galloway",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 183,
+        "start_time": "08:17",
+        "end_time": "08:22",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      },
+      {
+        "event_type": "title_card",
+        "description": "Black screen displays 'SUBSCRIBE' text in bottom right corner",
+        "on_screen_text": [
+          {
+            "text": "SUBSCRIBE",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "",
+        "continuation_hint": "complete",
+        "event_index": 184,
+        "start_time": "08:23",
+        "end_time": "08:26",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 5,
+        "segment_label_resolved": "Philosophical Reflection"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Maze Challenge",
+        "event_index_range": [
+          1,
+          3
+        ]
+      },
+      {
+        "round_index": 2,
+        "label": "Two Cats",
+        "event_index_range": [
+          4,
+          8
+        ]
+      },
+      {
+        "round_index": 3,
+        "label": "Maze Navigation Challenge",
+        "event_index_range": [
+          9,
+          18
+        ]
+      },
+      {
+        "round_index": 4,
+        "label": "Maze Navigation Challenge",
+        "event_index_range": [
+          19,
+          62
+        ]
+      },
+      {
+        "round_index": 5,
+        "label": "Philosophical Reflection",
+        "event_index_range": [
+          63,
+          184
+        ]
+      }
+    ]
+  }
+}

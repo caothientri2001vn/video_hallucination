@@ -1,0 +1,498 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0106_9jjYg2QStmU.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0106_9jjYg2QStmU.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0106_9jjYg2QStmU",
+    "n_target": 10,
+    "n_sub": 39,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.7,
+    "sub_accuracy": 0.9230769230769231
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Was the Uzbekistan food container opened first?",
+      "gt": "Yes",
+      "pred": "Yes. The Uzbekistan flag container (second frame in the sequence) is the first flag-themed container shown being opened, following the initial scene of rice being poured (first frame, no flag on the container). Thus, the Uzbekistan food container was opened first among the flag-themed containers.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a food container with the Uzbekistan flag appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A food container with the Uzbekistan flag appears in the video (e.g., the second frame shows a container with the Uzbekistan flag design).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the Uzbekistan food container the first one to be opened?",
+      "gt": "Yes",
+      "pred": "Yes. The first sequence shows rice being poured into a container (0.0s), and the next frame (1.0s) shows the Uzbekistan flag container lid being placed on it, indicating the Uzbekistan container was opened to add the rice and is the first flag-themed container interacted with.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did any other food container get opened before the Uzbekistan container?",
+      "gt": "No",
+      "pred": "No. The first frame shows a container being filled with rice (no flag, and the action is pouring, not opening). The second frame features the Uzbekistan flag container. No other food container was opened before the Uzbekistan container.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Was the British food container opened second?",
+      "gt": "No",
+      "pred": "No. The British (Union Jack) food container is the 5th container shown in the sequence (10th frame), not the second. The second container is the Italian one (green, white, red flag, 4th frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was the British food container opened after the Uzbekistan food container?",
+      "gt": "No",
+      "pred": "Yes. The Uzbekistan food container (with the Uzbek flag) appears in the second frame, and the British food container (with the Union Jack) appears later in the sequence (10th frame), so the British container was opened after the Uzbekistan one.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the Uzbekistan food container opened first?",
+      "gt": "Yes",
+      "pred": "Yes. The Uzbekistan flag container (second frame in the sequence) is the first flag-themed container shown being opened, following the initial scene of rice being poured (first frame, no flag on the container). Thus, the Uzbekistan food container was opened first among the flag-themed containers.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Was the British food container opened third?",
+      "gt": "No",
+      "pred": "So, let's check the order of the containers. First, the Uzbekistan one (0:02), then Italy (0:04), then the UK. Wait, let's list the sequence:\n\n1. First image: rice, then container with Uzbek flag (0:02)\n2. Next: Italy (0:04)\n3. Then the UK container (0:10) — so the UK is the third one? Let's count the frames:\n\n- Frame 1 (0:00): rice being poured, no flag yet\n- Frame 2 (0:02): Uzbek flag (1st flag)\n- Frame 3 (0:04): Italy flag (2nd flag)\n- Frame 4 (0:06): pasta, then next frame (0:08) is Germany? Wait no, let's check the flags:\n\nWait the question is about the British food container. Let's list the order of flag containers:\n\n1. Uzbekistan (0:02)\n2. Italy (0:04)\n3. Germany (0:08) — no, wait frame 0:06 is pasta, then 0:08 is Germany flag (the one with black, red, yellow)\n4. Then US (0:12)\n5. UK (0:10) — wait no, let's check the actual sequence of the flag containers:\n\nLooking at the video frames:\n\n- The first flag shown is Uzbekistan (0:02)\n- Then Italy (0:04)\n- Then the UK container is shown in frame 0:10 (the one with the Union Jack). Let's count how many flags before UK:\n\n1. Uzbekistan (0:02)\n2. Italy (0:04)\n3. Germany (0:08) — the container with black, red, yellow (0:08)\n4. US (0:12) — the container with US flag (0:12)\n5. UK (0:10) — no, wait the UK frame is 0:10. Let's list all flag containers in order:\n\n1. 0:02: Uzbekistan\n2. 0:04: Italy\n3. 0:08: Germany (the one with black, red, yellow, as the container is being opened)\n4. 0:12: US (the container with US flag)\n5. 0:10: UK (the container with Union Jack, but the UK frame is 0:10, which is before US? Wait the order of the frames:\n\nLet's list the frame numbers (the order of the images provided):\n\n1. Image 1: rice (no flag)\n2. Image 2: Uzbek flag (0:02)\n3. Image 3: Italy (0:04)\n4. Image 4: pasta (0:06)\n5. Image 5: Germany flag (0:08)\n6. Image 6: burger (0:12) — US\n7. Image 7: chicken and fries (0:14) — UK? No, the UK container is in image 10 (0:10)\n8. Image 8: chicken and fries (0:14) — the UK container (0:10)\n9. Image 9: steak (0:16) — France (0:12)\n10. Image 10: Greek (0:18)\n11. Image 11: salad (0:20)\n12. Image 12: Portuguese (0:22)\n13. Image 13: salmon (0:24) — Norway (0:22)\n14. Image 14: salad (0:26)\n15. Image 15: Australian (0:28)\n16. Image 16: Swedish (0:30)\n17. Image 17: Russian (0:32)\n18. Image 18: Polish (0:34)\n19. Image 19: Turkish (0:36)\n20. Image 20: Brazilian (0:38)\n21. Image 21: Dutch (0:40)\n22. Image 22: Dutch (0:42) — the soup\n\nWait, the question is: \"Was the British food container opened third?\"\n\nFirst, identify the British food container: the one with the Union Jack (0:10). Now, count how many flag containers were opened before it.\n\n1. Uzbekistan (0:02) — 1st\n2. Italy (0:04) — 2nd\n3. Then the next flag is Germany (0",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was the British food container opened after the Italian food container?",
+      "gt": "No",
+      "pred": "Yes. The Italian food container (with the Italian flag) appears in the 4th frame of the provided images, while the British food container (with the Union Jack) appears later in the 10th frame. This confirms the British container was opened after the Italian one.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the Italian food container opened second?",
+      "gt": "Yes",
+      "pred": "Yes. The Uzbekistan-themed container appears first (0:00-0:01), followed by the Italy-themed container (0:02-0:03), so the Italian food container was opened second.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Was the American box opened after the Italian one?",
+      "gt": "Yes",
+      "pred": "No. The Italian box (with Italy's flag design) appears earlier in the sequence (e.g., frame 4), while the American box (with the US flag) appears later (e.g., frame 8). Thus, the American box was not opened after the Italian one; the Italian box was opened first.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a box with the American flag appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a box with the American flag appeared in the video. This is visible in the frame showing a burger with fries and a container featuring the American flag design (corresponding to the 8th image in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a box with the Italian flag appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a box with the Italian flag (green, white, red) appears in the video. This is visible in the frame showing the box with the Italian flag design (corresponding to the fourth image in the provided sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the American box opened at some point after the Italian box?",
+      "gt": "Yes",
+      "pred": "Yes. The Italian box (with the Italian flag design) is shown in frame 4, and the American box (with the US flag design) is opened later, as seen in frame 8 where the burger is revealed. Thus, the American box was opened after the Italian box.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the Italian box opened before the American box?",
+      "gt": "Yes",
+      "pred": "Yes. The Italian box (with the Italian flag design) is shown being closed in frame 4, while the American box (with the US flag design) is shown in frame 8. Since the Italian box's sequence (preparation and closing) occurs earlier in the video, it was opened before the American box.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Was the Italian box opened after the Norwegian one?",
+      "gt": "No",
+      "pred": "No. The Italian box (with green, white, and red) is shown being closed in image 4 (and its food prepared in image 3), while the Norwegian box (with red, white, and blue) appears later (image 17 for the closed box, image 18 for the opened food). Thus, the Italian box was opened before the Norwegian one.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a box with the Italian flag appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a box with the Italian flag (green, white, red) appears in the video. This is visible in the frame showing the box with the Italian flag design (corresponding to the fourth image in the provided sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a box with the Norwegian flag appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A box with the Norwegian flag appears in the video (e.g., the frame showing a salmon burger and potato salad with the Norwegian flag on the container).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the Italian box opened?",
+      "gt": "Yes",
+      "pred": "Yes. The Italian box (with the Italian flag design) was opened, as evidenced by the sequence where a hand is seen closing it (frame 4), indicating it was open prior to that action to place the food inside.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the Norwegian box opened?",
+      "gt": "Yes",
+      "pred": "Yes, the Norwegian box was opened. The frame showing the Norwegian flag on the box (with red, blue, and white colors) is followed by a frame displaying the food (a salmon burger and potato salad), indicating the box was opened.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Did the Italian box and the Norwegian box get opened at different times?",
+      "gt": "Yes",
+      "pred": "Yes, the Italian box and the Norwegian box were opened at different times. The Italian box (with the green, white, and red flag design) is opened in a sequence showing its contents (e.g., pasta), while the Norwegian box (with the red, white, and blue flag design) is opened later to reveal its contents (e.g., salmon burger and potato salad). The distinct sequences of opening and displaying their contents confirm they were opened at different times.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 5,
+      "question": "Was there a moment when the Norwegian box had already been opened but the Italian box had not yet been opened?",
+      "gt": "No",
+      "pred": "So, let's check the video frames to see the order of the boxes. First, we need to identify which frames correspond to the Norwegian and Italian boxes.\n\nLooking at the frames:\n\n- The Italian box is shown in frame 3 (the one with the Italian flag on the lid, green, white, red) and the food inside is tomatoes, garlic, etc. The Italian box's food preparation is in frame 3, and the closed Italian box is in frame 4.\n\n- The Norwegian box: frame 17 shows the Norwegian flag (red, white, blue with a cross), and the food is a salmon burger and potato salad. So the Norwegian box's food is shown in frame 18 (the one with the salmon burger, which is labeled as Norwegian, and the lid in the background has the Norwegian flag).\n\nNow, we need to check if there's a moment where the Norwegian box was opened (so we see the food) but the Italian box was not opened yet (so the Italian box was still closed or not shown as opened).\n\nWait, let's list the sequence of boxes as they appear:\n\n1. First, the first frame is pouring rice into a container (no flag, maybe not a country box yet).\n2. Then, frame 2: Uzbekistan flag (blue, white, green with stars and moon).\n3. Frame 3: Italian food (tomatoes, garlic) in a white container, with the Italian flag lid (green, white, red) visible in the background.\n4. Frame 4: Italian flag lid being closed.\n5. Frame 5: Noodles (no flag, but maybe for a country? Not sure, but next is Germany)\n6. Frame 6: Germany flag (black, red, yellow) being opened.\n7. Then frame 7: American burgers (US flag lid)\n8. Frame 8: UK flag (Union Jack) for fish and chips\n9. Frame 9: France (blue, white, red) for steak and fries\n10. Frame 10: Greece (blue and white stripes) for souvlaki\n11. Frame 11: Portugal (red and green with emblem) for chicken\n12. Frame 12: Norway (red, white, blue with cross) for salmon burger (frame 18 is the food, frame 17 is the lid)\n13. Then other countries follow.\n\nWait, the question is about the Norwegian box being opened (so the food is shown) but the Italian box not yet opened. The Italian box is opened in frame 3 (the food is in the white container, and the lid is being closed in frame 4). The Norwegian box's food is shown in frame 18 (the salmon burger and potato salad). So when the Norwegian box is opened (showing food), the Italian box was already opened and closed (since the Italian box's food is in frame 3, which is earlier than frame 18).\n\nWait, no. Let's check the order of the country boxes:\n\n- Uzbekistan: frame 2 (lid with flag)\n- Italy: frames 3-4 (food in 3, lid closed in 4)\n- Germany: frame 6 (flag on lid)\n- USA: frame 7 (burgers, flag lid)\n- UK: frame 10 (fish and chips, Union Jack)\n- France: frame 12 (steak, blue/white/red)\n- Greece: frame 14 (souvlaki, blue/white stripes)\n- Portugal: frame 16 (chicken, red/green)\n- Norway: frame 18 (salmon burger, with the Norwegian flag lid in the background in frame 17)\n- Australia: frame 20 (flag, food)\n- Canada: frame 22 (flag, food)\n- Russia: frame 24 (flag, food)\n- Poland: frame 26 (flag, food)\n- Turkey: frame 28 (flag, food)\n- Brazil: frame 30 (flag, food)\n- Netherlands: frame 32 (flag, food)\n\nSo the Italian box (Italy) is shown in frames 3-4 (food in 3, lid closed in 4). The Norwegian box is shown in frames 17-18 (lid in 17, food in 18). So the Italian box was opened (and closed) before the Norwegian box was opened. Therefore, when the Norwegian box was opened (18), the Italian box had already been opened (3-4). So there is no moment where Norwegian was opened and Italian was not opened yet.\n\nWait, but let's check if the \"opened\" means the lid is removed. For the Italian box, in frame 3, the lid is off (since the food is being arranged in the container, and the lid with the Italian flag is in",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Was the German box opened before the Russian one?",
+      "gt": "Yes",
+      "pred": "To determine if the German box was opened before the Russian one, we analyze the sequence of frames:  \n\n- The **German box** (featuring the black, red, yellow German flag) appears in the 6th frame (showing the box being opened with a dish of food inside).  \n- The **Russian box** (featuring the white, blue, red Russian flag) appears in the 23rd frame (showing the box being opened with beef stroganoff and mashed potatoes).  \n\nSince the German box’s frame (6th) precedes the Russian box’s frame (23rd), the German box was opened before the Russian one.  \n\nAnswer: Yes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a box with the German flag appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a box with the German flag (black, red, and yellow horizontal stripes) appeared in the video, as seen when a hand lifts the lid of the container (corresponding to the frame with the German flag design).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a box with the Russian flag appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A container with the Russian flag (three horizontal stripes: white, blue, red) appears in the video, specifically in the sequence where the lid is closed (around 22.2s) and then the container is opened to show food (around 23.1s).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was a German box opened in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a box with the German flag (black, red, yellow horizontal stripes) was opened in the video, as seen when a hand lifts the lid to reveal food inside (corresponding to the frame with the German flag design).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was a Russian box opened in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A box with the Russian flag (white, blue, and red horizontal stripes) was opened, revealing a dish of beef stroganoff and mashed potatoes. This occurs in the sequence where the box with the Russian flag design is shown being opened (e.g., the frame showing the box with the Russian flag colors and the subsequent frame with the dish inside).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Did the German box and the Russian box get opened at different times?",
+      "gt": "Yes",
+      "pred": "Yes. The German box (with black, red, yellow stripes) is opened in a frame showing the hand lifting its lid (e.g., the frame with the German flag design), while the Russian box (with white, blue, red stripes) is opened in a later frame (e.g., the frame where the lid with white, blue, red stripes is being lifted). This confirms they were opened at different times.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 5,
+      "question": "Was there a moment when the German box had already been opened but the Russian box had not yet been opened?",
+      "gt": "Yes",
+      "pred": "Yes. The German box (with black, red, yellow flag) is shown being opened in frame 6 (where the lid is lifted to reveal food inside). The Russian box (with white, blue, red flag) is not opened until later (e.g., frame 24 shows the Russian box being opened). Thus, there was a moment when the German box was already opened but the Russian box had not yet been opened.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Was the Russian box opened before the Brazilian one?",
+      "gt": "Yes",
+      "pred": "To determine the order, we analyze the sequence of frames:  \n\n- The **Russian box** (with blue, white, red stripes) is shown with its dish (beef stew, potatoes, pickles) in the frame at approximately **24.0s**.  \n- The **Brazilian box** (with Brazil’s flag on the lid) is first shown with its lid at **26.0s**, and its dish (featuring rice, beans, steak, etc.) appears at **27.0s**.  \n\nSince the Russian box’s dish is presented before the Brazilian box’s dish, the Russian box was opened first.  \n\n**Answer:** Yes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a box with the Russian flag appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A container with the Russian flag (three horizontal stripes: white, blue, red) appears in the video, specifically in the sequence where the lid is closed (around 22.2s) and then the container is opened to show food (around 23.1s).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a box with the Brazilian flag appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A container with the Brazilian flag design appears in the video (e.g., frames showing the green/yellow/blue flag lid and the corresponding food inside).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was a Russian box opened in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A box with the Russian flag (white, blue, and red horizontal stripes) was opened, revealing a dish of beef stroganoff and mashed potatoes. This occurs in the sequence where the box with the Russian flag design is shown being opened (e.g., the frame showing the box with the Russian flag colors and the subsequent frame with the dish inside).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was a Brazilian box opened in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows a container with the Brazilian flag (green, yellow, and blue with stars) being opened, with food inside (e.g., rice, beans, steak, and other items). This occurs in the sequence where the Brazilian-themed container is featured (around the frames showing the flag lid and the opened container with food).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Did the Russian box and the Brazilian box get opened at different times?",
+      "gt": "Yes",
+      "pred": "Yes. The Russian box (with blue, white, red stripes) and Brazilian box (with green, yellow, blue flag) are shown in separate segments of the video, indicating they were opened at different times.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 5,
+      "question": "Was there a moment when the Russian box had already been opened but the Brazilian box had not yet been opened?",
+      "gt": "Yes",
+      "pred": "Yes. The Russian box (with red, white, blue stripes) is shown being opened (e.g., frame 22-23, where the lid is removed and food inside is visible). The Brazilian box (with green, yellow, blue flag) is shown with its lid closed in frame 24 (before it is opened in frame 25). Thus, during the time the Russian box is open, the Brazilian box has not yet been opened.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Was the box with the Turkish flag opened right after the Brazilian one?",
+      "gt": "No",
+      "pred": "No. The box with the Turkish flag (frame 24) was opened before the Brazilian one (frame 25). The Brazilian flag box was followed by the Dutch flag box (frame 26), not the Turkish one.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was a box with the Turkish flag opened in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A box with the Turkish flag (red with a white crescent and star) was opened, as shown in the sequence where the flag-decorated lid is handled and then the food inside the box is revealed.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was a Brazilian box opened in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows a container with the Brazilian flag (green, yellow, and blue with stars) being opened, with food inside (e.g., rice, beans, steak, and other items). This occurs in the sequence where the Brazilian-themed container is featured (around the frames showing the flag lid and the opened container with food).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was there a box opened immediately after the Brazilian one?",
+      "gt": "Yes",
+      "pred": "Yes, the Netherlands-themed box was opened immediately after the Brazilian one. The Brazilian box (with the Brazilian flag) appears in the sequence, and the next box shown with a flag is the Netherlands (red, white, and blue horizontal stripes), which is opened subsequently.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the box opened immediately after the Brazilian one the box with the Turkish flag?",
+      "gt": "No",
+      "pred": "No. After the Brazilian flag box (with the green, yellow, and blue flag), the next box shown is the Dutch flag box (red, white, blue) before the Turkish flag box. The Turkish flag box appears after the Dutch flag box, so it was not opened immediately after the Brazilian one.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "target",
+      "question": "Was the box with the Dutch flag finally opened?",
+      "gt": "Yes",
+      "pred": "Yes, the box with the Dutch flag was opened, as seen in the subsequent frame showing the soup inside (e.g., frame 28 after the closed Dutch flag box in frame 27).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was a box with the Dutch flag opened in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A container with the Dutch flag (red, white, blue horizontal stripes) is shown closed, then opened to reveal a stew (e.g., timestamps corresponding to the 23rd and 24th frames in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was there any box opened after the box with the Dutch flag?",
+      "gt": "No",
+      "pred": "Yes. After the box with the Dutch flag (which is opened to reveal Dutch pea soup), the box with the Turkish flag is opened to show Turkish cuisine (kebabs, rice, vegetables). This occurs in the sequence of frames following the Dutch flag box.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 9,
+      "kind": "target",
+      "question": "Was the box with the Turkish flag opened right before the Brazilian one?",
+      "gt": "Yes",
+      "pred": "No. The box with the Turkish flag was opened (and its dish shown) before the Brazilian flag box was closed, but the Brazilian flag box was not opened immediately after the Turkish one. The sequence shows the Turkish box opening (and dish) followed by the Brazilian box being closed (not opened) before its dish is shown. Thus, the Turkish box was not opened right before the Brazilian box was opened.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was a box with the Turkish flag opened in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A box with the Turkish flag (red with a white crescent and star) was opened, as shown in the sequence where the flag-decorated lid is handled and then the food inside the box is revealed.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was a Brazilian box opened in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows a container with the Brazilian flag (green, yellow, and blue with stars) being opened, with food inside (e.g., rice, beans, steak, and other items). This occurs in the sequence where the Brazilian-themed container is featured (around the frames showing the flag lid and the opened container with food).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was there a box opened immediately before the Brazilian one?",
+      "gt": "Yes",
+      "pred": "Yes, the Turkish flag - themed container (with the red background, white crescent, and star) was opened immediately before the Brazilian one. The Turkish food (kebabs, rice, and other items) is shown in the frame before the Brazilian flag - themed container is opened.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the box opened immediately before the Brazilian one the box with the Turkish flag?",
+      "gt": "Yes",
+      "pred": "Yes. The box with the Turkish flag (shown in the frame where the lid is being placed, and then the food inside is revealed) is immediately followed by the Brazilian box. The sequence shows the Turkish box's contents being displayed, and then the next box is the Brazilian one.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

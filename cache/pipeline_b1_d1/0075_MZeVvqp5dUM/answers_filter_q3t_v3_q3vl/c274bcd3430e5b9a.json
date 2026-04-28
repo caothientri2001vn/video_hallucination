@@ -1,0 +1,132 @@
+{
+  "question": "Does the woman wearing a green T-shirt steal candies from the man?",
+  "pred": "Evidence: No event in the Context describes the green-shirt woman taking candies from the yellow-shirt man without permission, and the frames show cooperative interactions with candies rather than stealing. The context indicates they're participating in shared challenges (Candy Challenge, Gumball Machine Challenge) where taking candies appears to be part of the game, not theft.\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "scene_shift",
+      "description": "three people (orange, yellow, green shirts) appear at a table with a large bowl of candies",
+      "participants": [
+        "orange-shirted person",
+        "yellow-shirted person",
+        "green-shirted person"
+      ],
+      "actor": "",
+      "segment_boundary": "middle",
+      "segment_label": "Candy Challenge",
+      "continuation_hint": "complete",
+      "event_index": 17,
+      "start_time": "00:23",
+      "end_time": "00:24",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Balloon Reaction"
+    },
+    {
+      "event_type": "plate_holding",
+      "description": "yellow-shirted person holds up a white plate with colorful candies arranged on it",
+      "participants": [
+        "yellow-shirted person"
+      ],
+      "actor": "yellow-shirted person",
+      "object": "white plate with colorful candies",
+      "segment_boundary": "middle",
+      "segment_label": "Candy Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 22,
+      "start_time": "00:28",
+      "end_time": "00:30",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Balloon Reaction"
+    },
+    {
+      "event_type": "manipulate",
+      "description": "man uses tweezers to handle yellow, red, and purple candies on white plate",
+      "participants": [
+        "yellow-shirt man"
+      ],
+      "actor": "yellow-shirt man",
+      "segment_boundary": "middle",
+      "segment_label": "Candy Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 63,
+      "start_time": "01:30",
+      "end_time": "01:45",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "new segment"
+    },
+    {
+      "event_type": "candy_flow",
+      "description": "The person with face paint (blue and pink) in orange shirt has candies pouring into their mouth from the purple contraption",
+      "participants": [
+        "orange-shirt person with face paint",
+        "yellow-shirt person",
+        "green-shirt person"
+      ],
+      "actor": "orange-shirt person with face paint",
+      "object": "purple contraption",
+      "segment_boundary": "middle",
+      "segment_label": "Candy Contraption Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 85,
+      "start_time": "02:30",
+      "end_time": "02:33",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "new segment"
+    },
+    {
+      "event_type": "manipulate",
+      "description": "The yellow-shirt person reaches out and grabs the purple contraption's legs to stabilize it",
+      "participants": [
+        "yellow-shirt person"
+      ],
+      "actor": "yellow-shirt person",
+      "object": "purple contraption",
+      "segment_boundary": "middle",
+      "segment_label": "Candy Contraption Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 86,
+      "start_time": "02:33",
+      "end_time": "02:36",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "new segment"
+    },
+    {
+      "event_type": "manipulate",
+      "description": "woman in green reaches for and grabs the gumball machine knob",
+      "participants": [
+        "orange-shirt woman",
+        "yellow-shirt man",
+        "green-shirt woman"
+      ],
+      "actor": "green-shirt woman",
+      "object": "red gumball machine knob",
+      "segment_boundary": "middle",
+      "segment_label": "Gumball Machine Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 173,
+      "start_time": "06:30",
+      "end_time": "06:32",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 8,
+      "round_index": 3,
+      "segment_label_resolved": "Popcorn Machine Segment"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "question": "Did the woman on the left open box number 9?",
+  "pred": "Evidence: The Context states \"the blue-dress woman opens the lid of the white box (Box 9)\" (event 31) and the woman in blue dress is the woman on the left as shown in the frames.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "lift",
+      "description": "the blue-dress woman lifts the bottom-right box (Box 9) from the shelf",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "object": "white box",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 25,
+      "start_time": "00:50",
+      "end_time": "00:52",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Box of Lies"
+    },
+    {
+      "event_type": "place",
+      "description": "the blue-dress woman places the white box (Box 9) on the table",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "object": "white box",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 26,
+      "start_time": "00:52",
+      "end_time": "00:54",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Box of Lies"
+    },
+    {
+      "event_type": "open_box",
+      "description": "the blue-dress woman opens the lid of the white box (Box 9)",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "object": "white box",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 31,
+      "start_time": "00:59",
+      "end_time": "01:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Box of Lies"
+    }
+  ]
+}

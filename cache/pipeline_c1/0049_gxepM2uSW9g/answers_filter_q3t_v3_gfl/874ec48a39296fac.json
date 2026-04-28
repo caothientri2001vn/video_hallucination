@@ -1,0 +1,133 @@
+{
+  "question": "Was the judge who spoke to the man at the beginning seated on the far left?",
+  "pred": "The video shows a talent show performance where a man in a comic book print shirt (the performer) interacts with a panel of four judges. At the beginning of the segment, the judge who speaks to him is a man in a black shirt. Wide shots of the judges' table (e.g., at 00:20 and 03:50) show four seats with nameplates: SIMON, AMANDA, ALESHA, and DAVID. The man in the black shirt (Simon) is seated in the leftmost position from the audience's perspective.\n\nEvidence: Wide shots of the stage at 00:20 and 03:50 show the man in the black shirt (Simon) seated at the far left of the judges' table.\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "speak",
+      "description": "Man in comic book print shirt speaks into microphone on stage with blue background",
+      "participants": [
+        "man in comic book print shirt"
+      ],
+      "actor": "man in comic book print shirt",
+      "segment_boundary": "middle",
+      "segment_label": "Talent Show - Performance Segment",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Talent Show - Performance Segment"
+    },
+    {
+      "event_type": "react",
+      "description": "Four judges sit at table with 'X' symbols, watching the stage attentively",
+      "participants": [
+        "man in black suit",
+        "woman in blue jacket",
+        "woman in white jacket",
+        "man in black shirt"
+      ],
+      "actor": "judges",
+      "segment_boundary": "middle",
+      "segment_label": "Talent Show - Performance Segment",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 2,
+      "start_time": "00:08",
+      "end_time": "00:13",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 13,
+      "round_index": 1,
+      "segment_label_resolved": "Talent Show - Performance Segment"
+    },
+    {
+      "event_type": "stage_view",
+      "description": "Wide shot of Britain's Got Talent stage showing judges' table, performer, and audience",
+      "participants": [
+        "performer",
+        "judges",
+        "audience"
+      ],
+      "actor": "N/A",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "SIMON",
+          "location": "screen"
+        },
+        {
+          "text": "AMANDA",
+          "location": "screen"
+        },
+        {
+          "text": "ALESHA",
+          "location": "screen"
+        },
+        {
+          "text": "DAVID",
+          "location": "screen"
+        },
+        {
+          "text": "BRITAIN'S GOT TALENT",
+          "location": "screen"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Britain's Got Talent Performance",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 5,
+      "start_time": "00:20",
+      "end_time": "00:24",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Talent Show - Performance Segment"
+    },
+    {
+      "event_type": "speak",
+      "description": "Man in black shirt speaks while seated at judges' table with microphone",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "microphone",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Britain's Got Talent Performance",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:25",
+      "end_time": "00:30",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Talent Show - Performance Segment"
+    },
+    {
+      "event_type": "react",
+      "description": "A man judge in a black shirt shows a surprised expression with wide eyes",
+      "participants": [
+        "black-shirt judge"
+      ],
+      "actor": "black-shirt judge",
+      "segment_boundary": "middle",
+      "segment_label": "Britain's Got Talent performance",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 84,
+      "start_time": "03:10",
+      "end_time": "03:13",
+      "sub_events": [],
+      "subtype_order": 11,
+      "subtype_total": 13,
+      "round_index": 1,
+      "segment_label_resolved": "Bed Performance Setup"
+    }
+  ]
+}

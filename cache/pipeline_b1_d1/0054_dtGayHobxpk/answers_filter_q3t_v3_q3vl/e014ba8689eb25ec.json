@@ -1,0 +1,236 @@
+{
+  "question": "Were exactly four balls potted between the yellow ball and the black ball?",
+  "pred": "The question asks if exactly four balls were potted between the yellow ball and the black ball. In snooker, the colored balls must be potted in a specific sequence: yellow → green → brown → blue → pink → black. For exactly four balls to be potted between yellow and black, the green, brown, blue, and pink balls would need to be potted in that order.\n\nFrom the Context:\n- Event 198 mentions \"Cue ball moves across the table and hits the yellow ball\" (08:03-08:05)\n- Event 206 states \"Blue ball moves toward and enters the corner pocket\" (08:25-08:27)\n- Events 139 and 148 describe the black ball being pocketed\n\nThe Context explicitly shows the blue ball being pocketed after the yellow ball was hit, but there is no mention of the green, brown, or pink balls being pocketed between these events. The frames also do not provide clear visual evidence of all four intermediate colored balls (green, brown, blue, pink) being potted in sequence. Without confirmation that all four specific balls were potted between yellow and black, the claim of \"exactly four balls\" cannot be verified.\n\nEvidence: Context shows the yellow ball being hit and the blue ball being pocketed, but lacks evidence of green, brown, and pink balls being potted between yellow and black.\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "pocket",
+      "description": "Red ball is struck and moves toward the pocket",
+      "participants": [],
+      "actor": "red ball",
+      "object": "red ball",
+      "outcome": "in",
+      "segment_boundary": "middle",
+      "segment_label": "Snooker match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 97,
+      "start_time": "04:08",
+      "end_time": "04:10",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "pocket",
+      "description": "black ball is pocketed in the bottom cushion pocket after being struck",
+      "participants": [
+        "black-shirt player"
+      ],
+      "actor": "black ball",
+      "object": "black ball",
+      "outcome": "pocketed",
+      "segment_boundary": "middle",
+      "event_index": 139,
+      "start_time": "05:49",
+      "end_time": "05:50",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "game",
+      "description": "White cue ball moves toward the black ball and pockets it",
+      "participants": [],
+      "actor": "",
+      "object": "black ball",
+      "outcome": "pocketed",
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 148,
+      "start_time": "06:04",
+      "end_time": "06:05",
+      "sub_events": [],
+      "subtype_order": 30,
+      "subtype_total": 54,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "pocket",
+      "description": "The red ball is pocketed after being struck by the cue ball",
+      "participants": [
+        "O'Sullivan (in black shirt)",
+        "referee (in black suit)"
+      ],
+      "actor": "red ball",
+      "object": "pocket",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "112",
+          "location": "scoreboard"
+        },
+        {
+          "text": "Break 112",
+          "location": "scoreboard"
+        },
+        {
+          "text": "O'SULLIVAN",
+          "location": "scoreboard"
+        },
+        {
+          "text": "DING",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 189,
+      "start_time": "07:43",
+      "end_time": "07:45",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "ball_movement",
+      "description": "Cue ball moves across the table and hits the yellow ball",
+      "participants": [
+        "black-suit man",
+        "referee"
+      ],
+      "actor": "cue ball",
+      "object": "cue ball",
+      "outcome": "contact",
+      "on_screen_text": [
+        {
+          "text": "DING 0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "O'SULLIVAN 120",
+          "location": "scoreboard"
+        },
+        {
+          "text": "Break 120",
+          "location": "scoreboard"
+        },
+        {
+          "text": "3 (17) 8",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 198,
+      "start_time": "08:03",
+      "end_time": "08:05",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "game",
+      "description": "Cue ball collides with the blue ball on the table",
+      "participants": [],
+      "actor": "",
+      "object": "blue ball",
+      "outcome": "hit",
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "complete",
+      "event_index": 205,
+      "start_time": "08:24",
+      "end_time": "08:25",
+      "sub_events": [],
+      "subtype_order": 46,
+      "subtype_total": 54,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "game",
+      "description": "Blue ball moves toward and enters the corner pocket",
+      "participants": [],
+      "actor": "",
+      "object": "blue ball",
+      "outcome": "scored",
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "complete",
+      "event_index": 206,
+      "start_time": "08:25",
+      "end_time": "08:27",
+      "sub_events": [],
+      "subtype_order": 47,
+      "subtype_total": 54,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "game",
+      "description": "Player O'Sullivan takes a shot, cue stick makes contact with white cue ball which moves toward blue ball",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "white cue ball and blue ball",
+      "on_screen_text": [
+        {
+          "text": "DING JUNHUI",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 216,
+      "start_time": "08:52",
+      "end_time": "08:55",
+      "sub_events": [],
+      "subtype_order": 53,
+      "subtype_total": 54,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "pocket",
+      "description": "The red ball is struck by the white ball and goes into the pocket",
+      "participants": [
+        "black-shirt player"
+      ],
+      "actor": "black-shirt player",
+      "object": "red ball",
+      "outcome": "pocketed",
+      "on_screen_text": [
+        {
+          "text": "BETVICTOR",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 220,
+      "start_time": "09:01",
+      "end_time": "09:02",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    }
+  ]
+}

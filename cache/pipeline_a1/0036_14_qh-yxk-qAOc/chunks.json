@@ -1,0 +1,232 @@
+{
+  "video_name": "0036_14_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 21.0,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "gemini-3-flash-preview",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:01",
+          "event_type": "transition",
+          "description": "The video transitions from a black screen to a live football match.",
+          "participants": [
+            "black-shirt man",
+            "white-shirt man",
+            "green-shirt man"
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Football Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:01",
+          "local_end": "00:03",
+          "event_type": "run",
+          "description": "A black-shirt man runs with the ball towards the goal while being chased by green-shirt players.",
+          "participants": [
+            "black-shirt man",
+            "green-shirt man"
+          ],
+          "actor": "black-shirt man",
+          "object": "football",
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:03",
+          "local_end": "00:05",
+          "event_type": "dive",
+          "description": "The white-shirt goalkeeper dives to block the black-shirt man's shot.",
+          "participants": [
+            "white-shirt man",
+            "black-shirt man"
+          ],
+          "actor": "white-shirt man",
+          "object": "football",
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:07",
+          "event_type": "dribble",
+          "description": "The black-shirt man dribbles the ball past the diving goalkeeper.",
+          "participants": [
+            "black-shirt man",
+            "white-shirt man"
+          ],
+          "actor": "black-shirt man",
+          "object": "football",
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:09",
+          "event_type": "slide",
+          "description": "Two green-shirt defenders slide in an attempt to tackle the black-shirt man.",
+          "participants": [
+            "green-shirt man",
+            "black-shirt man"
+          ],
+          "actor": "green-shirt man",
+          "object": "football",
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:09",
+          "local_end": "00:11",
+          "event_type": "dribble",
+          "description": "The black-shirt man continues to dribble the ball past the sliding defenders.",
+          "participants": [
+            "black-shirt man",
+            "green-shirt man"
+          ],
+          "actor": "black-shirt man",
+          "object": "football",
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:11",
+          "local_end": "00:13",
+          "event_type": "kick",
+          "description": "The black-shirt man kicks the ball into the empty goal.",
+          "participants": [
+            "black-shirt man"
+          ],
+          "actor": "black-shirt man",
+          "object": "football",
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:13",
+          "local_end": "00:15",
+          "event_type": "celebration",
+          "description": "The black-shirt man starts to celebrate after scoring the goal.",
+          "participants": [
+            "black-shirt man"
+          ],
+          "actor": "black-shirt man",
+          "on_screen_text": [
+            {
+              "text": "MESUT ÖZIL",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Football Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 21.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:21",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:16",
+          "event_type": "game",
+          "description": "The black-and-yellow-kit player dribbles the ball past two sliding green-kit defenders.",
+          "participants": [
+            "black-and-yellow-kit player",
+            "green-kit player",
+            "green-kit player"
+          ],
+          "actor": "black-and-yellow-kit player",
+          "object": "white ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "football match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:16",
+          "local_end": "00:17",
+          "event_type": "game",
+          "description": "The black-and-yellow-kit player continues dribbling toward the goal as the goalkeeper in white approaches.",
+          "participants": [
+            "black-and-yellow-kit player",
+            "white-kit goalkeeper"
+          ],
+          "actor": "black-and-yellow-kit player",
+          "object": "white ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "football match",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:17",
+          "local_end": "00:18",
+          "event_type": "game",
+          "description": "The black-and-yellow-kit player shoots the ball past the diving goalkeeper.",
+          "participants": [
+            "black-and-yellow-kit player",
+            "white-kit goalkeeper"
+          ],
+          "actor": "black-and-yellow-kit player",
+          "object": "white ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "football match",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:18",
+          "local_end": "00:19",
+          "event_type": "game",
+          "description": "The ball enters the net as the black-and-yellow-kit player runs past the goal line.",
+          "participants": [
+            "black-and-yellow-kit player"
+          ],
+          "actor": "black-and-yellow-kit player",
+          "object": "white ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "football match",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:19",
+          "local_end": "00:21",
+          "event_type": "celebration",
+          "description": "The black-and-yellow-kit player performs a knee slide celebration near the corner flag.",
+          "participants": [
+            "black-and-yellow-kit player"
+          ],
+          "actor": "black-and-yellow-kit player",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "football match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "question": "Did the bunny-ear gesture occur after the girl had changed four times?",
+  "pred": "The video shows a person with blue hair undergoing several visual transformations between a casual outfit (black cap, headphones, jacket) and an anime-style outfit (long blue pigtails, bunny ears, pink and white school uniform).\n\nTo determine if the bunny-ear gesture occurred after four changes, we count the transformation events:\n1. **Change 1 (00:02):** Casual to anime outfit (Event 3).\n2. **Change 2 (00:05):** Anime back to casual outfit (Event 5).\n3. **Change 3 (00:08):** Casual to anime outfit (Event 7).\n4. **Change 4 (approx. 00:12):** The frames show a transition back to the casual outfit after the second anime segment.\n5. **Change 5 (approx. 00:13):** The frames show a final transition back to the anime outfit.\n\nThe \"bunny-ear gesture\" (raising hands to the head to mimic ears) is seen in the anime outfit. While it occurs during the first and second anime segments (after 1 and 3 changes respectively), it also occurs prominently at the very end of the video (around 00:14) after the person has transitioned through the casual outfit again, totaling at least five changes.\n\nEvidence: Frames at ~00:14 show the person in the anime outfit making the bunny-ear gesture after having transitioned from casual to anime, then back to casual, then anime, then casual, and finally back to anime.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "transform": 3,
+      "gesture": 3,
+      "pose": 1,
+      "hand_raise": 1
+    },
+    "events": [
+      {
+        "event_type": "pose",
+        "description": "stands still in casual outfit with blue hair, black cap, and headphones around neck",
+        "participants": [
+          "blue-hair person"
+        ],
+        "actor": "blue-hair person",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:01",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": ""
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "raises both hands to chest level with palms facing forward",
+        "participants": [
+          "blue-hair person"
+        ],
+        "actor": "blue-hair person",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 2,
+        "start_time": "00:01",
+        "end_time": "00:02",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": ""
+      },
+      {
+        "event_type": "transform",
+        "description": "undergoes visual transformation from casual outfit to anime-style outfit",
+        "participants": [
+          "blue-hair person"
+        ],
+        "actor": "blue-hair person",
+        "object_before": "casual outfit",
+        "object_after": "anime outfit",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 3,
+        "start_time": "00:02",
+        "end_time": "00:03",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": ""
+      },
+      {
+        "event_type": "gesture",
+        "description": "makes hand gestures while wearing anime outfit with long blue hair and bunny ears",
+        "participants": [
+          "blue-hair person"
+        ],
+        "actor": "blue-hair person",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 4,
+        "start_time": "00:03",
+        "end_time": "00:05",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": ""
+      },
+      {
+        "event_type": "transform",
+        "description": "undergoes visual transformation from anime outfit back to casual outfit",
+        "participants": [
+          "blue-hair person"
+        ],
+        "actor": "blue-hair person",
+        "object_before": "anime outfit",
+        "object_after": "casual outfit",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 5,
+        "start_time": "00:05",
+        "end_time": "00:06",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": ""
+      },
+      {
+        "event_type": "gesture",
+        "description": "makes hand gestures with casual outfit, including raising hands to shoulder level",
+        "participants": [
+          "blue-hair person"
+        ],
+        "actor": "blue-hair person",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 6,
+        "start_time": "00:06",
+        "end_time": "00:08",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": ""
+      },
+      {
+        "event_type": "transform",
+        "description": "undergoes visual transformation from casual outfit to anime-style outfit",
+        "participants": [
+          "blue-hair person"
+        ],
+        "actor": "blue-hair person",
+        "object_before": "casual outfit",
+        "object_after": "anime outfit",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 7,
+        "start_time": "00:08",
+        "end_time": "00:09",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": ""
+      },
+      {
+        "event_type": "gesture",
+        "description": "makes hand gestures in anime outfit, including raising hands and pointing fingers near face",
+        "participants": [
+          "blue-hair person"
+        ],
+        "actor": "blue-hair person",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 8,
+        "start_time": "00:09",
+        "end_time": "00:12",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": ""
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "",
+        "event_index_range": [
+          1,
+          8
+        ]
+      }
+    ]
+  }
+}

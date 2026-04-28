@@ -1,0 +1,126 @@
+{
+  "question": "Was he wearing the colorful comic-print matching suit when he woke up?",
+  "pred": "The performer in the comic-book print shirt is seen lying down on the bed and getting under the blue blanket at the start of the performance (Context events 11-13, 94). Later, after a series of magic tricks involving a cage and a smoke explosion, he is revealed to have \"woken up\" or reappeared on the bed. However, at this moment of reappearance, he is wearing a different outfit: a yellow shirt with black suspenders and blue pants, rather than the comic-print suit he wore when he first lay down.\n\nEvidence: Frames at ~03:45 show the performer on the bed wearing a yellow shirt and blue pants after the reveal, whereas he was wearing the comic-print suit when he initially got into the bed.\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "place",
+      "description": "the man places the silver bell on the left side of the bed frame",
+      "participants": [
+        "man with patterned shirt"
+      ],
+      "actor": "man with patterned shirt",
+      "object": "silver bell",
+      "segment_boundary": "middle",
+      "segment_label": "bed performance",
+      "continuation_hint": "complete",
+      "event_index": 11,
+      "start_time": "00:48",
+      "end_time": "00:52",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Bed Performance Setup"
+    },
+    {
+      "event_type": "adjust",
+      "description": "the man adjusts the blue blanket to cover his body",
+      "participants": [
+        "man with patterned shirt"
+      ],
+      "actor": "man with patterned shirt",
+      "object": "blue blanket",
+      "segment_boundary": "middle",
+      "segment_label": "bed performance",
+      "continuation_hint": "complete",
+      "event_index": 12,
+      "start_time": "00:52",
+      "end_time": "00:56",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Bed Performance Setup"
+    },
+    {
+      "event_type": "lie_down",
+      "description": "the man lies down on the bed and gets under the blue blanket",
+      "participants": [
+        "man with patterned shirt"
+      ],
+      "actor": "man with patterned shirt",
+      "object": "blue blanket",
+      "segment_boundary": "middle",
+      "segment_label": "bed performance",
+      "continuation_hint": "complete",
+      "event_index": 13,
+      "start_time": "00:56",
+      "end_time": "00:59",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Bed Performance Setup"
+    },
+    {
+      "event_type": "speak",
+      "description": "The performer in comic book print shirt speaks with mouth open",
+      "participants": [
+        "comic-book-shirt performer"
+      ],
+      "actor": "comic-book-shirt performer",
+      "segment_boundary": "middle",
+      "segment_label": "Bed Performance",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 92,
+      "start_time": "03:25",
+      "end_time": "03:26",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Bed Performance Setup"
+    },
+    {
+      "event_type": "hand_raise",
+      "description": "The performer in comic book print shirt raises right hand above shoulder level",
+      "participants": [
+        "comic-book-shirt performer"
+      ],
+      "actor": "comic-book-shirt performer",
+      "segment_boundary": "middle",
+      "segment_label": "Bed Performance",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 93,
+      "start_time": "03:26",
+      "end_time": "03:27",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Bed Performance Setup"
+    },
+    {
+      "event_type": "lie_down",
+      "description": "The performer in comic book print shirt lies down on the bed and positions himself under the covers",
+      "participants": [
+        "comic-book-shirt performer"
+      ],
+      "actor": "comic-book-shirt performer",
+      "object": "bed",
+      "segment_boundary": "middle",
+      "segment_label": "Bed Performance",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 94,
+      "start_time": "03:27",
+      "end_time": "03:30",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Bed Performance Setup"
+    }
+  ]
+}

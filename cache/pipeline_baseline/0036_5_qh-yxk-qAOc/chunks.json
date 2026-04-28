@@ -1,0 +1,210 @@
+{
+  "video_name": "0036_5_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 21.0,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "gemini-3-flash-preview",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:01",
+          "event_type": "game",
+          "description": "A soccer player in a white jersey kicks the ball toward the goal during a penalty shootout.",
+          "participants": [
+            "white-jersey player",
+            "blue-jersey goalkeeper"
+          ],
+          "actor": "white-jersey player",
+          "object": "white soccer ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:01",
+          "local_end": "00:02",
+          "event_type": "react",
+          "description": "The goalkeeper in a blue jersey dives to his right to attempt a save.",
+          "participants": [
+            "blue-jersey goalkeeper"
+          ],
+          "actor": "blue-jersey goalkeeper",
+          "object": "white soccer ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:03",
+          "event_type": "outcome",
+          "description": "The ball hits the crossbar and bounces down onto the goal line.",
+          "participants": [
+            "white-jersey player",
+            "blue-jersey goalkeeper"
+          ],
+          "actor": "white soccer ball",
+          "object": "white soccer ball",
+          "outcome": "miss",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:03",
+          "local_end": "00:06",
+          "event_type": "look",
+          "description": "The goalkeeper in a blue jersey looks back at the ball as it bounces away from the goal.",
+          "participants": [
+            "blue-jersey goalkeeper"
+          ],
+          "actor": "blue-jersey goalkeeper",
+          "object": "white soccer ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:09",
+          "event_type": "look",
+          "description": "A close-up shot shows the goalkeeper in a blue jersey looking disappointed.",
+          "participants": [
+            "blue-jersey goalkeeper"
+          ],
+          "actor": "blue-jersey goalkeeper",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:09",
+          "local_end": "00:12",
+          "event_type": "look",
+          "description": "A close-up shot shows the player in a white jersey looking focused and intense.",
+          "participants": [
+            "white-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "on_screen_text": [
+            {
+              "text": "ZINÉDINE ZIDANE",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:12",
+          "local_end": "00:15",
+          "event_type": "game",
+          "description": "A wide shot shows the player in a white jersey preparing to take another penalty kick.",
+          "participants": [
+            "white-jersey player",
+            "blue-jersey goalkeeper",
+            "referee"
+          ],
+          "actor": "white-jersey player",
+          "object": "white soccer ball",
+          "on_screen_text": [
+            {
+              "text": "ZINÉDINE ZIDANE",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Shootout",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 21.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:21",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:17",
+          "event_type": "game",
+          "description": "The white-jersey player (Zidane) takes a penalty kick, chipping the ball into the goal.",
+          "participants": [
+            "white-jersey player",
+            "blue-jersey goalkeeper"
+          ],
+          "actor": "white-jersey player",
+          "object": "white ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Kick",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:17",
+          "local_end": "00:19",
+          "event_type": "celebration",
+          "description": "The white-jersey player (Zidane) raises his right arm and points his finger upward while running.",
+          "participants": [
+            "white-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Penalty Kick",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:19",
+          "local_end": "00:20",
+          "event_type": "transition",
+          "description": "The screen fades to black.",
+          "participants": [],
+          "on_screen_text": [],
+          "segment_boundary": "end",
+          "segment_label": "Penalty Kick",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:20",
+          "local_end": "00:21",
+          "event_type": "look",
+          "description": "A bearded man in a black jersey looks off-camera with a serious expression.",
+          "participants": [
+            "bearded man in black jersey"
+          ],
+          "actor": "bearded man in black jersey",
+          "on_screen_text": [
+            {
+              "text": "RESPECT",
+              "location": "jersey_number"
+            }
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Player Close-up",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

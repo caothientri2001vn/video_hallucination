@@ -1,0 +1,88 @@
+{
+  "question": "Did the player wearing white number 5 shoot toward the center?",
+  "pred": "The player wearing white jersey number 5 (identified in Context as Paredes) takes his penalty kick at approximately 04:15. In the frames showing the action, he kicks the ball toward the right side of the goal (from the kicker's perspective), while the goalkeeper dives in the opposite direction. The shot is not directed toward the center of the goal.\n\nEvidence: Frames at ~04:15 show the player in white jersey #5 kicking the ball toward the right side of the goal.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "kick",
+      "description": "Player Paredes #5 runs toward the ball and kicks it toward the goal",
+      "participants": [
+        "white-and-blue-striped player",
+        "yellow-jersey goalkeeper",
+        "orange-jersey official"
+      ],
+      "actor": "white-and-blue-striped player",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        },
+        {
+          "text": "QatarEnergy",
+          "location": "banner"
+        },
+        {
+          "text": "5",
+          "location": "jersey_number"
+        },
+        {
+          "text": "PAREDES",
+          "location": "name_tag"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 103,
+      "start_time": "04:15",
+      "end_time": "04:18",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "celebration",
+      "description": "Paredes #5 runs toward the goalkeeper after scoring",
+      "participants": [
+        "white-and-blue-striped player"
+      ],
+      "actor": "white-and-blue-striped player",
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 104,
+      "start_time": "04:18",
+      "end_time": "04:21",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 14,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "hug",
+      "description": "Paredes #5 and goalkeeper E. Martinez #23 embrace each other in celebration",
+      "participants": [
+        "white-and-blue-striped player",
+        "green-jersey goalkeeper"
+      ],
+      "actor": "white-and-blue-striped player",
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 105,
+      "start_time": "04:21",
+      "end_time": "04:26",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 14,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    }
+  ]
+}

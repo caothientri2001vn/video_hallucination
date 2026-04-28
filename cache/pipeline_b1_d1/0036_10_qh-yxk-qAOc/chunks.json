@@ -1,0 +1,258 @@
+{
+  "video_name": "0036_10_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 21.4,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:01",
+          "event_type": "game",
+          "description": "Player in white jersey prepares to take a corner kick",
+          "participants": [
+            "white-jersey player",
+            "red-white-striped players",
+            "blue-jersey goalkeeper"
+          ],
+          "actor": "white-jersey player",
+          "object": "white soccer ball",
+          "outcome": "preparation",
+          "on_screen_text": [
+            {
+              "text": "TNT",
+              "location": "logo"
+            },
+            {
+              "text": "TURKSPOR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:01",
+          "local_end": "00:02",
+          "event_type": "kick",
+          "description": "Player in white jersey executes corner kick sending ball into penalty area",
+          "participants": [
+            "white-jersey player",
+            "red-white-striped players",
+            "blue-jersey goalkeeper"
+          ],
+          "actor": "white-jersey player",
+          "object": "white soccer ball",
+          "outcome": "in play",
+          "on_screen_text": [
+            {
+              "text": "TNT",
+              "location": "logo"
+            },
+            {
+              "text": "TURKSPOR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:04",
+          "event_type": "header",
+          "description": "Multiple players from both teams jump to contest the ball in the penalty area",
+          "participants": [
+            "white-jersey players",
+            "red-white-striped players"
+          ],
+          "actor": "white-jersey player",
+          "object": "white soccer ball",
+          "outcome": "contested",
+          "on_screen_text": [
+            {
+              "text": "TNT",
+              "location": "logo"
+            },
+            {
+              "text": "TURKSPOR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:04",
+          "local_end": "00:06",
+          "event_type": "header",
+          "description": "Player in white jersey heads the ball toward the goal",
+          "participants": [
+            "white-jersey player",
+            "red-white-striped players"
+          ],
+          "actor": "white-jersey player",
+          "object": "white soccer ball",
+          "outcome": "shot on goal",
+          "on_screen_text": [
+            {
+              "text": "TNT",
+              "location": "logo"
+            },
+            {
+              "text": "TURKSPOR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:07",
+          "event_type": "save_attempt",
+          "description": "Goalkeeper in blue jersey dives to attempt save",
+          "participants": [
+            "blue-jersey goalkeeper"
+          ],
+          "actor": "blue-jersey goalkeeper",
+          "object": "white soccer ball",
+          "outcome": "missed save",
+          "on_screen_text": [
+            {
+              "text": "TNT",
+              "location": "logo"
+            },
+            {
+              "text": "TURKSPOR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:08",
+          "event_type": "goal",
+          "description": "Ball enters the goal net past the diving goalkeeper",
+          "participants": [
+            "white-jersey player",
+            "blue-jersey goalkeeper"
+          ],
+          "actor": "white soccer ball",
+          "object": "white soccer ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "TNT",
+              "location": "logo"
+            },
+            {
+              "text": "TURKSPOR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:15",
+          "event_type": "celebration",
+          "description": "Player in white jersey raises arms in celebration after scoring",
+          "participants": [
+            "white-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "object": "",
+          "outcome": "celebration",
+          "on_screen_text": [
+            {
+              "text": "TNT",
+              "location": "logo"
+            },
+            {
+              "text": "TURKSPOR KANALI",
+              "location": "logo"
+            },
+            {
+              "text": "SERGIO RAMOS",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 21.4,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:21",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:20",
+          "event_type": "celebration",
+          "description": "multiple players in white jerseys embrace and celebrate together while standing on field",
+          "participants": [
+            "white-jersey players",
+            "black-and-orange-jacketed staff"
+          ],
+          "actor": "white-jersey players",
+          "segment_boundary": "middle",
+          "segment_label": "Champions League Trophy Celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:15",
+          "local_end": "00:21",
+          "event_type": "observing",
+          "description": "staff member in yellow vest stands on field edge observing the celebration",
+          "participants": [
+            "yellow-vest staff"
+          ],
+          "actor": "yellow-vest staff",
+          "segment_boundary": "middle",
+          "segment_label": "Champions League Trophy Celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:20",
+          "local_end": "00:21",
+          "event_type": "sitting",
+          "description": "player in red jacket sits on bench with head in hands showing disappointment",
+          "participants": [
+            "red-jacket player"
+          ],
+          "actor": "red-jacket player",
+          "segment_boundary": "middle",
+          "segment_label": "Champions League Trophy Celebration",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

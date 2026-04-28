@@ -1,0 +1,146 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0036_12_qh-yxk-qAOc.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0036_12_qh-yxk-qAOc.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0036_12_qh-yxk-qAOc",
+    "n_target": 2,
+    "n_sub": 11,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 1.0,
+    "sub_accuracy": 1.0
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "When the white team plays against the black team, does the player with white shirt, white pant number 7 score the goal into the red shirt goalkeeper?",
+      "gt": "Yes",
+      "pred": "Yes, the player in the white shirt with number 7 (Riyad Mahrez, as indicated by on - screen text) scores a goal past the red - shirted goalkeeper. This is evident from the sequence where he takes the free kick, the ball enters the goal, and the subsequent celebration by the white - team players. The action occurs in the middle section of the video (around the 3 - 15 second range based on the provided frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the white team play against the black team?",
+      "gt": "Yes",
+      "pred": "Yes, the white team plays against the dark-colored (black) team, as seen in the video where the white-jerseyed players are on the field against players in dark jerseys (e.g., frames 2–23 show the two teams in white and dark uniforms competing).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is there a player wearing number 7 on the white team?",
+      "gt": "Yes",
+      "pred": "Yes, a player wearing number 7 on the white team is visible in multiple frames (e.g., during the free-kick setup and celebration sequences).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the player wearing number 7 wear a white shirt?",
+      "gt": "Yes",
+      "pred": "Yes. The player wearing number 7 is seen in a white shirt during the free kick (e.g., frames 14-17) and subsequent celebration (e.g., frames 20-24).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does the player wearing number 7 wear white pants?",
+      "gt": "Yes",
+      "pred": "Yes, the player wearing number 7 wears white pants. This is visible in multiple frames, such as when the player is preparing to take the free kick (e.g., around the 14–16 second mark in the sequence) and during celebrations, where the white pants are clearly shown.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Does the goalkeeper wear a red shirt?",
+      "gt": "Yes",
+      "pred": "Yes, the goalkeeper wears a red shirt. This can be observed in multiple frames (e.g., when the ball is near the goal, the goalkeeper in red is visible).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 5,
+      "question": "Does the player wearing number 7 score a goal?",
+      "gt": "Yes",
+      "pred": "Yes, the player wearing number 7 scores a goal. This is evident from the sequence where he takes a free kick, the ball enters the goal (as shown in frames where the ball is in the net and the goalkeeper fails to save it), and he subsequently celebrates (e.g., frames showing him running and celebrating, along with teammates hugging). The goal occurs around the 10-15 second mark in the sequence of the free kick action.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 6,
+      "question": "Is the goal scored against the goalkeeper wearing a red shirt?",
+      "gt": "Yes",
+      "pred": "Yes, the goal is scored against the goalkeeper wearing a red shirt. This is visible in multiple frames (e.g., around 0:06-0:13) where the goalkeeper in red attempts to save the ball but the ball enters the net.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "When the white team plays against the black team, does the player with white shirt, white pant number 10 score the goal into the red shirt goalkeeper?",
+      "gt": "No",
+      "pred": "No. The player who scores the goal is Riyad Mahrez, wearing a white shirt and white pants with the number 7 (evident from on-screen text \"RIYAD MAHREZ\" and his jersey number in multiple frames), not number 10. The goal is scored into the red-shirted goalkeeper.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the white team play against the black team?",
+      "gt": "Yes",
+      "pred": "Yes, the white team plays against the dark-colored (black) team, as seen in the video where the white-jerseyed players are on the field against players in dark jerseys (e.g., frames 2–23 show the two teams in white and dark uniforms competing).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is there a player wearing number 10 on the white team?",
+      "gt": "No",
+      "pred": "No, there is no player wearing number 10 on the white team. The visible numbers on white - team players in the frames include 7 (Riyad Mahrez), 21, 1, 8, 3, etc., but number 10 is not present.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does a player wearing number 10 score a goal?",
+      "gt": "No",
+      "pred": "No. The player who scores the goal is wearing number 7 (Riyad Mahrez, as identified by on-screen text and jersey number in multiple frames, e.g., 0:14–0:17, 0:23–0:26). No player wearing number 10 is shown scoring in the video.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does the player who scores the goal wear number 7?",
+      "gt": "Yes",
+      "pred": "Yes, the player who scores the goal wears number 7. This is visible in multiple frames (e.g., when taking the free kick, during the celebration, and in close-up shots of the player with the number 7 on their jersey).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

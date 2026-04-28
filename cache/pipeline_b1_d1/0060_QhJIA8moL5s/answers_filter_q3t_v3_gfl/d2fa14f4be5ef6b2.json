@@ -1,0 +1,184 @@
+{
+  "question": "Did the woman on the left open box number 9?",
+  "pred": "The video features a game with numbered boxes on a shelf. According to the alias map in the Context, the \"LEFT player (blonde woman)\" is the woman with short blonde hair sitting on the left side of the table. The Context records that a \"blue-dress woman\" (referring to the same blonde woman on the left) reaches for and opens box number 9. Visual evidence from the frames confirms this: at approximately 00:51, the blonde woman on the left stands up, reaches for the box labeled \"9\" on the bottom right of the shelving unit, and brings it to the table to open it.\n\nEvidence: frames at ~00:51 show the blonde woman on the left pulling box 9 from the shelf and placing it on the table.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "on_screen_text",
+      "description": "numbered boxes 1 through 9 become visible on the shelving unit behind the participants",
+      "participants": [],
+      "actor": null,
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "podium"
+        },
+        {
+          "text": "2",
+          "location": "podium"
+        },
+        {
+          "text": "3",
+          "location": "podium"
+        },
+        {
+          "text": "4",
+          "location": "podium"
+        },
+        {
+          "text": "5",
+          "location": "podium"
+        },
+        {
+          "text": "6",
+          "location": "podium"
+        },
+        {
+          "text": "7",
+          "location": "podium"
+        },
+        {
+          "text": "8",
+          "location": "podium"
+        },
+        {
+          "text": "9",
+          "location": "podium"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Boxes Game",
+      "continuation_hint": "complete",
+      "event_index": 3,
+      "start_time": "00:02",
+      "end_time": "00:05",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "reach",
+      "description": "The woman reaches for the bottom-right box labeled 9",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 22,
+      "start_time": "00:49",
+      "end_time": "00:51",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "The woman pulls out the bottom-right box labeled 9",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "object": "box 9",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 23,
+      "start_time": "00:51",
+      "end_time": "00:53",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "place",
+      "description": "The woman places the pulled-out box on the table",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "object": "box 9",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 24,
+      "start_time": "00:53",
+      "end_time": "00:55",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "The woman opens the box to reveal its contents",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "object": "box 9",
+      "object_before": "closed box 9",
+      "object_after": "open box 9",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 25,
+      "start_time": "00:55",
+      "end_time": "00:57",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "reveal",
+      "description": "Close-up shows reflection of the woman's face in the box",
+      "participants": [
+        "blue-dress woman",
+        "black-suit man"
+      ],
+      "actor": "blue-dress woman",
+      "object": "box 9",
+      "object_before": "box 9 showing reflection",
+      "object_after": "box 9 showing reflection",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 28,
+      "start_time": "00:58",
+      "end_time": "00:59",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "reveal",
+      "description": "Close-up shows reflection of the man's face in the box",
+      "participants": [
+        "blue-dress woman",
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "object": "box 9",
+      "object_before": "box 9 showing reflection",
+      "object_after": "box 9 showing reflection",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 29,
+      "start_time": "00:59",
+      "end_time": "00:59",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    }
+  ]
+}

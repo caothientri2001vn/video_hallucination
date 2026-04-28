@@ -1,0 +1,97 @@
+{
+  "question": "Does the player in teal shirt number 23 score goal?",
+  "pred": "The video shows a football match where a player in a teal uniform scores a goal. To determine if the player in teal shirt number 23 scored:\n\n1.  **Identify player #23**: Frames at ~00:23 clearly show a player in a teal uniform with the number 23 on his back (identified as \"ERIKSEN\" in on-screen text).\n2.  **Analyze the scoring action**: In the sequence from ~00:23 to ~00:26, player #23 is seen running toward the goal, but the ball is actually struck by a different teammate (player #27, identified as \"LUCAS MOURA\" in on-screen text) who is positioned further ahead.\n3.  **Confirm the scorer**: The ball enters the net at ~00:26. Immediately following the goal, player #27 (Lucas Moura) begins a sliding celebration (frames ~00:27 to ~00:32). The Context (event_index 9) confirms that the player in teal uniform with number 27 is the one who celebrates the goal.\n4.  **Role of player #23**: While player #23 is on the field and involved in the play, he does not strike the ball for the goal.\n\nEvidence: Frames at ~00:23 show player #23 (Eriksen) running behind player #27 (Lucas Moura), who strikes the ball to score the goal.\n\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "celebration",
+      "description": "Player in teal uniform with number 27 celebrates with arms raised high",
+      "participants": [
+        "teal uniform player"
+      ],
+      "actor": "teal uniform player",
+      "on_screen_text": [
+        {
+          "text": "AIA",
+          "location": "jersey"
+        },
+        {
+          "text": "27",
+          "location": "jersey_number"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 9,
+      "start_time": "00:15",
+      "end_time": "00:17",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Channel Intro"
+    },
+    {
+      "event_type": "hug",
+      "description": "Teammate in teal uniform with number 20 embraces the celebrating player from behind",
+      "participants": [
+        "teal uniform player with 20",
+        "teal uniform player with 27"
+      ],
+      "actor": "teal uniform player with 20",
+      "on_screen_text": [
+        {
+          "text": "AIA",
+          "location": "jersey"
+        },
+        {
+          "text": "20",
+          "location": "jersey_number"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "middle",
+      "event_index": 10,
+      "start_time": "00:17",
+      "end_time": "00:19",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Channel Intro"
+    },
+    {
+      "event_type": "hug",
+      "description": "Additional teammate in teal uniform embraces the celebrating player while others join the celebration",
+      "participants": [
+        "teal uniform player with 27",
+        "teammate in teal uniform"
+      ],
+      "actor": "teammate in teal uniform",
+      "on_screen_text": [
+        {
+          "text": "AIA",
+          "location": "jersey"
+        },
+        {
+          "text": "4",
+          "location": "jersey_number"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "middle",
+      "event_index": 11,
+      "start_time": "00:19",
+      "end_time": "00:22",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Channel Intro"
+    }
+  ]
+}

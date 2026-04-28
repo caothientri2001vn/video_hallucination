@@ -1,0 +1,1304 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0067_F5PC1XQQRvc.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0067_F5PC1XQQRvc.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0067_F5PC1XQQRvc",
+    "n_target": 24,
+    "n_sub": 107,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 1.0,
+    "sub_accuracy": 1.0
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Did the blue evening dress appear closer to the red strapless dress than to the final white lace dress?",
+      "gt": "Yes",
+      "pred": "Yes. The blue evening dress (aqua strapless with neck tie, shown around 11–13 seconds) appears immediately after the red strapless dress (9–10 seconds), while it is followed by multiple other dresses (e.g., white lace slit dress, black lace dress, pink one-shoulder dress, etc.) before the final white lace dress (29–32 seconds). Thus, the blue dress is closer in sequence to the red strapless dress than to the final white lace dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a blue evening dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a light blue evening dress appeared in the video. It is visible in the sequence where the person models individual dresses, specifically in the frames showing the light blue strapless gown with a sheer fabric detail on the shoulder (e.g., the 11th image in the provided sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a red strapless dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A red strapless dress with a high slit appears in the video (e.g., in the sequence of frames showing the red strapless dress, such as the 9th and 10th images provided).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the blue evening dress appear after the red strapless dress?",
+      "gt": "Yes",
+      "pred": "Yes. The red strapless dress is shown in frames around the 7th–8th sequence (e.g., images with the red dress featuring a high slit), and the blue evening dress (light blue, strapless with a long sash) appears in the subsequent sequence (frames 11–13). Thus, the blue evening dress appeared after the red strapless dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the final white lace dress appear after the blue evening dress?",
+      "gt": "Yes",
+      "pred": "Yes. The blue evening dress appears earlier (in the sequence of dresses shown), and the final white lace dress is displayed after it.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Was the blue evening dress shown between the red strapless dress and the final white lace dress?",
+      "gt": "Yes",
+      "pred": "Yes. The blue evening dress (light blue, with a scarf detail) appears after the red strapless dress (which is shown in the sequence before the blue dress) and before the final white lace dress (which is the last dress shown in the video). This can be verified by the order of the frames: the red strapless dress is presented, followed by the blue dress, then other dresses, and finally the white lace dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Was the white lace halter dress shown before the black lace long-sleeve dress?",
+      "gt": "Yes",
+      "pred": "Yes. The white lace halter dress appears in the sequence after the light blue dress and before the black lace long - sleeve dress. The white lace halter dress is shown in frames 14 - 15, while the black lace long - sleeve dress is shown in frames 16 - 18.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a white lace halter dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A white lace halter dress appears in the video (e.g., in the frame where the person is wearing a white, form-fitting dress with lace detailing, a halter neckline, and a high slit).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a black lace long-sleeve dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A black lace long-sleeve dress appears in the video, visible in the frames where the person is wearing it (e.g., the sequence showing the black lace dress with long sleeves and a fitted silhouette).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the white lace halter dress appear before the black lace long-sleeve dress?",
+      "gt": "Yes",
+      "pred": "Yes. The white lace halter dress (with floral lace details, shown in frames ~11-12) appears before the black lace long-sleeve dress (shown in frames ~13-15).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the black lace long-sleeve dress appear after the blue evening dress?",
+      "gt": "Yes",
+      "pred": "Yes. The light blue evening dress (with the scarf detail) is shown in frames 10-12, and the black lace long-sleeve dress appears later in frames 15-17.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Did the black lace dress appear earlier than the pink one-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes. The black lace dress appears in the sequence before the pink one-shoulder dress. The black lace dress is shown in the frames corresponding to the 12th–14th images (e.g., around the 12th image in the sequence), while the pink one-shoulder dress appears later in the 18th–19th images.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a black lace dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a black lace dress appeared in the video (evident in the frames showing the black lace gown with long sleeves and a fitted silhouette).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a pink one-shoulder dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A pink one-shoulder dress with floral details appears in the video (evident in the sequence showing the pink dress with one-shoulder and floral embellishments).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the black lace dress appear before the pink one-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes. The black lace dress is shown in frames 16-18, and the pink one-shoulder dress appears in frames 19-20. Thus, the black lace dress appeared before the pink one-shoulder dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the pink one-shoulder dress shown between the black lace dress and the red embroidered dress?",
+      "gt": "Yes",
+      "pred": "Yes. The black lace dress appears in frames ~13-15, the pink one-shoulder dress in frames ~16-17, and the red embroidered dress in frames ~18-20. Thus, the pink one-shoulder dress is shown between the black lace dress and the red embroidered dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Did the red embroidered dress appear closer to the white off-shoulder dress than to the first yellow dress?",
+      "gt": "Yes",
+      "pred": "To determine this, we analyze the sequence of dresses shown:  \n\n1. The **first yellow dress** appears in frames 6–8 (5–7 seconds).  \n2. The **red embroidered dress** appears in frames 21–23 (20–22 seconds).  \n3. The **white off-shoulder dress** appears in frames 24–26 (23–25 seconds).  \n\nThe red embroidered dress is shown immediately before the white off-shoulder dress (1 frame apart), while it is 15+ frames (15+ seconds) after the first yellow dress. Thus, the red embroidered dress is closer to the white off-shoulder dress than to the first yellow dress.  \n\n**Answer:** Yes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a red embroidered dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a red embroidered dress appeared in the video (evident in the frames showing the red dress with floral embroidery, approximately around the 16-18 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a white off-shoulder dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a white off-shoulder dress appeared in the video (e.g., in the sequence of frames showing the white off-shoulder dress with a ruffled top and fitted silhouette).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the yellow dress shown first in the sequence?",
+      "gt": "Yes",
+      "pred": "Yes. The yellow dress is the first individual dress shown in the sequence (appearing in frames 6-8, after the initial group shot of all dresses).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the red embroidered dress appear before the white off-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes. The red embroidered dress (with floral details and a high slit) appears in the sequence before the white off-shoulder dress (with a ruffled top and fitted silhouette). The red embroidered dress is shown in the frames around the 17–20 second mark, while the white off-shoulder dress appears later, around the 28–30 second mark.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Did the red embroidered dress appear after the pink one-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes, the red embroidered dress appeared after the pink one-shoulder dress. The pink one-shoulder dress is shown in frames featuring the light pink dress with floral details on one shoulder (e.g., the 15th–16th image group), and the red embroidered dress (with a high slit and floral embroidery) appears in subsequent frames (e.g., 19th–21st image group).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Was the white off-shoulder dress shown before the pink satin strapless dress?",
+      "gt": "Yes",
+      "pred": "Yes. The white off-shoulder dress (e.g., frame 25-27) appears before the pink satin strapless dress (e.g., frame 28-29).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a white off-shoulder dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a white off-shoulder dress appeared in the video (e.g., in the sequence of frames showing the white off-shoulder dress with a ruffled top and fitted silhouette).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a pink satin strapless dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A pink satin strapless dress appears in the video (evident in the frames showing the person wearing a sleek, satin pink strapless gown with a fitted bodice and mermaid-style skirt).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the white off-shoulder dress appear before the pink satin strapless dress?",
+      "gt": "Yes",
+      "pred": "Yes, the white off-shoulder dress (appearing in frames ~24–26) appears before the pink satin strapless dress (appearing in frames ~27–28).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the white off-shoulder dress shown between the red embroidered dress and the pink satin strapless dress?",
+      "gt": "Yes",
+      "pred": "Yes. The red embroidered dress appears around frames 21-23, the white off-shoulder dress appears in frames 24-26, and the pink satin strapless dress appears in frames 27-28. Thus, the white off-shoulder dress is shown between the red embroidered dress and the pink satin strapless dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Did the blue evening dress appear between the red strapless gown and the white lace halter dress?",
+      "gt": "Yes",
+      "pred": "Yes. The red strapless gown is shown first (e.g., frames 9-10), followed by the blue evening dress (e.g., frames 11-13), and then the white lace halter dress (e.g., frames 14-15). Thus, the blue evening dress appears between the red strapless gown and the white lace halter dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a blue evening dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a light blue evening dress appeared in the video. It is visible in the sequence where the person models individual dresses, specifically in the frames showing the light blue strapless gown with a sheer fabric detail on the shoulder (e.g., the 11th image in the provided sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the red strapless dress appear before the blue evening dress?",
+      "gt": "Yes",
+      "pred": "Yes. The red strapless dress (with a high slit) is shown in frames 7–10, while the blue evening dress (light blue, strapless with a neck ribbon) appears later in frames 11–13. Thus, the red strapless dress appears before the blue evening dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the blue evening dress appear before the white lace halter dress?",
+      "gt": "Yes",
+      "pred": "Yes. The light blue evening dress (with a neck scarf and ruched design) appears in frames 10-12, while the white lace halter dress (with floral appliqués and a slit) appears in frames 13-14. Thus, the blue dress appears before the white lace halter dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the white lace halter dress shown after the red strapless dress?",
+      "gt": "Yes",
+      "pred": "Yes. The red strapless dress (with a high slit) appears in the sequence before the white lace halter dress with floral appliqués. The white lace halter dress is shown later in the video.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Was the white lace halter dress shown between the blue evening dress and the black lace dress?",
+      "gt": "Yes",
+      "pred": "Yes. The blue evening dress appears in frames 11-13, the white lace halter dress (with floral lace and a high slit) appears in frames 14-15, and the black lace dress appears in frames 16-18. Thus, the white lace halter dress is shown between the blue evening dress and the black lace dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a white lace halter dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A white lace halter dress appears in the video (e.g., in the frame where the person is wearing a white, form-fitting dress with lace detailing, a halter neckline, and a high slit).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the white lace halter dress shown after the blue evening dress?",
+      "gt": "Yes",
+      "pred": "Yes. The blue evening dress (light blue strapless dress with a scarf detail) appears in the sequence before the white lace halter dress (the dress with floral lace and a halter neckline). The blue dress is shown in the frames corresponding to the 10th-12th images, and the white lace halter dress is shown in the 13th-14th images.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the black lace dress appear after the white lace halter dress?",
+      "gt": "Yes",
+      "pred": "Yes. The white lace halter dress appears in the sequence (e.g., frames 14-15), and the black lace dress appears later (e.g., frames 16-18). Thus, the black lace dress came after the white lace halter dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the black lace dress shown after the blue evening dress?",
+      "gt": "Yes",
+      "pred": "Yes. The light blue evening dress (with a neck ribbon) appears in the sequence before the black lace dress. The blue dress is shown in the frames corresponding to the 11th and 12th images (e.g., around the 9-11 second mark in a typical video flow), and the black lace dress appears later in the sequence (e.g., around the 14-16 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Did the black lace dress appear between the white lace halter dress and the pink one-shoulder dress?",
+      "gt": "Yes",
+      "pred": "To determine the order, we analyze the sequence of dresses shown:  \n1. The white lace halter dress appears first in the sequence of individual dresses (after the initial group shot).  \n2. The black lace dress follows the white lace halter dress.  \n3. The pink one-shoulder dress appears after the black lace dress.  \n\nThus, the black lace dress **is** between the white lace halter dress and the pink one-shoulder dress.  \n\nAnswer: Yes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a black lace dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a black lace dress appeared in the video (evident in the frames showing the black lace gown with long sleeves and a fitted silhouette).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the black lace dress shown after the white lace halter dress?",
+      "gt": "Yes",
+      "pred": "Yes. The white lace halter dress (with floral lace and a slit) appears in the sequence around the 14th-15th frames (e.g., the 14th image in the provided set), and the black lace dress (with long sleeves and a mermaid silhouette) follows in the 16th-18th frames. Thus, the black lace dress is shown after the white lace halter dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the pink one-shoulder dress appear after the black lace dress?",
+      "gt": "Yes",
+      "pred": "Yes. The black lace dress is shown in frames featuring the black sheer gown with long sleeves (e.g., around the 15th–17th images in the sequence), and the pink one-shoulder dress appears in subsequent frames (e.g., 18th–19th images). Thus, the pink one-shoulder dress appears after the black lace dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the pink one-shoulder dress shown after the white lace halter dress?",
+      "gt": "Yes",
+      "pred": "Yes. The white lace halter dress appears in the sequence before the pink one-shoulder dress. The white lace halter dress is shown in frames 14–15 (as the 4th dress in the sequence), and the pink one-shoulder dress is shown in frames 19–20 (as the 6th dress in the sequence). Therefore, the pink one-shoulder dress was shown after the white lace halter dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "target",
+      "question": "Did the red embroidered gown appear between the pink one-shoulder dress and the white off-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes. The red embroidered gown appears after the pink one-shoulder dress and before the white off-shoulder dress in the sequence of frames. Specifically, the pink one-shoulder dress is shown in frames 17–18, the red embroidered gown in frames 21–23, and the white off-shoulder dress in frames 25–27.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a red embroidered dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a red embroidered dress appeared in the video (evident in the frames showing the red dress with floral embroidery, approximately around the 16-18 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the red embroidered dress shown after the pink one-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes, the red embroidered dress was shown after the pink one-shoulder dress. The pink one-shoulder dress appears in frames around the 16th–17th images, and the red embroidered dress is shown in frames around the 21st–23rd images.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the white off-shoulder dress appear after the red embroidered dress?",
+      "gt": "Yes",
+      "pred": "Yes, the white off-shoulder dress appeared after the red embroidered dress. The red embroidered dress is shown in frames around 10–12 seconds, while the white off-shoulder dress appears in frames around 18–20 seconds.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the white off-shoulder dress shown after the pink one-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes. The pink one-shoulder dress appears in the sequence (e.g., frames showing the pink dress with floral shoulder details, roughly around the 19th–20th frame of the sequence), and the white off-shoulder dress is shown later (e.g., frames 24–26, where the woman wears the white off-shoulder dress with a ruffled neckline). Thus, the white off-shoulder dress was shown after the pink one-shoulder dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "target",
+      "question": "Was the white off-shoulder dress between the red embroidered gown and the pink satin dress?",
+      "gt": "Yes",
+      "pred": "Yes. The white off-shoulder dress appears after the red embroidered gown (framed in the sequence where the red gown with floral detailing and high slit is shown, e.g., frames 21–23) and before the pink satin dress (framed in the sequence with the strapless pink satin gown, e.g., frames 27–28). This order is verifiable from the sequence of dress presentations in the video.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a white off-shoulder dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a white off-shoulder dress appeared in the video (e.g., in the sequence of frames showing the white off-shoulder dress with a ruffled top and fitted silhouette).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the white off-shoulder dress shown after the red embroidered dress?",
+      "gt": "Yes",
+      "pred": "Yes. The red embroidered dress (with a high slit and floral details) appears in the sequence, followed by the white off-shoulder dress. The white off-shoulder dress is shown after the red embroidered dress in the video's progression of outfits.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the pink satin dress appear after the white off-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes, the pink satin dress appeared after the white off-shoulder dress. The white off-shoulder dress is shown in the sequence of frames (e.g., around the 20th frame group), and the pink satin dress appears in the subsequent frames (e.g., around the 23rd frame group).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the pink satin dress shown after the red embroidered dress?",
+      "gt": "Yes",
+      "pred": "Yes. The red embroidered dress appears in the sequence of frames showing the 7th dress (around the 21-23 second mark), and the pink satin dress (8th dress) is shown in subsequent frames (around 27-28 second mark). Thus, the pink satin dress is shown after the red embroidered dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "target",
+      "question": "Did the pink satin dress appear between the white off-shoulder dress and the final white lace dress?",
+      "gt": "Yes",
+      "pred": "Yes. The white off-shoulder dress appears first (e.g., frames ~20-22), followed by the pink satin dress (e.g., frames ~22-24), and then the final white lace dress (e.g., frames ~24-28). Thus, the pink satin dress is between them.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a pink satin dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A pink satin dress appears in the video, as seen in the frames showing the person wearing a strapless pink satin gown (e.g., around the 22-24 second mark in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the pink satin dress appear after the white off-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes, the pink satin dress appeared after the white off-shoulder dress. The white off-shoulder dress is shown in the sequence of frames (e.g., around the 20th frame group), and the pink satin dress appears in the subsequent frames (e.g., around the 23rd frame group).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the pink satin dress appear before the final white lace dress?",
+      "gt": "Yes",
+      "pred": "Yes. The pink satin dress (seen in frames 27-28) appears before the final white lace off-shoulder dress (seen in frames 29-32).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the white off-shoulder dress shown before the final white lace dress?",
+      "gt": "Yes",
+      "pred": "Yes. The white off-shoulder dress (with the wide, ruffled neckline) appears in frames around 20–22, while the final white lace dress (off-shoulder with long sleeves and lace detailing) is shown in the last set of frames (23–27). Thus, the white off-shoulder dress was shown before the final white lace dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "target",
+      "question": "Did the red strapless dress appear between the yellow dress and the blue evening dress?",
+      "gt": "Yes",
+      "pred": "Yes. The yellow dress appears in frames 6-8, the red strapless dress appears in frames 9-10, and the blue evening dress appears in frames 11-13. Thus, the red strapless dress is between the yellow dress and the blue evening dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a red strapless dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A red strapless dress with a high slit appears in the video (e.g., in the sequence of frames showing the red strapless dress, such as the 9th and 10th images provided).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the red strapless dress appear after the yellow dress?",
+      "gt": "Yes",
+      "pred": "Yes. The yellow dress (light yellow, deep V-neck) is shown in frames 6-8, and the red strapless dress (with high slit) appears in frames 9-10, so the red strapless dress comes after the yellow dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the red strapless dress appear before the blue evening dress?",
+      "gt": "Yes",
+      "pred": "Yes. The red strapless dress (with a high slit) is shown in frames 7–10, while the blue evening dress (light blue, strapless with a neck ribbon) appears later in frames 11–13. Thus, the red strapless dress appears before the blue evening dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the yellow dress shown first in the sequence?",
+      "gt": "Yes",
+      "pred": "Yes. The yellow dress is the first individual dress shown in the sequence (appearing in frames 6-8, after the initial group shot of all dresses).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "target",
+      "question": "Was the black lace dress between the blue evening dress and the red embroidered gown?",
+      "gt": "Yes",
+      "pred": "Yes. The sequence of dresses is: blue evening dress (11-13), then white lace dress (14-15), then black lace dress (16-18), then pink one-shoulder dress (19-20), then red embroidered gown (21-23). Thus, the black lace dress is between the blue evening dress and the red embroidered gown.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a black lace dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a black lace dress appeared in the video (evident in the frames showing the black lace gown with long sleeves and a fitted silhouette).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the blue evening dress appear before the black lace dress?",
+      "gt": "Yes",
+      "pred": "Yes. The light blue evening dress (with a strapless design and neck tie) appears in the sequence of individual dresses shown (around the 11-13 second mark in the video), while the black lace dress appears later (around the 16-18 second mark). Thus, the blue dress is shown before the black lace dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the black lace dress appear before the red embroidered dress?",
+      "gt": "Yes",
+      "pred": "Yes. The black lace dress is shown in the sequence before the red embroidered dress. The black lace dress appears in the 5th group of frames (e.g., around the 15th–17th images), while the red embroidered dress appears later in the 7th group of frames (e.g., around the 21st–23rd images).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the white lace halter dress shown between the blue evening dress and the black lace dress?",
+      "gt": "Yes",
+      "pred": "Yes. The blue evening dress appears in frames 11-13, the white lace halter dress (with floral lace and a high slit) appears in frames 14-15, and the black lace dress appears in frames 16-18. Thus, the white lace halter dress is shown between the blue evening dress and the black lace dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "target",
+      "question": "Did the white off-shoulder dress appear between the red embroidered dress and the pink satin dress?",
+      "gt": "Yes",
+      "pred": "Yes. The white off-shoulder dress (with the ruffled top) appears after the red embroidered dress (which is shown in the sequence of frames where the model wears the red dress with floral details and a high slit) and before the pink satin dress. This order is visible in the sequence of the video frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a white off-shoulder dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a white off-shoulder dress appeared in the video (e.g., in the sequence of frames showing the white off-shoulder dress with a ruffled top and fitted silhouette).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the red embroidered dress appear before the white off-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes. The red embroidered dress (with floral details and a high slit) appears in the sequence before the white off-shoulder dress (with a ruffled top and fitted silhouette). The red embroidered dress is shown in the frames around the 17–20 second mark, while the white off-shoulder dress appears later, around the 28–30 second mark.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the white off-shoulder dress appear before the pink satin dress?",
+      "gt": "Yes",
+      "pred": "Yes. The white off-shoulder dress (with ruffled top, shown in frames ~22-24) appears before the pink satin dress (with ruched waist, shown in frames ~25-26).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the red embroidered dress appear before the pink satin dress?",
+      "gt": "Yes",
+      "pred": "Yes, the red embroidered dress appeared before the pink satin dress. The red embroidered dress is shown in frames 14-16, while the pink satin dress is shown in frames 22-23.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 14,
+      "kind": "target",
+      "question": "Did the red embroidered spaghetti-strap dress appear after the pink one-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes. The pink one-shoulder dress (with floral details) appears earlier in the sequence (e.g., around the 15 - 17 second mark in the video), and the red embroidered spaghetti - strap dress appears later (e.g., around the 18 - 20 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a red embroidered dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a red embroidered dress appeared in the video (evident in the frames showing the red dress with floral embroidery, approximately around the 16-18 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a pink one-shoulder dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A pink one-shoulder dress with floral details appears in the video (evident in the sequence showing the pink dress with one-shoulder and floral embellishments).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the pink one-shoulder dress appear before the red embroidered dress?",
+      "gt": "Yes",
+      "pred": "Yes. The pink one-shoulder dress is shown starting around the 20th frame, while the red embroidered dress appears later, starting around the 23rd frame.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the black lace dress shown before the pink one-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes. The black lace dress appears in the sequence before the pink one-shoulder dress (e.g., the black lace dress is shown in frames featuring the woman in a long black lace gown with bell sleeves, and the pink one-shoulder dress appears later in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "target",
+      "question": "Did the video show the yellow dress, then the red strapless dress, then the blue evening dress?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows the yellow dress (6th frame, ~5-6s), followed by the red strapless dress (9th frame, ~8-9s), then the light blue evening dress (11th frame, ~10-11s).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a yellow dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a yellow dress appeared in the video (e.g., in the frames showing the person wearing a light yellow, sleeveless, full-length dress with a fitted bodice and flared skirt, starting around the 6th frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a red strapless dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A red strapless dress with a high slit appears in the video (e.g., in the sequence of frames showing the red strapless dress, such as the 9th and 10th images provided).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did a blue evening dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a light blue evening dress appeared in the video. It is visible in the sequence where the person models individual dresses, specifically in the frames showing the light blue strapless gown with a sheer fabric detail on the shoulder (e.g., the 11th image in the provided sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the yellow dress shown before the red strapless dress?",
+      "gt": "Yes",
+      "pred": "Yes. The yellow dress (light greenish-yellow, with a halter neck) is shown in the sequence of individual dress models starting around the 6th frame (e.g., frame 6: \"a woman in a light yellow dress...\"), while the red strapless dress appears later, starting around the 9th frame (e.g., frame 9: \"a woman in a red strapless dress...\"). Thus, the yellow dress was shown before the red strapless dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Was the red strapless dress shown before the blue evening dress?",
+      "gt": "Yes",
+      "pred": "Yes. The red strapless dress appears in the sequence before the blue evening dress. The red strapless dress is shown in the frames following the light yellow dress (e.g., around the 9th–10th frames of the sequence), while the blue evening dress appears later (e.g., around the 11th–13th frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 5,
+      "question": "Did the yellow dress appear first in the sequence?",
+      "gt": "Yes",
+      "pred": "Yes. The yellow dress (light yellow, floral-patterned) is the first dress shown in the sequence after the person holds multiple dresses. This occurs in the 6th frame (and subsequent frames) of the video sequence.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 16,
+      "kind": "target",
+      "question": "Did the sequence go from the blue evening dress to the white lace halter dress and then to the black lace dress?",
+      "gt": "Yes",
+      "pred": "Yes. The sequence is: the light blue strapless evening dress (e.g., frame 10-12) → the white lace halter dress (e.g., frame 13-14) → the black lace dress (e.g., frame 15-17).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 16,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a blue evening dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a light blue evening dress appeared in the video. It is visible in the sequence where the person models individual dresses, specifically in the frames showing the light blue strapless gown with a sheer fabric detail on the shoulder (e.g., the 11th image in the provided sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 16,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a white lace halter dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A white lace halter dress appears in the video (e.g., in the frame where the person is wearing a white, form-fitting dress with lace detailing, a halter neckline, and a high slit).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 16,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did a black lace dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a black lace dress appeared in the video (evident in the frames showing the black lace gown with long sleeves and a fitted silhouette).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 16,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the white lace halter dress shown after the blue evening dress?",
+      "gt": "Yes",
+      "pred": "Yes. The blue evening dress (light blue strapless dress with a scarf detail) appears in the sequence before the white lace halter dress (the dress with floral lace and a halter neckline). The blue dress is shown in the frames corresponding to the 10th-12th images, and the white lace halter dress is shown in the 13th-14th images.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 16,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Was the black lace dress shown after the white lace halter dress?",
+      "gt": "Yes",
+      "pred": "Yes. The white lace halter dress (with floral lace and a slit) appears in the sequence around the 14th-15th frames (e.g., the 14th image in the provided set), and the black lace dress (with long sleeves and a mermaid silhouette) follows in the 16th-18th frames. Thus, the black lace dress is shown after the white lace halter dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 16,
+      "kind": "sub",
+      "sub_index": 5,
+      "question": "Did the white lace halter dress appear between the blue evening dress and the black lace dress?",
+      "gt": "Yes",
+      "pred": "Yes. The light blue evening dress (11-13) is followed by the white lace halter dress (14-15), which is then followed by the black lace dress (16-18). Thus, the white lace halter dress appears between the blue evening dress and the black lace dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 17,
+      "kind": "target",
+      "question": "Did the video show the black lace dress before the pink one-shoulder dress and before the red embroidered dress?",
+      "gt": "Yes",
+      "pred": "Yes. The black lace dress appears in the sequence before the pink one-shoulder dress and before the red embroidered dress. The black lace dress is shown in the 13th-15th frames (e.g., the 13th frame set), the pink one-shoulder dress in the 16th-17th frames, and the red embroidered dress in the 18th-20th frames. Thus, the black lace dress is displayed first among these three.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 17,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a black lace dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a black lace dress appeared in the video (evident in the frames showing the black lace gown with long sleeves and a fitted silhouette).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 17,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a pink one-shoulder dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A pink one-shoulder dress with floral details appears in the video (evident in the sequence showing the pink dress with one-shoulder and floral embellishments).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 17,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did a red embroidered dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a red embroidered dress appeared in the video (evident in the frames showing the red dress with floral embroidery, approximately around the 16-18 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 17,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the black lace dress shown before the pink one-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes. The black lace dress appears in the sequence before the pink one-shoulder dress (e.g., the black lace dress is shown in frames featuring the woman in a long black lace gown with bell sleeves, and the pink one-shoulder dress appears later in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 17,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Was the black lace dress shown before the red embroidered dress?",
+      "gt": "Yes",
+      "pred": "Yes. The black lace dress is shown in frames corresponding to the 16th-18th images (e.g., the sequence where the model wears the black lace gown with long sleeves and a fitted silhouette), and the red embroidered dress appears later in the sequence (frames corresponding to the 21st-23rd images, featuring a red dress with floral embroidery and a high slit). Thus, the black lace dress was shown before the red embroidered dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 18,
+      "kind": "target",
+      "question": "Did the red embroidered dress appear before the white off-shoulder dress and before the pink satin dress?",
+      "gt": "Yes",
+      "pred": "Yes. The red embroidered dress appears in the sequence (around frames 21-23), which is before the white off-shoulder dress (around frames 24-26) and the pink satin dress (around frames 27-29).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 18,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a red embroidered dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a red embroidered dress appeared in the video (evident in the frames showing the red dress with floral embroidery, approximately around the 16-18 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 18,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a white off-shoulder dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a white off-shoulder dress appeared in the video (e.g., in the sequence of frames showing the white off-shoulder dress with a ruffled top and fitted silhouette).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 18,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did a pink satin dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A pink satin dress appears in the video, as seen in the frames showing the person wearing a strapless pink satin gown (e.g., around the 22-24 second mark in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 18,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the red embroidered dress shown before the white off-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes. The red embroidered dress (with floral details and a slit) appears in the sequence before the white off-shoulder dress. The red embroidered dress is shown in the frames around the 17–19th images of the sequence, while the white off-shoulder dress appears in the frames around the 24–26th images.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 18,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Was the red embroidered dress shown before the pink satin dress?",
+      "gt": "Yes",
+      "pred": "Yes. The red embroidered dress (with floral details and high slit) appears in the sequence before the pink satin dress. The red embroidered dress is shown in frames corresponding to the 21st–23rd images, while the pink satin dress appears later in frames corresponding to the 27th–28th images.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 18,
+      "kind": "sub",
+      "sub_index": 5,
+      "question": "Did the white off-shoulder dress appear before the pink satin dress?",
+      "gt": "Yes",
+      "pred": "Yes. The white off-shoulder dress (with ruffled top, shown in frames ~22-24) appears before the pink satin dress (with ruched waist, shown in frames ~25-26).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 19,
+      "kind": "target",
+      "question": "Did the white off-shoulder dress appear before the pink satin dress and before the final white lace dress?",
+      "gt": "Yes",
+      "pred": "Yes. The white off-shoulder dress (appearing in frames 24–26) comes before the pink satin dress (27–28) and before the final white lace dress (29–32).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 19,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a white off-shoulder dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a white off-shoulder dress appeared in the video (e.g., in the sequence of frames showing the white off-shoulder dress with a ruffled top and fitted silhouette).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 19,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a pink satin dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A pink satin dress appears in the video, as seen in the frames showing the person wearing a strapless pink satin gown (e.g., around the 22-24 second mark in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 19,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did a final white lace dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a final white lace dress appeared in the video. It is shown in the last sequence of frames (e.g., the frames starting from the 26th image in the provided sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 19,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the white off-shoulder dress shown before the pink satin dress?",
+      "gt": "Yes",
+      "pred": "Yes. The white off-shoulder dress (ruffled, non-lace) appears in frames ~24-26, while the pink satin dress appears in frames ~27-28. Thus, the white off-shoulder dress was shown before the pink satin dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 19,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Was the white off-shoulder dress shown before the final white lace dress?",
+      "gt": "Yes",
+      "pred": "Yes. The white off-shoulder dress (with the wide, ruffled neckline) appears in frames around 20–22, while the final white lace dress (off-shoulder with long sleeves and lace detailing) is shown in the last set of frames (23–27). Thus, the white off-shoulder dress was shown before the final white lace dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 19,
+      "kind": "sub",
+      "sub_index": 5,
+      "question": "Did the pink satin dress appear before the final white lace dress?",
+      "gt": "Yes",
+      "pred": "Yes. The pink satin dress (seen in frames 27-28) appears before the final white lace off-shoulder dress (seen in frames 29-32).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 20,
+      "kind": "target",
+      "question": "Did the yellow dress appear before both the red strapless dress and the blue evening dress?",
+      "gt": "Yes",
+      "pred": "To determine the order, we analyze the sequence of individual dress displays:  \n- The yellow dress appears first in the individual dress segments (6th frame in the sequence).  \n- The red strapless dress appears later (9th frame).  \n- The blue evening dress appears after the yellow dress (11th frame).  \n\nThus, the yellow dress appeared before both the red strapless dress and the blue evening dress.  \n\n**Answer:** Yes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 20,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a yellow dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a yellow dress appeared in the video (e.g., in the frames showing the person wearing a light yellow, sleeveless, full-length dress with a fitted bodice and flared skirt, starting around the 6th frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 20,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the yellow dress appear before the red strapless dress?",
+      "gt": "Yes",
+      "pred": "Yes. The yellow dress is shown in the sequence of individual dresses before the red strapless dress (e.g., the yellow dress appears in the 6th–8th images of the sequence, while the red strapless dress appears later in the 9th–10th images).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 20,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the yellow dress appear before the blue evening dress?",
+      "gt": "Yes",
+      "pred": "Yes, the yellow dress appeared before the blue evening dress. The yellow dress is shown in the sequence starting around the 6th frame (after the initial group of dresses), while the light blue evening dress appears later in the sequence (around the 11th frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 20,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the yellow dress shown first in the sequence?",
+      "gt": "Yes",
+      "pred": "Yes. The yellow dress is the first individual dress shown in the sequence (appearing in frames 6-8, after the initial group shot of all dresses).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 21,
+      "kind": "target",
+      "question": "Did the black lace dress appear after the white lace halter dress but before the pink one-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes. The white lace halter dress appears first (e.g., frames 14–15), followed by the black lace dress (e.g., frames 16–18), then the pink one-shoulder dress (e.g., frames 19–20). Thus, the black lace dress is after the white lace halter dress and before the pink one-shoulder dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 21,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a black lace dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a black lace dress appeared in the video (evident in the frames showing the black lace gown with long sleeves and a fitted silhouette).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 21,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the black lace dress appear after the white lace halter dress?",
+      "gt": "Yes",
+      "pred": "Yes. The white lace halter dress appears in the sequence (e.g., frames 14-15), and the black lace dress appears later (e.g., frames 16-18). Thus, the black lace dress came after the white lace halter dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 21,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the black lace dress appear before the pink one-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes. The black lace dress is shown in frames 16-18, and the pink one-shoulder dress appears in frames 19-20. Thus, the black lace dress appeared before the pink one-shoulder dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 21,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the black lace dress between the white lace halter dress and the pink one-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes. The white lace halter dress appears first (around frames 13–14), followed by the black lace dress (frames 15–17), then the pink one-shoulder dress (frames 18–19). Thus, the black lace dress is between the white lace halter dress and the pink one-shoulder dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 22,
+      "kind": "target",
+      "question": "Did the pink satin dress appear after the white off-shoulder dress but before the final white lace dress?",
+      "gt": "Yes",
+      "pred": "Yes. The white off-shoulder dress appears in frames 24–26, the pink satin dress in frames 27–28, and the final white lace dress in frames 29–32. Thus, the pink satin dress is after the white off-shoulder and before the final white lace.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 22,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a pink satin dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A pink satin dress appears in the video, as seen in the frames showing the person wearing a strapless pink satin gown (e.g., around the 22-24 second mark in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 22,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the pink satin dress appear after the white off-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes, the pink satin dress appeared after the white off-shoulder dress. The white off-shoulder dress is shown in the sequence of frames (e.g., around the 20th frame group), and the pink satin dress appears in the subsequent frames (e.g., around the 23rd frame group).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 22,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the pink satin dress appear before the final white lace dress?",
+      "gt": "Yes",
+      "pred": "Yes. The pink satin dress (seen in frames 27-28) appears before the final white lace off-shoulder dress (seen in frames 29-32).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 22,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the pink satin dress between the white off-shoulder dress and the final white lace dress?",
+      "gt": "Yes",
+      "pred": "Yes. The white off-shoulder dress appears in frames 22–24, the pink satin dress in frames 25–26, and the final white lace dress in frames 27–30. Thus, the pink satin dress is between them.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 23,
+      "kind": "target",
+      "question": "Was the pink one-shoulder dress between the black lace dress and the red embroidered dress?",
+      "gt": "Yes",
+      "pred": "Yes. The black lace dress appears first (around 16 - 18s), then the pink one - shoulder dress (around 19 - 20s), and then the red embroidered dress (around 21 - 23s). Therefore, the pink one - shoulder dress is between the black lace dress and the red embroidered dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 23,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a pink one-shoulder dress appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A pink one-shoulder dress with floral details appears in the video (evident in the sequence showing the pink dress with one-shoulder and floral embellishments).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 23,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the black lace dress appear before the pink one-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes. The black lace dress is shown in frames 16-18, and the pink one-shoulder dress appears in frames 19-20. Thus, the black lace dress appeared before the pink one-shoulder dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 23,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the pink one-shoulder dress appear before the red embroidered dress?",
+      "gt": "Yes",
+      "pred": "Yes. The pink one-shoulder dress is shown starting around the 20th frame, while the red embroidered dress appears later, starting around the 23rd frame.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 23,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the red embroidered dress appear after the pink one-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes, the red embroidered dress appeared after the pink one-shoulder dress. The pink one-shoulder dress is shown in frames featuring the light pink dress with floral details on one shoulder (e.g., the 15th–16th image group), and the red embroidered dress (with a high slit and floral embroidery) appears in subsequent frames (e.g., 19th–21st image group).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

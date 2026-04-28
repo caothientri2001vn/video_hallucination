@@ -1,0 +1,184 @@
+{
+  "question": "Was there another transformation after the heart-hand gesture?",
+  "pred": "The heart-hand gesture is described in event 8 (00:09-00:12) as \"makes hand gestures in anime outfit, including raising hands and pointing fingers near face.\" Looking at the frames following this gesture, I can see the person returns to the casual outfit with black cap and headphones around the neck. This indicates a transformation from the anime outfit back to the casual outfit occurred after the heart-hand gesture. While the Context states there are only 3 transformations total, the frames provide clear visual evidence of another transformation (anime → casual) after the heart-hand gesture, which aligns with the ground rule to trust the frames when they disagree with the Context.\n\nEvidence: frames show the person returning to the casual outfit (black cap, headphones) after the heart-hand gesture sequence\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "transform": 3,
+      "gesture": 3,
+      "pose": 1,
+      "hand_raise": 1
+    },
+    "events": [
+      {
+        "event_type": "pose",
+        "description": "stands still in casual outfit with blue hair, black cap, and headphones around neck",
+        "participants": [
+          "blue-hair person"
+        ],
+        "actor": "blue-hair person",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:01",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": ""
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "raises both hands to chest level with palms facing forward",
+        "participants": [
+          "blue-hair person"
+        ],
+        "actor": "blue-hair person",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 2,
+        "start_time": "00:01",
+        "end_time": "00:02",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": ""
+      },
+      {
+        "event_type": "transform",
+        "description": "undergoes visual transformation from casual outfit to anime-style outfit",
+        "participants": [
+          "blue-hair person"
+        ],
+        "actor": "blue-hair person",
+        "object_before": "casual outfit",
+        "object_after": "anime outfit",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 3,
+        "start_time": "00:02",
+        "end_time": "00:03",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": ""
+      },
+      {
+        "event_type": "gesture",
+        "description": "makes hand gestures while wearing anime outfit with long blue hair and bunny ears",
+        "participants": [
+          "blue-hair person"
+        ],
+        "actor": "blue-hair person",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 4,
+        "start_time": "00:03",
+        "end_time": "00:05",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": ""
+      },
+      {
+        "event_type": "transform",
+        "description": "undergoes visual transformation from anime outfit back to casual outfit",
+        "participants": [
+          "blue-hair person"
+        ],
+        "actor": "blue-hair person",
+        "object_before": "anime outfit",
+        "object_after": "casual outfit",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 5,
+        "start_time": "00:05",
+        "end_time": "00:06",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": ""
+      },
+      {
+        "event_type": "gesture",
+        "description": "makes hand gestures with casual outfit, including raising hands to shoulder level",
+        "participants": [
+          "blue-hair person"
+        ],
+        "actor": "blue-hair person",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 6,
+        "start_time": "00:06",
+        "end_time": "00:08",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": ""
+      },
+      {
+        "event_type": "transform",
+        "description": "undergoes visual transformation from casual outfit to anime-style outfit",
+        "participants": [
+          "blue-hair person"
+        ],
+        "actor": "blue-hair person",
+        "object_before": "casual outfit",
+        "object_after": "anime outfit",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 7,
+        "start_time": "00:08",
+        "end_time": "00:09",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": ""
+      },
+      {
+        "event_type": "gesture",
+        "description": "makes hand gestures in anime outfit, including raising hands and pointing fingers near face",
+        "participants": [
+          "blue-hair person"
+        ],
+        "actor": "blue-hair person",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 8,
+        "start_time": "00:09",
+        "end_time": "00:12",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": ""
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "",
+        "event_index_range": [
+          1,
+          8
+        ]
+      }
+    ]
+  }
+}

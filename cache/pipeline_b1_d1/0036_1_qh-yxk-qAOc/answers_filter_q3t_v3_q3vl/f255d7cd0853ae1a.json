@@ -1,0 +1,117 @@
+{
+  "question": "Does the player in teal shirt number 27 score goal?",
+  "pred": "Evidence: The frames show the ball entering the goal, followed by the teal uniform player #27 celebrating with arms raised while teammates join him, while opposing players in white/red uniforms appear dejected on the field. The Context confirms \"Player in teal uniform with number 27 celebrates with arms raised high\" and describes teammates embracing him.\n\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "celebration",
+      "description": "Player in teal uniform with number 27 celebrates with arms raised high",
+      "participants": [
+        "teal uniform player"
+      ],
+      "actor": "teal uniform player",
+      "on_screen_text": [
+        {
+          "text": "AIA",
+          "location": "jersey"
+        },
+        {
+          "text": "27",
+          "location": "jersey_number"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 9,
+      "start_time": "00:15",
+      "end_time": "00:17",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Channel Intro"
+    },
+    {
+      "event_type": "hug",
+      "description": "Teammate in teal uniform with number 20 embraces the celebrating player from behind",
+      "participants": [
+        "teal uniform player with 20",
+        "teal uniform player with 27"
+      ],
+      "actor": "teal uniform player with 20",
+      "on_screen_text": [
+        {
+          "text": "AIA",
+          "location": "jersey"
+        },
+        {
+          "text": "20",
+          "location": "jersey_number"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "middle",
+      "event_index": 10,
+      "start_time": "00:17",
+      "end_time": "00:19",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Channel Intro"
+    },
+    {
+      "event_type": "hug",
+      "description": "Additional teammate in teal uniform embraces the celebrating player while others join the celebration",
+      "participants": [
+        "teal uniform player with 27",
+        "teammate in teal uniform"
+      ],
+      "actor": "teammate in teal uniform",
+      "on_screen_text": [
+        {
+          "text": "AIA",
+          "location": "jersey"
+        },
+        {
+          "text": "4",
+          "location": "jersey_number"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "middle",
+      "event_index": 11,
+      "start_time": "00:19",
+      "end_time": "00:22",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Channel Intro"
+    },
+    {
+      "event_type": "react",
+      "description": "Players in white and red uniforms lie on the field appearing dejected",
+      "participants": [
+        "white and red uniform player"
+      ],
+      "actor": "white and red uniform player",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "middle",
+      "event_index": 12,
+      "start_time": "00:22",
+      "end_time": "00:24",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Channel Intro"
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "video_name": "0036_4_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 17.0,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "gemini-3-flash-preview",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:04",
+          "event_type": "game",
+          "description": "The red-shirt man (number 20) dribbles the ball toward the goal while being pursued by white-shirt defenders.",
+          "participants": [
+            "red-shirt man",
+            "white-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "object": "white ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:04",
+          "local_end": "00:05",
+          "event_type": "throw",
+          "description": "The red-shirt man (number 20) kicks the ball with the outside of his right foot toward the top left corner of the goal.",
+          "participants": [
+            "red-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "object": "white ball",
+          "on_screen_text": [
+            {
+              "text": "QUARESMA",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:06",
+          "event_type": "game",
+          "description": "The ball flies through the air toward the goal as the blue-shirt goalkeeper dives to his right.",
+          "participants": [
+            "blue-shirt man"
+          ],
+          "actor": "blue-shirt man",
+          "object": "white ball",
+          "on_screen_text": [
+            {
+              "text": "QUARESMA",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:07",
+          "event_type": "game",
+          "description": "The ball enters the top left corner of the net, scoring a goal.",
+          "participants": [
+            "blue-shirt man"
+          ],
+          "actor": "blue-shirt man",
+          "object": "white ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "QUARESMA",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:11",
+          "event_type": "celebration",
+          "description": "The red-shirt man (number 20) runs toward the sideline with his arms raised in celebration, joined by teammates.",
+          "participants": [
+            "red-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "on_screen_text": [
+            {
+              "text": "QUARESMA",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:11",
+          "local_end": "00:13",
+          "event_type": "graphic",
+          "description": "A slow-motion replay from a top-down angle shows the red-shirt man (number 20) kicking the ball with the outside of his foot.",
+          "participants": [
+            "red-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "object": "white ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match Replay",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:13",
+          "local_end": "00:15",
+          "event_type": "graphic",
+          "description": "A slow-motion replay from a low angle shows the red-shirt man (number 20) striking the ball past white-shirt defenders.",
+          "participants": [
+            "red-shirt man",
+            "white-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "object": "white ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match Replay",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 17.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:17",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:16",
+          "event_type": "look",
+          "description": "the white-jersey player (number 19) looks toward the center of the field",
+          "participants": [
+            "white-jersey player (number 19)",
+            "red-jersey player"
+          ],
+          "actor": "white-jersey player (number 19)",
+          "object": "soccer ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "soccer match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:16",
+          "local_end": "00:17",
+          "event_type": "jump",
+          "description": "the red-jersey player jumps to head the ball",
+          "participants": [
+            "red-jersey player",
+            "white-jersey player (number 19)"
+          ],
+          "actor": "red-jersey player",
+          "object": "soccer ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "soccer match",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:17",
+          "local_end": "00:17",
+          "event_type": "save",
+          "description": "the teal-jersey goalkeeper dives to his left to save the ball",
+          "participants": [
+            "teal-jersey goalkeeper"
+          ],
+          "actor": "teal-jersey goalkeeper",
+          "object": "soccer ball",
+          "outcome": "hit",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "soccer match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

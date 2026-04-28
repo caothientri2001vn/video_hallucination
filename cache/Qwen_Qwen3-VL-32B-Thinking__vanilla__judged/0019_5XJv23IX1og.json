@@ -1,0 +1,192 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0019_5XJv23IX1og.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0019_5XJv23IX1og.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0019_5XJv23IX1og",
+    "n_target": 6,
+    "n_sub": 12,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.8333333333333334,
+    "sub_accuracy": 0.75
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Did the purple shirt boy reach the net first?",
+      "gt": "Yes",
+      "pred": "To determine if the purple - shirt boy reached the net first, we analyze the relevant frames:\n\n- The purple - shirt boy is Cal Plohotos (identified by his stats screen in frame 19, where he wears a purple “NINJA CAL” shirt).\n- In frame 22, a boy in a light - blue shirt (Caleb Brown) is shown on the net, while the purple - shirt boy (Cal Plohotos) is behind him. \n- This sequence indicates the light - blue - shirt boy reached the net before the purple - shirt boy.\n\nThus, the purple - shirt boy did not reach the net first. \n\nAnswer: No",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a boy wearing a purple shirt in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A boy wearing a purple shirt is visible in multiple frames, including the stats screen for Cal Plohoros (e.g., frame 17) and action sequences on the obstacle course (e.g., frame 10, 18, 24).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the purple shirt boy reach the net?",
+      "gt": "Yes",
+      "pred": "To determine if the purple shirt boy (Cal Plohors) reached the net, we analyze the video frames:  \n\n- The purple shirt boy is identified as Cal Plohors in the stats frame (image 19).  \n- Frames showing the net obstacle (e.g., image 20, 22) depict competitors in white and gray shirts, not the purple shirt.  \n- No frame shows Cal Plohors (in the purple shirt) successfully reaching the net.  \n\nThus, the purple shirt boy did not reach the net.  \n\n**Answer:** No.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Did the red shirt boy reach the net first?",
+      "gt": "No",
+      "pred": "No. In the video, the boy in the checkered robe (Josh Auer) is positioned ahead of the boy in the red shirt (Tate Allen) as they approach obstacles. For example, in frame 00:01, the red shirt boy",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a boy wearing a red shirt in the video?",
+      "gt": "Yes",
+      "pred": "Yes. For example, in the second frame (showing two boys on a platform), one boy is wearing a red shirt. Additionally, the stats screen for Tate Allen (third frame) shows him in a red shirt, and other frames also depict boys in red shirts.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the red shirt boy reach the net?",
+      "gt": "Yes",
+      "pred": "Yes, the red shirt boy (Tate Allen) reached the net. This can be observed in frame 6, where he is seen near the net obstacle.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Did the purple shirt boy reach the curved wall first?",
+      "gt": "Yes",
+      "pred": "Yes. In the frame showing two boys running (frame 7), the boy in the purple shirt is ahead of the boy in the red shirt, indicating he reached the curved wall first.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a curved wall in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there was a curved ramp (a type of curved wall structure) visible in the video. This can be seen in the frame showing participants running on a curved ramp (around the 8th image in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the purple shirt boy reach the curved wall?",
+      "gt": "Yes",
+      "pred": "Yes. The boy in the purple shirt (Cal Plohoros) is shown on the curved wall in the course sequence (e.g., frame 26: two boys, one in white shirt and one in gray tank top, on the curved wall structure). This confirms he reached the curved wall.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Did the red shirt boy reach the curved wall first?",
+      "gt": "No",
+      "pred": "So, let's check the video. In the second frame, there's a boy in a red shirt and another in a plaid robe. The red shirt boy is on a lower platform, the plaid one is on the main platform. Then, looking at the sequence, when they start, the red shirt boy (Tate Allen) is running. Let's see the timing. The second image shows the red shirt boy starting, and the plaid one (Josh Auer) is ahead? Wait, no, in the second frame, the red shirt boy is on the left, jumping up, and the plaid one is walking on the platform. Then, in the later frames, when they go through obstacles, we need to see who reaches the curved wall first. The curved wall is shown in frame 8. In frame 8, the red shirt boy (Tate) and the purple shirt (Caleb) are on the ramps. Wait, but the question is about the red shirt boy and the plaid one. Let's check frame 8: \"NINJA WARRIOR JUNIOR\" with two boys on the curved wall. The red shirt boy is on the left ramp, purple on the right. So the red shirt boy (Tate) is on the left, but is he first? Wait, no, the plaid robe boy (Josh Auer) was in the first part. Let's check the stats: Tate Allen (red shirt) and Josh Auer (plaid). In the second frame, the red shirt boy is running towards the platform, and the plaid boy is already on the platform. So the plaid boy (Josh) was ahead. Wait, but the question is \"Did the red shirt boy reach the curved wall first?\" Let's check frame 8: the two boys on the curved wall. The red shirt boy (Tate) and the other (purple, Caleb). But the plaid boy (Josh) was in the first part. Wait, maybe the red shirt boy is Tate, and in the first part, he's running. Let's check the order. In the second frame (00:02), Tate (red shirt) is on the left, jumping onto the platform, and Josh (plaid) is on the platform. So Josh is already there, so Tate is behind. Then, in the next frames, when they go through obstacles, the plaid boy (Josh) might have been first. Wait, but the question is about the curved wall. Let's check frame 8: \"NINJA WARRIOR JUNIOR\" with two boys on the curved wall. The red shirt boy (Tate) is on the left, and the purple shirt (Caleb) on the right. But the plaid boy (Josh) was in the first segment. Wait, maybe the plaid boy (Josh) is the one in the first segment, and the red shirt boy (Tate) is in the same segment. Let's check the stats: Tate Allen (4'10\", 4-0) and Josh Auer (4'4\", 4-0). In the second frame, the red shirt boy is Tate, and the plaid one is Josh. The second frame shows Tate (red shirt) is on the left, jumping, and Josh (plaid) is on the platform. So Josh is ahead. Then, in the obstacles, when they go through, the plaid boy (Josh) would be first. But the question is \"Did the red shirt boy reach the curved wall first?\" So we need to see if Tate (red shirt) was first. Let's check the frames. Frame 8: two boys on the curved wall. The one in red shirt is Tate, but is he first? Wait, no, in frame 8, the boy in the red shirt (Tate) is on the left, but the other boy (in purple) is on the right. But the plaid boy (Josh) was in the first segment. Maybe the red shirt boy (Tate) didn't reach the curved wall first. Wait, let's check the video sequence. The second frame (00:02) shows Tate (red shirt) and Josh (plaid) starting. Then, in the next frames, when they go through the obstacles, the plaid boy (Josh) might be ahead. For example, in frame 6, there's a boy in red shirt (Tate) and another in purple. Wait, maybe the curved wall is in frame 8. In frame 8, the two boys on the curved wall: the one in red shirt (Tate) and the one in purple (Caleb). But the plaid boy (Josh) was in the first part. Wait, maybe the red shirt boy (Tate) was not the first to reach the curved wall. Let's check the frames again. The second frame (",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the red shirt boy reach the curved wall?",
+      "gt": "Yes",
+      "pred": "Yes. In frame 8 (showing two boys on a curved wall obstacle), the boy in the red shirt is seen on the curved wall.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the first person to reach the curved wall wearing the red shirt?",
+      "gt": "No",
+      "pred": "Yes. In the frame showing the curved wall obstacle (8th image in the sequence), the person wearing the red shirt is the first to reach the curved wall.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Did the red shirt boy hit the button first?",
+      "gt": "Yes",
+      "pred": "Yes. In the frame showing the starting platform (second image), the boy in the red shirt (Tate Allen) is positioned to initiate the run, and the sequence of events in the competition format indicates he hit the button first.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a button in the video?",
+      "gt": "Yes",
+      "pred": "Yes. In the final frames (e.g., timestamp ~31-32 seconds), there is a \"Click Me\" button with an arrow pointing to it on the screen.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the first person to hit the button wearing red?",
+      "gt": "Yes",
+      "pred": "Yes, the first person to hit the button was wearing red. This is evident from the second frame (00:01) where the individual in the red shirt (Tate Allen) is positioned on the starting platform, indicating they were the first to initiate the course.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Did the purple shirt boy hit the button first?",
+      "gt": "No",
+      "pred": "No. In the \"FINALISTS: AGES 11-12\" bracket (frame 28), Caleb Brown (in light blue) is highlighted as a finalist, while Cal Plohotos (in purple) is not, indicating Caleb completed the course first and hit the button first.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a purple shirt boy in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there was a boy in a purple shirt in the video. For example, the frame showing Cal Plohoros' stats (with \"NINJA CAL\" on his shirt) and action shots of competitors include a boy in a purple shirt.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was there a button in the video?",
+      "gt": "Yes",
+      "pred": "Yes. In the final frames (e.g., timestamp ~31-32 seconds), there is a \"Click Me\" button with an arrow pointing to it on the screen.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

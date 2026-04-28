@@ -1,0 +1,2480 @@
+{
+  "video_name": "0028__wNtNtOlJQk.mp4",
+  "video_duration_sec": 336.81666666666666,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:08",
+          "event_type": "turn_knob",
+          "description": "A hand turns a circular cardboard knob on the left side of the NBA-branded box, causing yellow basketballs to emerge from the lower left drawer",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow basketballs",
+          "outcome": "dispensed",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:08",
+          "local_end": "00:11",
+          "event_type": "camera_change",
+          "description": "The camera angle shifts to show the full vertical arrangement of white basketball hoops on the cardboard game structure",
+          "participants": [],
+          "actor": "camera",
+          "object": "",
+          "outcome": "repositioned",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:11",
+          "local_end": "00:12",
+          "event_type": "pick_up",
+          "description": "A hand picks up a yellow basketball from the lower left drawer of the cardboard game",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow basketball",
+          "outcome": "selected",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:12",
+          "local_end": "00:13",
+          "event_type": "place_object",
+          "description": "The hand places the yellow basketball on the launching mechanism at the bottom center of the cardboard game",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow basketball",
+          "outcome": "positioned",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:13",
+          "local_end": "00:14",
+          "event_type": "launch",
+          "description": "The hand presses the blue launch button to send the yellow basketball up the track toward the white hoops",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow basketball",
+          "outcome": "launched",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:14",
+          "local_end": "00:15",
+          "event_type": "score",
+          "description": "The yellow basketball goes through one of the middle white hoops, and the text '+10' appears on screen",
+          "participants": [],
+          "actor": "game mechanism",
+          "object": "yellow basketball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "+10",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 30.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:30",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:17",
+          "event_type": "place",
+          "description": "places a yellow ball on the launcher mechanism",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow ball",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:17",
+          "local_end": "00:19",
+          "event_type": "press",
+          "description": "presses down on the launcher lever to activate the mechanism",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "launcher lever",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:19",
+          "local_end": "00:21",
+          "event_type": "score",
+          "description": "the yellow ball goes through the left hoop of the fourth row from the top",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow ball",
+          "outcome": "scored",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:21",
+          "local_end": "00:23",
+          "event_type": "scoreboard_update",
+          "description": "displays '+20' score indicator on screen",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "on_screen_text": [
+            {
+              "text": "+20",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:23",
+          "local_end": "00:25",
+          "event_type": "fall",
+          "description": "the yellow ball falls back down to the collection area at the bottom",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow ball",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:25",
+          "local_end": "00:27",
+          "event_type": "retrieve",
+          "description": "retrieves the yellow ball from the collection area at the bottom",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow ball",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:27",
+          "local_end": "00:29",
+          "event_type": "place",
+          "description": "places a yellow ball on the launcher mechanism again",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow ball",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:29",
+          "local_end": "00:30",
+          "event_type": "press",
+          "description": "presses down on the launcher lever to activate the mechanism again",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "launcher lever",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 2,
+      "chunk_start_sec": 30.0,
+      "chunk_end_sec": 45.0,
+      "chunk_start_mmss": "00:30",
+      "chunk_end_mmss": "00:45",
+      "events": [
+        {
+          "local_start": "00:30",
+          "local_end": "00:32",
+          "event_type": "manipulate",
+          "description": "A hand presses down on the blue and white lever of the cardboard basketball game",
+          "participants": [],
+          "actor": "hand",
+          "object": "blue and white lever",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:32",
+          "local_end": "00:36",
+          "event_type": "launch",
+          "description": "The yellow basketball is launched upward from the figure's hand through the cardboard game structure",
+          "participants": [],
+          "actor": "game mechanism",
+          "object": "yellow basketball",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:36",
+          "local_end": "00:38",
+          "event_type": "score",
+          "description": "The yellow basketball passes through the topmost center white basket",
+          "participants": [],
+          "actor": "basketball",
+          "object": "yellow basketball",
+          "outcome": "in",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:38",
+          "local_end": "00:40",
+          "event_type": "graphic",
+          "description": "Text appears on screen showing \"+50 SLAM\" on the left and \"+50 DUNK\" on the right",
+          "participants": [],
+          "actor": "graphic system",
+          "on_screen_text": [
+            {
+              "text": "+50 SLAM",
+              "location": "other"
+            },
+            {
+              "text": "+50 DUNK",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:40",
+          "local_end": "00:43",
+          "event_type": "graphic_change",
+          "description": "The on-screen text \"+50 SLAM\" and \"+50 DUNK\" changes from bright yellow to a faded appearance",
+          "participants": [],
+          "actor": "graphic system",
+          "object_before": "yellow text",
+          "object_after": "faded yellow text",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:43",
+          "local_end": "00:44",
+          "event_type": "graphic_change",
+          "description": "The on-screen text \"+50 SLAM\" and \"+50 DUNK\" disappears completely",
+          "participants": [],
+          "actor": "graphic system",
+          "object_before": "faded yellow text",
+          "object_after": "not_visible",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:44",
+          "local_end": "00:45",
+          "event_type": "hand_raise",
+          "description": "A hand gives a thumbs up gesture in front of the cardboard game",
+          "participants": [],
+          "actor": "hand",
+          "segment_boundary": "end",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 3,
+      "chunk_start_sec": 45.0,
+      "chunk_end_sec": 60.0,
+      "chunk_start_mmss": "00:45",
+      "chunk_end_mmss": "01:00",
+      "events": [
+        {
+          "local_start": "00:45",
+          "local_end": "00:55",
+          "event_type": "graphic",
+          "description": "Text '5 CM HEIGHT CARDBOARD STRIPS' appears on screen",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "5 CM HEIGHT CARDBOARD STRIPS",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Structure Assembly",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:46",
+          "local_end": "00:52",
+          "event_type": "place",
+          "description": "Multiple cardboard strips are placed one by one along the bottom of the white surface",
+          "participants": [],
+          "actor": "",
+          "object": "brown cardboard strips",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Structure Assembly",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:59",
+          "local_end": "00:59",
+          "event_type": "graphic",
+          "description": "Text 'PLACE ABOVE THIS LINE' appears on screen with a finger pointing to a specific line on the cardboard",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "PLACE ABOVE THIS LINE",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Structure Assembly",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:53",
+          "local_end": "01:00",
+          "event_type": "adjust",
+          "description": "Hands adjust and position the cardboard pieces to assemble the structure",
+          "participants": [
+            "unidentified person"
+          ],
+          "actor": "unidentified person",
+          "object": "brown cardboard structure",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Structure Assembly",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 4,
+      "chunk_start_sec": 60.0,
+      "chunk_end_sec": 75.0,
+      "chunk_start_mmss": "01:00",
+      "chunk_end_mmss": "01:15",
+      "events": [
+        {
+          "local_start": "01:00",
+          "local_end": "01:02",
+          "event_type": "appear",
+          "description": "A yellow ping pong ball appears on the left side of the white surface",
+          "object_after": "yellow ball",
+          "segment_boundary": "start",
+          "segment_label": "Ping Pong Ball Decoration",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "01:00",
+          "local_end": "01:01",
+          "event_type": "on_screen_text",
+          "description": "The text 'BALL' appears on the left side of the screen",
+          "on_screen_text": [
+            {
+              "text": "BALL",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Ping Pong Ball Decoration",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "01:01",
+          "local_end": "01:03",
+          "event_type": "on_screen_text",
+          "description": "The on-screen text changes to 'PING PONG BALL'",
+          "on_screen_text": [
+            {
+              "text": "PING PONG BALL",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Ping Pong Ball Decoration",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "01:02",
+          "local_end": "01:04",
+          "event_type": "appear",
+          "description": "A black marker appears on the right side of the white surface",
+          "object_after": "black marker",
+          "segment_boundary": "start",
+          "segment_label": "Ping Pong Ball Decoration",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "01:03",
+          "local_end": "01:05",
+          "event_type": "on_screen_text",
+          "description": "The text 'BLACK MARKER' appears on the right side of the screen",
+          "on_screen_text": [
+            {
+              "text": "BLACK MARKER",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Ping Pong Ball Decoration",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "01:04",
+          "local_end": "01:07",
+          "event_type": "pick_up",
+          "description": "A hand picks up the yellow ping pong ball",
+          "object": "yellow ball",
+          "actor": "hand",
+          "segment_boundary": "middle",
+          "segment_label": "Ping Pong Ball Decoration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:05",
+          "local_end": "01:07",
+          "event_type": "pick_up",
+          "description": "A hand picks up the black marker",
+          "object": "black marker",
+          "actor": "hand",
+          "segment_boundary": "middle",
+          "segment_label": "Ping Pong Ball Decoration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:07",
+          "local_end": "01:09",
+          "event_type": "draw",
+          "description": "A hand begins drawing the first black line on the yellow ping pong ball",
+          "object": "yellow ball",
+          "actor": "hand",
+          "segment_boundary": "middle",
+          "segment_label": "Ping Pong Ball Decoration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:09",
+          "local_end": "01:11",
+          "event_type": "draw",
+          "description": "The hand continues drawing a second black line on the yellow ping pong ball",
+          "object": "yellow ball",
+          "actor": "hand",
+          "segment_boundary": "middle",
+          "segment_label": "Ping Pong Ball Decoration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:11",
+          "local_end": "01:13",
+          "event_type": "draw",
+          "description": "The hand draws additional black lines to create the basketball pattern on the yellow ping pong ball",
+          "object": "yellow ball",
+          "actor": "hand",
+          "segment_boundary": "middle",
+          "segment_label": "Ping Pong Ball Decoration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:13",
+          "local_end": "01:15",
+          "event_type": "draw",
+          "description": "The hand completes the basketball pattern on the yellow ping pong ball with final black lines",
+          "object": "yellow ball",
+          "actor": "hand",
+          "segment_boundary": "middle",
+          "segment_label": "Ping Pong Ball Decoration",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 5,
+      "chunk_start_sec": 75.0,
+      "chunk_end_sec": 90.0,
+      "chunk_start_mmss": "01:15",
+      "chunk_end_mmss": "01:30",
+      "events": [
+        {
+          "local_start": "01:15.0",
+          "local_end": "01:15.5",
+          "event_type": "place",
+          "description": "a hand places an orange basketball into the top of the cardboard ramp",
+          "participants": [],
+          "actor": "hand",
+          "object": "orange basketball",
+          "segment_boundary": "middle",
+          "segment_label": "Ramp Ball Challenge",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:15.5",
+          "local_end": "01:16.5",
+          "event_type": "roll",
+          "description": "an orange basketball rolls down the cardboard ramp and exits at the bottom",
+          "participants": [],
+          "actor": "none",
+          "object_before": "orange basketball",
+          "object_after": "orange basketball",
+          "segment_boundary": "middle",
+          "segment_label": "Ramp Ball Challenge",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:16.5",
+          "local_end": "01:17.0",
+          "event_type": "place",
+          "description": "a hand places an orange basketball into the top of the cardboard ramp",
+          "participants": [],
+          "actor": "hand",
+          "object": "orange basketball",
+          "segment_boundary": "middle",
+          "segment_label": "Ramp Ball Challenge",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:17.0",
+          "local_end": "01:18.0",
+          "event_type": "roll",
+          "description": "an orange basketball rolls down the cardboard ramp and exits at the bottom",
+          "participants": [],
+          "actor": "none",
+          "object_before": "orange basketball",
+          "object_after": "orange basketball",
+          "segment_boundary": "middle",
+          "segment_label": "Ramp Ball Challenge",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:18.0",
+          "local_end": "01:18.5",
+          "event_type": "place",
+          "description": "a hand places an orange basketball into the top of the cardboard ramp",
+          "participants": [],
+          "actor": "hand",
+          "object": "orange basketball",
+          "segment_boundary": "middle",
+          "segment_label": "Ramp Ball Challenge",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:18.5",
+          "local_end": "01:19.5",
+          "event_type": "roll",
+          "description": "an orange basketball rolls down the cardboard ramp and exits at the bottom",
+          "participants": [],
+          "actor": "none",
+          "object_before": "orange basketball",
+          "object_after": "orange basketball",
+          "segment_boundary": "middle",
+          "segment_label": "Ramp Ball Challenge",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:19.5",
+          "local_end": "01:20.0",
+          "event_type": "place",
+          "description": "a hand places an orange basketball into the top of the cardboard ramp",
+          "participants": [],
+          "actor": "hand",
+          "object": "orange basketball",
+          "segment_boundary": "middle",
+          "segment_label": "Ramp Ball Challenge",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:20.0",
+          "local_end": "01:21.0",
+          "event_type": "roll",
+          "description": "an orange basketball rolls down the cardboard ramp and exits at the bottom",
+          "participants": [],
+          "actor": "none",
+          "object_before": "orange basketball",
+          "object_after": "orange basketball",
+          "segment_boundary": "middle",
+          "segment_label": "Ramp Ball Challenge",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:21.0",
+          "local_end": "01:21.5",
+          "event_type": "place",
+          "description": "a hand places an orange basketball into the top of the cardboard ramp",
+          "participants": [],
+          "actor": "hand",
+          "object": "orange basketball",
+          "segment_boundary": "middle",
+          "segment_label": "Ramp Ball Challenge",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:21.5",
+          "local_end": "01:22.5",
+          "event_type": "roll",
+          "description": "an orange basketball rolls down the cardboard ramp and exits at the bottom",
+          "participants": [],
+          "actor": "none",
+          "object_before": "orange basketball",
+          "object_after": "orange basketball",
+          "segment_boundary": "middle",
+          "segment_label": "Ramp Ball Challenge",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 6,
+      "chunk_start_sec": 90.0,
+      "chunk_end_sec": 105.0,
+      "chunk_start_mmss": "01:30",
+      "chunk_end_mmss": "01:45",
+      "events": [
+        {
+          "local_start": "01:30",
+          "local_end": "01:33",
+          "event_type": "ball_exit",
+          "description": "A yellow ball exits the cardboard structure through the side opening",
+          "participants": [],
+          "actor": "yellow ball",
+          "object": "yellow ball",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Ball Maze",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:32",
+          "local_end": "01:35",
+          "event_type": "on_screen_text",
+          "description": "Text appears on screen reading 'MAKE SQUARE HOLE OF 5 CM FOR OUTLET'",
+          "participants": [],
+          "actor": "on_screen_text",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "MAKE SQUARE HOLE OF 5 CM FOR OUTLET",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Ball Maze",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:33",
+          "local_end": "01:37",
+          "event_type": "point",
+          "description": "A hand points to the square hole on the left side of the cardboard structure",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "cardboard structure",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Ball Maze",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:37",
+          "local_end": "01:39",
+          "event_type": "hold_up",
+          "description": "A hand holds up a small yellow basketball-like ball in front of the cardboard structure",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow ball",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Ball Maze",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:39",
+          "local_end": "01:41",
+          "event_type": "drop_ball",
+          "description": "The hand drops the yellow ball into the top opening of the cardboard structure",
+          "participants": [
+            "hand",
+            "yellow ball",
+            "cardboard structure"
+          ],
+          "actor": "hand",
+          "object": "yellow ball",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Ball Maze",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:41",
+          "local_end": "01:43",
+          "event_type": "ball_roll",
+          "description": "The yellow ball rolls through the internal path of the cardboard structure",
+          "participants": [
+            "yellow ball",
+            "cardboard structure"
+          ],
+          "actor": "yellow ball",
+          "object": "yellow ball",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Ball Maze",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:43",
+          "local_end": "01:44",
+          "event_type": "ball_exit",
+          "description": "The yellow ball exits through the square hole on the left side of the cardboard structure",
+          "participants": [
+            "yellow ball",
+            "cardboard structure"
+          ],
+          "actor": "yellow ball",
+          "object": "yellow ball",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Ball Maze",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:44",
+          "local_end": "01:45",
+          "event_type": "place_cardboard",
+          "description": "A hand places a rectangular cardboard piece into the structure from the left side",
+          "participants": [
+            "hand",
+            "cardboard piece"
+          ],
+          "actor": "hand",
+          "object": "cardboard piece",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Ball Maze",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 7,
+      "chunk_start_sec": 105.0,
+      "chunk_end_sec": 120.0,
+      "chunk_start_mmss": "01:45",
+      "chunk_end_mmss": "02:00",
+      "events": [
+        {
+          "local_start": "01:45",
+          "local_end": "01:52",
+          "event_type": "game",
+          "description": "A person drops yellow basketballs into the cardboard structure and they roll through the compartments",
+          "participants": [],
+          "actor": "unidentified person",
+          "object": "yellow basketballs",
+          "outcome": "in",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Ball Track Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:53",
+          "local_end": "01:55",
+          "event_type": "graphic",
+          "description": "A flat cardboard piece with measurements is shown on screen",
+          "participants": [],
+          "actor": "",
+          "object": "cardboard piece",
+          "on_screen_text": [
+            {
+              "text": "20 CM",
+              "location": "other"
+            },
+            {
+              "text": "30 CM",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Material Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:56",
+          "local_end": "01:57",
+          "event_type": "hold_up",
+          "description": "A hand holds up a small piece of pencil",
+          "participants": [],
+          "actor": "unidentified person",
+          "object": "pencil piece",
+          "on_screen_text": [
+            {
+              "text": "PIECE OF PENCIL",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Material Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:57",
+          "local_end": "01:58",
+          "event_type": "place",
+          "description": "The hand places the pencil piece onto the cardboard surface",
+          "participants": [],
+          "actor": "unidentified person",
+          "object": "pencil piece",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Material Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:58",
+          "local_end": "02:00",
+          "event_type": "graphic",
+          "description": "A cardboard cutout shaped like a circle with a tapered end is shown",
+          "participants": [],
+          "actor": "",
+          "object": "cardboard cutout",
+          "on_screen_text": [
+            {
+              "text": "10 CM DIAMETER CIRCLE WITH TAPER END",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Material Demonstration",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 8,
+      "chunk_start_sec": 120.0,
+      "chunk_end_sec": 135.0,
+      "chunk_start_mmss": "02:00",
+      "chunk_end_mmss": "02:15",
+      "events": [
+        {
+          "local_start": "02:00",
+          "local_end": "02:04",
+          "event_type": "title_card",
+          "description": "Text \"6 CM LENGTH WOODEN STICKS\" appears on screen above cardboard structure with two cubes",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "6 CM LENGTH WOODEN STICKS",
+              "location": "title"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:04",
+          "local_end": "02:07",
+          "event_type": "hand_move",
+          "description": "Hand moves wooden sticks toward the left cardboard cube",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "wooden sticks",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:07",
+          "local_end": "02:10",
+          "event_type": "insert_object",
+          "description": "Wooden stick inserted into the hole of the left cardboard cube",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "wooden stick",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:10",
+          "local_end": "02:15",
+          "event_type": "push_object",
+          "description": "Wooden stick pushed through both cardboard cubes, connecting them",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "wooden stick",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 9,
+      "chunk_start_sec": 135.0,
+      "chunk_end_sec": 150.0,
+      "chunk_start_mmss": "02:15",
+      "chunk_end_mmss": "02:30",
+      "events": [
+        {
+          "local_start": "02:15",
+          "local_end": "02:19",
+          "event_type": "apply_glue",
+          "description": "applies hot glue to the joint between the left and right cardboard box structures",
+          "participants": [
+            "unidentified person"
+          ],
+          "actor": "unidentified person",
+          "object": "hot glue gun",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Model Construction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:19",
+          "local_end": "02:23",
+          "event_type": "place_object",
+          "description": "places a vertical popsicle stick into the glued joint between the left and right cardboard box structures",
+          "participants": [
+            "unidentified person"
+          ],
+          "actor": "unidentified person",
+          "object": "popsicle stick",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Model Construction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:23",
+          "local_end": "02:27",
+          "event_type": "adjust_object",
+          "description": "adjusts the vertical popsicle stick in the joint between the left and right cardboard box structures to ensure proper alignment",
+          "participants": [
+            "unidentified person"
+          ],
+          "actor": "unidentified person",
+          "object": "popsicle stick",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Model Construction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:27",
+          "local_end": "02:30",
+          "event_type": "apply_glue",
+          "description": "applies additional hot glue to secure the vertical popsicle stick between the left and right cardboard box structures",
+          "participants": [
+            "unidentified person"
+          ],
+          "actor": "unidentified person",
+          "object": "hot glue gun",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Model Construction",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 10,
+      "chunk_start_sec": 150.0,
+      "chunk_end_sec": 165.0,
+      "chunk_start_mmss": "02:30",
+      "chunk_end_mmss": "02:45",
+      "events": [
+        {
+          "local_start": "02:30",
+          "local_end": "02:33",
+          "event_type": "pull",
+          "description": "A hand pulls back the launching arm (wooden stick with blue bottle cap) to create tension in the red rubber band",
+          "participants": [
+            "hands"
+          ],
+          "actor": "hands",
+          "object": "blue bottle cap, wooden stick, red rubber band",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Catapult",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:33",
+          "local_end": "02:35",
+          "event_type": "release",
+          "description": "The hand releases the launching arm after pulling it back against the rubber band tension",
+          "participants": [
+            "hands"
+          ],
+          "actor": "hands",
+          "object": "blue bottle cap, wooden stick",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Catapult",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:35",
+          "local_end": "02:37",
+          "event_type": "launch",
+          "description": "The launching arm swings forward rapidly, propelling the small metallic ball",
+          "participants": [
+            "hands"
+          ],
+          "actor": "catapult mechanism",
+          "object": "small metallic ball",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Catapult",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:37",
+          "local_end": "02:39",
+          "event_type": "hit",
+          "description": "The launched metallic ball strikes the cardboard target structure",
+          "participants": [
+            "hands"
+          ],
+          "actor": "launched metallic ball",
+          "object": "small metallic ball, cardboard target",
+          "outcome": "hit",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Catapult",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:39",
+          "local_end": "02:45",
+          "event_type": "reaction",
+          "description": "The target structure shows movement from being struck by the launched ball, with hands adjusting the setup afterward",
+          "participants": [
+            "hands"
+          ],
+          "actor": "hands",
+          "object": "cardboard target structure",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Catapult",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 11,
+      "chunk_start_sec": 165.0,
+      "chunk_end_sec": 180.0,
+      "chunk_start_mmss": "02:45",
+      "chunk_end_mmss": "03:00",
+      "events": [
+        {
+          "local_start": "02:45",
+          "local_end": "02:49",
+          "event_type": "hold",
+          "description": "holds a circular cardboard piece with a small hole in its center",
+          "participants": [
+            "person"
+          ],
+          "actor": "person",
+          "object": "brown cardboard circle",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Craft Assembly",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "02:50",
+          "local_end": "02:54",
+          "event_type": "insert",
+          "description": "inserts a wooden toothpick through the hole in the cardboard circle",
+          "participants": [
+            "person"
+          ],
+          "actor": "person",
+          "object": "wooden toothpick",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Craft Assembly",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:55",
+          "local_end": "02:58",
+          "event_type": "apply_glue",
+          "description": "applies white glue from a bottle to the center of the cardboard circle",
+          "participants": [
+            "person"
+          ],
+          "actor": "person",
+          "object": "white glue",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Craft Assembly",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:59",
+          "local_end": "03:00",
+          "event_type": "place",
+          "description": "places a small transparent piece onto the glued center of the cardboard circle",
+          "participants": [
+            "person"
+          ],
+          "actor": "person",
+          "object": "clear plastic piece",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Craft Assembly",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 12,
+      "chunk_start_sec": 180.0,
+      "chunk_end_sec": 195.0,
+      "chunk_start_mmss": "03:00",
+      "chunk_end_mmss": "03:15",
+      "events": [
+        {
+          "local_start": "03:00",
+          "local_end": "03:03",
+          "event_type": "title_card",
+          "description": "Shows a white paper cup with 'PAPER CUP' text and a pen knife with 'PEN KNIFE' text on screen",
+          "participants": [],
+          "actor": null,
+          "object": "paper cup, pen knife",
+          "on_screen_text": [
+            {
+              "text": "PAPER CUP",
+              "location": "title"
+            },
+            {
+              "text": "PEN KNIFE",
+              "location": "title"
+            }
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Paper Cup Cutting Activity",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "03:03",
+          "local_end": "03:12",
+          "event_type": "cut",
+          "description": "Hands use a pen knife to cut square holes into the white paper cup",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "white paper cup, pen knife",
+          "segment_boundary": "middle",
+          "segment_label": "Paper Cup Cutting Activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:12",
+          "local_end": "03:15",
+          "event_type": "display",
+          "description": "Hands hold and rotate the white paper cup to show the pattern of square holes that were cut",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "white paper cup with square holes",
+          "segment_boundary": "middle",
+          "segment_label": "Paper Cup Cutting Activity",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 13,
+      "chunk_start_sec": 195.0,
+      "chunk_end_sec": 210.0,
+      "chunk_start_mmss": "03:15",
+      "chunk_end_mmss": "03:30",
+      "events": [
+        {
+          "local_start": "03:15",
+          "local_end": "03:21",
+          "event_type": "show",
+          "description": "A hand holds a brown cardboard piece with \"10 CM\" and \"7 CM\" text labels displayed on screen to indicate its dimensions",
+          "participants": [],
+          "actor": "hand",
+          "object": "brown cardboard piece",
+          "on_screen_text": [
+            {
+              "text": "10 CM",
+              "location": "other"
+            },
+            {
+              "text": "7 CM",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "crafting demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:21",
+          "local_end": "03:26",
+          "event_type": "place",
+          "description": "A hand places a white rectangular frame onto the brown cardboard piece, positioning it in the center",
+          "participants": [],
+          "actor": "hand",
+          "object": "white rectangular frame",
+          "segment_boundary": "middle",
+          "segment_label": "crafting demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:26",
+          "local_end": "03:29",
+          "event_type": "apply_glue",
+          "description": "A hand holds a black hot glue gun and applies a drop of clear hot glue to the bottom edge of the brown cardboard piece",
+          "participants": [],
+          "actor": "hand",
+          "object": "hot glue gun",
+          "segment_boundary": "middle",
+          "segment_label": "crafting demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:29",
+          "local_end": "03:30",
+          "event_type": "position",
+          "description": "A hand brings a white cylindrical object with square cutouts into frame and positions it on the glued area of the cardboard",
+          "participants": [],
+          "actor": "hand",
+          "object": "white cylindrical object",
+          "segment_boundary": "middle",
+          "segment_label": "crafting demonstration",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 14,
+      "chunk_start_sec": 210.0,
+      "chunk_end_sec": 225.0,
+      "chunk_start_mmss": "03:30",
+      "chunk_end_mmss": "03:45",
+      "events": [
+        {
+          "local_start": "03:30",
+          "local_end": "03:35",
+          "event_type": "glue_application",
+          "description": "A person applies hot glue to a cardboard piece with a white rectangular outline using a hot glue gun",
+          "participants": [],
+          "actor": "person with visible hands",
+          "object": "cardboard piece, hot glue gun",
+          "segment_boundary": "middle",
+          "segment_label": "Miniature Basketball Game Construction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:35",
+          "local_end": "03:38",
+          "event_type": "attach",
+          "description": "The person attaches the white perforated cup to the glued cardboard backboard piece",
+          "participants": [],
+          "actor": "person with visible hands",
+          "object": "white perforated cup, cardboard backboard",
+          "segment_boundary": "middle",
+          "segment_label": "Miniature Basketball Game Construction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:38",
+          "local_end": "03:41",
+          "event_type": "align",
+          "description": "The person aligns a long cardboard support piece with the assembled cup and backboard",
+          "participants": [],
+          "actor": "person with visible hands",
+          "object": "cardboard support piece, cup-backboard assembly",
+          "segment_boundary": "middle",
+          "segment_label": "Miniature Basketball Game Construction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:41",
+          "local_end": "03:43",
+          "event_type": "on_screen_text",
+          "description": "Text \"16 CM HEIGHT\" appears on the screen",
+          "participants": [],
+          "actor": null,
+          "object": "on-screen text",
+          "on_screen_text": [
+            {
+              "text": "16 CM HEIGHT",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Miniature Basketball Game Construction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:43",
+          "local_end": "03:45",
+          "event_type": "position",
+          "description": "The person positions the cup-backboard assembly onto the right side of the main cardboard structure, next to existing similar assemblies",
+          "participants": [],
+          "actor": "person with visible hands",
+          "object": "cup-backboard assembly, main cardboard structure",
+          "segment_boundary": "middle",
+          "segment_label": "Miniature Basketball Game Construction",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 15,
+      "chunk_start_sec": 225.0,
+      "chunk_end_sec": 240.0,
+      "chunk_start_mmss": "03:45",
+      "chunk_end_mmss": "04:00",
+      "events": [
+        {
+          "local_start": "03:45",
+          "local_end": "03:48",
+          "event_type": "hold",
+          "description": "A person holds an NBA logo sticker (blue, white, and red) in front of the cardboard basketball game structure",
+          "participants": [
+            "tan-skinned hands"
+          ],
+          "actor": "tan-skinned hands",
+          "object": "NBA logo sticker",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game Assembly",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:48",
+          "local_end": "03:52",
+          "event_type": "place",
+          "description": "A person positions the NBA logo sticker on the side panel of the cardboard basketball game structure",
+          "participants": [
+            "tan-skinned hands"
+          ],
+          "actor": "tan-skinned hands",
+          "object": "NBA logo sticker",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game Assembly",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:52",
+          "local_end": "03:56",
+          "event_type": "press",
+          "description": "A person presses the NBA logo sticker onto the side panel of the cardboard structure to secure it",
+          "participants": [
+            "tan-skinned hands"
+          ],
+          "actor": "tan-skinned hands",
+          "object": "NBA logo sticker",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game Assembly",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:56",
+          "local_end": "04:00",
+          "event_type": "adjust",
+          "description": "A person adjusts the NBA logo sticker on the side panel to ensure proper alignment",
+          "participants": [
+            "tan-skinned hands"
+          ],
+          "actor": "tan-skinned hands",
+          "object": "NBA logo sticker",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game Assembly",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 16,
+      "chunk_start_sec": 240.0,
+      "chunk_end_sec": 255.0,
+      "chunk_start_mmss": "04:00",
+      "chunk_end_mmss": "04:15",
+      "events": [
+        {
+          "local_start": "04:00",
+          "local_end": "04:03",
+          "event_type": "place",
+          "description": "A hand places a small yellow ball onto the launcher mechanism on the left side of the game",
+          "participants": [
+            "unseen person"
+          ],
+          "actor": "unseen person",
+          "object": "yellow ball",
+          "on_screen_text": [
+            {
+              "text": "PLAYER 1",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard NBA Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:03",
+          "local_end": "04:05",
+          "event_type": "pull",
+          "description": "The hand pulls back the blue lever on the launcher mechanism to prepare for launching the ball",
+          "participants": [
+            "unseen person"
+          ],
+          "actor": "unseen person",
+          "object": "blue lever",
+          "on_screen_text": [
+            {
+              "text": "PLAYER 1",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard NBA Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:05",
+          "local_end": "04:07",
+          "event_type": "score",
+          "description": "The yellow ball is launched and successfully goes through the middle front basket in the first row of baskets",
+          "participants": [
+            "unseen person"
+          ],
+          "actor": "unseen person",
+          "object": "yellow ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "PLAYER 1",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard NBA Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:07",
+          "local_end": "04:09",
+          "event_type": "graphic",
+          "description": "Yellow \"+10\" score text appears on screen indicating points scored for the basket",
+          "participants": [],
+          "actor": "no actor",
+          "on_screen_text": [
+            {
+              "text": "PLAYER 1",
+              "location": "other"
+            },
+            {
+              "text": "+10",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard NBA Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:09",
+          "local_end": "04:11",
+          "event_type": "open_drawer",
+          "description": "The hand opens the lower left drawer of the cardboard game to access more balls",
+          "participants": [
+            "unseen person"
+          ],
+          "actor": "unseen person",
+          "object": "cardboard drawer",
+          "on_screen_text": [
+            {
+              "text": "PLAYER 1",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard NBA Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:11",
+          "local_end": "04:13",
+          "event_type": "retrieve",
+          "description": "The hand retrieves another yellow ball from the opened lower left drawer",
+          "participants": [
+            "unseen person"
+          ],
+          "actor": "unseen person",
+          "object": "yellow ball",
+          "on_screen_text": [
+            {
+              "text": "PLAYER 1",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard NBA Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 17,
+      "chunk_start_sec": 255.0,
+      "chunk_end_sec": 270.0,
+      "chunk_start_mmss": "04:15",
+      "chunk_end_mmss": "04:30",
+      "events": [
+        {
+          "local_start": "04:15",
+          "local_end": "04:17",
+          "event_type": "place",
+          "description": "places a yellow ball on the launching mechanism",
+          "participants": [],
+          "actor": "tan-skinned hand",
+          "object": "yellow ball",
+          "outcome": "positioned",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:17",
+          "local_end": "04:19",
+          "event_type": "press",
+          "description": "presses the blue component to launch the ball",
+          "participants": [],
+          "actor": "tan-skinned hand",
+          "object": "blue component",
+          "outcome": "launched",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:19",
+          "local_end": "04:21",
+          "event_type": "motion",
+          "description": "yellow ball travels through the air toward the hoops",
+          "participants": [],
+          "actor": "yellow ball",
+          "object": "yellow ball",
+          "outcome": "in flight",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:21",
+          "local_end": "04:24",
+          "event_type": "score",
+          "description": "yellow ball goes through a white hoop",
+          "participants": [],
+          "actor": "yellow ball",
+          "object": "yellow ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "+30",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:24",
+          "local_end": "04:27",
+          "event_type": "reset",
+          "description": "hand resets the launching mechanism",
+          "participants": [],
+          "actor": "tan-skinned hand",
+          "object": "launching mechanism",
+          "outcome": "reset",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:27",
+          "local_end": "04:30",
+          "event_type": "retrieve",
+          "description": "hand retrieves the yellow ball from the hoop",
+          "participants": [],
+          "actor": "tan-skinned hand",
+          "object": "yellow ball",
+          "outcome": "retrieved",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 18,
+      "chunk_start_sec": 270.0,
+      "chunk_end_sec": 285.0,
+      "chunk_start_mmss": "04:30",
+      "chunk_end_mmss": "04:45",
+      "events": [
+        {
+          "local_start": "04:30",
+          "local_end": "04:31",
+          "event_type": "throw",
+          "description": "A hand launches a yellow basketball from the lower left area of the cardboard structure toward the baskets",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow basketball",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:31",
+          "local_end": "04:32",
+          "event_type": "ball_in_air",
+          "description": "The yellow basketball is shown in mid-air traveling upward toward the baskets",
+          "participants": [],
+          "actor": null,
+          "object": "yellow basketball",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:32",
+          "local_end": "04:33",
+          "event_type": "score",
+          "description": "The yellow basketball enters the middle-right basket (second from the bottom on the right side)",
+          "participants": [],
+          "actor": null,
+          "object": "yellow basketball",
+          "outcome": "in",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:33",
+          "local_end": "04:34",
+          "event_type": "collect",
+          "description": "The yellow basketball is collected at the bottom of the structure",
+          "participants": [],
+          "actor": null,
+          "object": "yellow basketball",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:34",
+          "local_end": "04:35",
+          "event_type": "graphic",
+          "description": "A score indicator showing \"+0\" appears near one of the baskets",
+          "participants": [],
+          "actor": null,
+          "on_screen_text": [
+            {
+              "text": "+0",
+              "location": "graphic"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:35",
+          "local_end": "04:36",
+          "event_type": "prepare",
+          "description": "A hand positions another yellow basketball for launch from the lower left area",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow basketball",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:36",
+          "local_end": "04:37",
+          "event_type": "throw",
+          "description": "The hand launches a second yellow basketball toward the baskets",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow basketball",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:37",
+          "local_end": "04:38",
+          "event_type": "ball_in_air",
+          "description": "The second yellow basketball is shown in mid-air traveling toward the baskets",
+          "participants": [],
+          "actor": null,
+          "object": "yellow basketball",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:38",
+          "local_end": "04:39",
+          "event_type": "score",
+          "description": "The second yellow basketball enters the rightmost basket (bottom right position)",
+          "participants": [],
+          "actor": null,
+          "object": "yellow basketball",
+          "outcome": "in",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:39",
+          "local_end": "04:40",
+          "event_type": "collect",
+          "description": "The second yellow basketball is collected at the bottom of the structure",
+          "participants": [],
+          "actor": null,
+          "object": "yellow basketball",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:40",
+          "local_end": "04:42",
+          "event_type": "scoreboard_update",
+          "description": "Text appears displaying \"PLAYER 1 SCORES 60 POINTS\" with a thumbs up gesture",
+          "participants": [
+            "hand (thumbs up)"
+          ],
+          "actor": "hand (thumbs up)",
+          "on_screen_text": [
+            {
+              "text": "PLAYER 1 SCORES",
+              "location": "banner"
+            },
+            {
+              "text": "60 POINTS",
+              "location": "banner"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:42",
+          "local_end": "04:43",
+          "event_type": "transition",
+          "description": "The scene transitions to show \"PLAYER 2\" text on the cardboard structure",
+          "participants": [],
+          "actor": null,
+          "on_screen_text": [
+            {
+              "text": "PLAYER 2",
+              "location": "banner"
+            }
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:43",
+          "local_end": "04:44",
+          "event_type": "manipulate",
+          "description": "A hand turns a circular cardboard dial on the left side of the structure",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "cardboard dial",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:44",
+          "local_end": "04:45",
+          "event_type": "reveal",
+          "description": "Turning the dial reveals yellow basketballs inside a compartment at the bottom left of the structure",
+          "participants": [],
+          "actor": null,
+          "object": "yellow basketballs",
+          "cover": "cardboard dial",
+          "hidden": "yellow basketballs",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 19,
+      "chunk_start_sec": 285.0,
+      "chunk_end_sec": 300.0,
+      "chunk_start_mmss": "04:45",
+      "chunk_end_mmss": "05:00",
+      "events": [
+        {
+          "local_start": "04:45",
+          "local_end": "04:47",
+          "event_type": "game",
+          "description": "hand launches a yellow basketball from the launcher toward the baskets",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow basketball",
+          "outcome": "launched",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:47",
+          "local_end": "04:48",
+          "event_type": "score",
+          "description": "basketball enters a middle basket triggering +10 score display",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "+10",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:48",
+          "local_end": "04:50",
+          "event_type": "retrieve",
+          "description": "hand reaches into the lower drawer to retrieve another yellow basketball",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow basketball",
+          "outcome": "retrieved",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:50",
+          "local_end": "04:52",
+          "event_type": "place",
+          "description": "hand places the yellow basketball on the launcher mechanism",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow basketball",
+          "outcome": "placed",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:52",
+          "local_end": "04:54",
+          "event_type": "game",
+          "description": "hand launches a yellow basketball from the launcher toward the baskets",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow basketball",
+          "outcome": "launched",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:54",
+          "local_end": "04:55",
+          "event_type": "score",
+          "description": "basketball enters an upper basket triggering +20 score display",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "+20",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:55",
+          "local_end": "04:57",
+          "event_type": "retrieve",
+          "description": "hand reaches into the lower drawer to retrieve another yellow basketball",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow basketball",
+          "outcome": "retrieved",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:57",
+          "local_end": "04:59",
+          "event_type": "place",
+          "description": "hand places the yellow basketball on the launcher mechanism",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow basketball",
+          "outcome": "placed",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:59",
+          "local_end": "05:00",
+          "event_type": "game",
+          "description": "hand launches a yellow basketball from the launcher toward the baskets",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow basketball",
+          "outcome": "launched",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 20,
+      "chunk_start_sec": 300.0,
+      "chunk_end_sec": 315.0,
+      "chunk_start_mmss": "05:00",
+      "chunk_end_mmss": "05:15",
+      "events": [
+        {
+          "local_start": "05:00",
+          "local_end": "05:02",
+          "event_type": "pull_lever",
+          "description": "a hand pulls back the launcher lever to prepare for shooting",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "blue and white launcher lever",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:02",
+          "local_end": "05:04",
+          "event_type": "release",
+          "description": "the hand releases the launcher, sending the yellow ball upward",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow ball",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:04",
+          "local_end": "05:05",
+          "event_type": "score",
+          "description": "the yellow ball enters the top-center white basket",
+          "participants": [
+            "yellow ball",
+            "top-center basket"
+          ],
+          "actor": "yellow ball",
+          "object": "yellow ball",
+          "outcome": "scored",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:05",
+          "local_end": "05:07",
+          "event_type": "graphic",
+          "description": "+30 text appears on the left side of the screen",
+          "participants": [],
+          "actor": "",
+          "on_screen_text": [
+            {
+              "text": "+30",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:07",
+          "local_end": "05:09",
+          "event_type": "reach",
+          "description": "a hand reaches down to pick up another yellow ball from the tray",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:09",
+          "local_end": "05:10",
+          "event_type": "place",
+          "description": "the hand places the yellow ball on the launcher mechanism",
+          "participants": [
+            "hand",
+            "yellow ball"
+          ],
+          "actor": "hand",
+          "object": "yellow ball",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:10",
+          "local_end": "05:12",
+          "event_type": "pull_lever",
+          "description": "a hand pulls back the launcher lever to prepare for shooting",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "blue and white launcher lever",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:12",
+          "local_end": "05:13",
+          "event_type": "release",
+          "description": "the hand releases the launcher, sending the yellow ball upward",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "yellow ball",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:13",
+          "local_end": "05:14",
+          "event_type": "score",
+          "description": "the yellow ball enters the top-left white basket",
+          "participants": [
+            "yellow ball",
+            "top-left basket"
+          ],
+          "actor": "yellow ball",
+          "object": "yellow ball",
+          "outcome": "scored",
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:14",
+          "local_end": "05:15",
+          "event_type": "graphic",
+          "description": "+50 SLAM and +50 DUNK text appears on the screen",
+          "participants": [],
+          "actor": "",
+          "on_screen_text": [
+            {
+              "text": "+50 SLAM",
+              "location": "other"
+            },
+            {
+              "text": "+50 DUNK",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Cardboard Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 21,
+      "chunk_start_sec": 315.0,
+      "chunk_end_sec": 330.0,
+      "chunk_start_mmss": "05:15",
+      "chunk_end_mmss": "05:30",
+      "events": [
+        {
+          "local_start": "05:15",
+          "local_end": "05:17",
+          "event_type": "hand_raise",
+          "description": "a hand appears from the bottom of the frame and manipulates the game launcher mechanism",
+          "participants": [],
+          "actor": "unseen person",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "end",
+          "segment_label": "Cardboard Basket Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:17",
+          "local_end": "05:19",
+          "event_type": "graphic",
+          "description": "text \"PLAYER 2 SCORES\" appears on the left side of the screen",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "PLAYER 2 SCORES",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Cardboard Basket Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:20",
+          "local_end": "05:22",
+          "event_type": "gesture",
+          "description": "a hand enters from the bottom of the frame and gives a thumbs-up gesture",
+          "participants": [],
+          "actor": "unseen person",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "end",
+          "segment_label": "Cardboard Basket Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:22",
+          "local_end": "05:25",
+          "event_type": "graphic",
+          "description": "text \"WINNER 140 POINTS\" appears on the right side of the screen",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "WINNER 140 POINTS",
+              "location": "banner"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Cardboard Basket Game",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "05:25",
+          "local_end": "05:27",
+          "event_type": "transition",
+          "description": "the screen fades to black",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "end",
+          "segment_label": "Cardboard Basket Game",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "05:27",
+          "local_end": "05:28",
+          "event_type": "graphic",
+          "description": "the word \"OCEAN\" appears in white text on the black screen",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "OCEAN",
+              "location": "title"
+            }
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Subscription Prompt",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "05:28",
+          "local_end": "05:29",
+          "event_type": "graphic",
+          "description": "a red \"SUBSCRIBE\" button appears below the \"OCEAN\" text",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "SUBSCRIBE",
+              "location": "button"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Subscription Prompt",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:29",
+          "local_end": "05:30",
+          "event_type": "click",
+          "description": "a white hand cursor clicks the \"SUBSCRIBE\" button, changing it to \"SUBSCRIBED\"",
+          "participants": [],
+          "actor": "unseen person",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "SUBSCRIBED",
+              "location": "button"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Subscription Prompt",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 22,
+      "chunk_start_sec": 330.0,
+      "chunk_end_sec": 336.81666666666666,
+      "chunk_start_mmss": "05:30",
+      "chunk_end_mmss": "05:37",
+      "events": [
+        {
+          "local_start": "05:30",
+          "local_end": "05:31",
+          "event_type": "color_change",
+          "description": "Three video recommendation rectangles change from light gray to medium gray",
+          "participants": [],
+          "actor": "system",
+          "object_before": "light gray rectangles",
+          "object_after": "medium gray rectangles",
+          "segment_boundary": "middle",
+          "segment_label": "YouTube end screen animation",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "05:31",
+          "local_end": "05:32",
+          "event_type": "color_change",
+          "description": "Three video recommendation rectangles change from medium gray to dark gray",
+          "participants": [],
+          "actor": "system",
+          "object_before": "medium gray rectangles",
+          "object_after": "dark gray rectangles",
+          "segment_boundary": "middle",
+          "segment_label": "YouTube end screen animation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:32",
+          "local_end": "05:33",
+          "event_type": "color_change",
+          "description": "Three video recommendation rectangles change from dark gray to white",
+          "participants": [],
+          "actor": "system",
+          "object_before": "dark gray rectangles",
+          "object_after": "white rectangles",
+          "segment_boundary": "middle",
+          "segment_label": "YouTube end screen animation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:33",
+          "local_end": "05:34",
+          "event_type": "color_change",
+          "description": "Three video recommendation rectangles change from white to light gray",
+          "participants": [],
+          "actor": "system",
+          "object_before": "white rectangles",
+          "object_after": "light gray rectangles",
+          "segment_boundary": "middle",
+          "segment_label": "YouTube end screen animation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:34",
+          "local_end": "05:35",
+          "event_type": "color_change",
+          "description": "Three video recommendation rectangles change from light gray to medium gray",
+          "participants": [],
+          "actor": "system",
+          "object_before": "light gray rectangles",
+          "object_after": "medium gray rectangles",
+          "segment_boundary": "middle",
+          "segment_label": "YouTube end screen animation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:35",
+          "local_end": "05:36",
+          "event_type": "color_change",
+          "description": "Three video recommendation rectangles change from medium gray to dark gray",
+          "participants": [],
+          "actor": "system",
+          "object_before": "medium gray rectangles",
+          "object_after": "dark gray rectangles",
+          "segment_boundary": "middle",
+          "segment_label": "YouTube end screen animation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:36",
+          "local_end": "05:36",
+          "event_type": "disappearance",
+          "description": "All three video recommendation rectangles disappear from the screen",
+          "participants": [],
+          "actor": "system",
+          "object_before": "dark gray rectangles",
+          "object_after": "no rectangles",
+          "segment_boundary": "middle",
+          "segment_label": "YouTube end screen animation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:36",
+          "local_end": "05:37",
+          "event_type": "appearance",
+          "description": "Three video recommendation rectangles reappear as white rectangles",
+          "participants": [],
+          "actor": "system",
+          "object_before": "no rectangles",
+          "object_after": "white rectangles",
+          "segment_boundary": "middle",
+          "segment_label": "YouTube end screen animation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3994 @@
+{
+  "question": "Did the purple shirt boy reach the curved wall first?",
+  "pred": "Evidence: The context shows event 109 (start_time: 03:30) where \"The gray-shirt boy scales the curved wall obstacle using handholds with both hands\" followed by event 110 (start_time: 03:32) where \"The white-shirt boy follows the first contestant on the curved wall obstacle, climbing with both hands.\" The alias map identifies the purple-shirt competitor as a distinct participant, and the color description likely changed due to lighting/angle variations between frames. The sequence clearly shows the gray-shirt (purple-shirt) boy reaching the wall first.\n\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "speak": 15,
+      "applaud": 10,
+      "swing": 9,
+      "transition": 8,
+      "graphic": 8,
+      "run": 8,
+      "ring_swing": 8,
+      "obstacle_course": 8,
+      "ring_traverse": 7,
+      "climb": 7,
+      "graphic_appear": 6,
+      "graphic_disappear": 6,
+      "handshake": 5,
+      "jump": 5,
+      "hand_raise": 4,
+      "rope_swing": 4,
+      "obstacle_transition": 4,
+      "scoreboard_update": 3,
+      "stand": 3,
+      "remove_clothing": 3,
+      "title_card": 2,
+      "fall": 2,
+      "celebration": 2,
+      "audience_reaction": 2,
+      "hold": 2,
+      "game": 1,
+      "walk": 1,
+      "adjust_clothing": 1,
+      "position": 1,
+      "record": 1,
+      "microphone_exchange": 1,
+      "pat": 1,
+      "on_screen_text": 1,
+      "shoulder_contact": 1,
+      "hug": 1,
+      "demonstration": 1,
+      "hold_position": 1,
+      "gesture": 1,
+      "move_toward": 1,
+      "fist_bump": 1,
+      "point": 1,
+      "gestures": 1,
+      "approach": 1,
+      "platform_run": 1,
+      "help": 1,
+      "move": 1,
+      "smoke_effect": 1,
+      "shoulder_tap": 1,
+      "obstacle_completion": 1,
+      "wall_climb": 1,
+      "hand_gesture": 1,
+      "scene_change": 1
+    },
+    "events": [
+      {
+        "event_type": "title_card",
+        "description": "The 'American Ninja Warrior Junior' logo is displayed with metal framework and lighting rigs visible in the background, with subtle lighting and angle variations across frames",
+        "participants": [],
+        "actor": "logo",
+        "object": "logo",
+        "on_screen_text": [
+          {
+            "text": "AMERICAN NINJA WARRIOR JUNIOR",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "complete",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:07",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "transition",
+        "description": "The 'American Ninja Warrior Junior' logo begins to break apart, revealing a city scene behind it with portions of 'NINJA' and 'WARRIOR' disappearing",
+        "participants": [],
+        "actor": "logo",
+        "object_before": "blue and red logo",
+        "object_after": "partially visible logo with city background showing through",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 2,
+        "start_time": "00:07",
+        "end_time": "00:09",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "transition",
+        "description": "The logo continues to disappear, fully revealing the obstacle course and city skyline behind it",
+        "participants": [],
+        "actor": "logo",
+        "object_before": "partially visible logo with city background showing through",
+        "object_after": "no logo visible, full city scene and obstacle course",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 3,
+        "start_time": "00:09",
+        "end_time": "00:10",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "game",
+        "description": "The obstacle course is fully visible with metal structures, red platforms, and a crowd of spectators in the background",
+        "participants": [],
+        "actor": "obstacle course",
+        "object": "obstacle course",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 4,
+        "start_time": "00:10",
+        "end_time": "00:13",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "applaud",
+        "description": "Multiple audience members are clapping and cheering while holding colorful signs",
+        "participants": [
+          "audience members"
+        ],
+        "actor": "audience",
+        "object": "hands",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 5,
+        "start_time": "00:10",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "walk",
+        "description": "Two boys approach the obstacle course, one in a red shirt running up steps while another in a red and black checkered outfit follows ahead",
+        "participants": [
+          "red-shirt boy",
+          "checkered-outfit boy"
+        ],
+        "actor": "red-shirt boy",
+        "object": "steps",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 6,
+        "start_time": "00:14",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "graphic",
+        "description": "On-screen text appears identifying the boy in the red shirt as 'Tate Allen, Age:11, Woodstock, GA'",
+        "participants": [
+          "red-shirt boy"
+        ],
+        "actor": "text display",
+        "object": "text graphic",
+        "on_screen_text": [
+          {
+            "text": "TATE ALLEN",
+            "location": "lower_third"
+          },
+          {
+            "text": "AGE:11",
+            "location": "lower_third"
+          },
+          {
+            "text": "WOODSTOCK, GA",
+            "location": "lower_third"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 7,
+        "start_time": "00:14",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "graphic",
+        "description": "Lower third graphic displays contestant information for Tate Allen",
+        "participants": [
+          "red-shirt boy"
+        ],
+        "actor": "red-shirt boy",
+        "on_screen_text": [
+          {
+            "text": "TATE ALLEN",
+            "location": "lower_third"
+          },
+          {
+            "text": "AGE:11",
+            "location": "lower_third"
+          },
+          {
+            "text": "WOODSTOCK, GA",
+            "location": "lower_third"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Contestant Introduction",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 8,
+        "start_time": "00:15",
+        "end_time": "00:18",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "scoreboard_update",
+        "description": "Statistics scoreboard displays Tate Allen's height, record, best time, and best obstacle",
+        "participants": [
+          "red-shirt boy"
+        ],
+        "actor": "red-shirt boy",
+        "on_screen_text": [
+          {
+            "text": "TATE ALLEN",
+            "location": "scoreboard"
+          },
+          {
+            "text": "HEIGHT 4'10\"",
+            "location": "scoreboard"
+          },
+          {
+            "text": "RECORD 4-0",
+            "location": "scoreboard"
+          },
+          {
+            "text": "BEST TIME 39.19",
+            "location": "scoreboard"
+          },
+          {
+            "text": "BEST OBSTACLE RING TOSS",
+            "location": "scoreboard"
+          },
+          {
+            "text": "ANW",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Contestant Statistics",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 9,
+        "start_time": "00:19",
+        "end_time": "00:28",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "stand",
+        "description": "Two contestants stand on a blue platform, one in red shirt with hands on hips, one in red and black checkered robe with hands clasped",
+        "participants": [
+          "red-shirt boy",
+          "checkered-robe boy"
+        ],
+        "actor": "red-shirt boy",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Platform Standby",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 10,
+        "start_time": "00:29",
+        "end_time": "00:30",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "graphic",
+        "description": "Lower third graphic displays contestant information for Josh Auer",
+        "participants": [
+          "checkered-robe boy"
+        ],
+        "actor": "checkered-robe boy",
+        "on_screen_text": [
+          {
+            "text": "JOSH AUER",
+            "location": "lower_third"
+          },
+          {
+            "text": "AGE:12",
+            "location": "lower_third"
+          },
+          {
+            "text": "HOLLY SPRINGS, NC",
+            "location": "lower_third"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Contestant Introduction",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 11,
+        "start_time": "00:30",
+        "end_time": "00:30",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "Checkered-robe boy raises their right hand and waves",
+        "participants": [
+          "checkered-robe boy"
+        ],
+        "actor": "checkered-robe boy",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Platform Standby",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 12,
+        "start_time": "00:30",
+        "end_time": "00:30",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "adjust_clothing",
+        "description": "Checkered-robe boy adjusts their robe by pulling at the front",
+        "participants": [
+          "checkered-robe boy"
+        ],
+        "actor": "checkered-robe boy",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Platform Standby",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 13,
+        "start_time": "00:30",
+        "end_time": "00:30",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "remove_clothing",
+        "description": "The boy in the plaid robe begins unfastening and pulling off his robe, with arms extended outward",
+        "participants": [
+          "plaid-robe boy",
+          "red-shirt boy"
+        ],
+        "actor": "plaid-robe boy",
+        "object": "plaid robe",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "middle",
+        "event_index": 14,
+        "start_time": "00:30",
+        "end_time": "00:32",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "remove_clothing",
+        "description": "The boy continues removing his plaid robe, bringing his hands to his chest area to unfasten it",
+        "participants": [
+          "plaid-robe boy",
+          "red-shirt boy"
+        ],
+        "actor": "plaid-robe boy",
+        "object": "plaid robe",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "middle",
+        "event_index": 15,
+        "start_time": "00:32",
+        "end_time": "00:34",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "remove_clothing",
+        "description": "The boy pulls the plaid robe completely off his shoulders, revealing a purple shirt underneath",
+        "participants": [
+          "plaid-robe boy",
+          "red-shirt boy"
+        ],
+        "actor": "plaid-robe boy",
+        "object": "plaid robe",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "middle",
+        "event_index": 16,
+        "start_time": "00:34",
+        "end_time": "00:36",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "graphic",
+        "description": "A graphic display shows Josh Auer's statistics including height, record, best time, and best obstacle",
+        "participants": [],
+        "actor": "screen",
+        "on_screen_text": [
+          {
+            "text": "JOSH AUER",
+            "location": "title"
+          },
+          {
+            "text": "STATS",
+            "location": "header"
+          },
+          {
+            "text": "HEIGHT 4'4\"",
+            "location": "scoreboard"
+          },
+          {
+            "text": "RECORD 4-0",
+            "location": "scoreboard"
+          },
+          {
+            "text": "BEST TIME 34.71",
+            "location": "scoreboard"
+          },
+          {
+            "text": "BEST OBSTACLE RING TOSS",
+            "location": "scoreboard"
+          },
+          {
+            "text": "ANW JUNIOR",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "middle",
+        "event_index": 17,
+        "start_time": "00:36",
+        "end_time": "00:40",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "handshake",
+        "description": "The boy in the purple shirt and the boy in the red shirt approach each other and clasp hands",
+        "participants": [
+          "purple-shirt boy",
+          "red-shirt boy"
+        ],
+        "actor": "purple-shirt boy",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "middle",
+        "event_index": 18,
+        "start_time": "00:40",
+        "end_time": "00:42",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "applaud",
+        "description": "Audience members are seen clapping with hands raised and showing excitement",
+        "participants": [
+          "audience members"
+        ],
+        "actor": "audience members",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "middle",
+        "event_index": 19,
+        "start_time": "00:42",
+        "end_time": "00:44",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "position",
+        "description": "Wide shot shows the two boys standing on the platform at the start of the obstacle course, preparing for the challenge",
+        "participants": [
+          "purple-shirt boy",
+          "red-shirt boy"
+        ],
+        "actor": "purple-shirt boy",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 20,
+        "start_time": "00:44",
+        "end_time": "00:45",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "run",
+        "description": "Two contestants run across a blue platform toward the next obstacle",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt man"
+        ],
+        "actor": "blue-shirt man, red-shirt man",
+        "object": "blue platform",
+        "outcome": "in progress",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior obstacle course",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 21,
+        "start_time": "00:45",
+        "end_time": "00:48",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "jump",
+        "description": "Both contestants jump from the blue platform onto the first red circular platform",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt man"
+        ],
+        "actor": "blue-shirt man, red-shirt man",
+        "object": "red circular platform",
+        "outcome": "successful landing",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior obstacle course",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 22,
+        "start_time": "00:48",
+        "end_time": "00:51",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "jump",
+        "description": "Both contestants jump across multiple red circular platforms in sequence",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt man"
+        ],
+        "actor": "blue-shirt man, red-shirt man",
+        "object": "red circular platforms",
+        "outcome": "successful jumps",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior obstacle course",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 23,
+        "start_time": "00:51",
+        "end_time": "00:54",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "swing",
+        "description": "Both contestants grab red ropes and swing across to the next platform",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt man"
+        ],
+        "actor": "blue-shirt man, red-shirt man",
+        "object": "red rope",
+        "outcome": "successful swing",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior obstacle course",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 24,
+        "start_time": "00:54",
+        "end_time": "00:57",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "run",
+        "description": "Both contestants run across the blue platform after landing from the rope swing",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt man"
+        ],
+        "actor": "blue-shirt man, red-shirt man",
+        "object": "blue platform",
+        "outcome": "in progress",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior obstacle course",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 25,
+        "start_time": "00:57",
+        "end_time": "00:59",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "jump",
+        "description": "Both contestants jump from the blue platform onto a hanging net structure",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt man"
+        ],
+        "actor": "blue-shirt man, red-shirt man",
+        "object": "hanging net structure",
+        "outcome": "in progress",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior obstacle course",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 26,
+        "start_time": "00:59",
+        "end_time": "01:00",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "swing",
+        "description": "Red-shirt contestant jumps and grabs red rings, beginning to swing across them",
+        "participants": [
+          "red-shirt man"
+        ],
+        "actor": "red-shirt man",
+        "object": "red rings",
+        "outcome": "in progress",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior obstacle course",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 27,
+        "start_time": "01:00",
+        "end_time": "01:00",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "ring_traverse",
+        "description": "The red-shirt competitor swings forward and grabs the next red ring in the sequence",
+        "participants": [
+          "red-shirt competitor",
+          "purple-shirt competitor"
+        ],
+        "actor": "red-shirt competitor",
+        "object": "red ring",
+        "outcome": "successful_grab",
+        "on_screen_text": [
+          {
+            "text": "AMERICAN NINJA WARRIOR JUNIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ring Traverse",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 28,
+        "start_time": "01:00",
+        "end_time": "01:02",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "ring_traverse",
+        "description": "The purple-shirt competitor swings forward and grabs the next red ring in the sequence",
+        "participants": [
+          "purple-shirt competitor",
+          "red-shirt competitor"
+        ],
+        "actor": "purple-shirt competitor",
+        "object": "red ring",
+        "outcome": "successful_grab",
+        "on_screen_text": [
+          {
+            "text": "AMERICAN NINJA WARRIOR JUNIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ring Traverse",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 29,
+        "start_time": "01:02",
+        "end_time": "01:04",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "ring_traverse",
+        "description": "The red-shirt competitor releases the current ring and swings to reach the next red ring in the sequence",
+        "participants": [
+          "red-shirt competitor",
+          "purple-shirt competitor"
+        ],
+        "actor": "red-shirt competitor",
+        "object": "red ring",
+        "outcome": "in_progress",
+        "on_screen_text": [
+          {
+            "text": "AMERICAN NINJA WARRIOR JUNIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ring Traverse",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 30,
+        "start_time": "01:04",
+        "end_time": "01:06",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "ring_traverse",
+        "description": "The purple-shirt competitor releases the current ring and swings to reach the next red ring in the sequence",
+        "participants": [
+          "purple-shirt competitor",
+          "red-shirt competitor"
+        ],
+        "actor": "purple-shirt competitor",
+        "object": "red ring",
+        "outcome": "in_progress",
+        "on_screen_text": [
+          {
+            "text": "AMERICAN NINJA WARRIOR JUNIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ring Traverse",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 31,
+        "start_time": "01:06",
+        "end_time": "01:08",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "ring_traverse",
+        "description": "The red-shirt competitor successfully grabs the next red ring and continues traversing the obstacle",
+        "participants": [
+          "red-shirt competitor",
+          "purple-shirt competitor"
+        ],
+        "actor": "red-shirt competitor",
+        "object": "red ring",
+        "outcome": "successful_grab",
+        "on_screen_text": [
+          {
+            "text": "AMERICAN NINJA WARRIOR JUNIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ring Traverse",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 32,
+        "start_time": "01:08",
+        "end_time": "01:10",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "ring_traverse",
+        "description": "The purple-shirt competitor successfully grabs the next red ring and continues traversing the obstacle",
+        "participants": [
+          "purple-shirt competitor",
+          "red-shirt competitor"
+        ],
+        "actor": "purple-shirt competitor",
+        "object": "red ring",
+        "outcome": "successful_grab",
+        "on_screen_text": [
+          {
+            "text": "AMERICAN NINJA WARRIOR JUNIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ring Traverse",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 33,
+        "start_time": "01:10",
+        "end_time": "01:12",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "ring_traverse",
+        "description": "Both competitors continue swinging through the red ring obstacle with the red-shirt competitor maintaining a slight lead",
+        "participants": [
+          "red-shirt competitor",
+          "purple-shirt competitor"
+        ],
+        "actor": "red-shirt competitor",
+        "object": "red ring",
+        "outcome": "in_progress",
+        "on_screen_text": [
+          {
+            "text": "AMERICAN NINJA WARRIOR JUNIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ring Traverse",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 34,
+        "start_time": "01:12",
+        "end_time": "01:15",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "climb",
+        "description": "Two boys pull themselves up on vertical walls using their hands",
+        "participants": [
+          "red-shirt boy",
+          "purple-shirt boy"
+        ],
+        "actor": null,
+        "object": "vertical wall",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 35,
+        "start_time": "01:15",
+        "end_time": "01:18",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "climb",
+        "description": "Red-shirt boy pulls himself completely over the top of the vertical wall",
+        "participants": [
+          "red-shirt boy"
+        ],
+        "actor": "red-shirt boy",
+        "object": "vertical wall",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 36,
+        "start_time": "01:18",
+        "end_time": "01:21",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "climb",
+        "description": "Purple-shirt boy continues climbing but loses grip on the vertical wall",
+        "participants": [
+          "purple-shirt boy"
+        ],
+        "actor": "purple-shirt boy",
+        "object": "vertical wall",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 37,
+        "start_time": "01:21",
+        "end_time": "01:24",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "fall",
+        "description": "Purple-shirt boy falls from the vertical wall into the water below",
+        "participants": [
+          "purple-shirt boy"
+        ],
+        "actor": "purple-shirt boy",
+        "object": "water",
+        "outcome": "slipped",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 38,
+        "start_time": "01:24",
+        "end_time": "01:26",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "run",
+        "description": "Red-shirt boy runs forward on the course after clearing the wall",
+        "participants": [
+          "red-shirt boy"
+        ],
+        "actor": "red-shirt boy",
+        "object": "course platform",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 39,
+        "start_time": "01:26",
+        "end_time": "01:28",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "run",
+        "description": "Red-shirt boy runs through an obstacle with smoke or steam emission",
+        "participants": [
+          "red-shirt boy"
+        ],
+        "actor": "red-shirt boy",
+        "object": "smoke obstacle",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 40,
+        "start_time": "01:28",
+        "end_time": "01:29",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "handshake",
+        "description": "Red-shirt boy and purple-shirt boy shake hands after completing the course",
+        "participants": [
+          "red-shirt boy",
+          "purple-shirt boy"
+        ],
+        "actor": "red-shirt boy",
+        "segment_boundary": "end",
+        "segment_label": "American Ninja Warrior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 41,
+        "start_time": "01:29",
+        "end_time": "01:30",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "speak",
+        "description": "Red-shirt boy and purple-shirt boy have a conversation after shaking hands",
+        "participants": [
+          "red-shirt boy",
+          "purple-shirt boy"
+        ],
+        "actor": null,
+        "segment_boundary": "end",
+        "segment_label": "American Ninja Warrior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 42,
+        "start_time": "01:29",
+        "end_time": "01:30",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 15,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "record",
+        "description": "Spectator in red shirt holds up a tablet to record the event",
+        "participants": [
+          "red-shirt spectator"
+        ],
+        "actor": "red-shirt spectator",
+        "object": "tablet",
+        "segment_boundary": "end",
+        "segment_label": "American Ninja Warrior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 43,
+        "start_time": "01:29",
+        "end_time": "01:30",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "Spectator in red shirt raises their hand while holding a tablet",
+        "participants": [
+          "red-shirt spectator"
+        ],
+        "actor": "red-shirt spectator",
+        "object": "tablet",
+        "segment_boundary": "end",
+        "segment_label": "American Ninja Warrior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 44,
+        "start_time": "01:29",
+        "end_time": "01:30",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "rope_swing",
+        "description": "The boy in the purple shirt swings from the first red rope to reach the second red platform",
+        "participants": [
+          "purple-shirt boy"
+        ],
+        "actor": "purple-shirt boy",
+        "object": "red rope",
+        "segment_boundary": "middle",
+        "segment_label": "Rope Swing Obstacle",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 45,
+        "start_time": "01:30",
+        "end_time": "01:33",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "rope_swing",
+        "description": "The boy in the red shirt swings from the first red rope to reach the second red platform",
+        "participants": [
+          "red-shirt boy"
+        ],
+        "actor": "red-shirt boy",
+        "object": "red rope",
+        "segment_boundary": "middle",
+        "segment_label": "Rope Swing Obstacle",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 46,
+        "start_time": "01:30",
+        "end_time": "01:33",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "rope_swing",
+        "description": "The boy in the purple shirt swings from the second red rope to reach the third red platform",
+        "participants": [
+          "purple-shirt boy"
+        ],
+        "actor": "purple-shirt boy",
+        "object": "red rope",
+        "segment_boundary": "middle",
+        "segment_label": "Rope Swing Obstacle",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 47,
+        "start_time": "01:33",
+        "end_time": "01:37",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "rope_swing",
+        "description": "The boy in the red shirt swings from the second red rope to reach the third red platform",
+        "participants": [
+          "red-shirt boy"
+        ],
+        "actor": "red-shirt boy",
+        "object": "red rope",
+        "segment_boundary": "middle",
+        "segment_label": "Rope Swing Obstacle",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 48,
+        "start_time": "01:33",
+        "end_time": "01:37",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "obstacle_transition",
+        "description": "The boy in the purple shirt reaches the end of the rope obstacle and grasps the first circular ring",
+        "participants": [
+          "purple-shirt boy"
+        ],
+        "actor": "purple-shirt boy",
+        "object": "circular ring",
+        "segment_boundary": "middle",
+        "segment_label": "Rope Swing to Circular Rings Transition",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 49,
+        "start_time": "01:37",
+        "end_time": "01:40",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "obstacle_transition",
+        "description": "The boy in the red shirt reaches the end of the rope obstacle and grasps the first circular ring",
+        "participants": [
+          "red-shirt boy"
+        ],
+        "actor": "red-shirt boy",
+        "object": "circular ring",
+        "segment_boundary": "middle",
+        "segment_label": "Rope Swing to Circular Rings Transition",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 50,
+        "start_time": "01:37",
+        "end_time": "01:40",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "ring_swing",
+        "description": "The boy in the purple shirt swings from the first circular ring to the second circular ring",
+        "participants": [
+          "purple-shirt boy"
+        ],
+        "actor": "purple-shirt boy",
+        "object": "circular ring",
+        "segment_boundary": "middle",
+        "segment_label": "Circular Rings Obstacle",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 51,
+        "start_time": "01:40",
+        "end_time": "01:43",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "ring_swing",
+        "description": "The boy in the red shirt swings from the first circular ring to the second circular ring",
+        "participants": [
+          "red-shirt boy"
+        ],
+        "actor": "red-shirt boy",
+        "object": "circular ring",
+        "segment_boundary": "middle",
+        "segment_label": "Circular Rings Obstacle",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 52,
+        "start_time": "01:40",
+        "end_time": "01:43",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "ring_swing",
+        "description": "The boy in the purple shirt swings from the second circular ring to the third circular ring",
+        "participants": [
+          "purple-shirt boy"
+        ],
+        "actor": "purple-shirt boy",
+        "object": "circular ring",
+        "segment_boundary": "middle",
+        "segment_label": "Circular Rings Obstacle",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 53,
+        "start_time": "01:43",
+        "end_time": "01:45",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "ring_swing",
+        "description": "The boy in the red shirt swings from the second circular ring to the third circular ring",
+        "participants": [
+          "red-shirt boy"
+        ],
+        "actor": "red-shirt boy",
+        "object": "circular ring",
+        "segment_boundary": "middle",
+        "segment_label": "Circular Rings Obstacle",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 54,
+        "start_time": "01:43",
+        "end_time": "01:45",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "celebration",
+        "description": "man in pink shirt raises both arms above head and claps while standing on platform",
+        "participants": [
+          "blue-shirt man",
+          "pink-shirt man"
+        ],
+        "actor": "pink-shirt man",
+        "object": "",
+        "segment_boundary": "end",
+        "segment_label": "Ninja Warrior challenge",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 55,
+        "start_time": "01:45",
+        "end_time": "01:51",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "speak",
+        "description": "man in blue shirt holds microphone and speaks toward audience",
+        "participants": [
+          "blue-shirt man",
+          "pink-shirt man"
+        ],
+        "actor": "blue-shirt man",
+        "object": "microphone",
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Warrior challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 56,
+        "start_time": "01:45",
+        "end_time": "01:55",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 15,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "handshake",
+        "description": "blue-shirt man and pink-shirt man shake hands while standing on platform",
+        "participants": [
+          "blue-shirt man",
+          "pink-shirt man"
+        ],
+        "actor": "blue-shirt man",
+        "object": "",
+        "segment_boundary": "end",
+        "segment_label": "Ninja Warrior challenge",
+        "continuation_hint": "complete",
+        "event_index": 57,
+        "start_time": "01:49",
+        "end_time": "01:53",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "microphone_exchange",
+        "description": "pink-shirt man takes microphone from blue-shirt man",
+        "participants": [
+          "blue-shirt man",
+          "pink-shirt man"
+        ],
+        "actor": "pink-shirt man",
+        "object": "microphone",
+        "segment_boundary": "end",
+        "segment_label": "Ninja Warrior challenge",
+        "continuation_hint": "complete",
+        "event_index": 58,
+        "start_time": "01:52",
+        "end_time": "01:55",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "speak",
+        "description": "pink-shirt man holds microphone and speaks while gesturing with free hand",
+        "participants": [
+          "blue-shirt man",
+          "pink-shirt man"
+        ],
+        "actor": "pink-shirt man",
+        "object": "microphone",
+        "segment_boundary": "end",
+        "segment_label": "Ninja Warrior challenge",
+        "continuation_hint": "complete",
+        "event_index": 59,
+        "start_time": "01:55",
+        "end_time": "02:00",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 15,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "pat",
+        "description": "blue-shirt man places hand on pink-shirt man's shoulder while he speaks",
+        "participants": [
+          "blue-shirt man",
+          "pink-shirt man"
+        ],
+        "actor": "blue-shirt man",
+        "object": "",
+        "segment_boundary": "end",
+        "segment_label": "Ninja Warrior challenge",
+        "continuation_hint": "complete",
+        "event_index": 60,
+        "start_time": "01:56",
+        "end_time": "02:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "on_screen_text",
+        "description": "AMERICAN logo visible on platform in foreground",
+        "participants": [],
+        "actor": "",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "AMERICAN",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Ninja Warrior challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 61,
+        "start_time": "01:45",
+        "end_time": "02:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "shoulder_contact",
+        "description": "the blue-shirt man places his arm around the pink-shirt man's shoulder",
+        "participants": [
+          "blue-shirt man",
+          "pink-shirt man"
+        ],
+        "actor": "blue-shirt man",
+        "object": "",
+        "outcome": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 62,
+        "start_time": "02:00",
+        "end_time": "02:02",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "the pink-shirt man raises his hand while holding a microphone",
+        "participants": [
+          "pink-shirt man"
+        ],
+        "actor": "pink-shirt man",
+        "object": "",
+        "outcome": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "complete",
+        "event_index": 63,
+        "start_time": "02:01",
+        "end_time": "02:02",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "speak",
+        "description": "the blue-shirt man speaks into his microphone while standing on stage",
+        "participants": [
+          "blue-shirt man"
+        ],
+        "actor": "blue-shirt man",
+        "object": "",
+        "outcome": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "complete",
+        "event_index": 64,
+        "start_time": "02:00",
+        "end_time": "02:02",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 15,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "speak",
+        "description": "the pink-shirt man speaks into his microphone while standing on stage",
+        "participants": [
+          "pink-shirt man"
+        ],
+        "actor": "pink-shirt man",
+        "object": "",
+        "outcome": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "complete",
+        "event_index": 65,
+        "start_time": "02:00",
+        "end_time": "02:02",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 15,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "transition",
+        "description": "scene cuts from stage to outdoor area with group of people",
+        "participants": [],
+        "actor": "",
+        "object": "",
+        "outcome": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "complete",
+        "event_index": 66,
+        "start_time": "02:06",
+        "end_time": "02:07",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "handshake",
+        "description": "the red-shirt boy shakes hands with the purple-shirt boy",
+        "participants": [
+          "red-shirt boy",
+          "purple-shirt boy"
+        ],
+        "actor": "red-shirt boy",
+        "object": "",
+        "outcome": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "complete",
+        "event_index": 67,
+        "start_time": "02:07",
+        "end_time": "02:08",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "handshake",
+        "description": "the red-shirt boy shakes hands with the blue-shirt man",
+        "participants": [
+          "red-shirt boy",
+          "blue-shirt man"
+        ],
+        "actor": "red-shirt boy",
+        "object": "",
+        "outcome": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "complete",
+        "event_index": 68,
+        "start_time": "02:08",
+        "end_time": "02:09",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "hug",
+        "description": "the purple-shirt boy hugs the red-shirt boy",
+        "participants": [
+          "purple-shirt boy",
+          "red-shirt boy"
+        ],
+        "actor": "purple-shirt boy",
+        "object": "",
+        "outcome": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "complete",
+        "event_index": 69,
+        "start_time": "02:09",
+        "end_time": "02:10",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "graphic",
+        "description": "a title card showing \"ANW JUNIOR\" in large metallic letters appears on screen",
+        "participants": [],
+        "actor": "",
+        "object": "",
+        "outcome": "",
+        "on_screen_text": [
+          {
+            "text": "ANW JUNIOR",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "ANW JUNIOR",
+        "continuation_hint": "complete",
+        "event_index": 70,
+        "start_time": "02:11",
+        "end_time": "02:13",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 8,
+        "round_index": 2,
+        "segment_label_resolved": "ANW JUNIOR"
+      },
+      {
+        "event_type": "graphic",
+        "description": "a bracket screen showing semifinalists for ages 11-12 appears on screen",
+        "participants": [],
+        "actor": "",
+        "object": "",
+        "outcome": "",
+        "on_screen_text": [
+          {
+            "text": "SEMIFINALISTS: AGES 11-12",
+            "location": "title"
+          },
+          {
+            "text": "AUTUMN MATHISEN",
+            "location": "scoreboard"
+          },
+          {
+            "text": "ELLA McRITCHIE",
+            "location": "scoreboard"
+          },
+          {
+            "text": "HANS HERTZ",
+            "location": "scoreboard"
+          },
+          {
+            "text": "KAI BECKSTRAND",
+            "location": "scoreboard"
+          },
+          {
+            "text": "JOSH AUER",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TATE ALLEN",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CALEB BROWN",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAL PLOHOROS",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Semifinalists Bracket",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 71,
+        "start_time": "02:14",
+        "end_time": "02:15",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 8,
+        "round_index": 2,
+        "segment_label_resolved": "ANW JUNIOR"
+      },
+      {
+        "event_type": "demonstration",
+        "description": "The woman in the red tank top lifts her right leg up in a demonstration pose",
+        "participants": [
+          "red-tank-top woman",
+          "black-shirt man",
+          "light-blue-shirt boy",
+          "gray-tank-top boy"
+        ],
+        "actor": "red-tank-top woman",
+        "on_screen_text": [
+          {
+            "text": "NINJA MENTOR",
+            "location": "lower_third"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Mentor Demonstration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 72,
+        "start_time": "02:15",
+        "end_time": "02:18",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "ANW JUNIOR"
+      },
+      {
+        "event_type": "hold_position",
+        "description": "The woman in the red tank top holds her right leg in a raised position while speaking",
+        "participants": [
+          "red-tank-top woman",
+          "black-shirt man",
+          "light-blue-shirt boy",
+          "gray-tank-top boy"
+        ],
+        "actor": "red-tank-top woman",
+        "on_screen_text": [
+          {
+            "text": "NINJA MENTOR",
+            "location": "lower_third"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Mentor Demonstration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 73,
+        "start_time": "02:18",
+        "end_time": "02:21",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "ANW JUNIOR"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The man in the black shirt gestures with both hands while speaking to the group",
+        "participants": [
+          "red-tank-top woman",
+          "black-shirt man",
+          "light-blue-shirt boy",
+          "gray-tank-top boy"
+        ],
+        "actor": "black-shirt man",
+        "on_screen_text": [
+          {
+            "text": "NINJA MENTOR",
+            "location": "lower_third"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Mentor Demonstration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 74,
+        "start_time": "02:15",
+        "end_time": "02:20",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "ANW JUNIOR"
+      },
+      {
+        "event_type": "move_toward",
+        "description": "The woman in the red tank top moves toward the boy in the gray tank top while speaking",
+        "participants": [
+          "red-tank-top woman",
+          "gray-tank-top boy"
+        ],
+        "actor": "red-tank-top woman",
+        "on_screen_text": [
+          {
+            "text": "NINJA MENTOR",
+            "location": "lower_third"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Mentor Demonstration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 75,
+        "start_time": "02:21",
+        "end_time": "02:23",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "ANW JUNIOR"
+      },
+      {
+        "event_type": "fist_bump",
+        "description": "The man in the black shirt fist bumps the boy in the gray tank top",
+        "participants": [
+          "black-shirt man",
+          "gray-tank-top boy"
+        ],
+        "actor": "black-shirt man",
+        "on_screen_text": [
+          {
+            "text": "NINJA MENTOR",
+            "location": "lower_third"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Mentor Demonstration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 76,
+        "start_time": "02:22",
+        "end_time": "02:24",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "ANW JUNIOR"
+      },
+      {
+        "event_type": "point",
+        "description": "The man in the black shirt points with his right hand toward something off-camera",
+        "participants": [
+          "black-shirt man"
+        ],
+        "actor": "black-shirt man",
+        "on_screen_text": [
+          {
+            "text": "NINJA MENTOR",
+            "location": "lower_third"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Mentor Demonstration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 77,
+        "start_time": "02:24",
+        "end_time": "02:27",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "ANW JUNIOR"
+      },
+      {
+        "event_type": "applaud",
+        "description": "The audience claps and shows excitement while watching the event",
+        "participants": [
+          "audience members"
+        ],
+        "actor": "audience members",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Mentor Demonstration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 78,
+        "start_time": "02:28",
+        "end_time": "02:30",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "ANW JUNIOR"
+      },
+      {
+        "event_type": "applaud",
+        "description": "A boy in blue plaid shirt and blue cap claps enthusiastically",
+        "participants": [
+          "blue-plaid-shirt boy"
+        ],
+        "actor": "blue-plaid-shirt boy",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 79,
+        "start_time": "02:30",
+        "end_time": "02:33",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "ANW JUNIOR"
+      },
+      {
+        "event_type": "applaud",
+        "description": "A girl in red shirt holds a blue water bottle while reacting to the event",
+        "participants": [
+          "red-shirt girl"
+        ],
+        "actor": "red-shirt girl",
+        "object": "blue water bottle",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 80,
+        "start_time": "02:30",
+        "end_time": "02:33",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "ANW JUNIOR"
+      },
+      {
+        "event_type": "applaud",
+        "description": "Multiple audience members in background clap their hands",
+        "participants": [
+          "audience members"
+        ],
+        "actor": "audience members",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 81,
+        "start_time": "02:30",
+        "end_time": "02:33",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "ANW JUNIOR"
+      },
+      {
+        "event_type": "transition",
+        "description": "Camera transitions from audience view to obstacle course view",
+        "participants": [],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "complete",
+        "event_index": 82,
+        "start_time": "02:33",
+        "end_time": "02:36",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 8,
+        "round_index": 2,
+        "segment_label_resolved": "ANW JUNIOR"
+      },
+      {
+        "event_type": "stand",
+        "description": "Two boys stand on blue platform at the start of the obstacle course",
+        "participants": [
+          "light-blue-shirt boy",
+          "gray-tank-top boy"
+        ],
+        "actor": "light-blue-shirt boy",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "complete",
+        "event_index": 83,
+        "start_time": "02:36",
+        "end_time": "02:39",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "ANW JUNIOR"
+      },
+      {
+        "event_type": "gestures",
+        "description": "Boy in gray tank top gestures with his hand while standing on the platform",
+        "participants": [
+          "gray-tank-top boy"
+        ],
+        "actor": "gray-tank-top boy",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "complete",
+        "event_index": 84,
+        "start_time": "02:36",
+        "end_time": "02:39",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "ANW JUNIOR"
+      },
+      {
+        "event_type": "graphic",
+        "description": "On-screen text identifies the boy as Caleb Brown, age 12 from Christiana, TN",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "CALEB",
+            "location": "lower_third"
+          },
+          {
+            "text": "CALEB BROWN",
+            "location": "lower_third"
+          },
+          {
+            "text": "AGE:12",
+            "location": "lower_third"
+          },
+          {
+            "text": "CHRISTIANA, TN",
+            "location": "lower_third"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "complete",
+        "event_index": 85,
+        "start_time": "02:39",
+        "end_time": "02:42",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 8,
+        "round_index": 2,
+        "segment_label_resolved": "ANW JUNIOR"
+      },
+      {
+        "event_type": "scoreboard_update",
+        "description": "Stats graphic displays Caleb Brown's height, record, best time, and best obstacle",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "CALEB BROWN",
+            "location": "title"
+          },
+          {
+            "text": "5'5\"",
+            "location": "scoreboard"
+          },
+          {
+            "text": "4-0",
+            "location": "scoreboard"
+          },
+          {
+            "text": "36.83",
+            "location": "scoreboard"
+          },
+          {
+            "text": "RING TOSS",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 86,
+        "start_time": "02:42",
+        "end_time": "02:45",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "ANW JUNIOR"
+      },
+      {
+        "event_type": "stand",
+        "description": "A young boy in a light blue shirt and black shorts stands on the blue starting platform, preparing for the obstacle course",
+        "participants": [
+          "light-blue-shirt boy"
+        ],
+        "actor": "light-blue-shirt boy",
+        "segment_boundary": "start",
+        "segment_label": "Obstacle Course Run",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 87,
+        "start_time": "02:45",
+        "end_time": "02:48",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "run",
+        "description": "The young boy in a light blue shirt begins running from the starting platform onto the course",
+        "participants": [
+          "light-blue-shirt boy"
+        ],
+        "actor": "light-blue-shirt boy",
+        "segment_boundary": "middle",
+        "segment_label": "Obstacle Course Run",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 88,
+        "start_time": "02:48",
+        "end_time": "02:51",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 8,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "run",
+        "description": "The contestant continues running across the blue platform toward the first obstacle",
+        "participants": [
+          "light-blue-shirt boy"
+        ],
+        "actor": "light-blue-shirt boy",
+        "segment_boundary": "middle",
+        "segment_label": "Obstacle Course Run",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 89,
+        "start_time": "02:51",
+        "end_time": "02:55",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 8,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "approach",
+        "description": "The contestant runs toward the first set of red cylindrical obstacles on the course",
+        "participants": [
+          "light-blue-shirt boy"
+        ],
+        "actor": "light-blue-shirt boy",
+        "segment_boundary": "middle",
+        "segment_label": "Obstacle Course Run",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 90,
+        "start_time": "02:55",
+        "end_time": "03:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "run",
+        "description": "The two contestants run across a blue platform with yellow grid lines toward the ring obstacle",
+        "participants": [
+          "light-patterned-shirt boy",
+          "gray-tank-top boy"
+        ],
+        "actor": "light-patterned-shirt boy, gray-tank-top boy",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior course",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 91,
+        "start_time": "03:00",
+        "end_time": "03:02",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 8,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "jump",
+        "description": "The light-patterned-shirt boy jumps to reach the first red ring obstacle",
+        "participants": [
+          "light-patterned-shirt boy"
+        ],
+        "actor": "light-patterned-shirt boy",
+        "object": "red ring",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior course",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 92,
+        "start_time": "03:02",
+        "end_time": "03:04",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 5,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "jump",
+        "description": "The gray-tank-top boy jumps to reach the first red ring obstacle",
+        "participants": [
+          "gray-tank-top boy"
+        ],
+        "actor": "gray-tank-top boy",
+        "object": "red ring",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior course",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 93,
+        "start_time": "03:03",
+        "end_time": "03:05",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 5,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "swing",
+        "description": "The light-patterned-shirt boy swings from the first red ring to the second red ring",
+        "participants": [
+          "light-patterned-shirt boy"
+        ],
+        "actor": "light-patterned-shirt boy",
+        "object": "red ring",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior course",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 94,
+        "start_time": "03:04",
+        "end_time": "03:07",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 9,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "swing",
+        "description": "The gray-tank-top boy swings from the first red ring to the second red ring",
+        "participants": [
+          "gray-tank-top boy"
+        ],
+        "actor": "gray-tank-top boy",
+        "object": "red ring",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior course",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 95,
+        "start_time": "03:05",
+        "end_time": "03:08",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 9,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "swing",
+        "description": "The light-patterned-shirt boy continues to swing from the second red ring to the third red ring",
+        "participants": [
+          "light-patterned-shirt boy"
+        ],
+        "actor": "light-patterned-shirt boy",
+        "object": "red ring",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior course",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 96,
+        "start_time": "03:06",
+        "end_time": "03:09",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 9,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "swing",
+        "description": "The gray-tank-top boy continues to swing from the second red ring to the third red ring",
+        "participants": [
+          "gray-tank-top boy"
+        ],
+        "actor": "gray-tank-top boy",
+        "object": "red ring",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior course",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 97,
+        "start_time": "03:07",
+        "end_time": "03:10",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 9,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "swing",
+        "description": "The light-patterned-shirt boy swings from the third red ring to the fourth red ring",
+        "participants": [
+          "light-patterned-shirt boy"
+        ],
+        "actor": "light-patterned-shirt boy",
+        "object": "red ring",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior course",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 98,
+        "start_time": "03:09",
+        "end_time": "03:12",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 9,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "swing",
+        "description": "The gray-tank-top boy swings from the third red ring to the fourth red ring",
+        "participants": [
+          "gray-tank-top boy"
+        ],
+        "actor": "gray-tank-top boy",
+        "object": "red ring",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior course",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 99,
+        "start_time": "03:10",
+        "end_time": "03:13",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 9,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "swing",
+        "description": "The light-patterned-shirt boy continues swinging through the red ring obstacle course",
+        "participants": [
+          "light-patterned-shirt boy"
+        ],
+        "actor": "light-patterned-shirt boy",
+        "object": "red ring",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior course",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 100,
+        "start_time": "03:12",
+        "end_time": "03:15",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 9,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "ring_swing",
+        "description": "The gray tank top participant swings from the fourth red circular ring to the fifth red circular ring on the obstacle course",
+        "participants": [
+          "gray-tank-top participant",
+          "light-blue-shirt participant"
+        ],
+        "actor": "gray-tank-top participant",
+        "object": "red circular ring",
+        "outcome": "successful transition",
+        "on_screen_text": [
+          {
+            "text": "AMERICAN NINJA WARRIOR JUNIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ring Swing Obstacle",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 101,
+        "start_time": "03:15",
+        "end_time": "03:18",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 8,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "ring_swing",
+        "description": "The light blue shirt participant swings from the third red circular ring to the fourth red circular ring on the obstacle course",
+        "participants": [
+          "light-blue-shirt participant",
+          "gray-tank-top participant"
+        ],
+        "actor": "light-blue-shirt participant",
+        "object": "red circular ring",
+        "outcome": "successful transition",
+        "on_screen_text": [
+          {
+            "text": "AMERICAN NINJA WARRIOR JUNIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ring Swing Obstacle",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 102,
+        "start_time": "03:15",
+        "end_time": "03:19",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 8,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "obstacle_transition",
+        "description": "The gray tank top participant releases the red circular ring and lands on the blue platform, beginning to run forward",
+        "participants": [
+          "gray-tank-top participant"
+        ],
+        "actor": "gray-tank-top participant",
+        "object": "blue platform",
+        "outcome": "successful landing",
+        "on_screen_text": [
+          {
+            "text": "NINJA WARRIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ring Swing Obstacle",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 103,
+        "start_time": "03:18",
+        "end_time": "03:22",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "ring_swing",
+        "description": "The light blue shirt participant swings from the fourth red circular ring to the fifth red circular ring on the obstacle course",
+        "participants": [
+          "light-blue-shirt participant"
+        ],
+        "actor": "light-blue-shirt participant",
+        "object": "red circular ring",
+        "outcome": "successful transition",
+        "on_screen_text": [
+          {
+            "text": "NINJA WARRIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ring Swing Obstacle",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 104,
+        "start_time": "03:19",
+        "end_time": "03:23",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 8,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "platform_run",
+        "description": "The gray tank top participant runs across the blue platform toward the next obstacle, maintaining balance on the red and blue elements",
+        "participants": [
+          "gray-tank-top participant"
+        ],
+        "actor": "gray-tank-top participant",
+        "object": "blue platform",
+        "outcome": "continuing course",
+        "on_screen_text": [
+          {
+            "text": "NINJA WARRIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Platform Run",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 105,
+        "start_time": "03:22",
+        "end_time": "03:26",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "ring_swing",
+        "description": "The light blue shirt participant swings from the fifth red circular ring to the sixth red circular ring on the obstacle course",
+        "participants": [
+          "light-blue-shirt participant"
+        ],
+        "actor": "light-blue-shirt participant",
+        "object": "red circular ring",
+        "outcome": "successful transition",
+        "on_screen_text": [
+          {
+            "text": "NINJA WARRIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ring Swing Obstacle",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 106,
+        "start_time": "03:23",
+        "end_time": "03:27",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 8,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "obstacle_transition",
+        "description": "The light blue shirt participant releases the final red circular ring and lands on the blue platform, beginning to run forward",
+        "participants": [
+          "light-blue-shirt participant"
+        ],
+        "actor": "light-blue-shirt participant",
+        "object": "blue platform",
+        "outcome": "successful landing",
+        "on_screen_text": [
+          {
+            "text": "NINJA WARRIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ring Swing Obstacle",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 107,
+        "start_time": "03:26",
+        "end_time": "03:30",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "audience_reaction",
+        "description": "Spectators in the crowd raise their hands and cheer as the participants complete the ring obstacle",
+        "participants": [
+          "spectators"
+        ],
+        "actor": "spectators",
+        "object": "",
+        "outcome": "cheering",
+        "on_screen_text": [
+          {
+            "text": "NINJA WARRIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ring Swing Obstacle",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 108,
+        "start_time": "03:26",
+        "end_time": "03:30",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "climb",
+        "description": "The gray-shirt boy scales the curved wall obstacle using handholds with both hands",
+        "participants": [
+          "gray-shirt boy"
+        ],
+        "actor": "gray-shirt boy",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior - Wall Climb",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 109,
+        "start_time": "03:30",
+        "end_time": "03:35",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 7,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "climb",
+        "description": "The white-shirt boy follows the first contestant on the curved wall obstacle, climbing with both hands",
+        "participants": [
+          "white-shirt boy"
+        ],
+        "actor": "white-shirt boy",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior - Wall Climb",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 110,
+        "start_time": "03:32",
+        "end_time": "03:37",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 7,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "climb",
+        "description": "The gray-shirt boy reaches the top of the curved wall and pulls himself up",
+        "participants": [
+          "gray-shirt boy"
+        ],
+        "actor": "gray-shirt boy",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior - Wall Climb",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 111,
+        "start_time": "03:35",
+        "end_time": "03:38",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 7,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "help",
+        "description": "The gray-shirt boy extends his arm to help the white-shirt boy reach the top of the wall",
+        "participants": [
+          "gray-shirt boy",
+          "white-shirt boy"
+        ],
+        "actor": "gray-shirt boy",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior - Wall Climb",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 112,
+        "start_time": "03:36",
+        "end_time": "03:39",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "climb",
+        "description": "The white-shirt boy reaches the top of the curved wall with assistance from the gray-shirt boy",
+        "participants": [
+          "white-shirt boy"
+        ],
+        "actor": "white-shirt boy",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior - Wall Climb",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 113,
+        "start_time": "03:37",
+        "end_time": "03:40",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 7,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "move",
+        "description": "Both boys move away from the curved wall toward the next section of the course",
+        "participants": [
+          "gray-shirt boy",
+          "white-shirt boy"
+        ],
+        "actor": "gray-shirt boy",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior - Wall Climb",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 114,
+        "start_time": "03:38",
+        "end_time": "03:42",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "smoke_effect",
+        "description": "Smoke effects activate around the obstacle course, creating a dramatic atmosphere",
+        "participants": [],
+        "actor": "smoke effects",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior - Wall Climb",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 115,
+        "start_time": "03:39",
+        "end_time": "03:42",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "celebration",
+        "description": "The white-shirt boy and gray-shirt boy stand together near the next obstacle, sharing a moment of accomplishment",
+        "participants": [
+          "white-shirt boy",
+          "gray-shirt boy"
+        ],
+        "actor": "white-shirt boy",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior - Wall Climb",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 116,
+        "start_time": "03:40",
+        "end_time": "03:45",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "speak",
+        "description": "The blue-shirt host speaks into a microphone while standing next to the pink-shirt host",
+        "participants": [
+          "blue-shirt host",
+          "pink-shirt host"
+        ],
+        "actor": "blue-shirt host",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior - Wall Climb",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 117,
+        "start_time": "03:42",
+        "end_time": "03:45",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 15,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "speak",
+        "description": "The pink-shirt host speaks into a microphone while standing next to the blue-shirt host",
+        "participants": [
+          "blue-shirt host",
+          "pink-shirt host"
+        ],
+        "actor": "pink-shirt host",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior - Wall Climb",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 118,
+        "start_time": "03:42",
+        "end_time": "03:45",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 15,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "The boy in the gray tank top raises his right arm and waves",
+        "participants": [
+          "gray-tank-top boy"
+        ],
+        "actor": "gray-tank-top boy",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 119,
+        "start_time": "03:47",
+        "end_time": "03:50",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "shoulder_tap",
+        "description": "The taller boy in the blue patterned shirt places his hand on the shoulder of the boy in the gray tank top",
+        "participants": [
+          "blue-patterned-shirt boy",
+          "gray-tank-top boy"
+        ],
+        "actor": "blue-patterned-shirt boy",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 120,
+        "start_time": "03:49",
+        "end_time": "03:51",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "applaud",
+        "description": "The audience members including the young man in the gray tank top, the man in the black tank top, and the woman in the black shirt clap their hands",
+        "participants": [
+          "gray-tank-top audience member",
+          "black-tank-top audience member",
+          "black-shirt woman",
+          "other audience members"
+        ],
+        "actor": "audience members",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 121,
+        "start_time": "03:54",
+        "end_time": "03:59",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 10,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "speak",
+        "description": "The host in the blue shirt speaks into his microphone while gesturing with his right hand",
+        "participants": [
+          "blue-shirt host",
+          "pink-shirt host"
+        ],
+        "actor": "blue-shirt host",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 122,
+        "start_time": "03:59",
+        "end_time": "04:00",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 15,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "speak",
+        "description": "The host in the pink shirt speaks into his microphone while gesturing with his left hand",
+        "participants": [
+          "blue-shirt host",
+          "pink-shirt host"
+        ],
+        "actor": "pink-shirt host",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 123,
+        "start_time": "03:59",
+        "end_time": "04:00",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 15,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "obstacle_course",
+        "description": "Two boys hang from and swing between red circular rings suspended over water to gain momentum for the next obstacle",
+        "participants": [
+          "light blue shirt boy",
+          "blue shirt with green design boy"
+        ],
+        "actor": null,
+        "object": "red rings",
+        "on_screen_text": [
+          {
+            "text": "AMERICAN NINJA WARRIOR JUNIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 124,
+        "start_time": "04:00",
+        "end_time": "04:05",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 8,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "obstacle_completion",
+        "description": "The light blue shirt boy successfully reaches and grabs the platform at the end of the ring obstacle",
+        "participants": [
+          "light blue shirt boy"
+        ],
+        "actor": "light blue shirt boy",
+        "object": "platform",
+        "on_screen_text": [
+          {
+            "text": "AMERICAN NINJA WARRIOR JUNIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 125,
+        "start_time": "04:05",
+        "end_time": "04:07",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "fall",
+        "description": "The blue shirt with green design boy loses grip on the rings and falls into the pool below",
+        "participants": [
+          "blue shirt with green design boy"
+        ],
+        "actor": "blue shirt with green design boy",
+        "object": "pool",
+        "on_screen_text": [
+          {
+            "text": "AMERICAN NINJA WARRIOR JUNIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 126,
+        "start_time": "04:05",
+        "end_time": "04:07",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "run",
+        "description": "The light blue shirt boy runs from the ring obstacle platform toward the vertical wall obstacle",
+        "participants": [
+          "light blue shirt boy"
+        ],
+        "actor": "light blue shirt boy",
+        "object": "vertical wall obstacle",
+        "on_screen_text": [
+          {
+            "text": "AMERICAN NINJA WARRIOR JUNIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 127,
+        "start_time": "04:07",
+        "end_time": "04:09",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 8,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "wall_climb",
+        "description": "The light blue shirt boy climbs the vertical wall obstacle using handholds to pull himself upward",
+        "participants": [
+          "light blue shirt boy"
+        ],
+        "actor": "light blue shirt boy",
+        "object": "vertical wall",
+        "on_screen_text": [
+          {
+            "text": "AMERICAN NINJA WARRIOR JUNIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 128,
+        "start_time": "04:08",
+        "end_time": "04:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "audience_reaction",
+        "description": "Spectators watch the competition, showing various reactions including concern during the fall and encouragement for the continuing competitor",
+        "participants": [
+          "audience members"
+        ],
+        "actor": "audience members",
+        "object": null,
+        "on_screen_text": [
+          {
+            "text": "AMERICAN NINJA WARRIOR JUNIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 129,
+        "start_time": "04:00",
+        "end_time": "04:15",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "obstacle_course",
+        "description": "Two competitors jump to grasp red rings on the Ninja Warrior obstacle course",
+        "participants": [
+          "blue-patterned-shirt boy",
+          "gray-tank-top boy"
+        ],
+        "actor": "blue-patterned-shirt boy",
+        "object": "red rings",
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Warrior course",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 130,
+        "start_time": "04:15",
+        "end_time": "04:18",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 8,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "obstacle_course",
+        "description": "The blue-patterned-shirt boy swings forward while maintaining grip on red rings",
+        "participants": [
+          "blue-patterned-shirt boy"
+        ],
+        "actor": "blue-patterned-shirt boy",
+        "object": "red rings",
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Warrior course",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 131,
+        "start_time": "04:18",
+        "end_time": "04:21",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 8,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "obstacle_course",
+        "description": "The gray-tank-top boy follows by swinging forward while gripping red rings",
+        "participants": [
+          "gray-tank-top boy"
+        ],
+        "actor": "gray-tank-top boy",
+        "object": "red rings",
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Warrior course",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 132,
+        "start_time": "04:21",
+        "end_time": "04:23",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 8,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "obstacle_course",
+        "description": "The blue-patterned-shirt boy reaches for and grasps the next red ring in the sequence",
+        "participants": [
+          "blue-patterned-shirt boy"
+        ],
+        "actor": "blue-patterned-shirt boy",
+        "object": "red rings",
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Warrior course",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 133,
+        "start_time": "04:23",
+        "end_time": "04:26",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 8,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "obstacle_course",
+        "description": "The gray-tank-top boy reaches for and grasps the next red ring while following the first competitor",
+        "participants": [
+          "gray-tank-top boy"
+        ],
+        "actor": "gray-tank-top boy",
+        "object": "red rings",
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Warrior course",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 134,
+        "start_time": "04:26",
+        "end_time": "04:29",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 8,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "obstacle_course",
+        "description": "Both competitors continue progressing through the red ring obstacle on the Ninja Warrior course",
+        "participants": [
+          "blue-patterned-shirt boy",
+          "gray-tank-top boy"
+        ],
+        "actor": "blue-patterned-shirt boy",
+        "object": "red rings",
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Warrior course",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 135,
+        "start_time": "04:29",
+        "end_time": "04:30",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 8,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "speak",
+        "description": "woman in red sleeveless top speaks while holding microphone toward the two young men",
+        "participants": [
+          "blue-shirt young man",
+          "gray-tank-top young man",
+          "crowd"
+        ],
+        "actor": "red-sleeveless-top woman",
+        "on_screen_text": [
+          {
+            "text": "NINJA WARRIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Warrior Interview",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 136,
+        "start_time": "04:30",
+        "end_time": "04:33",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 15,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "applaud",
+        "description": "multiple people in the crowd clap behind the barrier",
+        "participants": [
+          "crowd"
+        ],
+        "actor": "crowd",
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Warrior Interview",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 137,
+        "start_time": "04:30",
+        "end_time": "04:45",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 10,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "speak",
+        "description": "blue-shirt young man responds to interviewer while looking at the microphone",
+        "participants": [
+          "red-sleeveless-top woman",
+          "gray-tank-top young man"
+        ],
+        "actor": "blue-shirt young man",
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Warrior Interview",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 138,
+        "start_time": "04:33",
+        "end_time": "04:36",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 15,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "speak",
+        "description": "gray-tank-top young man speaks while smiling and looking at the interviewer",
+        "participants": [
+          "red-sleeveless-top woman",
+          "blue-shirt young man"
+        ],
+        "actor": "gray-tank-top young man",
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Warrior Interview",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 139,
+        "start_time": "04:36",
+        "end_time": "04:40",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 15,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "hand_gesture",
+        "description": "red-sleeveless-top woman moves microphone from blue-shirt young man to gray-tank-top young man",
+        "participants": [
+          "blue-shirt young man",
+          "gray-tank-top young man"
+        ],
+        "actor": "red-sleeveless-top woman",
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Warrior Interview",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 140,
+        "start_time": "04:37",
+        "end_time": "04:40",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "speak",
+        "description": "red-sleeveless-top woman speaks while making expressive hand gestures",
+        "participants": [
+          "blue-shirt young man",
+          "gray-tank-top young man",
+          "crowd"
+        ],
+        "actor": "red-sleeveless-top woman",
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Warrior Interview",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 141,
+        "start_time": "04:41",
+        "end_time": "04:45",
+        "sub_events": [],
+        "subtype_order": 13,
+        "subtype_total": 15,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "speak",
+        "description": "The boy in the light blue patterned shirt speaks while making hand gestures.",
+        "participants": [
+          "blue-shirt boy",
+          "red-shirt interviewer"
+        ],
+        "actor": "blue-shirt boy",
+        "segment_boundary": "middle",
+        "segment_label": "Interview segment",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 142,
+        "start_time": "04:45",
+        "end_time": "04:50",
+        "sub_events": [],
+        "subtype_order": 14,
+        "subtype_total": 15,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "hold",
+        "description": "The woman in red holds a microphone with a blue logo toward the boy in the blue shirt.",
+        "participants": [
+          "red-shirt interviewer"
+        ],
+        "actor": "red-shirt interviewer",
+        "object": "microphone",
+        "segment_boundary": "middle",
+        "segment_label": "Interview segment",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 143,
+        "start_time": "04:45",
+        "end_time": "04:50",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "applaud",
+        "description": "Several audience members in the background are clapping.",
+        "participants": [
+          "audience members"
+        ],
+        "actor": "audience members",
+        "segment_boundary": "middle",
+        "segment_label": "Interview segment",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 144,
+        "start_time": "04:45",
+        "end_time": "04:50",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 10,
+        "round_index": 3,
+        "segment_label_resolved": "Obstacle Course Run"
+      },
+      {
+        "event_type": "transition",
+        "description": "The scene cuts to a Ninja Warrior-style obstacle course with red circular obstacles over a blue pool.",
+        "participants": [],
+        "actor": "camera",
+        "on_screen_text": [
+          {
+            "text": "NINJA WARRIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Ninja Warrior obstacle course",
+        "continuation_hint": "complete",
+        "event_index": 145,
+        "start_time": "04:50",
+        "end_time": "04:51",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 8,
+        "round_index": 4,
+        "segment_label_resolved": "Ninja Warrior obstacle course"
+      },
+      {
+        "event_type": "obstacle_course",
+        "description": "Two contestants swing across red circular obstacles suspended over a blue pool.",
+        "participants": [
+          "obstacle course contestants"
+        ],
+        "actor": "obstacle course contestants",
+        "on_screen_text": [
+          {
+            "text": "NINJA WARRIOR",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Warrior obstacle course",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 146,
+        "start_time": "04:51",
+        "end_time": "04:54",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 8,
+        "round_index": 4,
+        "segment_label_resolved": "Ninja Warrior obstacle course"
+      },
+      {
+        "event_type": "transition",
+        "description": "The scene cuts back to the interview area.",
+        "participants": [],
+        "actor": "camera",
+        "segment_boundary": "end",
+        "segment_label": "Ninja Warrior obstacle course",
+        "continuation_hint": "complete",
+        "event_index": 147,
+        "start_time": "04:55",
+        "end_time": "04:56",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 8,
+        "round_index": 4,
+        "segment_label_resolved": "Ninja Warrior obstacle course"
+      },
+      {
+        "event_type": "hold",
+        "description": "The interviewer holds the microphone toward the boy in the gray tank top.",
+        "participants": [
+          "red-shirt interviewer",
+          "gray-tank-top boy"
+        ],
+        "actor": "red-shirt interviewer",
+        "object": "microphone",
+        "segment_boundary": "middle",
+        "segment_label": "Interview segment",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 148,
+        "start_time": "04:56",
+        "end_time": "05:00",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 4,
+        "segment_label_resolved": "Ninja Warrior obstacle course"
+      },
+      {
+        "event_type": "speak",
+        "description": "The boy in the gray tank top speaks into the microphone.",
+        "participants": [
+          "gray-tank-top boy"
+        ],
+        "actor": "gray-tank-top boy",
+        "segment_boundary": "middle",
+        "segment_label": "Interview segment",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 149,
+        "start_time": "04:56",
+        "end_time": "05:00",
+        "sub_events": [],
+        "subtype_order": 15,
+        "subtype_total": 15,
+        "round_index": 4,
+        "segment_label_resolved": "Ninja Warrior obstacle course"
+      },
+      {
+        "event_type": "applaud",
+        "description": "Audience members in the background are clapping while the second boy speaks.",
+        "participants": [
+          "audience members"
+        ],
+        "actor": "audience members",
+        "segment_boundary": "middle",
+        "segment_label": "Interview segment",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 150,
+        "start_time": "04:56",
+        "end_time": "05:00",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 10,
+        "round_index": 4,
+        "segment_label_resolved": "Ninja Warrior obstacle course"
+      },
+      {
+        "event_type": "scoreboard_update",
+        "description": "The bracket display shows green highlights appearing on finalist names ELLA McRITCHIE, TATE ALLEN, KAI BECKSTRAND, and CALEB BROWN",
+        "participants": [],
+        "actor": "graphic display",
+        "object_before": "black and white bracket",
+        "object_after": "black and white bracket with green highlights",
+        "object_before_pattern": "unhighlighted names",
+        "object_after_pattern": "highlighted finalist names",
+        "on_screen_text": [
+          {
+            "text": "FINALISTS: AGES 11-12",
+            "location": "banner"
+          },
+          {
+            "text": "ELLA McRITCHIE",
+            "location": "bracket"
+          },
+          {
+            "text": "TATE ALLEN",
+            "location": "bracket"
+          },
+          {
+            "text": "KAI BECKSTRAND",
+            "location": "bracket"
+          },
+          {
+            "text": "CALEB BROWN",
+            "location": "bracket"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Finalists Bracket",
+        "continuation_hint": "complete",
+        "event_index": 151,
+        "start_time": "05:00",
+        "end_time": "05:07",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 4,
+        "segment_label_resolved": "Ninja Warrior obstacle course"
+      },
+      {
+        "event_type": "transition",
+        "description": "The screen transitions from the bracket display to the ANW JUNIOR title card",
+        "participants": [],
+        "actor": "graphic display",
+        "on_screen_text": [
+          {
+            "text": "ANW JUNIOR",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "ANW Junior",
+        "continuation_hint": "complete",
+        "event_index": 152,
+        "start_time": "05:07",
+        "end_time": "05:09",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 8,
+        "round_index": 5,
+        "segment_label_resolved": "ANW Junior"
+      },
+      {
+        "event_type": "scene_change",
+        "description": "The scene changes to show the Ninja Warrior obstacle course with four contestants standing on platforms",
+        "participants": [
+          "pink-outfit girl",
+          "blue-shirt boy",
+          "orange-shirt boy",
+          "light-blue-shirt boy"
+        ],
+        "actor": "camera",
+        "on_screen_text": [
+          {
+            "text": "NINJA WARRIOR JUNIOR",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Warrior Junior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 153,
+        "start_time": "05:09",
+        "end_time": "05:12",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 5,
+        "segment_label_resolved": "ANW Junior"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The camera zooms in on the girl in pink with pigtails as her name text appears on screen",
+        "participants": [
+          "pink-outfit girl"
+        ],
+        "actor": "graphic display",
+        "object": "text overlay",
+        "on_screen_text": [
+          {
+            "text": "ELLA McRITCHIE",
+            "location": "name_tag"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Ninja Warrior Junior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 154,
+        "start_time": "05:12",
+        "end_time": "05:15",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 8,
+        "round_index": 5,
+        "segment_label_resolved": "ANW Junior"
+      },
+      {
+        "event_type": "title_card",
+        "description": "Promotional graphic for American Ninja Warrior Junior is displayed on screen",
+        "participants": [],
+        "actor": null,
+        "on_screen_text": [
+          {
+            "text": "DREAM WORKS tv",
+            "location": "logo"
+          },
+          {
+            "text": "Click Me",
+            "location": "graphic"
+          },
+          {
+            "text": "AMERICAN NINJA WARRIOR JUNIOR",
+            "location": "title"
+          },
+          {
+            "text": "SATURDAYS",
+            "location": "caption"
+          },
+          {
+            "text": "7/6C",
+            "location": "caption"
+          },
+          {
+            "text": "ON",
+            "location": "caption"
+          },
+          {
+            "text": "UNIVERSAL KIDS",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 155,
+        "start_time": "05:15",
+        "end_time": "05:28",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 6,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "transition",
+        "description": "Bright flash transition effect occurs on screen",
+        "participants": [],
+        "actor": null,
+        "object_before": "blue promotional graphic",
+        "object_after": "bright white flash",
+        "segment_boundary": "end",
+        "segment_label": "American Ninja Warrior Junior",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 156,
+        "start_time": "05:28",
+        "end_time": "05:30",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 8,
+        "round_index": 6,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "graphic_appear",
+        "description": "The \"Click Me\" text appears on the screen with an arrow pointing to it",
+        "participants": [],
+        "actor": "graphic element",
+        "object": "Click Me text",
+        "object_before": "not visible",
+        "object_after": "visible",
+        "on_screen_text": [
+          {
+            "text": "Click Me",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior promo",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 157,
+        "start_time": "05:31.62",
+        "end_time": "05:31.62",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 6,
+        "round_index": 6,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "graphic_disappear",
+        "description": "The \"Click Me\" text disappears from the screen",
+        "participants": [],
+        "actor": "graphic element",
+        "object": "Click Me text",
+        "object_before": "visible",
+        "object_after": "not visible",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior promo",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 158,
+        "start_time": "05:32.16",
+        "end_time": "05:32.16",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 6,
+        "round_index": 6,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "graphic_appear",
+        "description": "The \"Click Me\" text reappears on the screen with an arrow pointing to it",
+        "participants": [],
+        "actor": "graphic element",
+        "object": "Click Me text",
+        "object_before": "not visible",
+        "object_after": "visible",
+        "on_screen_text": [
+          {
+            "text": "Click Me",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior promo",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 159,
+        "start_time": "05:33.78",
+        "end_time": "05:33.78",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 6,
+        "round_index": 6,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "graphic_disappear",
+        "description": "The \"Click Me\" text disappears from the screen",
+        "participants": [],
+        "actor": "graphic element",
+        "object": "Click Me text",
+        "object_before": "visible",
+        "object_after": "not visible",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior promo",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 160,
+        "start_time": "05:34.32",
+        "end_time": "05:34.32",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 6,
+        "round_index": 6,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "graphic_appear",
+        "description": "The \"Click Me\" text reappears on the screen with an arrow pointing to it",
+        "participants": [],
+        "actor": "graphic element",
+        "object": "Click Me text",
+        "object_before": "not visible",
+        "object_after": "visible",
+        "on_screen_text": [
+          {
+            "text": "Click Me",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior promo",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 161,
+        "start_time": "05:35.94",
+        "end_time": "05:35.94",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 6,
+        "round_index": 6,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "graphic_disappear",
+        "description": "The \"Click Me\" text disappears from the screen",
+        "participants": [],
+        "actor": "graphic element",
+        "object": "Click Me text",
+        "object_before": "visible",
+        "object_after": "not visible",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior promo",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 162,
+        "start_time": "05:36.48",
+        "end_time": "05:36.48",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 6,
+        "round_index": 6,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "graphic_appear",
+        "description": "The \"Click Me\" text reappears on the screen with an arrow pointing to it",
+        "participants": [],
+        "actor": "graphic element",
+        "object": "Click Me text",
+        "object_before": "not visible",
+        "object_after": "visible",
+        "on_screen_text": [
+          {
+            "text": "Click Me",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior promo",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 163,
+        "start_time": "05:38.10",
+        "end_time": "05:38.10",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 6,
+        "round_index": 6,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "graphic_disappear",
+        "description": "The \"Click Me\" text disappears from the screen",
+        "participants": [],
+        "actor": "graphic element",
+        "object": "Click Me text",
+        "object_before": "visible",
+        "object_after": "not visible",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior promo",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 164,
+        "start_time": "05:38.64",
+        "end_time": "05:38.64",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 6,
+        "round_index": 6,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "graphic_appear",
+        "description": "The \"Click Me\" text reappears on the screen with an arrow pointing to it",
+        "participants": [],
+        "actor": "graphic element",
+        "object": "Click Me text",
+        "object_before": "not visible",
+        "object_after": "visible",
+        "on_screen_text": [
+          {
+            "text": "Click Me",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior promo",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 165,
+        "start_time": "05:40.26",
+        "end_time": "05:40.26",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 6,
+        "round_index": 6,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "graphic_disappear",
+        "description": "The \"Click Me\" text disappears from the screen",
+        "participants": [],
+        "actor": "graphic element",
+        "object": "Click Me text",
+        "object_before": "visible",
+        "object_after": "not visible",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior promo",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 166,
+        "start_time": "05:40.80",
+        "end_time": "05:40.80",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 6,
+        "round_index": 6,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "graphic_appear",
+        "description": "The \"Click Me\" text reappears on the screen with an arrow pointing to it",
+        "participants": [],
+        "actor": "graphic element",
+        "object": "Click Me text",
+        "object_before": "not visible",
+        "object_after": "visible",
+        "on_screen_text": [
+          {
+            "text": "Click Me",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior promo",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 167,
+        "start_time": "05:42.42",
+        "end_time": "05:42.42",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 6,
+        "round_index": 6,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      },
+      {
+        "event_type": "graphic_disappear",
+        "description": "The \"Click Me\" text disappears from the screen",
+        "participants": [],
+        "actor": "graphic element",
+        "object": "Click Me text",
+        "object_before": "visible",
+        "object_after": "not visible",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "American Ninja Warrior Junior promo",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 168,
+        "start_time": "05:42.96",
+        "end_time": "05:42.96",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 6,
+        "round_index": 6,
+        "segment_label_resolved": "American Ninja Warrior Junior"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "American Ninja Warrior Junior",
+        "event_index_range": [
+          1,
+          69
+        ]
+      },
+      {
+        "round_index": 2,
+        "label": "ANW JUNIOR",
+        "event_index_range": [
+          70,
+          86
+        ]
+      },
+      {
+        "round_index": 3,
+        "label": "Obstacle Course Run",
+        "event_index_range": [
+          87,
+          144
+        ]
+      },
+      {
+        "round_index": 4,
+        "label": "Ninja Warrior obstacle course",
+        "event_index_range": [
+          145,
+          151
+        ]
+      },
+      {
+        "round_index": 5,
+        "label": "ANW Junior",
+        "event_index_range": [
+          152,
+          154
+        ]
+      },
+      {
+        "round_index": 6,
+        "label": "American Ninja Warrior Junior",
+        "event_index_range": [
+          155,
+          168
+        ]
+      }
+    ]
+  }
+}

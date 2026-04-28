@@ -1,0 +1,3022 @@
+{
+  "video_name": "0050_ImEnWAVRLU0.mp4",
+  "video_duration_sec": 532.8239583333333,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:03",
+          "event_type": "static_view",
+          "description": "Static shot of two building facades side by side, one with white grid-like patterns and the other a dark building with visible windows",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "segment_boundary": "start",
+          "segment_label": "Building Facade Sequence",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:04",
+          "local_end": "00:06",
+          "event_type": "scene_transition",
+          "description": "Transition from building facade view to reflection scene in glass building surface",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "segment_boundary": "start",
+          "segment_label": "Reflection Sequence",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:04",
+          "local_end": "00:06",
+          "event_type": "visual_state_change",
+          "description": "Yellow taxis move across the reflection in the glass building",
+          "participants": [],
+          "actor": "",
+          "object": "yellow taxi",
+          "object_before": "yellow taxi",
+          "object_after": "yellow taxi",
+          "segment_boundary": "middle",
+          "segment_label": "Reflection Sequence",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:12",
+          "event_type": "scene_transition",
+          "description": "Transition from reflection scene to low-angle shot of tall building with American flag",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "segment_boundary": "start",
+          "segment_label": "Flag Sequence",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:12",
+          "event_type": "visual_state_change",
+          "description": "American flag waves in the wind, changing position and shape across frames",
+          "participants": [],
+          "actor": "",
+          "object": "American flag",
+          "object_before": "American flag",
+          "object_after": "American flag",
+          "segment_boundary": "middle",
+          "segment_label": "Flag Sequence",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:13",
+          "local_end": "00:15",
+          "event_type": "scene_transition",
+          "description": "Transition from building with flag to street view showing traffic and buildings",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "segment_boundary": "start",
+          "segment_label": "Street View Sequence",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:13",
+          "local_end": "00:15",
+          "event_type": "visual_state_change",
+          "description": "Black car moves forward on city street with sunlight reflecting off its surface",
+          "participants": [
+            "black car"
+          ],
+          "actor": "black car",
+          "object": "black car",
+          "object_before": "black car",
+          "object_after": "black car",
+          "segment_boundary": "middle",
+          "segment_label": "Street View Sequence",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 30.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:30",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:21",
+          "event_type": "push",
+          "description": "bellhop pushes a golden luggage cart down the hotel hallway",
+          "participants": [
+            "red-uniform bellhop"
+          ],
+          "actor": "red-uniform bellhop",
+          "object": "golden luggage cart",
+          "segment_boundary": "middle",
+          "segment_label": "hotel hallway activity",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:18",
+          "local_end": "00:29",
+          "event_type": "walk",
+          "description": "man in dark suit walks purposefully down the hotel hallway while holding a briefcase",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "object": "briefcase",
+          "segment_boundary": "middle",
+          "segment_label": "hotel hallway activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:24",
+          "local_end": "00:27",
+          "event_type": "on_screen_text",
+          "description": "sign displaying Harvard Law Interviews information is visible in the hallway",
+          "participants": [],
+          "actor": null,
+          "on_screen_text": [
+            {
+              "text": "PEARSON HARDMAN",
+              "location": "sign"
+            },
+            {
+              "text": "HARVARD LAW INTERVIEWS",
+              "location": "sign"
+            },
+            {
+              "text": "Room 2005",
+              "location": "sign"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "hotel hallway activity",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:28",
+          "local_end": "00:30",
+          "event_type": "review_documents",
+          "description": "woman with red hair sits at a desk and reviews papers while looking at a laptop",
+          "participants": [
+            "red-haired woman"
+          ],
+          "actor": "red-haired woman",
+          "object": "papers",
+          "segment_boundary": "middle",
+          "segment_label": "hotel hallway activity",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 2,
+      "chunk_start_sec": 30.0,
+      "chunk_end_sec": 45.0,
+      "chunk_start_mmss": "00:30",
+      "chunk_end_mmss": "00:45",
+      "events": [
+        {
+          "local_start": "00:30",
+          "local_end": "00:37",
+          "event_type": "speak",
+          "description": "blonde woman seated at desk holding papers and speaking while looking at documents",
+          "participants": [
+            "blonde woman in black top"
+          ],
+          "actor": "blonde woman in black top",
+          "segment_boundary": "middle",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:38",
+          "local_end": "00:40",
+          "event_type": "stand",
+          "description": "man in dark suit with striped tie standing in doorway with hands clasped in front of him",
+          "participants": [
+            "man in dark suit with striped tie",
+            "man near lamp",
+            "man sitting"
+          ],
+          "actor": "man in dark suit with striped tie",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:41",
+          "local_end": "00:42",
+          "event_type": "walk",
+          "description": "man near lamp in background walking toward the left side of the room",
+          "participants": [
+            "man near lamp"
+          ],
+          "actor": "man near lamp",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:43",
+          "local_end": "00:45",
+          "event_type": "hand_raise",
+          "description": "blonde woman raises her right hand while holding blue and white pen",
+          "participants": [
+            "blonde woman in black top"
+          ],
+          "actor": "blonde woman in black top",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 3,
+      "chunk_start_sec": 45.0,
+      "chunk_end_sec": 60.0,
+      "chunk_start_mmss": "00:45",
+      "chunk_end_mmss": "01:00",
+      "events": [
+        {
+          "local_start": "00:45",
+          "local_end": "00:49",
+          "event_type": "react",
+          "description": "A woman with red hair in a black suit holds a blue pen and displays a surprised expression with her mouth open",
+          "participants": [
+            "red-haired woman in black suit"
+          ],
+          "actor": "red-haired woman in black suit",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:53",
+          "local_end": "00:54",
+          "event_type": "manipulate_object",
+          "description": "A hand turns off a silver faucet that was running water",
+          "participants": [
+            "man's hand"
+          ],
+          "actor": "man's hand",
+          "object": "silver faucet",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:55",
+          "local_end": "00:57",
+          "event_type": "look",
+          "description": "A man in a suit looks intently through a peephole or camera device",
+          "participants": [
+            "man in suit"
+          ],
+          "actor": "man in suit",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:57",
+          "local_end": "00:58",
+          "event_type": "react",
+          "description": "The man in the suit shows a surprised expression while looking through the device",
+          "participants": [
+            "man in suit"
+          ],
+          "actor": "man in suit",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:58",
+          "local_end": "00:59",
+          "event_type": "gesture",
+          "description": "The man in the suit touches his face with his hand while continuing to look through the device",
+          "participants": [
+            "man in suit"
+          ],
+          "actor": "man in suit",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:59",
+          "local_end": "01:00",
+          "event_type": "look",
+          "description": "The man in the suit continues to look through the peephole or camera device with a focused expression",
+          "participants": [
+            "man in suit"
+          ],
+          "actor": "man in suit",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 4,
+      "chunk_start_sec": 60.0,
+      "chunk_end_sec": 75.0,
+      "chunk_start_mmss": "01:00",
+      "chunk_end_mmss": "01:15",
+      "events": [
+        {
+          "local_start": "01:00",
+          "local_end": "01:02",
+          "event_type": "tissue_use",
+          "description": "man brings white tissue up to his face with both hands",
+          "participants": [
+            "man in dark suit"
+          ],
+          "actor": "man in dark suit",
+          "object": "white tissue",
+          "segment_boundary": "middle",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "01:02",
+          "local_end": "01:05",
+          "event_type": "tissue_use",
+          "description": "man covers his nose and mouth completely with the white tissue",
+          "participants": [
+            "man in dark suit"
+          ],
+          "actor": "man in dark suit",
+          "object": "white tissue",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:05",
+          "local_end": "01:07",
+          "event_type": "tissue_use",
+          "description": "man lowers the white tissue slightly while looking at his reflection in the bathroom mirror",
+          "participants": [
+            "man in dark suit"
+          ],
+          "actor": "man in dark suit",
+          "object": "white tissue",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:07",
+          "local_end": "01:09",
+          "event_type": "discard",
+          "description": "man places the used white tissue on the black sink counter",
+          "participants": [
+            "man in dark suit"
+          ],
+          "actor": "man in dark suit",
+          "object": "white tissue",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:09",
+          "local_end": "01:11",
+          "event_type": "briefcase_handle",
+          "description": "man reaches toward the left side of the sink counter to grasp a black briefcase",
+          "participants": [
+            "man in dark suit"
+          ],
+          "actor": "man in dark suit",
+          "object": "black briefcase",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:11",
+          "local_end": "01:13",
+          "event_type": "briefcase_handle",
+          "description": "man opens the black briefcase on the sink counter",
+          "participants": [
+            "man in dark suit"
+          ],
+          "actor": "man in dark suit",
+          "object": "black briefcase",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:13",
+          "local_end": "01:15",
+          "event_type": "walk",
+          "description": "man closes the black briefcase, picks it up, and walks away from the sink area",
+          "participants": [
+            "man in dark suit"
+          ],
+          "actor": "man in dark suit",
+          "object": "black briefcase",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 5,
+      "chunk_start_sec": 75.0,
+      "chunk_end_sec": 90.0,
+      "chunk_start_mmss": "01:15",
+      "chunk_end_mmss": "01:30",
+      "events": [
+        {
+          "local_start": "01:15",
+          "local_end": "01:18",
+          "event_type": "walk",
+          "description": "A man in blue shirt and black shorts walks down stairs with a child while carrying towels",
+          "participants": [
+            "blue-shirt man",
+            "child"
+          ],
+          "actor": "blue-shirt man",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "01:18",
+          "local_end": "01:26",
+          "event_type": "walk",
+          "description": "A man in dark suit walks through the hotel lobby carrying a black briefcase",
+          "participants": [
+            "dark-suited man"
+          ],
+          "actor": "dark-suited man",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:26",
+          "local_end": "01:28",
+          "event_type": "enter",
+          "description": "The man in dark suit enters an elevator with his briefcase",
+          "participants": [
+            "dark-suited man"
+          ],
+          "actor": "dark-suited man",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:28",
+          "local_end": "01:30",
+          "event_type": "speak",
+          "description": "A woman with blonde hair sits at a desk with a laptop and speaks while touching her face",
+          "participants": [
+            "blonde woman"
+          ],
+          "actor": "blonde woman",
+          "segment_boundary": "start",
+          "segment_label": "Office Conversation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 6,
+      "chunk_start_sec": 90.0,
+      "chunk_end_sec": 105.0,
+      "chunk_start_mmss": "01:30",
+      "chunk_end_mmss": "01:45",
+      "events": [
+        {
+          "local_start": "01:30",
+          "local_end": "01:33",
+          "event_type": "speak",
+          "description": "red-haired woman speaks while seated at desk",
+          "participants": [
+            "red-haired woman in black blazer"
+          ],
+          "actor": "red-haired woman in black blazer",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "01:33",
+          "local_end": "01:35",
+          "event_type": "hand_raise",
+          "description": "red-haired woman raises her right hand while speaking",
+          "participants": [
+            "red-haired woman in black blazer"
+          ],
+          "actor": "red-haired woman in black blazer",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:35",
+          "local_end": "01:38",
+          "event_type": "walk",
+          "description": "two men in suits walk through a hallway",
+          "participants": [
+            "man in striped tie",
+            "man in solid tie"
+          ],
+          "actor": "man in striped tie",
+          "object": "",
+          "segment_boundary": "start",
+          "segment_label": "Hallway Walk",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:39",
+          "local_end": "01:41",
+          "event_type": "shoulder_tap",
+          "description": "man in solid tie places his right hand on the shoulder of man in striped tie",
+          "participants": [
+            "man in solid tie",
+            "man in striped tie"
+          ],
+          "actor": "man in solid tie",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "Hallway Walk",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:41",
+          "local_end": "01:45",
+          "event_type": "walk",
+          "description": "man in solid tie walks with his hand on the shoulder of man in striped tie",
+          "participants": [
+            "man in solid tie",
+            "man in striped tie"
+          ],
+          "actor": "man in solid tie",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "Hallway Walk",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 7,
+      "chunk_start_sec": 105.0,
+      "chunk_end_sec": 120.0,
+      "chunk_start_mmss": "01:45",
+      "chunk_end_mmss": "02:00",
+      "events": [
+        {
+          "local_start": "01:45",
+          "local_end": "02:00",
+          "event_type": "walk",
+          "description": "man in dark suit walks down hallway toward camera",
+          "participants": [
+            "dark suit man"
+          ],
+          "actor": "dark suit man",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:45",
+          "local_end": "01:58",
+          "event_type": "manipulate",
+          "description": "man in maroon uniform manipulates door lock with both hands",
+          "participants": [
+            "maroon uniform man",
+            "dark suit man"
+          ],
+          "actor": "maroon uniform man",
+          "object": "door lock",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:45",
+          "local_end": "01:58",
+          "event_type": "gesture",
+          "description": "man in dark suit gestures with open hands toward uniformed man",
+          "participants": [
+            "maroon uniform man",
+            "dark suit man"
+          ],
+          "actor": "dark suit man",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:59",
+          "local_end": "02:00",
+          "event_type": "transition",
+          "description": "scene transitions to black and white showing uniformed man with luggage cart",
+          "participants": [
+            "maroon uniform man"
+          ],
+          "actor": "none",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 8,
+      "chunk_start_sec": 120.0,
+      "chunk_end_sec": 135.0,
+      "chunk_start_mmss": "02:00",
+      "chunk_end_mmss": "02:15",
+      "events": [
+        {
+          "local_start": "02:00",
+          "local_end": "02:04",
+          "event_type": "walk",
+          "description": "man in dark suit walks down hallway carrying black briefcase",
+          "participants": [
+            "man in dark suit",
+            "man in red uniform",
+            "man in dark suit"
+          ],
+          "actor": "man in dark suit",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "02:04",
+          "local_end": "02:09",
+          "event_type": "manipulate",
+          "description": "man in red uniform manipulates door lock with small silver tool",
+          "participants": [
+            "man in red uniform"
+          ],
+          "actor": "man in red uniform",
+          "object": "small silver tool",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:04",
+          "local_end": "02:05",
+          "event_type": "stop",
+          "description": "man in dark suit stops walking and stands facing other two men",
+          "participants": [
+            "man in dark suit"
+          ],
+          "actor": "man in dark suit",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:09",
+          "local_end": "02:10",
+          "event_type": "stop",
+          "description": "man in red uniform stops manipulating door lock and stands upright",
+          "participants": [
+            "man in red uniform"
+          ],
+          "actor": "man in red uniform",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:10",
+          "local_end": "02:12",
+          "event_type": "open",
+          "description": "man in red uniform opens door marked 2410",
+          "participants": [
+            "man in red uniform"
+          ],
+          "actor": "man in red uniform",
+          "object": "door",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:12",
+          "local_end": "02:13",
+          "event_type": "speak",
+          "description": "man in red uniform speaks to the two men in dark suits",
+          "participants": [
+            "man in red uniform",
+            "man in dark suit",
+            "man in dark suit"
+          ],
+          "actor": "man in red uniform",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:13",
+          "local_end": "02:15",
+          "event_type": "graphic",
+          "description": "black and white sign reading 'THE POOL IS CLOSED' is displayed with explanatory text",
+          "participants": [],
+          "actor": "sign",
+          "on_screen_text": [
+            {
+              "text": "THE POOL IS CLOSED",
+              "location": "sign"
+            },
+            {
+              "text": "apologize for any inconvenience. guests who would enjoy a swim come to use the facilities of the olitan Health and Racquet Club around the corner on 55th street.",
+              "location": "sign"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Pool Closure Notice",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 9,
+      "chunk_start_sec": 135.0,
+      "chunk_end_sec": 150.0,
+      "chunk_start_mmss": "02:15",
+      "chunk_end_mmss": "02:30",
+      "events": [
+        {
+          "local_start": "02:15",
+          "local_end": "02:19",
+          "event_type": "sign_display",
+          "description": "A sign stating \"THE POOL IS CLOSED\" is displayed with text about The Chilton and alternative swimming facilities",
+          "participants": [
+            "boy in white shirt"
+          ],
+          "actor": "sign",
+          "on_screen_text": [
+            {
+              "text": "THE CHILTON",
+              "location": "logo"
+            },
+            {
+              "text": "THE POOL IS CLOSED",
+              "location": "sign"
+            },
+            {
+              "text": "We apologize for any inconvenience. Chilton guests who would enjoy a swim are welcome to use the facilities of the Cosmopolitan Health and Racquet Club located around the corner on 55th street.",
+              "location": "sign"
+            }
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Hotel Sign Display",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "02:19",
+          "local_end": "02:23",
+          "event_type": "interaction",
+          "description": "Three men stand in a hotel hallway: a hotel employee in brown jacket, a man in dark suit holding a briefcase, and another man in dark suit",
+          "participants": [
+            "brown-jacket hotel employee",
+            "dark-suit man with briefcase",
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man with briefcase",
+          "segment_boundary": "middle",
+          "segment_label": "Hotel Hallway Interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:23",
+          "local_end": "02:25",
+          "event_type": "object_manipulation",
+          "description": "Man in dark suit holds open a briefcase while facing the hotel employee",
+          "participants": [
+            "brown-jacket hotel employee",
+            "dark-suit man with briefcase"
+          ],
+          "actor": "dark-suit man with briefcase",
+          "object": "briefcase",
+          "segment_boundary": "middle",
+          "segment_label": "Hotel Hallway Interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:25",
+          "local_end": "02:28",
+          "event_type": "object_reveal",
+          "description": "Close-up shows a small recording device clipped inside a suit jacket pocket, partially visible between shirt and jacket",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "recording device",
+          "object": "recording device",
+          "segment_boundary": "middle",
+          "segment_label": "Hotel Hallway Interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:28",
+          "local_end": "02:30",
+          "event_type": "walk",
+          "description": "Man in dark suit turns and begins walking down the hotel hallway while holding a briefcase",
+          "participants": [
+            "dark-suit man with briefcase",
+            "brown-jacket hotel employee",
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man with briefcase",
+          "segment_boundary": "middle",
+          "segment_label": "Hotel Hallway Interaction",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 10,
+      "chunk_start_sec": 150.0,
+      "chunk_end_sec": 165.0,
+      "chunk_start_mmss": "02:30",
+      "chunk_end_mmss": "02:45",
+      "events": [
+        {
+          "local_start": "02:30",
+          "local_end": "02:37",
+          "event_type": "walk",
+          "description": "man in dark suit walks down a well-lit hallway carrying a black briefcase",
+          "participants": [
+            "dark-suited man"
+          ],
+          "actor": "dark-suited man",
+          "object": "black briefcase",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:37",
+          "local_end": "02:40",
+          "event_type": "graphic",
+          "description": "close-up shot of room number sign showing \"2412\" on a door",
+          "participants": [],
+          "actor": "",
+          "on_screen_text": [
+            {
+              "text": "2412",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:40",
+          "local_end": "02:43",
+          "event_type": "graphic",
+          "description": "black and white shot of sign reading \"Pearson Hardman HARVARD LAW INTERVIEWS Room 2005\"",
+          "participants": [],
+          "actor": "",
+          "on_screen_text": [
+            {
+              "text": "Pearson Hardman",
+              "location": "title"
+            },
+            {
+              "text": "HARVARD LAW INTERVIEWS",
+              "location": "title"
+            },
+            {
+              "text": "Room 2005",
+              "location": "title"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:43",
+          "local_end": "02:45",
+          "event_type": "stand",
+          "description": "two men stand in hallway - one in dark suit with light tie, another in brown uniform",
+          "participants": [
+            "dark-suited man with light tie",
+            "brown-uniformed man"
+          ],
+          "actor": "dark-suited man with light tie",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "02:43",
+          "local_end": "02:45",
+          "event_type": "stand",
+          "description": "two men stand in hallway - one in dark suit with light tie, another in brown uniform",
+          "participants": [
+            "dark-suited man with light tie",
+            "brown-uniformed man"
+          ],
+          "actor": "brown-uniformed man",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "starts_before_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 11,
+      "chunk_start_sec": 165.0,
+      "chunk_end_sec": 180.0,
+      "chunk_start_mmss": "02:45",
+      "chunk_end_mmss": "03:00",
+      "events": [
+        {
+          "local_start": "02:45",
+          "local_end": "02:48",
+          "event_type": "jacket_button",
+          "description": "man in dark suit buttons his jacket while standing in hallway",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "object": "black briefcase",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "02:47",
+          "local_end": "02:50",
+          "event_type": "walk_away",
+          "description": "man in red uniform walks away from hallway toward camera",
+          "participants": [
+            "red-uniform man"
+          ],
+          "actor": "red-uniform man",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:49",
+          "local_end": "02:53",
+          "event_type": "walk",
+          "description": "man in dark suit walks down hallway after red-uniform man leaves",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "object": "black briefcase",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:53",
+          "local_end": "02:57",
+          "event_type": "descend_stairs",
+          "description": "man in dark suit descends staircase while holding black briefcase",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "object": "black briefcase",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:57",
+          "local_end": "02:59",
+          "event_type": "open_door",
+          "description": "man in dark suit opens wooden door with glass panels using right hand",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "object": "wooden door with glass panels",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:59",
+          "local_end": "03:00",
+          "event_type": "enter_room",
+          "description": "man in dark suit enters through the opened door while carrying black briefcase",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "object": "black briefcase",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:58",
+          "local_end": "03:00",
+          "event_type": "ascend_stairs",
+          "description": "man in red uniform appears through door and walks up staircase",
+          "participants": [
+            "red-uniform man"
+          ],
+          "actor": "red-uniform man",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 12,
+      "chunk_start_sec": 180.0,
+      "chunk_end_sec": 195.0,
+      "chunk_start_mmss": "03:00",
+      "chunk_end_mmss": "03:15",
+      "events": [
+        {
+          "local_start": "03:00",
+          "local_end": "03:03",
+          "event_type": "walk",
+          "description": "A man in a maroon uniform walks down a staircase while holding the handrail with his right hand",
+          "participants": [
+            "maroon-uniform man"
+          ],
+          "actor": "maroon-uniform man",
+          "segment_boundary": "middle",
+          "segment_label": "Staircase Descent",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "03:04",
+          "local_end": "03:08",
+          "event_type": "walk",
+          "description": "The maroon-uniform man continues descending the staircase, viewed from a top-down perspective showing multiple floors",
+          "participants": [
+            "maroon-uniform man"
+          ],
+          "actor": "maroon-uniform man",
+          "segment_boundary": "middle",
+          "segment_label": "Staircase Descent",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "03:09",
+          "local_end": "03:10",
+          "event_type": "look",
+          "description": "A man in a dark suit turns his head to the right while standing in an elegant room with gold walls",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "start",
+          "segment_label": "Formal Meeting",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "03:11",
+          "local_end": "03:13",
+          "event_type": "walk",
+          "description": "The dark-suit man walks through a doorway into a room, passing by another person partially visible on the left",
+          "participants": [
+            "dark-suit man",
+            "partially visible person"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "Formal Meeting",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "03:14",
+          "local_end": "03:15",
+          "event_type": "enter_room",
+          "description": "The dark-suit man enters a room where multiple men are gathered, with one man holding papers while standing",
+          "participants": [
+            "dark-suit man",
+            "multiple men in room",
+            "paper-holding man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "Formal Meeting",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 13,
+      "chunk_start_sec": 195.0,
+      "chunk_end_sec": 210.0,
+      "chunk_start_mmss": "03:15",
+      "chunk_end_mmss": "03:30",
+      "events": [
+        {
+          "local_start": "03:15",
+          "local_end": "03:20",
+          "event_type": "walk",
+          "description": "man in dark suit walks through doorway toward camera",
+          "participants": [
+            "man in dark suit",
+            "men in suits (background)"
+          ],
+          "actor": "man in dark suit",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:17",
+          "local_end": "03:20",
+          "event_type": "adjust_clothing",
+          "description": "man in dark suit adjusts his tie with right hand while walking",
+          "participants": [
+            "man in dark suit"
+          ],
+          "actor": "man in dark suit",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "03:20",
+          "local_end": "03:23",
+          "event_type": "gesture",
+          "description": "man in dark suit extends right arm outward while speaking",
+          "participants": [
+            "man in dark suit"
+          ],
+          "actor": "man in dark suit",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "03:21",
+          "local_end": "03:24",
+          "event_type": "point",
+          "description": "man in dark suit points to right side of the room with right hand",
+          "participants": [
+            "man in dark suit"
+          ],
+          "actor": "man in dark suit",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "03:22",
+          "local_end": "03:25",
+          "event_type": "speak",
+          "description": "man in dark suit speaks while holding briefcase in left hand",
+          "participants": [
+            "man in dark suit"
+          ],
+          "actor": "man in dark suit",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "03:24",
+          "local_end": "03:28",
+          "event_type": "speak",
+          "description": "woman with red hair speaks while standing with hands on hips",
+          "participants": [
+            "woman with red hair"
+          ],
+          "actor": "woman with red hair",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "03:25",
+          "local_end": "03:29",
+          "event_type": "react",
+          "description": "woman with red hair maintains stern expression while listening",
+          "participants": [
+            "woman with red hair"
+          ],
+          "actor": "woman with red hair",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 14,
+      "chunk_start_sec": 210.0,
+      "chunk_end_sec": 225.0,
+      "chunk_start_mmss": "03:30",
+      "chunk_end_mmss": "03:45",
+      "events": [
+        {
+          "local_start": "03:30",
+          "local_end": "03:32",
+          "event_type": "walk",
+          "description": "A man in a black suit walks forward through a doorway with his left hand in his pocket",
+          "participants": [
+            "black-suit man"
+          ],
+          "actor": "black-suit man",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:33",
+          "local_end": "03:37",
+          "event_type": "speak",
+          "description": "A blonde woman in a black suit speaks while standing in front of a wooden cabinet with glass doors, her mouth moving as if in conversation",
+          "participants": [
+            "blonde-woman"
+          ],
+          "actor": "blonde-woman",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:38",
+          "local_end": "03:41",
+          "event_type": "speak",
+          "description": "A man in a black suit speaks while standing in a room with a chandelier, his hands on his hips",
+          "participants": [
+            "black-suit man"
+          ],
+          "actor": "black-suit man",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:42",
+          "local_end": "03:43",
+          "event_type": "head_turn",
+          "description": "The blonde woman turns her head to look over her shoulder",
+          "participants": [
+            "blonde-woman"
+          ],
+          "actor": "blonde-woman",
+          "segment_boundary": "middle",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "03:44",
+          "local_end": "03:45",
+          "event_type": "speak",
+          "description": "The man in the black suit speaks while standing in a doorway, his hands in his pockets",
+          "participants": [
+            "black-suit man"
+          ],
+          "actor": "black-suit man",
+          "segment_boundary": "middle",
+          "continuation_hint": "starts_before_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 15,
+      "chunk_start_sec": 225.0,
+      "chunk_end_sec": 240.0,
+      "chunk_start_mmss": "03:45",
+      "chunk_end_mmss": "04:00",
+      "events": [
+        {
+          "local_start": "03:45",
+          "local_end": "03:48",
+          "event_type": "walk",
+          "description": "The man in the dark suit walks through a doorway into a large room",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "03:48",
+          "local_end": "03:52",
+          "event_type": "handshake",
+          "description": "The dark-suit man and blue-suit man shake hands firmly",
+          "participants": [
+            "dark-suit man",
+            "blue-suit man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:52",
+          "local_end": "03:55",
+          "event_type": "walk",
+          "description": "The two men walk together toward the desk",
+          "participants": [
+            "dark-suit man",
+            "blue-suit man"
+          ],
+          "actor": "both men",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:55",
+          "local_end": "03:58",
+          "event_type": "open",
+          "description": "The dark-suit man opens his black briefcase",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "object": "black briefcase",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:56",
+          "local_end": "03:57",
+          "event_type": "point",
+          "description": "The dark-suit man points his right index finger toward the blue-suit man",
+          "participants": [
+            "dark-suit man",
+            "blue-suit man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:57",
+          "local_end": "03:58",
+          "event_type": "look",
+          "description": "The blue-suit man looks at the dark-suit man who is pointing",
+          "participants": [
+            "blue-suit man",
+            "dark-suit man"
+          ],
+          "actor": "blue-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:58",
+          "local_end": "04:00",
+          "event_type": "scatter",
+          "description": "White papers fall out of the briefcase and scatter across the blue patterned carpet",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "object": "white papers",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:58",
+          "local_end": "04:00",
+          "event_type": "gesture",
+          "description": "The blue-suit man gestures toward the desk with his right hand",
+          "participants": [
+            "blue-suit man",
+            "dark-suit man"
+          ],
+          "actor": "blue-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:58",
+          "local_end": "04:00",
+          "event_type": "look",
+          "description": "Both men look down at the scattered papers on the floor",
+          "participants": [
+            "dark-suit man",
+            "blue-suit man"
+          ],
+          "actor": "both men",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:59",
+          "local_end": "04:00",
+          "event_type": "transition",
+          "description": "The scene cuts to a different room where several men in suits are standing and conversing",
+          "participants": [
+            "multiple men in suits"
+          ],
+          "actor": "scene",
+          "segment_boundary": "start",
+          "segment_label": "New Meeting Room",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 16,
+      "chunk_start_sec": 240.0,
+      "chunk_end_sec": 255.0,
+      "chunk_start_mmss": "04:00",
+      "chunk_end_mmss": "04:15",
+      "events": [
+        {
+          "local_start": "04:00",
+          "local_end": "04:03",
+          "event_type": "exit_vehicle",
+          "description": "Man in black suit exits the black SUV through the rear passenger door",
+          "participants": [
+            "black-suited man"
+          ],
+          "actor": "black-suited man",
+          "object": "black SUV",
+          "segment_boundary": "middle",
+          "segment_label": "man exiting vehicle",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "04:02",
+          "local_end": "04:05",
+          "event_type": "close_door",
+          "description": "Man closes the rear passenger door of the black SUV after exiting",
+          "participants": [
+            "black-suited man"
+          ],
+          "actor": "black-suited man",
+          "object": "black SUV door",
+          "segment_boundary": "middle",
+          "segment_label": "man exiting vehicle",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "04:04",
+          "local_end": "04:10",
+          "event_type": "walk",
+          "description": "Man in black suit walks toward the building with glass doors",
+          "participants": [
+            "black-suited man"
+          ],
+          "actor": "black-suited man",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "man exiting vehicle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:00",
+          "local_end": "04:15",
+          "event_type": "walk",
+          "description": "Pedestrian with backpack walks on the sidewalk from left to right",
+          "participants": [
+            "pedestrian with backpack"
+          ],
+          "actor": "pedestrian with backpack",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "pedestrian traffic",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:00",
+          "local_end": "04:15",
+          "event_type": "walk",
+          "description": "Multiple pedestrians in dark clothing walk on the sidewalk",
+          "participants": [
+            "pedestrians in dark clothing"
+          ],
+          "actor": "pedestrians in dark clothing",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "pedestrian traffic",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 17,
+      "chunk_start_sec": 255.0,
+      "chunk_end_sec": 270.0,
+      "chunk_start_mmss": "04:15",
+      "chunk_end_mmss": "04:30",
+      "events": [
+        {
+          "local_start": "04:15",
+          "local_end": "04:24",
+          "event_type": "speak",
+          "description": "Bald man with striped tie speaks to man with dark hair while standing outside building",
+          "participants": [
+            "bald man with striped tie",
+            "man with dark hair"
+          ],
+          "actor": "bald man with striped tie",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "04:17",
+          "local_end": "04:19",
+          "event_type": "walk",
+          "description": "Bearded man in dark suit walks from left to right past the two conversing men",
+          "participants": [
+            "bearded man in dark suit"
+          ],
+          "actor": "bearded man in dark suit",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "04:18",
+          "local_end": "04:20",
+          "event_type": "walk",
+          "description": "Woman with dark hair walks from left to right past the two conversing men",
+          "participants": [
+            "woman with dark hair"
+          ],
+          "actor": "woman with dark hair",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "04:25",
+          "local_end": "04:26",
+          "event_type": "turn",
+          "description": "Bald man turns his head and upper body toward the building entrance",
+          "participants": [
+            "bald man with striped tie"
+          ],
+          "actor": "bald man with striped tie",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "04:26",
+          "local_end": "04:30",
+          "event_type": "walk",
+          "description": "Two men walk side by side toward the building entrance",
+          "participants": [
+            "bald man with striped tie",
+            "man with dark hair"
+          ],
+          "actor": "bald man with striped tie",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 18,
+      "chunk_start_sec": 270.0,
+      "chunk_end_sec": 285.0,
+      "chunk_start_mmss": "04:30",
+      "chunk_end_mmss": "04:45",
+      "events": [
+        {
+          "local_start": "04:30",
+          "local_end": "04:32",
+          "event_type": "walk",
+          "description": "Two men in dark suits walk toward the building entrance",
+          "participants": [
+            "taller dark-suited man",
+            "shorter dark-suited man"
+          ],
+          "actor": "taller dark-suited man",
+          "continuation_hint": "starts_before_chunk",
+          "segment_boundary": "middle"
+        },
+        {
+          "local_start": "04:32",
+          "local_end": "04:33",
+          "event_type": "open_door",
+          "description": "The taller man opens the left glass door panel for the shorter man",
+          "participants": [
+            "taller dark-suited man",
+            "shorter dark-suited man"
+          ],
+          "actor": "taller dark-suited man",
+          "object": "glass door",
+          "continuation_hint": "complete",
+          "segment_boundary": "middle"
+        },
+        {
+          "local_start": "04:33",
+          "local_end": "04:34",
+          "event_type": "enter",
+          "description": "Both men enter the building through the open glass doors",
+          "participants": [
+            "taller dark-suited man",
+            "shorter dark-suited man"
+          ],
+          "actor": "taller dark-suited man",
+          "object": "building",
+          "continuation_hint": "complete",
+          "segment_boundary": "middle"
+        },
+        {
+          "local_start": "04:34",
+          "local_end": "04:40",
+          "event_type": "speak",
+          "description": "A man in a suit with striped shirt speaks while looking slightly off-camera",
+          "participants": [
+            "man in suit with striped shirt"
+          ],
+          "actor": "man in suit with striped shirt",
+          "continuation_hint": "complete",
+          "segment_boundary": "middle"
+        },
+        {
+          "local_start": "04:40",
+          "local_end": "04:45",
+          "event_type": "speak",
+          "description": "A man in a suit sits in a luxurious room with a grand piano in the background, speaking and making hand gestures",
+          "participants": [
+            "man in suit seated in luxurious room"
+          ],
+          "actor": "man in suit seated in luxurious room",
+          "continuation_hint": "continues_after_chunk",
+          "segment_boundary": "middle"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 19,
+      "chunk_start_sec": 285.0,
+      "chunk_end_sec": 300.0,
+      "chunk_start_mmss": "04:45",
+      "chunk_end_mmss": "05:00",
+      "events": [
+        {
+          "local_start": "04:45",
+          "local_end": "04:47",
+          "event_type": "speak",
+          "description": "man in dark suit with striped shirt speaks with mouth open",
+          "participants": [
+            "dark-suit man with striped shirt"
+          ],
+          "actor": "dark-suit man with striped shirt",
+          "segment_boundary": "middle",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "04:47",
+          "local_end": "04:48",
+          "event_type": "head_movement",
+          "description": "man in dark suit with striped shirt turns head slightly to the left",
+          "participants": [
+            "dark-suit man with striped shirt"
+          ],
+          "actor": "dark-suit man with striped shirt",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:48",
+          "local_end": "04:50",
+          "event_type": "speak",
+          "description": "man in dark suit with solid tie speaks while facing forward",
+          "participants": [
+            "dark-suit man with solid tie"
+          ],
+          "actor": "dark-suit man with solid tie",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:50",
+          "local_end": "04:52",
+          "event_type": "gesture",
+          "description": "man in dark suit with solid tie raises both hands while speaking",
+          "participants": [
+            "dark-suit man with solid tie"
+          ],
+          "actor": "dark-suit man with solid tie",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:52",
+          "local_end": "04:54",
+          "event_type": "speak",
+          "description": "man in dark suit with striped shirt speaks with mouth closed",
+          "participants": [
+            "dark-suit man with striped shirt"
+          ],
+          "actor": "dark-suit man with striped shirt",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:54",
+          "local_end": "04:56",
+          "event_type": "speak",
+          "description": "man in dark suit with solid tie continues speaking with hands in different position",
+          "participants": [
+            "dark-suit man with solid tie"
+          ],
+          "actor": "dark-suit man with solid tie",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:56",
+          "local_end": "04:58",
+          "event_type": "hand_gesture",
+          "description": "man in dark suit with solid tie makes expansive hand gestures while speaking",
+          "participants": [
+            "dark-suit man with solid tie"
+          ],
+          "actor": "dark-suit man with solid tie",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:58",
+          "local_end": "05:00",
+          "event_type": "speak",
+          "description": "man in dark suit with striped shirt speaks with slight smile",
+          "participants": [
+            "dark-suit man with striped shirt"
+          ],
+          "actor": "dark-suit man with striped shirt",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 20,
+      "chunk_start_sec": 300.0,
+      "chunk_end_sec": 315.0,
+      "chunk_start_mmss": "05:00",
+      "chunk_end_mmss": "05:15",
+      "events": [
+        {
+          "local_start": "05:01",
+          "local_end": "05:02",
+          "event_type": "hand_raise",
+          "description": "The man raises his right hand",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "Interview",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:02",
+          "local_end": "05:03",
+          "event_type": "hand_lower",
+          "description": "The man lowers his right hand back to his lap",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "Interview",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:03",
+          "local_end": "05:05",
+          "event_type": "speak",
+          "description": "The man speaks with his mouth open",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "Interview",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:05",
+          "local_end": "05:06",
+          "event_type": "scene_change",
+          "description": "The scene changes to a different room with a grand piano and striped couches",
+          "participants": [],
+          "actor": null,
+          "segment_boundary": "middle",
+          "segment_label": "Interview",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:06",
+          "local_end": "05:08",
+          "event_type": "speak",
+          "description": "The man speaks with his mouth open in the piano room setting",
+          "participants": [
+            "gray-suit man"
+          ],
+          "actor": "gray-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "Interview",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:08",
+          "local_end": "05:09",
+          "event_type": "scene_change",
+          "description": "The scene changes back to the fireplace setting with a wider shot",
+          "participants": [],
+          "actor": null,
+          "segment_boundary": "middle",
+          "segment_label": "Interview",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:09",
+          "local_end": "05:11",
+          "event_type": "gesture",
+          "description": "The man gestures with his right hand while speaking",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "Interview",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:11",
+          "local_end": "05:13",
+          "event_type": "gesture",
+          "description": "The man gestures with both hands while speaking",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "Interview",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:13",
+          "local_end": "05:15",
+          "event_type": "speak",
+          "description": "The man continues speaking with his mouth open",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "Interview",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 21,
+      "chunk_start_sec": 315.0,
+      "chunk_end_sec": 330.0,
+      "chunk_start_mmss": "05:15",
+      "chunk_end_mmss": "05:30",
+      "events": [
+        {
+          "local_start": "05:15",
+          "local_end": "05:20",
+          "event_type": "speak",
+          "description": "shorter-haired man speaks with visible mouth movement",
+          "participants": [
+            "shorter-haired man"
+          ],
+          "actor": "shorter-haired man",
+          "segment_boundary": "middle",
+          "segment_label": "formal conversation",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "05:20",
+          "local_end": "05:25",
+          "event_type": "speak",
+          "description": "neatly-combed-haired man speaks with visible mouth movement",
+          "participants": [
+            "neatly-combed-haired man"
+          ],
+          "actor": "neatly-combed-haired man",
+          "segment_boundary": "middle",
+          "segment_label": "formal conversation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:25",
+          "local_end": "05:29",
+          "event_type": "gesture",
+          "description": "shorter-haired man makes hand gestures while speaking at desk",
+          "participants": [
+            "shorter-haired man"
+          ],
+          "actor": "shorter-haired man",
+          "segment_boundary": "middle",
+          "segment_label": "formal conversation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:29",
+          "local_end": "05:30",
+          "event_type": "manipulate_object",
+          "description": "neatly-combed-haired man reaches forward and places hand on book on desk",
+          "participants": [
+            "neatly-combed-haired man"
+          ],
+          "actor": "neatly-combed-haired man",
+          "object": "book",
+          "segment_boundary": "middle",
+          "segment_label": "formal conversation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 22,
+      "chunk_start_sec": 330.0,
+      "chunk_end_sec": 345.0,
+      "chunk_start_mmss": "05:30",
+      "chunk_end_mmss": "05:45",
+      "events": [
+        {
+          "local_start": "05:30",
+          "local_end": "05:35",
+          "event_type": "speak",
+          "description": "man in dark suit with white shirt and dark tie speaks while seated in front of a piano",
+          "participants": [
+            "dark-suited man with white shirt"
+          ],
+          "actor": "dark-suited man with white shirt",
+          "segment_boundary": "middle",
+          "segment_label": "interview",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "05:35",
+          "local_end": "05:40",
+          "event_type": "speak",
+          "description": "man in dark suit with striped shirt and dark tie speaks while looking downward in an office setting",
+          "participants": [
+            "dark-suited man with striped shirt"
+          ],
+          "actor": "dark-suited man with striped shirt",
+          "segment_boundary": "middle",
+          "segment_label": "interview",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:40",
+          "local_end": "05:45",
+          "event_type": "speak",
+          "description": "man in dark suit with white shirt and dark tie speaks while seated in front of a piano",
+          "participants": [
+            "dark-suited man with white shirt"
+          ],
+          "actor": "dark-suited man with white shirt",
+          "segment_boundary": "middle",
+          "segment_label": "interview",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 23,
+      "chunk_start_sec": 345.0,
+      "chunk_end_sec": 360.0,
+      "chunk_start_mmss": "05:45",
+      "chunk_end_mmss": "06:00",
+      "events": [
+        {
+          "local_start": "05:45",
+          "local_end": "05:53",
+          "event_type": "speak",
+          "description": "man in dark pinstripe suit with light striped shirt speaks while seated in elegant room",
+          "participants": [
+            "dark-pinstripe-suited man with light striped shirt"
+          ],
+          "actor": "dark-pinstripe-suited man with light striped shirt",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "05:54",
+          "local_end": "05:58",
+          "event_type": "speak",
+          "description": "man in dark suit speaks while seated in office-like setting with piano visible in background",
+          "participants": [
+            "dark-suited man with white shirt"
+          ],
+          "actor": "dark-suited man with white shirt",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:58",
+          "local_end": "05:59",
+          "event_type": "sit",
+          "description": "man in dark suit remains seated at desk while another person holds white papers in foreground",
+          "participants": [
+            "dark-suited man with white shirt",
+            "person holding white papers"
+          ],
+          "actor": "dark-suited man with white shirt",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:59",
+          "local_end": "06:00",
+          "event_type": "stand",
+          "description": "man in dark pinstripe suit with light striped shirt stands up from chair",
+          "participants": [
+            "dark-pinstripe-suited man with light striped shirt"
+          ],
+          "actor": "dark-pinstripe-suited man with light striped shirt",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "05:59",
+          "local_end": "06:00",
+          "event_type": "stand",
+          "description": "man in dark suit stands up from desk chair",
+          "participants": [
+            "dark-suited man with white shirt"
+          ],
+          "actor": "dark-suited man with white shirt",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "05:59",
+          "local_end": "06:00",
+          "event_type": "walk",
+          "description": "man in dark pinstripe suit with light striped shirt walks toward the right side of the room",
+          "participants": [
+            "dark-pinstripe-suited man with light striped shirt"
+          ],
+          "actor": "dark-pinstripe-suited man with light striped shirt",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "05:59",
+          "local_end": "06:00",
+          "event_type": "walk",
+          "description": "man in dark suit walks toward the left side of the room",
+          "participants": [
+            "dark-suited man with white shirt"
+          ],
+          "actor": "dark-suited man with white shirt",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 24,
+      "chunk_start_sec": 360.0,
+      "chunk_end_sec": 375.0,
+      "chunk_start_mmss": "06:00",
+      "chunk_end_mmss": "06:15",
+      "events": [
+        {
+          "local_start": "06:00",
+          "local_end": "06:03",
+          "event_type": "walk",
+          "description": "Two men walk in opposite directions across the formal room",
+          "participants": [
+            "dark-suit man with hands in pockets",
+            "dark-suit man walking away"
+          ],
+          "actor": "dark-suit man with hands in pockets",
+          "segment_boundary": "middle",
+          "segment_label": "formal room interaction",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "06:02",
+          "local_end": "06:05",
+          "event_type": "manipulate",
+          "description": "The man walking away reaches the desk area and interacts with objects on the desk surface",
+          "participants": [
+            "dark-suit man walking away"
+          ],
+          "actor": "dark-suit man walking away",
+          "segment_boundary": "middle",
+          "segment_label": "formal room interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:00",
+          "local_end": "06:07",
+          "event_type": "walk",
+          "description": "The man in the foreground walks toward the camera with his hands in his pockets",
+          "participants": [
+            "dark-suit man with hands in pockets"
+          ],
+          "actor": "dark-suit man with hands in pockets",
+          "segment_boundary": "middle",
+          "segment_label": "formal room interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:06",
+          "local_end": "06:08",
+          "event_type": "hand_movement",
+          "description": "The man walking toward the camera removes his hands from his pockets",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "formal room interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:05",
+          "local_end": "06:10",
+          "event_type": "speak",
+          "description": "The man walking toward the camera speaks with visible mouth movement",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "formal room interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:04",
+          "local_end": "06:12",
+          "event_type": "look",
+          "description": "The man walking toward the camera maintains eye contact with the man at the desk",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "formal room interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:05",
+          "local_end": "06:07",
+          "event_type": "camera_transition",
+          "description": "The camera perspective shifts to focus more closely on the man walking toward the camera",
+          "participants": [],
+          "actor": "camera",
+          "segment_boundary": "middle",
+          "segment_label": "formal room interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:07",
+          "local_end": "06:13",
+          "event_type": "facial_expression",
+          "description": "The man walking toward the camera shows subtle changes in facial expression while approaching",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "formal room interaction",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 25,
+      "chunk_start_sec": 375.0,
+      "chunk_end_sec": 390.0,
+      "chunk_start_mmss": "06:15",
+      "chunk_end_mmss": "06:30",
+      "events": [
+        {
+          "local_start": "06:15",
+          "local_end": "06:20",
+          "event_type": "speak",
+          "description": "blue-tie man speaks while seated at desk with laptop",
+          "participants": [
+            "blue-tie man"
+          ],
+          "actor": "blue-tie man",
+          "segment_boundary": "middle",
+          "segment_label": "business meeting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:21",
+          "local_end": "06:25",
+          "event_type": "speak",
+          "description": "gray-tie man speaks while in profile view",
+          "participants": [
+            "gray-tie man"
+          ],
+          "actor": "gray-tie man",
+          "segment_boundary": "middle",
+          "segment_label": "business meeting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:26",
+          "local_end": "06:30",
+          "event_type": "stand",
+          "description": "gray-tie man stands with hands on chair back facing blue-tie man",
+          "participants": [
+            "gray-tie man"
+          ],
+          "actor": "gray-tie man",
+          "segment_boundary": "middle",
+          "segment_label": "business meeting",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 26,
+      "chunk_start_sec": 390.0,
+      "chunk_end_sec": 405.0,
+      "chunk_start_mmss": "06:30",
+      "chunk_end_mmss": "06:45",
+      "events": [
+        {
+          "local_start": "06:30",
+          "local_end": "06:37",
+          "event_type": "game",
+          "description": "sits at desk with laptop displaying a solitaire card game with visible playing cards",
+          "participants": [
+            "blue-tie man"
+          ],
+          "actor": "blue-tie man",
+          "object": "laptop",
+          "on_screen_text": [
+            {
+              "text": "solitaire card game layout",
+              "location": "laptop screen"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Card Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:37",
+          "local_end": "06:40",
+          "event_type": "close",
+          "description": "closes the laptop with both hands",
+          "participants": [
+            "blue-tie man"
+          ],
+          "actor": "blue-tie man",
+          "object": "laptop",
+          "segment_boundary": "end",
+          "segment_label": "Card Game",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "06:40",
+          "local_end": "06:45",
+          "event_type": "speak",
+          "description": "stands behind chair with hands on it and speaks",
+          "participants": [
+            "gray-tie man"
+          ],
+          "actor": "gray-tie man",
+          "segment_boundary": "middle",
+          "segment_label": "Conversation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 27,
+      "chunk_start_sec": 405.0,
+      "chunk_end_sec": 420.0,
+      "chunk_start_mmss": "06:45",
+      "chunk_end_mmss": "07:00",
+      "events": [
+        {
+          "local_start": "06:45",
+          "local_end": "06:48",
+          "event_type": "speak",
+          "description": "The man in the dark suit with blue tie is seated at the desk, looking upward and to his right while speaking",
+          "participants": [
+            "dark-suit blue-tie man"
+          ],
+          "actor": "dark-suit blue-tie man",
+          "segment_boundary": "middle",
+          "segment_label": "formal meeting",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "06:48",
+          "local_end": "06:50",
+          "event_type": "look",
+          "description": "The man in the dark suit with blue tie looks down toward his desk",
+          "participants": [
+            "dark-suit blue-tie man"
+          ],
+          "actor": "dark-suit blue-tie man",
+          "segment_boundary": "middle",
+          "segment_label": "formal meeting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:50",
+          "local_end": "06:52",
+          "event_type": "speak",
+          "description": "The man in the dark suit with blue tie looks up and to his right while speaking",
+          "participants": [
+            "dark-suit blue-tie man"
+          ],
+          "actor": "dark-suit blue-tie man",
+          "segment_boundary": "middle",
+          "segment_label": "formal meeting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:52",
+          "local_end": "06:54",
+          "event_type": "speak",
+          "description": "The man in the dark suit with gray tie appears in a close-up shot, speaking with a serious expression",
+          "participants": [
+            "dark-suit gray-tie man"
+          ],
+          "actor": "dark-suit gray-tie man",
+          "segment_boundary": "middle",
+          "segment_label": "formal meeting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:54",
+          "local_end": "06:57",
+          "event_type": "speak",
+          "description": "The man in the dark suit with blue tie is seated at the desk, looking to his left while speaking",
+          "participants": [
+            "dark-suit blue-tie man"
+          ],
+          "actor": "dark-suit blue-tie man",
+          "segment_boundary": "middle",
+          "segment_label": "formal meeting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:57",
+          "local_end": "07:00",
+          "event_type": "gesture",
+          "description": "The man in the dark suit with blue tie leans back slightly in his chair and gestures with both hands while speaking",
+          "participants": [
+            "dark-suit blue-tie man"
+          ],
+          "actor": "dark-suit blue-tie man",
+          "segment_boundary": "middle",
+          "segment_label": "formal meeting",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 28,
+      "chunk_start_sec": 420.0,
+      "chunk_end_sec": 435.0,
+      "chunk_start_mmss": "07:00",
+      "chunk_end_mmss": "07:15",
+      "events": [
+        {
+          "local_start": "07:00",
+          "local_end": "07:02",
+          "event_type": "speak",
+          "description": "man in dark suit and striped shirt speaks while looking downward",
+          "participants": [
+            "man in dark suit"
+          ],
+          "actor": "man in dark suit",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "07:02",
+          "local_end": "07:04",
+          "event_type": "speak",
+          "description": "man in dark suit looks up while continuing to speak",
+          "participants": [
+            "man in dark suit"
+          ],
+          "actor": "man in dark suit",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:04",
+          "local_end": "07:06",
+          "event_type": "walk",
+          "description": "man in dark suit begins walking away from camera toward the left side of the room",
+          "participants": [
+            "man in dark suit"
+          ],
+          "actor": "man in dark suit",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:06",
+          "local_end": "07:08",
+          "event_type": "walk",
+          "description": "man in dark suit continues walking across the room with hands in pockets",
+          "participants": [
+            "man in dark suit"
+          ],
+          "actor": "man in dark suit",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:08",
+          "local_end": "07:10",
+          "event_type": "walk",
+          "description": "man in dark suit walks toward a doorway at the left side of the room",
+          "participants": [
+            "man in dark suit"
+          ],
+          "actor": "man in dark suit",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:10",
+          "local_end": "07:12",
+          "event_type": "transition",
+          "description": "scene cuts to a different room showing another man sitting at a desk",
+          "participants": [
+            "man at desk"
+          ],
+          "actor": "man at desk",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:12",
+          "local_end": "07:14",
+          "event_type": "look",
+          "description": "man in dark suit peeks through doorway into a room",
+          "participants": [
+            "man in dark suit"
+          ],
+          "actor": "man in dark suit",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:14",
+          "local_end": "07:15",
+          "event_type": "sit",
+          "description": "group of men in suits sit and stand in a hallway waiting area",
+          "participants": [
+            "men in suits"
+          ],
+          "actor": "men in suits",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 29,
+      "chunk_start_sec": 435.0,
+      "chunk_end_sec": 450.0,
+      "chunk_start_mmss": "07:15",
+      "chunk_end_mmss": "07:30",
+      "events": [
+        {
+          "local_start": "07:15",
+          "local_end": "07:19",
+          "event_type": "stand",
+          "description": "A man in a dark suit stands in a doorway, looking into a room with his head turned to the right.",
+          "participants": [
+            "dark-suited man"
+          ],
+          "actor": "dark-suited man",
+          "segment_boundary": "middle",
+          "segment_label": "Office scene",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "07:20",
+          "local_end": "07:23",
+          "event_type": "turn",
+          "description": "The man turns his head to look more directly into the room, maintaining a serious expression.",
+          "participants": [
+            "dark-suited man"
+          ],
+          "actor": "dark-suited man",
+          "segment_boundary": "middle",
+          "segment_label": "Office scene",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:24",
+          "local_end": "07:26",
+          "event_type": "sit",
+          "description": "Another man in a dark suit sits at a desk in an ornate office, with his hand resting near his mouth in a thoughtful pose.",
+          "participants": [
+            "desk-sitting man"
+          ],
+          "actor": "desk-sitting man",
+          "segment_boundary": "middle",
+          "segment_label": "Office scene",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:27",
+          "local_end": "07:28",
+          "event_type": "hand_movement",
+          "description": "The desk-sitting man lowers his hand from his mouth and shifts his gaze slightly.",
+          "participants": [
+            "desk-sitting man"
+          ],
+          "actor": "desk-sitting man",
+          "segment_boundary": "middle",
+          "segment_label": "Office scene",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:29",
+          "local_end": "07:30",
+          "event_type": "walk",
+          "description": "The man who was standing in the doorway walks through the ornate office space with his hands in his pockets, observing the room as he moves.",
+          "participants": [
+            "dark-suited man"
+          ],
+          "actor": "dark-suited man",
+          "segment_boundary": "middle",
+          "segment_label": "Office scene",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 30,
+      "chunk_start_sec": 450.0,
+      "chunk_end_sec": 465.0,
+      "chunk_start_mmss": "07:30",
+      "chunk_end_mmss": "07:45",
+      "events": [
+        {
+          "local_start": "07:30",
+          "local_end": "07:32",
+          "event_type": "speak",
+          "description": "seated man speaks with eyes closed, then opens eyes while continuing to speak",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "conversation",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "07:32",
+          "local_end": "07:34",
+          "event_type": "look",
+          "description": "seated man shifts gaze upward and to the side while speaking",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "conversation",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "07:34",
+          "local_end": "07:36",
+          "event_type": "stand",
+          "description": "man in dark suit with striped shirt stands still, looking toward seated person",
+          "participants": [
+            "standing dark-suit man"
+          ],
+          "actor": "standing dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "conversation",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "07:36",
+          "local_end": "07:38",
+          "event_type": "speak",
+          "description": "seated man continues speaking with mouth movements and slight head turns",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "conversation",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "07:38",
+          "local_end": "07:40",
+          "event_type": "look",
+          "description": "seated man turns head to the side while speaking",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "conversation",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "07:40",
+          "local_end": "07:42",
+          "event_type": "speak",
+          "description": "seated man speaks with eyes closed, then opens eyes while continuing to speak",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "conversation",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "07:42",
+          "local_end": "07:45",
+          "event_type": "look",
+          "description": "seated man looks upward while speaking, then shifts gaze forward with neutral expression",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "conversation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 31,
+      "chunk_start_sec": 465.0,
+      "chunk_end_sec": 480.0,
+      "chunk_start_mmss": "07:45",
+      "chunk_end_mmss": "08:00",
+      "events": [
+        {
+          "local_start": "07:45",
+          "local_end": "07:48",
+          "event_type": "look",
+          "description": "The dark-suit man with striped shirt stands and looks intently to his right with a serious expression",
+          "participants": [
+            "dark-suit man with striped shirt"
+          ],
+          "actor": "dark-suit man with striped shirt",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "07:48",
+          "local_end": "07:51",
+          "event_type": "speak",
+          "description": "The dark-suit man with light-colored shirt speaks with mouth opening",
+          "participants": [
+            "dark-suit man with light-colored shirt"
+          ],
+          "actor": "dark-suit man with light-colored shirt",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:51",
+          "local_end": "07:55",
+          "event_type": "speak",
+          "description": "The dark-suit man with light-colored shirt continues speaking with subtle head movement",
+          "participants": [
+            "dark-suit man with light-colored shirt"
+          ],
+          "actor": "dark-suit man with light-colored shirt",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:55",
+          "local_end": "07:58",
+          "event_type": "speak",
+          "description": "Close-up of the dark-suit man with light-colored shirt speaking with mouth movements",
+          "participants": [
+            "dark-suit man with light-colored shirt"
+          ],
+          "actor": "dark-suit man with light-colored shirt",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:58",
+          "local_end": "08:00",
+          "event_type": "look",
+          "description": "The dark-suit man with striped shirt is shown again, maintaining a serious expression while looking to his right",
+          "participants": [
+            "dark-suit man with striped shirt"
+          ],
+          "actor": "dark-suit man with striped shirt",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 32,
+      "chunk_start_sec": 480.0,
+      "chunk_end_sec": 495.0,
+      "chunk_start_mmss": "08:00",
+      "chunk_end_mmss": "08:15",
+      "events": [
+        {
+          "local_start": "08:00",
+          "local_end": "08:08",
+          "event_type": "speak",
+          "description": "the striped-shirt man speaks with changing facial expressions and mouth movements",
+          "participants": [
+            "striped-shirt man"
+          ],
+          "actor": "striped-shirt man",
+          "segment_boundary": "middle",
+          "segment_label": "formal conversation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "08:09",
+          "local_end": "08:13",
+          "event_type": "stand",
+          "description": "the striped-shirt man stands formally with hands in pockets facing another person in an elegant room with chandelier",
+          "participants": [
+            "striped-shirt man"
+          ],
+          "actor": "striped-shirt man",
+          "segment_boundary": "middle",
+          "segment_label": "formal conversation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "08:14",
+          "local_end": "08:15",
+          "event_type": "speak",
+          "description": "the blue-tie man speaks while looking upward with mouth movements",
+          "participants": [
+            "blue-tie man"
+          ],
+          "actor": "blue-tie man",
+          "segment_boundary": "middle",
+          "segment_label": "formal conversation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 33,
+      "chunk_start_sec": 495.0,
+      "chunk_end_sec": 510.0,
+      "chunk_start_mmss": "08:15",
+      "chunk_end_mmss": "08:30",
+      "events": [
+        {
+          "local_start": "08:15",
+          "local_end": "08:20",
+          "event_type": "speak",
+          "description": "dark-suit man speaks with mouth movements visible",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "08:20",
+          "local_end": "08:25",
+          "event_type": "speak",
+          "description": "striped-shirt man speaks with mouth movements visible",
+          "participants": [
+            "striped-shirt man"
+          ],
+          "actor": "striped-shirt man",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "08:25",
+          "local_end": "08:29",
+          "event_type": "speak",
+          "description": "dark-suit man speaks with mouth movements visible",
+          "participants": [
+            "dark-suit man"
+          ],
+          "actor": "dark-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "08:29",
+          "local_end": "08:30",
+          "event_type": "speak",
+          "description": "striped-shirt man speaks with mouth movements visible",
+          "participants": [
+            "striped-shirt man"
+          ],
+          "actor": "striped-shirt man",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 34,
+      "chunk_start_sec": 510.0,
+      "chunk_end_sec": 525.0,
+      "chunk_start_mmss": "08:30",
+      "chunk_end_mmss": "08:45",
+      "events": [
+        {
+          "local_start": "08:30",
+          "local_end": "08:34",
+          "event_type": "head_turn",
+          "description": "Man in dark suit turns his head to the right while maintaining eye contact with something off-camera",
+          "participants": [
+            "man in dark suit with striped shirt"
+          ],
+          "actor": "man in dark suit with striped shirt"
+        },
+        {
+          "local_start": "08:34",
+          "local_end": "08:36",
+          "event_type": "graphic",
+          "description": "Image becomes pixelated with a grid overlay effect",
+          "participants": [],
+          "actor": "",
+          "object_before": "clear image",
+          "object_after": "pixelated grid overlay"
+        },
+        {
+          "local_start": "08:36",
+          "local_end": "08:38",
+          "event_type": "reveal",
+          "description": "Second man appears to the left of the original man, creating a two-person composition",
+          "participants": [
+            "man in dark suit with striped shirt",
+            "man in dark suit with white shirt"
+          ],
+          "actor": "",
+          "object_before": "single man",
+          "object_after": "two men standing side by side"
+        },
+        {
+          "local_start": "08:38",
+          "local_end": "08:40",
+          "event_type": "title_card",
+          "description": "Title text 'SUITS' appears at the top center of the frame",
+          "participants": [],
+          "actor": "",
+          "object_before": "no title visible",
+          "object_after": "dark blue title text",
+          "on_screen_text": [
+            {
+              "text": "SUITS",
+              "location": "title"
+            }
+          ]
+        },
+        {
+          "local_start": "08:40",
+          "local_end": "08:42",
+          "event_type": "color_change",
+          "description": "Title text color changes from dark blue to red",
+          "participants": [],
+          "actor": "",
+          "object_before": "dark blue title text",
+          "object_after": "red title text",
+          "on_screen_text": [
+            {
+              "text": "SUITS",
+              "location": "title"
+            }
+          ]
+        },
+        {
+          "local_start": "08:42",
+          "local_end": "08:43",
+          "event_type": "color_change",
+          "description": "Left man's tie changes from black to red",
+          "participants": [
+            "man in dark suit with white shirt"
+          ],
+          "actor": "man in dark suit with white shirt",
+          "object_before": "black tie",
+          "object_after": "red tie"
+        },
+        {
+          "local_start": "08:43",
+          "local_end": "08:45",
+          "event_type": "graphic",
+          "description": "Image stabilizes with final title card showing two men in suits with red title text",
+          "participants": [],
+          "actor": "",
+          "object_before": "changing title card",
+          "object_after": "stable title card",
+          "on_screen_text": [
+            {
+              "text": "SUITS",
+              "location": "title"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "SUITS title sequence",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 35,
+      "chunk_start_sec": 525.0,
+      "chunk_end_sec": 532.8239583333333,
+      "chunk_start_mmss": "08:45",
+      "chunk_end_mmss": "08:53",
+      "events": [
+        {
+          "local_start": "08:45",
+          "local_end": "08:53",
+          "event_type": "title_card",
+          "description": "static promotional image for the TV show SUITS remains unchanged",
+          "participants": [],
+          "actor": "",
+          "on_screen_text": [
+            {
+              "text": "SUITS",
+              "location": "title"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "SUITS promotional display",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "question": "Was the woman standing in the center on the same team as the host?",
+  "pred": "Evidence: The woman in the black outfit (who stands in the center initially) and the host sit together on the couch on the right side of the stage, while the other two guests sit on the couch on the left. Throughout the game, the woman acts for the host to guess (e.g., frames 00:06-00:18) and the host acts for her to guess (e.g., frames 01:58-02:02), confirming they are on the same team.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "stand",
+      "description": "Four people stand in front of blue curtain with Charades board visible",
+      "participants": [
+        "checkered-jumpsuit woman",
+        "black-outfit man",
+        "corset-top woman",
+        "suit man"
+      ],
+      "actor": "all",
+      "segment_boundary": "start",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:02",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "open_box",
+      "description": "The man in the suit opens the box labeled '8' on the Charades board",
+      "participants": [
+        "suit man",
+        "black and gold top woman",
+        "checkered jumpsuit woman",
+        "black outfit man"
+      ],
+      "actor": "suit man",
+      "object": "box labeled 8",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "CHARADES",
+          "location": "banner"
+        },
+        {
+          "text": "8",
+          "location": "podium"
+        }
+      ],
+      "event_index": 63,
+      "start_time": "01:58",
+      "end_time": "02:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "speak",
+      "description": "woman in checkered jumpsuit holds board labeled '3' and speaks to the audience",
+      "participants": [
+        "checkered-jumpsuit woman"
+      ],
+      "actor": "checkered-jumpsuit woman",
+      "object": "brown board",
+      "on_screen_text": [
+        {
+          "text": "RING OF FIRE",
+          "location": "caption"
+        },
+        {
+          "text": ":30",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 64,
+      "start_time": "02:00",
+      "end_time": "02:02",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "manipulate_panel",
+      "description": "The woman in the checkered jumpsuit touches panel 7 on the Charades board",
+      "participants": [
+        "checkered jumpsuit woman",
+        "suit man"
+      ],
+      "actor": "checkered jumpsuit woman",
+      "object": "panel 7",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 126,
+      "start_time": "04:30",
+      "end_time": "04:34",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "gesture",
+      "description": "The man in the suit gestures toward panel 7 on the Charades board while speaking to the woman",
+      "participants": [
+        "checkered jumpsuit woman",
+        "suit man"
+      ],
+      "actor": "suit man",
+      "object": "panel 7",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 127,
+      "start_time": "04:34",
+      "end_time": "04:38",
+      "sub_events": [],
+      "subtype_order": 48,
+      "subtype_total": 53,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "manipulate_panel",
+      "description": "The woman in the checkered jumpsuit adjusts her hand position on panel 7 while interacting with the man in the suit",
+      "participants": [
+        "checkered jumpsuit woman",
+        "suit man"
+      ],
+      "actor": "checkered jumpsuit woman",
+      "object": "panel 7",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 128,
+      "start_time": "04:38",
+      "end_time": "04:42",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "speak",
+      "description": "The woman in the checkered jumpsuit speaks to the man in the suit while keeping her hand on panel 7",
+      "participants": [
+        "checkered jumpsuit woman",
+        "suit man"
+      ],
+      "actor": "checkered jumpsuit woman",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 129,
+      "start_time": "04:42",
+      "end_time": "04:45",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "game",
+      "description": "man holds up wooden tile with number 7 to show the charade prompt",
+      "participants": [
+        "checkered-jumpsuit woman",
+        "suit-man man"
+      ],
+      "actor": "suit-man man",
+      "object": "wooden tile with number 7",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 130,
+      "start_time": "04:45",
+      "end_time": "04:50",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "speak",
+      "description": "woman in checkered jumpsuit speaks with hands raised and gesturing outward",
+      "participants": [
+        "checkered jumpsuit woman",
+        "black dress woman",
+        "suit man",
+        "black outfit man"
+      ],
+      "actor": "checkered jumpsuit woman",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 163,
+      "start_time": "05:30",
+      "end_time": "05:35",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "speak",
+      "description": "man in dark suit speaks while gesturing with both hands in front of him",
+      "participants": [
+        "checkered jumpsuit woman",
+        "black dress woman",
+        "suit man",
+        "black outfit man"
+      ],
+      "actor": "suit man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 164,
+      "start_time": "05:30",
+      "end_time": "05:35",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "high_five",
+      "description": "woman in checkered jumpsuit high-fives man in dark suit",
+      "participants": [
+        "checkered jumpsuit woman",
+        "suit man"
+      ],
+      "actor": "checkered jumpsuit woman",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 167,
+      "start_time": "05:40",
+      "end_time": "05:45",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    }
+  ]
+}

@@ -1,0 +1,961 @@
+{
+  "video_name": "0079_p23Pe38CuxQ.mp4",
+  "video_duration_sec": 76.9,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:01",
+          "event_type": "game",
+          "description": "woman in pink holds a pink ball preparing to roll",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "pink-shirt woman",
+          "segment_boundary": "start",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:01",
+          "local_end": "00:03",
+          "event_type": "throw",
+          "description": "pink-shirt woman rolls a pink ball down the table toward the channel structure",
+          "participants": [
+            "pink-shirt woman"
+          ],
+          "actor": "pink-shirt woman",
+          "object": "pink ball",
+          "segment_boundary": "middle",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:04",
+          "event_type": "outcome",
+          "description": "pink ball lands in the leftmost channel under the first \"1\"",
+          "participants": [],
+          "actor": null,
+          "object": "pink ball",
+          "outcome": "in",
+          "on_screen_text": [
+            {
+              "text": "1 0 2 0 1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:04",
+          "local_end": "00:05",
+          "event_type": "game",
+          "description": "red-shirt man holds a red ball preparing to roll",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "segment_boundary": "middle",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:07",
+          "event_type": "throw",
+          "description": "red-shirt man rolls a red ball down the table toward the channel structure",
+          "participants": [
+            "red-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "object": "red ball",
+          "segment_boundary": "middle",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:08",
+          "event_type": "outcome",
+          "description": "red ball lands in the rightmost channel under the second \"1\"",
+          "participants": [],
+          "actor": null,
+          "object": "red ball",
+          "outcome": "in",
+          "on_screen_text": [
+            {
+              "text": "1 0 2 0 1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:08",
+          "local_end": "00:09",
+          "event_type": "hand_raise",
+          "description": "pink-shirt woman raises her hand while reaching for another pink ball from the bowl",
+          "participants": [
+            "pink-shirt woman"
+          ],
+          "actor": "pink-shirt woman",
+          "segment_boundary": "middle",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:09",
+          "local_end": "00:11",
+          "event_type": "throw",
+          "description": "pink-shirt woman rolls a second pink ball down the table toward the channel structure",
+          "participants": [
+            "pink-shirt woman"
+          ],
+          "actor": "pink-shirt woman",
+          "object": "pink ball",
+          "segment_boundary": "middle",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:10",
+          "local_end": "00:12",
+          "event_type": "outcome",
+          "description": "second pink ball lands in the second channel from the left under the first \"0\"",
+          "participants": [],
+          "actor": null,
+          "object": "pink ball",
+          "outcome": "in",
+          "on_screen_text": [
+            {
+              "text": "1 0 2 0 1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:12",
+          "local_end": "00:14",
+          "event_type": "throw",
+          "description": "red-shirt man rolls a second red ball down the table toward the channel structure",
+          "participants": [
+            "red-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "object": "red ball",
+          "segment_boundary": "middle",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:13",
+          "local_end": "00:15",
+          "event_type": "outcome",
+          "description": "second red ball lands in the middle channel under the \"2\"",
+          "participants": [],
+          "actor": null,
+          "object": "red ball",
+          "outcome": "in",
+          "on_screen_text": [
+            {
+              "text": "1 0 2 0 1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 30.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:30",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:17",
+          "event_type": "throw",
+          "description": "red-shirt man rolls a red ball toward the numbered slot table",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "object": "red ball",
+          "segment_boundary": "middle",
+          "segment_label": "Ball Slot Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:17",
+          "local_end": "00:19",
+          "event_type": "throw",
+          "description": "pink-shirt woman rolls a pink ball toward the numbered slot table",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "pink-shirt woman",
+          "object": "pink ball",
+          "segment_boundary": "middle",
+          "segment_label": "Ball Slot Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:19",
+          "local_end": "00:21",
+          "event_type": "manipulate_object",
+          "description": "red-shirt man takes a red ball from the white bowl on his side",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "object": "red ball",
+          "segment_boundary": "middle",
+          "segment_label": "Ball Slot Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:21",
+          "local_end": "00:23",
+          "event_type": "balloon_pop",
+          "description": "pink-shirt woman reaches up and pops a pink balloon in the middle column of the pink balloon section",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "pink-shirt woman",
+          "segment_boundary": "middle",
+          "segment_label": "Ball Slot Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:23",
+          "local_end": "00:25",
+          "event_type": "balloon_pop",
+          "description": "red-shirt man reaches up and pops a red balloon in the rightmost column of the red balloon section",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "segment_boundary": "middle",
+          "segment_label": "Ball Slot Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:25",
+          "local_end": "00:27",
+          "event_type": "throw",
+          "description": "red-shirt man rolls a red ball toward the numbered slot table",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "object": "red ball",
+          "segment_boundary": "middle",
+          "segment_label": "Ball Slot Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:27",
+          "local_end": "00:29",
+          "event_type": "throw",
+          "description": "pink-shirt woman rolls a pink ball toward the numbered slot table",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "pink-shirt woman",
+          "object": "pink ball",
+          "segment_boundary": "middle",
+          "segment_label": "Ball Slot Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:29",
+          "local_end": "00:30",
+          "event_type": "manipulate_object",
+          "description": "red-shirt man places a red ball on the table preparing to roll it",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "object": "red ball",
+          "segment_boundary": "middle",
+          "segment_label": "Ball Slot Game",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 2,
+      "chunk_start_sec": 30.0,
+      "chunk_end_sec": 45.0,
+      "chunk_start_mmss": "00:30",
+      "chunk_end_mmss": "00:45",
+      "events": [
+        {
+          "local_start": "00:30",
+          "local_end": "00:31",
+          "event_type": "hand_raise",
+          "description": "woman in pink raises her hand",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "pink-shirt woman",
+          "segment_boundary": "middle",
+          "segment_label": "Ball Toss Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:31",
+          "local_end": "00:32",
+          "event_type": "throw",
+          "description": "woman in pink throws a pink ball into the second channel from the left",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "pink-shirt woman",
+          "object": "pink ball",
+          "segment_boundary": "middle",
+          "segment_label": "Ball Toss Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:32",
+          "local_end": "00:34",
+          "event_type": "throw",
+          "description": "man in red throws a red ball into the middle channel",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "object": "red ball",
+          "segment_boundary": "middle",
+          "segment_label": "Ball Toss Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:34",
+          "local_end": "00:37",
+          "event_type": "balloon_pop",
+          "description": "woman in pink pops a pink balloon on the left side of the wall",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "pink-shirt woman",
+          "object": "pink balloon",
+          "segment_boundary": "middle",
+          "segment_label": "Ball Toss Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:37",
+          "local_end": "00:39",
+          "event_type": "balloon_pop",
+          "description": "man in red pops a red balloon on the right side of the wall",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "object": "red balloon",
+          "segment_boundary": "middle",
+          "segment_label": "Ball Toss Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:39",
+          "local_end": "00:41",
+          "event_type": "throw",
+          "description": "woman in pink throws a pink ball into the leftmost channel",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "pink-shirt woman",
+          "object": "pink ball",
+          "segment_boundary": "middle",
+          "segment_label": "Ball Toss Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:41",
+          "local_end": "00:43",
+          "event_type": "throw",
+          "description": "man in red throws a red ball into the second channel from the left",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "object": "red ball",
+          "segment_boundary": "middle",
+          "segment_label": "Ball Toss Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:43",
+          "local_end": "00:45",
+          "event_type": "balloon_pop",
+          "description": "woman in pink pops a pink balloon on the left side of the wall",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "pink-shirt woman",
+          "object": "pink balloon",
+          "segment_boundary": "middle",
+          "segment_label": "Ball Toss Game",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 3,
+      "chunk_start_sec": 45.0,
+      "chunk_end_sec": 60.0,
+      "chunk_start_mmss": "00:45",
+      "chunk_end_mmss": "01:00",
+      "events": [
+        {
+          "local_start": "00:45",
+          "local_end": "00:46",
+          "event_type": "roll",
+          "description": "The woman in pink releases a pink ball toward the numbered tray",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "pink-shirt woman",
+          "object": "pink ball",
+          "on_screen_text": [
+            {
+              "text": "1 0 2 0 1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:46",
+          "local_end": "00:47",
+          "event_type": "roll",
+          "description": "The man in red releases a red ball toward the middle '2' slot of the numbered tray",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "object": "red ball",
+          "on_screen_text": [
+            {
+              "text": "1 0 2 0 1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:48",
+          "local_end": "00:49",
+          "event_type": "reach",
+          "description": "The woman in pink reaches for a pink ball in her bowl",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "pink-shirt woman",
+          "object": "pink ball",
+          "on_screen_text": [
+            {
+              "text": "1 0 2 0 1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:49",
+          "local_end": "00:50",
+          "event_type": "roll",
+          "description": "The woman in pink releases a pink ball toward the leftmost '1' slot of the numbered tray",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "pink-shirt woman",
+          "object": "pink ball",
+          "on_screen_text": [
+            {
+              "text": "1 0 2 0 1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:50",
+          "local_end": "00:51",
+          "event_type": "balloon_pop",
+          "description": "The woman in pink pops a pink balloon from the background display",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "pink-shirt woman",
+          "object": "pink balloon",
+          "on_screen_text": [
+            {
+              "text": "1 0 2 0 1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:52",
+          "local_end": "00:53",
+          "event_type": "roll",
+          "description": "The man in red releases a red ball toward the rightmost '1' slot of the numbered tray",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "object": "red ball",
+          "on_screen_text": [
+            {
+              "text": "1 0 2 0 1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:53",
+          "local_end": "00:54",
+          "event_type": "reach",
+          "description": "The man in red reaches for a red ball in his bowl",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "object": "red ball",
+          "on_screen_text": [
+            {
+              "text": "1 0 2 0 1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:54",
+          "local_end": "00:55",
+          "event_type": "reach",
+          "description": "The woman in pink reaches for a pink ball in her bowl",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "pink-shirt woman",
+          "object": "pink ball",
+          "on_screen_text": [
+            {
+              "text": "1 0 2 0 1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:55",
+          "local_end": "00:56",
+          "event_type": "roll",
+          "description": "The woman in pink releases a pink ball toward the leftmost '1' slot of the numbered tray",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "pink-shirt woman",
+          "object": "pink ball",
+          "on_screen_text": [
+            {
+              "text": "1 0 2 0 1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:57",
+          "local_end": "00:58",
+          "event_type": "roll",
+          "description": "The man in red releases a red ball toward the middle '2' slot of the numbered tray",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "object": "red ball",
+          "on_screen_text": [
+            {
+              "text": "1 0 2 0 1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:58",
+          "local_end": "00:59",
+          "event_type": "reach",
+          "description": "The man in red reaches for a red ball in his bowl",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "object": "red ball",
+          "on_screen_text": [
+            {
+              "text": "1 0 2 0 1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:59",
+          "local_end": "01:00",
+          "event_type": "balloon_pop",
+          "description": "The woman in pink pops another pink balloon from the background display",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "pink-shirt woman",
+          "object": "pink balloon",
+          "on_screen_text": [
+            {
+              "text": "1 0 2 0 1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Ball Rolling Game",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 4,
+      "chunk_start_sec": 60.0,
+      "chunk_end_sec": 75.0,
+      "chunk_start_mmss": "01:00",
+      "chunk_end_mmss": "01:15",
+      "events": [
+        {
+          "local_start": "01:00",
+          "local_end": "01:02",
+          "event_type": "roll",
+          "description": "woman in pink rolls a pink ball across the table toward the numbered track",
+          "participants": [
+            "pink-shirt woman",
+            "red-hoodie man"
+          ],
+          "actor": "pink-shirt woman",
+          "object": "pink ball",
+          "outcome": "in",
+          "on_screen_text": [
+            {
+              "text": "1",
+              "location": "scoreboard"
+            },
+            {
+              "text": "0",
+              "location": "scoreboard"
+            },
+            {
+              "text": "2",
+              "location": "scoreboard"
+            },
+            {
+              "text": "0",
+              "location": "scoreboard"
+            },
+            {
+              "text": "1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Balloon Track Game",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "01:02",
+          "local_end": "01:04",
+          "event_type": "roll",
+          "description": "man in red rolls a red ball across the table toward the numbered track",
+          "participants": [
+            "pink-shirt woman",
+            "red-hoodie man"
+          ],
+          "actor": "red-hoodie man",
+          "object": "red ball",
+          "outcome": "in",
+          "on_screen_text": [
+            {
+              "text": "1",
+              "location": "scoreboard"
+            },
+            {
+              "text": "0",
+              "location": "scoreboard"
+            },
+            {
+              "text": "2",
+              "location": "scoreboard"
+            },
+            {
+              "text": "0",
+              "location": "scoreboard"
+            },
+            {
+              "text": "1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Balloon Track Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:04",
+          "local_end": "01:06",
+          "event_type": "balloon_pop",
+          "description": "woman in pink reaches up and pops a pink balloon from the left column on the wall",
+          "participants": [
+            "pink-shirt woman"
+          ],
+          "actor": "pink-shirt woman",
+          "object": "pink balloon",
+          "outcome": "popped",
+          "on_screen_text": [
+            {
+              "text": "1",
+              "location": "scoreboard"
+            },
+            {
+              "text": "0",
+              "location": "scoreboard"
+            },
+            {
+              "text": "2",
+              "location": "scoreboard"
+            },
+            {
+              "text": "0",
+              "location": "scoreboard"
+            },
+            {
+              "text": "1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Balloon Track Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:06",
+          "local_end": "01:08",
+          "event_type": "balloon_pop",
+          "description": "man in red reaches up and pops a red balloon from the right column on the wall",
+          "participants": [
+            "red-hoodie man"
+          ],
+          "actor": "red-hoodie man",
+          "object": "red balloon",
+          "outcome": "popped",
+          "on_screen_text": [
+            {
+              "text": "1",
+              "location": "scoreboard"
+            },
+            {
+              "text": "0",
+              "location": "scoreboard"
+            },
+            {
+              "text": "2",
+              "location": "scoreboard"
+            },
+            {
+              "text": "0",
+              "location": "scoreboard"
+            },
+            {
+              "text": "1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Balloon Track Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:13",
+          "local_end": "01:15",
+          "event_type": "celebration",
+          "description": "man in red raises his right arm in celebration while facing the woman",
+          "participants": [
+            "red-hoodie man"
+          ],
+          "actor": "red-hoodie man",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "1",
+              "location": "scoreboard"
+            },
+            {
+              "text": "0",
+              "location": "scoreboard"
+            },
+            {
+              "text": "2",
+              "location": "scoreboard"
+            },
+            {
+              "text": "0",
+              "location": "scoreboard"
+            },
+            {
+              "text": "1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Balloon Track Game",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 5,
+      "chunk_start_sec": 75.0,
+      "chunk_end_sec": 76.9,
+      "chunk_start_mmss": "01:15",
+      "chunk_end_mmss": "01:17",
+      "events": [
+        {
+          "local_start": "01:15",
+          "local_end": "01:16",
+          "event_type": "balloon_pop",
+          "description": "man in red hoodie reaches up and pops the top red balloon on the wall",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "object": "red balloon",
+          "object_before": "red balloon",
+          "object_after": "popped balloon fragments",
+          "segment_boundary": "middle",
+          "segment_label": "Balloon Pop Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:15",
+          "local_end": "01:17",
+          "event_type": "react",
+          "description": "woman in pink shirt looks up at the wall and reacts to the balloon popping",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "pink-shirt woman",
+          "segment_boundary": "middle",
+          "segment_label": "Balloon Pop Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:16",
+          "local_end": "01:17",
+          "event_type": "hand_raise",
+          "description": "man in red hoodie raises his right arm in celebration after popping the balloon",
+          "participants": [
+            "pink-shirt woman",
+            "red-shirt man"
+          ],
+          "actor": "red-shirt man",
+          "segment_boundary": "middle",
+          "segment_label": "Balloon Pop Game",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

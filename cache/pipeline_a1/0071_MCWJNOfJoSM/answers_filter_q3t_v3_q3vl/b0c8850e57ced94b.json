@@ -1,0 +1,82 @@
+{
+  "question": "Did the goalkeeper in yellow save the shot?",
+  "pred": "Evidence: Context event 154 states \"the yellow-jersey goalkeeper (Argentina) dives to his right to block the shot\" with outcome \"miss\", indicating a successful save.\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "game",
+      "description": "the blue-jersey player (France) kicks the ball toward the goal",
+      "participants": [
+        "blue-jersey player",
+        "yellow-jersey goalkeeper"
+      ],
+      "actor": "blue-jersey player",
+      "object": "white ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 153,
+      "start_time": "05:18",
+      "end_time": "05:20",
+      "sub_events": [],
+      "subtype_order": 33,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "the yellow-jersey goalkeeper (Argentina) dives to his right to block the shot",
+      "participants": [
+        "yellow-jersey goalkeeper",
+        "blue-jersey player"
+      ],
+      "actor": "yellow-jersey goalkeeper",
+      "object": "white ball",
+      "outcome": "miss",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 154,
+      "start_time": "05:18",
+      "end_time": "05:21",
+      "sub_events": [],
+      "subtype_order": 34,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "the on-screen scoreboard updates to show Argentina leading 3-2 in the penalty shootout",
+      "participants": [
+        "blue-jersey player",
+        "white-and-blue-jersey player"
+      ],
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 3 - 2 FRANCE",
+          "location": "scoreboard"
+        },
+        {
+          "text": "PENALTY SHOOTOUT",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 155,
+      "start_time": "05:21",
+      "end_time": "05:25",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

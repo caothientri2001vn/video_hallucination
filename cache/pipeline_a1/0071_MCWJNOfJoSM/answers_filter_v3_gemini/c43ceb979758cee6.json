@@ -1,0 +1,178 @@
+{
+  "question": "Did the goalkeeper in green fail to make a save in Round 3?",
+  "pred": "The video shows a penalty shootout. To determine what happened in Round 3, we identify the 3rd pair of kickers (one for each team) following the sequence of the game:\n\n1.  **Round 1:** France #10 (Mbappe) scores; Argentina #10 (Messi) scores.\n2.  **Round 2:** France #20 (Coman) has his shot saved by the green-jersey goalkeeper; Argentina #21 (Dybala) scores.\n3.  **Round 3:** France #8 (Tchouameni) takes his turn. The green-jersey goalkeeper (Argentina #23) dives to his right, but the ball goes wide of the left post (a miss). Argentina #5 (Paredes) then scores his penalty.\n\nIn Round 3, the France player missed the target entirely (\"ball goes wide of the post\"). Because the ball did not go into the goal and was not stopped by the goalkeeper, the goalkeeper did not make a save.\n\nEvidence: event 102 describes the green-jersey goalkeeper diving as the ball goes wide of the post (outcome: miss).\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "game",
+      "description": "the blue-jersey player (number 8) runs toward the ball to take a penalty kick",
+      "participants": [
+        "blue-jersey player",
+        "green-jersey goalkeeper"
+      ],
+      "actor": "blue-jersey player",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 2 - 1 FRANCE",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 100,
+      "start_time": "03:30",
+      "end_time": "03:31",
+      "sub_events": [],
+      "subtype_order": 17,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "the blue-jersey player (number 8) kicks the white ball toward the goal",
+      "participants": [
+        "blue-jersey player",
+        "green-jersey goalkeeper"
+      ],
+      "actor": "blue-jersey player",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 2 - 1 FRANCE",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "middle",
+      "event_index": 101,
+      "start_time": "03:31",
+      "end_time": "03:32",
+      "sub_events": [],
+      "subtype_order": 18,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "the green-jersey goalkeeper dives to his right as the ball goes wide of the post",
+      "participants": [
+        "green-jersey goalkeeper"
+      ],
+      "actor": "green-jersey goalkeeper",
+      "object": "white ball",
+      "outcome": "miss",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 2 - 1 FRANCE",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "middle",
+      "event_index": 102,
+      "start_time": "03:32",
+      "end_time": "03:33",
+      "sub_events": [],
+      "subtype_order": 19,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "The blue-jersey player (France #8) runs toward the ball to take a penalty kick.",
+      "participants": [
+        "blue-jersey player (France #8)",
+        "green-jersey goalkeeper (Argentina #23)"
+      ],
+      "actor": "blue-jersey player (France #8)",
+      "object": "white ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 110,
+      "start_time": "03:46",
+      "end_time": "03:48",
+      "sub_events": [],
+      "subtype_order": 20,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "The blue-jersey player (France #8) kicks the ball toward the left side of the goal.",
+      "participants": [
+        "blue-jersey player (France #8)",
+        "green-jersey goalkeeper (Argentina #23)"
+      ],
+      "actor": "blue-jersey player (France #8)",
+      "object": "white ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 111,
+      "start_time": "03:48",
+      "end_time": "03:49",
+      "sub_events": [],
+      "subtype_order": 21,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "The green-jersey goalkeeper (Argentina #23) dives to his right (the left side of the goal) to attempt a save.",
+      "participants": [
+        "green-jersey goalkeeper (Argentina #23)",
+        "blue-jersey player (France #8)"
+      ],
+      "actor": "green-jersey goalkeeper (Argentina #23)",
+      "object": "white ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 112,
+      "start_time": "03:48",
+      "end_time": "03:50",
+      "sub_events": [],
+      "subtype_order": 22,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "The ball goes wide of the left goalpost.",
+      "participants": [
+        "blue-jersey player (France #8)",
+        "green-jersey goalkeeper (Argentina #23)"
+      ],
+      "actor": "blue-jersey player (France #8)",
+      "object": "white ball",
+      "outcome": "miss",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 113,
+      "start_time": "03:49",
+      "end_time": "03:50",
+      "sub_events": [],
+      "subtype_order": 23,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

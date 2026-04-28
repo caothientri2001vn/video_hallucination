@@ -1,0 +1,1724 @@
+{
+  "video_name": "0093_m_VqgbH0PWs.mp4",
+  "video_duration_sec": 491.05723333333333,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:02",
+          "event_type": "point",
+          "description": "a hand enters the frame from the bottom and points at the lower section of the character's dress on the yellow paper",
+          "participants": [
+            "person with visible hands"
+          ],
+          "actor": "person with visible hands",
+          "object": "yellow paper with black outline drawing",
+          "segment_boundary": "middle",
+          "segment_label": "coloring activity",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:15",
+          "event_type": "coloring",
+          "description": "the right hand applies yellow paint to the lower section of the character's dress using a toothpick while the left hand steadies the paper",
+          "participants": [
+            "person with visible hands"
+          ],
+          "actor": "person with visible hands",
+          "object": "toothpick and yellow paint",
+          "segment_boundary": "middle",
+          "segment_label": "coloring activity",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 30.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:30",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:20",
+          "event_type": "draw",
+          "description": "right hand applies light-colored material to the top section of the figure's hair/bun using a small stick while following the black outline",
+          "participants": [],
+          "actor": "person",
+          "object": "small stick",
+          "segment_boundary": "middle",
+          "segment_label": "rangoli drawing",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:20",
+          "local_end": "00:25",
+          "event_type": "point",
+          "description": "left hand points to specific areas of the drawing while right hand applies light-colored material to the middle section of the hair/bun",
+          "participants": [],
+          "actor": "person",
+          "object": "small stick",
+          "segment_boundary": "middle",
+          "segment_label": "rangoli drawing",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:25",
+          "local_end": "00:30",
+          "event_type": "draw",
+          "description": "both hands work on the lower side section of the hair/bun with left hand pointing to guide right hand applying light-colored material",
+          "participants": [],
+          "actor": "person",
+          "object": "small stick",
+          "segment_boundary": "middle",
+          "segment_label": "rangoli drawing",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 2,
+      "chunk_start_sec": 30.0,
+      "chunk_end_sec": 45.0,
+      "chunk_start_mmss": "00:30",
+      "chunk_end_mmss": "00:45",
+      "events": [
+        {
+          "local_start": "00:30",
+          "local_end": "00:34",
+          "event_type": "apply_sand",
+          "description": "The artist's right hand uses a stick to apply black sand to the lower dress area of the drawing while the left hand holds the paper steady.",
+          "participants": [
+            "artist"
+          ],
+          "actor": "artist",
+          "object": "black sand",
+          "segment_boundary": "middle",
+          "segment_label": "Sand Art Drawing",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:34",
+          "local_end": "00:38",
+          "event_type": "apply_sand",
+          "description": "The artist's right hand applies black sand to the upper body and shoulder area of the drawing, continuing to fill in the outline.",
+          "participants": [
+            "artist"
+          ],
+          "actor": "artist",
+          "object": "black sand",
+          "segment_boundary": "middle",
+          "segment_label": "Sand Art Drawing",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:38",
+          "local_end": "00:42",
+          "event_type": "apply_sand",
+          "description": "The artist's right hand works on the hair area, applying black sand to fill in the intricate curls and details of the hairstyle.",
+          "participants": [
+            "artist"
+          ],
+          "actor": "artist",
+          "object": "black sand",
+          "segment_boundary": "middle",
+          "segment_label": "Sand Art Drawing",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:42",
+          "local_end": "00:45",
+          "event_type": "adjust_sand",
+          "description": "The artist uses both hands to adjust and smooth the black sand in the lower right section of the drawing, with the right hand using the stick for precision work.",
+          "participants": [
+            "artist"
+          ],
+          "actor": "artist",
+          "object": "black sand",
+          "segment_boundary": "middle",
+          "segment_label": "Sand Art Drawing",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 3,
+      "chunk_start_sec": 45.0,
+      "chunk_end_sec": 60.0,
+      "chunk_start_mmss": "00:45",
+      "chunk_end_mmss": "01:00",
+      "events": [
+        {
+          "local_start": "00:45",
+          "local_end": "01:00",
+          "event_type": "paint",
+          "description": "A person uses a brush in their right hand to apply black paint to the character's right eye on the yellow paper drawing, while their left hand (with a ring) steadies the paper.",
+          "participants": [
+            "person with ring on left hand"
+          ],
+          "actor": "person with ring on left hand",
+          "object": "black paint",
+          "object_before": "yellow paper",
+          "object_after": "black eye",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 4,
+      "chunk_start_sec": 60.0,
+      "chunk_end_sec": 75.0,
+      "chunk_start_mmss": "01:00",
+      "chunk_end_mmss": "01:15",
+      "events": [
+        {
+          "local_start": "01:00",
+          "local_end": "01:15",
+          "event_type": "apply_powder",
+          "description": "A hand holding a black spoon applies black powder to fill in the hair area of the character drawing on yellow paper",
+          "participants": [
+            "hand holding black spoon"
+          ],
+          "actor": "hand holding black spoon",
+          "object": "black powder",
+          "segment_boundary": "middle",
+          "segment_label": "Sand Art Creation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 5,
+      "chunk_start_sec": 75.0,
+      "chunk_end_sec": 90.0,
+      "chunk_start_mmss": "01:15",
+      "chunk_end_mmss": "01:30",
+      "events": [
+        {
+          "local_start": "01:15",
+          "local_end": "01:20",
+          "event_type": "manipulate",
+          "description": "Two hands tilt the yellow paper to the right, allowing black powder to fall off and reveal more of the line drawing underneath",
+          "participants": [
+            "two hands"
+          ],
+          "actor": "two hands",
+          "object": "yellow paper with black powder",
+          "object_before": "yellow paper covered with black powder silhouette",
+          "object_after": "yellow paper with partially revealed line drawing",
+          "segment_boundary": "middle",
+          "segment_label": "powder art reveal",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:20",
+          "local_end": "01:25",
+          "event_type": "manipulate",
+          "description": "Hands rotate the yellow paper counterclockwise while continuing to shake off black powder to reveal more details of the line art",
+          "participants": [
+            "two hands"
+          ],
+          "actor": "two hands",
+          "object": "yellow paper with black powder",
+          "object_before": "yellow paper with partially revealed line drawing",
+          "object_after": "yellow paper with more clearly visible line drawing of a woman",
+          "segment_boundary": "middle",
+          "segment_label": "powder art reveal",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:25",
+          "local_end": "01:30",
+          "event_type": "draw",
+          "description": "A hand holding a brush works on the bird figure in the top right corner of the yellow paper, refining its details",
+          "participants": [
+            "hand with brush"
+          ],
+          "actor": "hand with brush",
+          "object": "brush and bird figure",
+          "segment_boundary": "middle",
+          "segment_label": "powder art reveal",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 6,
+      "chunk_start_sec": 90.0,
+      "chunk_end_sec": 105.0,
+      "chunk_start_mmss": "01:30",
+      "chunk_end_mmss": "01:45",
+      "events": [
+        {
+          "local_start": "01:30",
+          "local_end": "01:40",
+          "event_type": "coloring",
+          "description": "right hand uses toothpick to apply color to the small bird figure in the top right corner of the yellow drawing paper",
+          "participants": [
+            "person with bracelet"
+          ],
+          "actor": "person with bracelet",
+          "object": "toothpick",
+          "segment_boundary": "middle",
+          "segment_label": "drawing coloring activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:40",
+          "local_end": "01:45",
+          "event_type": "coloring",
+          "description": "both hands work together - right hand applies color with toothpick while left hand holds the yellow drawing paper steady",
+          "participants": [
+            "person with bracelet"
+          ],
+          "actor": "person with bracelet",
+          "object": "toothpick",
+          "segment_boundary": "middle",
+          "segment_label": "drawing coloring activity",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 7,
+      "chunk_start_sec": 105.0,
+      "chunk_end_sec": 120.0,
+      "chunk_start_mmss": "01:45",
+      "chunk_end_mmss": "02:00",
+      "events": [
+        {
+          "local_start": "01:45",
+          "local_end": "01:48",
+          "event_type": "scoop",
+          "description": "A hand uses a black spoon to scoop black powder from a container",
+          "participants": [],
+          "actor": "person with bracelet",
+          "object": "black spoon, black powder",
+          "segment_boundary": "middle",
+          "segment_label": "drawing activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:48",
+          "local_end": "01:55",
+          "event_type": "apply",
+          "description": "The hand applies the black powder to the bird drawing in the top right corner of the yellow paper using a brush",
+          "participants": [],
+          "actor": "person with bracelet",
+          "object": "brush, black powder",
+          "object_before": "white bird drawing",
+          "object_after": "partially black bird drawing",
+          "segment_boundary": "middle",
+          "segment_label": "drawing activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:55",
+          "local_end": "02:00",
+          "event_type": "spread",
+          "description": "The hand spreads the black powder over the bird drawing to fill in the outline more completely using the brush",
+          "participants": [],
+          "actor": "person with bracelet",
+          "object": "brush, black powder",
+          "object_before": "partially black bird drawing",
+          "object_after": "mostly black bird drawing",
+          "segment_boundary": "middle",
+          "segment_label": "drawing activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:45",
+          "local_end": "02:00",
+          "event_type": "hold",
+          "description": "The left hand holds the yellow paper steady while the right hand works on the drawing",
+          "participants": [],
+          "actor": "person with bracelet",
+          "object": "yellow paper",
+          "segment_boundary": "middle",
+          "segment_label": "drawing activity",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 8,
+      "chunk_start_sec": 120.0,
+      "chunk_end_sec": 135.0,
+      "chunk_start_mmss": "02:00",
+      "chunk_end_mmss": "02:15",
+      "events": [
+        {
+          "local_start": "02:00",
+          "local_end": "02:04",
+          "event_type": "paint",
+          "description": "hand paints the bird character with white paint",
+          "participants": [],
+          "actor": "hand",
+          "object": "bird character",
+          "object_before": "black and white line drawing of bird",
+          "object_after": "partially painted bird with white paint",
+          "segment_boundary": "middle",
+          "segment_label": "painting cartoon character",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:05",
+          "local_end": "02:06",
+          "event_type": "dip_brush",
+          "description": "hand dips brush into leftmost container in middle row of paint containers on left side",
+          "participants": [],
+          "actor": "hand",
+          "object": "brush",
+          "segment_boundary": "middle",
+          "segment_label": "painting cartoon character",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:07",
+          "local_end": "02:15",
+          "event_type": "paint",
+          "description": "hand continues painting the bird character with white paint",
+          "participants": [],
+          "actor": "hand",
+          "object": "bird character",
+          "object_before": "partially painted bird with white paint",
+          "object_after": "more fully painted bird with white paint",
+          "segment_boundary": "middle",
+          "segment_label": "painting cartoon character",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 9,
+      "chunk_start_sec": 135.0,
+      "chunk_end_sec": 150.0,
+      "chunk_start_mmss": "02:15",
+      "chunk_end_mmss": "02:30",
+      "events": [
+        {
+          "local_start": "02:15",
+          "local_end": "02:18",
+          "event_type": "coloring",
+          "description": "A hand applies white paint to the upper section of Belle's hair on the drawing",
+          "participants": [
+            "person with paintbrush"
+          ],
+          "actor": "person with paintbrush",
+          "object": "Belle drawing",
+          "segment_boundary": "middle",
+          "segment_label": "Belle drawing coloring",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:18",
+          "local_end": "02:22",
+          "event_type": "coloring",
+          "description": "The hand continues applying white paint to the middle section of Belle's hair",
+          "participants": [
+            "person with paintbrush"
+          ],
+          "actor": "person with paintbrush",
+          "object": "Belle drawing",
+          "segment_boundary": "middle",
+          "segment_label": "Belle drawing coloring",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:22",
+          "local_end": "02:26",
+          "event_type": "stabilizing",
+          "description": "A second hand appears to steady the paper while the first hand continues coloring",
+          "participants": [
+            "person with paintbrush",
+            "person with steadying hand"
+          ],
+          "actor": "person with steadying hand",
+          "object": "paper",
+          "segment_boundary": "middle",
+          "segment_label": "Belle drawing coloring",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:26",
+          "local_end": "02:30",
+          "event_type": "coloring",
+          "description": "The hand applies white paint to the lower section of Belle's hair near her face",
+          "participants": [
+            "person with paintbrush"
+          ],
+          "actor": "person with paintbrush",
+          "object": "Belle drawing",
+          "segment_boundary": "middle",
+          "segment_label": "Belle drawing coloring",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 10,
+      "chunk_start_sec": 150.0,
+      "chunk_end_sec": 165.0,
+      "chunk_start_mmss": "02:30",
+      "chunk_end_mmss": "02:45",
+      "events": [
+        {
+          "local_start": "02:30",
+          "local_end": "02:35",
+          "event_type": "paint",
+          "description": "a hand applies white paint to the upper section of the cartoon character's hair",
+          "participants": [
+            "person"
+          ],
+          "actor": "person",
+          "object": "cartoon drawing",
+          "segment_boundary": "middle",
+          "segment_label": "Cartoon Painting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:35",
+          "local_end": "02:37",
+          "event_type": "hand_movement",
+          "description": "a hand lifts away from the cartoon drawing",
+          "participants": [
+            "person"
+          ],
+          "actor": "person",
+          "segment_boundary": "middle",
+          "segment_label": "Cartoon Painting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:37",
+          "local_end": "02:45",
+          "event_type": "paint",
+          "description": "a hand returns and applies white paint to a different section of the cartoon character's hair",
+          "participants": [
+            "person"
+          ],
+          "actor": "person",
+          "object": "cartoon drawing",
+          "segment_boundary": "middle",
+          "segment_label": "Cartoon Painting",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 11,
+      "chunk_start_sec": 165.0,
+      "chunk_end_sec": 180.0,
+      "chunk_start_mmss": "02:45",
+      "chunk_end_mmss": "03:00",
+      "events": [
+        {
+          "local_start": "02:45",
+          "local_end": "02:49",
+          "event_type": "coloring",
+          "description": "hand colors the bird drawing using a brush",
+          "participants": [
+            "person with brown hand"
+          ],
+          "actor": "person with brown hand",
+          "object": "bird drawing",
+          "object_before": "black outline bird",
+          "object_after": "partially colored bird",
+          "segment_boundary": "middle",
+          "segment_label": "coloring activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:49",
+          "local_end": "02:54",
+          "event_type": "coloring",
+          "description": "hand colors the character's face around the eye area",
+          "participants": [
+            "person with brown hand"
+          ],
+          "actor": "person with brown hand",
+          "object": "character face",
+          "object_before": "black outline face",
+          "object_after": "partially colored face",
+          "segment_boundary": "middle",
+          "segment_label": "coloring activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:54",
+          "local_end": "02:59",
+          "event_type": "coloring",
+          "description": "hand continues to color the character's hair and face",
+          "participants": [
+            "person with brown hand"
+          ],
+          "actor": "person with brown hand",
+          "object": "character hair and face",
+          "object_before": "black outline hair and face",
+          "object_after": "more fully colored hair and face",
+          "segment_boundary": "middle",
+          "segment_label": "coloring activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:59",
+          "local_end": "03:00",
+          "event_type": "dipping_brush",
+          "description": "hand dips brush into a paint cup",
+          "participants": [
+            "person with brown hand"
+          ],
+          "actor": "person with brown hand",
+          "object": "paint brush",
+          "segment_boundary": "middle",
+          "segment_label": "coloring activity",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 12,
+      "chunk_start_sec": 180.0,
+      "chunk_end_sec": 195.0,
+      "chunk_start_mmss": "03:00",
+      "chunk_end_mmss": "03:15",
+      "events": [
+        {
+          "local_start": "03:00",
+          "local_end": "03:02",
+          "event_type": "apply_powder",
+          "description": "A hand uses a brush to apply white powder to the upper right section of the character's hair on the yellow paper",
+          "participants": [
+            "artist's hand"
+          ],
+          "actor": "artist's hand",
+          "object": "white powder",
+          "segment_boundary": "middle",
+          "segment_label": "Character Coloring Activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:03",
+          "local_end": "03:05",
+          "event_type": "tool_switch",
+          "description": "The hand switches from holding a brush to picking up a black spoon containing brown powder from the bottom right cup",
+          "participants": [
+            "artist's hand"
+          ],
+          "actor": "artist's hand",
+          "object": "black spoon",
+          "segment_boundary": "middle",
+          "segment_label": "Character Coloring Activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:06",
+          "local_end": "03:15",
+          "event_type": "apply_powder",
+          "description": "The hand uses the spoon to sprinkle brown powder onto the character's face and body area, starting from the right side and moving toward the center",
+          "participants": [
+            "artist's hand"
+          ],
+          "actor": "artist's hand",
+          "object": "brown powder",
+          "segment_boundary": "middle",
+          "segment_label": "Character Coloring Activity",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 13,
+      "chunk_start_sec": 195.0,
+      "chunk_end_sec": 210.0,
+      "chunk_start_mmss": "03:15",
+      "chunk_end_mmss": "03:30",
+      "events": [
+        {
+          "local_start": "03:15",
+          "local_end": "03:18",
+          "event_type": "hold",
+          "description": "Holds the completed powder art drawing with both hands, displaying it steadily to the camera",
+          "participants": [],
+          "actor": "hands",
+          "object": "yellow paper with completed drawing"
+        },
+        {
+          "local_start": "03:18",
+          "local_end": "03:22",
+          "event_type": "tilt",
+          "description": "Tilts the paper to the left to showcase the artwork from a different viewing angle",
+          "participants": [],
+          "actor": "hands",
+          "object": "yellow paper with completed drawing"
+        },
+        {
+          "local_start": "03:22",
+          "local_end": "03:26",
+          "event_type": "tilt",
+          "description": "Tilts the paper to the right to further display the completed powder art from another perspective",
+          "participants": [],
+          "actor": "hands",
+          "object": "yellow paper with completed drawing"
+        },
+        {
+          "local_start": "03:26",
+          "local_end": "03:30",
+          "event_type": "adjust",
+          "description": "Makes small adjustments to position the paper centrally in the frame for better display",
+          "participants": [],
+          "actor": "hands",
+          "object": "yellow paper with completed drawing"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 14,
+      "chunk_start_sec": 210.0,
+      "chunk_end_sec": 225.0,
+      "chunk_start_mmss": "03:30",
+      "chunk_end_mmss": "03:45",
+      "events": [
+        {
+          "local_start": "03:30",
+          "local_end": "03:35",
+          "event_type": "color_application",
+          "description": "A hand holding a brush applies light yellow powder to the lower face area of the cartoon character drawing, focusing on the chin and jaw region.",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "light yellow powder",
+          "segment_boundary": "middle",
+          "segment_label": "Coloring Activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:35",
+          "local_end": "03:40",
+          "event_type": "color_application",
+          "description": "The hand moves to apply light yellow powder to the eye area of the cartoon character, specifically working on the right eye and surrounding facial region.",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "light yellow powder",
+          "segment_boundary": "middle",
+          "segment_label": "Coloring Activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:40",
+          "local_end": "03:45",
+          "event_type": "color_application",
+          "description": "The hand returns to apply more light yellow powder to the lower face area, continuing to fill in the chin and jaw region of the cartoon character drawing.",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "light yellow powder",
+          "segment_boundary": "middle",
+          "segment_label": "Coloring Activity",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 15,
+      "chunk_start_sec": 225.0,
+      "chunk_end_sec": 240.0,
+      "chunk_start_mmss": "03:45",
+      "chunk_end_mmss": "04:00",
+      "events": [
+        {
+          "local_start": "03:45",
+          "local_end": "03:51",
+          "event_type": "paint",
+          "description": "A hand holds a thin brush and applies color to the neckline area of the illustration",
+          "participants": [
+            "hand with thin brush"
+          ],
+          "actor": "hand with thin brush",
+          "object": "thin brush",
+          "segment_boundary": "middle",
+          "segment_label": "Illustration Coloring",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:51",
+          "local_end": "03:52",
+          "event_type": "retract",
+          "description": "The hand moves away from the illustration toward the left side of the frame",
+          "participants": [
+            "hand with thin brush"
+          ],
+          "actor": "hand with thin brush",
+          "object": "thin brush",
+          "segment_boundary": "middle",
+          "segment_label": "Illustration Coloring",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "03:52",
+          "local_end": "03:54",
+          "event_type": "hold",
+          "description": "The hand reappears holding a thicker brush",
+          "participants": [
+            "hand with thicker brush"
+          ],
+          "actor": "hand with thicker brush",
+          "object": "thicker brush",
+          "segment_boundary": "middle",
+          "segment_label": "Illustration Coloring",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "03:54",
+          "local_end": "03:57",
+          "event_type": "dip",
+          "description": "The hand dips the brush into the black powder container on the right side, bottom row, first position from the left",
+          "participants": [
+            "hand with thicker brush"
+          ],
+          "actor": "hand with thicker brush",
+          "object": "thicker brush",
+          "cover": "black powder container",
+          "segment_boundary": "middle",
+          "segment_label": "Illustration Coloring",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "03:57",
+          "local_end": "03:59",
+          "event_type": "dip",
+          "description": "The hand dips the brush into the yellow powder container on the left side, bottom row, second position from the left",
+          "participants": [
+            "hand with thicker brush"
+          ],
+          "actor": "hand with thicker brush",
+          "object": "thicker brush",
+          "cover": "yellow powder container",
+          "segment_boundary": "middle",
+          "segment_label": "Illustration Coloring",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "03:59",
+          "local_end": "04:00",
+          "event_type": "apply",
+          "description": "The hand applies yellow powder to the dress area of the illustration",
+          "participants": [
+            "hand with thicker brush"
+          ],
+          "actor": "hand with thicker brush",
+          "object": "yellow powder",
+          "segment_boundary": "middle",
+          "segment_label": "Illustration Coloring",
+          "continuation_hint": "starts_before_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 16,
+      "chunk_start_sec": 240.0,
+      "chunk_end_sec": 255.0,
+      "chunk_start_mmss": "04:00",
+      "chunk_end_mmss": "04:15",
+      "events": [
+        {
+          "local_start": "04:00",
+          "local_end": "04:08",
+          "event_type": "apply_powder",
+          "description": "A hand applies brown powder to the lower portion of the drawing using a spoon, focusing on the face and chest area",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "brown powder",
+          "segment_boundary": "middle",
+          "segment_label": "Powder Art Drawing",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:08",
+          "local_end": "04:12",
+          "event_type": "spread_powder",
+          "description": "The hand spreads and fills in the brown powder on the drawing to create shading and detail",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "brown powder",
+          "segment_boundary": "middle",
+          "segment_label": "Powder Art Drawing",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:12",
+          "local_end": "04:15",
+          "event_type": "add_details",
+          "description": "The hand switches to a toothpick to add fine details to the drawing, specifically to the chest area",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "toothpick",
+          "segment_boundary": "middle",
+          "segment_label": "Powder Art Drawing",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 17,
+      "chunk_start_sec": 255.0,
+      "chunk_end_sec": 270.0,
+      "chunk_start_mmss": "04:15",
+      "chunk_end_mmss": "04:30",
+      "events": [
+        {
+          "local_start": "04:15",
+          "local_end": "04:30",
+          "event_type": "paint",
+          "description": "A hand uses a paintbrush to apply white paint to the off-shoulder dress area of Belle's drawing, methodically filling the outlined sections from upper to lower portions",
+          "participants": [],
+          "actor": "painting hand",
+          "object": "paintbrush",
+          "object_before": "yellow paper",
+          "object_after": "white painted area",
+          "segment_boundary": "middle",
+          "segment_label": "Coloring Belle Drawing",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 18,
+      "chunk_start_sec": 270.0,
+      "chunk_end_sec": 285.0,
+      "chunk_start_mmss": "04:30",
+      "chunk_end_mmss": "04:45",
+      "events": [
+        {
+          "local_start": "04:30",
+          "local_end": "04:36",
+          "event_type": "dip_paint",
+          "description": "a hand dips a brush into the yellow paint pot in the bottom-left position",
+          "participants": [],
+          "actor": "unseen person (hand visible)",
+          "object": "yellow paint",
+          "segment_boundary": "middle",
+          "segment_label": "Coloring Activity",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "04:36",
+          "local_end": "04:45",
+          "event_type": "apply_color",
+          "description": "the hand applies yellow paint to the dress area of the character drawing",
+          "participants": [],
+          "actor": "unseen person (hand visible)",
+          "object": "yellow paint",
+          "segment_boundary": "middle",
+          "segment_label": "Coloring Activity",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 19,
+      "chunk_start_sec": 285.0,
+      "chunk_end_sec": 300.0,
+      "chunk_start_mmss": "04:45",
+      "chunk_end_mmss": "05:00",
+      "events": [
+        {
+          "local_start": "04:45",
+          "local_end": "04:52",
+          "event_type": "rotate_illustration",
+          "description": "A hand rotates the yellow paper with the Belle illustration, showing different angles of the drawing",
+          "participants": [
+            "illustrator's hand"
+          ],
+          "actor": "illustrator's hand",
+          "object": "Belle illustration paper",
+          "segment_boundary": "middle",
+          "segment_label": "Belle illustration painting",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "04:52",
+          "local_end": "04:54",
+          "event_type": "dip_brush",
+          "description": "A hand dips a brush into the white paint pot (left column, second row from top)",
+          "participants": [
+            "illustrator's hand"
+          ],
+          "actor": "illustrator's hand",
+          "object": "brush",
+          "segment_boundary": "middle",
+          "segment_label": "Belle illustration painting",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "04:54",
+          "local_end": "05:00",
+          "event_type": "paint_illustration",
+          "description": "A hand applies white paint to the yellow dress area of the Belle illustration, adding details to the lower portion of the dress",
+          "participants": [
+            "illustrator's hand"
+          ],
+          "actor": "illustrator's hand",
+          "object": "Belle illustration",
+          "segment_boundary": "middle",
+          "segment_label": "Belle illustration painting",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 20,
+      "chunk_start_sec": 300.0,
+      "chunk_end_sec": 315.0,
+      "chunk_start_mmss": "05:00",
+      "chunk_end_mmss": "05:15",
+      "events": [
+        {
+          "local_start": "05:00",
+          "local_end": "05:02",
+          "event_type": "reach",
+          "description": "hand reaches toward the red paint container in the leftmost position of the bottom row on the left side",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "red paint container",
+          "segment_boundary": "middle",
+          "segment_label": "Coloring activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:02",
+          "local_end": "05:03",
+          "event_type": "dip",
+          "description": "brush dips into the red paint container in the leftmost position of the bottom row on the left side",
+          "participants": [
+            "hand",
+            "brush",
+            "red paint container"
+          ],
+          "actor": "hand",
+          "object": "brush",
+          "segment_boundary": "middle",
+          "segment_label": "Coloring activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:03",
+          "local_end": "05:08",
+          "event_type": "paint",
+          "description": "hand applies red paint to the character's lips on the drawing",
+          "participants": [
+            "hand",
+            "brush",
+            "drawing"
+          ],
+          "actor": "hand",
+          "object": "character's lips",
+          "segment_boundary": "middle",
+          "segment_label": "Coloring activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:08",
+          "local_end": "05:10",
+          "event_type": "move",
+          "description": "hand lifts and repositions the paper with the drawing",
+          "participants": [
+            "hand",
+            "paper"
+          ],
+          "actor": "hand",
+          "object": "paper",
+          "segment_boundary": "middle",
+          "segment_label": "Coloring activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:10",
+          "local_end": "05:15",
+          "event_type": "paint",
+          "description": "hand continues applying red paint to the character's lips after repositioning the paper",
+          "participants": [
+            "hand",
+            "brush",
+            "drawing"
+          ],
+          "actor": "hand",
+          "object": "character's lips",
+          "segment_boundary": "middle",
+          "segment_label": "Coloring activity",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 21,
+      "chunk_start_sec": 315.0,
+      "chunk_end_sec": 330.0,
+      "chunk_start_mmss": "05:15",
+      "chunk_end_mmss": "05:30",
+      "events": [
+        {
+          "local_start": "05:15",
+          "local_end": "05:21",
+          "event_type": "coloring",
+          "description": "a hand uses a brush to color Belle's lips with red paint",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "Belle illustration",
+          "segment_boundary": "middle",
+          "segment_label": "coloring activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:22",
+          "local_end": "05:23",
+          "event_type": "dip_paint",
+          "description": "a hand dips a brush into the black paint cup on the bottom-left of the right-side paint array",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "black paint cup",
+          "segment_boundary": "middle",
+          "segment_label": "coloring activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:24",
+          "local_end": "05:27",
+          "event_type": "coloring",
+          "description": "a hand uses a brush to color Belle's eye with black paint",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "Belle illustration",
+          "segment_boundary": "middle",
+          "segment_label": "coloring activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:28",
+          "local_end": "05:30",
+          "event_type": "dip_paint",
+          "description": "a hand dips a brush into the brown paint cup on the bottom-right of the right-side paint array",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "brown paint cup",
+          "segment_boundary": "middle",
+          "segment_label": "coloring activity",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 22,
+      "chunk_start_sec": 330.0,
+      "chunk_end_sec": 345.0,
+      "chunk_start_mmss": "05:30",
+      "chunk_end_mmss": "05:45",
+      "events": [
+        {
+          "local_start": "05:30",
+          "local_end": "05:45",
+          "event_type": "painting",
+          "description": "a hand uses a brush to apply color to the eye area of the character drawing with precise brushstrokes",
+          "participants": [
+            "artist's hand"
+          ],
+          "actor": "artist's hand",
+          "object": "character drawing (Belle)",
+          "segment_boundary": "middle",
+          "segment_label": "painting character drawing",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 23,
+      "chunk_start_sec": 345.0,
+      "chunk_end_sec": 360.0,
+      "chunk_start_mmss": "05:45",
+      "chunk_end_mmss": "06:00",
+      "events": [
+        {
+          "local_start": "05:45",
+          "local_end": "05:51",
+          "event_type": "painting",
+          "description": "applies yellow paint to the character's left earring (viewer's right side of the drawing)",
+          "participants": [
+            "artist"
+          ],
+          "actor": "artist",
+          "object": "yellow paint",
+          "segment_boundary": "middle",
+          "segment_label": "character painting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:51",
+          "local_end": "05:55",
+          "event_type": "select_paint",
+          "description": "dips brush into the yellow paint container located at the bottom left of the paint arrangement",
+          "participants": [
+            "artist"
+          ],
+          "actor": "artist",
+          "object": "yellow paint container",
+          "segment_boundary": "middle",
+          "segment_label": "character painting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:55",
+          "local_end": "06:00",
+          "event_type": "painting",
+          "description": "applies yellow paint to complete the character's left earring detail",
+          "participants": [
+            "artist"
+          ],
+          "actor": "artist",
+          "object": "yellow paint",
+          "segment_boundary": "middle",
+          "segment_label": "character painting",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 24,
+      "chunk_start_sec": 360.0,
+      "chunk_end_sec": 375.0,
+      "chunk_start_mmss": "06:00",
+      "chunk_end_mmss": "06:15",
+      "events": [
+        {
+          "local_start": "06:00",
+          "local_end": "06:05",
+          "event_type": "paint",
+          "description": "paints the bottom edge of the character's yellow dress",
+          "participants": [
+            "painting hand"
+          ],
+          "actor": "painting hand",
+          "object": "yellow dress",
+          "segment_boundary": "middle",
+          "segment_label": "Character Painting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:05",
+          "local_end": "06:10",
+          "event_type": "paint",
+          "description": "paints the middle section of the character's yellow dress",
+          "participants": [
+            "painting hand"
+          ],
+          "actor": "painting hand",
+          "object": "yellow dress",
+          "segment_boundary": "middle",
+          "segment_label": "Character Painting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:10",
+          "local_end": "06:15",
+          "event_type": "paint",
+          "description": "adds details to the upper portion of the character's yellow dress",
+          "participants": [
+            "painting hand"
+          ],
+          "actor": "painting hand",
+          "object": "yellow dress",
+          "segment_boundary": "middle",
+          "segment_label": "Character Painting",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 25,
+      "chunk_start_sec": 375.0,
+      "chunk_end_sec": 390.0,
+      "chunk_start_mmss": "06:15",
+      "chunk_end_mmss": "06:30",
+      "events": [
+        {
+          "local_start": "06:15",
+          "local_end": "06:20",
+          "event_type": "dip_powder",
+          "description": "hand dips a brush into a light beige powder cup on the left side",
+          "participants": [
+            "person with hand visible"
+          ],
+          "actor": "person with hand visible",
+          "object": "light beige powder",
+          "segment_boundary": "middle",
+          "segment_label": "coloring activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:18",
+          "local_end": "06:23",
+          "event_type": "apply_powder",
+          "description": "hand applies light beige powder to the character's face area using a brush",
+          "participants": [
+            "person with hand visible"
+          ],
+          "actor": "person with hand visible",
+          "object": "light beige powder",
+          "segment_boundary": "middle",
+          "segment_label": "coloring activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:21",
+          "local_end": "06:25",
+          "event_type": "dip_powder",
+          "description": "hand dips the brush back into the light beige powder cup",
+          "participants": [
+            "person with hand visible"
+          ],
+          "actor": "person with hand visible",
+          "object": "light beige powder",
+          "segment_boundary": "middle",
+          "segment_label": "coloring activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:23",
+          "local_end": "06:28",
+          "event_type": "apply_powder",
+          "description": "hand continues applying light beige powder to the character's face, focusing on the cheek area",
+          "participants": [
+            "person with hand visible"
+          ],
+          "actor": "person with hand visible",
+          "object": "light beige powder",
+          "segment_boundary": "middle",
+          "segment_label": "coloring activity",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:27",
+          "local_end": "06:30",
+          "event_type": "apply_powder",
+          "description": "hand carefully applies powder to the upper face area near the character's eye",
+          "participants": [
+            "person with hand visible"
+          ],
+          "actor": "person with hand visible",
+          "object": "light beige powder",
+          "segment_boundary": "middle",
+          "segment_label": "coloring activity",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 26,
+      "chunk_start_sec": 390.0,
+      "chunk_end_sec": 405.0,
+      "chunk_start_mmss": "06:30",
+      "chunk_end_mmss": "06:45",
+      "events": [
+        {
+          "local_start": "06:30",
+          "local_end": "06:35",
+          "event_type": "reveal",
+          "description": "peels the bottom edge of the yellow paper to begin revealing the completed drawing underneath",
+          "participants": [
+            "artist"
+          ],
+          "actor": "artist",
+          "object_before": "yellow paper with hidden drawing",
+          "object_after": "yellow paper with partially revealed drawing",
+          "segment_boundary": "middle",
+          "segment_label": "drawing reveal",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:35",
+          "local_end": "06:40",
+          "event_type": "reveal",
+          "description": "continues peeling the paper upward, revealing more of the drawing",
+          "participants": [
+            "artist"
+          ],
+          "actor": "artist",
+          "object_before": "yellow paper with partially revealed drawing",
+          "object_after": "yellow paper with mostly revealed drawing",
+          "segment_boundary": "middle",
+          "segment_label": "drawing reveal",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:40",
+          "local_end": "06:45",
+          "event_type": "display",
+          "description": "holds the fully revealed drawing steady with both hands for display",
+          "participants": [
+            "artist"
+          ],
+          "actor": "artist",
+          "object_before": "yellow paper with mostly revealed drawing",
+          "object_after": "yellow paper with fully revealed drawing",
+          "segment_boundary": "middle",
+          "segment_label": "drawing reveal",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 27,
+      "chunk_start_sec": 405.0,
+      "chunk_end_sec": 420.0,
+      "chunk_start_mmss": "06:45",
+      "chunk_end_mmss": "07:00",
+      "events": [
+        {
+          "local_start": "06:45",
+          "local_end": "06:50",
+          "event_type": "peel",
+          "description": "hands continue peeling the yellow paper from the top right area of the drawing, revealing more of the colored image underneath",
+          "participants": [
+            "person with gold bracelet and rings"
+          ],
+          "actor": "person with gold bracelet and rings",
+          "object": "yellow paper",
+          "segment_boundary": "middle",
+          "segment_label": "paper peeling",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:50",
+          "local_end": "06:55",
+          "event_type": "peel",
+          "description": "hands peel the yellow paper from the upper portion of the drawing, revealing more of Belle's face and hair details",
+          "participants": [
+            "person with gold bracelet and rings"
+          ],
+          "actor": "person with gold bracelet and rings",
+          "object": "yellow paper",
+          "segment_boundary": "middle",
+          "segment_label": "paper peeling",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:55",
+          "local_end": "07:00",
+          "event_type": "peel",
+          "description": "hands carefully separate the remaining yellow paper from the top of the drawing using fingers, with left hand holding the paper steady",
+          "participants": [
+            "person with gold bracelet and rings"
+          ],
+          "actor": "person with gold bracelet and rings",
+          "object": "yellow paper",
+          "segment_boundary": "middle",
+          "segment_label": "paper peeling",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 28,
+      "chunk_start_sec": 420.0,
+      "chunk_end_sec": 435.0,
+      "chunk_start_mmss": "07:00",
+      "chunk_end_mmss": "07:15",
+      "events": [
+        {
+          "local_start": "07:00",
+          "local_end": "07:02",
+          "event_type": "dip",
+          "description": "Artist's hand dips into the orange powder cup (leftmost cup in the top row of the left-side cup arrangement)",
+          "participants": [
+            "artist"
+          ],
+          "actor": "artist",
+          "object": "orange powder"
+        },
+        {
+          "local_start": "07:02",
+          "local_end": "07:15",
+          "event_type": "color_application",
+          "description": "Artist's hand applies orange powder to the left side of the drawing background using sweeping motions",
+          "participants": [
+            "artist"
+          ],
+          "actor": "artist",
+          "object": "orange powder",
+          "object_before": "white drawing background",
+          "object_after": "partially orange-powdered drawing background (left side)"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 29,
+      "chunk_start_sec": 435.0,
+      "chunk_end_sec": 450.0,
+      "chunk_start_mmss": "07:15",
+      "chunk_end_mmss": "07:30",
+      "events": [
+        {
+          "local_start": "07:15",
+          "local_end": "07:17",
+          "event_type": "apply_powder",
+          "description": "hand applies orange powder along the bottom edge of the drawing",
+          "participants": [],
+          "actor": "hand",
+          "object": "orange powder",
+          "segment_boundary": "middle",
+          "segment_label": "Powder Art",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:17",
+          "local_end": "07:19",
+          "event_type": "dip_powder",
+          "description": "hand dips brush into the top-left orange powder container",
+          "participants": [],
+          "actor": "hand",
+          "object": "brush",
+          "segment_boundary": "middle",
+          "segment_label": "Powder Art",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:19",
+          "local_end": "07:21",
+          "event_type": "apply_powder",
+          "description": "hand applies orange powder to the right side edge of the drawing",
+          "participants": [],
+          "actor": "hand",
+          "object": "orange powder",
+          "segment_boundary": "middle",
+          "segment_label": "Powder Art",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:21",
+          "local_end": "07:23",
+          "event_type": "dip_powder",
+          "description": "hand dips brush into the top-left orange powder container again",
+          "participants": [],
+          "actor": "hand",
+          "object": "brush",
+          "segment_boundary": "middle",
+          "segment_label": "Powder Art",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:23",
+          "local_end": "07:26",
+          "event_type": "apply_powder",
+          "description": "hand applies orange powder along the top edge of the drawing",
+          "participants": [],
+          "actor": "hand",
+          "object": "orange powder",
+          "segment_boundary": "middle",
+          "segment_label": "Powder Art",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:26",
+          "local_end": "07:28",
+          "event_type": "dip_powder",
+          "description": "hand dips brush into the top-left orange powder container",
+          "participants": [],
+          "actor": "hand",
+          "object": "brush",
+          "segment_boundary": "middle",
+          "segment_label": "Powder Art",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:28",
+          "local_end": "07:30",
+          "event_type": "apply_powder",
+          "description": "hand applies orange powder to the left side edge of the drawing",
+          "participants": [],
+          "actor": "hand",
+          "object": "orange powder",
+          "segment_boundary": "middle",
+          "segment_label": "Powder Art",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 30,
+      "chunk_start_sec": 450.0,
+      "chunk_end_sec": 465.0,
+      "chunk_start_mmss": "07:30",
+      "chunk_end_mmss": "07:45",
+      "events": [
+        {
+          "local_start": "07:30",
+          "local_end": "07:45",
+          "event_type": "reveal",
+          "description": "peels orange layer from the top left corner to gradually reveal the original Belle artwork underneath",
+          "participants": [],
+          "actor": "artist's hands",
+          "object_before": "orange layer covering artwork",
+          "object_after": "original artwork of Belle",
+          "object_before_pattern": "solid orange covering",
+          "object_after_pattern": "detailed cartoon character drawing",
+          "segment_boundary": "middle",
+          "segment_label": "Art Reveal",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 31,
+      "chunk_start_sec": 465.0,
+      "chunk_end_sec": 480.0,
+      "chunk_start_mmss": "07:45",
+      "chunk_end_mmss": "08:00",
+      "events": [
+        {
+          "local_start": "07:45",
+          "local_end": "07:48",
+          "event_type": "powder_application",
+          "description": "Right hand applies powder to the LEFT portion of the artwork, specifically the left side of the character's hair area",
+          "participants": [
+            "person with gold bracelet on left wrist"
+          ],
+          "actor": "person with gold bracelet on left wrist",
+          "object": "artwork",
+          "segment_boundary": "middle",
+          "segment_label": "Sand Art Creation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:48",
+          "local_end": "07:51",
+          "event_type": "rotate",
+          "description": "Artwork is rotated COUNTERCLOCKWISE to show different angles, with both hands manipulating its position",
+          "participants": [
+            "person with gold bracelet on left wrist"
+          ],
+          "actor": "person with gold bracelet on left wrist",
+          "object": "artwork",
+          "segment_boundary": "middle",
+          "segment_label": "Sand Art Creation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:51",
+          "local_end": "07:56",
+          "event_type": "powder_application",
+          "description": "Right hand continues to apply powder to the MIDDLE and RIGHT portions of the artwork, focusing on the face and hair details",
+          "participants": [
+            "person with gold bracelet on left wrist"
+          ],
+          "actor": "person with gold bracelet on left wrist",
+          "object": "artwork",
+          "segment_boundary": "middle",
+          "segment_label": "Sand Art Creation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:56",
+          "local_end": "08:00",
+          "event_type": "display",
+          "description": "Completed artwork is held up for display with BOTH HANDS, showing the finished image of Belle with detailed hair and facial features",
+          "participants": [
+            "person with gold bracelet on left wrist"
+          ],
+          "actor": "person with gold bracelet on left wrist",
+          "object": "artwork",
+          "segment_boundary": "end",
+          "segment_label": "Sand Art Creation",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 32,
+      "chunk_start_sec": 480.0,
+      "chunk_end_sec": 491.05723333333333,
+      "chunk_start_mmss": "08:00",
+      "chunk_end_mmss": "08:11",
+      "events": [
+        {
+          "local_start": "08:00",
+          "local_end": "08:05",
+          "event_type": "artwork_detailing",
+          "description": "The brown hair on the Belle drawing gains additional texture and detail, with more defined curls and shading becoming visible",
+          "participants": [
+            "person holding the orange board"
+          ],
+          "actor": "person holding the orange board",
+          "object_before": "Belle drawing with less detailed brown hair",
+          "object_after": "Belle drawing with more textured and detailed brown hair",
+          "segment_boundary": "middle",
+          "segment_label": "Sand Art Drawing",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "08:03",
+          "local_end": "08:07",
+          "event_type": "artwork_addition",
+          "description": "A white bird figure appears in the top right corner of the orange board, which was not present in earlier frames",
+          "participants": [
+            "person holding the orange board"
+          ],
+          "actor": "person holding the orange board",
+          "object_before": "orange board without bird element",
+          "object_after": "orange board with white bird in top right corner",
+          "segment_boundary": "middle",
+          "segment_label": "Sand Art Drawing",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "08:00",
+          "local_end": "08:11",
+          "event_type": "board_positioning",
+          "description": "The hands holding the orange board make small adjustments to its position, shifting it slightly left and right while maintaining it centered in the frame",
+          "participants": [
+            "person holding the orange board"
+          ],
+          "actor": "person holding the orange board",
+          "segment_boundary": "middle",
+          "segment_label": "Sand Art Drawing",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

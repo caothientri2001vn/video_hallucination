@@ -1,0 +1,97 @@
+{
+  "question": "Does the woman win the game with red color?",
+  "pred": "Evidence: The context shows the woman placing and lifting a cup from a red disc, followed by her laughing and the man making a facepalm gesture. However, the game continues with multiple other colored discs after this interaction, and there is no explicit indication that the red disc alone resulted in her winning the entire game.\n\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "place",
+      "description": "The pink-sweatshirt woman reaches out and places the white cup over the small red disc on the left side of the table.",
+      "participants": [
+        "black-sweatshirt man",
+        "pink-sweatshirt woman"
+      ],
+      "actor": "pink-sweatshirt woman",
+      "cover": "white cup",
+      "hidden": "red disc",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Cup and Disc Game",
+      "continuation_hint": "middle",
+      "event_index": 62,
+      "start_time": "01:18",
+      "end_time": "01:20",
+      "sub_events": [],
+      "subtype_order": 23,
+      "subtype_total": 23,
+      "round_index": 1,
+      "segment_label_resolved": "Cup and Object Game"
+    },
+    {
+      "event_type": "lift",
+      "description": "The pink-sweatshirt woman lifts the white cup from the small red disc on the left side of the table.",
+      "participants": [
+        "black-sweatshirt man",
+        "pink-sweatshirt woman"
+      ],
+      "actor": "pink-sweatshirt woman",
+      "cover": "white cup",
+      "hidden": "red disc",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Cup and Disc Game",
+      "continuation_hint": "middle",
+      "event_index": 63,
+      "start_time": "01:20",
+      "end_time": "01:21",
+      "sub_events": [],
+      "subtype_order": 15,
+      "subtype_total": 15,
+      "round_index": 1,
+      "segment_label_resolved": "Cup and Object Game"
+    },
+    {
+      "event_type": "react",
+      "description": "The pink-sweatshirt woman laughs and brings the white cup to her mouth as if drinking.",
+      "participants": [
+        "black-sweatshirt man",
+        "pink-sweatshirt woman"
+      ],
+      "actor": "pink-sweatshirt woman",
+      "object": "white cup",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Cup and Disc Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 64,
+      "start_time": "01:21",
+      "end_time": "01:23",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Cup and Object Game"
+    },
+    {
+      "event_type": "react",
+      "description": "The black-sweatshirt man smiles and raises his right hand to his forehead in a facepalm gesture.",
+      "participants": [
+        "black-sweatshirt man",
+        "pink-sweatshirt woman"
+      ],
+      "actor": "black-sweatshirt man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Cup and Disc Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 65,
+      "start_time": "01:21",
+      "end_time": "01:23",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Cup and Object Game"
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "video_name": "0036_14_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 21.0,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:01",
+          "event_type": "transition",
+          "description": "Video starts with black screen showing channel logo",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "TARAF'TAN KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:01",
+          "local_end": "00:03",
+          "event_type": "dribble",
+          "description": "Player in yellow and black uniform begins dribbling the ball forward",
+          "participants": [
+            "green-shirt player",
+            "white-shirt player"
+          ],
+          "actor": "yellow-shirt player",
+          "object": "white soccer ball",
+          "on_screen_text": [
+            {
+              "text": "TARAF'TAN KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:01",
+          "local_end": "00:05",
+          "event_type": "run",
+          "description": "Two green-shirt players run toward the yellow-shirt player to defend",
+          "participants": [
+            "yellow-shirt player",
+            "white-shirt player"
+          ],
+          "actor": "green-shirt players",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "TARAF'TAN KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:04",
+          "event_type": "run",
+          "description": "White-shirt goalkeeper runs toward the play to intercept",
+          "participants": [
+            "yellow-shirt player",
+            "green-shirt players"
+          ],
+          "actor": "white-shirt player",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "TARAF'TAN KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:03",
+          "local_end": "00:06",
+          "event_type": "dive",
+          "description": "White-shirt goalkeeper performs a diving tackle attempt toward the ball",
+          "participants": [
+            "yellow-shirt player",
+            "green-shirt players"
+          ],
+          "actor": "white-shirt player",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "TARAF'TAN KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:04",
+          "local_end": "00:06",
+          "event_type": "dodge",
+          "description": "Yellow-shirt player avoids the diving goalkeeper's tackle attempt",
+          "participants": [
+            "white-shirt player",
+            "green-shirt players"
+          ],
+          "actor": "yellow-shirt player",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "TARAF'TAN KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:15",
+          "event_type": "dribble",
+          "description": "Yellow-shirt player continues dribbling the ball while being pursued by green-shirt players",
+          "participants": [
+            "green-shirt players",
+            "white-shirt player"
+          ],
+          "actor": "yellow-shirt player",
+          "object": "white soccer ball",
+          "on_screen_text": [
+            {
+              "text": "TARAF'TAN KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 21.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:21",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:17",
+          "event_type": "slide",
+          "description": "Green jersey player slides on the ground toward the ball while reaching with his hand",
+          "participants": [
+            "green-jersey player #27",
+            "black-and-yellow player"
+          ],
+          "actor": "green-jersey player #27",
+          "object": "ball",
+          "outcome": "reach for ball",
+          "on_screen_text": [
+            {
+              "text": "Bulbank Mobile",
+              "location": "banner"
+            },
+            {
+              "text": "TURKISH CHANNEL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:15",
+          "local_end": "00:18",
+          "event_type": "dribble",
+          "description": "Black-and-yellow jersey player maintains control of the ball while moving forward",
+          "participants": [
+            "black-and-yellow player",
+            "green-jersey player #27"
+          ],
+          "actor": "black-and-yellow player",
+          "object": "ball",
+          "outcome": "continues dribbling",
+          "on_screen_text": [
+            {
+              "text": "Bulbank Mobile",
+              "location": "banner"
+            },
+            {
+              "text": "TURKISH CHANNEL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:16",
+          "local_end": "00:19",
+          "event_type": "get_up",
+          "description": "Green jersey player #5 gets up from the ground after falling",
+          "participants": [
+            "green-jersey player #5",
+            "green-jersey player #27"
+          ],
+          "actor": "green-jersey player #5",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:18",
+          "local_end": "00:20",
+          "event_type": "shoot",
+          "description": "Black-and-yellow jersey player kicks the ball toward the goal",
+          "participants": [
+            "black-and-yellow player",
+            "green-jersey player #27"
+          ],
+          "actor": "black-and-yellow player",
+          "object": "ball",
+          "outcome": "shot on goal",
+          "on_screen_text": [
+            {
+              "text": "Bulbank Mobile",
+              "location": "banner"
+            },
+            {
+              "text": "TURKISH CHANNEL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:19",
+          "local_end": "00:21",
+          "event_type": "ball_movement",
+          "description": "Ball travels through the air toward the goal net",
+          "participants": [
+            "ball"
+          ],
+          "actor": "ball",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:20",
+          "local_end": "00:21",
+          "event_type": "celebration",
+          "description": "Black-and-yellow jersey player begins celebration by raising his arms",
+          "participants": [
+            "black-and-yellow player"
+          ],
+          "actor": "black-and-yellow player",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:15",
+          "local_end": "00:21",
+          "event_type": "run",
+          "description": "Referee in red shirt runs toward the play action",
+          "participants": [
+            "red-shirt referee"
+          ],
+          "actor": "red-shirt referee",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

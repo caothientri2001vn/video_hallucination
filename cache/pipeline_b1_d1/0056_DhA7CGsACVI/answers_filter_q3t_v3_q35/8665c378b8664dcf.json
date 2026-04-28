@@ -1,0 +1,73 @@
+{
+  "question": "Were the bee and mantis toys inside the box opened by the man on the right?",
+  "pred": "Evidence: The event timeline states that \"The dark-suited man opens the large center box on the table\" and \"The opened box reveals green praying mantis figurines and black-yellow bee figurines\". Visually, the man on the right (wearing a dark suit) is the one who opens the box containing these figurines.\n\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "open_box",
+      "description": "The dark-suited man opens the large center box on the table by lifting its lid upward",
+      "participants": [
+        "blue-suited man",
+        "dark-suited man"
+      ],
+      "actor": "dark-suited man",
+      "cover": "beige box",
+      "hidden": "green praying mantis figurines and black-yellow bee figurines",
+      "segment_boundary": "middle",
+      "segment_label": "Figurine Display",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 78,
+      "start_time": "03:00",
+      "end_time": "03:03",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "reveal",
+      "description": "The opened box reveals green praying mantis figurines and black-yellow bee figurines arranged on a gray platform",
+      "participants": [
+        "blue-suited man",
+        "dark-suited man"
+      ],
+      "actor": "dark-suited man",
+      "object_before": "closed beige box",
+      "object_after": "beige box with lid open revealing figurines",
+      "segment_boundary": "middle",
+      "segment_label": "Figurine Display",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 79,
+      "start_time": "03:02",
+      "end_time": "03:08",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "arrange_figurines",
+      "description": "The dark-suited man positions two green praying mantis figurines at opposite ends of the platform and places two black-yellow bee figurines between them, with the mantises holding a colorful arching wire",
+      "participants": [
+        "blue-suited man",
+        "dark-suited man"
+      ],
+      "actor": "dark-suited man",
+      "object": "green praying mantis figurines, black-yellow bee figurines, colorful wire",
+      "segment_boundary": "middle",
+      "segment_label": "Figurine Display",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 80,
+      "start_time": "03:04",
+      "end_time": "03:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    }
+  ]
+}

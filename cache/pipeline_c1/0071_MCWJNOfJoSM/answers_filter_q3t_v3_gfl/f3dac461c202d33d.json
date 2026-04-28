@@ -1,0 +1,89 @@
+{
+  "question": "Did the player wearing white number 21 shoot toward the right side in Round 2?",
+  "pred": "The question asks if the player wearing white number 21 shot toward the right side in Round 2. Following Rule 3d, we identify the turns within the penalty shootout segment. Round 1 consists of the first pair of kicks (France #10 and Argentina #10). Round 2 consists of the second pair of kicks.\n\n1.  **France Turn 2:** A player in a dark blue jersey (number 20) takes a penalty kick.\n2.  **Argentina Turn 2:** A player in a blue and white striped jersey with number 21 on his back (identified in frames at ~05:40) runs up to take his kick.\n\nIn the frames at ~05:41, the player in white number 21 strikes the ball toward the center-left of the goal (from the shooter's perspective) or the center-right (from the camera's perspective). However, the goalkeeper in the yellow jersey dives to his left (the shooter's right), and the ball enters the goal near the center. The shot is clearly directed toward the middle-left area of the goal, not the right side.\n\nEvidence: Frames at ~05:41 show the player in white jersey #21 shooting the ball toward the center-left of the goal while the goalkeeper dives in the opposite direction.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "penalty_kick",
+      "description": "blue-jersey player #12 runs up to take a penalty kick while goalkeeper stands ready in goal",
+      "participants": [
+        "blue-jersey player",
+        "goalkeeper",
+        "referee"
+      ],
+      "actor": "blue-jersey player",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "start",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 124,
+      "start_time": "05:00",
+      "end_time": "05:03",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "kick",
+      "description": "player in blue and white striped jersey runs up and strikes the soccer ball for the penalty kick",
+      "participants": [
+        "blue and white striped jersey player"
+      ],
+      "actor": "blue and white striped jersey player",
+      "object": "soccer ball",
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "event_index": 143,
+      "start_time": "05:38",
+      "end_time": "05:40",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 8,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "dive",
+      "description": "goalkeeper in yellow jersey dives to the left to save the penalty kick",
+      "participants": [
+        "yellow jersey goalkeeper"
+      ],
+      "actor": "yellow jersey goalkeeper",
+      "object": "soccer ball",
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "event_index": 144,
+      "start_time": "05:40",
+      "end_time": "05:42",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

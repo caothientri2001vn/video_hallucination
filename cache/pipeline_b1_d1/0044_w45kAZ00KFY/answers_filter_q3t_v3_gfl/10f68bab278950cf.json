@@ -1,0 +1,143 @@
+{
+  "question": "Is the number 3 item a cake?",
+  "pred": "The video contains two distinct segments of a game where contestants must identify which objects are real and which are cakes.\n\n1.  **First Segment (Halloween Edition):** In this segment, there are nine pedestals. Pedestal #3 holds a golden skull wearing a black top hat. The Context (event 26) and frames at ~00:45 and ~01:00 clearly show this item. It is never cut or revealed to be a cake; instead, pedestal #5 (the 'Powdered Bones' bottle) and pedestal #7 (the blue potion bottle) are the items shown being cut and revealed as cakes in this round.\n2.  **Second Segment (Sewing Machine):** In a different segment starting around 02:00, there are four pedestals with sewing machines. Pedestal #3 in this segment holds a black sewing machine. Frames at ~02:40 show the host cutting into the sewing machine on pedestal #3, revealing a green and white sponge interior, which confirms it is a cake.\n\nSince the question asks if the number 3 item is a cake, and the video contains an instance where the item labeled #3 is explicitly revealed to be a cake, the answer is Yes.\n\nEvidence: Frames at ~02:40 show the host cutting into the sewing machine on pedestal #3, revealing it is a cake.\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "speak",
+      "description": "The person with orange hair continues speaking while making hand gestures at the podium",
+      "participants": [
+        "orange-hair person"
+      ],
+      "actor": "orange-hair person",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Cylinder Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 25,
+      "start_time": "00:43",
+      "end_time": "00:44",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 10,
+      "round_index": 1,
+      "segment_label_resolved": "Cake or Cash?"
+    },
+    {
+      "event_type": "reveal",
+      "description": "Close-up reveals a skull on top of cylinder #3 (left middle cylinder)",
+      "participants": [],
+      "actor": "",
+      "object_before": "white cylinder",
+      "object_after": "white cylinder with skull",
+      "cover": "cylinder #3",
+      "hidden": "skull",
+      "on_screen_text": [
+        {
+          "text": "3",
+          "location": "podium"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Cylinder Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 26,
+      "start_time": "00:44",
+      "end_time": "00:45",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 16,
+      "round_index": 1,
+      "segment_label_resolved": "Cake or Cash?"
+    },
+    {
+      "event_type": "reveal",
+      "description": "A pedestal labeled with the number 3 is shown with a golden skull wearing a black top hat on top against a blue starry background",
+      "participants": [],
+      "actor": "unknown",
+      "object": "golden skull with black top hat",
+      "on_screen_text": [
+        {
+          "text": "3",
+          "location": "pedestal"
+        },
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 27,
+      "start_time": "00:45",
+      "end_time": "00:49",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 16,
+      "round_index": 1,
+      "segment_label_resolved": "Cake or Cash?"
+    },
+    {
+      "event_type": "reveal",
+      "description": "A pedestal labeled with the number 4 is shown with a black dragon clock featuring two dragons and a yellow clock face on top against a blue starry background",
+      "participants": [],
+      "actor": "unknown",
+      "object": "black dragon clock",
+      "on_screen_text": [
+        {
+          "text": "4",
+          "location": "pedestal"
+        },
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 28,
+      "start_time": "00:49",
+      "end_time": "00:53",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 16,
+      "round_index": 1,
+      "segment_label_resolved": "Cake or Cash?"
+    },
+    {
+      "event_type": "graphic",
+      "description": "A split-screen view shows three pedestals side by side: pedestal 3 with the skull and top hat, pedestal 4 with the dragon clock, and pedestal 5 with the 'Powdered Bones' bottle",
+      "participants": [],
+      "actor": "unknown",
+      "object": "split-screen graphic",
+      "on_screen_text": [
+        {
+          "text": "3",
+          "location": "pedestal"
+        },
+        {
+          "text": "4",
+          "location": "pedestal"
+        },
+        {
+          "text": "5",
+          "location": "pedestal"
+        },
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 30,
+      "start_time": "00:57",
+      "end_time": "00:58",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Cake or Cash?"
+    }
+  ]
+}

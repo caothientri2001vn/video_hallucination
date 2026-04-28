@@ -1,0 +1,112 @@
+{
+  "question": "Did the blue hoodie woman win money?",
+  "pred": "The video shows a game called \"Mystery String\" where participants pull strings connected to a central red cup to reveal prizes or penalties on plates.\n\n1.  **Lauren (blue-sweatshirt woman)**: She pulls a string that reveals a plate of cookies. On-screen text confirms \"Cookies\" and she is seen eating one. She does not win money.\n2.  **Mattie (black-hoodie woman)**: She pulls a string that reveals a stack of bills. On-screen text displays \"$300\" and the Context (event 8, 9) confirms she reveals and picks up the money.\n3.  **Ethan (white-shirt man)**: He pulls a string that reveals a single bill. On-screen text displays \"$2\" and he picks it up.\n4.  **Brian (black-shirt man)**: He pulls a string that results in a plate of whipped cream being flipped into his face.\n\nThe question specifically asks if the \"blue hoodie woman\" (Lauren) won money. Based on the visual evidence and the game's outcome for her, she won cookies, not money.\n\nEvidence: frames near the end of the first segment show the blue-sweatshirt woman (Lauren) revealing and eating cookies while on-screen text says \"Cookies\".\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "pull_string",
+      "description": "the black-hoodie woman pulls a string connected to the red cup",
+      "participants": [
+        "black-hoodie woman",
+        "white-shirt man",
+        "blue-sweatshirt woman",
+        "black-shirt man"
+      ],
+      "actor": "black-hoodie woman",
+      "object": "black string",
+      "on_screen_text": [
+        {
+          "text": "Mystery String!",
+          "location": "other"
+        },
+        {
+          "text": "Mattie",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Mystery String",
+      "continuation_hint": "complete",
+      "event_index": 7,
+      "start_time": "00:07",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the black-hoodie woman reveals a stack of $100 bills on the middle plate",
+      "participants": [
+        "black-hoodie woman",
+        "white-shirt man",
+        "blue-sweatshirt woman",
+        "black-shirt man"
+      ],
+      "actor": "black-hoodie woman",
+      "object": "green bills",
+      "on_screen_text": [
+        {
+          "text": "Mystery String!",
+          "location": "other"
+        },
+        {
+          "text": "Mattie",
+          "location": "other"
+        },
+        {
+          "text": "$300",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Mystery String",
+      "continuation_hint": "complete",
+      "event_index": 8,
+      "start_time": "00:08",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the black-hoodie woman celebrates excitedly and picks up the money",
+      "participants": [
+        "black-hoodie woman"
+      ],
+      "actor": "black-hoodie woman",
+      "object": "green bills",
+      "on_screen_text": [
+        {
+          "text": "Mystery String!",
+          "location": "other"
+        },
+        {
+          "text": "Mattie",
+          "location": "other"
+        },
+        {
+          "text": "$300",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Mystery String",
+      "continuation_hint": "complete",
+      "event_index": 9,
+      "start_time": "00:10",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String"
+    }
+  ]
+}

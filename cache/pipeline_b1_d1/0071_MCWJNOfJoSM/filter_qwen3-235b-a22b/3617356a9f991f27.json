@@ -1,0 +1,119 @@
+{
+  "question": "Did exactly two goals occur between France's two misses?",
+  "top_k": 15,
+  "indices": [
+    125,
+    135,
+    145,
+    192
+  ],
+  "events": [
+    {
+      "event_type": "goal",
+      "description": "the white soccer ball enters the net as the goalkeeper dives to the left",
+      "participants": [
+        "goalkeeper"
+      ],
+      "actor": "none",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 125,
+      "start_time": "05:03",
+      "end_time": "05:04",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "soccer ball enters the goal net after the penalty kick",
+      "participants": [
+        "goalkeeper in green uniform",
+        "kicker in dark uniform"
+      ],
+      "actor": "soccer ball",
+      "object": "white soccer ball",
+      "object_before": "",
+      "object_after": "",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 135,
+      "start_time": "05:22",
+      "end_time": "05:24",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "react",
+      "description": "goalkeeper in yellow jersey stands and looks toward the field after making the save",
+      "participants": [
+        "yellow jersey goalkeeper"
+      ],
+      "actor": "yellow jersey goalkeeper",
+      "segment_boundary": "end",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "event_index": 145,
+      "start_time": "05:42",
+      "end_time": "05:45",
+      "sub_events": [],
+      "subtype_order": 16,
+      "subtype_total": 16,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "emotional_reaction",
+      "description": "Player in dark blue jersey places hand over face while looking toward the field",
+      "participants": [
+        "player in dark blue jersey"
+      ],
+      "actor": "player in dark blue jersey",
+      "on_screen_text": [
+        {
+          "text": "MBAPPE",
+          "location": "jersey"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Post-match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 192,
+      "start_time": "07:08",
+      "end_time": "07:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "question": "Does the yellow object teleport from the brown object to the pink object?",
+  "pred": "The video shows a magic trick involving a yellow object and two cylinders (brown and pink).\n\n1.  **Placement (Before):** At approximately 00:53, the red-shirt woman places the brown cylinder on top of the yellow object (Event 26). Simultaneously, she places the pink cylinder on top of a white cylinder with green patterns (Event 27).\n2.  **Reveal (After):** At approximately 01:11, she lifts both cylinders. The brown cylinder (left) is lifted to reveal the white cup with green patterns (Event 39). The pink cylinder (right) is lifted to reveal the yellow object (Event 40).\n\nSince the yellow object was hidden under the brown cylinder and revealed under the pink cylinder without a visible carry between them, it satisfies the definition of teleportation in this context.\n\nEvidence: Event 26 shows the woman placing the brown cylinder over the yellow object, and Event 40 shows her lifting the pink cylinder to reveal the yellow object.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "place",
+      "description": "the red-shirt woman places the yellow object on the blue table between the brown and white cylinders",
+      "participants": [
+        "red-shirt woman"
+      ],
+      "actor": "red-shirt woman",
+      "object": "yellow object",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Math Lesson",
+      "continuation_hint": "complete",
+      "event_index": 23,
+      "start_time": "00:47",
+      "end_time": "00:49",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 10,
+      "round_index": 2,
+      "segment_label_resolved": "Magic Trick Introduction"
+    },
+    {
+      "event_type": "lift",
+      "description": "the red-shirt woman lifts the brown cylinder (with red and blue hearts) and the pink cylinder (with blue and orange hearts) simultaneously",
+      "participants": [
+        "red-shirt woman"
+      ],
+      "actor": "red-shirt woman",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Math Lesson",
+      "continuation_hint": "complete",
+      "event_index": 25,
+      "start_time": "00:51",
+      "end_time": "00:53",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 10,
+      "round_index": 2,
+      "segment_label_resolved": "Magic Trick Introduction"
+    },
+    {
+      "event_type": "place",
+      "description": "the red-shirt woman places the brown cylinder on top of the yellow object",
+      "participants": [
+        "red-shirt woman"
+      ],
+      "actor": "red-shirt woman",
+      "cover": "brown cylinder",
+      "hidden": "yellow object",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Math Lesson",
+      "continuation_hint": "complete",
+      "event_index": 26,
+      "start_time": "00:53",
+      "end_time": "00:55",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 10,
+      "round_index": 2,
+      "segment_label_resolved": "Magic Trick Introduction"
+    },
+    {
+      "event_type": "place",
+      "description": "the red-shirt woman places the pink cylinder on top of the white cylinder (with green patterns)",
+      "participants": [
+        "red-shirt woman"
+      ],
+      "actor": "red-shirt woman",
+      "cover": "pink cylinder",
+      "hidden": "white cylinder",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Math Lesson",
+      "continuation_hint": "complete",
+      "event_index": 27,
+      "start_time": "00:53",
+      "end_time": "00:55",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 10,
+      "round_index": 2,
+      "segment_label_resolved": "Magic Trick Introduction"
+    },
+    {
+      "event_type": "lift",
+      "description": "the red-shirt woman lifts the brown cylinder (left) and pink cylinder (right) simultaneously to reveal objects",
+      "participants": [
+        "red-shirt woman"
+      ],
+      "actor": "red-shirt woman",
+      "cover": "brown cylinder",
+      "hidden": "white cup with green patterns",
+      "on_screen_text": [
+        {
+          "text": "Bé vui học toán",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Magic Cups Counting",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 39,
+      "start_time": "01:11",
+      "end_time": "01:13",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 10,
+      "round_index": 2,
+      "segment_label_resolved": "Magic Trick Introduction"
+    },
+    {
+      "event_type": "lift",
+      "description": "the red-shirt woman lifts the pink cylinder (right) to reveal a yellow object",
+      "participants": [
+        "red-shirt woman"
+      ],
+      "actor": "red-shirt woman",
+      "cover": "pink cylinder",
+      "hidden": "yellow object",
+      "on_screen_text": [
+        {
+          "text": "Bé vui học toán",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Magic Cups Counting",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 40,
+      "start_time": "01:11",
+      "end_time": "01:13",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 10,
+      "round_index": 2,
+      "segment_label_resolved": "Magic Trick Introduction"
+    },
+    {
+      "event_type": "place",
+      "description": "the red-shirt woman places the brown cylinder and pink cylinder back on the table behind the revealed objects",
+      "participants": [
+        "red-shirt woman"
+      ],
+      "actor": "red-shirt woman",
+      "on_screen_text": [
+        {
+          "text": "Bé vui học toán",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Magic Cups Counting",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 41,
+      "start_time": "01:13",
+      "end_time": "01:14",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 10,
+      "round_index": 2,
+      "segment_label_resolved": "Magic Trick Introduction"
+    },
+    {
+      "event_type": "point",
+      "description": "The red-shirt woman points at the yellow object on the table with her right hand.",
+      "participants": [
+        "red-shirt woman"
+      ],
+      "actor": "red-shirt woman",
+      "object": "yellow object",
+      "on_screen_text": [
+        {
+          "text": "Bé vui học toán",
+          "location": "other"
+        },
+        {
+          "text": "1",
+          "location": "other"
+        },
+        {
+          "text": "2",
+          "location": "other"
+        },
+        {
+          "text": "3",
+          "location": "other"
+        },
+        {
+          "text": "4",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Math Lesson",
+      "continuation_hint": "complete",
+      "event_index": 46,
+      "start_time": "01:22",
+      "end_time": "01:24",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 2,
+      "segment_label_resolved": "Magic Trick Introduction"
+    },
+    {
+      "event_type": "lift",
+      "description": "The red-shirt woman lifts the brown cylinder (left) and the pink cylinder (right) from the table.",
+      "participants": [
+        "red-shirt woman"
+      ],
+      "actor": "red-shirt woman",
+      "on_screen_text": [
+        {
+          "text": "Bé vui học toán",
+          "location": "other"
+        },
+        {
+          "text": "1",
+          "location": "other"
+        },
+        {
+          "text": "2",
+          "location": "other"
+        },
+        {
+          "text": "3",
+          "location": "other"
+        },
+        {
+          "text": "4",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Math Lesson",
+      "continuation_hint": "complete",
+      "event_index": 47,
+      "start_time": "01:24",
+      "end_time": "01:26",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 10,
+      "round_index": 2,
+      "segment_label_resolved": "Magic Trick Introduction"
+    }
+  ]
+}

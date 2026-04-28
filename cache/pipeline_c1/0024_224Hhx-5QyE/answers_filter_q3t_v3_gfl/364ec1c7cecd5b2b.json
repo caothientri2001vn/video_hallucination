@@ -1,0 +1,119 @@
+{
+  "question": "Does the woman stack the green cup?",
+  "pred": "The video shows a woman in an orange shirt and a man in a pink hoodie competing in a cup-stacking game. The woman is responsible for the green cups on the left side of the table. Throughout the video, she is seen repeatedly picking up green cups and stacking them into a single column. This action is explicitly documented in the event timeline and visible in multiple frames.\n\nEvidence: frames near the end of the video show the woman in the orange shirt successfully stacking all her green cups into a single column on the left side of the table.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "stack",
+      "description": "woman in orange shirt begins stacking green cups on the left side of the table",
+      "participants": [
+        "orange-shirt woman",
+        "pink-hoodie man"
+      ],
+      "actor": "orange-shirt woman",
+      "object": "green cups",
+      "on_screen_text": [
+        {
+          "text": "First to stack their cups wins!",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 3,
+      "start_time": "00:01",
+      "end_time": "00:06",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Game"
+    },
+    {
+      "event_type": "stack",
+      "description": "woman in orange shirt stacks a green cup on top of other green cups on the left side of the table",
+      "participants": [
+        "orange-shirt woman",
+        "pink-hoodie man"
+      ],
+      "actor": "orange-shirt woman",
+      "object": "green cup",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 8,
+      "start_time": "00:15",
+      "end_time": "00:18",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Game"
+    },
+    {
+      "event_type": "cup_manipulation",
+      "description": "orange-shirt woman adjusts multiple green cups on the left side of the table, reorganizing their positions",
+      "participants": [
+        "orange-shirt woman",
+        "pink-hoodie man"
+      ],
+      "actor": "orange-shirt woman",
+      "object": "green cups",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "complete",
+      "event_index": 10,
+      "start_time": "00:20",
+      "end_time": "00:23",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Game"
+    },
+    {
+      "event_type": "arrange",
+      "description": "woman adjusts the position of green cups on the left side of the table",
+      "participants": [
+        "orange-shirt woman",
+        "pink-hoodie man"
+      ],
+      "actor": "orange-shirt woman",
+      "object": "green cups",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 20,
+      "start_time": "00:50",
+      "end_time": "00:56",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Game"
+    },
+    {
+      "event_type": "arrange",
+      "description": "woman in orange shirt rearranges green cups on the left side of the table, stacking multiple cups",
+      "participants": [
+        "orange-shirt woman",
+        "pink-hoodie man"
+      ],
+      "actor": "orange-shirt woman",
+      "object": "green cups",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 33,
+      "start_time": "01:07",
+      "end_time": "01:08",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Game"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "question": "Did both teams fail exactly once during the game?",
+  "pred": "The game consists of four turns (rounds) of charades. A \"fail\" occurs when the timer reaches zero before the team guesses the answer.\n\n1.  **Turn 1 (Woman in floral corset):** She acts out \"Born to Run\". The timer reaches 0 (frame at ~01:18) without a correct guess. **Result: Fail.**\n2.  **Turn 2 (Woman in checkered jumpsuit):** She acts out \"Ring of Fire\". Her partner (man in hat) guesses it correctly with 10 seconds remaining (frame at ~01:42). **Result: Success.**\n3.  **Turn 3 (Man in suit):** He acts out \"It\". His partner (woman in floral corset) guesses it correctly with 22 seconds remaining (frame at ~02:04). **Result: Success.**\n4.  **Turn 4 (Man in hat):** He acts out \"Jurassic Park\". His partner (woman in checkered jumpsuit) guesses it correctly with 19 seconds remaining (frame at ~02:28). **Result: Success.**\n\nThe team consisting of the woman in the floral corset and the man in the suit failed once (Turn 1). The team consisting of the woman in the checkered jumpsuit and the man in the hat succeeded in both of their turns (Turns 2 and 4) and never failed. Therefore, it is not true that both teams failed exactly once.\n\nEvidence: Frames at ~01:18 show the timer reach 0 for the first team's turn, while frames at ~01:42 and ~02:28 show the second team successfully guessing their answers before time expires.\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": []
+}

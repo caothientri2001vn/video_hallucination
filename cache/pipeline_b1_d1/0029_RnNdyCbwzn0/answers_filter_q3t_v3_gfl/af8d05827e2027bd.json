@@ -1,0 +1,2703 @@
+{
+  "question": "In the second experiment, did the orange ball do into door number 2?",
+  "pred": "The question asks about the \"second experiment\" and whether an orange ball went into door number 2. Following Rule 3d, we identify the experiments (game turns) by the repeating core action. In this video, each \"experiment\" is a new Rube Goldberg setup where a ball is released to hit a target or enter a door.\n\n1.  **First experiment (00:15 - 00:59):** A blue ball is released, triggers a red ball, which triggers an orange ball. The orange ball enters door number 1 (Event 19).\n2.  **Second experiment (01:30 - 02:00):** A new setup is shown. An orange ball is released from a transparent tube (Event 52) and hits a red book (Event 54). This setup also features the pink numbered doors. Looking at the frames and Context for this segment (Round 2), the orange ball is released and eventually triggers a sequence that results in a \"YAY!\" banner appearing over door number 1 (visible in frames near 01:59 and 02:00).\n\nThere is no evidence in the Context or frames that the orange ball entered door number 2 during this second experiment.\n\nEvidence: frames at ~02:00 show a \"YAY!\" banner appearing over door number 1 at the conclusion of the second machine sequence.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "graphic": 17,
+      "countdown": 12,
+      "roll": 10,
+      "title_card": 6,
+      "collision": 4,
+      "release": 4,
+      "impact": 4,
+      "transition": 3,
+      "movement": 3,
+      "hold": 2,
+      "knockover": 2,
+      "chain_reaction": 2,
+      "hand_raise": 2,
+      "place": 2,
+      "state_change": 2,
+      "look": 2,
+      "speak": 2,
+      "lift": 2,
+      "launch": 1,
+      "mechanism_activation": 1,
+      "hit": 1,
+      "text_change": 1,
+      "visual_change": 1,
+      "domino_fall": 1,
+      "open": 1,
+      "text_disappearance": 1,
+      "pull_string": 1,
+      "ball_release": 1,
+      "ball_roll": 1,
+      "object_impact": 1,
+      "contact": 1,
+      "hold_object": 1,
+      "title_text": 1,
+      "motion": 1,
+      "kettle_enter": 1,
+      "pour": 1,
+      "object_roll": 1,
+      "camera_shift": 1,
+      "domino_effect": 1,
+      "camera_move": 1,
+      "static_view": 1,
+      "manipulate": 1,
+      "move": 1,
+      "drink": 1
+    },
+    "events": [
+      {
+        "event_type": "title_card",
+        "description": "Title card showing 'PUZZLE MACHINES' with domino replacing 'L' and banana replacing 'C'",
+        "participants": [],
+        "actor": "title_card",
+        "object": "domino, banana",
+        "on_screen_text": [
+          {
+            "text": "PUZZLE MACHINES",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Puzzle Machines Intro",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:05",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Puzzle Machines Intro"
+      },
+      {
+        "event_type": "title_card",
+        "description": "Additional text 'by Joseph Herscher' appears below the main title",
+        "participants": [],
+        "actor": "title_card",
+        "object": "text",
+        "on_screen_text": [
+          {
+            "text": "PUZZLE MACHINES",
+            "location": "title"
+          },
+          {
+            "text": "by Joseph Herscher",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Puzzle Machines Intro",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 2,
+        "start_time": "00:06",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Puzzle Machines Intro"
+      },
+      {
+        "event_type": "launch",
+        "description": "A hand releases the blue ball from the wooden ramp",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "blue ball",
+        "outcome": "launched",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "banner"
+          },
+          {
+            "text": "2",
+            "location": "timer"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 3,
+        "start_time": "00:15",
+        "end_time": "00:17",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Puzzle Machines Intro"
+      },
+      {
+        "event_type": "roll",
+        "description": "The blue ball rolls up the ramp and across the table toward the right side",
+        "participants": [],
+        "actor": "blue ball",
+        "object": "blue ball",
+        "outcome": "in motion",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "banner"
+          },
+          {
+            "text": "2",
+            "location": "timer"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 4,
+        "start_time": "00:17",
+        "end_time": "00:21",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Puzzle Machines Intro"
+      },
+      {
+        "event_type": "collision",
+        "description": "The blue ball hits the right banana on the table",
+        "participants": [],
+        "actor": "blue ball",
+        "object": "blue ball",
+        "outcome": "deflected",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "banner"
+          },
+          {
+            "text": "2",
+            "location": "timer"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 5,
+        "start_time": "00:21",
+        "end_time": "00:23",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Puzzle Machines Intro"
+      },
+      {
+        "event_type": "collision",
+        "description": "The blue ball hits the left banana on the table",
+        "participants": [],
+        "actor": "blue ball",
+        "object": "blue ball",
+        "outcome": "deflected",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "banner"
+          },
+          {
+            "text": "2",
+            "location": "timer"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 6,
+        "start_time": "00:23",
+        "end_time": "00:25",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Puzzle Machines Intro"
+      },
+      {
+        "event_type": "collision",
+        "description": "The blue ball hits the string mechanism on the left side of the table",
+        "participants": [],
+        "actor": "blue ball",
+        "object": "blue ball",
+        "outcome": "triggers mechanism",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "banner"
+          },
+          {
+            "text": "2",
+            "location": "timer"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 7,
+        "start_time": "00:25",
+        "end_time": "00:27",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Puzzle Machines Intro"
+      },
+      {
+        "event_type": "mechanism_activation",
+        "description": "The string mechanism is pulled, activating the ramp on the left side",
+        "participants": [],
+        "actor": "string mechanism",
+        "object": "string",
+        "outcome": "activated",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "banner"
+          },
+          {
+            "text": "1",
+            "location": "timer"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 8,
+        "start_time": "00:27",
+        "end_time": "00:28",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Puzzle Machines Intro"
+      },
+      {
+        "event_type": "roll",
+        "description": "The red ball rolls down the ramp on the left side and across the table",
+        "participants": [],
+        "actor": "red ball",
+        "object": "red ball",
+        "outcome": "in motion",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "banner"
+          },
+          {
+            "text": "1",
+            "location": "timer"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 9,
+        "start_time": "00:28",
+        "end_time": "00:30",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Puzzle Machines Intro"
+      },
+      {
+        "event_type": "countdown",
+        "description": "The countdown timer decreases from 15 to 5",
+        "participants": [],
+        "actor": "",
+        "object": "timer",
+        "object_before": "15",
+        "object_after": "5",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 10,
+        "start_time": "00:30",
+        "end_time": "00:45",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Puzzle Machines Intro"
+      },
+      {
+        "event_type": "hold",
+        "description": "A hand holds an orange ball on top of a blue book without visible movement",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 11,
+        "start_time": "00:30",
+        "end_time": "00:45",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Puzzle Machines Intro"
+      },
+      {
+        "event_type": "countdown",
+        "description": "The countdown timer changes from 5 to 4",
+        "participants": [],
+        "actor": "",
+        "object": "countdown timer",
+        "object_before": "5",
+        "object_after": "4",
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 12,
+        "start_time": "00:45",
+        "end_time": "00:48",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Puzzle Machines Intro"
+      },
+      {
+        "event_type": "release",
+        "description": "A hand releases an orange ball from the top of a blue book",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "orange ball",
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "complete",
+        "event_index": 13,
+        "start_time": "00:45",
+        "end_time": "00:48",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Puzzle Machines Intro"
+      },
+      {
+        "event_type": "roll",
+        "description": "The orange ball rolls off the right blue book toward the center of the table",
+        "participants": [],
+        "actor": "",
+        "object": "orange ball",
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 14,
+        "start_time": "00:45",
+        "end_time": "00:49",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Puzzle Machines Intro"
+      },
+      {
+        "event_type": "knockover",
+        "description": "The orange ball hits the first blue domino in the curved line",
+        "participants": [],
+        "actor": "",
+        "object": "blue domino",
+        "object_before": "standing blue domino",
+        "object_after": "fallen blue domino",
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 15,
+        "start_time": "00:49",
+        "end_time": "00:52",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Puzzle Machines Intro"
+      },
+      {
+        "event_type": "chain_reaction",
+        "description": "Blue dominoes fall in sequence along the curved path toward the left side of the table",
+        "participants": [],
+        "actor": "",
+        "object": "blue dominoes",
+        "object_before": "standing blue dominoes",
+        "object_after": "fallen blue dominoes",
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 16,
+        "start_time": "00:50",
+        "end_time": "00:53",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Puzzle Machines Intro"
+      },
+      {
+        "event_type": "impact",
+        "description": "The orange ball hits the yellow banana on the left side of the table",
+        "participants": [],
+        "actor": "",
+        "object": "banana",
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 17,
+        "start_time": "00:52",
+        "end_time": "00:55",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Puzzle Machines Intro"
+      },
+      {
+        "event_type": "roll",
+        "description": "The orange ball continues rolling past the banana toward the pink structure",
+        "participants": [],
+        "actor": "",
+        "object": "orange ball",
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 18,
+        "start_time": "00:55",
+        "end_time": "00:58",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Puzzle Machines Intro"
+      },
+      {
+        "event_type": "hit",
+        "description": "The orange ball enters the archway beneath door number 1 in the pink structure",
+        "participants": [],
+        "actor": "",
+        "object": "orange ball",
+        "segment_boundary": "end",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "complete",
+        "event_index": 19,
+        "start_time": "00:57",
+        "end_time": "00:59",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Puzzle Machines Intro"
+      },
+      {
+        "event_type": "countdown",
+        "description": "The countdown timer changes from 2 to 1",
+        "participants": [],
+        "actor": "",
+        "object": "countdown timer",
+        "object_before": "2",
+        "object_after": "1",
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 20,
+        "start_time": "00:57",
+        "end_time": "00:59",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Puzzle Machines Intro"
+      },
+      {
+        "event_type": "text_change",
+        "description": "The text \"WHICH DOOR WILL THE BALL HIT?\" disappears from the top of the screen",
+        "participants": [],
+        "actor": "",
+        "object": "on-screen text",
+        "object_before": "WHICH DOOR WILL THE BALL HIT?",
+        "object_after": "not_visible",
+        "on_screen_text": [],
+        "segment_boundary": "end",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "complete",
+        "event_index": 21,
+        "start_time": "00:58",
+        "end_time": "01:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Puzzle Machines Intro"
+      },
+      {
+        "event_type": "transition",
+        "description": "video transitions from the pink numbered structure scene to a new scene with gift boxes",
+        "participants": [],
+        "actor": "",
+        "segment_boundary": "start",
+        "segment_label": "Gift Untying Challenge",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 22,
+        "start_time": "01:00",
+        "end_time": "01:01",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "title_card",
+        "description": "text \"WHICH GIFT WILL BE UNTIED?\" appears at the top of the screen",
+        "participants": [],
+        "actor": "",
+        "on_screen_text": [
+          {
+            "text": "WHICH GIFT WILL BE UNTIED?",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Gift Untying Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 23,
+        "start_time": "01:00",
+        "end_time": "01:15",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 6,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "a hand enters the frame from the right side holding an orange ball",
+        "participants": [
+          "hand holding orange ball"
+        ],
+        "actor": "hand",
+        "object": "orange ball",
+        "segment_boundary": "middle",
+        "segment_label": "Gift Untying Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 24,
+        "start_time": "01:02",
+        "end_time": "01:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "a countdown timer with the number 15 appears in the top right corner with text \"HIT PAUSE FOR MORE TIME\"",
+        "participants": [],
+        "actor": "",
+        "on_screen_text": [
+          {
+            "text": "15",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Gift Untying Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 25,
+        "start_time": "01:03",
+        "end_time": "01:03",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 17,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "countdown timer changes from 15 to 14",
+        "participants": [],
+        "actor": "",
+        "object_before": "15 timer",
+        "object_after": "14 timer",
+        "segment_boundary": "middle",
+        "segment_label": "Gift Untying Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 26,
+        "start_time": "01:04",
+        "end_time": "01:04",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 17,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "countdown timer changes from 14 to 13",
+        "participants": [],
+        "actor": "",
+        "object_before": "14 timer",
+        "object_after": "13 timer",
+        "segment_boundary": "middle",
+        "segment_label": "Gift Untying Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 27,
+        "start_time": "01:05",
+        "end_time": "01:05",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 17,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "countdown timer changes from 13 to 12",
+        "participants": [],
+        "actor": "",
+        "object_before": "13 timer",
+        "object_after": "12 timer",
+        "segment_boundary": "middle",
+        "segment_label": "Gift Untying Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 28,
+        "start_time": "01:06",
+        "end_time": "01:07",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 17,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "countdown timer changes from 12 to 11",
+        "participants": [],
+        "actor": "",
+        "object_before": "12 timer",
+        "object_after": "11 timer",
+        "segment_boundary": "middle",
+        "segment_label": "Gift Untying Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 29,
+        "start_time": "01:08",
+        "end_time": "01:08",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 17,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "countdown timer changes from 11 to 10",
+        "participants": [],
+        "actor": "",
+        "object_before": "11 timer",
+        "object_after": "10 timer",
+        "segment_boundary": "middle",
+        "segment_label": "Gift Untying Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 30,
+        "start_time": "01:09",
+        "end_time": "01:09",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 17,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "countdown timer changes from 10 to 9",
+        "participants": [],
+        "actor": "",
+        "object_before": "10 timer",
+        "object_after": "9 timer",
+        "segment_boundary": "middle",
+        "segment_label": "Gift Untying Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 31,
+        "start_time": "01:10",
+        "end_time": "01:11",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 17,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "countdown timer changes from 9 to 8",
+        "participants": [],
+        "actor": "",
+        "object_before": "9 timer",
+        "object_after": "8 timer",
+        "segment_boundary": "middle",
+        "segment_label": "Gift Untying Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 32,
+        "start_time": "01:12",
+        "end_time": "01:13",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 17,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "visual_change",
+        "description": "Countdown timer showing '1' and 'HIT PAUSE FOR MORE TIME' text disappear from screen",
+        "participants": [],
+        "actor": "",
+        "object_before": "white text '1' and 'HIT PAUSE FOR MORE TIME'",
+        "object_after": "no text",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 33,
+        "start_time": "01:15",
+        "end_time": "01:16",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "release",
+        "description": "Hand releases an orange ball from the blue book",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "orange ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 34,
+        "start_time": "01:16",
+        "end_time": "01:17",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "roll",
+        "description": "Orange ball rolls down the wooden ramp",
+        "participants": [],
+        "actor": "",
+        "object": "orange ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 35,
+        "start_time": "01:17",
+        "end_time": "01:18",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "impact",
+        "description": "Orange ball hits the first blue domino, starting a chain reaction",
+        "participants": [],
+        "actor": "",
+        "object": "orange ball and blue domino",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 36,
+        "start_time": "01:18",
+        "end_time": "01:19",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "domino_fall",
+        "description": "Blue dominoes fall in sequence, with the last domino hitting a red cup",
+        "participants": [],
+        "actor": "",
+        "object": "blue dominoes",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 37,
+        "start_time": "01:19",
+        "end_time": "01:20",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "knockover",
+        "description": "Red cup is knocked over by the falling dominoes",
+        "participants": [],
+        "actor": "",
+        "object": "red cup",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 38,
+        "start_time": "01:20",
+        "end_time": "01:21",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "impact",
+        "description": "Falling red cup hits the lever mechanism on the wooden board",
+        "participants": [],
+        "actor": "",
+        "object": "red cup and lever mechanism",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 39,
+        "start_time": "01:21",
+        "end_time": "01:22",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "roll",
+        "description": "Red ball rolls down the seesaw track after being triggered by the lever",
+        "participants": [],
+        "actor": "",
+        "object": "red ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 40,
+        "start_time": "01:22",
+        "end_time": "01:23",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "impact",
+        "description": "Red ball rolls and hits the blue polka-dotted gift box",
+        "participants": [],
+        "actor": "",
+        "object": "red ball and blue gift box",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 41,
+        "start_time": "01:23",
+        "end_time": "01:24",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "open",
+        "description": "Blue polka-dotted gift box tips over and opens as the red ball hits it",
+        "participants": [],
+        "actor": "",
+        "object": "blue gift box",
+        "on_screen_text": [],
+        "segment_boundary": "end",
+        "segment_label": "Rube Goldberg Machine Challenge",
+        "continuation_hint": "complete",
+        "event_index": 42,
+        "start_time": "01:24",
+        "end_time": "01:25",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The question text 'WHICH DOOR WILL THE BALL HIT?' is displayed at the top of the screen",
+        "participants": [],
+        "actor": "none",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 43,
+        "start_time": "01:30",
+        "end_time": "01:32",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 17,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "Countdown timer changes from 15 to 14 in the top right corner",
+        "participants": [],
+        "actor": "none",
+        "object_before": "15",
+        "object_after": "14",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "14",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 44,
+        "start_time": "01:32",
+        "end_time": "01:34",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 17,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "Countdown timer changes from 14 to 13 in the top right corner",
+        "participants": [],
+        "actor": "none",
+        "object_before": "14",
+        "object_after": "13",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "13",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 45,
+        "start_time": "01:34",
+        "end_time": "01:36",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 17,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "Countdown timer changes from 13 to 12 in the top right corner",
+        "participants": [],
+        "actor": "none",
+        "object_before": "13",
+        "object_after": "12",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "12",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 46,
+        "start_time": "01:36",
+        "end_time": "01:38",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 17,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "Countdown timer changes from 12 to 11 in the top right corner",
+        "participants": [],
+        "actor": "none",
+        "object_before": "12",
+        "object_after": "11",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "11",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 47,
+        "start_time": "01:38",
+        "end_time": "01:40",
+        "sub_events": [],
+        "subtype_order": 13,
+        "subtype_total": 17,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "hold",
+        "description": "A hand is visible holding a yellow string connected to a pulley mechanism on the left side of the frame",
+        "participants": [
+          "unidentified person"
+        ],
+        "actor": "unidentified person",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 48,
+        "start_time": "01:30",
+        "end_time": "01:45",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "countdown",
+        "description": "Countdown timer decreases from 11 to 1",
+        "participants": [],
+        "actor": "countdown timer",
+        "object": "red countdown timer",
+        "object_before": "11",
+        "object_after": "1",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "11",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "Joseph's Machines",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 49,
+        "start_time": "01:45",
+        "end_time": "01:59",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 12,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "text_disappearance",
+        "description": "Title text disappears from the screen",
+        "participants": [],
+        "actor": "screen",
+        "object": "text",
+        "object_before": "black text",
+        "object_after": "not_visible",
+        "on_screen_text": [
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "Joseph's Machines",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 50,
+        "start_time": "01:59",
+        "end_time": "02:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "pull_string",
+        "description": "Hand pulls yellow string to activate mechanism",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "yellow string",
+        "on_screen_text": [
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "Joseph's Machines",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 51,
+        "start_time": "01:59",
+        "end_time": "02:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "ball_release",
+        "description": "Orange ball is released from transparent tube",
+        "participants": [],
+        "actor": "mechanism",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "Joseph's Machines",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 52,
+        "start_time": "01:59",
+        "end_time": "02:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "ball_roll",
+        "description": "Orange ball rolls from tube across the table",
+        "participants": [],
+        "actor": "ball",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "Joseph's Machines",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 53,
+        "start_time": "01:59",
+        "end_time": "02:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "object_impact",
+        "description": "Orange ball hits and opens red book",
+        "participants": [],
+        "actor": "ball",
+        "object": "red book",
+        "object_before": "closed red book",
+        "object_after": "open red book",
+        "on_screen_text": [
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "Joseph's Machines",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 54,
+        "start_time": "01:59",
+        "end_time": "02:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Gift Untying Challenge"
+      },
+      {
+        "event_type": "title_card",
+        "description": "Text appears at top of screen asking \"WHICH APPLIANCE WILL GET TURNED ON?\"",
+        "participants": [],
+        "actor": null,
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "WHICH APPLIANCE WILL GET TURNED ON?",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Appliance Activation Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 55,
+        "start_time": "02:00",
+        "end_time": "02:00",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 6,
+        "round_index": 3,
+        "segment_label_resolved": "Appliance Activation Challenge"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "A hand enters the frame from bottom holding a blue ball",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "blue ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH APPLIANCE WILL GET TURNED ON?",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Appliance Activation Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 56,
+        "start_time": "02:01",
+        "end_time": "02:03",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 3,
+        "segment_label_resolved": "Appliance Activation Challenge"
+      },
+      {
+        "event_type": "place",
+        "description": "The hand positions the blue ball on an orange track mechanism",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "blue ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH APPLIANCE WILL GET TURNED ON?",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Appliance Activation Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 57,
+        "start_time": "02:04",
+        "end_time": "02:06",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 3,
+        "segment_label_resolved": "Appliance Activation Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "A countdown timer appears on the right side showing \"15\" with text \"HIT PAUSE FOR MORE TIME\"",
+        "participants": [],
+        "actor": null,
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "WHICH APPLIANCE WILL GET TURNED ON?",
+            "location": "title"
+          },
+          {
+            "text": "15",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Appliance Activation Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 58,
+        "start_time": "02:07",
+        "end_time": "02:09",
+        "sub_events": [],
+        "subtype_order": 14,
+        "subtype_total": 17,
+        "round_index": 3,
+        "segment_label_resolved": "Appliance Activation Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer changes from 15 to 14",
+        "participants": [],
+        "actor": null,
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "WHICH APPLIANCE WILL GET TURNED ON?",
+            "location": "title"
+          },
+          {
+            "text": "14",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Appliance Activation Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 59,
+        "start_time": "02:10",
+        "end_time": "02:12",
+        "sub_events": [],
+        "subtype_order": 15,
+        "subtype_total": 17,
+        "round_index": 3,
+        "segment_label_resolved": "Appliance Activation Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer changes from 14 to 13",
+        "participants": [],
+        "actor": null,
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "WHICH APPLIANCE WILL GET TURNED ON?",
+            "location": "title"
+          },
+          {
+            "text": "13",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Appliance Activation Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 60,
+        "start_time": "02:13",
+        "end_time": "02:15",
+        "sub_events": [],
+        "subtype_order": 16,
+        "subtype_total": 17,
+        "round_index": 3,
+        "segment_label_resolved": "Appliance Activation Challenge"
+      },
+      {
+        "event_type": "countdown",
+        "description": "The countdown timer decreases from 12 to 1 in the top right corner of the screen",
+        "participants": [],
+        "actor": "timer",
+        "object_before": "12",
+        "object_after": "1",
+        "on_screen_text": [
+          {
+            "text": "WHICH APPLIANCE WILL GET TURNED ON?",
+            "location": "title"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine Setup",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 61,
+        "start_time": "02:15",
+        "end_time": "02:30",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 12,
+        "round_index": 3,
+        "segment_label_resolved": "Appliance Activation Challenge"
+      },
+      {
+        "event_type": "release",
+        "description": "A hand releases a blue ball from an orange launcher device",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "blue ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH APPLIANCE WILL GET TURNED ON?",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine Setup",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 62,
+        "start_time": "02:29",
+        "end_time": "02:30",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 3,
+        "segment_label_resolved": "Appliance Activation Challenge"
+      },
+      {
+        "event_type": "roll",
+        "description": "The blue ball rolls from the orange launcher toward the circular domino arrangement",
+        "participants": [],
+        "actor": "blue ball",
+        "object": "blue ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine Setup",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 63,
+        "start_time": "02:29",
+        "end_time": "02:30",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 10,
+        "round_index": 3,
+        "segment_label_resolved": "Appliance Activation Challenge"
+      },
+      {
+        "event_type": "contact",
+        "description": "The blue ball makes contact with the first domino in the circular arrangement",
+        "participants": [],
+        "actor": "blue ball",
+        "object": "blue ball and dominoes",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine Setup",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 64,
+        "start_time": "02:29",
+        "end_time": "02:30",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 3,
+        "segment_label_resolved": "Appliance Activation Challenge"
+      },
+      {
+        "event_type": "state_change",
+        "description": "The circular domino arrangement begins to fall in sequence after being struck by the blue ball",
+        "participants": [],
+        "actor": "domino chain",
+        "object_before": "standing dominoes",
+        "object_after": "falling dominoes",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine Setup",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 65,
+        "start_time": "02:29",
+        "end_time": "02:30",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 3,
+        "segment_label_resolved": "Appliance Activation Challenge"
+      },
+      {
+        "event_type": "state_change",
+        "description": "The red block is knocked over by the falling domino chain",
+        "participants": [],
+        "actor": "domino chain",
+        "object_before": "upright red block",
+        "object_after": "fallen red block",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine Setup",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 66,
+        "start_time": "02:29",
+        "end_time": "02:30",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 3,
+        "segment_label_resolved": "Appliance Activation Challenge"
+      },
+      {
+        "event_type": "roll",
+        "description": "the wine bottle rolls down the ramp",
+        "participants": [],
+        "actor": "wine bottle",
+        "object": "wine bottle",
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg machine",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 67,
+        "start_time": "02:30",
+        "end_time": "02:34",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 10,
+        "round_index": 3,
+        "segment_label_resolved": "Appliance Activation Challenge"
+      },
+      {
+        "event_type": "chain_reaction",
+        "description": "the dominoes on the left side fall in sequence",
+        "participants": [],
+        "actor": "dominoes",
+        "object": "dominoes",
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg machine",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 68,
+        "start_time": "02:34",
+        "end_time": "02:38",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 3,
+        "segment_label_resolved": "Appliance Activation Challenge"
+      },
+      {
+        "event_type": "movement",
+        "description": "the orange ball moves through the clear tube",
+        "participants": [],
+        "actor": "orange ball",
+        "object": "orange ball",
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg machine",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 69,
+        "start_time": "02:38",
+        "end_time": "02:41",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 3,
+        "segment_label_resolved": "Appliance Activation Challenge"
+      },
+      {
+        "event_type": "transition",
+        "description": "the scene transitions from the brown table setup to a green table setup",
+        "participants": [],
+        "actor": "scene",
+        "segment_boundary": "end",
+        "segment_label": "Rube Goldberg machine",
+        "continuation_hint": "complete",
+        "event_index": 70,
+        "start_time": "02:41",
+        "end_time": "02:43",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 3,
+        "segment_label_resolved": "Appliance Activation Challenge"
+      },
+      {
+        "event_type": "title_card",
+        "description": "text appears asking \"WHICH CRATER WILL THE BALL GO IN?\" on the green table setup",
+        "participants": [],
+        "actor": "on_screen_text",
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Crater Ball Game",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 71,
+        "start_time": "02:43",
+        "end_time": "02:45",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 6,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "hold_object",
+        "description": "a hand holds an orange ball at the top of a grid-patterned ramp on the right side of the table",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "orange ball",
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 72,
+        "start_time": "02:45",
+        "end_time": "03:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "countdown",
+        "description": "a countdown timer decreases from 15 to 7 in the top right corner of the screen",
+        "participants": [],
+        "actor": "",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "15",
+            "location": "timer"
+          },
+          {
+            "text": "14",
+            "location": "timer"
+          },
+          {
+            "text": "13",
+            "location": "timer"
+          },
+          {
+            "text": "12",
+            "location": "timer"
+          },
+          {
+            "text": "11",
+            "location": "timer"
+          },
+          {
+            "text": "10",
+            "location": "timer"
+          },
+          {
+            "text": "9",
+            "location": "timer"
+          },
+          {
+            "text": "8",
+            "location": "timer"
+          },
+          {
+            "text": "7",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 73,
+        "start_time": "02:45",
+        "end_time": "03:00",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 12,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "title_text",
+        "description": "the text 'WHICH CRATER WILL THE BALL GO IN?' is displayed at the top center of the screen",
+        "participants": [],
+        "actor": "",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 74,
+        "start_time": "02:45",
+        "end_time": "03:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "countdown",
+        "description": "countdown timer changes from 7 to 6",
+        "participants": [],
+        "actor": "",
+        "object": "countdown timer",
+        "object_before": "7",
+        "object_after": "6",
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 75,
+        "start_time": "03:00",
+        "end_time": "03:02",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 12,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "countdown",
+        "description": "countdown timer changes from 6 to 5",
+        "participants": [],
+        "actor": "",
+        "object": "countdown timer",
+        "object_before": "6",
+        "object_after": "5",
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 76,
+        "start_time": "03:02",
+        "end_time": "03:04",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 12,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "countdown",
+        "description": "countdown timer changes from 5 to 4",
+        "participants": [],
+        "actor": "",
+        "object": "countdown timer",
+        "object_before": "5",
+        "object_after": "4",
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 77,
+        "start_time": "03:04",
+        "end_time": "03:06",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 12,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "countdown",
+        "description": "countdown timer changes from 4 to 3",
+        "participants": [],
+        "actor": "",
+        "object": "countdown timer",
+        "object_before": "4",
+        "object_after": "3",
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 78,
+        "start_time": "03:06",
+        "end_time": "03:08",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 12,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "countdown",
+        "description": "countdown timer changes from 3 to 2",
+        "participants": [],
+        "actor": "",
+        "object": "countdown timer",
+        "object_before": "3",
+        "object_after": "2",
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 79,
+        "start_time": "03:08",
+        "end_time": "03:10",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 12,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "countdown",
+        "description": "countdown timer changes from 2 to 1",
+        "participants": [],
+        "actor": "",
+        "object": "countdown timer",
+        "object_before": "2",
+        "object_after": "1",
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 80,
+        "start_time": "03:10",
+        "end_time": "03:12",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 12,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "release",
+        "description": "hand releases orange ball from the ramp on the right side of the table",
+        "participants": [
+          "light-sleeve person"
+        ],
+        "actor": "light-sleeve person",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          },
+          {
+            "text": "7",
+            "location": "timer"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 81,
+        "start_time": "03:12",
+        "end_time": "03:14",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "motion",
+        "description": "orange ball rolls down the ramp and across the green table toward the dominoes",
+        "participants": [],
+        "actor": "",
+        "object": "orange ball",
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 82,
+        "start_time": "03:14",
+        "end_time": "03:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "kettle_enter",
+        "description": "A hand holding a glass kettle enters the frame from the right side",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "glass kettle",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Pouring Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "1",
+            "location": "podium"
+          },
+          {
+            "text": "2",
+            "location": "podium"
+          },
+          {
+            "text": "3",
+            "location": "podium"
+          },
+          {
+            "text": "4",
+            "location": "podium"
+          }
+        ],
+        "event_index": 83,
+        "start_time": "03:15",
+        "end_time": "03:17",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "pour",
+        "description": "Water is poured from the glass kettle into the pink cup on the platform",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "water",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Pouring Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 84,
+        "start_time": "03:17",
+        "end_time": "03:25",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "object_roll",
+        "description": "The red tomato rolls off the left side of the platform",
+        "participants": [
+          "red tomato"
+        ],
+        "actor": "red tomato",
+        "object": "red tomato",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Pouring Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 85,
+        "start_time": "03:24",
+        "end_time": "03:26",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "look",
+        "description": "A person looks through the archway of panel 1, with eyes moving upward and around",
+        "participants": [
+          "man with visible face"
+        ],
+        "actor": "man with visible face",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 86,
+        "start_time": "03:30",
+        "end_time": "03:35",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "look",
+        "description": "The person continues looking through panel 1 archway with eyes moving side to side",
+        "participants": [
+          "man with visible face"
+        ],
+        "actor": "man with visible face",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "middle",
+        "event_index": 87,
+        "start_time": "03:35",
+        "end_time": "03:40",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "speak",
+        "description": "The person's mouth opens and closes while looking through the archway of panel 1",
+        "participants": [
+          "man with visible face"
+        ],
+        "actor": "man with visible face",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "middle",
+        "event_index": 88,
+        "start_time": "03:40",
+        "end_time": "03:43",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "camera_shift",
+        "description": "The camera shifts focus to show panels 2 and 3 more clearly, with the person no longer visible through the archway",
+        "participants": [],
+        "actor": "camera",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 89,
+        "start_time": "03:43",
+        "end_time": "03:45",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "title_card",
+        "description": "A title card with the text \"BEHIND THE SCENES\" appears over footage showing the mechanical setup with a banana, red ball, and ramp structure",
+        "participants": [],
+        "actor": "N/A",
+        "object": "",
+        "object_before": "",
+        "object_after": "",
+        "cover": "",
+        "hidden": "",
+        "outcome": "",
+        "on_screen_text": [
+          {
+            "text": "BEHIND THE SCENES",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Behind the Scenes Setup",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 90,
+        "start_time": "03:45",
+        "end_time": "03:47",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 6,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "roll",
+        "description": "A red ball rolls down an orange ramp structure on the table",
+        "participants": [],
+        "actor": "N/A",
+        "object": "red ball",
+        "object_before": "",
+        "object_after": "",
+        "cover": "",
+        "hidden": "",
+        "outcome": "in",
+        "on_screen_text": [
+          {
+            "text": "BEHIND THE SCENES",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Behind the Scenes Setup",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 91,
+        "start_time": "03:47",
+        "end_time": "03:49",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 10,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "collision",
+        "description": "The red ball collides with a yellow banana, causing the banana to move",
+        "participants": [],
+        "actor": "N/A",
+        "object": "red ball and banana",
+        "object_before": "",
+        "object_after": "",
+        "cover": "",
+        "hidden": "",
+        "outcome": "collision",
+        "on_screen_text": [
+          {
+            "text": "BEHIND THE SCENES",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Behind the Scenes Setup",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 92,
+        "start_time": "03:49",
+        "end_time": "03:51",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "roll",
+        "description": "A yellow ball rolls into the scene from the right side of the table",
+        "participants": [],
+        "actor": "N/A",
+        "object": "yellow ball",
+        "object_before": "",
+        "object_after": "",
+        "cover": "",
+        "hidden": "",
+        "outcome": "in",
+        "on_screen_text": [
+          {
+            "text": "BEHIND THE SCENES",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Behind the Scenes Setup",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 93,
+        "start_time": "03:51",
+        "end_time": "03:53",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 10,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "domino_effect",
+        "description": "Blue dominoes fall in sequence after being triggered by the rolling balls",
+        "participants": [],
+        "actor": "N/A",
+        "object": "blue dominoes",
+        "object_before": "",
+        "object_after": "",
+        "cover": "",
+        "hidden": "",
+        "outcome": "sequence completed",
+        "on_screen_text": [
+          {
+            "text": "BEHIND THE SCENES",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Behind the Scenes Setup",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 94,
+        "start_time": "03:53",
+        "end_time": "03:55",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "camera_move",
+        "description": "The camera pans to reveal the full mechanical setup behind the pink panels, showing how the structures are connected and how balls move through the system",
+        "participants": [],
+        "actor": "N/A",
+        "object": "",
+        "object_before": "",
+        "object_after": "",
+        "cover": "",
+        "hidden": "",
+        "outcome": "",
+        "on_screen_text": [
+          {
+            "text": "BEHIND THE SCENES",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Behind the Scenes Setup",
+        "continuation_hint": "complete",
+        "event_index": 95,
+        "start_time": "03:55",
+        "end_time": "04:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "static_view",
+        "description": "The video shows a behind-the-scenes view of a stop-motion animation setup with a table containing a yellow character, blue robot, green panels, and other small objects",
+        "participants": [],
+        "actor": "none",
+        "segment_boundary": "middle",
+        "segment_label": "Behind the Scenes Setup",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 96,
+        "start_time": "04:00",
+        "end_time": "04:02",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "transition",
+        "description": "The scene transitions to a pink structure with a person's face visible through the central archway, showing a pink cup with a tea bag on a small wooden structure",
+        "participants": [],
+        "actor": "none",
+        "on_screen_text": [
+          {
+            "text": "www.patreon.com/josephsmachines",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Patreon Promotion",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 97,
+        "start_time": "04:03",
+        "end_time": "04:05",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "place",
+        "description": "A hand places a red ball on a small wooden structure through the right archway labeled '4'",
+        "participants": [
+          "man with beard"
+        ],
+        "actor": "hand",
+        "object": "red ball",
+        "segment_boundary": "middle",
+        "segment_label": "Object Placement",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 98,
+        "start_time": "04:06",
+        "end_time": "04:07",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "movement",
+        "description": "The red ball moves from the wooden structure through the archway onto the table surface",
+        "participants": [],
+        "actor": "red ball",
+        "object": "red ball",
+        "segment_boundary": "middle",
+        "segment_label": "Object Movement",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 99,
+        "start_time": "04:07",
+        "end_time": "04:08",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "movement",
+        "description": "The red ball rolls from the archway area toward the yellow banana on the table",
+        "participants": [],
+        "actor": "red ball",
+        "object": "red ball",
+        "segment_boundary": "middle",
+        "segment_label": "Object Movement",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 100,
+        "start_time": "04:08",
+        "end_time": "04:09",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "manipulate",
+        "description": "A hand manipulates a yellow string that is attached to a tea bag above the pink cup",
+        "participants": [
+          "man with beard"
+        ],
+        "actor": "hand",
+        "object": "yellow string",
+        "segment_boundary": "middle",
+        "segment_label": "String Manipulation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 101,
+        "start_time": "04:09",
+        "end_time": "04:10",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "lift",
+        "description": "The yellow string lifts the tea bag up and out of the pink cup",
+        "participants": [],
+        "actor": "yellow string",
+        "object": "tea bag",
+        "segment_boundary": "middle",
+        "segment_label": "Object Lift",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 102,
+        "start_time": "04:10",
+        "end_time": "04:11",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "lift",
+        "description": "A hand reaches through the central archway and lifts the pink cup from its wooden stand",
+        "participants": [
+          "man with beard"
+        ],
+        "actor": "hand",
+        "object": "pink cup",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Lift",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 103,
+        "start_time": "04:11",
+        "end_time": "04:12",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "move",
+        "description": "The pink cup is moved from its original position on the wooden stand to a new position on the table",
+        "participants": [],
+        "actor": "hand",
+        "object": "pink cup",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Movement",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 104,
+        "start_time": "04:12",
+        "end_time": "04:13",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "drink",
+        "description": "The person drinks from the pink cup while visible through the central archway",
+        "participants": [
+          "man with beard"
+        ],
+        "actor": "man with beard",
+        "object": "pink cup",
+        "segment_boundary": "middle",
+        "segment_label": "Drinking Action",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 105,
+        "start_time": "04:13",
+        "end_time": "04:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "speak",
+        "description": "person visible through the arched opening speaks with changing mouth positions",
+        "participants": [
+          "person in archway"
+        ],
+        "actor": "person in archway",
+        "segment_boundary": "middle",
+        "segment_label": "puzzle-door concept",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 106,
+        "start_time": "04:15",
+        "end_time": "04:22",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      },
+      {
+        "event_type": "graphic",
+        "description": "white screen with thank you text appears",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "Also a massive thank you to PITAGORA SUICHI for inspiring me with this puzzle-door concept (and everything else over the years!)",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "puzzle-door concept",
+        "continuation_hint": "complete",
+        "event_index": 107,
+        "start_time": "04:22",
+        "end_time": "04:28",
+        "sub_events": [],
+        "subtype_order": 17,
+        "subtype_total": 17,
+        "round_index": 4,
+        "segment_label_resolved": "Crater Ball Game"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Puzzle Machines Intro",
+        "event_index_range": [
+          1,
+          21
+        ]
+      },
+      {
+        "round_index": 2,
+        "label": "Gift Untying Challenge",
+        "event_index_range": [
+          22,
+          54
+        ]
+      },
+      {
+        "round_index": 3,
+        "label": "Appliance Activation Challenge",
+        "event_index_range": [
+          55,
+          70
+        ]
+      },
+      {
+        "round_index": 4,
+        "label": "Crater Ball Game",
+        "event_index_range": [
+          71,
+          107
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "question": "Did the white shirt man win the cookie?",
+  "pred": "The video shows a game where participants pull strings attached to a red cup to reveal prizes on plates. The \"white shirt man\" (identified as Ethan in the on-screen labels) takes the first turn.\n\n1.  **Ethan's Turn (White-shirt man):** He pulls a string that moves a plate containing paper money toward the center. On-screen text \"$2\" appears, and he collects the money.\n2.  **Lauren's Turn (Blue-sweatshirt woman):** She pulls a string that moves the plate with cookies toward the center. On-screen text \"Cookies\" appears, and she is shown eating one.\n3.  **Mattie's Turn (Black-hoodie woman):** She pulls a string that moves a plate with a large stack of money. On-screen text \"$300\" appears.\n4.  **Brian's Turn (Black-shirt man):** He pulls a string that moves a plate with white powder. On-screen text \"Whip Cream Face\" appears, and he puts his face into the plate.\n\nThe white-shirt man (Ethan) won the $2 prize, while the woman in the blue sweatshirt (Lauren) won the cookies.\n\nEvidence: Context event 5 and frames near 00:12 show the white-shirt man (Ethan) collecting paper money ($2) after his pull, while frames near 00:25 show the blue-sweatshirt woman (Lauren) winning the cookies.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "pull_string",
+      "description": "Ethan pulls the left string attached to the red cup in the center of the table",
+      "participants": [
+        "white-shirt man",
+        "blue-sweatshirt woman",
+        "black-shirt man",
+        "black-hoodie woman"
+      ],
+      "actor": "white-shirt man",
+      "object": "black string",
+      "segment_boundary": "middle",
+      "segment_label": "Mystery String!",
+      "event_index": 2,
+      "start_time": "00:03",
+      "end_time": "00:06",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String!"
+    },
+    {
+      "event_type": "reveal",
+      "description": "The left plate with money is pulled toward the center as a result of the string being pulled",
+      "participants": [
+        "white-shirt man",
+        "blue-sweatshirt woman",
+        "black-shirt man",
+        "black-hoodie woman"
+      ],
+      "actor": "white-shirt man",
+      "cover": "red cup",
+      "hidden": "paper money",
+      "segment_boundary": "middle",
+      "segment_label": "Mystery String!",
+      "event_index": 3,
+      "start_time": "00:06",
+      "end_time": "00:09",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String!"
+    },
+    {
+      "event_type": "graphic",
+      "description": "Text \"$2\" appears on screen indicating the value of the revealed prize",
+      "participants": [
+        "white-shirt man",
+        "blue-sweatshirt woman",
+        "black-shirt man",
+        "black-hoodie woman"
+      ],
+      "actor": "system",
+      "on_screen_text": [
+        {
+          "text": "$2",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Mystery String!",
+      "event_index": 4,
+      "start_time": "00:09",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String!"
+    },
+    {
+      "event_type": "collect_prize",
+      "description": "Ethan picks up the stack of $2 bills from the left plate",
+      "participants": [
+        "white-shirt man",
+        "blue-sweatshirt woman",
+        "black-shirt man",
+        "black-hoodie woman"
+      ],
+      "actor": "white-shirt man",
+      "object": "paper money",
+      "segment_boundary": "middle",
+      "segment_label": "Mystery String!",
+      "event_index": 5,
+      "start_time": "00:12",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String!"
+    }
+  ]
+}

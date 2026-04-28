@@ -1,0 +1,53 @@
+{
+  "question": "Were there exactly two boxes opened between the lipstick box and the doll head box?",
+  "pred": "Evidence: The frames show the lipstick box opened first (frames 26-28), followed by the mantis/bee figurines box (frames 59-63), then box 3 (frames 73-75), and finally the doll head box (frames 138-140). There are exactly two boxes opened between the lipstick box and the doll head box.\n\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "open_box",
+      "description": "The dark-suited man opens the large center box on the table by lifting its lid upward",
+      "participants": [
+        "blue-suited man",
+        "dark-suited man"
+      ],
+      "actor": "dark-suited man",
+      "cover": "beige box",
+      "hidden": "green praying mantis figurines and black-yellow bee figurines",
+      "segment_boundary": "middle",
+      "segment_label": "Figurine Display",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 78,
+      "start_time": "03:00",
+      "end_time": "03:03",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "man in gray suit opens the white box on the right side of the table",
+      "participants": [
+        "blue-suit man",
+        "gray-suit man"
+      ],
+      "actor": "gray-suit man",
+      "object": "white box",
+      "cover": "white box",
+      "hidden": "uncertain",
+      "segment_boundary": "middle",
+      "segment_label": "Box Opening Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 107,
+      "start_time": "04:30",
+      "end_time": "04:34",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    }
+  ]
+}

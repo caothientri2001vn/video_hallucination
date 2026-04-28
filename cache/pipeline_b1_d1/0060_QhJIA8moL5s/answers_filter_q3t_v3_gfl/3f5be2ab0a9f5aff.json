@@ -1,0 +1,135 @@
+{
+  "question": "Between the jelly box and the bird's nest box, was no other box opened?",
+  "pred": "The video shows a game where players take turns selecting numbered boxes from a shelf.\n\n1.  **Jelly box**: At approximately 01:00 (Context event 30), the blonde woman (LEFT player) opens a box (labeled 8) and reveals a bowl containing a colorful object, which is identified as jelly in the frames.\n2.  **Intermediate box**: At approximately 02:45 (Context event 75), the man in the suit (RIGHT player) opens a white box (labeled 3) and removes a \"Full House\" doll.\n3.  **Bird's nest box**: At approximately 04:15 (Context event 118), the blonde woman opens another box (labeled 4) which contains a bird's nest with a food item inside.\n\nSince box 3 was opened between the opening of the jelly box (box 8) and the bird's nest box (box 4), it is not true that no other box was opened.\n\nEvidence: Context event 75 shows the man in the suit opening a white box (box 3) at 02:45, which occurs between the jelly box reveal (01:00) and the bird's nest box reveal (04:15).\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "open_box",
+      "description": "The woman pulls out the bottom-right box labeled 9",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "object": "box 9",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 23,
+      "start_time": "00:51",
+      "end_time": "00:53",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "The woman opens the box to reveal its contents",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "object": "box 9",
+      "object_before": "closed box 9",
+      "object_after": "open box 9",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 25,
+      "start_time": "00:55",
+      "end_time": "00:57",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "The woman opens the leftmost lower box (labeled 8) on her side of the table and retrieves a bowl.",
+      "participants": [
+        "blonde-woman",
+        "man-in-suit"
+      ],
+      "actor": "blonde-woman",
+      "object": "beige box",
+      "cover": "beige box",
+      "hidden": "white bowl with colorful object",
+      "segment_boundary": "middle",
+      "segment_label": "Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 30,
+      "start_time": "01:00",
+      "end_time": "01:04",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "Jimmy opens the white box on the table and removes a flat object from inside",
+      "participants": [
+        "dark-dress woman",
+        "suit-man"
+      ],
+      "actor": "suit-man",
+      "object": "white box",
+      "segment_boundary": "middle",
+      "segment_label": "Game Show Segment",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 75,
+      "start_time": "02:45",
+      "end_time": "02:51",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "The woman opens the leftmost box (Box 4) on the middle shelf by pulling it forward",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "segment_boundary": "middle",
+      "segment_label": "Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "object": "beige box",
+      "cover": "beige box",
+      "hidden": "uncertain: interior contents",
+      "event_index": 114,
+      "start_time": "04:18",
+      "end_time": "04:21",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "Jennifer opens the leftmost box on the table",
+      "participants": [
+        "blue-dress woman",
+        "black-suit man"
+      ],
+      "actor": "blue-dress woman",
+      "object": "beige box",
+      "segment_boundary": "middle",
+      "segment_label": "Game show segment",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 118,
+      "start_time": "04:15",
+      "end_time": "04:18",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    }
+  ]
+}

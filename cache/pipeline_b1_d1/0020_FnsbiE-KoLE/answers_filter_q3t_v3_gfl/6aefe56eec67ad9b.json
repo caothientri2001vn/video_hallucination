@@ -1,0 +1,189 @@
+{
+  "question": "Did the orange shirt boy faill into the pool?",
+  "pred": "The video shows an orange-shirt boy (identified as Nate Pardo in on-screen text) competing on an American Ninja Warrior Junior course. While the Context mentions an orange-shirt man falling backward from a cylinder obstacle at 01:58 (event 48), the frames and subsequent events show that he successfully completes his run. At 05:45, he is seen running toward the finish line (the Warped Wall), and at 05:55, he is interviewed by the host while standing on the platform, completely dry. In contrast, other contestants like the red-shirt boy are explicitly shown falling into the water (event 123 at 05:15) and emerging wet.\n\nEvidence: Frames at 05:55 show the orange-shirt boy standing dry on the platform during an interview after his run.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "run",
+      "description": "orange-shirt man runs across blue platform toward cylindrical obstacles",
+      "participants": [
+        "orange-shirt man"
+      ],
+      "actor": "orange-shirt man",
+      "segment_boundary": "middle",
+      "segment_label": "Ninja Warrior course",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 39,
+      "start_time": "01:30",
+      "end_time": "01:34",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 9,
+      "round_index": 2,
+      "segment_label_resolved": "Contestant Introduction"
+    },
+    {
+      "event_type": "jump",
+      "description": "orange-shirt man jumps from blue platform toward first cylindrical obstacle",
+      "participants": [
+        "orange-shirt man"
+      ],
+      "actor": "orange-shirt man",
+      "object": "cylindrical obstacle",
+      "segment_boundary": "middle",
+      "segment_label": "Ninja Warrior course",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 40,
+      "start_time": "01:34",
+      "end_time": "01:38",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 2,
+      "segment_label_resolved": "Contestant Introduction"
+    },
+    {
+      "event_type": "grab",
+      "description": "orange-shirt man extends arms to grab cylindrical obstacle while in mid-air",
+      "participants": [
+        "orange-shirt man"
+      ],
+      "actor": "orange-shirt man",
+      "object": "cylindrical obstacle",
+      "segment_boundary": "middle",
+      "segment_label": "Ninja Warrior course",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 41,
+      "start_time": "01:38",
+      "end_time": "01:45",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "Contestant Introduction"
+    },
+    {
+      "event_type": "jump",
+      "description": "orange-shirt man attempts to swing between the parallel cylinders but loses grip",
+      "participants": [
+        "orange-shirt man"
+      ],
+      "actor": "orange-shirt man",
+      "segment_boundary": "middle",
+      "segment_label": "Cylinder Obstacle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 47,
+      "start_time": "01:56",
+      "end_time": "01:58",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 2,
+      "segment_label_resolved": "Contestant Introduction"
+    },
+    {
+      "event_type": "fall",
+      "description": "orange-shirt man falls backward from the cylinder obstacle",
+      "participants": [
+        "orange-shirt man"
+      ],
+      "actor": "orange-shirt man",
+      "segment_boundary": "middle",
+      "segment_label": "Cylinder Obstacle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 48,
+      "start_time": "01:58",
+      "end_time": "01:59",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 2,
+      "segment_label_resolved": "Contestant Introduction"
+    },
+    {
+      "event_type": "stand",
+      "description": "Red-shirt male contestant stands at the starting line of the obstacle course",
+      "participants": [
+        "red-shirt male contestant"
+      ],
+      "actor": "red-shirt male contestant",
+      "object": "obstacle course starting line",
+      "on_screen_text": [
+        {
+          "text": "NINJA WARRIOR JUNIOR",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "start",
+      "segment_label": "Obstacle Course Challenge",
+      "continuation_hint": "complete",
+      "event_index": 119,
+      "start_time": "05:06",
+      "end_time": "05:08",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 6,
+      "round_index": 9,
+      "segment_label_resolved": "Obstacle Course Challenge"
+    },
+    {
+      "event_type": "fall",
+      "description": "Contestant falls into the water after failing an obstacle",
+      "participants": [
+        "red-top contestant"
+      ],
+      "actor": "red-top contestant",
+      "outcome": "slipped",
+      "segment_boundary": "end",
+      "segment_label": "American Ninja Warrior course",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 123,
+      "start_time": "05:15",
+      "end_time": "05:16",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 9,
+      "segment_label_resolved": "Obstacle Course Challenge"
+    },
+    {
+      "event_type": "emerge",
+      "description": "Contestant emerges from the water and holds onto the pool edge",
+      "participants": [
+        "red-top contestant"
+      ],
+      "actor": "red-top contestant",
+      "segment_boundary": "end",
+      "segment_label": "American Ninja Warrior course",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 124,
+      "start_time": "05:17",
+      "end_time": "05:18",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 9,
+      "segment_label_resolved": "Obstacle Course Challenge"
+    },
+    {
+      "event_type": "climb",
+      "description": "Contestant climbs out of the pool onto the platform",
+      "participants": [
+        "red-top contestant"
+      ],
+      "actor": "red-top contestant",
+      "segment_boundary": "end",
+      "segment_label": "American Ninja Warrior course",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 126,
+      "start_time": "05:22",
+      "end_time": "05:25",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 5,
+      "round_index": 9,
+      "segment_label_resolved": "Obstacle Course Challenge"
+    }
+  ]
+}

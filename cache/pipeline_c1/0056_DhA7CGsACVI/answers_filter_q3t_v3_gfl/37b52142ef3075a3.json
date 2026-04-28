@@ -1,0 +1,173 @@
+{
+  "question": "Did the man on the right open two boxes?",
+  "pred": "The man on the right (host in a dark suit) opened only one box during the game.\n\n1. At approximately 00:30-00:45, the man on the left (blue-suit man) lifts, places, and opens Box #4.\n2. At approximately 04:45-04:55, the man on the left (blue-suit man) lifts, places, and opens Box #1.\n3. At approximately 05:40, the man on the right (dark-suit man) lifts Box #3 from the shelf, places it on the table, and opens it to reveal a mantis and bee display.\n\nThe man on the right only performed the box-opening action once.\n\nEvidence: frames at ~05:40 show the dark-suited man (right player) opening Box #3, while the blue-suited man (left player) opened boxes #4 and #1.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "manipulate_box",
+      "description": "blue-suited man manipulates the leftmost box in the middle row (box #4) while speaking",
+      "participants": [
+        "blue-suited man",
+        "dark-suited man"
+      ],
+      "actor": "blue-suited man",
+      "object": "box #4",
+      "segment_boundary": "middle",
+      "segment_label": "Box Reveal Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 10,
+      "start_time": "00:30",
+      "end_time": "00:35",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "remove_box",
+      "description": "blue-suited man pulls the leftmost box in the middle row (box #4) completely off the shelf",
+      "participants": [
+        "blue-suited man"
+      ],
+      "actor": "blue-suited man",
+      "object": "box #4",
+      "segment_boundary": "middle",
+      "segment_label": "Box Reveal Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 12,
+      "start_time": "00:36",
+      "end_time": "00:41",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "place_object",
+      "description": "blue-suited man places the removed box (box #4) on the table surface",
+      "participants": [
+        "blue-suited man"
+      ],
+      "actor": "blue-suited man",
+      "object": "box #4",
+      "segment_boundary": "middle",
+      "segment_label": "Box Reveal Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 13,
+      "start_time": "00:40",
+      "end_time": "00:43",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "blue-suited man begins to open the lid of box #4 that is now on the table",
+      "participants": [
+        "blue-suited man"
+      ],
+      "actor": "blue-suited man",
+      "object": "box #4",
+      "segment_boundary": "middle",
+      "segment_label": "Box Reveal Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 15,
+      "start_time": "00:43",
+      "end_time": "00:45",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "lift",
+      "description": "the blue-suited man lifts the leftmost box (labeled 1) from the top shelf",
+      "participants": [
+        "blue-suited man",
+        "gray-suited man"
+      ],
+      "actor": "blue-suited man",
+      "object": "box labeled 1",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 112,
+      "start_time": "04:45",
+      "end_time": "04:49",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "place",
+      "description": "the blue-suited man places the box labeled 1 on the table",
+      "participants": [
+        "blue-suited man",
+        "gray-suited man"
+      ],
+      "actor": "blue-suited man",
+      "object": "box labeled 1",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 113,
+      "start_time": "04:49",
+      "end_time": "04:52",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "the blue-suited man opens the box labeled 1",
+      "participants": [
+        "blue-suited man",
+        "gray-suited man"
+      ],
+      "actor": "blue-suited man",
+      "object": "box labeled 1",
+      "object_before": "closed box",
+      "object_after": "open box",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 114,
+      "start_time": "04:52",
+      "end_time": "04:55",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the blue-suited man takes out a red-headed figurine from the box",
+      "participants": [
+        "blue-suited man",
+        "gray-suited man"
+      ],
+      "actor": "blue-suited man",
+      "object": "figurine",
+      "cover": "box labeled 1",
+      "hidden": "red-headed figurine",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 115,
+      "start_time": "04:55",
+      "end_time": "04:58",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    }
+  ]
+}

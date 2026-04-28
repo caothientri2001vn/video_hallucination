@@ -1,0 +1,150 @@
+{
+  "question": "Was the box with the Dutch flag finally opened?",
+  "pred": "Evidence: frames show a spoon lifting soup with sausages and vegetables from the red, white, and blue striped container after the lid was lifted, confirming the Dutch flag container was opened and used.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "grasp_handle",
+      "description": "reaches for and grasps the metal handle on the red, white, and blue striped container lid",
+      "participants": [
+        "hand"
+      ],
+      "actor": "hand",
+      "object": "container handle",
+      "on_screen_text": [
+        {
+          "text": "Nxloop AI ASMR",
+          "location": "other"
+        },
+        {
+          "text": "SUBSCRIBE",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soup Preparation",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 83,
+      "start_time": "04:00",
+      "end_time": "04:02",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 4,
+      "segment_label_resolved": "Food Preparation in Container"
+    },
+    {
+      "event_type": "lift_lid",
+      "description": "lifts the red, white, and blue striped lid off the container, revealing hot soup inside",
+      "participants": [
+        "hand"
+      ],
+      "actor": "hand",
+      "object": "container lid",
+      "object_before": "red, white, and blue striped lid",
+      "object_after": "not_visible",
+      "on_screen_text": [
+        {
+          "text": "Nxloop AI ASMR",
+          "location": "other"
+        },
+        {
+          "text": "SUBSCRIBE",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soup Preparation",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 84,
+      "start_time": "04:02",
+      "end_time": "04:07",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 4,
+      "segment_label_resolved": "Food Preparation in Container"
+    },
+    {
+      "event_type": "insert_spoon",
+      "description": "inserts a metal spoon into the hot soup containing sausages and vegetables",
+      "participants": [
+        "hand",
+        "spoon"
+      ],
+      "actor": "hand",
+      "object": "spoon",
+      "on_screen_text": [
+        {
+          "text": "Nxloop AI ASMR",
+          "location": "other"
+        },
+        {
+          "text": "SUBSCRIBE",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soup Preparation",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 85,
+      "start_time": "04:10",
+      "end_time": "04:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 4,
+      "segment_label_resolved": "Food Preparation in Container"
+    },
+    {
+      "event_type": "stir_scoop_soup",
+      "description": "stirs the soup with the spoon and lifts a scoop containing lentils, sausages, and vegetables",
+      "participants": [
+        "hand",
+        "spoon"
+      ],
+      "actor": "hand",
+      "object": "soup",
+      "on_screen_text": [
+        {
+          "text": "Nxloop AI ASMR",
+          "location": "other"
+        },
+        {
+          "text": "SUBSCRIBE",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soup Preparation",
+      "continuation_hint": "complete",
+      "event_index": 86,
+      "start_time": "04:12",
+      "end_time": "04:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 4,
+      "segment_label_resolved": "Food Preparation in Container"
+    },
+    {
+      "event_type": "steam_rise",
+      "description": "Steam rises from the hot soup in the container.",
+      "participants": [],
+      "actor": "steam",
+      "object": "soup",
+      "segment_boundary": "middle",
+      "segment_label": "Food ASMR",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 88,
+      "start_time": "04:15",
+      "end_time": "04:16",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 4,
+      "segment_label_resolved": "Food Preparation in Container"
+    }
+  ]
+}

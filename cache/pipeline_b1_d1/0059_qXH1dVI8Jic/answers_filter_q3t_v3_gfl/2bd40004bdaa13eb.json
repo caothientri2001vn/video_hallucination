@@ -1,0 +1,103 @@
+{
+  "question": "Did time run out exactly twice during the game?",
+  "pred": "The video shows a game of charades with multiple turns. \"Time running out\" is indicated by the on-screen countdown timer reaching zero.\n\n1.  **First instance:** During the turn for \"BORN TO RUN\" (blonde woman in checkered jumpsuit acting), the timer reaches 0 at approximately 01:44.\n2.  **Second instance:** During the turn for \"DANCING ON THE CEILING\" (blonde woman in checkered jumpsuit acting), the timer reaches 0 at approximately 02:54.\n\nThere are no other instances where the timer reaches zero; other turns (like \"RING OF FIRE\" and \"JURASSIC PARK\") end with a successful guess before the time expires.\n\nEvidence: frames at ~01:44 and ~02:54 show the on-screen timer reaching 0.\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "scoreboard_update",
+      "description": "Countdown timer changes from 3 to 2",
+      "participants": [],
+      "actor": "",
+      "object": "",
+      "object_before": "",
+      "object_after": "",
+      "on_screen_text": [
+        {
+          "text": "BORN TO RUN",
+          "location": "caption"
+        },
+        {
+          "text": "2",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 55,
+      "start_time": "01:42",
+      "end_time": "01:43",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "gesture",
+      "description": "Woman makes a final running motion with legs, taking a small step forward",
+      "participants": [
+        "black-jumpsuit woman",
+        "blonde-woman",
+        "black-hat man",
+        "black-suit man"
+      ],
+      "actor": "black-jumpsuit woman",
+      "object": "",
+      "object_before": "",
+      "object_after": "",
+      "on_screen_text": [
+        {
+          "text": "BORN TO RUN",
+          "location": "caption"
+        },
+        {
+          "text": "1",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 56,
+      "start_time": "01:43",
+      "end_time": "01:44",
+      "sub_events": [],
+      "subtype_order": 26,
+      "subtype_total": 53,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "Countdown timer reaches 0",
+      "participants": [],
+      "actor": "",
+      "object": "",
+      "object_before": "",
+      "object_after": "",
+      "on_screen_text": [
+        {
+          "text": "BORN TO RUN",
+          "location": "caption"
+        },
+        {
+          "text": "0",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Charades",
+      "continuation_hint": "complete",
+      "event_index": 57,
+      "start_time": "01:44",
+      "end_time": "01:45",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    }
+  ]
+}

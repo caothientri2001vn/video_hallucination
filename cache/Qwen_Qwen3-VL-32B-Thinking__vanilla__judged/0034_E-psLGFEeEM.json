@@ -1,0 +1,586 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0034_E-psLGFEeEM.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0034_E-psLGFEeEM.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0034_E-psLGFEeEM",
+    "n_target": 12,
+    "n_sub": 46,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.5833333333333334,
+    "sub_accuracy": 0.782608695652174
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Does the player with red shirt score first goal first?",
+      "gt": "Yes",
+      "pred": "Yes. The scoreboard in the initial frames (e.g., 00:00) shows \"KUKHEAW/DEJAROEN (THA)\" with 2 points and \"FERRAZ/MEDEIROS (BRA)\" with 0 points, indicating the red-shirted team (THA) scored first.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does a player wear a red shirt?",
+      "gt": "Yes",
+      "pred": "Yes, multiple players in the video are wearing red shirts (e.g., visible in the first frame and throughout the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player with the red shirt score a goal?",
+      "gt": "Yes",
+      "pred": "Yes, the player with the red shirt scores a goal. For example, the score changes from THA 2 - BRA 0 to THA 3 - BRA 2 (evident in frames showing the score update), and subsequent frames show the red team scoring additional points (e.g., THA 4 - BRA 2, THA 5 - BRA 3, etc.). The red team players also celebrate after scoring, confirming goal success.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the player with the red shirt score the first goal of the video?",
+      "gt": "Yes",
+      "pred": "Yes. The score display in the early frames (e.g., first frame) shows \"KUKHEAW/DEJAROEN THA 2\" and \"FERRAZ/MEDEIROS BRA 0\", indicating the red-shirted team (THA) has scored points first.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Does the player with yellow shirt and green pants score first goal first?",
+      "gt": "No",
+      "pred": "No. The score display in the initial frames (e.g., first frame) shows \"KUKEHAW/DEJAROEN (THA) 2\" and \"FERRAZ/MEDEIROS (BRA) 0\", indicating Thailand (red team) has already scored points before the yellow team (BRA) scores. Thus, the yellow-shirted player does not score the first goal.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does a player wear a yellow shirt and green pants?",
+      "gt": "Yes",
+      "pred": "Yes. Players from the BRA team (e.g., in the first frame and multiple subsequent frames) are wearing yellow shirts and green shorts/pants.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player with the yellow shirt and green pants score a goal?",
+      "gt": "Yes",
+      "pred": "Yes, the player with the yellow shirt and green pants (from Brazil) scores goals. The score for Brazil (BRA) increases throughout the match (e.g., from 0 to 2, 3, 4, 5, 6), indicating they scored points. For example, in frame 5 (showing a yellow-shirted player juggling the ball) and subsequent frames, the score updates to show Brazil’s points rising, confirming goals were scored by the yellow team.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the player with the red shirt score before the player with the yellow shirt and green pants?",
+      "gt": "Yes",
+      "pred": "Yes, the player with the red shirt (THA) scores before the player with the yellow shirt and green pants (BRA). For example, in the early frames, the score shows THA with 2 points and BRA with 0 (e.g., timestamp ~0:00), and THA continues to increase their score first in subsequent plays (e.g., THA 3, BRA 2; THA 4, BRA 2, etc.).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does the player with the yellow shirt and green pants score the first goal of the video?",
+      "gt": "No",
+      "pred": "No. The score display in the early frames (e.g., first image) shows \"KUKHEAW/DEJAROEN (THA) 2\" and \"FERRAZ/MEDeiROS (BRA) 0\", indicating Thailand (red team) scored first. The yellow-shirted team (BRA) did not score the first goal.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Does the player with red shirt score second goal first?",
+      "gt": "Yes",
+      "pred": "Yes. In the first frame (0.0s), the score shows THA (red shirts) with 2 points and BRA with 0, indicating the red-shirted team scored the first two points (including the second goal) before the opposing team.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the player with the red shirt score more than one goal?",
+      "gt": "Yes",
+      "pred": "Yes, the player with the red shirt (Thailand team) scores more than one goal. The score display shows Thailand's points increasing from 2 to 12 (e.g., timestamps with score updates like THA 3, 4, 5, 6, 8, 10, 11, 12).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player with the red shirt score a second goal?",
+      "gt": "Yes",
+      "pred": "Yes, the player with the red shirt scores a second goal. For example, the scoreboard shows Thailand (THA, red shirts) increasing their score from 2 to 3 (first goal after the initial 2-0), then to 4 (second goal), as seen in the frames where the score updates to \"THA 4\" (e.g., around the 8th frame in the sequence). Multiple subsequent score increases confirm additional goals, including a second goal after the initial one.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the player with the red shirt score their second goal before the player with the yellow shirt and green pants scores their first goal?",
+      "gt": "Yes",
+      "pred": "Yes. The score in the first frame shows THA (red shirt) with 2 points and BRA (yellow shirt) with 0 points. This indicates THA had already scored 2 goals before BRA scored their first goal (as BRA's score remains 0 until later frames where it increases). Thus, THA’s second goal occurred before BRA’s first goal.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Does the player with yellow shirt and green pants score second goal first?",
+      "gt": "No",
+      "pred": "No. The score progression shows Thailand (THA) leading early (e.g., THA 2–0 BRA in the first frame), and Brazil (BRA, yellow/green) does not score the second goal first. The second goal in the match is scored by THA, as the initial lead (2–0) indicates THA scored the first two goals before BRA scores. \n\nCitation: First frame shows THA 2–0 BRA, confirming THA scored the first two goals.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the player with the yellow shirt and green pants score more than one goal?",
+      "gt": "Yes",
+      "pred": "Yes. The score for the team with yellow shirts (BRA) increases from 0 to 6 throughout the match (e.g., at timestamp ~13:00, the score is BRA 6; at ~27:00, it is BRA 6). Since the score for BRA exceeds 1, the players in yellow shirts score more than one goal.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player with the yellow shirt and green pants score a second goal?",
+      "gt": "Yes",
+      "pred": "Yes, the player with the yellow shirt and green pants (BRA team) scores a second goal. This is verified by the score display in the video frames: at one point, the score shows \"FERRAZ/MEDeiROS (BRA) 2\" (e.g., frame 5, where the score is THA 3 - BRA 2), indicating BRA has scored two goals. Thus, a second goal is scored.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the player with the red shirt score their second goal before the player with the yellow shirt and green pants scores their second goal?",
+      "gt": "Yes",
+      "pred": "So, let's check the score progression. First, the initial score is THA 2, BRA 0 (from the first frame). Then, the score goes to THA 3, BRA 2 (in later frames), so Thailand (red) scores a point to get to 3 while Brazil (yellow) is at 2. Wait, the question is about the second goal. Let's see when each team scores.\n\nFirst, THA starts at 2, then scores to 3 (so that's their third point, but the second goal? Wait, the first point for THA is 2, then next is 3, so the first goal for THA is 2, then next is 3. For BRA, first point is 0, then 2 (so their second point is when they get to 2). Wait, no: the score changes. Let's track the score:\n\n- Frame 1: THA 2, BRA 0\n- Then, after some play, score becomes THA 3, BRA 2 (so BRA scores their first point to get to 2? Wait, no, the score for BRA goes from 0 to 2. Wait, the score is shown as \"KUKHEAW/DEJAROEN THA\" and \"FERRAZ/MEDEIROS BRA\". So the points are for the teams.\n\nLooking at the frames:\n\n- The first frame shows THA 2, BRA 0.\n- Then, in a later frame, the score is THA 3, BRA 2 (so BRA scored 2 points to get to 2, and THA scored 1 more to get to 3). So BRA's second point is when they get to 2 (since they started at 0, 0→1→2). THA's second goal would be when they go from 2 to 3 (so that's their third point, but the second goal is the first one? Wait, no: the first goal for THA is 1, but in the first frame it's already 2, so maybe the scoring starts from 2. Wait, the question is about \"second goal\". Let's check the sequence.\n\nWait, the first frame (0.0s) shows THA 2, BRA 0. Then, in the next frame (1.0s), the score is still THA 2, BRA 0. Then, when does the score change? Let's see the frame where score is THA 3, BRA 2: that's when BRA has 2 points, so their second point is at that time. THA's score went from 2 to 3, so their third point. But the question is: when does THA score their second goal (i.e., when they get to 2, but they already are at 2 in the first frame), so maybe the first goal for THA is the one that made them 2, then the next is 3. For BRA, the first goal would be to get to 1, then 2. So we need to find when THA scores their second goal (i.e., the point that makes them 2, but since they start at 2, maybe the first goal is 1, then 2, then 3. But the problem is the initial score is 2-0, so maybe the first goal for THA was before the video starts. So we need to see the sequence of scoring during the video.\n\nLooking at the frames:\n\n- The first visible score is THA 2, BRA 0.\n- Then, a frame shows THA 3, BRA 2 (so BRA scored 2 points, and THA scored 1 more point).\n- So BRA's second point is when the score is 2 (BRA), and THA's second point (if the initial 2 is their first two) then the next point for THA is 3, which is their third. But the question is about the second goal. So the second goal for THA would be the point that makes their score 2 (but that's already the starting score, so maybe the first goal for THA is 1, second is 2, but we don't see that). Alternatively, the scoring during the video: when does THA score a point, and when does BRA score a point.\n\nLooking at the frame where the score is THA 3, BRA 2: that means THA has scored 3 points, BRA 2. So the points added: THA scored 1 (from 2 to 3), BRA scored 2 (from 0 to 2). So the order of scoring: BRA scored first (to 1), then BRA scored again (to 2), then THA scored (to 3). So THA's next goal (3rd point",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does the player with the yellow shirt and green pants score their second goal before the player with the red shirt scores their second goal?",
+      "gt": "No",
+      "pred": "No. The score in the first frame shows THA (red shirts) with 2 points, indicating their second goal was already scored before the match sequence shown. The BRA (yellow shirts) team reaches 2 points later (e.g., in the frame where the score is THA 3, BRA 2), meaning the red team’s second goal occurred before the yellow team’s second goal. \n\nCited frames: The initial frame (0:00) shows THA 2, BRA 0; later, the frame with score THA 3, BRA 2 (roughly 0:05–0:06) indicates BRA’s second goal. Since THA already had 2 points at the start, their second goal",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Does the player with yellow shirt and green pants score first goal after being behind twice?",
+      "gt": "Yes",
+      "pred": "To determine if the yellow-shirted (BRA) player scores first after being behind twice, we analyze the score progression from the video frames:  \n\n1. **Initial scores**: THA leads 2–0 (BRA is behind 0–2).  \n2.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the player with the yellow shirt and green pants fall behind in the score?",
+      "gt": "Yes",
+      "pred": "Yes, the player with the yellow shirt and green pants (BRA team) is consistently behind in the score. For example, in the early frames (e.g., timestamp ~0s), the score shows THA 2 - BRA 0; by the end of the match (e.g., timestamp ~28s), the score is THA 12 - BRA 6. The BRA team never leads in the visible score progression.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player with the yellow shirt and green pants fall behind twice?",
+      "gt": "Yes",
+      "pred": "No, the player with the yellow shirt and green pants does not fall behind twice (or at all) in the provided video frames. No instances of the yellow-shirted players physically falling are observed across all frames.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the player with the yellow shirt and green pants score their first goal?",
+      "gt": "Yes",
+      "pred": "Yes, the player with the yellow shirt and green pants (BRA team) scores their first goal. This is evident from the scoreboard changes; for example, in frames where the score for BRA transitions from 0 to 2 (e.g., around the frame showing \"KUKHEAW/DEJAROEN THA 2\" and \"FERRAZ/MEDEIROS BRA 2\").",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does the player with the yellow shirt and green pants score their first goal after falling behind twice?",
+      "gt": "Yes",
+      "pred": "So, let's check the score progression. First, the score starts with THA 2 - BRA 0 (from the first frame). Then, later, the score becomes THA 3 - BRA 2 (frame 5), then THA 4 - BRA 2 (frame 7), so Brazil is behind. Then, does Brazil score their first goal? Let's see. The score for BRA goes from 0 to 2 (when THA is 3), so Brazil's first goal would be when they get to 2? Wait, no. Let's look at the score changes.\n\nWait, the question is: does the player with yellow (BRA) score their first goal after falling behind twice? Let's check the score:\n\n- Initially, THA 2 - BRA 0 (so BRA is behind 0-2)\n- Then, THA 3 - BRA 2 (BRA has 2, so they scored two goals to get to 2, but were they behind twice? Let's see the sequence.\n\nWait, the score progression:\n\n1. THA 2 - BRA 0 (BRA is 0, THA 2: behind)\n2. Then, at some point, BRA gets to 2 (so THA 3 - BRA 2: now BRA is behind 2-3, so they were behind 0-2, then 2-3, so that's two times behind? Then, does BRA score their first goal? Wait, BRA's first goal would be when they go from 0 to 1. Let's check when the score is BRA 1.\n\nLooking at the frames:\n\n- Frame 1: THA 2 - BRA 0\n- Frame 5: THA 3 - BRA 2 (so BRA has 2, which means they scored 2 goals, so their first goal was when they got to 1, then 2. But when did they get to 1? The score goes from 0 to 2, so the first goal for BRA would be when it's THA 3 - BRA 1, but that frame isn't shown. However, the key is: did they score their first goal after falling behind twice?\n\nFalling behind twice: first, 0-2 (BRA behind), then later, when THA 3 - BRA 2 (BRA is behind 2-3), so that's two times behind. Then, does BRA score a goal after that? The question is about their first goal. Wait, no: the first goal for BRA would be the first time they score, which is when they go from 0 to 1. But the video shows the score as BRA 2 at some point, so their first goal is before the second. But the question is whether they score their first goal after falling behind twice.\n\nWait, maybe I misread. Let's check the score changes step by step as per the frames:\n\n- Frame 1: THA 2, BRA 0 (BRA behind 0-2)\n- Frame 5: THA 3, BRA 2 (BRA is 2, so they have two goals. So between frame 1 and 5, BRA scored two goals. So their first goal was when the score became THA 2 - BRA 1 (or maybe THA 3 - BRA 1, but the frame 5 shows THA 3 - BRA 2, so they scored two goals to get to 2. So the first goal for BRA was before the second. So the first time BRA scores, the score is THA 2 - BRA 1 (BRA is still behind 1-2), then THA 3 - BRA 2 (BRA is behind 2-3). So that's two times falling behind (1-2 and 2-3), but the first goal was when they were 1-2 (still behind), so the first goal was when they were behind, not after falling behind twice.\n\nWait, the question is: \"Does the player with the yellow shirt and green pants score their first goal after falling behind twice?\"\n\nFalling behind twice: meaning the team was behind two times, then they score. But the first goal is the first time they score, so the first goal would be when they are still behind (since they start at 0-2, then score to 1-2, so still behind). So the first goal is when they are behind (1-2), which is the first time they are behind, not after two times.\n\nLet's check the frames for when BRA scores. The first time BRA scores would be when the score goes from 0 to 1. Let's see if there's a frame where BRA is 1. The frames show:\n\n- Frame 1: THA 2, BRA 0\n- Frame 5: TH",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Does the player with red shirt score first goal after being behind twice?",
+      "gt": "No",
+      "pred": "So, let's check the score progression. First, the score starts at THA 2 - BRA 0. Then, in some frames, the score changes. Let's look at the score updates.\n\nIn the video, the score for THA goes from 2 to 3, then 4, 5, 6, 8, 10, 11, 12. BRA goes from 0 to 2, then 3, 4, 5, 6. Wait, the question is: does the red shirt (THA) score first after being behind twice?\n\nWait, let's check the sequence. The initial score: THA 2, BRA 0. Then, in one frame, the score is THA 2, BRA 0. Then, when does BRA get points? Let's see. There's a frame where the score is THA 3, BRA 2. Then THA 4, BRA 2. Then THA 5, BRA 3. Then THA 6, BRA 4. Then THA 8, BRA 4. Then THA 10, BRA 5. Then THA 11, BRA 6. Then THA 12, BRA 6.\n\nWait, the question is: \"score first goal after being behind twice\". So when was THA behind? Let's check the scores. The first part: THA 2, BRA 0. Then, in a later frame, the score is THA 3, BRA 2 (so THA is leading 3-2). Then THA 4, BRA 2. Then, is there a time when THA was behind? Let's check the score progression.\n\nLooking at the score board in the frames:\n\n- Frame 1: THA 2, BRA 0\n\n- Then, in a later frame (maybe when BRA scores), the score is THA 2, BRA 0 → then maybe BRA scores to make it 2-1, then 2-2, but let's check.\n\nWait, in frame 5 (the one with the yellow shirt player and ball), the score is THA 3, BRA 2. So before that, the score was THA 2, BRA 0. Then how did BRA get to 2? Let's see. There's a frame where the score is THA 2, BRA 0, then later THA 3, BRA 2. So BRA scored two points to get to 2, but THA scored one to get to 3. So THA was leading 2-0, then BRA scored two to make it 2-2, then THA scores to 3-2. So in that case, THA was behind (2-2, then 2-3? No, 3-2 is THA leading. Wait, the question is \"being behind twice\".\n\nWait, maybe the sequence is: THA 2, BRA 0. Then BRA scores to 2-1, then 2-2 (so THA is behind 2-2? No, 2-2 is tied). Then THA scores 3-2. But the question says \"being behind twice\". Let's check the score when the red team (THA) scores.\n\nWait, the key is: the red team (THA) scores a goal after being behind twice. Let's track when THA is behind.\n\nLooking at the score progression in the frames:\n\n1. Initial: THA 2, BRA 0 (THA leading)\n\n2. Then, in a frame (maybe when BRA scores), the score is THA 2, BRA 0 → then BRA scores, so 2-1, then 2-2. So THA was behind? No, 2-2 is tied. Then THA scores to 3-2 (so THA is leading again).\n\nWait, another part: in frame 6 (the one with two red players celebrating), the score is THA 3, BRA 2. Then frame 7: THA 4, BRA 2. So THA is leading.\n\nWait, maybe the first time THA is behind: let's check the frame where the score is THA 3, BRA 2. How did we get there? Maybe before that, BRA had 2, THA had 2. So THA was behind 2-3? No, 3-2 is THA leading.\n\nWait, the question is a bit confusing. Let's check the score updates from the video:\n\n- The score starts at THA 2, BRA 0 (first frame)\n\n- Then, in a frame, the score is THA 3, BRA 2 (frame 5)\n\n- Then THA 4, BRA 2 (frame",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a player wearing a red shirt in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there are players wearing red shirts in the video. For example, in the first frame (0:00), two players in red shirts are visible on the right side of the table.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player with the red shirt score a first goal?",
+      "gt": "Yes",
+      "pred": "Yes, the player with the red shirt (THA) scores a first goal. The scoreboard in the initial frames (e.g., frame 1) shows \"KUKEHAW/DEJAROEN THA 2\" and \"FERRAZ/MEDEIROS BRA 0\", indicating the red team (THA) already has 2 points, meaning they scored at least two goals (including the first goal) before the video sequence shown.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the player with the red shirt ever behind twice during the game?",
+      "gt": "No",
+      "pred": "So, let's check the score changes. The score for THA (red shirts) and BRA (yellow) is shown in the bottom left. Let's see the scores:\n\n- At some point, THA is 2, BRA 0. Then THA 3, BRA 2. Then THA 4, BRA 2. Then THA 5, BRA 3. Then THA 6, BRA 4. Then THA 8, BRA 4. Then THA 10, BRA 5. Then THA 11, BRA 6. Then THA 12, BRA 6.\n\nWait, the question is if the red shirt team (THA) was ever behind twice. Wait, no: the red shirt is THA, and we need to see if THA was behind (BRA had a higher score) at two different times.\n\nLooking at the score progression:\n\n- Initially, THA 2, BRA 0 → THA leading.\n\n- Then THA 3, BRA 2 → THA leading.\n\n- THA 4, BRA 2 → leading.\n\n- THA 5, BRA 3 → leading.\n\n- THA 6, BRA 4 → leading.\n\n- THA 8, BRA 4 → leading.\n\n- THA 10, BRA 5 → leading.\n\n- THA 11, BRA 6 → leading.\n\n- THA 12, BRA 6 → leading.\n\nWait, but maybe earlier? Let's check the first few frames. The first frame shows THA 2, BRA 0. Then in the next frames, when does BRA take the lead?\n\nWait, no, maybe I misread. Let's check the score in frame 5: THA 3, BRA 2. Frame 6: THA 3, BRA 2. Frame 7: THA 4, BRA 2. Frame 8: THA 5, BRA 3. Frame 9: THA 5, BRA 3. Frame 10: THA 6, BRA 4. Etc. So THA is always leading. But the question is \"was the player with the red shirt ever behind twice\". Wait, maybe the red shirt is THA, and we need to check if THA was behind (BRA had more points) at two times.\n\nWait, maybe I made a mistake. Let's check the score in the frames:\n\n- First frame (00:00): THA 2, BRA 0 → THA leading.\n\n- Frame 2: THA 2, BRA 0 (same as first, but maybe not).\n\n- Frame 3: no score, but the next frame with score is frame 5: THA 3, BRA 2.\n\n- Frame 6: THA 3, BRA 2.\n\n- Frame 7: THA 4, BRA 2.\n\n- Frame 8: THA 5, BRA 3.\n\n- Frame 9: THA 5, BRA 3.\n\n- Frame 10: THA 6, BRA 4.\n\n- Frame 11: THA 6, BRA 4.\n\n- Frame 12: THA 8, BRA 4.\n\n- Frame 13: THA 8, BRA 4.\n\n- Frame 14: THA 10, BRA 5.\n\n- Frame 15: THA 10, BRA 5.\n\n- Frame 16: THA 11, BRA 6.\n\n- Frame 17: THA 11, BRA 6.\n\n- Frame 18: THA 12, BRA 6.\n\nWait, but when was THA behind? Maybe not at all. So the answer would be no.\n\nWait, let's check all the score displays:\n\n1. \"KUKEHAW/DEJAROEN THA 2\" and \"FERRAZ/MEDEIROS BRA 0\" → THA leading.\n\n2. \"THA 3, BRA 2\" → THA leading.\n\n3. \"THA 4, BRA 2\" → THA leading.\n\n4. \"THA 5, BRA 3\" → THA leading.\n\n5. \"THA 6, BRA 4\" → THA leading.\n\n6. \"THA 8, BRA 4\" → THA leading.\n\n7. \"THA 10, BRA 5\" → THA leading.\n\n8. \"THA 11, BRA 6\" → THA leading.\n\n9. \"THA 12, BRA 6\" → THA leading.\n\nSo in all the score displays, THA (red shirts) is always leading. Therefore, the red shirt team was never behind, so",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the player with the red shirt score their first goal before any other goal was scored?",
+      "gt": "Yes",
+      "pred": "Yes. The score in the early frames (e.g., the first frame) shows \"THA 2\" and \"BRA 0\", indicating that Thailand (red shirts) had already scored multiple goals before Brazil (yellow/green) scored any. This confirms Thailand scored their first goal before Brazil scored any.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Does the player with yellow shirt and green pants score second goal after scoring their first goal?",
+      "gt": "Yes",
+      "pred": "Yes. The score for the yellow team (BRA) increases from 0 to 2 (e.g., when the scoreboard shows THA 3, BRA 2), indicating they scored two goals. The second goal occurred after the first. This can be observed in the progression of the scoreboard, where BRA’s score moves from 0 to 2 (e.g., timestamps showing the score changing from 2-0 to 3-2).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a player wearing both a yellow shirt and green pants in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there are players wearing yellow shirts and green pants (shorts) in the video. For example, the Brazilian team members (labeled \"BRA\") are seen in yellow shirts and green shorts throughout the video, such as in the first frame and multiple subsequent frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player with the yellow shirt and green pants score a first goal?",
+      "gt": "Yes",
+      "pred": "No. The score in the first frame shows \"KUKEAW/DEJAROEN (THA) 2\" and \"FERRAZ/MEDeiROS (BRA) 0\", indicating Thailand (red team) had already scored 2 points before the sequence shown, so the yellow-shirted (BRA) team did not score the first goal.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the player with the yellow shirt and green pants score a second goal?",
+      "gt": "Yes",
+      "pred": "Yes, the player with the yellow shirt and green pants (BRA team) scores a second goal. This is verified by the score display in the video frames: at one point, the score shows \"FERRAZ/MEDeiROS (BRA) 2\" (e.g., frame 5, where the score is THA 3 - BRA 2), indicating BRA has scored two goals. Thus, a second goal is scored.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does the player with the yellow shirt and green pants score their second goal after already having scored their first goal?",
+      "gt": "Yes",
+      "pred": "Yes. The score progression shows Brazil (BRA) scoring multiple times: for example, when the score updates from THA 2-0 (BRA 0) to THA 3-2 (BRA 2), indicating Brazil scored two goals. The second goal occurs after the first (e.g., when the score transitions from 1-2 to 2-2 or similar, but the key is the score increases from 0 to 2, so the second goal follows the first). This is evident from the on-screen score updates in the video (e.g., frames showing BRA's score rising from 0 to 2).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Does the player with red shirt score third goal after their opponents score their first goal?",
+      "gt": "No",
+      "pred": "So, let's check the score progression. First, the initial score is THA 2, BRA 0 (from the first frame). Then, after some plays, the score becomes THA 3, BRA 2 (in frame 5). Then THA 4, BRA 2 (frame 8), THA 5, BRA 3 (frame 10), etc. Wait, the question is: does the red-shirt player score the third goal after the opponents score their first goal?\n\nFirst, let's track the goals. The first goal by the opponents (BRA) is when the score goes from 0 to 2 for THA, so BRA's first goal would be when their score becomes 1? Wait, no. Let's check the score changes.\n\nLooking at the score:\n\n- Initial: THA 2, BRA 0 (frame 1)\n- Then, frame 5: THA 3, BRA 2. Wait, no, frame 5's score is THA 3, BRA 2. But how did the scores change?\n\nWait, let's list the score changes:\n\n1. First frame: THA 2, BRA 0\n2. Then, frame 5: THA 3, BRA 2 (so BRA scored 2, THA scored 1 more)\n3. Frame 8: THA 4, BRA 2 (THA scores 1)\n4. Frame 10: THA 5, BRA 3 (BRA scores 1)\n5. Frame 15: THA 6, BRA 4 (BRA scores 1)\n6. Frame 19: THA 8, BRA 4 (THA scores 2)\n7. Frame 22: THA 10, BRA 5 (THA scores 2)\n8. Frame 25: THA 11, BRA 6 (THA scores 1)\n9. Frame 27: THA 12, BRA 6 (THA scores 1)\n\nWait, the first goal by the opponents (BRA) would be when their score goes from 0 to 1. Let's see when BRA's score first becomes 1. The score in frame 5 is THA 3, BRA 2. So before that, maybe the score was THA 2, BRA 1? Let's check the frames.\n\nIn frame 5: the score is THA 3, BRA 2. So the previous score would be THA 2, BRA 1 (BRA's first goal), then THA scores to 3, BRA scores to 2. Wait, no, the score progression is:\n\n- Start: THA 2, BRA 0 (frame 1)\n- Then, in frame 5: THA 3, BRA 2. So how did it get there? The first time BRA scores, their score becomes 1. Then THA scores to 3, then BRA scores to 2. So the first goal by BRA (1) happens before THA scores their 3rd goal (since THA had 2, then 3). Wait, no. Let's check the exact sequence.\n\nThe question is: does the red-shirt player (THA) score the third goal after their opponents (BRA) score their first goal?\n\nFirst, THA's third goal: THA starts with 2, so the third goal is when they go to 3. When does that happen?\n\nIn frame 5, the score is THA 3, BRA 2. So before that, the score was THA 2, BRA 2? No, because in frame 5, BRA is 2. So the sequence:\n\n- Initial: THA 2, BRA 0 (frame 1)\n- Then, BRA scores (BRA 1), then THA scores (THA 3), then BRA scores (BRA 2). So THA's third goal (from 2 to 3) happens after BRA's first goal (0 to 1). So yes, THA scores their third goal after BRA scores their first goal.\n\nWait, but let's confirm the scores. The first frame: THA 2, BRA 0. So THA already has 2 goals before any of the current play. Then, in the subsequent frames, the score changes. So the first goal in the current play (as per the video) is when THA gets to 3, but what about BRA's first goal?\n\nLooking at frame 5: score is THA 3, BRA 2. So the score must have gone from THA 2, BRA 0 → THA 3, BRA 1 → THA 3, BRA 2. So BRA's first goal (1) happens before THA scores their",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the player with the red shirt score a third goal?",
+      "gt": "Yes",
+      "pred": "Yes. The score for THA (red shirts) increases from 2 to 3 (e.g., in frames showing the score as 3-2), indicating a third goal. This is verified by the on-screen score updates.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Do the opponents score a first goal at any point in the video?",
+      "gt": "No",
+      "pred": "Yes, the opponents (BRA) score points. For example, in frames where the score displays \"THA 3 - BRA 2\" (e.g., around the 5th-6th frames of the sequence), BRA has a score of 2, indicating they scored points. This confirms they scored at least once.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Do the opponents score a second goal at any point in the video?",
+      "gt": "Yes",
+      "pred": "So, let's check the video frames for when the opponents (BRA) score. The score for BRA is shown as 0, then 2, 3, 4, 5, 6. Wait, the question is about the opponents (BRA) scoring a second goal. Let's see the score progression.\n\nLooking at the score display:\n\n- Initially, THA 2, BRA 0 (frame 1)\n- Then THA 3, BRA 2 (frame 5)\n- Then THA 4, BRA 2 (frame 8)\n- Then THA 5, BRA 3 (frame 10)\n- Then THA 6, BRA 4 (frame 14)\n- Then THA 8, BRA 4 (frame 18)\n- Then THA 10, BRA 5 (frame 22)\n- Then THA 11, BRA 6 (frame 26)\n- Then THA 12, BRA 6 (frame 28)\n\nSo BRA's scores: 0 → 2 → 3 → 4 → 5 → 6. The first goal for BRA is when the score goes from 0 to 2 (so that's the first goal, making it 2-0 for THA? Wait no, wait the score is THA vs BRA. Let's check the score labels:\n\nThe score display says \"KUKHEAW/DEJAROEN THA\" and \"FERRAZ/MEDeiROS BRA\". So THA is Thailand, BRA is Brazil.\n\nIn frame 1: THA 2, BRA 0 → so Brazil has 0.\n\nIn frame 5: THA 3, BRA 2 → so Brazil scored 2 points here. Wait, how? Let's check the timestamps.\n\nFrame 5 shows a Brazilian player in yellow with the ball (score THA 3, BRA 2). So Brazil has 2 points. Then later, Brazil's score increases to 3, 4, etc.\n\nThe question is: Do the opponents (BRA) score a second goal? Let's see when BRA's score changes. The first time BRA scores is when the score goes from 0 to 2 (so that's two goals in one point? Or maybe the scoring is per point, so each point is a goal). Wait, in the game, each point is a goal. So when the score for BRA goes from 0 to 2, that's two goals. But maybe the question is about scoring a second goal after the first. Let's check the score progression step by step.\n\nLooking at the frames:\n\n- Frame 1: THA 2, BRA 0\n- Frame 5: THA 3, BRA 2 → BRA has 2 points (so they scored two goals here)\n- Frame 8: THA 4, BRA 2 → no change for BRA\n- Frame 10: THA 5, BRA 3 → BRA scored one more goal (3rd)\n- Frame 14: THA 6, BRA 4 → 4th\n- Frame 18: THA 8, BRA 4 → no change\n- Frame 22: THA 10, BRA 5 → 5th\n- Frame 26: THA 11, BRA 6 → 6th\n- Frame 28: THA 12, BRA 6 → no change\n\nSo the first time BRA scores is when the score becomes 2 (from 0), so that's two goals in one point? Or maybe the scoring is that each point is a goal, so the first goal for BRA would be when the score goes from 0 to 1, but in the video, the score jumps from 0 to 2. Wait, maybe the first goal for BRA is when the score is 2-0 (THA 2, BRA 0 → then later THA 3, BRA 2). So the first goal for BRA would be when they get to 1, but the video might not show that. But the question is \"do the opponents score a second goal at any point\".\n\nWait, the score for BRA is 0, then 2, then 3, etc. So the first goal for BRA is when they get to 1 (but not shown), then the second goal is when they get to 2. But in the video, when the score is THA 3, BRA 2 (frame 5), that means BRA has 2 goals. So yes, they scored a second goal. Let's check the frames where the score changes for BRA.\n\nLooking at the score display:\n\n- The score goes from 0 to 2 (so that's two goals, so the second goal is part of that). Then later,",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does the player with the red shirt score their third goal after the opponents score their second goal?",
+      "gt": "Yes",
+      "pred": "To determine if the player with the red shirt (THA) scores their third goal after the opponents (BRA) score their second goal, we analyze the score progression from the video frames:  \n\n1. **Initial score (first frame)**: THA 2, BRA 0.  \n2. **Score at frame 5**: THA 3, BRA 2. This indicates:  \n   - BRA scored 2 goals (from 0 to 2).  \n   - THA scored 1 additional goal (from 2 to 3), making it their *third total goal* (since they started at 2, the third goal is the one that reaches 3).  \n\nThus, THA’s third goal (resulting in 3-2) occurs **after** BRA’s second goal (which brought BRA to 2).  \n\n**Answer**: Yes. The player with the red shirt scores their third goal after the opponents score their second goal (evident in the score progression from THA 2/BRA 0 to THA 3/B",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "target",
+      "question": "Does the player with red shirt score third goal after their opponents score their second goal?",
+      "gt": "Yes",
+      "pred": "To determine if the red-shirted player scores their third goal after the opponents (yellow shirts) score their second goal, we analyze the score progression:  \n\n1. **BRA’s second goal**: The score reaches “THA 3, BRA 2” (evident in frames showing this score). This means BRA has scored their second goal.  \n2. **THA’s third goal**: After BRA reaches 2, the score updates to “THA 4, BRA 2” (subsequent frames confirm this). This is THA’s third goal (since they were at 3 before).  \n\nThus, THA scores their third goal *after* BRA scores their second goal.  \n\n**Answer**: Yes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the player with the red shirt score a third goal?",
+      "gt": "Yes",
+      "pred": "Yes. The score for THA (red shirts) increases from 2 to 3 (e.g., in frames showing the score as 3-2), indicating a third goal. This is verified by the on-screen score updates.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Do the opponents score a second goal at any point in the video?",
+      "gt": "Yes",
+      "pred": "So, let's check the video frames for when the opponents (BRA) score. The score for BRA is shown as 0, then 2, 3, 4, 5, 6. Wait, the question is about the opponents (BRA) scoring a second goal. Let's see the score progression.\n\nLooking at the score display:\n\n- Initially, THA 2, BRA 0 (frame 1)\n- Then THA 3, BRA 2 (frame 5)\n- Then THA 4, BRA 2 (frame 8)\n- Then THA 5, BRA 3 (frame 10)\n- Then THA 6, BRA 4 (frame 14)\n- Then THA 8, BRA 4 (frame 18)\n- Then THA 10, BRA 5 (frame 22)\n- Then THA 11, BRA 6 (frame 26)\n- Then THA 12, BRA 6 (frame 28)\n\nSo BRA's scores: 0 → 2 → 3 → 4 → 5 → 6. The first goal for BRA is when the score goes from 0 to 2 (so that's the first goal, making it 2-0 for THA? Wait no, wait the score is THA vs BRA. Let's check the score labels:\n\nThe score display says \"KUKHEAW/DEJAROEN THA\" and \"FERRAZ/MEDeiROS BRA\". So THA is Thailand, BRA is Brazil.\n\nIn frame 1: THA 2, BRA 0 → so Brazil has 0.\n\nIn frame 5: THA 3, BRA 2 → so Brazil scored 2 points here. Wait, how? Let's check the timestamps.\n\nFrame 5 shows a Brazilian player in yellow with the ball (score THA 3, BRA 2). So Brazil has 2 points. Then later, Brazil's score increases to 3, 4, etc.\n\nThe question is: Do the opponents (BRA) score a second goal? Let's see when BRA's score changes. The first time BRA scores is when the score goes from 0 to 2 (so that's two goals in one point? Or maybe the scoring is per point, so each point is a goal). Wait, in the game, each point is a goal. So when the score for BRA goes from 0 to 2, that's two goals. But maybe the question is about scoring a second goal after the first. Let's check the score progression step by step.\n\nLooking at the frames:\n\n- Frame 1: THA 2, BRA 0\n- Frame 5: THA 3, BRA 2 → BRA has 2 points (so they scored two goals here)\n- Frame 8: THA 4, BRA 2 → no change for BRA\n- Frame 10: THA 5, BRA 3 → BRA scored one more goal (3rd)\n- Frame 14: THA 6, BRA 4 → 4th\n- Frame 18: THA 8, BRA 4 → no change\n- Frame 22: THA 10, BRA 5 → 5th\n- Frame 26: THA 11, BRA 6 → 6th\n- Frame 28: THA 12, BRA 6 → no change\n\nSo the first time BRA scores is when the score becomes 2 (from 0), so that's two goals in one point? Or maybe the scoring is that each point is a goal, so the first goal for BRA would be when the score goes from 0 to 1, but in the video, the score jumps from 0 to 2. Wait, maybe the first goal for BRA is when the score is 2-0 (THA 2, BRA 0 → then later THA 3, BRA 2). So the first goal for BRA would be when they get to 1, but the video might not show that. But the question is \"do the opponents score a second goal at any point\".\n\nWait, the score for BRA is 0, then 2, then 3, etc. So the first goal for BRA is when they get to 1 (but not shown), then the second goal is when they get to 2. But in the video, when the score is THA 3, BRA 2 (frame 5), that means BRA has 2 goals. So yes, they scored a second goal. Let's check the frames where the score changes for BRA.\n\nLooking at the score display:\n\n- The score goes from 0 to 2 (so that's two goals, so the second goal is part of that). Then later,",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the player with the red shirt score their third goal before the opponents score their second goal?",
+      "gt": "No",
+      "pred": "So, let's check the score progression. First, we need to track when the red team (THA) scores their third goal and when the yellow team (BRA) scores their second goal.\n\nLooking at the score overlays:\n\n- Initial score: THA 2, BRA 0 (first frame)\n- Then, later: THA 3, BRA 2 (some frames)\n- Wait, let's find the exact timing.\n\nFirst, when does THA get to 3? Let's see the score changes.\n\nIn the frame where the score is THA 3, BRA 2 (one of the images), that's when THA has 3. Now, when does BRA get their second goal? The score shows BRA 2 at some point. But we need to see if THA's 3 comes before BRA's 2.\n\nWait, the score progression:\n\n- THA starts at 2, then 3, then 4, 5, 6, 8, 10, 11, 12.\n\nBRA starts at 0, then 2, 3, 4, 5, 6.\n\nSo when THA scores their 3rd goal (from 2 to 3), what is BRA's score? Let's check the frame where score is THA 3, BRA 2. So BRA's score is 2 at that time. But does BRA get their second goal after THA gets to 3?\n\nWait, the question is: does THA score their 3rd goal before BRA scores their 2nd goal?\n\nBRA's second goal would be when BRA goes from 1 to 2. But in the video, when does BRA get their first and second goals?\n\nLooking at the score:\n\n- The first score: THA 2, BRA 0 (so THA has 2, BRA 0)\n- Then, later, score shows THA 3, BRA 2. So at some point, BRA scores their first and second goals. But when THA scores their 3rd, what is BRA's score?\n\nWait, the frame with score THA 3, BRA 2: that means THA has 3, BRA has 2. So THA's 3rd goal (since they were at 2, then 3) happens when BRA is at 2. So BRA's 2nd goal (from 1 to 2) must have happened after THA's 3rd goal? Or before?\n\nWait, let's think step by step.\n\nSuppose the score changes are:\n\n1. THA 1, BRA 0 (but not shown in frames)\n2. THA 2, BRA 0 (first frame)\n3. Then THA 3, BRA 0 (maybe, but not sure)\n4. Then BRA 1, THA 3 (BRA first goal)\n5. Then BRA 2, THA 3 (BRA second goal)\n\nBut the frame where THA 3, BRA 2 is shown (one of the images). So THA's 3rd goal (to get to 3) must have been scored when BRA was still at 0 or 1. But the question is: does THA's 3rd goal come before BRA's 2nd goal?\n\nBRA's 2nd goal is when they go from 1 to 2. So if THA's 3rd goal (THA 3) happens before BRA reaches 2, then yes.\n\nIn the frame where score is THA 3, BRA 2, that means BRA has already scored 2. So THA's 3rd goal was scored before or after BRA's 2nd goal?\n\nWait, the sequence of score changes:\n\n- Let's look at the frames with score:\n\n  - Frame 1: THA 2, BRA 0\n  - Frame 5: THA 3, BRA 2 (so between these, THA scored 1 point, BRA scored 2 points)\n  - So THA went from 2 to 3 (1 point), BRA went from 0 to 2 (2 points). So BRA's 2nd goal (the second point) was scored after THA's 3rd goal? Or before?\n\nWait, the order of events: when the score is THA 2, BRA 0, then THA scores (THA 3, BRA 0), then BRA scores (THA 3, BRA 1), then BRA scores again (THA 3, BRA 2). So THA's 3rd goal (to 3) is before BRA's 2nd goal (to 2). Because when THA is at 3, BRA is still at 0 or 1, then BRA scores to 2.\n\nYes. So the answer is yes.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does the player with the red shirt score their third goal after the opponents score their second goal?",
+      "gt": "Yes",
+      "pred": "To determine if the player with the red shirt (THA) scores their third goal after the opponents (BRA) score their second goal, we analyze the score progression from the video frames:  \n\n1. **Initial score (first frame)**: THA 2, BRA 0.  \n2. **Score at frame 5**: THA 3, BRA 2. This indicates:  \n   - BRA scored 2 goals (from 0 to 2).  \n   - THA scored 1 additional goal (from 2 to 3), making it their *third total goal* (since they started at 2, the third goal is the one that reaches 3).  \n\nThus, THA’s third goal (resulting in 3-2) occurs **after** BRA’s second goal (which brought BRA to 2).  \n\n**Answer**: Yes. The player with the red shirt scores their third goal after the opponents score their second goal (evident in the score progression from THA 2/BRA 0 to THA 3/B",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "target",
+      "question": "Does the player with yellow shirt and green pants score third goal after scoring their second goal?",
+      "gt": "No",
+      "pred": "To determine if the yellow-shirted team (BRA) scores a third goal after their second, we analyze the score progression in the video:  \n\n1. **Initial score**: Frame 1 shows *THA 2 - BRA 0*.  \n2. **BRA’s second goal**: Frame 5 shows *THA 3 - BRA 2* (BRA’s score increases from 1 to 2, indicating their second goal).  \n3. **BRA’s third goal**: Frame 10 shows *THA 5 - BRA 3* (BRA’s score increases from 2 to 3, indicating their third goal).  \n\nSince the score for BRA goes from 2 to 3 (after their second goal), the yellow-shirted team scores a third goal.  \n\n**Answer**: Yes.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a player wearing both a yellow shirt and green pants in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there are players wearing yellow shirts and green pants (shorts) in the video. For example, the Brazilian team members (labeled \"BRA\") are seen in yellow shirts and green shorts throughout the video, such as in the first frame and multiple subsequent frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player with the yellow shirt and green pants score a second goal?",
+      "gt": "Yes",
+      "pred": "Yes, the player with the yellow shirt and green pants (BRA team) scores a second goal. This is verified by the score display in the video frames: at one point, the score shows \"FERRAZ/MEDeiROS (BRA) 2\" (e.g., frame 5, where the score is THA 3 - BRA 2), indicating BRA has scored two goals. Thus, a second goal is scored.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the player with the yellow shirt and green pants score a third goal?",
+      "gt": "No",
+      "pred": "Yes, the player with the yellow shirt and green pants scores a third goal. This is verified by the score progression: the Brazilian team (BRA)’s score increases to 3 (e.g., in the frame showing “KUKHEAW/DEJAROEN THA 3” and “FERRAZ/MEDEIROS BRA 2” later transitions to “BRA 3” as seen in frames where the score updates, confirming a third point for the yellow team).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does the player with the yellow shirt and green pants score more than two goals in total?",
+      "gt": "No",
+      "pred": "Yes. The score for the team in yellow shirts (BRA) reaches 6 (evident in the frame showing \"FERRAZ/MEDeiROS BRA 6\" and the final score \"THA 12, BRA 6\"). Since 6 > 2, the player(s) in yellow shirts and green pants scored more than two goals.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 10,
+      "kind": "target",
+      "question": "Does the player with red shirt score fourth goal after scoring their third goal?",
+      "gt": "Yes",
+      "pred": "Yes. The score for the red-shirted team (THA) progresses from 3 to 4 (e.g., in the frame where the score is \"KUKEAW/DEJAROEN THA 4\" and \"FERRAZ/MEDEIROS BRA 2\", which follows the frame where the score was \"THA 3\"). This confirms the fourth goal occurs after the third. (Timestamps: the third goal is associated with the score update to THA 3, and the fourth with THA 4, as seen in the on-screen score displays.)",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does a player wear a red shirt?",
+      "gt": "Yes",
+      "pred": "Yes, multiple players in the video are wearing red shirts (e.g., visible in the first frame and throughout the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player with the red shirt score a third goal?",
+      "gt": "Yes",
+      "pred": "Yes. The score for THA (red shirts) increases from 2 to 3 (e.g., in frames showing the score as 3-2), indicating a third goal. This is verified by the on-screen score updates.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the player with the red shirt score a fourth goal?",
+      "gt": "Yes",
+      "pred": "Yes. The score display shows \"KUKHEAW/DEJAROEN THA 4\" and \"FERRAZ/MEDeiROS BRA 2\" in a frame (e.g., around the 8th image in the sequence), indicating Thailand (red shirts) scored a fourth goal.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does the player with the red shirt score the fourth goal after scoring the third goal?",
+      "gt": "Yes",
+      "pred": "Yes, the player with the red shirt scores the fourth goal after scoring the third goal. This is evident from the score progression: the score for THA (red team) increases from 3 to 4 (e.g., frames showing THA 3/BRA 2 to THA 4/BRA 2).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "target",
+      "question": "Does the player with yellow shirt and green pants score third goal after their opponents score their third goal?",
+      "gt": "No",
+      "pred": "To determine if the yellow/green team (BRA) scores their third goal after the red team (THA) scores their third goal, we analyze the score progression from the video frames:  \n\n1. **THA’s third goal**: The score shows “THA 3, BRA 2” (e.g., frame 6). This indicates THA scored their third point (from 2 to 3).  \n2. **BRA’s third goal**: The score later shows “THA 5, BRA 3” (e.g., frame 10). This means BRA scored their third point (from 2 to 3) *after* THA had already reached 3 points.  \n\nThus, the yellow/green team scores their third goal after the red team scores their third goal.  \n\n**Answer**: Yes.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does a player wear a yellow shirt and green pants?",
+      "gt": "Yes",
+      "pred": "Yes. Players from the BRA team (e.g., in the first frame and multiple subsequent frames) are wearing yellow shirts and green shorts/pants.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player with the yellow shirt and green pants score a third goal?",
+      "gt": "No",
+      "pred": "Yes, the player with the yellow shirt and green pants scores a third goal. This is verified by the score progression: the Brazilian team (BRA)’s score increases to 3 (e.g., in the frame showing “KUKHEAW/DEJAROEN THA 3” and “FERRAZ/MEDEIROS BRA 2” later transitions to “BRA 3” as seen in frames where the score updates, confirming a third point for the yellow team).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the player with the red shirt score a third goal?",
+      "gt": "Yes",
+      "pred": "Yes. The score for THA (red shirts) increases from 2 to 3 (e.g., in frames showing the score as 3-2), indicating a third goal. This is verified by the on-screen score updates.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does the player with the yellow shirt and green pants score only two goals in total?",
+      "gt": "Yes",
+      "pred": "No. The score for the team in yellow shirts (BRA) increases from 0 to 6 (as seen in the final score display: \"FERRAZ/MEDEIROS BRA 6\" at the end). Thus, the yellow-shirted players scored more than two goals.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    }
+  ]
+}

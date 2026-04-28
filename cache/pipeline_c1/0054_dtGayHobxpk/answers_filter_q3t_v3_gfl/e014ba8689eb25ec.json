@@ -1,0 +1,488 @@
+{
+  "question": "Were exactly four balls potted between the yellow ball and the black ball?",
+  "pred": "To determine how many balls were potted between the yellow ball and the black ball, we track the sequence of shots and scoreboard updates for the RIGHT player (O'Sullivan) starting from the yellow ball:\n\n1.  **Yellow ball**: At 08:03, the cue ball hits the yellow ball (Event 198). The scoreboard updates to 122 (Frame at 08:10).\n2.  **Green ball**: O'Sullivan pots the green ball. The scoreboard updates to 125 (Frame at 08:14).\n3.  **Brown ball**: O'Sullivan pots the brown ball. The scoreboard updates to 129 (not explicitly in Context, but visible in frames).\n4.  **Blue ball**: At 08:25, the blue ball is pocketed (Event 206). The scoreboard updates to 134 (visible in frames).\n5.  **Pink ball**: O'Sullivan pots the pink ball. The scoreboard updates to 140 (visible in frames).\n6.  **Black ball**: O'Sullivan pots the final black ball. The scoreboard updates to 147 (visible in frames).\n\nThe balls potted between the yellow (122) and the black (147) were the green, brown, blue, and pink balls. This is a total of four balls.\n\nEvidence: Frames between 08:03 and 08:30 show O'Sullivan potting the green, brown, blue, and pink balls in sequence after hitting the yellow ball and before potting the final black ball.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "pocket",
+      "description": "black ball is pocketed in the bottom cushion pocket after being struck",
+      "participants": [
+        "black-shirt player"
+      ],
+      "actor": "black ball",
+      "object": "black ball",
+      "outcome": "pocketed",
+      "segment_boundary": "middle",
+      "event_index": 139,
+      "start_time": "05:49",
+      "end_time": "05:50",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "walk",
+      "description": "referee in black suit with white gloves walks from the side toward the table",
+      "participants": [
+        "referee"
+      ],
+      "actor": "referee",
+      "segment_boundary": "middle",
+      "event_index": 140,
+      "start_time": "05:50",
+      "end_time": "05:53",
+      "sub_events": [],
+      "subtype_order": 25,
+      "subtype_total": 33,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "scoreboard updates O'Sullivan's score from 65 to 72 and break score from 65 to 72",
+      "participants": [],
+      "actor": "scoreboard",
+      "on_screen_text": [
+        {
+          "text": "DING 0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "O'SULLIVAN 72",
+          "location": "scoreboard"
+        },
+        {
+          "text": "Break 72",
+          "location": "scoreboard"
+        },
+        {
+          "text": "3 (17) 8",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "event_index": 141,
+      "start_time": "05:52",
+      "end_time": "05:54",
+      "sub_events": [],
+      "subtype_order": 12,
+      "subtype_total": 21,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "game",
+      "description": "Player O'Sullivan takes a shot with the cue stick, striking the white ball toward the black ball",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "white ball, black ball, red balls",
+      "outcome": "hit",
+      "on_screen_text": [
+        {
+          "text": "DING 0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "3 (17) 8",
+          "location": "scoreboard"
+        },
+        {
+          "text": "97",
+          "location": "scoreboard"
+        },
+        {
+          "text": "Break 97",
+          "location": "scoreboard"
+        },
+        {
+          "text": "O'SULLIVAN",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 172,
+      "start_time": "07:00",
+      "end_time": "07:03",
+      "sub_events": [],
+      "subtype_order": 40,
+      "subtype_total": 54,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "applaud",
+      "description": "Audience members raise their hands and clap",
+      "participants": [
+        "audience members"
+      ],
+      "actor": "audience members",
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 173,
+      "start_time": "07:03",
+      "end_time": "07:06",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "Scoreboard updates from Break 97 to Break 104 for O'Sullivan",
+      "participants": [],
+      "actor": "scoreboard",
+      "object_before": "yellow scoreboard showing 97",
+      "object_after": "yellow scoreboard showing 104",
+      "on_screen_text": [
+        {
+          "text": "DING 0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "3 (17) 8",
+          "location": "scoreboard"
+        },
+        {
+          "text": "97",
+          "location": "scoreboard"
+        },
+        {
+          "text": "Break 97",
+          "location": "scoreboard"
+        },
+        {
+          "text": "O'SULLIVAN",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 174,
+      "start_time": "07:06",
+      "end_time": "07:09",
+      "sub_events": [],
+      "subtype_order": 17,
+      "subtype_total": 21,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "game",
+      "description": "Player O'Sullivan walks around the table and positions himself for the next shot",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "cue stick",
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 175,
+      "start_time": "07:09",
+      "end_time": "07:12",
+      "sub_events": [],
+      "subtype_order": 41,
+      "subtype_total": 54,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "game",
+      "description": "Player takes a shot with the cue stick, striking the white ball toward a red ball",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "white ball, red ball, black ball",
+      "outcome": "hit",
+      "on_screen_text": [
+        {
+          "text": "DING 0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "3 (17) 8",
+          "location": "scoreboard"
+        },
+        {
+          "text": "104",
+          "location": "scoreboard"
+        },
+        {
+          "text": "Break 104",
+          "location": "scoreboard"
+        },
+        {
+          "text": "O'SULLIVAN",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 176,
+      "start_time": "07:12",
+      "end_time": "07:15",
+      "sub_events": [],
+      "subtype_order": 42,
+      "subtype_total": 54,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "prepare_shot",
+      "description": "O'Sullivan stands by the snooker table holding his cue stick, preparing for a shot",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "cue stick",
+      "on_screen_text": [
+        {
+          "text": "DING 0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "O'SULLIVAN 104",
+          "location": "scoreboard"
+        },
+        {
+          "text": "Break 104",
+          "location": "scoreboard"
+        },
+        {
+          "text": "13",
+          "location": "scoreboard"
+        },
+        {
+          "text": "3 (17) 8",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 177,
+      "start_time": "07:15",
+      "end_time": "07:17",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 11,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "bend_over_table",
+      "description": "O'Sullivan bends over the snooker table to line up his shot",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "cue stick",
+      "on_screen_text": [
+        {
+          "text": "DING 0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "O'SULLIVAN 104",
+          "location": "scoreboard"
+        },
+        {
+          "text": "Break 104",
+          "location": "scoreboard"
+        },
+        {
+          "text": "13",
+          "location": "scoreboard"
+        },
+        {
+          "text": "3 (17) 8",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 178,
+      "start_time": "07:17",
+      "end_time": "07:19",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "execute_shot",
+      "description": "O'Sullivan executes the shot, the white cue ball moves toward the target balls",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "white cue ball",
+      "on_screen_text": [
+        {
+          "text": "DING 0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "O'SULLIVAN 105",
+          "location": "scoreboard"
+        },
+        {
+          "text": "Break 105",
+          "location": "scoreboard"
+        },
+        {
+          "text": "14",
+          "location": "scoreboard"
+        },
+        {
+          "text": "3 (17) 8",
+          "location": "scoreboard"
+        }
+      ],
+      "outcome": "hit",
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 179,
+      "start_time": "07:19",
+      "end_time": "07:21",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "shot",
+      "description": "O'Sullivan strikes the cue ball with the cue stick",
+      "participants": [
+        "black-suit man",
+        "referee"
+      ],
+      "actor": "black-suit man",
+      "object": "cue ball",
+      "outcome": "hit",
+      "on_screen_text": [
+        {
+          "text": "DING 0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "O'SULLIVAN 120",
+          "location": "scoreboard"
+        },
+        {
+          "text": "Break 120",
+          "location": "scoreboard"
+        },
+        {
+          "text": "3 (17) 8",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 197,
+      "start_time": "08:02",
+      "end_time": "08:04",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "ball_movement",
+      "description": "Cue ball moves across the table and hits the yellow ball",
+      "participants": [
+        "black-suit man",
+        "referee"
+      ],
+      "actor": "cue ball",
+      "object": "cue ball",
+      "outcome": "contact",
+      "on_screen_text": [
+        {
+          "text": "DING 0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "O'SULLIVAN 120",
+          "location": "scoreboard"
+        },
+        {
+          "text": "Break 120",
+          "location": "scoreboard"
+        },
+        {
+          "text": "3 (17) 8",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 198,
+      "start_time": "08:03",
+      "end_time": "08:05",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "game",
+      "description": "Cue ball collides with the blue ball on the table",
+      "participants": [],
+      "actor": "",
+      "object": "blue ball",
+      "outcome": "hit",
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "complete",
+      "event_index": 205,
+      "start_time": "08:24",
+      "end_time": "08:25",
+      "sub_events": [],
+      "subtype_order": 46,
+      "subtype_total": 54,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "game",
+      "description": "Blue ball moves toward and enters the corner pocket",
+      "participants": [],
+      "actor": "",
+      "object": "blue ball",
+      "outcome": "scored",
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "complete",
+      "event_index": 206,
+      "start_time": "08:25",
+      "end_time": "08:27",
+      "sub_events": [],
+      "subtype_order": 47,
+      "subtype_total": 54,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    }
+  ]
+}

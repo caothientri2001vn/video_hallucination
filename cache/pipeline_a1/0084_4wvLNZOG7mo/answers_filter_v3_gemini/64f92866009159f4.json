@@ -1,0 +1,415 @@
+{
+  "question": "Are the strawberries put in the blender first?",
+  "pred": "The video shows the preparation of a strawberry and banana smoothie. According to the event timeline and the visual evidence in the frames, the ingredients are added to the blender cup in a specific order. The strawberries are the first ingredient placed into the empty blender cup, followed by banana slices, walnuts, yogurt, honey, and finally milk.\n\n1. **Strawberries**: Added at 00:05 (Event 4).\n2. **Banana slices**: Added at 00:11 (Event 10).\n3. **Walnuts**: Added at 00:12 (Event 11).\n4. **Yogurt**: Added at 00:13 (Event 12).\n5. **Honey**: Added at 00:14 (Event 13).\n6. **Milk**: Added at 00:14 (Event 14).\n\nEvidence: Event 4 states \"The black-gloved person drops several frozen red strawberries into a clear blender cup\" at 00:05, which is the first ingredient-addition event.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "place": 12,
+      "lift": 2,
+      "cut": 2,
+      "peel": 1,
+      "blend": 1,
+      "pour": 1
+    },
+    "events": [
+      {
+        "event_type": "place",
+        "description": "The black-gloved person places a clear plastic container of strawberries onto the wooden cutting board.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "clear plastic container of strawberries",
+        "segment_boundary": "start",
+        "segment_label": "Strawberry and Banana Smoothie Preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:01",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Strawberry and Banana Smoothie Preparation"
+      },
+      {
+        "event_type": "lift",
+        "description": "The black-gloved person uses metal tongs to lift a single red strawberry from the plastic container.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "red strawberry",
+        "segment_boundary": "middle",
+        "segment_label": "Strawberry and Banana Smoothie Preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 2,
+        "start_time": "00:01",
+        "end_time": "00:03",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Strawberry and Banana Smoothie Preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "The black-gloved person dips the red strawberry into a glass bowl of ice water using the metal tongs.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "red strawberry",
+        "segment_boundary": "middle",
+        "segment_label": "Strawberry and Banana Smoothie Preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 3,
+        "start_time": "00:03",
+        "end_time": "00:05",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Strawberry and Banana Smoothie Preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "The black-gloved person drops several frozen red strawberries into a clear blender cup.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "frozen red strawberries",
+        "segment_boundary": "middle",
+        "segment_label": "Strawberry and Banana Smoothie Preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 4,
+        "start_time": "00:05",
+        "end_time": "00:06",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Strawberry and Banana Smoothie Preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "The black-gloved person places a yellow banana on the wooden cutting board.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "yellow banana",
+        "segment_boundary": "middle",
+        "segment_label": "Strawberry and Banana Smoothie Preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 5,
+        "start_time": "00:06",
+        "end_time": "00:07",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Strawberry and Banana Smoothie Preparation"
+      },
+      {
+        "event_type": "cut",
+        "description": "The black-gloved person cuts the end off the yellow banana with a large kitchen knife.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "yellow banana",
+        "segment_boundary": "middle",
+        "segment_label": "Strawberry and Banana Smoothie Preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 6,
+        "start_time": "00:07",
+        "end_time": "00:08",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Strawberry and Banana Smoothie Preparation"
+      },
+      {
+        "event_type": "peel",
+        "description": "The black-gloved person peels the yellow banana skin back to reveal the white fruit.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "yellow banana",
+        "segment_boundary": "middle",
+        "segment_label": "Strawberry and Banana Smoothie Preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 7,
+        "start_time": "00:08",
+        "end_time": "00:09",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Strawberry and Banana Smoothie Preparation"
+      },
+      {
+        "event_type": "cut",
+        "description": "The black-gloved person slices the peeled white banana into rounds on the cutting board.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "white banana",
+        "segment_boundary": "middle",
+        "segment_label": "Strawberry and Banana Smoothie Preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 8,
+        "start_time": "00:09",
+        "end_time": "00:10",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Strawberry and Banana Smoothie Preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "The black-gloved person dips a white banana slice into the glass bowl of ice water using metal tongs.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "white banana slice",
+        "segment_boundary": "middle",
+        "segment_label": "Strawberry and Banana Smoothie Preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 9,
+        "start_time": "00:10",
+        "end_time": "00:11",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Strawberry and Banana Smoothie Preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "The black-gloved person drops several frozen white banana slices into the blender cup on top of the strawberries.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "frozen white banana slices",
+        "segment_boundary": "middle",
+        "segment_label": "Strawberry and Banana Smoothie Preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 10,
+        "start_time": "00:11",
+        "end_time": "00:12",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Strawberry and Banana Smoothie Preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "The black-gloved person uses a black scoop to add brown walnuts into the blender cup.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "brown walnuts",
+        "segment_boundary": "middle",
+        "segment_label": "Strawberry and Banana Smoothie Preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 11,
+        "start_time": "00:12",
+        "end_time": "00:13",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Strawberry and Banana Smoothie Preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "The black-gloved person uses a wooden spoon to add a large dollop of white yogurt into the blender cup.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "white yogurt",
+        "segment_boundary": "middle",
+        "segment_label": "Strawberry and Banana Smoothie Preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 12,
+        "start_time": "00:13",
+        "end_time": "00:14",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Strawberry and Banana Smoothie Preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "The black-gloved person pours gold honey from a bottle over the ingredients in the blender cup.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "gold honey",
+        "segment_boundary": "middle",
+        "segment_label": "Strawberry and Banana Smoothie Preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 13,
+        "start_time": "00:14",
+        "end_time": "00:14",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Strawberry and Banana Smoothie Preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "The black-gloved person pours white milk from a clear carton into the blender cup.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "white milk",
+        "segment_boundary": "middle",
+        "segment_label": "Strawberry and Banana Smoothie Preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 14,
+        "start_time": "00:14",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Strawberry and Banana Smoothie Preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "The black-gloved person places the black blender base onto the filled blender cup and flips it over.",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "black blender base",
+        "segment_boundary": "end",
+        "segment_label": "Strawberry and Banana Smoothie Preparation",
+        "continuation_hint": "complete",
+        "event_index": 15,
+        "start_time": "00:15",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Strawberry and Banana Smoothie Preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "the black-gloved person places the blender cup onto the blender base",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "blender cup",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "making a strawberry smoothie",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 16,
+        "start_time": "00:15",
+        "end_time": "00:16",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Strawberry and Banana Smoothie Preparation"
+      },
+      {
+        "event_type": "blend",
+        "description": "the blender cup contents transform from whole strawberries and milk into a smooth pink liquid",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object_before": "white and red blender cup",
+        "object_after": "pink blender cup",
+        "object_before_pattern": "whole strawberries in milk",
+        "object_after_pattern": "smooth liquid",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "making a strawberry smoothie",
+        "continuation_hint": "complete",
+        "event_index": 17,
+        "start_time": "00:16",
+        "end_time": "00:17",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Strawberry and Banana Smoothie Preparation"
+      },
+      {
+        "event_type": "lift",
+        "description": "the black-gloved person lifts the pink blender cup off the blender base",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "pink blender cup",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "making a strawberry smoothie",
+        "continuation_hint": "complete",
+        "event_index": 18,
+        "start_time": "00:17",
+        "end_time": "00:18",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Strawberry and Banana Smoothie Preparation"
+      },
+      {
+        "event_type": "pour",
+        "description": "the black-gloved person pours the pink smoothie from the blender cup into a clear glass",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "pink smoothie",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "making a strawberry smoothie",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 19,
+        "start_time": "00:18",
+        "end_time": "00:19",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Strawberry and Banana Smoothie Preparation"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Strawberry and Banana Smoothie Preparation",
+        "event_index_range": [
+          1,
+          19
+        ]
+      }
+    ]
+  }
+}

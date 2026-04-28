@@ -1,0 +1,202 @@
+{
+  "question": "Did number 4 secure the 4-2 victory for Argentina?",
+  "pred": "The video shows a penalty shootout between Argentina and France. According to the Context and frames, the player wearing jersey number 4 for Argentina (identified as Montiel) takes the final penalty. At the start of his turn (event 163), the scoreboard shows \"ARGENTINA 3 - 2 FRANCE\". He kicks the ball (event 165) and scores (event 167). Immediately following this goal, the scoreboard updates to \"ARGENTINA 4 - 2 FRANCE\" (event 168), and the Argentina team begins a post-game celebration, confirming that this goal secured the 4-2 victory.\n\nEvidence: event 168 shows the white-and-blue-jersey player (Montiel) runs away in celebration with the scoreboard reading \"ARGENTINA 4 - 2 FRANCE\".\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "look",
+      "description": "the white-and-blue-jersey player (Montiel) looks toward the goal",
+      "participants": [
+        "white-and-blue-jersey player"
+      ],
+      "actor": "white-and-blue-jersey player",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 3 - 2 FRANCE",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 163,
+      "start_time": "05:45",
+      "end_time": "05:46",
+      "sub_events": [],
+      "subtype_order": 39,
+      "subtype_total": 39,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "the white-and-blue-jersey player (Montiel) runs toward the ball to take the penalty",
+      "participants": [
+        "white-and-blue-jersey player"
+      ],
+      "actor": "white-and-blue-jersey player",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 3 - 2 FRANCE",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "middle",
+      "event_index": 164,
+      "start_time": "05:46",
+      "end_time": "05:48",
+      "sub_events": [],
+      "subtype_order": 35,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "the white-and-blue-jersey player (Montiel) kicks the ball toward the goal",
+      "participants": [
+        "white-and-blue-jersey player"
+      ],
+      "actor": "white-and-blue-jersey player",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 3 - 2 FRANCE",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "middle",
+      "event_index": 165,
+      "start_time": "05:48",
+      "end_time": "05:49",
+      "sub_events": [],
+      "subtype_order": 36,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "the yellow-jersey goalkeeper dives to his right to attempt a save",
+      "participants": [
+        "yellow-jersey goalkeeper"
+      ],
+      "actor": "yellow-jersey goalkeeper",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 3 - 2 FRANCE",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "middle",
+      "event_index": 166,
+      "start_time": "05:48",
+      "end_time": "05:49",
+      "sub_events": [],
+      "subtype_order": 37,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "the ball enters the goal on the left side",
+      "participants": [
+        "white-and-blue-jersey player",
+        "yellow-jersey goalkeeper"
+      ],
+      "object": "white ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 3 - 2 FRANCE",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "middle",
+      "event_index": 167,
+      "start_time": "05:49",
+      "end_time": "05:50",
+      "sub_events": [],
+      "subtype_order": 38,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the white-and-blue-jersey player (Montiel) runs away from the goal in celebration",
+      "participants": [
+        "white-and-blue-jersey player"
+      ],
+      "actor": "white-and-blue-jersey player",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 4 - 2 FRANCE",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Post-Game Celebration",
+      "continuation_hint": "middle",
+      "event_index": 168,
+      "start_time": "05:50",
+      "end_time": "05:53",
+      "sub_events": [],
+      "subtype_order": 16,
+      "subtype_total": 35,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the white-and-blue-jersey player (Montiel) pulls his jersey over his head while running",
+      "participants": [
+        "white-and-blue-jersey player"
+      ],
+      "actor": "white-and-blue-jersey player",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Post-Game Celebration",
+      "continuation_hint": "middle",
+      "event_index": 169,
+      "start_time": "05:53",
+      "end_time": "05:56",
+      "sub_events": [],
+      "subtype_order": 17,
+      "subtype_total": 35,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the white-and-blue-jersey player (Montiel) wipes his face with his jersey while walking",
+      "participants": [
+        "white-and-blue-jersey player"
+      ],
+      "actor": "white-and-blue-jersey player",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Post-Game Celebration",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 170,
+      "start_time": "05:56",
+      "end_time": "06:00",
+      "sub_events": [],
+      "subtype_order": 18,
+      "subtype_total": 35,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

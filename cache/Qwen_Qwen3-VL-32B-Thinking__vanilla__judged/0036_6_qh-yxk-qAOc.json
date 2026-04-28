@@ -1,0 +1,96 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0036_6_qh-yxk-qAOc.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0036_6_qh-yxk-qAOc.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0036_6_qh-yxk-qAOc",
+    "n_target": 2,
+    "n_sub": 6,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 1.0,
+    "sub_accuracy": 1.0
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Does the player with red and blue shirt number 10 score the goal?",
+      "gt": "Yes",
+      "pred": "Yes, the player with red and blue shirt number 10 (Andros Townsend) scores the goal. This is evident from the sequence where the ball enters the net and the subsequent celebration by the player wearing the number 10 jersey (e.g., frames showing the player running and celebrating after the goal).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is the player's shirt red and blue?",
+      "gt": "Yes",
+      "pred": "Yes, the player's shirt is red and blue. This can be verified from multiple frames, such as when the player's back is shown with the name \"TOWNSEND\" and number \"10\" (e.g., around the 25-28 second mark in the sequence), where the shirt features red and blue vertical stripes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is the player's shirt number 10?",
+      "gt": "Yes",
+      "pred": "Yes, the player's shirt number is 10. This is verified in multiple frames (e.g., frames showing the player from the back with “TOWNSEND” and “10” clearly visible).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the player score the goal?",
+      "gt": "Yes",
+      "pred": "Yes, the player scores the goal. This is evident from the sequence where the ball enters the net (e.g., frames 3-5 showing the ball in the goal, followed by the goalkeeper on the ground in the net and the player celebrating in subsequent frames like 22-27).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Does the player with red and blue shirt number 18 score the goal?",
+      "gt": "No",
+      "pred": "No, the player with red and blue shirt number 18 does not score the goal. The goal is scored by the player with red and blue shirt number 10 (Andros Townsend, as indicated by the text “ANDROS TOWNSEND” in the video and the number 10 on his jersey). This is evident in the frames showing the goal being scored and the player celebrating (e.g., timestamps where the player with number 10 is seen shooting, the ball entering the net, and subsequent celebration).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is the player's shirt red and blue?",
+      "gt": "Yes",
+      "pred": "Yes, the player's shirt is red and blue. This can be verified from multiple frames, such as when the player's back is shown with the name \"TOWNSEND\" and number \"10\" (e.g., around the 25-28 second mark in the sequence), where the shirt features red and blue vertical stripes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is the player's shirt number 18?",
+      "gt": "No",
+      "pred": "No. The player in focus (Andros Townsend) wears a shirt with the number 10, as seen in multiple frames (e.g., timestamp 20-24 seconds shows his back with \"TOWNSEND\" and \"10\").",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does a player wearing shirt number 10 score the goal?",
+      "gt": "Yes",
+      "pred": "Yes. The player wearing shirt number 10 (Andros Townsend, as identified by the name on the back of the shirt in the close - up frames) scores the goal. This is evident from the sequence where the player with number 10 takes the shot, the ball enters the goal, and the player is seen celebrating.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "question": "Where there two students who raised their hand to speak?",
+  "pred": "Evidence: frames show a student in a tan jacket raising their hand (Context event 4) and a student in a maroon hoodie raising a pen while speaking to the professor (e.g., frames at 00:37-00:45).\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "walk",
+      "description": "The professor walks toward the center of the lecture hall floor while continuing to speak.",
+      "participants": [
+        "grey-suit professor"
+      ],
+      "actor": "grey-suit professor",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Mathematics Lecture",
+      "continuation_hint": "complete",
+      "event_index": 3,
+      "start_time": "00:06",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Mathematics Lecture"
+    },
+    {
+      "event_type": "hand_raise",
+      "description": "A student in a tan jacket raises their right hand to get the professor's attention.",
+      "participants": [
+        "tan-jacket student",
+        "grey-suit professor"
+      ],
+      "actor": "tan-jacket student",
+      "on_screen_text": [
+        {
+          "text": "SUBSCRIBE",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Mathematics Lecture",
+      "continuation_hint": "complete",
+      "event_index": 4,
+      "start_time": "00:08",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Mathematics Lecture"
+    },
+    {
+      "event_type": "speak",
+      "description": "The professor stops walking and addresses the student who raised their hand.",
+      "participants": [
+        "grey-suit professor",
+        "tan-jacket student"
+      ],
+      "actor": "grey-suit professor",
+      "on_screen_text": [
+        {
+          "text": "SUBSCRIBE",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Mathematics Lecture",
+      "continuation_hint": "complete",
+      "event_index": 5,
+      "start_time": "00:10",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 10,
+      "round_index": 1,
+      "segment_label_resolved": "Mathematics Lecture"
+    },
+    {
+      "event_type": "gesture",
+      "description": "The student in the tan jacket gestures with both hands while speaking to the professor.",
+      "participants": [
+        "tan-jacket student",
+        "grey-suit professor"
+      ],
+      "actor": "tan-jacket student",
+      "on_screen_text": [
+        {
+          "text": "SUBSCRIBE",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Mathematics Lecture",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:12",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 24,
+      "round_index": 1,
+      "segment_label_resolved": "Mathematics Lecture"
+    }
+  ]
+}

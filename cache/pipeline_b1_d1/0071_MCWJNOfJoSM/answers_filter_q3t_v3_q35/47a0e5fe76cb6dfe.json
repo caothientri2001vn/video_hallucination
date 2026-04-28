@@ -1,0 +1,131 @@
+{
+  "question": "Did the goalkeeper in green save the shot successfully?",
+  "pred": "Evidence: The context explicitly states in events 46 and 53 that the \"Goalkeeper successfully blocks the penalty kick\" and \"green-uniform goalkeeper successfully stops the white soccer ball from entering the goal\" with an outcome of \"saved\".\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "dive",
+      "description": "Goalkeeper in green jersey dives to their right to save the penalty",
+      "participants": [
+        "green jersey goalkeeper"
+      ],
+      "actor": "green jersey goalkeeper",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 45,
+      "start_time": "01:54",
+      "end_time": "01:56",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "save",
+      "description": "Goalkeeper successfully blocks the penalty kick with their hands",
+      "participants": [
+        "green jersey goalkeeper",
+        "soccer ball"
+      ],
+      "actor": "green jersey goalkeeper",
+      "object": "white soccer ball",
+      "outcome": "saved",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 46,
+      "start_time": "01:55",
+      "end_time": "01:57",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "celebration",
+      "description": "Goalkeeper in green jersey jumps and celebrates after making the save",
+      "participants": [
+        "green jersey goalkeeper"
+      ],
+      "actor": "green jersey goalkeeper",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 47,
+      "start_time": "01:56",
+      "end_time": "01:59",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 14,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "dive",
+      "description": "green-uniform goalkeeper dives to his right to save the penalty kick",
+      "participants": [
+        "green-uniform goalkeeper"
+      ],
+      "actor": "green-uniform goalkeeper",
+      "object": "white soccer ball",
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 52,
+      "start_time": "02:04",
+      "end_time": "02:05",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "save",
+      "description": "green-uniform goalkeeper successfully stops the white soccer ball from entering the goal",
+      "participants": [
+        "green-uniform goalkeeper"
+      ],
+      "actor": "green-uniform goalkeeper",
+      "object": "white soccer ball",
+      "outcome": "saved",
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 53,
+      "start_time": "02:05",
+      "end_time": "02:06",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "celebration",
+      "description": "green-uniform goalkeeper gets up from the ground and celebrates the save",
+      "participants": [
+        "green-uniform goalkeeper"
+      ],
+      "actor": "green-uniform goalkeeper",
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 54,
+      "start_time": "02:06",
+      "end_time": "02:08",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 14,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    }
+  ]
+}

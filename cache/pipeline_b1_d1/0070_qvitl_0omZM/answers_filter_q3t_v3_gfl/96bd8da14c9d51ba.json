@@ -1,0 +1,87 @@
+{
+  "question": "Did the arm transformation occur between the outfit transformation and the torso close-up transformation?",
+  "pred": "The video features a series of quick \"transformation\" cuts showing a person changing from a \"going out\" outfit (white jacket, light blue jeans, pigtails) to a \"home\" outfit (gray hoodie, dark blue cargo jeans, messy bun, glasses).\n\n1.  **Outfit transformation:** The first transformation occurs at approximately 00:02-00:04, where the person's entire outfit changes from the white jacket/light jeans to the gray hoodie/dark jeans while they are walking.\n2.  **Arm transformation:** Following the full-body change, there is a specific cut at approximately 00:18-00:22 showing a close-up of an arm extending. The sleeve transforms from the white fuzzy material of the jacket to the gray fabric of the hoodie.\n3.  **Torso close-up transformation:** After the arm transformation, there is a close-up of the torso at approximately 00:23-00:27, where the front of the white jacket transforms into the gray hoodie with the star design.\n\nThe arm transformation (step 2) occurs chronologically between the initial full outfit transformation (step 1) and the torso close-up transformation (step 3).\n\nEvidence: Frames at ~00:18-00:22 show the arm sleeve transforming from white to gray, which occurs after the initial walking outfit change and before the close-up torso change.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "change",
+      "description": "the person's outfit changes from white jacket and light blue jeans to gray hoodie and dark blue jeans with multiple pockets",
+      "participants": [
+        "person"
+      ],
+      "actor": "person",
+      "object_before": "white jacket and light blue jeans",
+      "object_after": "gray hoodie and dark blue jeans",
+      "on_screen_text": [
+        {
+          "text": "me literally within 0.2 secs of getting home",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "outfit change",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 2,
+      "start_time": "00:02",
+      "end_time": "00:04",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "outfit change"
+    },
+    {
+      "event_type": "pose",
+      "description": "the person in white jacket and light blue jeans stands facing forward with arms slightly extended",
+      "participants": [
+        "white-jacket person"
+      ],
+      "actor": "white-jacket person",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "me literally within 0.2 secs of getting home",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "outfit change",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 3,
+      "start_time": "00:04",
+      "end_time": "00:07",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "outfit change"
+    },
+    {
+      "event_type": "pose",
+      "description": "the person in gray hoodie and dark blue jeans stands facing forward showing the front of the outfit",
+      "participants": [
+        "gray-hoodie person"
+      ],
+      "actor": "gray-hoodie person",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "me literally within 0.2 secs of getting home",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "outfit change",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 4,
+      "start_time": "00:07",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "outfit change"
+    }
+  ]
+}

@@ -1,0 +1,505 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0028__wNtNtOlJQk.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0028__wNtNtOlJQk.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0028__wNtNtOlJQk",
+    "n_target": 13,
+    "n_sub": 37,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.3076923076923077,
+    "sub_accuracy": 0.4594594594594595
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "In the first game, in the first shoot, did the ball goes into the lowest basket?",
+      "gt": "Yes",
+      "pred": "Yes. In the first game's first shoot, the ball goes into the lowest basket. This is visible in the sequence where the ball is launched from the mechanism and enters the frontmost (lowest) basket.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a first shot in the first game?",
+      "gt": "Yes",
+      "pred": "Yes, the first shot in the first game was successful, as indicated by the \"+30\" score text appearing after the ball was launched (visible around the 0:02 - 0:04 timestamp range).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the ball go into a basket during the first shot of the first game?",
+      "gt": "Yes",
+      "pred": "Yes, the ball went into a basket during the first shot of the first game, as indicated by the \"+30\" text appearing on screen (around the 1-2 second mark of the video sequence showing the game in action).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the ball go into the lowest basket during the first shot of the first game?",
+      "gt": "Yes",
+      "pred": "Yes. In the first shot of the first game (around the 0:02-0:03 timestamp), the ball is launched and goes into the lowest basket.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "In the first game, in the first shoot, did the ball goes into the highest basket?",
+      "gt": "No",
+      "pred": "Yes, in the first game's first shoot, the ball goes into the highest basket. This is visible in the sequence where the ball is launched and then shown in the topmost basket (e.g., around the 2-3 second mark in the gameplay frames).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a first shot in the first game?",
+      "gt": "Yes",
+      "pred": "Yes, the first shot in the first game was successful, as indicated by the \"+30\" score text appearing after the ball was launched (visible around the 0:02 - 0:04 timestamp range).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the ball go into the highest basket during the first shot of the first game?",
+      "gt": "No",
+      "pred": "Yes, the ball went into the highest basket during the first shot of the first game (evident in the sequence where the ball is launched and lands in the topmost basket).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the ball go into the lowest basket during the first shot of the first game?",
+      "gt": "Yes",
+      "pred": "Yes. In the first shot of the first game (around the 0:02-0:03 timestamp), the ball is launched and goes into the lowest basket.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "In the first game, in the second shoot, did the ball goes into the mid-high right basket?",
+      "gt": "No",
+      "pred": "Yes, in the first game's second shoot, the ball goes into the mid-high right basket. This is visible in the frame where the ball is shown entering the basket (around 24-25 seconds).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there information about a second shot in the first game?",
+      "gt": "No",
+      "pred": "So, let's check the video frames. The question is about whether there's information about a second shot in the first game. Let's look at the relevant frames. \n\nFirst, the first game part: the video shows a hand launching a ball, then +30 appears (timestamp around 0:02-0:03). Then later, there's \"PLAYER 2 SCORES\" (0:22), but the first game's second shot—do we see it? Let's check. The frames for the first game: the initial shots. The frame with +30 is the first shot, then the next part is about the second player. Wait, the question is about the first game having a second shot. Let's see if there's a mention or visual of a second shot in the first game. \n\nLooking at the frames: the first game is \"PLAYER 1\" (0:20), then the next frames show the ball being launched again. Wait, the video shows multiple shots. The key is to see if there's info about a second shot in the first game. The \"PLAYER 2 SCORES\" is a different player, so the first game (player 1) might have a second shot. Let's check the frames. The frame at 0:03 shows the first shot with +30, then the next frame (0:04) shows the ball in the basket. Then, later, when it's player 1 again, do we see a second shot? The video has a frame where the hand is launching again, but the question is if there's information about it. \n\nWait, the answer: the video shows multiple shots. For the first game, the first shot is with +30, and then there's another shot. Let's check the timestamps. The first shot (0:02-0:04) is +30, then the next part is the construction, but when the game is played again (0:20-0:21), it's player 1, then the next frames show the ball being launched. But the question is about the first game (the initial play, not the construction part). The first game's second shot: is there info? Let's see the frame where the hand is launching again, and the text \"PLAYER 1\" is there. The video does show a second shot in the first game? Wait, no. Let's check the exact frames. \n\nWait, the video sequence: the first part (0:00-0:04) shows the game being played: first shot, +30. Then the next part is construction. Then, when it's the final game, \"PLAYER 1\" (0:20) is shown, then the hand launches a ball. So in the first game (the initial play), there's only the first shot with +30. The next shot is for player 2. So the answer is no? Wait, but let's check again. \n\nWait, the question is: \"Is there information about a second shot in the first game?\" The first game—when the game is first shown (0:00-0:04), the first shot is +30. Then, the video moves to construction. Later, when the game is played again (0:20-0:25), it's player 1, and then the hand launches again. But the first game (the initial play) only has one shot mentioned (the +30). The second shot in the first game—do we have info? Let's check the frames. \n\nLooking at the frames: the first game (0:00-0:04) has a shot with +30. The next shot is when it's \"PLAYER 2 SCORES\" (0:22), which is a different player. So in the first game (player 1's first game), there's only one shot shown with +30. Then, the video shows the construction, then the final game where player 1 launches again (0:20-0:25), but that's a separate instance. So is there information about a second shot in the first game? No, because the first game's only shot is the +30 one. Wait, but maybe the +30 is the first shot, and then the next shot is part of the first game? Let's check the video. \n\nWait, the video shows: \n\n- Frame 0:00: hand launching, ball on the launcher. \n\n- Frame 0:01: +30 appears. \n\n- Frame 0:02: ball in the basket. \n\n- Then, the next frames are construction. \n\nSo the first game (the initial play) has one shot with +30. There's no information about a second shot in that first game. Therefore",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the ball go into the mid-high right basket during any shot in the first game?",
+      "gt": "No",
+      "pred": "Yes. In the first game sequence (0-3 seconds), the ball is shown entering a basket; the structure of the game setup confirms this basket is the mid-high right one.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "In the first game, in the second shoot, did the ball goes into the mid-high left basket?",
+      "gt": "No",
+      "pred": "To determine if the ball went into the mid-high left basket during the second shoot of the first game, we analyze the relevant frames:  \n\n- The first game’s second shoot is shown in the sequence where the hand pulls the lever again.  \n- In the frame with the **\"+30\" text** (around the 2–3 second mark), the ball’s trajectory and final position are visible. The ball lands in the *topmost basket* (not the mid-high left basket).  \n\nThus, the ball did **not** go into the mid-high left basket during the second shoot of the first game.  \n\nAnswer: No",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there information about a second shot in the first game?",
+      "gt": "No",
+      "pred": "So, let's check the video frames. The question is about whether there's information about a second shot in the first game. Let's look at the relevant frames. \n\nFirst, the first game part: the video shows a hand launching a ball, then +30 appears (timestamp around 0:02-0:03). Then later, there's \"PLAYER 2 SCORES\" (0:22), but the first game's second shot—do we see it? Let's check. The frames for the first game: the initial shots. The frame with +30 is the first shot, then the next part is about the second player. Wait, the question is about the first game having a second shot. Let's see if there's a mention or visual of a second shot in the first game. \n\nLooking at the frames: the first game is \"PLAYER 1\" (0:20), then the next frames show the ball being launched again. Wait, the video shows multiple shots. The key is to see if there's info about a second shot in the first game. The \"PLAYER 2 SCORES\" is a different player, so the first game (player 1) might have a second shot. Let's check the frames. The frame at 0:03 shows the first shot with +30, then the next frame (0:04) shows the ball in the basket. Then, later, when it's player 1 again, do we see a second shot? The video has a frame where the hand is launching again, but the question is if there's information about it. \n\nWait, the answer: the video shows multiple shots. For the first game, the first shot is with +30, and then there's another shot. Let's check the timestamps. The first shot (0:02-0:04) is +30, then the next part is the construction, but when the game is played again (0:20-0:21), it's player 1, then the next frames show the ball being launched. But the question is about the first game (the initial play, not the construction part). The first game's second shot: is there info? Let's see the frame where the hand is launching again, and the text \"PLAYER 1\" is there. The video does show a second shot in the first game? Wait, no. Let's check the exact frames. \n\nWait, the video sequence: the first part (0:00-0:04) shows the game being played: first shot, +30. Then the next part is construction. Then, when it's the final game, \"PLAYER 1\" (0:20) is shown, then the hand launches a ball. So in the first game (the initial play), there's only the first shot with +30. The next shot is for player 2. So the answer is no? Wait, but let's check again. \n\nWait, the question is: \"Is there information about a second shot in the first game?\" The first game—when the game is first shown (0:00-0:04), the first shot is +30. Then, the video moves to construction. Later, when the game is played again (0:20-0:25), it's player 1, and then the hand launches again. But the first game (the initial play) only has one shot mentioned (the +30). The second shot in the first game—do we have info? Let's check the frames. \n\nLooking at the frames: the first game (0:00-0:04) has a shot with +30. The next shot is when it's \"PLAYER 2 SCORES\" (0:22), which is a different player. So in the first game (player 1's first game), there's only one shot shown with +30. Then, the video shows the construction, then the final game where player 1 launches again (0:20-0:25), but that's a separate instance. So is there information about a second shot in the first game? No, because the first game's only shot is the +30 one. Wait, but maybe the +30 is the first shot, and then the next shot is part of the first game? Let's check the video. \n\nWait, the video shows: \n\n- Frame 0:00: hand launching, ball on the launcher. \n\n- Frame 0:01: +30 appears. \n\n- Frame 0:02: ball in the basket. \n\n- Then, the next frames are construction. \n\nSo the first game (the initial play) has one shot with +30. There's no information about a second shot in that first game. Therefore",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the ball go into the mid-high left basket during the third shot of the first game?",
+      "gt": "Yes",
+      "pred": "Yes. In the sequence of the first game, the third shot's ball trajectory shows it entering the mid - high left basket (as observed in the frames depicting the ball's path and the basket it lands in).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the ball go into the mid-high left basket during the second shot of the first game?",
+      "gt": "No",
+      "pred": "So, let's check the video frames. First, the question is about the second shot of the first game. Let's look at the sequence. \n\nIn the first game, the first shot: the hand pushes the lever, the ball goes (from the second frame where the ball is in the launcher, then the next frame shows +30, so that's the first shot). Then the second shot: let's find the frame where the second shot happens. \n\nLooking at the frames: the first shot is when the hand is pushing, then the ball is in the launcher (frame 2), then +30 (frame 3), then the ball goes into the top basket (frame 4). Then the next part is the second shot. Let's check the frame where the ball is shot again. \n\nWait, the video shows: after the first shot (which got +30), then the next shot—let's see. The frame where the ball is shot again, and we need to see if it went into the mid-high left basket. \n\nWait, the baskets are arranged in levels. Let's check the frame where the ball is in mid-air for the second shot. The frame after the first shot (which was the top basket), then the next shot: the ball is shown in frame 10 (the one with the hand pushing, then the ball is in the air, and then the next frame shows the ball in the mid-high left basket? Wait, no. Let's check the frames again.\n\nWait, the second shot: the frame where the ball is shot, then the next frame. Let's check the frame with \"PLAYER 2 SCORES\" (frame 22) but that's later. Wait, the first game: the first shot (frame 2-4: +30, ball in top basket). Then the second shot: let's see frame 10 (the one where the hand is pushing, then the ball is in the air, and the next frame shows the ball in a basket. Wait, frame 10: the hand is pushing, then frame 11: the ball is in the air, then frame 12: the ball is in the mid-high left basket? Wait, no. Let's check the frame where the ball is in the basket. \n\nWait, the question is about the second shot of the first game. The first game has two shots: first shot (1st) and second shot (2nd). Let's check the sequence:\n\n- Frame 2: hand pushing, ball on launcher.\n- Frame 3: +30, so first shot scored.\n- Frame 4: ball in the top basket (so first shot went into top basket).\n- Then, next shot: frame 10: hand pushing, ball on launcher (second shot).\n- Frame 11: ball in the air, moving towards the baskets.\n- Then, where does it go? Let's check the frame after that. The next frame (12) shows the ball in the mid-high left basket? Wait, no. Let's check the frame where the ball is in the basket. \n\nWait, the frame with the text \"PLAYER 2 SCORES\" is frame 22, but that's a different part. Wait, the first game's second shot: let's check the frame where the ball is in the mid-high left basket. The frame that shows the ball in the basket for the second shot. Let's look at frame 12: the ball is in the basket, and the text \"PLAYER 2 SCORES\" is not there. Wait, no. Let's check the frames:\n\nFrame 2: initial shot, ball on launcher.\nFrame 3: +30, so first shot scored (top basket).\nFrame 4: ball in top basket.\nThen, the next part is the second shot. The frame where the second shot is made: frame 10 (hand pushing, ball on launcher), frame 11 (ball in air), then frame 12: the ball is in the mid-high left basket? Let's check frame 12. The frame 12 shows the ball in a basket, and the basket is mid-high left. Wait, the baskets are arranged in a pyramid: top (1), then two, then three, then four? Wait, no, in the first frame (the game setup), there are 7 baskets: 1 at top, 2 in next, 3 in next, and 1 in the middle? Wait, no, looking at the first game frame (frame 2: the game setup), there are 7 baskets: 1 (top), 2 (second level), 3 (third level), and 1 (fourth level)? Wait, no, the frame 2 shows: the top has one basket, then two, then three, and then one in the middle? Wait, no",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "In the first game, in the second shoot, did the ball goes into the near-high right basket?",
+      "gt": "No",
+      "pred": "To determine if the ball went into the near - high right basket during the second shoot of the first game, we analyze the relevant frames:\n\n1. The first shot (as shown in the frame with “+30”) results in the ball going into the top - most basket.\n2. For the second shoot, we look at the frame where the ball is in a basket and the text “PLAYER 2 SCORES” appears. In this frame, the ball is in the basket that is on the right side of the second row from the top (the “near - high right",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there information about a second shot in the first game?",
+      "gt": "No",
+      "pred": "So, let's check the video frames. The question is about whether there's information about a second shot in the first game. Let's look at the relevant frames. \n\nFirst, the first game part: the video shows a hand launching a ball, then +30 appears (timestamp around 0:02-0:03). Then later, there's \"PLAYER 2 SCORES\" (0:22), but the first game's second shot—do we see it? Let's check. The frames for the first game: the initial shots. The frame with +30 is the first shot, then the next part is about the second player. Wait, the question is about the first game having a second shot. Let's see if there's a mention or visual of a second shot in the first game. \n\nLooking at the frames: the first game is \"PLAYER 1\" (0:20), then the next frames show the ball being launched again. Wait, the video shows multiple shots. The key is to see if there's info about a second shot in the first game. The \"PLAYER 2 SCORES\" is a different player, so the first game (player 1) might have a second shot. Let's check the frames. The frame at 0:03 shows the first shot with +30, then the next frame (0:04) shows the ball in the basket. Then, later, when it's player 1 again, do we see a second shot? The video has a frame where the hand is launching again, but the question is if there's information about it. \n\nWait, the answer: the video shows multiple shots. For the first game, the first shot is with +30, and then there's another shot. Let's check the timestamps. The first shot (0:02-0:04) is +30, then the next part is the construction, but when the game is played again (0:20-0:21), it's player 1, then the next frames show the ball being launched. But the question is about the first game (the initial play, not the construction part). The first game's second shot: is there info? Let's see the frame where the hand is launching again, and the text \"PLAYER 1\" is there. The video does show a second shot in the first game? Wait, no. Let's check the exact frames. \n\nWait, the video sequence: the first part (0:00-0:04) shows the game being played: first shot, +30. Then the next part is construction. Then, when it's the final game, \"PLAYER 1\" (0:20) is shown, then the hand launches a ball. So in the first game (the initial play), there's only the first shot with +30. The next shot is for player 2. So the answer is no? Wait, but let's check again. \n\nWait, the question is: \"Is there information about a second shot in the first game?\" The first game—when the game is first shown (0:00-0:04), the first shot is +30. Then, the video moves to construction. Later, when the game is played again (0:20-0:25), it's player 1, and then the hand launches again. But the first game (the initial play) only has one shot mentioned (the +30). The second shot in the first game—do we have info? Let's check the frames. \n\nLooking at the frames: the first game (0:00-0:04) has a shot with +30. The next shot is when it's \"PLAYER 2 SCORES\" (0:22), which is a different player. So in the first game (player 1's first game), there's only one shot shown with +30. Then, the video shows the construction, then the final game where player 1 launches again (0:20-0:25), but that's a separate instance. So is there information about a second shot in the first game? No, because the first game's only shot is the +30 one. Wait, but maybe the +30 is the first shot, and then the next shot is part of the first game? Let's check the video. \n\nWait, the video shows: \n\n- Frame 0:00: hand launching, ball on the launcher. \n\n- Frame 0:01: +30 appears. \n\n- Frame 0:02: ball in the basket. \n\n- Then, the next frames are construction. \n\nSo the first game (the initial play) has one shot with +30. There's no information about a second shot in that first game. Therefore",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the ball go into the near-high right basket during the second shot of the first game?",
+      "gt": "No",
+      "pred": "No. In the second shot of the first game (around 00:03), the ball is shown in the topmost basket (not the near-high right basket), and the \"+30\" text appears. The near-high right basket is not the target for this shot.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "In the first game, in the third shoot, did the ball goes into the mid-high left basket?",
+      "gt": "Yes",
+      "pred": "To determine if the ball went into the mid - high left basket on the third shoot of the first game, we analyze the video:\n\n1. Identify the \"first game\" sequence: The initial gameplay footage (around the start of the video) shows the first game.\n2. Track the \"third shoot\" in this sequence: By examining the progression of shots, we look for the third time a ball is launched in the first game.\n3. Check the basket position: The \"mid - high left basket\" refers to the left - most basket in the middle row of the basket arrangement (as seen in the game structure frames).\n\nIn the video, during the first game's third shoot, the ball is observed to go into the mid - high left basket. This is verified by the visual of the ball landing in that specific basket during the third shot of the initial gameplay.\n\nYes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a third shot in the first game?",
+      "gt": "Yes",
+      "pred": "No, the first game sequence (as shown in the early frames) only features two shots: one where a “+30” score appears (around 0:02-0:04) and another where the ball goes into a basket (0:05-0:07). There is no third shot in that initial game.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the ball go into a basket on the third shot of the first game?",
+      "gt": "Yes",
+      "pred": "Yes. The third shot of the first game resulted in the ball entering a basket, as seen in the sequence where the ball is launched and successfully lands in one of the white basket structures.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the ball go into the mid-high left basket on the third shot of the first game?",
+      "gt": "Yes",
+      "pred": "Yes. The third shot of the first game shows the ball entering the mid-high left basket, as seen in the frame with the text \"PLAYER 2 SCORES\" (around 12s).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "In the first game, in the third shoot, did the ball goes into the mid-high right basket?",
+      "gt": "No",
+      "pred": "To determine if the ball went into the mid - high right basket during the third shoot of the first game, we analyze the video frames. \n\nIn the sequence of the game, the third shoot's outcome is shown. The mid - high right basket is one of the upper - right positioned baskets in the pyramid - like arrangement. By examining the frame where the ball lands after the third shoot, we can confirm that the ball does go into the mid - high right basket. \n\nThus, the answer is yes.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a third shot in the first game?",
+      "gt": "Yes",
+      "pred": "No, the first game sequence (as shown in the early frames) only features two shots: one where a “+30” score appears (around 0:02-0:04) and another where the ball goes into a basket (0:05-0:07). There is no third shot in that initial game.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the ball go into the mid-high right basket on the third shot of the first game?",
+      "gt": "No",
+      "pred": "No. The third shot of the first game does not show the ball going into the mid-high right basket. The sequence of shots and basket placements in the video frames do not confirm this specific outcome for the third shot.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the ball go into the mid-high left basket on the third shot of the first game?",
+      "gt": "Yes",
+      "pred": "Yes. The third shot of the first game shows the ball entering the mid-high left basket, as seen in the frame with the text \"PLAYER 2 SCORES\" (around 12s).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the ball go into any basket on the third shot of the first game?",
+      "gt": "Yes",
+      "pred": "So, let's check the video frames. The first game's shots: the first shot (frame 2) shows the ball in the basket, then +30. The second shot (frame 3) the ball is in the top basket. The third shot—wait, the frames for the first game: let's see. The first shot: frame 2 (ball in basket), frame 3 (ball in top basket), then frame 4 shows the ball in the top basket. Wait, the question is about the third shot. Let's count the shots. The first shot (1) is when the hand pulls the lever, ball goes into a basket (frame 2). Second shot (2) is the next one, which is frame 3 where +30 appears. Third shot: let's check the frame where it says \"PLAYER 2 SCORES\" but that's later. Wait, the first game: the sequence of shots. The first shot (frame 2) is the first, then frame 3 is the second, then frame 4 is the third? Wait, frame 4: the ball is in the top basket. Wait, no, the question is \"third shot of the first game\". Let's look at the frames in order.\n\nLooking at the video frames:\n\n- Frame 2: first shot, ball goes into a basket (the middle one), +30 appears (so that's a score).\n\n- Frame 3: second shot, ball goes into the top basket (the one at the very top).\n\n- Frame 4: third shot? Wait, frame 4 shows the ball in the top basket. Wait, no, frame 4 is the same as frame 3? No, let's check the timestamps. The first game: the initial play. The first shot (1) is when the hand is pulling the lever, ball is launched. Then the next shot (2) is the second time. The third shot: let's see which frame is the third. The frame where the text \"PLAYER 2 SCORES\" is later, but for the first game, the first three shots.\n\nWait, the question is about the third shot of the first game. Let's check the frames:\n\n1. Frame 2: first shot, ball in basket (scores).\n\n2. Frame 3: second shot, ball in top basket (scores, +30? No, frame 3 shows +30, so that's the first shot. Wait, maybe I need to count the shots as the number of times the lever is pulled.\n\nIn the first game sequence:\n\n- The first pull (1st shot): ball goes into a basket (frame 2).\n\n- The second pull (2nd shot): ball goes into the top basket (frame 3, +30 appears).\n\n- The third pull (3rd shot): let's check frame 4. Frame 4 shows the ball in the top basket. Wait, no, frame 4 is the same as frame 3? No, frame 4 is a different frame. Wait, frame 4: the ball is in the top basket, but the text isn't there. Wait, the key is to see if the third shot's ball went into a basket.\n\nWait, the frames:\n\n- The first shot (1) is in frame 2: ball goes into a basket (so yes, scored).\n\n- The second shot (2) is in frame 3: +30, so scored.\n\n- The third shot (3) is in frame 4: the ball is in the top basket (so yes, scored). Wait, but the question is \"Did the ball go into any basket on the third shot of the first game?\"\n\nWait, let's check the frame where the third shot is. The first game's shots:\n\nLooking at the video, the first game is shown in the early frames. The first shot (1) is frame 2: ball in basket. Second shot (2) is frame 3: +30. Third shot (3) is frame 4: the ball is in the top basket (so yes, it went into a basket). Wait, but let's confirm.\n\nWait, frame 4: the ball is in the top basket, so the third shot's ball did go into a basket. But let's check again.\n\nWait, no. Let's list the frames in order:\n\n1. Frame 2: hand pulls lever, ball is on the launcher. Then the ball is launched (frame 2 shows the ball in the basket, so first shot scored).\n\n2. Frame 3: hand pulls lever again, ball is launched, +30 appears (so second shot scored).\n\n3. Frame 4: hand pulls lever again, ball is launched, and the ball is in the top basket (third shot scored).\n\nSo the third shot of the first game: the ball went into a basket. Therefore, the answer is yes",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "In the first game, in the fourth shoot, did the ball goes into the near-high right basket?",
+      "gt": "Yes",
+      "pred": "No. In the first game, during the fourth shoot, the ball does not go into the near-high right basket. This can be verified by observing the ball's trajectory and landing position in the relevant frames (e.g., the sequence where the ball is launched and lands, showing it misses the specified basket).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a fourth shot in the first game?",
+      "gt": "Yes",
+      "pred": "No, there was no fourth shot in the first game. The video shows the first game sequence (e.g., frames 2-4) where the first shot is launched, and no evidence of a fourth shot in that initial game is visible.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the ball go into a basket on the fourth shot of the first game?",
+      "gt": "Yes",
+      "pred": "So, let's check the video. The first game is shown in the early frames. Let's look at the shots. The first frame where a shot is taken: in the video, when the hand presses the mechanism, the ball is launched. Let's count the shots. The first shot: the ball goes into a basket (as shown in the +30 frame, which is around the 2nd image). Wait, the question is about the fourth shot of the first game. Let's see the sequence.\n\nLooking at the frames: the game starts with the first shot (frame 2: ball is on the launcher, then frame 3: +30, so first shot scores). Then frame 4: the ball is in the top basket. Then the next shots. Wait, the question is about the fourth shot. Let's check the video frames for the first game's shots.\n\nIn the video, the first game (before the construction) shows multiple shots. Let's see: the first shot (frame 2) is the first, then frame 3 (ball in basket, +30), frame 4 (ball in top basket). Now, the fourth shot: we need to see if on the fourth shot, the ball went into a basket.\n\nWait, the frames: the first game is shown in the initial clips. Let's count the shots. The first shot: ball is launched (frame 2), then the ball goes into a basket (frame 3 shows +30, so that's a score). Then the next shot: frame 4 (ball in the top basket, which is a basket). Then the next shots. But the question is the fourth shot of the first game.\n\nWait, maybe the first game has several shots. Let's check the video. The first part (before construction) shows the game being played. Let's see the frames:\n\n- Frame 2: hand on the launcher, ball on it.\n- Frame 3: +30, so first shot scores (ball in basket).\n- Frame 4: ball in the top basket (so second shot? Or is that the same shot? No, the +30 is for a shot, then the next shot is frame 4. Wait, the text \"PLAYER 2 SCORES\" appears later, but the first game is \"PLAYER 1\" as per the frame with \"PLAYER 1\".\n\nWait, the frame with \"PLAYER 1\" (22nd frame) shows the game. Then the next frames: the hand takes a ball, puts it in the launcher, then the ball is launched. Let's count the shots in the first game (before the construction steps).\n\nThe video shows the game being played first, then the construction. So the first part (before the black screen and construction) is the game play. Let's check the shots:\n\n- First shot: frame 2 (ball on launcher), then frame 3: +30 (so ball went into a basket, first shot scores).\n- Second shot: frame 4 (ball in the top basket, so that's the second shot, which also scores).\n- Third shot: maybe the next one, but we need the fourth.\n\nWait, the question is \"Did the ball go into a basket on the fourth shot of the first game?\"\n\nLooking at the frames, the first game (the one before the construction) has multiple shots. Let's check the \"PLAYER 2 SCORES\" frame (23rd frame), which is after the first game. But the first game is \"PLAYER 1\" (22nd frame). The video shows the game play in the first few frames (2-4) as the game being played. Let's check if the fourth shot is shown.\n\nWait, maybe the answer is no. Let's check the frames. The first shot (2nd frame) is the start, then 3rd frame (score), 4th frame (ball in top basket, so that's a score), then maybe the next shots. But the fourth shot: is there a frame where the fourth shot is shown?\n\nAlternatively, maybe the first game has only a few shots. Let's check the video. The first game (the one shown at the beginning) has the first shot: ball launched, +30 (1st shot). Then the next shot: ball goes into a basket (2nd shot). Then maybe the third and fourth. But the question is about the fourth shot.\n\nWait, in the video, the first game's shots: let's count. The first shot: frame 2 (launch), frame 3 (score). Second shot: frame 4 (ball in top basket, which is a basket). Third shot: frame 5 (but frame 5 is black screen). Then the next frames are construction. So maybe the first game only shows a few shots. The question is about the fourth shot of the first game. Since the video doesn't show four",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the ball go into the near-high right basket on the fourth shot of the first game?",
+      "gt": "Yes",
+      "pred": "No. The fourth shot of the first game did not result in the ball",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the ball go into the near-high left basket on the fourth shot of the first game?",
+      "gt": "No",
+      "pred": "So, let's check the video frames. The first game is shown in the early clips. Let's see the sequence:\n\n- The first shot: the ball goes into the near-high left basket? Wait, no, let's check the frames.\n\nWait, the question is about the fourth shot of the first game. Let's list the shots:\n\n1. The first shot: the hand pulls the lever, the ball is launched. In the frame where the ball is in the air (17.9s), then it goes into a basket. Let's check the next frame (18.9s) where the ball is in the top basket. Wait, no, the first shot: the ball goes into the top basket? Wait, no, let's check the \"10\" text. Wait, no, the question is about the fourth shot.\n\nWait, the first game's shots:\n\nLooking at the frames:\n\n- The first shot (15.1s): the hand is pulling the lever, then the ball is launched (16.3s), then the ball goes into a basket. Then \"+30\" appears (17.9s) but that's a different shot? Wait, no, the first game: let's see the sequence.\n\nWait, the user is asking about the fourth shot of the first game. Let's check the frames:\n\n1. The first shot: the ball is launched, goes into the basket (15.1s to 17.9s? No, 15.1s is the start, then 16.3s shows the ball in the air, then 17.9s shows \"+30\" but that's when the ball is in the basket? Wait, no, the \"+30\" is for the first shot. Then the second shot: 18.9s shows the ball in the top basket. Third shot? Let's check.\n\nWait, the key is to find the fourth shot. Let's count the shots:\n\n1. First shot: the hand pulls the lever (15.1s), ball launched (16.3s), ball goes into a basket (17.9s with +30? No, 17.9s is the second shot? Wait, no, let's check the video:\n\n- 15.1s: hand pulls lever, ball on the launcher.\n- 16.3s: ball is launched, in mid-air.\n- 17.9s: \"+30\" appears, which is a score, so that's a shot where the ball went into a basket (the one that gives 30 points).\n- 18.9s: next shot, ball goes into the top basket (the highest one).\n- 19.9s: next shot, ball goes into another basket.\n- 20.9s: next shot, ball goes into the middle basket.\n\nWait, the question is: \"Did the ball go into the near-high left basket on the fourth shot of the first game?\"\n\nWe need to identify the fourth shot. Let's count the shots where the hand is pulling the lever and the ball is launched:\n\n1. 15.1s: first shot (hand pulls lever, ball on launcher)\n2. 17.9s: second shot (after +30)\n3. 18.9s: third shot (ball in top basket)\n4. 19.9s: fourth shot (ball in the next basket)\n\nWait, let's check the frame where the ball is in the near-high left basket. The near-high left basket is one of the baskets. Let's see the frame where the ball is in that basket.\n\nIn the frame 18.9s: the ball is in the top basket (the highest one, which is the center top). Then 19.9s: the ball is in a lower basket. Wait, no, let's check the frame 20.9s: the ball is in the middle basket. Wait, maybe the fourth shot is when the ball is in the near-high left basket.\n\nWait, the key is to check the fourth shot. Let's see:\n\nThe first game has multiple shots. The user is asking about the fourth shot. Let's check the frame where the fourth shot's result is shown.\n\nLooking at the frames:\n\n- The first shot (15.1s-16.3s): ball launched, then +30 (17.9s) so that's the first shot's result (30 points, so it went into a basket that gives 30).\n- The second shot (18.9s): ball is in the top basket (the highest one, which is the center top).\n- The third shot (19.9s): ball in a different basket.\n- The fourth shot (20.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 8,
+      "kind": "target",
+      "question": "In the first game, in the fourth shoot, did the ball goes into the highest basket?",
+      "gt": "No",
+      "pred": "So, let's check the first game part. The first game is shown in the early frames. Let's look at the sequence:\n\n- The first shot (frame 2) shows the ball in the lower basket, then +30 (frame 3) which is a different shot? Wait, no. Let's check the frames.\n\nWait, the first game is the one where the hand is shooting. Let's list the shots:\n\n1. The first frame where the ball is shot (frame 2: \"a hand pushes a lever, a yellow basketball is on a launcher\") then the ball is launched. The next frame (3) has +30, which is a score. Then frame 4: the ball is in the top basket. Wait, no: frame 2 is the initial setup, then frame 3 shows +30, frame 4 shows the ball in the top basket (the highest one). So the fourth shoot? Wait, no, the question is about the first game, fourth shoot.\n\nWait, let's check the order:\n\n- The video starts with the game being played. Let's see:\n\nFrame 2: hand pushing, ball on launcher.\n\nFrame 3: +30 (so that's a score, maybe the first shot).\n\nFrame 4: ball in the top basket (so that's a shot that went into the highest basket).\n\nWait, but the question is \"in the first game, in the fourth shoot, did the ball go into the highest basket?\"\n\nWait, maybe we need to count the shots. Let's check the frames where shots happen:\n\n- The first shot: frame 2 (ball is on launcher), then frame 3 (the ball is shot, +30), so that's shot 1.\n\n- Then frame 4: ball in the top basket (so shot 2? No, frame 4 is the ball in the top basket, which is a different shot).\n\nWait, maybe the first game is the sequence where the hand is shooting, and we need to check the fourth time the ball is shot.\n\nBut let's check the frames:\n\nLooking at the video, the first game's shots:\n\n1. The first shot (frame 2,3,4: the +30 is the first score, but the ball in the top basket is frame 4? Wait, frame 4 shows the ball in the top basket, so that's a shot into the highest basket.\n\nBut the question is about the fourth shoot. Let's count:\n\n- The first shoot: frame 2 (hand pushes), then the ball is launched, and in frame 3, +30 (so that's one shoot, score 30).\n\n- Then, the next shoot: frame 4 shows the ball in the top basket. So that's the second shoot.\n\n- Then, the third shoot: not sure, but the question is the fourth.\n\nWait, maybe I'm miscounting. Let's look at the frames:\n\nThe first game is the initial part where the hand is shooting. The frames that show the game being played:\n\n- Frame 2: hand pushing the lever, ball on the launcher (pre-shoot).\n\n- Frame 3: +30 (the ball was shot, score 30, so first shoot).\n\n- Frame 4: ball in the top basket (second shoot, since it's a different position).\n\n- Then, the next frames: frame 17 (a hand putting a ball in the drawer), frame 18 (a hand turning a knob), etc.\n\nWait, the question is about the first game, fourth shoot. Let's check if in the first game (the initial sequence), the fourth shot goes into the highest basket.\n\nBut looking at the frames, the first game's shots:\n\n1. First shot: frame 2-3: +30 (not the highest basket, since the highest basket is the top one).\n\n2. Second shot: frame 4: ball in the top basket (so that's the highest basket).\n\n3. Then, later, frame 25: \"PLAYER 2 SCORES\" and the ball is in a basket.\n\n4. Then, frame 26: the ball is in a basket.\n\nBut the question is about the fourth shoot in the first game. Let's check the frames where the game is being played (the part where the hand is shooting, not the construction).\n\nThe first game's sequence (the game part, not the making):\n\n- The first shot: frame 2 (hand pushes), frame 3 (+30, so score, not into highest basket? Wait, the +30 might be a score for a different basket).\n\n- Frame 4: the ball is in the top basket (so that's a shot into the highest basket).\n\n- Then, the next shots: frame 25 (PLAYER 2 SCORES) is the ball in a basket, frame 26: another shot.\n\nBut the",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a fourth shot in the first game?",
+      "gt": "Yes",
+      "pred": "No, there was no fourth shot in the first game. The video shows the first game sequence (e.g., frames 2-4) where the first shot is launched, and no evidence of a fourth shot in that initial game is visible.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the ball go into the highest basket on the fourth shot of the first game?",
+      "gt": "No",
+      "pred": "So, let's check the video. The first game: the first shot (frame 2) shows the ball going into a basket, then +30. The second shot (frame 3) shows the ball going into the top basket. Wait, the question is about the fourth shot of the first game. Let's see the sequence.\n\nFirst, the video shows the game being played. The first shot: frame 2 (ball in, +30). Then frame 3: ball goes into top basket. Then frame 4: the next shot. Wait, let's count the shots. The first game's shots:\n\n- Shot 1: frame 2 (ball goes into a basket, +30)\n- Shot 2: frame 3 (ball goes into top basket, but the text says +30? Wait, no, frame 3 shows the ball in the top basket. Wait, the question is the fourth shot.\n\nWait, let's look at the frames. The first game: the video shows the game in action. Let's list the relevant frames:\n\n- Frame 2: first shot, ball goes into a basket (not top)\n- Frame 3: second shot, ball goes into top basket (text +30)\n- Frame 4: third shot? No, frame 4 is the next. Wait, the question is about the fourth shot.\n\nWait, the first game is shown in the early frames. Let's check the sequence of shots. The video shows the game where a hand pulls the lever, launches the ball. Let's count:\n\n1. First shot: frame 2 (ball in a basket, +30)\n2. Second shot: frame 3 (ball in top basket)\n3. Third shot: frame 4 (the next shot, but frame 4 is the hand pulling, then the ball goes up)\n4. Fourth shot: let's see. The video has multiple shots. Wait, the problem is to check if the fourth shot of the first game went into the highest basket.\n\nWait, the highest basket is the top one. Let's check which shots hit the top basket. In frame 3, the ball is in the top basket (the one at the very top). Then, in the later frames, when it says \"PLAYER 2 SCORES\", but the first game: the first few shots.\n\nWait, the video starts with the game being played. Let's see the sequence:\n\n- The first shot (frame 2): ball goes into a basket (not top)\n- The second shot (frame 3): ball goes into the top basket (as seen in frame 3, the ball is in the top basket)\n- Third shot: frame 4 (the next shot, but frame 4 is the hand pulling the lever again, then the ball is launched)\n- Fourth shot: let's check the frames. The video shows the game, and the question is about the fourth shot of the first game.\n\nWait, but the key is: in the first game, how many shots are there? The question is \"Did the ball go into the highest basket on the fourth shot of the first game?\"\n\nLet's check the frames. The first game's shots:\n\n1. Frame 2: shot 1 - ball goes into a basket (not top)\n2. Frame 3: shot 2 - ball goes into top basket (as the ball is in the top basket)\n3. Frame 4: shot 3 - the next shot (the hand is pulling, then the ball is launched, but where? The next frame after frame 4 is frame 5, which is the ball in the top basket again? No, frame 5 is a different scene (the ball is in the top basket, but that's part of the game).\n\nWait, maybe the first game has multiple shots. Let's see: the video shows the game, and the first game's shots. The fourth shot: let's count.\n\nIn the video, the first game is shown in frames 2-5 (the game being played). Let's see:\n\n- Frame 2: shot 1, ball in basket, +30\n- Frame 3: shot 2, ball in top basket (as the text +30 is there, and the ball is in the top basket)\n- Frame 4: shot 3, the ball is launched (the hand is pulling the lever, then the ball goes up)\n- Frame 5: shot 4, the ball is in the top basket (the frame shows the ball in the top basket)\n\nWait, no. Let's check frame 4: the image shows a hand pulling the lever, and the ball is in the launcher. Then frame 5 (the next frame) shows the ball in the top basket. So shot 4 would be that. But the question is whether the fourth shot went into the highest basket.\n\nWait, but the problem is: the first",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 9,
+      "kind": "target",
+      "question": "In the first game, in the fifth shoot, did the ball goes into the near-high left basket?",
+      "gt": "Yes",
+      "pred": "Got it, let's check the video. First, we need to find the first game's fifth shoot. Let's look at the frames where the game is played.\n\nThe first game sequence: the first frame with the game is around 0.0 seconds (the second image in the list). Then, the next frames show the shooting. Let's count the shoots.\n\nLooking at the frames:\n\n- The first shoot: the ball is on the launcher, then launched. The next frame shows the ball in the basket. Let's check which basket. The first shoot: in the frame where it's \"0.0\" (the second image), the ball is on the launcher. Then, the next frame (0.0) shows the ball in the basket. Wait, the frames:\n\nFrame 2 (0.0): hand on the launcher, ball on the launcher.\n\nFrame 3: \"+30\" appears, so the ball went into a basket. Which one? The text \"+30\" is there, but we need to see which basket.\n\nFrame 4: the ball is in the top basket (the one at the very top). Wait, no, frame 4 shows the ball in the top basket? Let's check the positions.\n\nThe baskets are arranged in levels. The near-high left basket would be one of the upper left ones.\n\nWait, the question is about the fifth shoot in the first game. Let's count the shoots:\n\n1. First shoot: frame 2 (0.0) shows the hand launching, frame 3 shows +30, so that's the first shoot.\n\n2. Second shoot: frame 4 (0.0) shows the ball in the top basket.\n\n3. Third shoot: let's see the next frames. The frames where the game is played: frame 19 (19.0) shows \"PLAYER 1\", then frame 20 (20.0) shows hand taking a ball from the drawer, frame 21 (21.0) shows hand putting a ball on the launcher.\n\nWait, maybe the first game is the sequence where the \"PLAYER 1\" and \"PLAYER 2\" are shown.\n\nWait, the question is: \"in the first game, in the fifth shoot, did the ball go into the near-high left basket?\"\n\nLet's list the shoot attempts:\n\n- The first game's shoots: the frames where the ball is launched.\n\nLooking at the frames:\n\n- Frame 2: first launch (0.0s), the ball is on the launcher.\n\n- Frame 3: after launch, \"+30\" appears. Which basket? The basket where the ball went.\n\n- Frame 4: the ball is in the top basket (the one at the very top, center). So first shoot: top basket.\n\n- Then, the next shoots: we need to find the fifth shoot.\n\nBut maybe the first game is the one where the \"PLAYER 1\" text appears (frame 19: \"PLAYER 1\"). Let's check the frames:\n\nFrame 19: \"PLAYER 1\" text, hand on the launcher.\n\nFrame 20: hand taking a ball from the drawer.\n\nFrame 21: hand putting a ball on the launcher.\n\nFrame 22: hand pressing the launcher.\n\nFrame 23: the ball is launched, then in frame 24, the ball is in a basket.\n\nWait, this is getting confusing. Let's check the timestamps more carefully.\n\nThe video has multiple frames. The key is to find the first game (the initial gameplay) and the fifth shoot.\n\nLooking at the frames:\n\n1. The first game sequence:\n\n- Frame 2 (0.0s): hand on launcher, ball on launcher.\n\n- Frame 3 (0.0s): +30, so the ball went into a basket. Which one? The basket that the ball went into—let's see the position. The first basket the ball goes into: in frame 3, the ball is in the top basket (the one at the very top, center). So that's the first shoot.\n\n- Frame 4 (0.0s): the ball is in the top basket (the one at the very top), so the first shoot went into the top basket.\n\n- Then, the next shoot: frame 5 (0.0s) is a black screen, then frame 6 (0.0s) is the construction part. Wait, no, the video shows the construction first, then the gameplay.\n\nWait, the order of the frames:\n\nThe first frames are the gameplay (0.0s: first image is black, then the second image is the game), then the construction (from frame 4 onwards: the cardboard pieces, etc.), then the final gameplay.\n\nWait, no. The sequence of the video:\n\n- The first few frames are the gameplay (the game being played), then the construction steps, then the gameplay again.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a fifth shot in the first game?",
+      "gt": "Yes",
+      "pred": "No. The video does not show a fifth shot in the first game; the sequence of shots in the initial gameplay (e.g., timestamps 0:02–0:04) includes fewer than five distinct shots.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the ball go into a basket on the fifth shot of the first game?",
+      "gt": "Yes",
+      "pred": "So, let's check the video. The first game is shown in the early frames. Let's look at the shots. The first frame where the game is played: the hand is pulling the lever, the ball is launched. The question is about the fifth shot. Wait, the video shows the game being played, and we need to see if on the fifth shot the ball went into a basket.\n\nWait, the frames: let's list the game shots. The first game sequence: the first shot (frame 2: ball launched, then frame 3: +30, so it scored). Then the next shots. But the question is about the fifth shot of the first game. Wait, maybe the video doesn't show five shots, but let's check the relevant frames.\n\nWait, the problem is to check if on the fifth shot the ball went into a basket. Let's see the frames where the game is played. The frames with the game: frame 2 (first shot: ball launched, then frame 3: +30, so scored), frame 3 (ball in basket), then frame 4: next shot, etc. But the question is about the fifth shot. Wait, maybe the video shows that the fifth shot did go into a basket. Wait, but how do we know?\n\nWait, the user is asking for a direct answer. Let's check the video. The key is to see the shots. The first game: let's count the shots. The first shot: +30 (so scored). Then, the next shots. The frame where \"PLAYER 2 SCORES\" is shown (frame 22), but that's a different part. Wait, maybe the first game is the one with the \"PLAYER 1\" text (frame 20). Let's check the sequence.\n\nWait, the question is: Did the ball go into a basket on the fifth shot of the first game?\n\nWe need to check if in the first game (the initial play), on the fifth shot, the ball went into a basket. Let's see the frames. The video shows the game being played, but do we have enough info?\n\nWait, the problem says \"only use information you can directly verify from the video frames\". Let's check the frames. The first game is in the early part. The first shot: the ball is launched (frame 2), then it goes into a basket (frame 3: +30, so yes, scored). The next shots: frame 4 shows the ball in the top basket. Then, the next shots. But the question is about the fifth shot.\n\nWait, the frames that show the game play: frame 2 (1st shot), frame 3 (1st shot scored), frame 4 (2nd shot?), frame 20 (PLAYER 1, then hand pulls lever), frame 21 (hand takes ball from drawer), frame 22 (hand pulls lever again), frame 23 (ball in drawer), frame 24 (ball launched), frame 25 (ball in air), frame 26 (ball in basket, \"PLAYER 2 SCORES\").\n\nWait, the \"first game\" might be the initial sequence. Let's count the shots. The first shot (frame 2-3: scored), second shot (frame 4: ball in top basket, so scored), third shot? Maybe. But the problem is to check the fifth shot.\n\nAlternatively, maybe the answer is yes. Let's see if there's a frame where the fifth shot is shown. But the video might not show all five, but the question is whether it did. Wait, the user is asking for a direct answer based on the video.\n\nWait, looking at the frames: the first game (the main game shown) has multiple shots. The key is to check if on the fifth shot, the ball went into a basket. Since the video shows that when the ball is launched, it goes into a basket (as seen in frames 3, 4, 26, etc.), but for the fifth shot specifically.\n\nWait, maybe the answer is yes, because the game is designed to have the ball go into baskets, and the video shows scoring. But we need to verify.\n\nAlternatively, the video shows that in the first game, the ball does go into a basket on the fifth shot. But how to confirm?\n\nWait, the problem is to answer based on the video. Let's check the frames. The first game is shown in the early part. Let's see:\n\n- Frame 2: first shot, ball launched.\n- Frame 3: +30, so scored (1st shot).\n- Frame 4: ball in the top basket (2nd shot?).\n- Then, the next shots: frame 20 (PLAYER 1, hand pulls lever), frame 24 (ball launched), frame 25 (ball in air), frame 26 (ball",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the ball go into the near-high left basket on the fifth shot of the first game?",
+      "gt": "Yes",
+      "pred": "No. The fifth shot of the first game did not go into the near-high left basket. (Based on observation of the ball's trajectory and basket entry in the sequence of shots shown in the video.)",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the ball go into the near-high right basket on the fifth shot of the first game?",
+      "gt": "No",
+      "pred": "So, let's try to figure out this question. The user is asking if the ball went into the near-high right basket on the fifth shot of the first game. First, I need to check the video frames related to the first game's shots.\n\nLooking at the sequence: The first game starts with the hand launching the ball. Let's count the shots. The first shot: the ball is launched, and in the frame where it's +30, maybe that's a score. Wait, the video shows the game play. Let's check the frames where the ball is shot. \n\nWait, the fifth shot of the first game. Let's see the order of shots. The first few shots: \n\n- The first shot (as seen in the initial play) might be the first. Then the second, third, etc. The question is about the fifth shot. \n\nBut maybe the key is to check the basket. The \"near-high right basket\" – in the structure, the baskets are arranged. The \"near\" would be closer to the launcher, \"high\" meaning upper level, \"right\" side. \n\nLooking at the frames, when the ball is shot, which basket does it go into? The user is asking if on the fifth shot, it went into that specific basket. \n\nWait, maybe we need to check the timestamps. Let's see the frames where the game is played. The first game: \n\n- The first shot: ball is launched, then we see the +30 (maybe a score). Then the next shots. \n\nBut the problem is, the video might not explicitly count each shot as \"first, second, etc.\" However, the question is about the fifth shot. Let's see if there's a frame showing the fifth shot. \n\nWait, the user's question is \"Did the ball go into the near-high right basket on the fifth shot of the first game?\" \n\nLooking at the frames, the first game's shots: \n\n- The first shot: maybe the one where the +30 appears (second frame). Then the next shots. \n\nBut without a clear count of shots, it's hard. However, let's check the possible baskets. The \"near-high right\" – in the structure, the baskets are in different positions. The near-high right would be the one that's on the right side, upper level, and close to the launcher. \n\nWait, in the video, when the ball is shot, the basket that's hit. Let's check the frame where the ball is going into the basket. \n\nWait, maybe the answer is no, because looking at the shots, the fifth shot might not go into that basket. But how to verify? \n\nAlternatively, maybe the video doesn't show the fifth shot's result, but since the question is specific, we need to check. \n\nWait, the frames provided: let's list the game play frames. \n\n- The first game play: \n\n  - Frame 2: hand launches ball, +30 appears. \n\n  - Frame 3: ball in the top basket (the highest one). \n\n  - Then other frames show the game. \n\nBut the question is about the fifth shot. Since the video might not have a clear count of shots, but the user is asking if it did. \n\nWait, the key is: in the video, when the ball is shot, which basket does it go into. For the fifth shot, if it's the near-high right, but maybe it's not. \n\nAlternatively, maybe the answer is no. Because looking at the structure, the near-high right basket – let's see the arrangement. The baskets are in a pyramid: top has 1, then 2, then 3, then 4? Wait, in the frame with the full structure, there are multiple baskets. The \"near\" would be the ones closest to the launcher. The \"high\" would be the upper rows. The \"right\" would be the right side of the upper row. \n\nIf the fifth shot's basket is not that one, then the answer is no. \n\nSince the user is asking if it did, and based on the video, we need to check. But since the video doesn't have a clear count of shots, but maybe the fifth shot's result is not that basket. \n\nAlternatively, maybe the answer is no. Because in the video, the shots are shown, but the fifth shot's result isn't the near-high right. \n\nWait, let's think: the first game's shots. Let's count:\n\n1. First shot: maybe the one where +30 appears (frame 2). The ball goes into a basket, +30.\n\n2. Second shot: the next shot.\n\n3. Third shot: etc.\n\nBut without a clear count, it's hard. However, the question is specific, so maybe the answer is no. \n\nAlternatively, check if the \"near-high right\" basket is a specific one. In the structure",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 10,
+      "kind": "target",
+      "question": "In the first game, in the fifth shoot, did the ball goes into the highest basket?",
+      "gt": "No",
+      "pred": "No. In the first game, the only shot shown going into the highest basket is the first shot (evident in the frame where the ball is in the top basket, timestamp ~0:03-0:04). The fifth shot is not shown in the provided frames, but based on the visible sequence, the first shot is the only one into the highest basket. Therefore, the fifth shot did not go into the highest basket.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a fifth shot in the first game?",
+      "gt": "Yes",
+      "pred": "No. The video does not show a fifth shot in the first game; the sequence of shots in the initial gameplay (e.g., timestamps 0:02–0:04) includes fewer than five distinct shots.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "In the first game, did the ball from the fifth shot go into the highest basket?",
+      "gt": "No",
+      "pred": "So, let's check the video. The first game scene: the first shot (with the +30) is shown. Then, the next shot where the ball goes into the highest basket. Let's see the frames. The frame with the ball in the highest basket is the one where it says \"PLAYER 2 SCORES\" but wait, the question is about the fifth shot. Wait, the first game: the first shot is the one with the hand pressing, then the ball goes up. Let's count the shots. The video shows: first shot (hand pressing, ball goes, +30), then another shot where the ball goes into the top basket. Wait, the question is \"fifth shot\" but the video might not show five shots. Wait, no, the question is about the first game. Let's check the frames. The frame where the ball is in the highest basket: in the video, there's a frame where the ball is in the topmost basket. Let's check the timestamps. The frame with the ball in the highest basket is around the 3rd or 4th frame. Wait, the first game: the first shot (1), then the second shot (ball goes to top). Wait, the question is \"did the ball from the fifth shot go into the highest basket?\" But the video might not have five shots. Wait, let's check the video frames. The video shows: \n\n- The first game (with +30) is one shot. Then another shot where the ball goes into the top basket. So maybe the fifth shot isn't shown, but the question is about the first game. Wait, the question is \"In the first game, did the ball from the fifth shot go into the highest basket?\"\n\nWait, maybe the \"first game\" refers to the initial play. Let's check the frames. The frame where the ball goes into the highest basket is shown (in the frame with the ball in the top basket, which is the highest one). Let's see the timestamp. The frame with the ball in the highest basket is when the text \"PLAYER 2 SCORES\" is shown, but that's a different part. Wait, no. Let's check the sequence:\n\n1. The first game: the hand presses the lever, ball goes up, +30 (so that's a shot into a lower basket? Or higher? Wait, the +30 is when the ball is in a basket. Then the next shot: the ball goes into the topmost basket. Let's check the frame where the ball is in the highest basket. The frame with the highest basket is the one where the ball is in the topmost white basket. So in the video, the ball from the shot (which is one of the early shots) goes into the highest basket. The question is about the \"fifth shot\" but maybe the video doesn't have five shots. Wait, the problem says \"only use information you can directly verify from the video frames.\"\n\nLooking at the video frames:\n\n- The frame where the ball is in the highest basket (topmost white basket) is shown. So if the first game's shots include that, then yes. But the question is \"fifth shot\". Wait, maybe the first game has multiple shots, but the video only shows a few. Let's check the frame where the ball is in the highest basket. The frame is: [3] (the third frame in the sequence), which shows the ball in the top basket. So that shot (the one in the third frame) goes into the highest basket. But is that the fifth shot? The video might not show five shots, but the question is about the fifth shot. Wait, maybe the answer is no, because the video doesn't show five shots, but the question is about the first game. Alternatively, maybe the answer is yes. Wait, let's check the frames again.\n\nThe first game: the first shot (with +30) is into a basket (not the highest). Then the next shot: the ball goes into the highest basket (as seen in the frame where the ball is in the topmost basket). So that's the second shot. The question is about the fifth shot, but since the video doesn't show five shots, but the question is \"in the first game, did the ball from the fifth shot go into the highest basket?\" But the video doesn't have a fifth shot in the first game, so the answer would be no. But wait, the video might have multiple shots. Let's count the shots in the first game:\n\n- The first shot (hand presses, ball goes, +30)\n- Second shot: ball goes to top basket (as shown in the frame with the ball in the top basket)\n- Then \"PLAYER 2 SCORES\" which is another shot.\n\nBut the question is about the fifth shot. Since the video doesn't show five shots, but the answer is based on what's in the",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 11,
+      "kind": "target",
+      "question": "In the first game, in the sixth shoot, did the ball goes into the lowest basket?",
+      "gt": "No",
+      "pred": "Yes, in the first game, the sixth shoot the ball goes into the lowest basket (as seen in the sequence where the ball is shot and lands in the lowest basket, with the text “PLAYER 2 SCORES” indicating the scoring action).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a sixth shot in the first game?",
+      "gt": "Yes",
+      "pred": "No. The video does not show a sixth shot in the first game. The first game sequence (e.g., the initial shots with “+30” and subsequent plays) contains fewer than six shots, as verified by the sequence of frames showing the ball being launched and scoring.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "In the first game, did the ball from the sixth shot go into the lowest basket?",
+      "gt": "No",
+      "pred": "No. In the first game, the ball from the sixth shot did not go into the lowest basket. This is verified by observing the sequence of shots in the gameplay segments (e.g., timestamps showing ball trajectories and basket placements; the lowest basket is the one closest to the launcher, and the sixth shot’s trajectory does not align with it in the visible gameplay).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "target",
+      "question": "In the first game, in the sixth shoot, did the ball goes into the highest basket",
+      "gt": "Yes",
+      "pred": "So, let's check the video. The first game is shown in the early frames. Let's look at the sequence. The first game: the first shoot (frame 2) shows a +30, then frame 3 shows the ball going into the top basket. Wait, the question is about the sixth shoot. Wait, maybe I need to count the shots. Let's see the frames where the game is played.\n\nLooking at the video, the first game: the first shot is when the hand is on the lever (frame 2), then the ball goes up, +30 (frame 3). Then frame 4 shows the ball in the top basket. Then the next shots: frame 24 shows a shot where the ball goes into a middle basket (player 2 scores). Wait, maybe the \"sixth shoot\" is not clearly shown, but let's check the frames.\n\nWait, the question is about the first game, sixth shoot. Let's see: the video shows a few shots. The first shot: frame 2 (ball on lever), frame 3 (ball launched, +30), frame 4 (ball in top basket). Then, when does the sixth shot happen? The video might not show six shots, but let's check.\n\nWait, the problem is to verify if in the first game, sixth shoot, the ball went into the highest basket. Let's check the frames. The frames where the game is played: frame 2 (1st shot), frame 3 (1st shot result), frame 4 (1st shot result), then frame 24 (2nd shot: player 2 scores), frame 25 (3rd shot), etc. But the video might not have six shots. However, the key is to check the specific frame.\n\nWait, the question is about the first game, sixth shoot. Let's look for the frame where the sixth shot is. The video shows:\n\n- Frame 2: first shot (ball on lever)\n- Frame 3: +30 (1st shot)\n- Frame 4: ball in top basket (1st shot)\n- Then frame 24: \"PLAYER 2 SCORES\" (2nd shot)\n- Frame 25: hand on lever (2nd shot)\n- Frame 26: ball in middle basket (2nd shot)\n- Then frame 27: hand on lever (3rd shot)\n- Frame 28: ball in middle basket (3rd shot)\n- Frame 29: ball in top basket (3rd shot? No, frame 29 shows \"PLAYER 2 SCORES\" text)\n\nWait, maybe the video doesn't show six shots, but the question is about the sixth. However, the answer is that in the first game, the sixth shoot—do we have a frame where that happens?\n\nWait, let's check the frames again. The video shows the game play in the first few clips. The first game: the first shot (frame 2-4) goes into the top basket. Then, the next shots: frame 24 (2nd shot: player 2 scores, ball in middle basket), frame 25 (3rd shot), frame 26 (4th shot), etc. But the problem is to check if the sixth shot went into the highest basket.\n\nWait, maybe the video doesn't show six shots, but let's check the available frames. The only shots we can see:\n\n1. Frame 2: 1st shot (ball launched, +30, goes into top basket)\n2. Frame 24: 2nd shot (ball in middle basket)\n3. Frame 25: 3rd shot (hand on lever)\n4. Frame 26: 4th shot (ball in middle basket)\n5. Frame 27: 5th shot (hand on lever)\n6. Frame 28: 6th shot (ball in top basket? Let's check frame 28: the ball is in the top basket? No, frame 28 shows the ball in the middle basket. Wait, frame 28: the hand is on the lever, then frame 29: \"PLAYER 2 SCORES\" (so 2nd shot). Wait, maybe I'm miscounting.\n\nAlternatively, the question might be about the first game's sixth shot. Since the video doesn't show six shots, but let's check the first game. The first game is shown in the initial frames (2-4), then the construction, then the game again. The only clear shot where the ball goes into the highest basket is in frame 4 (1st shot). The other shots (like frame 24) show the ball in a middle basket. So for the sixth shoot, if it's not shown, but the question is asking for the first game's sixth shoot.\n\nWait, the problem says",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the first game have a sixth shot?",
+      "gt": "Yes",
+      "pred": "No, the first game did not have a sixth shot. The gameplay sequences shown for the first game (e.g., around the \"PLAYER 1\" timestamp) do not include a sixth shot.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is there a highest basket in the game?",
+      "gt": "Yes",
+      "pred": "Yes, there is a highest basket in the game. This can be observed in the game setup frames (e.g., 0:02, 0:03, 0:04), where multiple white baskets are arranged in a tiered structure with one at the topmost level.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "In the first game, did the ball from the sixth shot go into the highest basket?",
+      "gt": "Yes",
+      "pred": "So, let's check the video. The first game is shown in the early frames. The first shot: the ball goes into a basket, then +30. Then the next shot, the ball goes into the highest basket (the one at the top). Let's see the sequence. The first shot: the ball is launched, then in the next frame, it's in the top basket. Wait, the question is about the sixth shot. Wait, no, the first game—let's count the shots. Wait, the first part of the video shows the game being played. Let's check the timestamps.\n\nLooking at the frames:\n\n- The first shot (after the setup) is when the hand is pulling the launcher, then the ball goes into a basket, +30 (frame 2). Then the next shot (frame 3) the ball is in the top basket. Wait, the question is about the sixth shot. But maybe in the first game, the shots are: let's see. Wait, the first game is the initial play. Let's check the frames where the game is being played.\n\nWait, the first game (the one shown when the machine is first used) has a few shots. The first shot (frame 2) is +30, then the next shot (frame 3) the ball goes into the top basket. But the question is about the sixth shot. Wait, maybe the user is referring to the first game's sequence. Let's check the frames where the game is played.\n\nWait, the first game is the one where the hand is launching the ball. Let's count:\n\n1. First shot: ball goes to a lower basket, +30 (frame 2)\n2. Second shot: ball goes to top basket (frame 3)\n3. Then, later, when the game is set up again, the hand pulls the launcher, and the ball is launched (frame 22, 23, 24). Wait, maybe the question is about the first game's shots. But the problem is that the video shows multiple shots, but the question is about the sixth shot. However, in the first game, how many shots are there? Let's check the frames.\n\nWait, the first game is the initial play where the machine is demonstrated. Let's see the frames:\n\n- Frame 2: first shot, +30\n- Frame 3: second shot, ball in top basket\n- Then, later, in frame 22, the hand is pulling the launcher again, and the ball is launched (23, 24). But maybe the \"sixth shot\" isn't shown in the first part. Wait, the question says \"in the first game, did the ball from the sixth shot go into the highest basket?\"\n\nBut looking at the video, the first game (the initial play) has a few shots. Let's check the frames where the game is played:\n\n- The first shot (frame 2): ball goes into a basket (not the highest, since +30 is shown, maybe lower baskets have different points)\n- The second shot (frame 3): ball goes into the top basket (the highest one)\n- Then, in frame 22: hand pulls the launcher, and in frame 23, the ball is in the launcher, then frame 24: the ball is launched. Then frame 25: \"PLAYER 2 SCORES\", and the ball is in a basket.\n\nBut the question is about the sixth shot. However, the video may not show six shots in the first game. Wait, maybe the answer is no, because the first game's shots: the first shot goes to a lower basket (as +30 is shown, maybe the top basket is worth more, but the +30 is for the first shot, which is not the top basket). Wait, frame 2 shows +30, then frame 3 shows the ball in the top basket. So the first shot (which gets +30) is not the top basket, the second shot is the top basket.\n\nBut the question is about the sixth shot. Since the video doesn't show six shots in the first game (the first game is the initial part with the first few shots), maybe the answer is no. But we need to check.\n\nWait, the key is to find if in the first game, the sixth shot went into the highest basket. But the video doesn't show six shots in the first game. Let's check the frames:\n\n- The first game is the one where the machine is first played. The shots are:\n\n1. Frame 2: +30 (ball in a lower basket)\n2. Frame 3: ball in top basket\n3. Then, later, when the hand is pulling the launcher again (frame 22), that's another shot. But how many shots are there?\n\nAlternatively, maybe the \"first game\" refers to the game",
+      "is_correct": false,
+      "judge_raw": "NO"
+    }
+  ]
+}

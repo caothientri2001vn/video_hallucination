@@ -1,0 +1,150 @@
+{
+  "question": "When the white and red team plays against the blue team, does the player with blue shirt number 44 score the goal?",
+  "top_k": 10,
+  "indices": [
+    2,
+    3,
+    5,
+    6,
+    11,
+    12
+  ],
+  "events": [
+    {
+      "event_type": "game",
+      "description": "The white-shirt player (number 7) controls the ball with his chest near the edge of the penalty area.",
+      "participants": [
+        "white-shirt player"
+      ],
+      "actor": "white-shirt player",
+      "object": "football",
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 2,
+      "start_time": "00:01",
+      "end_time": "00:03",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "game",
+      "description": "The white-shirt player (number 7) strikes the ball with his right foot towards the goal.",
+      "participants": [
+        "white-shirt player"
+      ],
+      "actor": "white-shirt player",
+      "object": "football",
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "complete",
+      "event_index": 3,
+      "start_time": "00:03",
+      "end_time": "00:05",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "game",
+      "description": "The black-shirt goalkeeper dives to his left but cannot reach the ball.",
+      "participants": [
+        "black-shirt goalkeeper"
+      ],
+      "actor": "black-shirt goalkeeper",
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "complete",
+      "event_index": 5,
+      "start_time": "00:06",
+      "end_time": "00:07",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "game",
+      "description": "The ball hits the back of the net in the top right corner, scoring a goal.",
+      "participants": [
+        "white-shirt player",
+        "black-shirt goalkeeper"
+      ],
+      "object": "football",
+      "outcome": "scored",
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "complete",
+      "event_index": 6,
+      "start_time": "00:07",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "game",
+      "description": "The white-shirt player heads the ball toward the goal while surrounded by blue-shirt defenders.",
+      "participants": [
+        "white-shirt player",
+        "blue-shirt player",
+        "blue-shirt player",
+        "blue-shirt player",
+        "blue-shirt player"
+      ],
+      "actor": "white-shirt player",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "TARAFTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 11,
+      "start_time": "00:15",
+      "end_time": "00:16",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "game",
+      "description": "The white ball enters the goal past the diving goalkeeper.",
+      "participants": [
+        "goalkeeper"
+      ],
+      "actor": "white ball",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "TARAFTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "complete",
+      "event_index": 12,
+      "start_time": "00:16",
+      "end_time": "00:17",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    }
+  ]
+}

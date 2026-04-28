@@ -1,0 +1,92 @@
+{
+  "question": "Did the blue evening dress appear closer to the red strapless dress than to the final white lace dress?",
+  "pred": "The video showcases a series of dresses worn by a woman. To determine the chronological order and proximity of the specific dresses mentioned:\n\n1.  **Yellow halter dress**: Shown first.\n2.  **Red strapless dress**: Shown second.\n3.  **Blue evening dress** (light blue/pale blue): Shown third.\n4.  **White lace dress** (with floral patterns and a slit): Shown fourth.\n5.  **Black lace dress**: Shown fifth.\n6.  **Pink one-shoulder dress** (with floral accents): Shown sixth.\n7.  **Red evening dress** (with floral accents and a slit): Shown seventh.\n8.  **White off-the-shoulder dress** (plain): Shown eighth.\n9.  **Pink strapless dress** (satin-like): Shown ninth.\n10. **Final white lace dress** (off-the-shoulder with bell sleeves): Shown tenth.\n\nThe blue evening dress (3rd) appeared immediately after the red strapless dress (2nd), making them adjacent in the sequence. The final white lace dress (10th) appeared much later at the end of the video. Therefore, the blue evening dress was chronologically closer to the red strapless dress.\n\nEvidence: The blue evening dress is shown immediately after the red strapless dress, while the final white lace dress is the last item shown in the video.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "hold": 1,
+      "posture_shift": 1,
+      "reveal": 1
+    },
+    "events": [
+      {
+        "event_type": "hold",
+        "description": "A woman holds multiple dresses in front of her with both hands",
+        "participants": [
+          "white-tshirt woman"
+        ],
+        "actor": "white-tshirt woman",
+        "object": "multiple dresses",
+        "on_screen_text": [
+          {
+            "text": "my top 10 dresses of 2024",
+            "location": "center"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Dress showcase",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:03",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Dress showcase"
+      },
+      {
+        "event_type": "posture_shift",
+        "description": "The woman shifts her stance, causing the dresses to move slightly",
+        "participants": [
+          "white-tshirt woman"
+        ],
+        "actor": "white-tshirt woman",
+        "object": "multiple dresses",
+        "segment_boundary": "middle",
+        "segment_label": "Dress showcase",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 2,
+        "start_time": "00:03",
+        "end_time": "00:06",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Dress showcase"
+      },
+      {
+        "event_type": "reveal",
+        "description": "The woman's purple slippers with cat designs become visible as she shifts position",
+        "participants": [
+          "white-tshirt woman"
+        ],
+        "actor": "white-tshirt woman",
+        "object": "slippers",
+        "object_after": "purple slippers with cat designs",
+        "segment_boundary": "middle",
+        "segment_label": "Dress showcase",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 3,
+        "start_time": "00:06",
+        "end_time": "00:09",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Dress showcase"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Dress showcase",
+        "event_index_range": [
+          1,
+          3
+        ]
+      }
+    ]
+  }
+}

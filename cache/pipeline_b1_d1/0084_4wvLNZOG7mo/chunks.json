@@ -1,0 +1,181 @@
+{
+  "video_name": "0084_4wvLNZOG7mo.mp4",
+  "video_duration_sec": 18.8,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:02",
+          "local_end": "00:03",
+          "event_type": "pick_up",
+          "description": "A gloved hand uses tongs to pick up a strawberry from the container",
+          "participants": [
+            "black-glove person"
+          ],
+          "actor": "black-glove person",
+          "object": "strawberry"
+        },
+        {
+          "local_start": "00:03",
+          "local_end": "00:04",
+          "event_type": "lift",
+          "description": "The strawberry is lifted upward by the tongs",
+          "participants": [
+            "black-glove person"
+          ],
+          "actor": "black-glove person",
+          "object": "strawberry"
+        },
+        {
+          "local_start": "00:04",
+          "local_end": "00:05",
+          "event_type": "place",
+          "description": "The strawberry is moved toward and placed into a bowl of ice water",
+          "participants": [
+            "black-glove person"
+          ],
+          "actor": "black-glove person",
+          "object": "strawberry"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:06",
+          "event_type": "submerge",
+          "description": "The strawberry is submerged in ice water",
+          "participants": [
+            "black-glove person"
+          ],
+          "actor": "black-glove person",
+          "object": "strawberry"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:07",
+          "event_type": "lift",
+          "description": "The strawberry is lifted out of the ice water",
+          "participants": [
+            "black-glove person"
+          ],
+          "actor": "black-glove person",
+          "object": "strawberry"
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:08",
+          "event_type": "place",
+          "description": "The strawberry is moved toward and dropped into a blender cup",
+          "participants": [
+            "black-glove person"
+          ],
+          "actor": "black-glove person",
+          "object": "strawberry"
+        },
+        {
+          "local_start": "00:08",
+          "local_end": "00:10",
+          "event_type": "add",
+          "description": "Multiple strawberries are added to the blender cup",
+          "participants": [
+            "black-glove person"
+          ],
+          "actor": "black-glove person",
+          "object": "strawberries"
+        },
+        {
+          "local_start": "00:10",
+          "local_end": "00:11",
+          "event_type": "hold",
+          "description": "A gloved hand holds a banana",
+          "participants": [
+            "black-glove person"
+          ],
+          "actor": "black-glove person",
+          "object": "banana"
+        },
+        {
+          "local_start": "00:11",
+          "local_end": "00:12",
+          "event_type": "cut",
+          "description": "The banana is cut with a knife at the stem end",
+          "participants": [
+            "black-glove person"
+          ],
+          "actor": "black-glove person",
+          "object": "banana"
+        },
+        {
+          "local_start": "00:12",
+          "local_end": "00:14",
+          "event_type": "peel",
+          "description": "The banana is peeled, revealing the white fruit inside",
+          "participants": [
+            "black-glove person"
+          ],
+          "actor": "black-glove person",
+          "object": "banana"
+        },
+        {
+          "local_start": "00:14",
+          "local_end": "00:15",
+          "event_type": "slice",
+          "description": "The banana is sliced lengthwise while still partially in its peel",
+          "participants": [
+            "black-glove person"
+          ],
+          "actor": "black-glove person",
+          "object": "banana"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 18.8,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:19",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:18",
+          "event_type": "blending",
+          "description": "The blender operates, mixing ingredients into a smooth pink liquid",
+          "participants": [
+            "black-glove person"
+          ],
+          "actor": "black-glove person",
+          "object": "pink liquid",
+          "segment_boundary": "middle",
+          "segment_label": "smoothie preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:18",
+          "local_end": "00:19",
+          "event_type": "lift",
+          "description": "The person lifts the blender container off the base",
+          "participants": [
+            "black-glove person"
+          ],
+          "actor": "black-glove person",
+          "object": "blender container",
+          "segment_boundary": "middle",
+          "segment_label": "smoothie preparation",
+          "continuation_hint": "complete"
+        }
+      ]
+    }
+  ]
+}

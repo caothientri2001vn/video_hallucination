@@ -1,0 +1,635 @@
+{
+  "question": "Did it land on the number 4 on the first spin?",
+  "pred": "The video shows a game where a man in a blue shirt and a woman in a red shirt spin a colorful wheel to determine their actions with stacks of cups.\n\n1.  **First Spin:** The woman in the red shirt spins the wheel at approximately 00:05 (Event 2). The wheel slows down and stops with the pointer on a pink segment (Event 9). Looking at the frames during this first stop (around 00:26), the pointer is clearly on the pink section, which is labeled with the number **1**.\n2.  **Subsequent Spins:** The wheel is spun again later. For example, at 00:56 (Event 23), it stops on a red section with the number 3.\n\nThe first spin landed on the number 1, not the number 4.\n\nEvidence: Event 9 in the Context and frames near 00:26 show the wheel stopping with the pointer on the pink section labeled '1'.\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": {
+    "subtype_counts": {
+      "place": 4,
+      "manipulate": 4,
+      "spin": 3,
+      "cup_arrangement": 3,
+      "point": 2,
+      "on_screen_text": 1,
+      "rotate": 1,
+      "hand_raise": 1,
+      "wheel_stop": 1,
+      "game": 1,
+      "rotation": 1,
+      "stop": 1,
+      "arrange": 1,
+      "graphic": 1,
+      "gesture": 1
+    },
+    "events": [
+      {
+        "event_type": "on_screen_text",
+        "description": "Text overlay 'Last Color Standing Wins! Justice vs Susannah' is displayed on screen",
+        "participants": [],
+        "actor": null,
+        "on_screen_text": [
+          {
+            "text": "Last Color Standing Wins!",
+            "location": "banner"
+          },
+          {
+            "text": "Justice vs Susannah",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Last Color Standing Wins",
+        "continuation_hint": "complete",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:05",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "spin",
+        "description": "Woman in red shirt spins the colorful wheel with her right hand",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt woman"
+        ],
+        "actor": "red-shirt woman",
+        "object": "colorful wheel",
+        "on_screen_text": [
+          {
+            "text": "WIN",
+            "location": "wheel"
+          },
+          {
+            "text": "LOSE A TURN",
+            "location": "wheel"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Last Color Standing Wins",
+        "continuation_hint": "complete",
+        "event_index": 2,
+        "start_time": "00:05",
+        "end_time": "00:08",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "rotate",
+        "description": "Colorful wheel continues rotating after being spun",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt woman"
+        ],
+        "actor": null,
+        "object": "colorful wheel",
+        "on_screen_text": [
+          {
+            "text": "1",
+            "location": "wheel"
+          },
+          {
+            "text": "2",
+            "location": "wheel"
+          },
+          {
+            "text": "3",
+            "location": "wheel"
+          },
+          {
+            "text": "4",
+            "location": "wheel"
+          },
+          {
+            "text": "5",
+            "location": "wheel"
+          },
+          {
+            "text": "6",
+            "location": "wheel"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Last Color Standing Wins",
+        "continuation_hint": "complete",
+        "event_index": 3,
+        "start_time": "00:06",
+        "end_time": "00:10",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "place",
+        "description": "Man in blue shirt picks up a pink cup from the front-left position of the pink cup array and places it on the back row",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt woman"
+        ],
+        "actor": "blue-shirt man",
+        "cover": "pink cup",
+        "hidden": "uncertain",
+        "segment_boundary": "middle",
+        "segment_label": "Last Color Standing Wins",
+        "continuation_hint": "complete",
+        "event_index": 4,
+        "start_time": "00:08",
+        "end_time": "00:12",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "place",
+        "description": "Woman in red shirt picks up a yellow cup from the front-left position of the yellow cup array and places it on the back row",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt woman"
+        ],
+        "actor": "red-shirt woman",
+        "cover": "yellow cup",
+        "hidden": "uncertain",
+        "segment_boundary": "middle",
+        "segment_label": "Last Color Standing Wins",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 5,
+        "start_time": "00:10",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "cup_arrangement",
+        "description": "The woman in red adjusts the rightmost stack of yellow cups, lowering the height of the stack",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt woman"
+        ],
+        "actor": "red-shirt woman",
+        "object": "yellow cup",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Stacking Game",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 6,
+        "start_time": "00:15",
+        "end_time": "00:19",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "The man in blue raises his right hand (pointing finger) toward the spinning wheel while speaking",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt woman"
+        ],
+        "actor": "blue-shirt man",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Stacking Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 7,
+        "start_time": "00:19",
+        "end_time": "00:22",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "spin",
+        "description": "The man in blue spins the colorful wheel clockwise with his right hand",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt woman"
+        ],
+        "actor": "blue-shirt man",
+        "object": "colorful wheel",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Stacking Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 8,
+        "start_time": "00:22",
+        "end_time": "00:24",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "wheel_stop",
+        "description": "The spinning wheel slows and stops with the pointer on a pink segment",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt woman"
+        ],
+        "actor": "colorful wheel",
+        "object_before": "spinning wheel",
+        "object_after": "stationary wheel",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Stacking Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 9,
+        "start_time": "00:24",
+        "end_time": "00:26",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "cup_arrangement",
+        "description": "The woman in red adjusts the middle-left stack of pink cups, reducing the stack height by removing the top cup",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt woman"
+        ],
+        "actor": "red-shirt woman",
+        "object": "pink cup",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Stacking Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 10,
+        "start_time": "00:26",
+        "end_time": "00:29",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "cup_arrangement",
+        "description": "The man in blue adjusts the leftmost stack of pink cups, placing a cup on top of the stack",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt woman"
+        ],
+        "actor": "blue-shirt man",
+        "object": "pink cup",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Stacking Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 11,
+        "start_time": "00:28",
+        "end_time": "00:30",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "point",
+        "description": "The woman in red shirt points at the spinning wheel with her right index finger",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt woman"
+        ],
+        "actor": "red-shirt woman",
+        "segment_boundary": "middle",
+        "segment_label": "Wheel Game with Cup Challenge",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 12,
+        "start_time": "00:30",
+        "end_time": "00:32",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "game",
+        "description": "The colorful wheel continues spinning with visible numbers and text sections",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt woman"
+        ],
+        "actor": "wheel",
+        "segment_boundary": "middle",
+        "segment_label": "Wheel Game with Cup Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 13,
+        "start_time": "00:32",
+        "end_time": "00:34",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "point",
+        "description": "The man in blue shirt points at the spinning wheel with his right index finger",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt woman"
+        ],
+        "actor": "blue-shirt man",
+        "segment_boundary": "middle",
+        "segment_label": "Wheel Game with Cup Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 14,
+        "start_time": "00:34",
+        "end_time": "00:36",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "manipulate",
+        "description": "The woman in red shirt lifts the top yellow cup from the rightmost stack of yellow cups",
+        "participants": [
+          "red-shirt woman"
+        ],
+        "actor": "red-shirt woman",
+        "object": "yellow cup",
+        "cover": "yellow cup",
+        "hidden": "uncertain: pink cup",
+        "segment_boundary": "middle",
+        "segment_label": "Wheel Game with Cup Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 15,
+        "start_time": "00:36",
+        "end_time": "00:38",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "manipulate",
+        "description": "The woman places the yellow cup onto another stack of yellow cups on the right side of the table",
+        "participants": [
+          "red-shirt woman"
+        ],
+        "actor": "red-shirt woman",
+        "object": "yellow cup",
+        "cover": "yellow cup",
+        "hidden": "uncertain: pink cup",
+        "segment_boundary": "middle",
+        "segment_label": "Wheel Game with Cup Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 16,
+        "start_time": "00:38",
+        "end_time": "00:40",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "manipulate",
+        "description": "The woman lifts another yellow cup from the rightmost stack and places it on a different stack",
+        "participants": [
+          "red-shirt woman"
+        ],
+        "actor": "red-shirt woman",
+        "object": "yellow cup",
+        "cover": "yellow cup",
+        "hidden": "uncertain: pink cup",
+        "segment_boundary": "middle",
+        "segment_label": "Wheel Game with Cup Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 17,
+        "start_time": "00:40",
+        "end_time": "00:42",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "manipulate",
+        "description": "The woman continues rearranging yellow cups, moving them from rightmost stack to form new arrangements",
+        "participants": [
+          "red-shirt woman"
+        ],
+        "actor": "red-shirt woman",
+        "object": "yellow cup",
+        "cover": "yellow cup",
+        "hidden": "uncertain: pink cup",
+        "segment_boundary": "middle",
+        "segment_label": "Wheel Game with Cup Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 18,
+        "start_time": "00:42",
+        "end_time": "00:45",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "place",
+        "description": "blue-shirt man picks up a pink cup from the leftmost stack of pink cups and places it on top of the rightmost yellow cup stack",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt woman"
+        ],
+        "actor": "blue-shirt man",
+        "object": "pink cup",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Stacking Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 19,
+        "start_time": "00:48",
+        "end_time": "00:51",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "place",
+        "description": "blue-shirt man picks up another pink cup from the middle pink cup stack and places it on top of the rightmost yellow cup stack",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt woman"
+        ],
+        "actor": "blue-shirt man",
+        "object": "pink cup",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Stacking Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 20,
+        "start_time": "00:51",
+        "end_time": "00:52",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "spin",
+        "description": "red-shirt woman reaches out with her right hand and spins the colorful wheel clockwise",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt woman"
+        ],
+        "actor": "red-shirt woman",
+        "object": "colorful wheel",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Stacking Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 21,
+        "start_time": "00:52",
+        "end_time": "00:53",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "rotation",
+        "description": "colorful wheel spins rapidly, showing different colored sections with numbers and text",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt woman"
+        ],
+        "actor": "colorful wheel",
+        "object": "colorful wheel",
+        "object_before": "stationary colorful wheel",
+        "object_after": "spinning colorful wheel",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Stacking Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 22,
+        "start_time": "00:53",
+        "end_time": "00:56",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "stop",
+        "description": "colorful wheel slows down and comes to a stop on a red section with the number 3",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt woman"
+        ],
+        "actor": "colorful wheel",
+        "object": "colorful wheel",
+        "object_before": "spinning colorful wheel",
+        "object_after": "stationary colorful wheel",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Stacking Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 23,
+        "start_time": "00:56",
+        "end_time": "00:58",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "arrange",
+        "description": "red-shirt woman adjusts the yellow cups on the right side of the table, rearranging their stack configuration by moving the middle yellow cup stack to the right",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt woman"
+        ],
+        "actor": "red-shirt woman",
+        "object": "yellow cups",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Stacking Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 24,
+        "start_time": "00:58",
+        "end_time": "01:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "graphic",
+        "description": "Text \"Winner: Justice!\" appears as a banner overlay on the screen",
+        "participants": [
+          "blue-shirt man",
+          "red-shirt woman"
+        ],
+        "actor": "graphic",
+        "on_screen_text": [
+          {
+            "text": "Winner: Justice!",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Cup Stacking Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 25,
+        "start_time": "01:00",
+        "end_time": "01:04",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The man in the light blue shirt gives a thumbs-up gesture with both hands",
+        "participants": [
+          "blue-shirt man"
+        ],
+        "actor": "blue-shirt man",
+        "segment_boundary": "end",
+        "segment_label": "Cup Stacking Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 26,
+        "start_time": "01:07",
+        "end_time": "01:12",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Last Color Standing Wins"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Last Color Standing Wins",
+        "event_index_range": [
+          1,
+          26
+        ]
+      }
+    ]
+  }
+}

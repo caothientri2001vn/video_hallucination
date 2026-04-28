@@ -1,0 +1,4282 @@
+{
+  "question": "During the penalty kick, did player number 9 miss after player number 7 missed?",
+  "pred": "The video shows a penalty shootout segment within a soccer match. According to the Context and frames:\n\n1.  **Player number 7's attempt:** At approximately 02:23-02:28, the player in the light blue uniform with number 7 (identified in Context as \"light blue uniform player #7\") takes a penalty kick. The goalkeeper in light green successfully saves the shot (Event 80). This constitutes a miss for player number 7.\n2.  **Player number 9's attempt:** There is no record in the Context or visible evidence in the frames of a player wearing number 9 taking a penalty kick during this shootout segment. While a \"light blue-shirt player #9\" is mentioned earlier in the video (Event 10 at 00:13), he is not shown participating in the penalty shootout that occurs later (starting around 02:15).\n\nSince there is no second missed penalty by a player number 9 following the miss by player number 7, the answer is No.\n\nEvidence: Event 80 in Context describes the goalkeeper saving the penalty kick from \"light blue uniform player #7\" at 02:26, but no subsequent penalty attempt by a player number 9 is recorded.\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": {
+    "subtype_counts": {
+      "celebration": 26,
+      "hand_raise": 14,
+      "dive": 9,
+      "goal": 7,
+      "run": 7,
+      "pass": 6,
+      "applaud": 5,
+      "dribble": 5,
+      "game": 5,
+      "react": 4,
+      "shot": 4,
+      "transition": 4,
+      "point": 4,
+      "graphic": 4,
+      "shoot": 3,
+      "hug": 3,
+      "save": 3,
+      "fall": 3,
+      "kick": 3,
+      "lift": 3,
+      "confetti_fall": 3,
+      "reposition": 2,
+      "score": 2,
+      "audience_reaction": 2,
+      "header_attempt": 2,
+      "hand_gesture": 2,
+      "hold": 2,
+      "cheer": 2,
+      "high_five": 2,
+      "receive": 1,
+      "look": 1,
+      "prepare_corner": 1,
+      "corner_kick": 1,
+      "aerial_challenge": 1,
+      "shoulder_tap": 1,
+      "approach": 1,
+      "join_celebration": 1,
+      "interception_attempt": 1,
+      "tackle_attempt": 1,
+      "tackle": 1,
+      "argument": 1,
+      "free_kick_setup": 1,
+      "gesture": 1,
+      "gather": 1,
+      "lie": 1,
+      "on_screen_text": 1,
+      "recovery": 1,
+      "positioning": 1,
+      "preparation": 1,
+      "reaction": 1,
+      "state_change": 1,
+      "diving_save": 1,
+      "save_completion": 1,
+      "land": 1,
+      "get_up": 1,
+      "ball_retrieval": 1,
+      "prepare_throw_in": 1,
+      "free_kick": 1,
+      "ball_in_flight": 1,
+      "run_celebration": 1,
+      "scored": 1,
+      "speak": 1,
+      "whistle_blow": 1,
+      "reset": 1,
+      "reach": 1,
+      "touch": 1,
+      "wave": 1,
+      "trophy_lift": 1,
+      "crowd_celebration": 1,
+      "trophy_display": 1,
+      "medal_celebration": 1,
+      "kiss": 1,
+      "graphic_change": 1
+    },
+    "events": [
+      {
+        "event_type": "pass",
+        "description": "A light blue-shirted player passes the ball forward toward the center of the field",
+        "participants": [
+          "light blue-shirt player"
+        ],
+        "actor": "light blue-shirt player",
+        "object": "white soccer ball",
+        "outcome": "successful pass",
+        "on_screen_text": [
+          {
+            "text": "EXPERIENCE THE WEMBLEY STADIUM TOUR",
+            "location": "stadium banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:01",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "receive",
+        "description": "A light blue-shirted player receives the pass and continues running with the ball",
+        "participants": [
+          "light blue-shirt player"
+        ],
+        "actor": "light blue-shirt player",
+        "object": "white soccer ball",
+        "outcome": "ball control maintained",
+        "on_screen_text": [
+          {
+            "text": "EXPERIENCE THE WEMBLEY STADIUM TOUR",
+            "location": "stadium banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 2,
+        "start_time": "00:01",
+        "end_time": "00:03",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "shoot",
+        "description": "A light blue-shirted player takes a shot on goal from outside the penalty area",
+        "participants": [
+          "light blue-shirt player"
+        ],
+        "actor": "light blue-shirt player",
+        "object": "white soccer ball",
+        "outcome": "shot on target",
+        "on_screen_text": [
+          {
+            "text": "EXPERIENCE THE WEMBLEY STADIUM TOUR",
+            "location": "stadium banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 3,
+        "start_time": "00:03",
+        "end_time": "00:05",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "dive",
+        "description": "The goalkeeper in green dives to the right attempting to save the shot",
+        "participants": [
+          "green goalkeeper"
+        ],
+        "actor": "green goalkeeper",
+        "object": "white soccer ball",
+        "outcome": "save attempt unsuccessful",
+        "on_screen_text": [
+          {
+            "text": "EXPERIENCE THE WEMBLEY STADIUM TOUR",
+            "location": "stadium banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 4,
+        "start_time": "00:05",
+        "end_time": "00:06",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "goal",
+        "description": "The ball enters the net for a goal",
+        "participants": [
+          "white soccer ball"
+        ],
+        "actor": "white soccer ball",
+        "object": "white soccer ball",
+        "outcome": "scored",
+        "on_screen_text": [
+          {
+            "text": "EXPERIENCE THE WEMBLEY STADIUM TOUR",
+            "location": "stadium banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 5,
+        "start_time": "00:06",
+        "end_time": "00:08",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "The scoring light blue-shirted player raises arms in celebration near the goal",
+        "participants": [
+          "light blue-shirt player"
+        ],
+        "actor": "light blue-shirt player",
+        "object": "",
+        "outcome": "celebratory gesture",
+        "on_screen_text": [
+          {
+            "text": "Emirates FLY BETTER",
+            "location": "stadium banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 6,
+        "start_time": "00:08",
+        "end_time": "00:10",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 26,
+        "round_index": 1,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "run",
+        "description": "Teammates in light blue shirts run toward the scorer to celebrate",
+        "participants": [
+          "light blue-shirt players"
+        ],
+        "actor": "light blue-shirt players",
+        "object": "",
+        "outcome": "approaching scorer",
+        "on_screen_text": [
+          {
+            "text": "Emirates FLY BETTER",
+            "location": "stadium banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 7,
+        "start_time": "00:09",
+        "end_time": "00:11",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "react",
+        "description": "Opposing players in blue and red shirts show disappointment after conceding the goal",
+        "participants": [
+          "blue and red-shirt players"
+        ],
+        "actor": "blue and red-shirt players",
+        "object": "",
+        "outcome": "disappointed reaction",
+        "on_screen_text": [
+          {
+            "text": "Emirates FLY BETTER",
+            "location": "stadium banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 8,
+        "start_time": "00:09",
+        "end_time": "00:12",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "applaud",
+        "description": "The crowd in the stands applauds and celebrates the goal",
+        "participants": [
+          "stadium crowd"
+        ],
+        "actor": "stadium crowd",
+        "object": "",
+        "outcome": "collective celebration",
+        "on_screen_text": [
+          {
+            "text": "Emirates FLY BETTER",
+            "location": "stadium banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 9,
+        "start_time": "00:10",
+        "end_time": "00:12",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "look",
+        "description": "The player with number 9 (Haaland) stands near the goal net looking toward the field",
+        "participants": [
+          "light blue-shirt player #9"
+        ],
+        "actor": "light blue-shirt player #9",
+        "object": "",
+        "outcome": "observing field",
+        "on_screen_text": [
+          {
+            "text": "Emirates FA CUP",
+            "location": "stadium banner"
+          },
+          {
+            "text": "9",
+            "location": "jersey_number"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 10,
+        "start_time": "00:13",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "shot",
+        "description": "light blue player takes a shot on goal from the right side of the penalty area",
+        "participants": [
+          "light blue player",
+          "goalkeeper"
+        ],
+        "actor": "light blue player",
+        "object": "white soccer ball",
+        "outcome": "toward goal",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 11,
+        "start_time": "00:15",
+        "end_time": "00:17",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "dive",
+        "description": "goalkeeper in green dives to the left to attempt to save the shot",
+        "participants": [
+          "goalkeeper"
+        ],
+        "actor": "goalkeeper",
+        "object": "white soccer ball",
+        "outcome": "attempted save",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 12,
+        "start_time": "00:17",
+        "end_time": "00:19",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "goal",
+        "description": "ball enters the goal net past the diving goalkeeper",
+        "participants": [
+          "goalkeeper",
+          "light blue player"
+        ],
+        "actor": "white soccer ball",
+        "object": "white soccer ball",
+        "outcome": "scored",
+        "on_screen_text": [],
+        "segment_boundary": "end",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 13,
+        "start_time": "00:18",
+        "end_time": "00:20",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "light blue player celebrates by running toward the corner flag with arms raised",
+        "participants": [
+          "light blue player"
+        ],
+        "actor": "light blue player",
+        "object": "",
+        "outcome": "celebration",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 14,
+        "start_time": "00:19",
+        "end_time": "00:22",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 26,
+        "round_index": 1,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "reposition",
+        "description": "players from both teams reposition for a corner kick setup near the corner flag",
+        "participants": [
+          "light blue players",
+          "dark blue players"
+        ],
+        "actor": "light blue players",
+        "object": "",
+        "outcome": "repositioning",
+        "on_screen_text": [
+          {
+            "text": "Emirates FA CUP",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Corner Kick",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 15,
+        "start_time": "00:22",
+        "end_time": "00:24",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "prepare_corner",
+        "description": "light blue player positions the ball on the corner arc and steps back to prepare for the kick",
+        "participants": [
+          "light blue corner taker"
+        ],
+        "actor": "light blue corner taker",
+        "object": "white soccer ball",
+        "outcome": "preparing kick",
+        "on_screen_text": [
+          {
+            "text": "Emirates",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Corner Kick",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 16,
+        "start_time": "00:24",
+        "end_time": "00:27",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "corner_kick",
+        "description": "light blue player takes the corner kick, sending the ball into the penalty area",
+        "participants": [
+          "light blue corner taker"
+        ],
+        "actor": "light blue corner taker",
+        "object": "white soccer ball",
+        "outcome": "kicked into box",
+        "on_screen_text": [
+          {
+            "text": "Emirates",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Corner Kick",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 17,
+        "start_time": "00:27",
+        "end_time": "00:28",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "aerial_challenge",
+        "description": "multiple players jump to contest the ball in the air inside the penalty area",
+        "participants": [
+          "light blue players",
+          "dark blue players"
+        ],
+        "actor": "multiple players",
+        "object": "white soccer ball",
+        "outcome": "contested",
+        "on_screen_text": [
+          {
+            "text": "Emirates",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Corner Kick",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 18,
+        "start_time": "00:28",
+        "end_time": "00:30",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "dribble",
+        "description": "Player in purple and red striped jersey dribbles the ball forward in midfield while being pursued by light blue jersey players",
+        "participants": [
+          "purple and red striped jersey player",
+          "light blue jersey players"
+        ],
+        "actor": "purple and red striped jersey player",
+        "object": "white soccer ball",
+        "outcome": "continues",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 19,
+        "start_time": "00:30",
+        "end_time": "00:33",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "pass",
+        "description": "Player in purple and red striped jersey passes the ball to a teammate who continues the attack",
+        "participants": [
+          "purple and red striped jersey players"
+        ],
+        "actor": "purple and red striped jersey player",
+        "object": "white soccer ball",
+        "outcome": "successful",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 20,
+        "start_time": "00:33",
+        "end_time": "00:36",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "pass",
+        "description": "Player in purple and red striped jersey makes a through pass into the penalty area",
+        "participants": [
+          "purple and red striped jersey player",
+          "light blue jersey defenders"
+        ],
+        "actor": "purple and red striped jersey player",
+        "object": "white soccer ball",
+        "outcome": "successful",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 21,
+        "start_time": "00:36",
+        "end_time": "00:39",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "shot",
+        "description": "Player in purple and red striped jersey takes a shot on goal while surrounded by light blue jersey defenders",
+        "participants": [
+          "purple and red striped jersey player",
+          "light blue jersey defenders",
+          "goalkeeper"
+        ],
+        "actor": "purple and red striped jersey player",
+        "object": "white soccer ball",
+        "outcome": "toward goal",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 22,
+        "start_time": "00:39",
+        "end_time": "00:42",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "goal",
+        "description": "Soccer ball enters the net as the goalkeeper dives but fails to save the shot",
+        "participants": [
+          "goalkeeper",
+          "light blue jersey defenders"
+        ],
+        "actor": "goalkeeper",
+        "object": "white soccer ball",
+        "outcome": "scored",
+        "on_screen_text": [],
+        "segment_boundary": "end",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "complete",
+        "event_index": 23,
+        "start_time": "00:42",
+        "end_time": "00:43",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Player in purple and red striped jersey raises their arm and begins celebrating after scoring",
+        "participants": [
+          "purple and red striped jersey player"
+        ],
+        "actor": "purple and red striped jersey player",
+        "object": "",
+        "outcome": "celebration begins",
+        "on_screen_text": [],
+        "segment_boundary": "end",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 24,
+        "start_time": "00:43",
+        "end_time": "00:45",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 26,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Player with dreadlocks kneels on the field with hands clasped together in front of them",
+        "participants": [
+          "dreadlocks player"
+        ],
+        "actor": "dreadlocks player",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match - Goal Celebration",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 25,
+        "start_time": "00:45",
+        "end_time": "00:48",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 26,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "shoulder_tap",
+        "description": "Short-haired teammate approaches and taps the kneeling player on the shoulder",
+        "participants": [
+          "short-haired player",
+          "dreadlocks player"
+        ],
+        "actor": "short-haired player",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match - Goal Celebration",
+        "continuation_hint": "complete",
+        "event_index": 26,
+        "start_time": "00:47",
+        "end_time": "00:49",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "approach",
+        "description": "Curly-haired teammate runs toward the celebration group",
+        "participants": [
+          "curly-haired player"
+        ],
+        "actor": "curly-haired player",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match - Goal Celebration",
+        "continuation_hint": "complete",
+        "event_index": 27,
+        "start_time": "00:48",
+        "end_time": "00:51",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "hug",
+        "description": "Multiple teammates converge and form a group hug around the kneeling player",
+        "participants": [
+          "short-haired player",
+          "curly-haired player",
+          "dreadlocks player"
+        ],
+        "actor": "short-haired player",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match - Goal Celebration",
+        "continuation_hint": "complete",
+        "event_index": 28,
+        "start_time": "00:49",
+        "end_time": "00:52",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "join_celebration",
+        "description": "Player wearing jersey number 20 joins the group celebration and embraces the players",
+        "participants": [
+          "player 20",
+          "dreadlocks player",
+          "short-haired player"
+        ],
+        "actor": "player 20",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match - Goal Celebration",
+        "continuation_hint": "complete",
+        "event_index": 29,
+        "start_time": "00:51",
+        "end_time": "00:54",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "applaud",
+        "description": "Player with headgear claps hands while standing near the celebration group",
+        "participants": [
+          "headgear player"
+        ],
+        "actor": "headgear player",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match - Goal Celebration",
+        "continuation_hint": "complete",
+        "event_index": 30,
+        "start_time": "00:52",
+        "end_time": "00:55",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "celebration",
+        "description": "The group continues celebrating with players embracing, patting backs, and smiling",
+        "participants": [
+          "multiple players"
+        ],
+        "actor": "curly-haired player",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match - Goal Celebration",
+        "continuation_hint": "complete",
+        "event_index": 31,
+        "start_time": "00:53",
+        "end_time": "00:57",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 26,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "game",
+        "description": "Camera shifts to wide view showing the game resuming with players positioned across the field",
+        "participants": [
+          "all players on field"
+        ],
+        "actor": "referee",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match - Game Resumes",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 32,
+        "start_time": "00:58",
+        "end_time": "01:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "dribble",
+        "description": "A blue-shirt player controls the ball in the midfield while running forward",
+        "participants": [
+          "blue-shirt player"
+        ],
+        "actor": "blue-shirt player",
+        "object": "white soccer ball",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 33,
+        "start_time": "01:00",
+        "end_time": "01:02",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "pass",
+        "description": "The blue-shirt player passes the ball to a teammate further upfield",
+        "participants": [
+          "blue-shirt player",
+          "blue-shirt teammate"
+        ],
+        "actor": "blue-shirt player",
+        "object": "white soccer ball",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 34,
+        "start_time": "01:01",
+        "end_time": "01:03",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "interception_attempt",
+        "description": "A white-shirt player attempts to intercept the pass but misses the ball",
+        "participants": [
+          "white-shirt player"
+        ],
+        "actor": "white-shirt player",
+        "object": "white soccer ball",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 35,
+        "start_time": "01:02",
+        "end_time": "01:04",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "tackle_attempt",
+        "description": "A white-shirt defender performs a sliding tackle attempt on the blue-shirt player",
+        "participants": [
+          "white-shirt defender",
+          "blue-shirt player"
+        ],
+        "actor": "white-shirt defender",
+        "object": "white soccer ball",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 36,
+        "start_time": "01:03",
+        "end_time": "01:05",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "dribble",
+        "description": "The blue-shirt player successfully evades the tackle and maintains ball possession",
+        "participants": [
+          "blue-shirt player"
+        ],
+        "actor": "blue-shirt player",
+        "object": "white soccer ball",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 37,
+        "start_time": "01:04",
+        "end_time": "01:06",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "pass",
+        "description": "The blue-shirt player makes a forward pass toward the penalty area",
+        "participants": [
+          "blue-shirt player",
+          "blue-shirt teammate"
+        ],
+        "actor": "blue-shirt player",
+        "object": "white soccer ball",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 38,
+        "start_time": "01:05",
+        "end_time": "01:07",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "run",
+        "description": "A blue-shirt player makes a diagonal run into the penalty area to receive the pass",
+        "participants": [
+          "blue-shirt player"
+        ],
+        "actor": "blue-shirt player",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 39,
+        "start_time": "01:06",
+        "end_time": "01:08",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "shot",
+        "description": "A blue-shirt player receives the ball in the penalty area and takes a shot at goal",
+        "participants": [
+          "blue-shirt player"
+        ],
+        "actor": "blue-shirt player",
+        "object": "white soccer ball",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 40,
+        "start_time": "01:07",
+        "end_time": "01:09",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "dive",
+        "description": "The orange-shirt goalkeeper dives to their right to save the shot",
+        "participants": [
+          "orange-shirt goalkeeper"
+        ],
+        "actor": "orange-shirt goalkeeper",
+        "object": "white soccer ball",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 41,
+        "start_time": "01:08",
+        "end_time": "01:10",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "save",
+        "description": "The orange-shirt goalkeeper successfully saves the shot, pushing the ball away",
+        "participants": [
+          "orange-shirt goalkeeper"
+        ],
+        "actor": "orange-shirt goalkeeper",
+        "object": "white soccer ball",
+        "outcome": "saved",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 42,
+        "start_time": "01:09",
+        "end_time": "01:11",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "fall",
+        "description": "The blue-shirt player who took the shot falls to the ground after the attempt",
+        "participants": [
+          "blue-shirt player"
+        ],
+        "actor": "blue-shirt player",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 43,
+        "start_time": "01:09",
+        "end_time": "01:11",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "celebration",
+        "description": "A white-shirt player raises both arms in celebration of the saved shot",
+        "participants": [
+          "white-shirt player"
+        ],
+        "actor": "white-shirt player",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 44,
+        "start_time": "01:10",
+        "end_time": "01:12",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 26,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "reposition",
+        "description": "Multiple players from both teams begin running back to their positions for the next phase of play",
+        "participants": [
+          "blue-shirt players",
+          "white-shirt players"
+        ],
+        "actor": "multiple players",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 45,
+        "start_time": "01:11",
+        "end_time": "01:15",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "dive",
+        "description": "goalkeeper in orange uniform dives to the right to attempt a save",
+        "participants": [
+          "orange-uniform goalkeeper",
+          "light-blue jersey player with ball",
+          "blue-and-red jersey players"
+        ],
+        "actor": "orange-uniform goalkeeper",
+        "object": "soccer ball",
+        "outcome": "miss",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 46,
+        "start_time": "01:15",
+        "end_time": "01:18",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "score",
+        "description": "soccer ball enters the goal net past the diving goalkeeper",
+        "participants": [
+          "light-blue jersey players",
+          "blue-and-red jersey players"
+        ],
+        "actor": "light-blue jersey player",
+        "object": "soccer ball",
+        "outcome": "scored",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 47,
+        "start_time": "01:18",
+        "end_time": "01:21",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "celebration",
+        "description": "light-blue jersey players move toward the goal to celebrate the score",
+        "participants": [
+          "light-blue jersey players"
+        ],
+        "actor": "light-blue jersey players",
+        "object": "",
+        "outcome": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 48,
+        "start_time": "01:22",
+        "end_time": "01:25",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 26,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "celebration",
+        "description": "man in black athletic wear on the sideline jumps and gestures with arms raised in celebration",
+        "participants": [
+          "black-athletic-wear man",
+          "referee in black uniform"
+        ],
+        "actor": "black-athletic-wear man",
+        "object": "",
+        "outcome": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "complete",
+        "event_index": 49,
+        "start_time": "01:27",
+        "end_time": "01:30",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 26,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "celebration",
+        "description": "man in black crouches with arms slightly raised in celebration",
+        "participants": [
+          "man in black (coach/manager)",
+          "man in black (official)"
+        ],
+        "actor": "man in black (coach/manager)",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 50,
+        "start_time": "01:30",
+        "end_time": "01:32",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 26,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "celebration",
+        "description": "man in black raises arms higher while continuing celebration",
+        "participants": [
+          "man in black (coach/manager)",
+          "man in black (official)"
+        ],
+        "actor": "man in black (coach/manager)",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 51,
+        "start_time": "01:32",
+        "end_time": "01:35",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 26,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "celebration",
+        "description": "man in black fully raises both arms above head in celebration",
+        "participants": [
+          "man in black (coach/manager)",
+          "man in black (official)"
+        ],
+        "actor": "man in black (coach/manager)",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 52,
+        "start_time": "01:35",
+        "end_time": "01:37",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 26,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "man in black (official) raises hand to face",
+        "participants": [
+          "man in black (official)"
+        ],
+        "actor": "man in black (official)",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 53,
+        "start_time": "01:35",
+        "end_time": "01:37",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 14,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "transition",
+        "description": "cut to fans celebrating in the stands",
+        "participants": [
+          "fans in stands"
+        ],
+        "actor": "camera",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 54,
+        "start_time": "01:37",
+        "end_time": "01:40",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "celebration",
+        "description": "fan in red and blue scarf raises arms while shouting in celebration",
+        "participants": [
+          "fan in red and blue scarf"
+        ],
+        "actor": "fan in red and blue scarf",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 55,
+        "start_time": "01:37",
+        "end_time": "01:40",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 26,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "point",
+        "description": "fan in red and blue scarf points forward with right index finger",
+        "participants": [
+          "fan in red and blue scarf"
+        ],
+        "actor": "fan in red and blue scarf",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 56,
+        "start_time": "01:40",
+        "end_time": "01:42",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "transition",
+        "description": "cut to player with dreadlocks looking up at the crowd",
+        "participants": [
+          "player with dreadlocks"
+        ],
+        "actor": "camera",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 57,
+        "start_time": "01:42",
+        "end_time": "01:43",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "transition",
+        "description": "cut to wide view showing soccer match in progress with players on field",
+        "participants": [
+          "soccer players"
+        ],
+        "actor": "camera",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 58,
+        "start_time": "01:43",
+        "end_time": "01:45",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "tackle",
+        "description": "A player in red and blue striped jersey (number 3) attempts a slide tackle on a player in light blue jersey (number 20) with the ball",
+        "participants": [
+          "red and blue striped jersey player",
+          "light blue jersey player"
+        ],
+        "actor": "red and blue striped jersey player",
+        "object": "white football",
+        "outcome": "tackle",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Football Match",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 59,
+        "start_time": "01:45",
+        "end_time": "01:50",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "fall",
+        "description": "Both players fall to the ground during the tackle, with the light blue jersey player landing on top of the red and blue striped jersey player",
+        "participants": [
+          "red and blue striped jersey player",
+          "light blue jersey player"
+        ],
+        "actor": "light blue jersey player",
+        "object": "white football",
+        "outcome": "fall",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Football Match",
+        "continuation_hint": "complete",
+        "event_index": 60,
+        "start_time": "01:49",
+        "end_time": "01:52",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "point",
+        "description": "Referee points to indicate a foul decision",
+        "participants": [
+          "referee",
+          "light blue jersey player"
+        ],
+        "actor": "referee",
+        "object": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Football Match",
+        "continuation_hint": "complete",
+        "event_index": 61,
+        "start_time": "01:51",
+        "end_time": "01:54",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "argument",
+        "description": "Light blue jersey players approach referee and gesture while discussing the call",
+        "participants": [
+          "light blue jersey players",
+          "referee"
+        ],
+        "actor": "light blue jersey player",
+        "object": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Football Match",
+        "continuation_hint": "complete",
+        "event_index": 62,
+        "start_time": "01:52",
+        "end_time": "01:58",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "Player in red and blue striped jersey raises their hand while facing the referee",
+        "participants": [
+          "red and blue striped jersey player",
+          "referee"
+        ],
+        "actor": "red and blue striped jersey player",
+        "object": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Football Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 63,
+        "start_time": "01:55",
+        "end_time": "02:00",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 14,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "free_kick_setup",
+        "description": "Players position themselves for a free kick with the ball placed on the field",
+        "participants": [
+          "light blue jersey players",
+          "red and blue striped jersey players"
+        ],
+        "actor": "light blue jersey players",
+        "object": "white football",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Football Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 64,
+        "start_time": "01:58",
+        "end_time": "02:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "gesture",
+        "description": "referee in black uniform raises hand and points toward the field",
+        "participants": [
+          "black-uniform referee"
+        ],
+        "actor": "black-uniform referee",
+        "segment_boundary": "middle",
+        "segment_label": "Free Kick",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 65,
+        "start_time": "02:00",
+        "end_time": "02:02",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "run",
+        "description": "player in light blue jersey runs toward the ball to take the free kick",
+        "participants": [
+          "light-blue-jersey player"
+        ],
+        "actor": "light-blue-jersey player",
+        "segment_boundary": "middle",
+        "segment_label": "Free Kick",
+        "continuation_hint": "complete",
+        "event_index": 66,
+        "start_time": "02:02",
+        "end_time": "02:04",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "kick",
+        "description": "player in light blue jersey strikes the white ball",
+        "participants": [
+          "light-blue-jersey player",
+          "white ball"
+        ],
+        "actor": "light-blue-jersey player",
+        "object": "white ball",
+        "segment_boundary": "middle",
+        "segment_label": "Free Kick",
+        "continuation_hint": "complete",
+        "event_index": 67,
+        "start_time": "02:03",
+        "end_time": "02:04",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "dive",
+        "description": "goalkeeper in green uniform dives to his left",
+        "participants": [
+          "green-uniform goalkeeper"
+        ],
+        "actor": "green-uniform goalkeeper",
+        "segment_boundary": "middle",
+        "segment_label": "Free Kick",
+        "continuation_hint": "complete",
+        "event_index": 68,
+        "start_time": "02:04",
+        "end_time": "02:05",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "goal",
+        "description": "white ball enters the goal net",
+        "participants": [
+          "white ball",
+          "goal net"
+        ],
+        "actor": "white ball",
+        "object": "white ball",
+        "outcome": "scored",
+        "segment_boundary": "middle",
+        "segment_label": "Free Kick",
+        "continuation_hint": "complete",
+        "event_index": 69,
+        "start_time": "02:05",
+        "end_time": "02:06",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "fall",
+        "description": "goalkeeper in green uniform collides with goalpost and falls to the ground",
+        "participants": [
+          "green-uniform goalkeeper",
+          "goalpost"
+        ],
+        "actor": "green-uniform goalkeeper",
+        "segment_boundary": "middle",
+        "segment_label": "Free Kick",
+        "continuation_hint": "complete",
+        "event_index": 70,
+        "start_time": "02:05",
+        "end_time": "02:06",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "run",
+        "description": "attacking players in light blue jerseys run toward the goal",
+        "participants": [
+          "light-blue-jersey players"
+        ],
+        "actor": "light-blue-jersey players",
+        "segment_boundary": "middle",
+        "segment_label": "Free Kick",
+        "continuation_hint": "complete",
+        "event_index": 71,
+        "start_time": "02:06",
+        "end_time": "02:07",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "gather",
+        "description": "defensive players in blue and red striped jerseys gather around the fallen goalkeeper",
+        "participants": [
+          "blue-red-striped-jersey players",
+          "green-uniform goalkeeper"
+        ],
+        "actor": "blue-red-striped-jersey players",
+        "segment_boundary": "middle",
+        "segment_label": "Free Kick",
+        "continuation_hint": "complete",
+        "event_index": 72,
+        "start_time": "02:06",
+        "end_time": "02:10",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "lie",
+        "description": "goalkeeper in green uniform remains on the ground in front of the goal",
+        "participants": [
+          "green-uniform goalkeeper"
+        ],
+        "actor": "green-uniform goalkeeper",
+        "segment_boundary": "middle",
+        "segment_label": "Free Kick",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 73,
+        "start_time": "02:08",
+        "end_time": "02:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "on_screen_text",
+        "description": "multiple banners display text around the field",
+        "participants": [],
+        "actor": null,
+        "on_screen_text": [
+          {
+            "text": "Emirates FA CUP",
+            "location": "banner"
+          },
+          {
+            "text": "SEARCH EE GAME STORE",
+            "location": "banner"
+          },
+          {
+            "text": "Emirates FLY BETTER",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Free Kick",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 74,
+        "start_time": "02:00",
+        "end_time": "02:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "recovery",
+        "description": "goalkeeper in light green uniform gets up from lying on the ground",
+        "participants": [
+          "light green uniform goalkeeper"
+        ],
+        "actor": "light green uniform goalkeeper",
+        "object": "",
+        "outcome": "upright",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Penalty Shootout",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 75,
+        "start_time": "02:15",
+        "end_time": "02:17",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "positioning",
+        "description": "goalkeeper in light green uniform moves to center of goal and assumes ready stance",
+        "participants": [
+          "light green uniform goalkeeper"
+        ],
+        "actor": "light green uniform goalkeeper",
+        "object": "",
+        "outcome": "positioned",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Penalty Shootout",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 76,
+        "start_time": "02:17",
+        "end_time": "02:21",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "preparation",
+        "description": "player in light blue uniform with number 7 takes steps back to prepare for penalty kick",
+        "participants": [
+          "light blue uniform player #7"
+        ],
+        "actor": "light blue uniform player #7",
+        "object": "white soccer ball",
+        "outcome": "prepped",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Penalty Shootout",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 77,
+        "start_time": "02:21",
+        "end_time": "02:23",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "kick",
+        "description": "player in light blue uniform with number 7 runs toward and strikes the soccer ball",
+        "participants": [
+          "light blue uniform player #7"
+        ],
+        "actor": "light blue uniform player #7",
+        "object": "white soccer ball",
+        "outcome": "kicked",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Penalty Shootout",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 78,
+        "start_time": "02:23",
+        "end_time": "02:25",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "dive",
+        "description": "goalkeeper in light green uniform dives to his left to save the penalty kick",
+        "participants": [
+          "light green uniform goalkeeper"
+        ],
+        "actor": "light green uniform goalkeeper",
+        "object": "white soccer ball",
+        "outcome": "dived",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Penalty Shootout",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 79,
+        "start_time": "02:25",
+        "end_time": "02:27",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "save",
+        "description": "goalkeeper in light green uniform successfully saves the penalty by deflecting the ball with his hands",
+        "participants": [
+          "light green uniform goalkeeper"
+        ],
+        "actor": "light green uniform goalkeeper",
+        "object": "white soccer ball",
+        "outcome": "saved",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Penalty Shootout",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 80,
+        "start_time": "02:26",
+        "end_time": "02:28",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "reaction",
+        "description": "player in light blue uniform shows disappointment while blue/red striped uniform players show celebration",
+        "participants": [
+          "light blue uniform player #7",
+          "blue/red striped uniform players"
+        ],
+        "actor": "blue/red striped uniform players",
+        "object": "",
+        "outcome": "celebration",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Penalty Shootout",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 81,
+        "start_time": "02:28",
+        "end_time": "02:30",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "save",
+        "description": "The goalkeeper in green diving to the left to make a save on a shot",
+        "participants": [
+          "green-goalkeeper",
+          "light-blue player",
+          "red-blue striped players"
+        ],
+        "actor": "green-goalkeeper",
+        "object": "white soccer ball",
+        "outcome": "save",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 82,
+        "start_time": "02:30",
+        "end_time": "02:31",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "state_change",
+        "description": "The goalkeeper lying on the ground after making the save",
+        "participants": [
+          "green-goalkeeper"
+        ],
+        "actor": "green-goalkeeper",
+        "object_before": "green-goalkeeper diving",
+        "object_after": "green-goalkeeper on ground",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 83,
+        "start_time": "02:31",
+        "end_time": "02:33",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "dribble",
+        "description": "Light-blue player dribbling the ball while being challenged by red-blue striped player number 12",
+        "participants": [
+          "light-blue player",
+          "red-blue striped player 12"
+        ],
+        "actor": "light-blue player",
+        "object": "white soccer ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 84,
+        "start_time": "02:33",
+        "end_time": "02:34",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "shoot",
+        "description": "Light-blue player shooting the ball toward the goal",
+        "participants": [
+          "light-blue player"
+        ],
+        "actor": "light-blue player",
+        "object": "white soccer ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 85,
+        "start_time": "02:34",
+        "end_time": "02:35",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "score",
+        "description": "The ball crossing the goal line into the net",
+        "participants": [
+          "white soccer ball"
+        ],
+        "actor": "white soccer ball",
+        "object": "white soccer ball",
+        "outcome": "scored",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 86,
+        "start_time": "02:35",
+        "end_time": "02:36",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Light-blue players beginning to celebrate the goal",
+        "participants": [
+          "light-blue players"
+        ],
+        "actor": "light-blue players",
+        "object": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 87,
+        "start_time": "02:36",
+        "end_time": "02:37",
+        "sub_events": [],
+        "subtype_order": 13,
+        "subtype_total": 26,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "audience_reaction",
+        "description": "The stadium crowd raising hands and cheering",
+        "participants": [
+          "stadium crowd"
+        ],
+        "actor": "stadium crowd",
+        "object": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 88,
+        "start_time": "02:36",
+        "end_time": "02:37",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Light-blue players continuing to celebrate the goal with teammates",
+        "participants": [
+          "light-blue players"
+        ],
+        "actor": "light-blue players",
+        "object": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 89,
+        "start_time": "02:37",
+        "end_time": "02:45",
+        "sub_events": [],
+        "subtype_order": 14,
+        "subtype_total": 26,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "audience_reaction",
+        "description": "The stadium crowd continuing to cheer and wave arms in celebration",
+        "participants": [
+          "stadium crowd"
+        ],
+        "actor": "stadium crowd",
+        "object": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 90,
+        "start_time": "02:37",
+        "end_time": "02:45",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "header_attempt",
+        "description": "A player in light blue jersey attempts to head the ball toward the goal",
+        "participants": [
+          "light-blue-shirt player",
+          "blue-and-red-striped-shirt players"
+        ],
+        "actor": "light-blue-shirt player",
+        "object": "white soccer ball",
+        "outcome": "save",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 91,
+        "start_time": "02:45",
+        "end_time": "02:48",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "diving_save",
+        "description": "The goalkeeper in green jersey dives to his right to save the ball",
+        "participants": [
+          "green-shirt goalkeeper",
+          "light-blue-shirt player"
+        ],
+        "actor": "green-shirt goalkeeper",
+        "object": "white soccer ball",
+        "outcome": "save",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 92,
+        "start_time": "02:48",
+        "end_time": "02:51",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "save_completion",
+        "description": "The goalkeeper fully extends his body to make the save",
+        "participants": [
+          "green-shirt goalkeeper"
+        ],
+        "actor": "green-shirt goalkeeper",
+        "object": "white soccer ball",
+        "outcome": "save",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 93,
+        "start_time": "02:51",
+        "end_time": "02:54",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "land",
+        "description": "The goalkeeper lands on the ground after making the save",
+        "participants": [
+          "green-shirt goalkeeper"
+        ],
+        "actor": "green-shirt goalkeeper",
+        "object": "",
+        "outcome": "landed",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 94,
+        "start_time": "02:54",
+        "end_time": "02:57",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "get_up",
+        "description": "The goalkeeper gets up from the ground after making the save",
+        "participants": [
+          "green-shirt goalkeeper"
+        ],
+        "actor": "green-shirt goalkeeper",
+        "object": "",
+        "outcome": "recovered",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 95,
+        "start_time": "02:57",
+        "end_time": "02:59",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "ball_retrieval",
+        "description": "A player in blue and red striped jersey retrieves the ball",
+        "participants": [
+          "blue-and-red-striped-shirt player"
+        ],
+        "actor": "blue-and-red-striped-shirt player",
+        "object": "white soccer ball",
+        "outcome": "retrieved",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 96,
+        "start_time": "02:59",
+        "end_time": "03:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "prepare_throw_in",
+        "description": "The player in blue and red striped jersey prepares to throw the ball back into play",
+        "participants": [
+          "blue-and-red-striped-shirt player"
+        ],
+        "actor": "blue-and-red-striped-shirt player",
+        "object": "white soccer ball",
+        "outcome": "preparing",
+        "on_screen_text": [
+          {
+            "text": "26",
+            "location": "jersey_number"
+          },
+          {
+            "text": "NET88",
+            "location": "jersey_text"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 97,
+        "start_time": "02:59",
+        "end_time": "03:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "free_kick",
+        "description": "Player in blue and red striped jersey prepares to take a free kick",
+        "participants": [
+          "blue-and-red striped jersey player"
+        ],
+        "actor": "blue-and-red striped jersey player",
+        "object": "white soccer ball",
+        "on_screen_text": [
+          {
+            "text": "Emirates FA CUP",
+            "location": "banner"
+          },
+          {
+            "text": "#DIFFERENTLEAGUE",
+            "location": "advertising board"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 98,
+        "start_time": "03:00",
+        "end_time": "03:01",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "kick",
+        "description": "Player in blue and red striped jersey strikes the soccer ball",
+        "participants": [
+          "blue-and-red striped jersey player"
+        ],
+        "actor": "blue-and-red striped jersey player",
+        "object": "white soccer ball",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 99,
+        "start_time": "03:01",
+        "end_time": "03:02",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "ball_in_flight",
+        "description": "Soccer ball travels through the air toward the penalty area",
+        "participants": [],
+        "actor": null,
+        "object": "white soccer ball",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 100,
+        "start_time": "03:02",
+        "end_time": "03:04",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "header_attempt",
+        "description": "Multiple players jump to head the ball in the penalty area",
+        "participants": [
+          "blue-and-red striped jersey players",
+          "light blue jersey players"
+        ],
+        "actor": "blue-and-red striped jersey players",
+        "object": "white soccer ball",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 101,
+        "start_time": "03:04",
+        "end_time": "03:05",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "goal",
+        "description": "Soccer ball enters the net for a goal",
+        "participants": [
+          "blue-and-red striped jersey player",
+          "goalkeeper"
+        ],
+        "actor": "blue-and-red striped jersey player",
+        "object": "white soccer ball",
+        "outcome": "scored",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 102,
+        "start_time": "03:05",
+        "end_time": "03:06",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "dive",
+        "description": "Goalkeeper in orange jersey dives to save but misses the ball",
+        "participants": [
+          "goalkeeper"
+        ],
+        "actor": "goalkeeper",
+        "object": "white soccer ball",
+        "outcome": "miss",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 103,
+        "start_time": "03:05",
+        "end_time": "03:06",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Blue and red striped jersey players celebrate the goal",
+        "participants": [
+          "blue-and-red striped jersey players"
+        ],
+        "actor": "blue-and-red striped jersey players",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 104,
+        "start_time": "03:06",
+        "end_time": "03:08",
+        "sub_events": [],
+        "subtype_order": 15,
+        "subtype_total": 26,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "run_celebration",
+        "description": "Player wearing jersey number 12 runs with arms raised in celebration",
+        "participants": [
+          "player #12"
+        ],
+        "actor": "player #12",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 105,
+        "start_time": "03:07",
+        "end_time": "03:10",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "point",
+        "description": "Player #12 points toward the crowd with right hand while celebrating",
+        "participants": [
+          "player #12"
+        ],
+        "actor": "player #12",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 106,
+        "start_time": "03:08",
+        "end_time": "03:13",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "shoot",
+        "description": "Player in blue and red striped jersey (number 12) shoots the soccer ball toward goal",
+        "participants": [
+          "blue and red striped jersey player",
+          "light blue jersey defender"
+        ],
+        "actor": "blue and red striped jersey player",
+        "object": "white soccer ball",
+        "outcome": "scored",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 107,
+        "start_time": "03:15",
+        "end_time": "03:17",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "dive",
+        "description": "Goalkeeper in orange jersey dives to attempt saving the shot",
+        "participants": [
+          "orange jersey goalkeeper"
+        ],
+        "actor": "orange jersey goalkeeper",
+        "object": "white soccer ball",
+        "outcome": "miss",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 108,
+        "start_time": "03:16",
+        "end_time": "03:17",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "goal",
+        "description": "Soccer ball enters the goal net",
+        "participants": [],
+        "actor": "",
+        "object": "white soccer ball",
+        "outcome": "scored",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 109,
+        "start_time": "03:16",
+        "end_time": "03:17",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Player in blue and red striped jersey (number 12) raises both arms in celebration",
+        "participants": [
+          "blue and red striped jersey player"
+        ],
+        "actor": "blue and red striped jersey player",
+        "object": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 110,
+        "start_time": "03:16",
+        "end_time": "03:18",
+        "sub_events": [],
+        "subtype_order": 16,
+        "subtype_total": 26,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "run",
+        "description": "Player in orange vest runs toward the celebrating player",
+        "participants": [
+          "player in orange vest"
+        ],
+        "actor": "player in orange vest",
+        "object": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 111,
+        "start_time": "03:17",
+        "end_time": "03:19",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "hug",
+        "description": "Player in orange vest hugs the player in blue and red striped jersey (number 12)",
+        "participants": [
+          "player in orange vest",
+          "blue and red striped jersey player"
+        ],
+        "actor": "player in orange vest",
+        "object": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 112,
+        "start_time": "03:18",
+        "end_time": "03:20",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "run",
+        "description": "Player in blue and red striped jersey (number 20, WHATTON) runs toward the celebration",
+        "participants": [
+          "blue and red striped jersey player (number 20)"
+        ],
+        "actor": "blue and red striped jersey player (number 20)",
+        "object": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 113,
+        "start_time": "03:19",
+        "end_time": "03:21",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "run",
+        "description": "Player in blue and red striped jersey (number 26) runs toward the celebration",
+        "participants": [
+          "blue and red striped jersey player (number 26)"
+        ],
+        "actor": "blue and red striped jersey player (number 26)",
+        "object": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 114,
+        "start_time": "03:19",
+        "end_time": "03:21",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "hug",
+        "description": "Player in blue and red striped jersey (number 14, MATA) joins the group hug",
+        "participants": [
+          "blue and red striped jersey player (number 14)"
+        ],
+        "actor": "blue and red striped jersey player (number 14)",
+        "object": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 115,
+        "start_time": "03:20",
+        "end_time": "03:22",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Multiple players in blue and red striped jerseys form a group hug celebration",
+        "participants": [
+          "blue and red striped jersey players",
+          "players in orange vests"
+        ],
+        "actor": "",
+        "object": "",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 116,
+        "start_time": "03:20",
+        "end_time": "03:25",
+        "sub_events": [],
+        "subtype_order": 17,
+        "subtype_total": 26,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "graphic",
+        "description": "Wide view of stadium showing 'GOAL' graphic on the screen",
+        "participants": [],
+        "actor": "",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "GOAL",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 117,
+        "start_time": "03:29",
+        "end_time": "03:30",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "game",
+        "description": "Goalkeeper in orange jersey dives to his left, extending both arms to attempt to save the penalty kick",
+        "participants": [
+          "orange-shirt goalkeeper",
+          "blue-shirt players",
+          "red/blue-striped players"
+        ],
+        "actor": "orange-shirt goalkeeper",
+        "object": "white soccer ball",
+        "outcome": "miss",
+        "on_screen_text": [
+          {
+            "text": "5",
+            "location": "jersey_number"
+          },
+          {
+            "text": "12",
+            "location": "jersey_number"
+          },
+          {
+            "text": "24",
+            "location": "jersey_number"
+          },
+          {
+            "text": "75",
+            "location": "jersey_number"
+          },
+          {
+            "text": "LACROIX",
+            "location": "name_tag"
+          },
+          {
+            "text": "MUÑOZ",
+            "location": "name_tag"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match - Penalty Kick",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 118,
+        "start_time": "03:30",
+        "end_time": "03:33",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "scored",
+        "description": "The white soccer ball enters the goal net past the diving goalkeeper",
+        "participants": [
+          "blue-shirt players",
+          "red/blue-striped players"
+        ],
+        "actor": null,
+        "object": "white soccer ball",
+        "outcome": "scored",
+        "on_screen_text": [
+          {
+            "text": "5",
+            "location": "jersey_number"
+          },
+          {
+            "text": "12",
+            "location": "jersey_number"
+          },
+          {
+            "text": "24",
+            "location": "jersey_number"
+          },
+          {
+            "text": "75",
+            "location": "jersey_number"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match - Penalty Kick",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 119,
+        "start_time": "03:33",
+        "end_time": "03:35",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "react",
+        "description": "Players in red/blue-striped jerseys react to the goal, with some beginning to approach the referee",
+        "participants": [
+          "red/blue-striped players",
+          "referee"
+        ],
+        "actor": "red/blue-striped players",
+        "on_screen_text": [
+          {
+            "text": "NET88",
+            "location": "jersey_text"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match - Penalty Kick",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 120,
+        "start_time": "03:35",
+        "end_time": "03:38",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "react",
+        "description": "Multiple red/blue-striped players gather around the referee, appearing to protest or argue",
+        "participants": [
+          "red/blue-striped players",
+          "referee"
+        ],
+        "actor": "red/blue-striped players",
+        "on_screen_text": [
+          {
+            "text": "NET88",
+            "location": "jersey_text"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match - Penalty Kick",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 121,
+        "start_time": "03:38",
+        "end_time": "03:42",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "speak",
+        "description": "Player in light blue jersey with 'RUBEN' and number 7 speaks directly to the referee",
+        "participants": [
+          "blue-shirt player RUBEN",
+          "referee"
+        ],
+        "actor": "blue-shirt player RUBEN",
+        "on_screen_text": [
+          {
+            "text": "RUBEN",
+            "location": "name_tag"
+          },
+          {
+            "text": "7",
+            "location": "jersey_number"
+          },
+          {
+            "text": "ETIHAD AIRWAYS",
+            "location": "jersey_text"
+          },
+          {
+            "text": "FIFA",
+            "location": "referee_badge"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match - Penalty Kick",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 122,
+        "start_time": "03:42",
+        "end_time": "03:45",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "referee raises right hand with palm facing forward in a stop gesture",
+        "participants": [
+          "referee"
+        ],
+        "actor": "referee",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 123,
+        "start_time": "03:45",
+        "end_time": "03:47",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 14,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "hand_gesture",
+        "description": "referee raises hand to bring black whistle to mouth",
+        "participants": [
+          "referee"
+        ],
+        "actor": "referee",
+        "object": "black whistle",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "complete",
+        "event_index": 124,
+        "start_time": "03:48",
+        "end_time": "03:49",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "whistle_blow",
+        "description": "referee blows black whistle",
+        "participants": [
+          "referee"
+        ],
+        "actor": "referee",
+        "object": "black whistle",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "complete",
+        "event_index": 125,
+        "start_time": "03:50",
+        "end_time": "03:51",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "hand_gesture",
+        "description": "referee makes multiple hand gestures including raising both hands and pointing toward field",
+        "participants": [
+          "referee"
+        ],
+        "actor": "referee",
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "complete",
+        "event_index": 126,
+        "start_time": "03:52",
+        "end_time": "03:57",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "graphic",
+        "description": "animated offside review showing player in light blue (24) and player in blue-and-red (7) with positioning lines",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "OFFSIDE",
+            "location": "banner"
+          },
+          {
+            "text": "Emirates FA CUP",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Offside Review",
+        "continuation_hint": "complete",
+        "event_index": 127,
+        "start_time": "03:58",
+        "end_time": "03:59",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Corner Kick"
+      },
+      {
+        "event_type": "game",
+        "description": "return to live soccer match showing players on field with crowd visible",
+        "participants": [
+          "light-blue-shirt player (24)",
+          "blue-and-red-shirt player (7)",
+          "goalkeeper in green"
+        ],
+        "actor": "light-blue-shirt player (24)",
+        "on_screen_text": [
+          {
+            "text": "Emirates FA CUP",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 128,
+        "start_time": "04:00",
+        "end_time": "04:00",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "dribble",
+        "description": "Light blue jersey player dribbles the ball toward the penalty area while being pursued by defenders.",
+        "participants": [
+          "light blue jersey player",
+          "purple jersey defender"
+        ],
+        "actor": "light blue jersey player",
+        "object": "white ball",
+        "outcome": "in_progress",
+        "on_screen_text": [
+          {
+            "text": "Emirates FA CUP",
+            "location": "banner"
+          },
+          {
+            "text": "Emirates FLY BETTER",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Football Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 129,
+        "start_time": "04:00",
+        "end_time": "04:03",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "pass",
+        "description": "Light blue jersey player makes a pass to a teammate inside the penalty area.",
+        "participants": [
+          "light blue jersey player (passer)",
+          "light blue jersey player (receiver)"
+        ],
+        "actor": "light blue jersey player (passer)",
+        "object": "white ball",
+        "outcome": "completed",
+        "on_screen_text": [
+          {
+            "text": "Emirates FA CUP",
+            "location": "banner"
+          },
+          {
+            "text": "Emirates FLY BETTER",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Football Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 130,
+        "start_time": "04:03",
+        "end_time": "04:06",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 6,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "shot",
+        "description": "Light blue jersey player takes a shot on goal from inside the penalty box.",
+        "participants": [
+          "light blue jersey player (shooter)",
+          "green jersey goalkeeper"
+        ],
+        "actor": "light blue jersey player (shooter)",
+        "object": "white ball",
+        "outcome": "in_progress",
+        "on_screen_text": [
+          {
+            "text": "Emirates FA CUP",
+            "location": "banner"
+          },
+          {
+            "text": "Emirates FLY BETTER",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Football Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 131,
+        "start_time": "04:06",
+        "end_time": "04:08",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "dive",
+        "description": "Green jersey goalkeeper dives to his right attempting to save the shot.",
+        "participants": [
+          "green jersey goalkeeper"
+        ],
+        "actor": "green jersey goalkeeper",
+        "outcome": "miss",
+        "on_screen_text": [
+          {
+            "text": "Emirates FA CUP",
+            "location": "banner"
+          },
+          {
+            "text": "Emirates FLY BETTER",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Football Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 132,
+        "start_time": "04:07",
+        "end_time": "04:09",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 9,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "goal",
+        "description": "The ball crosses the goal line and enters the net.",
+        "participants": [
+          "white ball"
+        ],
+        "actor": "white ball",
+        "object": "white ball",
+        "outcome": "scored",
+        "on_screen_text": [
+          {
+            "text": "Emirates FA CUP",
+            "location": "banner"
+          },
+          {
+            "text": "Emirates FLY BETTER",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Football Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 133,
+        "start_time": "04:08",
+        "end_time": "04:10",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 7,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Light blue jersey player who scored raises both arms in celebration.",
+        "participants": [
+          "light blue jersey player (scorer)"
+        ],
+        "actor": "light blue jersey player (scorer)",
+        "outcome": "celebrating",
+        "on_screen_text": [
+          {
+            "text": "Emirates FA CUP",
+            "location": "banner"
+          },
+          {
+            "text": "Emirates FLY BETTER",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Football Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 134,
+        "start_time": "04:10",
+        "end_time": "04:12",
+        "sub_events": [],
+        "subtype_order": 18,
+        "subtype_total": 26,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Multiple light blue jersey players run toward the scorer to celebrate together.",
+        "participants": [
+          "light blue jersey players"
+        ],
+        "actor": "light blue jersey players",
+        "outcome": "celebrating",
+        "on_screen_text": [
+          {
+            "text": "Emirates FA CUP",
+            "location": "banner"
+          },
+          {
+            "text": "Emirates FLY BETTER",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Football Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 135,
+        "start_time": "04:11",
+        "end_time": "04:14",
+        "sub_events": [],
+        "subtype_order": 19,
+        "subtype_total": 26,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "reset",
+        "description": "Players begin to move back to their positions as the game prepares to restart.",
+        "participants": [
+          "light blue jersey players",
+          "purple jersey players"
+        ],
+        "actor": "multiple players",
+        "outcome": "repositioning",
+        "on_screen_text": [
+          {
+            "text": "Emirates FA CUP",
+            "location": "banner"
+          },
+          {
+            "text": "Emirates FLY BETTER",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Football Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 136,
+        "start_time": "04:13",
+        "end_time": "04:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "game",
+        "description": "Soccer match continues with players in light blue and dark blue jerseys moving and passing the ball on the field",
+        "participants": [
+          "light-blue-jersey player",
+          "dark-blue-jersey player",
+          "referee in black uniform"
+        ],
+        "actor": "light-blue-jersey player",
+        "on_screen_text": [
+          {
+            "text": "Emirates",
+            "location": "banner"
+          },
+          {
+            "text": "FLY BETTER",
+            "location": "banner"
+          },
+          {
+            "text": "Emirates FA CUP",
+            "location": "stadium banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 137,
+        "start_time": "04:15",
+        "end_time": "04:25",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Group of fans wearing white shirts raise hands and cheer while watching the match",
+        "participants": [
+          "white-shirt fan",
+          "white-shirt fan with scarf"
+        ],
+        "actor": "white-shirt fan",
+        "on_screen_text": [
+          {
+            "text": "Holte",
+            "location": "jersey"
+          },
+          {
+            "text": "Emirates",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 138,
+        "start_time": "04:26",
+        "end_time": "04:28",
+        "sub_events": [],
+        "subtype_order": 20,
+        "subtype_total": 26,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "react",
+        "description": "Group of fans wearing red and blue striped shirts cover faces and show concern while watching the match",
+        "participants": [
+          "red-and-blue-shirt fan",
+          "red-and-blue-shirt fan with cap"
+        ],
+        "actor": "red-and-blue-shirt fan",
+        "on_screen_text": [
+          {
+            "text": "Emirates",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 139,
+        "start_time": "04:28",
+        "end_time": "04:29",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "game",
+        "description": "Players reposition on field with some in light blue jerseys and others in dark blue jerseys preparing for a restart at center circle",
+        "participants": [
+          "light-blue-jersey player",
+          "dark-blue-jersey player",
+          "referee in black uniform"
+        ],
+        "actor": "referee in black uniform",
+        "on_screen_text": [
+          {
+            "text": "Emirates",
+            "location": "banner"
+          },
+          {
+            "text": "DON'T JUST FLY. FLY BETTER",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Soccer Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 140,
+        "start_time": "04:29",
+        "end_time": "04:30",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Players in red and blue striped jerseys stand on a podium with medals around their necks, some with yellow and blue flags draped over their shoulders",
+        "participants": [
+          "red and blue striped jersey players",
+          "men in suits"
+        ],
+        "actor": "red and blue striped jersey players",
+        "segment_boundary": "middle",
+        "segment_label": "Trophy Presentation",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 141,
+        "start_time": "04:30",
+        "end_time": "04:32",
+        "sub_events": [],
+        "subtype_order": 21,
+        "subtype_total": 26,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "point",
+        "description": "A player in a red and blue striped jersey extends both arms forward, pointing toward something off-camera",
+        "participants": [
+          "red and blue striped jersey player"
+        ],
+        "actor": "red and blue striped jersey player",
+        "segment_boundary": "middle",
+        "segment_label": "Trophy Presentation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 142,
+        "start_time": "04:32",
+        "end_time": "04:34",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "reach",
+        "description": "Two players in red and blue striped jerseys reach toward a trophy being presented to them",
+        "participants": [
+          "red and blue striped jersey players"
+        ],
+        "actor": "red and blue striped jersey players",
+        "segment_boundary": "middle",
+        "segment_label": "Trophy Presentation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 143,
+        "start_time": "04:33",
+        "end_time": "04:35",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "hold",
+        "description": "Multiple players in red and blue striped jerseys grasp the trophy handles and lift it upward",
+        "participants": [
+          "red and blue striped jersey players"
+        ],
+        "actor": "red and blue striped jersey players",
+        "segment_boundary": "middle",
+        "segment_label": "Trophy Presentation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 144,
+        "start_time": "04:35",
+        "end_time": "04:37",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "applaud",
+        "description": "Men in business suits in the background clap their hands while watching the trophy presentation",
+        "participants": [
+          "men in suits"
+        ],
+        "actor": "men in suits",
+        "segment_boundary": "middle",
+        "segment_label": "Trophy Presentation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 145,
+        "start_time": "04:36",
+        "end_time": "04:38",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "A player in a red and blue striped jersey laughs while placing his hand on another player's shoulder",
+        "participants": [
+          "red and blue striped jersey players"
+        ],
+        "actor": "red and blue striped jersey player",
+        "segment_boundary": "middle",
+        "segment_label": "Trophy Presentation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 146,
+        "start_time": "04:37",
+        "end_time": "04:39",
+        "sub_events": [],
+        "subtype_order": 22,
+        "subtype_total": 26,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "hold",
+        "description": "Several players in red and blue striped jerseys hold the trophy together, lifting it higher",
+        "participants": [
+          "red and blue striped jersey players"
+        ],
+        "actor": "red and blue striped jersey players",
+        "segment_boundary": "middle",
+        "segment_label": "Trophy Presentation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 147,
+        "start_time": "04:39",
+        "end_time": "04:41",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "cheer",
+        "description": "A player in a red and blue striped jersey opens his mouth wide in celebration while holding the trophy",
+        "participants": [
+          "red and blue striped jersey player"
+        ],
+        "actor": "red and blue striped jersey player",
+        "segment_boundary": "middle",
+        "segment_label": "Trophy Presentation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 148,
+        "start_time": "04:40",
+        "end_time": "04:42",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "touch",
+        "description": "A player in a red and blue striped jersey touches the trophy with his right hand while smiling",
+        "participants": [
+          "red and blue striped jersey player"
+        ],
+        "actor": "red and blue striped jersey player",
+        "segment_boundary": "middle",
+        "segment_label": "Trophy Presentation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 149,
+        "start_time": "04:41",
+        "end_time": "04:43",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "applaud",
+        "description": "More men in business suits in the background continue clapping while watching the celebration",
+        "participants": [
+          "men in suits"
+        ],
+        "actor": "men in suits",
+        "segment_boundary": "middle",
+        "segment_label": "Trophy Presentation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 150,
+        "start_time": "04:42",
+        "end_time": "04:45",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "Player in blue and red striped jersey raises their hand while celebrating",
+        "participants": [
+          "blue and red striped jersey players",
+          "green jersey player"
+        ],
+        "actor": "blue and red striped jersey player",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Trophy Celebration",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 151,
+        "start_time": "04:45",
+        "end_time": "04:46",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 14,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Multiple players in blue and red striped jerseys cheer while holding the trophy",
+        "participants": [
+          "blue and red striped jersey players"
+        ],
+        "actor": "blue and red striped jersey players",
+        "object": "silver trophy with red ribbon",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Trophy Celebration",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 152,
+        "start_time": "04:45",
+        "end_time": "04:47",
+        "sub_events": [],
+        "subtype_order": 23,
+        "subtype_total": 26,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "Player in green jersey raises their hand while celebrating with teammates",
+        "participants": [
+          "green jersey player",
+          "blue and red striped jersey players"
+        ],
+        "actor": "green jersey player",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Trophy Celebration",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 153,
+        "start_time": "04:46",
+        "end_time": "04:48",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 14,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "lift",
+        "description": "Player lifts the silver trophy higher above their head",
+        "participants": [
+          "blue and red striped jersey players"
+        ],
+        "actor": "blue and red striped jersey player",
+        "object": "silver trophy with red ribbon",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Trophy Celebration",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 154,
+        "start_time": "04:46",
+        "end_time": "04:49",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Players raise both arms in celebration while confetti falls around them",
+        "participants": [
+          "blue and red striped jersey players"
+        ],
+        "actor": "blue and red striped jersey players",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Trophy Celebration",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 155,
+        "start_time": "04:47",
+        "end_time": "04:49",
+        "sub_events": [],
+        "subtype_order": 24,
+        "subtype_total": 26,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "Multiple players raise their hands in celebration while facing the crowd",
+        "participants": [
+          "blue and red striped jersey players",
+          "green jersey player"
+        ],
+        "actor": "blue and red striped jersey players",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Trophy Celebration",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 156,
+        "start_time": "04:47",
+        "end_time": "04:50",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 14,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "confetti_fall",
+        "description": "Confetti begins to fall from above the players",
+        "participants": [
+          "all players on platform"
+        ],
+        "actor": "stadium confetti system",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Trophy Celebration",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 157,
+        "start_time": "04:48",
+        "end_time": "04:51",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "wave",
+        "description": "Player waves to the crowd with their right hand",
+        "participants": [
+          "blue and red striped jersey players"
+        ],
+        "actor": "blue and red striped jersey player",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Trophy Celebration",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 158,
+        "start_time": "04:49",
+        "end_time": "04:52",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "high_five",
+        "description": "Player in blue and red striped jersey high-fives another player in blue and red striped jersey",
+        "participants": [
+          "blue and red striped jersey players"
+        ],
+        "actor": "blue and red striped jersey player",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Trophy Celebration",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 159,
+        "start_time": "04:50",
+        "end_time": "04:53",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "Player in green jersey raises both hands in celebration",
+        "participants": [
+          "green jersey player",
+          "blue and red striped jersey players"
+        ],
+        "actor": "green jersey player",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Trophy Celebration",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 160,
+        "start_time": "04:51",
+        "end_time": "04:54",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 14,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Players jump and cheer while holding the trophy",
+        "participants": [
+          "blue and red striped jersey players"
+        ],
+        "actor": "blue and red striped jersey players",
+        "object": "silver trophy with red ribbon",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Trophy Celebration",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 161,
+        "start_time": "04:52",
+        "end_time": "04:55",
+        "sub_events": [],
+        "subtype_order": 25,
+        "subtype_total": 26,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "Multiple players raise their hands while confetti continues to fall",
+        "participants": [
+          "blue and red striped jersey players",
+          "green jersey player"
+        ],
+        "actor": "blue and red striped jersey players",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Trophy Celebration",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 162,
+        "start_time": "04:53",
+        "end_time": "04:56",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 14,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "cheer",
+        "description": "Players shout and cheer while celebrating with the trophy",
+        "participants": [
+          "blue and red striped jersey players"
+        ],
+        "actor": "blue and red striped jersey players",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Trophy Celebration",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 163,
+        "start_time": "04:54",
+        "end_time": "04:57",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "Player in blue and red striped jersey raises their hand with palm open toward the crowd",
+        "participants": [
+          "blue and red striped jersey players"
+        ],
+        "actor": "blue and red striped jersey player",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Trophy Celebration",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 164,
+        "start_time": "04:55",
+        "end_time": "04:58",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 14,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "lift",
+        "description": "Player lifts the trophy higher with both hands",
+        "participants": [
+          "blue and red striped jersey players"
+        ],
+        "actor": "blue and red striped jersey player",
+        "object": "silver trophy with red ribbon",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Trophy Celebration",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 165,
+        "start_time": "04:56",
+        "end_time": "04:59",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "confetti_fall",
+        "description": "Confetti continues to fall heavily around the celebrating players",
+        "participants": [
+          "all players on platform"
+        ],
+        "actor": "stadium confetti system",
+        "object": "",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Trophy Celebration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 166,
+        "start_time": "04:57",
+        "end_time": "05:00",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "trophy_lift",
+        "description": "A player in blue and red striped jersey lifts the Emirates FA Cup trophy high above his head",
+        "participants": [
+          "blue-and-red striped jersey player",
+          "yellow-draped player",
+          "red-draped player"
+        ],
+        "actor": "blue-and-red striped jersey player",
+        "object": "Emirates FA Cup trophy",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Victory Celebration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 167,
+        "start_time": "05:00",
+        "end_time": "05:03",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "A player with red scarf draped over shoulders raises their right hand in celebration",
+        "participants": [
+          "red-scarf player"
+        ],
+        "actor": "red-scarf player",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Victory Celebration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 168,
+        "start_time": "05:00",
+        "end_time": "05:04",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 14,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "Multiple players in blue and red striped jerseys raise their hands in celebration",
+        "participants": [
+          "blue-and-red striped jersey players"
+        ],
+        "actor": "blue-and-red striped jersey players",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Victory Celebration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 169,
+        "start_time": "05:01",
+        "end_time": "05:05",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 14,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "A player in blue and red striped jersey with yellow scarf draped over shoulders raises arms in celebration",
+        "participants": [
+          "yellow-draped blue-and-red striped jersey player"
+        ],
+        "actor": "yellow-draped blue-and-red striped jersey player",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Victory Celebration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 170,
+        "start_time": "05:02",
+        "end_time": "05:06",
+        "sub_events": [],
+        "subtype_order": 26,
+        "subtype_total": 26,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "A player in blue jersey with number 16 raises their hand while moving across the frame",
+        "participants": [
+          "blue jersey number 16 player"
+        ],
+        "actor": "blue jersey number 16 player",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Victory Celebration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 171,
+        "start_time": "05:03",
+        "end_time": "05:08",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 14,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "A player in blue and red striped jersey with 'NET' visible on front raises their hand in celebration",
+        "participants": [
+          "blue-and-red striped 'NET' jersey player"
+        ],
+        "actor": "blue-and-red striped 'NET' jersey player",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Victory Celebration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 172,
+        "start_time": "05:04",
+        "end_time": "05:09",
+        "sub_events": [],
+        "subtype_order": 13,
+        "subtype_total": 14,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "A man in black suit with medal around neck raises both hands in celebration",
+        "participants": [
+          "black suit man with medal"
+        ],
+        "actor": "black suit man with medal",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Victory Celebration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 173,
+        "start_time": "05:05",
+        "end_time": "05:10",
+        "sub_events": [],
+        "subtype_order": 14,
+        "subtype_total": 14,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "crowd_celebration",
+        "description": "Stadium crowd with numerous people raising hands and cheering in celebration",
+        "participants": [
+          "stadium crowd"
+        ],
+        "actor": "stadium crowd",
+        "on_screen_text": [
+          {
+            "text": "Emirates FA CUP WINNERS 2025",
+            "location": "banner"
+          },
+          {
+            "text": "CRYSTAL PALACE",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Victory Celebration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 174,
+        "start_time": "05:05",
+        "end_time": "05:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "high_five",
+        "description": "A player in blue and red striped jersey high-fives another player in blue and red striped jersey",
+        "participants": [
+          "blue-and-red striped jersey player A",
+          "blue-and-red striped jersey player B"
+        ],
+        "actor": "blue-and-red striped jersey player A",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Victory Celebration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 175,
+        "start_time": "05:07",
+        "end_time": "05:12",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "trophy_display",
+        "description": "A player in blue and red striped jersey holds the Emirates FA Cup trophy above head while standing with teammates",
+        "participants": [
+          "blue-and-red striped jersey trophy holder",
+          "yellow-draped teammates",
+          "red-draped teammates"
+        ],
+        "actor": "blue-and-red striped jersey trophy holder",
+        "object": "Emirates FA Cup trophy",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Victory Celebration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 176,
+        "start_time": "05:09",
+        "end_time": "05:14",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "medal_celebration",
+        "description": "A man in black suit with medal around neck raises arms while standing with players in blue and red striped jerseys",
+        "participants": [
+          "black suit man with medal",
+          "blue-and-red striped jersey players"
+        ],
+        "actor": "black suit man with medal",
+        "segment_boundary": "middle",
+        "segment_label": "FA Cup Victory Celebration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 177,
+        "start_time": "05:10",
+        "end_time": "05:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "kiss",
+        "description": "A player in blue and red striped jersey kisses the trophy while holding it",
+        "participants": [
+          "blue and red striped jersey player with yellow scarf"
+        ],
+        "actor": "blue and red striped jersey player with yellow scarf",
+        "object": "silver trophy",
+        "segment_boundary": "end",
+        "segment_label": "Trophy Celebration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 178,
+        "start_time": "05:15",
+        "end_time": "05:17",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "lift",
+        "description": "The same player lifts the trophy high above his head while shouting",
+        "participants": [
+          "blue and red striped jersey player with yellow scarf"
+        ],
+        "actor": "blue and red striped jersey player with yellow scarf",
+        "object": "silver trophy",
+        "segment_boundary": "end",
+        "segment_label": "Trophy Celebration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 179,
+        "start_time": "05:17",
+        "end_time": "05:21",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "applaud",
+        "description": "Multiple players in blue and red striped jerseys clap their hands rhythmically",
+        "participants": [
+          "blue and red striped jersey players"
+        ],
+        "actor": "blue and red striped jersey players",
+        "segment_boundary": "end",
+        "segment_label": "Trophy Celebration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 180,
+        "start_time": "05:15",
+        "end_time": "05:25",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "confetti_fall",
+        "description": "Confetti falls through the air as the celebration continues",
+        "participants": [],
+        "segment_boundary": "end",
+        "segment_label": "Trophy Celebration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 181,
+        "start_time": "05:20",
+        "end_time": "05:25",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "Soccer Match"
+      },
+      {
+        "event_type": "transition",
+        "description": "Screen transitions to solid red background",
+        "participants": [],
+        "segment_boundary": "start",
+        "segment_label": "Subscription Screen",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 182,
+        "start_time": "05:25",
+        "end_time": "05:27",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 3,
+        "segment_label_resolved": "Subscription Screen"
+      },
+      {
+        "event_type": "graphic",
+        "description": "Partial text 'O SUE' appears on red background",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "O SUE",
+            "location": "center"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Subscription Screen",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 183,
+        "start_time": "05:27",
+        "end_time": "05:28",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 3,
+        "segment_label_resolved": "Subscription Screen"
+      },
+      {
+        "event_type": "graphic",
+        "description": "Text changes to 'CLICK TO SUBSCRIBE' on red background",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "CLICK TO SUBSCRIBE",
+            "location": "center"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Subscription Screen",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 184,
+        "start_time": "05:28",
+        "end_time": "05:30",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 3,
+        "segment_label_resolved": "Subscription Screen"
+      },
+      {
+        "event_type": "graphic_change",
+        "description": "The text 'CLICK TO SUBSCRIBE' disappears from the red background",
+        "participants": [],
+        "actor": "",
+        "object_before": "white text",
+        "object_after": "no text",
+        "on_screen_text": [
+          {
+            "text": "CLICK TO SUBSCRIBE",
+            "location": "center"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "complete",
+        "event_index": 185,
+        "start_time": "05:30",
+        "end_time": "05:36",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 3,
+        "segment_label_resolved": "Subscription Screen"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Soccer Match",
+        "event_index_range": [
+          1,
+          127
+        ]
+      },
+      {
+        "round_index": 2,
+        "label": "Soccer Match",
+        "event_index_range": [
+          128,
+          181
+        ]
+      },
+      {
+        "round_index": 3,
+        "label": "Subscription Screen",
+        "event_index_range": [
+          182,
+          185
+        ]
+      }
+    ]
+  }
+}

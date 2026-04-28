@@ -1,0 +1,108 @@
+{
+  "question": "Is the order of ball falling into cup counter-clockwise?",
+  "pred": "The video shows a color-matching activity where balls are placed into cups arranged in a circle. By observing the sequence of placements:\n1. The white ball is placed in the bottom-center cup.\n2. The pink ball is placed in the cup to the right of the white one.\n3. The yellow ball is placed in the cup above the pink one.\n4. The dark blue ball is placed in the cup above the yellow one.\n5. The green ball is placed in the cup at the top-right.\n6. The purple ball is placed in the cup at the top-left.\n7. The red ball is placed in the cup below the purple one.\n8. The light blue ball is placed in the cup below the red one.\n9. The orange ball is placed in the cup between the light blue and white ones.\n\nThe movement follows the circle from the bottom, moving right and then up around the top to the left, which is a counter-clockwise direction.\n\nEvidence: The sequence of ball placements (white -> pink -> yellow -> dark blue -> green -> purple -> red -> light blue -> orange) follows a counter-clockwise path around the circular arrangement of cups.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "place",
+      "description": "the spoon picks up a white ball from the bowl",
+      "participants": [
+        "hand holding spoon"
+      ],
+      "actor": "hand holding spoon",
+      "object": "white ball",
+      "segment_boundary": "middle",
+      "segment_label": "Color Matching Activity",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 2,
+      "start_time": "00:02",
+      "end_time": "00:05",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Color Matching Activity"
+    },
+    {
+      "event_type": "place",
+      "description": "the hand moves the spoon with the white ball toward the white cup in the center of the circle",
+      "participants": [
+        "hand holding spoon"
+      ],
+      "actor": "hand holding spoon",
+      "object": "white ball",
+      "segment_boundary": "middle",
+      "segment_label": "Color Matching Activity",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 3,
+      "start_time": "00:05",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Color Matching Activity"
+    },
+    {
+      "event_type": "place",
+      "description": "the white ball is placed into the white cup in the center position of the circular arrangement",
+      "participants": [
+        "hand holding spoon"
+      ],
+      "actor": "hand holding spoon",
+      "object": "white ball",
+      "segment_boundary": "middle",
+      "segment_label": "Color Matching Activity",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 4,
+      "start_time": "00:08",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Color Matching Activity"
+    },
+    {
+      "event_type": "place",
+      "description": "the spoon picks up a pink ball from the bowl",
+      "participants": [
+        "hand holding spoon"
+      ],
+      "actor": "hand holding spoon",
+      "object": "pink ball",
+      "segment_boundary": "middle",
+      "segment_label": "Color Matching Activity",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 5,
+      "start_time": "00:10",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Color Matching Activity"
+    },
+    {
+      "event_type": "place",
+      "description": "the hand moves the spoon with the pink ball toward the pink cup on the right side of the circle and places the pink ball inside it",
+      "participants": [
+        "hand holding spoon"
+      ],
+      "actor": "hand holding spoon",
+      "object": "pink ball",
+      "segment_boundary": "middle",
+      "segment_label": "Color Matching Activity",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:12",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Color Matching Activity"
+    }
+  ]
+}

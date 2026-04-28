@@ -1,0 +1,85 @@
+{
+  "question": "Did the number 10 in the white jersey miss the shot?",
+  "pred": "The video shows a penalty shootout between two teams. The player in the white and blue striped jersey with number 10 (identified as \"Argentina player\" in Context) takes his turn and successfully scores his penalty kick.\n\n1. **First Turn (France):** The player in the dark blue jersey with number 10 (Mbappe) kicks and scores.\n2. **Second Turn (Argentina):** The player in the white and blue striped jersey with number 10 (Messi) kicks and scores. The scoreboard at ~05:50 confirms the score becomes 1-1, with a green diamond under Argentina's first slot indicating a successful shot.\n\nEvidence: Frames at ~05:50 show the scoreboard updating to 1-1 after the number 10 in the white and blue striped jersey scores his penalty.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "kick",
+      "description": "player in blue and white striped jersey runs up and strikes the soccer ball for the penalty kick",
+      "participants": [
+        "blue and white striped jersey player"
+      ],
+      "actor": "blue and white striped jersey player",
+      "object": "soccer ball",
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "event_index": 143,
+      "start_time": "05:38",
+      "end_time": "05:40",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 8,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "dive",
+      "description": "goalkeeper in yellow jersey dives to the left to save the penalty kick",
+      "participants": [
+        "yellow jersey goalkeeper"
+      ],
+      "actor": "yellow jersey goalkeeper",
+      "object": "soccer ball",
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "event_index": 144,
+      "start_time": "05:40",
+      "end_time": "05:42",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "react",
+      "description": "goalkeeper in yellow jersey stands and looks toward the field after making the save",
+      "participants": [
+        "yellow jersey goalkeeper"
+      ],
+      "actor": "yellow jersey goalkeeper",
+      "segment_boundary": "end",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "event_index": 145,
+      "start_time": "05:42",
+      "end_time": "05:45",
+      "sub_events": [],
+      "subtype_order": 16,
+      "subtype_total": 16,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

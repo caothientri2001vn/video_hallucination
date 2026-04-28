@@ -1,0 +1,137 @@
+{
+  "question": "Did the man on the right open three boxes?",
+  "pred": "The video shows a game involving numbered boxes on a shelf. The \"man on the right\" is the RIGHT player (host in suit). I will count the boxes he opens:\n\n1. At approximately 00:30, the man on the left (blue-shirt man) opens Box 4. The man on the right does not open it.\n2. At approximately 00:42, the man on the left opens a white box on the table. The man on the right does not open it.\n3. Throughout the provided frames and Context, the man on the right (host in suit) is seen reacting, pointing, and laughing, but he never performs the action of opening a box from the shelf or on the table. All box-opening actions are performed by the man on the left.\n\nEvidence: Context events 12 and 16 show the \"blue-shirted man\" (man on the left) opening the boxes, while the \"black-suited man\" (man on the right) is only a participant/observer.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "open_box",
+      "description": "the blue-shirted man opens the leftmost box in the middle row (Box 4)",
+      "participants": [
+        "blue-shirted man",
+        "black-suited man"
+      ],
+      "actor": "blue-shirted man",
+      "object": "box",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 12,
+      "start_time": "00:30",
+      "end_time": "00:35",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "remove",
+      "description": "the blue-shirted man pulls a large white box from inside Box 4",
+      "participants": [
+        "blue-shirted man",
+        "black-suited man"
+      ],
+      "actor": "blue-shirted man",
+      "object": "white box",
+      "cover": "box 4",
+      "hidden": "white box",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 13,
+      "start_time": "00:34",
+      "end_time": "00:38",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "place",
+      "description": "the blue-shirted man places the white box on the table between them",
+      "participants": [
+        "blue-shirted man",
+        "black-suited man"
+      ],
+      "actor": "blue-shirted man",
+      "object": "white box",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 14,
+      "start_time": "00:37",
+      "end_time": "00:40",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "sit",
+      "description": "both men sit down at the table, positioning themselves on opposite sides",
+      "participants": [
+        "blue-shirted man",
+        "black-suited man"
+      ],
+      "actor": "blue-shirted man",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 15,
+      "start_time": "00:39",
+      "end_time": "00:42",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "the blue-shirted man opens the white box that's now on the table",
+      "participants": [
+        "blue-shirted man",
+        "black-suited man"
+      ],
+      "actor": "blue-shirted man",
+      "object": "white box",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 16,
+      "start_time": "00:42",
+      "end_time": "00:44",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "remove",
+      "description": "the blue-shirted man takes a flat rectangular object from inside the white box",
+      "participants": [
+        "blue-shirted man",
+        "black-suited man"
+      ],
+      "actor": "blue-shirted man",
+      "object": "rectangular object",
+      "cover": "white box",
+      "hidden": "rectangular object",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 17,
+      "start_time": "00:43",
+      "end_time": "00:45",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    }
+  ]
+}

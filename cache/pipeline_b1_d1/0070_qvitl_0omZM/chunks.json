@@ -1,0 +1,172 @@
+{
+  "video_name": "0070_qvitl_0omZM.mp4",
+  "video_duration_sec": 20.166666666666668,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:02",
+          "event_type": "walk",
+          "description": "a person wearing a white jacket and light blue jeans walks into the frame from the left side",
+          "participants": [
+            "white-jacket person"
+          ],
+          "actor": "white-jacket person",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "me literally within 0.2 secs of getting home",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "outfit change",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:04",
+          "event_type": "change",
+          "description": "the person's outfit changes from white jacket and light blue jeans to gray hoodie and dark blue jeans with multiple pockets",
+          "participants": [
+            "person"
+          ],
+          "actor": "person",
+          "object_before": "white jacket and light blue jeans",
+          "object_after": "gray hoodie and dark blue jeans",
+          "on_screen_text": [
+            {
+              "text": "me literally within 0.2 secs of getting home",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "outfit change",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:04",
+          "local_end": "00:07",
+          "event_type": "pose",
+          "description": "the person in white jacket and light blue jeans stands facing forward with arms slightly extended",
+          "participants": [
+            "white-jacket person"
+          ],
+          "actor": "white-jacket person",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "me literally within 0.2 secs of getting home",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "outfit change",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:10",
+          "event_type": "pose",
+          "description": "the person in gray hoodie and dark blue jeans stands facing forward showing the front of the outfit",
+          "participants": [
+            "gray-hoodie person"
+          ],
+          "actor": "gray-hoodie person",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "me literally within 0.2 secs of getting home",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "outfit change",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:10",
+          "local_end": "00:13",
+          "event_type": "walk",
+          "description": "the person in white jacket and light blue jeans walks toward the camera and turns to show the back of the outfit",
+          "participants": [
+            "white-jacket person"
+          ],
+          "actor": "white-jacket person",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "me literally within 0.2 secs of getting home",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "outfit change",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:13",
+          "local_end": "00:15",
+          "event_type": "walk",
+          "description": "the person in gray hoodie and dark blue jeans walks toward the camera and turns to show the front of the outfit",
+          "participants": [
+            "gray-hoodie person"
+          ],
+          "actor": "gray-hoodie person",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "me literally within 0.2 secs of getting home",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "outfit change",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 20.166666666666668,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:20",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:20",
+          "event_type": "walk",
+          "description": "gray-hoodie person walks rightward and exits the frame",
+          "participants": [
+            "gray-hoodie person"
+          ],
+          "actor": "gray-hoodie person",
+          "on_screen_text": [
+            {
+              "text": "me literally within 0.2 secs of getting home",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

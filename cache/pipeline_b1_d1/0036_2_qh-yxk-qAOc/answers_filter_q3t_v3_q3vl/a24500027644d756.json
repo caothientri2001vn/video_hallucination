@@ -1,0 +1,73 @@
+{
+  "question": "Does the player in white shirt number 14 score goal?",
+  "pred": "Evidence: The goal event (event_index 5) describes the ball entering the net, but the celebration event (event_index 16) specifies \"white-jersey player #11\" as the celebrant, and on-screen text identifies \"GARETH BALE\" (player #11), not #14. Frames show player #14 (Casemiro) present but not scoring or celebrating the goal.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "goal",
+      "description": "The ball enters the goal net past the diving goalkeeper",
+      "participants": [
+        "white soccer ball",
+        "goal net"
+      ],
+      "actor": "white soccer ball",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 5,
+      "start_time": "00:06",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "on_screen_text",
+      "description": "Text identifying the player appears on screen",
+      "participants": [],
+      "actor": "",
+      "on_screen_text": [
+        {
+          "text": "GARETH BALE",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "complete",
+      "event_index": 9,
+      "start_time": "00:10",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "Soccer player in white jersey runs with arms outstretched celebrating",
+      "participants": [
+        "white-jersey player #11"
+      ],
+      "actor": "white-jersey player #11",
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 16,
+      "start_time": "00:22",
+      "end_time": "00:24",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    }
+  ]
+}

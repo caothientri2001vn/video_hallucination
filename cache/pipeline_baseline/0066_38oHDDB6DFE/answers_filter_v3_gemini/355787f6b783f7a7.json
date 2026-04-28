@@ -1,0 +1,128 @@
+{
+  "question": "Did the smallest coin become purple before the bottom coin turned green?",
+  "pred": "The video shows a person coating five coins with different colored substances in a specific sequence. Based on the frames and the event timeline:\n\n1.  **Smallest coin (middle-left):** This coin is coated with a pink/purple substance starting at approximately 00:04 (Event 3).\n2.  **Bottom coin (bottom-left):** This coin is coated with a green substance starting at approximately 00:08 (Event 5).\n\nThe sequence of events in the Context (Events 1 through 5) and the visual progression in the frames confirm that the middle-left coin (the smallest one) is coated with the pink/purple substance before the bottom-left coin is coated with the green substance.\n\nEvidence: Event 3 (pink substance on middle-left coin at 00:04) occurs before Event 5 (green substance on bottom-left coin at 00:08).\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "place": 5
+    },
+    "events": [
+      {
+        "event_type": "place",
+        "description": "A person uses a black tool to place a black substance onto the top-left coin.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "black substance",
+        "on_screen_text": [],
+        "segment_boundary": "start",
+        "segment_label": "Coin Coating",
+        "continuation_hint": "complete",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:02",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Coin Coating"
+      },
+      {
+        "event_type": "place",
+        "description": "A person uses a yellow tool to place a yellow substance onto the top-right coin.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "yellow substance",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Coin Coating",
+        "continuation_hint": "complete",
+        "event_index": 2,
+        "start_time": "00:02",
+        "end_time": "00:04",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Coin Coating"
+      },
+      {
+        "event_type": "place",
+        "description": "A person uses a pink tool to place a pink substance onto the middle-left coin.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "pink substance",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Coin Coating",
+        "continuation_hint": "complete",
+        "event_index": 3,
+        "start_time": "00:04",
+        "end_time": "00:06",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Coin Coating"
+      },
+      {
+        "event_type": "place",
+        "description": "A person uses a blue tool to place a blue substance onto the middle-right coin.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "blue substance",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Coin Coating",
+        "continuation_hint": "complete",
+        "event_index": 4,
+        "start_time": "00:06",
+        "end_time": "00:08",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Coin Coating"
+      },
+      {
+        "event_type": "place",
+        "description": "A person uses a green tool to place a green substance onto the bottom-left coin.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "green substance",
+        "on_screen_text": [],
+        "segment_boundary": "end",
+        "segment_label": "Coin Coating",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 5,
+        "start_time": "00:08",
+        "end_time": "00:11",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Coin Coating"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Coin Coating",
+        "event_index_range": [
+          1,
+          5
+        ]
+      }
+    ]
+  }
+}

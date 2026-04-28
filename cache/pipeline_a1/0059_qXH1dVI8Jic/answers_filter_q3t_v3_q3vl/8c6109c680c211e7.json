@@ -1,0 +1,477 @@
+{
+  "question": "Did the host play exactly two individual rounds?",
+  "pred": "To determine if the host played exactly two individual rounds, I need to identify the host and count their distinct performance turns in the charades game.\n\nThe host is identified as \"grey-suit man\" / \"black-suit man\" / \"suit-and-tie man\" (Jimmy Fallon) from the PEOPLE IN THIS VIDEO section.\n\nLooking at the Context and frames for the host's performance turns:\n\n1. Event 127 shows \"The suit-wearing man places the card into the slot labeled '8' on the game board\" - this corresponds to the \"IT\" round (visible in frames with timer and \"IT\" text on screen).\n\n2. Event 185 shows \"the black-suit man pulls the panel labeled '7' out from the board\" - this corresponds to the \"DANCING ON THE CEILING\" round (visible in frames with that text and timer).\n\nI also checked for other potential turns:\n- The \"BORN TO RUN\" segment (frames with that text) shows the host sitting and talking, not performing - this appears to be during someone else's turn.\n- The \"RING OF FIRE\" segment shows the checkered-jumpsuit woman performing, not the host.\n\nThere are exactly two distinct rounds where the host pulled a panel and performed charades: one for \"IT\" and one for \"DANCING ON THE CEILING\".\n\nEvidence: frames show the host performing during two distinct charades rounds - \"IT\" (with timer) and \"DANCING ON THE CEILING\" (with timer), each following him pulling a numbered panel from the board.\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "graphic",
+      "description": "A title card for 'CHARADES' is displayed on a board with numbered panels.",
+      "participants": [
+        "checkered-jumpsuit woman",
+        "black-hat man",
+        "black-dress woman",
+        "grey-suit man"
+      ],
+      "on_screen_text": [
+        {
+          "text": "CHARADES",
+          "location": "other"
+        },
+        {
+          "text": "1",
+          "location": "other"
+        },
+        {
+          "text": "2",
+          "location": "other"
+        },
+        {
+          "text": "3",
+          "location": "other"
+        },
+        {
+          "text": "4",
+          "location": "other"
+        },
+        {
+          "text": "5",
+          "location": "other"
+        },
+        {
+          "text": "6",
+          "location": "other"
+        },
+        {
+          "text": "7",
+          "location": "other"
+        },
+        {
+          "text": "8",
+          "location": "other"
+        },
+        {
+          "text": "9",
+          "location": "other"
+        },
+        {
+          "text": "10",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "start",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:01",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "speak",
+      "description": "The grey-suit man speaks to the audience while standing next to the charades board.",
+      "participants": [
+        "grey-suit man"
+      ],
+      "actor": "grey-suit man",
+      "on_screen_text": [
+        {
+          "text": "CHARADES",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 2,
+      "start_time": "00:01",
+      "end_time": "00:05",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 15,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "speak",
+      "description": "The grey-suit man speaks to the group while standing next to the charades board.",
+      "participants": [
+        "grey-suit man",
+        "black-outfit woman",
+        "black-jacket man",
+        "checkered-jumpsuit woman"
+      ],
+      "actor": "grey-suit man",
+      "on_screen_text": [
+        {
+          "text": "CHARADES",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 10,
+      "start_time": "00:15",
+      "end_time": "00:17",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 15,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "speak",
+      "description": "the black-suit man continues speaking and leans forward slightly",
+      "participants": [
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "on_screen_text": [
+        {
+          "text": "\" BORN TO RUN \"",
+          "location": "subtitle"
+        },
+        {
+          "text": ": 0",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 75,
+      "start_time": "01:44",
+      "end_time": "01:45",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 15,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "speak",
+      "description": "the black-suit man looks up and speaks while gesturing with his hands",
+      "participants": [
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "on_screen_text": [
+        {
+          "text": "THE ROOTS",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 82,
+      "start_time": "01:52",
+      "end_time": "01:54",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 15,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "speak",
+      "description": "the black-suit man speaks and points toward the patterned-suit woman",
+      "participants": [
+        "black-suit man",
+        "patterned-suit woman"
+      ],
+      "actor": "black-suit man",
+      "on_screen_text": [
+        {
+          "text": "CHARADES",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 89,
+      "start_time": "01:59",
+      "end_time": "02:00",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 15,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "pull_board",
+      "description": "The checkered-jumpsuit woman pulls OUT the board section labeled '3' (first position in the second row from the top).",
+      "participants": [
+        "checkered-jumpsuit woman"
+      ],
+      "actor": "checkered-jumpsuit woman",
+      "object": "board section 3",
+      "on_screen_text": [
+        {
+          "text": "CHARADES",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 94,
+      "start_time": "02:07",
+      "end_time": "02:10",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "place",
+      "description": "The suit-wearing man places the card into the slot labeled '8' on the game board.",
+      "participants": [
+        "suit-wearing man"
+      ],
+      "actor": "suit-wearing man",
+      "object": "card",
+      "on_screen_text": [
+        {
+          "text": ":30",
+          "location": "timer"
+        },
+        {
+          "text": "CHARADES",
+          "location": "other"
+        },
+        {
+          "text": "2",
+          "location": "other"
+        },
+        {
+          "text": "4",
+          "location": "other"
+        },
+        {
+          "text": "5",
+          "location": "other"
+        },
+        {
+          "text": "6",
+          "location": "other"
+        },
+        {
+          "text": "7",
+          "location": "other"
+        },
+        {
+          "text": "8",
+          "location": "other"
+        },
+        {
+          "text": "9",
+          "location": "other"
+        },
+        {
+          "text": "10",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 127,
+      "start_time": "03:05",
+      "end_time": "03:07",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "gesture",
+      "description": "the grey-suit man gestures with both hands while standing in the center",
+      "participants": [
+        "grey-suit man"
+      ],
+      "actor": "grey-suit man",
+      "on_screen_text": [
+        {
+          "text": ":30",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 131,
+      "start_time": "03:15",
+      "end_time": "03:17",
+      "sub_events": [],
+      "subtype_order": 69,
+      "subtype_total": 104,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "game",
+      "description": "The black-corset woman performs charades by gesturing with her hands and moving her body while the others watch.",
+      "participants": [
+        "black-corset woman",
+        "checkered-suit woman",
+        "black-jacket man",
+        "grey-suit man"
+      ],
+      "actor": "black-corset woman",
+      "on_screen_text": [
+        {
+          "text": "CHARADES",
+          "location": "other"
+        },
+        {
+          "text": ":22",
+          "location": "timer"
+        },
+        {
+          "text": "IT",
+          "location": "subtitle"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 139,
+      "start_time": "03:30",
+      "end_time": "03:32",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "lecture",
+      "description": "the grey-suit man stands in front of the scoreboard and gestures while speaking",
+      "participants": [
+        "grey-suit man",
+        "black-trousers woman",
+        "checkered-jumpsuit woman",
+        "black-hat man"
+      ],
+      "actor": "grey-suit man",
+      "on_screen_text": [
+        {
+          "text": "CHARADES",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 175,
+      "start_time": "04:27",
+      "end_time": "04:30",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "pull_board",
+      "description": "the black-suit man pulls the panel labeled '7' out from the board",
+      "participants": [
+        "black-suit man",
+        "checkered-jumpsuit woman"
+      ],
+      "actor": "black-suit man",
+      "object": "panel 7",
+      "on_screen_text": [
+        {
+          "text": "CHARADES",
+          "location": "title"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 185,
+      "start_time": "04:50",
+      "end_time": "04:52",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "speak",
+      "description": "the suit man speaks to the floral-corset woman while gesturing with open arms",
+      "participants": [
+        "suit man",
+        "floral-corset woman"
+      ],
+      "actor": "suit man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 220,
+      "start_time": "05:42",
+      "end_time": "05:45",
+      "sub_events": [],
+      "subtype_order": 15,
+      "subtype_total": 15,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the black-suit man (Jimmy Fallon) celebrates with arms outstretched while looking at the black-top woman (Gal Gadot)",
+      "participants": [
+        "black-suit man",
+        "black-top woman",
+        "checkered-jumpsuit woman"
+      ],
+      "actor": "black-suit man",
+      "on_screen_text": [
+        {
+          "text": "CHARADES",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 221,
+      "start_time": "05:45",
+      "end_time": "05:47",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "transition",
+      "description": "the scene fades to black",
+      "participants": [],
+      "on_screen_text": [],
+      "segment_boundary": "end",
+      "segment_label": "Charades",
+      "continuation_hint": "complete",
+      "event_index": 228,
+      "start_time": "05:56",
+      "end_time": "05:58",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    }
+  ]
+}

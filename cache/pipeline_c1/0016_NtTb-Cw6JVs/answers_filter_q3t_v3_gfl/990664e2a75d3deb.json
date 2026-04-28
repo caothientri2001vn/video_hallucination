@@ -1,0 +1,179 @@
+{
+  "question": "Does the man on the right side win the game?",
+  "pred": "The video shows a cup-stacking competition titled \"FALL INTO PLACE\" involving three contestants: a blue-shirt man (left), a black-shirt woman (middle), and a gray-shirt man (right). As the game concludes, the scoreboard and on-screen graphics confirm the winner. The black-shirt woman (Sarah) reaches a score of 10 and celebrates with her arms raised, while the gray-shirt man (Nonong) is shown with a final score of 9. The blue-shirt man (Hideo) is shown with a score of 5 and a \"GAME OVER\" graphic. The man on the right side (gray-shirt man) does not win.\n\nEvidence: The scoreboard at 02:00 shows \"SARAH 10\" and she celebrates, while the gray-shirt man (Nonong) on the right is shown with a score of 9 at 01:57.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "stack_cups",
+      "description": "The gray-shirt man stacks a green cup on top of the existing green cup stack on the rightmost blue cylinder",
+      "participants": [
+        "black-shirt woman",
+        "blue-shirt man",
+        "gray-shirt man"
+      ],
+      "actor": "gray-shirt man",
+      "object": "green cup",
+      "on_screen_text": [
+        {
+          "text": "NONONG 8",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Competition",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 66,
+      "start_time": "01:55",
+      "end_time": "01:57",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 8,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "The scoreboard updates from 'NONONG 8' to 'NONONG 9' on the lower right of the screen",
+      "participants": [],
+      "actor": "",
+      "object_before": "NONONG 8",
+      "object_after": "NONONG 9",
+      "on_screen_text": [
+        {
+          "text": "NONONG 9",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Competition",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 67,
+      "start_time": "01:57",
+      "end_time": "01:59",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 8,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "celebration",
+      "description": "black-shirt woman raises both arms high in celebration while standing on the blue platform",
+      "participants": [
+        "black-shirt woman"
+      ],
+      "actor": "black-shirt woman",
+      "on_screen_text": [
+        {
+          "text": "SARAH 10",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Last Man Standing",
+      "continuation_hint": "complete",
+      "event_index": 69,
+      "start_time": "02:00",
+      "end_time": "02:05",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "celebration",
+      "description": "black-shirt woman turns around while keeping arms raised, showing back to the camera",
+      "participants": [
+        "black-shirt woman"
+      ],
+      "actor": "black-shirt woman",
+      "on_screen_text": [
+        {
+          "text": "SARAH 10",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Last Man Standing",
+      "continuation_hint": "complete",
+      "event_index": 70,
+      "start_time": "02:05",
+      "end_time": "02:10",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "celebration",
+      "description": "black-shirt woman lowers arms and turns back toward the game area",
+      "participants": [
+        "black-shirt woman"
+      ],
+      "actor": "black-shirt woman",
+      "on_screen_text": [
+        {
+          "text": "SARAH 10",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Last Man Standing",
+      "continuation_hint": "complete",
+      "event_index": 71,
+      "start_time": "02:10",
+      "end_time": "02:15",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "graphic",
+      "description": "The screen transitions to show social media handles with 'SUBSCRIBE HERE' text below the logo",
+      "participants": [],
+      "actor": "",
+      "on_screen_text": [
+        {
+          "text": "MINUTE TO WIN IT",
+          "location": "logo"
+        },
+        {
+          "text": "LAST MAN STANDING",
+          "location": "title"
+        },
+        {
+          "text": "SUBSCRIBE HERE",
+          "location": "banner"
+        },
+        {
+          "text": "/MinutePHL",
+          "location": "other"
+        },
+        {
+          "text": "@MinutePHL",
+          "location": "other"
+        },
+        {
+          "text": "@minutephl",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "MINUTE TO WIN IT LAST MAN STANDING",
+      "continuation_hint": "complete",
+      "event_index": 106,
+      "start_time": "03:26",
+      "end_time": "03:30",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 9,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    }
+  ]
+}

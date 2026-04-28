@@ -1,0 +1,69 @@
+{
+  "question": "Did the bottom-left girl finish with a beige off-shoulder dress?",
+  "pred": "Evidence: The frames show the bottom-left girl wearing a beige off-shoulder dress with cutouts and tassels in the final sequence (Frames 51-60), and the context confirms this as the last outfit change event (Event 21).\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "dance",
+      "description": "The bottom-left person begins dancing by raising hands and moving arms",
+      "participants": [
+        "white-top person"
+      ],
+      "actor": "white-top person",
+      "segment_boundary": "middle",
+      "segment_label": "Dance Performance",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 19,
+      "start_time": "00:29",
+      "end_time": "00:30",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Sequence 1"
+    },
+    {
+      "event_type": "outfit_change",
+      "description": "Woman in bottom-left quadrant changes from purple dress to red short-sleeve top and red skirt",
+      "participants": [
+        "bottom-left woman"
+      ],
+      "actor": "bottom-left woman",
+      "object_before": "purple dress",
+      "object_after": "red outfit",
+      "segment_boundary": "middle",
+      "segment_label": "outfit showcase",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 20,
+      "start_time": "00:30",
+      "end_time": "00:34",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 12,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Sequence 1"
+    },
+    {
+      "event_type": "outfit_change",
+      "description": "Woman in bottom-left quadrant changes from red outfit to beige off-shoulder dress with cutouts and tassels",
+      "participants": [
+        "bottom-left woman"
+      ],
+      "actor": "bottom-left woman",
+      "object_before": "red outfit",
+      "object_after": "beige dress",
+      "segment_boundary": "middle",
+      "segment_label": "outfit showcase",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 21,
+      "start_time": "00:34",
+      "end_time": "00:38",
+      "sub_events": [],
+      "subtype_order": 11,
+      "subtype_total": 12,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Sequence 1"
+    }
+  ]
+}

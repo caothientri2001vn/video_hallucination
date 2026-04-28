@@ -1,0 +1,142 @@
+{
+  "question": "Did the left team win exactly one individual round?",
+  "pred": "The question asks if the left team won exactly one individual round. The \"left team\" refers to the man in black with a hat (LEFT player per the alias map). \n\nI need to count how many rounds the left player won. In charades, each star on the board represents a successful round. The frames show the Charades board with multiple stars, but I need to determine how many belong to the left player.\n\nLooking at the sequence:\n- The woman in floral top acts out \"BORN TO RUN\" (frame 10)\n- The blonde woman acts out \"RING OF FIRE\" (frame 20)\n- The host acts out \"IT\" (frame 28) \n- The man in black acts out \"JURASSIC PARK\" (frame 39)\n- The blonde woman acts out \"DANCING ON THE CEILING\" (frame 45)\n\nThe man in black (left player) is only shown acting out one phrase (\"JURASSIC PARK\" in frame 39), followed by a celebration in frame 40 suggesting a successful round. There are no other instances where he's clearly the one performing an act that results in a win.\n\nThe board in frame 38 shows multiple stars, but the left player is only documented winning the \"JURASSIC PARK\" round. Since he only participated in and won one round, the answer is yes.\n\nEvidence: Frame 39 shows the man in black (left player) acting out \"JURASSIC PARK\" with a successful outcome indicated by the subsequent celebration in frame 40, and no other rounds are attributed to him.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "stand",
+      "description": "Four people stand in front of blue curtain with Charades board visible",
+      "participants": [
+        "checkered-jumpsuit woman",
+        "black-outfit man",
+        "corset-top woman",
+        "suit man"
+      ],
+      "actor": "all",
+      "segment_boundary": "start",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:02",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "posture_change",
+      "description": "checkered-jumpsuit woman moves hands from sides to hips",
+      "participants": [
+        "checkered-jumpsuit woman"
+      ],
+      "actor": "checkered-jumpsuit woman",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "complete",
+      "event_index": 2,
+      "start_time": "00:01",
+      "end_time": "00:03",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "posture_change",
+      "description": "black-outfit man keeps hands by sides",
+      "participants": [
+        "black-outfit man"
+      ],
+      "actor": "black-outfit man",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "complete",
+      "event_index": 3,
+      "start_time": "00:02",
+      "end_time": "00:04",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "on_screen_text",
+      "description": "CHARADES sign visible on the board throughout the segment",
+      "participants": [],
+      "actor": "",
+      "on_screen_text": [
+        {
+          "text": "CHARADES",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 18,
+      "start_time": "00:15",
+      "end_time": "00:30",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "transition",
+      "description": "screen fades to black",
+      "participants": [],
+      "actor": "",
+      "segment_boundary": "end",
+      "segment_label": "Charades",
+      "continuation_hint": "complete",
+      "on_screen_text": [],
+      "event_index": 168,
+      "start_time": "05:45",
+      "end_time": "05:50",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "graphic",
+      "description": "end screen appears showing a man in a dark suit with subscription options",
+      "participants": [
+        "man in dark suit"
+      ],
+      "actor": "man in dark suit",
+      "segment_boundary": "end",
+      "segment_label": "end screen",
+      "continuation_hint": "complete",
+      "on_screen_text": [
+        {
+          "text": "SUBSCRIBE NOW",
+          "location": "other"
+        },
+        {
+          "text": "WATCH EPISODES",
+          "location": "other"
+        },
+        {
+          "text": "MORE CLIPS",
+          "location": "other"
+        }
+      ],
+      "event_index": 169,
+      "start_time": "05:50",
+      "end_time": "06:00",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    }
+  ]
+}

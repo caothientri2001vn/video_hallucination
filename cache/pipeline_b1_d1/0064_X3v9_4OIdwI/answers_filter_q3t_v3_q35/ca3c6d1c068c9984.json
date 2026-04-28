@@ -1,0 +1,69 @@
+{
+  "question": "Did a girl appear wearing a hat exactly once in the entire video?",
+  "pred": "Evidence: The frames show the top-left girl wearing a striped sailor-style cap in frames 00:07-00:09, and later wearing a black baseball cap in frames 00:40-00:44. This confirms at least two instances of a girl wearing a hat.\n\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "pose",
+      "description": "Woman in bottom-right quadrant adjusts her pose while wearing white top and denim shorts",
+      "participants": [
+        "bottom-right woman"
+      ],
+      "actor": "bottom-right woman",
+      "segment_boundary": "middle",
+      "segment_label": "outfit showcase",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 24,
+      "start_time": "00:40",
+      "end_time": "00:45",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Sequence 1"
+    },
+    {
+      "event_type": "costume_change",
+      "description": "woman changes from white top and denim shorts to white and black outfit with cap",
+      "participants": [
+        "woman in white top and denim shorts"
+      ],
+      "actor": "woman in white top and denim shorts",
+      "object_before": "white top and denim shorts",
+      "object_after": "white and black outfit with cap",
+      "segment_boundary": "middle",
+      "segment_label": "fashion showcase",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 25,
+      "start_time": "00:45",
+      "end_time": "00:46",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Sequence 1"
+    },
+    {
+      "event_type": "costume_change",
+      "description": "woman changes from white and black outfit with cap back to white top and denim shorts",
+      "participants": [
+        "woman in white and black outfit with cap"
+      ],
+      "actor": "woman in white and black outfit with cap",
+      "object_before": "white and black outfit with cap",
+      "object_after": "white top and denim shorts",
+      "segment_boundary": "middle",
+      "segment_label": "fashion showcase",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 26,
+      "start_time": "00:47",
+      "end_time": "00:48",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Sequence 1"
+    }
+  ]
+}

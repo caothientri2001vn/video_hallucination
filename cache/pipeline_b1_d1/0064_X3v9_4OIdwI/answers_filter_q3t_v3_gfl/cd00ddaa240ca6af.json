@@ -1,0 +1,113 @@
+{
+  "question": "Did the top-right girl appear in five outfits?",
+  "pred": "The question asks if the girl in the top-right position appeared in five outfits. According to the alias map, the \"blue-shirt person\" is the one in the top-right position. By tracking the outfit changes for this person in the Context:\n\n1.  **Outfit 1**: Initially wearing a blue and white long-sleeve shirt (seen at 00:15).\n2.  **Outfit 2**: Changes to a white shirt with blue sleeves (event 14, 00:15-00:18).\n3.  **Outfit 3**: Changes to a white school shirt with a blue bow and plaid skirt (event 15, 00:18-00:21).\n4.  **Outfit 4**: Changes to a black shiny outfit (event 16, 00:21-00:24).\n5.  **Outfit 5**: Changes to a white button-up shirt with beige pants (event 17, 00:24-00:27).\n6.  **Outfit 6**: Changes to a black maid outfit with white cat ears (event 18, 00:27-00:29).\n\nThe person appeared in at least six distinct outfits. Since the question asks if there were five (existential phrasing \"Did [she] appear in five\", meaning at least five), the answer is Yes.\n\nEvidence: The Context records the top-right person (\"blue-shirt person\") changing through multiple outfits, including a blue/white shirt, a white shirt with blue sleeves, a school uniform, a black outfit, a white shirt with beige pants, and a black maid outfit (events 14-18).\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "outfit_change",
+      "description": "The top-right person changes from a blue/white long-sleeve shirt to a white shirt with blue sleeves",
+      "participants": [
+        "blue-shirt person"
+      ],
+      "actor": "blue-shirt person",
+      "object_before": "blue and white shirt",
+      "object_after": "white shirt with blue sleeves",
+      "segment_boundary": "middle",
+      "segment_label": "Outfit Change Sequence",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 14,
+      "start_time": "00:15",
+      "end_time": "00:18",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 12,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Sequence 1"
+    },
+    {
+      "event_type": "outfit_change",
+      "description": "The top-right person changes to a white school shirt with blue bow and plaid skirt",
+      "participants": [
+        "blue-shirt person"
+      ],
+      "actor": "blue-shirt person",
+      "object_before": "white shirt with blue sleeves",
+      "object_after": "white school shirt with blue bow and plaid skirt",
+      "segment_boundary": "middle",
+      "segment_label": "Outfit Change Sequence",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 15,
+      "start_time": "00:18",
+      "end_time": "00:21",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 12,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Sequence 1"
+    },
+    {
+      "event_type": "outfit_change",
+      "description": "The top-right person changes to a black shiny outfit",
+      "participants": [
+        "blue-shirt person"
+      ],
+      "actor": "blue-shirt person",
+      "object_before": "white school shirt with blue bow and plaid skirt",
+      "object_after": "black outfit",
+      "segment_boundary": "middle",
+      "segment_label": "Outfit Change Sequence",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 16,
+      "start_time": "00:21",
+      "end_time": "00:24",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 12,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Sequence 1"
+    },
+    {
+      "event_type": "outfit_change",
+      "description": "The top-right person changes to a white button-up shirt with beige pants",
+      "participants": [
+        "blue-shirt person"
+      ],
+      "actor": "blue-shirt person",
+      "object_before": "black outfit",
+      "object_after": "white shirt with beige pants",
+      "segment_boundary": "middle",
+      "segment_label": "Outfit Change Sequence",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 17,
+      "start_time": "00:24",
+      "end_time": "00:27",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 12,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Sequence 1"
+    },
+    {
+      "event_type": "outfit_change",
+      "description": "The top-right person changes to a black maid outfit with white cat ears",
+      "participants": [
+        "blue-shirt person"
+      ],
+      "actor": "blue-shirt person",
+      "object_before": "white shirt with beige pants",
+      "object_after": "black maid outfit with cat ears",
+      "segment_boundary": "middle",
+      "segment_label": "Outfit Change Sequence",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 18,
+      "start_time": "00:27",
+      "end_time": "00:29",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 12,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Sequence 1"
+    }
+  ]
+}

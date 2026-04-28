@@ -1,0 +1,168 @@
+{
+  "question": "When the black team plays against the green team, does the player with black shirt and yellow stripes number 11 ride the ball pass the green shirt players and score?",
+  "top_k": 15,
+  "indices": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "events": [
+    {
+      "event_type": "slide",
+      "description": "Green jersey player slides on the ground toward the ball while reaching with his hand",
+      "participants": [
+        "green-jersey player #27",
+        "black-and-yellow player"
+      ],
+      "actor": "green-jersey player #27",
+      "object": "ball",
+      "outcome": "reach for ball",
+      "on_screen_text": [
+        {
+          "text": "Bulbank Mobile",
+          "location": "banner"
+        },
+        {
+          "text": "TURKISH CHANNEL",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 8,
+      "start_time": "00:15",
+      "end_time": "00:17",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "dribble",
+      "description": "Black-and-yellow jersey player maintains control of the ball while moving forward",
+      "participants": [
+        "black-and-yellow player",
+        "green-jersey player #27"
+      ],
+      "actor": "black-and-yellow player",
+      "object": "ball",
+      "outcome": "continues dribbling",
+      "on_screen_text": [
+        {
+          "text": "Bulbank Mobile",
+          "location": "banner"
+        },
+        {
+          "text": "TURKISH CHANNEL",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 9,
+      "start_time": "00:15",
+      "end_time": "00:18",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "get_up",
+      "description": "Green jersey player #5 gets up from the ground after falling",
+      "participants": [
+        "green-jersey player #5",
+        "green-jersey player #27"
+      ],
+      "actor": "green-jersey player #5",
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 10,
+      "start_time": "00:16",
+      "end_time": "00:19",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "shoot",
+      "description": "Black-and-yellow jersey player kicks the ball toward the goal",
+      "participants": [
+        "black-and-yellow player",
+        "green-jersey player #27"
+      ],
+      "actor": "black-and-yellow player",
+      "object": "ball",
+      "outcome": "shot on goal",
+      "on_screen_text": [
+        {
+          "text": "Bulbank Mobile",
+          "location": "banner"
+        },
+        {
+          "text": "TURKISH CHANNEL",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 11,
+      "start_time": "00:18",
+      "end_time": "00:20",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "ball_movement",
+      "description": "Ball travels through the air toward the goal net",
+      "participants": [
+        "ball"
+      ],
+      "actor": "ball",
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 12,
+      "start_time": "00:19",
+      "end_time": "00:21",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "Black-and-yellow jersey player begins celebration by raising his arms",
+      "participants": [
+        "black-and-yellow player"
+      ],
+      "actor": "black-and-yellow player",
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 13,
+      "start_time": "00:20",
+      "end_time": "00:21",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    }
+  ]
+}

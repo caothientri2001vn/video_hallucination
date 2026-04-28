@@ -1,0 +1,101 @@
+{
+  "question": "Was the blue ball still on the table when the pink ball was potted?",
+  "pred": "The video shows a snooker match where the player in dark clothing (O'Sullivan) clears the table. The pink ball is potted at approximately 08:22, and the blue ball is clearly visible on the table at that time (and is subsequently hit by the cue ball in the next shot at 08:24).\n\nEvidence: Frames at ~08:22 show the pink ball being potted while the blue ball remains on the table near the top cushion.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "game",
+      "description": "O'Sullivan in black prepares his shot, adjusting stance and cue position while looking at the ball arrangement",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "cue stick",
+      "on_screen_text": [
+        {
+          "text": "DING 0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "O'SULLIVAN 122",
+          "location": "scoreboard"
+        },
+        {
+          "text": "Break 122",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 202,
+      "start_time": "08:15",
+      "end_time": "08:22",
+      "sub_events": [],
+      "subtype_order": 43,
+      "subtype_total": 54,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "game",
+      "description": "O'Sullivan executes the shot, making contact with the cue ball using the cue stick",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "cue stick",
+      "outcome": "hit",
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "complete",
+      "event_index": 203,
+      "start_time": "08:22",
+      "end_time": "08:23",
+      "sub_events": [],
+      "subtype_order": 44,
+      "subtype_total": 54,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "game",
+      "description": "Cue ball moves forward across the green table after being struck",
+      "participants": [],
+      "actor": "",
+      "object": "white cue ball",
+      "outcome": "moved",
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "complete",
+      "event_index": 204,
+      "start_time": "08:23",
+      "end_time": "08:24",
+      "sub_events": [],
+      "subtype_order": 45,
+      "subtype_total": 54,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    },
+    {
+      "event_type": "game",
+      "description": "Cue ball collides with the blue ball on the table",
+      "participants": [],
+      "actor": "",
+      "object": "blue ball",
+      "outcome": "hit",
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "complete",
+      "event_index": 205,
+      "start_time": "08:24",
+      "end_time": "08:25",
+      "sub_events": [],
+      "subtype_order": 46,
+      "subtype_total": 54,
+      "round_index": 1,
+      "segment_label_resolved": "Welsh Open Snooker Match"
+    }
+  ]
+}

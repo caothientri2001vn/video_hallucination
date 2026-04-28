@@ -1,0 +1,84 @@
+{
+  "question": "Did the blue shirt boy fall into the pool?",
+  "pred": "The video shows a contestant in a blue shirt (identified as Caiden Madzelan in the on-screen graphics) attempting a Ninja Warrior obstacle course. During his run, he fails to maintain his grip on a hanging cylinder obstacle and falls into the water below.\n\n1. At approximately 02:19, the blue-shirted contestant leaps toward a hanging cylinder.\n2. At 02:22, he misses the cylinder and begins falling.\n3. At 02:25, he splashes into the pool.\n4. Later frames (e.g., near 02:43) show him walking away from the course while soaking wet and holding a towel.\n\nEvidence: Event 61 in the Context states \"Blue-shirted contestant misses the hanging cylinder and falls toward the water,\" and event 62 records the subsequent splash.\n\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "jump",
+      "description": "Blue-shirted contestant leaps from the starting platform with arms extended toward the first hanging cylinder",
+      "participants": [
+        "blue-shirted contestant"
+      ],
+      "actor": "blue-shirted contestant",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "UNIVERSAL KIDS",
+          "location": "water surface"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Ninja Warrior Obstacle Course",
+      "continuation_hint": "complete",
+      "event_index": 60,
+      "start_time": "02:19",
+      "end_time": "02:22",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 3,
+      "segment_label_resolved": "Ninja Warrior Obstacle Course"
+    },
+    {
+      "event_type": "fall",
+      "description": "Blue-shirted contestant misses the hanging cylinder and falls toward the water with legs first",
+      "participants": [
+        "blue-shirted contestant"
+      ],
+      "actor": "blue-shirted contestant",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "UNIVERSAL KIDS",
+          "location": "water surface"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Ninja Warrior Obstacle Course",
+      "continuation_hint": "complete",
+      "event_index": 61,
+      "start_time": "02:22",
+      "end_time": "02:25",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 3,
+      "segment_label_resolved": "Ninja Warrior Obstacle Course"
+    },
+    {
+      "event_type": "splash",
+      "description": "Water splashes upward as the blue-shirted contestant enters the pool",
+      "participants": [],
+      "actor": "",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "UNIVERSAL KIDS",
+          "location": "water surface"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Ninja Warrior Obstacle Course",
+      "continuation_hint": "complete",
+      "event_index": 62,
+      "start_time": "02:25",
+      "end_time": "02:30",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 3,
+      "segment_label_resolved": "Ninja Warrior Obstacle Course"
+    }
+  ]
+}

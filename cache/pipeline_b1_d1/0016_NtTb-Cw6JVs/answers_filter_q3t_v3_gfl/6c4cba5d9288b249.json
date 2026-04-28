@@ -1,0 +1,147 @@
+{
+  "question": "Does the woman in the middle win the game?",
+  "pred": "The woman in the middle (identified as Sarah in the Context) is one of three contestants playing a game called \"Fall Into Place.\" While she is seen celebrating with her arms raised at the end of the segment (events 69-71), the scoreboard and on-screen text indicate she did not win the overall game. The scoreboard shows \"SARAH 10\" and \"NONONG 10\" (the gray-shirt man), and the final \"GAME OVER\" screen appears over the blue-shirt man, who is seen smiling and being congratulated. Sarah is shown standing to the side as the host addresses the other players at the end.\n\nEvidence: frames at ~02:00 show the scoreboard with \"SARAH 10\" while she celebrates, but the final \"GAME OVER\" graphic at ~02:55 is centered on the blue-shirt man.\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "celebration",
+      "description": "black-shirt woman raises both arms high in celebration while standing on the blue platform",
+      "participants": [
+        "black-shirt woman"
+      ],
+      "actor": "black-shirt woman",
+      "on_screen_text": [
+        {
+          "text": "SARAH 10",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Last Man Standing",
+      "continuation_hint": "complete",
+      "event_index": 69,
+      "start_time": "02:00",
+      "end_time": "02:05",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "celebration",
+      "description": "black-shirt woman turns around while keeping arms raised, showing back to the camera",
+      "participants": [
+        "black-shirt woman"
+      ],
+      "actor": "black-shirt woman",
+      "on_screen_text": [
+        {
+          "text": "SARAH 10",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Last Man Standing",
+      "continuation_hint": "complete",
+      "event_index": 70,
+      "start_time": "02:05",
+      "end_time": "02:10",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "celebration",
+      "description": "black-shirt woman lowers arms and turns back toward the game area",
+      "participants": [
+        "black-shirt woman"
+      ],
+      "actor": "black-shirt woman",
+      "on_screen_text": [
+        {
+          "text": "SARAH 10",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Last Man Standing",
+      "continuation_hint": "complete",
+      "event_index": 71,
+      "start_time": "02:10",
+      "end_time": "02:15",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "handshake",
+      "description": "blue-shirt man extends his right hand to shake hands with gray-shirt man",
+      "participants": [
+        "blue-shirt man",
+        "gray-shirt man"
+      ],
+      "actor": "blue-shirt man",
+      "on_screen_text": [
+        {
+          "text": "#MTWILastManStanding",
+          "location": "lower_third"
+        },
+        {
+          "text": "Kapamilya ONLINE LIVE",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Last Man Standing",
+      "continuation_hint": "complete",
+      "event_index": 87,
+      "start_time": "02:40",
+      "end_time": "02:45",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "high_five",
+      "description": "blue-shirt man high-fives the tie-dye shirt audience member",
+      "participants": [
+        "blue-shirt man",
+        "tie-dye shirt audience member"
+      ],
+      "actor": "blue-shirt man",
+      "on_screen_text": [
+        {
+          "text": "#MTWILastManStanding",
+          "location": "lower_third"
+        },
+        {
+          "text": "Kapamilya ONLINE LIVE",
+          "location": "other"
+        },
+        {
+          "text": "MINUTE TO WIN IT",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Last Man Standing",
+      "continuation_hint": "complete",
+      "event_index": 93,
+      "start_time": "02:50",
+      "end_time": "02:52",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "question": "Is the number 4 sewing machine a cake?",
+  "pred": "The video shows a game where contestants must identify which of four sewing machines is actually a cake. The sewing machine on Podium 1 is the one that is cut into and revealed to be a cake.\n\n1. At 00:53 and 02:00, four sewing machines are shown on pedestals numbered 1, 2, 3, and 4.\n2. At 02:14, the pink-shirt woman stabs a knife into the base of the sewing machine on Podium 1 (the leftmost one).\n3. At 02:34, she lifts a slice from the base of sewing machine 1, revealing layered cake inside.\n4. The sewing machine on Podium 4 (the rightmost one) is never cut or revealed to be cake; it remains on its pedestal as a decoy.\n\nEvidence: Frames at 02:34 show the pink-shirt woman lifting a slice of cake from the base of sewing machine 1, while sewing machine 4 remains untouched.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "answer_question",
+      "description": "A hand presses the button for option 4 on a touchscreen interface.",
+      "participants": [
+        "uncertain: blue-shirt man"
+      ],
+      "actor": "uncertain: blue-shirt man",
+      "object": "touchscreen",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "other"
+        },
+        {
+          "text": "2",
+          "location": "other"
+        },
+        {
+          "text": "3",
+          "location": "other"
+        },
+        {
+          "text": "4",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 27,
+      "start_time": "00:49",
+      "end_time": "00:50",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake?"
+    },
+    {
+      "event_type": "graphic",
+      "description": "The touchscreen displays 'ANSWER LOCKED!' after option 4 is selected.",
+      "participants": [],
+      "on_screen_text": [
+        {
+          "text": "ANSWER LOCKED!",
+          "location": "other"
+        },
+        {
+          "text": "4",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 28,
+      "start_time": "00:50",
+      "end_time": "00:51",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake?"
+    },
+    {
+      "event_type": "look",
+      "description": "The camera shows all four sewing machines on their numbered pedestals.",
+      "participants": [],
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "podium"
+        },
+        {
+          "text": "2",
+          "location": "podium"
+        },
+        {
+          "text": "3",
+          "location": "podium"
+        },
+        {
+          "text": "4",
+          "location": "podium"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 30,
+      "start_time": "00:53",
+      "end_time": "00:55",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 18,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake?"
+    },
+    {
+      "event_type": "graphic",
+      "description": "A split-screen graphic highlights each of the four sewing machines individually.",
+      "participants": [],
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "other"
+        },
+        {
+          "text": "2",
+          "location": "other"
+        },
+        {
+          "text": "3",
+          "location": "other"
+        },
+        {
+          "text": "4",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 31,
+      "start_time": "00:55",
+      "end_time": "00:58",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake?"
+    },
+    {
+      "event_type": "game",
+      "description": "The pink-shirt woman stabs a large knife into the base of the leftmost sewing machine (Podium 1).",
+      "participants": [
+        "pink-shirt woman"
+      ],
+      "actor": "pink-shirt woman",
+      "object": "silver knife",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 73,
+      "start_time": "02:14",
+      "end_time": "02:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake?"
+    },
+    {
+      "event_type": "cut",
+      "description": "The camera cuts from a wide shot of the stage to a close-up of the pink-shirt woman cutting into the base of the sewing machine.",
+      "participants": [
+        "pink-shirt woman",
+        "black-suit man"
+      ],
+      "actor": "pink-shirt woman",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "podium"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 74,
+      "start_time": "02:15",
+      "end_time": "02:16",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake?"
+    },
+    {
+      "event_type": "cut",
+      "description": "The camera cuts to a close-up of the pink-shirt woman's hands as she uses a knife to slice through the brown base of the sewing machine, revealing cake layers inside.",
+      "participants": [
+        "pink-shirt woman"
+      ],
+      "actor": "pink-shirt woman",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 77,
+      "start_time": "02:18",
+      "end_time": "02:20",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake?"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the pink-shirt woman lifts a slice of cake from the sewing machine base, revealing the interior layers",
+      "participants": [
+        "pink-shirt woman"
+      ],
+      "actor": "pink-shirt woman",
+      "object_before": "brown sewing machine base",
+      "object_after": "layered cake",
+      "on_screen_text": [
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "complete",
+      "event_index": 85,
+      "start_time": "02:34",
+      "end_time": "02:36",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake?"
+    },
+    {
+      "event_type": "graphic",
+      "description": "a close-up shot shows the cross-section of the layered cake inside the sewing machine base",
+      "participants": [],
+      "object": "layered cake",
+      "on_screen_text": [
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "complete",
+      "event_index": 86,
+      "start_time": "02:36",
+      "end_time": "02:38",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake?"
+    }
+  ]
+}

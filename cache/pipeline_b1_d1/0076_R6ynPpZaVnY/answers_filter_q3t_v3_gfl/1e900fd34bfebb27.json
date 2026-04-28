@@ -1,0 +1,117 @@
+{
+  "question": "Does the woman win the game with red color?",
+  "pred": "The video shows a game where a man and a woman take turns lifting cups to reveal colored circles. The woman (pink-sweater woman) wins the game by revealing the final red circle, completing her set of colors.\n\n1. At approximately 00:25, the woman lifts a cup to reveal a small red circle (Context event 11).\n2. Throughout the subsequent frames, the players continue to reveal circles of various colors (blue, yellow, green, pink).\n3. In the final frames of the video, the woman lifts a cup to reveal a second small red circle, which completes her collection and leads to a celebration where she raises her hand and the man reacts with a dejected look, indicating her victory.\n\nEvidence: Frames near the end of the video show the woman lifting a cup to reveal a small red circle, followed by her celebrating her win.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "place",
+      "description": "places the white cup on the 4th circle from the top in the vertical line (red circle), covering it",
+      "participants": [
+        "bearded man in black shirt",
+        "woman in pink top"
+      ],
+      "actor": "woman in pink top",
+      "object": "white cup",
+      "cover": "white cup",
+      "hidden": "red circle",
+      "segment_boundary": "middle",
+      "segment_label": "Cup and Circle Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 10,
+      "start_time": "00:21",
+      "end_time": "00:25",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Cup and Circle Game"
+    },
+    {
+      "event_type": "reveal",
+      "description": "lifts the white cup from the 4th circle position to reveal a small red circle underneath",
+      "participants": [
+        "bearded man in black shirt",
+        "woman in pink top"
+      ],
+      "actor": "woman in pink top",
+      "object": "white cup",
+      "cover": "white cup",
+      "hidden": "red circle",
+      "segment_boundary": "middle",
+      "segment_label": "Cup and Circle Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 11,
+      "start_time": "00:25",
+      "end_time": "00:28",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Cup and Circle Game"
+    },
+    {
+      "event_type": "react",
+      "description": "reacts with an expression of surprise after revealing the small red circle",
+      "participants": [
+        "bearded man in black shirt",
+        "woman in pink top"
+      ],
+      "actor": "woman in pink top",
+      "segment_boundary": "middle",
+      "segment_label": "Cup and Circle Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 12,
+      "start_time": "00:25",
+      "end_time": "00:28",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Cup and Circle Game"
+    },
+    {
+      "event_type": "react",
+      "description": "smiles while watching the woman reveal the small red circle",
+      "participants": [
+        "bearded man in black shirt",
+        "woman in pink top"
+      ],
+      "actor": "bearded man in black shirt",
+      "segment_boundary": "middle",
+      "segment_label": "Cup and Circle Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 13,
+      "start_time": "00:25",
+      "end_time": "00:28",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Cup and Circle Game"
+    },
+    {
+      "event_type": "cover",
+      "description": "places the white cup back down on the small red circle at the 4th circle position",
+      "participants": [
+        "bearded man in black shirt",
+        "woman in pink top"
+      ],
+      "actor": "woman in pink top",
+      "object": "white cup",
+      "cover": "white cup",
+      "hidden": "red circle",
+      "segment_boundary": "middle",
+      "segment_label": "Cup and Circle Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 14,
+      "start_time": "00:28",
+      "end_time": "00:30",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Cup and Circle Game"
+    }
+  ]
+}

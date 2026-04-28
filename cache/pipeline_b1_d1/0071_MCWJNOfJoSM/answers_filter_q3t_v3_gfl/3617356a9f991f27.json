@@ -1,0 +1,115 @@
+{
+  "question": "Did exactly two goals occur between France's two misses?",
+  "pred": "The penalty shootout sequence shows the following sequence of events:\n1. **France Miss 1**: The player in the dark blue jersey (#20) has his shot saved by the yellow-jersey goalkeeper (frames at ~05:42). The scoreboard at 05:46 confirms France's second attempt was a miss (red 'X').\n2. **Goal 1**: The player in the blue-white striped jersey (#21) scores for Argentina (frames at ~05:55).\n3. **France Miss 2**: The player in the dark blue jersey (#8) kicks the ball wide of the left post (frames at ~06:12). The scoreboard at 06:15 confirms France's third attempt was a miss (red 'X').\n\nBetween France's first miss (attempt 2) and their second miss (attempt 3), only one goal occurred (Argentina's attempt 2).\n\nEvidence: The scoreboard at 06:15 shows France with two consecutive misses (red 'X's at positions 2 and 3) with only one Argentina goal (green diamond at position 2) occurring between them.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "goal",
+      "description": "the white soccer ball enters the net as the goalkeeper dives to the left",
+      "participants": [
+        "goalkeeper"
+      ],
+      "actor": "none",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 125,
+      "start_time": "05:03",
+      "end_time": "05:04",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "soccer ball enters the goal net after the penalty kick",
+      "participants": [
+        "goalkeeper in green uniform",
+        "kicker in dark uniform"
+      ],
+      "actor": "soccer ball",
+      "object": "white soccer ball",
+      "object_before": "",
+      "object_after": "",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 135,
+      "start_time": "05:22",
+      "end_time": "05:24",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "react",
+      "description": "goalkeeper in yellow jersey stands and looks toward the field after making the save",
+      "participants": [
+        "yellow jersey goalkeeper"
+      ],
+      "actor": "yellow jersey goalkeeper",
+      "segment_boundary": "end",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "event_index": 145,
+      "start_time": "05:42",
+      "end_time": "05:45",
+      "sub_events": [],
+      "subtype_order": 16,
+      "subtype_total": 16,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "emotional_reaction",
+      "description": "Player in dark blue jersey places hand over face while looking toward the field",
+      "participants": [
+        "player in dark blue jersey"
+      ],
+      "actor": "player in dark blue jersey",
+      "on_screen_text": [
+        {
+          "text": "MBAPPE",
+          "location": "jersey"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Post-match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 192,
+      "start_time": "07:08",
+      "end_time": "07:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

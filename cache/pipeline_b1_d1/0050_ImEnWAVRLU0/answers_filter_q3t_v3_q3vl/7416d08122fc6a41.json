@@ -1,0 +1,66 @@
+{
+  "question": "Did the interviewer read the book on the table during the interview?",
+  "pred": "Evidence: The Context shows a \"neatly-combed-haired man reaches forward and places hand on book on desk\" but does not describe anyone reading the book. The speaker is identified as \"man in dark suit with white shirt and dark tie speaks while seated in front of a piano\" without mention of reading any book.\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "gesture",
+      "description": "shorter-haired man makes hand gestures while speaking at desk",
+      "participants": [
+        "shorter-haired man"
+      ],
+      "actor": "shorter-haired man",
+      "segment_boundary": "middle",
+      "segment_label": "formal conversation",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 127,
+      "start_time": "05:25",
+      "end_time": "05:29",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 9,
+      "round_index": 8,
+      "segment_label_resolved": "New Meeting Room"
+    },
+    {
+      "event_type": "manipulate_object",
+      "description": "neatly-combed-haired man reaches forward and places hand on book on desk",
+      "participants": [
+        "neatly-combed-haired man"
+      ],
+      "actor": "neatly-combed-haired man",
+      "object": "book",
+      "segment_boundary": "middle",
+      "segment_label": "formal conversation",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 128,
+      "start_time": "05:29",
+      "end_time": "05:30",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 8,
+      "segment_label_resolved": "New Meeting Room"
+    },
+    {
+      "event_type": "speak",
+      "description": "man in dark suit with white shirt and dark tie speaks while seated in front of a piano",
+      "participants": [
+        "dark-suited man with white shirt"
+      ],
+      "actor": "dark-suited man with white shirt",
+      "segment_boundary": "middle",
+      "segment_label": "interview",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 129,
+      "start_time": "05:30",
+      "end_time": "05:35",
+      "sub_events": [],
+      "subtype_order": 23,
+      "subtype_total": 49,
+      "round_index": 8,
+      "segment_label_resolved": "New Meeting Room"
+    }
+  ]
+}

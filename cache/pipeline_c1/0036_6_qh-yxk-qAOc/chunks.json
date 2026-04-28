@@ -1,0 +1,287 @@
+{
+  "video_name": "0036_6_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 16.933333333333334,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:02",
+          "event_type": "pass",
+          "description": "a red and blue striped jersey player passes the ball toward the penalty area",
+          "participants": [
+            "red and blue striped jersey player",
+            "light blue jersey player"
+          ],
+          "actor": "red and blue striped jersey player",
+          "object": "yellow ball",
+          "outcome": "passed",
+          "on_screen_text": [
+            {
+              "text": "ANDROS TOWNSEND",
+              "location": "lower_third"
+            },
+            {
+              "text": "TARAFINDAN KANAL",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:04",
+          "event_type": "run",
+          "description": "a red and blue striped jersey player runs toward the goal to receive the pass",
+          "participants": [
+            "red and blue striped jersey player"
+          ],
+          "actor": "red and blue striped jersey player",
+          "object": "yellow ball",
+          "outcome": "receiving",
+          "on_screen_text": [
+            {
+              "text": "ANDROS TOWNSEND",
+              "location": "lower_third"
+            },
+            {
+              "text": "TARAFINDAN KANAL",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:04",
+          "local_end": "00:06",
+          "event_type": "control",
+          "description": "a red and blue striped jersey player controls the ball in the penalty area",
+          "participants": [
+            "red and blue striped jersey player"
+          ],
+          "actor": "red and blue striped jersey player",
+          "object": "yellow ball",
+          "outcome": "controlled",
+          "on_screen_text": [
+            {
+              "text": "ANDROS TOWNSEND",
+              "location": "lower_third"
+            },
+            {
+              "text": "TARAFINDAN KANAL",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:08",
+          "event_type": "shoot",
+          "description": "a red and blue striped jersey player shoots the ball toward the goal",
+          "participants": [
+            "red and blue striped jersey player",
+            "goalkeeper"
+          ],
+          "actor": "red and blue striped jersey player",
+          "object": "yellow ball",
+          "outcome": "shot",
+          "on_screen_text": [
+            {
+              "text": "ANDROS TOWNSEND",
+              "location": "lower_third"
+            },
+            {
+              "text": "TARAFINDAN KANAL",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:08",
+          "local_end": "00:10",
+          "event_type": "dive",
+          "description": "the goalkeeper in yellow jersey dives to save the shot",
+          "participants": [
+            "goalkeeper"
+          ],
+          "actor": "goalkeeper",
+          "object": "yellow ball",
+          "outcome": "save attempt",
+          "on_screen_text": [
+            {
+              "text": "ANDROS TOWNSEND",
+              "location": "lower_third"
+            },
+            {
+              "text": "TARAFINDAN KANAL",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:10",
+          "local_end": "00:12",
+          "event_type": "goal",
+          "description": "the ball enters the goal net past the diving goalkeeper",
+          "participants": [
+            "yellow ball",
+            "goal net"
+          ],
+          "actor": "yellow ball",
+          "object": "yellow ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "ANDROS TOWNSEND",
+              "location": "lower_third"
+            },
+            {
+              "text": "TARAFINDAN KANAL",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Soccer Match - Goal Scoring Play",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:12",
+          "local_end": "00:14",
+          "event_type": "celebration",
+          "description": "red and blue striped jersey players raise their arms in celebration",
+          "participants": [
+            "red and blue striped jersey player",
+            "red and blue striped jersey player"
+          ],
+          "actor": "red and blue striped jersey player",
+          "object": "",
+          "outcome": "celebrating",
+          "on_screen_text": [
+            {
+              "text": "ANDROS TOWNSEND",
+              "location": "lower_third"
+            },
+            {
+              "text": "TARAFINDAN KANAL",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Soccer Match - Goal Celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:14",
+          "local_end": "00:15",
+          "event_type": "walk",
+          "description": "light blue jersey players walk away from the goal showing disappointment",
+          "participants": [
+            "light blue jersey player",
+            "light blue jersey player"
+          ],
+          "actor": "light blue jersey player",
+          "object": "",
+          "outcome": "walking",
+          "on_screen_text": [
+            {
+              "text": "ANDROS TOWNSEND",
+              "location": "lower_third"
+            },
+            {
+              "text": "TARAFINDAN KANAL",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Soccer Match - Goal Reaction",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 16.933333333333334,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:17",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:17",
+          "event_type": "celebration",
+          "description": "The player with jersey number 10 runs forward with mouth open, shouting and showing excited body language",
+          "participants": [
+            "blue-and-red striped jersey player"
+          ],
+          "actor": "blue-and-red striped jersey player",
+          "on_screen_text": [
+            {
+              "text": "TOWNSEND",
+              "location": "jersey_number"
+            },
+            {
+              "text": "10",
+              "location": "jersey_number"
+            },
+            {
+              "text": "ManBetX",
+              "location": "logo"
+            },
+            {
+              "text": "TRABZONSPOR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:15",
+          "local_end": "00:17",
+          "event_type": "run",
+          "description": "Another player in blue-and-red striped jersey runs in the background behind the main player",
+          "participants": [
+            "blue-and-red striped jersey player (background)"
+          ],
+          "actor": "blue-and-red striped jersey player (background)",
+          "on_screen_text": [
+            {
+              "text": "TRABZONSPOR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

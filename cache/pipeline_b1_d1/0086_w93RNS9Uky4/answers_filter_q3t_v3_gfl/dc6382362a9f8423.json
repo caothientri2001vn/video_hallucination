@@ -1,0 +1,182 @@
+{
+  "question": "Did the man win the game?",
+  "pred": "The video shows a game where a man (black-jacket) and a woman (gray-shirt) compete to stack their respective colored cups (red for the man, purple for the woman). The banner at the start explicitly states the win condition: \"Last color standing wins!\". Throughout the video, they take turns using an orange balloon to move and stack cups. In the final sequence, the woman successfully stacks her purple cup on top of the man's remaining red cup stack, leaving only purple visible on top. The woman then celebrates by raising her arms and cheering, while the man smiles and watches.\n\nEvidence: The final frames show the woman placing a purple cup stack on top of the red cup stack, followed by her cheering and celebrating her victory.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "game",
+      "description": "Two people stand behind a table with red cups on left and purple cups on right; woman holds orange balloon",
+      "participants": [
+        "black-jacket man",
+        "gray-shirt woman"
+      ],
+      "actor": "both",
+      "on_screen_text": [
+        {
+          "text": "Last color standing wins!",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "start",
+      "segment_label": "Cup Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:01",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "cup_rearrangement",
+      "description": "The man in black jacket moves a red cup from the left side of the table, changing its position among the stacked red cups",
+      "participants": [
+        "black-jacket man",
+        "gray-shirt woman"
+      ],
+      "actor": "black-jacket man",
+      "object": "red cup",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Arrangement Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 35,
+      "start_time": "01:00",
+      "end_time": "01:02",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "lift",
+      "description": "man lifts the rightmost stack of red cups from the table",
+      "participants": [
+        "black-jacket man",
+        "gray-shirt woman"
+      ],
+      "actor": "black-jacket man",
+      "object": "red cup stack",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 48,
+      "start_time": "01:27",
+      "end_time": "01:29",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "place",
+      "description": "man places the stack of red cups onto a purple cup",
+      "participants": [
+        "black-jacket man",
+        "gray-shirt woman"
+      ],
+      "actor": "black-jacket man",
+      "cover": "red cup stack",
+      "hidden": "purple cup",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 49,
+      "start_time": "01:29",
+      "end_time": "01:30",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "arrange",
+      "description": "Woman arranges fallen cups on the table, placing purple cups in a stack on the left and red cups in a stack on the right",
+      "participants": [
+        "gray-shirt woman",
+        "black-jacket man"
+      ],
+      "actor": "gray-shirt woman",
+      "object": "purple cups, red cups",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 55,
+      "start_time": "01:45",
+      "end_time": "01:52",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "arrange",
+      "description": "Woman finishes cup arrangement, adjusts the stacks of cups, and claps her hands",
+      "participants": [
+        "gray-shirt woman"
+      ],
+      "actor": "gray-shirt woman",
+      "object": "purple cups, red cups",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 56,
+      "start_time": "01:52",
+      "end_time": "01:58",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "lift",
+      "description": "The woman lifts the leftmost purple cup stack from the table",
+      "participants": [
+        "gray-shirt woman",
+        "black-jacket man"
+      ],
+      "actor": "gray-shirt woman",
+      "object": "purple cup stack",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 61,
+      "start_time": "02:02",
+      "end_time": "02:03",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "stack",
+      "description": "The woman places the purple cup stack on top of the red cup stack",
+      "participants": [
+        "gray-shirt woman",
+        "black-jacket man"
+      ],
+      "actor": "gray-shirt woman",
+      "cover": "purple cup stack",
+      "hidden": "red cup stack",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 62,
+      "start_time": "02:02",
+      "end_time": "02:03",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    }
+  ]
+}

@@ -1,0 +1,2779 @@
+{
+  "question": "Does the player with yellow shirt and green pants score third goal after their opponents score their third goal?",
+  "pred": "The video shows a teqball match between a yellow-shirt team (Brazil) and a red-shirt team (Thailand). To determine if the yellow-shirt team scored their third goal after their opponents scored their third goal, we track the scoreboard updates:\n\n1.  **Initial Score:** The video begins with the score at THA 2 - BRA 0 (Event 1).\n2.  **Opponents' Third Goal:** The red-shirt team (Thailand) scores their third goal, updating the scoreboard to THA 3 - BRA 0 (Event 14).\n3.  **Yellow Team's Third Goal:** Following this, the yellow-shirt team (Brazil) scores their first, second, and then third goals. The scoreboard update to THA 4 - BRA 3 (Event 24) confirms the yellow team reached their third goal after the red team had already reached three.\n\nEvidence: Event 14 shows the scoreboard at THA 3 - BRA 2, and Event 24 shows it updating to THA 4 - BRA 3.\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": {
+    "subtype_counts": {
+      "walk": 9,
+      "return": 8,
+      "celebration": 8,
+      "high_five": 6,
+      "scoreboard_update": 6,
+      "serve": 6,
+      "handshake": 6,
+      "prepare_serve": 5,
+      "game": 3,
+      "reposition": 3,
+      "speak": 3,
+      "react": 3,
+      "receive": 2,
+      "hit": 2,
+      "kick": 2,
+      "hand_raise": 2,
+      "pat": 2,
+      "attempt_return": 2,
+      "graphic": 2,
+      "ball_trajectory": 1,
+      "acrobatic_hit": 1,
+      "contact": 1,
+      "reaction": 1,
+      "juggle": 1,
+      "acrobatic_kick": 1,
+      "miss": 1,
+      "signal": 1,
+      "throw": 1,
+      "replay": 1,
+      "applaud": 1,
+      "hug": 1,
+      "on_screen_text": 1
+    },
+    "events": [
+      {
+        "event_type": "game",
+        "description": "Yellow team player serves the ball with their foot",
+        "participants": [
+          "yellow-shirt player",
+          "red-shirt player"
+        ],
+        "actor": "yellow-shirt player",
+        "object": "white and red ball",
+        "outcome": "served",
+        "on_screen_text": [
+          {
+            "text": "TEQBALL VICT 22",
+            "location": "scoreboard"
+          },
+          {
+            "text": "KUKHEAW/DEJARDEN",
+            "location": "scoreboard"
+          },
+          {
+            "text": "THA",
+            "location": "scoreboard"
+          },
+          {
+            "text": "2",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS",
+            "location": "scoreboard"
+          },
+          {
+            "text": "BRA",
+            "location": "scoreboard"
+          },
+          {
+            "text": "0",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:01",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "ball_trajectory",
+        "description": "The ball travels from yellow team side to red team side across the teqball table",
+        "participants": [
+          "yellow-shirt player",
+          "red-shirt player"
+        ],
+        "actor": "ball",
+        "object": "white and red ball",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 2,
+        "start_time": "00:01",
+        "end_time": "00:02",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "receive",
+        "description": "Red team player positions themselves to receive the ball",
+        "participants": [
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 3,
+        "start_time": "00:02",
+        "end_time": "00:03",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "hit",
+        "description": "Red team player returns the ball with their foot",
+        "participants": [
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "object": "white and red ball",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 4,
+        "start_time": "00:03",
+        "end_time": "00:04",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "reposition",
+        "description": "Yellow team players move to receive the incoming ball",
+        "participants": [
+          "yellow-shirt player"
+        ],
+        "actor": "yellow-shirt player",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 5,
+        "start_time": "00:04",
+        "end_time": "00:05",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "return",
+        "description": "Yellow team player hits the ball back over the teqball table with their foot",
+        "participants": [
+          "yellow-shirt player"
+        ],
+        "actor": "yellow-shirt player",
+        "object": "white and red ball",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 6,
+        "start_time": "00:05",
+        "end_time": "00:07",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "acrobatic_hit",
+        "description": "Red team player performs a bicycle kick to hit the ball",
+        "participants": [
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "object": "white and red ball",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 7,
+        "start_time": "00:07",
+        "end_time": "00:09",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "contact",
+        "description": "The ball makes contact with the teqball table surface",
+        "participants": [
+          "red-shirt player",
+          "yellow-shirt player"
+        ],
+        "actor": "ball",
+        "object": "white and red ball",
+        "outcome": "hit",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 8,
+        "start_time": "00:09",
+        "end_time": "00:10",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "reaction",
+        "description": "Yellow team players react to the play by moving toward the ball",
+        "participants": [
+          "yellow-shirt player"
+        ],
+        "actor": "yellow-shirt player",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 9,
+        "start_time": "00:10",
+        "end_time": "00:12",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Red team players raise their arms in celebration",
+        "participants": [
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "segment_boundary": "end",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 10,
+        "start_time": "00:12",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Two red-shirt players raise their hands above their heads in celebration",
+        "participants": [
+          "red-shirt player",
+          "red-shirt player"
+        ],
+        "actor": "red-shirt players",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 2",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 0",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball - Gala Match",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 11,
+        "start_time": "00:15",
+        "end_time": "00:17",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "high_five",
+        "description": "Two red-shirt players high-five each other",
+        "participants": [
+          "red-shirt player",
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 2",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 0",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball - Gala Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 12,
+        "start_time": "00:17",
+        "end_time": "00:19",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "walk",
+        "description": "Red-shirt player walks toward the teqball table",
+        "participants": [
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 2",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 0",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball - Gala Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 13,
+        "start_time": "00:19",
+        "end_time": "00:21",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "scoreboard_update",
+        "description": "The scoreboard changes from THA 2, BRA 0 to THA 3, BRA 2",
+        "participants": [],
+        "actor": "scoreboard",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 2",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball - Gala Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 14,
+        "start_time": "00:21",
+        "end_time": "00:23",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "juggle",
+        "description": "Yellow-shirt player juggles a red and white ball with his hands and head",
+        "participants": [
+          "yellow-shirt player"
+        ],
+        "actor": "yellow-shirt player",
+        "object": "red and white ball",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 2",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball - Gala Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 15,
+        "start_time": "00:23",
+        "end_time": "00:25",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "game",
+        "description": "Yellow-shirt player kicks the ball toward the teqball table",
+        "participants": [
+          "yellow-shirt player"
+        ],
+        "actor": "yellow-shirt player",
+        "object": "red and white ball",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 2",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball - Gala Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 16,
+        "start_time": "00:25",
+        "end_time": "00:27",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "kick",
+        "description": "Red-shirt player attempts a kick toward the teqball table",
+        "participants": [
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "object": "red and white ball",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 2",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball - Gala Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 17,
+        "start_time": "00:27",
+        "end_time": "00:29",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "high_five",
+        "description": "Two yellow-shirt players high-five each other",
+        "participants": [
+          "yellow-shirt player",
+          "yellow-shirt player"
+        ],
+        "actor": "yellow-shirt player",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 2",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball - Gala Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 18,
+        "start_time": "00:28",
+        "end_time": "00:30",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "speak",
+        "description": "Two red-shirt players talk to each other while gesturing",
+        "participants": [
+          "red-shirt player",
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 2",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball - Gala Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 19,
+        "start_time": "00:28",
+        "end_time": "00:30",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "serve",
+        "description": "The yellow-shirted Brazilian player serves the ball over the curved table",
+        "participants": [
+          "yellow-shirted Brazilian player",
+          "red-shirted Thai player"
+        ],
+        "actor": "yellow-shirted Brazilian player",
+        "object": "red and white ball",
+        "on_screen_text": [
+          {
+            "text": "TEQBALL WORLD CHAMP 2021",
+            "location": "scoreboard"
+          },
+          {
+            "text": "KUKHEAN/DEJARDEN THA 4",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 2",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 20,
+        "start_time": "00:30",
+        "end_time": "00:33",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "return",
+        "description": "The red-shirted Thai player returns the ball by kicking it over the curved table",
+        "participants": [
+          "red-shirted Thai player",
+          "yellow-shirted Brazilian player"
+        ],
+        "actor": "red-shirted Thai player",
+        "object": "red and white ball",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 4",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 2",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 21,
+        "start_time": "00:33",
+        "end_time": "00:36",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "acrobatic_kick",
+        "description": "The yellow-shirted Brazilian player with white hair performs an acrobatic bicycle kick to return the ball",
+        "participants": [
+          "yellow-shirted Brazilian player with white hair"
+        ],
+        "actor": "yellow-shirted Brazilian player with white hair",
+        "object": "red and white ball",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 4",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 2",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 22,
+        "start_time": "00:36",
+        "end_time": "00:38",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "high_five",
+        "description": "The two yellow-shirted Brazilian players high-five each other in celebration",
+        "participants": [
+          "yellow-shirted Brazilian player with white hair",
+          "yellow-shirted Brazilian player"
+        ],
+        "actor": "yellow-shirted Brazilian player with white hair",
+        "object": "none",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 4",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 2",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 23,
+        "start_time": "00:38",
+        "end_time": "00:41",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "scoreboard_update",
+        "description": "The scoreboard updates to show Brazil has scored a point",
+        "participants": [],
+        "actor": "none",
+        "object_before": "score showing BRA 2",
+        "object_after": "score showing BRA 3",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 4",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 3",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 24,
+        "start_time": "00:41",
+        "end_time": "00:43",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "prepare_serve",
+        "description": "The red-shirted Thai player prepares to serve the ball for the next point",
+        "participants": [
+          "red-shirted Thai player"
+        ],
+        "actor": "red-shirted Thai player",
+        "object": "red and white ball",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 4",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 3",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 25,
+        "start_time": "00:43",
+        "end_time": "00:45",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "serve",
+        "description": "The red-shirt player tosses the white ball up and serves it with a foot kick toward the teqball table",
+        "participants": [
+          "red-shirt player",
+          "yellow-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "object": "white ball",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "2022 TEQBALL WORLD CHAMPIONSHIPS",
+            "location": "banner"
+          }
+        ],
+        "event_index": 26,
+        "start_time": "00:45",
+        "end_time": "00:47",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "return",
+        "description": "The yellow-shirt player returns the white ball with a foot kick after it bounces on the teqball table",
+        "participants": [
+          "red-shirt player",
+          "yellow-shirt player"
+        ],
+        "actor": "yellow-shirt player",
+        "object": "white ball",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "2022 TEQBALL WORLD CHAMPIONSHIPS",
+            "location": "banner"
+          }
+        ],
+        "event_index": 27,
+        "start_time": "00:47",
+        "end_time": "00:49",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "return",
+        "description": "The red-shirt player with 'THAILAND' on his back returns the white ball with a header",
+        "participants": [
+          "red-shirt player",
+          "yellow-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "object": "white ball",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "2022 TEQBALL WORLD CHAMPIONSHIPS",
+            "location": "banner"
+          }
+        ],
+        "event_index": 28,
+        "start_time": "00:49",
+        "end_time": "00:51",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "miss",
+        "description": "The yellow-shirt player attempts to return the white ball but misses the teqball table",
+        "participants": [
+          "red-shirt player",
+          "yellow-shirt player"
+        ],
+        "actor": "yellow-shirt player",
+        "object": "white ball",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "2022 TEQBALL WORLD CHAMPIONSHIPS",
+            "location": "banner"
+          }
+        ],
+        "event_index": 29,
+        "start_time": "00:51",
+        "end_time": "00:53",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "The red-shirt player on the right side raises his arms in celebration",
+        "participants": [
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "2022 TEQBALL WORLD CHAMPIONSHIPS",
+            "location": "banner"
+          }
+        ],
+        "event_index": 30,
+        "start_time": "00:53",
+        "end_time": "00:55",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "signal",
+        "description": "The referee in white gestures with his arm, signaling a point for the red team",
+        "participants": [
+          "referee",
+          "red-shirt player",
+          "yellow-shirt player"
+        ],
+        "actor": "referee",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "2022 TEQBALL WORLD CHAMPIONSHIPS",
+            "location": "banner"
+          }
+        ],
+        "event_index": 31,
+        "start_time": "00:55",
+        "end_time": "00:57",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "reposition",
+        "description": "The red-shirt player walks toward the teqball table, preparing for the next play",
+        "participants": [
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "2022 TEQBALL WORLD CHAMPIONSHIPS",
+            "location": "banner"
+          }
+        ],
+        "event_index": 32,
+        "start_time": "00:57",
+        "end_time": "01:00",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "walk",
+        "description": "A player in red uniform walks toward the teqball table",
+        "participants": [
+          "red-shirt man",
+          "yellow-shirt man"
+        ],
+        "actor": "red-shirt man",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAW/DEJARDEN THA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TEQBALL WORLD CUP 2023",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 33,
+        "start_time": "01:00",
+        "end_time": "01:02",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "speak",
+        "description": "Two players in yellow and green uniforms converse while standing near the teqball table",
+        "participants": [
+          "yellow-shirt man",
+          "yellow-shirt man"
+        ],
+        "actor": "yellow-shirt man",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAW/DEJARDEN THA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 3",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 34,
+        "start_time": "01:02",
+        "end_time": "01:04",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "A player in yellow and green uniform raises both hands with palms open",
+        "participants": [
+          "yellow-shirt man"
+        ],
+        "actor": "yellow-shirt man",
+        "object": "hands",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAW/DEJARDEN THA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 3",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 35,
+        "start_time": "01:07",
+        "end_time": "01:09",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "speak",
+        "description": "Two players in yellow and green uniforms have a conversation while one gestures with open hands",
+        "participants": [
+          "yellow-shirt man",
+          "yellow-shirt man"
+        ],
+        "actor": "yellow-shirt man",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAW/DEJARDEN THA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 3",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 36,
+        "start_time": "01:08",
+        "end_time": "01:10",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "throw",
+        "description": "A player in yellow and green uniform serves the ball with his head",
+        "participants": [
+          "yellow-shirt man",
+          "red-shirt man"
+        ],
+        "actor": "yellow-shirt man",
+        "object": "white and red ball",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAW/DEJARDEN THA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 3",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 37,
+        "start_time": "01:11",
+        "end_time": "01:12",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "kick",
+        "description": "A player in yellow and green uniform performs a high kick to hit the ball",
+        "participants": [
+          "yellow-shirt man",
+          "red-shirt man"
+        ],
+        "actor": "yellow-shirt man",
+        "object": "white and red ball",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAW/DEJARDEN THA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 3",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 38,
+        "start_time": "01:13",
+        "end_time": "01:14",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "receive",
+        "description": "A player in red uniform with 'DEJARDEN THAILAND' on his back positions himself to receive the ball",
+        "participants": [
+          "red-shirt man"
+        ],
+        "actor": "red-shirt man",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAW/DEJARDEN THA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 3",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 39,
+        "start_time": "01:13",
+        "end_time": "01:15",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "hit",
+        "description": "A player in red uniform hits the ball with his hand",
+        "participants": [
+          "red-shirt man"
+        ],
+        "actor": "red-shirt man",
+        "object": "white and red ball",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAW/DEJARDEN THA 6",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 4",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 40,
+        "start_time": "01:14",
+        "end_time": "01:15",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "scoreboard_update",
+        "description": "Scoreboard changes from THA 5 BRA 3 to THA 6 BRA 4",
+        "participants": [],
+        "actor": "",
+        "object_before": "scoreboard showing THA 5 BRA 3",
+        "object_after": "scoreboard showing THA 6 BRA 4",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAW/DEJARDEN THA 6",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 4",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 41,
+        "start_time": "01:15",
+        "end_time": "01:15",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "game",
+        "description": "A red-shirt player in the foreground hits the ball over the net toward the yellow-shirt players, scoring a point as the yellow team fails to return it.",
+        "participants": [
+          "red-shirt player",
+          "yellow-shirt players"
+        ],
+        "actor": "red-shirt player",
+        "outcome": "scored",
+        "on_screen_text": [
+          {
+            "text": "TEQBALL",
+            "location": "logo"
+          },
+          {
+            "text": "GALA MATCH",
+            "location": "banner"
+          },
+          {
+            "text": "KUKHEAW/DEJARDEN THA 6",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 4",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 42,
+        "start_time": "01:15",
+        "end_time": "01:18",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "The red-shirt player with 'KUKHEAW THAILAND' on his jersey raises his right arm in celebration after scoring the point.",
+        "participants": [
+          "red-shirt player KUKHEAW"
+        ],
+        "actor": "red-shirt player KUKHEAW",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAW/DEJARDEN THA 6",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 4",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 43,
+        "start_time": "01:18",
+        "end_time": "01:21",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "react",
+        "description": "The yellow-shirt players show disappointment after losing the point, with one player placing his hand on his face.",
+        "participants": [
+          "yellow-shirt player",
+          "yellow-shirt player"
+        ],
+        "actor": "yellow-shirt player",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAW/DEJARDEN THA 6",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 4",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 44,
+        "start_time": "01:18",
+        "end_time": "01:22",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "high_five",
+        "description": "The red-shirt player KUKHEAW and the red-shirt player DEJARDEN high-five each other after scoring the point.",
+        "participants": [
+          "red-shirt player KUKHEAW",
+          "red-shirt player DEJARDEN"
+        ],
+        "actor": "red-shirt player KUKHEAW",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAW/DEJARDEN THA 6",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 4",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 45,
+        "start_time": "01:22",
+        "end_time": "01:24",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "handshake",
+        "description": "The red-shirt player KUKHEAW shakes hands with the red-shirt player DEJARDEN while continuing to celebrate.",
+        "participants": [
+          "red-shirt player KUKHEAW",
+          "red-shirt player DEJARDEN"
+        ],
+        "actor": "red-shirt player KUKHEAW",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAW/DEJARDEN THA 6",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 4",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 46,
+        "start_time": "01:24",
+        "end_time": "01:26",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "pat",
+        "description": "The red-shirt player KUKHEAW places his hand on the shoulder of the red-shirt player DEJARDEN while they walk together.",
+        "participants": [
+          "red-shirt player KUKHEAW",
+          "red-shirt player DEJARDEN"
+        ],
+        "actor": "red-shirt player KUKHEAW",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAW/DEJARDEN THA 6",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 4",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 47,
+        "start_time": "01:25",
+        "end_time": "01:27",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "scoreboard_update",
+        "description": "The scoreboard updates to display THA 7, BRA 4, reflecting the point just scored by the Thai team.",
+        "participants": [],
+        "actor": "",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAW/DEJARDEN THA 7",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 4",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 48,
+        "start_time": "01:26",
+        "end_time": "01:28",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "A man in a red jacket with 'THAILAND' text on the back raises both arms high above his head",
+        "participants": [
+          "red-jacket man"
+        ],
+        "actor": "red-jacket man",
+        "object": "",
+        "outcome": "celebration",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 6",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 4",
+            "location": "scoreboard"
+          },
+          {
+            "text": "THE MILLION ROSES",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 49,
+        "start_time": "01:30",
+        "end_time": "01:36",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Thailand player in red jersey raises both arms and claps hands while celebrating on the court",
+        "participants": [
+          "red-shirt man"
+        ],
+        "actor": "red-shirt man",
+        "object": "",
+        "outcome": "celebration",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 6",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 4",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 50,
+        "start_time": "01:30",
+        "end_time": "01:34",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "high_five",
+        "description": "Thailand player in red jersey approaches and high-fives the celebrating teammate",
+        "participants": [
+          "red-shirt man",
+          "red-shirt man"
+        ],
+        "actor": "red-shirt man",
+        "object": "",
+        "outcome": "celebration",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 6",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 4",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 51,
+        "start_time": "01:33",
+        "end_time": "01:35",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "replay",
+        "description": "Replay shows Thailand player in red jersey executing a bicycle kick while airborne over the teqball table",
+        "participants": [
+          "red-shirt man",
+          "yellow-shirt man"
+        ],
+        "actor": "red-shirt man",
+        "object": "white and red ball",
+        "outcome": "hit",
+        "on_screen_text": [
+          {
+            "text": "KUKHEAN/DEJARDEN THA 6",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 4",
+            "location": "scoreboard"
+          },
+          {
+            "text": "Google Play",
+            "location": "banner"
+          },
+          {
+            "text": "App Store",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 52,
+        "start_time": "01:38",
+        "end_time": "01:45",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "prepare_serve",
+        "description": "yellow-shirt player holds the red and white ball and prepares to serve",
+        "participants": [
+          "yellow-shirt player"
+        ],
+        "actor": "yellow-shirt player",
+        "object": "red and white ball",
+        "on_screen_text": [
+          {
+            "text": "THA 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "BRA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "dafaNEWS",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 53,
+        "start_time": "01:45",
+        "end_time": "01:47",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "serve",
+        "description": "yellow-shirt player serves the red and white ball over the net",
+        "participants": [
+          "yellow-shirt player"
+        ],
+        "actor": "yellow-shirt player",
+        "object": "red and white ball",
+        "outcome": "in",
+        "on_screen_text": [
+          {
+            "text": "THA 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "BRA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "dafaNEWS",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 54,
+        "start_time": "01:47",
+        "end_time": "01:48",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "return",
+        "description": "red-shirt player returns the red and white ball with a kick",
+        "participants": [
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "object": "red and white ball",
+        "outcome": "in",
+        "on_screen_text": [
+          {
+            "text": "THA 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "BRA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "dafaNEWS",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 55,
+        "start_time": "01:48",
+        "end_time": "01:49",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "attempt_return",
+        "description": "yellow-shirt player attempts to return the red and white ball but the ball goes out of play",
+        "participants": [
+          "yellow-shirt player"
+        ],
+        "actor": "yellow-shirt player",
+        "object": "red and white ball",
+        "outcome": "out",
+        "on_screen_text": [
+          {
+            "text": "THA 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "BRA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "dafaNEWS",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 56,
+        "start_time": "01:49",
+        "end_time": "01:50",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "react",
+        "description": "yellow-shirt player shows disappointment with body language after the missed return",
+        "participants": [
+          "yellow-shirt player"
+        ],
+        "actor": "yellow-shirt player",
+        "on_screen_text": [
+          {
+            "text": "THA 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "BRA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "dafaNEWS",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 57,
+        "start_time": "01:50",
+        "end_time": "01:51",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "graphic",
+        "description": "background advertisement changes from 'dafaNEWS' to 'TEQBALL'",
+        "participants": [],
+        "actor": null,
+        "on_screen_text": [
+          {
+            "text": "THA 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "BRA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TEQBALL",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 58,
+        "start_time": "01:50",
+        "end_time": "01:51",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "graphic",
+        "description": "background advertisement changes to 'TEQSHOP.COM'",
+        "participants": [],
+        "actor": null,
+        "on_screen_text": [
+          {
+            "text": "THA 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "BRA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TEQSHOP.COM",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 59,
+        "start_time": "01:51",
+        "end_time": "01:52",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "prepare_serve",
+        "description": "red-shirt player holds the red and white ball and prepares to serve",
+        "participants": [
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "object": "red and white ball",
+        "on_screen_text": [
+          {
+            "text": "THA 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "BRA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TEQSHOP.COM",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 60,
+        "start_time": "01:52",
+        "end_time": "01:53",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "serve",
+        "description": "red-shirt player serves the red and white ball over the net",
+        "participants": [
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "object": "red and white ball",
+        "outcome": "in",
+        "on_screen_text": [
+          {
+            "text": "THA 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "BRA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TEQSHOP.COM",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 61,
+        "start_time": "01:53",
+        "end_time": "01:54",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "return",
+        "description": "yellow-shirt player returns the red and white ball with a kick",
+        "participants": [
+          "yellow-shirt player"
+        ],
+        "actor": "yellow-shirt player",
+        "object": "red and white ball",
+        "outcome": "in",
+        "on_screen_text": [
+          {
+            "text": "THA 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "BRA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TEQSHOP.COM",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 62,
+        "start_time": "01:54",
+        "end_time": "01:55",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "return",
+        "description": "red-shirt player returns the red and white ball with a kick",
+        "participants": [
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "object": "red and white ball",
+        "outcome": "in",
+        "on_screen_text": [
+          {
+            "text": "THA 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "BRA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TEQSHOP.COM",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 63,
+        "start_time": "01:55",
+        "end_time": "01:56",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "attempt_return",
+        "description": "yellow-shirt player attempts to return the red and white ball but the ball goes out of play",
+        "participants": [
+          "yellow-shirt player"
+        ],
+        "actor": "yellow-shirt player",
+        "object": "red and white ball",
+        "outcome": "out",
+        "on_screen_text": [
+          {
+            "text": "THA 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "BRA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TEQSHOP.COM",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 64,
+        "start_time": "01:56",
+        "end_time": "01:57",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "react",
+        "description": "yellow-shirt player shows disappointment with body language after the missed return",
+        "participants": [
+          "yellow-shirt player"
+        ],
+        "actor": "yellow-shirt player",
+        "on_screen_text": [
+          {
+            "text": "THA 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "BRA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TEQSHOP.COM",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 65,
+        "start_time": "01:57",
+        "end_time": "01:58",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "prepare_serve",
+        "description": "yellow-shirt player holds the red and white ball and prepares to serve",
+        "participants": [
+          "yellow-shirt player"
+        ],
+        "actor": "yellow-shirt player",
+        "object": "red and white ball",
+        "on_screen_text": [
+          {
+            "text": "THA 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "BRA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TEQSHOP.COM",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 66,
+        "start_time": "01:58",
+        "end_time": "01:59",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "serve",
+        "description": "yellow-shirt player serves the red and white ball over the net",
+        "participants": [
+          "yellow-shirt player"
+        ],
+        "actor": "yellow-shirt player",
+        "object": "red and white ball",
+        "outcome": "in",
+        "on_screen_text": [
+          {
+            "text": "THA 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "BRA 5",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TEQSHOP.COM",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 67,
+        "start_time": "01:59",
+        "end_time": "02:00",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "red-shirt player KUKHEAW raises both arms and pumps fists in celebration",
+        "participants": [
+          "red-shirt player KUKHEAW",
+          "red-shirt teammate",
+          "yellow-shirt players"
+        ],
+        "actor": "red-shirt player KUKHEAW",
+        "object": "",
+        "outcome": "celebration",
+        "on_screen_text": [
+          {
+            "text": "TEQBALL WORLD CUP 2023",
+            "location": "scoreboard"
+          },
+          {
+            "text": "KUKHEAW/DEJARDEN THA 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 5",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 68,
+        "start_time": "02:00",
+        "end_time": "02:03",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "red-shirt teammate raises both arms in celebration",
+        "participants": [
+          "red-shirt teammate",
+          "red-shirt player KUKHEAW",
+          "yellow-shirt players"
+        ],
+        "actor": "red-shirt teammate",
+        "object": "",
+        "outcome": "celebration",
+        "on_screen_text": [
+          {
+            "text": "TEQBALL WORLD CUP 2023",
+            "location": "scoreboard"
+          },
+          {
+            "text": "KUKHEAW/DEJARDEN THA 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 5",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 69,
+        "start_time": "02:02",
+        "end_time": "02:05",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "scoreboard_update",
+        "description": "scoreboard updates to show THA 11 and BRA 6",
+        "participants": [],
+        "actor": "",
+        "object": "",
+        "outcome": "score update",
+        "on_screen_text": [
+          {
+            "text": "TEQBALL WORLD CUP 2023",
+            "location": "scoreboard"
+          },
+          {
+            "text": "KUKHEAW/DEJARDEN THA 11",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 6",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 70,
+        "start_time": "02:04",
+        "end_time": "02:06",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "reposition",
+        "description": "all players walk back to their positions on the court",
+        "participants": [
+          "red-shirt player KUKHEAW",
+          "red-shirt teammate",
+          "yellow-shirt players"
+        ],
+        "actor": "",
+        "object": "",
+        "outcome": "",
+        "on_screen_text": [
+          {
+            "text": "TEQBALL WORLD CUP 2023",
+            "location": "scoreboard"
+          },
+          {
+            "text": "KUKHEAW/DEJARDEN THA 11",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 6",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 71,
+        "start_time": "02:06",
+        "end_time": "02:09",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "prepare_serve",
+        "description": "red-shirt player bounces the ball with feet while preparing to serve",
+        "participants": [
+          "red-shirt player",
+          "red-shirt teammate",
+          "yellow-shirt players"
+        ],
+        "actor": "red-shirt player",
+        "object": "white ball",
+        "outcome": "preparation",
+        "on_screen_text": [
+          {
+            "text": "TEQBALL WORLD CUP 2023",
+            "location": "scoreboard"
+          },
+          {
+            "text": "KUKHEAW/DEJARDEN THA 11",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 6",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 72,
+        "start_time": "02:09",
+        "end_time": "02:12",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "serve",
+        "description": "red-shirt player serves the ball over the curved table with a kick",
+        "participants": [
+          "red-shirt player",
+          "red-shirt teammate",
+          "yellow-shirt players"
+        ],
+        "actor": "red-shirt player",
+        "object": "white ball",
+        "outcome": "served",
+        "on_screen_text": [
+          {
+            "text": "TEQBALL WORLD CUP 2023",
+            "location": "scoreboard"
+          },
+          {
+            "text": "KUKHEAW/DEJARDEN THA 11",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 6",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 73,
+        "start_time": "02:12",
+        "end_time": "02:15",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "return",
+        "description": "yellow-shirt player returns the serve with a kick",
+        "participants": [
+          "yellow-shirt player",
+          "red-shirt players"
+        ],
+        "actor": "yellow-shirt player",
+        "object": "white ball",
+        "outcome": "returned",
+        "on_screen_text": [
+          {
+            "text": "TEQBALL WORLD CUP 2023",
+            "location": "scoreboard"
+          },
+          {
+            "text": "KUKHEAW/DEJARDEN THA 11",
+            "location": "scoreboard"
+          },
+          {
+            "text": "FERRAZ/MEDEIROS BRA 6",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 74,
+        "start_time": "02:13",
+        "end_time": "02:15",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "scoreboard_update",
+        "description": "The scoreboard updates from THA 11 to THA 12",
+        "participants": [
+          "scoreboard"
+        ],
+        "actor": "scoreboard",
+        "on_screen_text": [
+          {
+            "text": "THA 12",
+            "location": "scoreboard"
+          },
+          {
+            "text": "BRA 6",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 75,
+        "start_time": "02:15",
+        "end_time": "02:18",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Red-shirt player raises both arms in celebration after scoring",
+        "participants": [
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 76,
+        "start_time": "02:15",
+        "end_time": "02:18",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "high_five",
+        "description": "Two red-shirt players high-five each other on the court",
+        "participants": [
+          "red-shirt player",
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 77,
+        "start_time": "02:16",
+        "end_time": "02:19",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "applaud",
+        "description": "Audience members in pink jackets clap and cheer",
+        "participants": [
+          "pink-jacket audience members"
+        ],
+        "actor": "pink-jacket audience members",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 78,
+        "start_time": "02:17",
+        "end_time": "02:21",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "walk",
+        "description": "Red-shirt players walk toward yellow-shirt players across the court",
+        "participants": [
+          "red-shirt players",
+          "yellow-shirt players"
+        ],
+        "actor": "red-shirt players",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 79,
+        "start_time": "02:19",
+        "end_time": "02:23",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "handshake",
+        "description": "Red-shirt player shakes hands with yellow-shirt player",
+        "participants": [
+          "red-shirt player",
+          "yellow-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 80,
+        "start_time": "02:22",
+        "end_time": "02:25",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "hug",
+        "description": "Red-shirt player embraces yellow-shirt player in a hug",
+        "participants": [
+          "red-shirt player",
+          "yellow-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 81,
+        "start_time": "02:23",
+        "end_time": "02:27",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "pat",
+        "description": "Red-shirt player pats yellow-shirt player on the back",
+        "participants": [
+          "red-shirt player",
+          "yellow-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 82,
+        "start_time": "02:24",
+        "end_time": "02:28",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "walk",
+        "description": "Yellow-shirt Brasil player walks toward center court to meet other players",
+        "participants": [
+          "yellow-shirt Brasil player",
+          "red-shirt Thailand player",
+          "yellow-shirt player with stars on shorts"
+        ],
+        "actor": "yellow-shirt Brasil player",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball World 2022 Gala Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 83,
+        "start_time": "02:30",
+        "end_time": "02:31",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "walk",
+        "description": "Red-shirt Thailand player walks toward center court to meet other players",
+        "participants": [
+          "yellow-shirt Brasil player",
+          "red-shirt Thailand player",
+          "yellow-shirt player with stars on shorts"
+        ],
+        "actor": "red-shirt Thailand player",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball World 2022 Gala Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 84,
+        "start_time": "02:30",
+        "end_time": "02:31",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "handshake",
+        "description": "Yellow-shirt Brasil player shakes hands with yellow-shirt player with stars on shorts",
+        "participants": [
+          "yellow-shirt Brasil player",
+          "yellow-shirt player with stars on shorts"
+        ],
+        "actor": "yellow-shirt Brasil player",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball World 2022 Gala Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 85,
+        "start_time": "02:31",
+        "end_time": "02:32",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "handshake",
+        "description": "Yellow-shirt player with stars on shorts shakes hands with yellow-shirt Brasil player",
+        "participants": [
+          "yellow-shirt Brasil player",
+          "yellow-shirt player with stars on shorts"
+        ],
+        "actor": "yellow-shirt player with stars on shorts",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball World 2022 Gala Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 86,
+        "start_time": "02:31",
+        "end_time": "02:32",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "handshake",
+        "description": "Yellow-shirt Brasil player shakes hands with red-shirt Thailand player",
+        "participants": [
+          "yellow-shirt Brasil player",
+          "red-shirt Thailand player"
+        ],
+        "actor": "yellow-shirt Brasil player",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball World 2022 Gala Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 87,
+        "start_time": "02:32",
+        "end_time": "02:33",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "handshake",
+        "description": "Red-shirt Thailand player shakes hands with yellow-shirt Brasil player",
+        "participants": [
+          "yellow-shirt Brasil player",
+          "red-shirt Thailand player"
+        ],
+        "actor": "red-shirt Thailand player",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball World 2022 Gala Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 88,
+        "start_time": "02:32",
+        "end_time": "02:33",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "walk",
+        "description": "Yellow-shirt Brasil player walks away from handshake toward sideline",
+        "participants": [
+          "yellow-shirt Brasil player"
+        ],
+        "actor": "yellow-shirt Brasil player",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball World 2022 Gala Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 89,
+        "start_time": "02:33",
+        "end_time": "02:37",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "walk",
+        "description": "Red-shirt Thailand player walks away from handshake toward sideline",
+        "participants": [
+          "red-shirt Thailand player"
+        ],
+        "actor": "red-shirt Thailand player",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball World 2022 Gala Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 90,
+        "start_time": "02:33",
+        "end_time": "02:37",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "walk",
+        "description": "Yellow-shirt player with stars on shorts walks away from handshake toward sideline",
+        "participants": [
+          "yellow-shirt player with stars on shorts"
+        ],
+        "actor": "yellow-shirt player with stars on shorts",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball World 2022 Gala Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 91,
+        "start_time": "02:33",
+        "end_time": "02:37",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "walk",
+        "description": "Referee in white shirt and black pants walks alongside players",
+        "participants": [
+          "referee in white shirt"
+        ],
+        "actor": "referee in white shirt",
+        "segment_boundary": "middle",
+        "segment_label": "Teqball World 2022 Gala Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 92,
+        "start_time": "02:30",
+        "end_time": "02:37",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      },
+      {
+        "event_type": "on_screen_text",
+        "description": "Lower third graphic displays match information showing 'TEQBALL WORLD 2022 GALA MATCH' and player names",
+        "participants": [],
+        "actor": "",
+        "on_screen_text": [
+          {
+            "text": "TEQBALL WORLD 2022 GALA MATCH",
+            "location": "lower_third"
+          },
+          {
+            "text": "UTHEN KUKHEAW / PHAPONG DEARDON",
+            "location": "lower_third"
+          },
+          {
+            "text": "THA",
+            "location": "lower_third"
+          },
+          {
+            "text": "MATHEUS FERRAZ / RODRIGO MEDEIROS",
+            "location": "lower_third"
+          },
+          {
+            "text": "BRA",
+            "location": "lower_third"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Teqball World 2022 Gala Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 93,
+        "start_time": "02:31",
+        "end_time": "02:37",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Teqball Match"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Teqball Match",
+        "event_index_range": [
+          1,
+          93
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "question": "Did a girl appear wearing a hat exactly once in the entire video?",
+  "pred": "The video features multiple women in a four-panel layout. To determine if a girl appeared wearing a hat exactly once, we examine the chronological sequence of outfits for each person:\n\n1.  **Top-left woman**: Wears a white crop top, then a sailor-style outfit with a **striped hat** (visible at ~00:45 in Context event 25 and corresponding frames), then various dresses and tops.\n2.  **Bottom-right woman**: Wears a tan t-shirt, then a black top, then a white top with denim shorts, then a black and white athletic outfit with a **black baseball cap** (visible in frames near the end of the video).\n3.  **Other women**: The top-right woman wears cat-ear headbands but no hats; the bottom-left woman wears various outfits but no hats.\n\nSince at least two different women (top-left and bottom-right) are shown wearing hats at different points in the video, the count is not exactly once.\n\nEvidence: Frames at ~00:45 show the top-left woman in a sailor hat, and frames near the end show the bottom-right woman in a black baseball cap.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "pose",
+      "description": "Woman in bottom-right quadrant adjusts her pose while wearing white top and denim shorts",
+      "participants": [
+        "bottom-right woman"
+      ],
+      "actor": "bottom-right woman",
+      "segment_boundary": "middle",
+      "segment_label": "outfit showcase",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 24,
+      "start_time": "00:40",
+      "end_time": "00:45",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Sequence 1"
+    },
+    {
+      "event_type": "costume_change",
+      "description": "woman changes from white top and denim shorts to white and black outfit with cap",
+      "participants": [
+        "woman in white top and denim shorts"
+      ],
+      "actor": "woman in white top and denim shorts",
+      "object_before": "white top and denim shorts",
+      "object_after": "white and black outfit with cap",
+      "segment_boundary": "middle",
+      "segment_label": "fashion showcase",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 25,
+      "start_time": "00:45",
+      "end_time": "00:46",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Sequence 1"
+    },
+    {
+      "event_type": "costume_change",
+      "description": "woman changes from white and black outfit with cap back to white top and denim shorts",
+      "participants": [
+        "woman in white and black outfit with cap"
+      ],
+      "actor": "woman in white and black outfit with cap",
+      "object_before": "white and black outfit with cap",
+      "object_after": "white top and denim shorts",
+      "segment_boundary": "middle",
+      "segment_label": "fashion showcase",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 26,
+      "start_time": "00:47",
+      "end_time": "00:48",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Sequence 1"
+    }
+  ]
+}

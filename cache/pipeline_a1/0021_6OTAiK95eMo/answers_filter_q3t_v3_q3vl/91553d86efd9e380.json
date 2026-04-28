@@ -1,0 +1,104 @@
+{
+  "question": "Did the black shirt man win the black chocolate?",
+  "pred": "Evidence: The Context shows the black-shirt man pulled a string that revealed white powder/flour, and he ended up smashing a plate with white cream into his face (as confirmed by the \"Whip Cream Face\" text and frames showing cream on his face). There is no evidence he won black chocolate.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "pull_string",
+      "description": "the black-shirt man pulls a string connected to the red cup",
+      "participants": [
+        "black-shirt man",
+        "white-shirt man",
+        "blue-sweatshirt woman",
+        "black-hoodie woman"
+      ],
+      "actor": "black-shirt man",
+      "object": "black string",
+      "on_screen_text": [
+        {
+          "text": "Mystery String!",
+          "location": "other"
+        },
+        {
+          "text": "Brian",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Mystery String",
+      "continuation_hint": "complete",
+      "event_index": 10,
+      "start_time": "00:12",
+      "end_time": "00:13",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the black-shirt man reveals a plate of white powder (flour) on the second plate from the right",
+      "participants": [
+        "black-shirt man",
+        "white-shirt man",
+        "blue-sweatshirt woman",
+        "black-hoodie woman"
+      ],
+      "actor": "black-shirt man",
+      "object": "white powder",
+      "on_screen_text": [
+        {
+          "text": "Mystery String!",
+          "location": "other"
+        },
+        {
+          "text": "Brian",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Mystery String",
+      "continuation_hint": "complete",
+      "event_index": 11,
+      "start_time": "00:13",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String"
+    },
+    {
+      "event_type": "react",
+      "description": "the black-t-shirt man smashes the middle plate (containing white cream) into his own face",
+      "participants": [
+        "black-t-shirt man"
+      ],
+      "actor": "black-t-shirt man",
+      "object": "middle plate",
+      "on_screen_text": [
+        {
+          "text": "Brian",
+          "location": "other"
+        },
+        {
+          "text": "Whip Cream Face",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Whip Cream Face",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 19,
+      "start_time": "00:20",
+      "end_time": "00:21",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String"
+    }
+  ]
+}

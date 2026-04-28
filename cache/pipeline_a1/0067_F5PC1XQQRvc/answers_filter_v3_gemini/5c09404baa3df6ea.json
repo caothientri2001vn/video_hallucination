@@ -1,0 +1,74 @@
+{
+  "question": "Did the red embroidered gown appear between the pink one-shoulder dress and the white off-shoulder dress?",
+  "pred": "The video shows a sequence of dresses being modeled. According to the Context and visual evidence:\n1.  The **pink one-shoulder dress** (with floral details on the shoulder and hip) appears first in this sequence (Event 7, starting at 00:06).\n2.  The **red embroidered gown** (a dark red dress with floral details and a high slit) appears immediately after the pink dress (Event 8, starting at 00:07).\n3.  The **white off-shoulder dress** (a white lace off-the-shoulder gown) appears immediately after the red dress (Event 9, starting at 00:08).\n\nThe red embroidered gown is positioned chronologically between the pink one-shoulder dress and the white off-shoulder dress.\n\nEvidence: Event 8 transitions from the pink dress to the red dress, and Event 9 transitions from the red dress to the white dress.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "transition",
+      "description": "The scene transitions from the woman in a black lace dress to her wearing a pink one-shoulder dress.",
+      "participants": [
+        "pink-dress woman"
+      ],
+      "actor": "pink-dress woman",
+      "object_before": "black lace dress",
+      "object_after": "pink dress",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Top 10 Dresses of 2024",
+      "continuation_hint": "complete",
+      "event_index": 7,
+      "start_time": "00:06",
+      "end_time": "00:07",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Top 10 Dresses of 2024"
+    },
+    {
+      "event_type": "transition",
+      "description": "The scene transitions from the woman in a pink dress to her wearing a dark red dress with floral details.",
+      "participants": [
+        "dark-red-dress woman"
+      ],
+      "actor": "dark-red-dress woman",
+      "object_before": "pink dress",
+      "object_after": "red dress",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Top 10 Dresses of 2024",
+      "continuation_hint": "complete",
+      "event_index": 8,
+      "start_time": "00:07",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Top 10 Dresses of 2024"
+    },
+    {
+      "event_type": "transition",
+      "description": "The scene transitions from the woman in a dark red dress to her wearing a white off-the-shoulder dress.",
+      "participants": [
+        "white-dress woman"
+      ],
+      "actor": "white-dress woman",
+      "object_before": "red dress",
+      "object_after": "white dress",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Top 10 Dresses of 2024",
+      "continuation_hint": "complete",
+      "event_index": 9,
+      "start_time": "00:08",
+      "end_time": "00:09",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Top 10 Dresses of 2024"
+    }
+  ]
+}

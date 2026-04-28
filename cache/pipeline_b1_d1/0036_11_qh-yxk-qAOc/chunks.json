@@ -1,0 +1,313 @@
+{
+  "video_name": "0036_11_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 16.7,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:01",
+          "event_type": "celebration",
+          "description": "Large crowd celebrates with confetti in the air, people in white jerseys jumping and raising hands while someone holds up a trophy",
+          "participants": [
+            "white-jersey people",
+            "confetti in air",
+            "trophy holder"
+          ],
+          "actor": "white-jersey people",
+          "object": "trophy",
+          "outcome": "celebration",
+          "on_screen_text": [
+            {
+              "text": "TARAFSPOR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Champions League Final",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:01",
+          "local_end": "00:02",
+          "event_type": "transition",
+          "description": "Complete black screen with only the channel logo visible in the corner",
+          "participants": [],
+          "actor": null,
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:05",
+          "event_type": "game",
+          "description": "Soccer match in progress with players in black jerseys passing the ball while players in light blue jerseys defend",
+          "participants": [
+            "black-jersey players",
+            "light blue-jersey players"
+          ],
+          "actor": "black-jersey players",
+          "object": "soccer ball",
+          "on_screen_text": [
+            {
+              "text": "TARAFSPOR KANALI",
+              "location": "logo"
+            },
+            {
+              "text": "Telkom",
+              "location": "banner"
+            },
+            {
+              "text": "FNB",
+              "location": "banner"
+            },
+            {
+              "text": "neo africa",
+              "location": "banner"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:08",
+          "event_type": "game",
+          "description": "Player in light blue jersey receives a pass and prepares to shoot while black-jersey defenders approach",
+          "participants": [
+            "light blue-jersey player",
+            "black-jersey defenders"
+          ],
+          "actor": "light blue-jersey player",
+          "object": "soccer ball",
+          "on_screen_text": [
+            {
+              "text": "DIEGO FORLÁN",
+              "location": "caption"
+            },
+            {
+              "text": "TARAFSPOR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:08",
+          "local_end": "00:11",
+          "event_type": "game",
+          "description": "Player in light blue jersey shoots the ball toward the goal while the goalkeeper in red prepares to save",
+          "participants": [
+            "light blue-jersey player",
+            "red-jersey goalkeeper"
+          ],
+          "actor": "light blue-jersey player",
+          "object": "soccer ball",
+          "on_screen_text": [
+            {
+              "text": "DIEGO FORLÁN",
+              "location": "caption"
+            },
+            {
+              "text": "TARAFSPOR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:11",
+          "local_end": "00:13",
+          "event_type": "game",
+          "description": "Soccer ball enters the goal net as the red-jersey goalkeeper dives but fails to stop it",
+          "participants": [
+            "soccer ball",
+            "red-jersey goalkeeper"
+          ],
+          "actor": "soccer ball",
+          "object": "soccer ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "DIEGO FORLÁN",
+              "location": "caption"
+            },
+            {
+              "text": "TARAFSPOR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:13",
+          "local_end": "00:15",
+          "event_type": "celebration",
+          "description": "Player in light blue jersey with number 10 and name Forlán on back celebrates with arms outstretched",
+          "participants": [
+            "light blue-jersey player #10"
+          ],
+          "actor": "light blue-jersey player #10",
+          "object": "light blue jersey",
+          "on_screen_text": [
+            {
+              "text": "TARAFSPOR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 16.7,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:17",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:16",
+          "event_type": "hand_raise",
+          "description": "player to the right of Forlán raises their hand",
+          "participants": [
+            "blue-shirt player (Forlán)",
+            "bald blue-shirt player"
+          ],
+          "actor": "bald blue-shirt player",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "Forlán",
+              "location": "jersey_number"
+            },
+            {
+              "text": "10",
+              "location": "jersey_number"
+            },
+            {
+              "text": "TARAFINDAN KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:15",
+          "local_end": "00:16",
+          "event_type": "high_five",
+          "description": "bald blue-shirt player high-fives another blue-shirt player on the right",
+          "participants": [
+            "bald blue-shirt player",
+            "blue-shirt player on right"
+          ],
+          "actor": "bald blue-shirt player",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "TARAFINDAN KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:16",
+          "local_end": "00:17",
+          "event_type": "celebration",
+          "description": "bald blue-shirt player raises fist in celebration",
+          "participants": [
+            "bald blue-shirt player"
+          ],
+          "actor": "bald blue-shirt player",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "TARAFINDAN KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:16",
+          "local_end": "00:17",
+          "event_type": "react",
+          "description": "bald blue-shirt player smiles broadly showing joy",
+          "participants": [
+            "bald blue-shirt player"
+          ],
+          "actor": "bald blue-shirt player",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "TARAFINDAN KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:15",
+          "local_end": "00:17",
+          "event_type": "walk",
+          "description": "Forlán (10) walks forward with arms slightly extended",
+          "participants": [
+            "blue-shirt player (Forlán)"
+          ],
+          "actor": "blue-shirt player (Forlán)",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "Forlán",
+              "location": "jersey_number"
+            },
+            {
+              "text": "10",
+              "location": "jersey_number"
+            },
+            {
+              "text": "TARAFINDAN KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

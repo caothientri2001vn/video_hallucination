@@ -1,0 +1,88 @@
+{
+  "question": "Does the player with blue shirt number 14 shoot the ball into the net?",
+  "pred": "Evidence: The video shows green-shirt players and red-and-white-shirt players, but there is no player with a blue shirt number 14 visible in any frame. The Context identifies Lucas Moura (a green-shirt player) as the one who kicks the ball toward the goal, and the score event is attributed to this green-shirt player, not a blue-shirted player.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "kick",
+      "description": "A green-shirt player (Lucas Moura) kicks the ball toward the goal from inside the penalty area.",
+      "participants": [
+        "green-shirt player",
+        "red-and-white-shirt player"
+      ],
+      "actor": "green-shirt player",
+      "object": "white and orange ball",
+      "on_screen_text": [
+        {
+          "text": "LUCAS MOURA",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:10",
+      "end_time": "00:11",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "scored",
+      "description": "The ball enters the bottom left corner of the net as the yellow-shirt goalkeeper dives but fails to reach it.",
+      "participants": [
+        "yellow-shirt goalkeeper"
+      ],
+      "actor": "yellow-shirt goalkeeper",
+      "object": "white and orange ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "LUCAS MOURA",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 7,
+      "start_time": "00:11",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "react",
+      "description": "the man in the dark blue shirt drops to his knees and puts his head to the grass in an emotional reaction",
+      "participants": [
+        "dark-blue-shirt man"
+      ],
+      "actor": "dark-blue-shirt man",
+      "object": "soccer field",
+      "on_screen_text": [
+        {
+          "text": "TARAFTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match Reaction",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 13,
+      "start_time": "00:22",
+      "end_time": "00:24",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 2,
+      "segment_label_resolved": "Football Match"
+    }
+  ]
+}

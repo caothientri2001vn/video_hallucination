@@ -1,0 +1,124 @@
+{
+  "question": "Did the orange shirt boy faill into the pool?",
+  "pred": "The video shows an orange-shirt contestant (identified as Nate Pardo in the on-screen graphics) competing on a Ninja Warrior course. While he falls during his run, he does not fall into the pool.\n\n1. At approximately 01:58, the orange-shirt man falls backward from a cylinder obstacle (Event 48).\n2. At 01:59, he lands on his back on a blue safety platform located below the obstacle, not in the water (Event 49).\n3. Frames at 02:01 and 02:03 clearly show him standing up on the blue platform and walking away, completely dry.\n\nEvidence: Event 49 states \"orange-shirt man lands on his back on the platform below\" at 01:59.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "run",
+      "description": "orange-shirt man runs across blue platform toward cylindrical obstacles",
+      "participants": [
+        "orange-shirt man"
+      ],
+      "actor": "orange-shirt man",
+      "segment_boundary": "middle",
+      "segment_label": "Ninja Warrior course",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 39,
+      "start_time": "01:30",
+      "end_time": "01:34",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 9,
+      "round_index": 2,
+      "segment_label_resolved": "Contestant Introduction"
+    },
+    {
+      "event_type": "jump",
+      "description": "orange-shirt man jumps from blue platform toward first cylindrical obstacle",
+      "participants": [
+        "orange-shirt man"
+      ],
+      "actor": "orange-shirt man",
+      "object": "cylindrical obstacle",
+      "segment_boundary": "middle",
+      "segment_label": "Ninja Warrior course",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 40,
+      "start_time": "01:34",
+      "end_time": "01:38",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 2,
+      "segment_label_resolved": "Contestant Introduction"
+    },
+    {
+      "event_type": "grab",
+      "description": "orange-shirt man extends arms to grab cylindrical obstacle while in mid-air",
+      "participants": [
+        "orange-shirt man"
+      ],
+      "actor": "orange-shirt man",
+      "object": "cylindrical obstacle",
+      "segment_boundary": "middle",
+      "segment_label": "Ninja Warrior course",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 41,
+      "start_time": "01:38",
+      "end_time": "01:45",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "Contestant Introduction"
+    },
+    {
+      "event_type": "jump",
+      "description": "orange-shirt man attempts to swing between the parallel cylinders but loses grip",
+      "participants": [
+        "orange-shirt man"
+      ],
+      "actor": "orange-shirt man",
+      "segment_boundary": "middle",
+      "segment_label": "Cylinder Obstacle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 47,
+      "start_time": "01:56",
+      "end_time": "01:58",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 2,
+      "segment_label_resolved": "Contestant Introduction"
+    },
+    {
+      "event_type": "fall",
+      "description": "orange-shirt man falls backward from the cylinder obstacle",
+      "participants": [
+        "orange-shirt man"
+      ],
+      "actor": "orange-shirt man",
+      "segment_boundary": "middle",
+      "segment_label": "Cylinder Obstacle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 48,
+      "start_time": "01:58",
+      "end_time": "01:59",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 2,
+      "segment_label_resolved": "Contestant Introduction"
+    },
+    {
+      "event_type": "land",
+      "description": "orange-shirt man lands on his back on the platform below",
+      "participants": [
+        "orange-shirt man"
+      ],
+      "actor": "orange-shirt man",
+      "segment_boundary": "end",
+      "segment_label": "Cylinder Obstacle",
+      "continuation_hint": "complete",
+      "event_index": 49,
+      "start_time": "01:59",
+      "end_time": "02:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "Contestant Introduction"
+    }
+  ]
+}

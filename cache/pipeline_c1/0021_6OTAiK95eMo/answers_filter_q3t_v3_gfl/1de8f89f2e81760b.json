@@ -1,0 +1,76 @@
+{
+  "question": "Did the blue hoodie woman put cream on here face?",
+  "pred": "The video shows a game where participants pull strings connected to a red cup to reveal prizes or penalties on plates. The woman in the blue hoodie (labeled 'Lauren' in the frames) participates in the game.\n\n1.  **Lauren's turn**: Lauren pulls a string, and the on-screen text reveals she won \"Cookies\". She then picks up and eats a cookie from her plate.\n2.  **Brian's turn**: Later in the video, the man in the black t-shirt (labeled 'Brian') pulls a string. The on-screen text says \"Whip Cream Face\". He picks up the plate of whipped cream and smashes it into his own face.\n\nThe woman in the blue hoodie is never shown putting cream on her face; only the man in the black t-shirt does so.\n\nEvidence: Frames at the end of the video show the man in the black t-shirt (Brian) with whipped cream on his face after smashing the plate into it, while the blue hoodie woman (Lauren) stands by laughing.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "adjust",
+      "description": "The man in the black LEGACY t-shirt adjusts his blue and white baseball cap while standing at the table",
+      "participants": [
+        "black-shirt man",
+        "white-shirt man",
+        "blue-sweatshirt woman",
+        "long-hair woman"
+      ],
+      "actor": "black-shirt man",
+      "object": "blue and white baseball cap",
+      "segment_boundary": "middle",
+      "segment_label": "Whip Cream Face",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:15",
+      "end_time": "00:18",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String!"
+    },
+    {
+      "event_type": "remove",
+      "description": "The man in the black LEGACY t-shirt takes off his blue and white baseball cap completely and holds it in his hand",
+      "participants": [
+        "black-shirt man",
+        "white-shirt man",
+        "blue-sweatshirt woman",
+        "long-hair woman"
+      ],
+      "actor": "black-shirt man",
+      "object": "blue and white baseball cap",
+      "segment_boundary": "middle",
+      "segment_label": "Whip Cream Face",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 7,
+      "start_time": "00:18",
+      "end_time": "00:20",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String!"
+    },
+    {
+      "event_type": "look",
+      "description": "The man in the black LEGACY t-shirt looks down at the plate containing white whipped cream on the table",
+      "participants": [
+        "black-shirt man",
+        "white-shirt man",
+        "blue-sweatshirt woman",
+        "long-hair woman"
+      ],
+      "actor": "black-shirt man",
+      "segment_boundary": "middle",
+      "segment_label": "Whip Cream Face",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 8,
+      "start_time": "00:20",
+      "end_time": "00:21",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String!"
+    }
+  ]
+}

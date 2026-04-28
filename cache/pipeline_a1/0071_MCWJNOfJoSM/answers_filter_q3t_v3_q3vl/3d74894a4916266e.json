@@ -1,0 +1,429 @@
+{
+  "question": "Did France take two consecutive shots without Argentina shooting in between?",
+  "pred": "Evidence: The Context shows France taking multiple shots in sequence: event 59 (France player kicks the ball), event 60 (save), event 68 (France player kicks again), event 69-70 (save), event 98 (France player places ball), events 100-101 (France player kicks). There are no Argentina shots mentioned between these France attempts, and the score progression from \"ARGENTINA 2 - 1 FRANCE\" (event 98) to \"Argentina leading France 3-1\" (event 139) confirms France had multiple attempts before Argentina scored again.\n\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "throw",
+      "description": "The dark-blue-shirt player (Kingsley Coman) kicks the white ball toward the goal.",
+      "participants": [
+        "dark-blue-shirt player",
+        "green-jersey goalkeeper"
+      ],
+      "actor": "dark-blue-shirt player",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 59,
+      "start_time": "01:54",
+      "end_time": "01:55",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "The green-jersey goalkeeper (Emiliano Martínez) dives to his right and saves the penalty.",
+      "participants": [
+        "green-jersey goalkeeper"
+      ],
+      "actor": "green-jersey goalkeeper",
+      "object": "white ball",
+      "outcome": "miss",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 60,
+      "start_time": "01:55",
+      "end_time": "01:56",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "the dark-blue-jersey player runs toward the ball and kicks it toward the goal",
+      "participants": [
+        "dark-blue-jersey player",
+        "lime-green-jersey goalkeeper"
+      ],
+      "actor": "dark-blue-jersey player",
+      "object": "white ball",
+      "outcome": "miss",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 68,
+      "start_time": "02:10",
+      "end_time": "02:12",
+      "sub_events": [],
+      "subtype_order": 11,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "the lime-green-jersey goalkeeper dives to his right to block the shot",
+      "participants": [
+        "lime-green-jersey goalkeeper",
+        "dark-blue-jersey player"
+      ],
+      "actor": "lime-green-jersey goalkeeper",
+      "object": "white ball",
+      "outcome": "hit",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 69,
+      "start_time": "02:10",
+      "end_time": "02:12",
+      "sub_events": [],
+      "subtype_order": 12,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "the lime-green-jersey goalkeeper deflects the ball with his hands while diving",
+      "participants": [
+        "lime-green-jersey goalkeeper"
+      ],
+      "actor": "lime-green-jersey goalkeeper",
+      "object": "white ball",
+      "outcome": "hit",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 70,
+      "start_time": "02:12",
+      "end_time": "02:13",
+      "sub_events": [],
+      "subtype_order": 13,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the white-and-blue-striped-jersey player shouts and raises a fist in celebration",
+      "participants": [
+        "white-and-blue-striped-jersey player"
+      ],
+      "actor": "white-and-blue-striped-jersey player",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 71,
+      "start_time": "02:13",
+      "end_time": "02:15",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 35,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "place",
+      "description": "the blue-jersey player places the ball on the penalty spot",
+      "participants": [
+        "blue-jersey player",
+        "orange-shirt referee"
+      ],
+      "actor": "blue-jersey player",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 2 - 1 FRANCE",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "middle",
+      "event_index": 98,
+      "start_time": "03:24",
+      "end_time": "03:26",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "the blue-jersey player (number 8) runs toward the ball to take a penalty kick",
+      "participants": [
+        "blue-jersey player",
+        "green-jersey goalkeeper"
+      ],
+      "actor": "blue-jersey player",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 2 - 1 FRANCE",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 100,
+      "start_time": "03:30",
+      "end_time": "03:31",
+      "sub_events": [],
+      "subtype_order": 17,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "the blue-jersey player (number 8) kicks the white ball toward the goal",
+      "participants": [
+        "blue-jersey player",
+        "green-jersey goalkeeper"
+      ],
+      "actor": "blue-jersey player",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 2 - 1 FRANCE",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "middle",
+      "event_index": 101,
+      "start_time": "03:31",
+      "end_time": "03:32",
+      "sub_events": [],
+      "subtype_order": 18,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "walk",
+      "description": "The white-jersey player (Argentina #5) walks toward the penalty spot carrying the ball.",
+      "participants": [
+        "white-jersey player (Argentina #5)"
+      ],
+      "actor": "white-jersey player (Argentina #5)",
+      "object": "white ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 115,
+      "start_time": "03:53",
+      "end_time": "03:55",
+      "sub_events": [],
+      "subtype_order": 18,
+      "subtype_total": 27,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "The scoreboard graphic appears, showing Argentina leading 2-1 in the penalty shootout.",
+      "participants": [],
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA",
+          "location": "scoreboard"
+        },
+        {
+          "text": "2",
+          "location": "scoreboard"
+        },
+        {
+          "text": "1",
+          "location": "scoreboard"
+        },
+        {
+          "text": "FRANCE",
+          "location": "scoreboard"
+        },
+        {
+          "text": "PENALTY SHOOTOUT",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 116,
+      "start_time": "03:55",
+      "end_time": "03:57",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "The white-and-blue-striped jersey player (PAREDES, #5) runs toward the ball and kicks it toward the goal.",
+      "participants": [
+        "white-and-blue-striped jersey player",
+        "yellow-jersey goalkeeper"
+      ],
+      "actor": "white-and-blue-striped jersey player",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 2 - 1",
+          "location": "scoreboard"
+        },
+        {
+          "text": "FIFA WORLD CUP Qatar2022",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 126,
+      "start_time": "04:15",
+      "end_time": "04:18",
+      "sub_events": [],
+      "subtype_order": 25,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "The yellow-jersey goalkeeper dives to his right but the ball enters the net.",
+      "participants": [
+        "yellow-jersey goalkeeper"
+      ],
+      "actor": "yellow-jersey goalkeeper",
+      "object": "white ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 2 - 1",
+          "location": "scoreboard"
+        },
+        {
+          "text": "FIFA WORLD CUP Qatar2022",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 127,
+      "start_time": "04:18",
+      "end_time": "04:19",
+      "sub_events": [],
+      "subtype_order": 26,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "the on-screen scoreboard updates to show Argentina leading France 3-1 in the penalty shootout",
+      "participants": [],
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA",
+          "location": "lower_third"
+        },
+        {
+          "text": "3 - 1",
+          "location": "lower_third"
+        },
+        {
+          "text": "FRANCE",
+          "location": "lower_third"
+        },
+        {
+          "text": "PENALTY SHOOTOUT",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 139,
+      "start_time": "04:41",
+      "end_time": "04:45",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "The blue-shirt player (Kolo Muani, #12) runs toward the ball and kicks it into the center of the goal.",
+      "participants": [
+        "blue-shirt player",
+        "green-shirt goalkeeper"
+      ],
+      "actor": "blue-shirt player",
+      "object": "white ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 145,
+      "start_time": "05:03",
+      "end_time": "05:05",
+      "sub_events": [],
+      "subtype_order": 31,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

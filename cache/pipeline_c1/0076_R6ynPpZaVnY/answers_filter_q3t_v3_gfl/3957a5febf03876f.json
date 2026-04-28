@@ -1,0 +1,92 @@
+{
+  "question": "Does the man win the game with red color?",
+  "pred": "The video shows a game where a man in a black shirt and a woman in a pink sweater reveal small colored circles hidden under white cups. The goal appears to be matching the small circles to the larger colored circles in the center row.\n\n1.  At approximately 01:06, the man lifts a cup to reveal a green circle (Event 31).\n2.  At approximately 01:09, he places a cup over a small red circle (Event 32).\n3.  In the final frames of the video, the woman lifts a cup to reveal a small red circle that matches the large red circle in the center row.\n4.  Following this successful match, the man reacts with a dejected look, putting his hand to his head, while the woman celebrates and drinks from the cup, indicating that she is the one who won the round or the game with the red color.\n\nEvidence: Final frames show the woman in the pink sweater revealing the red circle and celebrating while the man in the black shirt looks dejected.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "reveal",
+      "description": "The man in the black shirt lifts the white cup to reveal a green circle underneath",
+      "participants": [
+        "black-shirt man",
+        "pink-sweater woman"
+      ],
+      "actor": "black-shirt man",
+      "cover": "white cup",
+      "hidden": "green circle",
+      "segment_boundary": "middle",
+      "segment_label": "Cup and Circle Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 31,
+      "start_time": "01:06",
+      "end_time": "01:08",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Cup and Circle Game"
+    },
+    {
+      "event_type": "cover",
+      "description": "The man in the black shirt places the white cup over the left small red circle",
+      "participants": [
+        "black-shirt man",
+        "pink-sweater woman"
+      ],
+      "actor": "black-shirt man",
+      "cover": "white cup",
+      "hidden": "red circle",
+      "segment_boundary": "middle",
+      "segment_label": "Cup and Circle Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 32,
+      "start_time": "01:09",
+      "end_time": "01:11",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Cup and Circle Game"
+    },
+    {
+      "event_type": "react",
+      "description": "The woman in the pink sweater shows surprise with her mouth open",
+      "participants": [
+        "black-shirt man",
+        "pink-sweater woman"
+      ],
+      "actor": "pink-sweater woman",
+      "segment_boundary": "middle",
+      "segment_label": "Cup and Circle Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 33,
+      "start_time": "01:11",
+      "end_time": "01:13",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Cup and Circle Game"
+    },
+    {
+      "event_type": "point",
+      "description": "The man in the black shirt points toward the left side of the table with his right hand",
+      "participants": [
+        "black-shirt man",
+        "pink-sweater woman"
+      ],
+      "actor": "black-shirt man",
+      "segment_boundary": "middle",
+      "segment_label": "Cup and Circle Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 34,
+      "start_time": "01:13",
+      "end_time": "01:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Cup and Circle Game"
+    }
+  ]
+}

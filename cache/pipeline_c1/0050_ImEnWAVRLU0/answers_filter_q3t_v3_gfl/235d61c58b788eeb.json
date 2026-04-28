@@ -1,0 +1,68 @@
+{
+  "question": "Was the room where the main character stopped to talk to two men Room 2410?",
+  "pred": "The main character (the dark-suit man with the briefcase) stops in a hallway to talk to a man in a red uniform (bellhop) and another man in a dark suit. The frames and Context confirm that the room they are standing in front of is Room 2410.\n\nEvidence: Frames at ~02:12 and Context event 46 show the man in the red uniform opening a door clearly marked with the number 2410.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "stop",
+      "description": "man in red uniform stops manipulating door lock and stands upright",
+      "participants": [
+        "man in red uniform"
+      ],
+      "actor": "man in red uniform",
+      "segment_boundary": "middle",
+      "segment_label": "",
+      "continuation_hint": "complete",
+      "event_index": 45,
+      "start_time": "02:09",
+      "end_time": "02:10",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 5,
+      "segment_label_resolved": "Hallway Walk"
+    },
+    {
+      "event_type": "open",
+      "description": "man in red uniform opens door marked 2410",
+      "participants": [
+        "man in red uniform"
+      ],
+      "actor": "man in red uniform",
+      "object": "door",
+      "segment_boundary": "middle",
+      "segment_label": "",
+      "continuation_hint": "complete",
+      "event_index": 46,
+      "start_time": "02:10",
+      "end_time": "02:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 5,
+      "segment_label_resolved": "Hallway Walk"
+    },
+    {
+      "event_type": "speak",
+      "description": "man in red uniform speaks to the two men in dark suits",
+      "participants": [
+        "man in red uniform",
+        "man in dark suit",
+        "man in dark suit"
+      ],
+      "actor": "man in red uniform",
+      "segment_boundary": "middle",
+      "segment_label": "",
+      "continuation_hint": "complete",
+      "event_index": 47,
+      "start_time": "02:12",
+      "end_time": "02:13",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 49,
+      "round_index": 5,
+      "segment_label_resolved": "Hallway Walk"
+    }
+  ]
+}

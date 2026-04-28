@@ -1,0 +1,317 @@
+{
+  "question": "Did the black shirt man win the black chocolate?",
+  "pred": "The video shows a game called \"Mystery String\" where participants pull strings connected to a central red cup to reveal prizes or penalties on plates. The \"black-shirt man\" (identified as Brian in the Context and on-screen labels) takes his turn at the end of the sequence.\n\n1.  **Turn 1 (Ethan):** The white-shirt man pulls a string and wins $2.\n2.  **Turn 2 (Lauren):** The blue-sweatshirt woman pulls a string and wins cookies.\n3.  **Turn 3 (Mattie):** The black-hoodie woman pulls a string and wins $300.\n4.  **Turn 4 (Brian):** The black-shirt man pulls the final string. This string is connected to the plate containing white powder/cream (flour/whipped cream). As shown in the frames and described in the Context (events 11, 18, and 19), he reveals the white powder and then smashes the plate into his own face.\n\nThe black chocolate (brownie) remains on the far-right plate, untouched by the black-shirt man.\n\nEvidence: event 11 describes the black-shirt man revealing a plate of white powder (flour), and event 19 shows him smashing it into his face.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "pull_string",
+      "description": "the black-shirt man pulls a string connected to the red cup",
+      "participants": [
+        "black-shirt man",
+        "white-shirt man",
+        "blue-sweatshirt woman",
+        "black-hoodie woman"
+      ],
+      "actor": "black-shirt man",
+      "object": "black string",
+      "on_screen_text": [
+        {
+          "text": "Mystery String!",
+          "location": "other"
+        },
+        {
+          "text": "Brian",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Mystery String",
+      "continuation_hint": "complete",
+      "event_index": 10,
+      "start_time": "00:12",
+      "end_time": "00:13",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the black-shirt man reveals a plate of white powder (flour) on the second plate from the right",
+      "participants": [
+        "black-shirt man",
+        "white-shirt man",
+        "blue-sweatshirt woman",
+        "black-hoodie woman"
+      ],
+      "actor": "black-shirt man",
+      "object": "white powder",
+      "on_screen_text": [
+        {
+          "text": "Mystery String!",
+          "location": "other"
+        },
+        {
+          "text": "Brian",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Mystery String",
+      "continuation_hint": "complete",
+      "event_index": 11,
+      "start_time": "00:13",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String"
+    },
+    {
+      "event_type": "look",
+      "description": "the black-t-shirt man looks up with his eyes closed",
+      "participants": [
+        "black-t-shirt man"
+      ],
+      "actor": "black-t-shirt man",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "Brian",
+          "location": "other"
+        },
+        {
+          "text": "Whip Cream Face",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Whip Cream Face",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 12,
+      "start_time": "00:15",
+      "end_time": "00:16",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String"
+    },
+    {
+      "event_type": "react",
+      "description": "the blue-sweatshirt woman laughs while looking at the black-t-shirt man",
+      "participants": [
+        "blue-sweatshirt woman",
+        "black-t-shirt man"
+      ],
+      "actor": "blue-sweatshirt woman",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "Brian",
+          "location": "other"
+        },
+        {
+          "text": "Whip Cream Face",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Whip Cream Face",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 13,
+      "start_time": "00:15",
+      "end_time": "00:16",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String"
+    },
+    {
+      "event_type": "react",
+      "description": "the white-t-shirt man laughs while looking at the black-t-shirt man",
+      "participants": [
+        "white-t-shirt man",
+        "black-t-shirt man"
+      ],
+      "actor": "white-t-shirt man",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "Brian",
+          "location": "other"
+        },
+        {
+          "text": "Whip Cream Face",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Whip Cream Face",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 14,
+      "start_time": "00:15",
+      "end_time": "00:16",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String"
+    },
+    {
+      "event_type": "react",
+      "description": "the black-hoodie woman laughs while looking at the black-t-shirt man",
+      "participants": [
+        "black-hoodie woman",
+        "black-t-shirt man"
+      ],
+      "actor": "black-hoodie woman",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "Brian",
+          "location": "other"
+        },
+        {
+          "text": "Whip Cream Face",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Whip Cream Face",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 15,
+      "start_time": "00:15",
+      "end_time": "00:16",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String"
+    },
+    {
+      "event_type": "look",
+      "description": "the black-t-shirt man looks down at the table",
+      "participants": [
+        "black-t-shirt man"
+      ],
+      "actor": "black-t-shirt man",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "Brian",
+          "location": "other"
+        },
+        {
+          "text": "Whip Cream Face",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Whip Cream Face",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 16,
+      "start_time": "00:16",
+      "end_time": "00:18",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String"
+    },
+    {
+      "event_type": "lift",
+      "description": "the black-t-shirt man lifts his white hat from his head",
+      "participants": [
+        "black-t-shirt man"
+      ],
+      "actor": "black-t-shirt man",
+      "object": "white hat",
+      "on_screen_text": [
+        {
+          "text": "Brian",
+          "location": "other"
+        },
+        {
+          "text": "Whip Cream Face",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Whip Cream Face",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 17,
+      "start_time": "00:18",
+      "end_time": "00:19",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String"
+    },
+    {
+      "event_type": "lift",
+      "description": "the black-t-shirt man lifts the middle plate (containing white cream) from the table",
+      "participants": [
+        "black-t-shirt man"
+      ],
+      "actor": "black-t-shirt man",
+      "object": "middle plate",
+      "on_screen_text": [
+        {
+          "text": "Brian",
+          "location": "other"
+        },
+        {
+          "text": "Whip Cream Face",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Whip Cream Face",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 18,
+      "start_time": "00:19",
+      "end_time": "00:21",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String"
+    },
+    {
+      "event_type": "react",
+      "description": "the black-t-shirt man smashes the middle plate (containing white cream) into his own face",
+      "participants": [
+        "black-t-shirt man"
+      ],
+      "actor": "black-t-shirt man",
+      "object": "middle plate",
+      "on_screen_text": [
+        {
+          "text": "Brian",
+          "location": "other"
+        },
+        {
+          "text": "Whip Cream Face",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Whip Cream Face",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 19,
+      "start_time": "00:20",
+      "end_time": "00:21",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String"
+    }
+  ]
+}

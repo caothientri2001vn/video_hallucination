@@ -1,0 +1,244 @@
+{
+  "question": "Did the man on the right open two boxes?",
+  "pred": "The man on the right is identified in the alias map as the host (Jimmy Fallon), described by variants like \"blue-suit man\" or \"black-suit man\". To determine if he opened two boxes, we count the distinct boxes he lifted from the shelf and opened on the table:\n\n1. **Box 9**: At approximately 04:15, the man on the right (Jimmy Fallon) lifts Box 9 from the shelf and places it on the table. He then opens the side flap to reveal a green gelatin mold with a photo of a man inside.\n2. **No second box**: Throughout the rest of the video, the man on the left (Chris Pratt) is the one who handles and opens the other boxes shown (Box 4 and Box 5). The man on the right does not lift or open any other box from the shelf.\n\nSince the man on the right only opened one box (Box 9), he did not open two.\n\nEvidence: Frames at ~04:15 show the man on the right (Jimmy Fallon) lifting and opening Box 9; no other box-opening actions by him are visible.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "point",
+      "description": "the blue-suit man (Chris Pratt) points toward the middle-left box (Box 4) on the shelf.",
+      "participants": [
+        "blue-suit man"
+      ],
+      "actor": "blue-suit man",
+      "on_screen_text": [
+        {
+          "text": "4",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Box Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 17,
+      "start_time": "00:26",
+      "end_time": "00:28",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 12,
+      "round_index": 1,
+      "segment_label_resolved": "Box Game"
+    },
+    {
+      "event_type": "lift",
+      "description": "the blue-suit man (Chris Pratt) lifts the middle-left box (Box 4) from the shelf.",
+      "participants": [
+        "blue-suit man"
+      ],
+      "actor": "blue-suit man",
+      "object": "white box (Box 4)",
+      "on_screen_text": [
+        {
+          "text": "4",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 18,
+      "start_time": "00:28",
+      "end_time": "00:30",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Box Game"
+    },
+    {
+      "event_type": "place",
+      "description": "the blue-suit man places the middle-left box (Box 4) onto the table",
+      "participants": [
+        "blue-suit man",
+        "black-suit man"
+      ],
+      "actor": "blue-suit man",
+      "object": "white box",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "other"
+        },
+        {
+          "text": "2",
+          "location": "other"
+        },
+        {
+          "text": "3",
+          "location": "other"
+        },
+        {
+          "text": "5",
+          "location": "other"
+        },
+        {
+          "text": "6",
+          "location": "other"
+        },
+        {
+          "text": "7",
+          "location": "other"
+        },
+        {
+          "text": "8",
+          "location": "other"
+        },
+        {
+          "text": "9",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 19,
+      "start_time": "00:30",
+      "end_time": "00:32",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Box Game"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the blue-suit man opens the side flap of the white box on the table",
+      "participants": [
+        "blue-suit man"
+      ],
+      "actor": "blue-suit man",
+      "object": "white box",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "other"
+        },
+        {
+          "text": "2",
+          "location": "other"
+        },
+        {
+          "text": "3",
+          "location": "other"
+        },
+        {
+          "text": "5",
+          "location": "other"
+        },
+        {
+          "text": "6",
+          "location": "other"
+        },
+        {
+          "text": "7",
+          "location": "other"
+        },
+        {
+          "text": "8",
+          "location": "other"
+        },
+        {
+          "text": "9",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "middle",
+      "event_index": 23,
+      "start_time": "00:38",
+      "end_time": "00:41",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Box Game"
+    },
+    {
+      "event_type": "place",
+      "description": "the blue-suit man (Chris Pratt) places a white box on the table in front of him",
+      "participants": [
+        "blue-suit man",
+        "black-suit man"
+      ],
+      "actor": "blue-suit man",
+      "object": "white box",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 106,
+      "start_time": "03:45",
+      "end_time": "03:47",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Box Game"
+    },
+    {
+      "event_type": "lift",
+      "description": "the blue-suit man (Chris Pratt) lifts the middle box (Box 5) from the shelf",
+      "participants": [
+        "blue-suit man",
+        "black-suit man"
+      ],
+      "actor": "blue-suit man",
+      "object": "white box (Box 5)",
+      "on_screen_text": [
+        {
+          "text": "5",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 108,
+      "start_time": "03:47",
+      "end_time": "03:50",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Box Game"
+    },
+    {
+      "event_type": "place",
+      "description": "the blue-suit man (Chris Pratt) places the middle box (Box 5) on the table",
+      "participants": [
+        "blue-suit man",
+        "black-suit man"
+      ],
+      "actor": "blue-suit man",
+      "object": "white box (Box 5)",
+      "on_screen_text": [
+        {
+          "text": "5",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 110,
+      "start_time": "03:50",
+      "end_time": "03:53",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Box Game"
+    }
+  ]
+}

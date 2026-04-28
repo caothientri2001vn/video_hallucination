@@ -1,0 +1,438 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0102_qt0uoY6Gq54.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0102_qt0uoY6Gq54.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0102_qt0uoY6Gq54",
+    "n_target": 10,
+    "n_sub": 33,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 1.0,
+    "sub_accuracy": 0.8787878787878788
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Was the cabbage cut first?",
+      "gt": "Yes",
+      "pred": "Yes, the cabbage was cut first. The first image shows the cabbage, and the second image (1.0 second) shows it being cut, with subsequent images featuring other vegetables.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was a cabbage cut in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows a green cabbage being cut, as seen in the first two frames (0:00 - 0:01).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the cabbage the first vegetable to be cut?",
+      "gt": "Yes",
+      "pred": "Yes. The first vegetable shown is the green cabbage, and the subsequent frame (1.0s) shows it being cut, with other vegetables (e.g., carrot, potato) appearing later in the sequence.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was any vegetable cut before the cabbage?",
+      "gt": "No",
+      "pred": "No. The cabbage is the first vegetable shown in the video (0.0s), and no other vegetable is cut before it.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Was the carrot cut second?",
+      "gt": "Yes",
+      "pred": "Yes, the carrot was cut second. The first vegetable shown and cut is the green cabbage (frames 1-2), followed by the carrot (frames 3-4).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was a carrot cut in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a carrot was cut in the video. The carrot is shown in the third frame, and it is being cut in the fourth frame.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the carrot cut after the cabbage?",
+      "gt": "Yes",
+      "pred": "Yes. The cabbage is shown whole at 0.0s and cut at 1.0s; the carrot is shown whole at 3.0s and cut at 4.0s. Thus, the carrot was cut after the cabbage.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the carrot the second vegetable to be cut?",
+      "gt": "Yes",
+      "pred": "Yes. The first vegetable shown being cut is the green cabbage (first two frames), and the carrot is the next vegetable shown being cut (frames 2-3), making it the second vegetable to be cut.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Was the pumpkin cut last?",
+      "gt": "No",
+      "pred": "No. The pumpkin is cut in frames 24-25 (the 13th pair of images), but later frames show the radish (26-27), sweet potato (28-29), and beets (30-31) being cut. The final cut shown is of beets in the last two frames (30-31), so the pumpkin was not cut last.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was a pumpkin cut in the video?",
+      "gt": "No",
+      "pred": "Yes, a pumpkin was cut in the video (evident in frames around 22 - 24 seconds).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the sweet potato cut last?",
+      "gt": "Yes",
+      "pred": "No. The sweet potato was cut in the 29-30th frames (15th sequence), and the final cutting sequence (31-32th frames) shows a beetroot. Thus, the sweet potato was not cut last.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the sweet potato cut after the potato?",
+      "gt": "Yes",
+      "pred": "Yes. The potato is cut in frames 5-6 (e.g., the brown, potato-shaped object with a knife cutting it), and the sweet potato is cut in frames 30-31 (the orange, sweet potato-shaped object with a knife cutting it). Thus, the sweet potato was cut after the potato.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Was the tomato cut third?",
+      "gt": "No",
+      "pred": "No. The sequence of vegetables being cut is: cabbage (first), carrot (second), potato (third), zucchini (fourth), eggplant (fifth), tomato (sixth). The tomato is not cut third.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was a tomato cut in the video?",
+      "gt": "No",
+      "pred": "Yes, a tomato was cut in the video. This is evident from the frames showing a red tomato being sliced (e.g., the 11th and 12th images in the sequence).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the potato cut third?",
+      "gt": "Yes",
+      "pred": "Yes. The sequence shows the cabbage being cut first (0-2), the carrot second (3-4), and the potato third (5-6).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the potato cut after the carrot?",
+      "gt": "Yes",
+      "pred": "Yes. The carrot is shown being cut in the sequence of images (e.g., the orange carrot with green top appears before the brown potato), and the potato is cut afterward. For example, the carrot cutting occurs in the images following the green cabbage (which is first), and the potato cutting follows the carrot's sequence.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Was the eggplant cut before the potato?",
+      "gt": "No",
+      "pred": "No. The potato (frames 5-6) was cut before the eggplant (frames 9-10).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was an eggplant cut in the video?",
+      "gt": "Yes",
+      "pred": "Yes, an eggplant was cut in the video. This is evident in the frames showing a purple eggplant being sliced (e.g., the 9th and 10th images in the provided sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was a potato cut in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A potato was cut in the video, as seen in the frames where a brown, potato-shaped object is sliced (around 0:05-0:06).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the potato cut after the carrot?",
+      "gt": "Yes",
+      "pred": "Yes. The carrot is shown being cut in the sequence of images (e.g., the orange carrot with green top appears before the brown potato), and the potato is cut afterward. For example, the carrot cutting occurs in the images following the green cabbage (which is first), and the potato cutting follows the carrot's sequence.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the potato cut before the sweet potato?",
+      "gt": "Yes",
+      "pred": "Yes. The potato (brown, with eye-like details) is shown being cut in frames 5-6, while the sweet potato (red skin, orange interior) is shown being cut in frames 22-23. Thus, the potato was cut before the sweet potato.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Was the cabbage sliced before the carrot?",
+      "gt": "Yes",
+      "pred": "Yes. The cabbage is shown being sliced in the second frame (after the initial cabbage frame), and the carrot is introduced and sliced later (the carrot appears in the third frame, with slicing in the fourth frame). Thus, the cabbage was sliced before the carrot.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was the cabbage cut in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the cabbage was cut. This is evident in the second frame (after the first frame showing the whole cabbage), where the cabbage is sliced and pieces are visible.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the carrot cut in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the carrot was cut. This is shown in the sequence where the intact carrot (frame 3) is followed by a frame (frame 4) depicting the carrot being sliced with a knife, resulting in cut pieces and crumbs.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the cabbage cut before the carrot?",
+      "gt": "Yes",
+      "pred": "Yes. The cabbage is shown being cut in the second frame (1.0s), and the carrot is first shown in the third frame (2.0s) before being cut. Therefore, the cabbage was cut before the carrot.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Was the cabbage cut after the watermelon?",
+      "gt": "No",
+      "pred": "No. The cabbage is shown whole at the beginning (0.0s) and then cut in the next frame (1.0s). The watermelon icon is a consistent watermark in the corner of all frames, but no actual watermelon is cut in the video. The cabbage is cut before any other vegetables shown, so it was not cut after the watermelon (as there is no watermelon being cut in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was the cabbage cut in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the cabbage was cut. This is evident in the second frame (after the first frame showing the whole cabbage), where the cabbage is sliced and pieces are visible.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was a watermelon cut in the video?",
+      "gt": "Yes",
+      "pred": "No. The video shows various vegetables (e.g., cabbage, carrot, potato, zucchini, eggplant, tomato, beet, bell pepper, broccoli, corn, cucumber, kohlrabi, pumpkin, radish, sweet potato) being cut, but no watermelon is cut. The small watermelon slice logo in the corner of each frame is a consistent visual element, not an actual watermelon being sliced.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the cabbage cut first among all vegetables?",
+      "gt": "Yes",
+      "pred": "Yes. The cabbage is the first vegetable shown in the video (0.0s), and the next frame (1.0s) depicts it being cut, before any other vegetables are introduced or cut.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Was the sweet potato cut after the potato?",
+      "gt": "Yes",
+      "pred": "Yes. The potato is cut in frames 5-6 (e.g., the brown, potato-shaped object with a knife cutting it), and the sweet potato is cut in frames 30-31 (the orange, sweet potato-shaped object with a knife cutting it). Thus, the sweet potato was cut after the potato.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was the sweet potato cut in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the sweet potato was cut in the video. This is evident from the frames showing a sweet potato being sliced (e.g., the frame with the sweet potato partially cut and pieces on the cutting board, and the subsequent frame with multiple cut slices).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the potato cut in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the potato was cut. The sequence shows a whole potato (around timestamp 5-6 seconds) followed by the potato being cut, revealing a white interior and creating fragments (around timestamp 7-8 seconds).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the potato cut before the sweet potato?",
+      "gt": "Yes",
+      "pred": "Yes. The potato (brown, with eye-like details) is shown being cut in frames 5-6, while the sweet potato (red skin, orange interior) is shown being cut in frames 22-23. Thus, the potato was cut before the sweet potato.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "target",
+      "question": "Was the cabbage cut before the carrot, and then the potato after that?",
+      "gt": "Yes",
+      "pred": "Yes. The cabbage is shown first (with cutting in the second frame), followed by the carrot (third and fourth frames), then the potato (fifth and sixth frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was the cabbage cut before the carrot?",
+      "gt": "Yes",
+      "pred": "Yes. The cabbage is shown being cut in the second frame (1.0s), and the carrot is first shown in the third frame (2.0s) before being cut. Therefore, the cabbage was cut before the carrot.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the carrot cut before the potato?",
+      "gt": "Yes",
+      "pred": "Yes. The carrot is shown being cut in frames 3-4, and the potato is shown being cut in frames 5-6, so the carrot was cut before the potato.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the potato cut after the carrot?",
+      "gt": "Yes",
+      "pred": "Yes. The carrot is shown being cut in the sequence of images (e.g., the orange carrot with green top appears before the brown potato), and the potato is cut afterward. For example, the carrot cutting occurs in the images following the green cabbage (which is first), and the potato cutting follows the carrot's sequence.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the cutting happen in this order: cabbage, then carrot, then potato?",
+      "gt": "Yes",
+      "pred": "Yes. The cabbage is first (e.g., 0.0s), followed by the carrot (e.g., 2.0s), then the potato (e.g., 4.0s).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "target",
+      "question": "Was the sweet potato cut first, then the cabbage, and then the potato?",
+      "gt": "No",
+      "pred": "No. The cabbage is shown first (in the initial frames), followed by the potato (the brown, potato-shaped object in the later frames), and the sweet potato appears much later. The sequence is not sweet potato first, then cabbage, then potato.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was the sweet potato cut first?",
+      "gt": "No",
+      "pred": "No. The first vegetable shown being cut is the green cabbage (visible in the first two frames). The sweet potato appears much later in the sequence (around frames 28-29).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the cabbage cut first?",
+      "gt": "Yes",
+      "pred": "Yes, the cabbage was cut first. The first image shows the cabbage, and the second image (1.0 second) shows it being cut, with subsequent images featuring other vegetables.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the sweet potato cut before the cabbage?",
+      "gt": "No",
+      "pred": "No. The cabbage is the first vegetable shown (0 - 2 seconds), and the sweet potato is shown later in the sequence (24 - 25 seconds). Therefore, the sweet potato was not cut before the cabbage.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the potato cut before the sweet potato?",
+      "gt": "Yes",
+      "pred": "Yes. The potato (brown, with eye-like details) is shown being cut in frames 5-6, while the sweet potato (red skin, orange interior) is shown being cut in frames 22-23. Thus, the potato was cut before the sweet potato.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

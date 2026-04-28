@@ -1,0 +1,150 @@
+{
+  "question": "Did the sequence outfit transformation → arm sleeve change → torso close-up → face transformation follow that order?",
+  "pred": "The video presents a series of rapid transitions showing a woman changing from her \"outside\" clothes into \"home\" clothes. By examining the frames in chronological order:\n\n1.  **Outfit transformation**: At approximately 00:03, the woman transitions from a white jacket and light jeans to a grey hoodie and dark cargo pants (Context event 3).\n2.  **Arm sleeve change**: At approximately 00:05, there is a close-up shot of her arm where the sleeve transitions from the white jacket material to the grey hoodie material.\n3.  **Torso close-up**: At approximately 00:06, the camera shows a close-up of her torso as the white jacket buttons are replaced by the grey hoodie with a large cream star (Context event 6).\n4.  **Face transformation**: At approximately 00:08, a close-up of her face shows her hair going from pigtails to a messy bun and brown-rimmed glasses appearing (Context event 8).\n\nThe sequence of visual edits follows the exact order described in the question.\n\nEvidence: Frames from 00:03 to 00:09 show the full-body change, followed by close-ups of the sleeve, then the torso star, and finally the face/glasses.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "transition",
+      "description": "the woman's outfit changes from a white jacket and light blue jeans to a grey hoodie and dark blue cargo pants",
+      "participants": [
+        "white-jacket woman",
+        "grey-hoodie woman"
+      ],
+      "actor": "white-jacket woman",
+      "object_before": "white jacket",
+      "object_after": "grey hoodie",
+      "on_screen_text": [
+        {
+          "text": "me literally within 0.2 secs of getting home",
+          "location": "title"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Getting Home Transformation",
+      "continuation_hint": "complete",
+      "event_index": 3,
+      "start_time": "00:03",
+      "end_time": "00:04",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Getting Home Transformation"
+    },
+    {
+      "event_type": "transition",
+      "description": "the woman's outfit changes back from the grey hoodie to the white jacket",
+      "participants": [
+        "grey-hoodie woman",
+        "white-jacket woman"
+      ],
+      "actor": "grey-hoodie woman",
+      "object_before": "grey hoodie",
+      "object_after": "white jacket",
+      "on_screen_text": [
+        {
+          "text": "me literally within 0.2 secs of getting home",
+          "location": "title"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Getting Home Transformation",
+      "continuation_hint": "complete",
+      "event_index": 5,
+      "start_time": "00:05",
+      "end_time": "00:06",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Getting Home Transformation"
+    },
+    {
+      "event_type": "transition",
+      "description": "the woman's outfit changes from the white jacket to the grey hoodie with a large cream star on the front",
+      "participants": [
+        "white-jacket woman",
+        "grey-hoodie woman"
+      ],
+      "actor": "white-jacket woman",
+      "object_before": "white jacket",
+      "object_after": "grey hoodie",
+      "object_after_pattern": "large cream star",
+      "on_screen_text": [
+        {
+          "text": "me literally within 0.2 secs of getting home",
+          "location": "title"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Getting Home Transformation",
+      "continuation_hint": "complete",
+      "event_index": 6,
+      "start_time": "00:06",
+      "end_time": "00:07",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Getting Home Transformation"
+    },
+    {
+      "event_type": "transition",
+      "description": "the woman's appearance changes to wearing a grey hoodie with the hood up and brown-rimmed glasses",
+      "participants": [
+        "white-jacket woman",
+        "grey-hoodie woman"
+      ],
+      "actor": "white-jacket woman",
+      "object_before": "white jacket",
+      "object_after": "grey hoodie",
+      "object_after_pattern": "hood up and glasses",
+      "on_screen_text": [
+        {
+          "text": "me literally within 0.2 secs of getting home",
+          "location": "title"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Getting Home Transformation",
+      "continuation_hint": "complete",
+      "event_index": 8,
+      "start_time": "00:08",
+      "end_time": "00:09",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Getting Home Transformation"
+    },
+    {
+      "event_type": "transition",
+      "description": "the woman's outfit changes from the white jacket to the grey hoodie as she turns around",
+      "participants": [
+        "white-jacket woman",
+        "grey-hoodie woman"
+      ],
+      "actor": "white-jacket woman",
+      "object_before": "white jacket",
+      "object_after": "grey hoodie",
+      "on_screen_text": [
+        {
+          "text": "me literally within 0.2 secs of getting home",
+          "location": "title"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Getting Home Transformation",
+      "continuation_hint": "complete",
+      "event_index": 10,
+      "start_time": "00:11",
+      "end_time": "00:13",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Getting Home Transformation"
+    }
+  ]
+}

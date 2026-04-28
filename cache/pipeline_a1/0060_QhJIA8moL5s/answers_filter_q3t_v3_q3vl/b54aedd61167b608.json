@@ -1,0 +1,99 @@
+{
+  "question": "Between opening box number 9 and box number 4, was exactly one box opened?",
+  "pred": "The context shows box 9 was opened first (event 31 at 00:59-01:00), followed by box 3 being opened (event 71 at 02:25-02:27), and then another box being opened (event 113 at 04:15-04:18) that revealed a bird's nest with cannoli. \n\nThe question asks whether exactly one box was opened between opening box 9 and box 4. For this to be true, box 4 must have been opened after box 9, and exactly one box must have been opened between these two events.\n\nThe context does not explicitly state which box was opened in event 113, but if we assume box 4 was the box opened in the final event (04:15-04:18), then between box 9 (first opened) and box 4 (last opened), exactly one box (box 3) was opened in between.\n\nThis interpretation aligns with the sequence of events shown in the context - box 9 opened, then one box (box 3) opened, then box 4 opened - satisfying the condition of \"exactly one box\" being opened between box 9 and box 4.\n\nEvidence: Context shows box 9 opened first, box 3 opened second, and another box opened third; if the third box was box 4, then exactly one box (box 3) was opened between box 9 and box 4.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "open_box",
+      "description": "the blue-dress woman opens the lid of the white box (Box 9)",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "object": "white box",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 31,
+      "start_time": "00:59",
+      "end_time": "01:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Box of Lies"
+    },
+    {
+      "event_type": "open_box",
+      "description": "the black-suit man opens the side panel of the white box (Box 3)",
+      "participants": [
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "object": "white box (Box 3)",
+      "on_screen_text": [
+        {
+          "text": "JENNIFER 1",
+          "location": "lower_third"
+        },
+        {
+          "text": "JIMMY 0",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "complete",
+      "event_index": 71,
+      "start_time": "02:25",
+      "end_time": "02:27",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Box of Lies"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the blue-dress woman opens the box in front of her to reveal a bird's nest with a cannoli inside",
+      "participants": [
+        "blue-dress woman",
+        "black-suit man"
+      ],
+      "actor": "blue-dress woman",
+      "cover": "white box",
+      "hidden": "bird's nest with cannoli",
+      "on_screen_text": [
+        {
+          "text": "JENNIFER",
+          "location": "lower_third"
+        },
+        {
+          "text": "1",
+          "location": "lower_third"
+        },
+        {
+          "text": "JIMMY",
+          "location": "lower_third"
+        },
+        {
+          "text": "1",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 113,
+      "start_time": "04:15",
+      "end_time": "04:18",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Box of Lies"
+    }
+  ]
+}

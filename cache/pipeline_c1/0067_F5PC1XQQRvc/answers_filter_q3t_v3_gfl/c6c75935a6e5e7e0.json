@@ -1,0 +1,75 @@
+{
+  "question": "Was the black lace dress between the blue evening dress and the red embroidered gown?",
+  "pred": "The woman holds a stack of dresses at the beginning of the video. Looking at the order of the dresses in the stack from left to right (the woman's right to left):\n1. A white lace dress is on the far left.\n2. A red dress is next.\n3. A light blue dress is partially visible behind the others.\n4. A pink dress is in the center.\n5. A yellow dress is to the right of the pink one.\n6. A black lace dress is on the far right of the main bundle.\n\nThe black lace dress is positioned on the outer right edge of the stack, not between the blue and red dresses.\n\nEvidence: The first frame shows the black lace dress on the far right of the bundle, while the red dress is on the far left and the blue dress is tucked behind the pink center dress.\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "hold",
+      "description": "A woman holds multiple dresses in front of her with both hands",
+      "participants": [
+        "white-tshirt woman"
+      ],
+      "actor": "white-tshirt woman",
+      "object": "multiple dresses",
+      "on_screen_text": [
+        {
+          "text": "my top 10 dresses of 2024",
+          "location": "center"
+        }
+      ],
+      "segment_boundary": "start",
+      "segment_label": "Dress showcase",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:03",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Dress showcase"
+    },
+    {
+      "event_type": "posture_shift",
+      "description": "The woman shifts her stance, causing the dresses to move slightly",
+      "participants": [
+        "white-tshirt woman"
+      ],
+      "actor": "white-tshirt woman",
+      "object": "multiple dresses",
+      "segment_boundary": "middle",
+      "segment_label": "Dress showcase",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 2,
+      "start_time": "00:03",
+      "end_time": "00:06",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Dress showcase"
+    },
+    {
+      "event_type": "reveal",
+      "description": "The woman's purple slippers with cat designs become visible as she shifts position",
+      "participants": [
+        "white-tshirt woman"
+      ],
+      "actor": "white-tshirt woman",
+      "object": "slippers",
+      "object_after": "purple slippers with cat designs",
+      "segment_boundary": "middle",
+      "segment_label": "Dress showcase",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 3,
+      "start_time": "00:06",
+      "end_time": "00:09",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Dress showcase"
+    }
+  ]
+}

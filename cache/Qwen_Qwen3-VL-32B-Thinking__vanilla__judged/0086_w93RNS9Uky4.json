@@ -1,0 +1,252 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0086_w93RNS9Uky4.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0086_w93RNS9Uky4.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0086_w93RNS9Uky4",
+    "n_target": 6,
+    "n_sub": 18,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.8333333333333334,
+    "sub_accuracy": 0.16666666666666666
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Did the woman start first?",
+      "gt": "Yes",
+      "pred": "Yes. In the first frame (0.0s), the woman is holding the orange ball, indicating she started first.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a woman in the video?",
+      "gt": "NA",
+      "pred": "Yes, there was a woman in the video. She is visible in all frames (e.g., wearing a gray “Nevada” shirt and jeans).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man start first?",
+      "gt": "NA",
+      "pred": "Yes. In the sequence, the man is the first to throw the orange ball (visible in the third frame where the ball is airborne above his head, indicating he initiated the action).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the woman start at the beginning?",
+      "gt": "NA",
+      "pred": "Yes. In the first frame (0:00), the woman is holding the orange ball, indicating she started at the beginning.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Did the woman start before the man?",
+      "gt": "Yes",
+      "pred": "Yes, the woman started before the man. In the sequence, the woman is the first to handle and throw the orange ball (e.g., visible in early frames where she holds the ball and initiates actions, while the man is adjusting cups or waiting).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the man start first?",
+      "gt": "NA",
+      "pred": "Yes. In the sequence, the man is the first to throw the orange ball (visible in the third frame where the ball is airborne above his head, indicating he initiated the action).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the woman start after the man?",
+      "gt": "NA",
+      "pred": "Yes. The man is seen throwing the orange ball first (e.g., in the frame where the ball is in mid-air near the man, indicating his turn), and the woman takes her turn afterward. This sequence shows the woman started after the man.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the woman the first person to start?",
+      "gt": "NA",
+      "pred": "Yes, the woman was the first to start. In the second frame (0:02), she is holding the orange ball, indicating she initiated the action first.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Did the man start first?",
+      "gt": "No",
+      "pred": "Yes. In the sequence, the man is the first to throw the orange ball (visible in the third frame where the ball is airborne above his head, indicating he initiated the action).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a man in the video?",
+      "gt": "NA",
+      "pred": "Yes, there was a man in the video. He is visible in all frames (e.g., the first frame shows him on the left wearing a black jacket and black shirt).",
+      "is_correct": null,
+      "judge_raw": "NA"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man start at the beginning?",
+      "gt": "NA",
+      "pred": "To determine if the man started at the beginning, we analyze the sequence of actions:  \n\n- In the initial frames (e.g., 0.0s), both individuals are positioned behind the cups.  \n- The first action involving the orange ball (throwing) occurs when the **woman** is seen holding the ball (1.0s) and then releasing it (2.0s, ball in mid-air).  \n- The man does not initiate the first throw; the woman does.  \n\nThus, the man did not start at the beginning.  \n\n**Answer:** No. The woman initiated the first throw (evident in frames ~1.0s–2.0s).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did anyone start before the man?",
+      "gt": "NA",
+      "pred": "Yes, the woman started before the man. In the early frames (e.g., frame 2), the woman is holding the orange ball while the man is adjusting cups, and the first visible ball motion (frame 3) indicates the woman initiated the action.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Did the man start after the woman?",
+      "gt": "Yes",
+      "pred": "Yes, the man started after the woman. In the video sequence, the woman is first seen holding and throwing the orange ball (e.g., early frames where she is the one with the ball), and the man begins his actions later (e.g., when he starts handling the ball after the woman’s turns). This is evident from the progression of frames where the woman initiates actions with the ball before the man takes over.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the man start first?",
+      "gt": "NA",
+      "pred": "Yes. In the sequence, the man is the first to throw the orange ball (visible in the third frame where the ball is airborne above his head, indicating he initiated the action).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the woman start before the man?",
+      "gt": "NA",
+      "pred": "Yes, the woman started before the man. In the sequence, the woman is the first to handle and throw the orange ball (e.g., visible in early frames where she holds the ball and initiates actions, while the man is adjusting cups or waiting).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the man the first person to start?",
+      "gt": "NA",
+      "pred": "Yes. The man is the first to throw the ball, as seen in the 3rd frame (where the ball is in mid-air, indicating he initiated the first throw).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Did the woman win the game?",
+      "gt": "Yes",
+      "pred": "Yes, the woman won the game. In the final frames (e.g., around the 25th image), only the purple cups (associated with the woman) remain, while all red cups have been eliminated. The game rule \"Last color standing wins!\" indicates the woman's color (purple) was the last standing.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a woman participating in the game?",
+      "gt": "Yes",
+      "pred": "Yes, a woman was participating in the game. She is visible in all frames, interacting with the cups and the orange ball (e.g., holding the ball, arranging cups, and taking turns).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a game take place in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a game took place. The text \"Last color standing wins!\" in the first frame (0:00) and subsequent actions of knocking over cups with an orange ball, re-arranging cups, and alternating turns (evident across multiple frames, e.g., 0:02–0:58) confirm a game occurred.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the woman achieve a winning outcome in the game?",
+      "gt": "Yes",
+      "pred": "Yes. In the final frames (e.g., timestamp ~48), only the purple cups remain, and the text \"Last color standing wins!\" indicates the last remaining color wins. Since the woman is associated with the purple cups (as seen in the sequence where purple cups are the last to be stacked), the purple color (her color) is the last standing, so she achieved a winning outcome.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Did the man win the game?",
+      "gt": "No",
+      "pred": "No, the man did not win. The last remaining cups are purple (as seen in the final frames, e.g., around the 27th-28th frame where only the purple stack remains), so the woman (who is associated with purple cups) won.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a man participating in the game?",
+      "gt": "NA",
+      "pred": "Yes, a man was participating in the game. He is visible in all frames, interacting with the cups and the orange ball (e.g., holding the ball, arranging cups).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man achieve a winning outcome in the game?",
+      "gt": "NA",
+      "pred": "No, the man did not achieve a winning outcome. The final frames (e.g., timestamp ~26) show only purple cups remaining, while all red cups (the man’s color) are gone. Since the rule is “Last color standing wins!”, the purple color (the woman’s side) is the last standing, so the man’s color was eliminated.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did both the man and the woman win the game?",
+      "gt": "NA",
+      "pred": "No. The final frames show only a single purple cup remaining (e.g., at the end of the sequence), indicating only the purple color \"standing,\" so only one color won.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "question": "Does the player in white shirt number 14 score goal?",
+  "pred": "The video shows a soccer match where a player in a white jersey scores a goal. To determine if the player in white shirt number 14 scored, we examine the frames and Context:\n\n1.  **Identify Player #14**: In the frames (e.g., at the beginning of the sequence and during the goal action), a player in a white jersey with the number **14** on the back is visible standing near the edge of the penalty area.\n2.  **Identify the Scorer**: The player who actually performs the overhead kick and scores the goal is a different player in a white jersey. The Context (event 16) and on-screen text (event 9) identify this player as \"white-jersey player #11\" and \"GARETH BALE\".\n3.  **Action of Player #14**: While the goal is being scored by player #11, player #14 is seen standing still or moving slightly in the background, watching the play. He does not touch the ball during the scoring sequence.\n\nEvidence: frames show player #11 scoring with an overhead kick while player #14 stands nearby watching.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "goal",
+      "description": "The ball enters the goal net past the diving goalkeeper",
+      "participants": [
+        "white soccer ball",
+        "goal net"
+      ],
+      "actor": "white soccer ball",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 5,
+      "start_time": "00:06",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "on_screen_text",
+      "description": "Text identifying the player appears on screen",
+      "participants": [],
+      "actor": "",
+      "on_screen_text": [
+        {
+          "text": "GARETH BALE",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "complete",
+      "event_index": 9,
+      "start_time": "00:10",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "Soccer player in white jersey runs with arms outstretched celebrating",
+      "participants": [
+        "white-jersey player #11"
+      ],
+      "actor": "white-jersey player #11",
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 16,
+      "start_time": "00:22",
+      "end_time": "00:24",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    }
+  ]
+}

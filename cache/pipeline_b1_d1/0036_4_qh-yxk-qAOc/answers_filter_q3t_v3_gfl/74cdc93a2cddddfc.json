@@ -1,0 +1,170 @@
+{
+  "question": "Does the player with red shirt number 7 score goal?",
+  "pred": "The video shows a soccer match where a player in a red shirt scores a goal. According to the Context and visual evidence in the frames:\n\n1.  **Red-shirt player number 20** (identified as \"QUARESMA\" in the watermark and on his jersey in several frames) strikes the ball toward the goal (Event 3, 00:04-00:06).\n2.  The ball enters the net past the goalkeeper (Event 5, 00:08-00:10).\n3.  Following the goal, **red-shirt player number 20** celebrates and is joined by teammates, including **red-shirt player number 7** (Event 7, 00:12-00:14).\n4.  Frames near the end of the clip (e.g., at 00:14) clearly show the player with number 7 embracing and celebrating with the scorer (number 20), but number 7 is not the one who took the shot or scored the goal.\n\nEvidence: Event 5 and 6 in Context identify red-shirt player 20 as the scorer, while player 7 joins the celebration.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "shoot",
+      "description": "Red-shirt player number 20 strikes the ball toward the goal",
+      "participants": [
+        "red-shirt player 20",
+        "goalkeeper",
+        "white-shirt defender"
+      ],
+      "actor": "red-shirt player 20",
+      "object": "soccer ball",
+      "on_screen_text": [
+        {
+          "text": "HYUNDAI",
+          "location": "banner"
+        },
+        {
+          "text": "TURKISH TV KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 3,
+      "start_time": "00:04",
+      "end_time": "00:06",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "score",
+      "description": "Soccer ball enters the goal net past the diving goalkeeper",
+      "participants": [
+        "red-shirt player",
+        "blue-shirt goalkeeper",
+        "white-shirt defender"
+      ],
+      "actor": "soccer ball",
+      "object": "soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "QUARESMA",
+          "location": "watermark"
+        },
+        {
+          "text": "TURKISH TV KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 5,
+      "start_time": "00:08",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "Red-shirt player number 20 raises arms in celebration after scoring",
+      "participants": [
+        "red-shirt player 20",
+        "red-shirt player 7",
+        "red-shirt player 10"
+      ],
+      "actor": "red-shirt player 20",
+      "object": "none",
+      "on_screen_text": [
+        {
+          "text": "QUARESMA",
+          "location": "watermark"
+        },
+        {
+          "text": "TURKISH TV KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:10",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "hug",
+      "description": "Red-shirt player number 20 and red-shirt player number 7 run toward each other and embrace in celebration",
+      "participants": [
+        "red-shirt player 20",
+        "red-shirt player 7",
+        "red-shirt player 10",
+        "red-shirt player 11"
+      ],
+      "actor": "red-shirt player 20",
+      "object": "none",
+      "on_screen_text": [
+        {
+          "text": "QUARESMA",
+          "location": "watermark"
+        },
+        {
+          "text": "TURKISH TV KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 7,
+      "start_time": "00:12",
+      "end_time": "00:14",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "run",
+      "description": "Multiple red-shirt players run toward the goal area to join the celebration",
+      "participants": [
+        "red-shirt player 7",
+        "red-shirt player 10",
+        "red-shirt player 11"
+      ],
+      "actor": "red-shirt player 7",
+      "object": "none",
+      "on_screen_text": [
+        {
+          "text": "QUARESMA",
+          "location": "watermark"
+        },
+        {
+          "text": "TURKISH TV KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 8,
+      "start_time": "00:14",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    }
+  ]
+}

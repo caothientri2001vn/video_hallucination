@@ -1,0 +1,107 @@
+{
+  "question": "Is the number 7 item a cake?",
+  "top_k": 15,
+  "indices": [
+    69,
+    70,
+    71,
+    72
+  ],
+  "events": [
+    {
+      "event_type": "cut",
+      "description": "the black-suit man cuts into the blue potion bottle on pedestal 7 with the blue knife",
+      "participants": [
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "object": "blue potion bottle",
+      "on_screen_text": [
+        {
+          "text": "7",
+          "location": "podium"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 69,
+      "start_time": "02:13",
+      "end_time": "02:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Cake or Cash?"
+    },
+    {
+      "event_type": "react",
+      "description": "the orange-haired woman reacts with surprise and excitement",
+      "participants": [
+        "orange-haired woman"
+      ],
+      "actor": "orange-haired woman",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 70,
+      "start_time": "02:15",
+      "end_time": "02:18",
+      "sub_events": [],
+      "subtype_order": 16,
+      "subtype_total": 25,
+      "round_index": 1,
+      "segment_label_resolved": "Cake or Cash?"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the man in the black suit cuts into the blue potion bottle with a knife, revealing it is a purple cake with a colorful center",
+      "participants": [
+        "man in black suit"
+      ],
+      "actor": "man in black suit",
+      "object_before": "blue potion bottle",
+      "object_after": "purple cake",
+      "object_before_pattern": "white skeleton hands",
+      "object_after_pattern": "colorful center",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "complete",
+      "event_index": 71,
+      "start_time": "02:18",
+      "end_time": "02:21",
+      "sub_events": [],
+      "subtype_order": 12,
+      "subtype_total": 13,
+      "round_index": 1,
+      "segment_label_resolved": "Cake or Cash?"
+    },
+    {
+      "event_type": "speak",
+      "description": "the man in the black suit speaks while holding a piece of the cake",
+      "participants": [
+        "man in black suit"
+      ],
+      "actor": "man in black suit",
+      "on_screen_text": [
+        {
+          "text": "7",
+          "location": "podium"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "complete",
+      "event_index": 72,
+      "start_time": "02:21",
+      "end_time": "02:24",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 13,
+      "round_index": 1,
+      "segment_label_resolved": "Cake or Cash?"
+    }
+  ]
+}

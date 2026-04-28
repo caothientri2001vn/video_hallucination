@@ -1,0 +1,205 @@
+{
+  "question": "Did the left team win exactly one individual round?",
+  "pred": "The video shows a game of Charades with two teams. The left team consists of the checkered-jumpsuit woman and the black-outfit man with a hat. The right team consists of the floral-top woman and the host in a suit.\n\nTo determine if the left team won exactly one round, we count their successful turns:\n1. **Round 1 (Right Team):** The floral-top woman acts out \"Born to Run\". The host guesses it correctly before the timer reaches 0 (Context event 57). A star is placed over panel 1.\n2. **Round 2 (Left Team):** The checkered-jumpsuit woman acts out \"Ring of Fire\". The black-outfit man guesses it correctly. A star is placed over panel 3.\n3. **Round 3 (Right Team):** The host acts out \"It\". The floral-top woman guesses it correctly. A star is placed over panel 8.\n4. **Round 4 (Left Team):** The black-outfit man acts out \"Jurassic Park\". The checkered-jumpsuit woman guesses it correctly. A star is placed over panel 5.\n5. **Round 5 (Right Team):** The host and checkered-jumpsuit woman both act out \"Dancing on the Ceiling\". The floral-top woman guesses it correctly. A star is placed over panel 7.\n\nThe left team successfully completed two rounds (Round 2 and Round 4), as evidenced by the two stars appearing on the left column of the board (over panels 3 and 5) by the end of the game.\n\nEvidence: Frames at ~05:25 show the Charades board with two stars in the left column (panels 3 and 5) and three stars in the right column (panels 1, 8, and 7).\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "scoreboard_update",
+      "description": "Countdown timer reaches 0",
+      "participants": [],
+      "actor": "",
+      "object": "",
+      "object_before": "",
+      "object_after": "",
+      "on_screen_text": [
+        {
+          "text": "BORN TO RUN",
+          "location": "caption"
+        },
+        {
+          "text": "0",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Charades",
+      "continuation_hint": "complete",
+      "event_index": 57,
+      "start_time": "01:44",
+      "end_time": "01:45",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "stand",
+      "description": "Man in black suit stands up from his chair",
+      "participants": [
+        "black-jumpsuit woman",
+        "blonde-woman",
+        "black-hat man",
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "object": "",
+      "object_before": "",
+      "object_after": "",
+      "on_screen_text": [
+        {
+          "text": "BORN TO RUN",
+          "location": "caption"
+        },
+        {
+          "text": "0",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Charades",
+      "continuation_hint": "complete",
+      "event_index": 58,
+      "start_time": "01:44",
+      "end_time": "01:45",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "open_box",
+      "description": "The man in the suit opens the box labeled '8' on the Charades board",
+      "participants": [
+        "suit man",
+        "black and gold top woman",
+        "checkered jumpsuit woman",
+        "black outfit man"
+      ],
+      "actor": "suit man",
+      "object": "box labeled 8",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "CHARADES",
+          "location": "banner"
+        },
+        {
+          "text": "8",
+          "location": "podium"
+        }
+      ],
+      "event_index": 63,
+      "start_time": "01:58",
+      "end_time": "02:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "open_box",
+      "description": "the host opens the right-column fourth-row panel (labeled '8') on the Charades board",
+      "participants": [
+        "man in dark suit"
+      ],
+      "actor": "man in dark suit",
+      "object": "wooden panel",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 81,
+      "start_time": "02:45",
+      "end_time": "02:48",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "open_box",
+      "description": "man in black hat opens the third panel in the left column of the Charades board revealing the number 5",
+      "participants": [
+        "man in black hat",
+        "blonde woman in checkered outfit",
+        "dark-haired woman in black outfit",
+        "man in suit"
+      ],
+      "actor": "man in black hat",
+      "object": "wooden panel",
+      "object_before": "star panel",
+      "object_after": "panel with 5",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 107,
+      "start_time": "03:45",
+      "end_time": "03:48",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "game",
+      "description": "man holds up wooden tile with number 7 to show the charade prompt",
+      "participants": [
+        "checkered-jumpsuit woman",
+        "suit-man man"
+      ],
+      "actor": "suit-man man",
+      "object": "wooden tile with number 7",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 130,
+      "start_time": "04:45",
+      "end_time": "04:50",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "point",
+      "description": "Man in suit (host) points with his right hand toward the woman in black outfit",
+      "participants": [
+        "man in suit",
+        "black-outfit woman",
+        "striped-outfit woman",
+        "man in black"
+      ],
+      "actor": "man in suit",
+      "on_screen_text": [
+        {
+          "text": "\"DANCING ON THE CEILING\"",
+          "location": "caption"
+        },
+        {
+          "text": ":7",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Charades",
+      "continuation_hint": "complete",
+      "event_index": 160,
+      "start_time": "05:25",
+      "end_time": "05:27",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    }
+  ]
+}

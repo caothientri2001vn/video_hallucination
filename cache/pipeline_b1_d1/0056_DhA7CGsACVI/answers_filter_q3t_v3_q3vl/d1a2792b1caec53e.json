@@ -1,0 +1,190 @@
+{
+  "question": "Was the box containing the doll placed on top of the box containing the lipstick?",
+  "pred": "Evidence: The Context shows two separate box openings: one revealing a lipstick (Lipstick Display Segment around 02:30) and another revealing a baby doll toy (Baby Doll Game around 06:30). The frames show these as distinct events with different boxes, and there is no visual or descriptive evidence that the doll's box was placed on top of the lipstick's box.\n\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "hold_object",
+      "description": "The hand of the man in the dark suit holds and displays a lipstick to the camera, with slight movements of the hand.",
+      "participants": [
+        "dark-suit man"
+      ],
+      "actor": "dark-suit man",
+      "object": "gold lipstick tube",
+      "segment_boundary": "middle",
+      "segment_label": "Lipstick Display Segment",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 66,
+      "start_time": "02:30",
+      "end_time": "02:33",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "react",
+      "description": "The man in the blue suit on screen has his mouth open in a surprised expression with wide eyes.",
+      "participants": [
+        "blue-suit man"
+      ],
+      "actor": "blue-suit man",
+      "segment_boundary": "middle",
+      "segment_label": "Lipstick Display Segment",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 67,
+      "start_time": "02:33",
+      "end_time": "02:35",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "react",
+      "description": "The man in the blue suit on screen changes expression to a more neutral but engaged look while still facing forward.",
+      "participants": [
+        "blue-suit man"
+      ],
+      "actor": "blue-suit man",
+      "segment_boundary": "middle",
+      "segment_label": "Lipstick Display Segment",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 68,
+      "start_time": "02:35",
+      "end_time": "02:37",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "speak",
+      "description": "The man in the dark suit speaks while holding the lipstick and looking toward the screen displaying the man in the blue suit.",
+      "participants": [
+        "dark-suit man"
+      ],
+      "actor": "dark-suit man",
+      "object": "gold lipstick tube",
+      "segment_boundary": "middle",
+      "segment_label": "Lipstick Display Segment",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 69,
+      "start_time": "02:37",
+      "end_time": "02:39",
+      "sub_events": [],
+      "subtype_order": 22,
+      "subtype_total": 47,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "hold_object",
+      "description": "Blue-suited man holds up a red-haired baby doll toy with both hands",
+      "participants": [
+        "blue-suited man",
+        "gray-suited man"
+      ],
+      "actor": "blue-suited man",
+      "object": "red-haired baby doll toy",
+      "segment_boundary": "middle",
+      "segment_label": "Baby Doll Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 151,
+      "start_time": "06:30",
+      "end_time": "06:34",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "extend_hand",
+      "description": "Blue-suited man extends his right arm across the table to offer the baby doll toy to the gray-suited man",
+      "participants": [
+        "blue-suited man",
+        "gray-suited man"
+      ],
+      "actor": "blue-suited man",
+      "object": "red-haired baby doll toy",
+      "segment_boundary": "middle",
+      "segment_label": "Baby Doll Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 152,
+      "start_time": "06:32",
+      "end_time": "06:36",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "reach",
+      "description": "Gray-suited man reaches across the table with his right hand toward the baby doll toy",
+      "participants": [
+        "blue-suited man",
+        "gray-suited man"
+      ],
+      "actor": "gray-suited man",
+      "segment_boundary": "middle",
+      "segment_label": "Baby Doll Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 153,
+      "start_time": "06:33",
+      "end_time": "06:37",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "hand_contact",
+      "description": "Gray-suited man makes physical contact with the baby doll toy held by the blue-suited man",
+      "participants": [
+        "blue-suited man",
+        "gray-suited man"
+      ],
+      "actor": "gray-suited man",
+      "object": "red-haired baby doll toy",
+      "segment_boundary": "middle",
+      "segment_label": "Baby Doll Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 154,
+      "start_time": "06:35",
+      "end_time": "06:38",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "hand_over_object",
+      "description": "Gray-suited man takes possession of the baby doll toy from the blue-suited man",
+      "participants": [
+        "blue-suited man",
+        "gray-suited man"
+      ],
+      "actor": "blue-suited man",
+      "object": "red-haired baby doll toy",
+      "segment_boundary": "middle",
+      "segment_label": "Baby Doll Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 155,
+      "start_time": "06:36",
+      "end_time": "06:39",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    }
+  ]
+}

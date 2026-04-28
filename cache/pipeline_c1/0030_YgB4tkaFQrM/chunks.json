@@ -1,0 +1,1477 @@
+{
+  "video_name": "0030_YgB4tkaFQrM.mp4",
+  "video_duration_sec": 67.63423333333334,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:03",
+          "event_type": "pass",
+          "description": "A black-jersey player passes the basketball to a teammate",
+          "participants": [
+            "black-jersey player",
+            "black-jersey player"
+          ],
+          "actor": "black-jersey player",
+          "object": "orange basketball",
+          "outcome": "successful",
+          "on_screen_text": [
+            {
+              "text": "OKC 78",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 66",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD 2:39",
+              "location": "scoreboard"
+            },
+            {
+              "text": "ESPN",
+              "location": "lower_third"
+            },
+            {
+              "text": "NBA WEDNESDAY",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Basketball Game",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:05",
+          "event_type": "dribble",
+          "description": "A white-jersey player (wearing number 3) receives and dribbles the basketball",
+          "participants": [
+            "white-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "object": "orange basketball",
+          "on_screen_text": [
+            {
+              "text": "OKC 78",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 66",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD 2:39",
+              "location": "scoreboard"
+            },
+            {
+              "text": "ESPN",
+              "location": "lower_third"
+            },
+            {
+              "text": "NBA WEDNESDAY",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:04",
+          "local_end": "00:06",
+          "event_type": "pass",
+          "description": "The white-jersey player passes the basketball to another white-jersey player",
+          "participants": [
+            "white-jersey player",
+            "white-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "object": "orange basketball",
+          "outcome": "successful",
+          "on_screen_text": [
+            {
+              "text": "OKC 78",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 66",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD 2:38",
+              "location": "scoreboard"
+            },
+            {
+              "text": "ESPN",
+              "location": "lower_third"
+            },
+            {
+              "text": "NBA WEDNESDAY",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:07",
+          "event_type": "screen",
+          "description": "A white-jersey player sets a screen (block) for a teammate",
+          "participants": [
+            "white-jersey player",
+            "white-jersey player",
+            "black-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "on_screen_text": [
+            {
+              "text": "OKC 78",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 66",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD 2:37",
+              "location": "scoreboard"
+            },
+            {
+              "text": "ESPN",
+              "location": "lower_third"
+            },
+            {
+              "text": "NBA WEDNESDAY",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:08",
+          "event_type": "shot",
+          "description": "A white-jersey player attempts a jump shot",
+          "participants": [
+            "white-jersey player",
+            "black-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "object": "orange basketball",
+          "outcome": "successful",
+          "on_screen_text": [
+            {
+              "text": "OKC 78",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 66",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD 2:36",
+              "location": "scoreboard"
+            },
+            {
+              "text": "ESPN",
+              "location": "lower_third"
+            },
+            {
+              "text": "NBA WEDNESDAY",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:08",
+          "event_type": "fall",
+          "description": "A white-jersey player falls to the court during play",
+          "participants": [
+            "white-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "on_screen_text": [
+            {
+              "text": "OKC 78",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 66",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD 2:36",
+              "location": "scoreboard"
+            },
+            {
+              "text": "ESPN",
+              "location": "lower_third"
+            },
+            {
+              "text": "NBA WEDNESDAY",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:09",
+          "event_type": "score",
+          "description": "The basketball goes through the hoop for a score",
+          "participants": [
+            "orange basketball",
+            "basketball hoop"
+          ],
+          "actor": "orange basketball",
+          "object": "orange basketball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "OKC 78",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 66",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD 2:36",
+              "location": "scoreboard"
+            },
+            {
+              "text": "ESPN",
+              "location": "lower_third"
+            },
+            {
+              "text": "NBA WEDNESDAY",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:08",
+          "local_end": "00:09",
+          "event_type": "scoreboard_update",
+          "description": "The scoreboard updates from MIA 66 to MIA 68",
+          "participants": [],
+          "actor": "scoreboard",
+          "object_before": "digital scoreboard showing MIA 66",
+          "object_after": "digital scoreboard showing MIA 68",
+          "on_screen_text": [
+            {
+              "text": "OKC 78",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 66",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD 2:36",
+              "location": "scoreboard"
+            },
+            {
+              "text": "ESPN",
+              "location": "lower_third"
+            },
+            {
+              "text": "NBA WEDNESDAY",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:08",
+          "local_end": "00:10",
+          "event_type": "referee_signal",
+          "description": "Referee signals the score is valid with hand motion",
+          "participants": [
+            "referee"
+          ],
+          "actor": "referee",
+          "on_screen_text": [
+            {
+              "text": "OKC 78",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 68",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD 2:36",
+              "location": "scoreboard"
+            },
+            {
+              "text": "ESPN",
+              "location": "lower_third"
+            },
+            {
+              "text": "NBA WEDNESDAY",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:09",
+          "local_end": "00:12",
+          "event_type": "reset",
+          "description": "Players begin resetting positions after the score",
+          "participants": [
+            "white-jersey player",
+            "black-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "on_screen_text": [
+            {
+              "text": "OKC 78",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 68",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD 2:35",
+              "location": "scoreboard"
+            },
+            {
+              "text": "ESPN",
+              "location": "lower_third"
+            },
+            {
+              "text": "NBA WEDNESDAY",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:12",
+          "local_end": "00:15",
+          "event_type": "inbound",
+          "description": "A black-jersey player retrieves the basketball for inbound",
+          "participants": [
+            "black-jersey player"
+          ],
+          "actor": "black-jersey player",
+          "object": "orange basketball",
+          "on_screen_text": [
+            {
+              "text": "OKC 78",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 68",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD 2:30",
+              "location": "scoreboard"
+            },
+            {
+              "text": "ESPN",
+              "location": "lower_third"
+            },
+            {
+              "text": "NBA WEDNESDAY",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:00",
+          "local_end": "00:15",
+          "event_type": "game_clock_update",
+          "description": "The game clock decreases from 2:39 to 2:30",
+          "participants": [],
+          "actor": "game clock",
+          "object_before": "digital clock showing 2:39",
+          "object_after": "digital clock showing 2:30",
+          "on_screen_text": [
+            {
+              "text": "OKC 78",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 68",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD 2:39",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD 2:30",
+              "location": "scoreboard"
+            },
+            {
+              "text": "ESPN",
+              "location": "lower_third"
+            },
+            {
+              "text": "NBA WEDNESDAY",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:10",
+          "event_type": "audience_reaction",
+          "description": "Spectators react to the made basket with visible excitement",
+          "participants": [
+            "audience members"
+          ],
+          "actor": "audience members",
+          "on_screen_text": [
+            {
+              "text": "OKC 78",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 68",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD 2:36",
+              "location": "scoreboard"
+            },
+            {
+              "text": "ESPN",
+              "location": "lower_third"
+            },
+            {
+              "text": "NBA WEDNESDAY",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:10",
+          "local_end": "00:15",
+          "event_type": "walk",
+          "description": "A white-jersey player with number 6 walks toward the bench area",
+          "participants": [
+            "white-jersey player #6"
+          ],
+          "actor": "white-jersey player #6",
+          "on_screen_text": [
+            {
+              "text": "OKC 78",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 68",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD 2:30",
+              "location": "scoreboard"
+            },
+            {
+              "text": "ESPN",
+              "location": "lower_third"
+            },
+            {
+              "text": "NBA WEDNESDAY",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Basketball Game",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 30.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:30",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:18",
+          "event_type": "shot",
+          "description": "OKC player in white jersey with orange trim releases a jump shot from the right wing",
+          "participants": [
+            "white-jersey OKC player",
+            "referee in striped shirt",
+            "black-jersey MIA players"
+          ],
+          "actor": "white-jersey OKC player",
+          "object": "orange basketball",
+          "on_screen_text": [
+            {
+              "text": "OKC 78",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 68",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3rd 2:24",
+              "location": "scoreboard"
+            },
+            {
+              "text": "ESPN",
+              "location": "lower_third"
+            },
+            {
+              "text": "NBA WEDNESDAY",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game - 3rd Quarter",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:18",
+          "local_end": "00:19",
+          "event_type": "score",
+          "description": "basketball passes through the net for a three-point shot",
+          "participants": [
+            "referee in striped shirt",
+            "black-jersey MIA players"
+          ],
+          "actor": "basketball",
+          "object": "orange basketball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "OKC 78",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 68",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3rd 2:24",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game - 3rd Quarter",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:18",
+          "local_end": "00:20",
+          "event_type": "scoreboard_update",
+          "description": "scoreboard changes from OKC 78 to OKC 81 after successful three-point shot",
+          "participants": [],
+          "actor": "scoreboard",
+          "object_before": "scoreboard showing OKC 78",
+          "object_after": "scoreboard showing OKC 81",
+          "on_screen_text": [
+            {
+              "text": "OKC 78",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 68",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3rd 2:24",
+              "location": "scoreboard"
+            },
+            {
+              "text": "OKC 81",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3rd 2:21",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game - 3rd Quarter",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:19",
+          "local_end": "00:25",
+          "event_type": "close_up",
+          "description": "camera zooms in on OKC player wearing white jersey with 'DURANT' and number 35 on back",
+          "participants": [
+            "white-jersey OKC player with DURANT on back"
+          ],
+          "actor": "camera",
+          "on_screen_text": [
+            {
+              "text": "OKC 81",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 68",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3rd 2:21",
+              "location": "scoreboard"
+            },
+            {
+              "text": "ESPN",
+              "location": "lower_third"
+            },
+            {
+              "text": "NBA WEDNESDAY",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game - 3rd Quarter",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:25",
+          "local_end": "00:30",
+          "event_type": "game",
+          "description": "MIA player in black jersey dribbles near half-court while OKC players set up defense",
+          "participants": [
+            "black-jersey MIA player",
+            "white-jersey OKC players",
+            "referee in striped shirt"
+          ],
+          "actor": "black-jersey MIA player",
+          "object": "orange basketball",
+          "on_screen_text": [
+            {
+              "text": "OKC 81",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 68",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3rd 2:09",
+              "location": "scoreboard"
+            },
+            {
+              "text": "ESPN",
+              "location": "lower_third"
+            },
+            {
+              "text": "NBA WEDNESDAY",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game - 3rd Quarter",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:25",
+          "local_end": "00:26",
+          "event_type": "hand_raise",
+          "description": "referee in striped shirt raises right arm while observing play",
+          "participants": [
+            "referee in striped shirt"
+          ],
+          "actor": "referee in striped shirt",
+          "on_screen_text": [
+            {
+              "text": "OKC 81",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 68",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3rd 2:09",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game - 3rd Quarter",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:15",
+          "local_end": "00:18",
+          "event_type": "hand_raise",
+          "description": "OKC player in white jersey raises both hands while shooting",
+          "participants": [
+            "white-jersey OKC player"
+          ],
+          "actor": "white-jersey OKC player",
+          "on_screen_text": [
+            {
+              "text": "OKC 78",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 68",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3rd 2:24",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game - 3rd Quarter",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 2,
+      "chunk_start_sec": 30.0,
+      "chunk_end_sec": 45.0,
+      "chunk_start_mmss": "00:30",
+      "chunk_end_mmss": "00:45",
+      "events": [
+        {
+          "local_start": "00:30",
+          "local_end": "00:36",
+          "event_type": "game",
+          "description": "OKC player in white jersey #35 dribbles the basketball while driving toward the basket, guarded by MIA player in black jersey",
+          "participants": [
+            "white-jersey player #35",
+            "black-jersey defender"
+          ],
+          "actor": "white-jersey player #35",
+          "object": "basketball",
+          "on_screen_text": [
+            {
+              "text": "OKC 83",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 72",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD",
+              "location": "scoreboard"
+            },
+            {
+              "text": "1:13",
+              "location": "scoreboard"
+            },
+            {
+              "text": "18",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game - 3rd Quarter",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:36",
+          "local_end": "00:37",
+          "event_type": "throw",
+          "description": "OKC player in white jersey #35 releases the basketball toward the hoop for a shot attempt",
+          "participants": [
+            "white-jersey player #35"
+          ],
+          "actor": "white-jersey player #35",
+          "object": "basketball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "OKC 83",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 72",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD",
+              "location": "scoreboard"
+            },
+            {
+              "text": "1:11",
+              "location": "scoreboard"
+            },
+            {
+              "text": "18",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game - 3rd Quarter",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:37",
+          "local_end": "00:37",
+          "event_type": "scoreboard_update",
+          "description": "Scoreboard updates from OKC 83 to OKC 85 after successful basket",
+          "participants": [],
+          "actor": "none",
+          "on_screen_text": [
+            {
+              "text": "OKC 85",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 72",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD",
+              "location": "scoreboard"
+            },
+            {
+              "text": "1:10",
+              "location": "scoreboard"
+            },
+            {
+              "text": "24",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game - 3rd Quarter",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:38",
+          "local_end": "00:39",
+          "event_type": "fall",
+          "description": "MIA player in black jersey falls to the court near the basket",
+          "participants": [
+            "black-jersey player"
+          ],
+          "actor": "black-jersey player",
+          "on_screen_text": [
+            {
+              "text": "OKC 85",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 72",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD",
+              "location": "scoreboard"
+            },
+            {
+              "text": "1:10",
+              "location": "scoreboard"
+            },
+            {
+              "text": "24",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game - 3rd Quarter",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:39",
+          "local_end": "00:41",
+          "event_type": "movement",
+          "description": "Fallen MIA player in black jersey begins to get up from the court",
+          "participants": [
+            "black-jersey player"
+          ],
+          "actor": "black-jersey player",
+          "on_screen_text": [
+            {
+              "text": "OKC 85",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 72",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD",
+              "location": "scoreboard"
+            },
+            {
+              "text": "1:09",
+              "location": "scoreboard"
+            },
+            {
+              "text": "24",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game - 3rd Quarter",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:40",
+          "local_end": "00:45",
+          "event_type": "game",
+          "description": "MIA player in black jersey gains possession and dribbles the basketball down the court",
+          "participants": [
+            "black-jersey player with ball"
+          ],
+          "actor": "black-jersey player with ball",
+          "object": "basketball",
+          "on_screen_text": [
+            {
+              "text": "OKC 85",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 72",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD",
+              "location": "scoreboard"
+            },
+            {
+              "text": "55.8",
+              "location": "scoreboard"
+            },
+            {
+              "text": "24",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game - 3rd Quarter",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:40",
+          "local_end": "00:45",
+          "event_type": "game",
+          "description": "OKC players in white jerseys move into defensive positions on the court",
+          "participants": [
+            "white-jersey defenders"
+          ],
+          "actor": "white-jersey defenders",
+          "on_screen_text": [
+            {
+              "text": "OKC 85",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 72",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD",
+              "location": "scoreboard"
+            },
+            {
+              "text": "55.8",
+              "location": "scoreboard"
+            },
+            {
+              "text": "24",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game - 3rd Quarter",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:42",
+          "local_end": "00:45",
+          "event_type": "hand_raise",
+          "description": "Multiple OKC players in white jerseys raise their hands in defensive positioning",
+          "participants": [
+            "white-jersey defenders"
+          ],
+          "actor": "white-jersey defenders",
+          "on_screen_text": [
+            {
+              "text": "OKC 85",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 72",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3RD",
+              "location": "scoreboard"
+            },
+            {
+              "text": "52.5",
+              "location": "scoreboard"
+            },
+            {
+              "text": "10",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game - 3rd Quarter",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 3,
+      "chunk_start_sec": 45.0,
+      "chunk_end_sec": 60.0,
+      "chunk_start_mmss": "00:45",
+      "chunk_end_mmss": "01:00",
+      "events": [
+        {
+          "local_start": "00:45",
+          "local_end": "00:46",
+          "event_type": "scoreboard_update",
+          "description": "Miami Heat score increases from 72 to 74 points",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "object_before": "",
+          "object_after": "",
+          "object_before_pattern": "",
+          "object_after_pattern": "",
+          "cover": "",
+          "hidden": "",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "OKC 85",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 72",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3rd 48.9",
+              "location": "scoreboard"
+            },
+            {
+              "text": "ESPN",
+              "location": "lower_third"
+            },
+            {
+              "text": "NBA WEDNESDAY",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:47",
+          "local_end": "00:48",
+          "event_type": "player_movement",
+          "description": "Black jersey player dribbles the basketball toward center court",
+          "participants": [
+            "black-jersey player"
+          ],
+          "actor": "black-jersey player",
+          "object": "basketball",
+          "object_before": "",
+          "object_after": "",
+          "object_before_pattern": "",
+          "object_after_pattern": "",
+          "cover": "",
+          "hidden": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "OKC 85",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 74",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3rd 48.9",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:48",
+          "local_end": "00:49",
+          "event_type": "close_up",
+          "description": "LeBron James (Heat #6) shown in close-up with focused expression",
+          "participants": [
+            "LeBron James (black Heat jersey #6)"
+          ],
+          "actor": "LeBron James (black Heat jersey #6)",
+          "object": "",
+          "object_before": "",
+          "object_after": "",
+          "object_before_pattern": "",
+          "object_after_pattern": "",
+          "cover": "",
+          "hidden": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "OKC 85",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 74",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3rd 48.8",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:50",
+          "local_end": "00:52",
+          "event_type": "hand_raise",
+          "description": "White jersey player raises their hand while moving down court",
+          "participants": [
+            "white-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "object": "",
+          "object_before": "",
+          "object_after": "",
+          "object_before_pattern": "",
+          "object_after_pattern": "",
+          "cover": "",
+          "hidden": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "OKC 85",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 74",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3rd 46.7",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:53",
+          "local_end": "00:55",
+          "event_type": "dribble",
+          "description": "White jersey player dribbles the basketball while moving down court",
+          "participants": [
+            "white-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "object": "basketball",
+          "object_before": "",
+          "object_after": "",
+          "object_before_pattern": "",
+          "object_after_pattern": "",
+          "cover": "",
+          "hidden": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "OKC 85",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 74",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3rd 45.0",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:56",
+          "local_end": "00:57",
+          "event_type": "pass",
+          "description": "White jersey player passes the basketball to a teammate",
+          "participants": [
+            "white-jersey player",
+            "teammate"
+          ],
+          "actor": "white-jersey player",
+          "object": "basketball",
+          "object_before": "",
+          "object_after": "",
+          "object_before_pattern": "",
+          "object_after_pattern": "",
+          "cover": "",
+          "hidden": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "OKC 85",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 74",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3rd 43.2",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:57",
+          "local_end": "00:58",
+          "event_type": "scoreboard_update",
+          "description": "Oklahoma City score increases from 85 to 88 points",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "object_before": "",
+          "object_after": "",
+          "object_before_pattern": "",
+          "object_after_pattern": "",
+          "cover": "",
+          "hidden": "",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "OKC 88",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 74",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3rd 40.1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:59",
+          "local_end": "01:00",
+          "event_type": "close_up",
+          "description": "Kevin Durant (OKC #35) shown in close-up with focused expression",
+          "participants": [
+            "Kevin Durant (white Thunder jersey #35)"
+          ],
+          "actor": "Kevin Durant (white Thunder jersey #35)",
+          "object": "",
+          "object_before": "",
+          "object_after": "",
+          "object_before_pattern": "",
+          "object_after_pattern": "",
+          "cover": "",
+          "hidden": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "OKC 88",
+              "location": "scoreboard"
+            },
+            {
+              "text": "MIA 74",
+              "location": "scoreboard"
+            },
+            {
+              "text": "3rd 40.1",
+              "location": "scoreboard"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Game",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 4,
+      "chunk_start_sec": 60.0,
+      "chunk_end_sec": 67.63423333333334,
+      "chunk_start_mmss": "01:00",
+      "chunk_end_mmss": "01:08",
+      "events": [
+        {
+          "local_start": "01:00",
+          "local_end": "01:03",
+          "event_type": "celebration",
+          "description": "Player in white Thunder jersey raises both arms in celebration",
+          "participants": [
+            "white-jersey player",
+            "blue-shirt crowd"
+          ],
+          "actor": "white-jersey player",
+          "segment_boundary": "middle",
+          "segment_label": "Game Highlights",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "01:00",
+          "local_end": "01:03",
+          "event_type": "applaud",
+          "description": "Crowd members in blue shirts raise hands and cheer in response to on-court action",
+          "participants": [
+            "blue-shirt crowd"
+          ],
+          "actor": "blue-shirt crowd",
+          "segment_boundary": "middle",
+          "segment_label": "Game Highlights",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "01:03",
+          "local_end": "01:05",
+          "event_type": "shoot",
+          "description": "Player in yellow jersey jumps to shoot a basketball toward the hoop",
+          "participants": [
+            "yellow-jersey player",
+            "blue-jersey player"
+          ],
+          "actor": "yellow-jersey player",
+          "segment_boundary": "middle",
+          "segment_label": "Game Highlights",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:00",
+          "local_end": "01:08",
+          "event_type": "practice",
+          "description": "Players in red, blue, and yellow jerseys practice shooting at multiple arranged basketball hoops",
+          "participants": [
+            "red-jersey player",
+            "blue-jersey player",
+            "yellow-jersey player"
+          ],
+          "actor": "red-jersey player",
+          "segment_boundary": "middle",
+          "segment_label": "NBA Practice Session",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:05",
+          "local_end": "01:07",
+          "event_type": "graphic",
+          "description": "Left screen transitions to display NBA LEAGUE PASS graphic with rotating circular design",
+          "participants": [],
+          "actor": "graphic",
+          "on_screen_text": [
+            {
+              "text": "NBA LEAGUE PASS",
+              "location": "graphic"
+            },
+            {
+              "text": "NBA GAME TIME",
+              "location": "graphic"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Promotion",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:06",
+          "local_end": "01:08",
+          "event_type": "graphic",
+          "description": "Right screen transitions to show BIG HOLIDAY text with NBA STORE logo",
+          "participants": [],
+          "actor": "graphic",
+          "on_screen_text": [
+            {
+              "text": "BIG HOLIDAY",
+              "location": "graphic"
+            },
+            {
+              "text": "NBA STORE",
+              "location": "graphic"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "NBA Promotion",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:07",
+          "local_end": "01:08",
+          "event_type": "transition",
+          "description": "Entire screen begins to darken, indicating the end of the current segment",
+          "participants": [],
+          "actor": "screen",
+          "segment_boundary": "end",
+          "segment_label": "NBA Promotion",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

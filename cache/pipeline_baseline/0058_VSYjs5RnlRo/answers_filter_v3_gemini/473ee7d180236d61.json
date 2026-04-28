@@ -1,0 +1,229 @@
+{
+  "question": "Was there a round where no points were added despite multiple correct answers?",
+  "pred": "The video shows a game of \"Avengers Family Feud\" where points are awarded based on survey answers.\n\n1.  **Round 1 (approx. 00:00 - 04:47):** The teams \"THE AMERICAS\" and \"THE MANS\" compete. Multiple correct answers are revealed on the board, including \"KISSING/SEX\" (55 points), \"EATING POPCORN/SNACKS\" (20 points), and \"TEXTING\" (8 points). At the end of this round, the scoreboard shows \"THE AMERICAS 0\" and \"THE MANS 83\" (as seen in the frame at 04:47). Points were successfully added to \"THE MANS\".\n2.  **Round 2 (approx. 04:48 - end):** The board is cleared (event 174). New correct answers are revealed: \"BATHROOM 16\" (event 195), \"CHURCH/FUNERAL 17\" (event 205), and \"BED/DURING SEX 9\" (visible in frame at 07:32). Despite these three correct answers being revealed, the scoreboard update at 07:28 (event 276) and the final frame at 07:32 show the score as \"THE AMERICAS 0\" and \"THE MANS 125\". While \"THE MANS\" gained points (83 to 125), \"THE AMERICAS\" remained at 0 points despite participating in the round. However, the question asks if there was a round where *no* points were added (to either team) despite correct answers. In both rounds, the total points on the board increased for the winning team of that round.\n\nThere is no round where the total score for both teams remained completely stationary after correct answers were revealed.\n\nEvidence: The scoreboard updates at 04:47 (83 total points) and 07:30 (125 total points) show that points were added to the winning team's total in each round after correct answers were revealed.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "scoreboard_update",
+      "description": "the scoreboard clears its previous answers and displays empty numbered slots",
+      "participants": [],
+      "actor": "",
+      "object": "scoreboard",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "scoreboard"
+        },
+        {
+          "text": "5",
+          "location": "scoreboard"
+        },
+        {
+          "text": "2",
+          "location": "scoreboard"
+        },
+        {
+          "text": "3",
+          "location": "scoreboard"
+        },
+        {
+          "text": "4",
+          "location": "scoreboard"
+        },
+        {
+          "text": "THE AMERICAS 0",
+          "location": "lower_third"
+        },
+        {
+          "text": "THE MANS 83",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Avengers Family Feud",
+      "continuation_hint": "middle",
+      "event_index": 174,
+      "start_time": "04:48",
+      "end_time": "04:50",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Avengers Family Feud"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the third panel from the top on the left side of the board flips to reveal 'BATHROOM 16'",
+      "participants": [],
+      "object_before": "blue panel",
+      "object_after": "black and white panel",
+      "object_before_pattern": "numbered 3",
+      "object_after_pattern": "text BATHROOM 16",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "other"
+        },
+        {
+          "text": "5",
+          "location": "other"
+        },
+        {
+          "text": "2",
+          "location": "other"
+        },
+        {
+          "text": "BATHROOM 16",
+          "location": "other"
+        },
+        {
+          "text": "4",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Avengers Family Feud",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 195,
+      "start_time": "05:28",
+      "end_time": "05:30",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Avengers Family Feud"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the second panel from the top on the left side of the scoreboard flips to reveal 'CHURCH/FUNERAL 17'",
+      "participants": [],
+      "object_before": "blue panel",
+      "object_after": "white and black panel",
+      "object_before_pattern": "numbered '2'",
+      "object_after_pattern": "text 'CHURCH/FUNERAL 17'",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "scoreboard"
+        },
+        {
+          "text": "5",
+          "location": "scoreboard"
+        },
+        {
+          "text": "CHURCH/FUNERAL 17",
+          "location": "scoreboard"
+        },
+        {
+          "text": "BATHROOM 16",
+          "location": "scoreboard"
+        },
+        {
+          "text": "4",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Avengers Family Feud",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 205,
+      "start_time": "05:42",
+      "end_time": "05:44",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Avengers Family Feud"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "the scoreboard graphic appears at the bottom of the screen showing 'THE AMERICAS 0' and 'THE MANS 125'",
+      "participants": [
+        "host",
+        "blue-suit man",
+        "black-suit man",
+        "black-suit man",
+        "black-sleeveless-top woman",
+        "brown-suit man",
+        "black-suit man"
+      ],
+      "on_screen_text": [
+        {
+          "text": "THE AMERICAS 0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "THE MANS 125",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Avengers Family Feud",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 276,
+      "start_time": "07:28",
+      "end_time": "07:30",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Avengers Family Feud"
+    },
+    {
+      "event_type": "speak",
+      "description": "the black-suit man speaks to the contestants while gesturing with his hands",
+      "participants": [
+        "black-suit man",
+        "black-suit man",
+        "black-suit man",
+        "black-suit man",
+        "black-sleeveless-top woman",
+        "brown-suit man",
+        "black-shirt man"
+      ],
+      "actor": "black-suit man",
+      "on_screen_text": [
+        {
+          "text": "THE AMERICAS",
+          "location": "other"
+        },
+        {
+          "text": "CHURCH/FUNERAL 17",
+          "location": "other"
+        },
+        {
+          "text": "BATHROOM 16",
+          "location": "other"
+        },
+        {
+          "text": "BED/DURING SEX 9",
+          "location": "other"
+        },
+        {
+          "text": "THE MANS",
+          "location": "other"
+        },
+        {
+          "text": "THE AMERICAS 0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "THE MANS 125",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Avengers Family Feud",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 277,
+      "start_time": "07:30",
+      "end_time": "07:32",
+      "sub_events": [],
+      "subtype_order": 39,
+      "subtype_total": 40,
+      "round_index": 1,
+      "segment_label_resolved": "Avengers Family Feud"
+    }
+  ]
+}

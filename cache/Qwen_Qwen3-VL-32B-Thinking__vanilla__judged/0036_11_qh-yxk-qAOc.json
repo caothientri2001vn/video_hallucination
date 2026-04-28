@@ -1,0 +1,96 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0036_11_qh-yxk-qAOc.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0036_11_qh-yxk-qAOc.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0036_11_qh-yxk-qAOc",
+    "n_target": 2,
+    "n_sub": 6,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 1.0,
+    "sub_accuracy": 1.0
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Does the player with blue shirt, blue pant number 10 score the goal?",
+      "gt": "Yes",
+      "pred": "Yes, the player with the blue shirt, blue pants, and number 10 (Diego Forlán) scores the goal. This is evident from the sequence where he takes the shot, the ball enters the net, and he subsequently celebrates with teammates (e.g., frames showing the ball in the net, his celebration, and the text “DIEGO FORLÁN” identifying him).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the player who scores the goal wear a blue shirt?",
+      "gt": "Yes",
+      "pred": "Yes, the player who scores the goal wears a blue shirt. This is evident from the frames showing the player (with the name \"Forlán\" and number 10) in a light blue jersey during the goal attempt, the goal itself, and subsequent celebrations. For example, in the sequence of frames from the goal action (e.g., around the 10th to 15th frames), the player in the light blue shirt is seen kicking the ball and scoring.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player who scores the goal wear blue pants?",
+      "gt": "Yes",
+      "pred": "Yes, the player who scores the goal wears blue pants. This is visible in multiple frames, such as when the player is kicking the ball (e.g., frames showing the player in light blue uniform with blue pants) and during celebration sequences.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Is the player who scores the goal wearing number 10?",
+      "gt": "Yes",
+      "pred": "Yes. The player who scores the goal is wearing number 10, as seen in multiple frames (e.g., close - up shots of the player kicking the ball, celebration shots showing the back of the jersey with “Forlán” and the number 10).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Does the player with blue shirt, blue pant number 22 score the goal?",
+      "gt": "No",
+      "pred": "No. The player with the blue shirt and number 22 does not score the goal. The goal is scored by the player with the blue shirt, number 10 (Forlán), as evidenced by the celebration sequences showing \"Forlán\" and the number 10 on his jersey (e.g., timestamps around 22-27 seconds).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the player who scores the goal wear a blue shirt?",
+      "gt": "Yes",
+      "pred": "Yes, the player who scores the goal wears a blue shirt. This is evident from the frames showing the player (with the name \"Forlán\" and number 10) in a light blue jersey during the goal attempt, the goal itself, and subsequent celebrations. For example, in the sequence of frames from the goal action (e.g., around the 10th to 15th frames), the player in the light blue shirt is seen kicking the ball and scoring.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player who scores the goal wear blue pants?",
+      "gt": "Yes",
+      "pred": "Yes, the player who scores the goal wears blue pants. This is visible in multiple frames, such as when the player is kicking the ball (e.g., frames showing the player in light blue uniform with blue pants) and during celebration sequences.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Is the player who scores the goal wearing number 22?",
+      "gt": "No",
+      "pred": "No. The player who scores the goal is wearing number 10 (as seen on the back of his jersey in multiple frames, e.g., the close - up shots showing \"Forlán\" and \"10\"). The number 22 is on the goalkeeper's jersey, not the scorer's.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

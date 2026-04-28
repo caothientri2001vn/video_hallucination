@@ -1,0 +1,154 @@
+{
+  "video_name": "0036_3_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 15.0,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "gemini-3-flash-preview",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:01",
+          "event_type": "transition",
+          "description": "The video transitions from a black screen to a wide shot of a soccer match.",
+          "participants": [
+            "yellow-shirt players",
+            "white-shirt players"
+          ],
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:01",
+          "local_end": "00:08",
+          "event_type": "game",
+          "description": "Players in yellow and white shirts compete for the ball in the penalty area.",
+          "participants": [
+            "yellow-shirt players",
+            "white-shirt players"
+          ],
+          "object": "soccer ball",
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:08",
+          "local_end": "00:10",
+          "event_type": "kick",
+          "description": "The yellow-shirt player (number 10) performs a bicycle kick to strike the ball.",
+          "participants": [
+            "yellow-shirt player (number 10)",
+            "white-shirt players"
+          ],
+          "actor": "yellow-shirt player (number 10)",
+          "object": "soccer ball",
+          "on_screen_text": [
+            {
+              "text": "IBRAHIMOVIC",
+              "location": "lower_third"
+            },
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:10",
+          "local_end": "00:11",
+          "event_type": "goal",
+          "description": "The ball enters the net as the goalkeeper dives unsuccessfully.",
+          "participants": [
+            "black-shirt goalkeeper"
+          ],
+          "actor": "black-shirt goalkeeper",
+          "object": "soccer ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "IBRAHIMOVIC",
+              "location": "lower_third"
+            },
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:11",
+          "local_end": "00:13",
+          "event_type": "transition",
+          "description": "The camera angle changes to a side view of the bicycle kick.",
+          "participants": [
+            "yellow-shirt player (number 10)",
+            "white-shirt players"
+          ],
+          "on_screen_text": [
+            {
+              "text": "IBRAHIMOVIC",
+              "location": "lower_third"
+            },
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:13",
+          "local_end": "00:15",
+          "event_type": "celebration",
+          "description": "The yellow-shirt player (number 10) celebrates with arms outstretched after scoring.",
+          "participants": [
+            "yellow-shirt player (number 10)"
+          ],
+          "actor": "yellow-shirt player (number 10)",
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

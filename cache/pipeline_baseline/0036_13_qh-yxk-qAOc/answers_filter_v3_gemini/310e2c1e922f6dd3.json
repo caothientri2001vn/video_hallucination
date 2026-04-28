@@ -1,0 +1,160 @@
+{
+  "question": "When the white team plays against the red team, does the player with white shirt, white pant number 7 score the goal into the green shirt goalkeeper?",
+  "pred": "The video shows a football match between a team in white jerseys and a team in maroon (red) jerseys. The player who scores the goal is wearing a white shirt and white pants with the number 10 on them, not number 7. This is confirmed by both the Context and the visual evidence in the frames.\n\nEvidence: Context event 4 and frames at ~00:03 show the white-jersey player (number 10) taking the shot that scores against the green-jersey goalkeeper.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "game",
+      "description": "The white-jersey teammate (number 10) receives the pass and prepares to shoot as maroon-jersey defenders close in.",
+      "participants": [
+        "white-jersey teammate",
+        "maroon-jersey defenders"
+      ],
+      "actor": "white-jersey teammate",
+      "object": "white ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 3,
+      "start_time": "00:02",
+      "end_time": "00:03",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "game",
+      "description": "The white-jersey player (number 10) takes a powerful shot with his right foot toward the top left corner of the goal.",
+      "participants": [
+        "white-jersey player"
+      ],
+      "actor": "white-jersey player",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "LACAZETTE",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 4,
+      "start_time": "00:03",
+      "end_time": "00:04",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "game",
+      "description": "The green-jersey goalkeeper dives to his right but cannot reach the ball as it flies into the top corner of the net.",
+      "participants": [
+        "green-jersey goalkeeper"
+      ],
+      "actor": "green-jersey goalkeeper",
+      "object": "white ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "LACAZETTE",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 5,
+      "start_time": "00:04",
+      "end_time": "00:05",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "transition",
+      "description": "The camera angle cuts to a wide shot showing the ball hitting the back of the net and the players' reactions.",
+      "participants": [
+        "white-jersey players",
+        "maroon-jersey players",
+        "green-jersey goalkeeper"
+      ],
+      "on_screen_text": [
+        {
+          "text": "LACAZETTE",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:05",
+      "end_time": "00:06",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "The white-jersey player (number 10) begins to celebrate his goal while maroon-jersey defenders look dejected.",
+      "participants": [
+        "white-jersey player",
+        "maroon-jersey defenders"
+      ],
+      "actor": "white-jersey player",
+      "on_screen_text": [
+        {
+          "text": "LACAZETTE",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 7,
+      "start_time": "00:06",
+      "end_time": "00:07",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "look",
+      "description": "A close-up shot shows the white-jersey player (Lacazette) looking off-camera with a serious expression after scoring.",
+      "participants": [
+        "white-jersey player"
+      ],
+      "actor": "white-jersey player",
+      "on_screen_text": [
+        {
+          "text": "LACAZETTE",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 8,
+      "start_time": "00:07",
+      "end_time": "00:09",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "question": "Does the man steal candies from the woman wearing a green T-shirt?",
+  "pred": "The video shows a man in a yellow shirt and a woman in a green shirt (with a green headband) interacting with gumball machines. While the man is shown turning the handle of a gumball machine and eating candies that come out, there is no point in the video where he takes or \"steals\" candies from the woman in the green shirt. Instead, they are both shown using the machines and eating their own candies.\n\nEvidence: Frames near 06:10 and 06:45 show the yellow-shirt man and green-shirt woman using gumball machines independently; no candy-stealing action occurs.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "manipulate",
+      "description": "the yellow-shirt person turns the handle of the pink gumball machine (left machine)",
+      "participants": [
+        "yellow-shirt person",
+        "orange-shirt woman",
+        "green-shirt woman"
+      ],
+      "actor": "yellow-shirt person",
+      "object": "pink gumball machine",
+      "segment_boundary": "middle",
+      "segment_label": "Gumball Machine Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 162,
+      "start_time": "06:10",
+      "end_time": "06:11",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 8,
+      "round_index": 3,
+      "segment_label_resolved": "Popcorn Machine Segment"
+    },
+    {
+      "event_type": "react",
+      "description": "orange-shirt woman stands with arms crossed, showing consistent annoyance at the situation",
+      "participants": [
+        "orange-shirt woman",
+        "yellow-shirt man",
+        "green-shirt woman"
+      ],
+      "actor": "orange-shirt woman",
+      "segment_boundary": "middle",
+      "segment_label": "Gumball Machine Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 179,
+      "start_time": "06:30",
+      "end_time": "06:45",
+      "sub_events": [],
+      "subtype_order": 22,
+      "subtype_total": 29,
+      "round_index": 3,
+      "segment_label_resolved": "Popcorn Machine Segment"
+    },
+    {
+      "event_type": "react",
+      "description": "yellow-shirt man shows amusement while observing the gumball machine situation",
+      "participants": [
+        "orange-shirt woman",
+        "yellow-shirt man",
+        "green-shirt woman"
+      ],
+      "actor": "yellow-shirt man",
+      "segment_boundary": "middle",
+      "segment_label": "Gumball Machine Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 180,
+      "start_time": "06:30",
+      "end_time": "06:45",
+      "sub_events": [],
+      "subtype_order": 23,
+      "subtype_total": 29,
+      "round_index": 3,
+      "segment_label_resolved": "Popcorn Machine Segment"
+    }
+  ]
+}

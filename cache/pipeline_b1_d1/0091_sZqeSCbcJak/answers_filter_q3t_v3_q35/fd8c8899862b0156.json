@@ -1,0 +1,219 @@
+{
+  "question": "Is the woman wearing a zip-up hoodie the winner?",
+  "pred": "Evidence: The woman in the tan zip-up hoodie (tan-jacket woman) is seen giving a thumbs-up gesture at the end of the video (event 48), alongside the woman in the yellow top, indicating success or winning the challenge.\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "state_change",
+      "description": "smartphone screen changes from yellow to orange/yellow gradient with white dots",
+      "participants": [
+        "yellow-shirt woman"
+      ],
+      "actor": "yellow-shirt woman",
+      "object_before": "yellow smartphone",
+      "object_after": "orange and yellow smartphone",
+      "object_before_pattern": "white dots",
+      "object_after_pattern": "white dots",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:01",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "lift",
+      "description": "tan-jacket woman lifts a red cup from the leftmost row of cups",
+      "participants": [
+        "tan-jacket woman"
+      ],
+      "actor": "tan-jacket woman",
+      "cover": "red cup",
+      "hidden": "uncertain",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 8,
+      "start_time": "00:11",
+      "end_time": "00:13",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "device_interaction",
+      "description": "the yellow-tanktop woman touches the color-changing device",
+      "participants": [
+        "beige-jacket woman",
+        "yellow-tanktop woman",
+        "blue-shirt man"
+      ],
+      "actor": "yellow-tanktop woman",
+      "object_before": "orange device",
+      "object_after": "purple device",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 13,
+      "start_time": "00:21",
+      "end_time": "00:22",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "stack",
+      "description": "The woman in the beige jacket picks up two red cups from the left side and stacks them on top of other red cups to form small towers",
+      "participants": [
+        "beige-jacket woman",
+        "yellow-tank-top woman",
+        "blue-sweater man"
+      ],
+      "actor": "beige-jacket woman",
+      "object": "red cup",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 21,
+      "start_time": "00:30",
+      "end_time": "00:33",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "stack",
+      "description": "The man in the blue sweater picks up a pink cup from the right side and places it on top of a yellow cup",
+      "participants": [
+        "beige-jacket woman",
+        "yellow-tank-top woman",
+        "blue-sweater man"
+      ],
+      "actor": "blue-sweater man",
+      "object": "pink cup",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 24,
+      "start_time": "00:39",
+      "end_time": "00:42",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "place",
+      "description": "The woman in the yellow tank top places the stack of yellow cups in a new position on the table.",
+      "participants": [
+        "yellow-tank-top woman"
+      ],
+      "actor": "yellow-tank-top woman",
+      "object": "yellow cups",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 37,
+      "start_time": "01:06",
+      "end_time": "01:09",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "touch",
+      "description": "the tan-jacket woman points at and touches the device screen with her right index finger",
+      "participants": [
+        "tan-jacket woman",
+        "yellow-top woman"
+      ],
+      "actor": "tan-jacket woman",
+      "segment_boundary": "middle",
+      "segment_label": "Cup and Screen Interaction",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 41,
+      "start_time": "01:15",
+      "end_time": "01:17",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "touch",
+      "description": "the yellow-top woman points at and touches the device screen with her right index finger",
+      "participants": [
+        "tan-jacket woman",
+        "yellow-top woman"
+      ],
+      "actor": "yellow-top woman",
+      "segment_boundary": "middle",
+      "segment_label": "Cup and Screen Interaction",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 44,
+      "start_time": "01:22",
+      "end_time": "01:25",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "gesture",
+      "description": "The woman in yellow top raises her right hand and forms a thumbs-up gesture",
+      "participants": [
+        "yellow-top woman",
+        "tan-jacket woman"
+      ],
+      "actor": "yellow-top woman",
+      "segment_boundary": "end",
+      "segment_label": "Cup Stacking",
+      "continuation_hint": "complete",
+      "event_index": 47,
+      "start_time": "01:30",
+      "end_time": "01:32",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "gesture",
+      "description": "The woman in tan jacket raises her right hand and forms a thumbs-up gesture",
+      "participants": [
+        "yellow-top woman",
+        "tan-jacket woman"
+      ],
+      "actor": "tan-jacket woman",
+      "segment_boundary": "end",
+      "segment_label": "Cup Stacking",
+      "continuation_hint": "complete",
+      "event_index": 48,
+      "start_time": "01:30",
+      "end_time": "01:32",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    }
+  ]
+}

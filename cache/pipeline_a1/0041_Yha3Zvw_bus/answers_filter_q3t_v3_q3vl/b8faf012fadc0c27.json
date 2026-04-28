@@ -1,0 +1,126 @@
+{
+  "question": "Is the number 3 handbag a cake?",
+  "pred": "Evidence: The context only describes cutting into Bag 1 (the leftmost bag) and revealing it contains white cake inside. There is no information about cutting or revealing the contents of Bag 3 (the yellow bag on pedestal 3).\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "reveal",
+      "description": "the blue screen slides open to reveal four handbags on pedestals",
+      "participants": [],
+      "actor": "",
+      "object": "blue screen",
+      "object_before": "blue screen",
+      "object_after": "four handbags on pedestals",
+      "on_screen_text": [
+        {
+          "text": "MEET BRITAIN'S BEST NOVELTY CAKE MAKERS",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 57,
+      "start_time": "02:21",
+      "end_time": "02:24",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Intro"
+    },
+    {
+      "event_type": "look",
+      "description": "the camera zooms in on the yellow bag on pedestal 3",
+      "participants": [
+        "yellow bag"
+      ],
+      "object": "yellow bag",
+      "on_screen_text": [
+        {
+          "text": "PHIL & HOLLY PLAY 'IS IT CAKE?'",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "complete",
+      "event_index": 63,
+      "start_time": "02:39",
+      "end_time": "02:42",
+      "sub_events": [],
+      "subtype_order": 18,
+      "subtype_total": 59,
+      "round_index": 1,
+      "segment_label_resolved": "Intro"
+    },
+    {
+      "event_type": "game",
+      "description": "The plaid-shirt woman uses a knife to cut into the leftmost bag (Bag 1) on the blue pedestal.",
+      "participants": [
+        "plaid-shirt woman",
+        "pink-shirt man",
+        "pink-dress woman"
+      ],
+      "actor": "plaid-shirt woman",
+      "object": "black bag",
+      "on_screen_text": [
+        {
+          "text": "PHIL & HOLLY PLAY 'IS IT CAKE?'",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 85,
+      "start_time": "03:30",
+      "end_time": "03:34",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Intro"
+    },
+    {
+      "event_type": "reveal",
+      "description": "The plaid-shirt woman pulls back a section of the black bag to reveal white cake inside.",
+      "participants": [
+        "plaid-shirt woman"
+      ],
+      "actor": "plaid-shirt woman",
+      "object_before": "black bag",
+      "object_after": "white cake",
+      "on_screen_text": [
+        {
+          "text": "PHIL & HOLLY PLAY 'IS IT CAKE?'",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "complete",
+      "event_index": 87,
+      "start_time": "03:34",
+      "end_time": "03:37",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Intro"
+    }
+  ]
+}

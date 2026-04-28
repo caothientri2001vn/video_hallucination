@@ -1,0 +1,102 @@
+{
+  "question": "Did the blue hoodie woman win cookie?",
+  "pred": "The video shows a game where participants pull strings to reveal prizes on plates. Based on the frames and the game progression:\n\n1.  **Ethan** (white-shirt man) pulls a string and wins **$2** (shown in frames and Context event 4).\n2.  **Lauren** (blue-sweatshirt woman) pulls a string and wins **Cookies** (explicitly stated in on-screen text in the frames).\n3.  **Mattie** (black-hoodie woman) pulls a string and wins **$300** (explicitly stated in on-screen text in the frames).\n4.  **Brian** (black-shirt man) pulls a string and gets a **Whip Cream Face** (explicitly stated in on-screen text in the frames).\n\nThe \"blue hoodie woman\" is Lauren. The frames clearly show her pulling a string that brings the plate with cookies to the center, followed by the on-screen text \"Cookies\" and her picking up a cookie to eat.\n\nEvidence: Frames show the blue-sweatshirt woman (Lauren) pulling a string that reveals the plate of cookies, accompanied by the on-screen text \"Cookies\".\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "pull_string",
+      "description": "Ethan pulls the left string attached to the red cup in the center of the table",
+      "participants": [
+        "white-shirt man",
+        "blue-sweatshirt woman",
+        "black-shirt man",
+        "black-hoodie woman"
+      ],
+      "actor": "white-shirt man",
+      "object": "black string",
+      "segment_boundary": "middle",
+      "segment_label": "Mystery String!",
+      "event_index": 2,
+      "start_time": "00:03",
+      "end_time": "00:06",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String!"
+    },
+    {
+      "event_type": "reveal",
+      "description": "The left plate with money is pulled toward the center as a result of the string being pulled",
+      "participants": [
+        "white-shirt man",
+        "blue-sweatshirt woman",
+        "black-shirt man",
+        "black-hoodie woman"
+      ],
+      "actor": "white-shirt man",
+      "cover": "red cup",
+      "hidden": "paper money",
+      "segment_boundary": "middle",
+      "segment_label": "Mystery String!",
+      "event_index": 3,
+      "start_time": "00:06",
+      "end_time": "00:09",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String!"
+    },
+    {
+      "event_type": "graphic",
+      "description": "Text \"$2\" appears on screen indicating the value of the revealed prize",
+      "participants": [
+        "white-shirt man",
+        "blue-sweatshirt woman",
+        "black-shirt man",
+        "black-hoodie woman"
+      ],
+      "actor": "system",
+      "on_screen_text": [
+        {
+          "text": "$2",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Mystery String!",
+      "event_index": 4,
+      "start_time": "00:09",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String!"
+    },
+    {
+      "event_type": "collect_prize",
+      "description": "Ethan picks up the stack of $2 bills from the left plate",
+      "participants": [
+        "white-shirt man",
+        "blue-sweatshirt woman",
+        "black-shirt man",
+        "black-hoodie woman"
+      ],
+      "actor": "white-shirt man",
+      "object": "paper money",
+      "segment_boundary": "middle",
+      "segment_label": "Mystery String!",
+      "event_index": 5,
+      "start_time": "00:12",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Mystery String!"
+    }
+  ]
+}

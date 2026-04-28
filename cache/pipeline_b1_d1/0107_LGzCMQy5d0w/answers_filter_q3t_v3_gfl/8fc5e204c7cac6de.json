@@ -1,0 +1,108 @@
+{
+  "question": "Did the woman win the game?",
+  "pred": "The video shows a man and a woman playing a Tetris-style block placement game. The man uses blue blocks and the woman uses white blocks. They take turns dropping their respective pieces into a vertical grid. The game ends when the grid is nearly full and they can no longer place pieces effectively. At the end of the video, both players are smiling and they high-five each other, indicating a shared conclusion or a draw rather than a specific win for the woman. There is no on-screen text or explicit action (like a score tally or a \"Winner\" declaration) to confirm that the woman won.\n\nEvidence: frames near 01:00 show the man and woman high-fiving after the game board is mostly filled, with no explicit winner indicated.\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "point",
+      "description": "pink-shirt woman points at the middle-right section of the game board",
+      "participants": [
+        "gray-shirt man",
+        "pink-shirt woman"
+      ],
+      "actor": "pink-shirt woman",
+      "segment_boundary": "middle",
+      "segment_label": "Tetris-style block placement game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 30,
+      "start_time": "00:58",
+      "end_time": "00:59",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Tetris-style board game"
+    },
+    {
+      "event_type": "high_five",
+      "description": "gray-shirt man and pink-shirt woman high-five each other over the game board",
+      "participants": [
+        "gray-shirt man",
+        "pink-shirt woman"
+      ],
+      "actor": "gray-shirt man",
+      "segment_boundary": "end",
+      "segment_label": "Tetris-style block placement game",
+      "continuation_hint": "complete",
+      "event_index": 31,
+      "start_time": "00:59",
+      "end_time": "01:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Tetris-style board game"
+    },
+    {
+      "event_type": "speak",
+      "description": "gray-shirt man speaks while looking at the game board",
+      "participants": [
+        "gray-shirt man",
+        "pink-shirt woman"
+      ],
+      "actor": "gray-shirt man",
+      "segment_boundary": "end",
+      "segment_label": "Tetris-style block placement game",
+      "continuation_hint": "complete",
+      "event_index": 32,
+      "start_time": "00:59",
+      "end_time": "01:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Tetris-style board game"
+    },
+    {
+      "event_type": "speak",
+      "description": "pink-shirt woman speaks while looking at the game board",
+      "participants": [
+        "gray-shirt man",
+        "pink-shirt woman"
+      ],
+      "actor": "pink-shirt woman",
+      "segment_boundary": "end",
+      "segment_label": "Tetris-style block placement game",
+      "continuation_hint": "complete",
+      "event_index": 33,
+      "start_time": "00:58",
+      "end_time": "01:00",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Tetris-style board game"
+    },
+    {
+      "event_type": "high_five",
+      "description": "The green-shirt man high-fives the pink-shirt woman with their hands touching",
+      "participants": [
+        "green-shirt man",
+        "pink-shirt woman"
+      ],
+      "actor": "green-shirt man",
+      "segment_boundary": "middle",
+      "segment_label": "Grid Puzzle Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 34,
+      "start_time": "01:00",
+      "end_time": "01:00",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Tetris-style board game"
+    }
+  ]
+}

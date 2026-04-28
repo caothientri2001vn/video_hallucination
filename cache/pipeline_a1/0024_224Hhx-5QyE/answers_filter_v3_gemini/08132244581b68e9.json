@@ -1,0 +1,153 @@
+{
+  "question": "Does the woman throw a purple ballon?",
+  "pred": "The woman in the orange shirt is seen interacting with a green balloon throughout the video. She throws it into the air multiple times (events 1, 8, 33, 65) and eventually raises it above her head in celebration (event 71). While there are purple cups on the table, there is no evidence in the Context or the frames of a purple balloon.\n\nEvidence: event 1 describes \"The orange-shirt woman throws a green balloon into the air.\"\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "throw",
+      "description": "The orange-shirt woman throws a green balloon into the air.",
+      "participants": [
+        "orange-shirt woman",
+        "pink-hoodie man"
+      ],
+      "actor": "orange-shirt woman",
+      "object": "green balloon",
+      "on_screen_text": [
+        {
+          "text": "First to stack their cups wins!",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "start",
+      "segment_label": "Cup Stacking Race",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:01",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Race"
+    },
+    {
+      "event_type": "look",
+      "description": "The orange-shirt woman looks up at the falling green balloon.",
+      "participants": [
+        "orange-shirt woman"
+      ],
+      "actor": "orange-shirt woman",
+      "object": "green balloon",
+      "on_screen_text": [
+        {
+          "text": "First to stack their cups wins!",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Race",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:05",
+      "end_time": "00:06",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Race"
+    },
+    {
+      "event_type": "throw",
+      "description": "The orange-shirt woman throws the green balloon back into the air.",
+      "participants": [
+        "orange-shirt woman"
+      ],
+      "actor": "orange-shirt woman",
+      "object": "green balloon",
+      "on_screen_text": [
+        {
+          "text": "First to stack their cups wins!",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Race",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 8,
+      "start_time": "00:07",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Race"
+    },
+    {
+      "event_type": "throw",
+      "description": "the orange-shirt woman tosses the green balloon into the air",
+      "participants": [
+        "orange-shirt woman",
+        "pink-hoodie man"
+      ],
+      "actor": "orange-shirt woman",
+      "object": "green balloon",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Balloon Cup Challenge",
+      "continuation_hint": "middle",
+      "event_index": 33,
+      "start_time": "00:31",
+      "end_time": "00:32",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Race"
+    },
+    {
+      "event_type": "throw",
+      "description": "the orange-shirt woman throws the green balloon into the air",
+      "participants": [
+        "orange-shirt woman",
+        "pink-hoodie man"
+      ],
+      "actor": "orange-shirt woman",
+      "object": "green balloon",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 65,
+      "start_time": "01:03",
+      "end_time": "01:04",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Race"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the orange-shirt woman raises the green balloon above her head in celebration",
+      "participants": [
+        "orange-shirt woman",
+        "pink-hoodie man"
+      ],
+      "actor": "orange-shirt woman",
+      "object": "green balloon",
+      "on_screen_text": [],
+      "segment_boundary": "end",
+      "segment_label": "Cup Stacking Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 71,
+      "start_time": "01:09",
+      "end_time": "01:11",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Race"
+    }
+  ]
+}

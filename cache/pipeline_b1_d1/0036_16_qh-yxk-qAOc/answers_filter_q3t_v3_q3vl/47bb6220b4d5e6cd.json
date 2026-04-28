@@ -1,0 +1,169 @@
+{
+  "question": "When the white and red team plays against the blue team, does the player with blue shirt number 44 score the goal?",
+  "pred": "Evidence: The context shows \"white-shirt player (SABITZER #7)\" as the actor for the dribble, prepare_shot, and shot events, with the outcome \"scored\" for the goal. The blue-shirt player #44 appears in defensive positions in frames but is not identified as scoring.\n\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "dribble",
+      "description": "player in white jersey with red shorts controls the ball near the penalty area",
+      "participants": [
+        "blue-shirt player",
+        "white-shirt player"
+      ],
+      "actor": "white-shirt player (SABITZER #7)",
+      "object": "white soccer ball",
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "TRABZONSPOR KANALI",
+          "location": "logo"
+        },
+        {
+          "text": "SABITZER",
+          "location": "graphic"
+        }
+      ],
+      "event_index": 3,
+      "start_time": "00:02",
+      "end_time": "00:05",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "prepare_shot",
+      "description": "player in white jersey with red shorts positions himself for a shot on goal",
+      "participants": [
+        "blue-shirt defender",
+        "goalkeeper"
+      ],
+      "actor": "white-shirt player (SABITZER #7)",
+      "object": "white soccer ball",
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "TRABZONSPOR KANALI",
+          "location": "logo"
+        },
+        {
+          "text": "SABITZER",
+          "location": "graphic"
+        },
+        {
+          "text": "pepsi",
+          "location": "banner"
+        },
+        {
+          "text": "FOR THE LOVE OF IT",
+          "location": "banner"
+        }
+      ],
+      "event_index": 4,
+      "start_time": "00:05",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "shot",
+      "description": "player in white jersey with red shorts strikes the ball toward the goal",
+      "participants": [
+        "blue-shirt defenders",
+        "goalkeeper"
+      ],
+      "actor": "white-shirt player (SABITZER #7)",
+      "object": "white soccer ball",
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "TRABZONSPOR KANALI",
+          "location": "logo"
+        },
+        {
+          "text": "SABITZER",
+          "location": "graphic"
+        }
+      ],
+      "event_index": 5,
+      "start_time": "00:08",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "dive",
+      "description": "goalkeeper in black uniform dives to attempt to save the shot",
+      "participants": [
+        "white-shirt player",
+        "blue-shirt defenders"
+      ],
+      "actor": "goalkeeper",
+      "object": "white soccer ball",
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "TRABZONSPOR KANALI",
+          "location": "logo"
+        }
+      ],
+      "event_index": 6,
+      "start_time": "00:09",
+      "end_time": "00:11",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "score",
+      "description": "ball enters the goal net past the diving goalkeeper",
+      "participants": [
+        "white-shirt player",
+        "blue-shirt defenders",
+        "goalkeeper"
+      ],
+      "actor": "white soccer ball",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "TRABZONSPOR KANALI",
+          "location": "logo"
+        },
+        {
+          "text": "SABITZER",
+          "location": "graphic"
+        }
+      ],
+      "event_index": 7,
+      "start_time": "00:10",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    }
+  ]
+}

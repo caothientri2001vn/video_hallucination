@@ -1,0 +1,245 @@
+{
+  "question": "Does the white object teleport from the pink object to the brown object?",
+  "pred": "The question asks if the white object teleports from the pink object to the brown object. According to the TERM CONVENTIONS, a teleport occurs if an object is hidden under one cover and then revealed under a different cover without a visible carry.\n\n1.  **Initial State (Pink Object):** At 02:02, the red-shirt woman lifts the pink cylinder to reveal a white cup with green patterns (Event 76). At 02:13, she places the pink cylinder back down over the white cup (Event 80).\n2.  **Final State (Brown Object):** At 02:17, the red-shirt woman lifts the brown cylinder to reveal a white cup with green patterns (Event 82).\n\nThe same white object (white cup with green patterns) was hidden under the pink cylinder and subsequently revealed under the brown cylinder without being visibly moved between them. This satisfies the definition of teleportation provided in the grounding rules.\n\nEvidence: Event 76 shows the white cup under the pink cylinder, and Event 82 shows the white cup under the brown cylinder.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "speak",
+      "description": "The red-shirt woman speaks while gesturing with her right hand over the pink cylinder.",
+      "participants": [
+        "red-shirt woman"
+      ],
+      "actor": "red-shirt woman",
+      "object": "pink cylinder",
+      "on_screen_text": [
+        {
+          "text": "Bé vui học toán",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Math Learning",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 75,
+      "start_time": "02:00",
+      "end_time": "02:02",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 9,
+      "round_index": 3,
+      "segment_label_resolved": "Math Lesson"
+    },
+    {
+      "event_type": "lift",
+      "description": "The red-shirt woman lifts the pink cylinder (with blue and orange hearts) to reveal a white cup with green patterns.",
+      "participants": [
+        "red-shirt woman"
+      ],
+      "actor": "red-shirt woman",
+      "cover": "pink cylinder",
+      "hidden": "white cup with green patterns",
+      "on_screen_text": [
+        {
+          "text": "Bé vui học toán",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Math Learning",
+      "continuation_hint": "complete",
+      "event_index": 76,
+      "start_time": "02:02",
+      "end_time": "02:04",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 10,
+      "round_index": 3,
+      "segment_label_resolved": "Math Lesson"
+    },
+    {
+      "event_type": "gesture",
+      "description": "The red-shirt woman holds the pink cylinder in her right hand and gestures toward the revealed white cup with her left hand.",
+      "participants": [
+        "red-shirt woman"
+      ],
+      "actor": "red-shirt woman",
+      "object": "pink cylinder",
+      "on_screen_text": [
+        {
+          "text": "Bé vui học toán",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Math Learning",
+      "continuation_hint": "complete",
+      "event_index": 77,
+      "start_time": "02:04",
+      "end_time": "02:07",
+      "sub_events": [],
+      "subtype_order": 19,
+      "subtype_total": 27,
+      "round_index": 3,
+      "segment_label_resolved": "Math Lesson"
+    },
+    {
+      "event_type": "speak",
+      "description": "The red-shirt woman continues speaking while holding the pink cylinder and looking at the white cup.",
+      "participants": [
+        "red-shirt woman"
+      ],
+      "actor": "red-shirt woman",
+      "object": "white cup with green patterns",
+      "on_screen_text": [
+        {
+          "text": "Bé vui học toán",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Math Learning",
+      "continuation_hint": "complete",
+      "event_index": 78,
+      "start_time": "02:07",
+      "end_time": "02:10",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 9,
+      "round_index": 3,
+      "segment_label_resolved": "Math Lesson"
+    },
+    {
+      "event_type": "gesture",
+      "description": "The red-shirt woman gestures with her left hand while holding the pink cylinder aloft.",
+      "participants": [
+        "red-shirt woman"
+      ],
+      "actor": "red-shirt woman",
+      "object": "pink cylinder",
+      "on_screen_text": [
+        {
+          "text": "Bé vui học toán",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Math Learning",
+      "continuation_hint": "complete",
+      "event_index": 79,
+      "start_time": "02:10",
+      "end_time": "02:13",
+      "sub_events": [],
+      "subtype_order": 20,
+      "subtype_total": 27,
+      "round_index": 3,
+      "segment_label_resolved": "Math Lesson"
+    },
+    {
+      "event_type": "place",
+      "description": "The red-shirt woman places the pink cylinder back down over the white cup with green patterns.",
+      "participants": [
+        "red-shirt woman"
+      ],
+      "actor": "red-shirt woman",
+      "cover": "pink cylinder",
+      "hidden": "white cup with green patterns",
+      "on_screen_text": [
+        {
+          "text": "Bé vui học toán",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Math Learning",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 80,
+      "start_time": "02:13",
+      "end_time": "02:15",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 10,
+      "round_index": 3,
+      "segment_label_resolved": "Math Lesson"
+    },
+    {
+      "event_type": "lecture",
+      "description": "the red-shirt woman speaks while standing behind a blue table with educational props",
+      "participants": [
+        "red-shirt woman"
+      ],
+      "actor": "red-shirt woman",
+      "on_screen_text": [
+        {
+          "text": "Bé vui học toán",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Educational Counting Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 81,
+      "start_time": "02:15",
+      "end_time": "02:17",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 5,
+      "round_index": 3,
+      "segment_label_resolved": "Math Lesson"
+    },
+    {
+      "event_type": "lift",
+      "description": "the red-shirt woman lifts the brown cylinder (with red and blue hearts) to reveal a white cup with green patterns",
+      "participants": [
+        "red-shirt woman"
+      ],
+      "actor": "red-shirt woman",
+      "cover": "brown cylinder",
+      "hidden": "white cup with green patterns",
+      "on_screen_text": [
+        {
+          "text": "Bé vui học toán",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Educational Counting Game",
+      "continuation_hint": "middle",
+      "event_index": 82,
+      "start_time": "02:17",
+      "end_time": "02:20",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 10,
+      "round_index": 3,
+      "segment_label_resolved": "Math Lesson"
+    },
+    {
+      "event_type": "place",
+      "description": "the red-shirt woman places the brown cylinder back down over the white cup with green patterns",
+      "participants": [
+        "red-shirt woman"
+      ],
+      "actor": "red-shirt woman",
+      "cover": "brown cylinder",
+      "hidden": "white cup with green patterns",
+      "on_screen_text": [
+        {
+          "text": "Bé vui học toán",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Educational Counting Game",
+      "continuation_hint": "middle",
+      "event_index": 83,
+      "start_time": "02:20",
+      "end_time": "02:22",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 10,
+      "round_index": 3,
+      "segment_label_resolved": "Math Lesson"
+    }
+  ]
+}

@@ -1,0 +1,3847 @@
+{
+  "question": "In the first round, did the white-shirted number 11 receive a serve from the red team?",
+  "pred": "Evidence: The first round (round_index: 1) corresponds to the \"Video Introduction\" segment (events 1-4), which only contains black screen and logo graphics with no volleyball action. The volleyball match begins in the second round (round_index: 2).\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "celebration": 10,
+      "walk": 10,
+      "serve": 8,
+      "react": 7,
+      "graphic": 5,
+      "high_five": 5,
+      "spike": 5,
+      "hand_raise": 5,
+      "hug": 5,
+      "scoreboard_update": 4,
+      "block_attempt": 4,
+      "hold": 3,
+      "reaction": 3,
+      "receive": 3,
+      "point_scored": 3,
+      "applaud": 3,
+      "transition": 2,
+      "scoreboard": 2,
+      "ready_position": 2,
+      "hand_gesture": 2,
+      "set": 2,
+      "hand_over": 2,
+      "black_screen": 1,
+      "court_view": 1,
+      "diving_save": 1,
+      "audience_reaction": 1,
+      "observation": 1,
+      "ball_handling": 1,
+      "close_up": 1,
+      "serve_preparation": 1,
+      "ball_travel": 1,
+      "move_to_receive": 1,
+      "ball_in_air": 1,
+      "out_of_bounds": 1,
+      "score_update": 1,
+      "replay": 1,
+      "whistle": 1,
+      "stand": 1,
+      "serve_prepare": 1,
+      "point": 1,
+      "look": 1,
+      "ball_movement": 1,
+      "player_reaction": 1,
+      "substitution": 1,
+      "handshake": 1,
+      "prepare": 1,
+      "ball_flight": 1,
+      "dive": 1,
+      "speak": 1,
+      "bounce": 1,
+      "position": 1,
+      "observe": 1,
+      "scoreboard_display": 1,
+      "ball_manipulation": 1,
+      "facial_expression": 1,
+      "posture": 1,
+      "hit": 1,
+      "shoulder_contact": 1,
+      "head_bow": 1
+    },
+    "events": [
+      {
+        "event_type": "black_screen",
+        "description": "The screen displays complete blackness with no visible content",
+        "participants": [],
+        "actor": "screen",
+        "segment_boundary": "start",
+        "segment_label": "Video Introduction",
+        "continuation_hint": "complete",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:03",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Video Introduction"
+      },
+      {
+        "event_type": "graphic",
+        "description": "A faint Titans Volleyball logo appears on the black background",
+        "participants": [],
+        "actor": "logo",
+        "object": "Titans Volleyball logo",
+        "segment_boundary": "middle",
+        "segment_label": "Video Introduction",
+        "continuation_hint": "complete",
+        "event_index": 2,
+        "start_time": "00:03",
+        "end_time": "00:05",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Video Introduction"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The Titans Volleyball logo brightens to full visibility with red and white coloring",
+        "participants": [],
+        "actor": "logo",
+        "object": "Titans Volleyball logo",
+        "segment_boundary": "middle",
+        "segment_label": "Video Introduction",
+        "continuation_hint": "complete",
+        "event_index": 3,
+        "start_time": "00:05",
+        "end_time": "00:07",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Video Introduction"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The text 'TITANS VOLLEYBALL PRODUCTION' appears below the main logo",
+        "participants": [],
+        "actor": "text",
+        "object": "production text",
+        "on_screen_text": [
+          {
+            "text": "TITANS VOLLEYBALL",
+            "location": "logo"
+          },
+          {
+            "text": "TITANS VOLLEYBALL PRODUCTION",
+            "location": "graphic"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Video Introduction",
+        "continuation_hint": "complete",
+        "event_index": 4,
+        "start_time": "00:07",
+        "end_time": "00:09",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Video Introduction"
+      },
+      {
+        "event_type": "transition",
+        "description": "The scene transitions from the logo to a volleyball match setting",
+        "participants": [],
+        "actor": "scene",
+        "segment_boundary": "start",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "complete",
+        "event_index": 5,
+        "start_time": "00:09",
+        "end_time": "00:11",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "scoreboard",
+        "description": "Scoreboard displays JPN 2-9 and CAN 2-9",
+        "participants": [],
+        "actor": "scoreboard",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 6,
+        "start_time": "00:09",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "hold",
+        "description": "A player in red jersey holds a yellow volleyball",
+        "participants": [
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "object": "yellow volleyball",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 7,
+        "start_time": "00:09",
+        "end_time": "00:12",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "serve",
+        "description": "The red-shirt player jumps and hits the volleyball over the net",
+        "participants": [
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "object": "yellow volleyball",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 8,
+        "start_time": "00:12",
+        "end_time": "00:14",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 8,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "court_view",
+        "description": "Wide view of the volleyball court showing players positioned for play",
+        "participants": [
+          "red-shirt players",
+          "white-shirt players"
+        ],
+        "actor": "camera",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 9,
+        "start_time": "00:13",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "scoreboard_update",
+        "description": "The scoreboard changes from JPN 2-9 to JPN 2-10 while CAN remains at 2-9",
+        "participants": [
+          "scoreboard display"
+        ],
+        "actor": "scoreboard display",
+        "object_before": "JPN 2-9 CAN 2-9 scoreboard",
+        "object_after": "JPN 2-10 CAN 2-9 scoreboard",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 5",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 10,
+        "start_time": "00:15",
+        "end_time": "00:17",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "diving_save",
+        "description": "White-jersey player #7 makes a full-extension dive to save the volleyball",
+        "participants": [
+          "white-jersey player #7"
+        ],
+        "actor": "white-jersey player #7",
+        "object": "yellow and blue volleyball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 5",
+        "continuation_hint": "complete",
+        "event_index": 11,
+        "start_time": "00:20",
+        "end_time": "00:23",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "reaction",
+        "description": "White-jersey players #4 and #23 react to the play with visible disappointment",
+        "participants": [
+          "white-jersey player #4",
+          "white-jersey player #23"
+        ],
+        "actor": "white-jersey player #4",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 5",
+        "continuation_hint": "complete",
+        "event_index": 12,
+        "start_time": "00:22",
+        "end_time": "00:24",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Multiple Japanese players in red jerseys begin celebrating with raised arms",
+        "participants": [
+          "red-jersey player #11",
+          "red-jersey player #17",
+          "red-jersey player #6",
+          "red-jersey player #1"
+        ],
+        "actor": "red-jersey player #11",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 5",
+        "continuation_hint": "complete",
+        "event_index": 13,
+        "start_time": "00:23",
+        "end_time": "00:25",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "high_five",
+        "description": "Red-jersey player #11 (Nishida) and red-jersey player #17 exchange a high-five",
+        "participants": [
+          "red-jersey player #11",
+          "red-jersey player #17"
+        ],
+        "actor": "red-jersey player #11",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 5",
+        "continuation_hint": "complete",
+        "event_index": 14,
+        "start_time": "00:25",
+        "end_time": "00:27",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Red-jersey player #11 (Nishida) continues celebrating with arms raised, facing the crowd",
+        "participants": [
+          "red-jersey player #11"
+        ],
+        "actor": "red-jersey player #11",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 5",
+        "continuation_hint": "complete",
+        "event_index": 15,
+        "start_time": "00:26",
+        "end_time": "00:28",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "audience_reaction",
+        "description": "The audience is seen cheering and reacting to the play",
+        "participants": [
+          "audience members"
+        ],
+        "actor": "audience members",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 5",
+        "continuation_hint": "complete",
+        "event_index": 16,
+        "start_time": "00:23",
+        "end_time": "00:28",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "observation",
+        "description": "A referee in white shirt observes the play",
+        "participants": [
+          "referee in white shirt"
+        ],
+        "actor": "referee in white shirt",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 5",
+        "continuation_hint": "complete",
+        "event_index": 17,
+        "start_time": "00:15",
+        "end_time": "00:20",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "ball_handling",
+        "description": "Red-jersey player #11 (Nishida) is seen holding and handling the volleyball",
+        "participants": [
+          "red-jersey player #11"
+        ],
+        "actor": "red-jersey player #11",
+        "object": "yellow and blue volleyball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 5",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 18,
+        "start_time": "00:29",
+        "end_time": "00:30",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "walk",
+        "description": "Coach in black shirt walks from right to left across the foreground of the court",
+        "participants": [
+          "black-shirt coach"
+        ],
+        "actor": "black-shirt coach",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 19,
+        "start_time": "00:30",
+        "end_time": "00:35",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "ready_position",
+        "description": "Player #4 in white uniform stands in ready position with hands near face",
+        "participants": [
+          "white-uniform player #4"
+        ],
+        "actor": "white-uniform player #4",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 20,
+        "start_time": "00:30",
+        "end_time": "00:37",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "walk",
+        "description": "Player #3 in red uniform walks from right to left on the court",
+        "participants": [
+          "red-uniform player #3"
+        ],
+        "actor": "red-uniform player #3",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 21,
+        "start_time": "00:30",
+        "end_time": "00:34",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "ready_position",
+        "description": "Player #7 in white uniform gets into ready position by bending forward at the waist",
+        "participants": [
+          "white-uniform player #7"
+        ],
+        "actor": "white-uniform player #7",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 22,
+        "start_time": "00:30",
+        "end_time": "00:35",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "close_up",
+        "description": "Close-up of Japanese player in red uniform adjusting collar",
+        "participants": [
+          "red-uniform Japanese player"
+        ],
+        "actor": "red-uniform Japanese player",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 23,
+        "start_time": "00:38",
+        "end_time": "00:42",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "serve_preparation",
+        "description": "Japanese player in red uniform bounces the yellow volleyball while preparing to serve",
+        "participants": [
+          "red-uniform server"
+        ],
+        "actor": "red-uniform server",
+        "object": "yellow volleyball",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 24,
+        "start_time": "00:40",
+        "end_time": "00:42",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "serve",
+        "description": "Japanese player in red uniform executes a jump serve, tossing the ball high and swinging arm to hit it",
+        "participants": [
+          "red-uniform server"
+        ],
+        "actor": "red-uniform server",
+        "object": "yellow volleyball",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 25,
+        "start_time": "00:42",
+        "end_time": "00:44",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 8,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "ball_travel",
+        "description": "Yellow volleyball travels over the net toward the Canadian side of the court",
+        "participants": [
+          "volleyball"
+        ],
+        "actor": "volleyball",
+        "object": "yellow volleyball",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 26,
+        "start_time": "00:44",
+        "end_time": "00:45",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "move_to_receive",
+        "description": "Canadian players in white uniforms move into position to receive the serve",
+        "participants": [
+          "white-uniform Canadian players"
+        ],
+        "actor": "white-uniform Canadian players",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 27,
+        "start_time": "00:44",
+        "end_time": "00:45",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "scoreboard",
+        "description": "Scoreboard shows JPN 2-10 and CAN 2-9",
+        "participants": [
+          "scoreboard"
+        ],
+        "actor": "scoreboard",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 28,
+        "start_time": "00:30",
+        "end_time": "00:45",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "spike",
+        "description": "Canadian player in white jersey number 4 jumps and hits the volleyball",
+        "participants": [
+          "white-jersey player #4 (HOAG)",
+          "white-jersey player #23",
+          "white-jersey player #7"
+        ],
+        "actor": "white-jersey player #4 (HOAG)",
+        "object": "yellow and blue volleyball",
+        "outcome": "hit",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "HIROSHIMA",
+            "location": "on-court graphic"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 29,
+        "start_time": "00:45",
+        "end_time": "00:47",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "ball_in_air",
+        "description": "Volleyball travels over the net toward the boundary line",
+        "participants": [
+          "red-jersey players",
+          "white-jersey players"
+        ],
+        "actor": "volleyball",
+        "object": "yellow and blue volleyball",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 30,
+        "start_time": "00:46",
+        "end_time": "00:49",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "reaction",
+        "description": "Japanese players in red jerseys raise hands to heads in apparent disappointment",
+        "participants": [
+          "red-jersey player #17",
+          "red-jersey player #11",
+          "red-jersey player #3"
+        ],
+        "actor": "red-jersey player #17",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 31,
+        "start_time": "00:47",
+        "end_time": "00:50",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Canadian player in white jersey #4 raises arms in celebration",
+        "participants": [
+          "white-jersey player #4 (HOAG)"
+        ],
+        "actor": "white-jersey player #4 (HOAG)",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 32,
+        "start_time": "00:48",
+        "end_time": "00:51",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "out_of_bounds",
+        "description": "Volleyball lands out of bounds as indicated by the 'OUT' display on the screen",
+        "participants": [],
+        "actor": "volleyball",
+        "object": "yellow and blue volleyball",
+        "outcome": "out",
+        "on_screen_text": [
+          {
+            "text": "OUT",
+            "location": "scoreboard"
+          },
+          {
+            "text": "JPN 2 10",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 33,
+        "start_time": "00:50",
+        "end_time": "00:53",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "score_update",
+        "description": "Scoreboard updates from JPN 10 to JPN 11",
+        "participants": [],
+        "actor": "scoreboard",
+        "object_before": "scoreboard showing JPN 10",
+        "object_after": "scoreboard showing JPN 11",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 11",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 34,
+        "start_time": "00:52",
+        "end_time": "00:55",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Japanese player in red jersey #11 (NISHIDA) celebrates with arms raised",
+        "participants": [
+          "red-jersey player #11 (NISHIDA)"
+        ],
+        "actor": "red-jersey player #11 (NISHIDA)",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 11",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 35,
+        "start_time": "00:53",
+        "end_time": "00:57",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "high_five",
+        "description": "Japanese player in red jersey #11 high-fives teammate in red jersey #17",
+        "participants": [
+          "red-jersey player #11 (NISHIDA)",
+          "red-jersey player #17"
+        ],
+        "actor": "red-jersey player #11 (NISHIDA)",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 11",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 36,
+        "start_time": "00:55",
+        "end_time": "00:58",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "replay",
+        "description": "Match replay shown on large screen showing the ball going out of bounds",
+        "participants": [],
+        "actor": "replay screen",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "JPN 10",
+            "location": "replay screen"
+          },
+          {
+            "text": "OUT",
+            "location": "replay screen"
+          },
+          {
+            "text": "CHALLENGE",
+            "location": "replay screen"
+          },
+          {
+            "text": "TIME OUT",
+            "location": "replay screen"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 37,
+        "start_time": "00:56",
+        "end_time": "00:59",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "reaction",
+        "description": "Canadian player in white jersey #4 lowers arms after realizing the point was lost",
+        "participants": [
+          "white-jersey player #4 (HOAG)"
+        ],
+        "actor": "white-jersey player #4 (HOAG)",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 11",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 38,
+        "start_time": "00:58",
+        "end_time": "01:00",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "whistle",
+        "description": "referee in blue vest blows a whistle",
+        "participants": [
+          "referee in blue vest and white shirt",
+          "spectators"
+        ],
+        "actor": "referee in blue vest and white shirt",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 11",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "VOLLEYBALL WORLD CUP JAPAN 2019",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball World Cup Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 39,
+        "start_time": "01:00",
+        "end_time": "01:03",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "referee in blue vest extends right arm outward with palm facing up",
+        "participants": [
+          "referee in blue vest and white shirt",
+          "spectators"
+        ],
+        "actor": "referee in blue vest and white shirt",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 11",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball World Cup Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 40,
+        "start_time": "01:03",
+        "end_time": "01:06",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "hand_gesture",
+        "description": "referee in blue vest moves right hand downward in a chopping motion",
+        "participants": [
+          "referee in blue vest and white shirt"
+        ],
+        "actor": "referee in blue vest and white shirt",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 11",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball World Cup Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 41,
+        "start_time": "01:06",
+        "end_time": "01:08",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "walk",
+        "description": "referee in blue vest takes a small step forward",
+        "participants": [
+          "referee in blue vest and white shirt"
+        ],
+        "actor": "referee in blue vest and white shirt",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 11",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball World Cup Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 42,
+        "start_time": "01:08",
+        "end_time": "01:10",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "hand_gesture",
+        "description": "referee in blue vest makes a circular motion with right hand",
+        "participants": [
+          "referee in blue vest and white shirt"
+        ],
+        "actor": "referee in blue vest and white shirt",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 11",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball World Cup Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 43,
+        "start_time": "01:10",
+        "end_time": "01:12",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "stand",
+        "description": "referee in blue vest stands still with hands by sides",
+        "participants": [
+          "referee in blue vest and white shirt"
+        ],
+        "actor": "referee in blue vest and white shirt",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 11",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball World Cup Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 44,
+        "start_time": "01:12",
+        "end_time": "01:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "serve_prepare",
+        "description": "Player in red uniform (right side of court) bounces the yellow volleyball while preparing to serve",
+        "participants": [
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "object": "yellow volleyball",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 45,
+        "start_time": "01:15",
+        "end_time": "01:17",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "serve",
+        "description": "Player in red uniform executes a jump serve, hitting the yellow volleyball over the net",
+        "participants": [
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "object": "yellow volleyball",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 46,
+        "start_time": "01:17",
+        "end_time": "01:19",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 8,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "receive",
+        "description": "Player in white uniform on left side of court extends arms to receive the served yellow volleyball",
+        "participants": [
+          "white-shirt player"
+        ],
+        "actor": "white-shirt player",
+        "object": "yellow volleyball",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 47,
+        "start_time": "01:19",
+        "end_time": "01:21",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "set",
+        "description": "Player in white uniform sets up the yellow volleyball for an attack",
+        "participants": [
+          "white-shirt player"
+        ],
+        "actor": "white-shirt player",
+        "object": "yellow volleyball",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 48,
+        "start_time": "01:21",
+        "end_time": "01:23",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "spike",
+        "description": "Player in white uniform jumps and spikes the yellow volleyball toward the net",
+        "participants": [
+          "white-shirt player"
+        ],
+        "actor": "white-shirt player",
+        "object": "yellow volleyball",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 49,
+        "start_time": "01:23",
+        "end_time": "01:25",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "block_attempt",
+        "description": "Two players in red uniforms jump near the net to attempt blocking the spiked yellow volleyball",
+        "participants": [
+          "red-shirt player",
+          "red-shirt player"
+        ],
+        "actor": "red-shirt players",
+        "object": "yellow volleyball",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 50,
+        "start_time": "01:25",
+        "end_time": "01:27",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "point_scored",
+        "description": "Yellow volleyball lands out of bounds on the white team's side of the court",
+        "participants": [],
+        "actor": null,
+        "object": "yellow volleyball",
+        "outcome": "point for Japan",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 51,
+        "start_time": "01:27",
+        "end_time": "01:28",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "scoreboard_update",
+        "description": "Scoreboard updates from JPN 11 to JPN 12 while maintaining JPN 2-2 and CAN 2-2",
+        "participants": [],
+        "actor": null,
+        "object_before": "scoreboard showing JPN 11",
+        "object_after": "scoreboard showing JPN 12",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 12",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 52,
+        "start_time": "01:28",
+        "end_time": "01:29",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Players in red uniforms gather and high-five each other near the net after scoring a point",
+        "participants": [
+          "red-shirt player",
+          "red-shirt player",
+          "red-shirt player"
+        ],
+        "actor": "red-shirt players",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 53,
+        "start_time": "01:28",
+        "end_time": "01:29",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "react",
+        "description": "Player in red uniform with number 6 and 'Japanet' sponsor shows intense emotional reaction with mouth open",
+        "participants": [
+          "red-shirt player #6"
+        ],
+        "actor": "red-shirt player #6",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 54,
+        "start_time": "01:29",
+        "end_time": "01:30",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 7,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "react",
+        "description": "Player in white uniform with bald head and beard touches his nose while looking down in disappointment",
+        "participants": [
+          "white-shirt player"
+        ],
+        "actor": "white-shirt player",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match - Set 3",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 55,
+        "start_time": "01:30",
+        "end_time": "01:30",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 7,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "spike",
+        "description": "Canadian player in white uniform spikes the volleyball over the net",
+        "participants": [
+          "white-shirt player",
+          "red-shirt players"
+        ],
+        "actor": "white-shirt player",
+        "object": "yellow and blue volleyball",
+        "outcome": "hit",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 12",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TITANS VOLLEYBALL",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 56,
+        "start_time": "01:30",
+        "end_time": "01:32",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "block_attempt",
+        "description": "Two Japanese players in red uniforms jump with hands raised to block the ball",
+        "participants": [
+          "red-shirt players",
+          "white-shirt player"
+        ],
+        "actor": "red-shirt players",
+        "object": "yellow and blue volleyball",
+        "outcome": "miss",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 12",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TITANS VOLLEYBALL",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 57,
+        "start_time": "01:32",
+        "end_time": "01:34",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "point",
+        "description": "Volleyball lands on the Japanese side of the court, scoring a point for Canada",
+        "participants": [
+          "white-shirt player",
+          "red-shirt players"
+        ],
+        "actor": "volleyball",
+        "object": "yellow and blue volleyball",
+        "outcome": "in",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 12",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TITANS VOLLEYBALL",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 58,
+        "start_time": "01:34",
+        "end_time": "01:36",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "react",
+        "description": "Japanese player wearing #6 jersey shouts with mouth open in frustration",
+        "participants": [
+          "red-shirt player #6"
+        ],
+        "actor": "red-shirt player #6",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 12",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "Japanet",
+            "location": "jersey"
+          },
+          {
+            "text": "TITANS VOLLEYBALL",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 59,
+        "start_time": "01:36",
+        "end_time": "01:38",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 7,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "react",
+        "description": "Japanese player #6 continues showing intense emotion with clenched fists",
+        "participants": [
+          "red-shirt player #6"
+        ],
+        "actor": "red-shirt player #6",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "Japanet",
+            "location": "jersey"
+          },
+          {
+            "text": "TITANS VOLLEYBALL",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 60,
+        "start_time": "01:38",
+        "end_time": "01:40",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 7,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "look",
+        "description": "Bald Canadian player with beard looks intently toward the court",
+        "participants": [
+          "bald white-shirt player"
+        ],
+        "actor": "bald white-shirt player",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "TITANS VOLLEYBALL",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 61,
+        "start_time": "01:40",
+        "end_time": "01:42",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "react",
+        "description": "Bald Canadian player touches his nose while maintaining focus",
+        "participants": [
+          "bald white-shirt player"
+        ],
+        "actor": "bald white-shirt player",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 12",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TITANS VOLLEYBALL",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 62,
+        "start_time": "01:42",
+        "end_time": "01:45",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 7,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "serve",
+        "description": "red-shirt player prepares and executes a volleyball serve",
+        "participants": [
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "object": "yellow volleyball",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 12",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 63,
+        "start_time": "01:45",
+        "end_time": "01:50",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 8,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "ball_movement",
+        "description": "volleyball travels across the net toward the white-shirted team",
+        "participants": [
+          "volleyball"
+        ],
+        "actor": "volleyball",
+        "object": "yellow volleyball",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 12",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "complete",
+        "event_index": 64,
+        "start_time": "01:50",
+        "end_time": "01:52",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "receive",
+        "description": "white-shirt players receive the incoming volleyball",
+        "participants": [
+          "white-shirt player",
+          "white-shirt player"
+        ],
+        "actor": "white-shirt players",
+        "object": "yellow volleyball",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 12",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "complete",
+        "event_index": 65,
+        "start_time": "01:52",
+        "end_time": "01:54",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "spike",
+        "description": "white-shirt player jumps and spikes the volleyball",
+        "participants": [
+          "white-shirt player"
+        ],
+        "actor": "white-shirt player",
+        "object": "yellow volleyball",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 12",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "complete",
+        "event_index": 66,
+        "start_time": "01:54",
+        "end_time": "01:55",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "block_attempt",
+        "description": "red-shirt players jump to attempt blocking the spike",
+        "participants": [
+          "red-shirt player",
+          "red-shirt player"
+        ],
+        "actor": "red-shirt players",
+        "object": "yellow volleyball",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 12",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "complete",
+        "event_index": 67,
+        "start_time": "01:55",
+        "end_time": "01:56",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "point_scored",
+        "description": "volleyball lands on the court, scoring a point for Japan",
+        "participants": [
+          "volleyball"
+        ],
+        "actor": "volleyball",
+        "object": "yellow volleyball",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 12",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "complete",
+        "event_index": 68,
+        "start_time": "01:56",
+        "end_time": "01:57",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "scoreboard_update",
+        "description": "scoreboard updates from JPN 12 to JPN 13",
+        "participants": [
+          "scoreboard"
+        ],
+        "actor": "scoreboard",
+        "object_before": "scoreboard showing JPN 12",
+        "object_after": "scoreboard showing JPN 13",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 13",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "complete",
+        "event_index": 69,
+        "start_time": "01:57",
+        "end_time": "01:58",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "high_five",
+        "description": "red-shirt player high-fives teammate after scoring",
+        "participants": [
+          "red-shirt player",
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "object": "teammate's hand",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 13",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 70,
+        "start_time": "01:58",
+        "end_time": "02:00",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "red-shirt players gather and celebrate the point with pats on back",
+        "participants": [
+          "red-shirt player",
+          "red-shirt player",
+          "red-shirt player"
+        ],
+        "actor": "red-shirt players",
+        "object": "teammate's back",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 13",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 71,
+        "start_time": "01:59",
+        "end_time": "02:00",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "player_reaction",
+        "description": "NISHIDA (11) in red jersey turns and reacts to the point",
+        "participants": [
+          "NISHIDA (11)"
+        ],
+        "actor": "NISHIDA (11)",
+        "object": "none",
+        "on_screen_text": [
+          {
+            "text": "NISHIDA",
+            "location": "jersey"
+          },
+          {
+            "text": "11",
+            "location": "jersey"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 72,
+        "start_time": "01:58",
+        "end_time": "02:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "walk",
+        "description": "Player in white jersey number 7 walks on the court",
+        "participants": [
+          "white-jersey player 7"
+        ],
+        "actor": "white-jersey player 7",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 13",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TITANS",
+            "location": "logo"
+          }
+        ],
+        "event_index": 73,
+        "start_time": "02:00",
+        "end_time": "02:02",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "walk",
+        "description": "Player in white jersey number 6 (BARNES) walks across the court",
+        "participants": [
+          "white-jersey player 6"
+        ],
+        "actor": "white-jersey player 6",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 13",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TITANS",
+            "location": "logo"
+          }
+        ],
+        "event_index": 74,
+        "start_time": "02:02",
+        "end_time": "02:05",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "substitution",
+        "description": "Substitution graphic appears showing player changes",
+        "participants": [
+          "white-jersey player 6",
+          "white-jersey player 7"
+        ],
+        "actor": "substitution graphic",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "complete",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 13",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TITANS",
+            "location": "logo"
+          },
+          {
+            "text": "SUBSTITUTION",
+            "location": "lower_third"
+          },
+          {
+            "text": "6. R.BARNES",
+            "location": "lower_third"
+          },
+          {
+            "text": "7. S.MAAR",
+            "location": "lower_third"
+          }
+        ],
+        "event_index": 75,
+        "start_time": "02:05",
+        "end_time": "02:08",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "handshake",
+        "description": "Player in white jersey number 7 shakes hands with player in white jersey number 6 (BARNES)",
+        "participants": [
+          "white-jersey player 7",
+          "white-jersey player 6"
+        ],
+        "actor": "white-jersey player 7",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "complete",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 13",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TITANS",
+            "location": "logo"
+          },
+          {
+            "text": "SUBSTITUTION",
+            "location": "lower_third"
+          },
+          {
+            "text": "6. R.BARNES",
+            "location": "lower_third"
+          },
+          {
+            "text": "7. S.MAAR",
+            "location": "lower_third"
+          }
+        ],
+        "event_index": 76,
+        "start_time": "02:08",
+        "end_time": "02:11",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "walk",
+        "description": "Players in white jerseys walk to their positions on the court after substitution",
+        "participants": [
+          "white-jersey player 6",
+          "white-jersey player 7"
+        ],
+        "actor": "white-jersey players",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 13",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TITANS",
+            "location": "logo"
+          },
+          {
+            "text": "SUBSTITUTION",
+            "location": "lower_third"
+          },
+          {
+            "text": "6. R.BARNES",
+            "location": "lower_third"
+          },
+          {
+            "text": "7. S.MAAR",
+            "location": "lower_third"
+          }
+        ],
+        "event_index": 77,
+        "start_time": "02:11",
+        "end_time": "02:15",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "prepare",
+        "description": "A player in red jersey prepares to serve the volleyball",
+        "participants": [
+          "red-jersey player"
+        ],
+        "actor": "red-jersey player",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 13",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TITANS",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 78,
+        "start_time": "02:15",
+        "end_time": "02:17",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "serve",
+        "description": "The red-jersey player executes a volleyball serve",
+        "participants": [
+          "red-jersey player"
+        ],
+        "actor": "red-jersey player",
+        "object": "yellow volleyball",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 13",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TITANS",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 79,
+        "start_time": "02:17",
+        "end_time": "02:19",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 8,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "ball_flight",
+        "description": "The volleyball travels over the net toward the opposing team",
+        "participants": [],
+        "object": "yellow volleyball",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 13",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TITANS",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 80,
+        "start_time": "02:19",
+        "end_time": "02:21",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "receive",
+        "description": "A white/pink-jersey player moves to receive the served volleyball",
+        "participants": [
+          "white/pink-jersey player"
+        ],
+        "actor": "white/pink-jersey player",
+        "object": "yellow volleyball",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 13",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TITANS",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 81,
+        "start_time": "02:21",
+        "end_time": "02:23",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "set",
+        "description": "A white/pink-jersey player sets the volleyball for an attack",
+        "participants": [
+          "white/pink-jersey player"
+        ],
+        "actor": "white/pink-jersey player",
+        "object": "yellow volleyball",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 13",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TITANS",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 82,
+        "start_time": "02:23",
+        "end_time": "02:25",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "spike",
+        "description": "A white/pink-jersey player jumps and spikes the volleyball over the net",
+        "participants": [
+          "white/pink-jersey player"
+        ],
+        "actor": "white/pink-jersey player",
+        "object": "yellow volleyball",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 13",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TITANS",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 83,
+        "start_time": "02:25",
+        "end_time": "02:27",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "block_attempt",
+        "description": "Two red-jersey players jump to attempt to block the spike",
+        "participants": [
+          "red-jersey player",
+          "red-jersey player"
+        ],
+        "actor": "red-jersey players",
+        "object": "yellow volleyball",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 13",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TITANS",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 84,
+        "start_time": "02:27",
+        "end_time": "02:29",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "dive",
+        "description": "A red-jersey player dives to attempt to save the spiked volleyball",
+        "participants": [
+          "red-jersey player"
+        ],
+        "actor": "red-jersey player",
+        "object": "yellow volleyball",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 13",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TITANS",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 85,
+        "start_time": "02:29",
+        "end_time": "02:30",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "speak",
+        "description": "coach in black with red stripes speaks while holding a tablet",
+        "participants": [
+          "black-shirt coach",
+          "red-shirt player #11"
+        ],
+        "actor": "black-shirt coach",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 14",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "MATCH POINT",
+            "location": "scoreboard"
+          },
+          {
+            "text": "WORLD CUP JAPAN 2019",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 86,
+        "start_time": "02:30",
+        "end_time": "02:35",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "hand_over",
+        "description": "coach hands tablet to another person off-screen",
+        "participants": [
+          "black-shirt coach",
+          "black-shirt assistant"
+        ],
+        "actor": "black-shirt coach",
+        "object": "black tablet",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 14",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "MATCH POINT",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 87,
+        "start_time": "02:34",
+        "end_time": "02:37",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "hand_over",
+        "description": "coach hands a volleyball to player #11",
+        "participants": [
+          "black-shirt coach",
+          "red-shirt player #11"
+        ],
+        "actor": "black-shirt coach",
+        "object": "yellow and blue volleyball",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 14",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "MATCH POINT",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 88,
+        "start_time": "02:38",
+        "end_time": "02:41",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "hold",
+        "description": "player #11 holds the volleyball and prepares for service",
+        "participants": [
+          "red-shirt player #11"
+        ],
+        "actor": "red-shirt player #11",
+        "object": "yellow and blue volleyball",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 14",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "MATCH POINT",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 89,
+        "start_time": "02:38",
+        "end_time": "02:45",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "applaud",
+        "description": "audience members in the stands wave Japanese flags and cheer loudly",
+        "participants": [
+          "audience members"
+        ],
+        "actor": "audience members",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 14",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "MATCH POINT",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 90,
+        "start_time": "02:30",
+        "end_time": "02:45",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "walk",
+        "description": "coach walks away from the player toward the sideline",
+        "participants": [
+          "black-shirt coach"
+        ],
+        "actor": "black-shirt coach",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 14",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "MATCH POINT",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 91,
+        "start_time": "02:42",
+        "end_time": "02:45",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "applaud",
+        "description": "The crowd in the stands is actively cheering, waving hands, and showing excitement",
+        "participants": [
+          "audience members"
+        ],
+        "actor": "audience members",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 14",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "MATCH POINT",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TITANS",
+            "location": "logo"
+          }
+        ],
+        "event_index": 92,
+        "start_time": "02:45",
+        "end_time": "03:00",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "hold",
+        "description": "Player in red jersey #11 is holding a volleyball in his right hand",
+        "participants": [
+          "red-shirt player #11"
+        ],
+        "actor": "red-shirt player #11",
+        "object": "yellow and blue volleyball",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues",
+        "event_index": 93,
+        "start_time": "02:45",
+        "end_time": "02:52",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "bounce",
+        "description": "Player in red jersey #11 bounces the volleyball multiple times while preparing to serve",
+        "participants": [
+          "red-shirt player #11"
+        ],
+        "actor": "red-shirt player #11",
+        "object": "yellow and blue volleyball",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues",
+        "event_index": 94,
+        "start_time": "02:50",
+        "end_time": "02:53",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "serve",
+        "description": "Player in red jersey #11 serves the volleyball with a jump serve motion",
+        "participants": [
+          "red-shirt player #11"
+        ],
+        "actor": "red-shirt player #11",
+        "object": "yellow and blue volleyball",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues",
+        "event_index": 95,
+        "start_time": "02:53",
+        "end_time": "02:55",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 8,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "position",
+        "description": "Players on the court move into position to respond to the serve, with some players raising their hands in anticipation",
+        "participants": [
+          "red-shirt players",
+          "white-shirt players"
+        ],
+        "actor": "red-shirt players",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 96,
+        "start_time": "02:55",
+        "end_time": "03:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "observe",
+        "description": "Referee in black uniform stands on the referee stand observing the play",
+        "participants": [
+          "black-shirt referee"
+        ],
+        "actor": "black-shirt referee",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 97,
+        "start_time": "02:45",
+        "end_time": "03:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "scoreboard_display",
+        "description": "Scoreboard displays 'MATCH POINT' with JPN 2-14 and CAN 2-9",
+        "participants": [
+          "scoreboard"
+        ],
+        "actor": "scoreboard",
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 14",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "MATCH POINT",
+            "location": "scoreboard"
+          }
+        ],
+        "event_index": 98,
+        "start_time": "02:45",
+        "end_time": "03:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "ball_manipulation",
+        "description": "Japanese player in red uniform (#11) holds and positions a yellow and blue volleyball in preparation for a serve",
+        "participants": [
+          "red-shirt player #11"
+        ],
+        "actor": "red-shirt player #11",
+        "object": "yellow and blue volleyball",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 14",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "MATCH POINT",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 99,
+        "start_time": "03:00",
+        "end_time": "03:02",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "facial_expression",
+        "description": "Canadian player in white uniform displays various facial expressions including focused gaze, deep breathing, and tense anticipation",
+        "participants": [
+          "white-shirt player"
+        ],
+        "actor": "white-shirt player",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 14",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "MATCH POINT",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 100,
+        "start_time": "03:02",
+        "end_time": "03:12",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "posture",
+        "description": "Japanese player in red uniform stands with hands behind head, looking through the net with a tense expression",
+        "participants": [
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 14",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "MATCH POINT",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 101,
+        "start_time": "03:12",
+        "end_time": "03:13",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "serve",
+        "description": "Japanese player in red uniform executes a jump serve, hitting the volleyball over the net toward the Canadian side",
+        "participants": [
+          "red-shirt server"
+        ],
+        "actor": "red-shirt server",
+        "object": "yellow and blue volleyball",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 14",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "MATCH POINT",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 102,
+        "start_time": "03:13",
+        "end_time": "03:15",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 8,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "serve",
+        "description": "A player in red jersey serves the ball from the right side of the court.",
+        "participants": [
+          "red-shirt player"
+        ],
+        "actor": "red-shirt player",
+        "object": "volleyball",
+        "outcome": "in",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 | 14",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 | 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "MATCH POINT",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 103,
+        "start_time": "03:15",
+        "end_time": "03:17",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 8,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "hit",
+        "description": "A player in white jersey hits the ball over the net toward the Japanese side.",
+        "participants": [
+          "white-shirt player"
+        ],
+        "actor": "white-shirt player",
+        "object": "volleyball",
+        "outcome": "in",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 | 14",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 | 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "MATCH POINT",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 104,
+        "start_time": "03:17",
+        "end_time": "03:18",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "point_scored",
+        "description": "The Japanese team scores the final point as the ball lands on the Canadian side.",
+        "participants": [
+          "red-shirt players"
+        ],
+        "actor": "red-shirt players",
+        "object": "volleyball",
+        "outcome": "scored",
+        "on_screen_text": [
+          {
+            "text": "JPN 2 | 14",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 | 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "MATCH POINT",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "complete",
+        "event_index": 105,
+        "start_time": "03:18",
+        "end_time": "03:19",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "scoreboard_update",
+        "description": "The scoreboard updates to show Japan winning the match with a final score of 3-2.",
+        "participants": [],
+        "actor": "scoreboard",
+        "object_before": "scoreboard showing JPN 2 | 14",
+        "object_after": "scoreboard showing JPN 3 | 15",
+        "on_screen_text": [
+          {
+            "text": "JPN 3 | 15",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 | 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "complete",
+        "event_index": 106,
+        "start_time": "03:19",
+        "end_time": "03:21",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "A Japanese player in red jersey raises both arms toward the crowd in celebration.",
+        "participants": [
+          "red-shirt player #11"
+        ],
+        "actor": "red-shirt player #11",
+        "on_screen_text": [
+          {
+            "text": "JPN 3 | 15",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2 | 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 107,
+        "start_time": "03:20",
+        "end_time": "03:22",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "hug",
+        "description": "Multiple Japanese players in red jerseys embrace each other in celebration.",
+        "participants": [
+          "red-shirt player #11",
+          "red-shirt player #3",
+          "red-shirt player #15"
+        ],
+        "actor": "red-shirt player #11",
+        "segment_boundary": "end",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 108,
+        "start_time": "03:22",
+        "end_time": "03:25",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "The entire Japanese team gathers in a group hug on the court.",
+        "participants": [
+          "red-shirt players"
+        ],
+        "actor": "red-shirt players",
+        "on_screen_text": [
+          {
+            "text": "JPN 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2",
+            "location": "scoreboard"
+          },
+          {
+            "text": "22 25 25 23 15",
+            "location": "scoreboard"
+          },
+          {
+            "text": "25 20 23 25 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 109,
+        "start_time": "03:24",
+        "end_time": "03:27",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "react",
+        "description": "A Canadian player in white jersey looks disappointed with the match outcome.",
+        "participants": [
+          "white-shirt player"
+        ],
+        "actor": "white-shirt player",
+        "on_screen_text": [
+          {
+            "text": "JPN 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2",
+            "location": "scoreboard"
+          },
+          {
+            "text": "22 25 25 23 15",
+            "location": "scoreboard"
+          },
+          {
+            "text": "25 20 23 25 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "complete",
+        "event_index": 110,
+        "start_time": "03:28",
+        "end_time": "03:30",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 7,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Multiple players in red jerseys form a tight huddle with hands raised in victory",
+        "participants": [
+          "red-jersey players"
+        ],
+        "actor": "red-jersey players",
+        "on_screen_text": [
+          {
+            "text": "JPN 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2",
+            "location": "scoreboard"
+          },
+          {
+            "text": "22 25 25 23 15",
+            "location": "scoreboard"
+          },
+          {
+            "text": "25 20 23 25 9",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TITANS",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "complete",
+        "event_index": 111,
+        "start_time": "03:30",
+        "end_time": "03:33",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "Player with jersey number 20 raises right hand high above head",
+        "participants": [
+          "red-jersey player #20"
+        ],
+        "actor": "red-jersey player #20",
+        "on_screen_text": [
+          {
+            "text": "JPN 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 112,
+        "start_time": "03:30",
+        "end_time": "03:32",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "hug",
+        "description": "Player with jersey number 15 embraces a teammate in the huddle",
+        "participants": [
+          "red-jersey player #15",
+          "red-jersey player"
+        ],
+        "actor": "red-jersey player #15",
+        "on_screen_text": [
+          {
+            "text": "JPN 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "22 25 25 23 15",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 113,
+        "start_time": "03:30",
+        "end_time": "03:33",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "high_five",
+        "description": "Two red-jersey players exchange a high-five in the celebration huddle",
+        "participants": [
+          "red-jersey player",
+          "red-jersey player"
+        ],
+        "actor": "red-jersey player",
+        "on_screen_text": [
+          {
+            "text": "CAN 2",
+            "location": "scoreboard"
+          },
+          {
+            "text": "25 20 23 25 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 114,
+        "start_time": "03:31",
+        "end_time": "03:34",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "Multiple players raise both hands above their heads in victory",
+        "participants": [
+          "red-jersey players"
+        ],
+        "actor": "red-jersey players",
+        "on_screen_text": [
+          {
+            "text": "TITANS",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 115,
+        "start_time": "03:32",
+        "end_time": "03:35",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "hug",
+        "description": "Player with jersey number 14 hugs a teammate in the center of the huddle",
+        "participants": [
+          "red-jersey player #14",
+          "red-jersey player"
+        ],
+        "actor": "red-jersey player #14",
+        "on_screen_text": [
+          {
+            "text": "JPN 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 116,
+        "start_time": "03:33",
+        "end_time": "03:36",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Players jump and cheer together in the huddle formation",
+        "participants": [
+          "red-jersey players"
+        ],
+        "actor": "red-jersey players",
+        "on_screen_text": [
+          {
+            "text": "22 25 25 23 15",
+            "location": "scoreboard"
+          },
+          {
+            "text": "25 20 23 25 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 117,
+        "start_time": "03:34",
+        "end_time": "03:37",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "walk",
+        "description": "Some players begin to break from the huddle and walk toward the court edge",
+        "participants": [
+          "red-jersey players"
+        ],
+        "actor": "red-jersey players",
+        "on_screen_text": [
+          {
+            "text": "JPN 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TITANS",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 118,
+        "start_time": "03:36",
+        "end_time": "03:39",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "react",
+        "description": "Player in red jersey turns and smiles broadly at the crowd",
+        "participants": [
+          "red-jersey player"
+        ],
+        "actor": "red-jersey player",
+        "on_screen_text": [
+          {
+            "text": "CAN 2",
+            "location": "scoreboard"
+          },
+          {
+            "text": "25 20 23 25 9",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 119,
+        "start_time": "03:38",
+        "end_time": "03:42",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 7,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "Player with jersey number 16 raises hand in acknowledgment of crowd",
+        "participants": [
+          "red-jersey player #16"
+        ],
+        "actor": "red-jersey player #16",
+        "on_screen_text": [
+          {
+            "text": "JPN 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "22 25 25 23 15",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 120,
+        "start_time": "03:39",
+        "end_time": "03:43",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "walk",
+        "description": "Team members begin to disperse from the celebration huddle",
+        "participants": [
+          "red-jersey players"
+        ],
+        "actor": "red-jersey players",
+        "on_screen_text": [
+          {
+            "text": "JPN 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TITANS",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "complete",
+        "event_index": 121,
+        "start_time": "03:41",
+        "end_time": "03:45",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "celebration",
+        "description": "Japanese volleyball players in red jerseys begin celebrating on the court after winning the match",
+        "participants": [
+          "red-jersey players"
+        ],
+        "actor": "red-jersey players",
+        "on_screen_text": [
+          {
+            "text": "JPN 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2",
+            "location": "scoreboard"
+          },
+          {
+            "text": "TITANS VOLLEYBALL",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 122,
+        "start_time": "03:45",
+        "end_time": "03:48",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "high_five",
+        "description": "Multiple red-jersey players high-five each other with both hands raised",
+        "participants": [
+          "red-jersey players"
+        ],
+        "actor": "red-jersey players",
+        "on_screen_text": [
+          {
+            "text": "JPN 3",
+            "location": "scoreboard"
+          },
+          {
+            "text": "CAN 2",
+            "location": "scoreboard"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 123,
+        "start_time": "03:48",
+        "end_time": "03:51",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "hug",
+        "description": "Player NISHIDA (11) hugs teammates while celebrating on the court",
+        "participants": [
+          "NISHIDA 11",
+          "red-jersey teammates"
+        ],
+        "actor": "NISHIDA 11",
+        "on_screen_text": [
+          {
+            "text": "NISHIDA",
+            "location": "jersey_name"
+          },
+          {
+            "text": "11",
+            "location": "jersey_number"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 124,
+        "start_time": "03:51",
+        "end_time": "03:54",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "walk",
+        "description": "NISHIDA (11) walks toward teammates while continuing to celebrate",
+        "participants": [
+          "NISHIDA 11",
+          "red-jersey players"
+        ],
+        "actor": "NISHIDA 11",
+        "on_screen_text": [
+          {
+            "text": "NISHIDA",
+            "location": "jersey_name"
+          },
+          {
+            "text": "11",
+            "location": "jersey_number"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 125,
+        "start_time": "03:54",
+        "end_time": "03:57",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 10,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "hug",
+        "description": "NISHIDA (11) hugs a player in black jersey while the crowd cheers in the background",
+        "participants": [
+          "NISHIDA 11",
+          "black-jersey player"
+        ],
+        "actor": "NISHIDA 11",
+        "on_screen_text": [
+          {
+            "text": "NISHIDA",
+            "location": "jersey_name"
+          },
+          {
+            "text": "11",
+            "location": "jersey_number"
+          },
+          {
+            "text": "10",
+            "location": "jersey_number"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Volleyball Match",
+        "continuation_hint": "complete",
+        "event_index": 126,
+        "start_time": "03:57",
+        "end_time": "04:00",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "shoulder_contact",
+        "description": "the red-shirt man places his hand on the black-shirt man's shoulder",
+        "participants": [
+          "red-shirt man",
+          "black-shirt man"
+        ],
+        "actor": "red-shirt man",
+        "on_screen_text": [
+          {
+            "text": "TITANS",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 127,
+        "start_time": "04:00",
+        "end_time": "04:02",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "head_bow",
+        "description": "the black-shirt man bows his head downward",
+        "participants": [
+          "black-shirt man"
+        ],
+        "actor": "black-shirt man",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 128,
+        "start_time": "04:03",
+        "end_time": "04:05",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "applaud",
+        "description": "the black-shirt man claps his hands together",
+        "participants": [
+          "black-shirt man"
+        ],
+        "actor": "black-shirt man",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 129,
+        "start_time": "04:06",
+        "end_time": "04:08",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "transition",
+        "description": "the scene begins to darken significantly",
+        "participants": [],
+        "actor": "",
+        "on_screen_text": [],
+        "segment_boundary": "end",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 130,
+        "start_time": "04:09",
+        "end_time": "04:11",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "graphic",
+        "description": "a black end screen appears with subscription prompts and logos",
+        "participants": [],
+        "actor": "",
+        "on_screen_text": [
+          {
+            "text": "TITANS5",
+            "location": "logo"
+          },
+          {
+            "text": "FIVB",
+            "location": "logo"
+          },
+          {
+            "text": "SUBSCRIBE",
+            "location": "banner"
+          },
+          {
+            "text": "NEW VIDEO",
+            "location": "banner"
+          },
+          {
+            "text": "THANKS FOR WATCHING",
+            "location": "banner"
+          },
+          {
+            "text": "DON'T FORGET TO LIKE THE VIDEO",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "",
+        "continuation_hint": "complete",
+        "event_index": 131,
+        "start_time": "04:12",
+        "end_time": "04:15",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      },
+      {
+        "event_type": "graphic",
+        "description": "Static end screen with logos and calls to action remains unchanged",
+        "participants": [],
+        "actor": "",
+        "object": "",
+        "segment_boundary": "end",
+        "segment_label": "Video End Screen",
+        "continuation_hint": "continues_after_chunk",
+        "on_screen_text": [
+          {
+            "text": "TITANS VOLLEYBALL",
+            "location": "logo"
+          },
+          {
+            "text": "FIVB",
+            "location": "logo"
+          },
+          {
+            "text": "SUBSCRIBE",
+            "location": "other"
+          },
+          {
+            "text": "NEW VIDEO",
+            "location": "other"
+          },
+          {
+            "text": "THANKS FOR WATCHING",
+            "location": "other"
+          },
+          {
+            "text": "DON'T FORGET TO LIKE THE VIDEO",
+            "location": "other"
+          }
+        ],
+        "event_index": 132,
+        "start_time": "04:15",
+        "end_time": "04:24",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Volleyball Match"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Video Introduction",
+        "event_index_range": [
+          1,
+          4
+        ]
+      },
+      {
+        "round_index": 2,
+        "label": "Volleyball Match",
+        "event_index_range": [
+          5,
+          132
+        ]
+      }
+    ]
+  }
+}

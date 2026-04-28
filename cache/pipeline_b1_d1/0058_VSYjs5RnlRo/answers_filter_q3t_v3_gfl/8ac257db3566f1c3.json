@@ -1,0 +1,227 @@
+{
+  "question": "Was there a round where all answers were revealed without any strike occurring?",
+  "pred": "The video shows a game of Family Feud where multiple rounds occur. In the first round (Avengers Family Feud segment), the scoreboard shows red X marks (strikes) for incorrect answers such as \"CIRCUS/ACROBAT\" and \"YOGA INSTRUCTOR\" (Context events 50, 114, 123). In the second round (NEW CONTESTANTS segment), red X marks also appear over \"CHURCH\" and \"BATH\" sections (Context event 193). There is no round shown where all answers are revealed without at least one strike occurring.\n\nEvidence: Context events 50, 114, 123, and 193 show red X marks (strikes) appearing on the scoreboard in both recorded rounds.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "scoreboard_update",
+      "description": "Red X's appear over the second and third entries on the left side of the scoreboard, indicating incorrect answers",
+      "participants": [
+        "host",
+        "THE AMERICAS team",
+        "THE MANS team"
+      ],
+      "actor": "scoreboard",
+      "object_before": "blue scoreboard with white text",
+      "object_after": "blue scoreboard with white text and red X overlays",
+      "on_screen_text": [
+        {
+          "text": "EATING POPCORN/SNACKS 20",
+          "location": "scoreboard"
+        },
+        {
+          "text": "TEXTING 8",
+          "location": "scoreboard"
+        },
+        {
+          "text": "1",
+          "location": "scoreboard"
+        },
+        {
+          "text": "3",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Avengers Family Feud",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 50,
+      "start_time": "01:49",
+      "end_time": "01:52",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Avengers Family Feud"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "Two large red X marks appear over the CIRCUS/ACROBAT and YOGA INSTRUCTOR answer slots on the scoreboard",
+      "participants": [],
+      "actor": "scoreboard",
+      "object_before": "blue scoreboard with white text showing all answer categories",
+      "object_after": "blue scoreboard with red X marks covering two answer slots",
+      "object_before_pattern": "text and numbers in white on blue background",
+      "object_after_pattern": "red X marks covering CIRCUS/ACROBAT and YOGA INSTRUCTOR slots",
+      "on_screen_text": [
+        {
+          "text": "DANCER 60",
+          "location": "scoreboard"
+        },
+        {
+          "text": "YOGA INSTRUCTOR 3",
+          "location": "scoreboard"
+        },
+        {
+          "text": "CIRCUS/ACROBAT 15",
+          "location": "scoreboard"
+        },
+        {
+          "text": "3",
+          "location": "scoreboard"
+        },
+        {
+          "text": "4",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Family Feud Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 114,
+      "start_time": "04:10",
+      "end_time": "04:15",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Avengers Family Feud"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "A red X appears over the 'CIRCUS/ACROBAT' entry on the scoreboard",
+      "participants": [
+        "scoreboard"
+      ],
+      "actor": "scoreboard",
+      "object_before": "blue scoreboard",
+      "object_after": "blue scoreboard with red X",
+      "on_screen_text": [
+        {
+          "text": "DANCER 60",
+          "location": "scoreboard"
+        },
+        {
+          "text": "YOGA INSTRUCTOR 3",
+          "location": "scoreboard"
+        },
+        {
+          "text": "CIRCUS/ACROBAT 15",
+          "location": "scoreboard"
+        },
+        {
+          "text": "3",
+          "location": "scoreboard"
+        },
+        {
+          "text": "4",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Family Feud game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 123,
+      "start_time": "04:30",
+      "end_time": "04:33",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Avengers Family Feud"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "left column second row slot changes from showing number 2 to showing CHURCH/FUNERAL 17",
+      "participants": [],
+      "actor": "game board",
+      "object_before": "blue slot",
+      "object_after": "blue slot with text",
+      "object_before_pattern": "number 2",
+      "object_after_pattern": "CHURCH/FUNERAL 17",
+      "segment_boundary": "middle",
+      "segment_label": "Family Feud",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "scoreboard"
+        },
+        {
+          "text": "2",
+          "location": "scoreboard"
+        },
+        {
+          "text": "4",
+          "location": "scoreboard"
+        },
+        {
+          "text": "5",
+          "location": "scoreboard"
+        },
+        {
+          "text": "BATHROOM 16",
+          "location": "scoreboard"
+        },
+        {
+          "text": "CHURCH/FUNERAL 17",
+          "location": "scoreboard"
+        },
+        {
+          "text": "THE AMERICAS",
+          "location": "banner"
+        }
+      ],
+      "event_index": 157,
+      "start_time": "05:40",
+      "end_time": "05:45",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Avengers Family Feud"
+    },
+    {
+      "event_type": "graphic",
+      "description": "The game board displays red X marks over 'CHURCH' and 'BATH' sections",
+      "participants": [],
+      "actor": "",
+      "object_before": "blue board with text",
+      "object_after": "blue board with text and red X marks",
+      "on_screen_text": [
+        {
+          "text": "CHURCH/FUNERAL 17",
+          "location": "scoreboard"
+        },
+        {
+          "text": "BATHROOM 16",
+          "location": "scoreboard"
+        },
+        {
+          "text": "1",
+          "location": "scoreboard"
+        },
+        {
+          "text": "5",
+          "location": "scoreboard"
+        },
+        {
+          "text": "4",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Family Feud game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 193,
+      "start_time": "06:55",
+      "end_time": "06:57",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 11,
+      "round_index": 2,
+      "segment_label_resolved": "NEW CONTESTANTS"
+    }
+  ]
+}

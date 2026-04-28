@@ -1,0 +1,272 @@
+{
+  "question": "Did the host play exactly two individual rounds?",
+  "pred": "The host (Jimmy Fallon, the grey-suit man) participated in the following individual charades rounds:\n\n1.  **Round 1 (Gal Gadot's turn):** The floral-top woman (Gal Gadot) pulls card 1 and acts out \"Born to Run\" while the host guesses (frames ~00:50 to ~02:15).\n2.  **Round 2 (Host's turn):** The host pulls card 8 and acts out \"It\" while the floral-top woman guesses (frames ~02:53 to ~03:40).\n3.  **Round 3 (Miley Cyrus's turn):** The checkered-jumpsuit woman (Miley Cyrus) pulls card 3 and acts out \"Ring of Fire\" while the black-suit man (The Roots member) guesses; the host is seated and watching (frames ~02:20 to ~02:45).\n4.  **Round 4 (Host and Miley Cyrus's turn):** The host pulls card 7 and acts out \"Dancing on the Ceiling\" together with the checkered-jumpsuit woman (frames ~04:50 to ~05:40).\n\nThe host played in at least three rounds (guessing in round 1, acting in round 2, and acting in round 4). Therefore, he did not play exactly two rounds.\n\nEvidence: frames at ~04:50 show the host pulling card 7 to begin a third round of play after already participating in rounds 1 and 2.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "stand",
+      "description": "the black-suit man (Jimmy Fallon) stands up from the couch",
+      "participants": [
+        "black-suit man",
+        "floral-top woman"
+      ],
+      "actor": "black-suit man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 24,
+      "start_time": "00:45",
+      "end_time": "00:47",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the floral-top woman (Gal Gadot) pulls out the top-left card (Card 1) from the charades board",
+      "participants": [
+        "floral-top woman"
+      ],
+      "actor": "floral-top woman",
+      "object": "brown card",
+      "on_screen_text": [
+        {
+          "text": "CHARADES",
+          "location": "other"
+        },
+        {
+          "text": "1",
+          "location": "other"
+        },
+        {
+          "text": "2",
+          "location": "other"
+        },
+        {
+          "text": "3",
+          "location": "other"
+        },
+        {
+          "text": "4",
+          "location": "other"
+        },
+        {
+          "text": "5",
+          "location": "other"
+        },
+        {
+          "text": "6",
+          "location": "other"
+        },
+        {
+          "text": "7",
+          "location": "other"
+        },
+        {
+          "text": "8",
+          "location": "other"
+        },
+        {
+          "text": "9",
+          "location": "other"
+        },
+        {
+          "text": "10",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "complete",
+      "event_index": 28,
+      "start_time": "00:50",
+      "end_time": "00:52",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "pull_board",
+      "description": "the suit man pulls out the board section labeled '8' from the right column",
+      "participants": [
+        "suit man"
+      ],
+      "actor": "suit man",
+      "object": "board section 8",
+      "on_screen_text": [
+        {
+          "text": "2",
+          "location": "other"
+        },
+        {
+          "text": "4",
+          "location": "other"
+        },
+        {
+          "text": "6",
+          "location": "other"
+        },
+        {
+          "text": "8",
+          "location": "other"
+        },
+        {
+          "text": "10",
+          "location": "other"
+        },
+        {
+          "text": "5",
+          "location": "other"
+        },
+        {
+          "text": "7",
+          "location": "other"
+        },
+        {
+          "text": "9",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 122,
+      "start_time": "02:53",
+      "end_time": "02:55",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "place",
+      "description": "The suit-wearing man places the card into the slot labeled '8' on the game board.",
+      "participants": [
+        "suit-wearing man"
+      ],
+      "actor": "suit-wearing man",
+      "object": "card",
+      "on_screen_text": [
+        {
+          "text": ":30",
+          "location": "timer"
+        },
+        {
+          "text": "CHARADES",
+          "location": "other"
+        },
+        {
+          "text": "2",
+          "location": "other"
+        },
+        {
+          "text": "4",
+          "location": "other"
+        },
+        {
+          "text": "5",
+          "location": "other"
+        },
+        {
+          "text": "6",
+          "location": "other"
+        },
+        {
+          "text": "7",
+          "location": "other"
+        },
+        {
+          "text": "8",
+          "location": "other"
+        },
+        {
+          "text": "9",
+          "location": "other"
+        },
+        {
+          "text": "10",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 127,
+      "start_time": "03:05",
+      "end_time": "03:07",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "pull_board",
+      "description": "the black-suit man pulls the panel labeled '7' out from the board",
+      "participants": [
+        "black-suit man",
+        "checkered-jumpsuit woman"
+      ],
+      "actor": "black-suit man",
+      "object": "panel 7",
+      "on_screen_text": [
+        {
+          "text": "CHARADES",
+          "location": "title"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 185,
+      "start_time": "04:50",
+      "end_time": "04:52",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "place",
+      "description": "the black-suit man places the panel labeled '7' back into its slot on the board",
+      "participants": [
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "object": "panel 7",
+      "on_screen_text": [
+        {
+          "text": "CHARADES",
+          "location": "title"
+        },
+        {
+          "text": "\"DANCING ON THE CEILING \"",
+          "location": "subtitle"
+        },
+        {
+          "text": ":30",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 189,
+      "start_time": "04:58",
+      "end_time": "05:00",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    }
+  ]
+}

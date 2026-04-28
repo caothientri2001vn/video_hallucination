@@ -1,0 +1,132 @@
+{
+  "question": "Is the number 4 sewing machine a cake?",
+  "pred": "The video features a competition where contestants must identify which of four sewing machines is actually a cake. The sewing machines are displayed on podiums labeled 1 through 4. In the final reveal, a woman in a pink shirt cuts into the wooden base of sewing machine number 1, revealing internal layers of cake and frosting. Sewing machine number 4 is shown in the grid and on its podium but is not the one revealed to be a cake.\n\nEvidence: Frames at ~02:25 show the woman cutting into the base of sewing machine 1, revealing it is a cake.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "graphic",
+      "description": "The video transitions to a grid layout displaying four sewing machines, each in a separate box labeled 1 to 4.",
+      "participants": [],
+      "actor": null,
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "podium"
+        },
+        {
+          "text": "2",
+          "location": "podium"
+        },
+        {
+          "text": "3",
+          "location": "podium"
+        },
+        {
+          "text": "4",
+          "location": "podium"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Sewing Machine Selection",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 24,
+      "start_time": "00:45",
+      "end_time": "00:50",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Sewing Machine Competition"
+    },
+    {
+      "event_type": "graphic",
+      "description": "The fourth sewing machine in the grid (bottom right) is highlighted with a purple border.",
+      "participants": [],
+      "actor": null,
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "podium"
+        },
+        {
+          "text": "2",
+          "location": "podium"
+        },
+        {
+          "text": "3",
+          "location": "podium"
+        },
+        {
+          "text": "4",
+          "location": "podium"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Sewing Machine Selection",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 25,
+      "start_time": "00:50",
+      "end_time": "00:51",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Sewing Machine Competition"
+    },
+    {
+      "event_type": "cut",
+      "description": "A woman cuts into the front edge of a wooden base beneath a sewing machine, revealing it is a cake",
+      "participants": [
+        "pink-and-black-shirt woman"
+      ],
+      "actor": "pink-and-black-shirt woman",
+      "object": "wooden base cake",
+      "on_screen_text": [
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cake Reveal",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 63,
+      "start_time": "02:15",
+      "end_time": "02:18",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Sewing Machine Competition"
+    },
+    {
+      "event_type": "cut",
+      "description": "The woman continues cutting deeper into the cake, exposing more interior layers",
+      "participants": [
+        "pink-and-black-shirt woman"
+      ],
+      "actor": "pink-and-black-shirt woman",
+      "object": "wooden base cake",
+      "object_before": "brown wooden base cake",
+      "object_after": "brown wooden base cake with exposed layers",
+      "on_screen_text": [
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cake Reveal",
+      "continuation_hint": "complete",
+      "event_index": 65,
+      "start_time": "02:22",
+      "end_time": "02:25",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Sewing Machine Competition"
+    }
+  ]
+}

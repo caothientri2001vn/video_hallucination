@@ -1,0 +1,148 @@
+{
+  "question": "Did the shootout finish in just four rounds?",
+  "top_k": 15,
+  "indices": [
+    139,
+    155,
+    167,
+    168,
+    169
+  ],
+  "events": [
+    {
+      "event_type": "scoreboard_update",
+      "description": "the on-screen scoreboard updates to show Argentina leading France 3-1 in the penalty shootout",
+      "participants": [],
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA",
+          "location": "lower_third"
+        },
+        {
+          "text": "3 - 1",
+          "location": "lower_third"
+        },
+        {
+          "text": "FRANCE",
+          "location": "lower_third"
+        },
+        {
+          "text": "PENALTY SHOOTOUT",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 139,
+      "start_time": "04:41",
+      "end_time": "04:45",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "the on-screen scoreboard updates to show Argentina leading 3-2 in the penalty shootout",
+      "participants": [
+        "blue-jersey player",
+        "white-and-blue-jersey player"
+      ],
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 3 - 2 FRANCE",
+          "location": "scoreboard"
+        },
+        {
+          "text": "PENALTY SHOOTOUT",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 155,
+      "start_time": "05:21",
+      "end_time": "05:25",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "the ball enters the goal on the left side",
+      "participants": [
+        "white-and-blue-jersey player",
+        "yellow-jersey goalkeeper"
+      ],
+      "object": "white ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 3 - 2 FRANCE",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "middle",
+      "event_index": 167,
+      "start_time": "05:49",
+      "end_time": "05:50",
+      "sub_events": [],
+      "subtype_order": 38,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the white-and-blue-jersey player (Montiel) runs away from the goal in celebration",
+      "participants": [
+        "white-and-blue-jersey player"
+      ],
+      "actor": "white-and-blue-jersey player",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 4 - 2 FRANCE",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Post-Game Celebration",
+      "continuation_hint": "middle",
+      "event_index": 168,
+      "start_time": "05:50",
+      "end_time": "05:53",
+      "sub_events": [],
+      "subtype_order": 16,
+      "subtype_total": 35,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the white-and-blue-jersey player (Montiel) pulls his jersey over his head while running",
+      "participants": [
+        "white-and-blue-jersey player"
+      ],
+      "actor": "white-and-blue-jersey player",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Post-Game Celebration",
+      "continuation_hint": "middle",
+      "event_index": 169,
+      "start_time": "05:53",
+      "end_time": "05:56",
+      "sub_events": [],
+      "subtype_order": 17,
+      "subtype_total": 35,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

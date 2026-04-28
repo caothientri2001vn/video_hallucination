@@ -1,0 +1,665 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0066_38oHDDB6DFE.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0066_38oHDDB6DFE.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0066_38oHDDB6DFE",
+    "n_target": 13,
+    "n_sub": 53,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.7692307692307693,
+    "sub_accuracy": 0.8301886792452831
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Was the smallest coin painted last in the sequence?",
+      "gt": "No",
+      "pred": "No. The smallest coins (1-rupee coins) were painted earlier in the sequence: the top-right 1-rupee coin (2016) was painted yellow (2nd in sequence), and the middle-left 1-rupee coin (2019) was painted purple (3rd in sequence). The last coin painted was the bottom-left 2-rupee coin (2019, green), which is larger than the 1-rupee coins. Thus, the smallest coins were not painted last.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was the smallest coin painted at some point in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the smallest coin (the 1 rupee coin, identifiable by the \"1\" denomination) was painted purple. This is visible when the pink tool is used to apply paint to it (e.g., in frames showing the pink paint being spread over the 1 rupee coin).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the smallest coin painted exactly in the middle of the sequence?",
+      "gt": "Yes",
+      "pred": "To determine if the smallest coin (1-rupee coin, identifiable by the \"1\" denomination) was painted exactly in the middle of the sequence, we analyze the painting order:  \n\n1. **Black paint** is applied to the top-left 2-rupee coin (first action).  \n2. **Yellow paint** is applied to the top-right 2-rupee coin (second action).  \n3. **Purple paint** is applied to the 1-rupee coin (third action).  \n4. **Blue paint** is applied to the bottom-right 2-rupee coin (fourth action).  \n5. **Green paint** is applied to the bottom-left 2-rupee coin (fifth action).  \n\nA 5-step sequence has a middle step at position 3. The 1-rupee coin (smallest) is painted in the **3rd step**, which is the middle of the sequence.  \n\n**Answer:** Yes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Were there coins painted after the smallest coin?",
+      "gt": "Yes",
+      "pred": "Yes. After the smallest coin (1-rupee coin) was painted (with purple, around the sequence where the pink tool applies the purple paint), additional coins (2-rupee coins) were painted with blue and green. For example, the blue paint is applied to a 2-rupee coin after the 1-rupee coin is fully covered in purple (evident in the sequence where the blue tool appears after the purple paint is complete).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the middle-right coin painted after the smallest coin?",
+      "gt": "Yes",
+      "pred": "So, let's check the video. First, identify the coins. The middle-right coin—wait, in the video, the coins are being painted one by one. Let's see the order.\n\nFirst, the top-left coin (2018) is painted black. Then the top-right coin (2016) is painted yellow. Then the middle-left (2019) is painted purple. Then the bottom-right (2018) is painted blue. Then the bottom-left (2019) is painted green.\n\nWait, the \"smallest coin\"—are all coins the same size? Wait, no, in the first frames, the coins look like different denominations. Wait, the question is about \"the smallest coin\". Let's check the coins.\n\nLooking at the coins: the ones that are painted. Let's list the painting order:\n\n1. Top-left coin (2018) - black (first, from the start)\n2. Top-right coin (2016) - yellow (after black)\n3. Middle-left coin (2019) - purple (after yellow)\n4. Bottom-right coin (2018) - blue (after purple)\n5. Bottom-left coin (2019) - green (last)\n\nNow, which is the smallest coin? Wait, in the first frame, the coins: let's check their sizes. The top-left coin (2018) is a 2-rupee coin (since it has \"2\" and \"R\" maybe), the top-right (2016) is 1-rupee (has \"1\"), the middle-left (2019) is 1-rupee, the bottom-right (2018) is 2-rupee, and the bottom-left (2019) is 2-rupee. Wait, 1-rupee coins are smaller than 2-rupee. So the 1-rupee coins are the smaller ones.\n\nThe top-right (2016) is 1-rupee, middle-left (2019) is 1-rupee. So the smallest coins are these two. Now, the \"middle-right coin\"—in the layout, the coins are arranged as:\n\nTop-left, Top-right\n\nMiddle-left, Middle-right (but in the video, the middle-right position is the bottom-right? Wait, no. Let's look at the positions.\n\nIn the first frame, the coins are:\n\n- Top-left: 2018 (2-rupee)\n- Top-right: 2016 (1-rupee)\n- Middle-left: 2019 (1-rupee)\n- Bottom-right: 2018 (2-rupee)\n- Bottom-left: 2019 (2-rupee)\n\nWait, the \"middle-right\" coin—maybe the one that's in the middle-right position. Let's see the final arrangement:\n\nAfter all are painted:\n\nTop-left: black (2018, 2-rupee)\n\nTop-right: yellow (2016, 1-rupee)\n\nMiddle-left: purple (2019, 1-rupee)\n\nMiddle-right: blue (2018, 2-rupee) [but in the video, the blue is on the bottom-right? Wait, no. Let's check the video frames.\n\nLooking at the frames, when the blue is applied (the blue tool), it's on the coin that's at the bottom-right position. Then green is on the bottom-left.\n\nSo the coins:\n\n- Top-left: black (2018)\n- Top-right: yellow (2016)\n- Middle-left: purple (2019)\n- Bottom-right: blue (2018)\n- Bottom-left: green (2019)\n\nNow, the \"smallest coin\"—the 1-rupee coins are smaller than 2-rupee. So top-right (2016) and middle-left (2019) are 1-rupee (smaller). The blue coin is at bottom-right, which is 2-rupee (larger), so it's not the smallest.\n\nThe question is: Was the middle-right coin painted after the smallest coin?\n\nFirst, identify which coin is the middle-right. In the arrangement, the middle-right would be... let's see. The coins are arranged in a 3x2? No, 5 coins. Let's list the positions:\n\n1. Top-left: 2018 (2-rupee)\n2. Top-right: 2016 (1-rupee)\n3. Middle-left: 2019 (1-rupee)\n4. Bottom-right: 2018 (2-rupee)\n5. Bottom-left:",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Did the smallest coin appear painted only after the bottom coin was already colored?",
+      "gt": "No",
+      "pred": "No. The smallest coin (1 Rupee coin, marked \"1\") is painted with purple (around the 12–16 second mark when the pink tool is used), while the bottom coin (2019 2 Rupee) is painted with green later (20–24 second mark). Thus, the smallest coin appeared painted **before** the bottom coin was colored.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was the smallest coin painted before the bottom coin turned green?",
+      "gt": "Yes",
+      "pred": "Yes. The smallest coin (1 rupee, 2019) was painted with purple (e.g., frames showing the pink tool applying purple to it, ~13-19 seconds), and the bottom coin was painted green later (e.g., frames showing the green tool applying green to it, ~22-27 seconds). Thus, the smallest coin was painted before the bottom coin turned green.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the smallest coin become purple before the bottom coin was colored?",
+      "gt": "Yes",
+      "pred": "Yes. The smallest coin (1 rupee, 2019) was colored purple before the bottom coin (2 rupee, 2016) was colored green. The purple coloring occurs in frames where the pink tool is used (e.g., around the 12–16th frames in the sequence), while the green coloring of the bottom coin occurs later (e.g., around the 20–25th frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the bottom coin painted after the smallest coin?",
+      "gt": "Yes",
+      "pred": "Yes. The bottom coin (painted green) was the last to be painted, after the other coins (black, yellow, purple, blue). All coins appear to be the same size, but the bottom coin was painted after the others in the sequence (e.g., the green paint is applied to the bottom coin in the final steps of the video).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Was the green coin colored before three other coins were already colored?",
+      "gt": "No",
+      "pred": "Yes. When the green coin is being colored (around the 32 - 39 second mark), the black, yellow, purple, and blue coins are already fully colored. Thus, at least three other coins were already colored before the green coin was colored.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the bottom coin turn green?",
+      "gt": "Yes",
+      "pred": "Yes, the bottom coin turned green. This is visible in the later frames where green paint is applied to the bottom coin, and by the final frame, it is fully covered in green.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the bottom coin painted after the middle-right coin?",
+      "gt": "Yes",
+      "pred": "Yes. The bottom coin (painted green) is painted after the middle-right coin (painted blue). The sequence shows the blue paint being applied to the middle-right coin before the green paint is applied to the bottom coin.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the bottom coin painted after the smallest coin?",
+      "gt": "Yes",
+      "pred": "Yes. The bottom coin (painted green) was the last to be painted, after the other coins (black, yellow, purple, blue). All coins appear to be the same size, but the bottom coin was painted after the others in the sequence (e.g., the green paint is applied to the bottom coin in the final steps of the video).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Were at least three coins already colored before the bottom coin turned green?",
+      "gt": "Yes",
+      "pred": "Yes. Before the bottom coin turns green, the top-left (black), top-right (yellow), middle-left (purple), and bottom-right (blue) coins are already colored. This is visible in the frames just prior to the green color being applied to the bottom coin (e.g., around the frame where the blue color is completed and the green tool begins applying color to the bottom coin). Thus, at least three coins were already colored.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Did the blue color appear before the smallest coin became purple?",
+      "gt": "No",
+      "pred": "No. The blue color is applied to the coin after the purple color is applied to the coin (the middle left coin becomes purple before the blue color appears on the middle right coin). This can be observed by the sequence of color application: black → yellow → purple → blue → green. Thus, blue does not appear before the coin (which is the same size as others, but the one that becomes purple) is covered in purple.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the smallest coin become purple in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the smallest coin (1 rupee coin) became purple. This is visible when the purple paint is applied to it (e.g., around the 11-14 second mark sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the purple color appear after both top-row coins were already colored?",
+      "gt": "Yes",
+      "pred": "Yes. The top - row coins (black and yellow) are fully colored before the purple color is applied. The black color is applied to the top - left coin first, then the yellow color to the top - right coin. The purple color is applied to the middle - left coin after both top - row coins have been colored (evident from the sequence of color application in the frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the smallest coin painted after the top-row coins?",
+      "gt": "Yes",
+      "pred": "To determine if the smallest coin was painted after the top - row coins, we first identify the coins:\n\n- **Top - row coins**: The top - left (2 Rupees 2018, painted black) and top - right (1 Rupee 2016, painted yellow) are in the top row.\n- **Smallest coins**: The 1 Rupee coins (2016 and 2019) are smaller than the 2 Rupee coins. The 1 Rupee 2016 is in the top row, and the 1 Rupee 2019 (middle - left) is the other smallest coin.\n\nNow, let's check the painting order:\n1. The top - left 2 Rupees 2018 (top - row coin) is painted black first (evident in early frames).\n2. The top - right 1 Rupee 2016 (top - row coin) is painted",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the smallest coin become purple after the yellow coin was painted?",
+      "gt": "Yes",
+      "pred": "No. The smallest coin (the one in the bottom left position, which gets green paint last) does not become purple. The purple paint is applied to the middle left coin (a 1-rupee coin), not the smallest coin. The yellow coin is painted before the purple coin, but the smallest coin remains unpainted in purple (it is painted green later).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Was the top-right coin painted before the smallest coin?",
+      "gt": "Yes",
+      "pred": "Yes. The top-right coin (painted yellow) was painted before the bottom-left coin (painted green), which is the last coin to be painted. The yellow paint application on the top-right coin occurs early in the sequence (e.g., around the 8th frame), while the green paint for the bottom-left coin is applied later (e.g., around the 24th frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was the top-right coin painted at some point in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The top-right coin was painted yellow, as seen when the yellow paint is applied to it (e.g., in the sequence of frames where yellow paint is dispensed onto that coin).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the smallest coin painted at some point in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the smallest coin (the 1 rupee coin, identifiable by the \"1\" denomination) was painted purple. This is visible when the pink tool is used to apply paint to it (e.g., in frames showing the pink paint being spread over the 1 rupee coin).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the top-right coin receive paint before the smallest coin?",
+      "gt": "Yes",
+      "pred": "Yes. The top-right coin received yellow paint (evident in frames ~8–12), and the bottom-left coin (the last to be painted) received green paint (evident in frames ~20–24). Thus, the top-right coin was painted before the bottom-left coin (which is the only coin that could be interpreted as the \"smallest\" in context, as all coins are identical in size but the bottom-left is the final one painted).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the smallest coin painted after the top-right coin?",
+      "gt": "Yes",
+      "pred": "Yes. The top - right coin (a 1 - rupee coin) is painted yellow (starting around frame 8). The other 1 - rupee coin (the middle - left coin, which is also the smallest) is painted purple (starting around frame",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Did the top-right coin receive paint before the middle-right coin?",
+      "gt": "Yes",
+      "pred": "Yes. The top-right coin received yellow paint (e.g., around the 8th frame) before the middle-right coin received blue paint (e.g., around the 22nd frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a top-right coin in the video?",
+      "gt": "Yes",
+      "pred": "Yes. In the video frames, a coin is present in the top-right position (e.g., visible in the initial frames with the black tool, such as the first frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was there a middle-right coin in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there was a middle-right coin in the video. For example, in the sequence of frames, a coin is positioned in the middle-right area (e.g., visible in frames showing the yellow, purple, blue, and green paints being applied).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the top-right coin receive paint?",
+      "gt": "Yes",
+      "pred": "Yes, the top-right coin received yellow paint (evident in the sequence where the yellow tool applies paint to it, e.g., around the 7-12 second mark in the video sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the middle-right coin receive paint?",
+      "gt": "Yes",
+      "pred": "Yes, the middle-right coin received paint (blue). This is visible in the sequence where the blue paint is applied to that coin (e.g., around the 20-25 second mark in the video sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Was the middle-right coin painted after the top-right coin?",
+      "gt": "Yes",
+      "pred": "Yes. The top-right coin is painted with yellow (evident in frames showing the yellow paint application, e.g., around the 8th frame), and the middle-right coin is later painted with blue (evident in frames showing the blue paint application, e.g., around the 20th frame). Thus, the middle-right coin was painted after the top-right coin.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Did the smallest coin get painted after the top row coins but before the lower coins?",
+      "gt": "Yes",
+      "pred": "To determine this, we analyze the painting sequence:  \n\n1. **Top row coins (2-rupee coins)**:  \n   - Top-left 2-rupee coin (2018) is painted black first (0–7s).  \n   - Top-right 2-rupee coin (2016) is painted yellow next (8–16s).  \n\n2. **Smallest coin (1-rupee coin, middle-left)**:  \n   - This coin is painted purple after the top row (17–25s).  \n\n3. **Lower coins (2-rupee coins)**:  \n   - Lower-right 2-rupee coin (2018) is painted blue (26–34s).  \n   - Lower-left 2-rupee coin (2019) is painted green last (35–42s).  \n\nThe 1-rupee coin (smallest) is painted **after the top row coins** (black/yellow) and **before the lower coins** (blue/green).  \n\n**Answer**: Yes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was the smallest coin painted after the top row coins?",
+      "gt": "Yes",
+      "pred": "To determine if the smallest coin was painted after the top row coins, we first identify the smallest coin: the 1 Rupee coin (2019) is the smallest (1 Rupee coins are smaller than 2 Rupee coins). \n\n- The top row coins in the final arrangement are the black-painted coin (top left) and yellow-painted coin (top right). \n- The smallest coin (1 Rupee 2019) is painted with purple. \n- The purple paint is applied *after* the black and yellow paints (evident from the sequence: black → yellow → purple). \n\nThus, the smallest coin was painted after the top row coins.  \n\n**Answer:** Yes",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the smallest coin painted before the lower coins?",
+      "gt": "Yes",
+      "pred": "Yes. The smallest coin (1 rupee coin, middle-left) was painted with purple (around the sequence where the purple paint is applied, before the lower 2 rupee coin is painted green). The lower coins (e.g., the bottom-left 2 rupee coin) were painted later.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Were there multiple coins in the top row?",
+      "gt": "Yes",
+      "pred": "Yes. In the initial frames (e.g., the first image), there were two coins in the top row (one on the top-left and one on the top-right).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Were there multiple lower coins?",
+      "gt": "Yes",
+      "pred": "No. There was only one lower coin (the 2-rupee 2019 coin at the bottom of the arrangement) that remained uncovered until the end, as verified by the final frame (17.25s) showing a single green-painted coin in the bottom position.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Did the smallest coin get painted in the middle of the painting sequence?",
+      "gt": "Yes",
+      "pred": "Yes. The smallest coin (1 rupee coin) was painted with purple, which occurred in the middle of the sequence (3rd color applied out of 5 total colors). This is evident as the purple paint application happens after black and yellow, and before blue and green (e.g., in the frames where the purple paint is being applied, the other three coins already have black, yellow, and one 2-rupee coin is partially visible, indicating it’s the 3rd step in a 5-step painting sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Did the smallest coin get painted exactly in the middle of the sequence?",
+      "gt": "Yes",
+      "pred": "To determine if the smallest coin was painted exactly in the middle of the sequence, we first identify the smallest coin: the **1-rupee coin** (distinguished by the \"1\" denomination and smaller size than 2-rupee coins).  \n\nNext, we track the painting sequence (5 distinct steps, as 5 coins are painted):  \n1. **Black paint** (top-left 2-rupee coin, ~1st step).  \n2. **Yellow paint** (top-right 2-rupee coin, ~2nd step).  \n3. **Purple paint** (1-rupee coin, ~3rd step).  \n4. **Blue paint** (bottom-right 2-rupee coin, ~4th step).  \n5. **Green paint** (bottom-left 2-rupee coin, ~5th step).  \n\nThe 1-rupee coin (smallest) is painted in the **3rd step**, which is the *exact middle* of the 5-step sequence.  \n\n**Answer:** Yes. The smallest coin (1-rupee) was painted in the 3rd step, the middle of the 5-step sequence.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was the smallest coin painted after the top-row coins?",
+      "gt": "Yes",
+      "pred": "To determine if the smallest coin was painted after the top - row coins, we first identify the coins:\n\n- **Top - row coins**: The top - left (2 Rupees 2018, painted black) and top - right (1 Rupee 2016, painted yellow) are in the top row.\n- **Smallest coins**: The 1 Rupee coins (2016 and 2019) are smaller than the 2 Rupee coins. The 1 Rupee 2016 is in the top row, and the 1 Rupee 2019 (middle - left) is the other smallest coin.\n\nNow, let's check the painting order:\n1. The top - left 2 Rupees 2018 (top - row coin) is painted black first (evident in early frames).\n2. The top - right 1 Rupee 2016 (top - row coin) is painted",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the smallest coin painted before the lower coins?",
+      "gt": "Yes",
+      "pred": "Yes. The smallest coin (1 rupee coin, middle-left) was painted with purple (around the sequence where the purple paint is applied, before the lower 2 rupee coin is painted green). The lower coins (e.g., the bottom-left 2 rupee coin) were painted later.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the smallest coin get painted at the midpoint of the sequence?",
+      "gt": "Yes",
+      "pred": "Yes. The smallest coin (1 Rupee, 2019) is painted with purple at the third step of the sequence (after black and yellow, before blue and green), which is the midpoint of the 5-step painting process. This occurs when the purple paint is applied, visible in the frames around the 10–15 second mark (based on the sequence of color applications).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the smallest coin painted after the top-right coin?",
+      "gt": "Yes",
+      "pred": "Yes. The top - right coin (a 1 - rupee coin) is painted yellow (starting around frame 8). The other 1 - rupee coin (the middle - left coin, which is also the smallest) is painted purple (starting around frame",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "target",
+      "question": "Did three coins remain unpainted when the smallest coin was painted?",
+      "gt": "No",
+      "pred": "So, let's check the video. First, find when the smallest coin was painted. The smallest coin is the one with \"1\" on it (1 rupee). Looking at the frames, when the pink paint is applied to the 1 rupee coin (around the 12-16 second mark), let's see how many coins are unpainted. Wait, the coins: there are 5 coins. When the 1 rupee (smallest) is being painted, which other coins are painted? Let's list the painting order:\n\n- Black paint: first coin (top left, 2 rupee 2018) is painted black.\n- Yellow paint: next coin (top right, 1 rupee 2016? Wait no, the top right coin is 1 rupee 2016? Wait, the coins: there's a 2 rupee (2018), 1 rupee (2016), 1 rupee (2019), 2 rupee (2018), and 2 rupee (2016? Wait no, let's count the coins. The video shows 5 coins. Wait, the first frame has 5 coins. Then as they get painted, one by one.\n\nWhen the 1 rupee (2019, the one that's painted with pink) is being painted, let's check the state. The black coin is already painted, yellow is painted, then pink is applied to the 1 rupee 2019. At that moment, how many coins are unpainted? Let's see:\n\n- Black: painted (1 coin)\n- Yellow: painted (1 coin)\n- Pink: being painted (1 coin)\n- So the remaining two coins: the blue one (2 rupee 2016) and the green one (2 rupee 2016? Wait, the last coin is the 2 rupee 2016, which is painted green. Wait, when the pink is being applied (to the 1 rupee 2019), the other coins: the black, yellow, and then the blue and green are not painted yet. Wait, no: the sequence is:\n\n1. Black paint on top left 2 rupee (2018) → that's one coin painted.\n2. Yellow paint on top right 1 rupee (2016) → second coin painted.\n3. Pink paint on middle left 1 rupee (2019) → third coin painted.\n4. Blue paint on middle right 2 rupee (2016) → fourth coin painted.\n5. Green paint on bottom left 2 rupee (2016) → fifth coin painted.\n\nSo when the smallest coin (1 rupee) is painted (the 2019 one, which is the smallest? Wait, 1 rupee coins are smaller than 2 rupee? Wait, in Indian coins, 1 rupee is smaller than 2 rupee. So the 1 rupee coins (2016 and 2019) are smaller. The 2019 1 rupee is the one being painted with pink.\n\nAt the moment when the 2019 1 rupee is being painted (with pink), how many coins are unpainted? The black (1), yellow (2), so 3 coins painted? No, wait: when applying pink, the black and yellow are already painted. So that's 2 coins painted. The pink is the third. So unpainted coins: 5 - 3 = 2. So the question is: \"Did three coins remain unpainted when the smallest coin was painted?\" So the smallest coin is being painted, so the number of unpainted coins at that time. Let's check:\n\nWhen the smallest coin (1 rupee 2019) is being painted (the pink paint is being applied to it), the coins that are already painted are: black (1 coin) and yellow (1 coin). So 2 painted, 3 unpainted? Wait, no: 5 coins total. If 2 are painted, then 3 are unpainted. Let's check the frames.\n\nLooking at the frame where pink is being applied to the 1 rupee 2019 (around the 12-16 second mark). The coins:\n\n- Top left: black (painted)\n- Top right: yellow (painted)\n- Middle left: 1 rupee 2019 (being painted with pink)\n- Middle right: 2 rupee 2016 (unpainted)\n- Bottom left: 2 rupee 2016 (unpainted)\n\nSo unpainted coins: middle right and bottom left → 2 coins. So 5 -",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Were some coins still unpainted when the smallest coin was painted?",
+      "gt": "Yes",
+      "pred": "Yes. When the pink paint is applied to the middle-left 1-rupee coin (the \"smallest coin\" in context), the bottom-left 2-rupee coin remains unpainted. This occurs during the pink paint application sequence (approximately when the pink tool is depositing paint on the middle-left coin, e.g., frames showing the pink paint being added to that coin while the bottom-left coin is still silver).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the smallest coin painted before all the other coins were finished?",
+      "gt": "Yes",
+      "pred": "Yes. The smallest coin (1-rupee coin, middle-left) was painted with purple (around 14–20 seconds), while the bottom-right and bottom-left 2-rupee coins were still unpainted (they were painted later with blue and green). Thus, it was painted before all other coins were finished.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did exactly three coins remain unpainted at the time the smallest coin was painted?",
+      "gt": "Yes",
+      "pred": "So, let's try to figure out this question. First, we need to determine when the smallest coin was painted. Let's look at the sequence of painting.\n\nFirst, the black paint is applied to the top-left coin (which is a 2-rupee coin, I think, but maybe the size? Wait, the coins: in the video, the coins have different denominations. Let's check the sizes. The smallest coin is the 1-rupee coin, which is smaller than the 2-rupee ones. Let's see which coin is the smallest.\n\nLooking at the coins: the 1-rupee coin (2019) is smaller than the 2-rupee coins. So when the 1-rupee coin is painted, we need to check how many coins are unpainted at that time.\n\nLet's track the painting order:\n\n1. Black paint: applied to the top-left coin (2-rupee, 2018) first. Then the black paint is spread, so that coin is painted. (First few frames, up to when black is done, around frame 7 or 8)\n\n2. Yellow paint: applied to the top-right coin (2-rupee, 2016), then spread. (Frames 8-14)\n\n3. Purple paint: applied to the middle-left coin (1-rupee, 2019), which is the smallest coin. Let's check when that happens. The purple paint starts being applied around frame 15, and by frame 20, the 1-rupee coin is fully painted.\n\nNow, when the smallest coin (1-rupee) is being painted, how many coins are unpainted?\n\nLet's list all coins:\n\n- Top-left: 2-rupee (2018) – painted black (first)\n- Top-right: 2-rupee (2016) – painted yellow (second)\n- Middle-left: 1-rupee (2019) – being painted purple (third)\n- Bottom-left: 2-rupee (2017) – not yet painted\n- Bottom-right: 2-rupee (2018) – not yet painted (wait, no, in the video, there are five coins? Let's count the coins in the first frame: there are five coins. Let's check:\n\nFirst frame: 5 coins. Let's count:\n\n1. Top-left: 2-rupee (2018)\n2. Top-right: 2-rupee (2016)\n3. Middle-left: 1-rupee (2019)\n4. Bottom-left: 2-rupee (2017)\n5. Bottom-right: 2-rupee (2018) – yes, five coins.\n\nSo when the 1-rupee coin (smallest) is being painted (purple), which is the third coin to be painted. Let's check the state at the start of painting the 1-rupee coin.\n\nBefore painting the 1-rupee coin, the black and yellow coins are already painted. So two coins are painted. Then when painting the 1-rupee coin, the other two coins (bottom-left and bottom-right) are unpainted. Wait, no: total coins are five. If two are painted (black and yellow), then three are unpainted. But when the 1-rupee is being painted, is that the third coin? Let's check:\n\n- Black: 1st coin painted (top-left)\n- Yellow: 2nd coin painted (top-right)\n- Purple: 3rd coin painted (middle-left, the 1-rupee)\n- Then blue: 4th (bottom-right)\n- Green: 5th (bottom-left)\n\nSo when the 1-rupee (3rd coin) is being painted, how many are unpainted? Total 5 coins. 2 already painted (black, yellow), 1 being painted (purple), so 5 - 3 = 2 unpainted? Wait, no: at the moment of painting the 1-rupee coin, the two painted are black and yellow, so 5 - 2 (painted) - 1 (being painted) = 2 unpainted. Wait, but the question is: \"exactly three coins remained unpainted at the time the smallest coin was painted?\"\n\nWait, the smallest coin is the 1-rupee. When it's painted, how many are unpainted? Let's check the frames.\n\nLooking at the frame where the purple paint is first applied to the 1-rupee coin (frame 15: \"2023-10-17 14:15:00\" maybe, but in the image sequence, the 15",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the smallest coin painted in the middle of the sequence?",
+      "gt": "Yes",
+      "pred": "Yes. The smallest coins (1-rupee denominations) were painted in the sequence: the top-right 1-rupee was painted second (yellow), and the middle-left 1-rupee was painted third (purple). The 5-coin sequence has a middle position (3rd), and the 3rd coin painted (middle-left 1-rupee) is a smallest coin. Thus, a smallest coin was painted in the middle of the sequence.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "target",
+      "question": "Did the purple color appear after both top-row coins were already colored?",
+      "gt": "Yes",
+      "pred": "Yes. The top - row coins (black and yellow) are fully colored before the purple color is applied. The black color is applied to the top - left coin first, then the yellow color to the top - right coin. The purple color is applied to the middle - left coin after both top - row coins have been colored (evident from the sequence of color application in the frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the purple color appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the purple color appeared in the video (e.g., in the sequence where a pink tool applies purple liquid, visible in multiple frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Were both top-row coins already colored before the purple color appeared?",
+      "gt": "Yes",
+      "pred": "Yes. The top-left coin was colored black (evident in early frames, e.g., by the 5th frame), and the top-right coin was colored yellow (evident by the 12th frame). The purple color appears later (starting around the 15th frame), so both top-row coins were already colored before the purple color appeared.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the smallest coin become purple after the top-row coins were painted?",
+      "gt": "Yes",
+      "pred": "So, let's check the video. First, identify the coins. The coins are of different sizes. The top-row coins: in the sequence, the first coin (top left) is painted black, then the top right (which is a 1 rupee coin, smaller than the 2 rupee) is painted yellow. Wait, the question is about the smallest coin. Let's see the coins:\n\nLooking at the coins, the 1 rupee coins are smaller than the 2 rupee. In the video, the 1 rupee coins are the smaller ones. Let's track which coin is painted purple.\n\nIn the frames where the pink tool is used (around the 12th to 18th frames), the coin being painted purple is a 1 rupee coin (2019). Is that the smallest? Let's check the sizes. The 2 rupee coins are larger, 1 rupee are smaller. So the 1 rupee coin is the smallest. Now, when the top-row coins were painted: the top row has two coins (the first black and the top right yellow). Then, the next step is the purple paint on a 1 rupee coin (which is not in the top row; the top row is two coins, then the next is the 1 rupee in the middle left). Wait, the question is: \"Did the smallest coin become purple after the top-row coins were painted?\"\n\nFirst, confirm which coins are top row. The initial layout: top left, top right, middle left, middle right, bottom. Wait, in the first frames, there are five coins. Let's count:\n\n1. Top left: 2 rupee (2018)\n2. Top right: 1 rupee (2016)\n3. Middle left: 1 rupee (2019)\n4. Middle right: 2 rupee (2018)\n5. Bottom: 2 rupee (2018)\n\nWait, no, looking at the first image: the coins have \"2\" on some, \"1\" on others. The 2 rupee coins are larger, 1 rupee are smaller. So the 1 rupee coins (2016 and 2019) are smaller than the 2 rupee (2018) ones.\n\nNow, the top-row coins: in the first frames, the top two coins are the top left (2 rupee) and top right (1 rupee). Then, the middle left is 1 rupee, middle right 2 rupee, bottom 2 rupee.\n\nThe top-row coins being painted: first, the top left 2 rupee is painted black (from the first few frames, the black paint is on top left). Then, the top right 1 rupee is painted yellow (later frames, yellow paint on top right). So top-row coins (top left and top right) are painted black and yellow. After that, the next paint is purple on the middle left 1 rupee (2019). Now, is the middle left 1 rupee the smallest? Yes, because 1 rupee coins are smaller than 2 rupee. So the smallest coin (1 rupee) becomes purple after the top-row coins (which are top left 2 rupee and top right 1 rupee) were painted.\n\nCheck the timestamps: top-row coins (top left and top right) are painted first. The top left is painted black (first sequence), then top right is painted yellow (next sequence). Then the purple paint is applied to the middle left 1 rupee (which is a 1 rupee, same size as top right, but the question says \"smallest coin\"—wait, are all 1 rupee the same size? Yes, so the 1 rupee coins are the smallest, and the 2 rupee are larger. So the smallest coins are the 1 rupee (2016 and 2019). The top right 1 rupee is painted yellow, so that's one of the smallest. Then, the middle left 1 rupee (2019) is painted purple. So the answer is yes: the smallest coin (the 1 rupee in the middle left) became purple after the top-row coins (top left 2 rupee and top right 1 rupee) were painted.\n\nNow, check if the middle left 1 rupee is a smallest coin. Yes, because 1 rupee coins are smaller than 2 rupee. So the smallest coins are the 1 rupee ones. The top right 1 rupee is painted yellow (top row), then the middle left 1 rupee (another smallest coin) is painted purple. So the question is: \"Did the smallest coin become purple after the top-row coins were painted?\" Yes, because the top",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the purple color applied after the yellow coin was painted?",
+      "gt": "Yes",
+      "pred": "Yes. The yellow color is applied first (evident in frames where the yellow tool is used, e.g., around the 7-12 frame range), and the purple color is applied afterward (evident in frames where the purple tool is used, e.g., around the 13-18 frame range).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "target",
+      "question": "Did the smallest coin become purple after the yellow coin was painted?",
+      "gt": "Yes",
+      "pred": "No. The smallest coin (the one in the bottom left position, which gets green paint last) does not become purple. The purple paint is applied to the middle left coin (a 1-rupee coin), not the smallest coin. The yellow coin is painted before the purple coin, but the smallest coin remains unpainted in purple (it is painted green later).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the smallest coin become purple?",
+      "gt": "Yes",
+      "pred": "Yes. The smallest coin (the 1 Rupee coin marked \"2019\") was coated with purple paint, as seen in the sequence where the purple tool applies the color to that specific coin (e.g., around the 12–18 second mark in the video progression).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was there a yellow coin in the video?",
+      "gt": "Yes",
+      "pred": "No. The video shows coins (which are metallic/silver in color) with colored liquids (e.g., yellow, black, purple, blue, green) being applied on top. There is no coin that is yellow in color. The yellow is a liquid substance placed on one of the silver coins, not the coin itself.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the yellow coin painted before the smallest coin became purple?",
+      "gt": "Yes",
+      "pred": "Yes. The yellow paint is applied to the top-right coin (e.g., around the 8-12 frame range), and the purple paint is applied to the left-middle coin (e.g., around the 14-22 frame range), so the yellow coin was painted before the smallest coin became purple.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the smallest coin receive paint after the top-row coins were colored?",
+      "gt": "Yes",
+      "pred": "Yes. The top-row coins (top-left and top-right) were colored with black and yellow paint first. The smallest coin (1-rupee, middle-left) received purple paint after the top-row coins were fully colored (evident when the purple paint is applied to the 1-rupee coin after the black and yellow top-row coins are completed).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "target",
+      "question": "Did the smallest coin become purple before the bottom coin turned green?",
+      "gt": "Yes",
+      "pred": "Yes. The 1-rupee coin (smallest coin) was filled with purple paint before the bottom coin was filled with green paint. This is evident from the sequence: purple paint application on the 1-rupee coin occurs prior to the green paint application on the bottom coin.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the smallest coin become purple?",
+      "gt": "Yes",
+      "pred": "Yes. The smallest coin (the 1 Rupee coin marked \"2019\") was coated with purple paint, as seen in the sequence where the purple tool applies the color to that specific coin (e.g., around the 12–18 second mark in the video progression).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the bottom coin turn green?",
+      "gt": "Yes",
+      "pred": "Yes, the bottom coin turned green. This is visible in the later frames where green paint is applied to the bottom coin, and by the final frame, it is fully covered in green.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the smallest coin painted before the bottom coin?",
+      "gt": "Yes",
+      "pred": "Yes. The smallest coin (1 rupee, 2019) was painted purple (sequence: ~12-17 seconds), and the bottom coin (2 rupee, 2019) was painted green later (sequence: ~22-28 seconds). Thus, the smallest coin was painted before the bottom coin.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the purple color appear after both top-row coins were already colored?",
+      "gt": "Yes",
+      "pred": "Yes. The top - row coins (black and yellow) are fully colored before the purple color is applied. The black color is applied to the top - left coin first, then the yellow color to the top - right coin. The purple color is applied to the middle - left coin after both top - row coins have been colored (evident from the sequence of color application in the frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "target",
+      "question": "Did the smallest coin become purple before the bottom coin turned green?",
+      "gt": "Yes",
+      "pred": "Yes. The 1-rupee coin (smallest coin) was filled with purple paint before the bottom coin was filled with green paint. This is evident from the sequence: purple paint application on the 1-rupee coin occurs prior to the green paint application on the bottom coin.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the smallest coin become purple?",
+      "gt": "Yes",
+      "pred": "Yes. The smallest coin (the 1 Rupee coin marked \"2019\") was coated with purple paint, as seen in the sequence where the purple tool applies the color to that specific coin (e.g., around the 12–18 second mark in the video progression).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the bottom coin turn green?",
+      "gt": "Yes",
+      "pred": "Yes, the bottom coin turned green. This is visible in the later frames where green paint is applied to the bottom coin, and by the final frame, it is fully covered in green.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the smallest coin painted before the bottom coin?",
+      "gt": "Yes",
+      "pred": "Yes. The smallest coin (1 rupee, 2019) was painted purple (sequence: ~12-17 seconds), and the bottom coin (2 rupee, 2019) was painted green later (sequence: ~22-28 seconds). Thus, the smallest coin was painted before the bottom coin.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the purple color appear after both top-row coins were already colored?",
+      "gt": "Yes",
+      "pred": "Yes. The top - row coins (black and yellow) are fully colored before the purple color is applied. The black color is applied to the top - left coin first, then the yellow color to the top - right coin. The purple color is applied to the middle - left coin after both top - row coins have been colored (evident from the sequence of color application in the frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

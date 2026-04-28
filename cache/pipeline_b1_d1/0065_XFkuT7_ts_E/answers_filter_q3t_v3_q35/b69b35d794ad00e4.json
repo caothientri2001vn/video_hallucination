@@ -1,0 +1,90 @@
+{
+  "question": "Did an orange-colored juice appear during the early pouring stages?",
+  "pred": "Evidence: Frame 00:56 shows a stream of orange-colored liquid being poured into the pitcher alongside a dark red liquid.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "place",
+      "description": "places orange mandarins into clear glass",
+      "participants": [
+        "black-glove person"
+      ],
+      "actor": "black-glove person",
+      "object": "mandarins",
+      "object_before": "empty glass",
+      "object_after": "glass with mandarins",
+      "segment_boundary": "middle",
+      "segment_label": "fruit muddling",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 19,
+      "start_time": "00:28",
+      "end_time": "00:29",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Fruit Muddling"
+    },
+    {
+      "event_type": "pour_liquids",
+      "description": "pours yellow and red liquids simultaneously into the pitcher",
+      "participants": [
+        "black-glove hands"
+      ],
+      "actor": "black-glove hands",
+      "object": "yellow liquid and red liquid",
+      "segment_boundary": "middle",
+      "segment_label": "drink preparation",
+      "continuation_hint": "complete",
+      "event_index": 23,
+      "start_time": "00:34",
+      "end_time": "00:37",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Fruit Muddling"
+    },
+    {
+      "event_type": "pour_liquids",
+      "description": "pours dark red and green liquids simultaneously into the pitcher",
+      "participants": [
+        "black-glove hands"
+      ],
+      "actor": "black-glove hands",
+      "object": "dark red liquid and green liquid",
+      "segment_boundary": "middle",
+      "segment_label": "drink preparation",
+      "continuation_hint": "complete",
+      "event_index": 24,
+      "start_time": "00:37",
+      "end_time": "00:40",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Fruit Muddling"
+    },
+    {
+      "event_type": "pour_liquid",
+      "description": "pours red liquid from a container into the pitcher",
+      "participants": [
+        "black-glove hand"
+      ],
+      "actor": "black-glove hand",
+      "object": "red liquid",
+      "segment_boundary": "middle",
+      "segment_label": "drink preparation",
+      "continuation_hint": "complete",
+      "event_index": 25,
+      "start_time": "00:40",
+      "end_time": "00:42",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Fruit Muddling"
+    }
+  ]
+}

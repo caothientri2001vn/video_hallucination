@@ -1,0 +1,1449 @@
+{
+  "video_name": "0104_1KmRJwmIYOA.mp4",
+  "video_duration_sec": 247.81423333333333,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:03",
+          "event_type": "pick_up",
+          "description": "A hand picks up an orange heart-shaped gummy from a tray filled with assorted heart-shaped gummies of orange, red, and black colors",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "orange heart-shaped gummy",
+          "segment_boundary": "middle",
+          "segment_label": "gummy candy demonstration",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:04",
+          "local_end": "00:05",
+          "event_type": "hold",
+          "description": "A hand holds an orange heart-shaped gummy candy above the tray",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "orange heart-shaped gummy",
+          "segment_boundary": "middle",
+          "segment_label": "gummy candy demonstration",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:14",
+          "event_type": "stretch",
+          "description": "A hand stretches an orange heart-shaped gummy, demonstrating its elasticity and deformation",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object_before": "intact orange heart-shaped gummy",
+          "object_after": "stretched orange heart-shaped gummy",
+          "segment_boundary": "middle",
+          "segment_label": "gummy candy demonstration",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:15",
+          "local_end": "00:15",
+          "event_type": "tear",
+          "description": "A hand pulls an orange heart-shaped gummy apart into two pieces",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object_before": "stretched orange heart-shaped gummy",
+          "object_after": "two pieces of orange heart-shaped gummy",
+          "segment_boundary": "middle",
+          "segment_label": "gummy candy demonstration",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 30.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:30",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:20",
+          "event_type": "cut",
+          "description": "cuts the orange in half with a knife",
+          "participants": [],
+          "actor": "hands",
+          "object": "orange",
+          "on_screen_text": [
+            {
+              "text": "반으로 잘라서",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "orange preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:20",
+          "local_end": "00:25",
+          "event_type": "squeeze",
+          "description": "squeezes orange juice using a metal juicer",
+          "participants": [],
+          "actor": "hands",
+          "object": "orange",
+          "on_screen_text": [
+            {
+              "text": "오렌지 즙을 짜고",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "orange preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:25",
+          "local_end": "00:30",
+          "event_type": "strain",
+          "description": "pours orange juice through a strainer into a measuring cup",
+          "participants": [],
+          "actor": "hands",
+          "object": "orange juice",
+          "on_screen_text": [
+            {
+              "text": "체망에 한번 걸러줍니다",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "orange preparation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 2,
+      "chunk_start_sec": 30.0,
+      "chunk_end_sec": 45.0,
+      "chunk_start_mmss": "00:30",
+      "chunk_end_mmss": "00:45",
+      "events": [
+        {
+          "local_start": "00:30",
+          "local_end": "00:36",
+          "event_type": "blend",
+          "description": "Blueberry mixture is being blended until smooth in a container with a black lid",
+          "participants": [],
+          "actor": "unseen person",
+          "object": "blueberry mixture",
+          "on_screen_text": [
+            {
+              "text": "잘 갈아서",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Blueberry processing",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:37",
+          "local_end": "00:43",
+          "event_type": "strain",
+          "description": "Blended blueberry mixture is pressed through a metal sieve into a glass measuring cup using a white utensil",
+          "participants": [],
+          "actor": "unseen person",
+          "object": "blueberry mixture",
+          "on_screen_text": [
+            {
+              "text": "체망에 걸러줄게요",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Blueberry processing",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:44",
+          "local_end": "00:45",
+          "event_type": "introduce_ingredient",
+          "description": "Strawberries in a wooden bowl are shown on screen",
+          "participants": [],
+          "actor": "unseen person",
+          "object": "strawberries",
+          "on_screen_text": [
+            {
+              "text": "딸기",
+              "location": "caption"
+            },
+            {
+              "text": "strawberry",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Blueberry processing",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 3,
+      "chunk_start_sec": 45.0,
+      "chunk_end_sec": 60.0,
+      "chunk_start_mmss": "00:45",
+      "chunk_end_mmss": "01:00",
+      "events": [
+        {
+          "local_start": "00:45",
+          "local_end": "00:52",
+          "event_type": "blend",
+          "description": "strawberries in a blender are processed into a smooth red liquid while operating",
+          "participants": [],
+          "actor": "blender",
+          "object": "strawberries",
+          "object_before": "whole red strawberries",
+          "object_after": "smooth red strawberry liquid",
+          "on_screen_text": [
+            {
+              "text": "똑같이 해줍니다",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Strawberry Processing",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:53",
+          "local_end": "00:59",
+          "event_type": "strain",
+          "description": "hand uses white spatula to push blended strawberry mixture through metal strainer into glass measuring cup",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "strawberry mixture",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Strawberry Straining",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:00",
+          "local_end": "01:00",
+          "event_type": "pour",
+          "description": "orange juice is poured into white pot on stove",
+          "participants": [],
+          "actor": "unseen person",
+          "object": "orange juice",
+          "on_screen_text": [
+            {
+              "text": "오렌지 쥬스 150ml",
+              "location": "caption"
+            },
+            {
+              "text": "150ml orange juice",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Liquid Preparation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 4,
+      "chunk_start_sec": 60.0,
+      "chunk_end_sec": 75.0,
+      "chunk_start_mmss": "01:00",
+      "chunk_end_mmss": "01:15",
+      "events": [
+        {
+          "local_start": "01:00",
+          "local_end": "01:05",
+          "event_type": "dial_adjust",
+          "description": "A hand turns a dial on a yellow appliance to set it to low heat",
+          "participants": [],
+          "actor": "hand",
+          "object": "yellow appliance dial",
+          "on_screen_text": [
+            {
+              "text": "약불",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Cooking Process",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:05",
+          "local_end": "01:15",
+          "event_type": "stir",
+          "description": "A hand stirs orange liquid in a white pot with an orange spatula, following figure-8 pattern to prevent sticking",
+          "participants": [],
+          "actor": "hand",
+          "object": "orange liquid in white pot",
+          "on_screen_text": [
+            {
+              "text": "지금부터 10분 동안 끓입니다",
+              "location": "lower_third"
+            },
+            {
+              "text": "눌어붙지 않게 8자를 그리며 계속 저어주세요",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Cooking Process",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 5,
+      "chunk_start_sec": 75.0,
+      "chunk_end_sec": 90.0,
+      "chunk_start_mmss": "01:15",
+      "chunk_end_mmss": "01:30",
+      "events": [
+        {
+          "local_start": "01:15",
+          "local_end": "01:25",
+          "event_type": "stir",
+          "description": "stirs orange liquid in a white pot with an orange spatula in a figure-8 pattern",
+          "participants": [],
+          "actor": "hand holding spatula",
+          "object": "orange liquid",
+          "on_screen_text": [
+            {
+              "text": "눌어붙지 않게 8자를 그리며 계속 저어주세요",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "cooking process",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:25",
+          "local_end": "01:30",
+          "event_type": "pour",
+          "description": "pours orange liquid slowly from the pot into round molds and then heart-shaped molds",
+          "participants": [],
+          "actor": "hand holding pot",
+          "object": "orange liquid",
+          "on_screen_text": [
+            {
+              "text": "틀에 천천히 부어주고",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "molding process",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 6,
+      "chunk_start_sec": 90.0,
+      "chunk_end_sec": 105.0,
+      "chunk_start_mmss": "01:30",
+      "chunk_end_mmss": "01:45",
+      "events": [
+        {
+          "local_start": "01:30",
+          "local_end": "01:35",
+          "event_type": "place",
+          "description": "pours white sugar into the pot containing dark purple liquid",
+          "participants": [],
+          "actor": "hand",
+          "object": "white sugar",
+          "on_screen_text": [
+            {
+              "text": "설탕 20g",
+              "location": "lower_third"
+            },
+            {
+              "text": "20g sugar",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Blueberry mixture preparation",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "01:35",
+          "local_end": "01:40",
+          "event_type": "place",
+          "description": "pours light-colored gelatin powder into the pot with blueberry juice and sugar",
+          "participants": [],
+          "actor": "hand",
+          "object": "gelatin powder",
+          "on_screen_text": [
+            {
+              "text": "젤라틴 가루 23g",
+              "location": "lower_third"
+            },
+            {
+              "text": "23g gelatin powder",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Blueberry mixture preparation",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "01:40",
+          "local_end": "01:43",
+          "event_type": "place",
+          "description": "pours clear starch syrup into the pot with blueberry juice, sugar, and gelatin powder",
+          "participants": [],
+          "actor": "hand",
+          "object": "starch syrup",
+          "on_screen_text": [
+            {
+              "text": "물엿 35g",
+              "location": "lower_third"
+            },
+            {
+              "text": "35g starch syrup (honey if not)",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Blueberry mixture preparation",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "01:43",
+          "local_end": "01:45",
+          "event_type": "stir",
+          "description": "stirs the mixture in the pot with an orange spatula",
+          "participants": [],
+          "actor": "hand",
+          "object_before": "separate dark purple liquid with white sugar, light powder, and clear liquid",
+          "object_after": "uniform dark purple mixture",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Blueberry mixture preparation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 7,
+      "chunk_start_sec": 105.0,
+      "chunk_end_sec": 120.0,
+      "chunk_start_mmss": "01:45",
+      "chunk_end_mmss": "02:00",
+      "events": [
+        {
+          "local_start": "01:45",
+          "local_end": "01:56",
+          "event_type": "pour_liquid",
+          "description": "Pouring dark purple liquid into heart-shaped mold cavities with the text \"조심스럽게~\" (carefully~) displayed on screen",
+          "participants": [],
+          "actor": "",
+          "object": "dark purple liquid",
+          "on_screen_text": [
+            {
+              "text": "조심스럽게~",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Heart-shaped candy making",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:56",
+          "local_end": "01:57",
+          "event_type": "add_ingredient",
+          "description": "Pouring bright red liquid into white pot with on-screen text identifying it as strawberry juice",
+          "participants": [],
+          "actor": "",
+          "object": "red liquid",
+          "on_screen_text": [
+            {
+              "text": "딸기 주스 150ml\n150ml strawberry juice",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Strawberry jelly preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:57",
+          "local_end": "01:58",
+          "event_type": "add_ingredient",
+          "description": "Adding white granular substance to the red liquid in the pot with on-screen text identifying it as sugar",
+          "participants": [],
+          "actor": "",
+          "object": "white powder",
+          "on_screen_text": [
+            {
+              "text": "설탕 20g\n20g sugar",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Strawberry jelly preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:58",
+          "local_end": "01:59",
+          "event_type": "add_ingredient",
+          "description": "Adding light-colored powder to the mixture with on-screen text identifying it as gelatin powder",
+          "participants": [],
+          "actor": "",
+          "object": "light-colored powder",
+          "on_screen_text": [
+            {
+              "text": "젤라틴 가루 23g\n23g gelatin powder",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Strawberry jelly preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:59",
+          "local_end": "02:00",
+          "event_type": "add_ingredient",
+          "description": "Adding clear liquid to the pot with on-screen text identifying it as starch syrup",
+          "participants": [],
+          "actor": "",
+          "object": "clear liquid",
+          "on_screen_text": [
+            {
+              "text": "물엿 35g\n35g starch syrup (honey if not)",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Strawberry jelly preparation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 8,
+      "chunk_start_sec": 120.0,
+      "chunk_end_sec": 135.0,
+      "chunk_start_mmss": "02:00",
+      "chunk_end_mmss": "02:15",
+      "events": [
+        {
+          "local_start": "02:00",
+          "local_end": "02:03",
+          "event_type": "pour",
+          "description": "Pours red liquid from white pot into the middle row, second from left heart-shaped cavity of the white mold",
+          "participants": [],
+          "actor": "person",
+          "object": "red liquid",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Mold Filling",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:03",
+          "local_end": "02:07",
+          "event_type": "pour",
+          "description": "Pours red liquid into the middle row, third from left heart-shaped cavity of the white mold",
+          "participants": [],
+          "actor": "person",
+          "object": "red liquid",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Mold Filling",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:07",
+          "local_end": "02:11",
+          "event_type": "pour",
+          "description": "Pours red liquid into the top row, second from left heart-shaped cavity of the white mold",
+          "participants": [],
+          "actor": "person",
+          "object": "red liquid",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Mold Filling",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:11",
+          "local_end": "02:15",
+          "event_type": "pour",
+          "description": "Pours red liquid into the top row, third from left heart-shaped cavity of the white mold",
+          "participants": [],
+          "actor": "person",
+          "object": "red liquid",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Mold Filling",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 9,
+      "chunk_start_sec": 135.0,
+      "chunk_end_sec": 150.0,
+      "chunk_start_mmss": "02:15",
+      "chunk_end_mmss": "02:30",
+      "events": [
+        {
+          "local_start": "02:15",
+          "local_end": "02:20",
+          "event_type": "hold_mold",
+          "description": "A person holds a white mold with circular cavities filled with red, black, and orange liquids",
+          "participants": [
+            "person in white gloves"
+          ],
+          "actor": "person in white gloves",
+          "object": "white mold with circular cavities",
+          "on_screen_text": [
+            {
+              "text": "냉동실에 20분",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Mold Preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:20",
+          "local_end": "02:25",
+          "event_type": "hold_mold",
+          "description": "A person holds a white mold with heart-shaped cavities filled with red, black, and orange liquids",
+          "participants": [
+            "person in white gloves"
+          ],
+          "actor": "person in white gloves",
+          "object": "white mold with heart-shaped cavities",
+          "on_screen_text": [
+            {
+              "text": "냉동실에 20분",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Mold Preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:25",
+          "local_end": "02:28",
+          "event_type": "peel_mold",
+          "description": "A gloved hand begins to peel a white mold with circular cavities",
+          "participants": [
+            "person in white gloves"
+          ],
+          "actor": "person in white gloves",
+          "object": "white mold with circular cavities",
+          "on_screen_text": [
+            {
+              "text": "20분 후",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Mold Extraction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:28",
+          "local_end": "02:30",
+          "event_type": "remove_object",
+          "description": "A gloved hand successfully removes an orange circular object from the mold",
+          "participants": [
+            "person in white gloves"
+          ],
+          "actor": "person in white gloves",
+          "object": "orange circular object",
+          "object_before": "orange liquid in mold",
+          "object_after": "solid orange circular object",
+          "on_screen_text": [
+            {
+              "text": "20분 후",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Mold Extraction",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 10,
+      "chunk_start_sec": 150.0,
+      "chunk_end_sec": 165.0,
+      "chunk_start_mmss": "02:30",
+      "chunk_end_mmss": "02:45",
+      "events": [
+        {
+          "local_start": "02:30",
+          "local_end": "02:38",
+          "event_type": "sprinkle",
+          "description": "sprinkling corn starch onto a brown tray until it covers the entire surface",
+          "participants": [
+            "gloved hand"
+          ],
+          "actor": "gloved hand",
+          "object": "corn starch",
+          "on_screen_text": [
+            {
+              "text": "옥수수 전분",
+              "location": "caption"
+            },
+            {
+              "text": "corn starch",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Jelly Candy Preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:39",
+          "local_end": "02:40",
+          "event_type": "place",
+          "description": "placing a single orange jelly candy on the corn starch-covered tray",
+          "participants": [
+            "gloved hand"
+          ],
+          "actor": "gloved hand",
+          "object": "orange jelly",
+          "on_screen_text": [
+            {
+              "text": "젤리를 올리고",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Jelly Candy Preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:40",
+          "local_end": "02:42",
+          "event_type": "place",
+          "description": "placing a single black jelly candy next to the orange jelly on the corn starch",
+          "participants": [
+            "gloved hand"
+          ],
+          "actor": "gloved hand",
+          "object": "black jelly",
+          "on_screen_text": [
+            {
+              "text": "젤리를 올리고",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Jelly Candy Preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:42",
+          "local_end": "02:45",
+          "event_type": "place",
+          "description": "arranging multiple jelly candies (orange, red, and black) in rows on the corn starch-covered tray",
+          "participants": [
+            "gloved hand"
+          ],
+          "actor": "gloved hand",
+          "object": "jelly candies",
+          "on_screen_text": [
+            {
+              "text": "젤리를 올리고",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Jelly Candy Preparation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 11,
+      "chunk_start_sec": 165.0,
+      "chunk_end_sec": 180.0,
+      "chunk_start_mmss": "02:45",
+      "chunk_end_mmss": "03:00",
+      "events": [
+        {
+          "local_start": "02:45",
+          "local_end": "02:56",
+          "event_type": "manipulate",
+          "description": "gloved hands move and toss heart-shaped candies on tray to coat with white powder",
+          "participants": [],
+          "actor": "gloved person",
+          "object": "heart-shaped candies (red, orange, black)",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "candy coating process",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:57",
+          "local_end": "03:00",
+          "event_type": "brush",
+          "description": "gloved hand holds black heart-shaped candy and uses brush to remove excess white powder from surface",
+          "participants": [],
+          "actor": "gloved person",
+          "object": "black heart-shaped candy",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "candy coating process",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:57",
+          "local_end": "03:00",
+          "event_type": "text_display",
+          "description": "Korean text appears in lower third of screen reading \"역시 과해서 털어줬습니다\"",
+          "participants": [],
+          "actor": "on_screen_text",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "역시 과해서 털어줬습니다",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "candy coating process",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 12,
+      "chunk_start_sec": 180.0,
+      "chunk_end_sec": 195.0,
+      "chunk_start_mmss": "03:00",
+      "chunk_end_mmss": "03:15",
+      "events": [
+        {
+          "local_start": "03:00",
+          "local_end": "03:07",
+          "event_type": "brush",
+          "description": "gloved hand brushes white powder off a dark heart-shaped jelly using a small brush",
+          "participants": [
+            "gloved hand"
+          ],
+          "actor": "gloved hand",
+          "object": "small brush",
+          "on_screen_text": [
+            {
+              "text": "역시 과해서 털어줬습니다",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "jelly cleaning",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:07",
+          "local_end": "03:09",
+          "event_type": "hold",
+          "description": "gloved hand holds a cleaned dark heart-shaped jelly with minimal powder remaining",
+          "participants": [
+            "gloved hand"
+          ],
+          "actor": "gloved hand",
+          "object": "dark heart-shaped jelly",
+          "on_screen_text": [
+            {
+              "text": "역시 과해서 털어줬습니다",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "jelly cleaning",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:09",
+          "local_end": "03:11",
+          "event_type": "remove",
+          "description": "gloved hand moves the cleaned heart-shaped jelly out of frame",
+          "participants": [
+            "gloved hand"
+          ],
+          "actor": "gloved hand",
+          "object": "dark heart-shaped jelly",
+          "on_screen_text": [
+            {
+              "text": "어려분은 조금만 문혀주세요",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "jelly cleaning",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:11",
+          "local_end": "03:13",
+          "event_type": "display",
+          "description": "tray containing various colored heart-shaped jellies (black, red, orange) is shown",
+          "participants": [],
+          "actor": "unseen person",
+          "object": "jelly tray",
+          "on_screen_text": [
+            {
+              "text": "어려분은 조금만 문혀주세요",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "jelly display",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:13",
+          "local_end": "03:15",
+          "event_type": "pick",
+          "description": "finger points to and picks up an orange heart-shaped jelly from the tray",
+          "participants": [
+            "finger"
+          ],
+          "actor": "finger",
+          "object": "orange heart-shaped jelly",
+          "on_screen_text": [
+            {
+              "text": "이건 상큼한 오렌지 젤리",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "jelly selection",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 13,
+      "chunk_start_sec": 195.0,
+      "chunk_end_sec": 210.0,
+      "chunk_start_mmss": "03:15",
+      "chunk_end_mmss": "03:30",
+      "events": [
+        {
+          "local_start": "03:15",
+          "local_end": "03:18",
+          "event_type": "pick_up",
+          "description": "A hand picks up an orange heart-shaped jelly candy from the tray",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "orange heart-shaped jelly",
+          "on_screen_text": [
+            {
+              "text": "이건 상큼한 오렌지 젤리",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Jelly Texture Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:18",
+          "local_end": "03:20",
+          "event_type": "hold",
+          "description": "Two hands hold the orange heart-shaped jelly candy",
+          "participants": [
+            "two hands"
+          ],
+          "actor": "hands",
+          "object": "orange heart-shaped jelly",
+          "on_screen_text": [
+            {
+              "text": "이건 상큼한 오렌지 젤리",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Jelly Texture Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:20",
+          "local_end": "03:25",
+          "event_type": "stretch",
+          "description": "The hands stretch the orange jelly candy to demonstrate its elasticity",
+          "participants": [
+            "two hands"
+          ],
+          "actor": "hands",
+          "object": "orange heart-shaped jelly",
+          "on_screen_text": [
+            {
+              "text": "굉장히 쫀득해요",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Jelly Texture Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:25",
+          "local_end": "03:27",
+          "event_type": "break",
+          "description": "The orange jelly breaks into two pieces as it is stretched",
+          "participants": [
+            "two hands"
+          ],
+          "actor": "hands",
+          "object": "orange heart-shaped jelly",
+          "on_screen_text": [
+            {
+              "text": "굉장히 쫀득해요",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Jelly Texture Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:27",
+          "local_end": "03:29",
+          "event_type": "display",
+          "description": "The hands hold up the two broken pieces of the orange jelly for display",
+          "participants": [
+            "two hands"
+          ],
+          "actor": "hands",
+          "object": "broken orange jelly pieces",
+          "on_screen_text": [
+            {
+              "text": "굉장히 쫀득해요",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Jelly Texture Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:29",
+          "local_end": "03:30",
+          "event_type": "place_back",
+          "description": "A hand places the orange jelly pieces back into the tray",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "broken orange jelly pieces",
+          "on_screen_text": [
+            {
+              "text": "이번엔 블루베리",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Jelly Texture Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:30",
+          "local_end": "03:30",
+          "event_type": "pick_up",
+          "description": "A hand picks up a black heart-shaped jelly candy from the tray",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "black heart-shaped jelly",
+          "on_screen_text": [
+            {
+              "text": "이번엔 블루베리",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Jelly Texture Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 14,
+      "chunk_start_sec": 210.0,
+      "chunk_end_sec": 225.0,
+      "chunk_start_mmss": "03:30",
+      "chunk_end_mmss": "03:45",
+      "events": [
+        {
+          "local_start": "03:30",
+          "local_end": "03:33",
+          "event_type": "pick_up",
+          "description": "Hand reaches into the metal tray and picks up a black heart-shaped candy",
+          "participants": [],
+          "actor": "hand",
+          "object": "black heart-shaped candy",
+          "on_screen_text": [
+            {
+              "text": "이번엔 블루베리",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Candy Tasting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:33",
+          "local_end": "03:36",
+          "event_type": "hold_up",
+          "description": "Hand holds the black candy between thumb and forefinger for close inspection",
+          "participants": [],
+          "actor": "hand",
+          "object": "black heart-shaped candy",
+          "on_screen_text": [
+            {
+              "text": "이번엔 블루베리",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Candy Tasting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:36",
+          "local_end": "03:42",
+          "event_type": "bite",
+          "description": "Black candy is shown with a bite taken out, revealing its interior texture",
+          "participants": [],
+          "actor": "hand",
+          "object_before": "black heart-shaped candy",
+          "object_after": "bitten black heart-shaped candy",
+          "on_screen_text": [
+            {
+              "text": "통통한 식감에 블루베리 맛이 진하답니다",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Candy Tasting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:42",
+          "local_end": "03:43",
+          "event_type": "pick_up",
+          "description": "Hand reaches back into the metal tray and picks up a red heart-shaped candy",
+          "participants": [],
+          "actor": "hand",
+          "object": "red heart-shaped candy",
+          "on_screen_text": [
+            {
+              "text": "내사랑 딸기",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Candy Tasting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:43",
+          "local_end": "03:45",
+          "event_type": "hold_up",
+          "description": "Hand holds the red candy between thumb and forefinger for close inspection",
+          "participants": [],
+          "actor": "hand",
+          "object": "red heart-shaped candy",
+          "on_screen_text": [
+            {
+              "text": "새콤달콤! 전 딸기맛이 가장 좋아요",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Candy Tasting",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 15,
+      "chunk_start_sec": 225.0,
+      "chunk_end_sec": 240.0,
+      "chunk_start_mmss": "03:45",
+      "chunk_end_mmss": "04:00",
+      "events": [
+        {
+          "local_start": "03:45",
+          "local_end": "03:53",
+          "event_type": "manipulate",
+          "description": "A hand manipulates a black gummy candy by compressing and stretching it repeatedly between fingers",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "black gummy candy",
+          "on_screen_text": [
+            {
+              "text": "이건 탱탱볼인가",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Gummy Candy Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:53",
+          "local_end": "03:54",
+          "event_type": "transition",
+          "description": "Visual transition from black gummy candy to orange gummy candy with overlapping images",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Gummy Candy Demonstration",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "03:54",
+          "local_end": "03:58",
+          "event_type": "manipulate",
+          "description": "A hand manipulates an orange gummy candy by stretching and compressing it between fingers",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "orange gummy candy",
+          "on_screen_text": [
+            {
+              "text": "쪽깃 탱글함 좀 보세요",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Gummy Candy Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:59",
+          "local_end": "04:00",
+          "event_type": "pick_up",
+          "description": "A hand reaches into a metal tray to select a gummy candy from the assortment",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "gummy candy",
+          "on_screen_text": [
+            {
+              "text": "그럼 오늘도 상큼 달콤한 하루 보내세요",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Gummy Candy Demonstration",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 16,
+      "chunk_start_sec": 240.0,
+      "chunk_end_sec": 247.81423333333333,
+      "chunk_start_mmss": "04:00",
+      "chunk_end_mmss": "04:08",
+      "events": [
+        {
+          "local_start": "04:00.0",
+          "local_end": "04:01.5",
+          "event_type": "hand_enter",
+          "description": "A hand enters the frame from the left side approaching the tray of gummies",
+          "participants": [],
+          "actor": "unidentified hand",
+          "object": "tray of gummies",
+          "on_screen_text": [
+            {
+              "text": "식탁일기",
+              "location": "logo"
+            },
+            {
+              "text": "그럼 오늘도 상큼 달콤한 하루 보내세요",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:01.5",
+          "local_end": "04:03.0",
+          "event_type": "pick_up",
+          "description": "The hand picks up a black gummy from the left-center section of the tray, specifically the second black gummy from the left in the middle row positioned between orange and red gummies",
+          "participants": [],
+          "actor": "unidentified hand",
+          "object": "black gummy",
+          "object_before": "black gummy",
+          "object_after": "not_visible",
+          "on_screen_text": [
+            {
+              "text": "식탁일기",
+              "location": "logo"
+            },
+            {
+              "text": "그럼 오늘도 상큼 달콤한 하루 보내세요",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:03.0",
+          "local_end": "04:04.5",
+          "event_type": "move_object",
+          "description": "The hand moves the black gummy away from the tray toward the left side of the frame",
+          "participants": [],
+          "actor": "unidentified hand",
+          "object": "black gummy",
+          "on_screen_text": [
+            {
+              "text": "식탁일기",
+              "location": "logo"
+            },
+            {
+              "text": "그럼 오늘도 상큼 달콤한 하루 보내세요",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:04.5",
+          "local_end": "04:05.5",
+          "event_type": "hand_exit",
+          "description": "The hand exits the frame while holding the black gummy",
+          "participants": [],
+          "actor": "unidentified hand",
+          "on_screen_text": [
+            {
+              "text": "식탁일기",
+              "location": "logo"
+            },
+            {
+              "text": "그럼 오늘도 상큼 달콤한 하루 보내세요",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:05.5",
+          "local_end": "04:06.5",
+          "event_type": "state_change",
+          "description": "The tray is shown with one black gummy missing from the left-center section where the second black gummy from the left in the middle row was previously located",
+          "participants": [],
+          "actor": "tray",
+          "object_before": "tray with multiple black, orange, and red gummies",
+          "object_after": "tray with multiple black, orange, and red gummies (one black gummy removed)",
+          "on_screen_text": [
+            {
+              "text": "식탁일기",
+              "location": "logo"
+            },
+            {
+              "text": "그럼 오늘도 상큼 달콤한 하루 보내세요",
+              "location": "subtitle"
+            }
+          ],
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:06.5",
+          "local_end": "04:07.5",
+          "event_type": "darkening",
+          "description": "The scene gradually darkens until the tray of gummies becomes difficult to see",
+          "participants": [],
+          "actor": "scene",
+          "object_before": "brightly lit tray of gummies",
+          "object_after": "darkened tray of gummies",
+          "on_screen_text": [
+            {
+              "text": "식탁일기",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "end",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:07.5",
+          "local_end": "04:08.0",
+          "event_type": "text_appear",
+          "description": "Text appears on a black screen: '식탁일기' and 'thank you~' with a heart symbol",
+          "participants": [],
+          "actor": "text",
+          "on_screen_text": [
+            {
+              "text": "식탁일기",
+              "location": "other"
+            },
+            {
+              "text": "thank you~",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "end",
+          "continuation_hint": "complete"
+        }
+      ]
+    }
+  ]
+}

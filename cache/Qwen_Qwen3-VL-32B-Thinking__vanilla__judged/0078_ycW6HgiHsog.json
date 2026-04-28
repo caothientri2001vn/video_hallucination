@@ -1,0 +1,321 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0078_ycW6HgiHsog.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0078_ycW6HgiHsog.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0078_ycW6HgiHsog",
+    "n_target": 7,
+    "n_sub": 24,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.42857142857142855,
+    "sub_accuracy": 0.8333333333333334
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Does the man play the game first?",
+      "gt": "No",
+      "pred": "No. The woman is the first to attempt the game (e.g., holding and throwing the bottle in the initial frames), and the man plays after her. For example, in the first frame, the woman holds the bottle, and subsequent actions show her taking turns before the man begins.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the man play the game?",
+      "gt": "Yes",
+      "pred": "Yes, the man played the game. He is seen holding a bottle and a pink plate, attempting to place items on the table (e.g., around the 10–15 second mark, he is actively participating in the game actions).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the woman play before the man?",
+      "gt": "Yes",
+      "pred": "Yes, the woman played before the man. In the video sequence, the woman is seen holding and using the bottle (e.g., attempting throws) in the earlier frames, while the man begins his attempts later (e.g., when he is shown holding the bottle and making throws in later frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the man the first person to play the game?",
+      "gt": "No",
+      "pred": "No. In the first frame (0:00), the woman is holding a water bottle and appears to be the first to play, while the man is standing beside her. The man starts playing later in the sequence (e.g., around 0:47 when he begins his turn).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Does the woman play the game first?",
+      "gt": "Yes",
+      "pred": "Yes, the woman plays the game first. This can be observed in the early frames (e.g., around the 1st second) where she is seen holding the bottle and initiating the game action.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the woman play the game?",
+      "gt": "Yes",
+      "pred": "Yes, the woman played the game. She is seen holding a bottle, attempting to place it into cups, and interacting with the game setup (e.g., frames where she holds the bottle and makes moves toward the cups).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the woman the first person to play the game?",
+      "gt": "Yes",
+      "pred": "Yes, the woman was the first person to play the game. In the initial frames (e.g., the first image), she is seen holding a bottle, indicating she started the game.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the man play before the woman?",
+      "gt": "No",
+      "pred": "No. The woman is seen holding and throwing the bottle first (e.g., in early frames like the first few images), and the man plays after her. Thus, the man did not play before the woman.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Did the woman throw the water bottle three times in her first turn?",
+      "gt": "Yes",
+      "pred": "Yes. The woman is shown throwing the water bottle three times during her first turn (evident in sequential frames where she repeatedly attempts the throw before the man takes his turn).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the woman throw the water bottle in her first turn?",
+      "gt": "Yes",
+      "pred": "Yes. In the initial sequence (e.g., early frames showing the woman holding the water bottle), she attempts a throw. The text “Wow how can you miss All that chances” and the context of the game (with cups and plates) confirm she made a throwing attempt in her first turn.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the woman throw the water bottle three times total?",
+      "gt": "Yes",
+      "pred": "Yes, the woman threw the water bottle three times total. This can be observed through the sequence of frames where she is seen holding and releasing the bottle multiple times (e.g., early frames show her first throw, followed by subsequent throws in later frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the woman play the game first?",
+      "gt": "Yes",
+      "pred": "Yes. In the initial frames (e.g., the first image), the woman is holding a bottle and appears to be the first to attempt the game, as seen by her actions and the progression of the sequence.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the woman have only one turn in the game?",
+      "gt": "Yes",
+      "pred": "No. The woman is shown taking multiple turns in the game (e.g., throwing the bottle, adjusting cups, and participating in the sequence of attempts), indicating she had more than one turn.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Did the woman throw the water bottle only one time in her first turn?",
+      "gt": "No",
+      "pred": "Yes. In the first turn, the woman is shown throwing the water bottle once before the man reacts (e.g., covering his face, clapping, etc.). This is evident in the sequence of frames where she performs the throw and the immediate reaction follows.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the woman play the game?",
+      "gt": "Yes",
+      "pred": "Yes, the woman played the game. She is seen holding a bottle, attempting to place it into cups, and interacting with the game setup (e.g., frames where she holds the bottle and makes moves toward the cups).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the woman throw the water bottle in her first turn?",
+      "gt": "Yes",
+      "pred": "Yes. In the initial sequence (e.g., early frames showing the woman holding the water bottle), she attempts a throw. The text “Wow how can you miss All that chances” and the context of the game (with cups and plates) confirm she made a throwing attempt in her first turn.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the woman throw the water bottle three times total?",
+      "gt": "Yes",
+      "pred": "Yes, the woman threw the water bottle three times total. This can be observed through the sequence of frames where she is seen holding and releasing the bottle multiple times (e.g., early frames show her first throw, followed by subsequent throws in later frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the woman throw the water bottle only once during the entire game?",
+      "gt": "No",
+      "pred": "No. The woman throws the water bottle multiple times throughout the video (e.g., visible in early frames where she is holding the bottle, and subsequent frames showing her throwing it repeatedly as cups are knocked over).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Did the man throw the water bottle four times in his first turn?",
+      "gt": "No",
+      "pred": "Yes. During the man's first turn, he threw the water bottle four times. This can be observed from the sequence of actions where he repeatedly attempts to throw the bottle, with the count of throws aligning with four attempts in his initial turn.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the man play the game?",
+      "gt": "Yes",
+      "pred": "Yes, the man played the game. He is seen holding a bottle and a pink plate, attempting to place items on the table (e.g., around the 10–15 second mark, he is actively participating in the game actions).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man throw the water bottle in his first turn?",
+      "gt": "Yes",
+      "pred": "Yes. The man threw the water bottle in his first turn (visible in the sequence of frames where he is seen attempting to throw the bottle).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the man throw the water bottle only once?",
+      "gt": "Yes",
+      "pred": "No. The man is shown throwing the water bottle multiple times throughout the video (e.g., in frames where he attempts to toss it toward the cups, with repeated actions visible across the sequence).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the man throw the water bottle four times?",
+      "gt": "No",
+      "pred": "So, let's check the video frames. The question is whether the man threw the water bottle four times. Let's look at the actions:\n\nFirst, the woman is holding the bottle, then the man takes it. Let's count his throws.\n\nLooking at the sequence:\n\n- In frame 10 (approx), the man is holding the bottle, preparing to throw. Then in frame 11, he throws it. Let's check if there are multiple throws.\n\nWait, the video shows the man taking the bottle and throwing. Let's see how many times he does it. The key is to count the number of times he throws the bottle.\n\nFrom the frames, when the man is involved in throwing:\n\n- One throw: when he's holding the bottle and throws (maybe in one of the middle frames).\n\nWait, but the question is about the man throwing four times. Let's check the actions.\n\nLooking at the frames where the man is throwing:\n\n- In the frame where he's holding the bottle, then the next frame shows the bottle in motion or result. Let's count.\n\nBut the problem is, the user says \"only use information you can directly verify from the video frames.\"\n\nLet's check if there are four instances where the man throws the bottle.\n\nWait, in the video, the woman throws first, then the man takes a turn. How many times does the man throw?\n\nLooking at the frames:\n\n- The first throw by the man: when he's holding the bottle, then the next frame shows the result. Then he might throw again.\n\nBut let's count:\n\n1. The man's first throw: in the frame where he's about to throw (e.g., frame 10), then the result.\n\n2. Then another throw.\n\n3. Another.\n\n4. Another.\n\nBut do we see four throws by the man?\n\nWait, the video shows multiple attempts. Let's check the number of times the man is seen throwing.\n\nAlternatively, maybe the answer is no, because the video might show fewer throws.\n\nWait, let's look at the frames:\n\n- In frame 10: man holds bottle, then in frame 11, he throws. Then maybe again.\n\nBut the key is to check how many times the man throws.\n\nWait, the user says \"only use information you can directly verify\". So we need to count the number of times the man is shown throwing the water bottle.\n\nLet's check:\n\n- In the sequence, when does the man throw?\n\nLooking at the frames:\n\n- The woman throws first (several times), then the man takes the bottle.\n\n- The man's first throw: in one of the frames, he throws, then the next frame shows the result.\n\n- Then he throws again.\n\n- How many times?\n\nWait, the video has multiple frames where the man is throwing. Let's count the number of times the bottle is in the air or he's in the throwing motion.\n\nAlternatively, the answer might be yes or no based on the count.\n\nWait, the problem is to determine if he threw four times.\n\nLet's check:\n\n1. The man throws the first time (e.g., frame 10-11)\n\n2. Second throw (frame 15-16)\n\n3. Third throw (frame 20-21)\n\n4. Fourth throw (frame 25-26)\n\nBut do the frames show four throws by the man?\n\nAlternatively, maybe the answer is no. Let's check the video.\n\nWait, the user says \"only use information you can directly verify\". So we need to check if the video shows four throws by the man.\n\nLooking at the frames:\n\n- The man is seen throwing the bottle multiple times, but how many?\n\nWait, in the provided frames, the man takes the bottle and throws. Let's count the number of times he does that.\n\nFrom the frames:\n\n- Frame 10: man holds bottle (pre-throw)\n\n- Frame 11: he throws (bottle in motion or result)\n\n- Then another frame where he throws again.\n\n- Let's count:\n\n1. First throw: yes\n\n2. Second throw: yes\n\n3. Third throw: yes\n\n4. Fourth throw: yes?\n\nBut maybe not. Let's check the exact frames.\n\nWait, the problem is that the user has 25 frames (from the list of images provided). Let's count the number of times the man is in the action of throwing (i.e., when he's holding the bottle and then the bottle is thrown).\n\nLooking at the images:\n\n- In image 10: man holds bottle (pre-throw)\n\n- Image 11: he throws (bottle in hand, maybe)\n\n- Image 12: he's clapping, so after throw\n\n- Image 15: man holds bottle, then throws\n\n- Image 16: after throw, he's clapping\n\n- Image 19: man holds bottle, then throws\n\n- Image 20",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Did the man throw the water bottle only one times in his first turn?",
+      "gt": "Yes",
+      "pred": "No. The man's first turn involves multiple attempts (evident from repeated actions of throwing and reacting, e.g., frames showing him throwing, missing, and then trying again; the text \"All that chances\" also implies multiple attempts). Thus, he did not throw only one time in his first turn.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the man participate in the game?",
+      "gt": "Yes",
+      "pred": "Yes, the man participated in the game. For example, in frames where he is holding a water bottle (e.g., around the 10th frame sequence) and interacting with the cups (e.g., holding a pink cup in one frame), indicating his active involvement.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man throw the water bottle in his first turn?",
+      "gt": "Yes",
+      "pred": "Yes. The man threw the water bottle in his first turn (visible in the sequence of frames where he is seen attempting to throw the bottle).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the man throw the water bottle only once during the game?",
+      "gt": "Yes",
+      "pred": "No, the man threw the water bottle multiple times during the game. This is evident from the sequence of frames showing him in the act of throwing and the subsequent reactions, indicating repeated attempts.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Does the woman win the game with number 3?",
+      "gt": "Yes",
+      "pred": "No, the woman does not win with number 3. The text \"Wow how can you miss All that chances\" and the context of the game (with both participants reacting to missed attempts) indicate that the woman missed the target associated with number 3. This is supported by the sequence where participants react to failed throws (e.g., the man covering his face, the woman’s actions showing missed attempts). There is no frame showing a successful hit on the number 3 plate.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the woman play the game?",
+      "gt": "Yes",
+      "pred": "Yes, the woman played the game. She is seen holding a bottle, attempting to place it into cups, and interacting with the game setup (e.g., frames where she holds the bottle and makes moves toward the cups).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the woman win the game?",
+      "gt": "Yes",
+      "pred": "Yes, the woman won the game. This is evident as she is seen taking the food trays (black containers with chicken and corn) from the table and leaving, while the man remains behind. The context of the game and the final frame (where she collects the food) indicates her victory.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the woman win with number 3?",
+      "gt": "Yes",
+      "pred": "Yes. The woman's successful action corresponds with the number 3 plate, as verified by the visible numbered plate in the sequence (e.g., around the",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

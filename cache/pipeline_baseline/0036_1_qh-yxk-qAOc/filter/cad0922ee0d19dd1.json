@@ -1,0 +1,214 @@
+{
+  "question": "Does the player in teal shirt number 23 score goal?",
+  "top_k": 10,
+  "indices": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "events": [
+    {
+      "event_type": "game",
+      "description": "The green-shirt team (Tottenham) attacks the goal defended by the red-and-white-shirt team (Ajax) in a wide stadium shot.",
+      "participants": [
+        "green-shirt team",
+        "red-and-white-shirt team",
+        "yellow-shirt goalkeeper"
+      ],
+      "on_screen_text": [
+        {
+          "text": "Nissan",
+          "location": "other"
+        },
+        {
+          "text": "Mastercard",
+          "location": "other"
+        },
+        {
+          "text": "Gazprom",
+          "location": "other"
+        },
+        {
+          "text": "Pepsi MAX",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "start",
+      "segment_label": "Football Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 5,
+      "start_time": "00:08",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "kick",
+      "description": "A green-shirt player (Lucas Moura) kicks the ball toward the goal from inside the penalty area.",
+      "participants": [
+        "green-shirt player",
+        "red-and-white-shirt player"
+      ],
+      "actor": "green-shirt player",
+      "object": "white and orange ball",
+      "on_screen_text": [
+        {
+          "text": "LUCAS MOURA",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:10",
+      "end_time": "00:11",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "scored",
+      "description": "The ball enters the bottom left corner of the net as the yellow-shirt goalkeeper dives but fails to reach it.",
+      "participants": [
+        "yellow-shirt goalkeeper"
+      ],
+      "actor": "yellow-shirt goalkeeper",
+      "object": "white and orange ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "LUCAS MOURA",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 7,
+      "start_time": "00:11",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "The green-shirt player (Lucas Moura) runs toward the sideline, shouting and jumping in celebration.",
+      "participants": [
+        "green-shirt player"
+      ],
+      "actor": "green-shirt player",
+      "on_screen_text": [
+        {
+          "text": "LUCAS MOURA",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 8,
+      "start_time": "00:12",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 2,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the green-jersey player (number 27) jumps and celebrates on the field",
+      "participants": [
+        "green-jersey player (number 27)",
+        "green-jersey player (number 20)"
+      ],
+      "actor": "green-jersey player (number 27)",
+      "object": "soccer field",
+      "on_screen_text": [
+        {
+          "text": "TARAFTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match Celebration",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 9,
+      "start_time": "00:15",
+      "end_time": "00:17",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 2,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the green-jersey player (number 20) jumps onto the back of the green-jersey player (number 27) in celebration",
+      "participants": [
+        "green-jersey player (number 20)",
+        "green-jersey player (number 27)"
+      ],
+      "actor": "green-jersey player (number 20)",
+      "object": "soccer field",
+      "on_screen_text": [
+        {
+          "text": "TARAFTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match Celebration",
+      "continuation_hint": "middle",
+      "event_index": 10,
+      "start_time": "00:17",
+      "end_time": "00:19",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 2,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the green-jersey player (number 27) slides on his knees while being hugged by teammates",
+      "participants": [
+        "green-jersey player (number 27)",
+        "green-jersey player (number 4)",
+        "green-jersey player (number 20)"
+      ],
+      "actor": "green-jersey player (number 27)",
+      "object": "soccer field",
+      "on_screen_text": [
+        {
+          "text": "TARAFTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match Celebration",
+      "continuation_hint": "middle",
+      "event_index": 11,
+      "start_time": "00:19",
+      "end_time": "00:21",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 2,
+      "segment_label_resolved": "Football Match"
+    }
+  ]
+}

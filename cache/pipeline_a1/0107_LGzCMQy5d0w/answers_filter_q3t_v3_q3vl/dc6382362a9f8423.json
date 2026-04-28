@@ -1,0 +1,70 @@
+{
+  "question": "Did the man win the game?",
+  "pred": "Evidence: The Context describes a cooperative Tetris-style grid game where both participants work together to fill the grid, culminating in mutual celebration and high-fives. The game appears to be cooperative rather than competitive, with no indication of one person winning over the other.\n\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "react",
+      "description": "the glasses man and long-haired woman react with excitement as the grid is filled",
+      "participants": [
+        "long-haired woman",
+        "glasses man"
+      ],
+      "on_screen_text": [],
+      "segment_boundary": "end",
+      "segment_label": "Tetris-style grid game",
+      "continuation_hint": "complete",
+      "event_index": 45,
+      "start_time": "00:58",
+      "end_time": "00:59",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Tetris Strategy Game"
+    },
+    {
+      "event_type": "high_five",
+      "description": "the glasses man and long-haired woman high-five each other in celebration",
+      "participants": [
+        "long-haired woman",
+        "glasses man"
+      ],
+      "actor": "glasses man",
+      "on_screen_text": [],
+      "segment_boundary": "end",
+      "segment_label": "Tetris-style grid game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 46,
+      "start_time": "00:59",
+      "end_time": "01:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Tetris Strategy Game"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the grey-shirt man and pink-shirt woman high-five each other above the game board",
+      "participants": [
+        "grey-shirt man",
+        "pink-shirt woman"
+      ],
+      "actor": "grey-shirt man",
+      "on_screen_text": [],
+      "segment_boundary": "end",
+      "segment_label": "Grid Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 47,
+      "start_time": "01:00",
+      "end_time": "01:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Tetris Strategy Game"
+    }
+  ]
+}

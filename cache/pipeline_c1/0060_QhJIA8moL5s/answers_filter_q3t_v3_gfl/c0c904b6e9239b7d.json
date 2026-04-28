@@ -1,0 +1,243 @@
+{
+  "question": "Did both players open the same number of boxes?",
+  "pred": "To determine if both players opened the same number of boxes, I will enumerate the box-opening events for each player based on the Context and frames:\n\n**LEFT player (blue-dress woman):**\n1. At ~00:51, she pulls out and opens Box 9 (Events 23, 25).\n2. At ~01:00, she opens Box 8 (Event 30).\n3. At ~04:15, she opens Box 4 (Events 114, 118).\nTotal: 3 boxes.\n\n**RIGHT player (man in suit):**\n1. At ~02:45, he opens a white box on the table (Event 75).\n2. At ~05:15, he pulls out and opens Box 3 (visible in frames near 05:15-05:20).\nTotal: 2 boxes.\n\nThe LEFT player opened 3 boxes, while the RIGHT player opened 2 boxes. They did not open the same number of boxes.\n\nEvidence: Events 23, 30, 75, 114, and frames at 05:15 show the players opening a total of 5 distinct boxes (3 by the woman, 2 by the man).\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "open_box",
+      "description": "The woman pulls out the bottom-right box labeled 9",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "object": "box 9",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 23,
+      "start_time": "00:51",
+      "end_time": "00:53",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "The woman opens the box to reveal its contents",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "object": "box 9",
+      "object_before": "closed box 9",
+      "object_after": "open box 9",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 25,
+      "start_time": "00:55",
+      "end_time": "00:57",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "The woman opens the leftmost lower box (labeled 8) on her side of the table and retrieves a bowl.",
+      "participants": [
+        "blonde-woman",
+        "man-in-suit"
+      ],
+      "actor": "blonde-woman",
+      "object": "beige box",
+      "cover": "beige box",
+      "hidden": "white bowl with colorful object",
+      "segment_boundary": "middle",
+      "segment_label": "Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 30,
+      "start_time": "01:00",
+      "end_time": "01:04",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "graphic",
+      "description": "on-screen scoreboard appears showing scores",
+      "participants": [],
+      "actor": "N/A",
+      "on_screen_text": [
+        {
+          "text": "JENNIFER 1",
+          "location": "scoreboard"
+        },
+        {
+          "text": "JIMMY 0",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "mystery box game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 67,
+      "start_time": "02:24",
+      "end_time": "02:27",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "scoreboard",
+      "description": "scoreboard displays JENNIFER with 1 point and JIMMY with 0 points",
+      "participants": [],
+      "actor": null,
+      "on_screen_text": [
+        {
+          "text": "JENNIFER 1",
+          "location": "lower_third"
+        },
+        {
+          "text": "JIMMY 0",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Full House Box Reveal",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 73,
+      "start_time": "02:30",
+      "end_time": "02:45",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "Jimmy opens the white box on the table and removes a flat object from inside",
+      "participants": [
+        "dark-dress woman",
+        "suit-man"
+      ],
+      "actor": "suit-man",
+      "object": "white box",
+      "segment_boundary": "middle",
+      "segment_label": "Game Show Segment",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 75,
+      "start_time": "02:45",
+      "end_time": "02:51",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "scoreboard_display",
+      "description": "scoreboard displays player scores",
+      "participants": [],
+      "actor": null,
+      "on_screen_text": [
+        {
+          "text": "JENNIFER 1",
+          "location": "scoreboard"
+        },
+        {
+          "text": "JIMMY 1",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Game with numbered screens",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 108,
+      "start_time": "03:45",
+      "end_time": "04:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "The woman opens the leftmost box (Box 4) on the middle shelf by pulling it forward",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "segment_boundary": "middle",
+      "segment_label": "Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "object": "beige box",
+      "cover": "beige box",
+      "hidden": "uncertain: interior contents",
+      "event_index": 114,
+      "start_time": "04:18",
+      "end_time": "04:21",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "Jennifer opens the leftmost box on the table",
+      "participants": [
+        "blue-dress woman",
+        "black-suit man"
+      ],
+      "actor": "blue-dress woman",
+      "object": "beige box",
+      "segment_boundary": "middle",
+      "segment_label": "Game show segment",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 118,
+      "start_time": "04:15",
+      "end_time": "04:18",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "Scoreboard shows 'JENNIFER 1' and 'JIMMY 1' on both sides of the screen",
+      "participants": [],
+      "actor": null,
+      "on_screen_text": [
+        {
+          "text": "JENNIFER 1",
+          "location": "lower_third"
+        },
+        {
+          "text": "JIMMY 1",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Mirror Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 134,
+      "start_time": "04:45",
+      "end_time": "05:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    }
+  ]
+}

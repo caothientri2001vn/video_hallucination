@@ -1,0 +1,150 @@
+{
+  "question": "Does the man win the game?",
+  "pred": "Evidence: Context states \"man in red raises his right arm in celebration while facing the woman\" as the final event (event #44) with segment_boundary \"end\", indicating he won the game.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "outcome",
+      "description": "pink ball lands in the leftmost channel under the first \"1\"",
+      "participants": [],
+      "actor": null,
+      "object": "pink ball",
+      "outcome": "in",
+      "on_screen_text": [
+        {
+          "text": "1 0 2 0 1",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Ball Rolling Game",
+      "continuation_hint": "complete",
+      "event_index": 3,
+      "start_time": "00:02",
+      "end_time": "00:04",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Ball Rolling Game"
+    },
+    {
+      "event_type": "outcome",
+      "description": "red ball lands in the rightmost channel under the second \"1\"",
+      "participants": [],
+      "actor": null,
+      "object": "red ball",
+      "outcome": "in",
+      "on_screen_text": [
+        {
+          "text": "1 0 2 0 1",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Ball Rolling Game",
+      "continuation_hint": "complete",
+      "event_index": 6,
+      "start_time": "00:06",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Ball Rolling Game"
+    },
+    {
+      "event_type": "outcome",
+      "description": "second pink ball lands in the second channel from the left under the first \"0\"",
+      "participants": [],
+      "actor": null,
+      "object": "pink ball",
+      "outcome": "in",
+      "on_screen_text": [
+        {
+          "text": "1 0 2 0 1",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Ball Rolling Game",
+      "continuation_hint": "complete",
+      "event_index": 9,
+      "start_time": "00:10",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Ball Rolling Game"
+    },
+    {
+      "event_type": "outcome",
+      "description": "second red ball lands in the middle channel under the \"2\"",
+      "participants": [],
+      "actor": null,
+      "object": "red ball",
+      "outcome": "in",
+      "on_screen_text": [
+        {
+          "text": "1 0 2 0 1",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Ball Rolling Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 11,
+      "start_time": "00:13",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Ball Rolling Game"
+    },
+    {
+      "event_type": "celebration",
+      "description": "man in red raises his right arm in celebration while facing the woman",
+      "participants": [
+        "red-hoodie man"
+      ],
+      "actor": "red-hoodie man",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "scoreboard"
+        },
+        {
+          "text": "0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "2",
+          "location": "scoreboard"
+        },
+        {
+          "text": "0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "1",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Balloon Track Game",
+      "continuation_hint": "complete",
+      "event_index": 44,
+      "start_time": "01:13",
+      "end_time": "01:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Ball Rolling Game"
+    }
+  ]
+}

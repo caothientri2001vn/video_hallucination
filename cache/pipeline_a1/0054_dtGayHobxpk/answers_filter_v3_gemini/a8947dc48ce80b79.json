@@ -1,0 +1,176 @@
+{
+  "question": "Were there three balls potted between the yellow ball and the pink ball?",
+  "pred": "The video shows a snooker match where a player in a black vest (O'Sullivan) clears the remaining balls on the table. Following the potting of the yellow ball (event 244 at 08:10), the player proceeds to pot the other colored balls in their standard sequence.\n\n1. **Yellow ball**: Potted at 08:10 (Event 244).\n2. **Green ball**: Potted shortly after the yellow (visible in frames between 08:15 and 08:47).\n3. **Brown ball**: Potted after the green (visible in frames between 08:15 and 08:47).\n4. **Blue ball**: Potted at 08:47 (Event 262).\n5. **Pink ball**: Potted at 08:54 (Event 269).\n\nBetween the yellow ball and the pink ball, the green, brown, and blue balls were potted, totaling three balls.\n\nEvidence: Events 244 (yellow potted), 262 (blue potted), and 269 (pink potted) show the sequence, with frames between 08:15 and 08:47 showing the clearance of the green and brown balls.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "game",
+      "description": "The black-shirt man takes another shot, hitting the white cue ball into the yellow ball.",
+      "participants": [
+        "black-shirt man",
+        "white-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "white cue ball",
+      "on_screen_text": [
+        {
+          "text": "DING JUNHUI",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "middle",
+      "event_index": 244,
+      "start_time": "08:10",
+      "end_time": "08:12",
+      "sub_events": [],
+      "subtype_order": 84,
+      "subtype_total": 101,
+      "round_index": 1,
+      "segment_label_resolved": "Snooker Match"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "The scoreboard updates as the yellow ball is potted, increasing O'Sullivan's score to 122.",
+      "participants": [
+        "black-shirt man"
+      ],
+      "on_screen_text": [
+        {
+          "text": "DING",
+          "location": "scoreboard"
+        },
+        {
+          "text": "0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "3 (17) 8",
+          "location": "scoreboard"
+        },
+        {
+          "text": "122",
+          "location": "scoreboard"
+        },
+        {
+          "text": "O'SULLIVAN",
+          "location": "scoreboard"
+        },
+        {
+          "text": "Break 122",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 245,
+      "start_time": "08:12",
+      "end_time": "08:15",
+      "sub_events": [],
+      "subtype_order": 32,
+      "subtype_total": 35,
+      "round_index": 1,
+      "segment_label_resolved": "Snooker Match"
+    },
+    {
+      "event_type": "game",
+      "description": "the white ball hits the blue ball on the green table",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "BETVICTOR 伟德 WELSH OPEN",
+          "location": "other"
+        },
+        {
+          "text": "DING JUNHUI",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "complete",
+      "event_index": 262,
+      "start_time": "08:47",
+      "end_time": "08:48",
+      "sub_events": [],
+      "subtype_order": 89,
+      "subtype_total": 101,
+      "round_index": 1,
+      "segment_label_resolved": "Snooker Match"
+    },
+    {
+      "event_type": "game",
+      "description": "the white ball rolls toward the pink ball",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "white ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "complete",
+      "event_index": 268,
+      "start_time": "08:53",
+      "end_time": "08:54",
+      "sub_events": [],
+      "subtype_order": 94,
+      "subtype_total": 101,
+      "round_index": 1,
+      "segment_label_resolved": "Snooker Match"
+    },
+    {
+      "event_type": "game",
+      "description": "the pink ball is potted into the corner pocket",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "pink ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "complete",
+      "event_index": 269,
+      "start_time": "08:54",
+      "end_time": "08:55",
+      "sub_events": [],
+      "subtype_order": 95,
+      "subtype_total": 101,
+      "round_index": 1,
+      "segment_label_resolved": "Snooker Match"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "the break score updates on the screen",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "on_screen_text": [
+        {
+          "text": "Break 135",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Snooker Match",
+      "continuation_hint": "complete",
+      "event_index": 270,
+      "start_time": "08:55",
+      "end_time": "08:56",
+      "sub_events": [],
+      "subtype_order": 35,
+      "subtype_total": 35,
+      "round_index": 1,
+      "segment_label_resolved": "Snooker Match"
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0046_Md4QnipNYqM.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0046_Md4QnipNYqM.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0046_Md4QnipNYqM",
+    "n_target": 8,
+    "n_sub": 27,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.875,
+    "sub_accuracy": 0.37037037037037035
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Did the man on the left open three boxes?",
+      "gt": "No",
+      "pred": "Yes. The man on the left opened three boxes: one revealing a miniature scene with gnomes (around 0:04–0:05), one revealing a green dome with a figure (around 0:12–0:13), and one revealing a dinosaur in a tutu (around 0:16–0:17).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a man on the left in the video?",
+      "gt": "No",
+      "pred": "Yes, there was a man on the left in the video (e.g., visible in the 3rd frame and multiple subsequent frames).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did anyone on the left open any boxes?",
+      "gt": "No",
+      "pred": "Yes, the person on the left opened boxes. For example, they open a box to reveal a miniature scene with gnomes (around 0:05), a box with a green jelly-like object (around 0:15), and a box with a dinosaur in a pink tutu (around 0:20).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Were three boxes opened by a man on the left?",
+      "gt": "No",
+      "pred": "Yes. The man on the left (Chris Pratt) opens three boxes: one revealing a miniature scene of gnomes doing yoga (around 4–5 seconds), another showing a figure in a green dome (around 15–16 seconds), and a third containing a dinosaur in a pink tutu (around 20–21 seconds).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Did the man on the left open two boxes?",
+      "gt": "Yes",
+      "pred": "Yes. The man on the left opens two boxes: one at approximately 0:04-0:07 (revealing the miniature garden scene with gnomes) and another at approximately 3:14-3:17 (revealing the dinosaur figurine in a pink tutu).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a man on the left?",
+      "gt": "No",
+      "pred": "Yes, there was a man on the left. This is evident in multiple frames, such as the frame showing two men seated at a table with numbered boxes (e.g., around the 2 - 3 second mark in the sequence).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a man on the left open any boxes?",
+      "gt": "No",
+      "pred": "Yes. The man on the left opened boxes; for example, he is seen removing a box from the shelf (e.g., around timestamp 4) and later revealing items inside opened boxes (e.g., timestamp 12, 20).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Were two boxes opened by someone on the left?",
+      "gt": "No",
+      "pred": "Yes. The person on the left opened two boxes: one containing the miniature gnome yoga scene (evident around 0:05–0:06 when the box is opened) and another containing the dinosaur in a pink tutu (evident around 0:21–0:22 when the box is opened).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Did the man on the right open three boxes?",
+      "gt": "No",
+      "pred": "No. The man on the right (Jimmy Fallon) did not open three boxes. The man on the left (Chris Pratt) opened the boxes (e.g., the box with gnomes, the green jelly box, and the box with the dinosaur in a tutu). Jimmy Fallon was primarily seen placing boxes, not opening them.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a man on the right in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there was a man on the right in the video. For example, in the frame at approximately 0:03, a man in a suit is seated on the right side of the table.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man on the right open any boxes?",
+      "gt": "Yes",
+      "pred": "No, the man on the right did not open any boxes. The box-opening actions (e.g., revealing the gnome yoga scene, the green dome, and the ballerina dinosaur) are performed by the man on the left. The man on the right is seen moving or placing boxes (e.g., in frame 14, he places a box on the table), but not opening them.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the man on the right open three boxes?",
+      "gt": "No",
+      "pred": "No. The man on the right (Jimmy Fallon) did not open three boxes. The man on the left (Chris Pratt) opened the boxes (e.g., the box with gnomes, the green jelly box, and the box with the dinosaur in a tutu). Jimmy Fallon was primarily seen placing boxes, not opening them.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the man on the right open more than one box?",
+      "gt": "No",
+      "pred": "So, let's check the video. The man on the right—first, we need to see which boxes he opened. Let's look at the frames. \n\nIn the sequence, the man on the right (the host, Jimmy Fallon) is seen interacting with the boxes. Let's check when boxes are opened. \n\nFirst, the man on the left (Chris Pratt) opens box 7, then box 4, then box 1, etc. Wait, the question is about the man on the right. Let's check:\n\nLooking at the frames:\n\n- In frame 13 (the 13th image), the man on the right is holding a box (box 9 maybe? Wait, no. Let's check the timestamps. The frames are sequential. \n\nWait, the man on the right (Jimmy) is seen moving boxes. For example, in frame 15 (15th image), the man on the right is placing a box (box 8?) on the table. Then in frame 16, he's adjusting boxes. But did he open a box? Let's see when boxes are opened. \n\nBox 7 is opened by Chris Pratt (frame 5-6: he takes the box, opens it to show the gnome scene). Then box 4: in frame 11, Chris opens box 4. Then box 9: in frame 12, he opens box 9? Wait, no. Let's check the actions:\n\n- Box 7: Chris opens it (frame 5-6: he brings the box to the table, opens it to show the gnomes).\n- Then, in frame 13, he opens box 4 (the green jello one? No, the next box. Wait, frame 14: the man on the right (Jimmy) is holding a box (box 8?), then in frame 15, he places a box (box 9?) on the table. But when does Jimmy open a box?\n\nWait, let's check the frames where boxes are opened. The boxes are numbered 1-9. The man on the left (Chris) opens several boxes: 7, 4, 1, 9, 8? Let's see:\n\n- Frame 4: Chris picks up a box (box 7? Because in frame 3, box 7 is on the shelf, then in frame 4, he takes it, so box 7).\n- Frame 5: he places it on the table, then opens it (frame 6 shows the inside with gnomes).\n- Then, frame 12: he opens box 4 (the green jello one? No, the next one: in frame 12, he's holding a box, then frame 13 shows the green jello with a person inside, so that's from a box he opened. Wait, no, the green jello is from a different box. Let's check:\n\nIn frame 13 (the 13th image), the man on the right (Jimmy) is holding his head, and Chris is holding a box with the green jello. So Chris opened that box. Then, in frame 15, Chris opens another box (the one with the dinosaur in a tutu). So Chris is the one opening most boxes. \n\nNow, the man on the right (Jimmy): did he open any boxes? Let's check the frames. \n\nIn frame 14: the man on the right (Jimmy) is placing a box (box 8?) on the table. Then in frame 15, he's adjusting boxes. But when does he open a box? Let's see if he opens more than one. \n\nWait, looking at the frames:\n\n- Frame 15: Jimmy is moving a box (box 8?).\n- Frame 16: he and Chris are adjusting boxes.\n- Then, in frame 22, Jimmy is pointing at the boxes. \n\nWait, the key is: did the man on the right open more than one box? Let's check all instances of opening boxes.\n\nFrom the video:\n\n- Chris opens box 7 (frame 4-6), box 4 (frame 12-13), box 9 (frame 14-15), box 1 (frame 18-19), box 8 (frame 20-21), etc. \n\nJimmy: when does he open a box? Let's check:\n\nIn frame 17 (17th image), Jimmy is standing, pointing at the boxes. In frame 18, he's placing a box (box 9?) on the table. But does he open a box? Let's check the frames where a box is opened (i.e., the box is moved from the shelf to the table and opened).\n\nLooking at the sequence:\n\n- Box 7:",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Did the man on the right open two boxes?",
+      "gt": "No",
+      "pred": "No. The man on the right (Jimmy Fallon) opened one box (the one with the green dome, visible around timestamp 17 - 18). The other boxes were opened by the man on the left (Chris Pratt).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a man on the right appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a man on the right appeared in the video (e.g., in frame 3, where two men are seated at a table, one on the right is visible).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man on the right open boxes?",
+      "gt": "Yes",
+      "pred": "No, the man on the right did not open boxes. The man on the left (e.g., at timestamps showing him taking items from boxes, such as the miniature gnome scene and the dinosaur in a tutu) is the one who opens the boxes, while the man on the right reacts or interacts with the revealed items.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the man on the right open exactly two boxes?",
+      "gt": "No",
+      "pred": "So, let's check the video. The man on the right is Jimmy Fallon, I think. Let's see how many boxes he opened. First, in the sequence, when the boxes are being opened: the first box opened (by the man on the left, Chris Pratt) is box 7, then later box 9 is opened by Jimmy? Wait, no. Wait, let's count the boxes opened by the man on the right (Jimmy).\n\nLooking at the frames:\n\n- In the first box opening (Chris opens box 7, then shows the gnome yoga), then later Jimmy opens a box. Let's see: when Chris opens box 7, then later Jimmy opens box 9? Wait, no. Let's check the actions.\n\nWait, the man on the right (Jimmy) opens a box. Let's see the frames where he opens boxes. In frame 14, he's moving a box. Then frame 15, he's placing a box. Wait, no. Let's check the order.\n\nWait, the video shows:\n\n- Chris Pratt (left) opens box 7 (first), then shows the gnome yoga scene (frame 5). Then, later, Jimmy (right) opens box 9? Wait, no. Let's check the box numbers.\n\nThe boxes are numbered 1-9. The sequence of opening:\n\n1. Chris opens box 7 (as seen in frame 4: he picks up box 7, then in frame 5, it's opened to show the gnome yoga).\n\n2. Then, later, Jimmy opens box 9? Wait, no. Let's check frame 13: Jimmy is moving a box, then frame 14: he's placing a box. Wait, no. Let's count how many boxes Jimmy opened.\n\nWait, the question is: did the man on the right open exactly two boxes?\n\nLet's check the frames where the man on the right (Jimmy) opens boxes.\n\n- In frame 13: Jimmy is moving a box (he's placing a box on the table).\n\n- In frame 14: he's adjusting a box.\n\n- In frame 18: he's placing a box (the one with the green dome).\n\n- In frame 20: he's moving a box (the one with the dinosaur).\n\nWait, no. Let's check the actual box openings:\n\n1. Chris opens box 7 (first box opened, by Chris).\n\n2. Then, Jimmy opens box 9 (as seen in frame 13: he's moving a box, then in frame 14, the box is placed, and then the content is shown).\n\n3. Then, Chris opens box 8 (frame 17: Chris moves box 8, then shows the green dome).\n\n4. Then, Jimmy opens box 2? Wait, no. Wait, the key is: how many boxes did the man on the right (Jimmy) open?\n\nLooking at the video:\n\n- When Chris opens box 7 (first), then Jimmy opens a box. Let's see: in frame 13, Jimmy is moving a box (the one that's number 9? Let's check the box numbers. The boxes are arranged as 1,2,3 on top; 4,5,6 in the middle; 7,8,9 at the bottom. So box 9 is on the bottom right.\n\nIn frame 13: Jimmy is moving a box (the one that's box 9, since it's on the bottom right). So he opens box 9. Then, later, he opens another box? Let's check the frames where he opens boxes.\n\nWait, the video shows:\n\n- Chris opens box 7 (1st box, by Chris).\n\n- Then, Jimmy opens box 9 (2nd box, by Jimmy).\n\n- Then, Chris opens box 8 (3rd box, by Chris).\n\n- Then, Jimmy opens box 2 (4th box, by Jimmy)? No, let's check the actual actions.\n\nWait, no. Let's count the number of boxes opened by Jimmy:\n\n1. In the sequence, when Chris opens box 7 (first box), then the next box opened is by Jimmy. Let's see: after Chris shows the gnome yoga, Jimmy opens a box (box 9? Let's check frame 13: the box he's moving is the one with the green dome? No, the green dome is from another box.\n\nWait, maybe better to check the number of times Jimmy opens a box. Let's look at the frames where Jimmy is the one opening the box.\n\n- In frame 13: Jimmy is moving a box (he's placing it on the table), then in frame 14, he's adjusting. Then, in frame 15, the box is opened to show the green dome (so that's a box opened by Jimmy?).\n\nWait, no. Let's",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the man on the right open multiple boxes?",
+      "gt": "No",
+      "pred": "So, let's check the video. The man on the right—wait, in the frames, there's a man on the left and right. Let's see when boxes are opened. \n\nFirst, the man on the left (in the dark suit with checkered shirt) opens a box. Then, later, the man on the right (in the dark suit with white shirt and tie) also opens a box. Let's check the timestamps. \n\nLooking at the frames: \n\n- In frame 13, the man on the left is holding a box with the gnome scene. Then, in frame 15, the man on the right is placing a box on the table. Then in frame 16, the man on the right is moving a box. Then in frame 17, both are moving boxes. Then in frame 20, the man on the right is holding a box. Wait, but the question is if the man on the right opened multiple boxes. Let's check which boxes he opened. \n\nWait, the boxes are numbered 1-9. The man on the right—let's see. In frame 14, the man on the left is holding the box (so that's one box he opened). Then, in frame 15, the man on the right is placing a box (so he's opening another). Then in frame 17, he's moving a box. Let's count: \n\n- The man on the right opens at least one box (the one with the green jelly-like thing, frame 18). Also, in frame 21, he's moving a box. Wait, but let's check the actions. \n\nWait, the question is \"Did the man on the right open multiple boxes?\" Let's see:\n\n- In frame 14: man on left opens a box (the one with gnomes). \n- Then, in frame 15: man on right places a box (so he's opening that box). \n- In frame 16: man on right moves a box (so another box). \n- In frame 17: both move boxes, so man on right moves another. \n- In frame 21: man on right is holding a box (so he's opening that). \n\nWait, but let's check the exact frames where the man on the right is opening boxes. \n\nLooking at frame 14: man on left (Chris Pratt) opens box 7 (since in frame 14, the box with gnomes is from box 7). Then, in frame 15, the man on the right (Jimmy Fallon) is placing a box (the green one, which is box 5? Wait, no. Let's check the setup. \n\nIn the initial frames (3), the boxes are 1-9. Then in frame 4, the man on left (Chris) moves box 7 (the one with the gnome scene). Then in frame 13, the man on the right (Jimmy) is holding a box (the green one, which is box 5? No, in frame 13, the box with the green jelly is shown. Then in frame 14, the man on the right (Jimmy) is placing a box (the green one). Then in frame 15, the man on the right (Jimmy) is moving another box. Wait, but let's check the frames where the man on the right is opening boxes. \n\nWait, the man on the right (Jimmy) opens a box (the green one, frame 13) and then another box (the one with the dinosaur, frame 21? No, in frame 21, the man on the left is holding the dinosaur. Wait, no. Let's check the frames:\n\n- Frame 13: man on left holds box with gnomes (box 7). \n- Frame 14: man on right (Jimmy) is placing a box (the green one, which is box 5? Because in frame 14, the setup shows box 5 is missing. Wait, in frame 14, the boxes 4, 5, 6 are on the shelf, but in frame 14, box 4 is missing (the man on left took it). Wait, no. Let's check the frames:\n\nIn frame 3 (the full setup), all 9 boxes are there: 1,2,3 on top; 4,5,6 in middle; 7,8,9 at bottom. \n\nFrame 4: the man on left (Chris) moves box 4 (the one with number 4), so box 4 is gone. Then in frame 5, he moves box 7 (so box 7 is gone). Then in frame 13, he's holding the box with gnomes (which was box 7",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Did the man on the right open only one box?",
+      "gt": "Yes",
+      "pred": "Yes. The man on the right (Jimmy Fallon) opens only one box, as seen when he retrieves and reveals the green jelly - like object (e.g., around timestamp 13 - 15). The other box openings are performed by the man on the left (Chris Pratt).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a man on the right?",
+      "gt": "Yes",
+      "pred": "Yes, there was a man on the right. For example, in the frame at approximately 0:03, a man is visible on the right side of the table.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man on the right open at least one box?",
+      "gt": "Yes",
+      "pred": "Yes. The man on the right (in the dark suit) is seen opening a box, as evidenced by his actions when handling the boxes on the table (e.g., when placing and interacting with the boxes, which includes opening them to reveal items). This is visible in the sequence of frames where he manipulates the boxes (e.g., around the 13:00-14:00 timestamp range).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the man on the right open more than one box?",
+      "gt": "No",
+      "pred": "So, let's check the video. The man on the right—first, we need to see which boxes he opened. Let's look at the frames. \n\nIn the sequence, the man on the right (the host, Jimmy Fallon) is seen interacting with the boxes. Let's check when boxes are opened. \n\nFirst, the man on the left (Chris Pratt) opens box 7, then box 4, then box 1, etc. Wait, the question is about the man on the right. Let's check:\n\nLooking at the frames:\n\n- In frame 13 (the 13th image), the man on the right is holding a box (box 9 maybe? Wait, no. Let's check the timestamps. The frames are sequential. \n\nWait, the man on the right (Jimmy) is seen moving boxes. For example, in frame 15 (15th image), the man on the right is placing a box (box 8?) on the table. Then in frame 16, he's adjusting boxes. But did he open a box? Let's see when boxes are opened. \n\nBox 7 is opened by Chris Pratt (frame 5-6: he takes the box, opens it to show the gnome scene). Then box 4: in frame 11, Chris opens box 4. Then box 9: in frame 12, he opens box 9? Wait, no. Let's check the actions:\n\n- Box 7: Chris opens it (frame 5-6: he brings the box to the table, opens it to show the gnomes).\n- Then, in frame 13, he opens box 4 (the green jello one? No, the next box. Wait, frame 14: the man on the right (Jimmy) is holding a box (box 8?), then in frame 15, he places a box (box 9?) on the table. But when does Jimmy open a box?\n\nWait, let's check the frames where boxes are opened. The boxes are numbered 1-9. The man on the left (Chris) opens several boxes: 7, 4, 1, 9, 8? Let's see:\n\n- Frame 4: Chris picks up a box (box 7? Because in frame 3, box 7 is on the shelf, then in frame 4, he takes it, so box 7).\n- Frame 5: he places it on the table, then opens it (frame 6 shows the inside with gnomes).\n- Then, frame 12: he opens box 4 (the green jello one? No, the next one: in frame 12, he's holding a box, then frame 13 shows the green jello with a person inside, so that's from a box he opened. Wait, no, the green jello is from a different box. Let's check:\n\nIn frame 13 (the 13th image), the man on the right (Jimmy) is holding his head, and Chris is holding a box with the green jello. So Chris opened that box. Then, in frame 15, Chris opens another box (the one with the dinosaur in a tutu). So Chris is the one opening most boxes. \n\nNow, the man on the right (Jimmy): did he open any boxes? Let's check the frames. \n\nIn frame 14: the man on the right (Jimmy) is placing a box (box 8?) on the table. Then in frame 15, he's adjusting boxes. But when does he open a box? Let's see if he opens more than one. \n\nWait, looking at the frames:\n\n- Frame 15: Jimmy is moving a box (box 8?).\n- Frame 16: he and Chris are adjusting boxes.\n- Then, in frame 22, Jimmy is pointing at the boxes. \n\nWait, the key is: did the man on the right open more than one box? Let's check all instances of opening boxes.\n\nFrom the video:\n\n- Chris opens box 7 (frame 4-6), box 4 (frame 12-13), box 9 (frame 14-15), box 1 (frame 18-19), box 8 (frame 20-21), etc. \n\nJimmy: when does he open a box? Let's check:\n\nIn frame 17 (17th image), Jimmy is standing, pointing at the boxes. In frame 18, he's placing a box (box 9?) on the table. But does he open a box? Let's check the frames where a box is opened (i.e., the box is moved from the shelf to the table and opened).\n\nLooking at the sequence:\n\n- Box 7:",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Did the two men open a total of two boxes?",
+      "gt": "No",
+      "pred": "So, let's check the video. First, in the sequence, one man opens a box (like when he takes out the gnome yoga scene), then later another box (the dinosaur in a tutu). Let's count. The first box opened is when he takes out the model with gnomes (around the 5th frame maybe), then another box with the green gelatin thing, and then the dinosaur. Wait, no, let's see the actions.\n\nLooking at the frames: \n\n- The man on the left opens a box (frame 3-4: he takes a box from the shelf, places it on the table, opens it to show the gnome model). Then later, he opens another box (frame 19-20: he takes a box, opens it to show the dinosaur in a tutu). Wait, but the question is \"a total of two boxes\". Let's check how many boxes were opened.\n\nIn the video, the man on the left opens at least two boxes: one with the gnomes (yoga scene) and one with the dinosaur in a tutu. Let's confirm:\n\n- Frame 11: shows the gnome model, so that's one box opened.\n\n- Frame 21: shows the dinosaur in a tutu, so that's a second box opened.\n\nAre there more? Let's see. The man on the right also moves boxes, but the question is about \"the two men\" opening boxes. Wait, the question is \"Did the two men open a total of two boxes?\" Let's check all box openings.\n\n1. The first box opened: when the man on the left takes box 7 (or another) and opens it to show the gnome scene (frame 5-6: he places the box on the table, opens it, shows the model). That's one.\n\n2. Then, the man on the left opens another box: when he takes a box (maybe 9 or 8) and opens it to show the dinosaur (frame 20-21: the dinosaur is shown). That's two.\n\nAre there more? Let's check the frames. The frame with the green gelatin (16) is another item, but is that a box? Wait, frame 16: the green gelatin with a man, but that might be from a different box. Wait, no: the two men open boxes. Let's count the box openings where a box is opened to reveal an item.\n\n- First: box opened to show gnomes (1 box)\n\n- Second: box opened to show the green gelatin (1 box) — but wait, in frame 17, the man on the left is holding a box with the green gelatin? Wait, no, frame 17: the man on the left holds a box, and the green gelatin is shown. So that's a second box.\n\n- Third: the dinosaur in a tutu (third box). Wait, but the question is \"a total of two boxes\". Let's check the exact count.\n\nWait, let's list the box openings:\n\n1. The first box: the man on the left takes a box (from the shelf) and opens it to show the gnome model (5-6). That's one.\n\n2. The second box: the man on the left takes another box (from the shelf) and opens it to show the green gelatin (16-17). That's two.\n\n3. The third box: the man on the left takes a third box and opens it to show the dinosaur (20-21). That's three.\n\nBut the question is \"a total of two boxes\". So the answer would be no, but wait, maybe I miscounted.\n\nWait, let's check the video again. The frames:\n\n- In frame 3: the man on the left picks up a box (box 7, since 7 is missing in the shelf).\n\n- Frame 4: he places it on the table.\n\n- Frame 5: he opens it, and the next frame (6) shows the gnome model. So that's one box opened.\n\nThen, later, in frame 13: the man on the left is holding a box (the green gelatin one), so that's a second box.\n\nThen, frame 19: he picks up another box (7 is on the shelf? Wait, frame 19: the man on the left takes a box from the shelf (7 is visible, so he takes 7? Or another). Then frame 20: he opens it to show the dinosaur. So that's a third box.\n\nBut the question is \"a total of two boxes\". So the answer is no. But wait, let's check if the two men together opened two boxes.\n\nWait, the two men: the left man opens multiple boxes, the right man also moves boxes but does he open any? Let's check",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Are there two men in the video?",
+      "gt": "No",
+      "pred": "Yes, there are two men in the video. This is visible in multiple frames, such as the frame at 0:03 where two men are seated at a table with numbered boxes.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man on the right open only one box?",
+      "gt": "Yes",
+      "pred": "Yes. The man on the right (Jimmy Fallon) opens only one box, as seen when he retrieves and reveals the green jelly - like object (e.g., around timestamp 13 - 15). The other box openings are performed by the man on the left (Chris Pratt).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did another man besides the man on the right open any boxes?",
+      "gt": "No",
+      "pred": "Yes, the man on the left opened boxes. For example, he opens a box (e.g., around timestamp 0:04-0:05, he handles box 7 and reveals its contents).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the total number of boxes opened in the video equal to two?",
+      "gt": "No",
+      "pred": "No. The video shows three boxes being opened: the first reveals garden gnomes (e.g., around timestamp 5), the second reveals a green gelatin-like object (e.g., around timestamp 16), and the third reveals a dinosaur in a pink tutu (e.g., around timestamp 22). Thus, the total number of boxes opened is three, not two.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Did the two men open a total of four boxes?",
+      "gt": "No",
+      "pred": "To determine if the two men opened a total of four boxes, we analyze the video frames:  \n\n1. **First box opened**: At ~3–6 seconds, one man takes a box from the shelf and opens it to reveal a scene with gnomes doing yoga (1 box).  \n2. **Second box opened**: At ~12–17 seconds, the other man takes a box and opens it to show a green dome with a person inside (2nd box).  \n3. **Third box opened**: At ~20–23 seconds, the first man takes another box and opens it to reveal a dinosaur in a pink tutu (3rd box).  \n\nNo fourth box is opened in the video. The total number of boxes opened is three.  \n\nAnswer: No.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Are there two men in the video?",
+      "gt": "No",
+      "pred": "Yes, there are two men in the video. This is visible in multiple frames, such as the frame at 0:03 where two men are seated at a table with numbered boxes.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man on the right open only one box?",
+      "gt": "Yes",
+      "pred": "Yes. The man on the right (Jimmy Fallon) opens only one box, as seen when he retrieves and reveals the green jelly - like object (e.g., around timestamp 13 - 15). The other box openings are performed by the man on the left (Chris Pratt).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Were four boxes opened in total in the video?",
+      "gt": "No",
+      "pred": "No. In the video, three boxes were opened: one showing gnomes (around frame 5), one with a green dome (around frame 16), and one with a dinosaur in a tutu (around frame 22). No fourth box was opened.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Are there a total of eleven boxes on a shelf?",
+      "gt": "No",
+      "pred": "No. The video shows a shelf with numbered boxes; in the frame at approximately 0:03, the shelf has boxes numbered 1 through 9 (3 rows of 3 boxes each), totaling 9 boxes. No frame shows 11 boxes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a shelf visible in the video?",
+      "gt": "No",
+      "pred": "Yes, a shelf with numbered boxes (1-9) is visible in multiple frames, such as at timestamp 0:03.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Are there eleven boxes shown in the video?",
+      "gt": "No",
+      "pred": "No. The video shows a setup with 9 numbered boxes (1-9) arranged in a 3x3 grid (e.g., visible in the third frame and other wide shots). There are no eleven boxes present in any frame.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Are boxes placed on a shelf in the video?",
+      "gt": "No",
+      "pred": "Yes, boxes are placed on a shelf in the video. For example, in the second frame (0:02), boxes labeled 4, 5, and 6 are on a shelf, and in the third frame (0:03), a shelf with boxes labeled 1 through 9 is visible.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    }
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "question": "Did both teams fail exactly once during the game?",
+  "pred": "Evidence: The Context shows only one instance where the timer reaches 0 (Event 57), but does not explicitly state this was a failure or provide evidence of a second failure. There's no clear indication of two teams or that both teams failed exactly once.\n\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "stand",
+      "description": "Four people stand in front of blue curtain with Charades board visible",
+      "participants": [
+        "checkered-jumpsuit woman",
+        "black-outfit man",
+        "corset-top woman",
+        "suit man"
+      ],
+      "actor": "all",
+      "segment_boundary": "start",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:02",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "gesture",
+      "description": "Woman makes a final running motion with legs, taking a small step forward",
+      "participants": [
+        "black-jumpsuit woman",
+        "blonde-woman",
+        "black-hat man",
+        "black-suit man"
+      ],
+      "actor": "black-jumpsuit woman",
+      "object": "",
+      "object_before": "",
+      "object_after": "",
+      "on_screen_text": [
+        {
+          "text": "BORN TO RUN",
+          "location": "caption"
+        },
+        {
+          "text": "1",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 56,
+      "start_time": "01:43",
+      "end_time": "01:44",
+      "sub_events": [],
+      "subtype_order": 26,
+      "subtype_total": 53,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "Countdown timer reaches 0",
+      "participants": [],
+      "actor": "",
+      "object": "",
+      "object_before": "",
+      "object_after": "",
+      "on_screen_text": [
+        {
+          "text": "BORN TO RUN",
+          "location": "caption"
+        },
+        {
+          "text": "0",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Charades",
+      "continuation_hint": "complete",
+      "event_index": 57,
+      "start_time": "01:44",
+      "end_time": "01:45",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "stand",
+      "description": "Man in black suit stands up from his chair",
+      "participants": [
+        "black-jumpsuit woman",
+        "blonde-woman",
+        "black-hat man",
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "object": "",
+      "object_before": "",
+      "object_after": "",
+      "on_screen_text": [
+        {
+          "text": "BORN TO RUN",
+          "location": "caption"
+        },
+        {
+          "text": "0",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Charades",
+      "continuation_hint": "complete",
+      "event_index": 58,
+      "start_time": "01:44",
+      "end_time": "01:45",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "posture_adjustment",
+      "description": "The woman in the decorative top sits down in the chair and adjusts her seating position, putting her hands behind her head",
+      "participants": [
+        "black and gold top woman",
+        "suit man",
+        "checkered jumpsuit woman",
+        "black outfit man"
+      ],
+      "actor": "black and gold top woman",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 59,
+      "start_time": "01:45",
+      "end_time": "01:50",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "gesture",
+      "description": "The man in the suit gestures with both hands while speaking to the guests",
+      "participants": [
+        "suit man",
+        "black and gold top woman",
+        "checkered jumpsuit woman",
+        "black outfit man"
+      ],
+      "actor": "suit man",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 60,
+      "start_time": "01:45",
+      "end_time": "01:55",
+      "sub_events": [],
+      "subtype_order": 27,
+      "subtype_total": 53,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "open_box",
+      "description": "The man in the suit opens the box labeled '8' on the Charades board",
+      "participants": [
+        "suit man",
+        "black and gold top woman",
+        "checkered jumpsuit woman",
+        "black outfit man"
+      ],
+      "actor": "suit man",
+      "object": "box labeled 8",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "CHARADES",
+          "location": "banner"
+        },
+        {
+          "text": "8",
+          "location": "podium"
+        }
+      ],
+      "event_index": 63,
+      "start_time": "01:58",
+      "end_time": "02:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "speak",
+      "description": "woman in checkered jumpsuit holds board labeled '3' and speaks to the audience",
+      "participants": [
+        "checkered-jumpsuit woman"
+      ],
+      "actor": "checkered-jumpsuit woman",
+      "object": "brown board",
+      "on_screen_text": [
+        {
+          "text": "RING OF FIRE",
+          "location": "caption"
+        },
+        {
+          "text": ":30",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 64,
+      "start_time": "02:00",
+      "end_time": "02:02",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "applaud",
+      "description": "The woman in black outfit claps her hands while sitting on the couch",
+      "participants": [
+        "black-outfit woman"
+      ],
+      "actor": "black-outfit woman",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 101,
+      "start_time": "03:31",
+      "end_time": "03:34",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "high_five",
+      "description": "The host and the woman in black outfit high-five each other",
+      "participants": [
+        "black-suit man",
+        "black-outfit woman"
+      ],
+      "actor": "black-suit man",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 104,
+      "start_time": "03:37",
+      "end_time": "03:40",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "celebration",
+      "description": "The host makes expansive celebratory gestures with both arms",
+      "participants": [
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 105,
+      "start_time": "03:38",
+      "end_time": "03:41",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "react",
+      "description": "Woman in black outfit reacts with excitement, placing her hand on her chest",
+      "participants": [
+        "black-outfit woman",
+        "man in suit",
+        "striped-outfit woman",
+        "man in black"
+      ],
+      "actor": "black-outfit woman",
+      "on_screen_text": [
+        {
+          "text": "\"DANCING ON THE CEILING\"",
+          "location": "caption"
+        },
+        {
+          "text": ":6",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Charades",
+      "continuation_hint": "complete",
+      "event_index": 161,
+      "start_time": "05:27",
+      "end_time": "05:29",
+      "sub_events": [],
+      "subtype_order": 20,
+      "subtype_total": 21,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "clap",
+      "description": "Woman in black outfit claps her hands together in celebration",
+      "participants": [
+        "black-outfit woman",
+        "man in suit",
+        "striped-outfit woman",
+        "man in black"
+      ],
+      "actor": "black-outfit woman",
+      "on_screen_text": [
+        {
+          "text": "\"DANCING ON THE CEILING\"",
+          "location": "caption"
+        },
+        {
+          "text": ":5",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Charades",
+      "continuation_hint": "complete",
+      "event_index": 162,
+      "start_time": "05:29",
+      "end_time": "05:30",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "transition",
+      "description": "screen fades to black",
+      "participants": [],
+      "actor": "",
+      "segment_boundary": "end",
+      "segment_label": "Charades",
+      "continuation_hint": "complete",
+      "on_screen_text": [],
+      "event_index": 168,
+      "start_time": "05:45",
+      "end_time": "05:50",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    }
+  ]
+}

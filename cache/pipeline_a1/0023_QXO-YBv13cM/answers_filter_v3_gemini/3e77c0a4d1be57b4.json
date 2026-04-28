@@ -1,0 +1,88 @@
+{
+  "question": "Does the blue ball fall into the green cup?",
+  "pred": "The video shows a person using a spoon to place colored balls into matching colored cups. According to the Context and visual evidence in the frames, the blue ball is placed into the blue cup, and the green ball is placed into the green cup. There is no instance where the blue ball is placed into or falls into the green cup.\n\nEvidence: the person places the blue ball into the blue cup (Context event 8) and the green ball into the green cup (Context event 10).\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "lift",
+      "description": "the person lifts a blue ball from the bowl using a white spoon",
+      "participants": [
+        "person"
+      ],
+      "actor": "person",
+      "object": "blue ball",
+      "segment_boundary": "middle",
+      "segment_label": "Color Matching Game",
+      "continuation_hint": "complete",
+      "event_index": 7,
+      "start_time": "00:06",
+      "end_time": "00:07",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Color Matching Game"
+    },
+    {
+      "event_type": "place",
+      "description": "the person places the blue ball into the blue cup",
+      "participants": [
+        "person"
+      ],
+      "actor": "person",
+      "object": "blue ball",
+      "segment_boundary": "middle",
+      "segment_label": "Color Matching Game",
+      "continuation_hint": "complete",
+      "event_index": 8,
+      "start_time": "00:07",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Color Matching Game"
+    },
+    {
+      "event_type": "lift",
+      "description": "the person lifts a green ball from the bowl using a white spoon",
+      "participants": [
+        "person"
+      ],
+      "actor": "person",
+      "object": "green ball",
+      "segment_boundary": "middle",
+      "segment_label": "Color Matching Game",
+      "continuation_hint": "complete",
+      "event_index": 9,
+      "start_time": "00:08",
+      "end_time": "00:09",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Color Matching Game"
+    },
+    {
+      "event_type": "place",
+      "description": "the person places the green ball into the green cup",
+      "participants": [
+        "person"
+      ],
+      "actor": "person",
+      "object": "green ball",
+      "segment_boundary": "middle",
+      "segment_label": "Color Matching Game",
+      "continuation_hint": "complete",
+      "event_index": 10,
+      "start_time": "00:09",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Color Matching Game"
+    }
+  ]
+}

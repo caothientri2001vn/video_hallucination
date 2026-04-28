@@ -1,0 +1,653 @@
+{
+  "video_name": "0102_qt0uoY6Gq54.mp4",
+  "video_duration_sec": 128.0,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:02",
+          "event_type": "position_knife",
+          "description": "A knife is positioned above the green cabbage-like object.",
+          "participants": [],
+          "actor": "unseen person",
+          "object": "green cabbage-like object",
+          "segment_boundary": "middle",
+          "segment_label": "Cutting demonstration",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": []
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:04",
+          "event_type": "cut",
+          "description": "The knife cuts into the green cabbage-like object, causing green powder to fall onto the cutting board.",
+          "participants": [],
+          "actor": "unseen person",
+          "object": "green cabbage-like object",
+          "segment_boundary": "middle",
+          "segment_label": "Cutting demonstration",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": []
+        },
+        {
+          "local_start": "00:04",
+          "local_end": "00:06",
+          "event_type": "cut",
+          "description": "The green cabbage-like object is sliced open, revealing inner white and green layered structure.",
+          "participants": [],
+          "actor": "unseen person",
+          "object": "green cabbage-like object",
+          "segment_boundary": "middle",
+          "segment_label": "Cutting demonstration",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": []
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:08",
+          "event_type": "cut",
+          "description": "The knife continues cutting the green cabbage-like object, producing additional slices and green powder.",
+          "participants": [],
+          "actor": "unseen person",
+          "object": "green cabbage-like object",
+          "segment_boundary": "middle",
+          "segment_label": "Cutting demonstration",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": []
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:08",
+          "event_type": "scene_transition",
+          "description": "The green cabbage-like object is replaced by an orange carrot-like object on the cutting board.",
+          "participants": [],
+          "actor": "",
+          "object": "cutting board",
+          "segment_boundary": "middle",
+          "segment_label": "Cutting demonstration",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": []
+        },
+        {
+          "local_start": "00:08",
+          "local_end": "00:10",
+          "event_type": "position_knife",
+          "description": "A knife is positioned above the orange carrot-like object.",
+          "participants": [],
+          "actor": "unseen person",
+          "object": "orange carrot-like object",
+          "segment_boundary": "middle",
+          "segment_label": "Cutting demonstration",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": []
+        },
+        {
+          "local_start": "00:10",
+          "local_end": "00:15",
+          "event_type": "cut",
+          "description": "The knife cuts into the orange carrot-like object, causing orange powder to fall and slicing the object.",
+          "participants": [],
+          "actor": "unseen person",
+          "object": "orange carrot-like object",
+          "segment_boundary": "middle",
+          "segment_label": "Cutting demonstration",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": []
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 30.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:30",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:19",
+          "event_type": "cut",
+          "description": "A knife cuts through an orange carrot, producing slices and small fragments on the cutting board",
+          "participants": [],
+          "actor": "knife",
+          "object": "orange carrot",
+          "segment_boundary": "middle",
+          "segment_label": "carrot cutting",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:19",
+          "local_end": "00:21",
+          "event_type": "transition",
+          "description": "Scene transitions from cut carrot to a whole brown potato on the cutting board",
+          "participants": [],
+          "actor": "camera",
+          "object_before": "orange carrot",
+          "object_after": "brown potato",
+          "segment_boundary": "middle",
+          "segment_label": "potato preparation",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:21",
+          "local_end": "00:24",
+          "event_type": "cut",
+          "description": "A knife begins cutting into a brown potato, revealing white interior material",
+          "participants": [],
+          "actor": "knife",
+          "object": "brown potato",
+          "segment_boundary": "middle",
+          "segment_label": "potato cutting",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:24",
+          "local_end": "00:27",
+          "event_type": "cut",
+          "description": "The knife continues slicing the brown potato, creating multiple white slices with brown skin edges",
+          "participants": [],
+          "actor": "knife",
+          "object": "brown potato",
+          "segment_boundary": "middle",
+          "segment_label": "potato cutting",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:27",
+          "local_end": "00:28",
+          "event_type": "transition",
+          "description": "Scene transitions from cut potato to a whole green zucchini on the cutting board",
+          "participants": [],
+          "actor": "camera",
+          "object_before": "brown potato",
+          "object_after": "green zucchini",
+          "segment_boundary": "middle",
+          "segment_label": "zucchini preparation",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:28",
+          "local_end": "00:30",
+          "event_type": "cut",
+          "description": "A knife cuts into a green zucchini, producing green fragments and revealing lighter green interior",
+          "participants": [],
+          "actor": "knife",
+          "object": "green zucchini",
+          "segment_boundary": "middle",
+          "segment_label": "zucchini cutting",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 2,
+      "chunk_start_sec": 30.0,
+      "chunk_end_sec": 45.0,
+      "chunk_start_mmss": "00:30",
+      "chunk_end_mmss": "00:45",
+      "events": [
+        {
+          "local_start": "00:30",
+          "local_end": "00:31",
+          "event_type": "object_display",
+          "description": "A whole purple eggplant with a green stem is shown on a wooden cutting board",
+          "participants": [],
+          "actor": "",
+          "object": "purple eggplant",
+          "segment_boundary": "start",
+          "segment_label": "Eggplant Cutting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:31",
+          "local_end": "00:32",
+          "event_type": "approach",
+          "description": "A knife approaches the purple eggplant on the cutting board",
+          "participants": [],
+          "actor": "hand (holding knife)",
+          "object": "knife",
+          "segment_boundary": "middle",
+          "segment_label": "Eggplant Cutting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:32",
+          "local_end": "00:33",
+          "event_type": "cut",
+          "description": "The knife begins cutting into the purple eggplant",
+          "participants": [],
+          "actor": "hand (holding knife)",
+          "object": "purple eggplant",
+          "segment_boundary": "middle",
+          "segment_label": "Eggplant Cutting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:33",
+          "local_end": "00:34",
+          "event_type": "cut",
+          "description": "The knife continues cutting, causing the eggplant to split",
+          "participants": [],
+          "actor": "hand (holding knife)",
+          "object": "purple eggplant",
+          "segment_boundary": "middle",
+          "segment_label": "Eggplant Cutting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:34",
+          "local_end": "00:35",
+          "event_type": "cut",
+          "description": "The eggplant is cut in half, revealing its white interior with seed patterns",
+          "participants": [],
+          "actor": "hand (holding knife)",
+          "object_before": "purple eggplant",
+          "object_after": "purple and white eggplant",
+          "segment_boundary": "middle",
+          "segment_label": "Eggplant Cutting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:35",
+          "local_end": "00:37",
+          "event_type": "cut",
+          "description": "The knife continues cutting the eggplant halves into smaller sections",
+          "participants": [],
+          "actor": "hand (holding knife)",
+          "object": "purple and white eggplant",
+          "segment_boundary": "middle",
+          "segment_label": "Eggplant Cutting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:37",
+          "local_end": "00:40",
+          "event_type": "cut",
+          "description": "The cutting continues, with the eggplant sections being further divided into chunks",
+          "participants": [],
+          "actor": "hand (holding knife)",
+          "object": "purple and white eggplant",
+          "segment_boundary": "middle",
+          "segment_label": "Eggplant Cutting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:40",
+          "local_end": "00:45",
+          "event_type": "cut",
+          "description": "The knife continues slicing through the eggplant chunks, creating smaller pieces",
+          "participants": [],
+          "actor": "hand (holding knife)",
+          "object": "purple and white eggplant",
+          "segment_boundary": "middle",
+          "segment_label": "Eggplant Cutting",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 3,
+      "chunk_start_sec": 45.0,
+      "chunk_end_sec": 60.0,
+      "chunk_start_mmss": "00:45",
+      "chunk_end_mmss": "01:00",
+      "events": [
+        {
+          "local_start": "00:45",
+          "local_end": "00:48",
+          "event_type": "cut",
+          "description": "A knife slices through a red clay tomato model, cutting it into multiple pieces that crumble as they're separated",
+          "participants": [],
+          "actor": "hand holding knife",
+          "object": "red clay tomato model",
+          "segment_boundary": "middle",
+          "segment_label": "Clay Cutting Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:48",
+          "local_end": "00:55",
+          "event_type": "cut",
+          "description": "A hand positions a beetroot on a cutting board and a knife slices through it, revealing the inner red pattern as it cuts into multiple pieces",
+          "participants": [],
+          "actor": "hand holding knife",
+          "object": "beetroot",
+          "segment_boundary": "middle",
+          "segment_label": "Clay Cutting Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:55",
+          "local_end": "01:00",
+          "event_type": "cut",
+          "description": "A knife approaches a red clay pepper model and cuts through it, revealing the inner structure with seeds and chambers",
+          "participants": [],
+          "actor": "hand holding knife",
+          "object": "red clay pepper model",
+          "segment_boundary": "end",
+          "segment_label": "Clay Cutting Demonstration",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 4,
+      "chunk_start_sec": 60.0,
+      "chunk_end_sec": 75.0,
+      "chunk_start_mmss": "01:00",
+      "chunk_end_mmss": "01:15",
+      "events": [
+        {
+          "local_start": "01:00",
+          "local_end": "01:05",
+          "event_type": "cut",
+          "description": "The knife continues slicing the partially cut red bell pepper, creating additional cross-sections and revealing more interior structure.",
+          "participants": [],
+          "actor": "hand holding knife",
+          "object": "red bell pepper",
+          "segment_boundary": "middle",
+          "segment_label": "Vegetable Cutting",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "01:05",
+          "local_end": "01:06",
+          "event_type": "transition",
+          "description": "The scene changes from the bell pepper to a whole broccoli head on the cutting board.",
+          "participants": [],
+          "actor": "",
+          "segment_boundary": "middle",
+          "segment_label": "Vegetable Cutting",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:06",
+          "local_end": "01:12",
+          "event_type": "cut",
+          "description": "The knife cuts through the broccoli head, creating cross-sections that reveal its internal structure with each downward stroke.",
+          "participants": [],
+          "actor": "hand holding knife",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Vegetable Cutting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:12",
+          "local_end": "01:13",
+          "event_type": "transition",
+          "description": "The scene changes from the broccoli to a celery stalk on the cutting board.",
+          "participants": [],
+          "actor": "",
+          "segment_boundary": "middle",
+          "segment_label": "Vegetable Cutting",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:13",
+          "local_end": "01:15",
+          "event_type": "cut",
+          "description": "The knife begins to cut into the light green celery stalk, starting the slicing process with the first downward motion.",
+          "participants": [],
+          "actor": "hand holding knife",
+          "object": "light green celery",
+          "segment_boundary": "middle",
+          "segment_label": "Vegetable Cutting",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 5,
+      "chunk_start_sec": 75.0,
+      "chunk_end_sec": 90.0,
+      "chunk_start_mmss": "01:15",
+      "chunk_end_mmss": "01:30",
+      "events": [
+        {
+          "local_start": "01:15",
+          "local_end": "01:18",
+          "event_type": "cut",
+          "description": "A hand holds a large knife that begins to press into the top of a green kohlrabi on a wooden cutting board",
+          "participants": [
+            "hand holding knife"
+          ],
+          "actor": "hand holding knife",
+          "object": "green kohlrabi",
+          "segment_boundary": "middle",
+          "segment_label": "Kohlrabi Cutting",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "01:18",
+          "local_end": "01:24",
+          "event_type": "cut",
+          "description": "The knife continues slicing through the green kohlrabi, making a deep incision into the vegetable's flesh",
+          "participants": [
+            "hand holding knife"
+          ],
+          "actor": "hand holding knife",
+          "object": "green kohlrabi",
+          "segment_boundary": "middle",
+          "segment_label": "Kohlrabi Cutting",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "01:24",
+          "local_end": "01:30",
+          "event_type": "slice",
+          "description": "The knife completes the cut, separating the kohlrabi into multiple pieces with the sliced sections falling away from the main bulb",
+          "participants": [
+            "hand holding knife"
+          ],
+          "actor": "hand holding knife",
+          "object": "green kohlrabi",
+          "segment_boundary": "middle",
+          "segment_label": "Kohlrabi Cutting",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 6,
+      "chunk_start_sec": 90.0,
+      "chunk_end_sec": 105.0,
+      "chunk_start_mmss": "01:30",
+      "chunk_end_mmss": "01:45",
+      "events": [
+        {
+          "local_start": "01:30",
+          "local_end": "01:34",
+          "event_type": "cut",
+          "description": "A knife begins cutting into an orange pumpkin on a wooden surface",
+          "participants": [
+            "hand holding knife"
+          ],
+          "actor": "hand holding knife",
+          "object": "orange pumpkin",
+          "segment_boundary": "middle",
+          "segment_label": "Pumpkin Cutting",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "01:34",
+          "local_end": "01:38",
+          "event_type": "cut",
+          "description": "The knife continues slicing through the orange pumpkin, revealing its internal structure",
+          "participants": [
+            "hand holding knife"
+          ],
+          "actor": "hand holding knife",
+          "object": "orange pumpkin",
+          "segment_boundary": "middle",
+          "segment_label": "Pumpkin Cutting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:38",
+          "local_end": "01:42",
+          "event_type": "cut",
+          "description": "The knife makes another slice through the pumpkin, creating additional pieces",
+          "participants": [
+            "hand holding knife"
+          ],
+          "actor": "hand holding knife",
+          "object": "orange pumpkin",
+          "segment_boundary": "middle",
+          "segment_label": "Pumpkin Cutting",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:42",
+          "local_end": "01:45",
+          "event_type": "cut",
+          "description": "The knife completes another cut through the pumpkin, with small orange fragments visible on the cutting board",
+          "participants": [
+            "hand holding knife"
+          ],
+          "actor": "hand holding knife",
+          "object": "orange pumpkin",
+          "segment_boundary": "middle",
+          "segment_label": "Pumpkin Cutting",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 7,
+      "chunk_start_sec": 105.0,
+      "chunk_end_sec": 120.0,
+      "chunk_start_mmss": "01:45",
+      "chunk_end_mmss": "02:00",
+      "events": [
+        {
+          "local_start": "01:45",
+          "local_end": "01:53",
+          "event_type": "cut",
+          "description": "A hand holds a large knife that cuts through a white radish with pink top, causing it to crumble into pieces and produce white powder",
+          "participants": [],
+          "actor": "hand holding knife",
+          "object": "",
+          "object_before": "white radish",
+          "object_after": "crumbled white radish pieces",
+          "outcome": "cut successful, object crumbled with powder residue",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Cutting demonstration",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "01:53",
+          "local_end": "01:54",
+          "event_type": "transition",
+          "description": "Scene changes from radish cutting to sweet potato on cutting board",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "outcome": "scene transition complete",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Cutting demonstration",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:54",
+          "local_end": "01:59",
+          "event_type": "cut",
+          "description": "A hand holds a large knife that cuts through an orange sweet potato, creating clean slices without powder",
+          "participants": [],
+          "actor": "hand holding knife",
+          "object": "",
+          "object_before": "orange sweet potato",
+          "object_after": "sliced orange sweet potato",
+          "outcome": "cut successful, clean slices created",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Cutting demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:00",
+          "local_end": "02:00",
+          "event_type": "reveal",
+          "description": "A purple beetroot is revealed on the wooden cutting board",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "object_before": "not visible",
+          "object_after": "purple beetroot",
+          "outcome": "beetroot revealed",
+          "on_screen_text": [],
+          "segment_boundary": "end",
+          "segment_label": "Cutting demonstration",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 8,
+      "chunk_start_sec": 120.0,
+      "chunk_end_sec": 128.0,
+      "chunk_start_mmss": "02:00",
+      "chunk_end_mmss": "02:08",
+      "events": [
+        {
+          "local_start": "02:00",
+          "local_end": "02:03",
+          "event_type": "cut",
+          "description": "A hand holds a knife and begins cutting into the top of a purple beetroot, removing the first slice.",
+          "participants": [
+            "hand holding knife"
+          ],
+          "actor": "hand holding knife",
+          "object": "purple beetroot",
+          "segment_boundary": "middle",
+          "segment_label": "Beetroot Slicing",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:03",
+          "local_end": "02:06",
+          "event_type": "slice",
+          "description": "The knife continues slicing through the beetroot, creating multiple thin circular slices that fall onto the cutting board.",
+          "participants": [
+            "hand holding knife"
+          ],
+          "actor": "hand holding knife",
+          "object": "purple beetroot",
+          "segment_boundary": "middle",
+          "segment_label": "Beetroot Slicing",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:06",
+          "local_end": "02:08",
+          "event_type": "accumulate",
+          "description": "Beetroot slices and small purple fragments accumulate on the wooden cutting board as the slicing continues.",
+          "participants": [
+            "hand holding knife"
+          ],
+          "actor": "hand holding knife",
+          "object": "purple beetroot slices",
+          "segment_boundary": "middle",
+          "segment_label": "Beetroot Slicing",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,428 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0104_1KmRJwmIYOA.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0104_1KmRJwmIYOA.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0104_1KmRJwmIYOA",
+    "n_target": 10,
+    "n_sub": 32,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.9,
+    "sub_accuracy": 0.96875
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Was the orange squeezed first?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows oranges being held (0:03), then orange juice being squeezed (0:04), before blueberries are processed (0:05). Thus, the orange was squeezed first.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was an orange squeezed in the video?",
+      "gt": "Yes",
+      "pred": "Yes. An orange is shown being squeezed in the video, as seen in the frame with the text \"오렌지 즙을 짜고\" (squeezing orange juice) at approximately 00:04.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the orange the first item to be processed?",
+      "gt": "Yes",
+      "pred": "Yes. The first processing step shown in the video is handling oranges: the third frame shows two oranges with the label \"orange,\" followed by the fourth frame showing orange juice being squeezed (with the text \"오렌지 즙을 짜고\" – \"squeeze orange juice\"). This occurs before any other ingredients (like blueberries or strawberries) are processed.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did any other fruit get processed before the orange was squeezed?",
+      "gt": "No",
+      "pred": "No. The sequence shows oranges being held (image 3, timestamp ~3 seconds) immediately before the orange juice is squeezed (image 4, timestamp ~4 seconds). No other fruit is shown being processed prior to this step.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Was the banana cut second?",
+      "gt": "No",
+      "pred": "No, the video does not show a banana being cut at any point. The ingredients used are oranges, blueberries, and strawberries (as seen in frames 3, 5, 7). There is no banana in the video.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was a banana cut in the video?",
+      "gt": "No",
+      "pred": "No, there is no frame in the video showing a banana being cut. The video features ingredients like oranges, blueberries, and strawberries, but no banana is present or cut.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a banana appear in the video at all?",
+      "gt": "No",
+      "pred": "No, a banana did not appear in the video at all. All frames show ingredients like oranges, blueberries, strawberries, and gummy candy preparation steps, with no banana visible.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Were the blueberries the second item to be processed?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows oranges being processed first (e.g., juicing at ~3-5 seconds), followed by blueberries (e.g., blueberries added to a blender at ~5-6 seconds). Thus, blueberries were the second item to be processed.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Was the strawberries blended first?",
+      "gt": "No",
+      "pred": "No. The video shows blueberries being blended first (around the 5th frame, with text \"블루베리 blueberries\" during blending), followed by strawberries (7th frame, \"똑같이 해줍니다\" indicating the same process as prior steps). Oranges are processed before blueberries (juice squeezed in 4th frame, then blueberries blended). Thus, strawberries were not blended first.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Were strawberries blended in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows strawberries being prepared for blending (7th frame: a container with strawberries and the text \"똑같이 해줍니다\" indicating the same process as for other fruits).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Were the strawberries the first item to be processed?",
+      "gt": "No",
+      "pred": "No. The first items processed shown in the video are oranges (starting around the 3rd frame, with juicing in the 4th frame), followed by blueberries (5th frame), and then strawberries (7th frame). Therefore, strawberries were not the first item to be processed.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Were the strawberries blended after the blueberries?",
+      "gt": "Yes",
+      "pred": "Yes. The blueberries are blended first (as seen in the frame with \"블루베리 blueberries\" at around 5 seconds), and then strawberries are blended later (as shown in the frame with \"똑같이 해줍니다\" at around 7 seconds).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Was the blueberries blended last?",
+      "gt": "No",
+      "pred": "No. Blueberries were blended before strawberries (blueberries in frame 5-6; strawberries in frame 7), so they were not blended last.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Were blueberries blended in the video?",
+      "gt": "Yes",
+      "pred": "Yes, blueberries were blended in the video. This is shown in the frame where blueberries are poured into a blender (timestamp around 5 seconds) and subsequent steps involving blueberry juice.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Were the blueberries the last item to be processed?",
+      "gt": "No",
+      "pred": "No. Blueberries were processed (blended and strained) around the 5-6 second mark, while strawberries were processed next (7 second mark), so blueberries were not the last item to be processed.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Were the strawberries blended after the blueberries were blended?",
+      "gt": "Yes",
+      "pred": "Yes. The blueberries are shown being blended and strained (frames 5-6), and then the strawberries are shown in a blender (frame 7), indicating strawberries were blended after the blueberries.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Was the orange squeezed before the blueberries were blended?",
+      "gt": "Yes",
+      "pred": "Yes. The orange was squeezed (as shown in the frame with the text \"오렌지 즙을 짜고\" at approximately 4 seconds), and then the blueberries were blended (as shown in the frame with the text \"블루베리\" at approximately 5 seconds). Thus, the orange was squeezed before the blueberries were blended.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was an orange squeezed in the video?",
+      "gt": "Yes",
+      "pred": "Yes. An orange is shown being squeezed in the video, as seen in the frame with the text \"오렌지 즙을 짜고\" (squeezing orange juice) at approximately 00:04.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Were blueberries blended in the video?",
+      "gt": "Yes",
+      "pred": "Yes, blueberries were blended in the video. This is shown in the frame where blueberries are poured into a blender (timestamp around 5 seconds) and subsequent steps involving blueberry juice.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the orange squeezing occur before the blueberries were blended?",
+      "gt": "Yes",
+      "pred": "Yes. The orange squeezing (shown in frame 4 with the text \"오렌지 즙을 짜고\") occurs before the blueberries are blended (shown in frame 5 with the text \"블루베리 blueberries\").",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Were the strawberries were blended before the blueberries?",
+      "gt": "No",
+      "pred": "No. The blueberries are shown being added to the blender first (around 5 - 6 seconds), and then the strawberries are processed later (around 7 - 8 seconds). Therefore, the strawberries were not blended before the blueberries.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Were the strawberries blended?",
+      "gt": "Yes",
+      "pred": "Yes, the strawberries were blended. This is shown in the frame where strawberries are placed in a blender (around the 7th image in the sequence), with the text \"똑같이 해줍니다\" (do the same) indicating the blending process for strawberries follows the same method as other fruits.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Were the blueberries blended?",
+      "gt": "Yes",
+      "pred": "Yes, blueberries were blended. This is shown when blueberries are poured into a blender (timestamp ~5) and later the blueberry mixture is strained (timestamp ~6).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Were the blueberries blended before the strawberries?",
+      "gt": "Yes",
+      "pred": "Yes. Blueberries are added to a blender (frame 5, timestamp ~5 seconds), and strawberries are added to a blender later (frame 7, timestamp ~7 seconds), indicating blueberries were blended before strawberries.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Was the orange squeezed after the blueberries were blended?",
+      "gt": "No",
+      "pred": "No. The orange was squeezed (as shown in frame 4 with the text \"오렌지 즙을 짜고\") before the blueberries were blended (as shown in frames 5 and 6 with blueberries being added to a blender and then strained).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was the orange squeezed?",
+      "gt": "Yes",
+      "pred": "Yes, the orange was squeezed. This is shown in the frame where an orange is being pressed on a juicer, with the text “오렌지 즙을 짜고” (squeezing orange juice) displayed (around the 4th image in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Were the blueberries blended?",
+      "gt": "Yes",
+      "pred": "Yes, blueberries were blended. This is shown when blueberries are poured into a blender (timestamp ~5) and later the blueberry mixture is strained (timestamp ~6).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the orange squeezed before the blueberries were blended?",
+      "gt": "Yes",
+      "pred": "Yes. The orange was squeezed (as shown in the frame with the text \"오렌지 즙을 짜고\" at approximately 4 seconds), and then the blueberries were blended (as shown in the frame with the text \"블루베리\" at approximately 5 seconds). Thus, the orange was squeezed before the blueberries were blended.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Were the strawberries were blended after the blueberries?",
+      "gt": "Yes",
+      "pred": "Yes. Blueberries are blended (evident in frame 5 showing blueberries in a blender), and strawberries are later blended (evident in frame 7 showing strawberries in a blender). Thus, strawberries were blended after blueberries.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Were the strawberries blended?",
+      "gt": "Yes",
+      "pred": "Yes, the strawberries were blended. This is shown in the frame where strawberries are placed in a blender (around the 7th image in the sequence), with the text \"똑같이 해줍니다\" (do the same) indicating the blending process for strawberries follows the same method as other fruits.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Were the blueberries blended?",
+      "gt": "Yes",
+      "pred": "Yes, blueberries were blended. This is shown when blueberries are poured into a blender (timestamp ~5) and later the blueberry mixture is strained (timestamp ~6).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the blueberry blending happen before the strawberry blending?",
+      "gt": "Yes",
+      "pred": "Yes. The blueberry blending is shown when blueberries are added to a blender (frame 5), and the strawberry blending occurs later when strawberries are in a blender (frame 7). Thus, blueberry blending happened before strawberry blending.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "target",
+      "question": "Was the orange juice was poured into the pot before the sugar and gelatin added?",
+      "gt": "Yes",
+      "pred": "Yes. The orange juice was squeezed (as shown in the frame with the text \"오렌지 즙을 짜고\" at timestamp ~3.5s) and then poured into the pot. Subsequently, starch syrup (35g) was added to the pot (frame with \"물엿 35g\" at ~8.5s), which is the step involving sugar (as the text notes \"starch syrup (honey if not)\"). Gelatin was added later in the blueberry mixture step (frame with \"젤라틴 가루 23g\" at ~12s), but for the orange mixture, the juice was in the pot before the syrup (sugar substitute) was added.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was orange juice poured into the pot?",
+      "gt": "Yes",
+      "pred": "Yes. Orange juice was squeezed (as shown in frame 4 with the text “오렌지 즙을 짜고”) and then used in the pot (evident from the orange liquid in the pot in frame 9).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was sugar added to the pot?",
+      "gt": "Yes",
+      "pred": "Yes, a white granular substance (sugar) was added to the pot. This is evident in frames showing a white powder being poured into the pot with liquid (e.g., around the 10-12 second mark, where \"물엿 35g (35g starch syrup (honey if not))\" is displayed, and a white powder is added to the mixture).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was gelatin added to the pot?",
+      "gt": "Yes",
+      "pred": "Yes, gelatin was added to the pot. This is shown in the frame where \"젤라틴 가루 23g\" (23g gelatin powder) is added to a pot containing a dark liquid (around the 12th frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the orange juice poured into the pot before the sugar was added?",
+      "gt": "Yes",
+      "pred": "Yes. The orange juice was poured into the pot before the starch syrup (labeled as a substitute for honey) was added. This is shown in frame 9, where the orange juice is already in the pot and the syrup is being poured on top.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Was the orange juice poured into the pot before the gelatin was added?",
+      "gt": "Yes",
+      "pred": "Yes. The orange juice is squeezed and added to the pot (evident in frames 4-9, where orange juice is prepared and cooked). Gelatin powder is added later to the blueberry mixture (frame 12: \"23g gelatin powder\" is added to the blueberry liquid). Thus, the orange juice was poured into the pot before gelatin was added.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "target",
+      "question": "Was the orange jelly removed from the mold before the strawberry jelly was removed?",
+      "gt": "Yes",
+      "pred": "To determine if the orange jelly was removed from the mold before the strawberry jelly, we analyze the sequence of steps in the video:  \n\n1. **Orange jelly production**:  \n   - Orange juice is squeezed (",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was orange jelly removed from the mold?",
+      "gt": "Yes",
+      "pred": "Yes, orange jelly was removed from the mold. This is evident from the sequence where orange liquid is poured into circular molds (11.0s), and later, orange-colored jellies are seen among the finished products in the final tray (20.0s) and during the handling of the jellies (23.0s, 24.0s).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was strawberry jelly removed from the mold?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows a hand removing a red heart - shaped jelly (strawberry flavor, as indicated by the strawberry preparation steps earlier in the video) from a mold. This is visible in the frame where a gloved hand is lifting a red heart - shaped jelly out of the mold (around the 18th frame in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the orange jelly removal happen before the strawberry jelly removal?",
+      "gt": "Yes",
+      "pred": "No. The strawberry jelly removal (e.g., frame 19.0s showing a red heart-shaped jelly being removed from a mold) occurred before the orange jelly removal (e.g., frame 24.0s showing an orange jelly being handled).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    }
+  ]
+}

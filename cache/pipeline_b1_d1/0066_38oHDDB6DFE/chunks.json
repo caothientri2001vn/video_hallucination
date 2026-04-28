@@ -1,0 +1,103 @@
+{
+  "video_name": "0066_38oHDDB6DFE.mp4",
+  "video_duration_sec": 11.066666666666666,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 11.066666666666666,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:11",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:02",
+          "event_type": "liquid_application",
+          "description": "A black dropper applies black liquid to the top-left silver coin",
+          "participants": [
+            "black dropper"
+          ],
+          "actor": "black dropper",
+          "object": "dropper",
+          "object_before": "silver coin",
+          "object_after": "black liquid",
+          "segment_boundary": "start",
+          "segment_label": "Colored Liquid Application",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:04",
+          "event_type": "liquid_application",
+          "description": "A yellow dropper applies yellow liquid to the top-right silver coin",
+          "participants": [
+            "yellow dropper"
+          ],
+          "actor": "yellow dropper",
+          "object": "dropper",
+          "object_before": "silver coin",
+          "object_after": "yellow liquid",
+          "segment_boundary": "middle",
+          "segment_label": "Colored Liquid Application",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:04",
+          "local_end": "00:06",
+          "event_type": "liquid_application",
+          "description": "A pink dropper applies pink liquid to the middle-left silver coin",
+          "participants": [
+            "pink dropper"
+          ],
+          "actor": "pink dropper",
+          "object": "dropper",
+          "object_before": "silver coin",
+          "object_after": "pink liquid",
+          "segment_boundary": "middle",
+          "segment_label": "Colored Liquid Application",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:08",
+          "event_type": "liquid_application",
+          "description": "A blue dropper applies blue liquid to the middle-right silver coin",
+          "participants": [
+            "blue dropper"
+          ],
+          "actor": "blue dropper",
+          "object": "dropper",
+          "object_before": "silver coin",
+          "object_after": "blue liquid",
+          "segment_boundary": "middle",
+          "segment_label": "Colored Liquid Application",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:08",
+          "local_end": "00:11",
+          "event_type": "liquid_application",
+          "description": "A green dropper applies green liquid to the bottom silver coin",
+          "participants": [
+            "green dropper"
+          ],
+          "actor": "green dropper",
+          "object": "dropper",
+          "object_before": "silver coin",
+          "object_after": "green liquid",
+          "segment_boundary": "middle",
+          "segment_label": "Colored Liquid Application",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

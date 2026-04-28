@@ -1,0 +1,233 @@
+{
+  "video_name": "0036_10_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 21.4,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "gemini-3-flash-preview",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:02",
+          "event_type": "corner_kick",
+          "description": "the white-shirt player (number 22) takes a corner kick from the right corner",
+          "participants": [
+            "white-shirt player",
+            "red-and-white-striped-shirt players",
+            "blue-shirt goalkeeper"
+          ],
+          "actor": "white-shirt player",
+          "object": "white ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "football match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:04",
+          "event_type": "header",
+          "description": "the white-shirt player (number 4) jumps and heads the ball toward the goal",
+          "participants": [
+            "white-shirt player",
+            "red-and-white-striped-shirt players",
+            "blue-shirt goalkeeper"
+          ],
+          "actor": "white-shirt player",
+          "object": "white ball",
+          "on_screen_text": [
+            {
+              "text": "SERGIO RAMOS",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "football match",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:04",
+          "local_end": "00:05",
+          "event_type": "goal",
+          "description": "the ball enters the left side of the goal as the blue-shirt goalkeeper dives to his right",
+          "participants": [
+            "blue-shirt goalkeeper",
+            "white-shirt player",
+            "red-and-white-striped-shirt players"
+          ],
+          "actor": "white-shirt player",
+          "object": "white ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "SERGIO RAMOS",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "football match",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:08",
+          "event_type": "celebration",
+          "description": "the white-shirt player (number 4) runs toward the sideline to celebrate his goal",
+          "participants": [
+            "white-shirt player"
+          ],
+          "actor": "white-shirt player",
+          "on_screen_text": [
+            {
+              "text": "SERGIO RAMOS",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "football match",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:08",
+          "local_end": "00:10",
+          "event_type": "replay",
+          "description": "a slow-motion replay shows the white-shirt player (number 4) heading the ball into the goal",
+          "participants": [
+            "white-shirt player",
+            "blue-shirt goalkeeper",
+            "red-and-white-striped-shirt players"
+          ],
+          "actor": "white-shirt player",
+          "object": "white ball",
+          "on_screen_text": [
+            {
+              "text": "SERGIO RAMOS",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "football match",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:10",
+          "local_end": "00:12",
+          "event_type": "celebration",
+          "description": "the white-shirt player (number 4) is joined by teammates in a group celebration near the corner",
+          "participants": [
+            "white-shirt player",
+            "white-shirt teammates"
+          ],
+          "actor": "white-shirt player",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "football match",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:12",
+          "local_end": "00:15",
+          "event_type": "celebration",
+          "description": "the white-shirt players continue their group celebration as fans cheer in the background",
+          "participants": [
+            "white-shirt players",
+            "fans"
+          ],
+          "actor": "white-shirt players",
+          "on_screen_text": [
+            {
+              "text": "FINAL LISBON 2014",
+              "location": "banner"
+            },
+            {
+              "text": "UEFA CHAMPIONS LEAGUE",
+              "location": "banner"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "football match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 21.4,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:21",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:17",
+          "event_type": "celebration",
+          "description": "The white-jersey players and staff in dark jackets celebrate together on the sidelines.",
+          "participants": [
+            "white-jersey players",
+            "dark-jacket staff"
+          ],
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Champions League Final Celebration",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:17",
+          "local_end": "00:19",
+          "event_type": "react",
+          "description": "A red-jacket man sits on the bench with his head in his hands, appearing distressed.",
+          "participants": [
+            "red-jacket man"
+          ],
+          "actor": "red-jacket man",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Champions League Final Celebration",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:19",
+          "local_end": "00:20",
+          "event_type": "celebration",
+          "description": "The green-jersey goalkeeper and white-jersey players lift the silver trophy together.",
+          "participants": [
+            "green-jersey goalkeeper",
+            "white-jersey players"
+          ],
+          "object": "silver trophy",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Champions League Final Celebration",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:20",
+          "local_end": "00:21",
+          "event_type": "celebration",
+          "description": "The entire team celebrates on a podium as white confetti falls from above.",
+          "participants": [
+            "white-jersey players",
+            "green-jersey goalkeeper",
+            "dark-suit staff"
+          ],
+          "object": "silver trophy",
+          "on_screen_text": [],
+          "segment_boundary": "end",
+          "segment_label": "Champions League Final Celebration",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

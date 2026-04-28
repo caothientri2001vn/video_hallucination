@@ -1,0 +1,290 @@
+{
+  "question": "Did the man on the left open two boxes?",
+  "pred": "The \"man on the left\" is identified in the alias map as the \"plaid-shirt guest\" (also described as \"blue-shirted man\" in early events due to his blue suit jacket over a plaid shirt). Following the chronological sequence of box-opening actions for this person:\n\n1. At 00:30, he opens Box 4 from the shelf (Event 12).\n2. At 00:42, he opens the white box that he had just removed from Box 4 and placed on the table (Event 16).\n3. At 04:00, he opens Box 1 on the table (Event 83).\n\nSince he opened at least three boxes (Box 4, the inner white box, and Box 1), he opened at least two boxes.\n\nEvidence: Event 12 (opens Box 4), Event 16 (opens white box), and Event 83 (opens Box 1) show the man on the left opening three distinct boxes.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "gesture",
+      "description": "the tie man raises his right hand in a gesture while speaking",
+      "participants": [
+        "checkered-shirt man",
+        "tie man"
+      ],
+      "actor": "tie man",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 11,
+      "start_time": "00:25",
+      "end_time": "00:28",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 13,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "the blue-shirted man opens the leftmost box in the middle row (Box 4)",
+      "participants": [
+        "blue-shirted man",
+        "black-suited man"
+      ],
+      "actor": "blue-shirted man",
+      "object": "box",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 12,
+      "start_time": "00:30",
+      "end_time": "00:35",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "remove",
+      "description": "the blue-shirted man pulls a large white box from inside Box 4",
+      "participants": [
+        "blue-shirted man",
+        "black-suited man"
+      ],
+      "actor": "blue-shirted man",
+      "object": "white box",
+      "cover": "box 4",
+      "hidden": "white box",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 13,
+      "start_time": "00:34",
+      "end_time": "00:38",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "place",
+      "description": "the blue-shirted man places the white box on the table between them",
+      "participants": [
+        "blue-shirted man",
+        "black-suited man"
+      ],
+      "actor": "blue-shirted man",
+      "object": "white box",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 14,
+      "start_time": "00:37",
+      "end_time": "00:40",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "sit",
+      "description": "both men sit down at the table, positioning themselves on opposite sides",
+      "participants": [
+        "blue-shirted man",
+        "black-suited man"
+      ],
+      "actor": "blue-shirted man",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 15,
+      "start_time": "00:39",
+      "end_time": "00:42",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "the blue-shirted man opens the white box that's now on the table",
+      "participants": [
+        "blue-shirted man",
+        "black-suited man"
+      ],
+      "actor": "blue-shirted man",
+      "object": "white box",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 16,
+      "start_time": "00:42",
+      "end_time": "00:44",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "remove",
+      "description": "the blue-shirted man takes a flat rectangular object from inside the white box",
+      "participants": [
+        "blue-shirted man",
+        "black-suited man"
+      ],
+      "actor": "blue-shirted man",
+      "object": "rectangular object",
+      "cover": "white box",
+      "hidden": "rectangular object",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 17,
+      "start_time": "00:43",
+      "end_time": "00:45",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "react",
+      "description": "the seated man gestures with his hands while watching the placed box",
+      "participants": [
+        "dark-suit man with plaid shirt"
+      ],
+      "actor": "dark-suit man with plaid shirt",
+      "segment_boundary": "middle",
+      "segment_label": "Box Selection Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 56,
+      "start_time": "02:43",
+      "end_time": "02:45",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Talk Show Segment"
+    },
+    {
+      "event_type": "open_box",
+      "description": "the dark-suited man opens the rightmost box on the table",
+      "participants": [
+        "dark-suited man",
+        "plaid-shirt man"
+      ],
+      "actor": "dark-suited man",
+      "object_before": "closed box",
+      "object_after": "open box",
+      "on_screen_text": [
+        {
+          "text": "9",
+          "location": "box label"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Box Opening Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 57,
+      "start_time": "02:50",
+      "end_time": "02:53",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Talk Show Segment"
+    },
+    {
+      "event_type": "reveal",
+      "description": "a green dome-shaped object with a photo of a person is revealed from the opened box",
+      "participants": [
+        "dark-suited man",
+        "plaid-shirt man"
+      ],
+      "actor": "dark-suited man",
+      "object_before": "closed box",
+      "object_after": "green dome with photo",
+      "cover": "box",
+      "hidden": "green dome with photo",
+      "segment_boundary": "middle",
+      "segment_label": "Box Opening Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 58,
+      "start_time": "02:52",
+      "end_time": "02:56",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Talk Show Segment"
+    },
+    {
+      "event_type": "gesture",
+      "description": "leans forward with hands on the table",
+      "participants": [
+        "dark-suit man with white shirt"
+      ],
+      "actor": "dark-suit man with white shirt",
+      "segment_boundary": "middle",
+      "segment_label": "box placement activity",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 82,
+      "start_time": "03:57",
+      "end_time": "04:00",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 13,
+      "round_index": 1,
+      "segment_label_resolved": "Talk Show Segment"
+    },
+    {
+      "event_type": "open_box",
+      "description": "The man in the dark suit with plaid shirt opens the leftmost box (Box 1) on the table",
+      "participants": [
+        "dark-suit man with plaid shirt",
+        "dark-suit man with white shirt"
+      ],
+      "actor": "dark-suit man with plaid shirt",
+      "object": "box labeled 1",
+      "segment_boundary": "middle",
+      "segment_label": "Box Reveal Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 83,
+      "start_time": "04:00",
+      "end_time": "04:03",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Talk Show Segment"
+    },
+    {
+      "event_type": "reveal",
+      "description": "The man reveals a toy dinosaur wearing a pink tutu from inside the leftmost box",
+      "participants": [
+        "dark-suit man with plaid shirt",
+        "dark-suit man with white shirt"
+      ],
+      "actor": "dark-suit man with plaid shirt",
+      "object_before": "closed box",
+      "object_after": "toy dinosaur",
+      "segment_boundary": "middle",
+      "segment_label": "Box Reveal Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 84,
+      "start_time": "04:03",
+      "end_time": "04:05",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Talk Show Segment"
+    }
+  ]
+}

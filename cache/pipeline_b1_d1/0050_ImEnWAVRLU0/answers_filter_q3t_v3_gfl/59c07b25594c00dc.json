@@ -1,0 +1,88 @@
+{
+  "question": "Was the waiter who was standing in front of room 2410 not wearing gloves?",
+  "pred": "The video shows a man in a red/maroon uniform (identified as a bellhop in the Context) standing in front of room 2410. In the frames where he is visible at the door (e.g., around 02:10), he is clearly not wearing gloves; his bare hands are visible as he manipulates the lock and opens the door.\n\nEvidence: Frames at ~02:10 show the man in the red uniform opening door 2410 with his bare hands, not wearing gloves.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "manipulate",
+      "description": "man in red uniform manipulates door lock with small silver tool",
+      "participants": [
+        "man in red uniform"
+      ],
+      "actor": "man in red uniform",
+      "object": "small silver tool",
+      "segment_boundary": "middle",
+      "segment_label": "",
+      "continuation_hint": "complete",
+      "event_index": 43,
+      "start_time": "02:04",
+      "end_time": "02:09",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 5,
+      "segment_label_resolved": "Hallway Walk"
+    },
+    {
+      "event_type": "stop",
+      "description": "man in red uniform stops manipulating door lock and stands upright",
+      "participants": [
+        "man in red uniform"
+      ],
+      "actor": "man in red uniform",
+      "segment_boundary": "middle",
+      "segment_label": "",
+      "continuation_hint": "complete",
+      "event_index": 45,
+      "start_time": "02:09",
+      "end_time": "02:10",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 5,
+      "segment_label_resolved": "Hallway Walk"
+    },
+    {
+      "event_type": "open",
+      "description": "man in red uniform opens door marked 2410",
+      "participants": [
+        "man in red uniform"
+      ],
+      "actor": "man in red uniform",
+      "object": "door",
+      "segment_boundary": "middle",
+      "segment_label": "",
+      "continuation_hint": "complete",
+      "event_index": 46,
+      "start_time": "02:10",
+      "end_time": "02:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 5,
+      "segment_label_resolved": "Hallway Walk"
+    },
+    {
+      "event_type": "speak",
+      "description": "man in red uniform speaks to the two men in dark suits",
+      "participants": [
+        "man in red uniform",
+        "man in dark suit",
+        "man in dark suit"
+      ],
+      "actor": "man in red uniform",
+      "segment_boundary": "middle",
+      "segment_label": "",
+      "continuation_hint": "complete",
+      "event_index": 47,
+      "start_time": "02:12",
+      "end_time": "02:13",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 49,
+      "round_index": 5,
+      "segment_label_resolved": "Hallway Walk"
+    }
+  ]
+}

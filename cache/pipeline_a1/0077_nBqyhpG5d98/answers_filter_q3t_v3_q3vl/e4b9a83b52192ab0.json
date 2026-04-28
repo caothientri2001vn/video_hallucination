@@ -1,0 +1,71 @@
+{
+  "question": "Does the man win the game?",
+  "pred": "Evidence: The Context describes celebration and reaction events during the game but contains no explicit statement of who won. The frames show an ongoing number-reveal/memory game with no final score or winner declaration visible.\n\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "celebration",
+      "description": "the green-shirt man and grey-shirt woman react with excitement as they find a match",
+      "participants": [
+        "grey-shirt woman",
+        "green-shirt man"
+      ],
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Memory Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 15,
+      "start_time": "00:14",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Memory Match"
+    },
+    {
+      "event_type": "react",
+      "description": "the green-shirt man reacts with surprise, touching his head",
+      "participants": [
+        "green-shirt man",
+        "grey-shirt woman"
+      ],
+      "actor": "green-shirt man",
+      "segment_boundary": "middle",
+      "segment_label": "Coaster Number Reveal",
+      "continuation_hint": "middle",
+      "on_screen_text": [],
+      "event_index": 49,
+      "start_time": "00:55",
+      "end_time": "00:56",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Memory Match"
+    },
+    {
+      "event_type": "react",
+      "description": "the green-shirt man covers his right eye with his hand and laughs while the grey-sweatshirt woman laughs and gestures",
+      "participants": [
+        "grey-sweatshirt woman",
+        "green-shirt man"
+      ],
+      "actor": "green-shirt man",
+      "object": "",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "number reveal game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 60,
+      "start_time": "01:06",
+      "end_time": "01:09",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Memory Match"
+    }
+  ]
+}

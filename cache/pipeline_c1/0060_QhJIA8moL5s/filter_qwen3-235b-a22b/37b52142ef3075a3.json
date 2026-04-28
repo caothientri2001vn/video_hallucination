@@ -1,0 +1,143 @@
+{
+  "question": "Did the man on the right open two boxes?",
+  "top_k": 15,
+  "indices": [
+    67,
+    68,
+    69,
+    74,
+    75,
+    76
+  ],
+  "events": [
+    {
+      "event_type": "graphic",
+      "description": "on-screen scoreboard appears showing scores",
+      "participants": [],
+      "actor": "N/A",
+      "on_screen_text": [
+        {
+          "text": "JENNIFER 1",
+          "location": "scoreboard"
+        },
+        {
+          "text": "JIMMY 0",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "mystery box game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 67,
+      "start_time": "02:24",
+      "end_time": "02:27",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "manipulate_object",
+      "description": "the man in the suit opens the box and reaches inside to examine its contents",
+      "participants": [
+        "man in suit",
+        "woman in blue dress"
+      ],
+      "actor": "man in suit",
+      "object": "box contents",
+      "segment_boundary": "middle",
+      "segment_label": "mystery box game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 68,
+      "start_time": "02:25",
+      "end_time": "02:30",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "pull_box",
+      "description": "black-suit man pulls a yellow Full House box from a larger beige container",
+      "participants": [
+        "black-suit man",
+        "black-dress woman"
+      ],
+      "actor": "black-suit man",
+      "object": "yellow box",
+      "segment_boundary": "middle",
+      "segment_label": "Full House Box Reveal",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 69,
+      "start_time": "02:30",
+      "end_time": "02:35",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "look",
+      "description": "black-dress woman looks at the Full House box being displayed by the man",
+      "participants": [
+        "black-dress woman"
+      ],
+      "actor": "black-dress woman",
+      "segment_boundary": "middle",
+      "segment_label": "Full House Box Reveal",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 74,
+      "start_time": "02:30",
+      "end_time": "02:45",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "Jimmy opens the white box on the table and removes a flat object from inside",
+      "participants": [
+        "dark-dress woman",
+        "suit-man"
+      ],
+      "actor": "suit-man",
+      "object": "white box",
+      "segment_boundary": "middle",
+      "segment_label": "Game Show Segment",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 75,
+      "start_time": "02:45",
+      "end_time": "02:51",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "transition",
+      "description": "Camera cuts to close-up view showing Jimmy's face displayed on a screen with Jennifer's back visible in the foreground",
+      "participants": [
+        "dark-dress woman",
+        "suit-man"
+      ],
+      "actor": "camera",
+      "segment_boundary": "middle",
+      "segment_label": "Game Show Segment",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 76,
+      "start_time": "02:51",
+      "end_time": "02:58",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 10,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    }
+  ]
+}

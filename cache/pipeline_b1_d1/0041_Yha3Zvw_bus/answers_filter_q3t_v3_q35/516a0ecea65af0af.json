@@ -1,0 +1,112 @@
+{
+  "question": "Is the number 1 shoe a cake?",
+  "pred": "Evidence: The context states \"a hand cuts into the sneaker-like item on pedestal 1 with a large knife, revealing it is actually cake\" and frames show the shoe on pedestal 1 being cut to reveal a cake interior.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "cut",
+      "description": "a hand cuts into the sneaker-like item on pedestal 1 with a large knife, revealing it is actually cake",
+      "participants": [
+        "yellow-shirt woman",
+        "pink-dress woman",
+        "white-shirt man"
+      ],
+      "actor": "yellow-shirt woman",
+      "object": "sneaker-like item",
+      "object_before": "white and red sneaker",
+      "object_after": "white and red cake sneaker",
+      "object_after_pattern": "interior cake texture visible after cut",
+      "on_screen_text": [
+        {
+          "text": "CAN YOU SPOT WHICH ITEM IS MADE OF CAKE?",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Can You Spot Which Item Is Made of Cake?",
+      "continuation_hint": "complete",
+      "event_index": 176,
+      "start_time": "08:39",
+      "end_time": "08:45",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 7,
+      "round_index": 6,
+      "segment_label_resolved": "Spot the Cake Item Challenge"
+    },
+    {
+      "event_type": "reveal",
+      "description": "The cut reveals the interior of the shoe-shaped object is chocolate cake",
+      "participants": [
+        "yellow-shirt woman"
+      ],
+      "actor": "yellow-shirt woman",
+      "object_before": "shoe-shaped object (exterior)",
+      "object_after": "chocolate cake interior",
+      "on_screen_text": [
+        {
+          "text": "CAN YOU SPOT WHICH ITEM IS MADE OF CAKE?",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        },
+        {
+          "text": "itv",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cake Identification Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 178,
+      "start_time": "08:48",
+      "end_time": "08:52",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 6,
+      "segment_label_resolved": "Spot the Cake Item Challenge"
+    },
+    {
+      "event_type": "lift",
+      "description": "The woman in yellow lifts a cut section of the cake to show its interior",
+      "participants": [
+        "yellow-shirt woman"
+      ],
+      "actor": "yellow-shirt woman",
+      "object": "cake section",
+      "on_screen_text": [
+        {
+          "text": "CAN YOU SPOT WHICH ITEM IS MADE OF CAKE?",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        },
+        {
+          "text": "itv",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cake Identification Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 179,
+      "start_time": "08:52",
+      "end_time": "08:56",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 6,
+      "segment_label_resolved": "Spot the Cake Item Challenge"
+    }
+  ]
+}

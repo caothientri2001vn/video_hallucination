@@ -1,0 +1,262 @@
+{
+  "video_name": "0036_9_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 23.0,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:02",
+          "event_type": "reaction",
+          "description": "A player in a bright yellow jersey holds his head with his right hand, head bowed in a posture of disappointment.",
+          "participants": [
+            "yellow-jersey player"
+          ],
+          "actor": "yellow-jersey player",
+          "object": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "TARAFITIR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:05",
+          "event_type": "game",
+          "description": "A player in a black and white striped jersey positions himself near a yellow soccer ball while facing blue-jersey opponents on the field.",
+          "participants": [
+            "black-and-white-jersey player",
+            "blue-jersey player"
+          ],
+          "actor": "black-and-white-jersey player",
+          "object": "yellow soccer ball",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "TARAFITIR KANALI",
+              "location": "logo"
+            },
+            {
+              "text": "C. RONALDO",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:07",
+          "event_type": "kick",
+          "description": "The black-and-white-jersey player executes a powerful kick of the yellow soccer ball with his right foot.",
+          "participants": [
+            "black-and-white-jersey player",
+            "blue-jersey player"
+          ],
+          "actor": "black-and-white-jersey player",
+          "object": "yellow soccer ball",
+          "outcome": "ball in flight",
+          "on_screen_text": [
+            {
+              "text": "TARAFITIR KANALI",
+              "location": "logo"
+            },
+            {
+              "text": "C. RONALDO",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:11",
+          "event_type": "game",
+          "description": "The yellow soccer ball travels through the air toward the goal area as multiple players in blue and black-and-white jerseys run to contest it.",
+          "participants": [
+            "blue-jersey players",
+            "black-and-white-jersey players",
+            "goalkeeper"
+          ],
+          "actor": "blue-jersey players",
+          "object": "yellow soccer ball",
+          "outcome": "ball approaching goal",
+          "on_screen_text": [
+            {
+              "text": "TARAFITIR KANALI",
+              "location": "logo"
+            },
+            {
+              "text": "C. RONALDO",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:11",
+          "local_end": "00:13",
+          "event_type": "goal",
+          "description": "A black-and-white-jersey player heads the yellow soccer ball into the goal net as the goalkeeper in green dives but fails to save it.",
+          "participants": [
+            "black-and-white-jersey player",
+            "goalkeeper",
+            "blue-jersey defenders"
+          ],
+          "actor": "black-and-white-jersey player",
+          "object": "yellow soccer ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "TARAFITIR KANALI",
+              "location": "logo"
+            },
+            {
+              "text": "C. RONALDO",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:13",
+          "local_end": "00:15",
+          "event_type": "celebration",
+          "description": "A blue-jersey player with number 29 runs with arms outstretched while a black-and-white-jersey player follows behind him.",
+          "participants": [
+            "blue-jersey player",
+            "black-and-white-jersey player"
+          ],
+          "actor": "blue-jersey player",
+          "object": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "TARAFITIR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 23.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:23",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:17",
+          "event_type": "goal_scored",
+          "description": "The yellow soccer ball moves through the air and enters the goal net while the green-jersey goalkeeper attempts to save it",
+          "participants": [
+            "green-jersey goalkeeper",
+            "blue-jersey defenders"
+          ],
+          "actor": "yellow soccer ball",
+          "object": "yellow soccer ball",
+          "outcome": "scored",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:17",
+          "local_end": "00:18",
+          "event_type": "run",
+          "description": "Player wearing black and white Juventus jersey with number 7 runs toward the camera with mouth open and arms moving",
+          "participants": [
+            "black and white Juventus players"
+          ],
+          "actor": "black and white Juventus player #7",
+          "object": "",
+          "outcome": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:18",
+          "local_end": "00:19",
+          "event_type": "run",
+          "description": "Player wearing black and white Juventus jersey with number 25 runs toward the goal scorer",
+          "participants": [
+            "black and white Juventus players"
+          ],
+          "actor": "black and white Juventus player #25",
+          "object": "",
+          "outcome": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:19",
+          "local_end": "00:21",
+          "event_type": "high_five",
+          "description": "Player wearing black and white Juventus jersey with number 7 makes physical contact with teammate wearing number 25's hand",
+          "participants": [
+            "black and white Juventus player #25"
+          ],
+          "actor": "black and white Juventus player #7",
+          "object": "",
+          "outcome": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:21",
+          "local_end": "00:23",
+          "event_type": "jump",
+          "description": "Player wearing black and white Juventus jersey with number 7 jumps with one arm raised",
+          "participants": [
+            "black and white Juventus players"
+          ],
+          "actor": "black and white Juventus player #7",
+          "object": "",
+          "outcome": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

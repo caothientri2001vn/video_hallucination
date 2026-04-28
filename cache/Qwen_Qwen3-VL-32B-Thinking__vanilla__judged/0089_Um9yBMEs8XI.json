@@ -1,0 +1,213 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0089_Um9yBMEs8XI.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0089_Um9yBMEs8XI.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0089_Um9yBMEs8XI",
+    "n_target": 5,
+    "n_sub": 15,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.8,
+    "sub_accuracy": 0.8666666666666667
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Is the meat pierced with a fork before frying?",
+      "gt": "Yes",
+      "pred": "Yes. The meat is pierced with a fork in the second frame (before the frying step shown in subsequent frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is the meat pierced with a fork?",
+      "gt": "Yes",
+      "pred": "Yes. In the second frame (0:02), a fork is shown piercing the raw meat.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is the meat fried?",
+      "gt": "Yes",
+      "pred": "Yes. The meat is fried, as evidenced by the pan with oil and flame (e.g., timestamp ~20-21 seconds) and the development of a browned crust on the meat.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the piercing of the meat happen before the frying?",
+      "gt": "Yes",
+      "pred": "Yes. The meat is pierced with a fork (evident in frame 2) before it is placed into the hot pan for frying (evident in frame 4 and subsequent frames showing the frying process).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Is the meat pierced with a fork first?",
+      "gt": "Yes",
+      "pred": "Yes. The second frame (0:02) shows the meat being pierced with a fork.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is the meat pierced with a fork?",
+      "gt": "Yes",
+      "pred": "Yes. In the second frame (0:02), a fork is shown piercing the raw meat.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is piercing the meat the first action shown in the video?",
+      "gt": "Yes",
+      "pred": "No. The first frame shows a wooden surface (0:00), and the action of piercing the meat with a fork appears in the second frame (0:01). Therefore, piercing the meat is not the first action shown.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does any other action on the meat happen before the piercing?",
+      "gt": "No",
+      "pred": "Yes. Before the piercing (which occurs in the second frame), the meat is placed on the wooden surface. This placement is evident as the meat appears in the second frame, indicating it was positioned on the surface prior to the fork piercing it.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Are the green onions placed on top of the meat after the eggs are placed?",
+      "gt": "No",
+      "pred": "No. The green onions are placed on the meat before the egg is added. This is evident in the sequence: green onions are sprinkled on the meat (e.g., frame 22), and then the egg is placed on top of the green onions (e.g., frame 23). Thus, green onions are not placed after the eggs.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Are green onions placed on top of the meat?",
+      "gt": "Yes",
+      "pred": "Yes. Green onions are placed on top of the meat, as seen in frames showing the meat being garnished with chopped green onions (e.g., around timestamp 29-30).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Are eggs placed in the video?",
+      "gt": "Yes",
+      "pred": "Yes, eggs are placed in the video. For example, a hand cracks an egg (e.g., timestamp around 10-12 seconds) and the egg yolk is placed on the steak (e.g., timestamp around 21-23 seconds).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Do green onions appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. Green onions are shown being chopped (e.g., frames with green onions being sliced into small pieces, around the 26-31 second mark in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Is the meat cut before being put on the pan?",
+      "gt": "Yes",
+      "pred": "Yes. The meat is cut into slices (e.g., frames 13–18 show the cutting process) before being placed on the pan for the second cooking step (e.g., frame 23 shows the cut meat in the pan).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is the meat cut?",
+      "gt": "Yes",
+      "pred": "Yes, the meat is cut. This is evident in frames showing the meat being sliced (e.g., around the 13th–15th images in the sequence, where a knife is used to cut the meat into pieces).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is the meat put on the pan?",
+      "gt": "Yes",
+      "pred": "Yes. The meat is placed into a pan with oil (e.g., frame 4 shows the meat being added to the pan, and frame 24 shows the meat cooking in a pan with a flame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the cutting of the meat happen before the meat is put on the pan?",
+      "gt": "Yes",
+      "pred": "Yes. The meat is cut into slices (e.g., frames 13-17 show slicing) before it is placed on the pan (frame 22 shows the sliced meat on the pan with a flame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Is the rice placed in a bowl after cutting the meat?",
+      "gt": "No",
+      "pred": "Yes. The rice is shown in a bowl when the cooked meat is placed on it (25), which occurs after the meat is cut (12-19).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is rice placed in a bowl?",
+      "gt": "Yes",
+      "pred": "Yes. In the final frame (29th image), rice is visible in a bowl.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is the meat cut in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the meat is cut in the video. This is visible in frames showing the meat being sliced (e.g., around timestamps 14–18, where the meat is cut into pieces on a cutting board).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does rice appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. Rice appears in multiple frames: water is poured over rice (frame 7), rice is in a strainer (frame 8), cooked rice is in a rice cooker (frame 9), and rice is in a bowl (frame 32).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

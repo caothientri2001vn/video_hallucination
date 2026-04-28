@@ -1,0 +1,135 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0052_UmIYanq5gH8.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0052_UmIYanq5gH8.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0052_UmIYanq5gH8",
+    "n_target": 3,
+    "n_sub": 9,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.6666666666666666,
+    "sub_accuracy": 0.8888888888888888
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Is it correct that the gold-medal team swam in lane 4?",
+      "gt": "No",
+      "pred": "No. The start list (frame 2) shows the United States of America (the gold-medal team, as confirmed by the victory ceremony in frame 26) was in lane 5, not lane 4.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a team that won the gold medal visible in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the United States of America team is visible as the gold medal winner during the victory ceremony. This is confirmed by the on-screen text in the frame showing \"MEN'S 4 x 100M MEDLEY RELAY VICTORY CEREMONY\" with \"UNITED STATES OF AMERICA\" listed first (timestamp ~23-25 seconds) and the athletes in USA team attire on the podium with gold medals (e.g., ~24-28 seconds).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is lane 4 visible in the video?",
+      "gt": "Yes",
+      "pred": "Yes, lane 4 is visible in the video. For example, in the frame showing the pool with numbered lanes (e.g., the frame at ~0.0s and other swimming action frames), lane 4 is part of the visible pool lanes during the race.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the gold-medal winning team swim in lane 4?",
+      "gt": "No",
+      "pred": "To determine if the gold - medal winning team swam in lane 4, we analyze the video:  \n1. The start list (frame 2) shows “5. UNITED STATES OF AMERICA” as the lane assignment for the U.S. team (which won gold, as confirmed by the victory ceremony in later frames).  \n2. Lane 4 in the start list is assigned to “GREAT BRITAIN” (not the U.S. team).  \n3. The victory ceremony (e.g., frame 26) confirms the United States of America as the gold - medal winner, and the U.S. team’s lane was 5 (not 4).  \n\nThus, the gold - medal winning team did not swim in lane 4.  \n\nAnswer: No",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Is it correct that the gold-medal team swam in lane 6?",
+      "gt": "No",
+      "pred": "No. The start list (second frame) shows the United States of America in lane 5, not lane 6. The victory ceremony also confirms the United States won gold, and their lane during the race was 5 (evident from race footage and start list).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a gold-medal winning team shown in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows the United States of America team as the gold-medal winner during the victory ceremony (e.g., 24th frame: \"VICTORY CEREMONY\" with \"UNITED STATES OF AMERICA\" listed first; frames 22–25: athletes wearing gold medals, posing on the podium, and the USA team receiving medals).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is lane 6 visible in the video?",
+      "gt": "Yes",
+      "pred": "Yes, lane 6 is visible in the video. For example, in the frame showing the starting blocks (e.g., timestamp ~2.5s), the numbered blocks include lane 6, and the pool layout across multiple frames (e.g., overhead shots of swimmers in lanes) confirms the presence of lane 6 as part of the 8-lane configuration.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the gold-medal winning team swim in lane 6?",
+      "gt": "No",
+      "pred": "To determine if the gold - medal winning team swam in lane 6, we analyze the video:  \n\n1. **Start List (Frame 2)**: The \"MEN'S 4 x 100M MEDLEY RELAY START LIST - FINAL\" shows the order:  \n   - 1. Brazil  \n   - 2. People's Republic of China  \n   - 3. Japan  \n   - 4. Great Britain  \n   - 5. United States of America  \n   - 6. Australia  \n   - 7. Russian Federation  \n   - 8. Germany  \n\n   This indicates the **United States of America (the gold - medal winner, as confirmed by the victory ceremony in later frames)** was in **lane 5**, not lane 6.  \n\n2. **Race Progression**: The race footage (e.g., Frames 7–18) shows the swimmers’ positions, and the US team’s lane aligns with the start list (lane 5).  \n\n3. **Victory Ceremony (Frame 24)**: The text “VICTORY CEREMONY” lists “UNITED STATES OF AMERICA” as the 1st place, confirming they won. Since the start list places the US in lane 5, they did not swim in lane 6.  \n\n**Answer**: No. The gold - medal winning team (United States of America) swam in lane 5, as indicated by the start list (Frame 2).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Is the team in the top-right swimming lane Germany?",
+      "gt": "No",
+      "pred": "Yes. The start list in frame 2 shows \"8 GERMANY\", and the top - right swimming lane corresponds to lane 8.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a swimming lane in the top-right position of the video?",
+      "gt": "Yes",
+      "pred": "Yes, there is a swimming lane in the top - right position of the video. This can be observed in the first frame (0:00) where the swimming pool with multiple lanes is shown, and the top - right area of the frame includes a swimming lane.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is there a team swimming in the top-right lane?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows 8 lanes (as indicated by the \"MEN'S 4 x 100M MEDLEY RELAY START LIST - FINAL\" in frame 2, listing 8 teams). The top - right lane (lane 8) is occupied by the German team (8th in the start list), and swimmers from all 8 lanes are visible during the race (e.g., frame 7 shows swimmers in all lanes, including the top - right).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Is the team swimming in the top-right lane representing Germany?",
+      "gt": "No",
+      "pred": "To determine if the team in the top - right lane is Germany, we refer to the start list shown in frame 2 (\"MEN'S 4 x 100M MEDLEY RELAY START LIST - FINAL\"). In this list, lane 8 is assigned to Germany. In swimming pool setups, lanes are typically numbered from left to right, so the top - right lane in the pool (as viewed in the video) corresponds to lane 8. Thus, the team in the top - right lane is Germany. \n\nYes, the team swimming in the top - right lane is representing Germany (as confirmed by the start list in frame 2).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    }
+  ]
+}

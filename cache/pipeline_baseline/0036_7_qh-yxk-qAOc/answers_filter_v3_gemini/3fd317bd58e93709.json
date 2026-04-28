@@ -1,0 +1,154 @@
+{
+  "question": "Does the player with black shirt and yellow strip number 7 score the goal?",
+  "pred": "The video shows a football match where a goal is scored. According to the Context and frames, the goal is scored by a player in a white jersey. Specifically, event 4 describes a \"white-jersey player\" kicking the ball, and event 8 identifies the kicker in a replay as \"white-jersey player (number 9)\". The frames confirm the goal is scored by a player in a white jersey (Hakan Çalhanoğlu, as indicated by the on-screen text), while players in black jerseys with yellow trim (such as number 7, visible in the background of several frames) are on the opposing team and do not score this goal.\n\nEvidence: event 8 states \"a replay shows the white-jersey player (number 9) kicking the ball from a distance\" which results in the goal.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "kick",
+      "description": "a white-jersey player kicks the ball from the center circle",
+      "participants": [
+        "white-jersey player"
+      ],
+      "actor": "white-jersey player",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "TARAFTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "middle",
+      "event_index": 4,
+      "start_time": "00:04",
+      "end_time": "00:06",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "game",
+      "description": "the ball travels through the air toward the goal as players watch",
+      "participants": [
+        "white-jersey players",
+        "black-jersey players"
+      ],
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "HAKAN ÇALHANOĞLU",
+          "location": "lower_third"
+        },
+        {
+          "text": "TARAFTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "middle",
+      "event_index": 5,
+      "start_time": "00:06",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "game",
+      "description": "the ball continues its trajectory toward the top corner of the goal",
+      "participants": [
+        "green-jersey goalkeeper"
+      ],
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "HAKAN ÇALHANOĞLU",
+          "location": "lower_third"
+        },
+        {
+          "text": "TARAFTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "middle",
+      "event_index": 6,
+      "start_time": "00:08",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "goal",
+      "description": "the ball enters the top corner of the net as the green-jersey goalkeeper dives",
+      "participants": [
+        "green-jersey goalkeeper"
+      ],
+      "actor": "green-jersey goalkeeper",
+      "object": "white ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "HAKAN ÇALHANOĞLU",
+          "location": "lower_third"
+        },
+        {
+          "text": "TARAFTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "middle",
+      "event_index": 7,
+      "start_time": "00:10",
+      "end_time": "00:11",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "kick",
+      "description": "a replay shows the white-jersey player (number 9) kicking the ball from a distance",
+      "participants": [
+        "white-jersey player (number 9)"
+      ],
+      "actor": "white-jersey player (number 9)",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "HAKAN ÇALHANOĞLU",
+          "location": "lower_third"
+        },
+        {
+          "text": "TARAFTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "middle",
+      "event_index": 8,
+      "start_time": "00:11",
+      "end_time": "00:13",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    }
+  ]
+}

@@ -1,0 +1,6389 @@
+{
+  "question": "In the sixth experiment, did the blue ball hit the blue domino?",
+  "pred": "The question asks about the \"sixth experiment\". Following Rule 3d, we identify the 6th game turn by counting the repeating core actions (Rube Goldberg machine starts):\n1. Turn 1: Blue ball released (00:23).\n2. Turn 2: Orange ball released from book (00:50).\n3. Turn 3: Gold padlock dropped (01:55).\n4. Turn 4: Blue ball released on pencil track (02:12).\n5. Turn 5: Yellow ball released on green table (03:08).\n6. Turn 6: Glass kettle lifted to pour water (03:22).\n\nIn this 6th experiment (the \"Tea Pouring Machine\" segment), the machine is triggered by pouring water. The Context and frames for this segment (starting at 03:24) show a red ball rolling and banners dropping, but there is no blue ball involved in the action of this specific experiment. The blue dominoes mentioned in the Context for this segment (event 129) actually belong to the previous experiment's conclusion. In the 6th experiment itself, no blue ball hits a blue domino.\n\nEvidence: The 6th experiment (Tea Pouring Machine) begins at 03:24 and involves a red ball rolling (03:31), but no blue ball is present in the action.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "graphic": 40,
+      "game": 36,
+      "look": 14,
+      "timer_update": 14,
+      "gesture": 12,
+      "transition": 12,
+      "reveal": 11,
+      "timer": 10,
+      "scoreboard_update": 8,
+      "place": 5,
+      "roll": 5,
+      "release": 4,
+      "collision": 4,
+      "title_card": 3,
+      "lift": 3,
+      "react": 2,
+      "speak": 2,
+      "impact": 1,
+      "bounce": 1,
+      "pour": 1,
+      "hit": 1
+    },
+    "events": [
+      {
+        "event_type": "title_card",
+        "description": "A title card for 'PUZZLE MACHINES by Joseph Herscher' is displayed on a white background.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "PUZZLE MACHINES",
+            "location": "title"
+          },
+          {
+            "text": "by Joseph Herscher",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "complete",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:03",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "place",
+        "description": "A hand places a blue ball onto a small wooden ramp at the bottom center of the table.",
+        "participants": [
+          "unseen person"
+        ],
+        "actor": "unseen person",
+        "object": "blue ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "caption"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 2,
+        "start_time": "00:03",
+        "end_time": "00:05",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "timer",
+        "description": "A countdown timer graphic appears in the top right corner, starting at 15.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "caption"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "15",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 3,
+        "start_time": "00:05",
+        "end_time": "00:06",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "timer",
+        "description": "The countdown timer graphic updates from 15 to 14.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "caption"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "14",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 4,
+        "start_time": "00:06",
+        "end_time": "00:07",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "timer",
+        "description": "The countdown timer graphic updates from 14 to 13.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "caption"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "13",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 5,
+        "start_time": "00:07",
+        "end_time": "00:08",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "timer",
+        "description": "The countdown timer graphic updates from 13 to 12.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "caption"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "12",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 6,
+        "start_time": "00:08",
+        "end_time": "00:09",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "timer",
+        "description": "The countdown timer graphic updates from 12 to 11.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "caption"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "11",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 7,
+        "start_time": "00:09",
+        "end_time": "00:10",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "timer",
+        "description": "The countdown timer graphic updates from 11 to 10.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "caption"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "10",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 8,
+        "start_time": "00:10",
+        "end_time": "00:11",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "timer",
+        "description": "The countdown timer graphic updates from 10 to 9.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "caption"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "9",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 9,
+        "start_time": "00:11",
+        "end_time": "00:12",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "timer",
+        "description": "The countdown timer graphic updates from 9 to 8.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "caption"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "8",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 10,
+        "start_time": "00:12",
+        "end_time": "00:13",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "timer",
+        "description": "The countdown timer graphic updates from 8 to 7.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "caption"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "7",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 11,
+        "start_time": "00:13",
+        "end_time": "00:14",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "timer",
+        "description": "The countdown timer graphic updates from 7 to 6.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "caption"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "6",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 12,
+        "start_time": "00:14",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "look",
+        "description": "The blue-ball man looks at the table setup while holding the blue ball on the ramp.",
+        "participants": [
+          "blue-ball man"
+        ],
+        "actor": "blue-ball man",
+        "object": "blue ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "5",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 13,
+        "start_time": "00:15",
+        "end_time": "00:16",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 14,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "timer_update",
+        "description": "The on-screen countdown timer changes from 5 to 4.",
+        "participants": [],
+        "object_before": "5",
+        "object_after": "4",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "4",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 14,
+        "start_time": "00:16",
+        "end_time": "00:17",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 14,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "timer_update",
+        "description": "The on-screen countdown timer changes from 4 to 3.",
+        "participants": [],
+        "object_before": "4",
+        "object_after": "3",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "3",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 15,
+        "start_time": "00:18",
+        "end_time": "00:19",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 14,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "timer_update",
+        "description": "The on-screen countdown timer changes from 3 to 2.",
+        "participants": [],
+        "object_before": "3",
+        "object_after": "2",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "2",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 16,
+        "start_time": "00:20",
+        "end_time": "00:21",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 14,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "timer_update",
+        "description": "The on-screen countdown timer changes from 2 to 1.",
+        "participants": [],
+        "object_before": "2",
+        "object_after": "1",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "1",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 17,
+        "start_time": "00:22",
+        "end_time": "00:23",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 14,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "release",
+        "description": "The blue-ball man releases the blue ball down the bottom-center ramp.",
+        "participants": [
+          "blue-ball man"
+        ],
+        "actor": "blue-ball man",
+        "object": "blue ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 18,
+        "start_time": "00:23",
+        "end_time": "00:24",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "collision",
+        "description": "The blue ball rolls forward and hits the middle banana, deflecting leftward.",
+        "participants": [],
+        "actor": "blue ball",
+        "object": "yellow banana",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 19,
+        "start_time": "00:24",
+        "end_time": "00:25",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "collision",
+        "description": "The blue ball hits the leftmost banana, deflecting upward toward the red ball setup.",
+        "participants": [],
+        "actor": "blue ball",
+        "object": "yellow banana",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 20,
+        "start_time": "00:25",
+        "end_time": "00:26",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "collision",
+        "description": "The blue ball hits the blue-dice support of the upper-left ramp, knocking it over.",
+        "participants": [],
+        "actor": "blue ball",
+        "object": "blue dice",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 21,
+        "start_time": "00:26",
+        "end_time": "00:27",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "release",
+        "description": "The red ball rolls down the collapsing upper-left ramp and hits the middle banana.",
+        "participants": [],
+        "actor": "red ball",
+        "object": "yellow banana",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 22,
+        "start_time": "00:27",
+        "end_time": "00:28",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "collision",
+        "description": "The red ball hits the middle banana and deflects rightward into the blue dominoes.",
+        "participants": [],
+        "actor": "red ball",
+        "object": "blue dominoes",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 23,
+        "start_time": "00:28",
+        "end_time": "00:29",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "reveal",
+        "description": "The falling blue dominoes trigger a mechanism that reveals a 'YAY!' banner and toys behind doors 1, 2, and 3.",
+        "participants": [],
+        "object_before": "closed pink doors",
+        "object_after": "open pink doors with toys and banner",
+        "on_screen_text": [
+          {
+            "text": "1",
+            "location": "podium"
+          },
+          {
+            "text": "2",
+            "location": "podium"
+          },
+          {
+            "text": "3",
+            "location": "podium"
+          },
+          {
+            "text": "4",
+            "location": "podium"
+          },
+          {
+            "text": "YAY!",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 24,
+        "start_time": "00:29",
+        "end_time": "00:30",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 11,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "look",
+        "description": "the blue-shirt robot looks toward the yellow-shirt monkey",
+        "participants": [
+          "blue-shirt robot",
+          "yellow-shirt monkey"
+        ],
+        "actor": "blue-shirt robot",
+        "object": "blue-shirt robot",
+        "on_screen_text": [
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "YAY!",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 25,
+        "start_time": "00:30",
+        "end_time": "00:31",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 14,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the yellow-shirt monkey gestures with its hands while standing in doorway 3",
+        "participants": [
+          "yellow-shirt monkey"
+        ],
+        "actor": "yellow-shirt monkey",
+        "object": "yellow-shirt monkey",
+        "on_screen_text": [
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "YAY!",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 26,
+        "start_time": "00:31",
+        "end_time": "00:32",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "look",
+        "description": "the orange-shirt dog looks toward the blue-shirt robot",
+        "participants": [
+          "orange-shirt dog",
+          "blue-shirt robot"
+        ],
+        "actor": "orange-shirt dog",
+        "object": "orange-shirt dog",
+        "on_screen_text": [
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "YAY!",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 27,
+        "start_time": "00:32",
+        "end_time": "00:33",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 14,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "transition",
+        "description": "the scene cuts from a close-up of the doorways to a wide shot of the entire table setup",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 28,
+        "start_time": "00:33",
+        "end_time": "00:34",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 12,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "on-screen text appears asking 'WHICH DOOR WILL THE BALL HIT?'",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 29,
+        "start_time": "00:34",
+        "end_time": "00:35",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 40,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "place",
+        "description": "a hand places an orange ball on top of the rightmost blue book",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 30,
+        "start_time": "00:35",
+        "end_time": "00:36",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "a countdown timer graphic appears in the top right corner starting at 15",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "15",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 31,
+        "start_time": "00:36",
+        "end_time": "00:37",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 40,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "scoreboard_update",
+        "description": "the countdown timer updates from 15 to 14",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "14",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 32,
+        "start_time": "00:37",
+        "end_time": "00:38",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "scoreboard_update",
+        "description": "the countdown timer updates from 14 to 13",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "13",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 33,
+        "start_time": "00:38",
+        "end_time": "00:39",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "scoreboard_update",
+        "description": "the countdown timer updates from 13 to 12",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "12",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 34,
+        "start_time": "00:39",
+        "end_time": "00:40",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "scoreboard_update",
+        "description": "the countdown timer updates from 12 to 11",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "11",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 35,
+        "start_time": "00:40",
+        "end_time": "00:41",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "scoreboard_update",
+        "description": "the countdown timer updates from 11 to 10",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "10",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 36,
+        "start_time": "00:41",
+        "end_time": "00:42",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "scoreboard_update",
+        "description": "the countdown timer updates from 10 to 9",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "9",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 37,
+        "start_time": "00:42",
+        "end_time": "00:43",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "scoreboard_update",
+        "description": "the countdown timer updates from 9 to 8",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "8",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 38,
+        "start_time": "00:43",
+        "end_time": "00:44",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "scoreboard_update",
+        "description": "the countdown timer updates from 8 to 7",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "7",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 39,
+        "start_time": "00:44",
+        "end_time": "00:45",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "A countdown timer graphic shows the number 5.",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "5",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 40,
+        "start_time": "00:45",
+        "end_time": "00:46",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 40,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer graphic updates to show the number 4.",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "4",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 41,
+        "start_time": "00:46",
+        "end_time": "00:47",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 40,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer graphic updates to show the number 3.",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "3",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 42,
+        "start_time": "00:47",
+        "end_time": "00:48",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 40,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer graphic updates to show the number 2.",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "2",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 43,
+        "start_time": "00:48",
+        "end_time": "00:49",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 40,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer graphic updates to show the number 1.",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "1",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 44,
+        "start_time": "00:49",
+        "end_time": "00:50",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 40,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "game",
+        "description": "A hand releases an orange ball from the top of a blue book on the right.",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "orange ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 45,
+        "start_time": "00:50",
+        "end_time": "00:51",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 36,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "game",
+        "description": "The orange ball rolls down the blue book and hits a second blue book lying flat.",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "orange ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 46,
+        "start_time": "00:51",
+        "end_time": "00:52",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 36,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "game",
+        "description": "The orange ball rolls across the second blue book and falls into a yellow and white curved track.",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "orange ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 47,
+        "start_time": "00:52",
+        "end_time": "00:53",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 36,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "game",
+        "description": "The orange ball rolls through the curved track and hits a yellow ring on the left.",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "orange ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 48,
+        "start_time": "00:53",
+        "end_time": "00:54",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 36,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "game",
+        "description": "The orange ball hits a line of blue dominoes, causing them to fall in sequence.",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "orange ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 49,
+        "start_time": "00:54",
+        "end_time": "00:55",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 36,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "game",
+        "description": "The falling blue dominoes hit a second orange ball, which rolls and hits a battery on a ramp.",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "orange ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 50,
+        "start_time": "00:55",
+        "end_time": "00:56",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 36,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "game",
+        "description": "The battery rolls down the ramp and hits another line of blue dominoes.",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "battery",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 51,
+        "start_time": "00:56",
+        "end_time": "00:57",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 36,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "game",
+        "description": "The second line of blue dominoes falls and hits a third orange ball near a banana.",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "blue dominoes",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 52,
+        "start_time": "00:57",
+        "end_time": "00:58",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 36,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "game",
+        "description": "The third orange ball rolls toward the pink wall with numbered doors.",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "orange ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "middle",
+        "event_index": 53,
+        "start_time": "00:58",
+        "end_time": "00:59",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 36,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "reveal",
+        "description": "The orange ball hits door number 1, causing a banner to drop down revealing the word 'ACE!'.",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "A",
+            "location": "banner"
+          },
+          {
+            "text": "C",
+            "location": "banner"
+          },
+          {
+            "text": "E!",
+            "location": "banner"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 54,
+        "start_time": "00:59",
+        "end_time": "01:00",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 11,
+        "round_index": 1,
+        "segment_label_resolved": "Which Door Will the Ball Hit?"
+      },
+      {
+        "event_type": "transition",
+        "description": "The scene transitions from a pink board with numbered arches to a table with three wrapped gifts.",
+        "participants": [
+          "purple gift",
+          "yellow gift",
+          "blue gift"
+        ],
+        "on_screen_text": [
+          {
+            "text": "WHICH GIFT WILL BE UNTIED?",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Which Gift Will Be Untied?",
+        "continuation_hint": "complete",
+        "event_index": 55,
+        "start_time": "01:00",
+        "end_time": "01:01",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 12,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "place",
+        "description": "A hand places an orange ball on the top edge of a blue book standing on its side.",
+        "participants": [
+          "hand",
+          "blue book"
+        ],
+        "actor": "hand",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH GIFT WILL BE UNTIED?",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Gift Will Be Untied?",
+        "continuation_hint": "complete",
+        "event_index": 56,
+        "start_time": "01:01",
+        "end_time": "01:03",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 5,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "A countdown timer appears in the top right corner, counting down from 15 to 8.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH GIFT WILL BE UNTIED?",
+            "location": "title"
+          },
+          {
+            "text": "15",
+            "location": "timer"
+          },
+          {
+            "text": "14",
+            "location": "timer"
+          },
+          {
+            "text": "13",
+            "location": "timer"
+          },
+          {
+            "text": "12",
+            "location": "timer"
+          },
+          {
+            "text": "11",
+            "location": "timer"
+          },
+          {
+            "text": "10",
+            "location": "timer"
+          },
+          {
+            "text": "9",
+            "location": "timer"
+          },
+          {
+            "text": "8",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Gift Will Be Untied?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 57,
+        "start_time": "01:03",
+        "end_time": "01:15",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 40,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "look",
+        "description": "The person looks at the orange ball on the blue book.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH GIFT WILL BE UNTIED?",
+            "location": "title"
+          },
+          {
+            "text": "8",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Gift Will Be Untied?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 58,
+        "start_time": "01:15",
+        "end_time": "01:16",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 14,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person points at the orange ball on the blue book.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH GIFT WILL BE UNTIED?",
+            "location": "title"
+          },
+          {
+            "text": "7",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Gift Will Be Untied?",
+        "continuation_hint": "middle",
+        "event_index": 59,
+        "start_time": "01:16",
+        "end_time": "01:17",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 12,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "look",
+        "description": "The person looks at the orange ball on the blue book.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH GIFT WILL BE UNTIED?",
+            "location": "title"
+          },
+          {
+            "text": "7",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Gift Will Be Untied?",
+        "continuation_hint": "middle",
+        "event_index": 60,
+        "start_time": "01:17",
+        "end_time": "01:18",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 14,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person points at the orange ball on the blue book.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH GIFT WILL BE UNTIED?",
+            "location": "title"
+          },
+          {
+            "text": "6",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Gift Will Be Untied?",
+        "continuation_hint": "middle",
+        "event_index": 61,
+        "start_time": "01:18",
+        "end_time": "01:19",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 12,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "look",
+        "description": "The person looks at the orange ball on the blue book.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH GIFT WILL BE UNTIED?",
+            "location": "title"
+          },
+          {
+            "text": "6",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Gift Will Be Untied?",
+        "continuation_hint": "middle",
+        "event_index": 62,
+        "start_time": "01:19",
+        "end_time": "01:20",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 14,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person points at the orange ball on the blue book.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH GIFT WILL BE UNTIED?",
+            "location": "title"
+          },
+          {
+            "text": "5",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Gift Will Be Untied?",
+        "continuation_hint": "middle",
+        "event_index": 63,
+        "start_time": "01:20",
+        "end_time": "01:21",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 12,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "look",
+        "description": "The person looks at the orange ball on the blue book.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH GIFT WILL BE UNTIED?",
+            "location": "title"
+          },
+          {
+            "text": "5",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Gift Will Be Untied?",
+        "continuation_hint": "middle",
+        "event_index": 64,
+        "start_time": "01:21",
+        "end_time": "01:22",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 14,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person points at the orange ball on the blue book.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH GIFT WILL BE UNTIED?",
+            "location": "title"
+          },
+          {
+            "text": "4",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Gift Will Be Untied?",
+        "continuation_hint": "middle",
+        "event_index": 65,
+        "start_time": "01:22",
+        "end_time": "01:23",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 12,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "look",
+        "description": "The person looks at the orange ball on the blue book.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH GIFT WILL BE UNTIED?",
+            "location": "title"
+          },
+          {
+            "text": "4",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Gift Will Be Untied?",
+        "continuation_hint": "middle",
+        "event_index": 66,
+        "start_time": "01:23",
+        "end_time": "01:24",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 14,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person points at the orange ball on the blue book.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH GIFT WILL BE UNTIED?",
+            "location": "title"
+          },
+          {
+            "text": "3",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Gift Will Be Untied?",
+        "continuation_hint": "middle",
+        "event_index": 67,
+        "start_time": "01:24",
+        "end_time": "01:25",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 12,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "look",
+        "description": "The person looks at the orange ball on the blue book.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH GIFT WILL BE UNTIED?",
+            "location": "title"
+          },
+          {
+            "text": "3",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Gift Will Be Untied?",
+        "continuation_hint": "middle",
+        "event_index": 68,
+        "start_time": "01:25",
+        "end_time": "01:26",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 14,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person points at the orange ball on the blue book.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH GIFT WILL BE UNTIED?",
+            "location": "title"
+          },
+          {
+            "text": "2",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Gift Will Be Untied?",
+        "continuation_hint": "middle",
+        "event_index": 69,
+        "start_time": "01:26",
+        "end_time": "01:27",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 12,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "look",
+        "description": "The person looks at the orange ball on the blue book.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH GIFT WILL BE UNTIED?",
+            "location": "title"
+          },
+          {
+            "text": "2",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Gift Will Be Untied?",
+        "continuation_hint": "middle",
+        "event_index": 70,
+        "start_time": "01:27",
+        "end_time": "01:28",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 14,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person points at the orange ball on the blue book.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH GIFT WILL BE UNTIED?",
+            "location": "title"
+          },
+          {
+            "text": "1",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Gift Will Be Untied?",
+        "continuation_hint": "middle",
+        "event_index": 71,
+        "start_time": "01:28",
+        "end_time": "01:29",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 12,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "look",
+        "description": "The person looks at the orange ball on the blue book.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH GIFT WILL BE UNTIED?",
+            "location": "title"
+          },
+          {
+            "text": "1",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Gift Will Be Untied?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 72,
+        "start_time": "01:29",
+        "end_time": "01:30",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 14,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "reveal",
+        "description": "The blue-and-white polka-dot box on the right opens to reveal a purple box with a unicorn illustration.",
+        "participants": [],
+        "actor": "blue-and-white polka-dot box",
+        "object": "purple box",
+        "cover": "blue-and-white polka-dot box",
+        "hidden": "purple box",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 73,
+        "start_time": "01:30",
+        "end_time": "01:31",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 11,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "reveal",
+        "description": "The purple box with a unicorn illustration opens to reveal a black button on top.",
+        "participants": [],
+        "actor": "purple box",
+        "object": "black button",
+        "cover": "purple box",
+        "hidden": "black button",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 74,
+        "start_time": "01:31",
+        "end_time": "01:32",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 11,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "reveal",
+        "description": "The yellow-and-white polka-dot box in the middle opens to reveal a pink-and-white unicorn plush toy.",
+        "participants": [],
+        "actor": "yellow-and-white polka-dot box",
+        "object": "pink-and-white unicorn plush toy",
+        "cover": "yellow-and-white polka-dot box",
+        "hidden": "pink-and-white unicorn plush toy",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 75,
+        "start_time": "01:32",
+        "end_time": "01:33",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 11,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "reveal",
+        "description": "The purple-and-white polka-dot box on the left opens to reveal a spring mechanism.",
+        "participants": [],
+        "actor": "purple-and-white polka-dot box",
+        "object": "spring mechanism",
+        "cover": "purple-and-white polka-dot box",
+        "hidden": "spring mechanism",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 76,
+        "start_time": "01:33",
+        "end_time": "01:34",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 11,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "A speech bubble with the text 'GOOD JOB!' appears above the unicorn plush toy.",
+        "participants": [],
+        "actor": "on-screen graphic",
+        "object": "speech bubble",
+        "on_screen_text": [
+          {
+            "text": "GOOD JOB!",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 77,
+        "start_time": "01:34",
+        "end_time": "01:35",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 40,
+        "round_index": 2,
+        "segment_label_resolved": "Which Gift Will Be Untied?"
+      },
+      {
+        "event_type": "transition",
+        "description": "The video transitions to a new scene with a pink board featuring four numbered doors.",
+        "participants": [],
+        "actor": "camera",
+        "object": "pink board",
+        "on_screen_text": [
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "complete",
+        "event_index": 78,
+        "start_time": "01:35",
+        "end_time": "01:36",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 12,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The title 'WHICH DOOR WILL THE BALL HIT?' appears at the top of the screen.",
+        "participants": [],
+        "actor": "on-screen graphic",
+        "object": "title text",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "complete",
+        "event_index": 79,
+        "start_time": "01:36",
+        "end_time": "01:37",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 40,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "game",
+        "description": "A countdown timer starts from 15 seconds as a hand holds a gold padlock on a yellow string over the table setup.",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "gold padlock",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "15",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will The Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 80,
+        "start_time": "01:37",
+        "end_time": "01:45",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 36,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "timer_update",
+        "description": "The countdown timer on the top right of the screen updates from 11 to 10.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "10",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 81,
+        "start_time": "01:45",
+        "end_time": "01:46",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 14,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "timer_update",
+        "description": "The countdown timer on the top right of the screen updates from 10 to 9.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "9",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 82,
+        "start_time": "01:46",
+        "end_time": "01:47",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 14,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "timer_update",
+        "description": "The countdown timer on the top right of the screen updates from 9 to 8.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "8",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 83,
+        "start_time": "01:47",
+        "end_time": "01:48",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 14,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "timer_update",
+        "description": "The countdown timer on the top right of the screen updates from 8 to 7.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "7",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 84,
+        "start_time": "01:48",
+        "end_time": "01:49",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 14,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "timer_update",
+        "description": "The countdown timer on the top right of the screen updates from 7 to 6.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "6",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 85,
+        "start_time": "01:49",
+        "end_time": "01:50",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 14,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "timer_update",
+        "description": "The countdown timer on the top right of the screen updates from 6 to 5.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "5",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 86,
+        "start_time": "01:50",
+        "end_time": "01:51",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 14,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "timer_update",
+        "description": "The countdown timer on the top right of the screen updates from 5 to 4.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "4",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 87,
+        "start_time": "01:51",
+        "end_time": "01:52",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 14,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "timer_update",
+        "description": "The countdown timer on the top right of the screen updates from 4 to 3.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "3",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 88,
+        "start_time": "01:52",
+        "end_time": "01:53",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 14,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "timer_update",
+        "description": "The countdown timer on the top right of the screen updates from 3 to 2.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "2",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 89,
+        "start_time": "01:53",
+        "end_time": "01:54",
+        "sub_events": [],
+        "subtype_order": 13,
+        "subtype_total": 14,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "timer_update",
+        "description": "The countdown timer on the top right of the screen updates from 2 to 1.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "1",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 90,
+        "start_time": "01:54",
+        "end_time": "01:55",
+        "sub_events": [],
+        "subtype_order": 14,
+        "subtype_total": 14,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "release",
+        "description": "The person's hand on the left releases the yellow string, dropping the gold padlock.",
+        "participants": [],
+        "actor": "person's hand",
+        "object": "gold padlock",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "1",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 91,
+        "start_time": "01:55",
+        "end_time": "01:56",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "impact",
+        "description": "The falling gold padlock hits the open red book, causing the clear tube to tilt upward.",
+        "participants": [],
+        "actor": "gold padlock",
+        "object": "red book",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 92,
+        "start_time": "01:56",
+        "end_time": "01:57",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "roll",
+        "description": "The orange ball rolls out of the tilted clear tube and onto the top edge of the upright red book.",
+        "participants": [],
+        "actor": "orange ball",
+        "object": "upright red book",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 93,
+        "start_time": "01:57",
+        "end_time": "01:58",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 5,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "roll",
+        "description": "The orange ball rolls across the top of the upright red book and falls off the right side.",
+        "participants": [],
+        "actor": "orange ball",
+        "object": "upright red book",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 94,
+        "start_time": "01:58",
+        "end_time": "01:59",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 5,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "bounce",
+        "description": "The orange ball bounces off the table surface and into the white L-shaped cardboard track.",
+        "participants": [],
+        "actor": "orange ball",
+        "object": "white cardboard track",
+        "on_screen_text": [
+          {
+            "text": "WHICH DOOR WILL THE BALL HIT?",
+            "location": "title"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Door Will the Ball Hit?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 95,
+        "start_time": "01:59",
+        "end_time": "02:00",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "look",
+        "description": "The blue-shirt man looks at the Rube Goldberg machine setup.",
+        "participants": [
+          "blue-shirt man"
+        ],
+        "actor": "blue-shirt man",
+        "on_screen_text": [
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 96,
+        "start_time": "02:00",
+        "end_time": "02:01",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 14,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The blue-shirt man gestures with his hand toward the machine.",
+        "participants": [
+          "blue-shirt man"
+        ],
+        "actor": "blue-shirt man",
+        "on_screen_text": [
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 97,
+        "start_time": "02:01",
+        "end_time": "02:03",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 12,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "game",
+        "description": "A blue ball is released and rolls down a track made of pencils.",
+        "participants": [],
+        "object": "blue ball",
+        "on_screen_text": [
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 98,
+        "start_time": "02:03",
+        "end_time": "02:05",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 36,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "game",
+        "description": "The blue ball enters the second opening (labeled '2') in the pink board.",
+        "participants": [],
+        "object": "blue ball",
+        "on_screen_text": [
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 99,
+        "start_time": "02:05",
+        "end_time": "02:07",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 36,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "reveal",
+        "description": "A banner with 'OMG!' is revealed above the second opening.",
+        "participants": [],
+        "object": "OMG! banner",
+        "on_screen_text": [
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "OMG!",
+            "location": "banner"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 100,
+        "start_time": "02:07",
+        "end_time": "02:09",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 11,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "react",
+        "description": "Three people blow party horns through openings 1, 3, and 4 in the pink board.",
+        "participants": [
+          "person behind opening 1",
+          "person behind opening 3",
+          "person behind opening 4"
+        ],
+        "on_screen_text": [
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "OMG!",
+            "location": "banner"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 101,
+        "start_time": "02:09",
+        "end_time": "02:11",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 3,
+        "segment_label_resolved": "Which Door Will The Ball Hit?"
+      },
+      {
+        "event_type": "transition",
+        "description": "The scene transitions to a different Rube Goldberg machine setup with kitchen appliances.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Kitchen Appliance Challenge",
+        "continuation_hint": "complete",
+        "event_index": 102,
+        "start_time": "02:11",
+        "end_time": "02:12",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 12,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "place",
+        "description": "A hand places a blue ball onto a pencil track in the new setup.",
+        "participants": [],
+        "actor": "hand",
+        "object": "blue ball",
+        "on_screen_text": [
+          {
+            "text": "WHICH APPLIANCE WILL GET TURNED ON?",
+            "location": "title"
+          },
+          {
+            "text": "15",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Kitchen Appliance Challenge",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 103,
+        "start_time": "02:12",
+        "end_time": "02:15",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 5,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "A countdown timer graphic is visible on the top right of the screen, showing 12 seconds remaining.",
+        "participants": [
+          "countdown timer"
+        ],
+        "actor": "countdown timer",
+        "object": "timer",
+        "on_screen_text": [
+          {
+            "text": "WHICH APPPLIANCE WILL GET TURNED ON?",
+            "location": "title"
+          },
+          {
+            "text": "12",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Appliance Will Get Turned On?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 104,
+        "start_time": "02:15",
+        "end_time": "02:16",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 40,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer graphic updates to show 11 seconds remaining.",
+        "participants": [
+          "countdown timer"
+        ],
+        "actor": "countdown timer",
+        "object": "timer",
+        "on_screen_text": [
+          {
+            "text": "WHICH APPPLIANCE WILL GET TURNED ON?",
+            "location": "title"
+          },
+          {
+            "text": "11",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Appliance Will Get Turned On?",
+        "continuation_hint": "complete",
+        "event_index": 105,
+        "start_time": "02:16",
+        "end_time": "02:17",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 40,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer graphic updates to show 10 seconds remaining.",
+        "participants": [
+          "countdown timer"
+        ],
+        "actor": "countdown timer",
+        "object": "timer",
+        "on_screen_text": [
+          {
+            "text": "WHICH APPPLIANCE WILL GET TURNED ON?",
+            "location": "title"
+          },
+          {
+            "text": "10",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Appliance Will Get Turned On?",
+        "continuation_hint": "complete",
+        "event_index": 106,
+        "start_time": "02:17",
+        "end_time": "02:18",
+        "sub_events": [],
+        "subtype_order": 13,
+        "subtype_total": 40,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer graphic updates to show 9 seconds remaining.",
+        "participants": [
+          "countdown timer"
+        ],
+        "actor": "countdown timer",
+        "object": "timer",
+        "on_screen_text": [
+          {
+            "text": "WHICH APPPLIANCE WILL GET TURNED ON?",
+            "location": "title"
+          },
+          {
+            "text": "9",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Appliance Will Get Turned On?",
+        "continuation_hint": "complete",
+        "event_index": 107,
+        "start_time": "02:18",
+        "end_time": "02:19",
+        "sub_events": [],
+        "subtype_order": 14,
+        "subtype_total": 40,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer graphic updates to show 8 seconds remaining.",
+        "participants": [
+          "countdown timer"
+        ],
+        "actor": "countdown timer",
+        "object": "timer",
+        "on_screen_text": [
+          {
+            "text": "WHICH APPPLIANCE WILL GET TURNED ON?",
+            "location": "title"
+          },
+          {
+            "text": "8",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Appliance Will Get Turned On?",
+        "continuation_hint": "complete",
+        "event_index": 108,
+        "start_time": "02:19",
+        "end_time": "02:20",
+        "sub_events": [],
+        "subtype_order": 15,
+        "subtype_total": 40,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer graphic updates to show 7 seconds remaining.",
+        "participants": [
+          "countdown timer"
+        ],
+        "actor": "countdown timer",
+        "object": "timer",
+        "on_screen_text": [
+          {
+            "text": "WHICH APPPLIANCE WILL GET TURNED ON?",
+            "location": "title"
+          },
+          {
+            "text": "7",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Appliance Will Get Turned On?",
+        "continuation_hint": "complete",
+        "event_index": 109,
+        "start_time": "02:20",
+        "end_time": "02:21",
+        "sub_events": [],
+        "subtype_order": 16,
+        "subtype_total": 40,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer graphic updates to show 6 seconds remaining.",
+        "participants": [
+          "countdown timer"
+        ],
+        "actor": "countdown timer",
+        "object": "timer",
+        "on_screen_text": [
+          {
+            "text": "WHICH APPPLIANCE WILL GET TURNED ON?",
+            "location": "title"
+          },
+          {
+            "text": "6",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Appliance Will Get Turned On?",
+        "continuation_hint": "complete",
+        "event_index": 110,
+        "start_time": "02:21",
+        "end_time": "02:22",
+        "sub_events": [],
+        "subtype_order": 17,
+        "subtype_total": 40,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer graphic updates to show 5 seconds remaining.",
+        "participants": [
+          "countdown timer"
+        ],
+        "actor": "countdown timer",
+        "object": "timer",
+        "on_screen_text": [
+          {
+            "text": "WHICH APPPLIANCE WILL GET TURNED ON?",
+            "location": "title"
+          },
+          {
+            "text": "5",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Appliance Will Get Turned On?",
+        "continuation_hint": "complete",
+        "event_index": 111,
+        "start_time": "02:22",
+        "end_time": "02:23",
+        "sub_events": [],
+        "subtype_order": 18,
+        "subtype_total": 40,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer graphic updates to show 4 seconds remaining.",
+        "participants": [
+          "countdown timer"
+        ],
+        "actor": "countdown timer",
+        "object": "timer",
+        "on_screen_text": [
+          {
+            "text": "WHICH APPPLIANCE WILL GET TURNED ON?",
+            "location": "title"
+          },
+          {
+            "text": "4",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Appliance Will Get Turned On?",
+        "continuation_hint": "complete",
+        "event_index": 112,
+        "start_time": "02:23",
+        "end_time": "02:24",
+        "sub_events": [],
+        "subtype_order": 19,
+        "subtype_total": 40,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer graphic updates to show 3 seconds remaining.",
+        "participants": [
+          "countdown timer"
+        ],
+        "actor": "countdown timer",
+        "object": "timer",
+        "on_screen_text": [
+          {
+            "text": "WHICH APPPLIANCE WILL GET TURNED ON?",
+            "location": "title"
+          },
+          {
+            "text": "3",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Appliance Will Get Turned On?",
+        "continuation_hint": "complete",
+        "event_index": 113,
+        "start_time": "02:24",
+        "end_time": "02:25",
+        "sub_events": [],
+        "subtype_order": 20,
+        "subtype_total": 40,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer graphic updates to show 2 seconds remaining.",
+        "participants": [
+          "countdown timer"
+        ],
+        "actor": "countdown timer",
+        "object": "timer",
+        "on_screen_text": [
+          {
+            "text": "WHICH APPPLIANCE WILL GET TURNED ON?",
+            "location": "title"
+          },
+          {
+            "text": "2",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Appliance Will Get Turned On?",
+        "continuation_hint": "complete",
+        "event_index": 114,
+        "start_time": "02:25",
+        "end_time": "02:26",
+        "sub_events": [],
+        "subtype_order": 21,
+        "subtype_total": 40,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer graphic updates to show 1 second remaining.",
+        "participants": [
+          "countdown timer"
+        ],
+        "actor": "countdown timer",
+        "object": "timer",
+        "on_screen_text": [
+          {
+            "text": "WHICH APPPLIANCE WILL GET TURNED ON?",
+            "location": "title"
+          },
+          {
+            "text": "1",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Appliance Will Get Turned On?",
+        "continuation_hint": "complete",
+        "event_index": 115,
+        "start_time": "02:26",
+        "end_time": "02:27",
+        "sub_events": [],
+        "subtype_order": 22,
+        "subtype_total": 40,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "transition",
+        "description": "The countdown timer and title graphics disappear, revealing the full scene of the Rube Goldberg machine.",
+        "participants": [
+          "Rube Goldberg machine"
+        ],
+        "actor": "camera",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Appliance Will Get Turned On?",
+        "continuation_hint": "complete",
+        "event_index": 116,
+        "start_time": "02:27",
+        "end_time": "02:28",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 12,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "game",
+        "description": "A blue ball is released from a small wooden ramp at the bottom center of the frame.",
+        "participants": [
+          "blue ball",
+          "wooden ramp"
+        ],
+        "actor": "blue ball",
+        "object": "blue ball",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Appliance Will Get Turned On?",
+        "continuation_hint": "complete",
+        "event_index": 117,
+        "start_time": "02:28",
+        "end_time": "02:29",
+        "sub_events": [],
+        "subtype_order": 13,
+        "subtype_total": 36,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "game",
+        "description": "The blue ball rolls across the table and hits the first domino in a curved line on the right side.",
+        "participants": [
+          "blue ball",
+          "dominoes"
+        ],
+        "actor": "blue ball",
+        "object": "blue ball",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Appliance Will Get Turned On?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 118,
+        "start_time": "02:29",
+        "end_time": "02:30",
+        "sub_events": [],
+        "subtype_order": 14,
+        "subtype_total": 36,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "game",
+        "description": "A small orange ball rolls down a ramp made of pencils and hits a red cup, which then slides across the table.",
+        "participants": [],
+        "actor": "orange ball",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 119,
+        "start_time": "02:30",
+        "end_time": "02:31",
+        "sub_events": [],
+        "subtype_order": 15,
+        "subtype_total": 36,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "game",
+        "description": "The red cup hits a blue domino, which then falls over.",
+        "participants": [],
+        "actor": "red cup",
+        "object": "red cup",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 120,
+        "start_time": "02:31",
+        "end_time": "02:32",
+        "sub_events": [],
+        "subtype_order": 16,
+        "subtype_total": 36,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "game",
+        "description": "The blue domino falls and hits the orange ball, which then rolls down another ramp.",
+        "participants": [],
+        "actor": "blue domino",
+        "object": "blue domino",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 121,
+        "start_time": "02:32",
+        "end_time": "02:33",
+        "sub_events": [],
+        "subtype_order": 17,
+        "subtype_total": 36,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "game",
+        "description": "The orange ball rolls down the ramp and hits a series of wooden blocks, which then fall over in a chain reaction.",
+        "participants": [],
+        "actor": "orange ball",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 122,
+        "start_time": "02:33",
+        "end_time": "02:34",
+        "sub_events": [],
+        "subtype_order": 18,
+        "subtype_total": 36,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "game",
+        "description": "The wooden blocks fall and hit a glass bottle, which then rolls across the table.",
+        "participants": [],
+        "actor": "wooden blocks",
+        "object": "wooden blocks",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 123,
+        "start_time": "02:34",
+        "end_time": "02:35",
+        "sub_events": [],
+        "subtype_order": 19,
+        "subtype_total": 36,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "game",
+        "description": "The glass bottle rolls and hits a book, which then opens up.",
+        "participants": [],
+        "actor": "glass bottle",
+        "object": "glass bottle",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 124,
+        "start_time": "02:35",
+        "end_time": "02:36",
+        "sub_events": [],
+        "subtype_order": 20,
+        "subtype_total": 36,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "game",
+        "description": "The book opens and releases a small orange ball, which then rolls down a clear tube.",
+        "participants": [],
+        "actor": "book",
+        "object": "book",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 125,
+        "start_time": "02:36",
+        "end_time": "02:37",
+        "sub_events": [],
+        "subtype_order": 21,
+        "subtype_total": 36,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "game",
+        "description": "The orange ball rolls through the tube and hits a toaster, which then pops up two slices of toast.",
+        "participants": [],
+        "actor": "orange ball",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 126,
+        "start_time": "02:37",
+        "end_time": "02:38",
+        "sub_events": [],
+        "subtype_order": 22,
+        "subtype_total": 36,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "game",
+        "description": "The toast pops up and hits another orange ball, which then rolls down a ramp.",
+        "participants": [],
+        "actor": "toast",
+        "object": "toast",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 127,
+        "start_time": "02:38",
+        "end_time": "02:39",
+        "sub_events": [],
+        "subtype_order": 23,
+        "subtype_total": 36,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "game",
+        "description": "The orange ball rolls down the ramp and hits a small hammer, which then falls and hits a blue domino.",
+        "participants": [],
+        "actor": "orange ball",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 128,
+        "start_time": "02:39",
+        "end_time": "02:40",
+        "sub_events": [],
+        "subtype_order": 24,
+        "subtype_total": 36,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "game",
+        "description": "The blue domino falls and hits a kettle, which then turns on and starts to glow blue.",
+        "participants": [],
+        "actor": "blue domino",
+        "object": "blue domino",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 129,
+        "start_time": "02:40",
+        "end_time": "02:41",
+        "sub_events": [],
+        "subtype_order": 25,
+        "subtype_total": 36,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "transition",
+        "description": "The screen fades to black.",
+        "participants": [],
+        "actor": "camera",
+        "object_before": "Rube Goldberg Machine setup",
+        "object_after": "black screen",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 130,
+        "start_time": "02:41",
+        "end_time": "02:42",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 12,
+        "round_index": 4,
+        "segment_label_resolved": "Kitchen Appliance Challenge"
+      },
+      {
+        "event_type": "title_card",
+        "description": "A title card appears on a green background with the text 'WHICH CRATER WILL THE BALL GO IN?'.",
+        "participants": [],
+        "actor": "camera",
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "complete",
+        "event_index": 131,
+        "start_time": "02:42",
+        "end_time": "02:43",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "game",
+        "description": "A blue pointer hand enters the frame from the top left and points towards the first crater labeled '1'.",
+        "participants": [],
+        "actor": "blue pointer hand",
+        "object": "blue pointer hand",
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          },
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 132,
+        "start_time": "02:43",
+        "end_time": "02:45",
+        "sub_events": [],
+        "subtype_order": 26,
+        "subtype_total": 36,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "gesture",
+        "description": "a white-gloved hand on a blue stick points to the leftmost crater (Crater 1)",
+        "participants": [
+          "white-gloved hand"
+        ],
+        "actor": "white-gloved hand",
+        "object": "leftmost crater (Crater 1)",
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 133,
+        "start_time": "02:45",
+        "end_time": "02:47",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 12,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "gesture",
+        "description": "a white-gloved hand on a blue stick points to the middle crater (Crater 2)",
+        "participants": [
+          "white-gloved hand"
+        ],
+        "actor": "white-gloved hand",
+        "object": "middle crater (Crater 2)",
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "complete",
+        "event_index": 134,
+        "start_time": "02:47",
+        "end_time": "02:49",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 12,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "gesture",
+        "description": "a white-gloved hand on a blue stick points to the rightmost crater (Crater 3)",
+        "participants": [
+          "white-gloved hand"
+        ],
+        "actor": "white-gloved hand",
+        "object": "rightmost crater (Crater 3)",
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "complete",
+        "event_index": 135,
+        "start_time": "02:49",
+        "end_time": "02:51",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 12,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "place",
+        "description": "a person's hand places a yellow ball (Ball 1) onto the wooden ramp on the right",
+        "participants": [
+          "person's hand"
+        ],
+        "actor": "person's hand",
+        "object": "yellow ball (Ball 1)",
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "complete",
+        "event_index": 136,
+        "start_time": "02:51",
+        "end_time": "02:53",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 5,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "a pink countdown timer appears in the top right corner showing 15 seconds",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          },
+          {
+            "text": "15",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "complete",
+        "event_index": 137,
+        "start_time": "02:53",
+        "end_time": "02:54",
+        "sub_events": [],
+        "subtype_order": 23,
+        "subtype_total": 40,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "the countdown timer updates to 14 seconds",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          },
+          {
+            "text": "14",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "complete",
+        "event_index": 138,
+        "start_time": "02:54",
+        "end_time": "02:55",
+        "sub_events": [],
+        "subtype_order": 24,
+        "subtype_total": 40,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "the countdown timer updates to 13 seconds",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          },
+          {
+            "text": "13",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "complete",
+        "event_index": 139,
+        "start_time": "02:55",
+        "end_time": "02:56",
+        "sub_events": [],
+        "subtype_order": 25,
+        "subtype_total": 40,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "the countdown timer updates to 12 seconds",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          },
+          {
+            "text": "12",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "complete",
+        "event_index": 140,
+        "start_time": "02:56",
+        "end_time": "02:57",
+        "sub_events": [],
+        "subtype_order": 26,
+        "subtype_total": 40,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "the countdown timer updates to 11 seconds",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          },
+          {
+            "text": "11",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "complete",
+        "event_index": 141,
+        "start_time": "02:57",
+        "end_time": "02:58",
+        "sub_events": [],
+        "subtype_order": 27,
+        "subtype_total": 40,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "the countdown timer updates to 10 seconds",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          },
+          {
+            "text": "10",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "complete",
+        "event_index": 142,
+        "start_time": "02:58",
+        "end_time": "02:59",
+        "sub_events": [],
+        "subtype_order": 28,
+        "subtype_total": 40,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "the countdown timer updates to 9 seconds",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          },
+          {
+            "text": "9",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "complete",
+        "event_index": 143,
+        "start_time": "02:59",
+        "end_time": "03:00",
+        "sub_events": [],
+        "subtype_order": 29,
+        "subtype_total": 40,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "the countdown timer updates to 8 seconds",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          },
+          {
+            "text": "8",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "caption"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 144,
+        "start_time": "03:00",
+        "end_time": "03:00",
+        "sub_events": [],
+        "subtype_order": 30,
+        "subtype_total": 40,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "A countdown timer graphic shows the number 7 in a red circle.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          },
+          {
+            "text": "7",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 145,
+        "start_time": "03:00",
+        "end_time": "03:01",
+        "sub_events": [],
+        "subtype_order": 31,
+        "subtype_total": 40,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer graphic updates to show the number 6.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          },
+          {
+            "text": "6",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 146,
+        "start_time": "03:01",
+        "end_time": "03:02",
+        "sub_events": [],
+        "subtype_order": 32,
+        "subtype_total": 40,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer graphic updates to show the number 5.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          },
+          {
+            "text": "5",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 147,
+        "start_time": "03:02",
+        "end_time": "03:03",
+        "sub_events": [],
+        "subtype_order": 33,
+        "subtype_total": 40,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer graphic updates to show the number 4.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          },
+          {
+            "text": "4",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 148,
+        "start_time": "03:03",
+        "end_time": "03:04",
+        "sub_events": [],
+        "subtype_order": 34,
+        "subtype_total": 40,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer graphic updates to show the number 3.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          },
+          {
+            "text": "3",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 149,
+        "start_time": "03:04",
+        "end_time": "03:05",
+        "sub_events": [],
+        "subtype_order": 35,
+        "subtype_total": 40,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer graphic updates to show the number 2.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          },
+          {
+            "text": "2",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 150,
+        "start_time": "03:05",
+        "end_time": "03:06",
+        "sub_events": [],
+        "subtype_order": 36,
+        "subtype_total": 40,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The countdown timer graphic updates to show the number 1.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "WHICH CRATER WILL THE BALL GO IN?",
+            "location": "title"
+          },
+          {
+            "text": "1",
+            "location": "timer"
+          },
+          {
+            "text": "HIT PAUSE FOR MORE TIME",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 151,
+        "start_time": "03:06",
+        "end_time": "03:07",
+        "sub_events": [],
+        "subtype_order": 37,
+        "subtype_total": 40,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "transition",
+        "description": "The countdown timer and instructional text disappear from the screen.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 152,
+        "start_time": "03:07",
+        "end_time": "03:08",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 12,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "release",
+        "description": "A hand releases an orange ball (labeled 1) from a wooden ramp on the right side of the table.",
+        "participants": [],
+        "actor": "hand",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 153,
+        "start_time": "03:08",
+        "end_time": "03:09",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "game",
+        "description": "The orange ball rolls down the ramp and across the green table surface toward the center.",
+        "participants": [],
+        "actor": "orange ball",
+        "object": "orange ball",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 154,
+        "start_time": "03:09",
+        "end_time": "03:10",
+        "sub_events": [],
+        "subtype_order": 27,
+        "subtype_total": 36,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "game",
+        "description": "The orange ball strikes a blue domino, triggering a chain reaction of blue dominoes falling.",
+        "participants": [],
+        "actor": "orange ball",
+        "object": "blue domino",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 155,
+        "start_time": "03:10",
+        "end_time": "03:11",
+        "sub_events": [],
+        "subtype_order": 28,
+        "subtype_total": 36,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "game",
+        "description": "The falling blue dominoes strike a blue ball (labeled 2), causing it to roll toward the left.",
+        "participants": [],
+        "actor": "blue domino",
+        "object": "blue ball",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 156,
+        "start_time": "03:11",
+        "end_time": "03:12",
+        "sub_events": [],
+        "subtype_order": 29,
+        "subtype_total": 36,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "game",
+        "description": "The blue ball rolls into a red cup on the left, knocking it over and releasing a red ball (labeled 4).",
+        "participants": [],
+        "actor": "blue ball",
+        "object": "red cup",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 157,
+        "start_time": "03:12",
+        "end_time": "03:13",
+        "sub_events": [],
+        "subtype_order": 30,
+        "subtype_total": 36,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "game",
+        "description": "The red ball rolls toward the bottom center and strikes another set of blue dominoes.",
+        "participants": [],
+        "actor": "red ball",
+        "object": "blue domino",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 158,
+        "start_time": "03:13",
+        "end_time": "03:14",
+        "sub_events": [],
+        "subtype_order": 31,
+        "subtype_total": 36,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "game",
+        "description": "The second set of blue dominoes falls in a curve, eventually striking a red ball (labeled 5) on a small ramp.",
+        "participants": [],
+        "actor": "blue domino",
+        "object": "red ball",
+        "on_screen_text": [
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Which Crater Will The Ball Go In?",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 159,
+        "start_time": "03:14",
+        "end_time": "03:15",
+        "sub_events": [],
+        "subtype_order": 32,
+        "subtype_total": 36,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "game",
+        "description": "A large clear glass marble rolls across a green felt table surface toward the center.",
+        "participants": [
+          "none"
+        ],
+        "object": "clear glass marble",
+        "on_screen_text": [
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Marble Run",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 160,
+        "start_time": "03:15",
+        "end_time": "03:17",
+        "sub_events": [],
+        "subtype_order": 33,
+        "subtype_total": 36,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "reveal",
+        "description": "The green felt surface is pulled down through a central hole, revealing a yellow surface underneath with black text.",
+        "participants": [
+          "none"
+        ],
+        "object_before": "green felt",
+        "object_after": "yellow surface",
+        "on_screen_text": [
+          {
+            "text": "THANKS FOR PLAYING",
+            "location": "other"
+          },
+          {
+            "text": "JOSEPH'S MACHINES",
+            "location": "logo"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Marble Run",
+        "continuation_hint": "complete",
+        "event_index": 161,
+        "start_time": "03:17",
+        "end_time": "03:19",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 11,
+        "round_index": 5,
+        "segment_label_resolved": "Which Crater Will The Ball Go In?"
+      },
+      {
+        "event_type": "transition",
+        "description": "The video cuts to a close-up of a glass electric kettle boiling water with a blue light at the base.",
+        "participants": [
+          "none"
+        ],
+        "object": "glass kettle",
+        "on_screen_text": [],
+        "segment_boundary": "start",
+        "segment_label": "Kettle and Domino",
+        "continuation_hint": "complete",
+        "event_index": 162,
+        "start_time": "03:19",
+        "end_time": "03:22",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 12,
+        "round_index": 6,
+        "segment_label_resolved": "Kettle and Domino"
+      },
+      {
+        "event_type": "lift",
+        "description": "A hand reaches in from the right and lifts the glass kettle off its power base.",
+        "participants": [
+          "unseen person"
+        ],
+        "actor": "unseen person",
+        "object": "glass kettle",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Kettle and Domino",
+        "continuation_hint": "complete",
+        "event_index": 163,
+        "start_time": "03:22",
+        "end_time": "03:24",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 6,
+        "segment_label_resolved": "Kettle and Domino"
+      },
+      {
+        "event_type": "transition",
+        "description": "The video cuts to a wide shot of a table with a pink teacup, a red ball, and two bananas.",
+        "participants": [
+          "none"
+        ],
+        "object": "pink teacup",
+        "on_screen_text": [
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Tea Pouring Machine",
+        "continuation_hint": "complete",
+        "event_index": 164,
+        "start_time": "03:24",
+        "end_time": "03:26",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 12,
+        "round_index": 7,
+        "segment_label_resolved": "Tea Pouring Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "A hand holds the glass kettle and begins pouring hot water into the pink teacup on the table.",
+        "participants": [
+          "unseen person"
+        ],
+        "actor": "unseen person",
+        "object": "glass kettle",
+        "on_screen_text": [
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Tea Pouring Machine",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 165,
+        "start_time": "03:26",
+        "end_time": "03:30",
+        "sub_events": [],
+        "subtype_order": 34,
+        "subtype_total": 36,
+        "round_index": 7,
+        "segment_label_resolved": "Tea Pouring Machine"
+      },
+      {
+        "event_type": "pour",
+        "description": "the man pours water from a silver kettle into a pink cup on a wooden platform",
+        "participants": [
+          "man"
+        ],
+        "actor": "man",
+        "object": "silver kettle",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 166,
+        "start_time": "03:30",
+        "end_time": "03:31",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 7,
+        "segment_label_resolved": "Tea Pouring Machine"
+      },
+      {
+        "event_type": "roll",
+        "description": "a red ball rolls across the table from right to left",
+        "participants": [],
+        "object": "red ball",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 167,
+        "start_time": "03:31",
+        "end_time": "03:33",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 5,
+        "round_index": 7,
+        "segment_label_resolved": "Tea Pouring Machine"
+      },
+      {
+        "event_type": "reveal",
+        "description": "four colored banners (blue, orange, yellow, blue) with names printed on them drop down from the top of the leftmost pink panel (Panel 1)",
+        "participants": [],
+        "object_before": "pink panel",
+        "object_after": "pink panel with four banners",
+        "on_screen_text": [
+          {
+            "text": "1",
+            "location": "other"
+          },
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 168,
+        "start_time": "03:33",
+        "end_time": "03:35",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 11,
+        "round_index": 7,
+        "segment_label_resolved": "Tea Pouring Machine"
+      },
+      {
+        "event_type": "look",
+        "description": "the man's face appears in the archway of the leftmost pink panel (Panel 1) and he looks around",
+        "participants": [
+          "man"
+        ],
+        "actor": "man",
+        "object": "man's face",
+        "on_screen_text": [
+          {
+            "text": "ADITYA SRIRAM",
+            "location": "other"
+          },
+          {
+            "text": "PETER BAUM",
+            "location": "other"
+          },
+          {
+            "text": "FRANK DE VRIES",
+            "location": "other"
+          },
+          {
+            "text": "DOUGLAS MCINDOE",
+            "location": "other"
+          },
+          {
+            "text": "JAYDEN BOWERS",
+            "location": "other"
+          },
+          {
+            "text": "MAYA HAIM",
+            "location": "other"
+          },
+          {
+            "text": "AN-LON CHEN & NORA",
+            "location": "other"
+          },
+          {
+            "text": "MICHAEL DURGAN",
+            "location": "other"
+          },
+          {
+            "text": "KAI CIRILLI",
+            "location": "other"
+          },
+          {
+            "text": "FENTON HARRIS-NYE",
+            "location": "other"
+          },
+          {
+            "text": "ZACHARY HOFFNUNG",
+            "location": "other"
+          },
+          {
+            "text": "DAVID NEVES",
+            "location": "other"
+          },
+          {
+            "text": "JOSH R.",
+            "location": "other"
+          },
+          {
+            "text": "BRIAN BALLSUN-STANTON",
+            "location": "other"
+          },
+          {
+            "text": "JEREMY ULLMAN",
+            "location": "other"
+          },
+          {
+            "text": "BEN ROTHENBERG",
+            "location": "other"
+          },
+          {
+            "text": "ASHLEY LINDSAY",
+            "location": "other"
+          },
+          {
+            "text": "LOK CHEUNG",
+            "location": "other"
+          },
+          {
+            "text": "IRJA ELISA",
+            "location": "other"
+          },
+          {
+            "text": "MATTHEW",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 169,
+        "start_time": "03:35",
+        "end_time": "03:45",
+        "sub_events": [],
+        "subtype_order": 13,
+        "subtype_total": 14,
+        "round_index": 7,
+        "segment_label_resolved": "Tea Pouring Machine"
+      },
+      {
+        "event_type": "reveal",
+        "description": "The man behind the pink board pushes a black cylinder through the middle archway (labeled '2').",
+        "participants": [
+          "man behind the board"
+        ],
+        "actor": "man behind the board",
+        "cover": "black cylinder",
+        "hidden": "uncertain: white object",
+        "on_screen_text": [
+          {
+            "text": "2",
+            "location": "other"
+          },
+          {
+            "text": "JEREMY ULLMAN",
+            "location": "other"
+          },
+          {
+            "text": "BEN ROTHENBERG",
+            "location": "other"
+          },
+          {
+            "text": "ASHLEY LINDSAY",
+            "location": "other"
+          },
+          {
+            "text": "LOK CHEUNG",
+            "location": "other"
+          },
+          {
+            "text": "IRJA ELISA",
+            "location": "other"
+          },
+          {
+            "text": "MATTHEW",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 170,
+        "start_time": "03:45",
+        "end_time": "03:46",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 11,
+        "round_index": 7,
+        "segment_label_resolved": "Tea Pouring Machine"
+      },
+      {
+        "event_type": "roll",
+        "description": "The black cylinder rolls forward across the brown table surface.",
+        "participants": [
+          "man behind the board"
+        ],
+        "actor": "man behind the board",
+        "object": "black cylinder",
+        "on_screen_text": [
+          {
+            "text": "2",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 171,
+        "start_time": "03:46",
+        "end_time": "03:48",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 5,
+        "round_index": 7,
+        "segment_label_resolved": "Tea Pouring Machine"
+      },
+      {
+        "event_type": "graphic",
+        "description": "A white card with names printed on it appears in front of the rolling black cylinder.",
+        "participants": [
+          "man behind the board"
+        ],
+        "actor": "man behind the board",
+        "object": "white card",
+        "on_screen_text": [
+          {
+            "text": "THOMAS SCHNARR",
+            "location": "other"
+          },
+          {
+            "text": "DAVID GRIMES",
+            "location": "other"
+          },
+          {
+            "text": "DAVID MENKES",
+            "location": "other"
+          },
+          {
+            "text": "GABRIEL CARLIN",
+            "location": "other"
+          },
+          {
+            "text": "JUSTIN MCELROY",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 172,
+        "start_time": "03:48",
+        "end_time": "03:49",
+        "sub_events": [],
+        "subtype_order": 38,
+        "subtype_total": 40,
+        "round_index": 7,
+        "segment_label_resolved": "Tea Pouring Machine"
+      },
+      {
+        "event_type": "speak",
+        "description": "The man behind the board looks through the middle archway and speaks.",
+        "participants": [
+          "man behind the board"
+        ],
+        "actor": "man behind the board",
+        "on_screen_text": [
+          {
+            "text": "THOMAS SCHNARR",
+            "location": "other"
+          },
+          {
+            "text": "DAVID GRIMES",
+            "location": "other"
+          },
+          {
+            "text": "DAVID MENKES",
+            "location": "other"
+          },
+          {
+            "text": "GABRIEL CARLIN",
+            "location": "other"
+          },
+          {
+            "text": "JUSTIN MCELROY",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 173,
+        "start_time": "03:49",
+        "end_time": "03:54",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 7,
+        "segment_label_resolved": "Tea Pouring Machine"
+      },
+      {
+        "event_type": "transition",
+        "description": "The camera pans quickly to the right, away from the man behind the board.",
+        "participants": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rube Goldberg Machine",
+        "continuation_hint": "complete",
+        "event_index": 174,
+        "start_time": "03:54",
+        "end_time": "03:55",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 12,
+        "round_index": 7,
+        "segment_label_resolved": "Tea Pouring Machine"
+      },
+      {
+        "event_type": "title_card",
+        "description": "A white-bordered title card with 'BEHIND THE SCENES' text overlays a shot of a red ball on a pencil ramp.",
+        "participants": [],
+        "object": "red ball",
+        "on_screen_text": [
+          {
+            "text": "BEHIND THE SCENES",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Behind the Scenes",
+        "continuation_hint": "complete",
+        "event_index": 175,
+        "start_time": "03:55",
+        "end_time": "03:56",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 7,
+        "segment_label_resolved": "Tea Pouring Machine"
+      },
+      {
+        "event_type": "roll",
+        "description": "In the behind-the-scenes footage, a red ball rolls down a ramp made of pencils.",
+        "participants": [],
+        "actor": "uncertain",
+        "object": "red ball",
+        "on_screen_text": [
+          {
+            "text": "BEHIND THE SCENES",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Behind the Scenes",
+        "continuation_hint": "complete",
+        "event_index": 176,
+        "start_time": "03:56",
+        "end_time": "03:57",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 5,
+        "round_index": 7,
+        "segment_label_resolved": "Tea Pouring Machine"
+      },
+      {
+        "event_type": "hit",
+        "description": "The red ball hits a banana on the table.",
+        "participants": [],
+        "actor": "uncertain",
+        "object": "red ball",
+        "outcome": "hit",
+        "on_screen_text": [
+          {
+            "text": "BEHIND THE SCENES",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Behind the Scenes",
+        "continuation_hint": "complete",
+        "event_index": 177,
+        "start_time": "03:57",
+        "end_time": "03:58",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 7,
+        "segment_label_resolved": "Tea Pouring Machine"
+      },
+      {
+        "event_type": "game",
+        "description": "A yellow ball hits a row of blue dominoes, causing them to fall.",
+        "participants": [],
+        "actor": "uncertain",
+        "object": "yellow ball",
+        "outcome": "hit",
+        "on_screen_text": [
+          {
+            "text": "BEHIND THE SCENES",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Behind the Scenes",
+        "continuation_hint": "complete",
+        "event_index": 178,
+        "start_time": "03:58",
+        "end_time": "03:59",
+        "sub_events": [],
+        "subtype_order": 35,
+        "subtype_total": 36,
+        "round_index": 7,
+        "segment_label_resolved": "Tea Pouring Machine"
+      },
+      {
+        "event_type": "transition",
+        "description": "The camera angle changes to show the back of the pink board and various mechanical components.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "BEHIND THE SCENES",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Behind the Scenes",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 179,
+        "start_time": "03:59",
+        "end_time": "04:00",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 12,
+        "round_index": 7,
+        "segment_label_resolved": "Tea Pouring Machine"
+      },
+      {
+        "event_type": "graphic",
+        "description": "A 'BEHIND THE SCENES' title card is displayed over a shot of the miniature Rube Goldberg machine setup.",
+        "participants": [
+          "man"
+        ],
+        "on_screen_text": [
+          {
+            "text": "BEHIND THE SCENES",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Behind the Scenes",
+        "continuation_hint": "complete",
+        "event_index": 180,
+        "start_time": "04:00",
+        "end_time": "04:02",
+        "sub_events": [],
+        "subtype_order": 39,
+        "subtype_total": 40,
+        "round_index": 8,
+        "segment_label_resolved": "Behind the Scenes"
+      },
+      {
+        "event_type": "look",
+        "description": "The man looks through a hole in the pink background at the tea cup setup.",
+        "participants": [
+          "man"
+        ],
+        "actor": "man",
+        "on_screen_text": [
+          {
+            "text": "www.patreon.com/josephsmachines",
+            "location": "lower_third"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Behind the Scenes",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 181,
+        "start_time": "04:02",
+        "end_time": "04:05",
+        "sub_events": [],
+        "subtype_order": 14,
+        "subtype_total": 14,
+        "round_index": 8,
+        "segment_label_resolved": "Behind the Scenes"
+      },
+      {
+        "event_type": "reveal",
+        "description": "A red ball is revealed on a small wooden track behind the pink wall.",
+        "participants": [
+          "man"
+        ],
+        "object": "red ball",
+        "on_screen_text": [
+          {
+            "text": "www.patreon.com/josephsmachines",
+            "location": "lower_third"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Behind the Scenes",
+        "continuation_hint": "complete",
+        "event_index": 182,
+        "start_time": "04:05",
+        "end_time": "04:07",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 11,
+        "round_index": 8,
+        "segment_label_resolved": "Behind the Scenes"
+      },
+      {
+        "event_type": "lift",
+        "description": "The man's hand lifts the wooden track, causing the red ball to roll forward.",
+        "participants": [
+          "man"
+        ],
+        "actor": "man",
+        "object": "red ball",
+        "on_screen_text": [
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "www.patreon.com/josephsmachines",
+            "location": "lower_third"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Behind the Scenes",
+        "continuation_hint": "complete",
+        "event_index": 183,
+        "start_time": "04:07",
+        "end_time": "04:09",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 8,
+        "segment_label_resolved": "Behind the Scenes"
+      },
+      {
+        "event_type": "game",
+        "description": "The red ball rolls across the table and hits a banana.",
+        "participants": [
+          "man"
+        ],
+        "object": "red ball",
+        "outcome": "hit",
+        "on_screen_text": [
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          },
+          {
+            "text": "www.patreon.com/josephsmachines",
+            "location": "lower_third"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Behind the Scenes",
+        "continuation_hint": "complete",
+        "event_index": 184,
+        "start_time": "04:09",
+        "end_time": "04:11",
+        "sub_events": [],
+        "subtype_order": 36,
+        "subtype_total": 36,
+        "round_index": 8,
+        "segment_label_resolved": "Behind the Scenes"
+      },
+      {
+        "event_type": "lift",
+        "description": "The man's hand reaches out and lifts the pink tea cup from its saucer.",
+        "participants": [
+          "man"
+        ],
+        "actor": "man",
+        "object": "pink cup",
+        "on_screen_text": [
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Behind the Scenes",
+        "continuation_hint": "complete",
+        "event_index": 185,
+        "start_time": "04:11",
+        "end_time": "04:13",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 8,
+        "segment_label_resolved": "Behind the Scenes"
+      },
+      {
+        "event_type": "speak",
+        "description": "The man speaks while looking through the hole in the pink wall.",
+        "participants": [
+          "man"
+        ],
+        "actor": "man",
+        "on_screen_text": [
+          {
+            "text": "3",
+            "location": "other"
+          },
+          {
+            "text": "4",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Behind the Scenes",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 186,
+        "start_time": "04:13",
+        "end_time": "04:15",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 8,
+        "segment_label_resolved": "Behind the Scenes"
+      },
+      {
+        "event_type": "react",
+        "description": "the man looks through the hole in the pink board and smiles",
+        "participants": [
+          "man"
+        ],
+        "actor": "man",
+        "object": "pink board",
+        "on_screen_text": [
+          {
+            "text": "3",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Tea Bag Toss",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 187,
+        "start_time": "04:15",
+        "end_time": "04:18",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 8,
+        "segment_label_resolved": "Behind the Scenes"
+      },
+      {
+        "event_type": "transition",
+        "description": "the screen fades to white",
+        "participants": [],
+        "object_before": "man looking through hole",
+        "object_after": "white screen",
+        "on_screen_text": [],
+        "segment_boundary": "end",
+        "segment_label": "Tea Bag Toss",
+        "continuation_hint": "complete",
+        "event_index": 188,
+        "start_time": "04:18",
+        "end_time": "04:20",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 12,
+        "round_index": 8,
+        "segment_label_resolved": "Behind the Scenes"
+      },
+      {
+        "event_type": "graphic",
+        "description": "a text graphic appears on a white background thanking Pitagora Suichi",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "Also a massive thank you to PITAGORA SUICHI for inspiring me with this puzzle-door concept (and everything else over the years!)",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Credits",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 189,
+        "start_time": "04:20",
+        "end_time": "04:28",
+        "sub_events": [],
+        "subtype_order": 40,
+        "subtype_total": 40,
+        "round_index": 9,
+        "segment_label_resolved": "Credits"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Which Door Will the Ball Hit?",
+        "event_index_range": [
+          1,
+          54
+        ]
+      },
+      {
+        "round_index": 2,
+        "label": "Which Gift Will Be Untied?",
+        "event_index_range": [
+          55,
+          77
+        ]
+      },
+      {
+        "round_index": 3,
+        "label": "Which Door Will The Ball Hit?",
+        "event_index_range": [
+          78,
+          101
+        ]
+      },
+      {
+        "round_index": 4,
+        "label": "Kitchen Appliance Challenge",
+        "event_index_range": [
+          102,
+          130
+        ]
+      },
+      {
+        "round_index": 5,
+        "label": "Which Crater Will The Ball Go In?",
+        "event_index_range": [
+          131,
+          161
+        ]
+      },
+      {
+        "round_index": 6,
+        "label": "Kettle and Domino",
+        "event_index_range": [
+          162,
+          163
+        ]
+      },
+      {
+        "round_index": 7,
+        "label": "Tea Pouring Machine",
+        "event_index_range": [
+          164,
+          179
+        ]
+      },
+      {
+        "round_index": 8,
+        "label": "Behind the Scenes",
+        "event_index_range": [
+          180,
+          188
+        ]
+      },
+      {
+        "round_index": 9,
+        "label": "Credits",
+        "event_index_range": [
+          189,
+          189
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "question": "Did the bottom-right segment contain exactly five outfits?",
+  "pred": "Evidence: The Context lists four distinct outfits for the bottom-right woman: tan shirt, black dress, white tank top, and black-and-white shirt. No fifth distinct outfit is described in the events.\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "gesture",
+      "description": "the tan-shirt woman (bottom-right) stands still and looks at the camera",
+      "participants": [
+        "tan-shirt woman"
+      ],
+      "actor": "tan-shirt woman",
+      "object": "tan shirt",
+      "on_screen_text": [
+        {
+          "text": "@Short_Senpai",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "outfit transition dance",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 30,
+      "start_time": "00:30",
+      "end_time": "00:31",
+      "sub_events": [],
+      "subtype_order": 12,
+      "subtype_total": 20,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Transition Dance"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the tan-shirt woman (bottom-right) transitions into a black dress",
+      "participants": [
+        "black-dress woman"
+      ],
+      "actor": "black-dress woman",
+      "object_before": "tan shirt",
+      "object_after": "black dress",
+      "on_screen_text": [
+        {
+          "text": "@Short_Senpai",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "outfit transition dance",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 35,
+      "start_time": "00:35",
+      "end_time": "00:36",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Transition Dance"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the black-dress woman (bottom-right) transitions into a white tank top and denim shorts",
+      "participants": [
+        "white-tank-top woman"
+      ],
+      "actor": "white-tank-top woman",
+      "object_before": "black dress",
+      "object_after": "white tank top",
+      "on_screen_text": [
+        {
+          "text": "@Short_Senpai",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "outfit transition dance",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 36,
+      "start_time": "00:36",
+      "end_time": "00:37",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Transition Dance"
+    },
+    {
+      "event_type": "gesture",
+      "description": "the white-tank-top woman in the bottom-right panel performs a visual state change, appearing in a black cap and black-and-white shirt",
+      "participants": [
+        "white-tank-top woman"
+      ],
+      "actor": "white-tank-top woman",
+      "object_before": "white tank top",
+      "object_after": "black and white shirt",
+      "on_screen_text": [
+        {
+          "text": "@Short_Senpai",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Four-Panel Dance",
+      "continuation_hint": "middle",
+      "event_index": 42,
+      "start_time": "00:48",
+      "end_time": "00:49",
+      "sub_events": [],
+      "subtype_order": 19,
+      "subtype_total": 20,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Transition Dance"
+    },
+    {
+      "event_type": "gesture",
+      "description": "the white-tank-top woman in the bottom-right panel reverts to her original white tank top and denim shorts while dancing",
+      "participants": [
+        "white-tank-top woman"
+      ],
+      "actor": "white-tank-top woman",
+      "object_before": "black and white shirt",
+      "object_after": "white tank top",
+      "on_screen_text": [
+        {
+          "text": "@Short_Senpai",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Four-Panel Dance",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 43,
+      "start_time": "00:49",
+      "end_time": "00:50",
+      "sub_events": [],
+      "subtype_order": 20,
+      "subtype_total": 20,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Transition Dance"
+    }
+  ]
+}

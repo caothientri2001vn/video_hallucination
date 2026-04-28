@@ -1,0 +1,751 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0063_uD4QSpK8CI4.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0063_uD4QSpK8CI4.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0063_uD4QSpK8CI4",
+    "n_target": 17,
+    "n_sub": 58,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.5294117647058824,
+    "sub_accuracy": 0.896551724137931
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Did the shoes change while the tops remained the same?",
+      "gt": "Yes",
+      "pred": "No. The shoes were added after the tops had already been changed (e.g., American: white bralette; Korean: white turtleneck). When the shoes were introduced (e.g., frames ~15–16) and worn (e.g., frames ~17–18), the tops were different, so the tops did not remain the same while the shoes changed.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the shoes change during the video?",
+      "gt": "Yes",
+      "pred": "No, the shoes did not change during the video. Both the \"American\" and \"Korean\" sides are shown wearing white sneakers in the later frames (e.g., around timestamps 19-22), and the shoes held earlier (e.g., around timestamp 15) match the ones worn. No change in shoe style or color is observed.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the tops remain the same throughout the video?",
+      "gt": "Yes",
+      "pred": "No. The tops changed: initially black short - sleeve tops, then they switched to white tops (a white crop top with thin straps for the American side and a white short - sleeve top for the Korean side). This change is visible in the sequence of frames where the individuals transition from the black tops to the white tops.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the tops change when the shoes changed?",
+      "gt": "No",
+      "pred": "No. The tops (white crop top for American, white turtleneck for Korean) were already changed before the shoes were introduced. When the shoes were shown and worn, the tops remained the same.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Did the accessories appear only at the end of the video?",
+      "gt": "Yes",
+      "pred": "No. Accessories (e.g., belts, shoes, bags) appeared in multiple segments before the very end. For example:  \n- Belts were added around the 18th frame (when the blue/pink shirts were worn).  \n- Shoes were added around the 20th frame.  \n- Bags were added around the 25th frame.  \nThese items were not exclusive to the final frames.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did accessories appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, accessories appeared in the video. For example, in the later frames (e.g., around the 24th–28th images), the \"American\" side features a belt and a beige bag, while the \"Korean\" side features a pink bag. These items are clearly visible as accessories.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the accessories appear at the end of the video?",
+      "gt": "Yes",
+      "pred": "Yes, the accessories (e.g., belts, shoes, bags) were added in the later segments of the video, with the final full outfits including all accessories visible in the last few frames (e.g., the belt, shoes, and bags are present in the concluding frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the accessories appear before the shoes changed?",
+      "gt": "No",
+      "pred": "No. The shoes are changed (held up and then put on) before the accessories (bags) appear. For example, the shoes are shown and put on around the 17-22 second mark, while the bags are introduced later (around 23-25 seconds).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Did the girls keep the same outerwear after it first appeared?",
+      "gt": "No",
+      "pred": "Yes, the girls kept the same outerwear (blue shirt for American, pink shirt for Korean) after it first appeared. This is visible from the frame where they put on the outerwear (around the 17th frame) through the remaining frames, as they continue wearing those shirts without changing them.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did outerwear appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, outerwear appeared in the video. For example, in the frames around 13.0s, the \"American\" side holds a blue shirt and the \"Korean\" side holds a pink shirt, which are then worn as outerwear.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the outerwear change after it first appeared?",
+      "gt": "No",
+      "pred": "No. The outerwear (blue shirt for \"American\" and pink shirt for \"Korean\") does not change after it first appears; it remains consistent in subsequent frames where it is worn.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Did the shoes stay the same after they changed to sneakers?",
+      "gt": "Yes",
+      "pred": "Yes, the shoes (white sneakers) remained the same after changing to sneakers. This is visible in the frames where they put on the sneakers (e.g., around the 15–18 second mark) and in subsequent frames showing the full outfits.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the girls change to sneakers?",
+      "gt": "Yes",
+      "pred": "Yes, the girls changed to sneakers. This is visible in the frames where they hold sneakers (e.g., around the 15-20 second mark in the sequence) and later stand wearing them.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the shoes stay the same?",
+      "gt": "No",
+      "pred": "Yes, the shoes stayed the same. Both the American and Korean sides wore white sneakers, which can be seen when they hold the shoes (e.g., around the 15th frame) and when they put them on (e.g., around the 17th frame).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the shoes change again after the sneakers appeared?",
+      "gt": "No",
+      "pred": "No. After the sneakers are introduced and worn (e.g., in frames showing the final outfits with sneakers), there is no further change in the shoes. The sneakers remain the same for the \"American\" and \"Korean\" styles in subsequent frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Did the girls add handbags only after changing their shoes?",
+      "gt": "Yes",
+      "pred": "Yes. The girls changed into shoes first (evident in frames where they hold and wear shoes, e.g., around the 15–18 second mark), and then added handbags later (evident in frames where they hold and wear handbags, e.g., around the 20–22 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the girls change their shoes during the video?",
+      "gt": "Yes",
+      "pred": "Yes, the girls changed their shoes. They started with orange flip - flops and later wore white sneakers (evident in frames showing them holding and then wearing the sneakers, around the sequence where they display the shoes and then put them on).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the girls add handbags at some point in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the girls added handbags. In the later frames (e.g., around the 23rd to 28th images in the sequence), they are holding handbags (a beige one for \"American\" and a pink one for \"Korean\").",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the handbags appear in the video?",
+      "gt": "No",
+      "pred": "Yes, handbags appeared in the video. For example, in the sequence where the individuals hold up bags (e.g., the American side holds a white handbag and the Korean side holds a pink handbag), which can be observed in the latter frames of the video.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the girls switch from sandals to sneakers?",
+      "gt": "Yes",
+      "pred": "Yes. The girls are initially wearing orange sandals (e.g., in early frames when holding jeans). Later, they hold and put on sneakers (e.g., around the 15-18th frames of the sequence), switching from sandals to sneakers.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Did the shoes change before the belt appeared?",
+      "gt": "No",
+      "pred": "To determine if the shoes changed before the belt appeared, we analyze the sequence of frames:  \n\n- **Shoes**: The individuals hold white sneakers in frames around 15–16 seconds (e.g., when they display the sneakers before wearing them).  \n- **Belt**: The belt (a white belt with circular details) appears on the “American” side in frames around 17–18 seconds, *after* the shoes are already being worn.  \n\nThus, the shoes were added/changed **before** the belt appeared.  \n\nAnswer: Yes, the shoes changed before the belt appeared.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the shoes change at some point in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The shoes changed from orange sandals to white sneakers during the video (e.g., around the 15–20 second mark when the individuals put on the white sneakers).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a belt appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a belt appeared in the video. It is visible on the \"American\" side when the person is wearing the blue shirt (e.g., in the frames around the 21-23 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the belt appear before the shoes changed?",
+      "gt": "No",
+      "pred": "No. The belt (worn by the \"American\" side) appears after the shoes are changed. The shoes are shown and put on first (e.g., around the 19-20 second mark in the sequence), and the belt is added later (in frames where the \"American\" side has a belt visible, which occurs after the shoes are worn). Thus, the belt did not appear before the shoes changed.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Did the Korean outfit add outerwear before the American outfit added a belt?",
+      "gt": "Yes",
+      "pred": "Yes. The Korean outfit added outerwear (a pink cardigan) before the American outfit added a belt. The Korean cardigan is added around the sequence where the women are putting on the cardigans (e.g., around the 13-14 frame mark), while the American belt is added later when the American side is adjusting the blue shirt and adding the belt (e.g., around the 18-19 frame mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the Korean outfit add outerwear during the video?",
+      "gt": "Yes",
+      "pred": "Yes. The Korean outfit added a pink cardigan as outerwear (visible in frames where the person on the Korean side is seen putting on and wearing the pink cardigan over the white top).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the American outfit add a belt during the video?",
+      "gt": "Yes",
+      "pred": "Yes, the American outfit added a belt. This is visible in the frames where the American side (left) wears a belt with the high-waisted jeans, such as in the sequence showing the final outfit combinations (e.g., around the 20-25 second mark in the video flow).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Did the Korean outfit add outerwear before the shoes changed?",
+      "gt": "Yes",
+      "pred": "Yes. The Korean outfit added the pink cardigan (outerwear) before the shoes were changed. This can be observed as the cardigan is worn in frames where the shoes are still being held (e.g., around the 14 - 16 second mark), and the shoes are then put on afterward.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the Korean outfit add outerwear at some point?",
+      "gt": "Yes",
+      "pred": "Yes. The Korean outfit added a pink cardigan (outerwear) at some point, as seen in the frames where the Korean model is holding and then wearing the pink cardigan (e.g., around the sequence showing the addition of outer layers).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the shoes change from sandals to sneakers?",
+      "gt": "Yes",
+      "pred": "Yes. The person was initially wearing orange sandals (e.g., in early frames) and later put on white sneakers (evident when they hold and then wear the sneakers, e.g., around the sequence where they display and put on the white footwear).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the shoes change before the Korean outfit added outerwear?",
+      "gt": "No",
+      "pred": "No. The shoes did not change before the Korean outfit added outerwear. In the frames where shoes are presented (e.g., when both sides hold white sneakers prior to adding outer layers), the shoes are identical for both \"American\" and \"Korean\" styles. The outerwear (e.g., pink cardigan for Korean) is added after the shoes are shown, and the shoes remain the same.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the outerwear appear earlier than the sneakers in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the outerwear (blue shirt for American, pink shirt for Korean) was shown when the individuals held them up (around the 12–14 second mark in the sequence), which is earlier than the sneakers (shown around the 15–17 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "target",
+      "question": "Did the outerwear appear before the sneakers appeared?",
+      "gt": "Yes",
+      "pred": "Yes. The outerwear (blue shirt for \"American\" and pink shirt for \"Korean\") is shown being worn before the sneakers are introduced. The outerwear appears when the individuals put on the blue and pink shirts (e.g., around the sequence where they transition from holding the shirts to wearing them), and the sneakers are shown later when they hold and then wear the shoes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did outerwear appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, outerwear appeared in the video. For example, in the frames around 13.0s, the \"American\" side holds a blue shirt and the \"Korean\" side holds a pink shirt, which are then worn as outerwear.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did sneakers appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, sneakers appeared in the video. They are shown when the women hold them (around the 15-18 second mark) and then wear them.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the sneakers appear before the outerwear appeared?",
+      "gt": "No",
+      "pred": "No. The outerwear (blue and pink shirts) is shown before the sneakers. The outerwear is introduced when the individuals hold up the shirts (e.g., around the 13–15 second mark in the sequence), and the sneakers are shown later when they hold the shoes (e.g., around the 16–18 second mark). Thus, sneakers did not appear before outerwear.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "target",
+      "question": "Did the Korean cardigan appear before the American belt appeared?",
+      "gt": "Yes",
+      "pred": "Yes. The Korean cardigan is put on (e.g., in the sequence where both hold cardigans and then wear them) before the American belt is added (seen when the American side introduces and wears the belt). This occurs in the sequence where outer layers are added, with the Korean cardigan appearing prior to the American belt.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a Korean cardigan appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a pink cardigan appeared on the Korean side during the outerwear segment (e.g., around the 14th frame in the sequence where outerwear is introduced).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did an American belt appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. In the video, an American belt appears on the \"American\" side (e.g., visible in frames where the American side is wearing a belt with the high-waisted jeans, such as around the timestamp of the frame showing the full outfit with the belt).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the Korean outfit add outerwear before the American outfit added a belt?",
+      "gt": "Yes",
+      "pred": "Yes. The Korean outfit added outerwear (a pink cardigan) before the American outfit added a belt. The Korean cardigan is added around the sequence where the women are putting on the cardigans (e.g., around the 13-14 frame mark), while the American belt is added later when the American side is adjusting the blue shirt and adding the belt (e.g., around the 18-19 frame mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "target",
+      "question": "Did the sneakers appear closer to the end of the video than the outerwear?",
+      "gt": "Yes",
+      "pred": "Yes. The outerwear (blue and pink shirts) is shown when the women put them on (e.g., around frames 14–17), while the sneakers are introduced later, when they hold up the shoes (e.g., around frames 18–20) and then wear them (e.g., around frames 21–23). Thus, the sneakers appear after the outerwear, closer to the end of the video sequence.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the girls switch to sneakers during the video?",
+      "gt": "Yes",
+      "pred": "Yes, the girls switched to sneakers during the video. This is visible in the frames where they hold and then wear white sneakers (e.g., around the sequence showing them holding sneakers and later standing in them).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did outerwear appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, outerwear appeared in the video. For example, in the frames around 13.0s, the \"American\" side holds a blue shirt and the \"Korean\" side holds a pink shirt, which are then worn as outerwear.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the outerwear appear before the sneakers appeared?",
+      "gt": "Yes",
+      "pred": "Yes. The outerwear (blue shirt for \"American\" and pink shirt for \"Korean\") is shown being worn before the sneakers are introduced. The outerwear appears when the individuals put on the blue and pink shirts (e.g., around the sequence where they transition from holding the shirts to wearing them), and the sneakers are shown later when they hold and then wear the shoes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the sneakers appear near the end of the video?",
+      "gt": "Yes",
+      "pred": "Yes. The sneakers are shown when the individuals hold them up (around the 15th–17th frames in the sequence) and then wear them, which occurs near the end of the video before the final \"follow me on insta\" text appears.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "target",
+      "question": "Did the belt appear after the outerwear appeared?",
+      "gt": "Yes",
+      "pred": "Yes. The outerwear (blue shirt for American, pink shirt for Korean) is worn first, and the belt (on the American side) appears in subsequent frames after the outerwear is in place. For example, the belt is visible in the frame where the American side has the blue shirt on and the belt is added, which occurs after the outerwear is worn (e.g., compare frames where outerwear is added vs. when the belt is visible).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a belt appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a belt appeared in the video. It is visible on the \"American\" side when the person is wearing the blue shirt (e.g., in the frames around the 21-23 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did outerwear appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, outerwear appeared in the video. For example, in the frames around 13.0s, the \"American\" side holds a blue shirt and the \"Korean\" side holds a pink shirt, which are then worn as outerwear.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the shoes change before the belt appeared?",
+      "gt": "Yes",
+      "pred": "To determine if the shoes changed before the belt appeared, we analyze the sequence of frames:  \n\n- **Shoes**: The individuals hold white sneakers in frames around 15–16 seconds (e.g., when they display the sneakers before wearing them).  \n- **Belt**: The belt (a white belt with circular details) appears on the “American” side in frames around 17–18 seconds, *after* the shoes are already being worn.  \n\nThus, the shoes were added/changed **before** the belt appeared.  \n\nAnswer: Yes, the shoes changed before the belt appeared.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the Korean outfit add outerwear before the American outfit added a belt?",
+      "gt": "Yes",
+      "pred": "Yes. The Korean outfit added outerwear (a pink cardigan) before the American outfit added a belt. The Korean cardigan is added around the sequence where the women are putting on the cardigans (e.g., around the 13-14 frame mark), while the American belt is added later when the American side is adjusting the blue shirt and adding the belt (e.g., around the 18-19 frame mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "target",
+      "question": "Did the outerwear appear earlier than the sneakers in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the outerwear (blue shirt for American, pink shirt for Korean) was shown when the individuals held them up (around the 12–14 second mark in the sequence), which is earlier than the sneakers (shown around the 15–17 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the girls add outerwear during the video?",
+      "gt": "Yes",
+      "pred": "Yes, the girls added outerwear during the video. For example, in the frames showing the sequence, they hold up a blue shirt (labeled \"American\") and a pink shirt (labeled \"Korean\"), then put them on (visible in the frames around the 13th to 17th images of the provided sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the girls switch to sneakers?",
+      "gt": "Yes",
+      "pred": "Yes, the girls switched to sneakers. They are seen holding and then wearing white sneakers in the sequence (e.g., around the 15-17th frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the Korean outfit add outerwear before the shoes changed?",
+      "gt": "Yes",
+      "pred": "Yes. The Korean outfit added the pink cardigan (outerwear) before the shoes were changed. This can be observed as the cardigan is worn in frames where the shoes are still being held (e.g., around the 14 - 16 second mark), and the shoes are then put on afterward.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the girls change from sandals to sneakers?",
+      "gt": "Yes",
+      "pred": "Yes. The girls are initially seen wearing orange sandals (e.g., in the first several frames). Later, they hold up sneakers and put them on (e.g., around the frames where they display the blue and pink outerwear, then transition to wearing the sneakers).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "target",
+      "question": "Did the girls add handbags in the middle of the video?",
+      "gt": "No",
+      "pred": "Yes, the girls added handbags in the middle of the video. This is visible in frames where they hold and then wear the handbags (e.g., around the 24th - 28th frames of the sequence).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the girls add handbags at some point in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the girls added handbags. In the later frames (e.g., around the 23rd to 28th images in the sequence), they are holding handbags (a beige one for \"American\" and a pink one for \"Korean\").",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the accessories appear only at the end of the video?",
+      "gt": "Yes",
+      "pred": "No. Accessories (e.g., belts, shoes, bags) appeared in multiple segments before the very end. For example:  \n- Belts were added around the 18th frame (when the blue/pink shirts were worn).  \n- Shoes were added around the 20th frame.  \n- Bags were added around the 25th frame.  \nThese items were not exclusive to the final frames.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the handbags appear in the middle portion of the video?",
+      "gt": "No",
+      "pred": "No. The handbags first appear in the later portion of the video (e.g., around the 22nd frame and beyond), not in the middle portion. The middle portion primarily features the display of tops, jackets, and shoes before the handbags are introduced.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the girls add handbags after changing their shoes?",
+      "gt": "Yes",
+      "pred": "Yes. The girls put on shoes (evident in frames around 15–17, where they hold and wear the shoes) and then added handbags (evident in frames around 19–20, where they hold and carry the handbags). Thus, handbags were added after changing shoes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 14,
+      "kind": "target",
+      "question": "Did the girls add handbags in the middle of the video?",
+      "gt": "No",
+      "pred": "Yes, the girls added handbags in the middle of the video. This is visible in frames where they hold and then wear the handbags (e.g., around the 24th - 28th frames of the sequence).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the girls add handbags at some point in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the girls added handbags. In the later frames (e.g., around the 23rd to 28th images in the sequence), they are holding handbags (a beige one for \"American\" and a pink one for \"Korean\").",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the accessories appear only at the end of the video?",
+      "gt": "Yes",
+      "pred": "No. Accessories (e.g., belts, shoes, bags) appeared in multiple segments before the very end. For example:  \n- Belts were added around the 18th frame (when the blue/pink shirts were worn).  \n- Shoes were added around the 20th frame.  \n- Bags were added around the 25th frame.  \nThese items were not exclusive to the final frames.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the handbags appear in the middle portion of the video?",
+      "gt": "No",
+      "pred": "No. The handbags first appear in the later portion of the video (e.g., around the 22nd frame and beyond), not in the middle portion. The middle portion primarily features the display of tops, jackets, and shoes before the handbags are introduced.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the girls add handbags after changing their shoes?",
+      "gt": "Yes",
+      "pred": "Yes. The girls put on shoes (evident in frames around 15–17, where they hold and wear the shoes) and then added handbags (evident in frames around 19–20, where they hold and carry the handbags). Thus, handbags were added after changing shoes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "target",
+      "question": "Did the outerwear appear after the sneakers appeared?",
+      "gt": "No",
+      "pred": "Yes. The sneakers are shown first (e.g., frames where the person holds up sneakers), and the outerwear (blue and pink shirts) is put on afterward.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did outerwear appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, outerwear appeared in the video. For example, in the frames around 13.0s, the \"American\" side holds a blue shirt and the \"Korean\" side holds a pink shirt, which are then worn as outerwear.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did sneakers appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, sneakers appeared in the video. They are shown when the women hold them (around the 15-18 second mark) and then wear them.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the outerwear appear before the sneakers appeared?",
+      "gt": "Yes",
+      "pred": "Yes. The outerwear (blue shirt for \"American\" and pink shirt for \"Korean\") is shown being worn before the sneakers are introduced. The outerwear appears when the individuals put on the blue and pink shirts (e.g., around the sequence where they transition from holding the shirts to wearing them), and the sneakers are shown later when they hold and then wear the shoes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the sneakers appear closer to the end of the video than the outerwear?",
+      "gt": "Yes",
+      "pred": "Yes. The outerwear (blue and pink shirts) is shown when the women put them on (e.g., around frames 14–17), while the sneakers are introduced later, when they hold up the shoes (e.g., around frames 18–20) and then wear them (e.g., around frames 21–23). Thus, the sneakers appear after the outerwear, closer to the end of the video sequence.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 16,
+      "kind": "target",
+      "question": "Did the Korean cardigan appear after the sneakers appeared?",
+      "gt": "No",
+      "pred": "Yes. The sneakers are shown being held up (e.g., around the 15-17 frame range), and the Korean cardigan (pink) is then put on and worn later in the sequence (e.g., 16-19 frame range). Thus, the Korean cardigan appeared after the sneakers appeared.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 16,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a Korean cardigan appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a pink cardigan appeared on the Korean side during the outerwear segment (e.g., around the 14th frame in the sequence where outerwear is introduced).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 16,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the girls switch to sneakers at some point?",
+      "gt": "Yes",
+      "pred": "Yes, the girls switched to sneakers. This is visible when they hold up white sneakers (e.g., around the 15th frame in the sequence) and later wear them (e.g., in the 18th frame and subsequent frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 16,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the Korean cardigan appear before the sneakers appeared?",
+      "gt": "Yes",
+      "pred": "Yes. The Korean (pink) cardigan is shown when the woman holds it up (e.g., around the frame where outerwear is displayed), and the sneakers appear in a subsequent sequence. The cardigan is visible before the sneakers are introduced.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 16,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the Korean outfit add outerwear before the shoes changed?",
+      "gt": "Yes",
+      "pred": "Yes. The Korean outfit added the pink cardigan (outerwear) before the shoes were changed. This can be observed as the cardigan is worn in frames where the shoes are still being held (e.g., around the 14 - 16 second mark), and the shoes are then put on afterward.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0022_iXKNG8sZ18k.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0022_iXKNG8sZ18k.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0022_iXKNG8sZ18k",
+    "n_target": 9,
+    "n_sub": 21,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.8888888888888888,
+    "sub_accuracy": 0.9047619047619048
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Is the first used color green?",
+      "gt": "No",
+      "pred": "No. The first color used in the video is black (evident from the frame where black sand is applied to the paper, e.g., around the 4-6 second mark). Green is not the first color.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a color green in video?",
+      "gt": "Yes",
+      "pred": "Yes, there are multiple green-colored glitters in the video (e.g., green containers in the top row and on the right side, and green glitter applied to the rainbow).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is there any one used color in the video?",
+      "gt": "Yes",
+      "pred": "Yes, multiple colors are used in the video (e.g., black, red, orange, yellow, green, blue, purple, white, and turquoise). For example, black glitter is applied early (e.g., around 0:05–0:07), and other colors like red (0:11), orange (0:13), yellow (0:16), green (0:19), blue (0:22), purple (0:24), white (0:27), and turquoise (0:32) are also used. Thus, there are many used colors.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Is the first used color black?",
+      "gt": "Yes",
+      "pred": "Yes, the first used color is black. This can be observed in the sequence where black glitter is applied to the rainbow outline (e.g., around the 4-6 second mark in the video flow, where black is used to fill the outline before other colors).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there black color in the video?",
+      "gt": "Yes",
+      "pred": "Yes, black color is present in the video. Black glitter is used (e.g., in frames showing the application of black glitter to outline the rainbow, such as around timestamp 4-7 seconds).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is black used as the first color among many colors?",
+      "gt": "Yes",
+      "pred": "Yes, black is used as the first color. This is evident when black glitter is applied to the rainbow and cloud outlines early in the process (e.g., around the 4th to 7th frames where black glitter is spread over the design).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Is the first used color purple?",
+      "gt": "No",
+      "pred": "No. The first color used is black (evident in frames showing black glitter being applied, e.g., around the 5th frame in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there  purple color in the video?",
+      "gt": "Yes",
+      "pred": "Yes, purple color is present in the video. For example, a purple container of sand is visible among the colored sand containers, and purple sand is used to fill a section of the rainbow (e.g., around the 17-18 second mark when purple sand is poured).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is purple the first used color?",
+      "gt": "No",
+      "pred": "No. The first color used in the video is black (evident when black sand is sprinkled over the rainbow outline, e.g., around the 5th frame). Purple is used later in the process (e.g., when purple sand is applied to the rainbow bands, around the 18th frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Is the second color used after black red?",
+      "gt": "Yes",
+      "pred": "Yes. After black glitter is used to outline the rainbow (as seen in frames where the rainbow is filled with black, e.g., around 0:25-0:30), the next color applied to the rainbow arcs is red (evident in frames where red glitter is poured into the outermost arc, e.g., around 1:30-1:35).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is black used as one of the colors?",
+      "gt": "Yes",
+      "pred": "Yes. Black is used as one of the colors; for example, black glitter is visible in the container and is applied to the artwork (e.g., around timestamp 0:05 when black glitter is spread over the design).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is there a second color used after black?",
+      "gt": "Yes",
+      "pred": "Yes, red is used after black. This is visible when red sand is poured onto the rainbow (e.g., around the 10th frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Is the second color used after black green?",
+      "gt": "No",
+      "pred": "No. After black glitter is used (evident in frames showing black coverage, e.g., 0:05–0:08), the next color applied is red (seen in the frame where red glitter is poured, around 0:10), not green.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is black used as one of the colors?",
+      "gt": "Yes",
+      "pred": "Yes. Black is used as one of the colors; for example, black glitter is visible in the container and is applied to the artwork (e.g., around timestamp 0:05 when black glitter is spread over the design).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is there a second color used after black?",
+      "gt": "Yes",
+      "pred": "Yes, red is used after black. This is visible when red sand is poured onto the rainbow (e.g., around the 10th frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Is the second color used after black blue?",
+      "gt": "No",
+      "pred": "No. After black, the next color used is red (evident in frames showing red glitter being applied, e.g., around the 10–12 second mark). Blue is used later, not as the second color after black.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was black used as a color in the video?",
+      "gt": "Yes",
+      "pred": "Yes. Black glitter was used, as seen in frames where black is applied to the rainbow outline (e.g., around the 4th-7th frames) and in the container of black glitter visible in multiple frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is there a second color used after black?",
+      "gt": "Yes",
+      "pred": "Yes, red is used after black. This is visible when red sand is poured onto the rainbow (e.g., around the 10th frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Are there in total 13 sand cups?",
+      "gt": "Yes",
+      "pred": "Yes. The video frames show 13 sand cups arranged around the paper: 7 in the top row, 4 in the left column, and 2 in the right column (e.g., visible in the second frame at ~0:02).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Are there sand cups visible in the video?",
+      "gt": "Yes",
+      "pred": "Yes, sand cups are visible in the video. For example, in the second frame (timestamp ~0:02) and multiple subsequent frames, various colored sand cups are arranged around the paper.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Are there exactly 13 sand cups in total?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows 7 cups in the top row, 3 in the left column, and 3 in the right column, totaling 13 sand cups (evident in frames like the second image where all cups are visible).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Are there more than 10 sand cups in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there are more than 10 sand cups. In the video frames (e.g., frame 2), there are 13 distinct sand cups arranged around the paper.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Are there in total 12 sand cups?",
+      "gt": "No",
+      "pred": "No. The video shows 14 sand cups: 7 in the top row, 4 in the left column, and 3 in the right column (e.g., visible in frames like 0:02).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Are there sand cups in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there are sand cups in the video. They are visible surrounding the rainbow template in multiple frames (e.g., the second frame and subsequent frames show cups filled with colored sand).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Are there exactly 12 sand cups in total?",
+      "gt": "No",
+      "pred": "So, let's count the sand cups in the video. Looking at the frames, there are cups on the top row, left column, and right column. Let's check:\n\nTop row: 7 cups (brown, green, blue, red, purple, white, pink)\nLeft column: 4 cups (light blue, yellow, red, but wait, the red in left column is separate from top row? Wait, no, let's count all. Let's list them:\n\n1. Top left: brown\n2. Top: green\n3. Top: blue\n4. Top: red (orange)\n5. Top: purple\n6. Top: white\n7. Top: pink\n8. Left: light blue\n9. Left: yellow\n10. Left: red (the one at the bottom left)\n11. Right: green (the bright green)\n12. Right: black\n13. Right: pink (the one at the bottom right)\n\nWait, that's 13? Wait no, let's check the video. In the second frame (where the yellow paper is on the white surface with cups around), let's count:\n\nTop row: 7 cups (1 brown, 2 green, 3 blue, 4 red, 5 purple, 6 white, 7 pink)\nLeft column: 4 cups (8 light blue, 9 yellow, 10 red, 11... wait, left column has 4: light blue, yellow, red (3 in left column)\nRight column: 3 cups (12 bright green, 13 black, 14 pink)\nWait, that's 7 + 4 + 3 = 14? No, let's count again. In the frame where the cups are all visible (like the second image in the sequence), let's count:\n\nTop row (7 cups): 1. brown, 2. green, 3. blue, 4. red (orange), 5. purple, 6. white, 7. pink.\nLeft column (4 cups): 8. light blue, 9. yellow, 10. red (the one below yellow), 11. ... wait, no, left column has 4? Let's check the image:\n\nIn the second frame (the one with the yellow paper and a hand), the cups are:\n\nTop: 7 (1-7)\nLeft: 4 (8-11)\nRight: 3 (12-14)\nWait, 7 + 4 + 3 = 14. But let's count again. Let's list all:\n\n1. Brown (top left)\n2. Green (top, next to brown)\n3. Blue (top, next to green)\n4. Red (top, next to blue)\n5. Purple (top, next to red)\n6. White (top, next to purple)\n7. Pink (top right)\n8. Light blue (left, top of left column)\n9. Yellow (left, middle)\n10. Red (left, bottom)\n11. Bright green (right, top)\n12. Black (right, middle)\n13. Pink (right, bottom)\n14. ... wait, no, the left column has 3 cups (8,9,10), top row 7, right column 3. 7+3+3=13? No, 7+3+3=13? Wait, in the frame where the cups are arranged, let's count:\n\nTop row: 7 cups (from left to right: brown, green, blue, red, purple, white, pink) → 7\nLeft column: 4 cups (from top to bottom: light blue, yellow, red, ... no, in the image, left column has 3 cups: light blue, yellow, red (the bottom left red) → 3\nRight column: 3 cups (from top to bottom: bright green, black, pink) → 3\nTotal: 7 + 3 + 3 = 13. But the question is \"exactly 12\". Let's check the video frames.\n\nWait, in the first frame with the cups (second image in the sequence), let's count the cups:\n\n1. Top left: brown\n2. Top: green\n3. Top: blue\n4. Top: red (orange)\n5. Top: purple\n6. Top: white\n7. Top: pink\n8. Left: light blue (below the green cup)\n9. Left: yellow (below light blue)\n10. Left: red (below yellow)\n11. Right: bright green (above the black cup)\n12. Right: black (below bright green)\n13. Right: pink (below black)\n\nSo that's 13 cups. But the",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Are there 13 sand cups in total?",
+      "gt": "Yes",
+      "pred": "Yes, there are 13 sand cups in total. This can be verified by counting the cups in the frames: 7 in the top row, 3 in the left column, and 3 in the right column (7 + 3 + 3 = 13). For example, in the second frame (0:02), all 13 cups are visible around the paper.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "target",
+      "question": "Are there in total 14 sand cups?",
+      "gt": "No",
+      "pred": "So, let's count the sand cups in the video. Looking at the frames, there are cups arranged around the paper. Let's check: top row has 7 (brown, green, blue, red, purple, white, pink), left side has 4 (light blue, yellow, red, another red? Wait no, left side: first row top to bottom: brown (top left), then green, blue, red, purple, white, pink (top row 7). Then left side: light blue, yellow, red (3). Right side: green, black, pink (3). Wait, 7 + 3 + 3 = 13? Wait no, let's count again. In the second frame (the one with the paper and cups), top row: 7 cups (from left: brown, green, blue, orange, purple, white, pink). Left side: 4 cups (light blue, yellow, red, and another red? No, left side: first column (top to bottom): brown is top left, then light blue, yellow, red. So that's 4. Right side: 3 cups (green, black, pink). So 7 + 4 + 3? No, wait, the top row is 7, left side (vertical) is 4 (but the top left is part of the top row, so no). Wait, in the frame where all cups are visible (like frame 2), the cups are arranged as: top row (7 cups), left column (4 cups, but the top one is the first of the top row, so actually left column has 3 below the top row), right column (3 cups). Let's count: top row: 7. Left column (excluding the top one which is in top row): 3 (light blue, yellow, red). Right column: 3 (green, black, pink). So 7 + 3 + 3 = 13. Wait, but let's check the video. In frame 2, the cups: top row has 7 (1-7), left side: 4 (8-11: light blue, yellow, red, and another red? No, left side has 4 cups: light blue (8), yellow (9), red (10), and the bottom left is red (11)? Wait no, looking at frame 2: the cups are:\n\nTop row (7): brown, green, blue, red, purple, white, pink.\n\nLeft side (4): light blue, yellow, red, red? No, left side: first cup below top row is light blue (8), then yellow (9), then red (10), then... no, in frame 2, left side has 4 cups (8-11), but the top left of the left side is light blue (8), then yellow (9), red (10), and another red (11)? Wait, no, in the video, the cups are:\n\nLet's count the cups in the frame where all are visible (frame 2). The cups are arranged in a circle? No, in a rectangular frame. Let's list them:\n\nTop row (7 cups): 1. brown, 2. green, 3. blue, 4. orange, 5. purple, 6. white, 7. pink.\n\nLeft column (4 cups, from top to bottom, but the top one of the left column is not in top row): 8. light blue, 9. yellow, 10. red, 11. red? No, in frame 2, left side has 4 cups: light blue (top), yellow, red, and red? Wait, no, in the image, the left side has 4 cups: the first (top) is light blue, then yellow, then red, and the bottom left is red? Wait, no, in the video, the left side has 4 cups (8-11) and right side has 3 (12-14). Let's count:\n\n1. brown (top left)\n2. green (top 2)\n3. blue (top 3)\n4. orange (top 4)\n5. purple (top 5)\n6. white (top 6)\n7. pink (top 7)\n8. light blue (left 1)\n9. yellow (left 2)\n10. red (left 3)\n11. red (left 4) → no, wait, in frame 2, the left side has 4 cups: light blue (8), yellow (9), red (10), and the bottom left is red (11)? But looking at the video, the cups on the left are: light blue, yellow, red, and that's 3? Wait, no, in frame",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Do sand cups appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, sand cups appear in the video. For example, in the second frame (and multiple subsequent frames), various colored cups containing sand or glitter are arranged around the yellow paper.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Are there exactly 14 sand cups in total?",
+      "gt": "No",
+      "pred": "Yes. The video shows 7 cups in the top row, 4 cups in the left column, and 3 cups in the right column, totaling 14 sand cups (e.g., visible in frames like the one with the \"Subscribe!\" text).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Are there fewer than 14 sand cups in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows 13 sand cups (7 in the top row, 3 in the left column, and 3 in the right column; e.g., visible in frames like the second image where the hand is preparing the paper). 13 is fewer than 14.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

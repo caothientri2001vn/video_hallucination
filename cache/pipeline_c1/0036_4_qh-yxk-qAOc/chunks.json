@@ -1,0 +1,292 @@
+{
+  "video_name": "0036_4_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 17.0,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:02",
+          "event_type": "game",
+          "description": "Players in red and white jerseys position themselves on the soccer field as play develops",
+          "participants": [
+            "red-shirt player",
+            "white-shirt player"
+          ],
+          "actor": "red-shirt player",
+          "object": "soccer ball",
+          "on_screen_text": [
+            {
+              "text": "HYUNDAI",
+              "location": "banner"
+            },
+            {
+              "text": "TURKISH TV KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:04",
+          "event_type": "dribble",
+          "description": "Red-shirt player number 20 controls the ball while moving forward on the field",
+          "participants": [
+            "red-shirt player 20",
+            "white-shirt player"
+          ],
+          "actor": "red-shirt player 20",
+          "object": "soccer ball",
+          "on_screen_text": [
+            {
+              "text": "HYUNDAI",
+              "location": "banner"
+            },
+            {
+              "text": "TURKISH TV KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:04",
+          "local_end": "00:06",
+          "event_type": "shoot",
+          "description": "Red-shirt player number 20 strikes the ball toward the goal",
+          "participants": [
+            "red-shirt player 20",
+            "goalkeeper",
+            "white-shirt defender"
+          ],
+          "actor": "red-shirt player 20",
+          "object": "soccer ball",
+          "on_screen_text": [
+            {
+              "text": "HYUNDAI",
+              "location": "banner"
+            },
+            {
+              "text": "TURKISH TV KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:08",
+          "event_type": "dive",
+          "description": "Goalkeeper in blue uniform dives to the right attempting to save the shot",
+          "participants": [
+            "blue-shirt goalkeeper"
+          ],
+          "actor": "blue-shirt goalkeeper",
+          "object": "soccer ball",
+          "on_screen_text": [
+            {
+              "text": "QUARESMA",
+              "location": "watermark"
+            },
+            {
+              "text": "TURKISH TV KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:08",
+          "local_end": "00:10",
+          "event_type": "score",
+          "description": "Soccer ball enters the goal net past the diving goalkeeper",
+          "participants": [
+            "red-shirt player",
+            "blue-shirt goalkeeper",
+            "white-shirt defender"
+          ],
+          "actor": "soccer ball",
+          "object": "soccer ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "QUARESMA",
+              "location": "watermark"
+            },
+            {
+              "text": "TURKISH TV KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:10",
+          "local_end": "00:12",
+          "event_type": "celebration",
+          "description": "Red-shirt player number 20 raises arms in celebration after scoring",
+          "participants": [
+            "red-shirt player 20",
+            "red-shirt player 7",
+            "red-shirt player 10"
+          ],
+          "actor": "red-shirt player 20",
+          "object": "none",
+          "on_screen_text": [
+            {
+              "text": "QUARESMA",
+              "location": "watermark"
+            },
+            {
+              "text": "TURKISH TV KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:12",
+          "local_end": "00:14",
+          "event_type": "hug",
+          "description": "Red-shirt player number 20 and red-shirt player number 7 run toward each other and embrace in celebration",
+          "participants": [
+            "red-shirt player 20",
+            "red-shirt player 7",
+            "red-shirt player 10",
+            "red-shirt player 11"
+          ],
+          "actor": "red-shirt player 20",
+          "object": "none",
+          "on_screen_text": [
+            {
+              "text": "QUARESMA",
+              "location": "watermark"
+            },
+            {
+              "text": "TURKISH TV KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:14",
+          "local_end": "00:15",
+          "event_type": "run",
+          "description": "Multiple red-shirt players run toward the goal area to join the celebration",
+          "participants": [
+            "red-shirt player 7",
+            "red-shirt player 10",
+            "red-shirt player 11"
+          ],
+          "actor": "red-shirt player 7",
+          "object": "none",
+          "on_screen_text": [
+            {
+              "text": "QUARESMA",
+              "location": "watermark"
+            },
+            {
+              "text": "TURKISH TV KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 17.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:17",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:16",
+          "event_type": "dive",
+          "description": "goalkeeper in blue jersey with yellow gloves dives toward the upper left corner of the goal to attempt a save",
+          "participants": [
+            "blue-jersey goalkeeper",
+            "red-jersey player",
+            "white-jersey players"
+          ],
+          "actor": "blue-jersey goalkeeper",
+          "object": "black and white soccer ball",
+          "outcome": "miss",
+          "on_screen_text": [
+            {
+              "text": "TURKIYE",
+              "location": "logo"
+            },
+            {
+              "text": "18 FIFA",
+              "location": "banner"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:16",
+          "local_end": "00:17",
+          "event_type": "goal",
+          "description": "soccer ball hits the back of the net in the upper left corner of the goal",
+          "participants": [
+            "blue-jersey goalkeeper",
+            "red-jersey player",
+            "white-jersey players"
+          ],
+          "actor": "black and white soccer ball",
+          "object": "black and white soccer ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "TURKIYE",
+              "location": "logo"
+            },
+            {
+              "text": "18 FIFA",
+              "location": "banner"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

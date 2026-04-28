@@ -1,0 +1,137 @@
+{
+  "question": "Were the bee and mantis toys inside box number 3?",
+  "top_k": 15,
+  "indices": [
+    74,
+    75,
+    76,
+    77,
+    78,
+    79
+  ],
+  "events": [
+    {
+      "event_type": "reach",
+      "description": "The man in dark suit reaches toward the top-right numbered box (labeled '3') on the shelf",
+      "participants": [
+        "dark-suit man"
+      ],
+      "actor": "dark-suit man",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "middle",
+      "event_index": 74,
+      "start_time": "02:48",
+      "end_time": "02:51",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "lift",
+      "description": "The man in dark suit lifts the top-right box (labeled '3') from the shelf",
+      "participants": [
+        "dark-suit man"
+      ],
+      "actor": "dark-suit man",
+      "object": "white box",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "middle",
+      "event_index": 75,
+      "start_time": "02:52",
+      "end_time": "02:55",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "move",
+      "description": "The man in dark suit brings the lifted box down from the shelf to table level",
+      "participants": [
+        "dark-suit man"
+      ],
+      "actor": "dark-suit man",
+      "object": "white box",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "middle",
+      "event_index": 76,
+      "start_time": "02:56",
+      "end_time": "02:58",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "place",
+      "description": "The man in dark suit places the white box (previously labeled '3') on the table surface between the two men",
+      "participants": [
+        "dark-suit man"
+      ],
+      "actor": "dark-suit man",
+      "object": "white box",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 77,
+      "start_time": "02:58",
+      "end_time": "03:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "The dark-suited man opens the large center box on the table by lifting its lid upward",
+      "participants": [
+        "blue-suited man",
+        "dark-suited man"
+      ],
+      "actor": "dark-suited man",
+      "cover": "beige box",
+      "hidden": "green praying mantis figurines and black-yellow bee figurines",
+      "segment_boundary": "middle",
+      "segment_label": "Figurine Display",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 78,
+      "start_time": "03:00",
+      "end_time": "03:03",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "reveal",
+      "description": "The opened box reveals green praying mantis figurines and black-yellow bee figurines arranged on a gray platform",
+      "participants": [
+        "blue-suited man",
+        "dark-suited man"
+      ],
+      "actor": "dark-suited man",
+      "object_before": "closed beige box",
+      "object_after": "beige box with lid open revealing figurines",
+      "segment_boundary": "middle",
+      "segment_label": "Figurine Display",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 79,
+      "start_time": "03:02",
+      "end_time": "03:08",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    }
+  ]
+}

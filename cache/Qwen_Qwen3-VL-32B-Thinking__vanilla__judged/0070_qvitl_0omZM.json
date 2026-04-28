@@ -1,0 +1,625 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0070_qvitl_0omZM.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0070_qvitl_0omZM.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0070_qvitl_0omZM",
+    "n_target": 13,
+    "n_sub": 49,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.6153846153846154,
+    "sub_accuracy": 0.7142857142857143
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Did the initial cardigan scene occur between the arm transformation and the face transformation?",
+      "gt": "No",
+      "pred": "No. The initial white cardigan scene (e.g., early frames showing the white fluffy cardigan) occurs **before** the arm transformation (e.g., the arm switching from white to gray sleeves) and **before** the face transformation (e.g., the transition from braided hair to messy hair with glasses). It does not occur between these two transformations.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there an initial cardigan scene in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The video begins with scenes of the person wearing a white cardigan (e.g., visible in the early frames, such as the second frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the arm transformation occur after the initial cardigan scene?",
+      "gt": "Yes",
+      "pred": "Yes. The arm transformation (e.g., the arm changing from the white cardigan to the gray hoodie style) occurs after the initial scene where the person is wearing the white cardigan. For example, the white cardigan arm is shown in earlier frames (e.g., around the 11th frame), and the gray hoodie arm appears in subsequent frames (e.g., around the 13th frame and later).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the face transformation occur after the initial cardigan scene?",
+      "gt": "Yes",
+      "pred": "Yes. The initial cardigan scene (e.g., the person in the white cardigan with braids) occurs first, and the face transformation (e.g., the person in the gray hoodie with glasses, messy hair, and a different expression) appears later in the sequence.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the initial cardigan scene happen after the arm transformation?",
+      "gt": "No",
+      "pred": "No. The initial cardigan scene (featuring the white cardigan) occurs before the arm transformation (where the arm and outfit change to the gray hoodie). The white cardigan is shown in the earlier frames (e.g., the first several images), while the gray hoodie arm transformation appears later.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Did the arm transformation occur between the face transformation and the final scene?",
+      "gt": "No",
+      "pred": "Yes. The arm transformation (e.g., the arm in the white sleeve transitioning to the arm in the gray hoodie sleeve) occurs after the face transformation (e.g., the face in the white jacket transitioning to the face in the hoodie with glasses) and before the final scene (the person in the hoodie walking away). This sequence is evident in the video frames where the arm appearance changes between the face transformation and the final scene.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the arm transformation occur before the face transformation?",
+      "gt": "Yes",
+      "pred": "Yes. The arm transformation (sleeve changing from white to gray) occurs before the face transformation (hairstyle and glasses change). For example, the arm in the white sleeve appears in early frames (e.g., ~0.2s-1s), then the gray sleeve is shown in subsequent frames (e.g., ~1.5s-2.5s), while the face transformation (from styled pigtails to messy bun with glasses) happens later in the sequence (e.g., around ~15s-20s).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the face transformation occur before the final relaxed appearance?",
+      "gt": "Yes",
+      "pred": "So, let's check the video. The question is about whether the face transformation happened before the final relaxed appearance. First, let's look at the sequence. The video shows the person in different outfits and states. The face transformation (like the glasses and messy hair) is part of the transition. The final relaxed appearance is the first part where they're in the white jacket with braids, smiling. Wait, no—the video has a sequence where the person goes from the white outfit (smiling, put-together) to the gray hoodie (glasses, messy hair, less put-together). Then, the final part shows the person in the white outfit again? Wait, no, let's check the timestamps.\n\nLooking at the frames: The first part (0.2s of getting home) is the person in white, smiling. Then there's a transformation to the gray hoodie with glasses. The final relaxed appearance—wait, the question is whether the face transformation (to the messy look) occurred before the final relaxed appearance. Wait, the \"final relaxed appearance\" might refer to the initial smiling state. Let's see: the video shows the person in white (relaxed, smiling), then changes to gray hoodie (less relaxed, more tired), and then... Wait, no, the last frames show the person in gray hoodie, then the room empty. Wait, the key is: the face transformation (from the put-together to the messy) happens, and then the final relaxed appearance—no, actually, the \"me literally within 0.2 secs\" is the initial state (relaxed), then the transformation is the change to the other state. So the face transformation (to the tired look) is after the initial relaxed appearance. Wait, the question is: Did the face transformation occur before the final relaxed appearance?\n\nWait, the final relaxed appearance—what's the final part? The video ends with the room empty, but the last person shown is in the gray hoodie (tired look). The initial part (0.2s) is the relaxed, smiling look. Then the transformation (to the tired look) is a change. So the face transformation (from relaxed to tired) happens, and then the final state is the tired look. But the question is if the transformation occurred before the final relaxed appearance. Wait, maybe the \"final relaxed appearance\" is a misnomer. Let's check the sequence:\n\n1. The video starts with the person in white, smiling (relaxed).\n2. Then, the person changes to gray hoodie, glasses, messy hair (tired/transformed).\n3. The \"final\" part of the video (the last frames) show the person in the gray hoodie, then leaving the frame.\n\nSo the face transformation (to the tired look) happens after the initial relaxed appearance. Therefore, the face transformation did not occur before the final relaxed appearance (since the initial is the relaxed appearance, and the transformation is after). Wait, but the question is: \"Did the face transformation occur before the final relaxed appearance?\"\n\nWait, maybe the \"final relaxed appearance\" is the initial state. But the transformation is the change from the initial state. So the transformation (to the other state) is after the initial relaxed state. Therefore, the face transformation (to the tired look) occurred after the initial (which is the only \"relaxed\" appearance). So the answer is no, because the transformation happened after the initial relaxed state, so it didn't occur before the final relaxed appearance (since the final relaxed appearance isn't present after the transformation; the transformation is the change from relaxed to not relaxed).\n\nWait, let's re-express: The video shows two states: 1) the person is in a white jacket, braids, smiling (relaxed, \"0.2s of getting home\" text), 2) then the person is in a gray hoodie, glasses, messy hair (less relaxed). The \"final relaxed appearance\"—but the final part of the video is the gray hoodie state. So the initial state (relaxed) is the first part, then the transformation (to the other state) is the next part. So the face transformation (from relaxed to tired) happens after the initial relaxed state. Therefore, the face transformation did not occur before the final relaxed appearance (because the final state is the tired one, and the relaxed appearance is the initial, so the transformation is after the initial relaxed, not before the final relaxed—since the final state is not relaxed).\n\nWait, the question might be phrased as: Did the face transformation (to the tired look) happen before the final state where the person is relaxed? But in the video, the only relaxed appearance is the first part, and then it transforms. So the transformation (to the tired look) is after the relaxed appearance. Therefore, the transformation did not occur before the relaxed appearance (it's after). So the answer is no.\n\nWait, but let's check the exact frames. The first few frames",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the arm transformation happen after the face transformation?",
+      "gt": "No",
+      "pred": "No. The arm transformation (e.g., sleeve color change from white to gray) occurs before the face transformation (e.g., change from styled braids/makeup to messy hair/glasses). For example, the arm transformation is visible in frames showing the arm (e.g., around the 6th–12th frames), while the face transformation occurs later (e.g., in the frames showing the messy hair and glasses, around the 18th–20th frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Was the torso transformation closer to the initial scene than to the arm transformation?",
+      "gt": "No",
+      "pred": "No. The arm transformation (e.g., gray sleeve appearing) occurs earlier in the sequence (e.g., around the 7th frame) than the torso transformation (e.g., jacket changing to gray with star, around the 13th frame). Thus, the torso transformation is farther from the initial scene than the arm transformation.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the torso close-up transformation occur after the arm transformation?",
+      "gt": "Yes",
+      "pred": "Yes. The arm transformation (e.g., the hand in the gray sleeve, visible in frames around the 7th-10th frames) occurs before the torso close - up transformation (the gray hoodie with the star, visible in frames around the 14th - 18th frames).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the arm transformation occur after the initial cardigan scene?",
+      "gt": "Yes",
+      "pred": "Yes. The arm transformation (e.g., the arm changing from the white cardigan to the gray hoodie style) occurs after the initial scene where the person is wearing the white cardigan. For example, the white cardigan arm is shown in earlier frames (e.g., around the 11th frame), and the gray hoodie arm appears in subsequent frames (e.g., around the 13th frame and later).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the torso close-up transformation closer in sequence to the arm transformation than to the initial cardigan scene?",
+      "gt": "Yes",
+      "pred": "So, let's break this down. First, we need to identify the key scenes:\n\n1. Initial cardigan scene: The first part where the person is in the white cardigan (like the early frames, e.g., the first few images).\n2. Arm transformation: The frames showing the arm changing (e.g., the sequence with the hand and arm in different outfits).\n3. Torso close-up transformation: The frames where the torso is shown in different outfits (e.g., the close-ups of the white cardigan and then the gray hoodie).\n\nNow, let's check the order of events in the video. The video shows:\n\n- The person in the white cardigan (initial scene).\n- Then, the arm transformation (showing the arm in different clothes, like the gray sleeve).\n- Then, the torso close-up transformation (close-ups of the torso in white cardigan, then gray hoodie).\n\nWait, the question is whether the torso close-up transformation is closer in sequence to the arm transformation than to the initial cardigan scene.\n\nLet's think about the sequence:\n\n1. Initial cardigan scene (e.g., the first few frames where the person is in white cardigan, walking in).\n2. Then, the arm transformation (the part where the arm is shown changing, like the frames with the hand in gray sleeve).\n3. Then, the torso close-up transformation (the close-ups of the torso, like the white cardigan close-up, then gray hoodie close-up).\n\nWait, but the torso close-up transformation happens after the arm transformation? Let's check the frames:\n\nLooking at the frames:\n\n- The arm transformation is in frames like 7-13 (the arm moving, changing from white to gray).\n- The torso close-up transformation is in frames 5-6 (white cardigan close-up) and then 7-9 (gray hoodie close-up). Wait, maybe the order is:\n\nThe video shows:\n\n- Person in white cardigan (initial, e.g., frame 2-4)\n- Then, a close-up of the white cardigan (frame 5-6)\n- Then, a close-up of the gray hoodie (frame 7-9, which is the arm transformation? No, the arm transformation is the part where the arm is shown, which is frames 7-13: the hand in white sleeve, then gray sleeve).\n\nWait, the key is to see the sequence:\n\n1. Initial cardigan scene (person in white cardigan, e.g., frame 2-4)\n2. Arm transformation (frames 7-13: the arm changing from white to gray)\n3. Torso close-up transformation (the close-ups of the torso, like frame 5-6 (white cardigan) and then 7-9 (gray hoodie) – but maybe the torso close-up is part of the transformation sequence).\n\nWait, the question is about the sequence order. Let's list the events in order:\n\n- The video starts with the person in white cardigan (initial scene).\n- Then, there's a close-up of the white cardigan (torso close-up) – that's the first torso close-up (e.g., frame 5-6).\n- Then, the arm transformation (the arm changing to gray, e.g., frame 7-13).\n- Then, the torso close-up of the gray hoodie (e.g., frame 7-9, which is the gray hoodie close-up).\n\nWait, no. Let's check the order of the frames provided:\n\nThe frames go from 1 to 22 (the 22 frames listed). Let's see:\n\n- Frames 1-4: Person in white cardigan, walking in (initial scene).\n- Frame 5-6: Close-up of white cardigan (torso close-up).\n- Frame 7-9: Close-up of gray hoodie (torso close-up transformation? Because the person is now in gray hoodie).\n- Then, the arm transformation: the arm in white sleeve (frame 11), then arm in gray sleeve (frame 12-13).\n- Then, the face close-ups (14-15: white cardigan, 16-18: gray hoodie).\n- Then, the person in white cardigan walking (19), then gray hoodie walking (20-21), then standing (22).\n\nWait, the arm transformation (the part where the arm is shown changing) is in frames 11-13 (the hand in white, then gray). The torso close-up transformation (the part where the torso is shown in white then gray) is in frames 5-6 (white) and 7-9 (gray). The initial cardigan scene is frames 1-4.\n\nNow, the question is: Was the torso close-up transformation closer in sequence to the arm transformation than to the initial cardigan scene?\n\nLet's find the positions:\n\n- Initial cardigan scene:",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Was the final scene closer to the outfit transformation than to the face transformation?",
+      "gt": "No",
+      "pred": "So, let's figure this out. First, we need to look at the sequence of events. The video shows two main transformations: the outfit (from white jacket to gray hoodie) and the face (from styled hair to messy bun with glasses). The final scene is the last frame, which is the empty room (23-24 seconds maybe). \n\nNow, let's check the order:\n\n- The outfit transformation: the person changes from white jacket to gray hoodie. The face transformation (from braided hair to messy bun with glasses) happens around the same time as the outfit change. \n\nWait, the key is: when does the outfit transformation happen vs. the face transformation, and where is the final scene.\n\nLooking at the frames:\n\n- The face transformation (with glasses and messy bun) is shown in the later part. The final scene (22-24 seconds) is the empty room. Let's see the timeline:\n\nThe last part before the empty room: the person in gray hoodie (21-22 seconds), then the person walks out (22-23), then empty room (23-24).\n\nThe outfit transformation (white to gray) happens earlier. The face transformation (from braided to messy bun with glasses) is part of the same transformation as the outfit. \n\nNow, the question is: was the final scene (empty room) closer to the outfit transformation or the face transformation?\n\nLet's list the key events:\n\n1. Outfit transformation: when the person changes from white jacket (e.g., frame 3-5) to gray hoodie (frame 7-8). So the outfit change is a transition.\n\n2. Face transformation: when the hair goes from braids to messy bun, and adding glasses (frame 18-20).\n\n3. Final scene: empty room (22-24).\n\nNow, check the order:\n\n- The face transformation happens around 18-20 seconds (the frames with glasses and messy bun).\n\n- The outfit transformation (gray hoodie) is shown in frames 7-8, 14-17, 20-22.\n\nWait, the final scene is after the person in gray hoodie walks out (22-23). So the last action before empty room is the person in gray hoodie (21-22), then they walk out (22-23), then empty room (23-24).\n\nNow, the face transformation (glasses, messy bun) is in the same sequence as the gray hoodie. The final scene is after both transformations. But the question is: is the final scene (empty room) closer to the outfit transformation or the face transformation in terms of timing?\n\nWait, the outfit transformation (the change to gray hoodie) is part of the same action as the face transformation. The video shows the person in white, then in gray. The face transformation (glasses, messy bun) is when the person is in the gray hoodie. So the face transformation is the last part of the transformation sequence. Then the person walks out (22-23), then empty room.\n\nSo the final scene (empty room) is immediately after the person in gray hoodie (21-22) walks out. The face transformation (20-22) is right before the person walks out. The outfit transformation (the change to gray) is earlier, but the face transformation is the last part of the transformation. \n\nWait, the key is: the \"final scene\" (empty room) is the last frame. The \"outfit transformation\" is the act of changing from white to gray (which happens in the middle), and the \"face transformation\" is the change in hair and glasses (which is part of the same transformation). The final scene is after the face transformation. Let's check the timestamps:\n\n- The face transformation (glasses, messy bun) is in the frames 18-20 (the close-ups with glasses). Then, the person is shown in the gray hoodie (21-22), then walks out (22-23), then empty room (23-24).\n\nSo the time between the face transformation (20) and the final scene (23-24) is about 3-4 seconds. The outfit transformation (the change from white to gray) happens earlier, around 7-8 (the first change), but the main outfit is gray in the later part. \n\nWait, the question is: \"Was the final scene closer to the outfit transformation than to the face transformation?\"\n\nWe need to see the order of events:\n\n- Outfit transformation (from white to gray) occurs at a certain point (let's say around 7-10 seconds when the person is in gray).\n\n- Face transformation (from braided hair to messy bun with glasses) occurs later, around 18-20 seconds.\n\n- Final scene (empty room) is at",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the face transformation occur before the final relaxed appearance?",
+      "gt": "Yes",
+      "pred": "So, let's check the video. The question is about whether the face transformation happened before the final relaxed appearance. First, let's look at the sequence. The video shows the person in different outfits and states. The face transformation (like the glasses and messy hair) is part of the transition. The final relaxed appearance is the first part where they're in the white jacket with braids, smiling. Wait, no—the video has a sequence where the person goes from the white outfit (smiling, put-together) to the gray hoodie (glasses, messy hair, less put-together). Then, the final part shows the person in the white outfit again? Wait, no, let's check the timestamps.\n\nLooking at the frames: The first part (0.2s of getting home) is the person in white, smiling. Then there's a transformation to the gray hoodie with glasses. The final relaxed appearance—wait, the question is whether the face transformation (to the messy look) occurred before the final relaxed appearance. Wait, the \"final relaxed appearance\" might refer to the initial smiling state. Let's see: the video shows the person in white (relaxed, smiling), then changes to gray hoodie (less relaxed, more tired), and then... Wait, no, the last frames show the person in gray hoodie, then the room empty. Wait, the key is: the face transformation (from the put-together to the messy) happens, and then the final relaxed appearance—no, actually, the \"me literally within 0.2 secs\" is the initial state (relaxed), then the transformation is the change to the other state. So the face transformation (to the tired look) is after the initial relaxed appearance. Wait, the question is: Did the face transformation occur before the final relaxed appearance?\n\nWait, the final relaxed appearance—what's the final part? The video ends with the room empty, but the last person shown is in the gray hoodie (tired look). The initial part (0.2s) is the relaxed, smiling look. Then the transformation (to the tired look) is a change. So the face transformation (from relaxed to tired) happens, and then the final state is the tired look. But the question is if the transformation occurred before the final relaxed appearance. Wait, maybe the \"final relaxed appearance\" is a misnomer. Let's check the sequence:\n\n1. The video starts with the person in white, smiling (relaxed).\n2. Then, the person changes to gray hoodie, glasses, messy hair (tired/transformed).\n3. The \"final\" part of the video (the last frames) show the person in the gray hoodie, then leaving the frame.\n\nSo the face transformation (to the tired look) happens after the initial relaxed appearance. Therefore, the face transformation did not occur before the final relaxed appearance (since the initial is the relaxed appearance, and the transformation is after). Wait, but the question is: \"Did the face transformation occur before the final relaxed appearance?\"\n\nWait, maybe the \"final relaxed appearance\" is the initial state. But the transformation is the change from the initial state. So the transformation (to the other state) is after the initial relaxed state. Therefore, the face transformation (to the tired look) occurred after the initial (which is the only \"relaxed\" appearance). So the answer is no, because the transformation happened after the initial relaxed state, so it didn't occur before the final relaxed appearance (since the final relaxed appearance isn't present after the transformation; the transformation is the change from relaxed to not relaxed).\n\nWait, let's re-express: The video shows two states: 1) the person is in a white jacket, braids, smiling (relaxed, \"0.2s of getting home\" text), 2) then the person is in a gray hoodie, glasses, messy hair (less relaxed). The \"final relaxed appearance\"—but the final part of the video is the gray hoodie state. So the initial state (relaxed) is the first part, then the transformation (to the other state) is the next part. So the face transformation (from relaxed to tired) happens after the initial relaxed state. Therefore, the face transformation did not occur before the final relaxed appearance (because the final state is the tired one, and the relaxed appearance is the initial, so the transformation is after the initial relaxed, not before the final relaxed—since the final state is not relaxed).\n\nWait, the question might be phrased as: Did the face transformation (to the tired look) happen before the final state where the person is relaxed? But in the video, the only relaxed appearance is the first part, and then it transforms. So the transformation (to the tired look) is after the relaxed appearance. Therefore, the transformation did not occur before the relaxed appearance (it's after). So the answer is no.\n\nWait, but let's check the exact frames. The first few frames",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the outfit transformation occur before the face transformation?",
+      "gt": "Yes",
+      "pred": "Yes. The outfit transformation (e.g., changing from the white jacket and light jeans to the gray hoodie and dark jeans) occurs before the face transformation (e.g., hair style change to a bun and wearing glasses). For example, the gray hoodie is visible in frames like the 7th image (0.5s) and 8th image (0.6s), while the face transformation with glasses and bun appears later (e.g., 18th image and subsequent frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the face transformation closer in sequence to the final relaxed appearance than the outfit transformation was?",
+      "gt": "Yes",
+      "pred": "So, let's try to figure this out. First, we need to look at the sequence of events: outfit transformation, face transformation, and the final relaxed appearance.\n\nFirst, let's identify the key moments:\n\n1. The person in the white outfit (with pigtails, styled) is shown in several frames. Then, there's a transition to the gray hoodie outfit (with messy bun, glasses). That's the outfit transformation.\n\n2. The face transformation: the person goes from the styled look (pigtails, makeup) to the \"relaxed\" look (glasses, messy hair). The face transformation is part of the outfit change, but let's check the sequence.\n\nLooking at the frames:\n\n- The white outfit (styled) is shown in frames like the 3rd, 4th, 5th, 15th, 22nd, etc.\n\n- Then, the gray hoodie (unstyled) appears in frames like 7th, 8th, 9th, 10th, 11th, 12th, 13th, 14th, 16th, 17th, 18th, 19th, 20th, 21st, 23rd, 24th, 25th, 26th, 27th, 28th, 29th, 30th, 31st, 32nd.\n\nWait, the \"final relaxed appearance\" is the gray hoodie look (with glasses, messy bun), which is the last part of the video. The face transformation (from styled to unstyled) happens when the outfit changes. Let's check the order:\n\n- The video starts with the person in white outfit (3rd frame), then the transition to gray hoodie (7th frame). So the outfit transformation is when the person changes from white to gray. The face transformation is part of that transition: the face goes from the styled (pigtails, makeup) to the unstyled (glasses, messy hair).\n\nNow, the question is: was the face transformation closer in sequence to the final relaxed appearance than the outfit transformation was?\n\nWait, the \"final relaxed appearance\" is the gray hoodie look. The outfit transformation is the change from white to gray. The face transformation is part of the same change (since the face changes as the outfit changes). So the face transformation happens at the same time as the outfit transformation.\n\nBut let's check the sequence of events:\n\n- The person in white (3rd-5th, 15th, 22nd) is the \"me literally within 0.2 secs of getting home\" (the styled, happy look).\n\n- Then, the transition: the person changes to gray hoodie (7th frame shows the gray hoodie, 8th-12th, etc.). The face transformation (glasses, messy hair) is part of this change.\n\n- The final relaxed appearance is the gray hoodie look (23rd-32nd frames).\n\nSo the face transformation (from styled to unstyled) is the same as the outfit transformation in sequence. But the question is: was the face transformation closer in sequence to the final relaxed appearance than the outfit transformation was?\n\nWait, maybe I need to look at the order. Let's list the key points:\n\n1. Styled look (white outfit, pigtails, makeup) - this is the \"0.2 secs of getting home\" (the happy, put-together look).\n\n2. Then, the transformation: the person changes to the unstyled look (gray hoodie, messy bun, glasses) - this is the \"relaxed\" look.\n\nThe face transformation (from styled to unstyled) is part of this transformation, and the outfit transformation is also part of it. The \"final relaxed appearance\" is the unstyled look.\n\nSo the face transformation and outfit transformation happen at the same time (they are part of the same transition). Therefore, the face transformation is not closer or farther in sequence than the outfit transformation; they are the same event.\n\nBut let's check the timestamps. Let's see when the outfit changes and when the face changes.\n\nIn the video, the first part is the white outfit (3rd frame: person in white, pigtails, smiling). Then, the next part is the gray hoodie (7th frame: the gray hoodie is visible, 8th frame: gray hoodie close-up, 9th: hand in gray sleeve, etc.). The face changes from pigtails to messy bun and glasses (18th-20th frames show the face with glasses, messy bun).\n\nThe \"final relaxed appearance\" is the gray hoodie look, which is the same as the outfit transformation. So the face transformation is part of the outfit transformation. Therefore, the face transformation is not closer to the final appearance than the outfit transformation; they are simultaneous.\n\nBut",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Did the full outfit transformation happen before the arm transformation shot?",
+      "gt": "Yes",
+      "pred": "So, let's try to figure out the order of events. First, we need to check when the full outfit transformation happens and when the arm transformation shot is. \n\nLooking at the video, the person starts in a white jacket and light jeans (first few frames). Then, there's a frame where the outfit changes to a gray hoodie and dark jeans (around the 7th frame or so). The arm transformation shots are when the arm changes from white sleeve to gray sleeve (like in frames 8-13). \n\nWait, the full outfit transformation (from white jacket to gray hoodie) happens, and then the arm transformation (sleeve changing) is part of that. But the question is: did the full outfit transformation happen before the arm transformation shot? Let's check the sequence.\n\nThe full outfit (jacket and pants) change: in the frames, we see the person in white jacket, then a frame where it's gray hoodie. The arm transformation (sleeve changing) is shown in the shots where the arm is visible changing. Let's see the order:\n\n- First, the person is in white jacket (multiple frames). Then, a frame where the arm is in gray sleeve (so arm transformation). Then the full outfit (jacket and pants) is gray. So the arm transformation (sleeve) is part of the outfit change. Wait, the question is if the full outfit transformation (both top and bottom) happened before the arm transformation shot.\n\nWait, the arm transformation shot is when the arm is shown changing (e.g., frames 8-13: arm in white, then gray). The full outfit transformation would be when the entire outfit (jacket and pants) is changed. Let's check the timestamps:\n\nThe first arm transformation shot is around the 7th frame (where the arm is in gray sleeve). The full outfit (jacket and pants) being gray is seen in the frame after that (like the 8th frame shows the gray hoodie and dark jeans). So the arm transformation (sleeve) is part of the full outfit change. But the question is: did the full outfit transformation happen before the arm transformation shot?\n\nWait, no. The arm transformation shot is a close-up of the arm changing, which is part of the full outfit transformation. So the full outfit transformation (jacket and pants) is the same event as the arm transformation. But the question is whether the full outfit change (jacket and pants) happened before the arm transformation shot.\n\nLooking at the frames:\n\n- The person is in white jacket (1-6 frames). Then, frame 7 shows the arm in gray sleeve (so arm transformation). Then frame 8 shows the full gray hoodie and dark jeans (so full outfit transformation). So the arm transformation shot (7-13) is part of the process, and the full outfit transformation (8-14) is after the arm transformation. Wait, no. The arm transformation is a shot of the arm changing, which is when the outfit is changing. Let's see:\n\nThe arm transformation shots (8-13) are when the arm is moving and the sleeve changes from white to gray. Then, the full outfit (jacket and pants) is gray. So the full outfit transformation (jacket and pants) is happening at the same time as the arm transformation. But the question is: did the full outfit transformation happen before the arm transformation shot?\n\nNo, because the arm transformation shot is part of the full outfit transformation. Let's check the sequence:\n\n1. Person in white jacket (1-6)\n2. Arm transformation shot (7-13): arm changing from white to gray\n3. Full outfit (jacket and pants) is gray (8-14)\n\nWait, no. The arm transformation shot (7-13) is when the arm is in the process of changing, and the full outfit (jacket and pants) is already gray in some of those frames. Wait, the frame where the arm is gray (7-13) is when the full outfit is also gray. So the full outfit transformation (jacket and pants) and the arm transformation (sleeve) are part of the same change. But the question is whether the full outfit transformation happened before the arm transformation shot.\n\nLooking at the video: the first arm transformation shot (frame 7) shows the arm in gray sleeve, which is part of the new outfit. So the full outfit transformation (jacket and pants) would have happened, and then the arm is shown as part of that. Wait, no. The arm transformation is a close-up of the arm changing, which is a part of the full outfit change. So the full outfit transformation (jacket and pants) and the arm transformation (sleeve) are simultaneous.\n\nBut the question is: Did the full outfit transformation happen before the arm transformation shot?\n\nLet's check the order. The first arm transformation shot (7-13) is",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a full outfit transformation in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there was a full outfit transformation. The person is initially seen in a white buttoned jacket and light blue jeans (e.g., early frames like the 2nd and 3rd images), then later appears in a gray hoodie with a star design and dark blue jeans (e.g., frames from the 7th image onward, including the 16th, 17th, and 20th images).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was there an arm transformation shot in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The video includes shots of an arm in a white sleeve transitioning to an arm in a gray sleeve (e.g., around the 11th-14th frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the outfit transformation occur before the arm transformation?",
+      "gt": "Yes",
+      "pred": "No. The arm transformation (sleeve changing from white to gray) occurs first, as seen in the frame with the gray sleeve (e.g., ~7th frame), followed by the full outfit transformation (jacket changing to gray) in subsequent frames. Thus, the outfit transformation did not occur before the arm transformation.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Did the cardigan-to-hoodie outfit change appear before the hair changed into a messy bun?",
+      "gt": "Yes",
+      "pred": "Yes. The cardigan-to-hoodie outfit change occurs before the hair transitions to a messy bun. For example, the white cardigan (with braided hair) is shown in earlier frames (e.g., around the 0–5 second mark), while the gray hoodie (with messy bun hair) appears in later frames (e.g., around the 10–15 second mark). The hair change to a messy bun is part of the transition to the gray hoodie outfit.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the outfit change from a cardigan to a hoodie?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows the person initially wearing a white cardigan (e.g., in the first several frames) and later wearing a gray hoodie (e.g., from the frame showing the gray hoodie with a star design onward).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the hair change into a messy bun?",
+      "gt": "Yes",
+      "pred": "Yes. The hair changes from two braids (visible in the earlier frames, e.g., around the 2nd–5th frames) to a messy bun (visible in the later frames, e.g., around the 15th–20th frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the cardigan-to-hoodie change happen before the messy bun hairstyle appeared?",
+      "gt": "Yes",
+      "pred": "So, let's check the sequence. First, the person is in a white cardigan (earlier frames, like the first few). Then, the hoodie appears (in the frames where the grey hoodie with star is shown). The messy bun hairstyle is when the person is in the hoodie. So the cardigan is first, then the hoodie, and the messy bun is part of the hoodie look. So the change from cardigan to hoodie happens before the messy bun is visible? Wait, no. Wait, the messy bun is when they're in the hoodie. Let's see the order.\n\nLooking at the frames: the white cardigan is shown first (e.g., frames 2-5, 14, 19, 24). Then, the grey hoodie appears (frames 7-8, 12, 15-17, 20-25). The messy bun is in the hoodie frames (e.g., frame 19 is the hoodie with messy bun). So the cardigan is before the hoodie, and the messy bun is part of the hoodie look. So the cardigan-to-hoodie change happens before the messy bun is shown? Wait, no—the messy bun is the hairstyle when they're in the hoodie. So the change to hoodie (from cardigan) is the transition, and the messy bun is the hairstyle for the hoodie. So the cardigan-to-hoodie change is when they switch outfits, and the messy bun appears with the hoodie. So the change (to hoodie) happens before the messy bun is visible? No, because the messy bun is part of the hoodie outfit. Let's check the frames:\n\n- The white cardigan is worn with pigtails (e.g., frame 2, 3, 4, 5, 14, 19, 24).\n- Then, the grey hoodie is shown with a messy bun (e.g., frame 19: \"me literally within 0.2 secs...\" shows the hoodie and messy bun). Wait, frame 19 is the hoodie with messy bun. Before that, the cardigan is in earlier frames. So the cardigan is first, then the hoodie (with messy bun). So the cardigan-to-hoodie change happens, and the messy bun appears at the same time as the hoodie. Wait, but the question is: did the cardigan-to-hoodie change happen before the messy bun hairstyle appeared?\n\nIn the sequence, the cardigan (with pigtails) is shown, then the hoodie (with messy bun) is shown. So the change to hoodie (from cardigan) is the transition, and the messy bun is part of the hoodie's look. So the cardigan-to-hoodie change happens, and the messy bun is visible in the hoodie. So the change (to hoodie) is when the messy bun first appears. Wait, no. Let's check the frames where the hoodie is first shown. Frame 7: a hand in a grey sleeve (hoodie), then frame 8: the grey hoodie with star. Frame 12: the hoodie with messy bun. So the cardigan is in the first part, then the hoodie (with messy bun) is in the second part. So the cardigan-to-hoodie change happens before the messy bun is visible? No, because the messy bun is part of the hoodie. The messy bun appears when the hoodie is on. So the change (to hoodie) is the same as the messy bun appearing? Let's see the exact order.\n\nLooking at the frames:\n\n- The white cardigan is shown (e.g., frame 3, 4, 5, 14, 19, 24).\n- The grey hoodie is first shown in frame 7 (a hand), then frame 8 (the hoodie), then frame 12 (the hoodie with messy bun). So the messy bun appears with the hoodie. Therefore, the cardigan-to-hoodie change (outfit change) is when the hoodie is put on, and the messy bun is part of that look. So the cardigan-to-hoodie change happens, and the messy bun appears at the same time. But the question is: did the cardigan-to-hoodie change happen before the messy bun hairstyle appeared?\n\nWait, no. Because the messy bun is the hairstyle for the hoodie. So when the hoodie is on, the messy bun is there. So the change (to hoodie) is when the messy bun appears. So the cardigan-to-hoodie change happens, and the messy bun is visible in the same transition. But the question is whether the change happened before the messy bun appeared. Since the messy bun is part of the hoodie, the change (to hoodie) is when the messy bun is first seen. Therefore, the answer is no? Wait, no. Let's check the order of events.\n\nIn the video, the person is first",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Did the torso close-up showing the star hoodie appear before the face close-up transformation?",
+      "gt": "Yes",
+      "pred": "Yes. The torso close-up showing the star hoodie (e.g., frames with the gray hoodie featuring a large star, such as the 7th frame in the sequence) occurs before the face close-up transformation (e.g., the frame showing the person with glasses, messy hair, and the hood up, which appears later in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a torso close-up showing a star hoodie?",
+      "gt": "Yes",
+      "pred": "Yes. A torso close - up showing a star hoodie appears in the video, for example, around the frames where the gray hoodie with a large star design is focused on (e.g., frames showing the star on the hoodie with the \"MIRACLE\" text).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was there a face close-up transformation?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows a face close - up transformation, for example, between the frame with the person having braids and the frame with the person wearing a hoodie and having a messy bun (around the 17 - 18 second mark in the sequence of frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the torso close-up with the star hoodie appear before the face transformation?",
+      "gt": "Yes",
+      "pred": "Yes. The torso close - up with the star hoodie appears in the 7th frame (0.7s), and the face transformation (wearing glasses, messy hair) appears in later frames (e.g., 18th frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Did the arm transformation occur between the outfit transformation and the torso close-up transformation?",
+      "gt": "Yes",
+      "pred": "So, let's try to figure out the sequence of transformations. First, we need to identify the different transformations: outfit, arm, torso close-up.\n\nLooking at the frames:\n\n- The outfit transformation: the person changes from the white jacket and light jeans to the gray hoodie and dark jeans. Let's see when that happens. The frames show the person in white, then the arm in gray, then the torso in gray. So the outfit change is when the person is in the gray hoodie.\n\n- Arm transformation: there are frames where the arm is in white (first part) and then gray (later part). The arm transformation happens when the hand moves, showing the gray sleeve. Let's check the timestamps. The arm in white is in the first few frames, then the arm in gray appears later. For example, frame 8-12 show the arm in gray.\n\n- Torso close-up transformation: the close-up of the white jacket (frame 13-16) then the gray hoodie (frame 17-20). So the torso close-up transformation is when the close-up changes from white to gray.\n\nNow, the question is: did the arm transformation occur between the outfit transformation and the torso close-up transformation?\n\nWait, maybe we need to order the events. Let's list the key transformations:\n\n1. Outfit transformation: the person's full outfit changes from white jacket to gray hoodie. This happens when the person is in the gray hoodie (so the transformation is when the outfit changes).\n\n2. Arm transformation: the arm changes from white to gray. This is seen in the frames where the hand is shown, first white, then gray.\n\n3. Torso close-up transformation: the close-up of the torso changes from white jacket to gray hoodie.\n\nLooking at the sequence:\n\n- The arm transformation (arm changing color) happens when the hand is shown. Let's check the frames:\n\n- Frame 7: arm in white (blurred, moving)\n- Frame 8: arm in gray (blurred, moving)\n- Frame 9-12: arm in gray, clear\n\n- The outfit transformation (full body change) is when the person is in the gray hoodie, which is after the arm transformation. Wait, no. The outfit transformation is the full body change, which would include the arm.\n\nWait, the \"arm transformation\" refers to the arm changing from white to gray. The \"outfit transformation\" is the full outfit changing (from white jacket to gray hoodie). The \"torso close-up transformation\" is the close-up of the torso changing (from white to gray).\n\nLet's see the order:\n\n1. The person is in white outfit (first part of video: frames 1-6, 13-16, etc.)\n\n2. Then, the arm transformation: the arm changes to gray (frames 7-12)\n\n3. Then, the torso close-up transformation: the torso close-up changes to gray (frames 17-20)\n\n4. Then, the full outfit transformation (the person is now in gray outfit, which matches the arm and torso transformations)\n\nWait, but the question is: did the arm transformation occur between the outfit transformation and the torso close-up transformation?\n\nWait, maybe the order is:\n\n- First, the torso close-up transformation (from white to gray) in the close-up frames (13-16 for white, 17-20 for gray). But no, the close-up of the white jacket is first (13-16), then the gray hoodie (17-20). So the torso close-up transformation is when the close-up changes from white to gray.\n\n- The arm transformation: the arm changes from white to gray, which is in the frames where the arm is shown (7-12).\n\n- The outfit transformation: the full body changes from white to gray, which is when the person is in the gray hoodie (21-25).\n\nSo the sequence is:\n\n1. Torso close-up (white) → 2. Arm transformation (arm changes to gray) → 3. Torso close-up (gray) → 4. Outfit transformation (full body gray)\n\nWait, no. Let's check the exact frames:\n\n- The first part: person in white (frames 1-6, 13-16, 21-22)\n\n- Then, the arm in white (frame 7) → arm in gray (8-12) → then the torso close-up in gray (17-20) → then the full body in gray (23-25)\n\nSo the arm transformation (7-12) happens before the torso close-up transformation (17-20), and the outfit transformation (23-25) is after the torso close-up.\n\nWait, the question is: \"Did the arm transformation occur between the outfit transformation and the torso close-up transformation?\"\n\nSo we need to",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did an arm transformation occur in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows a sequence where an arm in a white fuzzy jacket appears, followed by an arm in a gray hoodie (e.g., frames showing the hand in white sleeve vs. gray sleeve, indicating a rapid outfit change on the arm). This rapid change in the arm’s appearance (outfit) constitutes a transformation.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the arm transformation happen after the outfit transformation?",
+      "gt": "Yes",
+      "pred": "No. The arm transformation (sleeve color change from white to gray) occurs simultaneously with the outfit transformation, not after it. This is evident as the transition to the gray hoodie (with the star design) and the corresponding gray sleeve appear together in the sequence (e.g., when the person’s appearance shifts from the white jacket to the gray hoodie, the arm’s sleeve color changes as part of that same transformation).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the arm transformation happen before the torso close-up transformation?",
+      "gt": "Yes",
+      "pred": "Yes. The arm transformation (e.g., the hand changing from white to gray, visible in frames like the one showing the hand in a white sleeve then switching to a gray sleeve) occurs before the torso close - up transformation (e.g., the white jacket changing to the gray hoodie with a star, visible in the torso - focused frames). The arm - related visual change is shown in earlier sequence frames compared to the torso close - up change.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the outfit transformation occur before the torso close-up transformation?",
+      "gt": "Yes",
+      "pred": "Yes. The outfit transformation (from white to gray) occurs before the torso close - up of the new (gray) outfit. The white outfit is shown first, followed by the gray outfit, and then the torso close - up of the gray outfit appears (e.g., the white outfit’s torso close - up is in frame 6, then the gray outfit appears in frame 7, with its torso close - up in frame 8). Thus, the outfit transformation happens prior to the torso close - up of the new outfit.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "target",
+      "question": "Did the face transformation occur between the torso close-up transformation and the final relaxed appearance?",
+      "gt": "Yes",
+      "pred": "Yes. The torso close - up transformation (jacket change from white to gray) occurs around the 6 - 8 second mark. The face transformation (from braided hair to a messy bun with glasses) happens around the 19 - 21 second mark. The final relaxed appearance (in the gray hoodie) is shown from around the 22 - 29 second mark. Therefore, the face transformation occurs between the torso close - up transformation and the final relaxed appearance.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a face transformation occur in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a face transformation occurred. This is evident in the sequence where the person’s appearance shifts from having braids, wearing a white jacket, and showing a composed expression (e.g., around the 15-20 second mark in the frame sequence) to having a messy bun, wearing a gray hoodie with a star, glasses, and a different expression (e.g., around the 25-30 second mark in the frame sequence). The video visually depicts a quick change in both facial styling and attire.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the face transformation happen after the torso close-up transformation?",
+      "gt": "Yes",
+      "pred": "Yes. The torso close-up transformations (showing the white jacket and then the gray hoodie) occur before the face transformation (showing the face in the white jacket and then the face in the gray hoodie with glasses). For example, the torso close-up of the gray hoodie appears around frames 7-8, and the face transformation (with the gray hoodie and glasses) appears later, around frames 20-21.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the face transformation happen before the final relaxed appearance?",
+      "gt": "Yes",
+      "pred": "Yes. The face transformation (e.g., switching from braided hair in a white jacket to a messy bun with glasses in a gray hoodie) occurs before the final relaxed appearance in the gray hoodie, as the transformation sequence (including the gray hoodie look) precedes the final frames where the person is seen standing and then walking away in that relaxed state.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was there a final relaxed appearance shown in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The final sequence (around the last few frames) shows the person in a gray hoodie, with hair in a messy bun and wearing glasses, which represents a relaxed appearance.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "target",
+      "question": "Was the arm transformation closer to the outfit transformation than to the final appearance?",
+      "gt": "Yes",
+      "pred": "Yes. The arm transformation (e.g., frames showing the hand/arm changing from white to gray, around 7–12 seconds) occurs immediately before the outfit transformation (e.g., the full outfit shift to gray with the star, around 13–18 seconds), while the final appearance (e.g., messy hair, glasses, and full gray look, around 20–25 seconds) comes later. Thus, the arm transformation is closer in timing to the outfit transformation than to the final appearance.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did an arm transformation occur in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows a sequence where an arm in a white fuzzy jacket appears, followed by an arm in a gray hoodie (e.g., frames showing the hand in white sleeve vs. gray sleeve, indicating a rapid outfit change on the arm). This rapid change in the arm’s appearance (outfit) constitutes a transformation.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did an outfit transformation occur in the video?",
+      "gt": "Yes",
+      "pred": "Yes, an outfit transformation occurred. The person is initially seen in a white fuzzy button-up jacket and light blue patterned pants (e.g., frames 2-5, 14-16, 23-24), then later in a gray hoodie with a large star design and dark blue cargo pants (e.g., frames 7-9, 13, 17-22, 25-31). The change is visible in the sequence of frames showing different clothing.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was there a final appearance shown in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The final appearance shown in the video is the person in the gray hoodie (with the star design) before they walk out of the frame, as seen in the sequence of frames leading to the empty room at the very end.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the arm transformation temporally closer to the outfit transformation than to the final appearance?",
+      "gt": "Yes",
+      "pred": "To determine this, we analyze the sequence of events:  \n\n1. **Arm transformation**: Occurs when the hand/sleeve changes from white to gray (e.g., frames showing the white sleeve replacing the gray sleeve, around timestamps 10–13 seconds).  \n2. **Outfit transformation**: Occurs when the full outfit (jacket, pants) changes from white/light jeans to gray hoodie/dark jeans (e.g., frames showing the gray hoodie with the star, around 14–17 seconds).  \n3. **Final appearance**: Occurs when the person is in the gray hoodie with glasses and messy hair (e.g., frames showing the final look, around 18–24 seconds).  \n\nThe arm transformation (10–13s) is temporally closer to the outfit transformation (14–17s) (a gap of ~1–3 seconds) than to the final appearance (18–24s) (a gap of ~5–12 seconds).  \n\n**Answer**: Yes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "target",
+      "question": "Was the face transformation closer to the torso close-up transformation than to the initial cardigan scene?",
+      "gt": "Yes",
+      "pred": "So, let's try to figure this out. First, I need to recall the sequence of events. The video shows different outfits and transformations. The \"face transformation\" probably refers to the part where the person's face changes from the initial look (with braids, white cardigan) to the hoodie, glasses, messy hair. \n\nNow, the \"torso close-up transformation\" would be when the outfit changes from the white cardigan to the gray hoodie. Let's check the timestamps. \n\nFirst, the initial cardigan scene: the first few frames show the white cardigan (e.g., frame 3-5, 12, 13, 14, etc.). Then the torso close-up (frame 6: white cardigan, then frame 7: gray hoodie). So the torso close-up transformation is when the outfit changes from white to gray. \n\nThe face transformation: when the face changes from the braided hair, no glasses to the hoodie, glasses, messy hair. Looking at the frames, the face transformation is in the later part, like frames 19-22 (the close-up of the face changing). \n\nNow, we need to see if the face transformation is closer in time to the torso close-up transformation than to the initial cardigan scene. \n\nThe initial cardigan scene is the first part (first few frames). The torso close-up transformation is when the outfit changes (frame 6-7, maybe around 1-2 seconds). The face transformation is later, maybe around 8-10 seconds? Wait, but the question is about the timing of the transformations. \n\nWait, the question is: was the face transformation (the change in face) closer in time to the torso close-up transformation (the outfit change on the torso) than to the initial cardigan scene (the first appearance of the white cardigan). \n\nLet's map the key moments:\n\n1. Initial cardigan scene: the first frames where the person is in white cardigan (e.g., frame 1-5, 12, 13, 14). This is the very start.\n\n2. Torso close-up transformation: when the outfit changes from white cardigan to gray hoodie. Looking at the frames, frame 6 is white cardigan (close-up), frame 7 is gray hoodie (close-up). So the transformation from white to gray in the torso close-up is around frame 6-7.\n\n3. Face transformation: the frames where the face changes (from braids, no glasses to hoodie, glasses, messy hair). The close-up of the face changing is in frames 19-22 (e.g., frame 19: white cardigan face, frame 20: gray hoodie face). \n\nNow, the time between the torso close-up transformation (6-7) and the face transformation (19-22) is about 12-15 frames. The time between the initial cardigan scene (1-5) and the face transformation (19-22) is about 14-17 frames. Wait, but maybe the \"face transformation\" refers to the moment when the face changes, which is part of the sequence where the outfit is changing. \n\nAlternatively, maybe the \"face transformation\" is the point where the person's face is shown in the hoodie, which is after the torso close-up. The torso close-up transformation is the outfit change, and the face transformation is the next step. So the face transformation happens right after the torso close-up transformation. Let's check the order:\n\n- The video shows the person in white cardigan (initial scene), then the torso close-up (6-7: white to gray), then the face transformation (19-22: face changes). \n\nBut the question is about which is closer: face transformation to torso close-up, or face transformation to initial cardigan. Since the face transformation is part of the sequence that follows the torso close-up, it's closer to the torso close-up than to the initial cardigan scene. \n\nWait, but let's check the frames. The initial cardigan scene is the first part (e.g., frame 3: white cardigan, full body). The torso close-up transformation is frame 6-7 (white to gray). The face transformation is frame 19-22 (face changes). So the time between torso close-up (6-7) and face transformation (19-22) is 12-15 frames. The time between initial cardigan (3) and face transformation (19) is 16 frames. So 12-15 is less than 16, so it's closer to the torso close-up. \n\nBut maybe the \"face transformation\" is the moment when the face is shown in the hoodie, which is right after the torso close-up. The torso close-up is a transformation (from white to gray), then",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a face transformation occur in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a face transformation occurred. This is evident in the sequence where the person’s appearance shifts from having braids, wearing a white jacket, and showing a composed expression (e.g., around the 15-20 second mark in the frame sequence) to having a messy bun, wearing a gray hoodie with a star, glasses, and a different expression (e.g., around the 25-30 second mark in the frame sequence). The video visually depicts a quick change in both facial styling and attire.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a torso close-up transformation occur in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows torso close-ups of different outfits (e.g., white fuzzy jacket and gray hoodie with a star), indicating a transformation in the torso close-up segments.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was there an initial cardigan scene in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The video begins with scenes of the person wearing a white cardigan (e.g., visible in the early frames, such as the second frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the face transformation occur after the torso close-up transformation?",
+      "gt": "Yes",
+      "pred": "Yes. The torso close - up transformation (e.g., from the white jacket to the gray hoodie, visible in frames around 6 - 8) happens before the face transformation (e.g., the change from the braided - hair face to the messy - bun - with - glasses face, visible in frames around 18 - 19).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Was the face transformation closer in sequence to the torso close-up transformation than to the initial cardigan scene?",
+      "gt": "Yes",
+      "pred": "To determine the sequence, we analyze the frame order:  \n\n- **Initial cardigan scene**: Early frames (1–5) show the person in the white cardigan walking/standing.  \n- **Torso close-up transformation**: Frames 6–8 show the torso switching from the white cardigan to the gray hoodie.  \n- **Face transformation**: Frames 18–19 show the face switching from the white cardigan look to the gray hoodie look with glasses.  \n\nThe face transformation (18–19) occurs **10 frames after** the torso close-up (6–8), while it occurs **13 frames after** the initial cardigan scene (1–5). Thus, the face transformation is closer in sequence to the torso close-up transformation than to the initial cardigan scene.  \n\n**Answer**: Yes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "target",
+      "question": "Did the sequence outfit transformation → arm sleeve change → torso close-up → face transformation follow that order?",
+      "gt": "Yes",
+      "pred": "Yes. The sequence follows:  \n1. Outfit transformation (e.g., white jacket → gray hoodie, visible in frames showing the person changing from one outfit to the other).  \n2. Arm sleeve change (e.g., white sleeve → gray sleeve, seen in frames where the arm shifts from white to gray).  \n3. Torso close-up (e.g., close-ups of the white jacket’s torso, then the gray hoodie’s torso).  \n4. Face transformation (e.g., styled hair/face → messy hair with glasses, visible in the final face-focused frames).  \n\nThis order is verifiable from the video’s visual progression.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the outfit transformation occur before the arm sleeve change?",
+      "gt": "Yes",
+      "pred": "No. The arm sleeve change (to gray) occurs before the full outfit transformation (from white coat to gray hoodie). The gray arm is visible in frames around the 7th-8th sequence, while the full gray hoodie",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the arm sleeve change occur before the torso close-up?",
+      "gt": "Yes",
+      "pred": "Yes. The arm sleeve change (from white to gray) occurs before the torso close - up of the gray hoodie. For example, the arm in the white sleeve appears in early frames (e.g., around the 3 - 4 second mark), then the arm in the gray sleeve is shown (e.g., around the 5 - 6 second mark), and the torso close - up of the gray hoodie follows (e.g., around the 7 - 8 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the torso close-up occur before the face transformation?",
+      "gt": "Yes",
+      "pred": "Yes. Torso close-ups (e.g., white jacket details, gray hoodie details) occur in earlier frames (e.g., frames 5–8), while the face transformation (e.g., glasses, messy hair) appears in later frames (e.g., frame 17+).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the outfit transformation happen before the torso close-up?",
+      "gt": "Yes",
+      "pred": "No. The torso close-up of the white outfit (e.g., around the 6th frame) occurs before the outfit transforms into the gray hoodie (first visible in the 7th frame). Thus, the transformation happened after the torso close-up.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Did the arm sleeve change happen before the face transformation?",
+      "gt": "Yes",
+      "pred": "Yes. The arm sleeve change (from white to gray) occurs in frames showing the arm extending (e.g., around the 7th-10th frames of the sequence), while the face transformation (to the messy bun and glasses) happens later in the video. Thus, the arm sleeve change happened before the face transformation.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "target",
+      "question": "Did the arm transformation happen after the outfit change, but before both the torso transformation and the face transformation?",
+      "gt": "Yes",
+      "pred": "No. The arm transformation (from white to gray sleeve) occurs **before** the full outfit change (the entire body changing to the gray hoodie with star and dark pants), not after. The sequence shows the arm",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the arm transformation happen after the outfit change?",
+      "gt": "Yes",
+      "pred": "To determine if the arm transformation happened after the outfit change, we analyze the sequence:  \n\n1. **Outfit change**: The video shows a transition from the white jacket/jeans outfit (e.g., frames 1–5) to the gray hoodie/dark pants outfit (e.g., frames 6–9).  \n2. **Arm transformation**: The arm in the gray sleeve (matching the new outfit) first appears *during* the outfit change (e.g., frame 7, 8), not after. The white sleeve (from the original outfit) appears later (e.g., frame 12, 13) as part of the “before” state, while the gray sleeve is part of the “after” state.  \n\nSince the arm’s appearance in the gray sleeve coincides with the outfit change (not after it), the arm transformation **did not happen after the outfit change**.  \n\nAnswer: No. The arm transformation occurred during the outfit change.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the arm transformation happen before the torso transformation?",
+      "gt": "Yes",
+      "pred": "Yes. The arm transformation (e.g., from white sleeve to gray sleeve, visible around 10–11s) occurs before the torso transformation (e.g., from white jacket to gray hoodie with star, visible around 14–15s).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the arm transformation happen before the face transformation?",
+      "gt": "Yes",
+      "pred": "Yes. The arm transformation (e.g., the hand and sleeve changing from white to gray) occurs in earlier frames (e.g., around the 7-10 frame range), while the face transformation (e.g., hairstyle and glasses change) happens in later frames (e.g., around the 15-18 frame range). Thus, the arm transformation happened before the face transformation.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the outfit change occur before the torso transformation?",
+      "gt": "Yes",
+      "pred": "No. The outfit change (from white jacket/jeans to gray hoodie/dark pants) and the torso transformation (e.g., hand, body appearance) occur simultaneously as part of the same sequence. The video shows the clothing change and corresponding torso shift as a single, instantaneous transition (e.g., around the 6–10 second mark in the frame sequence). Thus, the outfit change did not occur before the torso transformation.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Did the torso transformation occur before the face transformation?",
+      "gt": "Yes",
+      "pred": "Yes. The torso transformation (e.g., changing from the white fuzzy jacket to the gray hoodie with a star) is shown in frames prior to the face transformation (e.g., the change to wearing glasses and a messy bun). For example, the gray hoodie with the star is visible in frames like the 7th and 8th images, while the face transformation (glasses, messy bun) appears in later frames (e.g., 19th–21st images). Thus, the torso transformation occurred before the face transformation.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

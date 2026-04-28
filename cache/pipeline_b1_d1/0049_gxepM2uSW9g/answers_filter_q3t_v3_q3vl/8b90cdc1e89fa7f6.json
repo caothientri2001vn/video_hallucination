@@ -1,0 +1,193 @@
+{
+  "question": "Was the guy locked inside an iron cage wearing a colorful comic-print matching suit?",
+  "pred": "Evidence: The context shows the \"man in comic book print shirt\" speaking into a microphone on stage, but there is no event indicating he was locked inside an iron cage. The cage-related events describe the \"purple-hair performer\" and \"black-outfit assistants\" interacting with the cage structure, not the comic-print suit wearer. Frame #28 shows \"a man in a yellow shirt and blue pants is inside a metal cage\" which is a different performer, not the comic-print suit wearer.\n\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "speak",
+      "description": "Man in comic book print shirt speaks into microphone on stage with blue background",
+      "participants": [
+        "man in comic book print shirt"
+      ],
+      "actor": "man in comic book print shirt",
+      "segment_boundary": "middle",
+      "segment_label": "Talent Show - Performance Segment",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Talent Show - Performance Segment"
+    },
+    {
+      "event_type": "speak",
+      "description": "Man in comic book print shirt continues speaking into microphone on stage",
+      "participants": [
+        "man in comic book print shirt"
+      ],
+      "actor": "man in comic book print shirt",
+      "segment_boundary": "middle",
+      "segment_label": "Talent Show - Performance Segment",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 3,
+      "start_time": "00:13",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Talent Show - Performance Segment"
+    },
+    {
+      "event_type": "speak",
+      "description": "Man in comic book patterned outfit speaks into microphone on stage",
+      "participants": [
+        "comic-book-patterned-outfit man"
+      ],
+      "actor": "comic-book-patterned-outfit man",
+      "object": "microphone",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Britain's Got Talent Performance",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 4,
+      "start_time": "00:15",
+      "end_time": "00:19",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Talent Show - Performance Segment"
+    },
+    {
+      "event_type": "pyrotechnics",
+      "description": "A large burst of pyrotechnics ignites in the center of the stage behind the circular structure, creating a bright flash",
+      "participants": [
+        "performer with big hair",
+        "left performer",
+        "right performer",
+        "performer on structure"
+      ],
+      "actor": "stage effects",
+      "on_screen_text": [
+        {
+          "text": "BRITAIN'S GOT TALENT",
+          "location": "title"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Britain's Got Talent Performance",
+      "continuation_hint": "complete",
+      "event_index": 25,
+      "start_time": "01:27",
+      "end_time": "01:30",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Bed Performance Setup"
+    },
+    {
+      "event_type": "performance",
+      "description": "Multiple performers in dark costumes move around the cage on stage, including one with large purple hair",
+      "participants": [
+        "purple-hair performer",
+        "black-costume performers",
+        "cage performer"
+      ],
+      "actor": "purple-hair performer",
+      "segment_boundary": "middle",
+      "segment_label": "Britain's Got Talent performance",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 55,
+      "start_time": "02:10",
+      "end_time": "02:15",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Bed Performance Setup"
+    },
+    {
+      "event_type": "emerge",
+      "description": "The main performer emerges from the hanging black box structure with arrows through it",
+      "participants": [
+        "purple-hair performer",
+        "black-outfit assistant"
+      ],
+      "actor": "purple-hair performer",
+      "segment_boundary": "middle",
+      "segment_label": "Dangerous Box Act",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 70,
+      "start_time": "02:45",
+      "end_time": "02:48",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Bed Performance Setup"
+    },
+    {
+      "event_type": "remove_object",
+      "description": "A black-outfit assistant pulls an arrow from the hanging black box structure",
+      "participants": [
+        "black-outfit assistant",
+        "purple-hair performer"
+      ],
+      "actor": "black-outfit assistant",
+      "segment_boundary": "middle",
+      "segment_label": "Dangerous Box Act",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 73,
+      "start_time": "02:51",
+      "end_time": "02:53",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Bed Performance Setup"
+    },
+    {
+      "event_type": "visual_effect",
+      "description": "The suspended black cage emits bright sparks and fire effects",
+      "participants": [],
+      "actor": "suspended cage",
+      "object": "sparks and fire",
+      "segment_boundary": "middle",
+      "segment_label": "Britain's Got Talent performance",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 81,
+      "start_time": "03:02",
+      "end_time": "03:05",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Bed Performance Setup"
+    },
+    {
+      "event_type": "speak",
+      "description": "The performer in comic book print shirt speaks with mouth open",
+      "participants": [
+        "comic-book-shirt performer"
+      ],
+      "actor": "comic-book-shirt performer",
+      "segment_boundary": "middle",
+      "segment_label": "Bed Performance",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 92,
+      "start_time": "03:25",
+      "end_time": "03:26",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Bed Performance Setup"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "question": "Does the white ball fall into yello cup?",
+  "pred": "The video shows a color-matching activity where various colored balls are placed into matching colored cups. The white ball is picked up from the bowl and placed into the white cup, which is positioned at the bottom-center of the circular arrangement. The yellow cup is located on the right side of the circle and receives the yellow ball later in the sequence.\n\nEvidence: The white ball is placed into the white cup at approximately 00:09, while the yellow cup remains empty until the yellow ball is placed into it at approximately 00:21.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "place",
+      "description": "the spoon picks up a white ball from the bowl",
+      "participants": [
+        "hand holding spoon"
+      ],
+      "actor": "hand holding spoon",
+      "object": "white ball",
+      "segment_boundary": "middle",
+      "segment_label": "Color Matching Activity",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 2,
+      "start_time": "00:02",
+      "end_time": "00:05",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Color Matching Activity"
+    },
+    {
+      "event_type": "place",
+      "description": "the hand moves the spoon with the white ball toward the white cup in the center of the circle",
+      "participants": [
+        "hand holding spoon"
+      ],
+      "actor": "hand holding spoon",
+      "object": "white ball",
+      "segment_boundary": "middle",
+      "segment_label": "Color Matching Activity",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 3,
+      "start_time": "00:05",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Color Matching Activity"
+    },
+    {
+      "event_type": "place",
+      "description": "the white ball is placed into the white cup in the center position of the circular arrangement",
+      "participants": [
+        "hand holding spoon"
+      ],
+      "actor": "hand holding spoon",
+      "object": "white ball",
+      "segment_boundary": "middle",
+      "segment_label": "Color Matching Activity",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 4,
+      "start_time": "00:08",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Color Matching Activity"
+    }
+  ]
+}

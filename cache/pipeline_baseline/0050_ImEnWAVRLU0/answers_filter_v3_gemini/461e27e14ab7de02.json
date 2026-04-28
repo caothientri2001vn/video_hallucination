@@ -1,0 +1,172 @@
+{
+  "question": "Did he use the stairs to go upstairs?",
+  "pred": "The video shows several instances of people using stairs, but in all cases, they are moving downward.\n\n1.  At **02:42**, the **black-suit man** (Harvey) is seen running **down** a stairwell while carrying his briefcase (Event 84).\n2.  At **02:51**, the **suit-and-tie man** (Mike) is shown walking **down** a staircase (Event 91).\n3.  At **02:58**, the **maroon-uniform bellhop** runs through a doorway and **down** a set of stairs (Event 96).\n4.  At **03:00**, the **maroon-uniform man** continues walking **down** the stairs rapidly (Event 99).\n\nThere are no instances in the Context or frames showing anyone using the stairs to go upstairs.\n\nEvidence: Context events 84, 91, 96, and 99 all describe characters walking or running DOWN the stairs.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "walk",
+      "description": "the black-suit man runs down a stairwell, carrying his briefcase",
+      "participants": [
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "object": "briefcase",
+      "on_screen_text": [
+        {
+          "text": "NO SMOKING",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Hotel Hallway Pursuit",
+      "continuation_hint": "complete",
+      "event_index": 84,
+      "start_time": "02:42",
+      "end_time": "02:44",
+      "sub_events": [],
+      "subtype_order": 22,
+      "subtype_total": 49,
+      "round_index": 2,
+      "segment_label_resolved": "hotel hallway"
+    },
+    {
+      "event_type": "walk",
+      "description": "The suit-and-tie man walks down a staircase.",
+      "participants": [
+        "suit-and-tie man"
+      ],
+      "actor": "suit-and-tie man",
+      "segment_boundary": "middle",
+      "segment_label": "staircase descent",
+      "continuation_hint": "complete",
+      "event_index": 91,
+      "start_time": "02:51",
+      "end_time": "02:52",
+      "sub_events": [],
+      "subtype_order": 24,
+      "subtype_total": 49,
+      "round_index": 2,
+      "segment_label_resolved": "hotel hallway"
+    },
+    {
+      "event_type": "lift",
+      "description": "The suit-and-tie man lifts a black briefcase while descending the stairs.",
+      "participants": [
+        "suit-and-tie man"
+      ],
+      "actor": "suit-and-tie man",
+      "object": "black briefcase",
+      "segment_boundary": "middle",
+      "segment_label": "staircase descent",
+      "continuation_hint": "complete",
+      "event_index": 92,
+      "start_time": "02:52",
+      "end_time": "02:54",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 2,
+      "segment_label_resolved": "hotel hallway"
+    },
+    {
+      "event_type": "walk",
+      "description": "The suit-and-tie man continues walking down the stairs, holding the briefcase.",
+      "participants": [
+        "suit-and-tie man"
+      ],
+      "actor": "suit-and-tie man",
+      "object": "black briefcase",
+      "segment_boundary": "middle",
+      "segment_label": "staircase descent",
+      "continuation_hint": "complete",
+      "event_index": 94,
+      "start_time": "02:55",
+      "end_time": "02:56",
+      "sub_events": [],
+      "subtype_order": 25,
+      "subtype_total": 49,
+      "round_index": 2,
+      "segment_label_resolved": "hotel hallway"
+    },
+    {
+      "event_type": "walk",
+      "description": "The bellhop runs through a doorway and down a different set of stairs.",
+      "participants": [
+        "bellhop"
+      ],
+      "actor": "bellhop",
+      "segment_boundary": "middle",
+      "segment_label": "bellhop running",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 96,
+      "start_time": "02:58",
+      "end_time": "03:00",
+      "sub_events": [],
+      "subtype_order": 26,
+      "subtype_total": 49,
+      "round_index": 2,
+      "segment_label_resolved": "hotel hallway"
+    },
+    {
+      "event_type": "walk",
+      "description": "The maroon-uniform man walks down the stairs, looking around.",
+      "participants": [
+        "maroon-uniform man"
+      ],
+      "actor": "maroon-uniform man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Stairwell Descent",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 97,
+      "start_time": "03:00",
+      "end_time": "03:02",
+      "sub_events": [],
+      "subtype_order": 27,
+      "subtype_total": 49,
+      "round_index": 2,
+      "segment_label_resolved": "hotel hallway"
+    },
+    {
+      "event_type": "look",
+      "description": "The maroon-uniform man looks down the center of the spiral staircase from an upper floor.",
+      "participants": [
+        "maroon-uniform man"
+      ],
+      "actor": "maroon-uniform man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Stairwell Descent",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 98,
+      "start_time": "03:02",
+      "end_time": "03:04",
+      "sub_events": [],
+      "subtype_order": 22,
+      "subtype_total": 54,
+      "round_index": 2,
+      "segment_label_resolved": "hotel hallway"
+    },
+    {
+      "event_type": "walk",
+      "description": "The maroon-uniform man continues walking down the stairs rapidly.",
+      "participants": [
+        "maroon-uniform man"
+      ],
+      "actor": "maroon-uniform man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Stairwell Descent",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 99,
+      "start_time": "03:04",
+      "end_time": "03:07",
+      "sub_events": [],
+      "subtype_order": 28,
+      "subtype_total": 49,
+      "round_index": 2,
+      "segment_label_resolved": "hotel hallway"
+    }
+  ]
+}

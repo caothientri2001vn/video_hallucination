@@ -1,0 +1,321 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0087_k3rlRsZTiZw.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0087_k3rlRsZTiZw.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0087_k3rlRsZTiZw",
+    "n_target": 7,
+    "n_sub": 24,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.14285714285714285,
+    "sub_accuracy": 0.25
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "In the first game, was there a man in the blue t-shirt who popped the first green bubble?",
+      "gt": "No",
+      "pred": "So, let's check the first game. The first game is the one with the green bubble. Looking at the frames: the first game where there's a green bubble. Wait, the first game in the video—let's see. The video starts with the red shirt, then the second frame is a man in blue (the first game with the blue and red balloons). Wait, the first game with bubbles: the frame where the blue shirt man is popping a green bubble. Let's check the timestamp. The second frame (index 1) shows a man in blue shirt (the first game, maybe). Wait, the question is about the first green bubble. Let's find the frame where a green bubble is popped. Looking at the frames, there's a frame with a blue balloon, but green bubble? Wait, maybe the first game is the one with the chair and the blue balloon. Wait, the user is asking about the first green bubble. Let's check the frames. The first time a green bubble is popped: in the video, there's a frame where the man in blue is popping a bubble. Wait, maybe the first game is the one with the blue and red balloons (frame 2). But the question is about green bubble. Let me check again.\n\nWait, the video frames: the first game where bubbles are involved. Let's list the frames. The first frame is a close-up of red shirt. Then frame 2: man in blue shirt, blue and red balloons. Then frame 3: red shirt running. Frame 4: blue shirt on trampoline with hula hoops. Frame 5: blue shirt jumping on a mat. Frame 6: red shirt with cups. Frame 7: red shirt with cups wall. Frame 8: blue shirt with star, cups on ground. Frame 9: red shirt holding hula hoop, blue shirt on mat. Frame 10: both holding orange ring, \"FINAL LEVEL\". Frame 11: blue shirt holding ring, red shirt glowing. Frame 12: blue shirt climbing wall. Frame 13: blue shirt climbing, red shirt watching. Frame 14: red shirt climbing. Frame 15: red shirt on ground, blue shirt cheering. Frame 16: both in hula hoops on grass, hearts. Frame 17: same, hearts. Frame 18: blue shirt kicking, red shirt clapping. Frame 19: red shirt with tic-tac-toe. Frame 20: red shirt on balcony, tic-tac-toe. Frame 21: both throwing balls into buckets. Frame 22: same, buckets with numbers. Frame 23: blurred, hula hoops. Frame 24: blue shirt running, red shirt in background. Frame 25: red shirt under hula hoops. Frame 26: blue shirt jumping, red shirt on mat. Frame 27: both jumping. Frame 28: red shirt close-up. Frame 29: blue shirt jumping on mat, red shirt sitting. Frame 30: red shirt, blue shirt on tires. Frame 31: blue shirt on mat with cake. Frame 32: both with cake.\n\nWait, the first game with a green bubble—maybe the frame where the man in blue is popping a green bubble. But in frame 2, there's a blue balloon. Let's check if any green bubbles. The user is asking about the first green bubble. Let's see: in frame 4, the man in blue is on a trampoline with hula hoops (orange, green, blue). So the green hula hoop is there. But the question is about a green bubble. Maybe I misread. The question says \"popped the first green bubble\". Let's check if there's a green bubble in the video. The first game where bubbles are used: maybe the frame with the blue and red balloons (frame 2), but those are balloons, not bubbles. Then frame 16-18: hearts, but not bubbles. Frame 21: buckets, no bubbles. Frame 23: hula hoops (pink, green, blue). Maybe the green hula hoop is a bubble? No, hula hoops are different. Wait, maybe the question refers to a different game. Let's check the first game. The first game is the one where the man in blue is in the gym with the chair and the blue balloon. In frame 2, the man in blue is popping a blue balloon (maybe that's the first bubble). But the question is about green bubble. Let's check if there's a green bubble. The user might be referring to a specific part. Wait, maybe the answer is no, because the first green bubble was not popped by the blue shirt man. Or maybe yes.\n\nWait, let's check the frames again. The first time a bubble (or balloon) is",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a man in a blue t-shirt playing in the first game?",
+      "gt": "Yes",
+      "pred": "Yes, the second frame (showing a man in a blue t-shirt in a gym setting with equipment like a chair and balloons) indicates a man in a blue t-shirt was present in the first game.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man in the blue t-shirt win the first game?",
+      "gt": "No",
+      "pred": "Yes. In the video, the score display shows \"BRANDON: 30 NICK: 0\" (third frame), indicating the man in the blue t-shirt (Brandon) had a higher score than the man in the red t-shirt (Nick) in the first game.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the man in the red t-shirt win the first game?",
+      "gt": "Yes",
+      "pred": "No. In the frame showing the score \"BRANDON: 30 NICK: 0\" (which appears to be early in the sequence), the man in the red t-shirt (Nick) has 0 points while the man in the blue t-shirt (Brandon) has 30 points, indicating the man in the red t-shirt did not win the first game.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "In the first game, did the man in the red t-shirt win?",
+      "gt": "Yes",
+      "pred": "No. In the third frame (showing \"BRANDON: 30 NICK: 0\"), the man in the red t-shirt (Nick) has a score of 0 while Brandon (in blue) has 30, indicating the red t-shirt man did not win the first game.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a man in a red t-shirt playing in the first game?",
+      "gt": "Yes",
+      "pred": "Yes. In the third frame (0:04), a man in a red t-shirt is shown running as part of the first game with the scoreboard \"BRANDON: 30 NICK: 0\".",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man in the red t-shirt win the first game?",
+      "gt": "Yes",
+      "pred": "No. In the frame showing the score \"BRANDON: 30 NICK: 0\" (which appears to be early in the sequence), the man in the red t-shirt (Nick) has 0 points while the man in the blue t-shirt (Brandon) has 30 points, indicating the man in the red t-shirt did not win the first game.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the man in the blue t-shirt win the first game?",
+      "gt": "No",
+      "pred": "Yes. In the video, the score display shows \"BRANDON: 30 NICK: 0\" (third frame), indicating the man in the blue t-shirt (Brandon) had a higher score than the man in the red t-shirt (Nick) in the first game.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "In the second game, did the man in the blue t-shirt win?",
+      "gt": "No",
+      "pred": "Yes, in the second game (red cup challenge), the man in the blue t - shirt won, as indicated by the scoreboard in the 8th frame (where the blue - shirted man has more stars).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a second game played?",
+      "gt": "Yes",
+      "pred": "Yes, multiple games were played, including a second game such as the one with hula hoops and water balloons (evident in frames 15-17).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man in the blue t-shirt participate in the second game?",
+      "gt": "Yes",
+      "pred": "Yes. The man in the blue t-shirt is seen participating in the game involving red plastic cups (e.g., in the frame with the \"3\" countdown, and later when he jumps with a star graphic, indicating his involvement in the game). This occurs around the 6th–8th frames of the video sequence.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the man in the blue t-shirt start playing first in the second game?",
+      "gt": "Yes",
+      "pred": "No. In the second game (evident from the frame with \"BRANDON: 30 NICK: 0\" and the man in the red shirt running toward a blue platform), the man in the red shirt (Brandon) is the one initiating the action first, while the man in the blue shirt (Nick) is standing still. This indicates the blue-shirted man did not start first. (Refer to the frame with the \"BRANDON: 30 NICK: 0\" scoreboard, approximately 3rd image in the sequence.)",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Is the man in the blue t-shirt the winner after all the games?",
+      "gt": "Yes",
+      "pred": "No. In the frame showing the \"SCOREBOARD\" (with the star system), the man in the red t-shirt (Mario) has 3 yellow stars while the man in the blue t-shirt has 1 yellow star, indicating the man in the red t-shirt is the winner. (Cite: frame with \"SCOREBOARD\" showing star counts)",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "In the second game, did the man in the blue t-shirt start playing first?",
+      "gt": "Yes",
+      "pred": "No. In the second game (evident in the frame with the red mat and the score \"BRANDON: 30 NICK: 0\"), the man in the red t - shirt is running toward the blue platform while the man in the blue t - shirt is standing, indicating the man in the red t - shirt started playing first. Thus, the man in the blue t - shirt did not start first.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a second game played?",
+      "gt": "Yes",
+      "pred": "Yes, multiple games were played, including a second game such as the one with hula hoops and water balloons (evident in frames 15-17).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man in the blue t-shirt start playing first in the second game?",
+      "gt": "Yes",
+      "pred": "No. In the second game (evident from the frame with \"BRANDON: 30 NICK: 0\" and the man in the red shirt running toward a blue platform), the man in the red shirt (Brandon) is the one initiating the action first, while the man in the blue shirt (Nick) is standing still. This indicates the blue-shirted man did not start first. (Refer to the frame with the \"BRANDON: 30 NICK: 0\" scoreboard, approximately 3rd image in the sequence.)",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the man in the red t-shirt start playing first in the second game?",
+      "gt": "No",
+      "pred": "Yes. In the second game (hula hoop challenge, around frames 9-10), the man in the red t-shirt is seen holding the hula hoop and initiating the action while the man in blue is on the ground, indicating the red-shirted man started first.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "In the third game, did the man in the red t-shirt start playing first?",
+      "gt": "Yes",
+      "pred": "Yes. In the third game (involving red cups), the man in the red t - shirt is shown preparing (frame 6) and then positioned behind the cup structure (frame 7) before the man in the blue t - shirt takes action (frame 8), indicating the man in the red t - shirt started playing first.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the man in the red t-shirt win the first game?",
+      "gt": "NA",
+      "pred": "No. In the frame showing the score \"BRANDON: 30 NICK: 0\" (which appears to be early in the sequence), the man in the red t-shirt (Nick) has 0 points while the man in the blue t-shirt (Brandon) has 30 points, indicating the man in the red t-shirt did not win the first game.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man in the blue t-shirt start playing first in the second game?",
+      "gt": "NA",
+      "pred": "No. In the second game (evident from the frame with \"BRANDON: 30 NICK: 0\" and the man in the red shirt running toward a blue platform), the man in the red shirt (Brandon) is the one initiating the action first, while the man in the blue shirt (Nick) is standing still. This indicates the blue-shirted man did not start first. (Refer to the frame with the \"BRANDON: 30 NICK: 0\" scoreboard, approximately 3rd image in the sequence.)",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Is the man in the blue t-shirt the winner after all the games?",
+      "gt": "NA",
+      "pred": "No. In the frame showing the \"SCOREBOARD\" (with the star system), the man in the red t-shirt (Mario) has 3 yellow stars while the man in the blue t-shirt has 1 yellow star, indicating the man in the red t-shirt is the winner. (Cite: frame with \"SCOREBOARD\" showing star counts)",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "In the third game, did the man in the red t-shirt win?",
+      "gt": "No",
+      "pred": "Yes, in the third game, the man in the red t-shirt won. This is evident from the score display in the third frame of the provided sequence, which shows \"BRANDON: 30\" (wearing the red t-shirt) and \"NICK: 0\".",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the man in the red t-shirt win the first game?",
+      "gt": "Yes",
+      "pred": "No. In the frame showing the score \"BRANDON: 30 NICK: 0\" (which appears to be early in the sequence), the man in the red t-shirt (Nick) has 0 points while the man in the blue t-shirt (Brandon) has 30 points, indicating the man in the red t-shirt did not win the first game.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man in the blue t-shirt start playing first in the second game?",
+      "gt": "Yes",
+      "pred": "No. In the second game (evident from the frame with \"BRANDON: 30 NICK: 0\" and the man in the red shirt running toward a blue platform), the man in the red shirt (Brandon) is the one initiating the action first, while the man in the blue shirt (Nick) is standing still. This indicates the blue-shirted man did not start first. (Refer to the frame with the \"BRANDON: 30 NICK: 0\" scoreboard, approximately 3rd image in the sequence.)",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Is the man in the blue t-shirt the winner after all the games?",
+      "gt": "Yes",
+      "pred": "No. In the frame showing the \"SCOREBOARD\" (with the star system), the man in the red t-shirt (Mario) has 3 yellow stars while the man in the blue t-shirt has 1 yellow star, indicating the man in the red t-shirt is the winner. (Cite: frame with \"SCOREBOARD\" showing star counts)",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the man in the red t-shirt win all the games?",
+      "gt": "No",
+      "pred": "No, the man in the red t-shirt did not win all the games. For example, in the outdoor hula hoop game (frames 15-17), the blue heart count (3) is higher than the red heart count (2, then 1), indicating the man in blue won that round. Additionally, in the bucket game (frames 20-21), the score shows \"8\" (blue) versus \"7\" (red), with blue leading. These scoreboards and game outcomes directly show the red-shirted man did not win all games.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "After all the games, is the man in the blue t-shirt the winner",
+      "gt": "No",
+      "pred": "So, let's check the video. The question is whether the man in the blue t-shirt is the winner after all the games. Let's look for the final scoreboard or the conclusion.\n\nIn the last part, there's a scene where both are covered in what looks like cake, and the man in red is giving a thumbs up. But let's check the score. Wait, the video has a scoreboard in some frames. Let's see the final parts.\n\nWait, the last frame (30) shows both men, with the blue one covered in cake. But the key is the score. Let's check if there's a final score. In the frames, the scoreboard in some parts: for example, in frame 8, the scoreboard shows red with 3 stars, blue with 2. But the last part—when they do the final game with the hula hoops and the water balloons, the hearts (lives) are shown. Let's check the frames:\n\nFrame 16: red has 2 hearts (1 broken), blue has 3 hearts. Then frame 17: red has 1 heart, blue has 3. Then frame 18: blue does a flip, so maybe he gets a heart. But the last part, the final game with the cake—when the blue one jumps on the tire, he lands in the cake. Then the next frame, they're both there, red is happy. But is there a clear winner?\n\nWait, the problem says \"after all the games\". Let's check the final scene. The last frame (30) shows both, but the question is about who wins. Let's check if there's a final score. In the video, the final part with the cake: the blue guy is covered in cake, but the red guy is the one who made the cake? No, the blue guy jumps and lands in the cake. Then in frame 29, the red guy is standing next to the cake, and the blue guy is on it. But the question is who is the winner.\n\nWait, another angle: in the tic-tac-toe game (frame 19-20), the red guy is the one with the X's, but that's a game, not the final. The final game is the one with the tires and cake. The video ends with them both in the cake, but the red guy is the one in the red shirt, and the blue guy is the one in the blue shirt. Wait, but the question is: is the man in blue the winner?\n\nWait, let's check the score in the final part. In frame 8 (the one with the \"SCOREBOARD\" on the left), the red guy has 3 stars, blue has 2. Then in frame 11, the scoreboard shows red with 3 stars, blue with 1. But the last part: the hula hoop game (frame 16-18), the hearts: red starts with 3, blue 3. Then in frame 17, red has 2, blue 3. Frame 18: blue does a flip, so maybe he gets a heart. Then in frame 20, they do the hula hoop with the long pipes, and the blue guy is the one who got hit? No, in frame 25, the blue guy is jumping over the ramp, and the red guy is on the side. Then frame 26: red guy is under the pipes, but blue is not. Then frame 27: they do the hula hoop with the scissors. The red guy has 1, blue 0. Then frame 28: both jump, so maybe red wins that. Then frame 29: blue guy jumps on the tire, lands in cake. Then frame 30: both are there, red is happy.\n\nBut the key is: is there a clear winner? The problem says \"after all the games\". Let's check the very end. The last part of the video (frame 30) shows the red guy giving a thumbs up, and the blue guy is covered in cake. But in the context of the video, the red guy is the one who wins. Wait, no—maybe not. Wait, let's check the scores in the final game.\n\nWait, the question is about the man in the blue t-shirt. Let's see: in the video, the blue guy is often the one who is not the winner. For example, in the hula hoop game (frame 16), the red guy has 2 hearts left, blue has 3. Then in the cake game, the blue guy is the one who lands in the cake, which is a loss. So maybe the red guy is the winner.\n\nBut the problem says \"is the man in the blue t-shirt the winner\". So we need to check if the blue one is the winner.\n\nLooking at the",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the man in the blue t-shirt participate in the games?",
+      "gt": "NA",
+      "pred": "Yes, the man in the blue t-shirt participated in the games. He is visible in multiple frames engaging in activities such as running on the trampoline (e.g., frame 3), standing on the red mat (frame 5), and performing challenges like the cup stacking and hula hoop (e.g., frames 7–9).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is the man in the blue t-shirt the winner after all the games?",
+      "gt": "NA",
+      "pred": "No. In the frame showing the \"SCOREBOARD\" (with the star system), the man in the red t-shirt (Mario) has 3 yellow stars while the man in the blue t-shirt has 1 yellow star, indicating the man in the red t-shirt is the winner. (Cite: frame with \"SCOREBOARD\" showing star counts)",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the man in the red t-shirt win the first game?",
+      "gt": "NA",
+      "pred": "No. In the frame showing the score \"BRANDON: 30 NICK: 0\" (which appears to be early in the sequence), the man in the red t-shirt (Nick) has 0 points while the man in the blue t-shirt (Brandon) has 30 points, indicating the man in the red t-shirt did not win the first game.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Is the man in the red t-shirt the overall winner after all the games?",
+      "gt": "NA",
+      "pred": "Yes. The scoreboard in the video (e.g., frames showing \"BRANDON: 30 NICK: 0\", \"BRANDON: 80 NICK: 40\", and \"BRANDON: 90 NICK: 70\") indicates the man in the red t-shirt (Brandon) consistently has higher scores. Additionally, in the final scene, he is shown giving a thumbs-up while the man in the blue t-shirt is covered in cake, implying the red t-shirt man is the overall winner.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    }
+  ]
+}

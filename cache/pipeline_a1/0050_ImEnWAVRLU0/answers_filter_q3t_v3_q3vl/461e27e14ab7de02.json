@@ -1,0 +1,132 @@
+{
+  "question": "Did he use the stairs to go upstairs?",
+  "pred": "Evidence: All stair-related events in the Context describe people going down the stairs (e.g., \"the black-suit man runs down a stairwell\", \"The suit-and-tie man walks down a staircase\", \"The bellhop runs through a doorway and down a different set of stairs\").\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "walk",
+      "description": "the black-suit man runs down a stairwell, carrying his briefcase",
+      "participants": [
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "object": "briefcase",
+      "on_screen_text": [
+        {
+          "text": "NO SMOKING",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Hotel Hallway Pursuit",
+      "continuation_hint": "complete",
+      "event_index": 84,
+      "start_time": "02:42",
+      "end_time": "02:44",
+      "sub_events": [],
+      "subtype_order": 22,
+      "subtype_total": 49,
+      "round_index": 2,
+      "segment_label_resolved": "hotel hallway"
+    },
+    {
+      "event_type": "walk",
+      "description": "The suit-and-tie man walks down a staircase.",
+      "participants": [
+        "suit-and-tie man"
+      ],
+      "actor": "suit-and-tie man",
+      "segment_boundary": "middle",
+      "segment_label": "staircase descent",
+      "continuation_hint": "complete",
+      "event_index": 91,
+      "start_time": "02:51",
+      "end_time": "02:52",
+      "sub_events": [],
+      "subtype_order": 24,
+      "subtype_total": 49,
+      "round_index": 2,
+      "segment_label_resolved": "hotel hallway"
+    },
+    {
+      "event_type": "walk",
+      "description": "The suit-and-tie man continues walking down the stairs, holding the briefcase.",
+      "participants": [
+        "suit-and-tie man"
+      ],
+      "actor": "suit-and-tie man",
+      "object": "black briefcase",
+      "segment_boundary": "middle",
+      "segment_label": "staircase descent",
+      "continuation_hint": "complete",
+      "event_index": 94,
+      "start_time": "02:55",
+      "end_time": "02:56",
+      "sub_events": [],
+      "subtype_order": 25,
+      "subtype_total": 49,
+      "round_index": 2,
+      "segment_label_resolved": "hotel hallway"
+    },
+    {
+      "event_type": "walk",
+      "description": "The bellhop runs through a doorway and down a different set of stairs.",
+      "participants": [
+        "bellhop"
+      ],
+      "actor": "bellhop",
+      "segment_boundary": "middle",
+      "segment_label": "bellhop running",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 96,
+      "start_time": "02:58",
+      "end_time": "03:00",
+      "sub_events": [],
+      "subtype_order": 26,
+      "subtype_total": 49,
+      "round_index": 2,
+      "segment_label_resolved": "hotel hallway"
+    },
+    {
+      "event_type": "walk",
+      "description": "The maroon-uniform man walks down the stairs, looking around.",
+      "participants": [
+        "maroon-uniform man"
+      ],
+      "actor": "maroon-uniform man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Stairwell Descent",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 97,
+      "start_time": "03:00",
+      "end_time": "03:02",
+      "sub_events": [],
+      "subtype_order": 27,
+      "subtype_total": 49,
+      "round_index": 2,
+      "segment_label_resolved": "hotel hallway"
+    },
+    {
+      "event_type": "walk",
+      "description": "The maroon-uniform man continues walking down the stairs rapidly.",
+      "participants": [
+        "maroon-uniform man"
+      ],
+      "actor": "maroon-uniform man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Stairwell Descent",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 99,
+      "start_time": "03:04",
+      "end_time": "03:07",
+      "sub_events": [],
+      "subtype_order": 28,
+      "subtype_total": 49,
+      "round_index": 2,
+      "segment_label_resolved": "hotel hallway"
+    }
+  ]
+}

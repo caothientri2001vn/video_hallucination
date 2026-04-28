@@ -1,0 +1,132 @@
+{
+  "question": "Was the judge who spoke to the man at the beginning seated on the far left?",
+  "pred": "The question asks if the judge who spoke to the performer at the beginning of the video was seated on the far left of the judges' panel.\n\n1.  **Identify the first judge to speak:** According to the Context (event 5) and the frames around 00:12, the \"black-shirt judge\" (Simon Cowell) is the first judge to speak to the \"comic-print suit man\" on stage.\n2.  **Determine the judge's position:** Frame 8 and frame 40 show the full judges' panel from the audience's perspective. The judges are seated in a row of four. From left to right, the judges are: David Walliams (black-suit man), Alesha Dixon (blue-jacket woman), Amanda Holden (white-blazer woman), and Simon Cowell (black-shirt man).\n3.  **Verify \"far left\":** The judge on the far left of the panel is David Walliams (black-suit man). Simon Cowell (black-shirt man), who spoke first, is seated on the far right of the panel.\n\nEvidence: Frames at 00:12 and 00:21 show the black-shirt man (Simon Cowell) speaking, and frame 8 shows him seated on the far right of the four-person panel.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "speak",
+      "description": "The man in the comic-print suit speaks into a microphone while standing on stage.",
+      "participants": [
+        "comic-print suit man"
+      ],
+      "actor": "comic-print suit man",
+      "object": "microphone",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Magic Performance",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 10,
+      "round_index": 1,
+      "segment_label_resolved": "Magic Performance"
+    },
+    {
+      "event_type": "look",
+      "description": "The four judges sit at their desk and look toward the stage.",
+      "participants": [
+        "black-suit man",
+        "blue-jacket woman",
+        "white-blazer woman",
+        "black-shirt man"
+      ],
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Magic Performance",
+      "continuation_hint": "complete",
+      "event_index": 2,
+      "start_time": "00:08",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 17,
+      "round_index": 1,
+      "segment_label_resolved": "Magic Performance"
+    },
+    {
+      "event_type": "speak",
+      "description": "The man in the comic-print suit continues speaking into the microphone.",
+      "participants": [
+        "comic-print suit man"
+      ],
+      "actor": "comic-print suit man",
+      "object": "microphone",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Magic Performance",
+      "continuation_hint": "complete",
+      "event_index": 3,
+      "start_time": "00:10",
+      "end_time": "00:11",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 10,
+      "round_index": 1,
+      "segment_label_resolved": "Magic Performance"
+    },
+    {
+      "event_type": "react",
+      "description": "The black-suit judge looks on with a serious expression.",
+      "participants": [
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Magic Performance",
+      "continuation_hint": "complete",
+      "event_index": 4,
+      "start_time": "00:11",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 26,
+      "round_index": 1,
+      "segment_label_resolved": "Magic Performance"
+    },
+    {
+      "event_type": "speak",
+      "description": "The black-shirt judge speaks while looking toward the stage.",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Magic Performance",
+      "continuation_hint": "complete",
+      "event_index": 5,
+      "start_time": "00:12",
+      "end_time": "00:13",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 10,
+      "round_index": 1,
+      "segment_label_resolved": "Magic Performance"
+    },
+    {
+      "event_type": "speak",
+      "description": "Simon Cowell, wearing a black long-sleeve shirt, speaks while seated at the judges' table.",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Magic Performance",
+      "continuation_hint": "middle",
+      "event_index": 12,
+      "start_time": "00:21",
+      "end_time": "00:23",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 10,
+      "round_index": 1,
+      "segment_label_resolved": "Magic Performance"
+    }
+  ]
+}

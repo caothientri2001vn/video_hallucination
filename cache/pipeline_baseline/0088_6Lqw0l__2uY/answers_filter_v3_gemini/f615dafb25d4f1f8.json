@@ -1,0 +1,130 @@
+{
+  "question": "Did the red team win the game?",
+  "pred": "The video shows a game where two teams (blue and red) compete to stack their respective colored cups. The blue team consists of the two women in blue shirts, and the red team consists of the two men in red/maroon tops.\n\n1.  Throughout the video, the blue-shirt woman (center) is seen successfully stacking blue cups (Events 39, 40).\n2.  In the final frames, the blue team has successfully stacked all their blue cups into a single tall stack on the left.\n3.  The red team still has four separate stacks of red cups remaining on the right side of the table.\n4.  The blue-shirt woman and her teammate celebrate their victory by jumping and raising their arms (Events 41, 44), while the red-hoodie man and tan-shirt man react with surprise and dejection (Events 42, 43).\n\nSince the blue team finished their stack first and celebrated, the red team did not win.\n\nEvidence: frames near the end of the video show the blue team celebrating with a completed stack of blue cups while four red cup stacks remain on the table.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "place",
+      "description": "The blue-shirt woman places the fifth blue cup from the left onto the leftmost blue cup stack.",
+      "participants": [
+        "blue-shirt woman"
+      ],
+      "actor": "blue-shirt woman",
+      "object": "blue cup",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Balloon Cup Stack",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 39,
+      "start_time": "00:20",
+      "end_time": "00:21",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 11,
+      "round_index": 1,
+      "segment_label_resolved": "Balloon Cup Game"
+    },
+    {
+      "event_type": "place",
+      "description": "The blue-shirt woman places the sixth blue cup from the left onto the leftmost blue cup stack.",
+      "participants": [
+        "blue-shirt woman"
+      ],
+      "actor": "blue-shirt woman",
+      "object": "blue cup",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Balloon Cup Stack",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 40,
+      "start_time": "00:21",
+      "end_time": "00:22",
+      "sub_events": [],
+      "subtype_order": 11,
+      "subtype_total": 11,
+      "round_index": 1,
+      "segment_label_resolved": "Balloon Cup Game"
+    },
+    {
+      "event_type": "celebration",
+      "description": "The blue-shirt woman celebrates by jumping and raising her arms.",
+      "participants": [
+        "blue-shirt woman"
+      ],
+      "actor": "blue-shirt woman",
+      "on_screen_text": [],
+      "segment_boundary": "end",
+      "segment_label": "Balloon Cup Stack",
+      "continuation_hint": "complete",
+      "event_index": 41,
+      "start_time": "00:22",
+      "end_time": "00:23",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Balloon Cup Game"
+    },
+    {
+      "event_type": "react",
+      "description": "The red-hoodie man reacts with surprise, opening his mouth and pointing at the blue-shirt woman.",
+      "participants": [
+        "red-hoodie man"
+      ],
+      "actor": "red-hoodie man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Balloon Cup Stack",
+      "continuation_hint": "complete",
+      "event_index": 42,
+      "start_time": "00:22",
+      "end_time": "00:23",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Balloon Cup Game"
+    },
+    {
+      "event_type": "react",
+      "description": "The tan-shirt man reacts with surprise, opening his mouth and looking at the blue-shirt woman.",
+      "participants": [
+        "tan-shirt man"
+      ],
+      "actor": "tan-shirt man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Balloon Cup Stack",
+      "continuation_hint": "complete",
+      "event_index": 43,
+      "start_time": "00:22",
+      "end_time": "00:23",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Balloon Cup Game"
+    },
+    {
+      "event_type": "celebration",
+      "description": "The long-haired blue-shirt woman celebrates by jumping and raising her arms.",
+      "participants": [
+        "long-haired blue-shirt woman"
+      ],
+      "actor": "long-haired blue-shirt woman",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Balloon Cup Stack",
+      "continuation_hint": "complete",
+      "event_index": 44,
+      "start_time": "00:22",
+      "end_time": "00:23",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Balloon Cup Game"
+    }
+  ]
+}

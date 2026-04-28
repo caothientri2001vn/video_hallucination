@@ -1,0 +1,124 @@
+{
+  "question": "Did France's number 10 shoot toward the right side?",
+  "pred": "The video shows a penalty shootout. France's player with jersey number 10 takes the first penalty kick for his team. As he approaches the ball and strikes it, the ball travels toward the right side of the goal (from the kicker's perspective), and the goalkeeper dives in that same direction but fails to stop it.\n\nEvidence: Frames at ~00:30 show the French player in jersey #10 kicking the ball toward the right side of the goal.\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "penalty_setup",
+      "description": "Player in blue shirt with number 10 stands at penalty spot preparing to take kick, referee in orange stands nearby, goalkeeper in yellow positioned in goal",
+      "participants": [
+        "blue-shirt player",
+        "orange-shirt referee",
+        "yellow-shirt goalkeeper"
+      ],
+      "actor": "blue-shirt player",
+      "object": "",
+      "segment_boundary": "start",
+      "segment_label": "Penalty Kick",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        },
+        {
+          "text": "10",
+          "location": "jersey_number"
+        }
+      ],
+      "event_index": 4,
+      "start_time": "00:15",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "run",
+      "description": "player in blue jersey begins running toward the ball for the penalty kick",
+      "participants": [
+        "blue-jersey player"
+      ],
+      "actor": "blue-jersey player",
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 8,
+      "start_time": "00:29",
+      "end_time": "00:29",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "kick",
+      "description": "player in blue jersey kicks the ball toward the goal",
+      "participants": [
+        "blue-jersey player",
+        "yellow-jersey goalkeeper"
+      ],
+      "actor": "blue-jersey player",
+      "object": "white ball",
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 9,
+      "start_time": "00:30",
+      "end_time": "00:30",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "goal",
+      "description": "Player in dark blue jersey scores a goal as the goalkeeper in green dives but fails to stop the ball",
+      "participants": [
+        "dark blue jersey player",
+        "green jersey goalkeeper"
+      ],
+      "actor": "dark blue jersey player",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 10,
+      "start_time": "00:30",
+      "end_time": "00:32",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "point",
+      "description": "Player in dark blue jersey points upward with right index finger while running",
+      "participants": [
+        "dark blue jersey player"
+      ],
+      "actor": "dark blue jersey player",
+      "object": "",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 12,
+      "start_time": "00:34",
+      "end_time": "00:36",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    }
+  ]
+}

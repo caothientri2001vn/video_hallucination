@@ -1,0 +1,29 @@
+{
+  "question": "Does the man throw a purple balloon?",
+  "pred": "The provided Context and frames show a man in a pink hoodie and a woman in an orange shirt playing a cup-stacking game. According to the Context (event 21) and the visual evidence in the frames, the man throws a green balloon into the air to begin the game. There is no evidence in the Context or the frames of a purple balloon being thrown by the man or anyone else.\n\nEvidence: Context event 21 states \"man throws the green balloon upward into the air\".\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "throw",
+      "description": "man throws the green balloon upward into the air",
+      "participants": [
+        "orange-shirt woman",
+        "pink-hoodie man"
+      ],
+      "actor": "pink-hoodie man",
+      "object": "green balloon",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 21,
+      "start_time": "00:55",
+      "end_time": "00:57",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Game"
+    }
+  ]
+}

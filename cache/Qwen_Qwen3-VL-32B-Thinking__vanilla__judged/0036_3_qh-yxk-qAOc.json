@@ -1,0 +1,136 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0036_3_qh-yxk-qAOc.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0036_3_qh-yxk-qAOc.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0036_3_qh-yxk-qAOc",
+    "n_target": 2,
+    "n_sub": 10,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 1.0,
+    "sub_accuracy": 0.9
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Does the player in yellow shirt, blue short number 10 score goal?",
+      "gt": "Yes",
+      "pred": "Yes, the player in the yellow shirt, blue shorts with number 10 scores a goal. This is evident from the sequence where the ball enters the goal net (e.g., around the frames showing the ball in the net and the goalkeeper diving) and the subsequent celebration by the player (e.g., the close-up frames of him with arms outstretched).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a player wearing a yellow shirt?",
+      "gt": "Yes",
+      "pred": "Yes, there are players wearing yellow shirts. For example, multiple frames show players in yellow jerseys (e.g., the player with the number 10 in yellow is visible in several frames, including the celebration shots).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is there a player wearing blue shorts?",
+      "gt": "Yes",
+      "pred": "Yes, there are players wearing blue shorts (e.g., the player in the yellow jersey with number 10, visible in multiple frames such as around 17-22 seconds).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Is there a player with number 10 on their jersey?",
+      "gt": "Yes",
+      "pred": "Yes, there is a player with number 10 on their jersey, as seen in the frames where the player in the yellow jersey (e.g., around the 25-30 second mark) displays the number 10.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does a player score a goal in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a player scores a goal. This is evident when the ball enters the net (e.g., around timestamps 5–10 seconds, and confirmed by the subsequent celebration of the player in the yellow jersey with the number 10).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Is the player wearing the yellow shirt also wearing blue shorts?",
+      "gt": "Yes",
+      "pred": "Yes, the player wearing the yellow shirt is also wearing blue shorts, as visible in multiple frames (e.g., frames showing the player in action on the field).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 5,
+      "question": "Is the player wearing the yellow shirt and blue shorts number 10?",
+      "gt": "Yes",
+      "pred": "Yes, the player wearing the yellow shirt and blue shorts is number 10, as seen in multiple frames (e.g., the close - up shots of the player with arms outstretched, where the number 10 is clearly visible on the jersey).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Does the player in yellow shirt, blue short number 21 score goal?",
+      "gt": "No",
+      "pred": "No. The player in the yellow shirt with number 21 does not score a goal. The goal is scored by the player in the yellow shirt with number 10 (evident from the celebration and context, with \"IBRAHIMOVIC\" text appearing during the goal sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a player with number 21 on their jersey?",
+      "gt": "No",
+      "pred": "Yes, a player with number 21 on their jersey is visible in multiple frames (e.g., around the 3rd frame and subsequent frames showing players on the field).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player wearing the yellow shirt have number 21?",
+      "gt": "No",
+      "pred": "No. The player who scores (wearing the yellow shirt and celebrating with arms outstretched) has the number 10 (visible in the close-up frames, e.g., around 23–27 seconds). While there is a player in a yellow shirt with number 21 in some frames (e.g., early in the sequence), the key player in focus (the scorer) is number 10, not 21.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Is the player who scores the goal wearing number 21?",
+      "gt": "No",
+      "pred": "No. The player who scores the goal is wearing a yellow jersey with the number 10 (evident in frames showing the goal celebration and close - ups of the scorer, e.g., around the 25 - 30 second mark). The number 21 is worn by a different player on the field.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Is the player who scores the goal wearing number 10?",
+      "gt": "Yes",
+      "pred": "Yes, the player who scores the goal is wearing number 10. This is verified by the close - up frames of the scoring player (e.g., around the 24 - 28 second mark) showing the number 10 on the yellow jersey.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "question": "Does the player in white shirt number 7 score goal?",
+  "pred": "The video shows a soccer match where a player in a white jersey performs a bicycle kick and scores a goal. According to the Context (events 4, 5, 8, and 17) and the frames, the player who performs this action is identified as Gareth Bale. In the frames showing the celebration (starting around 00:23), the number on the back of his white jersey is clearly visible as **11**, not 7. Another player in a white jersey with the number 7 is visible on the field during the play (e.g., in the background of frames near 00:04 and 00:21), but he is not the one who scores the goal.\n\nEvidence: Frames at 00:23 and 00:24 clearly show the goal-scorer in a white jersey with the number 11 on his back.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "lecture",
+      "description": "The white-shirt player (Gareth Bale) positions himself and jumps for an overhead kick.",
+      "participants": [
+        "white-shirt player"
+      ],
+      "actor": "white-shirt player",
+      "object": "soccer ball",
+      "on_screen_text": [
+        {
+          "text": "GARETH BALE",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "complete",
+      "event_index": 4,
+      "start_time": "00:03",
+      "end_time": "00:04",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "lecture",
+      "description": "The white-shirt player (Gareth Bale) strikes the ball with a bicycle kick in the middle of the box.",
+      "participants": [
+        "white-shirt player"
+      ],
+      "actor": "white-shirt player",
+      "object": "soccer ball",
+      "on_screen_text": [
+        {
+          "text": "GARETH BALE",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "complete",
+      "event_index": 5,
+      "start_time": "00:04",
+      "end_time": "00:05",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "lecture",
+      "description": "The ball flies toward the top right corner of the goal.",
+      "participants": [],
+      "actor": "soccer ball",
+      "object": "soccer ball",
+      "on_screen_text": [
+        {
+          "text": "GARETH BALE",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "complete",
+      "event_index": 6,
+      "start_time": "00:05",
+      "end_time": "00:06",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "lecture",
+      "description": "The ball enters the net in the top right corner for a goal.",
+      "participants": [],
+      "actor": "soccer ball",
+      "object": "soccer ball",
+      "on_screen_text": [
+        {
+          "text": "GARETH BALE",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "complete",
+      "event_index": 8,
+      "start_time": "00:07",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "transition",
+      "description": "The camera angle changes to a close-up side view of Gareth Bale performing the bicycle kick.",
+      "participants": [
+        "white-shirt player"
+      ],
+      "actor": "camera",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "complete",
+      "event_index": 10,
+      "start_time": "00:10",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "lecture",
+      "description": "The white-shirt player (Gareth Bale) completes the kick and lands on the ground.",
+      "participants": [
+        "white-shirt player"
+      ],
+      "actor": "white-shirt player",
+      "object": "soccer ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "complete",
+      "event_index": 11,
+      "start_time": "00:12",
+      "end_time": "00:14",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the white-jersey player (number 11) celebrates a goal by running and shouting",
+      "participants": [
+        "white-jersey player"
+      ],
+      "actor": "white-jersey player",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "BANKING THAT MATTERS",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 17,
+      "start_time": "00:23",
+      "end_time": "00:24",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    }
+  ]
+}

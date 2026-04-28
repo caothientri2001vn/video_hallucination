@@ -1,0 +1,166 @@
+{
+  "question": "Does the player with red and blue shirt number 18 score the goal?",
+  "pred": "The video shows a soccer match where a player in a red and blue striped jersey scores a goal. According to the Context (event 4), a \"red and blue striped jersey player shoots the ball toward the goal\" and it enters the net. To identify the player's number, we look at the frames. Frames at the end of the sequence (e.g., around 00:14) clearly show the back of the scoring player's jersey as he celebrates. The name on the jersey is \"TOWNSEND\" and the number is \"10\", not 18. There is a player with number 18 visible on the field in the same team's colors (seen in frames around 00:04-00:08), but he is not the one who takes the shot or scores.\n\nEvidence: Frames at ~00:14 show the scoring player's jersey with the name \"TOWNSEND\" and number \"10\".\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "control",
+      "description": "a red and blue striped jersey player controls the ball in the penalty area",
+      "participants": [
+        "red and blue striped jersey player"
+      ],
+      "actor": "red and blue striped jersey player",
+      "object": "yellow ball",
+      "outcome": "controlled",
+      "on_screen_text": [
+        {
+          "text": "ANDROS TOWNSEND",
+          "location": "lower_third"
+        },
+        {
+          "text": "TARAFINDAN KANAL",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 3,
+      "start_time": "00:04",
+      "end_time": "00:06",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "shoot",
+      "description": "a red and blue striped jersey player shoots the ball toward the goal",
+      "participants": [
+        "red and blue striped jersey player",
+        "goalkeeper"
+      ],
+      "actor": "red and blue striped jersey player",
+      "object": "yellow ball",
+      "outcome": "shot",
+      "on_screen_text": [
+        {
+          "text": "ANDROS TOWNSEND",
+          "location": "lower_third"
+        },
+        {
+          "text": "TARAFINDAN KANAL",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 4,
+      "start_time": "00:06",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "dive",
+      "description": "the goalkeeper in yellow jersey dives to save the shot",
+      "participants": [
+        "goalkeeper"
+      ],
+      "actor": "goalkeeper",
+      "object": "yellow ball",
+      "outcome": "save attempt",
+      "on_screen_text": [
+        {
+          "text": "ANDROS TOWNSEND",
+          "location": "lower_third"
+        },
+        {
+          "text": "TARAFINDAN KANAL",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 5,
+      "start_time": "00:08",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "goal",
+      "description": "the ball enters the goal net past the diving goalkeeper",
+      "participants": [
+        "yellow ball",
+        "goal net"
+      ],
+      "actor": "yellow ball",
+      "object": "yellow ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "ANDROS TOWNSEND",
+          "location": "lower_third"
+        },
+        {
+          "text": "TARAFINDAN KANAL",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Soccer Match - Goal Scoring Play",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:10",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "red and blue striped jersey players raise their arms in celebration",
+      "participants": [
+        "red and blue striped jersey player",
+        "red and blue striped jersey player"
+      ],
+      "actor": "red and blue striped jersey player",
+      "object": "",
+      "outcome": "celebrating",
+      "on_screen_text": [
+        {
+          "text": "ANDROS TOWNSEND",
+          "location": "lower_third"
+        },
+        {
+          "text": "TARAFINDAN KANAL",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Soccer Match - Goal Celebration",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 7,
+      "start_time": "00:12",
+      "end_time": "00:14",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    }
+  ]
+}

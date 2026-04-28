@@ -1,0 +1,95 @@
+{
+  "question": "Does the player in yellow shirt, blue short number 21 score goal?",
+  "pred": "Evidence: Context states the goal was scored by \"yellow-shirt player (number 10)\" who performed the bicycle kick, while the player with number 21 is visible in frames but not identified as the scorer.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "kick",
+      "description": "The yellow-shirt player (number 10) performs a bicycle kick to strike the ball.",
+      "participants": [
+        "yellow-shirt player (number 10)",
+        "white-shirt players"
+      ],
+      "actor": "yellow-shirt player (number 10)",
+      "object": "soccer ball",
+      "on_screen_text": [
+        {
+          "text": "IBRAHIMOVIC",
+          "location": "lower_third"
+        },
+        {
+          "text": "TARAFTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 3,
+      "start_time": "00:08",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "goal",
+      "description": "The ball enters the net as the goalkeeper dives unsuccessfully.",
+      "participants": [
+        "black-shirt goalkeeper"
+      ],
+      "actor": "black-shirt goalkeeper",
+      "object": "soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "IBRAHIMOVIC",
+          "location": "lower_third"
+        },
+        {
+          "text": "TARAFTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 4,
+      "start_time": "00:10",
+      "end_time": "00:11",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "The yellow-shirt player (number 10) celebrates with arms outstretched after scoring.",
+      "participants": [
+        "yellow-shirt player (number 10)"
+      ],
+      "actor": "yellow-shirt player (number 10)",
+      "on_screen_text": [
+        {
+          "text": "TARAFTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:13",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    }
+  ]
+}

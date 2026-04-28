@@ -1,0 +1,86 @@
+{
+  "question": "Did the blonde woman play exactly three rounds?",
+  "pred": "Evidence: The Context shows the blonde woman (checkered-jumpsuit woman) participating in at least two rounds (\"RING OF FIRE\" and \"DANCING ON THE CEILING\"). While she appears in other segments, there is no clear evidence of her actively playing a third round. The question asks for \"exactly three\" rounds, which cannot be confirmed.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "stand",
+      "description": "Four people stand in front of blue curtain with Charades board visible",
+      "participants": [
+        "checkered-jumpsuit woman",
+        "black-outfit man",
+        "corset-top woman",
+        "suit man"
+      ],
+      "actor": "all",
+      "segment_boundary": "start",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:02",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "on_screen_text",
+      "description": "CHARADES sign visible on the board throughout the segment",
+      "participants": [],
+      "actor": "",
+      "on_screen_text": [
+        {
+          "text": "CHARADES",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 18,
+      "start_time": "00:15",
+      "end_time": "00:30",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "graphic",
+      "description": "end screen appears showing a man in a dark suit with subscription options",
+      "participants": [
+        "man in dark suit"
+      ],
+      "actor": "man in dark suit",
+      "segment_boundary": "end",
+      "segment_label": "end screen",
+      "continuation_hint": "complete",
+      "on_screen_text": [
+        {
+          "text": "SUBSCRIBE NOW",
+          "location": "other"
+        },
+        {
+          "text": "WATCH EPISODES",
+          "location": "other"
+        },
+        {
+          "text": "MORE CLIPS",
+          "location": "other"
+        }
+      ],
+      "event_index": 169,
+      "start_time": "05:50",
+      "end_time": "06:00",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    }
+  ]
+}

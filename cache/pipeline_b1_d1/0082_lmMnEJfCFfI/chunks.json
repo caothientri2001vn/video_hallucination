@@ -1,0 +1,182 @@
+{
+  "video_name": "0082_lmMnEJfCFfI.mp4",
+  "video_duration_sec": 25.933333333333334,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:02",
+          "event_type": "title_card",
+          "description": "Text \"Make ice cream with me\" appears on screen with strawberry, cookie, ice cream cone, and ice cube emojis",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "Make ice cream with me",
+              "location": "title"
+            }
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Make ice cream with me",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:06",
+          "event_type": "scrape",
+          "description": "A hand holding a white spatula scrapes the metallic surface of the tray from right to left",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "metallic tray surface",
+          "segment_boundary": "middle",
+          "segment_label": "Make ice cream with me",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:07",
+          "event_type": "scrape",
+          "description": "The hand continues scraping the tray surface in a different direction",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "metallic tray surface",
+          "segment_boundary": "middle",
+          "segment_label": "Make ice cream with me",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:09",
+          "event_type": "pour",
+          "description": "Strawberries are poured from a metal container onto the metallic tray surface",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "strawberries",
+          "segment_boundary": "middle",
+          "segment_label": "Make ice cream with me",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:09",
+          "local_end": "00:11",
+          "event_type": "pour",
+          "description": "A creamy liquid is poured onto the left side of the metallic tray, forming a circular puddle",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "creamy liquid",
+          "segment_boundary": "middle",
+          "segment_label": "Make ice cream with me",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:11",
+          "local_end": "00:14",
+          "event_type": "place",
+          "description": "Oreo cookies are placed on the creamy liquid using metal tongs, with four cookies arranged on the liquid",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "Oreo cookies",
+          "segment_boundary": "middle",
+          "segment_label": "Make ice cream with me",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:14",
+          "local_end": "00:15",
+          "event_type": "cut",
+          "description": "The hand uses the white spatula to cut strawberries into smaller pieces on the metallic tray",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "strawberries",
+          "segment_boundary": "middle",
+          "segment_label": "Make ice cream with me",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 25.933333333333334,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:26",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:20",
+          "event_type": "spread",
+          "description": "spreads a grayish ice cream mixture across a metal tray using a white spatula",
+          "participants": [],
+          "actor": "hand holding spatula",
+          "object": "gray ice cream mixture",
+          "segment_boundary": "middle",
+          "segment_label": "ice cream preparation",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:20",
+          "local_end": "00:22",
+          "event_type": "open_container",
+          "description": "peels back the foil lid of a pink yogurt cup with Korean text",
+          "participants": [],
+          "actor": "hand holding yogurt cup",
+          "object": "pink yogurt cup",
+          "segment_boundary": "middle",
+          "segment_label": "ice cream preparation",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:22",
+          "local_end": "00:24",
+          "event_type": "pour",
+          "description": "pours pink yogurt from the cup onto the ice cream mixture and strawberries in the tray",
+          "participants": [],
+          "actor": "hand holding yogurt cup",
+          "object": "pink yogurt",
+          "segment_boundary": "middle",
+          "segment_label": "ice cream preparation",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:24",
+          "local_end": "00:26",
+          "event_type": "mix",
+          "description": "uses two white spatulas to fold and combine the ice cream mixture, strawberries, and pink yogurt",
+          "participants": [],
+          "actor": "two hands holding spatulas",
+          "object": "ice cream mixture with strawberries",
+          "segment_boundary": "middle",
+          "segment_label": "ice cream preparation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

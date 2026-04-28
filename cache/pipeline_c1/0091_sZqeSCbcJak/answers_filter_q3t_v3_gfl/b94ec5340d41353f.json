@@ -1,0 +1,152 @@
+{
+  "question": "Did the taller woman win?",
+  "pred": "The video shows a cup-stacking challenge involving three people: a woman in a tan jacket (left), a woman in a yellow top (center), and a man in a blue shirt (right). The woman in the tan jacket is visibly taller than the woman in the yellow top.\n\n1.  **Task Completion:** The woman in the tan jacket (the taller woman) is seen stacking red cups into towers (Event 21, 00:30-00:33).\n2.  **Victory Signal:** Immediately after finishing her stack, she raises both hands in a celebratory gesture (Event 23, 00:36-00:38).\n3.  **Reaction:** The man in blue applauds her performance (Event 26, 00:43-00:45), and both women later give thumbs-up gestures to the camera (Events 47-50, 01:30-01:34), confirming her successful completion of the challenge.\n\nEvidence: Event 23 describes the woman in the beige jacket (the taller woman) raising both hands to indicate completion of her task.\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "stack",
+      "description": "The woman in the beige jacket picks up two red cups from the left side and stacks them on top of other red cups to form small towers",
+      "participants": [
+        "beige-jacket woman",
+        "yellow-tank-top woman",
+        "blue-sweater man"
+      ],
+      "actor": "beige-jacket woman",
+      "object": "red cup",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 21,
+      "start_time": "00:30",
+      "end_time": "00:33",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "hand_raise",
+      "description": "The woman in the beige jacket raises both hands in a gesture indicating completion of her task",
+      "participants": [
+        "beige-jacket woman",
+        "yellow-tank-top woman",
+        "blue-sweater man"
+      ],
+      "actor": "beige-jacket woman",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 23,
+      "start_time": "00:36",
+      "end_time": "00:38",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "applaud",
+      "description": "The man in blue claps his hands while all three participants smile and show positive reactions",
+      "participants": [
+        "beige-jacket woman",
+        "yellow-tank-top woman",
+        "blue-sweater man"
+      ],
+      "actor": "blue-sweater man",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 26,
+      "start_time": "00:43",
+      "end_time": "00:45",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "gesture",
+      "description": "The woman in yellow top raises her right hand and forms a thumbs-up gesture",
+      "participants": [
+        "yellow-top woman",
+        "tan-jacket woman"
+      ],
+      "actor": "yellow-top woman",
+      "segment_boundary": "end",
+      "segment_label": "Cup Stacking",
+      "continuation_hint": "complete",
+      "event_index": 47,
+      "start_time": "01:30",
+      "end_time": "01:32",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "gesture",
+      "description": "The woman in tan jacket raises her right hand and forms a thumbs-up gesture",
+      "participants": [
+        "yellow-top woman",
+        "tan-jacket woman"
+      ],
+      "actor": "tan-jacket woman",
+      "segment_boundary": "end",
+      "segment_label": "Cup Stacking",
+      "continuation_hint": "complete",
+      "event_index": 48,
+      "start_time": "01:30",
+      "end_time": "01:32",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "gesture",
+      "description": "The woman in yellow top holds her thumbs-up gesture while smiling at the camera",
+      "participants": [
+        "yellow-top woman",
+        "tan-jacket woman"
+      ],
+      "actor": "yellow-top woman",
+      "segment_boundary": "end",
+      "segment_label": "Cup Stacking",
+      "continuation_hint": "complete",
+      "event_index": 49,
+      "start_time": "01:31",
+      "end_time": "01:34",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    },
+    {
+      "event_type": "gesture",
+      "description": "The woman in tan jacket holds her thumbs-up gesture while smiling at the camera",
+      "participants": [
+        "yellow-top woman",
+        "tan-jacket woman"
+      ],
+      "actor": "tan-jacket woman",
+      "segment_boundary": "end",
+      "segment_label": "Cup Stacking",
+      "continuation_hint": "complete",
+      "event_index": 50,
+      "start_time": "01:31",
+      "end_time": "01:34",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Game"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "question": "Does the player with black shirt, white stripes number 7 pass the ball to number 12?",
+  "pred": "The provided video frames and Context describe a soccer match involving players in black and white Juventus jerseys. Specifically, the player with the black and white jersey number 12 is shown in possession of the ball (frames at 00:15) and then crossing it into the penalty area. The player with the black and white jersey number 7 (identified as the goal scorer in the Context) then jumps to meet the ball and scores a header (frames from 00:21 to 00:23). There is no evidence of player #7 passing the ball to player #12; rather, player #12 passes the ball to player #7.\n\nEvidence: frames at 00:15 show player #12 in possession of the ball before crossing it to player #7, who scores.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "goal_scored",
+      "description": "The yellow soccer ball moves through the air and enters the goal net while the green-jersey goalkeeper attempts to save it",
+      "participants": [
+        "green-jersey goalkeeper",
+        "blue-jersey defenders"
+      ],
+      "actor": "yellow soccer ball",
+      "object": "yellow soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "middle",
+      "event_index": 7,
+      "start_time": "00:15",
+      "end_time": "00:17",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "run",
+      "description": "Player wearing black and white Juventus jersey with number 7 runs toward the camera with mouth open and arms moving",
+      "participants": [
+        "black and white Juventus players"
+      ],
+      "actor": "black and white Juventus player #7",
+      "object": "",
+      "outcome": "",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "middle",
+      "event_index": 8,
+      "start_time": "00:17",
+      "end_time": "00:18",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "run",
+      "description": "Player wearing black and white Juventus jersey with number 25 runs toward the goal scorer",
+      "participants": [
+        "black and white Juventus players"
+      ],
+      "actor": "black and white Juventus player #25",
+      "object": "",
+      "outcome": "",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "middle",
+      "event_index": 9,
+      "start_time": "00:18",
+      "end_time": "00:19",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "high_five",
+      "description": "Player wearing black and white Juventus jersey with number 7 makes physical contact with teammate wearing number 25's hand",
+      "participants": [
+        "black and white Juventus player #25"
+      ],
+      "actor": "black and white Juventus player #7",
+      "object": "",
+      "outcome": "",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "middle",
+      "event_index": 10,
+      "start_time": "00:19",
+      "end_time": "00:21",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "jump",
+      "description": "Player wearing black and white Juventus jersey with number 7 jumps with one arm raised",
+      "participants": [
+        "black and white Juventus players"
+      ],
+      "actor": "black and white Juventus player #7",
+      "object": "",
+      "outcome": "",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 11,
+      "start_time": "00:21",
+      "end_time": "00:23",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    }
+  ]
+}

@@ -1,0 +1,528 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0103_lArqN_zu5tw.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0103_lArqN_zu5tw.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0103_lArqN_zu5tw",
+    "n_target": 10,
+    "n_sub": 42,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 1.0,
+    "sub_accuracy": 0.9761904761904762
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Did the turtle eat the broccoli first?",
+      "gt": "No",
+      "pred": "No. The turtle first ate the strawberry (evident in early frames, e.g., the second image shows the turtle eating the strawberry). The broccoli was eaten later (e.g., frames showing the turtle consuming broccoli start around the 12th frame and continue).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the turtle eat broccoli at any point?",
+      "gt": "Yes",
+      "pred": "Yes, the turtle ate broccoli. This is evident in multiple frames where the turtle is seen biting, chewing, and consuming the broccoli (e.g., frames showing the turtle with broccoli in its mouth and broken pieces of broccoli on the surface).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the turtle eat the strawberry first?",
+      "gt": "Yes",
+      "pred": "Yes. In the second frame (after the initial setup), the turtle is shown eating the strawberry, indicating it was the first food consumed.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the broccoli eaten last by the turtle?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle eats the strawberry first (evident in the early frames where the strawberry is consumed), then the blueberry, then the cheese, and finally the broccoli (as seen in the later frames where the turtle is eating the broccoli, with the broccoli being the last food item to be consumed).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Did the turtle eat the blueberry second?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle first eats the strawberry (evident in early frames where the strawberry is consumed), then moves to the blueberry (e.g., frames showing the turtle eating the blueberry, such as around the 4th-8th frames in the sequence), confirming the blueberry was eaten second.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the turtle eat a blueberry?",
+      "gt": "Yes",
+      "pred": "Yes, the turtle ate a blueberry. This is visible in the sequence of frames where the turtle approaches and consumes the blueberry (e.g., frames showing the turtle with the blueberry in its mouth and chewing).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the turtle eat the blueberry after the strawberry?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle eats the strawberry first (e.g., in the second frame, the turtle is eating the strawberry), then later eats the blueberry (e.g., in the fourth frame, the turtle is approaching the blueberry, and subsequent frames show it eating it). This sequence confirms the blueberry was eaten after the strawberry.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the turtle eat the blueberry before the pumpkin?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle eats the blueberry first, as seen in the sequence where it interacts with and consumes the blueberry before moving to the pumpkin. For example, the blueberry is being eaten in frames showing the turtle with the blueberry (e.g., around the sequence where the blueberry is in its mouth), and the pumpkin is consumed later (e.g., when the turtle is handling the orange pumpkin piece).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Was the strawberry eaten last?",
+      "gt": "No",
+      "pred": "No. The strawberry was eaten first (e.g., in frame 2, the turtle is biting the strawberry; by frame 3, the strawberry is partially consumed). The broccoli was eaten last (evident in later frames where the turtle is consuming and breaking down the broccoli, with the broccoli being the final item to be eaten).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the turtle eat a strawberry?",
+      "gt": "Yes",
+      "pred": "Yes, the turtle ate a strawberry. This is evident in the sequence where the turtle is seen consuming the strawberry (e.g., the frame showing the turtle with the strawberry in its mouth, and subsequent frames where the strawberry is partially eaten or gone).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the strawberry the last food item eaten by the turtle?",
+      "gt": "No",
+      "pred": "No. The turtle ate the strawberry early in the sequence (e.g., in frames showing the turtle biting the strawberry, with the strawberry then partially consumed in subsequent frames). The last food item eaten by the turtle is broccoli, as seen in the later frames where the turtle is actively breaking down and consuming the broccoli. The strawberry was not the last food item.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the turtle eat the strawberry first?",
+      "gt": "Yes",
+      "pred": "Yes. In the second frame (after the initial setup), the turtle is shown eating the strawberry, indicating it was the first food consumed.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the turtle eat other foods after the strawberry?",
+      "gt": "Yes",
+      "pred": "Yes. After the strawberry, the turtle ate the blueberry (e.g., in frames showing the blueberry being consumed), then the orange cheese, and finally the broccoli. This sequence is visible as the turtle moves from one food item to the next.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Did the turtle eat the broccoli after the strawberry?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle eats the strawberry first (evident in the early frames where the strawberry is being consumed and then reduced), and later eats the broccoli (as seen in the sequence where the turtle interacts with and consumes the broccoli, e.g., from the frame where the turtle is eating the broccoli to the later frames showing it breaking down the broccoli).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the turtle eat broccoli?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle is shown eating broccoli in multiple frames, such as when it is chewing on the broccoli (e.g., timestamps around 11–20 seconds, where broccoli pieces are being consumed and scattered on the surface).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the turtle eat a strawberry?",
+      "gt": "Yes",
+      "pred": "Yes, the turtle ate a strawberry. This is evident in the sequence where the turtle is seen consuming the strawberry (e.g., the frame showing the turtle with the strawberry in its mouth, and subsequent frames where the strawberry is partially eaten or gone).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the broccoli eaten after the strawberry?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle eats the strawberry first (evident in early frames, e.g., when the strawberry is being bitten and reduced), and then later consumes the broccoli (seen in subsequent frames where the broccoli is manipulated and eaten).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the turtle eat the strawberry before the broccoli?",
+      "gt": "Yes",
+      "pred": "Yes, the turtle ate the strawberry before the broccoli. In the sequence, the turtle is first seen eating the strawberry (evident in the second frame and subsequent frames where the strawberry is partially eaten or gone), and later interacts with and eats the broccoli (seen in the later frames where the broccoli is being consumed).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Did the turtle eat the strawberry after the pumpkin?",
+      "gt": "No",
+      "pred": "No. The turtle ate the strawberry before the pumpkin. The strawberry is shown being eaten (and partially consumed) in earlier frames (e.g., the second and third images in the sequence), while the pumpkin is eaten later (e.g., in the seventh image and subsequent frames). Thus, the turtle did not eat the strawberry after the pumpkin.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the turtle eat a strawberry?",
+      "gt": "Yes",
+      "pred": "Yes, the turtle ate a strawberry. This is evident in the sequence where the turtle is seen consuming the strawberry (e.g., the frame showing the turtle with the strawberry in its mouth, and subsequent frames where the strawberry is partially eaten or gone).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the turtle eat a pumpkin?",
+      "gt": "Yes",
+      "pred": "No, the turtle did not eat a pumpkin. The video shows the turtle eating a strawberry, blueberry, an orange block (likely cheese or a similar food item, not pumpkin), and broccoli. There is no pumpkin visible in the video.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the strawberry eaten after the pumpkin?",
+      "gt": "No",
+      "pred": "No. The strawberry was eaten before the pumpkin. The turtle is seen eating the strawberry in early frames (e.g., frame 2 shows the turtle biting the strawberry, and by frame 3 the strawberry is mostly consumed), while the pumpkin is eaten later (e.g., frames 8–11 show the turtle eating the pumpkin).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the turtle eat the pumpkin after the strawberry?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle first eats the strawberry (evident in the sequence where it bites the strawberry), then later consumes the pumpkin (the orange piece), as observed in the progression of the video frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Did it eat the strawberry right before the blueberry?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle is shown eating the strawberry (with the strawberry mostly gone by the third frame), then immediately moves to the blueberry. This sequence confirms the strawberry was eaten right before the blueberry.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the turtle eat a strawberry?",
+      "gt": "Yes",
+      "pred": "Yes, the turtle ate a strawberry. This is evident in the sequence where the turtle is seen consuming the strawberry (e.g., the frame showing the turtle with the strawberry in its mouth, and subsequent frames where the strawberry is partially eaten or gone).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the turtle eat a blueberry?",
+      "gt": "Yes",
+      "pred": "Yes, the turtle ate a blueberry. This is visible in the sequence of frames where the turtle approaches and consumes the blueberry (e.g., frames showing the turtle with the blueberry in its mouth and chewing).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the turtle eat the strawberry immediately before eating the blueberry?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle is seen eating the strawberry (e.g., frames showing the strawberry being bitten, around the sequence starting from the second image), and then immediately moves to eat the blueberry (subsequent frames show the blueberry being bitten after the strawberry is partially consumed). This sequence is visible in the transition between the frames where the strawberry is being eaten and the blueberry becomes the next food item.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the strawberry the first food the turtle ate?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle is first seen eating the strawberry (evident in the second image where the turtle is biting the strawberry, and subsequent images show the strawberry being consumed first before other foods).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Was the blueberry the second food the turtle ate?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle first eats the strawberry, then the blueberry (evident from the sequence where the strawberry is consumed first, followed by the blueberry being eaten).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Did it eat the broccoli right before the blueberry?",
+      "gt": "No",
+      "pred": "No. The turtle eats the blueberry before the broccoli. The blueberry is consumed around 0:04-0:08, while the broccoli is eaten starting around 0:13. Thus, the broccoli was not eaten right before the blueberry.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the turtle eat broccoli?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle is shown eating broccoli in multiple frames, such as when it is chewing on the broccoli (e.g., timestamps around 11–20 seconds, where broccoli pieces are being consumed and scattered on the surface).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the turtle eat a blueberry?",
+      "gt": "Yes",
+      "pred": "Yes, the turtle ate a blueberry. This is visible in the sequence of frames where the turtle approaches and consumes the blueberry (e.g., frames showing the turtle with the blueberry in its mouth and chewing).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the broccoli eaten before the blueberry?",
+      "gt": "No",
+      "pred": "No. The blueberry was eaten before the broccoli. The turtle begins eating the blueberry around the 4th frame (timestamp ~0:04) and continues until the 7th frame, while the broccoli is eaten starting from the 12th frame (timestamp ~0:12).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the broccoli eaten after the blueberry?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle eats the blueberry first (evident in frames where the blueberry is being consumed, e.g., around the sequence showing the blueberry being bit and eaten), and later consumes the broccoli (seen in subsequent frames where the broccoli is being chewed).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Was the strawberry eaten immediately before the blueberry?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle is seen eating the strawberry (e.g., in the second frame, the strawberry is being consumed), and then immediately moves to the blueberry (e.g., in the fourth frame, the turtle is positioned to eat the blueberry). The sequence shows the strawberry is eaten right before the blueberry.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Did the turtle eat the broccoli first, then the blueberry, and finally the strawberry?",
+      "gt": "No",
+      "pred": "No. The turtle first ate the strawberry (e.g., seen in the second frame where it is biting the strawberry), then the blueberry (e.g., in frames showing it consuming the blueberry), then the orange piece (e.g., frames where it eats the orange item), and finally the broccoli (e.g., frames starting from when it begins consuming the broccoli, with the broccoli being the last item eaten). The sequence does not match \"broccoli first, then blueberry, then strawberry.\"",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the turtle eat the broccoli first?",
+      "gt": "No",
+      "pred": "No. The turtle first ate the strawberry (evident in early frames, e.g., the second image shows the turtle eating the strawberry). The broccoli was eaten later (e.g., frames showing the turtle consuming broccoli start around the 12th frame and continue).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the turtle eat the strawberry first?",
+      "gt": "Yes",
+      "pred": "Yes. In the second frame (after the initial setup), the turtle is shown eating the strawberry, indicating it was the first food consumed.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the turtle eat the blueberry second?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle first eats the strawberry (evident in early frames where the strawberry is consumed), then moves to the blueberry (e.g., frames showing the turtle eating the blueberry, such as around the 4th-8th frames in the sequence), confirming the blueberry was eaten second.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the strawberry eaten last?",
+      "gt": "No",
+      "pred": "No. The strawberry was eaten first (e.g., in frame 2, the turtle is biting the strawberry; by frame 3, the strawberry is partially consumed). The broccoli was eaten last (evident in later frames where the turtle is consuming and breaking down the broccoli, with the broccoli being the final item to be eaten).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Was the broccoli eaten last?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle eats the strawberry first, then the blueberry, then the cheese, and finally the broccoli (evident in the sequence where broccoli is the last food item being consumed, with the final frames showing the turtle eating and finishing the broccoli).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "target",
+      "question": "Did the turtle eat the strawberry first, then the blueberry, then the pumpkin, and finally the broccoli?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle first eats the strawberry (evident in frames 2–3), then the blueberry (frames 4–7), then the pumpkin (frames 8–11), and finally the broccoli (frames 12–27).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the turtle eat the strawberry first?",
+      "gt": "Yes",
+      "pred": "Yes. In the second frame (after the initial setup), the turtle is shown eating the strawberry, indicating it was the first food consumed.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the turtle eat the blueberry second?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle first eats the strawberry (evident in early frames where the strawberry is consumed), then moves to the blueberry (e.g., frames showing the turtle eating the blueberry, such as around the 4th-8th frames in the sequence), confirming the blueberry was eaten second.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the turtle eat the pumpkin third?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle ate the strawberry first, then the blueberry, and the pumpkin was the third food it ate (evident from the sequence of actions across the frames: strawberry → blueberry → pumpkin).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the turtle eat the broccoli fourth?",
+      "gt": "Yes",
+      "pred": "To determine the order in which the turtle ate the items, we analyze the sequence of frames:  \n\n1. **Strawberry**: The turtle first interacts with and eats the strawberry (evident in frames showing the strawberry being bitten, e.g., ~0:02–0:03).  \n2. **Blueberry**: Next, the turtle moves to and eats the blueberry (e.g., ~0:04–0:07).  \n3. **Cheese**: After the blueberry, the turtle eats the cheese (e.g., ~0:08–0:11).  \n4. **Broccoli**: Finally, the turtle eats the broccoli (e.g., ~0:12–0:25+).  \n\nThus, the broccoli was eaten fourth.  \n\nYes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Was the broccoli the last food the turtle ate?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle ate the strawberry first, then the blueberry, then the cheese, and finally the broccoli (as seen in the sequence of frames where it consumes the broccoli, with the final frames showing it eating and chewing broccoli before the reset at 30.00s). Thus, broccoli was the last food eaten.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "target",
+      "question": "Was the broccoli eaten last?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle eats the strawberry first, then the blueberry, then the cheese, and finally the broccoli (evident in the sequence where broccoli is the last food item being consumed, with the final frames showing the turtle eating and finishing the broccoli).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the turtle eat broccoli?",
+      "gt": "Yes",
+      "pred": "Yes. The turtle is shown eating broccoli in multiple frames, such as when it is chewing on the broccoli (e.g., timestamps around 11–20 seconds, where broccoli pieces are being consumed and scattered on the surface).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the broccoli the final food item the turtle ate?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows the turtle consuming the strawberry, blueberry, cheese, and finally the broccoli. The final eating actions in the sequence (e.g., frames 22–27) depict the turtle eating and chewing the broccoli, with remnants of broccoli on its face and the surface. The last food item eaten before the reset frame (28th image) is broccoli.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the turtle eat the broccoli fourth?",
+      "gt": "Yes",
+      "pred": "To determine the order in which the turtle ate the items, we analyze the sequence of frames:  \n\n1. **Strawberry**: The turtle first interacts with and eats the strawberry (evident in frames showing the strawberry being bitten, e.g., ~0:02–0:03).  \n2. **Blueberry**: Next, the turtle moves to and eats the blueberry (e.g., ~0:04–0:07).  \n3. **Cheese**: After the blueberry, the turtle eats the cheese (e.g., ~0:08–0:11).  \n4. **Broccoli**: Finally, the turtle eats the broccoli (e.g., ~0:12–0:25+).  \n\nThus, the broccoli was eaten fourth.  \n\nYes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was any food eaten after the broccoli?",
+      "gt": "No",
+      "pred": "No, no food was eaten after the broccoli. The tortoise ate the strawberry, blueberry, and orange pieces before consuming the broccoli. After the broccoli was eaten, there were no remaining food items in the sequence (all other items were already consumed prior to the broccoli). This is evident from the sequence of actions: the strawberry, blueberry, and orange are consumed first (e.g., strawberry in early frames, blueberry next, then orange), followed by the broccoli. No food remains after the broccoli is eaten.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

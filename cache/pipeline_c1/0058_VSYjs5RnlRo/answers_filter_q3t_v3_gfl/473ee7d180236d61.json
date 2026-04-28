@@ -1,0 +1,400 @@
+{
+  "question": "Was there a round where no points were added despite multiple correct answers?",
+  "pred": "The video shows a game of Family Feud where points are accumulated across multiple correct answers within a round.\n\n1.  **Round 1 (Avengers Family Feud):** The scoreboard shows \"THE AMERICAS 0\" and \"THE MANS 83\" at 04:52. During this round, multiple correct answers are revealed, including \"DANCER 60\", \"CIRCUS/ACROBAT 15\", and \"YOGA INSTRUCTOR 3\". The sum of these values (60 + 15 + 3 = 78) plus the initial 5 points from the face-off (seen at 04:10) equals 83, which is the score displayed for THE MANS. Points were correctly added.\n2.  **Round 2 (NEW CONTESTANTS):** The scoreboard starts at \"THE AMERICAS 0\" and \"THE MANS 83\" (04:52). Correct answers revealed include \"CHURCH/FUNERAL 17\" (05:40), \"BATHROOM 16\" (07:43), and \"BED/DURING SEX 9\" (07:30). The sum of these (17 + 16 + 9 = 42) added to the previous score of 83 equals 125, which is the final score shown for THE MANS at 07:30. Points were correctly added.\n\nIn both rounds where multiple correct answers were given, the corresponding points were added to the team's total score. There is no instance where points were not added despite correct answers.\n\nEvidence: a wide shot shows both teams with the scoreboard displaying 'THE AMERICAS 0' and 'THE MANS 83' at 04:52, and later 'THE AMERICAS 0' and 'THE MANS 125' at 07:30 after more correct answers.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "scoreboard_update",
+      "description": "Two large red X marks appear over the CIRCUS/ACROBAT and YOGA INSTRUCTOR answer slots on the scoreboard",
+      "participants": [],
+      "actor": "scoreboard",
+      "object_before": "blue scoreboard with white text showing all answer categories",
+      "object_after": "blue scoreboard with red X marks covering two answer slots",
+      "object_before_pattern": "text and numbers in white on blue background",
+      "object_after_pattern": "red X marks covering CIRCUS/ACROBAT and YOGA INSTRUCTOR slots",
+      "on_screen_text": [
+        {
+          "text": "DANCER 60",
+          "location": "scoreboard"
+        },
+        {
+          "text": "YOGA INSTRUCTOR 3",
+          "location": "scoreboard"
+        },
+        {
+          "text": "CIRCUS/ACROBAT 15",
+          "location": "scoreboard"
+        },
+        {
+          "text": "3",
+          "location": "scoreboard"
+        },
+        {
+          "text": "4",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Family Feud Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 114,
+      "start_time": "04:10",
+      "end_time": "04:15",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Avengers Family Feud"
+    },
+    {
+      "event_type": "graphic",
+      "description": "a wide shot shows both teams with the scoreboard displaying 'THE AMERICAS 0' and 'THE MANS 83'",
+      "participants": [
+        "black-suited man (The Americas)",
+        "black-suited man (The Americas)",
+        "black-suited man (The Americas)",
+        "black-dressed woman (The Mans)",
+        "brown-suited man (The Mans)",
+        "black-suited man (The Mans)"
+      ],
+      "on_screen_text": [
+        {
+          "text": "THE AMERICAS",
+          "location": "lower_third"
+        },
+        {
+          "text": "0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "THE MANS",
+          "location": "lower_third"
+        },
+        {
+          "text": "83",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Family Feud",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 136,
+      "start_time": "04:52",
+      "end_time": "04:56",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 11,
+      "round_index": 1,
+      "segment_label_resolved": "Avengers Family Feud"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "left column second row slot changes from showing number 2 to showing CHURCH/FUNERAL 17",
+      "participants": [],
+      "actor": "game board",
+      "object_before": "blue slot",
+      "object_after": "blue slot with text",
+      "object_before_pattern": "number 2",
+      "object_after_pattern": "CHURCH/FUNERAL 17",
+      "segment_boundary": "middle",
+      "segment_label": "Family Feud",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "scoreboard"
+        },
+        {
+          "text": "2",
+          "location": "scoreboard"
+        },
+        {
+          "text": "4",
+          "location": "scoreboard"
+        },
+        {
+          "text": "5",
+          "location": "scoreboard"
+        },
+        {
+          "text": "BATHROOM 16",
+          "location": "scoreboard"
+        },
+        {
+          "text": "CHURCH/FUNERAL 17",
+          "location": "scoreboard"
+        },
+        {
+          "text": "THE AMERICAS",
+          "location": "banner"
+        }
+      ],
+      "event_index": 157,
+      "start_time": "05:40",
+      "end_time": "05:45",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Avengers Family Feud"
+    },
+    {
+      "event_type": "speak",
+      "description": "the host in black suit speaks while gesturing with right hand",
+      "participants": [
+        "black-suit host"
+      ],
+      "actor": "black-suit host",
+      "segment_boundary": "middle",
+      "segment_label": "Avengers Family Feud",
+      "continuation_hint": "starts_before_chunk",
+      "on_screen_text": [
+        {
+          "text": "THE AMERICAS",
+          "location": "scoreboard"
+        },
+        {
+          "text": "0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "THE MANS",
+          "location": "scoreboard"
+        },
+        {
+          "text": "125",
+          "location": "scoreboard"
+        },
+        {
+          "text": "CHURCH/FUNERAL 17",
+          "location": "game_board"
+        },
+        {
+          "text": "BATHROOM 16",
+          "location": "game_board"
+        },
+        {
+          "text": "BED/DURING SEX",
+          "location": "game_board"
+        },
+        {
+          "text": "Avengers Family Feud",
+          "location": "logo"
+        }
+      ],
+      "event_index": 211,
+      "start_time": "07:30",
+      "end_time": "07:33",
+      "sub_events": [],
+      "subtype_order": 28,
+      "subtype_total": 28,
+      "round_index": 2,
+      "segment_label_resolved": "NEW CONTESTANTS"
+    },
+    {
+      "event_type": "hug",
+      "description": "the leftmost man on THE AMERICAS team embraces the middle man on THE AMERICAS team",
+      "participants": [
+        "leftmost black-suit man",
+        "middle black-suit man"
+      ],
+      "actor": "leftmost black-suit man",
+      "segment_boundary": "middle",
+      "segment_label": "Avengers Family Feud",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "THE AMERICAS",
+          "location": "scoreboard"
+        },
+        {
+          "text": "0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "THE MANS",
+          "location": "scoreboard"
+        },
+        {
+          "text": "125",
+          "location": "scoreboard"
+        }
+      ],
+      "event_index": 218,
+      "start_time": "07:39",
+      "end_time": "07:41",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 2,
+      "segment_label_resolved": "NEW CONTESTANTS"
+    },
+    {
+      "event_type": "hug",
+      "description": "the middle man on THE AMERICAS team embraces the rightmost man on THE AMERICAS team",
+      "participants": [
+        "middle black-suit man",
+        "rightmost black-suit man"
+      ],
+      "actor": "middle black-suit man",
+      "segment_boundary": "middle",
+      "segment_label": "Avengers Family Feud",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "THE AMERICAS",
+          "location": "scoreboard"
+        },
+        {
+          "text": "0",
+          "location": "scoreboard"
+        },
+        {
+          "text": "THE MANS",
+          "location": "scoreboard"
+        },
+        {
+          "text": "125",
+          "location": "scoreboard"
+        }
+      ],
+      "event_index": 219,
+      "start_time": "07:40",
+      "end_time": "07:42",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 2,
+      "segment_label_resolved": "NEW CONTESTANTS"
+    },
+    {
+      "event_type": "celebration",
+      "description": "close-up of THE MANS team members raising arms and clapping",
+      "participants": [
+        "black-dress woman",
+        "brown-suit man",
+        "black-suit man"
+      ],
+      "actor": "black-dress woman, brown-suit man, black-suit man",
+      "segment_boundary": "middle",
+      "segment_label": "Avengers Family Feud",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "THE MANS",
+          "location": "background"
+        }
+      ],
+      "event_index": 221,
+      "start_time": "07:42",
+      "end_time": "07:44",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "NEW CONTESTANTS"
+    },
+    {
+      "event_type": "point",
+      "description": "the host in black suit points specifically to the 'BATHROOM 16' text on the game board",
+      "participants": [
+        "black-suit host"
+      ],
+      "actor": "black-suit host",
+      "segment_boundary": "middle",
+      "segment_label": "Avengers Family Feud",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "BATHROOM 16",
+          "location": "game_board"
+        }
+      ],
+      "event_index": 222,
+      "start_time": "07:43",
+      "end_time": "07:45",
+      "sub_events": [],
+      "subtype_order": 19,
+      "subtype_total": 20,
+      "round_index": 2,
+      "segment_label_resolved": "NEW CONTESTANTS"
+    },
+    {
+      "event_type": "applaud",
+      "description": "Contestants on both teams applaud as the decorated bicycle is brought onto the stage",
+      "participants": [
+        "contestants on both teams"
+      ],
+      "actor": "contestants on both teams",
+      "segment_boundary": "middle",
+      "segment_label": "Avengers Family Feud",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 225,
+      "start_time": "07:47",
+      "end_time": "07:55",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 2,
+      "segment_label_resolved": "NEW CONTESTANTS"
+    },
+    {
+      "event_type": "walk",
+      "description": "A woman in a black dress walks from her podium toward the tandem bicycle",
+      "participants": [
+        "woman in black dress"
+      ],
+      "actor": "woman in black dress",
+      "segment_boundary": "middle",
+      "segment_label": "Avengers Family Feud",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 228,
+      "start_time": "07:55",
+      "end_time": "07:58",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 7,
+      "round_index": 2,
+      "segment_label_resolved": "NEW CONTESTANTS"
+    },
+    {
+      "event_type": "bicycle_examine",
+      "description": "The woman examines the front decorations of the tandem bicycle",
+      "participants": [
+        "woman in black dress"
+      ],
+      "actor": "woman in black dress",
+      "segment_boundary": "middle",
+      "segment_label": "Avengers Family Feud",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 229,
+      "start_time": "07:57",
+      "end_time": "08:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "NEW CONTESTANTS"
+    },
+    {
+      "event_type": "bicycle_demonstrate",
+      "description": "The man continues demonstrating features of the decorated tandem bicycle while gesturing toward its components",
+      "participants": [
+        "man in gray suit with glasses"
+      ],
+      "actor": "man in gray suit with glasses",
+      "segment_boundary": "middle",
+      "segment_label": "Avengers Family Feud",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 230,
+      "start_time": "07:57",
+      "end_time": "08:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "NEW CONTESTANTS"
+    }
+  ]
+}

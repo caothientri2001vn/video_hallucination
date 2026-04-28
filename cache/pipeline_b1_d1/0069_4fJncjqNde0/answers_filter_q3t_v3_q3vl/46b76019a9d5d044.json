@@ -1,0 +1,130 @@
+{
+  "question": "Did the spaghetti-strap short dress appear before the strapless flared mini dress?",
+  "pred": "Evidence: The Context shows the woman first transitions to a black strapless dress with white ruffle (event 3), then transitions to a short black dress with thin straps (spaghetti-strap style) (event 5), and finally appears in a strapless flared mini dress (visible in later frames).\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "pose": 2,
+      "costume_change": 2,
+      "hand_raise": 1
+    },
+    "events": [
+      {
+        "event_type": "pose",
+        "description": "woman stands with right hand on hip while holding black clothing in left arm",
+        "participants": [
+          "woman in light blue top"
+        ],
+        "actor": "woman in light blue top",
+        "on_screen_text": [
+          {
+            "text": "this trend but it's my favourite black dresses",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "fashion showcase",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:02",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "fashion showcase"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "woman raises right hand to make a 'call me' gesture (thumb and pinky extended) while holding black clothing",
+        "participants": [
+          "woman in light blue top"
+        ],
+        "actor": "woman in light blue top",
+        "on_screen_text": [
+          {
+            "text": "this trend but it's my favourite black dresses",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "fashion showcase",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 2,
+        "start_time": "00:02",
+        "end_time": "00:06",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "fashion showcase"
+      },
+      {
+        "event_type": "costume_change",
+        "description": "woman transitions from holding black clothing to wearing a black strapless dress with white ruffled detail",
+        "participants": [
+          "woman"
+        ],
+        "actor": "woman",
+        "object_before": "light blue top and white skirt",
+        "object_after": "black strapless dress with white ruffle",
+        "event_index": 3,
+        "start_time": "00:06",
+        "end_time": "00:07",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "fashion showcase"
+      },
+      {
+        "event_type": "pose",
+        "description": "woman stands in black strapless dress with white ruffled detail, making small posture adjustments",
+        "participants": [
+          "woman in black strapless dress"
+        ],
+        "actor": "woman in black strapless dress",
+        "segment_boundary": "middle",
+        "segment_label": "fashion showcase",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 4,
+        "start_time": "00:07",
+        "end_time": "00:09",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "fashion showcase"
+      },
+      {
+        "event_type": "costume_change",
+        "description": "woman transitions to wearing a short black dress with thin straps",
+        "participants": [
+          "woman"
+        ],
+        "actor": "woman",
+        "object_before": "black strapless dress with white ruffle",
+        "object_after": "short black dress with thin straps",
+        "event_index": 5,
+        "start_time": "00:09",
+        "end_time": "00:10",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "fashion showcase"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "fashion showcase",
+        "event_index_range": [
+          1,
+          5
+        ]
+      }
+    ]
+  }
+}

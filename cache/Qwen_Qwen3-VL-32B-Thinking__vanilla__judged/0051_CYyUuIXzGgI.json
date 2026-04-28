@@ -1,0 +1,381 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0051_CYyUuIXzGgI.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0051_CYyUuIXzGgI.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0051_CYyUuIXzGgI",
+    "n_target": 9,
+    "n_sub": 27,
+    "n_target_missing_pred": 7,
+    "n_sub_missing_pred": 5,
+    "target_accuracy": 0.1111111111111111,
+    "sub_accuracy": 0.4444444444444444
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Did the teacher pull down the middle board?",
+      "gt": "No",
+      "pred": null,
+      "is_correct": null,
+      "judge_raw": null,
+      "note": "no cached prediction"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a teacher appear in the video?",
+      "gt": "No",
+      "pred": "Yes, a teacher (a man in a suit and tie) appears in the video, as seen in multiple frames (e.g., the first frame, and throughout the sequence where he is teaching in front of the blackboard).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did anyone pull down the middle part of a board?",
+      "gt": "No",
+      "pred": "No, there is no action in the video frames where anyone pulls down the middle part of a board. The video primarily shows a lecture setting with the professor interacting with the class and the blackboard, but no such action occurs.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was there any interaction with a board in the video?",
+      "gt": "No",
+      "pred": "Yes, the teacher interacted with the blackboard (e.g., writing on it, as seen in the opening frame at ~0:00 and other frames where the teacher is near the board).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Did the teacher pull up the right board?",
+      "gt": "No",
+      "pred": null,
+      "is_correct": null,
+      "judge_raw": null,
+      "note": "no cached prediction"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a teacher appear in the video?",
+      "gt": "No",
+      "pred": "Yes, a teacher (a man in a suit and tie) appears in the video, as seen in multiple frames (e.g., the first frame, and throughout the sequence where he is teaching in front of the blackboard).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did anyone pull up the right part of a board?",
+      "gt": "No",
+      "pred": "Yes, in the frame around 15.00 - 15.99 seconds, the teacher is seen pulling up the right part of the blackboard.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was there any board manipulation in the video?",
+      "gt": "No",
+      "pred": "Yes, there was board manipulation. The professor is seen writing on the blackboard (e.g., at the 0:00 timestamp).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Was the student in the tan jacket the first to raise their hand to answer?",
+      "gt": "Yes",
+      "pred": null,
+      "is_correct": null,
+      "judge_raw": null,
+      "note": "no cached prediction"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a student wear a tan jacket?",
+      "gt": "Yes",
+      "pred": null,
+      "is_correct": null,
+      "judge_raw": null,
+      "note": "no cached prediction"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the student in the tan jacket raise their hand?",
+      "gt": "Yes",
+      "pred": null,
+      "is_correct": null,
+      "judge_raw": null,
+      "note": "no cached prediction"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the student in the tan jacket the first to raise their hand?",
+      "gt": "Yes",
+      "pred": null,
+      "is_correct": null,
+      "judge_raw": null,
+      "note": "no cached prediction"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Was the student in the red shirt the second to raise their hand to answer?",
+      "gt": "Yes",
+      "pred": "To determine if the student in the red shirt was the second to raise their hand, we analyze the sequence of hand-raising actions in the video:  \n\n1. In the **second frame** (the image with the \"SUBSCRIBE\" overlay), a student (not wearing a red shirt) is seen raising their hand.  \n2. In the **fifth frame** (a close-up of the student in the red shirt), the student in the red shirt raises their hand.  \n\nSince one student raised their hand before the student in the red shirt, the student in the red shirt was the second to raise their hand.  \n\nAnswer: Yes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a student wear a red shirt?",
+      "gt": "Yes",
+      "pred": "Yes. A student wearing a red shirt (or red hoodie) is visible in multiple frames, such as at approximately 0:05, 0:11, 0:19, 0:22, 0:23, 0:26, and others.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the student in the red shirt raise their hand?",
+      "gt": "Yes",
+      "pred": "Yes, the student in the red shirt raised their hand. This is visible in multiple frames, such as around 0:05 (the student holds up a pen, indicating a hand raise) and 0:25 (the student raises their hand with a pen).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the student in the red shirt the second to raise their hand?",
+      "gt": "Yes",
+      "pred": "To determine if the student in the red shirt was the second to raise their hand, we analyze the sequence of hand-raising actions in the video:  \n\n1. In the frame at **0:02**, a student (not wearing a red shirt) is seen raising their hand (left side of the frame).  \n2. In the frame at **0:05**, the student in the red shirt raises their hand.  \n\nSince the student in the red shirt raises their hand after the first student, they are the second to raise their hand.  \n\nAnswer: Yes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Was there only one student who raised their hand to speak?",
+      "gt": "No",
+      "pred": null,
+      "is_correct": null,
+      "judge_raw": null,
+      "note": "no cached prediction"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did any students raise their hands to speak?",
+      "gt": "Yes",
+      "pred": "Yes, a student in a red hoodie raised their hand to speak. This is visible in the frame around the 5th second (e.g., the frame showing the student in the red hoodie with a raised hand).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did more than one student raise their hand?",
+      "gt": "Yes",
+      "pred": "Yes. In the frame at 0:02, multiple students are seen raising their hands.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did exactly two students raise their hands to speak?",
+      "gt": "Yes",
+      "pred": "No. Only one student (wearing a red hoodie) is shown raising their hand to speak. For example, in frame 5 (timestamp ~5 seconds), the student raises their hand, and no other students are seen raising hands in any frame.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Where there two students who raised their hand to speak?",
+      "gt": "Yes",
+      "pred": null,
+      "is_correct": null,
+      "judge_raw": null,
+      "note": "no cached prediction"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a student in a tan jacket raise their hand?",
+      "gt": "Yes",
+      "pred": null,
+      "is_correct": null,
+      "judge_raw": null,
+      "note": "no cached prediction"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a student in a red shirt raise their hand?",
+      "gt": "Yes",
+      "pred": "Yes. A student in a red shirt raised their hand (e.g., visible in frames around 00:05, where the student holds a pen up in a hand-raising gesture).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did exactly two students raise their hands to speak?",
+      "gt": "Yes",
+      "pred": "No. Only one student (wearing a red hoodie) is shown raising their hand to speak. For example, in frame 5 (timestamp ~5 seconds), the student raises their hand, and no other students are seen raising hands in any frame.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Were there total two students who raised their hands to speak?",
+      "gt": "Yes",
+      "pred": "No. Only one student (wearing a red hoodie) is seen raising their hand to speak in the video frames (e.g., at ~0:05, ~0:23, ~0:24, ~3:40, ~3:42, ~3:43). No second student is shown raising their hand.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did students raise their hands to answer?",
+      "gt": "Yes",
+      "pred": "Yes, students raised their hands to answer. For example, a student in a red hoodie is seen raising his hand (evident in frames such as around the 5th frame and other close-up shots of the student).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the total number of students who raised their hands exactly two?",
+      "gt": "Yes",
+      "pred": "Yes, the total number of students who raised their hands was exactly two.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did more than two students raise their hands?",
+      "gt": "No",
+      "pred": "So, let's check the video frames. In the second frame (0:02), there's a \"SUBSCRIBE\" overlay, but looking at the students: in the first frame (0:00), some students are there. Wait, in the third frame (0:03), there's a different classroom. Let's check the frames where students are raising hands. \n\nLooking at frame 0:03: no, the students are seated. Frame 0:04: a student in the front left is raising a hand? Wait, no. Wait, in frame 0:05, the student in the red hoodie is holding a pen up, which might be raising a hand. Then in frame 0:10, the student in red is raising a hand. Let's check all frames for hand-raising.\n\nIn frame 0:02, there's a student on the left side (top left) with a hand up. Then in frame 0:05, the red hoodie student is raising a hand. Are there more? Let's check frame 0:10: the red hoodie student is raising a hand. Is there another student? Let's check frame 0:25 (25th frame), no. Wait, in the first few frames, the second frame (0:02) shows a student with a hand up (the one in the middle left, maybe). Let's count:\n\n- In frame 0:02, there's at least one student raising a hand (the one near the top left, the second row from the top, left side). Then in frame 0:05, the red hoodie student is raising a hand. Are there two or more?\n\nWait, the question is \"Did more than two students raise their hands?\" Let's check all frames where hands are raised.\n\nLooking at frame 0:02: the student in the middle left (third row from top, left side) has their hand up. Then frame 0:05: the red hoodie student (center) is raising a hand. Any others? Let's check frame 0:10: same red hoodie student. Frame 0:20: the red hoodie student is raising a hand. Are there other students with hands up?\n\nIn frame 0:02, there's a student on the left side, middle, with a hand up. Let's check the first frame (0:00): no hands raised. Frame 0:01: the second frame (0:02) shows a \"SUBSCRIBE\" overlay, and in the background, there's a student with a hand up (the one in the middle left, the row where the student is in a blue shirt, their hand is up). Then in frame 0:05, the red hoodie student is raising a hand. So that's two students. Wait, are there more?\n\nWait, in frame 0:02, let's count the hands: the student in the middle left (the one with a blue shirt, third row from top) has their hand up. Then in frame 0:05, the red hoodie student has their hand up. Are there any others? Let's check frame 0:10: the red hoodie student is raising a hand, and maybe another? No, the other students seem to be looking, not raising hands. So only two students? Wait, the question is \"more than two\".\n\nWait, let's check again. In frame 0:02, the \"SUBSCRIBE\" overlay is there, but the students: in the left section, there's a student with their hand up (the one in the row where the student in the blue shirt is). Then, in frame 0:05, the red hoodie student is raising a hand. Are there any other students raising hands? Let's check frame 0:25 (25th frame, which is a different frame), no. Let's check frame 0:03: no hands. Frame 0:04: no. Frame 0:05: one student (red hoodie). Frame 0:10: one student (red hoodie). Frame 0:20: red hoodie. So maybe only two students? But wait, in frame 0:02, is that one or two?\n\nWait, the second frame (0:02) shows a \"SUBSCRIBE\" box, but in the background, there's a student on the left side (the row with the woman in a white top) and a student with a hand up. Let's count: in frame 0:02, the left side, there's a student (the one in the blue shirt, third row from top) with their hand up, and then maybe another? Let's check the image: the second frame (0:02) has students in the left section",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Was the student who tapped his friend's shoulder to celebrate the one who raised his hand first?",
+      "gt": "Yes",
+      "pred": null,
+      "is_correct": null,
+      "judge_raw": null,
+      "note": "no cached prediction"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a student celebrate with his friend?",
+      "gt": "Yes",
+      "pred": "No, there is no direct evidence in the video frames of a student celebrating with his friend. The frames depict a classroom setting with students listening, taking notes, and interacting with the professor, but no scenes of celebration between students.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the student in the tan jacket raise their hand first?",
+      "gt": "Yes",
+      "pred": null,
+      "is_correct": null,
+      "judge_raw": null,
+      "note": "no cached prediction"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the student who celebrated with his friend the first to raise their hand?",
+      "gt": "Yes",
+      "pred": "To determine if the student who celebrated with his friend was the first to raise his hand, we analyze the video frames:  \n\n1. **Identify the student**: The student in the red hoodie (who later celebrates with a friend) is the focus.  \n2. **Hand-raising sequence**: In frames showing the class (e.g., around 0:25–0:27), this student is the first to raise his hand when the teacher poses a question. No other students are seen raising hands before him in the visible shots.  \n3. **Verification**: The sequence shows him raising his hand, then being called on by the teacher, confirming he was the first.  \n\nYes, the student who celebrated with his friend was the first to raise his hand.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "target",
+      "question": "Did the student who raised his hand second later tap his friend's shoulder to celebrate?",
+      "gt": "No",
+      "pred": null,
+      "is_correct": null,
+      "judge_raw": null,
+      "note": "no cached prediction"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the student in the red shirt raise their hand second?",
+      "gt": "Yes",
+      "pred": "To determine if the student in the red shirt raised their hand second, we analyze the sequence of hand-raising actions in the video:  \n\n1. **First hand-raising**: In the second frame (0:02), multiple students have their hands raised (e.g., a student in the middle-left section of the classroom).  \n2. **Second hand-raising**: In the fifth frame (0:05), the student in the red shirt raises their hand.  \n\nSince the student in the red shirt raises their hand *after* at least one other student (in the 0:02 frame), they are the **second** to raise their hand.  \n\nAnswer: Yes, the student in the red shirt raised their hand second (evident in the sequence between 0:02 and 0:05).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a student celebrate with his friend?",
+      "gt": "Yes",
+      "pred": "No, there is no direct evidence in the video frames of a student celebrating with his friend. The frames depict a classroom setting with students listening, taking notes, and interacting with the professor, but no scenes of celebration between students.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the student in the red shirt celebrate with his friend?",
+      "gt": "No",
+      "pred": "No, the video does not show the student in the red shirt celebrating with his friend. The interactions depicted involve the student engaging with the teacher (e.g., raising a hand, speaking) but no celebration with a friend is visible in any frame.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

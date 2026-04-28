@@ -1,0 +1,174 @@
+{
+  "question": "Is it correct that the gold-medal team swam in lane 4?",
+  "pred": "The video shows the Men's 4 x 100m Medley Relay final. According to the on-screen graphics and the final results, the United States team (USA) won the gold medal, while Great Britain (GBR) won the silver medal. The lane assignments shown at the start of the race and during the event confirm that the United States swam in lane 5 and Great Britain swam in lane 4. Therefore, the gold-medal team (USA) swam in lane 5, not lane 4.\n\nEvidence: On-screen graphics at 04:15 and 08:40 show the United States (gold medal) in lane 5 and Great Britain (silver medal) in lane 4.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "graphic",
+      "description": "On-screen graphic displays \"GREAT BRITAIN\" for lane 4",
+      "participants": [],
+      "actor": "on-screen graphic",
+      "on_screen_text": [
+        {
+          "text": "1:50.27",
+          "location": "timer"
+        },
+        {
+          "text": "200M",
+          "location": "other"
+        },
+        {
+          "text": "WR SPLIT 1:50.76",
+          "location": "lower_third"
+        },
+        {
+          "text": "OMEGA",
+          "location": "logo"
+        },
+        {
+          "text": "Rio2016",
+          "location": "banner"
+        },
+        {
+          "text": "GREAT BRITAIN",
+          "location": "lower_third"
+        },
+        {
+          "text": "GBR",
+          "location": "name_tag"
+        },
+        {
+          "text": "4",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "200M Swimming Race",
+      "continuation_hint": "complete",
+      "event_index": 70,
+      "start_time": "03:11",
+      "end_time": "03:12",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 13,
+      "round_index": 2,
+      "segment_label_resolved": "Swimming Race"
+    },
+    {
+      "event_type": "graphic",
+      "description": "On-screen graphic showing 'UNITED STATES' with American flag appearing over lane 5",
+      "participants": [],
+      "actor": "on-screen graphic",
+      "object": "graphic",
+      "on_screen_text": [
+        {
+          "text": "UNITED STATES",
+          "location": "banner"
+        },
+        {
+          "text": "1",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Swimming Competition - Freestyle Race",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 87,
+      "start_time": "04:15",
+      "end_time": "04:20",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 13,
+      "round_index": 2,
+      "segment_label_resolved": "Swimming Race"
+    },
+    {
+      "event_type": "graphic",
+      "description": "On-screen graphic showing 'USA' with lane number 5 indicator appearing",
+      "participants": [],
+      "actor": "on-screen graphic",
+      "object": "graphic",
+      "on_screen_text": [
+        {
+          "text": "5 USA",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Swimming Competition - Freestyle Race",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 88,
+      "start_time": "04:15",
+      "end_time": "04:20",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 13,
+      "round_index": 2,
+      "segment_label_resolved": "Swimming Race"
+    },
+    {
+      "event_type": "graphic",
+      "description": "On-screen graphic showing 'GBR +1.01' behind USA appearing",
+      "participants": [],
+      "actor": "on-screen graphic",
+      "object": "graphic",
+      "on_screen_text": [
+        {
+          "text": "4 GBR +1.01",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Swimming Competition - Freestyle Race",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 89,
+      "start_time": "04:16",
+      "end_time": "04:20",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 13,
+      "round_index": 2,
+      "segment_label_resolved": "Swimming Race"
+    },
+    {
+      "event_type": "on_screen_text",
+      "description": "Text appears showing event name and rankings: United States of America (gold), Great Britain (silver), Australia (bronze)",
+      "participants": [],
+      "actor": "on_screen_text",
+      "on_screen_text": [
+        {
+          "text": "Men's 4 x 100m Medley Relay",
+          "location": "lower_third"
+        },
+        {
+          "text": "VICTORY CEREMONY",
+          "location": "lower_third"
+        },
+        {
+          "text": "UNITED STATES OF AMERICA",
+          "location": "lower_third"
+        },
+        {
+          "text": "GREAT BRITAIN",
+          "location": "lower_third"
+        },
+        {
+          "text": "AUSTRALIA",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Men's 4 x 100m Medley Relay Victory Ceremony",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 189,
+      "start_time": "07:57",
+      "end_time": "08:00",
+      "sub_events": [],
+      "subtype_order": 16,
+      "subtype_total": 16,
+      "round_index": 2,
+      "segment_label_resolved": "Swimming Race"
+    }
+  ]
+}

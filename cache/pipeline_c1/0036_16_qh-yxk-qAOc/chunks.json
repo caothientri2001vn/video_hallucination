@@ -1,0 +1,343 @@
+{
+  "video_name": "0036_16_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 18.833333333333332,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:01",
+          "event_type": "transition",
+          "description": "black screen with TRABZONSPOR KANALI logo visible",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "segment_boundary": "start",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "starts_before_chunk",
+          "on_screen_text": [
+            {
+              "text": "TRABZONSPOR KANALI",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "00:01",
+          "local_end": "00:02",
+          "event_type": "transition",
+          "description": "transition from black screen to soccer match field view",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "TRABZONSPOR KANALI",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:05",
+          "event_type": "dribble",
+          "description": "player in white jersey with red shorts controls the ball near the penalty area",
+          "participants": [
+            "blue-shirt player",
+            "white-shirt player"
+          ],
+          "actor": "white-shirt player (SABITZER #7)",
+          "object": "white soccer ball",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "TRABZONSPOR KANALI",
+              "location": "logo"
+            },
+            {
+              "text": "SABITZER",
+              "location": "graphic"
+            }
+          ]
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:08",
+          "event_type": "prepare_shot",
+          "description": "player in white jersey with red shorts positions himself for a shot on goal",
+          "participants": [
+            "blue-shirt defender",
+            "goalkeeper"
+          ],
+          "actor": "white-shirt player (SABITZER #7)",
+          "object": "white soccer ball",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "TRABZONSPOR KANALI",
+              "location": "logo"
+            },
+            {
+              "text": "SABITZER",
+              "location": "graphic"
+            },
+            {
+              "text": "pepsi",
+              "location": "banner"
+            },
+            {
+              "text": "FOR THE LOVE OF IT",
+              "location": "banner"
+            }
+          ]
+        },
+        {
+          "local_start": "00:08",
+          "local_end": "00:10",
+          "event_type": "shot",
+          "description": "player in white jersey with red shorts strikes the ball toward the goal",
+          "participants": [
+            "blue-shirt defenders",
+            "goalkeeper"
+          ],
+          "actor": "white-shirt player (SABITZER #7)",
+          "object": "white soccer ball",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "TRABZONSPOR KANALI",
+              "location": "logo"
+            },
+            {
+              "text": "SABITZER",
+              "location": "graphic"
+            }
+          ]
+        },
+        {
+          "local_start": "00:09",
+          "local_end": "00:11",
+          "event_type": "dive",
+          "description": "goalkeeper in black uniform dives to attempt to save the shot",
+          "participants": [
+            "white-shirt player",
+            "blue-shirt defenders"
+          ],
+          "actor": "goalkeeper",
+          "object": "white soccer ball",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "TRABZONSPOR KANALI",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "00:10",
+          "local_end": "00:12",
+          "event_type": "score",
+          "description": "ball enters the goal net past the diving goalkeeper",
+          "participants": [
+            "white-shirt player",
+            "blue-shirt defenders",
+            "goalkeeper"
+          ],
+          "actor": "white soccer ball",
+          "object": "white soccer ball",
+          "outcome": "scored",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "TRABZONSPOR KANALI",
+              "location": "logo"
+            },
+            {
+              "text": "SABITZER",
+              "location": "graphic"
+            }
+          ]
+        },
+        {
+          "local_start": "00:12",
+          "local_end": "00:14",
+          "event_type": "celebration",
+          "description": "player in white jersey with red shorts raises arms in celebration after scoring",
+          "participants": [
+            "blue-shirt defenders",
+            "teammates"
+          ],
+          "actor": "white-shirt player (SABITZER #7)",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "TRABZONSPOR KANALI",
+              "location": "logo"
+            },
+            {
+              "text": "SABITZER",
+              "location": "graphic"
+            }
+          ]
+        },
+        {
+          "local_start": "00:13",
+          "local_end": "00:15",
+          "event_type": "reaction",
+          "description": "teammates begin moving toward the scorer to celebrate",
+          "participants": [
+            "white-shirt players"
+          ],
+          "actor": "white-shirt teammate",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "TRABZONSPOR KANALI",
+              "location": "logo"
+            },
+            {
+              "text": "SABITZER",
+              "location": "graphic"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 18.833333333333332,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:19",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:16",
+          "event_type": "celebration",
+          "description": "player in white jersey with Red Bull logo and red shorts runs toward camera with mouth open in celebration, wearing headband and captain's armband on left arm",
+          "participants": [
+            "white-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "TARAFSPOR KANALI",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "00:16",
+          "local_end": "00:17",
+          "event_type": "celebration",
+          "description": "player in white jersey continues running toward camera while celebrating with mouth open, showing excitement",
+          "participants": [
+            "white-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "TARAFSPOR KANALI",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "00:17",
+          "local_end": "00:18",
+          "event_type": "hand_raise",
+          "description": "player in white jersey raises both hands above shoulder level while running and celebrating",
+          "participants": [
+            "white-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "TARAFSPOR KANALI",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "00:18",
+          "local_end": "00:19",
+          "event_type": "celebration",
+          "description": "player in white jersey transitions to arms outstretched position while continuing to celebrate with mouth open",
+          "participants": [
+            "white-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "TARAFSPOR KANALI",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "00:18",
+          "local_end": "00:19",
+          "event_type": "celebration",
+          "description": "second player in white jersey with Red Bull logo becomes visible in background, running and celebrating with mouth open",
+          "participants": [
+            "second white-jersey player"
+          ],
+          "actor": "second white-jersey player",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "TARAFSPOR KANALI",
+              "location": "logo"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

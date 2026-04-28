@@ -1,0 +1,501 @@
+{
+  "video_name": "0092_woF9wpGDDW0.mp4",
+  "video_duration_sec": 72.03333333333333,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:05",
+          "event_type": "on_screen_text",
+          "description": "Text overlay 'Last Color Standing Wins! Justice vs Susannah' is displayed on screen",
+          "participants": [],
+          "actor": null,
+          "on_screen_text": [
+            {
+              "text": "Last Color Standing Wins!",
+              "location": "banner"
+            },
+            {
+              "text": "Justice vs Susannah",
+              "location": "banner"
+            }
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Last Color Standing Wins",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:08",
+          "event_type": "spin",
+          "description": "Woman in red shirt spins the colorful wheel with her right hand",
+          "participants": [
+            "blue-shirt man",
+            "red-shirt woman"
+          ],
+          "actor": "red-shirt woman",
+          "object": "colorful wheel",
+          "on_screen_text": [
+            {
+              "text": "WIN",
+              "location": "wheel"
+            },
+            {
+              "text": "LOSE A TURN",
+              "location": "wheel"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Last Color Standing Wins",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:10",
+          "event_type": "rotate",
+          "description": "Colorful wheel continues rotating after being spun",
+          "participants": [
+            "blue-shirt man",
+            "red-shirt woman"
+          ],
+          "actor": null,
+          "object": "colorful wheel",
+          "on_screen_text": [
+            {
+              "text": "1",
+              "location": "wheel"
+            },
+            {
+              "text": "2",
+              "location": "wheel"
+            },
+            {
+              "text": "3",
+              "location": "wheel"
+            },
+            {
+              "text": "4",
+              "location": "wheel"
+            },
+            {
+              "text": "5",
+              "location": "wheel"
+            },
+            {
+              "text": "6",
+              "location": "wheel"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Last Color Standing Wins",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:08",
+          "local_end": "00:12",
+          "event_type": "place",
+          "description": "Man in blue shirt picks up a pink cup from the front-left position of the pink cup array and places it on the back row",
+          "participants": [
+            "blue-shirt man",
+            "red-shirt woman"
+          ],
+          "actor": "blue-shirt man",
+          "cover": "pink cup",
+          "hidden": "uncertain",
+          "segment_boundary": "middle",
+          "segment_label": "Last Color Standing Wins",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:10",
+          "local_end": "00:15",
+          "event_type": "place",
+          "description": "Woman in red shirt picks up a yellow cup from the front-left position of the yellow cup array and places it on the back row",
+          "participants": [
+            "blue-shirt man",
+            "red-shirt woman"
+          ],
+          "actor": "red-shirt woman",
+          "cover": "yellow cup",
+          "hidden": "uncertain",
+          "segment_boundary": "middle",
+          "segment_label": "Last Color Standing Wins",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 30.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:30",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:19",
+          "event_type": "cup_arrangement",
+          "description": "The woman in red adjusts the rightmost stack of yellow cups, lowering the height of the stack",
+          "participants": [
+            "blue-shirt man",
+            "red-shirt woman"
+          ],
+          "actor": "red-shirt woman",
+          "object": "yellow cup",
+          "segment_boundary": "middle",
+          "segment_label": "Cup Stacking Game",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:19",
+          "local_end": "00:22",
+          "event_type": "hand_raise",
+          "description": "The man in blue raises his right hand (pointing finger) toward the spinning wheel while speaking",
+          "participants": [
+            "blue-shirt man",
+            "red-shirt woman"
+          ],
+          "actor": "blue-shirt man",
+          "segment_boundary": "middle",
+          "segment_label": "Cup Stacking Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:22",
+          "local_end": "00:24",
+          "event_type": "spin",
+          "description": "The man in blue spins the colorful wheel clockwise with his right hand",
+          "participants": [
+            "blue-shirt man",
+            "red-shirt woman"
+          ],
+          "actor": "blue-shirt man",
+          "object": "colorful wheel",
+          "segment_boundary": "middle",
+          "segment_label": "Cup Stacking Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:24",
+          "local_end": "00:26",
+          "event_type": "wheel_stop",
+          "description": "The spinning wheel slows and stops with the pointer on a pink segment",
+          "participants": [
+            "blue-shirt man",
+            "red-shirt woman"
+          ],
+          "actor": "colorful wheel",
+          "object_before": "spinning wheel",
+          "object_after": "stationary wheel",
+          "segment_boundary": "middle",
+          "segment_label": "Cup Stacking Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:26",
+          "local_end": "00:29",
+          "event_type": "cup_arrangement",
+          "description": "The woman in red adjusts the middle-left stack of pink cups, reducing the stack height by removing the top cup",
+          "participants": [
+            "blue-shirt man",
+            "red-shirt woman"
+          ],
+          "actor": "red-shirt woman",
+          "object": "pink cup",
+          "segment_boundary": "middle",
+          "segment_label": "Cup Stacking Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:28",
+          "local_end": "00:30",
+          "event_type": "cup_arrangement",
+          "description": "The man in blue adjusts the leftmost stack of pink cups, placing a cup on top of the stack",
+          "participants": [
+            "blue-shirt man",
+            "red-shirt woman"
+          ],
+          "actor": "blue-shirt man",
+          "object": "pink cup",
+          "segment_boundary": "middle",
+          "segment_label": "Cup Stacking Game",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 2,
+      "chunk_start_sec": 30.0,
+      "chunk_end_sec": 45.0,
+      "chunk_start_mmss": "00:30",
+      "chunk_end_mmss": "00:45",
+      "events": [
+        {
+          "local_start": "00:30",
+          "local_end": "00:32",
+          "event_type": "point",
+          "description": "The woman in red shirt points at the spinning wheel with her right index finger",
+          "participants": [
+            "blue-shirt man",
+            "red-shirt woman"
+          ],
+          "actor": "red-shirt woman",
+          "segment_boundary": "middle",
+          "segment_label": "Wheel Game with Cup Challenge",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:32",
+          "local_end": "00:34",
+          "event_type": "game",
+          "description": "The colorful wheel continues spinning with visible numbers and text sections",
+          "participants": [
+            "blue-shirt man",
+            "red-shirt woman"
+          ],
+          "actor": "wheel",
+          "segment_boundary": "middle",
+          "segment_label": "Wheel Game with Cup Challenge",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:34",
+          "local_end": "00:36",
+          "event_type": "point",
+          "description": "The man in blue shirt points at the spinning wheel with his right index finger",
+          "participants": [
+            "blue-shirt man",
+            "red-shirt woman"
+          ],
+          "actor": "blue-shirt man",
+          "segment_boundary": "middle",
+          "segment_label": "Wheel Game with Cup Challenge",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:36",
+          "local_end": "00:38",
+          "event_type": "manipulate",
+          "description": "The woman in red shirt lifts the top yellow cup from the rightmost stack of yellow cups",
+          "participants": [
+            "red-shirt woman"
+          ],
+          "actor": "red-shirt woman",
+          "object": "yellow cup",
+          "cover": "yellow cup",
+          "hidden": "uncertain: pink cup",
+          "segment_boundary": "middle",
+          "segment_label": "Wheel Game with Cup Challenge",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:38",
+          "local_end": "00:40",
+          "event_type": "manipulate",
+          "description": "The woman places the yellow cup onto another stack of yellow cups on the right side of the table",
+          "participants": [
+            "red-shirt woman"
+          ],
+          "actor": "red-shirt woman",
+          "object": "yellow cup",
+          "cover": "yellow cup",
+          "hidden": "uncertain: pink cup",
+          "segment_boundary": "middle",
+          "segment_label": "Wheel Game with Cup Challenge",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:40",
+          "local_end": "00:42",
+          "event_type": "manipulate",
+          "description": "The woman lifts another yellow cup from the rightmost stack and places it on a different stack",
+          "participants": [
+            "red-shirt woman"
+          ],
+          "actor": "red-shirt woman",
+          "object": "yellow cup",
+          "cover": "yellow cup",
+          "hidden": "uncertain: pink cup",
+          "segment_boundary": "middle",
+          "segment_label": "Wheel Game with Cup Challenge",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:42",
+          "local_end": "00:45",
+          "event_type": "manipulate",
+          "description": "The woman continues rearranging yellow cups, moving them from rightmost stack to form new arrangements",
+          "participants": [
+            "red-shirt woman"
+          ],
+          "actor": "red-shirt woman",
+          "object": "yellow cup",
+          "cover": "yellow cup",
+          "hidden": "uncertain: pink cup",
+          "segment_boundary": "middle",
+          "segment_label": "Wheel Game with Cup Challenge",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 3,
+      "chunk_start_sec": 45.0,
+      "chunk_end_sec": 60.0,
+      "chunk_start_mmss": "00:45",
+      "chunk_end_mmss": "01:00",
+      "events": [
+        {
+          "local_start": "00:48",
+          "local_end": "00:51",
+          "event_type": "place",
+          "description": "blue-shirt man picks up a pink cup from the leftmost stack of pink cups and places it on top of the rightmost yellow cup stack",
+          "participants": [
+            "blue-shirt man",
+            "red-shirt woman"
+          ],
+          "actor": "blue-shirt man",
+          "object": "pink cup",
+          "segment_boundary": "middle",
+          "segment_label": "Cup Stacking Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:51",
+          "local_end": "00:52",
+          "event_type": "place",
+          "description": "blue-shirt man picks up another pink cup from the middle pink cup stack and places it on top of the rightmost yellow cup stack",
+          "participants": [
+            "blue-shirt man",
+            "red-shirt woman"
+          ],
+          "actor": "blue-shirt man",
+          "object": "pink cup",
+          "segment_boundary": "middle",
+          "segment_label": "Cup Stacking Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:52",
+          "local_end": "00:53",
+          "event_type": "spin",
+          "description": "red-shirt woman reaches out with her right hand and spins the colorful wheel clockwise",
+          "participants": [
+            "blue-shirt man",
+            "red-shirt woman"
+          ],
+          "actor": "red-shirt woman",
+          "object": "colorful wheel",
+          "segment_boundary": "middle",
+          "segment_label": "Cup Stacking Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:53",
+          "local_end": "00:56",
+          "event_type": "rotation",
+          "description": "colorful wheel spins rapidly, showing different colored sections with numbers and text",
+          "participants": [
+            "blue-shirt man",
+            "red-shirt woman"
+          ],
+          "actor": "colorful wheel",
+          "object": "colorful wheel",
+          "object_before": "stationary colorful wheel",
+          "object_after": "spinning colorful wheel",
+          "segment_boundary": "middle",
+          "segment_label": "Cup Stacking Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:56",
+          "local_end": "00:58",
+          "event_type": "stop",
+          "description": "colorful wheel slows down and comes to a stop on a red section with the number 3",
+          "participants": [
+            "blue-shirt man",
+            "red-shirt woman"
+          ],
+          "actor": "colorful wheel",
+          "object": "colorful wheel",
+          "object_before": "spinning colorful wheel",
+          "object_after": "stationary colorful wheel",
+          "segment_boundary": "middle",
+          "segment_label": "Cup Stacking Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:58",
+          "local_end": "01:00",
+          "event_type": "arrange",
+          "description": "red-shirt woman adjusts the yellow cups on the right side of the table, rearranging their stack configuration by moving the middle yellow cup stack to the right",
+          "participants": [
+            "blue-shirt man",
+            "red-shirt woman"
+          ],
+          "actor": "red-shirt woman",
+          "object": "yellow cups",
+          "segment_boundary": "middle",
+          "segment_label": "Cup Stacking Game",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 4,
+      "chunk_start_sec": 60.0,
+      "chunk_end_sec": 72.03333333333333,
+      "chunk_start_mmss": "01:00",
+      "chunk_end_mmss": "01:12",
+      "events": [
+        {
+          "local_start": "01:00",
+          "local_end": "01:04",
+          "event_type": "graphic",
+          "description": "Text \"Winner: Justice!\" appears as a banner overlay on the screen",
+          "participants": [
+            "blue-shirt man",
+            "red-shirt woman"
+          ],
+          "actor": "graphic",
+          "on_screen_text": [
+            {
+              "text": "Winner: Justice!",
+              "location": "banner"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Cup Stacking Game",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:07",
+          "local_end": "01:12",
+          "event_type": "gesture",
+          "description": "The man in the light blue shirt gives a thumbs-up gesture with both hands",
+          "participants": [
+            "blue-shirt man"
+          ],
+          "actor": "blue-shirt man",
+          "segment_boundary": "end",
+          "segment_label": "Cup Stacking Game",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

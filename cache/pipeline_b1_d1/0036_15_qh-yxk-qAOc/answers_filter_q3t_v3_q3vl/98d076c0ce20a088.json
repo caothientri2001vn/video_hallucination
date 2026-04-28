@@ -1,0 +1,177 @@
+{
+  "question": "When the dark blue team plays against white and black team, does the player with dark blue shirt number 19 score the goal?",
+  "pred": "Evidence: Frames show blue jersey player #19 celebrating immediately after the ball enters the net, with visual sequence indicating he made contact with the ball just before it went into goal.\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "game",
+      "description": "blue jersey player prepares and executes kick sending ball into penalty area",
+      "participants": [
+        "blue-jersey players",
+        "black-and-white-striped players"
+      ],
+      "actor": "blue-jersey player",
+      "object": "white soccer ball",
+      "outcome": "kicked",
+      "on_screen_text": [
+        {
+          "text": "TIMxTUTTI MESSAGGI",
+          "location": "banner"
+        },
+        {
+          "text": "tescoma",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 2,
+      "start_time": "00:01",
+      "end_time": "00:03",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "game",
+      "description": "multiple players jump to contest the airborne ball in the penalty area",
+      "participants": [
+        "blue-jersey players",
+        "black-and-white-striped players"
+      ],
+      "actor": "black-and-white-striped player",
+      "object": "white soccer ball",
+      "outcome": "contested",
+      "on_screen_text": [
+        {
+          "text": "TIMxTUTTI MESSAGGI",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 3,
+      "start_time": "00:03",
+      "end_time": "00:06",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "game",
+      "description": "black-and-white-striped player heads the ball toward the goal",
+      "participants": [
+        "black-and-white-striped player",
+        "goalkeeper"
+      ],
+      "actor": "black-and-white-striped player",
+      "object": "white soccer ball",
+      "outcome": "headed",
+      "on_screen_text": [
+        {
+          "text": "TIMxTUTTI MESSAGGI",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 4,
+      "start_time": "00:06",
+      "end_time": "00:09",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "game",
+      "description": "goalkeeper in green jersey dives to attempt save",
+      "participants": [
+        "goalkeeper"
+      ],
+      "actor": "goalkeeper",
+      "object": "white soccer ball",
+      "outcome": "dive attempt",
+      "on_screen_text": [
+        {
+          "text": "TIMxTUTTI MESSAGGI",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 5,
+      "start_time": "00:08",
+      "end_time": "00:11",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "game",
+      "description": "ball enters the goal net past the diving goalkeeper",
+      "participants": [
+        "goalkeeper",
+        "black-and-white-striped player"
+      ],
+      "actor": "white soccer ball",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "TIMxTUTTI MESSAGGI",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:09",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "blue jersey players raise arms and begin celebrating the goal",
+      "participants": [
+        "blue-jersey players"
+      ],
+      "actor": "blue-jersey player",
+      "outcome": "celebration",
+      "on_screen_text": [
+        {
+          "text": "MAICON",
+          "location": "on-screen graphic"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 7,
+      "start_time": "00:11",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    }
+  ]
+}

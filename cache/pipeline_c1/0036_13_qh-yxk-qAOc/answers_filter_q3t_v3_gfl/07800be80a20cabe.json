@@ -1,0 +1,120 @@
+{
+  "question": "When the white team plays against the red team, does the player with white shirt, white pant number 10 score the goal into the red shirt goalkeeper?",
+  "pred": "The video shows a soccer match between a team in white jerseys and a team in maroon/red jerseys. The player in the white jersey with number 10 (identified as \"white-jersey player #10\" in the Context) receives the ball, controls it, and takes a shot. The goalkeeper, wearing a green jersey, dives to attempt a save, but the ball enters the net.\n\nEvidence: Context events 4 through 7 describe white-jersey player #10 receiving the ball and the ball subsequently entering the goal net as the green-jersey goalkeeper lies on the ground.\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "game",
+      "description": "player in white jersey (number 10) receiving and controlling the ball",
+      "participants": [
+        "white-jersey player #10",
+        "maroon-jersey players"
+      ],
+      "actor": "white-jersey player #10",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "TARAF'TAN KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 4,
+      "start_time": "00:03",
+      "end_time": "00:05",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "game",
+      "description": "white-jersey player #10 passing the ball toward the goal area",
+      "participants": [
+        "white-jersey player #10",
+        "maroon-jersey players"
+      ],
+      "actor": "white-jersey player #10",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "TARAF'TAN KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 5,
+      "start_time": "00:05",
+      "end_time": "00:07",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "game",
+      "description": "goalkeeper in green diving to attempt save",
+      "participants": [
+        "green-jersey goalkeeper"
+      ],
+      "actor": "green-jersey goalkeeper",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "TARAF'TAN KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:06",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "game",
+      "description": "ball entering goal net as goalkeeper lies on ground",
+      "participants": [
+        "green-jersey goalkeeper",
+        "white-jersey players"
+      ],
+      "actor": "white-jersey players",
+      "object": "white ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "TARAF'TAN KANALI",
+          "location": "logo"
+        },
+        {
+          "text": "LACAZETTE",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 7,
+      "start_time": "00:07",
+      "end_time": "00:09",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    }
+  ]
+}

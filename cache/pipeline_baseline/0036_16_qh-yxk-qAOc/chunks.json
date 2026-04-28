@@ -1,0 +1,234 @@
+{
+  "video_name": "0036_16_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 18.833333333333332,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "gemini-3-flash-preview",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:01",
+          "event_type": "transition",
+          "description": "The video transitions from a black screen to a live football match broadcast.",
+          "participants": [
+            "white-shirt player",
+            "blue-shirt players"
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Football Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:01",
+          "local_end": "00:03",
+          "event_type": "game",
+          "description": "The white-shirt player (number 7) controls the ball with his chest near the edge of the penalty area.",
+          "participants": [
+            "white-shirt player"
+          ],
+          "actor": "white-shirt player",
+          "object": "football",
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:03",
+          "local_end": "00:05",
+          "event_type": "game",
+          "description": "The white-shirt player (number 7) strikes the ball with his right foot towards the goal.",
+          "participants": [
+            "white-shirt player"
+          ],
+          "actor": "white-shirt player",
+          "object": "football",
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:06",
+          "event_type": "game",
+          "description": "The ball flies through the air towards the top right corner of the goal.",
+          "participants": [
+            "white-shirt player",
+            "black-shirt goalkeeper"
+          ],
+          "object": "football",
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:07",
+          "event_type": "game",
+          "description": "The black-shirt goalkeeper dives to his left but cannot reach the ball.",
+          "participants": [
+            "black-shirt goalkeeper"
+          ],
+          "actor": "black-shirt goalkeeper",
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:08",
+          "event_type": "game",
+          "description": "The ball hits the back of the net in the top right corner, scoring a goal.",
+          "participants": [
+            "white-shirt player",
+            "black-shirt goalkeeper"
+          ],
+          "object": "football",
+          "outcome": "scored",
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:08",
+          "local_end": "00:10",
+          "event_type": "celebration",
+          "description": "The white-shirt player (number 7) runs towards the corner flag to celebrate his goal.",
+          "participants": [
+            "white-shirt player"
+          ],
+          "actor": "white-shirt player",
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:10",
+          "local_end": "00:12",
+          "event_type": "transition",
+          "description": "The camera angle changes to a close-up replay of the goal from behind the goal line.",
+          "participants": [
+            "white-shirt player",
+            "blue-shirt players"
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:12",
+          "local_end": "00:14",
+          "event_type": "game",
+          "description": "The replay shows the white-shirt player (number 7) striking the ball from a different angle.",
+          "participants": [
+            "white-shirt player"
+          ],
+          "actor": "white-shirt player",
+          "object": "football",
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:14",
+          "local_end": "00:15",
+          "event_type": "game",
+          "description": "The replay shows the ball entering the top corner of the net past the diving goalkeeper.",
+          "participants": [
+            "black-shirt goalkeeper"
+          ],
+          "actor": "black-shirt goalkeeper",
+          "object": "football",
+          "outcome": "scored",
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 18.833333333333332,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:19",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:16",
+          "event_type": "game",
+          "description": "The white-shirt player heads the ball toward the goal while surrounded by blue-shirt defenders.",
+          "participants": [
+            "white-shirt player",
+            "blue-shirt player",
+            "blue-shirt player",
+            "blue-shirt player",
+            "blue-shirt player"
+          ],
+          "actor": "white-shirt player",
+          "object": "white ball",
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:16",
+          "local_end": "00:17",
+          "event_type": "game",
+          "description": "The white ball enters the goal past the diving goalkeeper.",
+          "participants": [
+            "goalkeeper"
+          ],
+          "actor": "white ball",
+          "object": "white ball",
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:17",
+          "local_end": "00:19",
+          "event_type": "celebration",
+          "description": "The white-shirt player slides on his knees and shouts in celebration after scoring.",
+          "participants": [
+            "white-shirt player",
+            "white-shirt player"
+          ],
+          "actor": "white-shirt player",
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

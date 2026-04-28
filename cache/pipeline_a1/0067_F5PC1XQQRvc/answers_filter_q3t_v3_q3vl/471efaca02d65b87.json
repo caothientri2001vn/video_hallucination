@@ -1,0 +1,74 @@
+{
+  "question": "Did the white off-shoulder dress appear between the red embroidered dress and the pink satin dress?",
+  "pred": "Evidence: The Context shows a sequence where the woman transitions from a dark red dress (event 8) to a white off-the-shoulder dress (event 9), and then from the white dress to a pink strapless satin dress (event 10).\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "transition",
+      "description": "The scene transitions from the woman in a pink dress to her wearing a dark red dress with floral details.",
+      "participants": [
+        "dark-red-dress woman"
+      ],
+      "actor": "dark-red-dress woman",
+      "object_before": "pink dress",
+      "object_after": "red dress",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Top 10 Dresses of 2024",
+      "continuation_hint": "complete",
+      "event_index": 8,
+      "start_time": "00:07",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Top 10 Dresses of 2024"
+    },
+    {
+      "event_type": "transition",
+      "description": "The scene transitions from the woman in a dark red dress to her wearing a white off-the-shoulder dress.",
+      "participants": [
+        "white-dress woman"
+      ],
+      "actor": "white-dress woman",
+      "object_before": "red dress",
+      "object_after": "white dress",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Top 10 Dresses of 2024",
+      "continuation_hint": "complete",
+      "event_index": 9,
+      "start_time": "00:08",
+      "end_time": "00:09",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Top 10 Dresses of 2024"
+    },
+    {
+      "event_type": "transition",
+      "description": "The scene transitions from the woman in a white dress to her wearing a pink strapless satin dress.",
+      "participants": [
+        "pink-satin-dress woman"
+      ],
+      "actor": "pink-satin-dress woman",
+      "object_before": "white dress",
+      "object_after": "pink dress",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Top 10 Dresses of 2024",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 10,
+      "start_time": "00:09",
+      "end_time": "00:09",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Top 10 Dresses of 2024"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "video_name": "0066_38oHDDB6DFE.mp4",
+  "video_duration_sec": 11.066666666666666,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "gemini-3-flash-preview",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 11.066666666666666,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:11",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:02",
+          "event_type": "place",
+          "description": "A person uses a black tool to place a black substance onto the top-left coin.",
+          "participants": [
+            "person"
+          ],
+          "actor": "person",
+          "object": "black substance",
+          "on_screen_text": [],
+          "segment_boundary": "start",
+          "segment_label": "Coin Coating",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:04",
+          "event_type": "place",
+          "description": "A person uses a yellow tool to place a yellow substance onto the top-right coin.",
+          "participants": [
+            "person"
+          ],
+          "actor": "person",
+          "object": "yellow substance",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Coin Coating",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:04",
+          "local_end": "00:06",
+          "event_type": "place",
+          "description": "A person uses a pink tool to place a pink substance onto the middle-left coin.",
+          "participants": [
+            "person"
+          ],
+          "actor": "person",
+          "object": "pink substance",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Coin Coating",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:08",
+          "event_type": "place",
+          "description": "A person uses a blue tool to place a blue substance onto the middle-right coin.",
+          "participants": [
+            "person"
+          ],
+          "actor": "person",
+          "object": "blue substance",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Coin Coating",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:08",
+          "local_end": "00:11",
+          "event_type": "place",
+          "description": "A person uses a green tool to place a green substance onto the bottom-left coin.",
+          "participants": [
+            "person"
+          ],
+          "actor": "person",
+          "object": "green substance",
+          "on_screen_text": [],
+          "segment_boundary": "end",
+          "segment_label": "Coin Coating",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

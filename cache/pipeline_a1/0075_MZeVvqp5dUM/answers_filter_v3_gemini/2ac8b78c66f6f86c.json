@@ -1,0 +1,154 @@
+{
+  "question": "Does the man steal candies from the woman wearing a green T-shirt?",
+  "pred": "The video shows a woman in a green T-shirt (identified as the green-shirt woman) interacting with a gumball machine and money. According to the Context, a man (described as the black-beanie man or striped-shirt man) grabs the gumball machine and reaches for the money she is holding. While the man takes the gumball machine and money, there is no evidence in the Context or the frames that he steals individual candies from her.\n\nEvidence: event 218 states \"the black-beanie man (thief) grabs the gumball machine and reaches for the money\" from the green-headband woman.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "gesture",
+      "description": "the green-headband woman holds a large stack of money and looks amazed",
+      "participants": [
+        "green-headband woman"
+      ],
+      "actor": "green-headband woman",
+      "object": "money",
+      "segment_boundary": "middle",
+      "segment_label": "Gumball Machine",
+      "continuation_hint": "middle",
+      "event_index": 217,
+      "start_time": "07:27",
+      "end_time": "07:29",
+      "sub_events": [],
+      "subtype_order": 50,
+      "subtype_total": 55,
+      "round_index": 4,
+      "segment_label_resolved": "popcorn challenge"
+    },
+    {
+      "event_type": "gesture",
+      "description": "the black-beanie man (thief) grabs the gumball machine and reaches for the money",
+      "participants": [
+        "black-beanie man",
+        "green-headband woman"
+      ],
+      "actor": "black-beanie man",
+      "object": "gumball machine",
+      "segment_boundary": "middle",
+      "segment_label": "Gumball Machine",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 218,
+      "start_time": "07:29",
+      "end_time": "07:30",
+      "sub_events": [],
+      "subtype_order": 51,
+      "subtype_total": 55,
+      "round_index": 4,
+      "segment_label_resolved": "popcorn challenge"
+    },
+    {
+      "event_type": "react",
+      "description": "the green-shirt woman reacts with shock while holding money",
+      "participants": [
+        "green-shirt woman",
+        "striped-shirt man"
+      ],
+      "actor": "green-shirt woman",
+      "object": "money",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Gumball Machine Heist",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 219,
+      "start_time": "07:30",
+      "end_time": "07:31",
+      "sub_events": [],
+      "subtype_order": 76,
+      "subtype_total": 83,
+      "round_index": 4,
+      "segment_label_resolved": "popcorn challenge"
+    },
+    {
+      "event_type": "game",
+      "description": "the striped-shirt man holds a gumball machine and money while laughing",
+      "participants": [
+        "striped-shirt man",
+        "green-shirt woman"
+      ],
+      "actor": "striped-shirt man",
+      "object": "gumball machine",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Gumball Machine Heist",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 220,
+      "start_time": "07:30",
+      "end_time": "07:32",
+      "sub_events": [],
+      "subtype_order": 11,
+      "subtype_total": 12,
+      "round_index": 4,
+      "segment_label_resolved": "popcorn challenge"
+    },
+    {
+      "event_type": "gesture",
+      "description": "the green-shirt woman throws money into the air",
+      "participants": [
+        "green-shirt woman"
+      ],
+      "actor": "green-shirt woman",
+      "object": "money",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Gumball Machine Heist",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 221,
+      "start_time": "07:31",
+      "end_time": "07:33",
+      "sub_events": [],
+      "subtype_order": 52,
+      "subtype_total": 55,
+      "round_index": 4,
+      "segment_label_resolved": "popcorn challenge"
+    },
+    {
+      "event_type": "walk",
+      "description": "the striped-shirt man walks out of the frame to the right",
+      "participants": [
+        "striped-shirt man"
+      ],
+      "actor": "striped-shirt man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Gumball Machine Heist",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 222,
+      "start_time": "07:32",
+      "end_time": "07:34",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 4,
+      "segment_label_resolved": "popcorn challenge"
+    },
+    {
+      "event_type": "react",
+      "description": "the green-shirt woman cries with her hands raised",
+      "participants": [
+        "green-shirt woman"
+      ],
+      "actor": "green-shirt woman",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Gumball Machine Heist",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 223,
+      "start_time": "07:33",
+      "end_time": "07:36",
+      "sub_events": [],
+      "subtype_order": 77,
+      "subtype_total": 83,
+      "round_index": 4,
+      "segment_label_resolved": "popcorn challenge"
+    }
+  ]
+}

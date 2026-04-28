@@ -1,0 +1,94 @@
+{
+  "question": "Did the cream ribbed knit top appear between wearing the sweater and changing the skirt?",
+  "pred": "The video shows a woman performing an outfit transition. At the beginning of the sequence, she is wearing a cream ribbed knit top (also described as a yellow top in Context) and black shorts. She then puts on a light blue sweater over this top (event 6, 00:06-00:08). After adjusting the sweater, she lifts a white tiered skirt (event 8, 00:10-00:12) and transitions into wearing it over her shorts (event 9, 00:12-00:14). Throughout the period after she puts on the sweater and before/during the skirt change, the cream ribbed knit top remains visible underneath the cropped blue sweater.\n\nEvidence: Frames from 00:08 to 00:14 show the cream ribbed knit top visible beneath the blue sweater as the woman adjusts her outfit and puts on the white tiered skirt.\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "transition",
+      "description": "the white-shirt woman transitions into wearing the blue sweater over the yellow top",
+      "participants": [
+        "white-shirt woman"
+      ],
+      "actor": "white-shirt woman",
+      "object_before": "yellow top and black shorts",
+      "object_after": "blue sweater and black shorts",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Outfit Transition",
+      "continuation_hint": "complete",
+      "event_index": 6,
+      "start_time": "00:06",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Transition"
+    },
+    {
+      "event_type": "gesture",
+      "description": "the white-shirt woman adjusts the blue sweater",
+      "participants": [
+        "white-shirt woman"
+      ],
+      "actor": "white-shirt woman",
+      "object": "blue sweater",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Outfit Transition",
+      "continuation_hint": "complete",
+      "event_index": 7,
+      "start_time": "00:08",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Transition"
+    },
+    {
+      "event_type": "lift",
+      "description": "the white-shirt woman lifts a white tiered skirt",
+      "participants": [
+        "white-shirt woman"
+      ],
+      "actor": "white-shirt woman",
+      "object": "white tiered skirt",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Outfit Transition",
+      "continuation_hint": "complete",
+      "event_index": 8,
+      "start_time": "00:10",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Transition"
+    },
+    {
+      "event_type": "transition",
+      "description": "the white-shirt woman transitions into wearing the white tiered skirt over the black shorts",
+      "participants": [
+        "white-shirt woman"
+      ],
+      "actor": "white-shirt woman",
+      "object_before": "blue sweater and black shorts",
+      "object_after": "blue sweater and white tiered skirt",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Outfit Transition",
+      "continuation_hint": "complete",
+      "event_index": 9,
+      "start_time": "00:12",
+      "end_time": "00:14",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Transition"
+    }
+  ]
+}

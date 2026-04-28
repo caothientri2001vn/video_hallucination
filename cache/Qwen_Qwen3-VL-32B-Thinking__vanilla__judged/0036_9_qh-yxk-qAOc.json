@@ -1,0 +1,174 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0036_9_qh-yxk-qAOc.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0036_9_qh-yxk-qAOc.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0036_9_qh-yxk-qAOc",
+    "n_target": 4,
+    "n_sub": 12,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.75,
+    "sub_accuracy": 0.9166666666666666
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Does the player with black shirt, white stripes number 7 score a header?",
+      "gt": "Yes",
+      "pred": "Yes. The player with the black shirt, white stripes, and number 7 (C. Ronaldo) scores a header. This is evident in the sequence where he jumps, makes contact with the ball in the air, and the ball enters the goal (e.g., frames showing the header action, the ball crossing the goal line, and subsequent celebration).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the player with number 7 wear a black shirt with white stripes?",
+      "gt": "Yes",
+      "pred": "Yes. The player with number 7 (C. Ronaldo) is shown wearing a black shirt with white stripes in multiple frames, including during the header sequence and celebrations (e.g., frames showing his jersey with “RONALDO” and the black/white design).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player with number 7 score a header?",
+      "gt": "Yes",
+      "pred": "Yes, the player with number 7 (C. Ronaldo) scores a header. This is evident in the sequence where he jumps to head the ball (e.g., frames showing him airborne with the ball near his head, followed by the ball entering the goal and his celebration).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the player with number 7 score a goal in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the player with number 7 (Ronaldo) scores a goal. This is evident from the sequence where he heads the ball into the net (around the frames showing the ball entering the goal and subsequent celebration).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Does the player with black shirt, white stripes number 12 score a header?",
+      "gt": "No",
+      "pred": "No. The player who scores the header is the one wearing the black and white shirt with the number 7 (C. Ronaldo, as indicated by the text “C. RONALDO” in multiple frames and the number 7 on the back of the jersey during celebrations). The player with the number 12 is not the one scoring the header.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the player with number 12 wear a black shirt with white stripes?",
+      "gt": "Yes",
+      "pred": "Yes. In the second frame (around 0:02-0:03), the player with number 12 is wearing a black shirt with white stripes on the sleeves.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player with number 12 score a header?",
+      "gt": "No",
+      "pred": "No. The player with number 12 is not the one scoring a header; the goal (header) is scored by the player in the black and white jersey (C. Ronaldo, as indicated by text in the video and jersey number 7), not the player with number 12.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the player with number 12 score any goal in the video?",
+      "gt": "No",
+      "pred": "No, the player with number 12 does not score any goal in the video. The goals shown are scored by other players (e.g., the player with \"RONALDO\" and number 7 is seen celebrating a goal, and other sequences show goals by different players). The player with number 12 is not identified as the scorer in any of the goal-related frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Does the player with black shirt, white stripes number 12 pass the ball to number 7?",
+      "gt": "Yes",
+      "pred": "No. The player with the black shirt, white stripes, and number 12 (seen in the second frame) does not pass the ball to number 7. In the sequence, the third frame shows a player in a blue jersey (opponent) kicking the ball, not the number 12 player. The subsequent action involves number 7 (C. Ronaldo) later in the sequence, but there is no visible pass from number 12 to number 7. \n\nCiting frames: The second frame (timestamp ~2s) shows number 12 near the ball, but the third frame (timestamp ~3s) shows a blue-jerseyed opponent making contact with the ball, not number 12 passing to number 7.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the player with number 12 wear a black shirt with white stripes?",
+      "gt": "Yes",
+      "pred": "Yes. In the second frame (around 0:02-0:03), the player with number 12 is wearing a black shirt with white stripes on the sleeves.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player with number 12 pass the ball to the player with number 7?",
+      "gt": "Yes",
+      "pred": "No, the player with number 12 does not pass the ball to the player with number 7. The video shows the player with number 12 (in black and white) in early frames, but the sequence leading to the goal (involving the player with number 7, C. Ronaldo) does not show a pass from number 12 to number 7. Instead, the goal action involves a cross or set piece where Ronaldo heads the ball (evident in frames 15-22), with no direct pass from number 12 to number 7 observed in the provided frames.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the player with number 7 receive a pass in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the player with number 7 (C. Ronaldo) receives a pass. This is evident in the sequence where the ball is passed into the penalty area, and he subsequently heads it toward the goal (roughly around the 10 - 15 second mark in the video sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Does the player with black shirt, white stripes number 7 pass the ball to number 12?",
+      "gt": "No",
+      "pred": "No. The video shows the player with the black shirt, white stripes, and number 7 (C. Ronaldo) taking a shot on goal and scoring, not passing the ball to the player with number 12. The sequence of events (from the frames) focuses on Ronaldo’s shot, goal, and celebration, with no indication of a pass to number 12.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the player with number 7 wear a black shirt with white stripes?",
+      "gt": "Yes",
+      "pred": "Yes. The player with number 7 (C. Ronaldo) is shown wearing a black shirt with white stripes in multiple frames, including during the header sequence and celebrations (e.g., frames showing his jersey with “RONALDO” and the black/white design).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player with number 7 pass the ball to the player with number 12?",
+      "gt": "No",
+      "pred": "No. The video shows the player with number 7 (C. Ronaldo) taking a shot on goal and scoring, not passing the ball to the player with number 12. There is no visible pass from number 7 to number 12 in the provided frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the player with number 7 pass the ball to anyone in the video?",
+      "gt": "No",
+      "pred": "No, the player with number 7 (Cristiano Ronaldo) does not pass the ball to anyone in the video. The sequence shows him heading the ball towards the goal (e.g., frames 14-20 show the header and goal), followed by celebration. There are no frames where he passes the ball to a teammate.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

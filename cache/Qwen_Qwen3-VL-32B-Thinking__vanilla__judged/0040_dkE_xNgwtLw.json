@@ -1,0 +1,174 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0040_dkE_xNgwtLw.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0040_dkE_xNgwtLw.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0040_dkE_xNgwtLw",
+    "n_target": 4,
+    "n_sub": 12,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.5,
+    "sub_accuracy": 0.5833333333333334
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Does the dress first change from black to red?",
+      "gt": "Yes",
+      "pred": "No. The first dress change shown is from a black outfit (e.g., frame 2) to a pink dress (e.g., frame 7), not to red. The red hair is consistent, but the dress color changes first to pink (7 seconds) before other transformations.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the dress change from black to red?",
+      "gt": "Yes",
+      "pred": "Yes, the dress changes from black to red. For example, in frame 2 the performer is in a black dress, and in frame 20 the performer is in a red dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is the change from black to red the first change that happens?",
+      "gt": "Yes",
+      "pred": "No. The first change in the sequence is from a black leather jacket and black dress (0:02) to a strapless black dress with gold detailing (0:04), which is a style change within the same color (black), not a change to red. The first color change to a new hue (pink) occurs later (0:07), and the red in the video refers to the performer’s hair, not a dress color change. Thus, the \"black to red\" change is not the first change.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the dress undergo any color change?",
+      "gt": "Yes",
+      "pred": "No, the dress does not undergo any color change. The performer changes into different dresses (e.g., black with gold patterns, pink with black trim, leopard print, red with black details), but there is no instance of a single dress changing color. This is evident from the sequence of frames where each new dress is distinct in design and color (e.g., frame 4 shows a black dress, frame 7 shows a pink dress, frame 10 shows a leopard-print dress, frame 18 shows a red dress).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "After the dress change to red from black, does it change to blue?",
+      "gt": "No",
+      "pred": "No. After the dress changes from black (e.g., in frames 2, 4, 5, 6) to red (e.g., in frames 4, 5, 6, 10), it does not change to blue. The next visible dress change is to a pink dress (e.g., frame 7) and later a leopard-print dress (e.g., frame 10), with no blue dress appearing in the sequence.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the dress change from black to red?",
+      "gt": "Yes",
+      "pred": "Yes, the dress changes from black to red. For example, in frame 2 the performer is in a black dress, and in frame 20 the performer is in a red dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the dress change to blue at any point?",
+      "gt": "No",
+      "pred": "No, the dress does not change to blue at any point in the video. All visible dresses worn by the performer are in colors such as black, pink, leopard print, and white; there is no frame showing a blue dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "After the dress becomes red, does it change to a different color?",
+      "gt": "Yes",
+      "pred": "Yes. After the dress becomes red (e.g., seen in frames showing the woman in",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "After the dress change to red from black, does it change to black?",
+      "gt": "Yes",
+      "pred": "No. After the dress change to red from black (e.g., the red dress with black belt seen around timestamp 20), there is no subsequent change to a black dress. The following outfits include a white dress (e.g., timestamps 23–28) and other colors, but no black dress appears after the red one.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the dress change from black to red?",
+      "gt": "Yes",
+      "pred": "Yes, the dress changes from black to red. For example, in frame 2 the performer is in a black dress, and in frame 20 the performer is in a red dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the dress change from red to black?",
+      "gt": "Yes",
+      "pred": "No. The woman's hair is red, but the dress does not change from red to black. The dresses shown in the video are black, pink, leopard print, and white (e.g., frames 2–5 show black dresses; frames 6–8 show pink dresses; frames 9–12 show leopard print; frames 22–24 show a white dress). There is no sequence where the dress transitions from red to black, as the dress color never includes red (the red element is the woman’s hair, not the dress).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the change to black occur after the change from black to red?",
+      "gt": "Yes",
+      "pred": "So, let's try to figure out this question. The question is: \"Does the change to black occur after the change from black to red?\" First, I need to understand what's being referred to. Let's look at the video frames.\n\nIn the video, there's a part where the woman changes outfits. Let's check the sequence. For example, in frame 3 (the second image), she's in a black leather jacket and black dress. Then in frame 4, she's in a black dress with gold patterns. Then frame 5, she's in a black dress. Then frame 6, she's in a pink dress. Wait, but the question is about \"change to black\" and \"change from black to red\".\n\nWait, maybe the colors of the outfits. Let's check the timestamps. Let's list the key outfit changes:\n\n- Frame 2: Black leather jacket, black dress (red hair)\n- Frame 4: Black dress with gold (red hair)\n- Frame 5: Black dress (red hair)\n- Frame 7: Pink dress (red hair)\n- Frame 10: Leopard print dress (red hair)\n- Etc.\n\nWait, the question is about \"change to black\" (so becoming black) and \"change from black to red\" (changing from black to red). But in the video, the woman's hair is red throughout. So maybe the \"black\" refers to the outfit color.\n\nLet's check the sequence of outfit colors:\n\n1. Frame 2: black jacket + black dress\n2. Frame 4: black dress with gold\n3. Frame 5: black dress\n4. Frame 7: pink dress\n5. Frame 10: leopard print (which is brown and black, but not solid black)\n6. Frame 19: pink dress with black details\n7. Etc.\n\nWait, maybe the \"change from black to red\" is not about the outfit. Wait, the hair is red, so maybe the \"change to black\" refers to something else. Wait, maybe the lighting or background? Let's check the background.\n\nLooking at the frames, the background is mostly pink with purple lights. But the question is about \"change to black\" and \"change from black to red\". Let's check the timestamps.\n\nWait, the question might be about the color changes in the video. Let's see if there's a part where the color changes from black to red, and then to black. But I need to find if the \"change to black\" happens after the \"change from black to red\".\n\nAlternatively, maybe it's about the dress colors. Let's check when the dress is black, then changes to red, then to black? But in the video, the woman's dress changes: from black (frame 2), then to black with gold (frame 4), then to black (frame 5), then to pink (frame 7), then to leopard (frame 10), then to pink (frame 19), then to pink with black (frame 20), then to pink (frame 21), then to white (frame 22, 23, etc.).\n\nWait, maybe the \"change from black to red\" is not a direct change, but the question is asking if the change to black (i.e., the dress becoming black) occurs after the change from black to red (i.e., the dress changing from black to red). But in the video, the dress colors don't go from black to red. The hair is red, but the dress is not red.\n\nWait, perhaps the question is referring to the color of the lighting or the stage. Let's check the first frame: the stage is pink with purple lights. Then, in some frames, the lighting might change. But the question is a bit unclear. Let's re-read it: \"Does the change to black occur after the change from black to red?\"\n\nWait, maybe it's about the sequence of color changes in the video. Let's check the frames for color changes.\n\nLooking at the video, there's a part where the woman is in a black dress (frame 2), then she changes to a pink dress (frame 7). So that's a change from black to pink. Then later, she changes to a leopard print (frame 10). So no red dress. The hair is red, but the dress is not red.\n\nAlternatively, maybe the \"change to black\" is a color transition in the video, like the background. Let's check the last few frames. The last frames (24-27) show the \"AGT\" logo with gold and purple, then the \"SUBSCRIBE\" etc. But the question is about black.\n\nWait, maybe the user made a mistake, but we have to go by the video. Let's check if there's a part where the color changes from black to red, and then to black.\n\nLooking at",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "After the dress change to red from black, does it change to yellow?",
+      "gt": "No",
+      "pred": "No. The dress changes from black to red (as seen in frames like the 17th image), but there is no subsequent change to a yellow dress in any of the provided video frames. The sequence shows transitions to pink, leopard print, and later white dresses, with no yellow dress appearing.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the dress change from black to red?",
+      "gt": "Yes",
+      "pred": "Yes, the dress changes from black to red. For example, in frame 2 the performer is in a black dress, and in frame 20 the performer is in a red dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the dress change to yellow at any point?",
+      "gt": "No",
+      "pred": "So, let's check the video frames. The question is whether the dress changes to yellow. Let's look through the images. \n\nFirst, in some frames, the woman has a leopard print dress (like in frame 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20). Then there's a frame where she's in a pink dress (frame 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217,",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "After the dress becomes red, does it change color again?",
+      "gt": "Yes",
+      "pred": "Yes. After the dress becomes red (e.g., around the sequence where the performer wears a red dress, as seen in frames like the 18th image), it changes color again. For example, the performer later appears in a pink dress (e.g., 22nd image) and then a white dress (e.g., 23rd image), indicating further color changes after the red dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

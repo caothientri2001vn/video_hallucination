@@ -1,0 +1,134 @@
+{
+  "question": "Did the man on the right open box number 3?",
+  "pred": "The alias map identifies the \"man on the right\" as the \"man in suit\" (RIGHT player). According to the Context and frames, this man performs a sequence of actions involving box number 3: he reaches for it (event 63), lifts it from the shelf and places it on the table (event 64), and then opens it to examine the contents (event 68). Frames at 02:17 and 02:22 clearly show the man in the suit interacting with the box labeled with a red \"3\" on the top-right shelf.\n\nEvidence: the man in the suit opens the box and reaches inside to examine its contents (event 68, 02:25-02:30).\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "reach",
+      "description": "the man in the suit reaches toward the top-right box labeled 3",
+      "participants": [
+        "man in suit",
+        "woman in blue dress"
+      ],
+      "actor": "man in suit",
+      "object": "top-right box labeled 3",
+      "segment_boundary": "middle",
+      "segment_label": "mystery box game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 63,
+      "start_time": "02:17",
+      "end_time": "02:19",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "place",
+      "description": "the man in the suit lifts the top-right box labeled 3 from the shelf and places it on the table",
+      "participants": [
+        "man in suit",
+        "woman in blue dress"
+      ],
+      "actor": "man in suit",
+      "object": "top-right box labeled 3",
+      "segment_boundary": "middle",
+      "segment_label": "mystery box game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 64,
+      "start_time": "02:19",
+      "end_time": "02:22",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "manipulate_object",
+      "description": "the man in the suit opens the box and reaches inside to examine its contents",
+      "participants": [
+        "man in suit",
+        "woman in blue dress"
+      ],
+      "actor": "man in suit",
+      "object": "box contents",
+      "segment_boundary": "middle",
+      "segment_label": "mystery box game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 68,
+      "start_time": "02:25",
+      "end_time": "02:30",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "pull_box",
+      "description": "black-suit man pulls a yellow Full House box from a larger beige container",
+      "participants": [
+        "black-suit man",
+        "black-dress woman"
+      ],
+      "actor": "black-suit man",
+      "object": "yellow box",
+      "segment_boundary": "middle",
+      "segment_label": "Full House Box Reveal",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 69,
+      "start_time": "02:30",
+      "end_time": "02:35",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "lift",
+      "description": "black-suit man lifts the Full House box to display it to the camera and the woman",
+      "participants": [
+        "black-suit man",
+        "black-dress woman"
+      ],
+      "actor": "black-suit man",
+      "object": "yellow box",
+      "segment_boundary": "middle",
+      "segment_label": "Full House Box Reveal",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 70,
+      "start_time": "02:35",
+      "end_time": "02:41",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "place",
+      "description": "black-suit man places the Full House box on the table surface between himself and the woman",
+      "participants": [
+        "black-suit man",
+        "black-dress woman"
+      ],
+      "actor": "black-suit man",
+      "object": "yellow box",
+      "segment_boundary": "middle",
+      "segment_label": "Full House Box Reveal",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 71,
+      "start_time": "02:41",
+      "end_time": "02:43",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    }
+  ]
+}

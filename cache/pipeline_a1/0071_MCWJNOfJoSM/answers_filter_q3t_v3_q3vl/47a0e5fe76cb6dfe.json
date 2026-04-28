@@ -1,0 +1,90 @@
+{
+  "question": "Did the goalkeeper in green save the shot successfully?",
+  "pred": "Evidence: Context event 60 states \"The green-jersey goalkeeper (Emiliano Martínez) dives to his right and saves the penalty\" with outcome \"miss\", and frames 31-32 show the goalkeeper making a diving save from behind the net perspective.\n\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "game",
+      "description": "The green-jersey goalkeeper (Emiliano Martínez) dives to his right and saves the penalty.",
+      "participants": [
+        "green-jersey goalkeeper"
+      ],
+      "actor": "green-jersey goalkeeper",
+      "object": "white ball",
+      "outcome": "miss",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 60,
+      "start_time": "01:55",
+      "end_time": "01:56",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "the lime-green-jersey goalkeeper dives to his right to block the shot",
+      "participants": [
+        "lime-green-jersey goalkeeper",
+        "dark-blue-jersey player"
+      ],
+      "actor": "lime-green-jersey goalkeeper",
+      "object": "white ball",
+      "outcome": "hit",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 69,
+      "start_time": "02:10",
+      "end_time": "02:12",
+      "sub_events": [],
+      "subtype_order": 12,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "the lime-green-jersey goalkeeper deflects the ball with his hands while diving",
+      "participants": [
+        "lime-green-jersey goalkeeper"
+      ],
+      "actor": "lime-green-jersey goalkeeper",
+      "object": "white ball",
+      "outcome": "hit",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 70,
+      "start_time": "02:12",
+      "end_time": "02:13",
+      "sub_events": [],
+      "subtype_order": 13,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

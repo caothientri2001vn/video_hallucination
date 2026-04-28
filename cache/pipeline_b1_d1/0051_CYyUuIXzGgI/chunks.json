@@ -1,0 +1,1313 @@
+{
+  "video_name": "0051_CYyUuIXzGgI.mp4",
+  "video_duration_sec": 218.55166666666665,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:03",
+          "event_type": "write_on_board",
+          "description": "professor writes mathematical equations on the middle section of the chalkboard",
+          "participants": [
+            "gray-suit professor"
+          ],
+          "actor": "gray-suit professor",
+          "object": "chalk",
+          "segment_boundary": "middle",
+          "segment_label": "lecture",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:03",
+          "local_end": "00:05",
+          "event_type": "turn",
+          "description": "professor turns away from the chalkboard to face the classroom",
+          "participants": [
+            "gray-suit professor"
+          ],
+          "actor": "gray-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:07",
+          "event_type": "walk",
+          "description": "professor walks toward the front of the classroom away from the chalkboard",
+          "participants": [
+            "gray-suit professor"
+          ],
+          "actor": "gray-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:08",
+          "event_type": "hand_raise",
+          "description": "student in red jacket raises their hand while holding a pen",
+          "participants": [
+            "red-jacket student"
+          ],
+          "actor": "red-jacket student",
+          "segment_boundary": "middle",
+          "segment_label": "lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:08",
+          "local_end": "00:09",
+          "event_type": "hand_raise",
+          "description": "multiple students raise their hands",
+          "participants": [
+            "red-jacket student",
+            "beige-jacket student",
+            "dark-shirt student"
+          ],
+          "actor": "multiple students",
+          "segment_boundary": "middle",
+          "segment_label": "lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:09",
+          "local_end": "00:10",
+          "event_type": "graphic",
+          "description": "yellow-outlined rectangular button with partially visible text appears at bottom center of screen",
+          "participants": [],
+          "actor": "none",
+          "on_screen_text": [
+            {
+              "text": "SU",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:10",
+          "local_end": "00:11",
+          "event_type": "graphic",
+          "description": "yellow-outlined rectangular button fully displays 'SUBSCRIBE' text at bottom center of screen",
+          "participants": [],
+          "actor": "none",
+          "on_screen_text": [
+            {
+              "text": "SUBSCRIBE",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:11",
+          "local_end": "00:12",
+          "event_type": "graphic",
+          "description": "blue cursor arrow appears and moves toward the 'SUBSCRIBE' button",
+          "participants": [],
+          "actor": "none",
+          "on_screen_text": [
+            {
+              "text": "SUBSCRIBE",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:12",
+          "local_end": "00:13",
+          "event_type": "graphic",
+          "description": "pink bell icon appears next to the 'SUBSCRIBE' button",
+          "participants": [],
+          "actor": "none",
+          "on_screen_text": [
+            {
+              "text": "SUBSCRIBE",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:13",
+          "local_end": "00:15",
+          "event_type": "lecture",
+          "description": "professor gestures with hands while speaking to the classroom",
+          "participants": [
+            "gray-suit professor"
+          ],
+          "actor": "gray-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "lecture",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 30.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:30",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:20",
+          "event_type": "lecture",
+          "description": "the gray-suited professor walks through the classroom while speaking",
+          "participants": [
+            "gray-suited professor",
+            "students in lecture hall"
+          ],
+          "actor": "gray-suited professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:20",
+          "local_end": "00:23",
+          "event_type": "hand_raise",
+          "description": "the red-hoodie student raises their hand while holding a pen",
+          "participants": [
+            "red-hoodie student"
+          ],
+          "actor": "red-hoodie student",
+          "object": "pen",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:23",
+          "local_end": "00:26",
+          "event_type": "turn",
+          "description": "the gray-suited professor turns to face the back of the classroom",
+          "participants": [
+            "gray-suited professor"
+          ],
+          "actor": "gray-suited professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:25",
+          "local_end": "00:28",
+          "event_type": "gesture",
+          "description": "the gray-suited professor gestures with his right hand while speaking",
+          "participants": [
+            "gray-suited professor"
+          ],
+          "actor": "gray-suited professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:26",
+          "local_end": "00:30",
+          "event_type": "speak",
+          "description": "the red-hoodie student speaks while holding a pen",
+          "participants": [
+            "red-hoodie student"
+          ],
+          "actor": "red-hoodie student",
+          "object": "pen",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:25",
+          "local_end": "00:30",
+          "event_type": "react",
+          "description": "several students in the classroom smile and react to the interaction",
+          "participants": [
+            "students in lecture hall"
+          ],
+          "actor": "students in lecture hall",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 2,
+      "chunk_start_sec": 30.0,
+      "chunk_end_sec": 45.0,
+      "chunk_start_mmss": "00:30",
+      "chunk_end_mmss": "00:45",
+      "events": [
+        {
+          "local_start": "00:30",
+          "local_end": "00:35",
+          "event_type": "walk",
+          "description": "the professor walks through the classroom rows while speaking",
+          "participants": [
+            "gray-suited professor",
+            "students in classroom"
+          ],
+          "actor": "gray-suited professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:33",
+          "local_end": "00:38",
+          "event_type": "speak",
+          "description": "the professor speaks while turning to face different sections of the classroom",
+          "participants": [
+            "gray-suited professor",
+            "students in classroom"
+          ],
+          "actor": "gray-suited professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:36",
+          "local_end": "00:42",
+          "event_type": "walk",
+          "description": "the professor continues walking toward the front of the classroom",
+          "participants": [
+            "gray-suited professor"
+          ],
+          "actor": "gray-suited professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:41",
+          "local_end": "00:43",
+          "event_type": "stop",
+          "description": "the professor stops walking and positions himself at the front of the classroom",
+          "participants": [
+            "gray-suited professor"
+          ],
+          "actor": "gray-suited professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:42",
+          "local_end": "00:45",
+          "event_type": "speak",
+          "description": "the professor stands in front of the chalkboard and speaks to the class",
+          "participants": [
+            "gray-suited professor",
+            "students in classroom"
+          ],
+          "actor": "gray-suited professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 3,
+      "chunk_start_sec": 45.0,
+      "chunk_end_sec": 60.0,
+      "chunk_start_mmss": "00:45",
+      "chunk_end_mmss": "01:00",
+      "events": [
+        {
+          "local_start": "00:45",
+          "local_end": "00:48",
+          "event_type": "lecture",
+          "description": "The man in the gray suit stands in front of the chalkboard with his hands at his sides, speaking to the class.",
+          "participants": [
+            "gray-suit man"
+          ],
+          "actor": "gray-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "Classroom Lecture",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:48",
+          "local_end": "00:51",
+          "event_type": "walk",
+          "description": "The man in the gray suit walks toward the chalkboard, turning his body to face the mathematical equations.",
+          "participants": [
+            "gray-suit man"
+          ],
+          "actor": "gray-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "Classroom Lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:51",
+          "local_end": "00:54",
+          "event_type": "point",
+          "description": "The man in the gray suit points at specific equations on the middle chalkboard panel while explaining.",
+          "participants": [
+            "gray-suit man"
+          ],
+          "actor": "gray-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "Classroom Lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:54",
+          "local_end": "00:57",
+          "event_type": "turn",
+          "description": "The man in the gray suit turns back to face the students, continuing to speak.",
+          "participants": [
+            "gray-suit man"
+          ],
+          "actor": "gray-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "Classroom Lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:57",
+          "local_end": "01:00",
+          "event_type": "walk",
+          "description": "The man in the gray suit walks across the front of the classroom from right to left while gesturing with his hands.",
+          "participants": [
+            "gray-suit man"
+          ],
+          "actor": "gray-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "Classroom Lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:45",
+          "local_end": "01:00",
+          "event_type": "react",
+          "description": "Students in the classroom maintain attentive postures while listening to the lecture.",
+          "participants": [
+            "red-hoodie student",
+            "gray-sweater student",
+            "brown-jacket student"
+          ],
+          "actor": "red-hoodie student",
+          "segment_boundary": "middle",
+          "segment_label": "Classroom Lecture",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 4,
+      "chunk_start_sec": 60.0,
+      "chunk_end_sec": 75.0,
+      "chunk_start_mmss": "01:00",
+      "chunk_end_mmss": "01:15",
+      "events": [
+        {
+          "local_start": "01:00",
+          "local_end": "01:02",
+          "event_type": "gesture",
+          "description": "gray-suit professor extends right hand with fingers pointed while lecturing",
+          "participants": [
+            "gray-suit professor"
+          ],
+          "actor": "gray-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:02",
+          "local_end": "01:04",
+          "event_type": "gesture",
+          "description": "gray-suit professor shifts to left hand gesture with palm facing upward",
+          "participants": [
+            "gray-suit professor"
+          ],
+          "actor": "gray-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:04",
+          "local_end": "01:06",
+          "event_type": "gesture",
+          "description": "gray-suit professor uses both hands with palms open in explanatory gesture",
+          "participants": [
+            "gray-suit professor"
+          ],
+          "actor": "gray-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:06",
+          "local_end": "01:08",
+          "event_type": "sit",
+          "description": "male student in red hoodie maintains attentive seated posture looking forward",
+          "participants": [
+            "red-hoodie male student"
+          ],
+          "actor": "red-hoodie male student",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:08",
+          "local_end": "01:10",
+          "event_type": "sit",
+          "description": "female student with red hair in black top sits at desk maintaining listening posture",
+          "participants": [
+            "black-top red-haired female student"
+          ],
+          "actor": "black-top red-haired female student",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:10",
+          "local_end": "01:13",
+          "event_type": "lecture",
+          "description": "gray-suit professor stands in front of blackboards lecturing to classroom with multiple students visible",
+          "participants": [
+            "gray-suit professor",
+            "classroom students"
+          ],
+          "actor": "gray-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:13",
+          "local_end": "01:15",
+          "event_type": "point",
+          "description": "gray-suit professor points with right index finger toward left side of classroom",
+          "participants": [
+            "gray-suit professor"
+          ],
+          "actor": "gray-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 5,
+      "chunk_start_sec": 75.0,
+      "chunk_end_sec": 90.0,
+      "chunk_start_mmss": "01:15",
+      "chunk_end_mmss": "01:30",
+      "events": [
+        {
+          "local_start": "01:15",
+          "local_end": "01:19",
+          "event_type": "lecture",
+          "description": "professor in tan suit lecturing while pointing at the middle section of the chalkboard",
+          "participants": [
+            "tan-suit professor"
+          ],
+          "actor": "tan-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "01:19",
+          "local_end": "01:22",
+          "event_type": "walk",
+          "description": "professor in tan suit walking from the center to the right side of the classroom",
+          "participants": [
+            "tan-suit professor"
+          ],
+          "actor": "tan-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:22",
+          "local_end": "01:24",
+          "event_type": "hand_raise",
+          "description": "student in red hoodie raises their hand",
+          "participants": [
+            "red-hoodie student"
+          ],
+          "actor": "red-hoodie student",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:24",
+          "local_end": "01:28",
+          "event_type": "speak",
+          "description": "student in red hoodie speaking while looking at the professor",
+          "participants": [
+            "red-hoodie student"
+          ],
+          "actor": "red-hoodie student",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:27",
+          "local_end": "01:30",
+          "event_type": "camera_shift",
+          "description": "camera shifts focus to the student in the red hoodie",
+          "participants": [],
+          "actor": "camera",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 6,
+      "chunk_start_sec": 90.0,
+      "chunk_end_sec": 105.0,
+      "chunk_start_mmss": "01:30",
+      "chunk_end_mmss": "01:45",
+      "events": [
+        {
+          "local_start": "01:30",
+          "local_end": "01:33",
+          "event_type": "lecture",
+          "description": "Professor in gray suit speaks while gesturing with his right hand",
+          "participants": [
+            "gray-suited professor",
+            "students in classroom"
+          ],
+          "actor": "gray-suited professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "01:33",
+          "local_end": "01:36",
+          "event_type": "walk",
+          "description": "Professor walks from right side of classroom toward the chalkboard",
+          "participants": [
+            "gray-suited professor"
+          ],
+          "actor": "gray-suited professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:36",
+          "local_end": "01:38",
+          "event_type": "pull_board",
+          "description": "Professor pulls down the middle section of the three-panel chalkboard",
+          "participants": [
+            "gray-suited professor",
+            "chalkboard"
+          ],
+          "actor": "gray-suited professor",
+          "object": "chalkboard",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:38",
+          "local_end": "01:42",
+          "event_type": "write_on_board",
+          "description": "Professor writes on the middle chalkboard section with chalk",
+          "participants": [
+            "gray-suited professor",
+            "chalkboard"
+          ],
+          "actor": "gray-suited professor",
+          "object": "chalk",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:42",
+          "local_end": "01:45",
+          "event_type": "lecture",
+          "description": "Professor points to equations on chalkboard while speaking",
+          "participants": [
+            "gray-suited professor",
+            "students in classroom"
+          ],
+          "actor": "gray-suited professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 7,
+      "chunk_start_sec": 105.0,
+      "chunk_end_sec": 120.0,
+      "chunk_start_mmss": "01:45",
+      "chunk_end_mmss": "02:00",
+      "events": [
+        {
+          "local_start": "01:45",
+          "local_end": "01:50",
+          "event_type": "lecture",
+          "description": "Professor in gray suit lectures while making hand gestures with both hands",
+          "participants": [
+            "gray-suit professor"
+          ],
+          "actor": "gray-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "Class Lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:51",
+          "local_end": "01:55",
+          "event_type": "listen",
+          "description": "Student in red hoodie looks up while listening attentively",
+          "participants": [
+            "red-hoodie student"
+          ],
+          "actor": "red-hoodie student",
+          "segment_boundary": "middle",
+          "segment_label": "Class Lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:56",
+          "local_end": "01:58",
+          "event_type": "point",
+          "description": "Professor points at the middle chalkboard section with his right hand",
+          "participants": [
+            "gray-suit professor"
+          ],
+          "actor": "gray-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "Class Lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:59",
+          "local_end": "02:00",
+          "event_type": "lecture",
+          "description": "Professor in gray suit continues lecturing with open hand gestures",
+          "participants": [
+            "gray-suit professor"
+          ],
+          "actor": "gray-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "Class Lecture",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 8,
+      "chunk_start_sec": 120.0,
+      "chunk_end_sec": 135.0,
+      "chunk_start_mmss": "02:00",
+      "chunk_end_mmss": "02:15",
+      "events": [
+        {
+          "local_start": "02:00",
+          "local_end": "02:02",
+          "event_type": "gesture",
+          "description": "The gray-suited professor raises his right hand while lecturing",
+          "participants": [
+            "gray-suited professor"
+          ],
+          "actor": "gray-suited professor",
+          "segment_boundary": "middle",
+          "segment_label": "Lecture",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "02:02",
+          "local_end": "02:04",
+          "event_type": "gesture",
+          "description": "The gray-suited professor lowers his right hand and makes an open-palm gesture",
+          "participants": [
+            "gray-suited professor"
+          ],
+          "actor": "gray-suited professor",
+          "segment_boundary": "middle",
+          "segment_label": "Lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:04",
+          "local_end": "02:06",
+          "event_type": "lecture",
+          "description": "The gray-suited professor shifts position slightly while continuing to lecture",
+          "participants": [
+            "gray-suited professor"
+          ],
+          "actor": "gray-suited professor",
+          "segment_boundary": "middle",
+          "segment_label": "Lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:05",
+          "local_end": "02:07",
+          "event_type": "hand_raise",
+          "description": "The student in red hoodie raises their hand (holding a pen)",
+          "participants": [
+            "student in red hoodie"
+          ],
+          "actor": "student in red hoodie",
+          "segment_boundary": "middle",
+          "segment_label": "Lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:07",
+          "local_end": "02:12",
+          "event_type": "speak",
+          "description": "The student in red hoodie speaks while looking at the professor",
+          "participants": [
+            "student in red hoodie"
+          ],
+          "actor": "student in red hoodie",
+          "segment_boundary": "middle",
+          "segment_label": "Lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:10",
+          "local_end": "02:15",
+          "event_type": "gesture",
+          "description": "The gray-suited professor responds with a hand gesture while speaking",
+          "participants": [
+            "gray-suited professor"
+          ],
+          "actor": "gray-suited professor",
+          "segment_boundary": "middle",
+          "segment_label": "Lecture",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 9,
+      "chunk_start_sec": 135.0,
+      "chunk_end_sec": 150.0,
+      "chunk_start_mmss": "02:15",
+      "chunk_end_mmss": "02:30",
+      "events": [
+        {
+          "local_start": "02:16",
+          "local_end": "02:17",
+          "event_type": "hand_raise",
+          "description": "the red-hoodie student raises their hand holding a blue pen",
+          "participants": [
+            "red-hoodie student"
+          ],
+          "actor": "red-hoodie student",
+          "object": "blue pen",
+          "segment_boundary": "middle",
+          "segment_label": "Classroom Lecture",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:18",
+          "local_end": "02:20",
+          "event_type": "gesture",
+          "description": "the red-hoodie student gestures with the blue pen in their right hand while speaking",
+          "participants": [
+            "red-hoodie student"
+          ],
+          "actor": "red-hoodie student",
+          "object": "blue pen",
+          "segment_boundary": "middle",
+          "segment_label": "Classroom Lecture",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:21",
+          "local_end": "02:23",
+          "event_type": "gesture",
+          "description": "the red-hoodie student gestures with both hands, the blue pen in their right hand",
+          "participants": [
+            "red-hoodie student"
+          ],
+          "actor": "red-hoodie student",
+          "object": "blue pen",
+          "segment_boundary": "middle",
+          "segment_label": "Classroom Lecture",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:24",
+          "local_end": "02:25",
+          "event_type": "gesture",
+          "description": "the red-hoodie student continues gesturing with both hands while holding the blue pen",
+          "participants": [
+            "red-hoodie student"
+          ],
+          "actor": "red-hoodie student",
+          "object": "blue pen",
+          "segment_boundary": "middle",
+          "segment_label": "Classroom Lecture",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:18",
+          "local_end": "02:25",
+          "event_type": "speak",
+          "description": "the red-hoodie student speaks while making gestures",
+          "participants": [
+            "red-hoodie student"
+          ],
+          "actor": "red-hoodie student",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "Classroom Lecture",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 10,
+      "chunk_start_sec": 150.0,
+      "chunk_end_sec": 165.0,
+      "chunk_start_mmss": "02:30",
+      "chunk_end_mmss": "02:45",
+      "events": [
+        {
+          "local_start": "02:30",
+          "local_end": "02:37",
+          "event_type": "lecture",
+          "description": "The gray-suited professor stands in front of the chalkboard speaking",
+          "participants": [
+            "gray-suited professor"
+          ],
+          "actor": "gray-suited professor",
+          "segment_boundary": "middle",
+          "segment_label": "Class Lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:37",
+          "local_end": "02:39",
+          "event_type": "point",
+          "description": "The gray-suited professor points forward with his right hand",
+          "participants": [
+            "gray-suited professor"
+          ],
+          "actor": "gray-suited professor",
+          "segment_boundary": "middle",
+          "segment_label": "Class Lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:38",
+          "local_end": "02:40",
+          "event_type": "shoulder_tap",
+          "description": "The striped-shirt student taps the red-hoodie student on the shoulder",
+          "participants": [
+            "red-hoodie student",
+            "striped-shirt student"
+          ],
+          "actor": "striped-shirt student",
+          "segment_boundary": "middle",
+          "segment_label": "Class Lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:38",
+          "local_end": "02:42",
+          "event_type": "speak",
+          "description": "The striped-shirt student speaks to the red-hoodie student",
+          "participants": [
+            "striped-shirt student",
+            "red-hoodie student"
+          ],
+          "actor": "striped-shirt student",
+          "segment_boundary": "middle",
+          "segment_label": "Class Lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:42",
+          "local_end": "02:45",
+          "event_type": "gesture",
+          "description": "The gray-suited professor gestures expansively with both hands",
+          "participants": [
+            "gray-suited professor"
+          ],
+          "actor": "gray-suited professor",
+          "segment_boundary": "middle",
+          "segment_label": "Class Lecture",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 11,
+      "chunk_start_sec": 165.0,
+      "chunk_end_sec": 180.0,
+      "chunk_start_mmss": "02:45",
+      "chunk_end_mmss": "03:00",
+      "events": [
+        {
+          "local_start": "02:45",
+          "local_end": "02:48",
+          "event_type": "lecture",
+          "description": "Professor stands in front of chalkboard with both hands raised, palms open, speaking to the class",
+          "participants": [
+            "gray-suit professor"
+          ],
+          "actor": "gray-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "02:48",
+          "local_end": "02:51",
+          "event_type": "point",
+          "description": "Professor turns slightly to the side and points with right hand toward students on the right",
+          "participants": [
+            "gray-suit professor"
+          ],
+          "actor": "gray-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:51",
+          "local_end": "02:54",
+          "event_type": "walk",
+          "description": "Professor walks leftward across the front of the classroom while continuing to speak",
+          "participants": [
+            "gray-suit professor"
+          ],
+          "actor": "gray-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:54",
+          "local_end": "02:57",
+          "event_type": "gesture",
+          "description": "Professor raises right hand with fingers in a specific gesture while speaking",
+          "participants": [
+            "gray-suit professor"
+          ],
+          "actor": "gray-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:57",
+          "local_end": "03:00",
+          "event_type": "point",
+          "description": "Professor points directly forward with right index finger while speaking",
+          "participants": [
+            "gray-suit professor"
+          ],
+          "actor": "gray-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:55",
+          "local_end": "03:00",
+          "event_type": "sit",
+          "description": "Students are visible sitting at desks, facing the professor and listening",
+          "participants": [
+            "gray-suit professor",
+            "students"
+          ],
+          "actor": "students",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 12,
+      "chunk_start_sec": 180.0,
+      "chunk_end_sec": 195.0,
+      "chunk_start_mmss": "03:00",
+      "chunk_end_mmss": "03:15",
+      "events": [
+        {
+          "local_start": "03:00",
+          "local_end": "03:01",
+          "event_type": "gesture",
+          "description": "tweed-suit professor makes a fist gesture with right hand while speaking",
+          "participants": [
+            "tweed-suit professor"
+          ],
+          "actor": "tweed-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:02",
+          "local_end": "03:04",
+          "event_type": "point",
+          "description": "tweed-suit professor points with right index finger toward students in classroom",
+          "participants": [
+            "tweed-suit professor"
+          ],
+          "actor": "tweed-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:05",
+          "local_end": "03:07",
+          "event_type": "gesture",
+          "description": "tweed-suit professor makes open-handed gesture while speaking",
+          "participants": [
+            "tweed-suit professor"
+          ],
+          "actor": "tweed-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:08",
+          "local_end": "03:11",
+          "event_type": "react",
+          "description": "student in red hoodie smiles and looks down",
+          "participants": [
+            "red-hoodie student"
+          ],
+          "actor": "red-hoodie student",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:08",
+          "local_end": "03:11",
+          "event_type": "react",
+          "description": "multiple students in classroom smile and react to lecture",
+          "participants": [
+            "classroom students"
+          ],
+          "actor": "classroom students",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:08",
+          "local_end": "03:11",
+          "event_type": "manipulation",
+          "description": "student in light-cardigan picks up dark folder and begins packing",
+          "participants": [
+            "light-cardigan student"
+          ],
+          "actor": "light-cardigan student",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:12",
+          "local_end": "03:14",
+          "event_type": "lecture",
+          "description": "tweed-suit professor seen from behind addressing full classroom",
+          "participants": [
+            "tweed-suit professor",
+            "classroom students"
+          ],
+          "actor": "tweed-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:14",
+          "local_end": "03:15",
+          "event_type": "walk",
+          "description": "tweed-suit professor walks across front of classroom",
+          "participants": [
+            "tweed-suit professor"
+          ],
+          "actor": "tweed-suit professor",
+          "segment_boundary": "middle",
+          "segment_label": "classroom lecture",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 13,
+      "chunk_start_sec": 195.0,
+      "chunk_end_sec": 210.0,
+      "chunk_start_mmss": "03:15",
+      "chunk_end_mmss": "03:30",
+      "events": [
+        {
+          "local_start": "03:15",
+          "local_end": "03:21",
+          "event_type": "classroom_activity",
+          "description": "Students in the background gather their belongings and leave the classroom while the professor stands in the foreground",
+          "participants": [
+            "gray-suit professor",
+            "students in background"
+          ],
+          "actor": "students in background",
+          "segment_boundary": "middle",
+          "segment_label": "classroom scene",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "03:21",
+          "local_end": "03:25",
+          "event_type": "paper_flip",
+          "description": "A hand flips through blue exam papers on a desk",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "blue exam papers",
+          "segment_boundary": "middle",
+          "segment_label": "grading process",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "03:25",
+          "local_end": "03:29",
+          "event_type": "paper_focus",
+          "description": "The hand stops on a specific exam paper showing 'Ben Campbell' as the name with '97%' circled at the top",
+          "participants": [
+            "hand"
+          ],
+          "actor": "hand",
+          "object": "blue exam paper",
+          "on_screen_text": [
+            {
+              "text": "Nonlinear Equations—Exam",
+              "location": "other"
+            },
+            {
+              "text": "Ben Campbell",
+              "location": "other"
+            },
+            {
+              "text": "97%",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "grading process",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "03:29",
+          "local_end": "03:30",
+          "event_type": "end_screen",
+          "description": "A purple brick wall background appears with neon text and frames showing 'NOW PLAYING', 'CLICK FOR MORE CLIPS!', and 'SUBSCRIBE'",
+          "participants": [],
+          "actor": "",
+          "object": "neon graphics",
+          "on_screen_text": [
+            {
+              "text": "NOW PLAYING",
+              "location": "banner"
+            },
+            {
+              "text": "CLICK FOR MORE CLIPS!",
+              "location": "banner"
+            },
+            {
+              "text": "SUBSCRIBE",
+              "location": "banner"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "end screen",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 14,
+      "chunk_start_sec": 210.0,
+      "chunk_end_sec": 218.55166666666665,
+      "chunk_start_mmss": "03:30",
+      "chunk_end_mmss": "03:39",
+      "events": [
+        {
+          "local_start": "03:30",
+          "local_end": "03:39",
+          "event_type": "graphic",
+          "description": "The \"NOW PLAYING\" neon sign gradually dims from bright yellow to a dim pinkish-gray state",
+          "participants": [],
+          "actor": "",
+          "object_before": "yellow sign",
+          "object_after": "pinkish-gray sign",
+          "on_screen_text": [
+            {
+              "text": "NOW PLAYING",
+              "location": "other"
+            },
+            {
+              "text": "CLICK FOR MORE CLIPS!",
+              "location": "other"
+            },
+            {
+              "text": "SUBSCRIBE",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

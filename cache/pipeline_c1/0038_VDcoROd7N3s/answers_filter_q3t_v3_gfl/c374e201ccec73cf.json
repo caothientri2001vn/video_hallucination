@@ -1,0 +1,170 @@
+{
+  "question": "Does the yellow object teleport from the brown object to the pink object?",
+  "pred": "The question asks if a yellow object teleports from a brown object to a pink object. According to the \"teleport\" rule, this occurs if an object is hidden under one cover and then revealed under a different cover without a visible carry.\n\n1.  **Initial State (Brown Object):** At approximately 01:54 (Event 27), the woman places a brown cylinder and a pink cylinder on the table. In the frames around 02:15-02:20, she lifts the brown cylinder to reveal a yellow object (a yellow star wand or similar item) underneath it.\n2.  **Action:** She then covers the yellow object again with the brown cylinder.\n3.  **Final State (Pink Object):** In the frames around 02:35-02:40, she lifts the pink cylinder (the other cover), and the same yellow object is now revealed to be underneath the pink cylinder. There was no visible movement of the yellow object from the brown cylinder to the pink cylinder while they were on the table.\n\nThis sequence of events (hidden under brown, revealed under pink) satisfies the definition of \"teleport\" provided in the grounding constraints.\n\nEvidence: Frames at ~02:18 show the yellow object under the brown cylinder, and frames at ~02:38 show the same yellow object revealed under the pink cylinder.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "speak",
+      "description": "The woman holds up both cylindrical objects (brown with hearts and pink with hearts) while speaking",
+      "participants": [
+        "red-dress woman"
+      ],
+      "actor": "red-dress woman",
+      "object": "brown cylinder with hearts, pink cylinder with hearts",
+      "segment_boundary": "middle",
+      "segment_label": "Bé vui học toán",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 26,
+      "start_time": "01:45",
+      "end_time": "01:54",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Bé vui học toán (Children happy to learn math)"
+    },
+    {
+      "event_type": "place",
+      "description": "The woman places both cylindrical objects on the blue table",
+      "participants": [
+        "red-dress woman"
+      ],
+      "actor": "red-dress woman",
+      "object": "brown cylinder with hearts, pink cylinder with hearts",
+      "segment_boundary": "middle",
+      "segment_label": "Bé vui học toán",
+      "continuation_hint": "complete",
+      "event_index": 27,
+      "start_time": "01:54",
+      "end_time": "01:55",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Bé vui học toán (Children happy to learn math)"
+    },
+    {
+      "event_type": "lift",
+      "description": "The woman picks up the yellow star wand from the table and holds it up",
+      "participants": [
+        "red-dress woman"
+      ],
+      "actor": "red-dress woman",
+      "object": "yellow star wand",
+      "segment_boundary": "middle",
+      "segment_label": "Bé vui học toán",
+      "continuation_hint": "complete",
+      "event_index": 28,
+      "start_time": "01:55",
+      "end_time": "01:58",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Bé vui học toán (Children happy to learn math)"
+    },
+    {
+      "event_type": "place",
+      "description": "The woman places the yellow star wand back on the blue table",
+      "participants": [
+        "red-dress woman"
+      ],
+      "actor": "red-dress woman",
+      "object": "yellow star wand",
+      "segment_boundary": "middle",
+      "segment_label": "Bé vui học toán",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 29,
+      "start_time": "01:58",
+      "end_time": "02:00",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Bé vui học toán (Children happy to learn math)"
+    },
+    {
+      "event_type": "lift",
+      "description": "woman lifts the pink cylinder from the table with her right hand",
+      "participants": [
+        "red-dress woman"
+      ],
+      "actor": "red-dress woman",
+      "object": "pink cylinder",
+      "segment_boundary": "middle",
+      "segment_label": "math education demonstration",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 30,
+      "start_time": "02:00",
+      "end_time": "02:03",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Bé vui học toán (Children happy to learn math)"
+    },
+    {
+      "event_type": "reveal",
+      "description": "woman removes a white patterned cup from inside the pink cylinder",
+      "participants": [
+        "red-dress woman"
+      ],
+      "actor": "red-dress woman",
+      "cover": "pink cylinder",
+      "hidden": "white cup with green patterns",
+      "segment_boundary": "middle",
+      "segment_label": "math education demonstration",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 32,
+      "start_time": "02:05",
+      "end_time": "02:08",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Bé vui học toán (Children happy to learn math)"
+    },
+    {
+      "event_type": "place",
+      "description": "woman places the white patterned cup back into the pink cylinder",
+      "participants": [
+        "red-dress woman"
+      ],
+      "actor": "red-dress woman",
+      "object": "white cup with green patterns",
+      "cover": "pink cylinder",
+      "segment_boundary": "middle",
+      "segment_label": "math education demonstration",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 34,
+      "start_time": "02:09",
+      "end_time": "02:12",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Bé vui học toán (Children happy to learn math)"
+    },
+    {
+      "event_type": "place",
+      "description": "woman sets the pink cylinder back down on the blue table",
+      "participants": [
+        "red-dress woman"
+      ],
+      "actor": "red-dress woman",
+      "object": "pink cylinder",
+      "segment_boundary": "middle",
+      "segment_label": "math education demonstration",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 35,
+      "start_time": "02:11",
+      "end_time": "02:14",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Bé vui học toán (Children happy to learn math)"
+    }
+  ]
+}

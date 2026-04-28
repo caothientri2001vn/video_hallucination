@@ -1,0 +1,209 @@
+{
+  "question": "Is the number 1 item a cake?",
+  "pred": "Evidence: The video is from \"Is It Cake? Halloween Edition\" (title card), a show where all mystery items are cakes. Cylinder #1 is revealed to have a black clock-like object (Context event 22), and the show's premise confirms all items are cakes.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "title_card",
+      "description": "A title card appears with \"CAKE OR CASH?\" text against a pink background with animated bats flying.",
+      "participants": [],
+      "actor": "",
+      "object": "",
+      "object_before": "",
+      "object_after": "",
+      "on_screen_text": [
+        {
+          "text": "IS IT CAKE? HALLOWEEN",
+          "location": "title"
+        },
+        {
+          "text": "CAKE OR CASH?",
+          "location": "title"
+        },
+        {
+          "text": "N",
+          "location": "logo"
+        },
+        {
+          "text": "[scary music playing]",
+          "location": "subtitle"
+        }
+      ],
+      "segment_boundary": "start",
+      "segment_label": "Cake or Cash?",
+      "continuation_hint": "complete",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:02",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Cake or Cash?"
+    },
+    {
+      "event_type": "speak",
+      "description": "The orange-hair woman speaks while standing behind the transparent structure.",
+      "participants": [
+        "orange-hair woman"
+      ],
+      "actor": "orange-hair woman",
+      "object": "",
+      "object_before": "",
+      "object_after": "",
+      "on_screen_text": [
+        {
+          "text": "It's time to find some cakes and win some cash.",
+          "location": "subtitle"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cake or Cash?",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:10",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 10,
+      "round_index": 1,
+      "segment_label_resolved": "Cake or Cash?"
+    },
+    {
+      "event_type": "reveal",
+      "description": "Multiple numbered blue cylindrical structures (1, 3, 4, 6, 7) are shown as part of the Cake Wall.",
+      "participants": [],
+      "actor": "",
+      "object": "blue cylinders",
+      "object_before": "",
+      "object_after": "",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "podium"
+        },
+        {
+          "text": "3",
+          "location": "podium"
+        },
+        {
+          "text": "4",
+          "location": "podium"
+        },
+        {
+          "text": "6",
+          "location": "podium"
+        },
+        {
+          "text": "7",
+          "location": "podium"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cake or Cash?",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 12,
+      "start_time": "00:36",
+      "end_time": "00:46",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 16,
+      "round_index": 1,
+      "segment_label_resolved": "Cake or Cash?"
+    },
+    {
+      "event_type": "reveal",
+      "description": "Close-up reveals a black clock-like object on top of cylinder #1 (leftmost front cylinder)",
+      "participants": [],
+      "actor": "",
+      "object_before": "white cylinder",
+      "object_after": "white cylinder with black clock",
+      "cover": "cylinder #1",
+      "hidden": "black clock-like object",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "podium"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Cylinder Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 22,
+      "start_time": "00:35",
+      "end_time": "00:38",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 16,
+      "round_index": 1,
+      "segment_label_resolved": "Cake or Cash?"
+    },
+    {
+      "event_type": "cut_object",
+      "description": "a man in a black suit cuts into a black bottle-shaped cake labeled 'POWDERED BONES' with a knife",
+      "participants": [
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "object": "black bottle-shaped cake",
+      "object_before": "black bottle-shaped cake",
+      "object_after": "split black bottle-shaped cake",
+      "object_after_pattern": "with visible cut line",
+      "on_screen_text": [
+        {
+          "text": "POWDERED BONES",
+          "location": "other"
+        },
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cake Reveal Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 38,
+      "start_time": "01:15",
+      "end_time": "01:18",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Cake or Cash?"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the black bottle-shaped cake is split open, revealing a yellow interior",
+      "participants": [
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "object": "black bottle-shaped cake",
+      "object_before": "split black bottle-shaped cake",
+      "object_after": "split black bottle-shaped cake",
+      "object_after_pattern": "with yellow interior exposed",
+      "on_screen_text": [
+        {
+          "text": "POWDERED BONES",
+          "location": "other"
+        },
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cake Reveal Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 39,
+      "start_time": "01:17",
+      "end_time": "01:21",
+      "sub_events": [],
+      "subtype_order": 15,
+      "subtype_total": 16,
+      "round_index": 1,
+      "segment_label_resolved": "Cake or Cash?"
+    }
+  ]
+}

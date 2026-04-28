@@ -1,0 +1,125 @@
+{
+  "question": "Did the outerwear appear earlier than the sneakers in the video?",
+  "pred": "Evidence: The Context shows outerwear (blue button-down shirt and pink cardigan) being revealed in the 00:03-00:05 time range (event_index 3), while sneakers are revealed later in the 00:05-00:07 time range (event_index 4).\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "reveal",
+      "description": "the woman on the left reveals a white crop top while the woman on the right reveals a white turtleneck top",
+      "participants": [
+        "black-shirt woman",
+        "black-shirt woman"
+      ],
+      "object_before": "black shirt",
+      "object_after": "white top",
+      "on_screen_text": [
+        {
+          "text": "Style Difference",
+          "location": "title"
+        },
+        {
+          "text": "high waisted jeans",
+          "location": "subtitle"
+        },
+        {
+          "text": "American 🇺🇸",
+          "location": "caption"
+        },
+        {
+          "text": "Korean 🇰🇷",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Style Difference -- high waisted jeans",
+      "continuation_hint": "complete",
+      "event_index": 2,
+      "start_time": "00:01",
+      "end_time": "00:03",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Style Difference -- high waisted jeans"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the woman on the left reveals a blue button-down shirt while the woman on the right reveals a pink cardigan",
+      "participants": [
+        "white-top woman",
+        "white-top woman"
+      ],
+      "object_before": "white top",
+      "object_after": "outerwear",
+      "on_screen_text": [
+        {
+          "text": "Style Difference",
+          "location": "title"
+        },
+        {
+          "text": "high waisted jeans",
+          "location": "subtitle"
+        },
+        {
+          "text": "American 🇺🇸",
+          "location": "caption"
+        },
+        {
+          "text": "Korean 🇰🇷",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Style Difference -- high waisted jeans",
+      "continuation_hint": "complete",
+      "event_index": 3,
+      "start_time": "00:03",
+      "end_time": "00:05",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Style Difference -- high waisted jeans"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the woman on the left reveals white and grey sneakers while the woman on the right reveals plain white sneakers",
+      "participants": [
+        "blue-shirt woman",
+        "pink-cardigan woman"
+      ],
+      "object_before": "orange flip-flops",
+      "object_after": "white sneakers",
+      "on_screen_text": [
+        {
+          "text": "Style Difference",
+          "location": "title"
+        },
+        {
+          "text": "high waisted jeans",
+          "location": "subtitle"
+        },
+        {
+          "text": "American 🇺🇸",
+          "location": "caption"
+        },
+        {
+          "text": "Korean 🇰🇷",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Style Difference -- high waisted jeans",
+      "continuation_hint": "complete",
+      "event_index": 4,
+      "start_time": "00:05",
+      "end_time": "00:07",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Style Difference -- high waisted jeans"
+    }
+  ]
+}

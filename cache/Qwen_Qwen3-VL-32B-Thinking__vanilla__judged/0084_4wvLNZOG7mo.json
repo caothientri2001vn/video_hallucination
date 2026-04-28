@@ -1,0 +1,330 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0084_4wvLNZOG7mo.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0084_4wvLNZOG7mo.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0084_4wvLNZOG7mo",
+    "n_target": 8,
+    "n_sub": 24,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 1.0,
+    "sub_accuracy": 0.875
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Are the strawberries dipped into ice water first?",
+      "gt": "Yes",
+      "pred": "Yes. The strawberries are dipped into ice water first, as seen in the sequence where strawberries are placed into a bowl of ice water (e.g., images 3–5, starting around the 3rd frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Are strawberries dipped into ice water in the video?",
+      "gt": "Yes",
+      "pred": "Yes. Strawberries are dipped into ice water, as shown in the sequence where a strawberry is held by tongs over a bowl of ice water and then submerged (e.g., frames 2–5 of the provided images).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is the ice water dipping the first action shown?",
+      "gt": "Yes",
+      "pred": "No. The first action shown is a container of strawberries on the cutting board (frame 1), followed by tongs picking a strawberry from the container (frame 2). The ice water dipping of the strawberry occurs later (starting at frame 3).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Do the strawberries get dipped before being put in the blender?",
+      "gt": "Yes",
+      "pred": "Yes. The strawberries are dipped into a bowl of ice water (evident in frames 3–5) before being placed into the blender (evident in frames 6–8).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Are the bananas dipped into ice water first?",
+      "gt": "No",
+      "pred": "No. The strawberries are first dipped into ice water (e.g., frames 2–6 show strawberries being placed into ice water), and then the bananas are cut and later dipped into ice water (e.g., frames 16–20 show banana slices being placed into ice water). Thus, the bananas are not dipped into ice water first.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Are bananas dipped into ice water in the video?",
+      "gt": "No",
+      "pred": "Yes. Bananas are dipped into ice water, as seen in the sequence where a banana slice is held by tongs and submerged into a bowl of ice water (approximately frames 15-18).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Are the strawberries dipped into ice water before the bananas are used?",
+      "gt": "Yes",
+      "pred": "Yes. The strawberries are dipped into ice water (as seen in frames 2–6, where strawberries are placed into the ice water bowl) before the bananas are processed (banana cutting and dipping start in frame 9 and subsequent frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Do the bananas appear before the strawberries in the video?",
+      "gt": "No",
+      "pred": "No. Strawberries are shown first (e.g., in the initial frames with strawberries in a container, being handled, and processed), and bananas appear later (e.g., starting around the 9th frame where a banana is being cut). Thus, bananas do not appear before strawberries.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Are the strawberries put in the blender first?",
+      "gt": "Yes",
+      "pred": "Yes. The strawberries are the first ingredients added to the blender, as seen in frames 6-8 (e.g., frame 6 shows a strawberry being added to the blender, followed by more strawberries in frames 7-8 before other ingredients like banana are added).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Are strawberries put into the blender?",
+      "gt": "Yes",
+      "pred": "Yes. Strawberries are placed into the blender, as seen in frames where frozen strawberries are added to the blender cup (e.g., around the 5th to 9th frames of the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Are the strawberries added to the blender before the bananas?",
+      "gt": "Yes",
+      "pred": "Yes. The strawberries are added to the blender first (as seen in frames 6–8, where frozen strawberries are placed into the blender cup), and the bananas are added afterward (as seen in frames 20–22, where frozen banana slices are added on top of the strawberries).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Are the strawberries the first ingredient added to the blender?",
+      "gt": "Yes",
+      "pred": "Yes. The strawberries are the first ingredient added to the blender, as seen in frames 6–8 where frozen strawberries are placed into the blender cup before any other ingredients (e.g., bananas, walnuts, honey, or milk).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Are the bananas put in the blender first?",
+      "gt": "No",
+      "pred": "No. The strawberries are added to the blender first (evident in frames 6-9, where frozen strawberries are placed into the blender cup), followed by the bananas (evident in frames 19-20, where banana slices are added on top of the strawberries).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Are bananas put into the blender?",
+      "gt": "Yes",
+      "pred": "Yes, bananas are put into the blender. This is shown in frames where sliced bananas are added to the blender cup (e.g., around the 24th frame and subsequent frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Are the bananas added to the blender before the strawberries?",
+      "gt": "No",
+      "pred": "No. The strawberries are added to the blender first (e.g., frames 5–8 show strawberries being placed into the blender), followed by the bananas (e.g., frame 19 shows bananas being added to the blender after the strawberries).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Do the strawberries go into the blender before the bananas?",
+      "gt": "Yes",
+      "pred": "Yes. The strawberries are added to the blender first (e.g., images 5–8 show strawberries being placed into the blender), and the bananas are added later (e.g., image 21 shows banana slices being added to the blender, which already contains strawberries).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Is the milk put into the blender last?",
+      "gt": "Yes",
+      "pred": "Yes. The milk is added to the blender after honey (as seen in the sequence: walnuts added at ~22-23s, honey at ~24s, milk at ~25-26s) and before blending (27-28s), making it the last ingredient added to the blender.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is milk put into the blender?",
+      "gt": "Yes",
+      "pred": "Yes. A white liquid (milk) is poured into the blender, as seen in the frame sequence around the 20th image (when the liquid is being added to the ingredients).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is the milk added after the strawberries are put in the blender?",
+      "gt": "Yes",
+      "pred": "Yes. The strawberries are added to the blender first (e.g., frames 5-8 show strawberries being placed in the blender), and milk is added later (frame 24 shows milk being poured into the blender after the strawberries, bananas, walnuts, and honey).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Is the milk the final ingredient added to the blender?",
+      "gt": "Yes",
+      "pred": "No. The milk is added before yogurt (e.g., milk is poured in frames 26–27, and yogurt is added in frame 28). Thus, milk is not the final ingredient.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Are the strawberries dipped in ice water after the bananas?",
+      "gt": "No",
+      "pred": "No. The strawberries are dipped in ice water before the bananas. Strawberries are dipped in ice water (e.g., images 3–6), and bananas are cut and then dipped in ice water later (e.g., images 16–19).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Are the strawberries dipped into ice water?",
+      "gt": "Yes",
+      "pred": "Yes, the strawberries are dipped into ice water. This is shown in frames 3–5, where a strawberry is held with tongs and submerged into a bowl of ice water.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Are the strawberries dipped into ice water first?",
+      "gt": "Yes",
+      "pred": "Yes. The strawberries are dipped into ice water first, as seen in the sequence where strawberries are placed into a bowl of ice water (e.g., images 3–5, starting around the 3rd frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Are the bananas put in the blender before the strawberries are dipped in ice water?",
+      "gt": "No",
+      "pred": "No. The strawberries are dipped in ice water (e.g., images 3-5) and then added to the blender (images 6-8). The bananas are cut (images 9-15), dipped in ice water (images 16-19), and then added to the blender (images 20-21) *after* the strawberries have already been placed in the blender. Thus, the bananas are not put in the blender before the strawberries are dipped in ice water.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Are the strawberries put in the blender before the bananas?",
+      "gt": "Yes",
+      "pred": "Yes. The strawberries are added to the blender (e.g., frames 5-8 show strawberries being placed into the blender cup), and the bananas are added afterward (e.g., frames 19-20 show bananas being added to the blender cup after the strawberries).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Are the strawberries put in the blender?",
+      "gt": "Yes",
+      "pred": "Yes. The strawberries are placed into the blender cup, as seen in the sequence of frames where strawberries are added to the blender (e.g., around the 6th to 8th frames in the provided sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Are the bananas put in the blender?",
+      "gt": "Yes",
+      "pred": "Yes. The bananas are cut, placed in an ice bath, and then added to the blender (evident in frames 21–22, where banana slices are placed into the blender cup with frozen strawberries).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Do the strawberries go into the blender before the bananas?",
+      "gt": "Yes",
+      "pred": "Yes. The strawberries are added to the blender first (e.g., images 5–8 show strawberries being placed into the blender), and the bananas are added later (e.g., image 21 shows banana slices being added to the blender, which already contains strawberries).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Is the ice put in the blender after the milk is added?",
+      "gt": "No",
+      "pred": "No. The ice is not put in the blender; it is used in a bowl to cool the strawberries and bananas (e.g., timestamps 0:03–0:07 for strawberries, 0:15–0:19 for bananas). The blender ingredients include frozen strawberries, frozen banana slices, walnuts, honey, and milk—no ice is added to the blender.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is the milk put into the blender?",
+      "gt": "Yes",
+      "pred": "Yes, milk is poured into the blender (as seen in the frame where a white liquid is added to the blender, around the 20th image in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is the milk put into the blender last?",
+      "gt": "Yes",
+      "pred": "Yes. The milk is added to the blender after honey (as seen in the sequence: walnuts added at ~22-23s, honey at ~24s, milk at ~25-26s) and before blending (27-28s), making it the last ingredient added to the blender.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Is anything added to the blender after the milk?",
+      "gt": "No",
+      "pred": "No. After the milk is added (as seen in frame 22), the blender is closed (frame 23) and then blended (frame 24). No additional ingredients are added after the milk.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

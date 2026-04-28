@@ -1,0 +1,711 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0027_8vfQLJ4zcqM.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0027_8vfQLJ4zcqM.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0027_8vfQLJ4zcqM",
+    "n_target": 17,
+    "n_sub": 54,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.47058823529411764,
+    "sub_accuracy": 0.7962962962962963
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "In the first experiment, did the first silver ball hit the red domino?",
+      "gt": "Yes",
+      "pred": "Yes, in the first experiment, the first silver ball hit the red domino, causing the dominoes to fall (evident in the sequence where the dominoes are shown toppling after the ball is launched).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a first silver ball in the first experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the first experiment (e.g., frames showing the initial Rube Goldberg machine setup), a silver ball is present on the catapult mechanism (visible in the early setup frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was there a red domino in the first experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the first experiment, red dominoes were part of the setup (e.g., visible in the initial scene with the wooden table, nutcrackers, and doors, around the 3rd frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the first silver ball make contact with the red domino in the first experiment?",
+      "gt": "Yes",
+      "pred": "Yes, in the first experiment, the first silver ball made contact with the red dominoes, initiating the chain reaction (evident in the sequence where dominoes begin to fall, e.g., around the 10–12 second mark in the video).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "In the first experiment, did the second silver ball hit the red domino?",
+      "gt": "Yes",
+      "pred": "No. In the first experiment (frames 0:03–0:14), only one silver ball is launched. There is no second silver ball involved in this sequence, so it could not have hit the",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a second silver ball in the first experiment?",
+      "gt": "Yes",
+      "pred": "No. In the first experiment (the initial sequence with the dominoes and the orange catapult), only one silver ball is present and launched. No second silver ball is visible in the first experiment.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the second silver ball make contact with the red domino in the first experiment?",
+      "gt": "Yes",
+      "pred": "No, the second silver ball did not make contact with the red domino in the first experiment. In the first experiment (evident from the sequence of frames showing the initial domino setup and launch), only one silver ball is launched from the catapult. There is no second silver ball involved in this specific experiment; the dominoes fall due to the first ball’s impact, and no additional silver ball is present to interact with the dominoes in this sequence.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did multiple silver balls hit the red domino in the first experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the first experiment, multiple silver balls are seen interacting with the red dominoes (e.g., frames 10–12 show multiple silver balls among the falling dominoes).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "In the first experiment, the first silver ball hit the green domino?",
+      "gt": "No",
+      "pred": "No. In the first experiment, the dominoes are red (as seen in the setup and when they fall), and there are no green dominoes involved. The first silver ball hits the red dominoes, not a green one.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a green domino in the first experiment?",
+      "gt": "No",
+      "pred": "No, in the first experiment (visible in the early frames, e.g., around the 3rd frame), all dominoes are red; there are no green dominoes present.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the first silver ball hit the red domino in the first experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the first experiment, the first silver ball was launched and caused the red dominoes to fall, as seen in the sequence of frames showing the dominoes toppling after the ball's impact (e.g., around the 10 - 12 second mark in the video).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the first silver ball hit a green-colored object in the first experiment?",
+      "gt": "No",
+      "pred": "Yes. In the first experiment, the first silver ball was launched and interacted with the green-colored door on the right (evident in the sequence where the right green door is opened, e.g., around the 14th frame of the video sequence).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "In the first experiment, did the second silver ball go to the middle door?",
+      "gt": "No",
+      "pred": "So, let's check the first experiment. The first experiment is the one with the initial setup. Let's look at the frames. In the first sequence, when the ball is launched, we need to see where the second silver ball goes. Wait, the first experiment: the frame where the ball is moving. Let's check the frame after the dominoes fall. In frame 10 (the 10th image), the silver ball is moving towards the middle. Wait, no, let's check the sequence. The first experiment: when the dominoes fall, the silver ball is launched. Let's see the frame where the ball is in motion. In frame 12, it's a blurry shot of the ball. Then frame 13 shows the ball near the middle door. Wait, the middle door is the purple one. Let's check the first experiment's outcome. The first time, the ball goes to the middle door? Wait, the question is about the second silver ball. Wait, in the first experiment, how many balls are there? Let's check the frames. In the first setup (image 3), there's a catapult with a silver ball. Then when it's launched, the dominoes fall, and the silver ball is sent. Let's check the frame where the ball is moving. Frame 10: the silver ball is moving towards the middle. Frame 11: the ball is near the middle door. Then frame 12 shows the ball in mid-air, and frame 13 shows the middle door (purple) is open. So in the first experiment, the silver ball went to the middle door. But the question is about the \"second\" silver ball. Wait, maybe I misread. Let's check the first experiment: how many balls? In the first setup, there's one ball. Wait, no, in the first sequence, when the dominoes fall, the ball is launched. Let's check the frames again. The first experiment's sequence: images 3-15. Image 10: the silver ball is moving. Image 11: the ball is near the middle. Image 12: the ball is in mid-air, then image 13 shows the middle door (purple) is open. So the ball went to the middle door. But the question is \"did the second silver ball go to the middle door?\" Wait, maybe in the first experiment, there was a second ball? Let's check. In the first setup (image 3), the catapult has one ball. When it's launched, the dominoes fall, and the ball is sent. Then, in the next frames, the ball is moving. Let's check the frame where the ball is near the doors. In image 12, the ball is in mid-air, and then image 13 shows the middle door (purple) is open, and the ball is there. So the first ball (which is the only one in the first experiment) went to the middle door. But the question says \"second silver ball\"—maybe there's a mistake. Wait, no, in the first experiment, maybe the first launch is the first ball, and then... Wait, no, let's check the exact frames. Let's list the frames:\n\n1. Red curtain (0)\n2. Red curtain with heart (1)\n3. First setup (2)\n4. Setup with timer (3)\n5. Timer (4)\n6. Timer (5)\n7. Timer (6)\n8. Timer (7) with text\n9. Setup (8)\n10. Dominoes fall (9)\n11. More dominoes fall (10)\n12. Blurry ball (11)\n13. Ball near doors (12)\n14. Middle door open (13)\n15. Loading (14)\n16. Loading with text (15)\n17. Red curtain (16)\n18. Second setup (17)\n19. Second setup (18)\n20. Second setup (19)\n21. Second setup (20)\n22. Second setup (21)\n23. Second setup (22)\n24. Second setup (23)\n25. Second setup (24)\n26. Well done (25)\n27. Subscribe (26)\n28-31. Black screen (27-30)\n\nIn the first experiment (frames 3-13), the silver ball is launched. Let's check where it goes. In frame 13, the middle door (purple) is open, and the ball is there. So the ball went to the middle door. Now, the question is about the \"second\" silver ball. Wait, in the first experiment, is there a second ball? Let's check frame 10: the silver ball is moving. Frame",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a middle door in the first experiment?",
+      "gt": "Yes",
+      "pred": "Yes, in the first experiment, there was a middle door (the purple door). This is visible in the initial setup frames (e.g., around the 3rd frame, where three doors are present: green, purple, green).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the second silver ball hit the red domino in the first experiment?",
+      "gt": "Yes",
+      "pred": "No. In the first experiment (the initial domino setup sequence), only one silver ball is launched from the catapult. There is no second silver ball involved in the first experiment, so it could not have hit the red domino. This is evident from the sequence where the single ball triggers the domino chain (e.g., frames 10–12 show the first ball in motion and impacting dominoes).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the second silver ball go through any door in the first experiment?",
+      "gt": "No",
+      "pred": "Yes, in the first experiment, the silver ball went through the green door on the right (the third door from the left). This is visible when the green door opens and the ball passes through it (evident in the sequence of frames showing the domino collapse and ball movement, e.g., around the 10–15 second mark of the first experiment’s sequence).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "In the first experiment, did the third silver ball go to the left door?",
+      "gt": "No",
+      "pred": "So, let's check the first experiment. The first experiment is shown in the sequence where the red blocks are set up. Let's look at the frames. In the first part, when the silver balls are moving, we need to see where the third ball goes. \n\nLooking at the frames: in the first experiment, the silver balls are launched. Let's check the frame where the balls are moving. The left door is green, middle is purple, right is green. The third ball—wait, let's track. The first ball goes to the right door (green), the second... Wait, no, in the first experiment, the first ball (the one from the catapult) might be the first, then the next. Wait, the question is about the third silver ball. Let's check the frame where the balls are in motion.\n\nIn the first experiment, the first silver ball (launched) goes to the right door (green), then the second ball? Wait, no, the frame where the balls are moving: in the frame that's blurry (12.0s), the ball is going towards the right. Then, the next frame (13.0s) shows the ball near the right door. Wait, but the question is about the third silver ball. Wait, maybe I need to check the order.\n\nWait, the first experiment: the setup has red blocks, and the balls are launched. Let's see the sequence. In the first part (before the \"loading\" screen), the first experiment: the balls are launched, and we need to see where the third one goes.\n\nWait, looking at the frames: in the first experiment, the first ball (the one that's launched first) goes to the right door (green), the second ball? Wait, no, in the frame where the balls are moving (12.0s), the ball is going towards the right. Then, the next frame (13.0s) shows the ball near the right door. Then, the next frame (14.0s) shows the right door open. So the first ball went to the right door. But the question is about the third silver ball. Wait, maybe there are three balls. Let's check the frame where the balls are on the table.\n\nIn frame 10.0s: \"10.0s: red blocks are falling, and there's a silver ball near the middle. 11.0s: more blocks fallen, silver balls. 12.0s: blurry, ball in air. 13.0s: ball near right door. 14.0s: right door open. 15.0s: right door open, blocks fallen. 16.0s: right door open, more blocks. 17.0s: right door is now a bright green, so the ball went to the right door. So the first ball (the one that caused the door to open) was the one that went to the right. But the question is about the third silver ball. Wait, maybe the first experiment has three balls, and the third one went to the left?\n\nWait, let's check the frames again. The first experiment (before the \"loading\" screen) shows:\n\n- The initial setup (3.0s) with red blocks.\n- Then, the blocks start falling (10.0s), and silver balls are present.\n- In 11.0s, the blocks are more fallen, and there are two silver balls.\n- 12.0s: blurry, a silver ball is in the air.\n- 13.0s: the silver ball is near the right door (green door on the right).\n- 14.0s: the right door is open (the green door on the right is now open, showing a bright green inside).\n- So the first silver ball (the one that was launched) went to the right door.\n\nBut the question is about the third silver ball. Wait, maybe in the first experiment, there are multiple balls. Let's check the frame where the balls are moving. In the first experiment, the first ball goes to the right, the second... Wait, no, the key is: the third silver ball—did it go to the left door?\n\nWait, looking at the frame 15.0s: the right door is open, and there are two silver balls on the table. 16.0s: same. 17.0s: the right door is still open, and the left door (green) is closed. So the first experiment's result is the right door opening, so the ball that went to the right door is the one that triggered it. Therefore, the third silver ball—since the first experiment only shows one ball triggering the door (the right one), the third ball might not be part of the first experiment. Wait, maybe I'm misunderstanding",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a third silver ball in the first experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the first experiment's initial setup (e.g., frame 3), there are three silver balls: one on the catapult and one on each of the two black stands (left and right).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was there a left door in the first experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the first experiment (e.g., frame 3), there was a left door (a green door on the far left).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the third silver ball go to the right door in the first experiment?",
+      "gt": "Yes",
+      "pred": "So, let's check the first experiment. The first experiment is the one with the initial setup where the dominoes are set up. In the sequence, when the first silver ball is launched, let's see where it goes. Wait, the first experiment: looking at the frames, in the first part (before the second setup), when the ball is launched, the right door is green. Let's check the frame where the ball is moving. In the frame where the ball is in motion (like frame 12, which is a bit blurry), the ball is heading towards the right door. Then, in the next frame (13), the right door is open (green door becomes a bright green, indicating it's the target). So the third silver ball? Wait, no, in the first experiment, how many balls are there? Let's count.\n\nWait, the first experiment: the setup has a catapult, and when it's triggered, the silver ball is launched. Let's see the sequence. In the first part, the dominoes are set up, and the ball is launched. The right door is green. The frame where the ball is moving (frame 12) shows the ball going towards the right door, and then in frame 14, the right door is open. So the ball went to the right door. But the question is about the third silver ball. Wait, maybe in the first experiment, there are multiple balls? Let's check.\n\nWait, looking at the frames: in the first experiment (the one with the dominoes), the first ball is launched, then maybe another? No, in the first setup, the first ball is launched, and it goes through the dominoes, then the right door opens. Let's check the timestamps. The first experiment is the first set of frames (from frame 3 to frame 15 maybe). In frame 10, the dominoes are falling, and the ball is moving. Then in frame 12, the ball is in the air, and in frame 13, the right door (green) is open. So the ball that was launched went to the right door. Now, the question is about the third silver ball. Wait, maybe there are multiple balls. Let's check the frames where balls are present.\n\nIn frame 11, there are two silver balls? No, frame 11: the dominoes are falling, and there's a silver ball in the middle. Then in frame 12, the ball is in the air. Wait, maybe the first experiment has one ball. The question says \"third silver ball\"—maybe in the first experiment, there are multiple trials? Let's check the sequence.\n\nWait, the video shows two main experiments: the first one (with the dominoes and the catapult) and the second one (with the different setup). Let's check the first experiment's ball movement.\n\nIn the first experiment (frames 3-15):\n\n- Frame 3: initial setup, no ball moving.\n- Frame 10: dominoes start falling, a silver ball is at the center.\n- Frame 11: dominoes are falling, the ball is moving towards the right door.\n- Frame 12: the ball is in mid-air, heading towards the right door (the green door on the right).\n- Frame 13: the right door is open (the green door is now a bright green, indicating it's the target), so the ball went to the right door.\n\nNow, the question is about the \"third silver ball\". Wait, maybe in the first experiment, there are multiple balls. Let's check the frames where balls are present. In frame 10, there's one silver ball. Then in frame 11, it's moving. In frame 12, same ball. Then in frame 13, the ball is inside the right door (the green door is open). So that's one ball. The question says \"third silver ball\"—maybe the first experiment had three balls? Let's check other frames.\n\nWait, in the second experiment (the one with the different setup, starting around frame 18), there are multiple balls. But the question is about the first experiment. Let's check the first experiment's ball count.\n\nLooking at frame 10: there's one silver ball. Then in frame 11, same ball. So the first experiment has one ball. The question says \"third silver ball\"—maybe that's a mistake, or maybe I'm missing something.\n\nWait, no. Let's check the frames again. In the first experiment (the one with the dominoes), the ball is launched, and it goes to the right door. The right door is the green one on the right. So the answer is yes.\n\nWait, but let's confirm. In frame 13, the right door (the green one on the right) is",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the third silver ball go to the left door in the first experiment?",
+      "gt": "No",
+      "pred": "No. In the first experiment (sequence of frames starting with the initial setup of red blocks and the catapult), the silver ball launched goes to the right door (the green door on the right side of the three doors), not the left door. The left door is the green door on the left side of the three doors. Since the ball does not go to the left door in the first experiment, the answer is no.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "In the first experiment, did the third silver ball go to the middle door?",
+      "gt": "No",
+      "pred": "Yes, in the first experiment, the third silver ball went to the middle door. This is visible in the sequence where the silver balls are launched, and the middle (purple) door is impacted (e.g., around the 10–15 second mark in the first experimental sequence).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a third silver ball in the first experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the first experiment's initial setup (e.g., frame 3), there are three silver balls: one on the catapult and one on each of the two black stands (left and right).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the third silver ball in the first experiment go to the right door?",
+      "gt": "Yes",
+      "pred": "To determine if the third silver ball in the first experiment went to the right door, we analyze the video sequence:  \n\n1. The first experiment begins with the red curtains opening (frame 0) and the initial setup (frame 2–3).  \n2. During the first experiment, silver balls are launched from the catapult. A key frame shows a silver ball in mid-air (frame 12), moving toward the **right door** (the green door on the far right of the three doors).  \n3. The right door then opens (frame 14–15), confirming the ball’s path to the right door.  \n\nThus, the third silver ball (or the ball in the first experiment’s sequence) went to the right door.  \n\n**Answer:** Yes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the third silver ball in the first experiment go to the middle door?",
+      "gt": "No",
+      "pred": "No. In the first experiment, the silver ball that triggered a door opened the right green door (as seen in the frame around 13.0s where the right green door is glowing and open), not the middle purple door. Therefore, the third silver ball did not go to the middle door.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "In the first experiment, did the third silver ball go to the right door?",
+      "gt": "Yes",
+      "pred": "To determine if the third silver ball in the first experiment went to the right door, we analyze the sequence of frames for the first experiment (before the \"LOADING...\" screen):  \n\n- The first experiment involves red dominoes, a catapult, and three doors (left green, middle purple, right green).  \n- As the dominoes fall (e.g., frames 9–13), silver balls are launched.  \n- In frame 12, a silver ball is seen in mid-air moving toward the **right door** (the green door on the far right).  \n- In frame 13, the right door is open, and the ball has passed through it.  \n\nThus, the third silver ball in the first experiment did go to the right door.  \n\n**Answer:** Yes, the third silver ball went to the right door (evident in frames 1",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a third silver ball in the first experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the first experiment's initial setup (e.g., frame 3), there are three silver balls: one on the catapult and one on each of the two black stands (left and right).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was there a right door in the first experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the first experiment setup (e.g., frame 3), there were three doors: left green, middle purple, and right green. The right door was present.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the third silver ball in the first experiment go to the right door?",
+      "gt": "Yes",
+      "pred": "To determine if the third silver ball in the first experiment went to the right door, we analyze the video sequence:  \n\n1. The first experiment begins with the red curtains opening (frame 0) and the initial setup (frame 2–3).  \n2. During the first experiment, silver balls are launched from the catapult. A key frame shows a silver ball in mid-air (frame 12), moving toward the **right door** (the green door on the far right of the three doors).  \n3. The right door then opens (frame 14–15), confirming the ball’s path to the right door.  \n\nThus, the third silver ball (or the ball in the first experiment’s sequence) went to the right door.  \n\n**Answer:** Yes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "In the second experiment, did the first ball hit the red domino?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment, the first ball hits the red domino. This can be observed in the sequence of frames showing the second experiment (after the initial \"LOADING...\" screens and red curtain), where the ball’s movement triggers the dominoes to fall.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a first ball in the second experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment setup (visible in frames around the 19-20 second mark), a ball is present as part of the initial configuration.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was there a red domino in the second experiment?",
+      "gt": "Yes",
+      "pred": "Yes, there were red dominoes in the second experiment. This is visible in the frames showing the second setup (e.g., starting from the frame with the long bridge structure, around timestamp 18-25).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the first ball in the second experiment hit the red domino?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment (evident from the distinct setup with the long bridge and different domino arrangement, starting around the 17th frame), the first ball launched hits the red domino, initiating the chain reaction.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "target",
+      "question": "In the second experiment, did the first ball hit the blue rotating hand?",
+      "gt": "No",
+      "pred": "Yes. In the second experiment, the first ball hits the blue rotating hand. This can be verified by observing the interaction in the sequence of frames showing the second experiment's setup and ball movement.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a first ball in the second experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment setup (visible in frames around the 19-20 second mark), a ball is present as part of the initial configuration.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was there a blue rotating hand in the second experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment (roughly from frame 18 to 26), a blue rotating lever/element is visible. For example, frame 19 shows blue arrows and a blue lever in motion, and subsequent frames (e.g., 20–25) depict this blue rotating component as part of the mechanism.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the first ball in the second experiment hit the red domino?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment (evident from the distinct setup with the long bridge and different domino arrangement, starting around the 17th frame), the first ball launched hits the red domino, initiating the chain reaction.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the first ball in the second experiment hit the blue rotating hand?",
+      "gt": "No",
+      "pred": "Yes, the first ball in the second experiment hit the blue rotating hand. This can be observed in the sequence of frames showing the second Rube Goldberg machine (e.g., around the segment where the ball is launched and interacts with the blue component).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 9,
+      "kind": "target",
+      "question": "In the second experiment, did the second ball hit the red domino?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment (visible in frames ~15–20), the second ball’s movement results in it hitting the red domino.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a second ball in the second experiment?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment, multiple balls are visible in the setup (e.g., frames showing the second experiment’s arrangement, such as the frame with \"Go back if you need more time\" and the subsequent action sequences, where two or more balls are present).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was there a red domino in the second experiment?",
+      "gt": "Yes",
+      "pred": "Yes, there were red dominoes in the second experiment. This is visible in the frames showing the second setup (e.g., starting from the frame with the long bridge structure, around timestamp 18-25).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the second ball in the second experiment hit the red domino?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment, the second ball (launched from the right) hits the red domino, triggering the chain reaction (evident in frames showing the red dominoes falling and the ball’s trajectory interacting with them, e.g., around the sequence starting at the new setup with the blue switcher).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "target",
+      "question": "In the second experiment, did the second ball hit the blue rotating hand?",
+      "gt": "No",
+      "pred": "Yes. In the second experiment, the second ball hits the blue rotating hand. This can be observed in the sequence of frames showing the second experiment's setup and ball movement (e.g., around the frame where the blue rotating hand is visible and the ball interacts with it).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "In the second experiment, was there a second ball?",
+      "gt": "Yes",
+      "pred": "Yes, in the second experiment, there was a second ball. This can be observed in frames showing the second setup (e.g., around the 16th frame and subsequent frames of the second experiment sequence), where multiple silver balls are present.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "In the second experiment, was there a blue rotating hand?",
+      "gt": "Yes",
+      "pred": "Yes, in the second experiment, there was a blue rotating hand. This can be observed in frames showing the second Rube Goldberg machine setup (e.g., around the 19–25 second mark in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "In the second experiment, did the second ball hit the red domino?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment (visible in frames ~15–20), the second ball’s movement results in it hitting the red domino.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "In the second experiment, did the third ball hit the blue rotating hand?",
+      "gt": "Yes",
+      "pred": "No. In the second experiment (evident from the later sequence of frames, e.g., around the 19th frame onward), the third ball does not hit the blue rotating hand (cyan object). The video shows the balls' movement and interactions, and no such collision occurs.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 11,
+      "kind": "target",
+      "question": "In the second experiment, did the third ball hit the red domino?",
+      "gt": "No",
+      "pred": "Yes, in the second experiment, the third ball hit the red domino. This can be observed in the sequence of frames showing the second experiment's setup and action (e.g., around the 19-22 second mark where the dominoes fall and balls interact).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "In the second experiment, was there a third ball?",
+      "gt": "Yes",
+      "pred": "Yes, in the second experiment, there was a third ball. This can be observed in the frames of the second experiment (e.g., around the 20–25 second mark in the sequence), where multiple silver balls are visible in motion or positioned on the setup, including a third ball.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "In the second experiment, was there a red domino?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment (evident in frames showing the new setup after the first “LOADING” and “WELL DONE” sequences, e.g., around timestamp 17–25), red dominoes are present in the scene.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "In the second experiment, did the blue rotating hand hit the red domino?",
+      "gt": "Yes",
+      "pred": "Yes, in the second experiment, the blue rotating hand hit the red domino. This is evident in the sequence where the blue rotating hand interacts with the domino setup, triggering the chain reaction (e.g., around the frames showing the second experiment’s mechanism in action, where the blue hand’s movement causes dominoes to fall).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "target",
+      "question": "In the second experiment, did the third ball hit the blue rotating hand?",
+      "gt": "Yes",
+      "pred": "No. In the second experiment (evident from the later sequence of frames, e.g., around the 19th frame onward), the third ball does not hit the blue rotating hand (cyan object). The video shows the balls' movement and interactions, and no such collision occurs.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "In the second experiment, was there a third ball?",
+      "gt": "Yes",
+      "pred": "Yes, in the second experiment, there was a third ball. This can be observed in the frames of the second experiment (e.g., around the 20–25 second mark in the sequence), where multiple silver balls are visible in motion or positioned on the setup, including a third ball.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "In the second experiment, was there a blue rotating hand?",
+      "gt": "Yes",
+      "pred": "Yes, in the second experiment, there was a blue rotating hand. This can be observed in frames showing the second Rube Goldberg machine setup (e.g., around the 19–25 second mark in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "In the second experiment, did the third ball make contact with something?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment (starting around the 19th frame), the third ball is shown making contact with the structure (e.g., the dominoes or other components), as seen in the sequence of frames depicting the ball’s movement and interaction.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "target",
+      "question": "In the second experiment, did the blue rotating hand hit the red domino?",
+      "gt": "Yes",
+      "pred": "Yes, in the second experiment, the blue rotating hand hit the red domino. This is evident in the sequence where the blue rotating hand interacts with the domino setup, triggering the chain reaction (e.g., around the frames showing the second experiment’s mechanism in action, where the blue hand’s movement causes dominoes to fall).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "In the second experiment, was there a blue rotating hand?",
+      "gt": "Yes",
+      "pred": "Yes, in the second experiment, there was a blue rotating hand. This can be observed in frames showing the second Rube Goldberg machine setup (e.g., around the 19–25 second mark in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "In the second experiment, was there a red domino?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment (evident in frames showing the new setup after the first “LOADING” and “WELL DONE” sequences, e.g., around timestamp 17–25), red dominoes are present in the scene.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "In the second experiment, did something hit the red domino after the blue rotating hand was activated?",
+      "gt": "Yes",
+      "pred": "Yes. After the blue rotating hand was activated in the second experiment (evident in frames showing the blue hand and \"Go back if you need more time\" text, around the sequence where the domino chain reaction begins), the red dominoes were hit and fell. This is visible in the frames where the dominoes collapse following the blue hand’s movement.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 14,
+      "kind": "target",
+      "question": "In the second experiment, did the fourth ball go to the left door?",
+      "gt": "No",
+      "pred": "So, let's figure out this question. The question is about the second experiment and whether the fourth ball went to the left door. First, I need to identify which part of the video is the second experiment. \n\nLooking at the frames, there are two main setups. The first set of experiments (from the early frames) shows a table with three doors (green, purple, green) and nutcrackers. Then there's a transition, and the second experiment (later frames) has a different setup, maybe with a different arrangement. \n\nWait, the problem says \"second experiment\". Let's check the sequence. The video starts with red curtains, then shows the first setup (with the catapult and dominoes), then after some frames, there's a new setup with a different arrangement (like the one with the \"START\" label and more complex dominoes). \n\nIn the second experiment, we need to track the fourth ball. Let's look at the frames where the second experiment is shown. Let's check the frames:\n\n- The second experiment is likely the part after the first set of dominoes, when the setup changes. For example, in the frame where it says \"Go back if you need more time\" (one of the later frames), the setup is different. \n\nWait, let's check the ball movements. In the second experiment, the balls are launched. Let's see: when the mechanism is triggered, how many balls are there, and where do they go?\n\nLooking at the frame where the balls are moving: in the second experiment, the balls go through the setup. The left door in the second experiment—what's the left door? In the second setup, the doors are green, purple, green (same as first, but the setup is different). Wait, in the second experiment, the \"left door\" would be the green door on the far left.\n\nNow, the question is about the fourth ball. Let's count the balls. In the second experiment, when the mechanism is activated, how many balls are launched? Let's see: in the frame where the balls are moving, there are multiple balls. Let's check the sequence:\n\nIn the second experiment (the one with the \"START\" label), when the switch is activated, the first ball goes, then the second, etc. The key is to see where the fourth ball ends up.\n\nWait, let's check the frame where the dominoes are falling and the balls are moving. Let's look at the frame where the balls are in motion. For example, in frame 19 (the one with the \"Go back if you need more time\" text), the setup is different. Then, when the mechanism is triggered, the balls move. Let's see:\n\nIn the second experiment, the fourth ball—does it go to the left door? Let's check the result. In the final frame of the second experiment, the left door (green) is shown, and the ball might have gone there. Wait, no—let's check the frame where the doors are opened. In the frame where the green door on the left is open (frame 23), that's the result of a ball hitting it. But which ball was it?\n\nWait, the question is about the fourth ball. Let's count the balls. In the second experiment, how many balls are there? Let's see: in the frame where the balls are on the table (frame 20), there are multiple silver balls. When the mechanism is activated, the balls are launched one by one. The first ball, second, third, fourth.\n\nIn the second experiment, the fourth ball: let's see the path. The left door is the green door on the far left. In the frame where the dominoes have fallen and the balls have moved, the left door (green) is open. But is that the fourth ball? Or the first?\n\nWait, maybe I need to check the sequence of the second experiment. Let's look at the frames for the second experiment:\n\n- The second experiment starts after the first one. The first experiment ends with the \"WELL DONE!\" screen, but no, the first experiment is the one with the red dominoes, then the second experiment is a new setup. Wait, the video has two main experiments: the first with the initial domino setup, and the second with a different domino arrangement.\n\nLooking at the frames:\n\n- The first experiment: frames 3-12 (the one with the three doors, nutcrackers, dominoes, catapult). Then, the \"LOADING\" screens, then the second experiment starts with a new setup (frames 18-25).\n\nIn the second experiment, when the balls are launched, let's count:\n\n- The first ball: goes through the setup, hits the left door? Or not.\n\nWait, in the second experiment, the left door is the green door on the far left. In the frame where the dominoes",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "In the second experiment, was there a fourth ball?",
+      "gt": "Yes",
+      "pred": "Yes, in the second experiment, there was a fourth ball. This can be observed in frames of the second experiment (e.g., around timestamp corresponding to the 23rd frame in the sequence, where multiple silver balls are visible, including a fourth one).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "In the second experiment, did the fourth ball go through a door?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment, the fourth ball went through a door (the green door on the right is shown open in the final state of the second experiment, as seen in the frame around the 25-second mark where the door is illuminated and open).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "In the second experiment, did the fourth ball go to the middle door?",
+      "gt": "Yes",
+      "pred": "To determine if the fourth ball went to the middle door in the second experiment, we analyze the video:  \n\n- The second experiment involves a Rube Goldberg machine with a different setup (e.g., a long plank, blue switcher, and rearranged dominoes).  \n- In the sequence showing this experiment, the middle door (purple) is the target for the ball.  \n- When the machine activates, the ball (referred to as the \"fourth ball\" in context) successfully reaches the middle door, triggering it (evident in frames where the purple door opens or activates).  \n\nThus, **yes**, the fourth ball went to the middle door in the second experiment.  \n\n*(Rough timestamp context: The second experiment’s key action occurs around the segment with the \"Go back if you need more time\" text and the machine’s reconfiguration, where the ball’s path to the middle door is shown.)*",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "target",
+      "question": "In the second experiment, did the fourth ball go to the middle door?",
+      "gt": "Yes",
+      "pred": "To determine if the fourth ball went to the middle door in the second experiment, we analyze the video:  \n\n- The second experiment involves a Rube Goldberg machine with a different setup (e.g., a long plank, blue switcher, and rearranged dominoes).  \n- In the sequence showing this experiment, the middle door (purple) is the target for the ball.  \n- When the machine activates, the ball (referred to as the \"fourth ball\" in context) successfully reaches the middle door, triggering it (evident in frames where the purple door opens or activates).  \n\nThus, **yes**, the fourth ball went to the middle door in the second experiment.  \n\n*(Rough timestamp context: The second experiment’s key action occurs around the segment with the \"Go back if you need more time\" text and the machine’s reconfiguration, where the ball’s path to the middle door is shown.)*",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a second experiment in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there was a second experiment. The video shows a different setup (with a bridge, new domino arrangements, and other elements) starting around the 15-20 second mark (e.g., frames 16-20), indicating a second experiment.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a fourth ball appear in the second experiment?",
+      "gt": "Yes",
+      "pred": "To determine if a fourth ball appeared in the second experiment, we analyze the relevant frames:  \n\n- The **second experiment** (distinguished by a different Rube Goldberg machine setup, e.g., the long ramp and cyan components) is shown in frames starting around 19 seconds.  \n- In these frames (e.g., frames 19–25), we count the silver balls: **three** balls are visible in motion or on the machine (e.g., frame 21 shows three balls, frame 22 shows three balls, etc.).  \n- No frame in the second experiment’s sequence",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the fourth ball in the second experiment go to the middle door?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment, the fourth ball (as observed in the sequence of ball movements) goes to the middle door (purple door), which is confirmed by the frame where the purple door is open and a ball is",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 16,
+      "kind": "target",
+      "question": "In the second experiment, did the fourth ball go to the right door",
+      "gt": "No",
+      "pred": "No. In the second experiment, the fourth ball did not go to the right door. This can be verified by observing the ball's trajectory in the relevant frames of the second experiment (e.g., frames showing the ball's movement toward the doors, where the rightmost door is green, and the ball does not enter it).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 16,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a fourth ball appear in the second experiment?",
+      "gt": "Yes",
+      "pred": "To determine if a fourth ball appeared in the second experiment, we analyze the relevant frames:  \n\n- The **second experiment** (distinguished by a different Rube Goldberg machine setup, e.g., the long ramp and cyan components) is shown in frames starting around 19 seconds.  \n- In these frames (e.g., frames 19–25), we count the silver balls: **three** balls are visible in motion or on the machine (e.g., frame 21 shows three balls, frame 22 shows three balls, etc.).  \n- No frame in the second experiment’s sequence",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 16,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the fourth ball in the second experiment go to the right door?",
+      "gt": "No",
+      "pred": "So, let's try to figure out this question. The question is about the fourth ball in the second experiment and whether it went to the right door. First, I need to recall the sequence of the video.\n\nFirst, let's identify the experiments. The video has two main setups with the Rube Goldberg machine. The first experiment is shown in the initial frames (like the one with the red dominoes, then the ball going through, etc.), and the second experiment is the one that comes after, with some changes in the setup (like the cyan parts, different domino arrangements).\n\nLooking at the second experiment: let's check the frames. The second experiment starts around the 18th frame (the one with the \"Go back if you need more time\" text and the different setup). In the second experiment, we need to track the fourth ball. Let's see the sequence:\n\nIn the second experiment, the balls are launched. Let's count the balls. The first ball: when the machine is activated, the first ball goes... but we need the fourth. Let's check the frames where the balls are moving.\n\nLooking at the frames:\n\n- Frame 19: The setup with the second experiment, showing the cyan switcher, etc.\n- Frame 20: The ball starts moving.\n- Frame 21: The ball is on the track.\n- Frame 22: The ball is moving towards the door.\n- Frame 23: The ball is near the door.\n\nWait, but the question is about the fourth ball. Let's check the frames where multiple balls are in play. In the second experiment, there are multiple balls. Let's see the frame where the fourth ball is. Let's check the frame where the text \"Go back if you need more time\" is present (frame 24), and then the next frames.\n\nWait, in the second experiment, the setup has a different arrangement. Let's look at the frame where the dominoes are falling and the balls are moving. In the second experiment, when the machine is activated, the first ball goes through, then the second, third, fourth. We need to see where the fourth ball ends up.\n\nLooking at frame 29: \"The green door is open, and the fourth ball...\". Wait, no. Let's check the frame where the second experiment's outcome is shown. The second experiment's final frame (frame 30) shows the green door (right door? Let's check the doors: in the setup, the doors are green (left), purple (middle), green (right). Wait, in the first experiment, the right door is green. In the second experiment, the right door is green as well.\n\nWait, in the first experiment, the final frame (frame 14) shows the right green door opening. In the second experiment, the final frame (frame 30) shows the right green door opening. But the question is about the fourth ball in the second experiment.\n\nWait, let's check the frame where the second experiment's balls are moving. Let's look at the frames from 18 to 29.\n\nFrame 18: The setup of the second experiment. The doors are green (left), purple (middle), green (right). The right door is green.\n\nFrame 19: The machine is activated. The first ball is launched.\n\nFrame 20: The first ball is on the track.\n\nFrame 21: The first ball is moving towards the door.\n\nFrame 22: The first ball is near the door.\n\nFrame 23: The first ball hits the door, which opens. Then the second ball is launched.\n\nWait, no, maybe the balls are launched in sequence. Let's check the frame where multiple balls are present. In the second experiment, when the machine is running, there are multiple silver balls. Let's count the balls:\n\n- The first ball: when the dominoes start, the first ball is launched (frame 19: the first ball is in the catapult? Wait, no, the catapult is part of the machine. Let's check the frame where the balls are moving.\n\nLooking at frame 25: \"The fourth ball in the second experiment\" — but I need to find which frame shows the fourth ball.\n\nWait, the key is to see in the second experiment, the right door (which is the green one on the right) — does the fourth ball go there?\n\nIn the second experiment, the final frame (frame 30) shows the right green door open. But does that mean the fourth ball went there? Let's check the frame where the balls are moving.\n\nLooking at frame 29: \"The fourth ball\" — in frame 29, the text says \"Go back if you need more time\", and the machine is running. Then, in frame 30, the right green door is open, and the dominoes are all down.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 16,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the fourth ball in the second experiment go to the middle door?",
+      "gt": "Yes",
+      "pred": "Yes. In the second experiment, the fourth ball (as observed in the sequence of ball movements) goes to the middle door (purple door), which is confirmed by the frame where the purple door is open and a ball is",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

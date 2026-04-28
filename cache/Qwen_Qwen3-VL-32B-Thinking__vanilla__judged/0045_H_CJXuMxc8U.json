@@ -1,0 +1,126 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0045_H_CJXuMxc8U.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0045_H_CJXuMxc8U.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0045_H_CJXuMxc8U",
+    "n_target": 2,
+    "n_sub": 9,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 1.0,
+    "sub_accuracy": 0.8888888888888888
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Is the woman who walks toward us at the beginning the one who later stands up and leaves?",
+      "gt": "No",
+      "pred": "No. The woman who walks toward the camera at the beginning (wearing a white pinstripe suit) is not the one who later stands up and leaves. The woman who stands up and leaves is the one in the floral dress (e.g., visible in the scene where she rises from the table and walks away, around 24–26 seconds). These are two distinct characters.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does a woman walk toward the camera at the beginning of the video?",
+      "gt": "Yes",
+      "pred": "Yes. In the first frame (0.00s), a woman in a white suit is seen walking toward the camera.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does a woman stand up later in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A woman in a white floral dress stands up later in the video, as seen in the frame around 37 - 38 seconds.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Is the woman who walks toward the camera at the beginning the same person who stands up later?",
+      "gt": "No",
+      "pred": "No. The woman in the white pinstripe suit walking toward the camera at the beginning (0.0s) is different from the woman in the white floral dress who stands up later (around 30.0s).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does the woman who walks toward the camera at the beginning remain seated throughout the video?",
+      "gt": "Yes",
+      "pred": "No. The woman in the white suit walks toward the camera at the beginning (0:00) and is not seated initially. She later sits at a table to play mahjong but was not seated throughout the entire video.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Does the woman who walks toward us at the beginning walk away with another woman at the end of the video?",
+      "gt": "No",
+      "pred": "No. The woman who walks toward the camera at the beginning (wearing a white pinstripe suit) is not the same woman who walks away with another woman at the end. At the end (around 42 - 44 seconds), the woman in the floral dress walks away with a woman in an orange dress. The woman in the white suit is not present in the final walking scene.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does a woman walk toward the camera at the beginning of the video?",
+      "gt": "Yes",
+      "pred": "Yes. In the first frame (0.00s), a woman in a white suit is seen walking toward the camera.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the woman who walks toward the camera at the beginning walk away at the end of the video?",
+      "gt": "No",
+      "pred": "No. The woman who walks toward the camera at the beginning (wearing a white pinstripe suit, visible in the first frame around 0:00) does not walk away at the end of the video. The final scenes (around 4:00–4:10) show the woman in the floral dress walking away, not the woman in the white suit.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does a different woman walk away at the end of the video?",
+      "gt": "Yes",
+      "pred": "Yes, a woman in a floral dress walks away at the end of the video (around 28-30 seconds).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Are there two women walking away together at the end of the video?",
+      "gt": "Yes",
+      "pred": "Yes, in the final frames (around 35-37 seconds), two women (one in a white floral dress and one in an orange dress) are shown walking away together.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Is the woman who walks toward the camera at the beginning one of the two women who walk away together at the end?",
+      "gt": "No",
+      "pred": "No. The woman in the white striped suit walking toward the camera at the beginning (0:00) is not one of the two women who walk away together at the end (3:38–3:41). The two women at the end are the woman in the floral dress and the woman in the orange dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

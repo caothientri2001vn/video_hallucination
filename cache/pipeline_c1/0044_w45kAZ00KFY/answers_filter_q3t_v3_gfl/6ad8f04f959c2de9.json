@@ -1,0 +1,34 @@
+{
+  "question": "Is the number 9 item a cake?",
+  "pred": "The video features a game called \"Cake or Cash?\" where contestants must identify which of several numbered items is actually a cake.\n\n1.  **Identify Item 9**: In the frames showing the numbered pedestals (e.g., at 01:10 and 01:13), pedestal 9 displays a green decorative bottle with a raven/bird skull design and the label \"RAVEN'S EYES\".\n2.  **Determine if it is a cake**: The host cuts into several items to reveal their true nature. He cuts into item 5 (a black bottle labeled \"POWDERED BONES\"), which is revealed to be a cake with green and purple layers (frames at 01:15-01:17). He also cuts into item 7 (a blue bottle), which is revealed to be a cake with purple layers and sprinkles (frames at 01:22-01:23).\n3.  **Item 9's status**: While other items are cut and revealed as cakes, item 9 (the green bottle) remains on its pedestal and is never cut or identified as a cake in the provided footage or Context. The Context explicitly describes it as a \"green decorative bottle\".\n\nEvidence: Context event 36 describes pedestal 9 as displaying a \"green decorative bottle with intricate patterns\"; frames at 01:13 and 01:21 show this bottle remains intact while other items are cut.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "reveal",
+      "description": "Pedestal 9 displays a green decorative bottle with intricate patterns",
+      "participants": [],
+      "actor": "",
+      "object": "green bottle",
+      "object_before": "",
+      "object_after": "",
+      "on_screen_text": [
+        {
+          "text": "9",
+          "location": "podium"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Pedestal Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 36,
+      "start_time": "01:10",
+      "end_time": "01:13",
+      "sub_events": [],
+      "subtype_order": 13,
+      "subtype_total": 16,
+      "round_index": 1,
+      "segment_label_resolved": "Cake or Cash?"
+    }
+  ]
+}

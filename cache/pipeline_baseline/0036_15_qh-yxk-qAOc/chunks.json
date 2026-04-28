@@ -1,0 +1,201 @@
+{
+  "video_name": "0036_15_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 17.116666666666667,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "gemini-3-flash-preview",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:01",
+          "event_type": "transition",
+          "description": "The screen fades in from black to a wide shot of a soccer match.",
+          "participants": [
+            "blue-shirt players",
+            "striped-shirt players"
+          ],
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:01",
+          "local_end": "00:03",
+          "event_type": "look",
+          "description": "Players from both teams watch the ball as it is kicked into the air.",
+          "participants": [
+            "blue-shirt players",
+            "striped-shirt players"
+          ],
+          "object": "soccer ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:03",
+          "local_end": "00:05",
+          "event_type": "kick",
+          "description": "A blue-shirt player (Maicon, #13) kicks the ball toward the goal.",
+          "participants": [
+            "blue-shirt man"
+          ],
+          "actor": "blue-shirt man",
+          "object": "soccer ball",
+          "on_screen_text": [
+            {
+              "text": "MAICON",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:07",
+          "event_type": "header",
+          "description": "A striped-shirt player attempts to head the ball away from the goal.",
+          "participants": [
+            "striped-shirt man"
+          ],
+          "actor": "striped-shirt man",
+          "object": "soccer ball",
+          "on_screen_text": [
+            {
+              "text": "MAICON",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:09",
+          "event_type": "goal",
+          "description": "The ball enters the goal as the green-shirt goalkeeper dives but misses.",
+          "participants": [
+            "green-shirt man"
+          ],
+          "actor": "green-shirt man",
+          "object": "soccer ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "MAICON",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:09",
+          "local_end": "00:12",
+          "event_type": "celebration",
+          "description": "The blue-shirt player (Maicon, #13) runs toward the camera celebrating the goal.",
+          "participants": [
+            "blue-shirt man"
+          ],
+          "actor": "blue-shirt man",
+          "on_screen_text": [
+            {
+              "text": "MAICON",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:12",
+          "local_end": "00:15",
+          "event_type": "gesture",
+          "description": "The blue-shirt player (Maicon, #13) kisses his hand and points to the crowd.",
+          "participants": [
+            "blue-shirt man"
+          ],
+          "actor": "blue-shirt man",
+          "on_screen_text": [
+            {
+              "text": "MAICON",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 17.116666666666667,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:17",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:16",
+          "event_type": "celebration",
+          "description": "The blue-and-black-striped jersey player (number 13) celebrates by putting his hand to his mouth.",
+          "participants": [
+            "blue-and-black-striped jersey player (number 13)"
+          ],
+          "actor": "blue-and-black-striped jersey player (number 13)",
+          "object": "hand",
+          "on_screen_text": [
+            {
+              "text": "13",
+              "location": "jersey_number"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match Celebration",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:16",
+          "local_end": "00:17",
+          "event_type": "celebration",
+          "description": "Another blue-and-black-striped jersey player jumps onto the back of the celebrating player (number 13).",
+          "participants": [
+            "blue-and-black-striped jersey player (number 13)",
+            "blue-and-black-striped jersey player"
+          ],
+          "actor": "blue-and-black-striped jersey player",
+          "object": "player",
+          "on_screen_text": [
+            {
+              "text": "13",
+              "location": "jersey_number"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match Celebration",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

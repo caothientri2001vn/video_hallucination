@@ -1,0 +1,115 @@
+{
+  "question": "Does the man win the game?",
+  "pred": "Evidence: The Context shows the red-hoodie man celebrating after a ball enters a slot and jumping while cheering, but these are momentary reactions to individual rolls, not confirmation of winning the entire game. No explicit statement or evidence indicates he won the overall game.\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "game",
+      "description": "the red-hoodie man rolls a red ball across the table",
+      "participants": [
+        "red-hoodie man"
+      ],
+      "actor": "red-hoodie man",
+      "object": "red ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Ball Rolling Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 74,
+      "start_time": "01:13",
+      "end_time": "01:14",
+      "sub_events": [],
+      "subtype_order": 29,
+      "subtype_total": 29,
+      "round_index": 1,
+      "segment_label_resolved": "Ball Slide Game"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the red-hoodie man raises his arm in celebration as the ball enters the leftmost slot (labeled 1)",
+      "participants": [
+        "red-hoodie man"
+      ],
+      "actor": "red-hoodie man",
+      "object": "red ball",
+      "outcome": "in",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "other"
+        },
+        {
+          "text": "0",
+          "location": "other"
+        },
+        {
+          "text": "2",
+          "location": "other"
+        },
+        {
+          "text": "0",
+          "location": "other"
+        },
+        {
+          "text": "1",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Ball Rolling Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 75,
+      "start_time": "01:14",
+      "end_time": "01:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Ball Slide Game"
+    },
+    {
+      "event_type": "react",
+      "description": "the red-hoodie man jumps up and down while cheering",
+      "participants": [
+        "pink-shirt woman",
+        "red-hoodie man"
+      ],
+      "actor": "red-hoodie man",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Ball Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 76,
+      "start_time": "01:15",
+      "end_time": "01:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Ball Slide Game"
+    },
+    {
+      "event_type": "gesture",
+      "description": "the red-hoodie man reaches up and touches a red balloon",
+      "participants": [
+        "pink-shirt woman",
+        "red-hoodie man"
+      ],
+      "actor": "red-hoodie man",
+      "object": "red balloon",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Ball Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 78,
+      "start_time": "01:16",
+      "end_time": "01:17",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Ball Slide Game"
+    }
+  ]
+}

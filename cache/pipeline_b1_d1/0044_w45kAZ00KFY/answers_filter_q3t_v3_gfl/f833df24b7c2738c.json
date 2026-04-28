@@ -1,0 +1,89 @@
+{
+  "question": "Is the number 2 item a cake?",
+  "pred": "The video features a game called \"Cake or Cash?\" where contestants must identify which of several numbered items is a real object and which is a cake. In the segment shown in the frames, the host reveals the items on top of cylinders numbered 1 through 9. Item #2 is revealed to be a white skeletal hand holding a red candle. Later in the video, the host uses a knife to cut into various items to reveal their interior. When he cuts into item #7 (a blue potion bottle), it is revealed to be a purple cake. However, item #2 (the skeletal hand with a red candle) is never cut or identified as a cake in the provided evidence; it remains on its podium as a decorative object.\n\nEvidence: frames at ~00:41 and ~00:43 show item #2 is a white skeletal hand holding a red candle.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "reveal",
+      "description": "Close-up reveals a black clock-like object on top of cylinder #1 (leftmost front cylinder)",
+      "participants": [],
+      "actor": "",
+      "object_before": "white cylinder",
+      "object_after": "white cylinder with black clock",
+      "cover": "cylinder #1",
+      "hidden": "black clock-like object",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "podium"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Cylinder Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 22,
+      "start_time": "00:35",
+      "end_time": "00:38",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 16,
+      "round_index": 1,
+      "segment_label_resolved": "Cake or Cash?"
+    },
+    {
+      "event_type": "reveal",
+      "description": "Close-up reveals a white skeletal hand holding a red candle on top of cylinder #2 (rightmost front cylinder)",
+      "participants": [],
+      "actor": "",
+      "object_before": "white cylinder",
+      "object_after": "white cylinder with skeletal hand and red candle",
+      "cover": "cylinder #2",
+      "hidden": "white skeletal hand with red candle",
+      "on_screen_text": [
+        {
+          "text": "2",
+          "location": "podium"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Cylinder Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 23,
+      "start_time": "00:38",
+      "end_time": "00:41",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 16,
+      "round_index": 1,
+      "segment_label_resolved": "Cake or Cash?"
+    },
+    {
+      "event_type": "transition",
+      "description": "Split-screen view showing cylinder #1 with black clock on left and cylinder #2 with skeletal hand on right",
+      "participants": [],
+      "actor": "",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "podium"
+        },
+        {
+          "text": "2",
+          "location": "podium"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Cylinder Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 24,
+      "start_time": "00:41",
+      "end_time": "00:43",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Cake or Cash?"
+    }
+  ]
+}

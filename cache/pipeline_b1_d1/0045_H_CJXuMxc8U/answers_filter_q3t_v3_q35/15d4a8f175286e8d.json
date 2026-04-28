@@ -1,0 +1,145 @@
+{
+  "question": "Does the woman who walks toward us at the beginning walk away with another woman at the end of the video?",
+  "pred": "Evidence: The woman who enters at the beginning is wearing a white pinstripe suit (seen in frames 00:00-00:04 and playing mahjong later). The woman who walks away with another woman (in an orange dress) at the end of the video (frames 04:30-04:45) is wearing a white floral dress/qipao and is a different person (younger, long hair).\n\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "walk",
+      "description": "woman in white pinstripe suit enters building and walks toward the interior",
+      "participants": [
+        "white-pinstripe-suit woman"
+      ],
+      "actor": "white-pinstripe-suit woman",
+      "segment_boundary": "middle",
+      "segment_label": "mahjong game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:04",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "mahjong game"
+    },
+    {
+      "event_type": "place",
+      "description": "hands place green-backed mahjong tiles in a row on the table",
+      "participants": [
+        "hands with floral-dress pattern"
+      ],
+      "actor": "hands with floral-dress pattern",
+      "object": "green-backed mahjong tiles",
+      "segment_boundary": "start",
+      "segment_label": "Mahjong Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 83,
+      "start_time": "04:14",
+      "end_time": "04:15",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Mahjong Game"
+    },
+    {
+      "event_type": "stand",
+      "description": "A woman in a white floral dress stands up from her chair at a mahjong table.",
+      "participants": [
+        "white-floral-dress woman"
+      ],
+      "actor": "white-floral-dress woman",
+      "segment_boundary": "middle",
+      "segment_label": "Mahjong Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 84,
+      "start_time": "04:15",
+      "end_time": "04:20",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 2,
+      "segment_label_resolved": "Mahjong Game"
+    },
+    {
+      "event_type": "walk",
+      "description": "The woman in the white floral dress walks away from the mahjong table toward the background of the room.",
+      "participants": [
+        "white-floral-dress woman"
+      ],
+      "actor": "white-floral-dress woman",
+      "segment_boundary": "middle",
+      "segment_label": "Mahjong Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 85,
+      "start_time": "04:20",
+      "end_time": "04:25",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Mahjong Game"
+    },
+    {
+      "event_type": "walk",
+      "description": "The woman in white floral qipao walks away from the camera toward the back of the restaurant",
+      "participants": [
+        "white-floral-qipao woman",
+        "orange-dress woman"
+      ],
+      "actor": "white-floral-qipao woman",
+      "segment_boundary": "middle",
+      "segment_label": "restaurant scene",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 89,
+      "start_time": "04:30",
+      "end_time": "04:36",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Mahjong Game"
+    },
+    {
+      "event_type": "hand_hold",
+      "description": "The woman in orange dress reaches out and holds the hand of the woman in white floral qipao",
+      "participants": [
+        "white-floral-qipao woman",
+        "orange-dress woman"
+      ],
+      "actor": "orange-dress woman",
+      "segment_boundary": "middle",
+      "segment_label": "restaurant scene",
+      "continuation_hint": "complete",
+      "event_index": 91,
+      "start_time": "04:40",
+      "end_time": "04:42",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "Mahjong Game"
+    },
+    {
+      "event_type": "walk",
+      "description": "The two women walk together holding hands toward the back of the restaurant",
+      "participants": [
+        "white-floral-qipao woman",
+        "orange-dress woman"
+      ],
+      "actor": "both women",
+      "segment_boundary": "middle",
+      "segment_label": "restaurant scene",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 92,
+      "start_time": "04:42",
+      "end_time": "04:45",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Mahjong Game"
+    }
+  ]
+}

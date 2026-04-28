@@ -1,0 +1,63 @@
+{
+  "question": "Did the blonde woman play exactly three rounds?",
+  "pred": "The blonde woman in the checkered jumpsuit (LEFT player) participates in the following game turns:\n\n1.  **Turn 1 (Partnering):** She sits on the couch while her partner (floral-top woman) acts out \"BORN TO RUN\" (frames ~01:10 - 02:10).\n2.  **Turn 2 (Acting):** She acts out \"RING OF FIRE\" for her partner (black-outfit man) (frames ~02:30 - 03:10).\n3.  **Turn 3 (Acting):** She acts out \"DANCING ON THE CEILING\" for her partner (suit man) (frames ~04:10 - 05:10).\n\nShe is also present on the couch during other turns (e.g., Turn 4 where the black-outfit man acts out \"JURASSIC PARK\"), but as a participant in the game's active rounds, she completes exactly three turns.\n\nEvidence: Frames at ~02:30, ~04:10, and ~01:10 show the blonde woman in the checkered jumpsuit actively participating in three distinct charades turns.\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "stand",
+      "description": "Four people stand in front of blue curtain with Charades board visible",
+      "participants": [
+        "checkered-jumpsuit woman",
+        "black-outfit man",
+        "corset-top woman",
+        "suit man"
+      ],
+      "actor": "all",
+      "segment_boundary": "start",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:02",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "graphic",
+      "description": "end screen appears showing a man in a dark suit with subscription options",
+      "participants": [
+        "man in dark suit"
+      ],
+      "actor": "man in dark suit",
+      "segment_boundary": "end",
+      "segment_label": "end screen",
+      "continuation_hint": "complete",
+      "on_screen_text": [
+        {
+          "text": "SUBSCRIBE NOW",
+          "location": "other"
+        },
+        {
+          "text": "WATCH EPISODES",
+          "location": "other"
+        },
+        {
+          "text": "MORE CLIPS",
+          "location": "other"
+        }
+      ],
+      "event_index": 169,
+      "start_time": "05:50",
+      "end_time": "06:00",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    }
+  ]
+}

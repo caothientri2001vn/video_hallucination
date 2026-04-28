@@ -1,0 +1,138 @@
+{
+  "question": "Does the player with white shirt number 4 score the goal?",
+  "pred": "Evidence: frames 00:34 and 00:35 clearly show the player in the white jersey who heads the ball into the net wearing the number 4 on his back.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "header",
+      "description": "Player in white jersey heads the ball toward the goal",
+      "participants": [
+        "white-jersey player",
+        "red-white-striped players"
+      ],
+      "actor": "white-jersey player",
+      "object": "white soccer ball",
+      "outcome": "shot on goal",
+      "on_screen_text": [
+        {
+          "text": "TNT",
+          "location": "logo"
+        },
+        {
+          "text": "TURKSPOR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 4,
+      "start_time": "00:04",
+      "end_time": "00:06",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "save_attempt",
+      "description": "Goalkeeper in blue jersey dives to attempt save",
+      "participants": [
+        "blue-jersey goalkeeper"
+      ],
+      "actor": "blue-jersey goalkeeper",
+      "object": "white soccer ball",
+      "outcome": "missed save",
+      "on_screen_text": [
+        {
+          "text": "TNT",
+          "location": "logo"
+        },
+        {
+          "text": "TURKSPOR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 5,
+      "start_time": "00:05",
+      "end_time": "00:07",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "goal",
+      "description": "Ball enters the goal net past the diving goalkeeper",
+      "participants": [
+        "white-jersey player",
+        "blue-jersey goalkeeper"
+      ],
+      "actor": "white soccer ball",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "TNT",
+          "location": "logo"
+        },
+        {
+          "text": "TURKSPOR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:06",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "Player in white jersey raises arms in celebration after scoring",
+      "participants": [
+        "white-jersey player"
+      ],
+      "actor": "white-jersey player",
+      "object": "",
+      "outcome": "celebration",
+      "on_screen_text": [
+        {
+          "text": "TNT",
+          "location": "logo"
+        },
+        {
+          "text": "TURKSPOR KANALI",
+          "location": "logo"
+        },
+        {
+          "text": "SERGIO RAMOS",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 7,
+      "start_time": "00:07",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    }
+  ]
+}

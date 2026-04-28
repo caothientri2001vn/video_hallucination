@@ -1,0 +1,50 @@
+{
+  "question": "Did the bottom-left girl finish with a beige off-shoulder dress?",
+  "pred": "The video features a four-panel layout where different women showcase various outfits. According to the Context and visual evidence, the \"bottom-left woman\" undergoes several outfit changes. Event 21 in the Context explicitly records her changing into a \"beige off-shoulder dress with cutouts and tassels\" starting at 00:34. The final frames of the video confirm that she is still wearing this specific beige dress as the video ends.\n\nEvidence: Event 21 states \"Woman in bottom-left quadrant changes from red outfit to beige off-shoulder dress with cutouts and tassels\" at 00:34, which is her final outfit in the video.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "outfit_change",
+      "description": "Woman in bottom-left quadrant changes from purple dress to red short-sleeve top and red skirt",
+      "participants": [
+        "bottom-left woman"
+      ],
+      "actor": "bottom-left woman",
+      "object_before": "purple dress",
+      "object_after": "red outfit",
+      "segment_boundary": "middle",
+      "segment_label": "outfit showcase",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 20,
+      "start_time": "00:30",
+      "end_time": "00:34",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 12,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Sequence 1"
+    },
+    {
+      "event_type": "outfit_change",
+      "description": "Woman in bottom-left quadrant changes from red outfit to beige off-shoulder dress with cutouts and tassels",
+      "participants": [
+        "bottom-left woman"
+      ],
+      "actor": "bottom-left woman",
+      "object_before": "red outfit",
+      "object_after": "beige dress",
+      "segment_boundary": "middle",
+      "segment_label": "outfit showcase",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 21,
+      "start_time": "00:34",
+      "end_time": "00:38",
+      "sub_events": [],
+      "subtype_order": 11,
+      "subtype_total": 12,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Sequence 1"
+    }
+  ]
+}

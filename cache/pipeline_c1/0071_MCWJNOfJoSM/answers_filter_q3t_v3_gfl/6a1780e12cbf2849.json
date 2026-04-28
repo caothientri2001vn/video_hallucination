@@ -1,0 +1,351 @@
+{
+  "question": "Did the player wearing blue number 12 miss the shot in Round 4?",
+  "pred": "To determine if the player wearing blue number 12 missed his shot in Round 4, we identify the sequence of penalty kicks (turns) in the shootout:\n\n1.  **Turn 1 (France):** French player #10 scores (on-screen scoreboard shows 1 green diamond for France).\n2.  **Turn 2 (Argentina):** Argentina player #10 scores (scoreboard shows 1 green diamond for Argentina).\n3.  **Turn 3 (France):** French player #20 misses (scoreboard shows 1 red diamond for France).\n4.  **Turn 4 (Argentina):** Argentina player #21 scores (scoreboard shows 2 green diamonds for Argentina).\n5.  **Turn 5 (France):** French player #8 misses (scoreboard shows 2 red diamonds for France).\n6.  **Turn 6 (Argentina):** Argentina player #5 scores (scoreboard shows 3 green diamonds for Argentina).\n7.  **Turn 7 (France):** French player #12 (Kolo Muani) takes his shot.\n\nThe player wearing blue number 12 (identified as Kolo Muani in Context event 127) takes the 7th turn of the shootout, not the 4th. Furthermore, the frames and Context (events 124-125) show that he successfully scores his shot.\n\nEvidence: frames at ~05:03 show the ball entering the net from the shot by blue-jersey player #12.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "penalty_kick",
+      "description": "blue-jersey player #12 runs up to take a penalty kick while goalkeeper stands ready in goal",
+      "participants": [
+        "blue-jersey player",
+        "goalkeeper",
+        "referee"
+      ],
+      "actor": "blue-jersey player",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "start",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 124,
+      "start_time": "05:00",
+      "end_time": "05:03",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "goal",
+      "description": "the white soccer ball enters the net as the goalkeeper dives to the left",
+      "participants": [
+        "goalkeeper"
+      ],
+      "actor": "none",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 125,
+      "start_time": "05:03",
+      "end_time": "05:04",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "celebration",
+      "description": "blue-jersey player raises both arms in celebration after scoring",
+      "participants": [
+        "blue-jersey player"
+      ],
+      "actor": "blue-jersey player",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 126,
+      "start_time": "05:04",
+      "end_time": "05:06",
+      "sub_events": [],
+      "subtype_order": 11,
+      "subtype_total": 14,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "close_up",
+      "description": "camera shows close-up of blue-jersey player with name KOLO MUANI visible on back of jersey",
+      "participants": [
+        "KOLO MUANI"
+      ],
+      "actor": "KOLO MUANI",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        },
+        {
+          "text": "KOLO MUANI",
+          "location": "jersey_name"
+        },
+        {
+          "text": "12",
+          "location": "jersey_number"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 127,
+      "start_time": "05:06",
+      "end_time": "05:08",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "stand",
+      "description": "players wearing yellow vests with 'WORLD CUP Qatar 2022' text stand together on the field",
+      "participants": [
+        "yellow-vest players"
+      ],
+      "actor": "yellow-vest players",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        },
+        {
+          "text": "WORLD CUP Qatar 2022",
+          "location": "vest_text"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 128,
+      "start_time": "05:08",
+      "end_time": "05:11",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "close_up",
+      "description": "camera shows close-up of blue-jersey player wearing French national team emblem",
+      "participants": [
+        "blue-jersey player"
+      ],
+      "actor": "blue-jersey player",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 129,
+      "start_time": "05:11",
+      "end_time": "05:13",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "react",
+      "description": "two coaches, one in white jacket with French emblem and one in blue suit, react to the play",
+      "participants": [
+        "white-jacket coach",
+        "blue-suit coach"
+      ],
+      "actor": "white-jacket coach",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 130,
+      "start_time": "05:13",
+      "end_time": "05:15",
+      "sub_events": [],
+      "subtype_order": 15,
+      "subtype_total": 16,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "hand_raise",
+      "description": "man in blue suit raises his hand to cover his mouth",
+      "participants": [
+        "bald man in white jacket",
+        "gray-haired man in blue suit"
+      ],
+      "actor": "gray-haired man in blue suit",
+      "object": "",
+      "object_before": "",
+      "object_after": "",
+      "outcome": "",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 131,
+      "start_time": "05:15",
+      "end_time": "05:17",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 10,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "goalkeeper in bright green uniform positions himself for a penalty kick",
+      "participants": [
+        "goalkeeper in green uniform",
+        "kicker in dark uniform"
+      ],
+      "actor": "goalkeeper in green uniform",
+      "object": "white soccer ball",
+      "object_before": "",
+      "object_after": "",
+      "outcome": "",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 132,
+      "start_time": "05:17",
+      "end_time": "05:19",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "kicker in dark uniform runs toward and strikes the soccer ball",
+      "participants": [
+        "kicker in dark uniform",
+        "goalkeeper in green uniform"
+      ],
+      "actor": "kicker in dark uniform",
+      "object": "white soccer ball",
+      "object_before": "",
+      "object_after": "",
+      "outcome": "",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 133,
+      "start_time": "05:19",
+      "end_time": "05:21",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "goalkeeper in green uniform dives to his right attempting to save the penalty kick",
+      "participants": [
+        "goalkeeper in green uniform"
+      ],
+      "actor": "goalkeeper in green uniform",
+      "object": "white soccer ball",
+      "object_before": "",
+      "object_after": "",
+      "outcome": "miss",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 134,
+      "start_time": "05:20",
+      "end_time": "05:23",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "soccer ball enters the goal net after the penalty kick",
+      "participants": [
+        "goalkeeper in green uniform",
+        "kicker in dark uniform"
+      ],
+      "actor": "soccer ball",
+      "object": "white soccer ball",
+      "object_before": "",
+      "object_after": "",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 135,
+      "start_time": "05:22",
+      "end_time": "05:24",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0036_14_qh-yxk-qAOc.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0036_14_qh-yxk-qAOc.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0036_14_qh-yxk-qAOc",
+    "n_target": 3,
+    "n_sub": 13,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.3333333333333333,
+    "sub_accuracy": 0.9230769230769231
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "When the black team plays against the green team, does the player with black shirt and yellow stripes number 11 ride the ball pass the white shirt goalkeeper and score?",
+      "gt": "Yes",
+      "pred": "Yes. The player in the black shirt with yellow stripes (number 11) dribbles past the white - shirt goalkeeper and scores. This is evident in the sequence where the player takes a shot, the ball enters the goal, and the player celebrates (e.g., around the 20 - 25 second mark of the video, as seen in frames showing the ball in the net and the player’s celebration).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the black team play against the green team?",
+      "gt": "Yes",
+      "pred": "Yes, the black team (with yellow shorts) plays against the green team. This is evident from the video frames showing players in black/yellow kits and green kits competing on the field (e.g., multiple frames where green and black/yellow players are visible in action).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does player number 11 on the black team wear a black shirt with yellow stripes?",
+      "gt": "Yes",
+      "pred": "Yes, the player number 11 on the black team wears a black (or dark blue) shirt with yellow stripes, as visible in multiple frames (e.g., frames showing the player in action with yellow shorts and a dark shirt featuring yellow accents).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the green team's goalkeeper wear a white shirt?",
+      "gt": "Yes",
+      "pred": "Yes, the green team's goalkeeper wears a white shirt. This is visible in multiple frames (e.g., early frames where the goalkeeper in white is seen attempting to save shots).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does player number 11 dribble the ball past the goalkeeper?",
+      "gt": "Yes",
+      "pred": "Yes. In the sequence, the player in the black and yellow jersey (number 11) moves toward the goal, the goalkeeper (in white) is on the ground, and the player then takes a shot that results in a goal. The goalkeeper’s position on the ground indicates the player had already gotten past the goalkeeper’s defensive attempt, which aligns with “dribbling past” in the context of evading the goalkeeper’s challenge. This is evident in frames showing the goalkeeper on the ground while the player is in position to shoot (e.g., around 7–10 seconds in the video sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Does player number 11 score in the match against the green team?",
+      "gt": "Yes",
+      "pred": "Yes, the player in the black and yellow uniform (number 11) scores a goal against the green team, as evidenced by the ball entering the net and the player’s subsequent celebration (e.g., frames showing the ball in the goal and the player kneeling/celebrating).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "When the black team plays against the green team, does the player with black shirt and yellow stripes number 11 ride the ball pass the green shirt goalkeeper and score?",
+      "gt": "No",
+      "pred": "Yes. The player in the black shirt with yellow stripes (number 11, identified by “MESUT ÖZIL” text in frames) shoots the ball past the white-shirted goalkeeper (the green team’s goalkeeper is not in green; the green team’s players are in green, while the goalkeeper is in white) and scores. This is evident in frames showing the ball entering the net (e.g., around timestamp 7-8) and the player’s subsequent celebration.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the black team play against the green team?",
+      "gt": "Yes",
+      "pred": "Yes, the black team (with yellow shorts) plays against the green team. This is evident from the video frames showing players in black/yellow kits and green kits competing on the field (e.g., multiple frames where green and black/yellow players are visible in action).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does player number 11 on the black team wear a black shirt with yellow stripes?",
+      "gt": "Yes",
+      "pred": "Yes, the player number 11 on the black team wears a black (or dark blue) shirt with yellow stripes, as visible in multiple frames (e.g., frames showing the player in action with yellow shorts and a dark shirt featuring yellow accents).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the green team's goalkeeper wear a green shirt?",
+      "gt": "No",
+      "pred": "So, let's check the video. The green team's goalkeeper—wait, in the video, the players in green are the opposing team. The goalkeeper for the green team... let's see. In the frames, the goalkeepers: one is in white (the one diving), and the other... wait, the green team's goalkeeper—do they wear green? Let's look. In some frames, the goalkeeper in white is from the other team. The green team's players are in green, but the goalkeeper for the green team—wait, no. Wait, the team with green shirts: are they the ones defending the goal? Let's check. In the video, when the ball is near the goal, the goalkeeper is in white. The green team's players are the ones in green, so their goalkeeper would be... but in the video, the goalkeeper for the green team—wait, no, the green team is the one with green shirts, so their goalkeeper might not be in green? Wait, no, usually goalkeepers wear different colors. Wait, in the video, the goalkeeper in white is the one from the team that's not green. The green team's goalkeeper—let's check. Wait, in the frames, the players in green are the ones trying to defend, but the goalkeeper for the green team—do they wear green? Let's look at the frames. For example, in frame 5, there's a goalkeeper in white (the one in the white shirt) and the green team's players. Wait, the green team's goalkeeper—maybe the goalkeeper is in white? No, the white-shirted player is the goalkeeper for the other team. The green team's goalkeeper would be... wait, no, the green team is the one with green shirts, so their goalkeeper might be in a different color, but in the video, do we see the green team's goalkeeper? Let's check. In frame 6, there's a goalkeeper in white (dive), so that's the goalkeeper for the team with the white shirt, not the green team. The green team's goalkeeper—maybe they are in green? Wait, in some frames, the green team players are in green, but the goalkeeper—let's check. Wait, the question is: Does the green team's goalkeeper wear a green shirt? Let's see. The green team is the one with green jerseys. The goalkeeper for the green team—if they wear green, then yes. But in the video, do we see the green team's goalkeeper? Let's check the frames. In frame 5, the goalkeeper in white is from the other team. The green team's goalkeeper—maybe not visible, but wait, in the video, when the green team is defending, their goalkeeper is... Wait, no, the green team is the one that has players in green, so their goalkeeper would be in green? Wait, no, goalkeepers usually wear a different color to distinguish. Wait, in the video, the green team's goalkeeper—do we see them? Let's check. In the frames where the green team is defending the goal, the goalkeeper is in white (for example, frame 5: the goalkeeper in white is diving). So the green team's goalkeeper is not in green; the green team's goalkeeper is in white? No, that can't be. Wait, the green team's goalkeeper—if the green team is the one with green shirts, then their goalkeeper might be in green. But in the video, the goalkeeper in white is from the opposing team (the one in white shirts). The green team's goalkeeper—maybe we don't see them, but let's check. Wait, the question is about the green team's goalkeeper. Let's look for the green team's goalkeeper. In the video, the green team is the one with green jerseys. The goalkeeper for the green team—do they wear green? Let's check frame 7: the goalkeeper in white is the one from the white team. The green team's goalkeeper—maybe they are in green. Wait, no, in football, goalkeepers wear a different color. So the green team's goalkeeper would not wear green. But the question is: does the green team's goalkeeper wear a green shirt? If the green team's goalkeeper is wearing a different color, then the answer is no. But let's check the video. Wait, in the video, the green team's goalkeeper—do we see them? Let's check the frames. For example, in frame 8, the goalkeeper is in white (the one diving). So that's the goalkeeper for the team with white shirts. The green team's goalkeeper—maybe not shown, but the green team is the one in green, so their goalkeeper would be in a different color. Therefore, the green team's goalkeeper does not wear a green shirt. Wait, but how do we verify? Let's check the frames. The green team players are in green, but the goalkeeper for the green team—if they were in",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does player number 11 dribble past a goalkeeper wearing a green shirt?",
+      "gt": "No",
+      "pred": "No. The goalkeeper in the video is wearing a white shirt, not green. The green-shirted players are defenders, not goalkeepers. For example, in frames showing the goal attempt, the goalkeeper in white is seen trying to save the ball, while green-shirted players are defenders (e.g., timestamps with “green” jerseys are defensive actions, not goalkeeping).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "When the black team plays against the green team, does the player with black shirt and yellow stripes number 11 ride the ball pass the green shirt players and score?",
+      "gt": "No",
+      "pred": "Yes. The player in the black shirt with yellow stripes (number 11) dribbles past multiple green-shirted players and scores a goal, as seen in the sequence of frames showing him evading defenders and the ball entering the net.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the black team play against the green team?",
+      "gt": "Yes",
+      "pred": "Yes, the black team (with yellow shorts) plays against the green team. This is evident from the video frames showing players in black/yellow kits and green kits competing on the field (e.g., multiple frames where green and black/yellow players are visible in action).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does player number 11 on the black team wear a black shirt with yellow stripes?",
+      "gt": "Yes",
+      "pred": "Yes, the player number 11 on the black team wears a black (or dark blue) shirt with yellow stripes, as visible in multiple frames (e.g., frames showing the player in action with yellow shorts and a dark shirt featuring yellow accents).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does player number 11 dribble the ball past players wearing green shirts?",
+      "gt": "No",
+      "pred": "Yes. The player in the dark blue and yellow jersey (number 11) is seen dribbling the ball while evading and moving past multiple players wearing green shirts throughout the sequence (e.g., visible in frames showing the player navigating past green-shirted defenders, such as around the 15-20 second mark and other segments where green players attempt tackles but he advances).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does player number 11 dribble the ball past a goalkeeper wearing a white shirt?",
+      "gt": "Yes",
+      "pred": "Yes. The player in the yellow jersey (number 11) dribbles the ball past a goalkeeper wearing a white shirt, as seen in the sequence where the goalkeeper attempts to stop the ball but the player in yellow advances past them (e.g., around the 5-10 second mark in the video sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

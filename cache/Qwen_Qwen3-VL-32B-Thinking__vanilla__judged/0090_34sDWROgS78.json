@@ -1,0 +1,302 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0090_34sDWROgS78.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0090_34sDWROgS78.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0090_34sDWROgS78",
+    "n_target": 6,
+    "n_sub": 23,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 1.0,
+    "sub_accuracy": 0.8695652173913043
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Is the honey jar filled first?",
+      "gt": "Yes",
+      "pred": "Yes, the honey jar is filled first. This is visible in the second frame where honey is being poured into the jar, and subsequent actions (e.g., handling butter, eggs, etc.) occur later in the sequence.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is the honey jar filled?",
+      "gt": "Yes",
+      "pred": "Yes, the honey jar is filled. This is evident in the frame where the jar is shown with the honey level up to the top and a lid placed on it (around the 0.4s mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does any action happen before the honey jar is filled?",
+      "gt": "No",
+      "pred": "No. The first frame shows a static setup (vase, kettle, etc.), and the first action (honey being poured into the jar) occurs in the second frame. Thus, no action happens before the honey jar is filled.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Is filling the honey jar the first action shown?",
+      "gt": "Yes",
+      "pred": "Yes. The first action shown in the video is honey being poured into a jar, which occurs in the second frame (around 1.0s), as the first frame (0.0s) is the initial static setup without any action.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Are the eggs put into the egg holder last?",
+      "gt": "No",
+      "pred": "No. The eggs are placed into the egg holder in frames 8-9, while other items (e.g., dish soap, oil, candies, laundry beads, tissues) are added later. For example, the laundry beads (Lenor) are added in frames 28-30, and tissues are placed in frames 32-33. Thus, the eggs are not the last item placed.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Are the eggs put into the egg holder?",
+      "gt": "Yes",
+      "pred": "Yes. The eggs are placed into the egg holder, as seen in the frames where eggs are added to the clear egg storage container (around timestamps 8 - 11 seconds).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does any action happen after the eggs are put into the egg holder?",
+      "gt": "No",
+      "pred": "Yes. After the eggs are put into the egg holder (seen in frames 8 and 9), a hand places a white lid on a stack of clear containers (frame 10).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Are there exactly three actions shown in the video?",
+      "gt": "No",
+      "pred": "No. The video shows multiple actions (e.g., pouring honey, handling butter, arranging eggs, filling a container with liquid, etc.), which are more than three.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Is putting the eggs into the egg holder the third action?",
+      "gt": "Yes",
+      "pred": "No. The sequence of actions shows that the egg holder is used after the honey jar, butter, and other items. The egg-related action (placing eggs in the holder) occurs later than the third action. For example, the first actions involve honey (e.g., frame 2: pouring honey), then the honey jar (frame 3), then butter (frames 4-6), so the egg action is not the third.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Is the butter put in the bowl before the honey is poured into the jar?",
+      "gt": "No",
+      "pred": "No. The honey is poured into the jar (e.g., at ~0 - 1 seconds), and the butter is placed in the bowl later (e.g., at ~3 - 4 seconds). Thus, the butter is not put in the bowl before the honey is poured.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is butter put in the bowl?",
+      "gt": "Yes",
+      "pred": "Yes, butter is put in the bowl. This is visible in the frame around 0:04 where a hand holds a bowl containing butter, and a knife is used to handle it.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is honey poured into the jar?",
+      "gt": "Yes",
+      "pred": "Yes, honey is poured into the jar (evident in the second frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the honey pouring happen before the butter is put in the bowl?",
+      "gt": "Yes",
+      "pred": "Yes. The honey pouring occurs in the frame at approximately 0:02, and the butter is placed in the bowl in the frame at approximately 0:04. Therefore, the honey pouring happens before the butter is put in the bowl.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Is putting butter in the bowl the first action?",
+      "gt": "No",
+      "pred": "No. The first action shown is pouring a liquid (honey) into a glass jar (around 0:02). Putting butter in the bowl occurs later (starting around 0:04).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Is the butter put in the bowl after pouring the honey into the jar?",
+      "gt": "Yes",
+      "pred": "Yes. The honey is poured into the jar (e.g., 0:02), and the butter is placed in the bowl later (e.g., 0:04).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is butter put in the bowl?",
+      "gt": "Yes",
+      "pred": "Yes, butter is put in the bowl. This is visible in the frame around 0:04 where a hand holds a bowl containing butter, and a knife is used to handle it.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is honey poured into the jar?",
+      "gt": "Yes",
+      "pred": "Yes, honey is poured into the jar (evident in the second frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does pouring honey into the jar happen before putting butter in the bowl?",
+      "gt": "Yes",
+      "pred": "Yes. Pouring honey into the jar occurs in the second frame (approx. 0:01-0:02), while putting butter in the bowl occurs in the fourth frame (approx. 0:03-0:04). Thus, pouring honey happens before putting butter in the bowl.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Is putting butter in the bowl the second action?",
+      "gt": "Yes",
+      "pred": "Yes, putting butter in the bowl is the second action. The first action is pouring honey into the jar (evident in the second frame, ~1-2 seconds), followed by the action of placing butter into the bowl (evident in the fourth frame, ~3-4 seconds).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Are the eggs put into the egg holder after put the butter into the bowl?",
+      "gt": "Yes",
+      "pred": "Yes. The butter is placed into the bowl (seen in frames ~0:04-0:07), and the eggs are placed into the egg holder later (seen in frames ~0:08-0:09).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Are the eggs put into the egg holder?",
+      "gt": "Yes",
+      "pred": "Yes. The eggs are placed into the egg holder, as seen in the frames where eggs are added to the clear egg storage container (around timestamps 8 - 11 seconds).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is butter put into the bowl?",
+      "gt": "Yes",
+      "pred": "Yes. Butter is placed into the bowl, as seen in the frames where a hand uses a knife to add butter to the bowl (approximately 3 - 5 seconds).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does putting butter in the bowl happen before the eggs are put into the egg holder?",
+      "gt": "Yes",
+      "pred": "Yes. The butter is placed in the bowl (as seen in frames 3-5, approximately 3 - 5 seconds) before the eggs are placed into the egg holder (as seen in frames 7-8, approximately 7 - 8 seconds).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Is putting the eggs into the egg holder the third action?",
+      "gt": "Yes",
+      "pred": "No. The sequence of actions shows that the egg holder is used after the honey jar, butter, and other items. The egg-related action (placing eggs in the holder) occurs later than the third action. For example, the first actions involve honey (e.g., frame 2: pouring honey), then the honey jar (frame 3), then butter (frames 4-6), so the egg action is not the third.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Are the eggs put into the egg holder before put the butter into the bowl?",
+      "gt": "No",
+      "pred": "No. The butter is placed into the bowl (as seen in frames 4-6) before the eggs are added to the egg holder (as seen in frames 8-9).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Are the eggs put into the egg holder?",
+      "gt": "Yes",
+      "pred": "Yes. The eggs are placed into the egg holder, as seen in the frames where eggs are added to the clear egg storage container (around timestamps 8 - 11 seconds).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is butter put in the bowl?",
+      "gt": "Yes",
+      "pred": "Yes, butter is put in the bowl. This is visible in the frame around 0:04 where a hand holds a bowl containing butter, and a knife is used to handle it.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Are the eggs put into the egg holder after the butter is put in the bowl?",
+      "gt": "Yes",
+      "pred": "Yes. The butter is placed in the bowl around 0:04-0:05, and the eggs are placed in the egg holder starting at 0:08. Therefore, the eggs are put into the egg holder after the butter is put in the bowl.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does the butter go into the bowl before the eggs are put into the egg holder?",
+      "gt": "Yes",
+      "pred": "Yes. The butter is placed into the bowl (evident in frames ~3–6 seconds) before the eggs are placed into the egg holder (evident in frames ~7–10 seconds).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "question": "Was the team that lifted the trophy the one that successfully saved the penalty?",
+  "pred": "The video shows a penalty shootout between a team in light blue jerseys and a team in red-and-blue striped jerseys. At 02:24, the green-jersey goalkeeper (belonging to the red-and-blue team) dives to save a penalty. Later, at 04:42 and 04:46, players from the same red-and-blue striped team are shown celebrating on a podium and lifting the FA Cup trophy.\n\nEvidence: Event 87 shows the green-jersey goalkeeper saving a penalty, and events 155-157 show the red-and-blue-shirt players lifting the trophy.\n\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "game",
+      "description": "the green-jersey goalkeeper dives to his right to save the penalty",
+      "participants": [
+        "green-jersey goalkeeper"
+      ],
+      "actor": "green-jersey goalkeeper",
+      "object": "football",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "penalty shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 87,
+      "start_time": "02:24",
+      "end_time": "02:25",
+      "sub_events": [],
+      "subtype_order": 48,
+      "subtype_total": 76,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "outcome",
+      "description": "the football hits the post and bounces away, resulting in a missed penalty",
+      "participants": [
+        "light-blue-jersey player",
+        "green-jersey goalkeeper"
+      ],
+      "actor": "light-blue-jersey player",
+      "object": "football",
+      "outcome": "miss",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "penalty shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 88,
+      "start_time": "02:25",
+      "end_time": "02:26",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the blue-and-red-jersey player (KAMADA, number 18) raises both arms in celebration",
+      "participants": [
+        "blue-and-red-jersey player"
+      ],
+      "actor": "blue-and-red-jersey player",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "KAMADA",
+          "location": "jersey_number"
+        },
+        {
+          "text": "18",
+          "location": "jersey_number"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "penalty shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 89,
+      "start_time": "02:26",
+      "end_time": "02:28",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 32,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "reveal",
+      "description": "A red-and-blue-shirt player lifts the gold FA Cup trophy while surrounded by cheering teammates.",
+      "participants": [
+        "red-and-blue-shirt players"
+      ],
+      "actor": "red-and-blue-shirt player",
+      "object": "gold trophy",
+      "on_screen_text": [
+        {
+          "text": "Emirates FA CUP",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "FA Cup Final",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 155,
+      "start_time": "04:42",
+      "end_time": "04:45",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "The blue-and-red-jersey players celebrate on the podium, with one player holding the silver trophy.",
+      "participants": [
+        "blue-and-red-jersey players",
+        "suit-wearing men"
+      ],
+      "actor": "blue-and-red-jersey players",
+      "object": "silver trophy",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Trophy Presentation",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 156,
+      "start_time": "04:45",
+      "end_time": "04:46",
+      "sub_events": [],
+      "subtype_order": 18,
+      "subtype_total": 32,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "lift",
+      "description": "The blue-and-red-jersey player in the center lifts the silver trophy high above his head.",
+      "participants": [
+        "blue-and-red-jersey players"
+      ],
+      "actor": "blue-and-red-jersey player",
+      "object": "silver trophy",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Trophy Presentation",
+      "continuation_hint": "middle",
+      "event_index": 157,
+      "start_time": "04:46",
+      "end_time": "04:47",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    }
+  ]
+}

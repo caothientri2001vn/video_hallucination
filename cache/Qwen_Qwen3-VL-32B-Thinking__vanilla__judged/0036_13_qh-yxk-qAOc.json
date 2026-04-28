@@ -1,0 +1,205 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0036_13_qh-yxk-qAOc.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0036_13_qh-yxk-qAOc.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0036_13_qh-yxk-qAOc",
+    "n_target": 3,
+    "n_sub": 16,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.3333333333333333,
+    "sub_accuracy": 0.9375
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "When the white team plays against the red team, does the player with white shirt, white pant number 10 score the goal into the green shirt goalkeeper?",
+      "gt": "Yes",
+      "pred": "Yes. The white team's player with white shirt, white pants, and number 10 (Lacazette, as indicated by the on-screen text) scores a goal past the green-shirted goalkeeper. This is visible in the sequence where the ball enters the net (e.g., around the 9 - 15 second mark in the provided frames), with the goalkeeper in green attempting to save but failing.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the white team play against the red team?",
+      "gt": "Yes",
+      "pred": "Yes, the white team plays against the red (maroon) team. This is evident from the frames showing players in white jerseys and maroon jerseys competing against each other during the match.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is there a player wearing number 10 on the white team?",
+      "gt": "Yes",
+      "pred": "Yes, a player wearing number 10 on the white team is visible in the video (e.g., around the 13–15 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the player wearing number 10 on the white team wear a white shirt?",
+      "gt": "Yes",
+      "pred": "Yes, the player wearing number 10 on the white team wears a white shirt. This can be observed in the frames where the white team players are visible (e.g., around the 13-17 second mark, the player with number 10 is in a white shirt).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does the player wearing number 10 on the white team wear white pants?",
+      "gt": "Yes",
+      "pred": "Yes, the player wearing number 10 on the white team wears white pants. This can be observed in multiple frames where the player is visible (e.g., around the 13-18 second mark when the player is near the goal area).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Does the player wearing number 10 on the white team score a goal?",
+      "gt": "Yes",
+      "pred": "Yes, the player wearing number 10 on the white team scores a goal. This is evident from the sequence where the ball is shot toward the goal, the goalkeeper dives but fails to stop it, and the ball enters the net (around the 8-12 second mark in the video sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 5,
+      "question": "Does the goalkeeper wear a green shirt?",
+      "gt": "Yes",
+      "pred": "Yes, the goalkeeper wears a green shirt. This can be observed in multiple frames, such as when the goalkeeper is diving to save the ball (e.g., around the 8-12 second mark in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 6,
+      "question": "Is the goalkeeper on the red team?",
+      "gt": "Yes",
+      "pred": "No. The goalkeeper is wearing a green jersey, while the red team (as identified by maroon jerseys with orange accents, e.g., players wearing numbers 13, 44) is distinct. The goalkeeper is not part of the red team.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "When the white team plays against the red team, does the player with white shirt, white pant number 7 score the goal into the green shirt goalkeeper?",
+      "gt": "No",
+      "pred": "Yes, the player with the white shirt, white pants, and number 7 scores the goal into the green-shirted goalkeeper. This is evident in the sequence where the white team attacks, the player with number 7 takes the shot, and the ball enters the net while the green-shirted goalkeeper dives but fails to save it (approx. 7–15 seconds).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the white team play against the red team?",
+      "gt": "Yes",
+      "pred": "Yes, the white team plays against the red (maroon) team. This is evident from the frames showing players in white jerseys and maroon jerseys competing against each other during the match.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is there a player wearing number 7 on the white team?",
+      "gt": "No",
+      "pred": "No, there is no player wearing number 7 on the white team visible in the provided video frames. The numbers seen on white team jerseys include 10, 18, 28, and 8 (e.g., in frames 12–19), but number 7 is not present.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does a player wearing number 10 on the white team score a goal?",
+      "gt": "Yes",
+      "pred": "Yes, a player wearing number 10 on the white team scores a goal. This occurs when the player takes a shot that results in the ball entering the goal (evident in the sequence where the goalkeeper dives but fails to stop the ball, around the 12–16 second mark in the video).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does the goalkeeper wear a green shirt?",
+      "gt": "Yes",
+      "pred": "Yes, the goalkeeper wears a green shirt. This can be observed in multiple frames, such as when the goalkeeper is diving to save the ball (e.g., around the 8-12 second mark in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "When the white team plays against the red team, does the player with white shirt, white pant number 10 score the goal into the red shirt goalkeeper?",
+      "gt": "No",
+      "pred": "Yes, the player with white shirt, white pants, and number 10 scores the goal into the red team's goalkeeper (in green). This occurs during the sequence where the white team attacks, the ball is shot toward the goal, and the red team's goalkeeper dives but fails to save it (evident in frames showing the ball entering the net and the goalkeeper on the ground). The goal is confirmed by the ball crossing the goal line and the subsequent celebration. The relevant action occurs approximately between 7–13 seconds in the video sequence.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the white team play against the red team?",
+      "gt": "Yes",
+      "pred": "Yes, the white team plays against the red (maroon) team. This is evident from the frames showing players in white jerseys and maroon jerseys competing against each other during the match.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is there a player wearing number 10 on the white team?",
+      "gt": "Yes",
+      "pred": "Yes, a player wearing number 10 on the white team is visible in the video (e.g., around the 13–15 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the player wearing number 10 on the white team score a goal?",
+      "gt": "Yes",
+      "pred": "Yes, the player wearing number 10 on the white team scores a goal. This is evident from the sequence where the ball is shot toward the goal, the goalkeeper dives but fails to stop it, and the ball enters the net (around the 8-12 second mark in the video sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does the goalkeeper wear a red shirt?",
+      "gt": "No",
+      "pred": "No. The goalkeeper is seen wearing a green shirt in the frames where they are visible (e.g., when making saves near the goal).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Does the goalkeeper wear a green shirt?",
+      "gt": "Yes",
+      "pred": "Yes, the goalkeeper wears a green shirt. This can be observed in multiple frames, such as when the goalkeeper is diving to save the ball (e.g., around the 8-12 second mark in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

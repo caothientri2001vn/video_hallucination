@@ -1,0 +1,86 @@
+{
+  "question": "Did the wink occur while she was wearing a hat?",
+  "pred": "Evidence: The frames show the person wearing a hat (black cap) in the first part of the video (00:00 - 00:05) and then again from 00:06 onwards. However, there is no clear wink visible in any of the frames. The person blinks and looks down, but a deliberate wink (one eye closed, one open) is not clearly visible.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "pose",
+      "description": "stands still in casual outfit with blue hair, black cap, and headphones around neck",
+      "participants": [
+        "blue-hair person"
+      ],
+      "actor": "blue-hair person",
+      "segment_boundary": "middle",
+      "segment_label": "",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:01",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": ""
+    },
+    {
+      "event_type": "hand_raise",
+      "description": "raises both hands to chest level with palms facing forward",
+      "participants": [
+        "blue-hair person"
+      ],
+      "actor": "blue-hair person",
+      "segment_boundary": "middle",
+      "segment_label": "",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 2,
+      "start_time": "00:01",
+      "end_time": "00:02",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": ""
+    },
+    {
+      "event_type": "transform",
+      "description": "undergoes visual transformation from anime outfit back to casual outfit",
+      "participants": [
+        "blue-hair person"
+      ],
+      "actor": "blue-hair person",
+      "object_before": "anime outfit",
+      "object_after": "casual outfit",
+      "segment_boundary": "middle",
+      "segment_label": "",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 5,
+      "start_time": "00:05",
+      "end_time": "00:06",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": ""
+    },
+    {
+      "event_type": "gesture",
+      "description": "makes hand gestures with casual outfit, including raising hands to shoulder level",
+      "participants": [
+        "blue-hair person"
+      ],
+      "actor": "blue-hair person",
+      "segment_boundary": "middle",
+      "segment_label": "",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:06",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": ""
+    }
+  ]
+}

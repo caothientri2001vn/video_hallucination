@@ -1,0 +1,3794 @@
+{
+  "video_name": "0103_lArqN_zu5tw.mp4",
+  "video_duration_sec": 513.0666666666667,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:12",
+          "event_type": "move",
+          "description": "tortoise moves from right side of frame toward center, becoming fully visible behind food items",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Feeding",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:13",
+          "local_end": "00:13",
+          "event_type": "appear",
+          "description": "microphone appears at top of frame, positioned above food items",
+          "participants": [
+            "microphone"
+          ],
+          "actor": "microphone",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Feeding",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:14",
+          "local_end": "00:15",
+          "event_type": "eat",
+          "description": "tortoise extends head toward strawberry and begins consuming it",
+          "participants": [
+            "tortoise",
+            "strawberry"
+          ],
+          "actor": "tortoise",
+          "object": "strawberry",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Feeding",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 30.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:30",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:20",
+          "event_type": "eat",
+          "description": "tortoise bites into the strawberry with its mouth open",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "strawberry",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Demonstration",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "ANIMAL",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "00:20",
+          "local_end": "00:23",
+          "event_type": "state_change",
+          "description": "strawberry size decreases as tortoise consumes it",
+          "participants": [],
+          "actor": "tortoise",
+          "object_before": "whole strawberry",
+          "object_after": "partially eaten strawberry",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Demonstration",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "ANIMAL",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "00:23",
+          "local_end": "00:26",
+          "event_type": "head_movement",
+          "description": "tortoise lifts head slightly after taking a bite of strawberry",
+          "participants": [],
+          "actor": "tortoise",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Demonstration",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "ANIMAL",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "00:26",
+          "local_end": "00:30",
+          "event_type": "eat",
+          "description": "tortoise continues eating the strawberry with visible tongue movement",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "strawberry",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Demonstration",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "ANIMAL",
+              "location": "logo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_idx": 2,
+      "chunk_start_sec": 30.0,
+      "chunk_end_sec": 45.0,
+      "chunk_start_mmss": "00:30",
+      "chunk_end_mmss": "00:45",
+      "events": [
+        {
+          "local_start": "00:30",
+          "local_end": "00:32",
+          "event_type": "eat",
+          "description": "tortoise holds red food item in its mouth",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "red food",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:32",
+          "local_end": "00:35",
+          "event_type": "chew",
+          "description": "tortoise chews red food item with mouth movements",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "red food",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continue"
+        },
+        {
+          "local_start": "00:35",
+          "local_end": "00:38",
+          "event_type": "eat",
+          "description": "tortoise continues eating red food as it becomes smaller",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "red food",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continue"
+        },
+        {
+          "local_start": "00:38",
+          "local_end": "00:41",
+          "event_type": "swallow",
+          "description": "tortoise swallows portion of red food with visible throat movement",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "red food",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continue"
+        },
+        {
+          "local_start": "00:41",
+          "local_end": "00:43",
+          "event_type": "eat",
+          "description": "tortoise consumes remaining small piece of red food",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "red food",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continue"
+        },
+        {
+          "local_start": "00:43",
+          "local_end": "00:45",
+          "event_type": "state_change",
+          "description": "red food item is fully consumed and no longer visible",
+          "participants": [],
+          "actor": "tortoise",
+          "object_before": "red food",
+          "object_after": "not_visible",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 3,
+      "chunk_start_sec": 45.0,
+      "chunk_end_sec": 60.0,
+      "chunk_start_mmss": "00:45",
+      "chunk_end_mmss": "01:00",
+      "events": [
+        {
+          "local_start": "00:45",
+          "local_end": "00:48",
+          "event_type": "position_maintain",
+          "description": "tortoise remains stationary with head positioned behind food items",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Feeding",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:48",
+          "local_end": "00:51",
+          "event_type": "position_adjust",
+          "description": "microphone with two black foam windshields is pulled backward and upward away from tortoise",
+          "participants": [
+            "microphone"
+          ],
+          "actor": "unseen_operator",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Feeding",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:51",
+          "local_end": "00:54",
+          "event_type": "head_movement",
+          "description": "tortoise extends head forward toward blueberry positioned to the right of orange cheese",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Feeding",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:54",
+          "local_end": "00:57",
+          "event_type": "mouth_open",
+          "description": "tortoise opens mouth and makes contact with blueberry",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "blueberry",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Feeding",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:57",
+          "local_end": "01:00",
+          "event_type": "ingestion",
+          "description": "tortoise closes mouth around blueberry and begins chewing motion",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "blueberry",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Feeding",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 4,
+      "chunk_start_sec": 60.0,
+      "chunk_end_sec": 75.0,
+      "chunk_start_mmss": "01:00",
+      "chunk_end_mmss": "01:15",
+      "events": [
+        {
+          "local_start": "01:00",
+          "local_end": "01:02",
+          "event_type": "eat",
+          "description": "tortoise holds blueberry in mouth with mouth slightly open",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "blueberry",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating demonstration",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "01:02",
+          "local_end": "01:04",
+          "event_type": "eat",
+          "description": "tortoise closes mouth while consuming blueberry",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "blueberry",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:04",
+          "local_end": "01:07",
+          "event_type": "eat",
+          "description": "tortoise opens mouth again while continuing to eat blueberry",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "blueberry",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:07",
+          "local_end": "01:10",
+          "event_type": "eat",
+          "description": "tortoise closes mouth while holding blueberry during consumption process",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "blueberry",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:10",
+          "local_end": "01:12",
+          "event_type": "eat",
+          "description": "tortoise opens mouth slightly while continuing blueberry consumption",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "blueberry",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:12",
+          "local_end": "01:15",
+          "event_type": "eat",
+          "description": "tortoise closes mouth while finishing blueberry consumption",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "blueberry",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating demonstration",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 5,
+      "chunk_start_sec": 75.0,
+      "chunk_end_sec": 90.0,
+      "chunk_start_mmss": "01:15",
+      "chunk_end_mmss": "01:30",
+      "events": [
+        {
+          "local_start": "01:15",
+          "local_end": "01:30",
+          "event_type": "eat",
+          "description": "tortoise consumes dark fruit (blueberry) with visible mouth movements",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "dark blueberry",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": []
+        }
+      ]
+    },
+    {
+      "chunk_idx": 6,
+      "chunk_start_sec": 90.0,
+      "chunk_end_sec": 105.0,
+      "chunk_start_mmss": "01:30",
+      "chunk_end_mmss": "01:45",
+      "events": [
+        {
+          "local_start": "01:30",
+          "local_end": "01:36",
+          "event_type": "eat",
+          "description": "tortoise chews dark-colored food item positioned near its mouth on the left side",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "dark-colored food item",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "01:36",
+          "local_end": "01:40",
+          "event_type": "swallow",
+          "description": "tortoise swallows the food with visible head movement and throat motion",
+          "participants": [],
+          "actor": "tortoise",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:40",
+          "local_end": "01:43",
+          "event_type": "mouth_close",
+          "description": "tortoise closes its mouth after swallowing, with head slightly lowered",
+          "participants": [],
+          "actor": "tortoise",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "01:43",
+          "local_end": "01:45",
+          "event_type": "mouth_open",
+          "description": "tortoise opens its mouth wide, extending its tongue briefly",
+          "participants": [],
+          "actor": "tortoise",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 7,
+      "chunk_start_sec": 105.0,
+      "chunk_end_sec": 120.0,
+      "chunk_start_mmss": "01:45",
+      "chunk_end_mmss": "02:00",
+      "events": [
+        {
+          "local_start": "01:45",
+          "local_end": "01:48",
+          "event_type": "approach",
+          "description": "tortoise extends head toward the cheese",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "orange cheese",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:48",
+          "local_end": "01:51",
+          "event_type": "bite",
+          "description": "tortoise opens mouth and begins biting the cheese",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "orange cheese",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:51",
+          "local_end": "01:55",
+          "event_type": "pull",
+          "description": "tortoise pulls cheese with mouth, taking more of it into its jaws",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "orange cheese",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:55",
+          "local_end": "01:58",
+          "event_type": "manipulate",
+          "description": "tortoise uses front legs to assist in manipulating the cheese while eating",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "orange cheese",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:58",
+          "local_end": "02:00",
+          "event_type": "chew",
+          "description": "tortoise continues eating the cheese with cheese partially in mouth",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "orange cheese",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:45",
+          "local_end": "02:00",
+          "event_type": "on_screen_text",
+          "description": "blue circular logo with white text reading \"ASIAN ANIMAL\" visible at bottom center of frame",
+          "participants": [],
+          "actor": "none",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating demonstration",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 8,
+      "chunk_start_sec": 120.0,
+      "chunk_end_sec": 135.0,
+      "chunk_start_mmss": "02:00",
+      "chunk_end_mmss": "02:15",
+      "events": [
+        {
+          "local_start": "02:00",
+          "local_end": "02:02",
+          "event_type": "mouth_open",
+          "description": "The turtle opens its mouth wider to take a bite of the cheese",
+          "participants": [],
+          "actor": "turtle",
+          "object": "cheese",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:02",
+          "local_end": "02:04",
+          "event_type": "bite",
+          "description": "The turtle takes a bite of the cheese, reducing its size",
+          "participants": [],
+          "actor": "turtle",
+          "object": "cheese",
+          "object_before": "large cheese",
+          "object_after": "smaller cheese",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:04",
+          "local_end": "02:06",
+          "event_type": "chew",
+          "description": "The turtle closes its mouth and chews the cheese",
+          "participants": [],
+          "actor": "turtle",
+          "object": "cheese",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:06",
+          "local_end": "02:08",
+          "event_type": "mouth_open",
+          "description": "The turtle opens its mouth again to take another bite",
+          "participants": [],
+          "actor": "turtle",
+          "object": "cheese",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:08",
+          "local_end": "02:10",
+          "event_type": "bite",
+          "description": "The turtle takes another bite of the cheese, further reducing its size",
+          "participants": [],
+          "actor": "turtle",
+          "object": "cheese",
+          "object_before": "smaller cheese",
+          "object_after": "much smaller cheese",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:10",
+          "local_end": "02:15",
+          "event_type": "eat",
+          "description": "The turtle continues eating the cheese with its head lowered and the cheese piece significantly reduced",
+          "participants": [],
+          "actor": "turtle",
+          "object": "cheese",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 9,
+      "chunk_start_sec": 135.0,
+      "chunk_end_sec": 150.0,
+      "chunk_start_mmss": "02:15",
+      "chunk_end_mmss": "02:30",
+      "events": [
+        {
+          "local_start": "02:15",
+          "local_end": "02:17",
+          "event_type": "hold",
+          "description": "Tortoise holds orange food with front legs",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "orange food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "02:17",
+          "local_end": "02:19",
+          "event_type": "mouth_open",
+          "description": "Tortoise opens its mouth to take a bite of orange food",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "orange food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:19",
+          "local_end": "02:21",
+          "event_type": "mouth_close",
+          "description": "Tortoise closes its mouth around the orange food",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "orange food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:21",
+          "local_end": "02:24",
+          "event_type": "chew",
+          "description": "Tortoise chews the orange food with mouth closed",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "orange food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:24",
+          "local_end": "02:26",
+          "event_type": "mouth_open",
+          "description": "Tortoise opens its mouth again to take another bite of orange food",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "orange food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:26",
+          "local_end": "02:30",
+          "event_type": "eat",
+          "description": "Tortoise continues eating the orange food, manipulating it with front legs",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "orange food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 10,
+      "chunk_start_sec": 150.0,
+      "chunk_end_sec": 165.0,
+      "chunk_start_mmss": "02:30",
+      "chunk_end_mmss": "02:45",
+      "events": [
+        {
+          "local_start": "02:30",
+          "local_end": "02:45",
+          "event_type": "eat",
+          "description": "tortoise holds and eats piece of orange cheese with both front limbs while positioned under a microphone",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "orange cheese",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:30",
+          "local_end": "02:33",
+          "event_type": "mouth_open",
+          "description": "tortoise opens mouth to take bite of cheese, revealing tongue briefly",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:33",
+          "local_end": "02:36",
+          "event_type": "mouth_close",
+          "description": "tortoise closes mouth to chew the cheese",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:36",
+          "local_end": "02:39",
+          "event_type": "mouth_open",
+          "description": "tortoise opens mouth again to take another bite of cheese",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:39",
+          "local_end": "02:42",
+          "event_type": "mouth_close",
+          "description": "tortoise closes mouth to chew the cheese",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:42",
+          "local_end": "02:45",
+          "event_type": "cheese_consumption",
+          "description": "cheese piece shows visible reduction in size from continuous eating",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object_before": "orange cheese",
+          "object_after": "smaller orange cheese",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:30",
+          "local_end": "02:45",
+          "event_type": "head_movement",
+          "description": "tortoise makes subtle head adjustments while eating, shifting position slightly",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:30",
+          "local_end": "02:45",
+          "event_type": "eye_movement",
+          "description": "tortoise eyes shift position slightly, showing subtle eye movements during eating",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 11,
+      "chunk_start_sec": 165.0,
+      "chunk_end_sec": 180.0,
+      "chunk_start_mmss": "02:45",
+      "chunk_end_mmss": "03:00",
+      "events": [
+        {
+          "local_start": "02:45",
+          "local_end": "02:53",
+          "event_type": "eat",
+          "description": "tortoise eats the orange food item with its front limbs",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "orange food item"
+        },
+        {
+          "local_start": "02:53",
+          "local_end": "02:54",
+          "event_type": "head_move",
+          "description": "tortoise turns its head toward the broccoli",
+          "participants": [],
+          "actor": "tortoise"
+        },
+        {
+          "local_start": "02:54",
+          "local_end": "02:55",
+          "event_type": "object_appearance",
+          "description": "second microphone becomes visible in the upper left portion of the frame",
+          "participants": [],
+          "actor": "none",
+          "object": "microphone"
+        },
+        {
+          "local_start": "02:56",
+          "local_end": "02:57",
+          "event_type": "fall",
+          "description": "broccoli begins to tilt and fall from upright position",
+          "participants": [],
+          "actor": "none",
+          "object": "broccoli"
+        },
+        {
+          "local_start": "02:57",
+          "local_end": "02:58",
+          "event_type": "state_change",
+          "description": "broccoli is fully fallen on its side",
+          "participants": [],
+          "actor": "none",
+          "object_before": "upright broccoli",
+          "object_after": "fallen broccoli"
+        },
+        {
+          "local_start": "02:58",
+          "local_end": "03:00",
+          "event_type": "eat",
+          "description": "tortoise begins eating the fallen broccoli by biting its stem",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 12,
+      "chunk_start_sec": 180.0,
+      "chunk_end_sec": 195.0,
+      "chunk_start_mmss": "03:00",
+      "chunk_end_mmss": "03:15",
+      "events": [
+        {
+          "local_start": "03:00",
+          "local_end": "03:02",
+          "event_type": "chew",
+          "description": "tortoise chews on broccoli with mouth closed",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:02",
+          "local_end": "03:04",
+          "event_type": "mouth_open",
+          "description": "tortoise opens mouth to take a bite of broccoli",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:04",
+          "local_end": "03:06",
+          "event_type": "chew",
+          "description": "tortoise continues chewing broccoli with mouth closed",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:06",
+          "local_end": "03:08",
+          "event_type": "moisture_appearance",
+          "description": "moisture droplets become visible on the black surface near the broccoli",
+          "participants": [],
+          "actor": "",
+          "object": "moisture droplets",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:08",
+          "local_end": "03:10",
+          "event_type": "mouth_open",
+          "description": "tortoise opens mouth wide to take another bite of broccoli",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:10",
+          "local_end": "03:12",
+          "event_type": "chew",
+          "description": "tortoise chews broccoli with mouth closed, head slightly moving",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:12",
+          "local_end": "03:15",
+          "event_type": "moisture_spread",
+          "description": "moisture droplets spread slightly on the black surface near the broccoli",
+          "participants": [],
+          "actor": "",
+          "object": "moisture droplets",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 13,
+      "chunk_start_sec": 195.0,
+      "chunk_end_sec": 210.0,
+      "chunk_start_mmss": "03:15",
+      "chunk_end_mmss": "03:30",
+      "events": [
+        {
+          "local_start": "03:15",
+          "local_end": "03:18",
+          "event_type": "eat",
+          "description": "tortoise opens its mouth and takes a bite of broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Broccoli",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "03:16",
+          "local_end": "03:19",
+          "event_type": "chew",
+          "description": "tortoise chews broccoli with visible jaw movement",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Broccoli",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "03:18",
+          "local_end": "03:21",
+          "event_type": "eye_movement",
+          "description": "tortoise's eyes open after being closed while eating",
+          "participants": [],
+          "actor": "tortoise",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Broccoli",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "03:20",
+          "local_end": "03:23",
+          "event_type": "eat",
+          "description": "tortoise continues eating broccoli, reducing its size",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Broccoli",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "03:22",
+          "local_end": "03:25",
+          "event_type": "chew",
+          "description": "tortoise chews with mouth slightly open, showing jaw movement",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Broccoli",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "03:24",
+          "local_end": "03:27",
+          "event_type": "head_movement",
+          "description": "tortoise adjusts head position to access different part of broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Broccoli",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "03:26",
+          "local_end": "03:29",
+          "event_type": "eat",
+          "description": "tortoise takes another bite of the now smaller broccoli piece",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Broccoli",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "03:28",
+          "local_end": "03:30",
+          "event_type": "eye_movement",
+          "description": "tortoise's eyes close while continuing to eat broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Broccoli",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_idx": 14,
+      "chunk_start_sec": 210.0,
+      "chunk_end_sec": 225.0,
+      "chunk_start_mmss": "03:30",
+      "chunk_end_mmss": "03:45",
+      "events": [
+        {
+          "local_start": "03:30",
+          "local_end": "03:32",
+          "event_type": "eat",
+          "description": "tortoise continues eating broccoli with mouth closed",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise feeding",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "03:32",
+          "local_end": "03:34",
+          "event_type": "mouth_open",
+          "description": "tortoise opens mouth revealing tongue while eating broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise feeding",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:34",
+          "local_end": "03:37",
+          "event_type": "chew",
+          "description": "tortoise closes mouth to chew broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise feeding",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:37",
+          "local_end": "03:39",
+          "event_type": "mouth_open",
+          "description": "tortoise opens mouth again with tongue visible while eating broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise feeding",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:39",
+          "local_end": "03:41",
+          "event_type": "chew",
+          "description": "tortoise closes mouth to chew broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise feeding",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:41",
+          "local_end": "03:43",
+          "event_type": "object_fall",
+          "description": "small piece of broccoli falls off the main floret onto the surface",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise feeding",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:43",
+          "local_end": "03:45",
+          "event_type": "eat",
+          "description": "tortoise continues eating broccoli with mouth open showing tongue",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise feeding",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:30",
+          "local_end": "03:45",
+          "event_type": "on_screen_text",
+          "description": "ASIAN ANIMAL logo visible at bottom center of screen",
+          "participants": [],
+          "actor": "graphic",
+          "object": "logo",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "tortoise feeding",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 15,
+      "chunk_start_sec": 225.0,
+      "chunk_end_sec": 240.0,
+      "chunk_start_mmss": "03:45",
+      "chunk_end_mmss": "04:00",
+      "events": [
+        {
+          "local_start": "03:45",
+          "local_end": "03:47",
+          "event_type": "mouth_open",
+          "description": "tortoise opens mouth to take a bite of broccoli",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:47",
+          "local_end": "03:49",
+          "event_type": "tongue_visible",
+          "description": "tortoise's tongue is visible while eating broccoli",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:49",
+          "local_end": "03:51",
+          "event_type": "mouth_close",
+          "description": "tortoise closes mouth after taking a bite of broccoli",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:52",
+          "local_end": "03:54",
+          "event_type": "mouth_open",
+          "description": "tortoise opens mouth to take another bite of broccoli",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:54",
+          "local_end": "03:56",
+          "event_type": "tongue_visible",
+          "description": "tortoise's tongue is visible while eating broccoli again",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:56",
+          "local_end": "03:58",
+          "event_type": "mouth_close",
+          "description": "tortoise closes mouth after taking another bite of broccoli",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:58",
+          "local_end": "04:00",
+          "event_type": "mouth_open",
+          "description": "tortoise opens mouth to take another bite of broccoli",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 16,
+      "chunk_start_sec": 240.0,
+      "chunk_end_sec": 255.0,
+      "chunk_start_mmss": "04:00",
+      "chunk_end_mmss": "04:15",
+      "events": [
+        {
+          "local_start": "04:00",
+          "local_end": "04:02",
+          "event_type": "mouth_open",
+          "description": "Turtle has mouth open showing its tongue",
+          "participants": [],
+          "actor": "turtle",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:01",
+          "local_end": "04:03",
+          "event_type": "bite",
+          "description": "Turtle closes mouth to take first bite of broccoli",
+          "participants": [],
+          "actor": "turtle",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:02",
+          "local_end": "04:04",
+          "event_type": "state_change",
+          "description": "Broccoli becomes smaller after being bitten",
+          "participants": [],
+          "actor": "turtle",
+          "object": "broccoli",
+          "object_before": "large green broccoli floret",
+          "object_after": "smaller green broccoli floret",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:03",
+          "local_end": "04:05",
+          "event_type": "chew",
+          "description": "Turtle chews broccoli with mouth closed",
+          "participants": [],
+          "actor": "turtle",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:05",
+          "local_end": "04:07",
+          "event_type": "mouth_open",
+          "description": "Turtle opens mouth to take second bite of broccoli",
+          "participants": [],
+          "actor": "turtle",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:06",
+          "local_end": "04:08",
+          "event_type": "bite",
+          "description": "Turtle takes second bite of broccoli",
+          "participants": [],
+          "actor": "turtle",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:07",
+          "local_end": "04:09",
+          "event_type": "state_change",
+          "description": "Broccoli becomes smaller after second bite",
+          "participants": [],
+          "actor": "turtle",
+          "object": "broccoli",
+          "object_before": "smaller green broccoli floret",
+          "object_after": "small green broccoli with partial stem visible",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:09",
+          "local_end": "04:15",
+          "event_type": "eat",
+          "description": "Turtle continues to eat the broccoli with visible stem",
+          "participants": [],
+          "actor": "turtle",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 17,
+      "chunk_start_sec": 255.0,
+      "chunk_end_sec": 270.0,
+      "chunk_start_mmss": "04:15",
+      "chunk_end_mmss": "04:30",
+      "events": [
+        {
+          "local_start": "04:15",
+          "local_end": "04:18",
+          "event_type": "eat",
+          "description": "turtle opens mouth to bite broccoli with tongue visible",
+          "participants": [],
+          "actor": "turtle",
+          "object": "green and yellow broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating Broccoli",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "04:18",
+          "local_end": "04:21",
+          "event_type": "eat",
+          "description": "turtle closes mouth after taking a bite of broccoli",
+          "participants": [],
+          "actor": "turtle",
+          "object": "green and yellow broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:21",
+          "local_end": "04:24",
+          "event_type": "eat",
+          "description": "turtle opens mouth again to take another bite of broccoli",
+          "participants": [],
+          "actor": "turtle",
+          "object": "green and yellow broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:24",
+          "local_end": "04:27",
+          "event_type": "eat",
+          "description": "turtle chews broccoli with mouth closed",
+          "participants": [],
+          "actor": "turtle",
+          "object": "green and yellow broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:27",
+          "local_end": "04:30",
+          "event_type": "eat",
+          "description": "turtle opens mouth wide to take a larger bite of broccoli",
+          "participants": [],
+          "actor": "turtle",
+          "object": "green and yellow broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 18,
+      "chunk_start_sec": 270.0,
+      "chunk_end_sec": 285.0,
+      "chunk_start_mmss": "04:30",
+      "chunk_end_mmss": "04:45",
+      "events": [
+        {
+          "local_start": "04:30",
+          "local_end": "04:31",
+          "event_type": "mouth_open",
+          "description": "tortoise opens mouth wide revealing oral cavity",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:30",
+          "local_end": "04:31",
+          "event_type": "tongue_protrude",
+          "description": "tortoise protrudes pink tongue toward broccoli floret",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:31",
+          "local_end": "04:32",
+          "event_type": "bite",
+          "description": "tortoise closes mouth around broccoli piece",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:32",
+          "local_end": "04:34",
+          "event_type": "chew",
+          "description": "tortoise chews broccoli with mouth closed showing jaw movement",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:34",
+          "local_end": "04:35",
+          "event_type": "mouth_open",
+          "description": "tortoise opens mouth after chewing",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:34",
+          "local_end": "04:35",
+          "event_type": "tongue_protrude",
+          "description": "tortoise protrudes tongue toward remaining broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:35",
+          "local_end": "04:36",
+          "event_type": "bite",
+          "description": "tortoise bites broccoli again",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:36",
+          "local_end": "04:38",
+          "event_type": "chew",
+          "description": "tortoise chews with mouth closed showing repeated jaw motion",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:38",
+          "local_end": "04:39",
+          "event_type": "mouth_open",
+          "description": "tortoise opens mouth after chewing",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:38",
+          "local_end": "04:39",
+          "event_type": "tongue_protrude",
+          "description": "tortoise protrudes tongue toward broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:39",
+          "local_end": "04:40",
+          "event_type": "bite",
+          "description": "tortoise bites the broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:40",
+          "local_end": "04:42",
+          "event_type": "chew",
+          "description": "tortoise chews with visible jaw movement",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:42",
+          "local_end": "04:43",
+          "event_type": "mouth_open",
+          "description": "tortoise opens mouth after chewing",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:42",
+          "local_end": "04:43",
+          "event_type": "tongue_protrude",
+          "description": "tortoise protrudes tongue toward broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:43",
+          "local_end": "04:44",
+          "event_type": "bite",
+          "description": "tortoise bites the broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:44",
+          "local_end": "04:45",
+          "event_type": "chew",
+          "description": "tortoise chews the broccoli with mouth closed",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 19,
+      "chunk_start_sec": 285.0,
+      "chunk_end_sec": 300.0,
+      "chunk_start_mmss": "04:45",
+      "chunk_end_mmss": "05:00",
+      "events": [
+        {
+          "local_start": "04:45",
+          "local_end": "04:46",
+          "event_type": "open_mouth",
+          "description": "tortoise opens its mouth wide to take a bite of broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise eating broccoli",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "04:46",
+          "local_end": "04:47",
+          "event_type": "take_bite",
+          "description": "tortoise bites into the broccoli piece",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:47",
+          "local_end": "04:48",
+          "event_type": "close_mouth",
+          "description": "tortoise closes its mouth after taking a bite",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:48",
+          "local_end": "04:50",
+          "event_type": "chew",
+          "description": "tortoise chews the broccoli with slow jaw movements",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:50",
+          "local_end": "04:51",
+          "event_type": "open_mouth",
+          "description": "tortoise opens mouth again to take another bite",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:51",
+          "local_end": "04:52",
+          "event_type": "take_bite",
+          "description": "tortoise takes another bite from the broccoli piece",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:52",
+          "local_end": "04:53",
+          "event_type": "close_mouth",
+          "description": "tortoise closes mouth after second bite",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:53",
+          "local_end": "04:55",
+          "event_type": "chew",
+          "description": "tortoise chews the broccoli with visible jaw movement",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:55",
+          "local_end": "04:56",
+          "event_type": "open_mouth",
+          "description": "tortoise opens mouth for third bite of broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:56",
+          "local_end": "04:57",
+          "event_type": "take_bite",
+          "description": "tortoise takes third bite from the broccoli piece",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:57",
+          "local_end": "04:58",
+          "event_type": "close_mouth",
+          "description": "tortoise closes mouth after third bite",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "04:58",
+          "local_end": "05:00",
+          "event_type": "chew",
+          "description": "tortoise continues chewing the broccoli with slow movements",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 20,
+      "chunk_start_sec": 300.0,
+      "chunk_end_sec": 315.0,
+      "chunk_start_mmss": "05:00",
+      "chunk_end_mmss": "05:15",
+      "events": [
+        {
+          "local_start": "05:00",
+          "local_end": "05:01",
+          "event_type": "mouth_close",
+          "description": "tortoise closes its mouth",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:02",
+          "local_end": "05:03",
+          "event_type": "mouth_open",
+          "description": "tortoise opens its mouth",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:03",
+          "local_end": "05:04",
+          "event_type": "bite",
+          "description": "tortoise bites the broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:04",
+          "local_end": "05:05",
+          "event_type": "mouth_close",
+          "description": "tortoise closes its mouth",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:06",
+          "local_end": "05:07",
+          "event_type": "mouth_open",
+          "description": "tortoise opens its mouth",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:07",
+          "local_end": "05:08",
+          "event_type": "bite",
+          "description": "tortoise bites the broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:08",
+          "local_end": "05:09",
+          "event_type": "mouth_close",
+          "description": "tortoise closes its mouth",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:10",
+          "local_end": "05:11",
+          "event_type": "mouth_open",
+          "description": "tortoise opens its mouth",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:11",
+          "local_end": "05:12",
+          "event_type": "bite",
+          "description": "tortoise bites the broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:12",
+          "local_end": "05:13",
+          "event_type": "mouth_close",
+          "description": "tortoise closes its mouth",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:14",
+          "local_end": "05:15",
+          "event_type": "mouth_open",
+          "description": "tortoise opens its mouth",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 21,
+      "chunk_start_sec": 315.0,
+      "chunk_end_sec": 330.0,
+      "chunk_start_mmss": "05:15",
+      "chunk_end_mmss": "05:30",
+      "events": [
+        {
+          "local_start": "05:15",
+          "local_end": "05:16",
+          "event_type": "bite",
+          "description": "tortoise opens its mouth wide and takes a bite of the broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:16",
+          "local_end": "05:18",
+          "event_type": "chew",
+          "description": "tortoise closes its mouth and chews the broccoli with visible jaw movement",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:18",
+          "local_end": "05:20",
+          "event_type": "reposition",
+          "description": "tortoise opens mouth and repositions the broccoli with its tongue and beak",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:20",
+          "local_end": "05:22",
+          "event_type": "bite",
+          "description": "tortoise takes another bite of the broccoli, opening mouth wide",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:22",
+          "local_end": "05:24",
+          "event_type": "chew",
+          "description": "tortoise chews the broccoli with rhythmic jaw movement",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:24",
+          "local_end": "05:26",
+          "event_type": "reposition",
+          "description": "tortoise adjusts the broccoli position with mouth and front limbs",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:26",
+          "local_end": "05:28",
+          "event_type": "bite",
+          "description": "tortoise takes another bite of the broccoli, causing small pieces to break off",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:28",
+          "local_end": "05:30",
+          "event_type": "chew",
+          "description": "tortoise chews the broccoli with visible neck movements and jaw motion",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating broccoli",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 22,
+      "chunk_start_sec": 330.0,
+      "chunk_end_sec": 345.0,
+      "chunk_start_mmss": "05:30",
+      "chunk_end_mmss": "05:45",
+      "events": [
+        {
+          "local_start": "05:30",
+          "local_end": "05:32",
+          "event_type": "bite",
+          "description": "tortoise opens mouth wide to take a bite of broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:32",
+          "local_end": "05:34",
+          "event_type": "chew",
+          "description": "tortoise closes mouth and chews broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:34",
+          "local_end": "05:36",
+          "event_type": "bite",
+          "description": "tortoise opens mouth again to take another bite of broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:36",
+          "local_end": "05:38",
+          "event_type": "chew",
+          "description": "tortoise closes mouth while chewing broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:38",
+          "local_end": "05:40",
+          "event_type": "bite",
+          "description": "tortoise opens mouth to take a third bite of broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:40",
+          "local_end": "05:42",
+          "event_type": "chew",
+          "description": "tortoise closes mouth and continues chewing broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:42",
+          "local_end": "05:44",
+          "event_type": "consumption_state_change",
+          "description": "broccoli visibly reduced in size as tortoise continues eating",
+          "participants": [],
+          "actor": "tortoise",
+          "object_before": "green broccoli",
+          "object_after": "smaller green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:44",
+          "local_end": "05:45",
+          "event_type": "bite",
+          "description": "tortoise opens mouth for another bite as broccoli becomes smaller",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 23,
+      "chunk_start_sec": 345.0,
+      "chunk_end_sec": 360.0,
+      "chunk_start_mmss": "05:45",
+      "chunk_end_mmss": "06:00",
+      "events": [
+        {
+          "local_start": "05:45",
+          "local_end": "05:47",
+          "event_type": "bite",
+          "description": "tortoise opens mouth wide with tongue visible, taking a bite of broccoli",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:47",
+          "local_end": "05:49",
+          "event_type": "chew",
+          "description": "tortoise closes mouth to chew the broccoli",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:49",
+          "local_end": "05:51",
+          "event_type": "tongue_extend",
+          "description": "tortoise extends tongue to adjust the position of the broccoli",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:51",
+          "local_end": "05:53",
+          "event_type": "bite",
+          "description": "tortoise takes another bite with mouth open, broccoli now smaller",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:53",
+          "local_end": "05:55",
+          "event_type": "chew",
+          "description": "tortoise chews with mouth closed, broccoli continuing to diminish in size",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:55",
+          "local_end": "05:57",
+          "event_type": "bite",
+          "description": "tortoise opens mouth wide to take another bite of the remaining broccoli",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:57",
+          "local_end": "05:59",
+          "event_type": "chew",
+          "description": "tortoise chews with mouth closed, broccoli now significantly smaller",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "05:59",
+          "local_end": "06:00",
+          "event_type": "bite",
+          "description": "tortoise opens mouth to take a final visible bite of the remaining broccoli",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 24,
+      "chunk_start_sec": 360.0,
+      "chunk_end_sec": 375.0,
+      "chunk_start_mmss": "06:00",
+      "chunk_end_mmss": "06:15",
+      "events": [
+        {
+          "local_start": "06:00",
+          "local_end": "06:01",
+          "event_type": "eat",
+          "description": "Turtle has mouth wide open while eating broccoli with visible tongue and broccoli inside mouth",
+          "participants": [
+            "turtle"
+          ],
+          "actor": "turtle",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating Broccoli",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "06:01",
+          "local_end": "06:02",
+          "event_type": "eat",
+          "description": "Turtle closes mouth after taking a bite of broccoli",
+          "participants": [
+            "turtle"
+          ],
+          "actor": "turtle",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:02",
+          "local_end": "06:04",
+          "event_type": "eat",
+          "description": "Turtle opens mouth again to take another bite of broccoli",
+          "participants": [
+            "turtle"
+          ],
+          "actor": "turtle",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:04",
+          "local_end": "06:07",
+          "event_type": "eat",
+          "description": "Turtle chews broccoli with mouth closed, head slightly moving while processing food",
+          "participants": [
+            "turtle"
+          ],
+          "actor": "turtle",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:07",
+          "local_end": "06:09",
+          "event_type": "eat",
+          "description": "Turtle opens mouth to take another bite, revealing remaining broccoli",
+          "participants": [
+            "turtle"
+          ],
+          "actor": "turtle",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:09",
+          "local_end": "06:12",
+          "event_type": "eat",
+          "description": "Turtle continues chewing with mouth closed, broccoli piece visibly smaller",
+          "participants": [
+            "turtle"
+          ],
+          "actor": "turtle",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:12",
+          "local_end": "06:15",
+          "event_type": "eat",
+          "description": "Turtle opens mouth again to consume remaining broccoli piece",
+          "participants": [
+            "turtle"
+          ],
+          "actor": "turtle",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating Broccoli",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 25,
+      "chunk_start_sec": 375.0,
+      "chunk_end_sec": 390.0,
+      "chunk_start_mmss": "06:15",
+      "chunk_end_mmss": "06:30",
+      "events": [
+        {
+          "local_start": "06:15",
+          "local_end": "06:18",
+          "event_type": "eat",
+          "description": "tortoise eats broccoli with visible pieces around its mouth",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "06:18",
+          "local_end": "06:21",
+          "event_type": "eat",
+          "description": "tortoise opens mouth wider to take another bite of broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:21",
+          "local_end": "06:24",
+          "event_type": "eat",
+          "description": "tortoise chews with broccoli pieces shifting position on its face",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:24",
+          "local_end": "06:27",
+          "event_type": "eat",
+          "description": "tortoise continues eating with broccoli visible around mouth area",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:27",
+          "local_end": "06:30",
+          "event_type": "eat",
+          "description": "tortoise takes another bite with broccoli pieces scattered around its mouth",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "on_screen_text": [
+            {
+              "text": "ASIAN ANIMAL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 26,
+      "chunk_start_sec": 390.0,
+      "chunk_end_sec": 405.0,
+      "chunk_start_mmss": "06:30",
+      "chunk_end_mmss": "06:45",
+      "events": [
+        {
+          "local_start": "06:30",
+          "local_end": "06:45",
+          "event_type": "eat",
+          "description": "tortoise eats broccoli pieces on black surface",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "broccoli",
+          "object_before": "green broccoli",
+          "object_after": "partially consumed green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:32",
+          "local_end": "06:34",
+          "event_type": "head_extension",
+          "description": "tortoise extends head forward toward broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "head",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:34",
+          "local_end": "06:36",
+          "event_type": "mouth_open",
+          "description": "tortoise opens mouth to take bite of broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "mouth",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:36",
+          "local_end": "06:38",
+          "event_type": "mouth_close",
+          "description": "tortoise closes mouth after consuming broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "mouth",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:40",
+          "local_end": "06:42",
+          "event_type": "tongue_visible",
+          "description": "tortoise's pink tongue is visible while eating broccoli",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "tongue",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:42",
+          "local_end": "06:44",
+          "event_type": "head_retraction",
+          "description": "tortoise retracts head slightly after eating",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "head",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 27,
+      "chunk_start_sec": 405.0,
+      "chunk_end_sec": 420.0,
+      "chunk_start_mmss": "06:45",
+      "chunk_end_mmss": "07:00",
+      "events": [
+        {
+          "local_start": "06:45",
+          "local_end": "06:46",
+          "event_type": "eat",
+          "description": "tortoise opens its mouth to take a bite of leafy greens",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green leafy food",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "06:46",
+          "local_end": "06:47",
+          "event_type": "eat",
+          "description": "tortoise closes mouth around the food",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green leafy food",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:47",
+          "local_end": "06:48",
+          "event_type": "chew",
+          "description": "tortoise chews with visible jaw movement",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green leafy food",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:48",
+          "local_end": "06:49",
+          "event_type": "eat",
+          "description": "tortoise opens mouth to take another bite of food",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green leafy food",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:49",
+          "local_end": "06:50",
+          "event_type": "eat",
+          "description": "tortoise closes mouth after taking second bite",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green leafy food",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:50",
+          "local_end": "06:52",
+          "event_type": "chew",
+          "description": "tortoise continues chewing with food visible around mouth",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green leafy food",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:52",
+          "local_end": "06:53",
+          "event_type": "head_movement",
+          "description": "tortoise moves head slightly to reach for more food",
+          "participants": [],
+          "actor": "tortoise",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:53",
+          "local_end": "06:54",
+          "event_type": "eat",
+          "description": "tortoise opens mouth to take third bite of food",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green leafy food",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:54",
+          "local_end": "06:55",
+          "event_type": "eat",
+          "description": "tortoise closes mouth after taking third bite",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green leafy food",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:55",
+          "local_end": "06:57",
+          "event_type": "chew",
+          "description": "tortoise chews with visible food particles around mouth",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green leafy food",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:57",
+          "local_end": "06:58",
+          "event_type": "eat",
+          "description": "tortoise opens mouth to take fourth bite of food",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green leafy food",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:58",
+          "local_end": "06:59",
+          "event_type": "eat",
+          "description": "tortoise closes mouth after taking fourth bite",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green leafy food",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:59",
+          "local_end": "07:00",
+          "event_type": "chew",
+          "description": "tortoise continues chewing motion with food visible on face",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green leafy food",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "06:45",
+          "local_end": "07:00",
+          "event_type": "on_screen_text",
+          "description": "blue circular logo with 'ANIMAL' text visible at bottom center",
+          "participants": [],
+          "actor": "on_screen_graphic",
+          "on_screen_text": [
+            {
+              "text": "ANIMAL",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 28,
+      "chunk_start_sec": 420.0,
+      "chunk_end_sec": 435.0,
+      "chunk_start_mmss": "07:00",
+      "chunk_end_mmss": "07:15",
+      "events": [
+        {
+          "local_start": "07:00",
+          "local_end": "07:03",
+          "event_type": "eat",
+          "description": "brown tortoise opens mouth wide to take a bite of broccoli",
+          "participants": [
+            "brown tortoise"
+          ],
+          "actor": "brown tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "07:03",
+          "local_end": "07:06",
+          "event_type": "chew",
+          "description": "brown tortoise closes mouth to chew broccoli with head slightly tilted",
+          "participants": [
+            "brown tortoise"
+          ],
+          "actor": "brown tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:06",
+          "local_end": "07:08",
+          "event_type": "tongue_visible",
+          "description": "brown tortoise extends pink tongue while manipulating broccoli in mouth",
+          "participants": [
+            "brown tortoise"
+          ],
+          "actor": "brown tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:08",
+          "local_end": "07:11",
+          "event_type": "head_movement",
+          "description": "brown tortoise makes small head adjustments to reach different broccoli pieces",
+          "participants": [
+            "brown tortoise"
+          ],
+          "actor": "brown tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:11",
+          "local_end": "07:15",
+          "event_type": "eat",
+          "description": "brown tortoise continues eating broccoli with mouth open and food visible around jaws",
+          "participants": [
+            "brown tortoise"
+          ],
+          "actor": "brown tortoise",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "tortoise eating",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 29,
+      "chunk_start_sec": 435.0,
+      "chunk_end_sec": 450.0,
+      "chunk_start_mmss": "07:15",
+      "chunk_end_mmss": "07:30",
+      "events": [
+        {
+          "local_start": "07:15",
+          "local_end": "07:17",
+          "event_type": "eat",
+          "description": "The brown-shelled turtle opens its mouth to take a bite of broccoli, with its neck slightly extended toward the food.",
+          "participants": [
+            "brown-shelled turtle"
+          ],
+          "actor": "brown-shelled turtle",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "07:17",
+          "local_end": "07:19",
+          "event_type": "eat",
+          "description": "The turtle's tongue becomes visible as it takes a bite of broccoli, with its mouth opening wider to grasp the food.",
+          "participants": [
+            "brown-shelled turtle"
+          ],
+          "actor": "brown-shelled turtle",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:19",
+          "local_end": "07:22",
+          "event_type": "eat",
+          "description": "The turtle retracts its neck slightly after taking a bite, chewing with its mouth closed.",
+          "participants": [
+            "brown-shelled turtle"
+          ],
+          "actor": "brown-shelled turtle",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:22",
+          "local_end": "07:25",
+          "event_type": "eat",
+          "description": "The turtle moves its head to the right to approach a different piece of broccoli, extending its neck toward the new food item.",
+          "participants": [
+            "brown-shelled turtle"
+          ],
+          "actor": "brown-shelled turtle",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:25",
+          "local_end": "07:28",
+          "event_type": "eat",
+          "description": "The turtle opens its mouth wide with tongue visible to take another bite of broccoli, with food particles visible on its beak.",
+          "participants": [
+            "brown-shelled turtle"
+          ],
+          "actor": "brown-shelled turtle",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:28",
+          "local_end": "07:30",
+          "event_type": "eat",
+          "description": "The turtle continues eating with its mouth closed, the broccoli pieces becoming noticeably smaller as it consumes them.",
+          "participants": [
+            "brown-shelled turtle"
+          ],
+          "actor": "brown-shelled turtle",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 30,
+      "chunk_start_sec": 450.0,
+      "chunk_end_sec": 465.0,
+      "chunk_start_mmss": "07:30",
+      "chunk_end_mmss": "07:45",
+      "events": [
+        {
+          "local_start": "07:30",
+          "local_end": "07:32",
+          "event_type": "eating",
+          "description": "the turtle eats broccoli with its mouth slightly open",
+          "participants": [],
+          "actor": "turtle",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "07:32",
+          "local_end": "07:33",
+          "event_type": "mouth_open",
+          "description": "the turtle opens its mouth wider, revealing its tongue",
+          "participants": [],
+          "actor": "turtle",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:33",
+          "local_end": "07:35",
+          "event_type": "bite",
+          "description": "the turtle takes a bite of broccoli with broccoli visible inside its mouth",
+          "participants": [],
+          "actor": "turtle",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:35",
+          "local_end": "07:37",
+          "event_type": "mouth_close",
+          "description": "the turtle closes its mouth with broccoli visible around its lips",
+          "participants": [],
+          "actor": "turtle",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:37",
+          "local_end": "07:39",
+          "event_type": "chew",
+          "description": "the turtle chews the broccoli with visible jaw movement",
+          "participants": [],
+          "actor": "turtle",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:39",
+          "local_end": "07:41",
+          "event_type": "mouth_open",
+          "description": "the turtle opens its mouth again to take another bite of broccoli",
+          "participants": [],
+          "actor": "turtle",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:41",
+          "local_end": "07:43",
+          "event_type": "bite",
+          "description": "the turtle takes another bite of broccoli with its mouth wide open",
+          "participants": [],
+          "actor": "turtle",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:43",
+          "local_end": "07:45",
+          "event_type": "food_reduced",
+          "description": "the broccoli pieces become smaller as the turtle continues eating",
+          "participants": [],
+          "actor": "turtle",
+          "object": "green broccoli",
+          "segment_boundary": "middle",
+          "segment_label": "Turtle Eating",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 31,
+      "chunk_start_sec": 465.0,
+      "chunk_end_sec": 480.0,
+      "chunk_start_mmss": "07:45",
+      "chunk_end_mmss": "08:00",
+      "events": [
+        {
+          "local_start": "07:45",
+          "local_end": "07:45.5",
+          "event_type": "mouth_open",
+          "description": "Tortoise opens mouth wide with tongue visible to take a bite of green food",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "07:45.5",
+          "local_end": "07:46",
+          "event_type": "mouth_close",
+          "description": "Tortoise closes mouth with food inside",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:46",
+          "local_end": "07:46.5",
+          "event_type": "chew",
+          "description": "Tortoise chews food with visible mouth movement",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:46.5",
+          "local_end": "07:47",
+          "event_type": "mouth_open",
+          "description": "Tortoise opens mouth wide with tongue visible to take another bite of green food",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:47",
+          "local_end": "07:47.5",
+          "event_type": "mouth_close",
+          "description": "Tortoise closes mouth with food inside",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:47.5",
+          "local_end": "07:48",
+          "event_type": "chew",
+          "description": "Tortoise chews food with visible mouth movement",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:48",
+          "local_end": "07:48.5",
+          "event_type": "neck_extension",
+          "description": "Tortoise extends neck forward toward remaining green food",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:48.5",
+          "local_end": "07:49",
+          "event_type": "mouth_open",
+          "description": "Tortoise opens mouth wide with tongue visible to take a bite of green food",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:49",
+          "local_end": "07:49.5",
+          "event_type": "mouth_close",
+          "description": "Tortoise closes mouth with food inside",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:49.5",
+          "local_end": "07:50",
+          "event_type": "chew",
+          "description": "Tortoise chews food with visible mouth movement",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:50",
+          "local_end": "07:50.5",
+          "event_type": "mouth_open",
+          "description": "Tortoise opens mouth wide with tongue visible to take another bite of green food",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:50.5",
+          "local_end": "07:51",
+          "event_type": "mouth_close",
+          "description": "Tortoise closes mouth with food inside",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:51",
+          "local_end": "07:51.5",
+          "event_type": "chew",
+          "description": "Tortoise chews food with visible mouth movement",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:51.5",
+          "local_end": "07:52",
+          "event_type": "neck_extension",
+          "description": "Tortoise extends neck forward toward remaining green food",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:52",
+          "local_end": "07:52.5",
+          "event_type": "mouth_open",
+          "description": "Tortoise opens mouth wide with tongue visible to take a bite of green food",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:52.5",
+          "local_end": "07:53",
+          "event_type": "mouth_close",
+          "description": "Tortoise closes mouth with food inside",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:53",
+          "local_end": "07:53.5",
+          "event_type": "chew",
+          "description": "Tortoise chews food with visible mouth movement",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:53.5",
+          "local_end": "07:54",
+          "event_type": "mouth_open",
+          "description": "Tortoise opens mouth wide with tongue visible to take another bite of green food",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:54",
+          "local_end": "07:54.5",
+          "event_type": "mouth_close",
+          "description": "Tortoise closes mouth with food inside",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:54.5",
+          "local_end": "07:55",
+          "event_type": "chew",
+          "description": "Tortoise chews food with visible mouth movement",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:55",
+          "local_end": "07:55.5",
+          "event_type": "neck_extension",
+          "description": "Tortoise extends neck forward toward remaining green food",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:55.5",
+          "local_end": "07:56",
+          "event_type": "mouth_open",
+          "description": "Tortoise opens mouth wide with tongue visible to take a bite of green food",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:56",
+          "local_end": "07:56.5",
+          "event_type": "mouth_close",
+          "description": "Tortoise closes mouth with food inside",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:56.5",
+          "local_end": "07:57",
+          "event_type": "chew",
+          "description": "Tortoise chews food with visible mouth movement",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:57",
+          "local_end": "07:57.5",
+          "event_type": "mouth_open",
+          "description": "Tortoise opens mouth wide with tongue visible to take another bite of green food",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:57.5",
+          "local_end": "07:58",
+          "event_type": "mouth_close",
+          "description": "Tortoise closes mouth with food inside",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:58",
+          "local_end": "07:58.5",
+          "event_type": "chew",
+          "description": "Tortoise chews food with visible mouth movement",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:58.5",
+          "local_end": "07:59",
+          "event_type": "neck_extension",
+          "description": "Tortoise extends neck forward toward remaining green food",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:59",
+          "local_end": "07:59.5",
+          "event_type": "mouth_open",
+          "description": "Tortoise opens mouth wide with tongue visible to take a bite of green food",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "07:59.5",
+          "local_end": "08:00",
+          "event_type": "mouth_close",
+          "description": "Tortoise closes mouth with food inside",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 32,
+      "chunk_start_sec": 480.0,
+      "chunk_end_sec": 495.0,
+      "chunk_start_mmss": "08:00",
+      "chunk_end_mmss": "08:15",
+      "events": [
+        {
+          "local_start": "08:00",
+          "local_end": "08:15",
+          "event_type": "eating",
+          "description": "Tortoise consumes green food pieces (broccoli) from a black surface, with food fragments visible around its mouth and on the surface",
+          "participants": [],
+          "actor": "tortoise",
+          "object": "green food",
+          "segment_boundary": "middle",
+          "segment_label": "Tortoise Eating",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 33,
+      "chunk_start_sec": 495.0,
+      "chunk_end_sec": 510.0,
+      "chunk_start_mmss": "08:15",
+      "chunk_end_mmss": "08:30",
+      "events": [
+        {
+          "local_start": "08:15",
+          "local_end": "08:25",
+          "event_type": "eat",
+          "description": "tortoise consumes small green food pieces with visible mouth movements and food around its mouth",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "small green food pieces",
+          "segment_boundary": "middle",
+          "segment_label": "ASMR eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "08:25",
+          "local_end": "08:27",
+          "event_type": "graphic",
+          "description": "background darkens and 'ASMR ANIMAL' text appears in center of frame",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "ASMR ANIMAL",
+              "location": "center"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "ASMR eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "08:27",
+          "local_end": "08:28",
+          "event_type": "graphic",
+          "description": "social media icons (YouTube, Instagram, Facebook) appear next to center text",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "YouTube icon",
+              "location": "center"
+            },
+            {
+              "text": "Instagram icon",
+              "location": "center"
+            },
+            {
+              "text": "Facebook icon",
+              "location": "center"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "ASMR eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "08:28",
+          "local_end": "08:29",
+          "event_type": "graphic",
+          "description": "'ASMR' text appears in top left corner and 'ASMR ANIMAL' logo appears in top right corner",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "ASMR",
+              "location": "top_left"
+            },
+            {
+              "text": "ASMR ANIMAL",
+              "location": "top_right"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "ASMR eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "08:28",
+          "local_end": "08:30",
+          "event_type": "reveal",
+          "description": "broccoli, cheese, blueberry, and strawberry appear on the surface in front of the tortoise",
+          "participants": [],
+          "actor": "",
+          "object": "broccoli, cheese, blueberry, strawberry",
+          "segment_boundary": "middle",
+          "segment_label": "ASMR eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "08:28",
+          "local_end": "08:30",
+          "event_type": "reposition",
+          "description": "tortoise is positioned behind the newly appeared food items with its head visible above them",
+          "participants": [
+            "tortoise"
+          ],
+          "actor": "tortoise",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "ASMR eating",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 34,
+      "chunk_start_sec": 510.0,
+      "chunk_end_sec": 513.0666666666667,
+      "chunk_start_mmss": "08:30",
+      "chunk_end_mmss": "08:33",
+      "events": [
+        {
+          "local_start": "08:30",
+          "local_end": "08:33",
+          "event_type": "static_scene",
+          "description": "The scene remains completely static with no observable movement or changes",
+          "participants": [],
+          "actor": "",
+          "segment_boundary": "middle",
+          "segment_label": "ASMR Animal",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "ASMR",
+              "location": "logo"
+            },
+            {
+              "text": "ASMR ANIMAL",
+              "location": "logo"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

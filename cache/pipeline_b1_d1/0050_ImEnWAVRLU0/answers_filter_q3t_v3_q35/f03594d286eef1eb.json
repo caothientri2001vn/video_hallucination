@@ -1,0 +1,93 @@
+{
+  "question": "Did the interviewer use a computer during the interview?",
+  "pred": "Evidence: The video shows a man in a dark suit with a striped tie (the interviewer) sitting behind a desk, while a man in a dark suit with a blue tie (the interviewee) sits opposite him. The man with the blue tie is the one seen using the laptop, specifically playing a solitaire card game on it (frames 06:30, 06:37). The interviewer is not seen using a computer.\n\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "review_documents",
+      "description": "woman with red hair sits at a desk and reviews papers while looking at a laptop",
+      "participants": [
+        "red-haired woman"
+      ],
+      "actor": "red-haired woman",
+      "object": "papers",
+      "segment_boundary": "middle",
+      "segment_label": "hotel hallway activity",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 11,
+      "start_time": "00:28",
+      "end_time": "00:30",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 3,
+      "segment_label_resolved": "Street View Sequence"
+    },
+    {
+      "event_type": "speak",
+      "description": "blue-tie man speaks while seated at desk with laptop",
+      "participants": [
+        "blue-tie man"
+      ],
+      "actor": "blue-tie man",
+      "segment_boundary": "middle",
+      "segment_label": "business meeting",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 147,
+      "start_time": "06:15",
+      "end_time": "06:20",
+      "sub_events": [],
+      "subtype_order": 29,
+      "subtype_total": 49,
+      "round_index": 8,
+      "segment_label_resolved": "New Meeting Room"
+    },
+    {
+      "event_type": "game",
+      "description": "sits at desk with laptop displaying a solitaire card game with visible playing cards",
+      "participants": [
+        "blue-tie man"
+      ],
+      "actor": "blue-tie man",
+      "object": "laptop",
+      "on_screen_text": [
+        {
+          "text": "solitaire card game layout",
+          "location": "laptop screen"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Card Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 150,
+      "start_time": "06:30",
+      "end_time": "06:37",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 8,
+      "segment_label_resolved": "New Meeting Room"
+    },
+    {
+      "event_type": "close",
+      "description": "closes the laptop with both hands",
+      "participants": [
+        "blue-tie man"
+      ],
+      "actor": "blue-tie man",
+      "object": "laptop",
+      "segment_boundary": "end",
+      "segment_label": "Card Game",
+      "continuation_hint": "complete",
+      "event_index": 151,
+      "start_time": "06:37",
+      "end_time": "06:40",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 8,
+      "segment_label_resolved": "New Meeting Room"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "question": "Is the order of ball falling into cup counter-clockwise?",
+  "pred": "The video shows a person placing colored balls into matching colored cups arranged in a circle. To determine if the order is counter-clockwise, we track the sequence of placements:\n\n1.  **White ball** is placed into the white cup at the bottom center (00:01).\n2.  **Pink ball** is placed into the pink cup to the right of the white cup (00:03).\n3.  **Yellow ball** is placed into the yellow cup above the pink cup (00:05).\n4.  **Blue ball** is placed into the blue cup above the yellow cup (00:07).\n5.  **Green ball** is placed into the green cup at the top right (00:09).\n\nThe sequence moves from the bottom center towards the right and then upwards. On a circular layout, moving from the bottom to the right and then up is a **counter-clockwise** direction.\n\nEvidence: The sequence of ball placements starts at the white cup (bottom) and moves to the pink, yellow, blue, and green cups in a rightward/upward arc, which is counter-clockwise.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "lift",
+      "description": "the person lifts a white ball from the bowl using a white spoon",
+      "participants": [
+        "person"
+      ],
+      "actor": "person",
+      "object": "white ball",
+      "segment_boundary": "start",
+      "segment_label": "Color Matching Game",
+      "continuation_hint": "complete",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:01",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Color Matching Game"
+    },
+    {
+      "event_type": "place",
+      "description": "the person places the white ball into the white cup",
+      "participants": [
+        "person"
+      ],
+      "actor": "person",
+      "object": "white ball",
+      "segment_boundary": "middle",
+      "segment_label": "Color Matching Game",
+      "continuation_hint": "complete",
+      "event_index": 2,
+      "start_time": "00:01",
+      "end_time": "00:02",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Color Matching Game"
+    },
+    {
+      "event_type": "lift",
+      "description": "the person lifts a pink ball from the bowl using a white spoon",
+      "participants": [
+        "person"
+      ],
+      "actor": "person",
+      "object": "pink ball",
+      "segment_boundary": "middle",
+      "segment_label": "Color Matching Game",
+      "continuation_hint": "complete",
+      "event_index": 3,
+      "start_time": "00:02",
+      "end_time": "00:03",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Color Matching Game"
+    },
+    {
+      "event_type": "place",
+      "description": "the person places the pink ball into the pink cup",
+      "participants": [
+        "person"
+      ],
+      "actor": "person",
+      "object": "pink ball",
+      "segment_boundary": "middle",
+      "segment_label": "Color Matching Game",
+      "continuation_hint": "complete",
+      "event_index": 4,
+      "start_time": "00:03",
+      "end_time": "00:04",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Color Matching Game"
+    },
+    {
+      "event_type": "lift",
+      "description": "the person lifts a yellow ball from the bowl using a white spoon",
+      "participants": [
+        "person"
+      ],
+      "actor": "person",
+      "object": "yellow ball",
+      "segment_boundary": "middle",
+      "segment_label": "Color Matching Game",
+      "continuation_hint": "complete",
+      "event_index": 5,
+      "start_time": "00:04",
+      "end_time": "00:05",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Color Matching Game"
+    },
+    {
+      "event_type": "place",
+      "description": "the person places the yellow ball into the yellow cup",
+      "participants": [
+        "person"
+      ],
+      "actor": "person",
+      "object": "yellow ball",
+      "segment_boundary": "middle",
+      "segment_label": "Color Matching Game",
+      "continuation_hint": "complete",
+      "event_index": 6,
+      "start_time": "00:05",
+      "end_time": "00:06",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Color Matching Game"
+    },
+    {
+      "event_type": "lift",
+      "description": "the person lifts a blue ball from the bowl using a white spoon",
+      "participants": [
+        "person"
+      ],
+      "actor": "person",
+      "object": "blue ball",
+      "segment_boundary": "middle",
+      "segment_label": "Color Matching Game",
+      "continuation_hint": "complete",
+      "event_index": 7,
+      "start_time": "00:06",
+      "end_time": "00:07",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Color Matching Game"
+    },
+    {
+      "event_type": "place",
+      "description": "the person places the blue ball into the blue cup",
+      "participants": [
+        "person"
+      ],
+      "actor": "person",
+      "object": "blue ball",
+      "segment_boundary": "middle",
+      "segment_label": "Color Matching Game",
+      "continuation_hint": "complete",
+      "event_index": 8,
+      "start_time": "00:07",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Color Matching Game"
+    },
+    {
+      "event_type": "lift",
+      "description": "the person lifts a green ball from the bowl using a white spoon",
+      "participants": [
+        "person"
+      ],
+      "actor": "person",
+      "object": "green ball",
+      "segment_boundary": "middle",
+      "segment_label": "Color Matching Game",
+      "continuation_hint": "complete",
+      "event_index": 9,
+      "start_time": "00:08",
+      "end_time": "00:09",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Color Matching Game"
+    },
+    {
+      "event_type": "place",
+      "description": "the person places the green ball into the green cup",
+      "participants": [
+        "person"
+      ],
+      "actor": "person",
+      "object": "green ball",
+      "segment_boundary": "middle",
+      "segment_label": "Color Matching Game",
+      "continuation_hint": "complete",
+      "event_index": 10,
+      "start_time": "00:09",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Color Matching Game"
+    }
+  ]
+}

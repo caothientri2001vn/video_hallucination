@@ -1,0 +1,74 @@
+{
+  "question": "Does the player with white shirt number 19 score goal?",
+  "pred": "The video shows a soccer match where a player in a red jersey (number 20) takes a shot that goes into the goal. The player in the white jersey with number 19 is visible on the field during the play but does not take the shot or score the goal.\n\nEvidence: Frames near the end of the video show the red-jersey player (number 20) scoring and celebrating, while the white-jersey player (number 19) is positioned as a defender.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "look",
+      "description": "the white-jersey player (number 19) looks toward the center of the field",
+      "participants": [
+        "white-jersey player (number 19)",
+        "red-jersey player"
+      ],
+      "actor": "white-jersey player (number 19)",
+      "object": "soccer ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "soccer match",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 8,
+      "start_time": "00:15",
+      "end_time": "00:16",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "jump",
+      "description": "the red-jersey player jumps to head the ball",
+      "participants": [
+        "red-jersey player",
+        "white-jersey player (number 19)"
+      ],
+      "actor": "red-jersey player",
+      "object": "soccer ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "soccer match",
+      "continuation_hint": "middle",
+      "event_index": 9,
+      "start_time": "00:16",
+      "end_time": "00:17",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "save",
+      "description": "the teal-jersey goalkeeper dives to his left to save the ball",
+      "participants": [
+        "teal-jersey goalkeeper"
+      ],
+      "actor": "teal-jersey goalkeeper",
+      "object": "soccer ball",
+      "outcome": "hit",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "soccer match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 10,
+      "start_time": "00:17",
+      "end_time": "00:17",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    }
+  ]
+}

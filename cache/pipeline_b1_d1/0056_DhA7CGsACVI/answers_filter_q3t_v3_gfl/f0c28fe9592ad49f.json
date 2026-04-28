@@ -1,0 +1,53 @@
+{
+  "question": "Were there exactly two boxes opened between the lipstick box and the doll head box?",
+  "pred": "The video shows a game where players take turns selecting and opening numbered boxes from a shelf. To determine how many boxes were opened between the \"lipstick box\" and the \"doll head box,\" we identify the sequence of box openings:\n\n1.  **Lipstick box:** The blue-suit man (LEFT player) selects a box from the shelf (Box 4) and opens it to reveal a gold lipstick tube, which contains a tiny hand (frames around 01:40 - 02:20).\n2.  **First intermediate box:** The dark-suit man (RIGHT player) selects Box 3 from the shelf and opens it to reveal figurines of praying mantises and bees (Context event 78, frames around 03:00 - 03:10).\n3.  **Second intermediate box:** The blue-suit man (LEFT player) selects Box 1 from the shelf and opens it (frames around 04:10 - 04:20).\n4.  **Doll head box:** The dark-suit man (RIGHT player) selects a box (Box 6) and opens it to reveal a doll head with a handle on top (frames around 04:30 - 04:40).\n\nThere were exactly two boxes (Box 3 and Box 1) opened between the lipstick box (Box 4) and the doll head box (Box 6).\n\nEvidence: Frames between 02:20 and 04:30 show the opening of Box 3 (mantis figurines) and Box 1 before the doll head is revealed in the next turn.\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "open_box",
+      "description": "The dark-suited man opens the large center box on the table by lifting its lid upward",
+      "participants": [
+        "blue-suited man",
+        "dark-suited man"
+      ],
+      "actor": "dark-suited man",
+      "cover": "beige box",
+      "hidden": "green praying mantis figurines and black-yellow bee figurines",
+      "segment_boundary": "middle",
+      "segment_label": "Figurine Display",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 78,
+      "start_time": "03:00",
+      "end_time": "03:03",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "man in gray suit opens the white box on the right side of the table",
+      "participants": [
+        "blue-suit man",
+        "gray-suit man"
+      ],
+      "actor": "gray-suit man",
+      "object": "white box",
+      "cover": "white box",
+      "hidden": "uncertain",
+      "segment_boundary": "middle",
+      "segment_label": "Box Opening Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 107,
+      "start_time": "04:30",
+      "end_time": "04:34",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    }
+  ]
+}

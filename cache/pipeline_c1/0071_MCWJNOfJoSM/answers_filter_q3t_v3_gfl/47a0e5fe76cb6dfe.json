@@ -1,0 +1,92 @@
+{
+  "question": "Did the goalkeeper in green save the shot successfully?",
+  "pred": "The video shows a penalty shootout. The goalkeeper in green (identified in the alias map as \"green-uniform goalkeeper\") is seen attempting to save multiple shots. According to the Context, he successfully saves two penalty kicks.\n\n1. At 01:55-01:57, the \"green jersey goalkeeper\" successfully blocks a penalty kick with his hands (Event 46).\n2. At 02:05-02:06, the \"green-uniform goalkeeper\" successfully stops the ball from entering the goal (Event 53).\n\nEvidence: Event 46 states \"Goalkeeper successfully blocks the penalty kick with their hands\" and Event 53 states \"green-uniform goalkeeper successfully stops the white soccer ball from entering the goal\".\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "dive",
+      "description": "Goalkeeper in green jersey dives to their right to save the penalty",
+      "participants": [
+        "green jersey goalkeeper"
+      ],
+      "actor": "green jersey goalkeeper",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 45,
+      "start_time": "01:54",
+      "end_time": "01:56",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "save",
+      "description": "Goalkeeper successfully blocks the penalty kick with their hands",
+      "participants": [
+        "green jersey goalkeeper",
+        "soccer ball"
+      ],
+      "actor": "green jersey goalkeeper",
+      "object": "white soccer ball",
+      "outcome": "saved",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 46,
+      "start_time": "01:55",
+      "end_time": "01:57",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "dive",
+      "description": "green-uniform goalkeeper dives to his right to save the penalty kick",
+      "participants": [
+        "green-uniform goalkeeper"
+      ],
+      "actor": "green-uniform goalkeeper",
+      "object": "white soccer ball",
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 52,
+      "start_time": "02:04",
+      "end_time": "02:05",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "save",
+      "description": "green-uniform goalkeeper successfully stops the white soccer ball from entering the goal",
+      "participants": [
+        "green-uniform goalkeeper"
+      ],
+      "actor": "green-uniform goalkeeper",
+      "object": "white soccer ball",
+      "outcome": "saved",
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 53,
+      "start_time": "02:05",
+      "end_time": "02:06",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    }
+  ]
+}

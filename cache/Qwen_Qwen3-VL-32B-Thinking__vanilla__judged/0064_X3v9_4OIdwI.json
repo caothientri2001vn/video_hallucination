@@ -1,0 +1,1083 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0064_X3v9_4OIdwI.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0064_X3v9_4OIdwI.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0064_X3v9_4OIdwI",
+    "n_target": 25,
+    "n_sub": 84,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.6,
+    "sub_accuracy": 0.6666666666666666
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Did the bottom-right girl wear a hat after appearing in the black off-shoulder long-sleeve outfit?",
+      "gt": "Yes",
+      "pred": "So, let's check the video frames. First, find when the bottom-right girl is in the black off-shoulder long-sleeve outfit. Then see if she wears a hat after that.\n\nLooking at the frames: The bottom-right girl's outfit changes. Let's track her. In some frames, she's in a black off-shoulder long-sleeve (but wait, the question is about after that). Wait, the question is: Did she wear a hat after appearing in the black off-shoulder long-sleeve outfit?\n\nWait, let's check the sequence. Let's look at the frames where the bottom-right girl's outfit is black off-shoulder long-sleeve. Then check the next frames.\n\nWait, the bottom-right girl's outfits: Let's see. In the later frames, for example, when she's in the white crop top and denim shorts (some frames), but the question is about a hat. Let's check if she wears a hat.\n\nLooking at the frames: In the 26th frame (approx), the bottom-right girl is in a black and white top with a black cap (the cap says \"CITY\" or something). So, did she wear a hat after the black off-shoulder long-sleeve?\n\nWait, the black off-shoulder long-sleeve outfit is in some frames (e.g., when the bottom-right is in black, like the 23rd frame: bottom-right is in black off-shoulder? Wait, no. Let's check the frame where bottom-right is in black off-shoulder. Wait, the 24th frame: bottom-right is in white top and denim shorts. Then 25th frame: black and white top with cap. So the black off-shoulder outfit might not be the bottom-right. Wait, the question says \"after appearing in the black off-shoulder long-sleeve outfit\" — which girl is that?\n\nWait, the top-left girl has a black off-shoulder dress in some frames (e.g., 10-12 frames: top-left is in black dress with cutout). The bottom-right girl's outfits: in the first few frames, she's in a beige top and striped shorts. Then in later frames, she changes. Let's check when the bottom-right girl wears a hat.\n\nIn frame 25: bottom-right is wearing a black cap (with \"CITY\" text). So the question is: Did the bottom-right girl wear a hat after appearing in the black off-shoulder long-sleeve outfit?\n\nFirst, confirm if the bottom-right girl ever wore a black off-shoulder long-sleeve. Let's check the frames. The bottom-right girl's outfits: in the 15th frame (approx), she's in a beige top and striped shorts. Then in 21-22 frames, she's in a beige top and striped shorts (no hat). Then in 25th frame, she's in a black cap with a black and white top. So when did she wear the black off-shoulder long-sleeve? Wait, maybe the black off-shoulder is the top-left girl. The bottom-right girl's outfit: in the 25th frame, she's in a cap. So the key is: after the bottom-right girl appears in a black off-shoulder long-sleeve outfit, did she wear a hat?\n\nWait, the bottom-right girl's first few frames (1-5) are in beige top and striped shorts. Then in frame 25, she's in a cap. Let's check the sequence of her outfits:\n\n- Early frames: beige top + striped shorts (static, no hat)\n- Later frames: in some, she changes. For example, in frame 25, she's in a black cap. But when was she in a black off-shoulder long-sleeve? Let's check if she ever wore that.\n\nWait, the top-left girl has a black off-shoulder dress (e.g., frame 9: top-left is in black dress with cutout). The bottom-right girl's outfit: in frame 25, she's in a black cap (with a black and white top). So the bottom-right girl does wear a hat (black cap) in frame 25. Now, did she wear the black off-shoulder long-sleeve before that? The bottom-right girl's outfit: in the frames where she's in beige top, then later in frame 25, she's in a cap. So the black off-shoulder long-sleeve might not be her. Wait, the question says \"the bottom-right girl wear a hat after appearing in the black off-shoulder long-sleeve outfit\" — so we need to check if the bottom-right girl ever wore a black off-shoulder long-sleeve, then",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the bottom-right girl appear in a black off-shoulder long-sleeve outfit?",
+      "gt": "Yes",
+      "pred": "Yes, the bottom-right girl appeared in a black off-shoulder long-sleeve outfit (evident in the frame where she is wearing that specific outfit).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the bottom-right girl wear a hat during the video?",
+      "gt": "Yes",
+      "pred": "No. The bottom-right girl never wears a hat in any of the visible frames.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Did the bottom-left girl start transforming before the bottom-right girl?",
+      "gt": "Yes",
+      "pred": "Yes. The bottom-left girl’s outfit changes (e.g., from a white crop top and gray pants to other styles) begin earlier in the sequence than the bottom-right girl’s outfit changes (which start later, e.g., when the bottom-right girl transitions from her initial beige top and striped shorts to new outfits). This can be observed by comparing the progression of outfit changes across the frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the bottom-left girl have outfit transformations in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The bottom - left girl had multiple outfit transformations. For example, she was seen in a white crop top with gray pants in early frames, then in a purple dress (around the 27th frame), a striped dress (28th frame), a red dress (29th frame), and a beige fringed outfit (30th frame), among others.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the bottom-right girl have outfit transformations in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The bottom - right girl changed from a beige t - shirt and striped shorts to a white crop top and denim shorts (e.g., visible in the later frames of the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the bottom-right segment start last?",
+      "gt": "Yes",
+      "pred": "Yes, the bottom-right segment started changing last. For example, while the top-left, top-right, and bottom-left segments show changes in outfit or pose in the earlier frames (e.g., the top-left transitions through multiple outfits early on), the bottom-right segment remains static (with the same person and outfit) until later in the sequence, indicating it began changing after the other segments.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Did a girl appear wearing a hat exactly once in the entire video?",
+      "gt": "No",
+      "pred": "No. A girl wearing a hat appears at least twice: once in a sailor-style cap (e.g., early frames with the top-left girl in a sailor outfit) and once in a black cap (e.g., later frames with the bottom-left girl in a red \"candy\" outfit).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a hat appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, a hat appeared in the video. For example, in the frames where the top - left person is wearing a sailor - style outfit, a cap is visible (around the segment with the sailor uniform).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the hat worn by one of the girls?",
+      "gt": "Yes",
+      "pred": "Yes, a hat was worn by one of the girls. For example, in some frames (e.g., around the 14th–15th images in the sequence), a girl is seen wearing a cap.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the hat appear only during the bottom-right segment?",
+      "gt": "Yes",
+      "pred": "No. Hats (e.g., a sailor-style hat in the top-left segment and a black cap in the bottom-right segment) appear in both the top-left and bottom-right segments. For example, a sailor-style hat is visible in the top-left segment (e.g., in the 4th frame of the sequence), and a black cap appears in the bottom-right segment (e.g., in the 29th frame of the sequence). Thus, the hat did not appear only in the bottom-right segment.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Did the first girl perform four outfit transformations?",
+      "gt": "Yes",
+      "pred": "Yes. The first girl (top-left) shows multiple outfit changes:  \n- Initial: white crop top + striped pants (e.g., first frame).  \n- First transformation: sailor outfit (e.g., frame 4).  \n- Second transformation: school uniform with cat ears (e.g., frame 6).  \n- Third transformation: black dress (e.g., frame 9).  \n- Fourth transformation: other distinct outfits (e.g., red dress, purple dress, etc., in later frames).  \n\nThus, she performed at least four outfit transformations.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the top-left segment play before the top-right segment?",
+      "gt": "Yes",
+      "pred": "No, the top-left and top-right segments appear to be displayed simultaneously (as part of a split-screen format) throughout the sequence, so the top-left did not play before the top-right.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the first girl have outfit transformations?",
+      "gt": "Yes",
+      "pred": "Yes, the first girl (top-left quadrant) had multiple outfit transformations, as seen by different outfits across the sequence of frames (e.g., white crop top/striped pants, sailor uniform, white shirt with plaid skirt, black dress, etc.).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the first girl perform four outfit transformations?",
+      "gt": "Yes",
+      "pred": "Yes. The first girl (top-left) shows multiple outfit changes:  \n- Initial: white crop top + striped pants (e.g., first frame).  \n- First transformation: sailor outfit (e.g., frame 4).  \n- Second transformation: school uniform with cat ears (e.g., frame 6).  \n- Third transformation: black dress (e.g., frame 9).  \n- Fourth transformation: other distinct outfits (e.g., red dress, purple dress, etc., in later frames).  \n\nThus, she performed at least four outfit transformations.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the first transformation segment contain more than three outfits?",
+      "gt": "Yes",
+      "pred": "Yes, the first transformation segment (top-left quadrant) contains more than three outfits. For example, it shows a white crop top with striped pants, a sailor-style outfit, a school uniform with cat ears, a blurred pink outfit, and a black cutout outfit—exceeding three distinct outfits.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Did the top-right girl wear glasses again later in the gothic-style outfit?",
+      "gt": "Yes",
+      "pred": "No. The top-right girl wore glasses in the initial frames (e.g., when in the blue long - sleeve and white T - shirt with a rabbit print). In the gothic - style outfit (black dress with cat ears, corset, etc.), she did not wear glasses. There is no frame showing her wearing glasses while in the gothic - style outfit.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the top-right girl wear glasses during the video?",
+      "gt": "Yes",
+      "pred": "Yes, the top-right girl wore glasses in some frames (e.g., early frames where she is in the blue-and-white long-sleeve top with a rabbit graphic).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the top-right girl appear in a gothic-style outfit?",
+      "gt": "Yes",
+      "pred": "Yes. In the frames, the top-right girl is seen wearing a black gothic - style outfit with cat ears, lace details, and a corset - like design (e.g., around the 15th frame in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the top-right girl appear in exactly four outfits?",
+      "gt": "Yes",
+      "pred": "No, the top-right girl appeared in more than four distinct outfits (e.g., blue long - sleeve over white t - shirt, white shirt with blue bow tie and plaid skirt, black dress, white shirt with beige pants, black maid outfit, etc.).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Did the bottom-left girl wear a red two-piece outfit after wearing a black striped mini dress?",
+      "gt": "Yes",
+      "pred": "Yes. The bottom-left girl first wears a black striped mini dress (e.g., in the frame where her outfit is black with white stripes), and the subsequent frame shows her in a red two-piece outfit (red top with \"candy\" text and red skirt). This sequence is visible in the provided frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the bottom-left girl wear a black striped mini dress?",
+      "gt": "Yes",
+      "pred": "Yes. In one of the frames, the bottom - left girl is wearing a black striped mini dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the bottom-left girl wear a red two-piece outfit?",
+      "gt": "Yes",
+      "pred": "Yes, the bottom - left girl wore a red two - piece outfit (a red top with \"candy\" and a red skirt) as seen in the sequence of frames where her outfit changes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Did the bottom-left girl finish with a beige off-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes. The bottom - left girl's final outfit in the sequence is a beige off - shoulder dress (as seen in the later frames of the video).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the bottom-left girl wear a beige off-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes, the bottom-left girl wore a beige off-shoulder dress (visible in later frames, e.g., around the 20-25 second mark in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the beige off-shoulder dress the last outfit shown for the bottom-left girl?",
+      "gt": "Yes",
+      "pred": "Yes. The beige off-shoulder dress is the last outfit shown for the bottom - left girl, as seen in the final frames of the sequence.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Did the top-left segment play before the top-right segment?",
+      "gt": "Yes",
+      "pred": "No, the top-left and top-right segments appear to be displayed simultaneously (as part of a split-screen format) throughout the sequence, so the top-left did not play before the top-right.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a top-left segment in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there was a top - left segment in the video. This can be observed in all the provided frames, where the top - left quadrant consistently displays a person (e.g., in the first frame, the top - left shows a person in a white crop top and striped pants).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was there a top-right segment in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there was a top - right segment in the video. In the 2x2 grid layout of the video frames, the top - right segment is consistently present (e.g., in the first frame, it shows a person in a blue - and - white long - sleeve top with gray shorts).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the top-left segment appear before the top-right segment?",
+      "gt": "Yes",
+      "pred": "No, the top-left and top-right segments were present simultaneously from the start of the video sequence (as seen in the first frame and all subsequent frames, where both segments appear side by side in each frame). There is no evidence that one appeared before the other, as they are part of a split-screen format that persists throughout.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the top-right segment play before the top-left segment?",
+      "gt": "No",
+      "pred": "No. The top-right and top-left segments are displayed simultaneously in the 4-panel video format; there is no temporal sequence where one \"plays before\" the other as they are part of the same frame structure.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "target",
+      "question": "Did the bottom-left segment start after the top-right segment finished?",
+      "gt": "Yes",
+      "pred": "No. The video displays a 2x2 grid where all four segments (top-left, top-right, bottom-left, bottom-right) are shown simultaneously in each frame. There is no sequential start/finish relationship between the segments; they run in parallel.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a top-right segment in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there was a top - right segment in the video. In the 2x2 grid layout of the video frames, the top - right segment is consistently present (e.g., in the first frame, it shows a person in a blue - and - white long - sleeve top with gray shorts).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was there a bottom-left segment in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there was a bottom-left segment in the video, as seen in all the provided frames (e.g., the segment with the person wearing a white top and gray pants, visible in the first and subsequent frame sets).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the top-right segment finish before the bottom-left segment started?",
+      "gt": "Yes",
+      "pred": "No. The top-right and bottom-left segments (quadrants) in the video grid change in sync; the top-right segment does not finish before the bottom-left segment starts. Both segments begin and progress simultaneously throughout the video sequence.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 9,
+      "kind": "target",
+      "question": "Did the bottom-right segment start last?",
+      "gt": "Yes",
+      "pred": "Yes, the bottom-right segment started changing last. For example, while the top-left, top-right, and bottom-left segments show changes in outfit or pose in the earlier frames (e.g., the top-left transitions through multiple outfits early on), the bottom-right segment remains static (with the same person and outfit) until later in the sequence, indicating it began changing after the other segments.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a bottom-right segment in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there was a bottom - right segment in the video. This can be verified from the 2x2 grid layout of the video frames, where the bottom - right segment consistently shows a person (e.g., in a beige top and striped shorts in multiple frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the top-left segment play before the bottom-right segment?",
+      "gt": "Yes",
+      "pred": "Yes. The top-left segment’s content (e.g., changing outfits and poses) begins to evolve earlier in the sequence (e.g., visible in the 4th frame with the sailor outfit), while the bottom-right segment remains static for longer before showing movement (e.g., later frames where the bottom-right figure starts moving). This indicates the top-left segment’s video content played before the bottom-right segment’s dynamic content.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the top-right segment finish before the bottom-right segment started?",
+      "gt": "Yes",
+      "pred": "No, the top-right and bottom-right segments are displayed simultaneously in the video grid; they do not have a sequential start/finish relationship where one finishes before the other starts.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the bottom-left segment start before the bottom-right segment?",
+      "gt": "Yes",
+      "pred": "No. The bottom - left and bottom - right segments are part of a split - screen video, so they start at the same time. There is no indication from the frames that one started before the other.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 10,
+      "kind": "target",
+      "question": "Did the bottom-right girl appear in exactly five outfits?",
+      "gt": "Yes",
+      "pred": "So, let's count how many different outfits the bottom-right girl has. Let's go through each frame where she's in the bottom-right.\n\nFirst, check the sequence:\n\n1. The first few frames: she's in a beige t-shirt and striped shorts. (This is the initial outfit)\n2. Then, in some frames, she's in a beige t-shirt but with different poses, but the outfit is the same.\n3. Wait, when does her outfit change? Let's check the timestamps or the frames.\n\nLooking at the images:\n\n- The bottom-right girl's outfit changes in some frames. Let's count distinct outfits.\n\nWait, the problem is to count how many different outfits she has. Let's list all the bottom-right images:\n\n1. First image: beige t-shirt, striped shorts (1)\n2. Then, in some frames, she's in the same outfit, so no change.\n3. When does she change? Let's check the later frames. Wait, in the 24th image (from the list), the bottom-right girl is in a different outfit? Wait, no, let's check the provided images.\n\nWait, the user provided a series of images. Let's count the distinct outfits for the bottom-right girl.\n\nLooking at the bottom-right quadrant:\n\n- The first set of images (first few): she's in a beige t-shirt and striped shorts. (1)\n- Then, in some frames, she's in the same outfit. When does she change?\n\nWait, in the 19th image (the one with \"2023-06-12 12:30:00\" maybe?), no, the images are sequential. Let's check the frames where her outfit changes.\n\nWait, in the 15th image (the one with the bottom-right girl in a different pose but same outfit), then in the 20th image, is there a change? No, the bottom-right girl's outfit only changes in some cases.\n\nWait, actually, in the provided images, the bottom-right girl's outfit changes multiple times? Let's check:\n\n- The first several images: beige t-shirt + striped shorts (1)\n- Then, in one of the images, she's in a different outfit? Wait, no. Let's check the last few images:\n\nLooking at the 23rd image (the one with \"2023-06-12 12:45:00\"), the bottom-right girl is in a white top and denim shorts. (2)\n- Then, in the 24th image: white top and denim shorts (2)\n- 25th: white top and denim shorts (2)\n- 26th: white top and denim shorts (2)\n- 27th: black and white top with black shorts (3)\n- 28th: white top and denim shorts (2)\n- 29th: white top and denim shorts (2)\n- 30th: black and white top with black shorts (3)\n- 31st: white top and denim shorts (2)\n- 32nd: white top and denim shorts (2)\n- 33rd: white top and denim shorts (2)\n- 34th: white top and denim shorts (2)\n- 35th: white top and denim shorts (2)\n- 36th: white top and denim shorts (2)\n- 37th: white top and denim shorts (2)\n- 38th: white top and denim shorts (2)\n- 39th: white top and denim shorts (2)\n- 40th: white top and denim shorts (2)\n- 41st: white top and denim shorts (2)\n- 42nd: white top and denim shorts (2)\n- 43rd: white top and denim shorts (2)\n- 44th: white top and denim shorts (2)\n- 45th: white top and denim shorts (2)\n- 46th: white top and denim shorts (2)\n- 47th: white top and denim shorts (2)\n- 48th: white top and denim shorts (2)\n- 49th: white top and denim shorts (2)\n- 50th: white top and denim shorts (2)\n- 51st: white top and denim shorts (2)\n- 52nd: white top and denim shorts (2)\n- 53rd: white top and denim shorts (2)\n- 54th: white top and denim shorts (2)\n- 55th: white top and denim shorts (2)\n- 56th: white top and denim shorts (2)\n- 57th: white top and denim shorts (2)\n- 58th: white top and denim shorts (",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a girl appear in the bottom-right segment?",
+      "gt": "Yes",
+      "pred": "Yes, a girl appeared in the bottom-right segment. For example, in the initial frames, the bottom-right quadrant shows a girl wearing a beige top and striped shorts.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the bottom-right segment contain exactly five outfits?",
+      "gt": "Yes",
+      "pred": "So, let's check the bottom-right segment across all frames. The bottom-right segment is the one with the person in the beige top and striped shorts. Let's count how many different outfits are there. Wait, in all the frames, the bottom-right segment's outfit changes? Let's look. Wait, no—wait, the question is about the bottom-right segment. Let's check each frame's bottom-right.\n\nWait, the bottom-right segment: in the first few frames, it's a beige top and striped shorts. Then in some later frames, does it change? Let's check. Looking at the frames:\n\n- In the first image, bottom-right: beige top, striped shorts.\n- Then, in the later frames, does it change? Let's see. For example, in the frame where the top-left is the black dress, the bottom-right is still beige top and striped shorts? Wait, no—wait, the user provided multiple images. Wait, the problem is that the bottom-right segment's outfit: let's check all the frames.\n\nWait, the key is to count how many different outfits are in the bottom-right segment. Let's list the bottom-right outfits:\n\n1. Beige top + striped shorts (most frames)\n2. In some frames, the bottom-right person's outfit changes? Wait, looking at the last few frames:\n\n- One frame: bottom-right is in a white crop top and denim shorts (frame 25)\n- Another: white crop top and black shorts (frame 24)\n- Another: white top with black sleeves and black shorts (frame 23)\n- Another: black and white striped dress (frame 22)\n- Another: red top and red skirt (frame 21)\n- Etc.\n\nWait, no, the question is: \"Did the bottom-right segment contain exactly five outfits?\" So we need to count how many distinct outfits are in the bottom-right segment across all the frames.\n\nLet's list all the bottom-right outfits from the frames:\n\n1. Beige t-shirt + striped shorts (many frames)\n2. (In frame where it's different) Let's check each frame's bottom-right:\n\nLooking at the provided images (the sequence of 27 images), let's go through them:\n\n- Image 1: bottom-right: beige top, striped shorts\n- Image 2: same\n- ...\n- Image 17: bottom-right: beige top, striped shorts (still)\n- Image 18: bottom-right: beige top, striped shorts\n- Image 19: bottom-right: beige top, striped shorts\n- Image 20: bottom-right: beige top, striped shorts\n- Image 21: bottom-right: red top, red skirt\n- Image 22: bottom-right: black and white striped dress\n- Image 23: bottom-right: white top with black sleeves, black shorts\n- Image 24: bottom-right: white crop top, denim shorts\n- Image 25: bottom-right: white crop top, denim shorts (same as 24)\n- Image 26: bottom-right: white crop top, denim shorts\n- Image 27: bottom-right: white crop top, denim shorts\n\nWait, no, let's count the distinct outfits in the bottom-right:\n\n1. Beige t-shirt + striped shorts (appears in most frames)\n2. Red top + red skirt (image 21)\n3. Black and white striped dress (image 22)\n4. White top with black sleeves + black shorts (image 23)\n5. White crop top + denim shorts (images 24-27)\n\nWait, that's 5 distinct outfits? Let's check:\n\n- The first set of frames (up to image 20) have the beige top and striped shorts. Then:\n\nImage 21: red top, red skirt (1st new)\nImage 22: striped dress (2nd new)\nImage 23: white top with black sleeves, black shorts (3rd new)\nImage 24: white crop top, denim shorts (4th new)\nImage 25: same as 24 (so no new)\nImage 26: same as 24\nImage 27: same as 24\n\nWait, but are there more? Let's check if the beige top and striped shorts is one, then the red top, striped dress, white top with sleeves, white crop top and denim. That's 5. So yes, exactly five.\n\nWait, but let's confirm. The bottom-right segment's outfits:\n\n1. Beige t-shirt + striped shorts (most frames)\n2. Red top (with \"candy\" text) + red skirt (image 21)\n3. Black and white striped dress (image 22)\n4. White top with black sleeves (3 stripes on sleeves) + black shorts (image 23)",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the bottom-right girl appear in more than four outfits?",
+      "gt": "Yes",
+      "pred": "No. The bottom-right girl appears in two distinct outfits: a beige T-shirt with striped shorts (in most frames) and a white crop top with denim shorts (in the later frames). There are no more than two outfits, so the answer is no.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the bottom-right girl appear in fewer than six outfits?",
+      "gt": "Yes",
+      "pred": "Yes. The bottom-right girl's outfit remains the same (beige T-shirt and striped shorts) across all frames, so she appears in 1 outfit, which is fewer than six.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "target",
+      "question": "Did the top-right girl appear in exactly four outfits?",
+      "gt": "No",
+      "pred": "No, the top-right girl appeared in more than four distinct outfits (e.g., blue long - sleeve over white t - shirt, white shirt with blue bow tie and plaid skirt, black dress, white shirt with beige pants, black maid outfit, etc.).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a girl appear in the top-right segment?",
+      "gt": "Yes",
+      "pred": "Yes, a girl appeared in the top-right segment across all provided frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the top-right girl appear in more than three outfits?",
+      "gt": "Yes",
+      "pred": "Yes. The top-right girl is seen in multiple outfits: a blue long - sleeve top with a graphic tee and gray shorts (in early frames), a white shirt with a blue bow and plaid skirt, a black shiny dress, a white shirt with beige pants, and a black maid - style outfit. This is more than three distinct outfits.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the top-right girl appear in fewer than five outfits?",
+      "gt": "Yes",
+      "pred": "To determine if the top - right girl appeared in fewer than five outfits, we count her distinct outfits from the video frames:\n\n1. Blue long - sleeve over white t - shirt (with rabbit print)  \n2. White shirt with blue bow tie + plaid skirt  \n3. Black dress  \n4. White shirt + beige pants  \n5. Black maid outfit  \n\nShe has at least 5 distinct outfits. Since \"fewer than five\" means 4 or less, and she has 5 or more, the answer is no.  \n\nNo",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the top-right girl wear glasses in the gothic-style outfit?",
+      "gt": "Yes",
+      "pred": "No. In the frames where the top-right girl wears the gothic - style outfit (e.g., the black dress with cat ears and ruffles), she is not wearing glasses.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 12,
+      "kind": "target",
+      "question": "Did the bottom-left girl wear the red two-piece outfit after wearing the black striped mini dress?",
+      "gt": "Yes",
+      "pred": "Yes. The bottom - left girl wore the black striped mini dress first, and then the red two - piece outfit with “candy” on it (evident from the sequence of frames where the black striped mini dress appears before the red two - piece outfit).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the bottom-left girl wear a black striped mini dress?",
+      "gt": "Yes",
+      "pred": "Yes. In one of the frames, the bottom - left girl is wearing a black striped mini dress.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the bottom-left girl wear a red two-piece outfit?",
+      "gt": "Yes",
+      "pred": "Yes, the bottom - left girl wore a red two - piece outfit (a red top with \"candy\" and a red skirt) as seen in the sequence of frames where her outfit changes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the black striped mini dress appear before the red two-piece outfit?",
+      "gt": "Yes",
+      "pred": "Yes. The black striped mini dress appears in a frame before the red two-piece outfit (with \"candy\" text) is shown.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the bottom-left girl finish with a beige off-shoulder dress?",
+      "gt": "Yes",
+      "pred": "Yes. The bottom - left girl's final outfit in the sequence is a beige off - shoulder dress (as seen in the later frames of the video).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "target",
+      "question": "Did the bottom-right girl wear the hat after the black off-shoulder outfit but before the final outfit?",
+      "gt": "Yes",
+      "pred": "Yes. The bottom-right girl wears a black cap (with “stug” text) after the bottom-left girl’s black off-shoulder outfit appears (e.g., in frames where the bottom-left is in the black off-shoulder dress) and before her final outfit (white crop top and denim shorts in later frames). For example, the cap appears in frames where the bottom-right is in a white top with black sleeves and the cap, which occurs after the black off-shoulder outfit in the bottom-left and before the final white crop top/jean shorts look.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the bottom-right girl wear a hat at any point?",
+      "gt": "Yes",
+      "pred": "No. The bottom-right girl's outfits across all frames consist of a beige T-shirt and striped shorts; no hat is visible at any point.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the bottom-right girl wear a black off-shoulder outfit?",
+      "gt": "Yes",
+      "pred": "Yes. In one of the video frames (e.g., around the frame where the bottom-right girl’s outfit changes to a black off-shoulder top), she is wearing a black off-shoulder outfit.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the bottom-right girl wear the hat after appearing in the black off-shoulder outfit?",
+      "gt": "Yes",
+      "pred": "So, let's check the video frames. First, we need to see when the bottom-right girl wears a hat. Looking at the frames, in the sequence, the bottom-right girl's outfits change. The black off-shoulder outfit is in one of the later frames (like around the 27th image or so). Then, we need to see if after that, she wears a hat. Wait, the bottom-right girl's frames: let's track her. The bottom-right girl in the last few frames—does she wear a hat? Let's check. The question is: did she wear the hat after appearing in the black off-shoulder outfit? Wait, the black off-shoulder outfit is in the bottom-left? No, the bottom-right girl's outfits: in the frames, the bottom-right girl is in a beige top and striped shorts, then later in some frames, she has a hat? Wait, no. Let's check the frames where the bottom-right girl has a hat. Looking at the frames, there's a frame where the bottom-right girl is wearing a cap (in one of the images, like the 22nd image: bottom-right girl has a black cap with \"STU\" on it). Now, when did she wear the black off-shoulder outfit? Wait, the black off-shoulder outfit is in the bottom-left? No, the bottom-left girl's outfits change. The question is about the bottom-right girl. Let's clarify:\n\n- The bottom-right girl's first appearance: beige top, striped shorts.\n- Then, in some frames, she changes. Let's check the timestamp (image order). The black off-shoulder outfit is in the bottom-left (for example, in image 25: bottom-left is a black off-shoulder dress). The bottom-right girl in that image is still in the beige top? No, wait, the images are 4x4 grids. Let's check the sequence:\n\nLooking at the provided images (the user provided many images in order), let's track the bottom-right girl:\n\n- In the first few images (1-10), bottom-right is in beige top and striped shorts.\n- In image 17, bottom-right is in beige top and striped shorts, then in image 18, same. Image 19: same. Image 20: same. Image 21: same. Image 22: bottom-right has a black cap (so she's wearing a hat here). Now, when did the bottom-left girl wear the black off-shoulder outfit? Let's see: the black off-shoulder outfit (the one with cutouts) is in the bottom-left in image 25 (the 25th image: bottom-left is black off-shoulder dress). Now, the bottom-right girl in image 22 (earlier) is wearing a cap. So the question is: did the bottom-right girl wear the hat after appearing in the black off-shoulder outfit? Wait, no—the black off-shoulder outfit is in the bottom-left, not the bottom-right. The bottom-right girl's outfits: she never wears a black off-shoulder outfit. Wait, the question says: \"Did the bottom-right girl wear the hat after appearing in the black off-shoulder outfit?\"\n\nWait, the bottom-right girl's outfits: she is in beige top and striped shorts, then in some frames (like image 22) she wears a cap (hat). The black off-shoulder outfit is in the bottom-left (for example, image 25: bottom-left is black off-shoulder). So the bottom-right girl never appears in a black off-shoulder outfit. Therefore, the question is whether she wore the hat after (in terms of sequence) the bottom-left girl wearing the black off-shoulder. But the question says \"after appearing in the black off-shoulder outfit\"—but the bottom-right girl didn't wear that. So the answer is no, because the bottom-right girl never appeared in the black off-shoulder outfit, so the condition \"after appearing in the black off-shoulder outfit\" is not met (since she never did that).\n\nWait, let's check again. The black off-shoulder outfit: in the bottom-left, there's a frame where the girl is in a black off-shoulder dress (e.g., image 25). The bottom-right girl in that same image is in a beige top. Then, later, in image 22 (earlier than image 25), the bottom-right girl is wearing a cap. So the bottom-right girl wore the hat before the bottom-left girl wore the black off-shoulder. But the question is: \"Did the bottom-right girl wear the hat after appearing in the black off-shoulder outfit?\" Since the bottom-right girl never appeared in the black off-shoulder outfit (it's the",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the bottom-right girl wear the hat before her final outfit?",
+      "gt": "Yes",
+      "pred": "Yes. The bottom-right girl wore a black cap (with \"stue\" text) in the frame before her final outfit (white crop top and denim shorts).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 14,
+      "kind": "target",
+      "question": "Did the bottom-left girl change her hairstyle after switching from casual clothes to dresses?",
+      "gt": "Yes",
+      "pred": "Yes. The bottom - left girl’s hairstyle changed when switching from casual clothes to dresses. In the casual clothes (e.g., white crop top and gray pants), she has a red bow in a bun. When she wears dresses (e.g., the purple dress, red “candy” dress), her hair is styled as a ponytail. This change is visible in the sequence where her outfit shifts from casual to dress - like (e.g., around the frames showing the purple and red dresses).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the bottom-left girl switch from casual clothes to dresses?",
+      "gt": "Yes",
+      "pred": "Yes. The bottom-left girl starts in casual clothes (e.g., white crop top and gray pants) and later appears in various dresses (e.g., purple dress, striped dress, red dress, white fringed dress). This change is visible across the sequence of frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the bottom-left girl change her hairstyle during the video?",
+      "gt": "Yes",
+      "pred": "So, let's check the bottom-left girl's hairstyle. In the initial frames, she has a red bow in her hair (like a high bun with a bow). Then, in later frames, the bow is still there but maybe the style changes? Wait, looking at the sequence:\n\n- First, she has a red bow (e.g., in the early images, like when she's in the white top and gray pants). Then, in some frames, the bow is still there, but in others, maybe the hair is different. Wait, no—let's check the frames where the bottom-left girl is. \n\nWait, the bottom-left girl: in the first set of images, she has a red bow. Then, in later frames (e.g., when she's wearing a white top and gray pants, but the hair is still with the red bow). Wait, but in some frames, the bow is present, and in others, maybe not. Wait, no, looking at the images:\n\nFor example, in the 13th image (the one where the top-left is black dress, top-right is maid outfit, bottom-left is white top with red bow, bottom-right is green top), the bottom-left girl still has the red bow. Then, in the 16th image, the bottom-left girl is wearing a red outfit, and the hair is still with the red bow? Wait, no—wait, let's check the frames where the bottom-left girl's hair is visible.\n\nWait, the bottom-left girl: in the first few frames, she has a red bow (high bun with red bow). Then, in some frames, the bow is still there, but in others, maybe the hair is down? Wait, no. Let's check the 19th image: bottom-left girl is wearing a white top with a red bow (same as before). Then, in the 20th image, bottom-left is still with red bow. Wait, but in the 24th image, the bottom-left girl is wearing a red top, and the hair is still with the red bow. \n\nWait, but the question is: did she change her hairstyle? Let's check if the bow is present in all frames. The red bow is a key part of her hairstyle. If the bow is always there, then no change. But wait, looking at the 25th image: bottom-left girl is in a white top, and the red bow is still there. Wait, no—wait, maybe in some frames the bow is not visible. Let's check the 27th image: bottom-left girl is in a white top with red bow. 28th: same. 29th: same. 30th: same. \n\nWait, but in the 31st image, the bottom-left girl is wearing a purple dress, and the hair is still with the red bow? No, wait, the 31st image: bottom-left is purple dress, and the hair is down? Wait, no. Let me check the actual frames. \n\nWait, the user provided a sequence of images. Let's look for the bottom-left girl's hairstyle. The first image (1st frame): bottom-left has red bow. Second frame: same. Third frame: same. Fourth frame: same. Then, in the 10th frame (the one where top-left is black dress, top-right is blue/white, bottom-left is white top with red bow), still red bow. Then, in the 12th frame: bottom-left is white top with red bow. Then, in the 13th frame: same. Then, in the 14th frame: same. Then, in the 15th frame: same. Then, in the 16th frame: bottom-left is in red outfit, red bow. 17th: same. 18th: same. 19th: same. 20th: same. 21st: same. 22nd: same. 23rd: same. 24th: same. 25th: same. 26th: same. 27th: same. 28th: same. 29th: same. 30th: same. 31st: same. 32nd: same. 33rd: same. 34th: same. 35th: same. 36th: same. \n\nWait, but in the 23rd image (the one where the bottom-left is in a white top with a red bow, and the bottom-right is green top), then in the 24th image, the bottom-left is in a white top with red bow. Then, in the 25th image, the bottom-left is in a red top, and the hair is still with the",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the bottom-left girl change her hairstyle after switching from casual clothes to dresses?",
+      "gt": "Yes",
+      "pred": "Yes. The bottom - left girl’s hairstyle changed when switching from casual clothes to dresses. In the casual clothes (e.g., white crop top and gray pants), she has a red bow in a bun. When she wears dresses (e.g., the purple dress, red “candy” dress), her hair is styled as a ponytail. This change is visible in the sequence where her outfit shifts from casual to dress - like (e.g., around the frames showing the purple and red dresses).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "target",
+      "question": "Did the bottom-left girl complete all her transformations before the bottom-right girl started?",
+      "gt": "Yes",
+      "pred": "No. The bottom-left girl continues changing outfits (e.g., from white camisole to purple dress, red dress",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the bottom-left girl perform outfit transformations?",
+      "gt": "Yes",
+      "pred": "Yes, the bottom-left girl performed outfit transformations (e.g., changing from a white camisole with gray pants to a purple dress, red outfit, white fringed dress, etc. across the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the bottom-right girl perform outfit transformations?",
+      "gt": "Yes",
+      "pred": "Yes. The bottom - right girl's outfit changes across the frames (e.g., from a beige t - shirt and striped shorts to a white crop top and denim shorts, etc.).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the bottom-right segment start last?",
+      "gt": "Yes",
+      "pred": "Yes, the bottom-right segment started changing last. For example, while the top-left, top-right, and bottom-left segments show changes in outfit or pose in the earlier frames (e.g., the top-left transitions through multiple outfits early on), the bottom-right segment remains static (with the same person and outfit) until later in the sequence, indicating it began changing after the other segments.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the bottom-left girl complete all her transformations before the bottom-right girl started?",
+      "gt": "Yes",
+      "pred": "No. The bottom-left girl continues changing outfits (e.g., from white camisole to purple dress, red dress",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 16,
+      "kind": "target",
+      "question": "Did the top-right girl finish all outfit changes before the bottom-left girl began transforming?",
+      "gt": "Yes",
+      "pred": "No. The top-right girl's outfit changes continue while the bottom-left girl begins transforming. For example, the bottom-left girl starts changing (e.g., to a purple dress) while the top-right girl is still in a black dress (evident in frames where the top-right is in black and the bottom-left is in a new outfit). Thus, the top-right did not finish all changes before the bottom-left began transforming.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 16,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the top-right girl perform outfit changes?",
+      "gt": "Yes",
+      "pred": "Yes, the top-right girl performed outfit changes. For example, her outfit changes from a blue long - sleeve top with a white graphic tee and gray shorts to a white shirt with a bow tie and plaid skirt, then to a black dress, and later to a maid - style outfit, among others, as seen across the sequence of frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 16,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the bottom-left girl perform transformations?",
+      "gt": "Yes",
+      "pred": "Yes. The bottom-left girl is shown in multiple different outfits across the frames (e.g., white crop top with gray pants, red \"candy\" outfit, purple dress, striped dress, and other varied ensembles), indicating outfit transformations.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 16,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the top-right segment finish before the bottom-left segment started?",
+      "gt": "Yes",
+      "pred": "No. The top-right and bottom-left segments (quadrants) in the video grid change in sync; the top-right segment does not finish before the bottom-left segment starts. Both segments begin and progress simultaneously throughout the video sequence.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 16,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the top-right girl finish all outfit changes before the bottom-left girl began transforming?",
+      "gt": "Yes",
+      "pred": "No. The top-right girl's outfit changes continue while the bottom-left girl begins transforming. For example, the bottom-left girl starts changing (e.g., to a purple dress) while the top-right girl is still in a black dress (evident in frames where the top-right is in black and the bottom-left is in a new outfit). Thus, the top-right did not finish all changes before the bottom-left began transforming.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 17,
+      "kind": "target",
+      "question": "Did the bottom-right girl wear a hat before her final outfit appeared?",
+      "gt": "Yes",
+      "pred": "Yes. The bottom-right girl wore a black cap (with “STU” text) in a frame prior to her final outfit (white crop top and denim shorts). This can be verified in the sequence where the cap appears before the denim shorts outfit.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 17,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the bottom-right girl wear a hat during the video?",
+      "gt": "Yes",
+      "pred": "No. The bottom-right girl never wears a hat in any of the visible frames.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 17,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the bottom-right girl have a final outfit?",
+      "gt": "Yes",
+      "pred": "Yes, the bottom - right girl's final outfit was a white crop top and denim shorts (as seen in the later frames, e.g., around the 27th - 30th second range).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 17,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the bottom-right girl wear a hat before the final outfit?",
+      "gt": "Yes",
+      "pred": "Yes. The bottom-right girl wore a black cap (a type of hat) in a frame before the final outfit (white crop top and denim shorts). For example, in the frame where she is wearing a red \"candy\" top, she also wears a black cap. This occurs before the final outfit appears.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 17,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the bottom-right girl wear denim shorts before the final outfit?",
+      "gt": "Yes",
+      "pred": "Yes. The bottom-right girl is seen wearing denim shorts in a frame (e.g., around the 27th frame in the sequence) prior to the final outfit.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 18,
+      "kind": "target",
+      "question": "Did the first transformation segment contain more than three outfits?",
+      "gt": "Yes",
+      "pred": "Yes, the first transformation segment (top-left quadrant) contains more than three outfits. For example, it shows a white crop top with striped pants, a sailor-style outfit, a school uniform with cat ears, a blurred pink outfit, and a black cutout outfit—exceeding three distinct outfits.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 18,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the first girl perform outfit transformations?",
+      "gt": "Yes",
+      "pred": "Yes, the first girl (top-left section) performed outfit transformations, as evidenced by multiple different outfits appearing in successive frames (e.g., white crop top with striped pants, sailor uniform, cat-ear school uniform, black dress, etc.).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 18,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the first girl perform four outfit transformations?",
+      "gt": "Yes",
+      "pred": "Yes. The first girl (top-left) shows multiple outfit changes:  \n- Initial: white crop top + striped pants (e.g., first frame).  \n- First transformation: sailor outfit (e.g., frame 4).  \n- Second transformation: school uniform with cat ears (e.g., frame 6).  \n- Third transformation: black dress (e.g., frame 9).  \n- Fourth transformation: other distinct outfits (e.g., red dress, purple dress, etc., in later frames).  \n\nThus, she performed at least four outfit transformations.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 18,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the first transformation segment contain at least four outfits?",
+      "gt": "Yes",
+      "pred": "Yes. The top-left quadrant (first transformation segment) shows multiple outfit changes, including at least four distinct outfits (e.g., white crop top + striped pants, sailor outfit, white shirt + plaid skirt + cat ears, black cutout dress) within the sequence.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 19,
+      "kind": "target",
+      "question": "Did the bottom-right segment contain exactly five outfits?",
+      "gt": "Yes",
+      "pred": "So, let's check the bottom-right segment across all frames. The bottom-right segment is the one with the person in the beige top and striped shorts. Let's count how many different outfits are there. Wait, in all the frames, the bottom-right segment's outfit changes? Let's look. Wait, no—wait, the question is about the bottom-right segment. Let's check each frame's bottom-right.\n\nWait, the bottom-right segment: in the first few frames, it's a beige top and striped shorts. Then in some later frames, does it change? Let's check. Looking at the frames:\n\n- In the first image, bottom-right: beige top, striped shorts.\n- Then, in the later frames, does it change? Let's see. For example, in the frame where the top-left is the black dress, the bottom-right is still beige top and striped shorts? Wait, no—wait, the user provided multiple images. Wait, the problem is that the bottom-right segment's outfit: let's check all the frames.\n\nWait, the key is to count how many different outfits are in the bottom-right segment. Let's list the bottom-right outfits:\n\n1. Beige top + striped shorts (most frames)\n2. In some frames, the bottom-right person's outfit changes? Wait, looking at the last few frames:\n\n- One frame: bottom-right is in a white crop top and denim shorts (frame 25)\n- Another: white crop top and black shorts (frame 24)\n- Another: white top with black sleeves and black shorts (frame 23)\n- Another: black and white striped dress (frame 22)\n- Another: red top and red skirt (frame 21)\n- Etc.\n\nWait, no, the question is: \"Did the bottom-right segment contain exactly five outfits?\" So we need to count how many distinct outfits are in the bottom-right segment across all the frames.\n\nLet's list all the bottom-right outfits from the frames:\n\n1. Beige t-shirt + striped shorts (many frames)\n2. (In frame where it's different) Let's check each frame's bottom-right:\n\nLooking at the provided images (the sequence of 27 images), let's go through them:\n\n- Image 1: bottom-right: beige top, striped shorts\n- Image 2: same\n- ...\n- Image 17: bottom-right: beige top, striped shorts (still)\n- Image 18: bottom-right: beige top, striped shorts\n- Image 19: bottom-right: beige top, striped shorts\n- Image 20: bottom-right: beige top, striped shorts\n- Image 21: bottom-right: red top, red skirt\n- Image 22: bottom-right: black and white striped dress\n- Image 23: bottom-right: white top with black sleeves, black shorts\n- Image 24: bottom-right: white crop top, denim shorts\n- Image 25: bottom-right: white crop top, denim shorts (same as 24)\n- Image 26: bottom-right: white crop top, denim shorts\n- Image 27: bottom-right: white crop top, denim shorts\n\nWait, no, let's count the distinct outfits in the bottom-right:\n\n1. Beige t-shirt + striped shorts (appears in most frames)\n2. Red top + red skirt (image 21)\n3. Black and white striped dress (image 22)\n4. White top with black sleeves + black shorts (image 23)\n5. White crop top + denim shorts (images 24-27)\n\nWait, that's 5 distinct outfits? Let's check:\n\n- The first set of frames (up to image 20) have the beige top and striped shorts. Then:\n\nImage 21: red top, red skirt (1st new)\nImage 22: striped dress (2nd new)\nImage 23: white top with black sleeves, black shorts (3rd new)\nImage 24: white crop top, denim shorts (4th new)\nImage 25: same as 24 (so no new)\nImage 26: same as 24\nImage 27: same as 24\n\nWait, but are there more? Let's check if the beige top and striped shorts is one, then the red top, striped dress, white top with sleeves, white crop top and denim. That's 5. So yes, exactly five.\n\nWait, but let's confirm. The bottom-right segment's outfits:\n\n1. Beige t-shirt + striped shorts (most frames)\n2. Red top (with \"candy\" text) + red skirt (image 21)\n3. Black and white striped dress (image 22)\n4. White top with black sleeves (3 stripes on sleeves) + black shorts (image 23)",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 19,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the bottom-right girl appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The bottom-right girl is visible in the video frames (e.g., in the bottom-right quadrant of all provided images, wearing outfits like a beige T-shirt with striped shorts, and later moving/posing).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 19,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the bottom-right girl appear in exactly five outfits?",
+      "gt": "Yes",
+      "pred": "So, let's count how many different outfits the bottom-right girl has. Let's go through each frame where she's in the bottom-right.\n\nFirst, check the sequence:\n\n1. The first few frames: she's in a beige t-shirt and striped shorts. (This is the initial outfit)\n2. Then, in some frames, she's in a beige t-shirt but with different poses, but the outfit is the same.\n3. Wait, when does her outfit change? Let's check the timestamps or the frames.\n\nLooking at the images:\n\n- The bottom-right girl's outfit changes in some frames. Let's count distinct outfits.\n\nWait, the problem is to count how many different outfits she has. Let's list all the bottom-right images:\n\n1. First image: beige t-shirt, striped shorts (1)\n2. Then, in some frames, she's in the same outfit, so no change.\n3. When does she change? Let's check the later frames. Wait, in the 24th image (from the list), the bottom-right girl is in a different outfit? Wait, no, let's check the provided images.\n\nWait, the user provided a series of images. Let's count the distinct outfits for the bottom-right girl.\n\nLooking at the bottom-right quadrant:\n\n- The first set of images (first few): she's in a beige t-shirt and striped shorts. (1)\n- Then, in some frames, she's in the same outfit. When does she change?\n\nWait, in the 19th image (the one with \"2023-06-12 12:30:00\" maybe?), no, the images are sequential. Let's check the frames where her outfit changes.\n\nWait, in the 15th image (the one with the bottom-right girl in a different pose but same outfit), then in the 20th image, is there a change? No, the bottom-right girl's outfit only changes in some cases.\n\nWait, actually, in the provided images, the bottom-right girl's outfit changes multiple times? Let's check:\n\n- The first several images: beige t-shirt + striped shorts (1)\n- Then, in one of the images, she's in a different outfit? Wait, no. Let's check the last few images:\n\nLooking at the 23rd image (the one with \"2023-06-12 12:45:00\"), the bottom-right girl is in a white top and denim shorts. (2)\n- Then, in the 24th image: white top and denim shorts (2)\n- 25th: white top and denim shorts (2)\n- 26th: white top and denim shorts (2)\n- 27th: black and white top with black shorts (3)\n- 28th: white top and denim shorts (2)\n- 29th: white top and denim shorts (2)\n- 30th: black and white top with black shorts (3)\n- 31st: white top and denim shorts (2)\n- 32nd: white top and denim shorts (2)\n- 33rd: white top and denim shorts (2)\n- 34th: white top and denim shorts (2)\n- 35th: white top and denim shorts (2)\n- 36th: white top and denim shorts (2)\n- 37th: white top and denim shorts (2)\n- 38th: white top and denim shorts (2)\n- 39th: white top and denim shorts (2)\n- 40th: white top and denim shorts (2)\n- 41st: white top and denim shorts (2)\n- 42nd: white top and denim shorts (2)\n- 43rd: white top and denim shorts (2)\n- 44th: white top and denim shorts (2)\n- 45th: white top and denim shorts (2)\n- 46th: white top and denim shorts (2)\n- 47th: white top and denim shorts (2)\n- 48th: white top and denim shorts (2)\n- 49th: white top and denim shorts (2)\n- 50th: white top and denim shorts (2)\n- 51st: white top and denim shorts (2)\n- 52nd: white top and denim shorts (2)\n- 53rd: white top and denim shorts (2)\n- 54th: white top and denim shorts (2)\n- 55th: white top and denim shorts (2)\n- 56th: white top and denim shorts (2)\n- 57th: white top and denim shorts (2)\n- 58th: white top and denim shorts (",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 19,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the bottom-right segment start last?",
+      "gt": "Yes",
+      "pred": "Yes, the bottom-right segment started changing last. For example, while the top-left, top-right, and bottom-left segments show changes in outfit or pose in the earlier frames (e.g., the top-left transitions through multiple outfits early on), the bottom-right segment remains static (with the same person and outfit) until later in the sequence, indicating it began changing after the other segments.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 20,
+      "kind": "target",
+      "question": "Did the hat appear only during the bottom-right segment?",
+      "gt": "No",
+      "pred": "No. Hats (e.g., a sailor-style hat in the top-left segment and a black cap in the bottom-right segment) appear in both the top-left and bottom-right segments. For example, a sailor-style hat is visible in the top-left segment (e.g., in the 4th frame of the sequence), and a black cap appears in the bottom-right segment (e.g., in the 29th frame of the sequence). Thus, the hat did not appear only in the bottom-right segment.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 20,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a girl wear a hat in the video?",
+      "gt": "Yes",
+      "pred": "Yes. In the video, a girl wore a hat: one instance is a cap with a design (e.g., in the frame where the top - left girl is in a sailor - style outfit), and another instance is a black cap with “STU” text (in a later frame where the bottom - right girl is shown).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 20,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the bottom-right girl wear a hat?",
+      "gt": "Yes",
+      "pred": "No. The bottom-right girl is consistently shown wearing a beige T-shirt and striped shorts across all frames, and no hat is visible on her in any of the images.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 20,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did a girl appear wearing a hat exactly once in the entire video?",
+      "gt": "Yes",
+      "pred": "No. A girl wearing a hat appears at least twice: once in a sailor-style cap (e.g., early frames with the top-left girl in a sailor outfit) and once in a black cap (e.g., later frames with the bottom-left girl in a red \"candy\" outfit).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 20,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the hat appear during the bottom-right segment?",
+      "gt": "Yes",
+      "pred": "Yes, the hat appeared during the bottom-right segment (e.g., in frames where the bottom-right individual wears a black cap with visible text).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 21,
+      "kind": "target",
+      "question": "Did the first girl transform into five different outfits?",
+      "gt": "No",
+      "pred": "Yes. The first girl (top-left quadrant) is shown in at least five distinct outfits across the frames:  \n1. White strapless crop top + striped pants (e.g., early frames).  \n2. Sailor uniform (white top, blue accents, white shorts, cap) (e.g., ~4th frame sequence).  \n3. White shirt + plaid skirt + cat ears (e.g., ~6th frame sequence).  \n4. Black cutout dress (e.g., ~8th frame sequence).  \n5. Red \"candy\" outfit (e.g., ~17th frame sequence).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 21,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the first girl perform outfit transformations?",
+      "gt": "Yes",
+      "pred": "Yes, the first girl (top-left section) performed outfit transformations, as evidenced by multiple different outfits appearing in successive frames (e.g., white crop top with striped pants, sailor uniform, cat-ear school uniform, black dress, etc.).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 21,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the first girl perform four outfit transformations?",
+      "gt": "Yes",
+      "pred": "Yes. The first girl (top-left) shows multiple outfit changes:  \n- Initial: white crop top + striped pants (e.g., first frame).  \n- First transformation: sailor outfit (e.g., frame 4).  \n- Second transformation: school uniform with cat ears (e.g., frame 6).  \n- Third transformation: black dress (e.g., frame 9).  \n- Fourth transformation: other distinct outfits (e.g., red dress, purple dress, etc., in later frames).  \n\nThus, she performed at least four outfit transformations.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 21,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the first girl perform five outfit transformations?",
+      "gt": "No",
+      "pred": "So, let's count the outfit changes for the first girl (top-left quadrant). Let's go through the sequence:\n\n1. Initial: white crop top + striped pants (first frame)\n2. Then: white crop top (same as initial but maybe different pose? Wait, no—next change: sailor outfit (blue and white, with hat)\n3. Then: white shirt + plaid skirt + cat ears\n4. Then: blurred pink (but then next is black dress)\n5. Then: black dress (with cutout)\n6. Then: black dress (same as before, but then next is... wait, let's list all the top-left images:\n\nLooking at the top-left quadrant across all frames:\n\n- Frame 1: white crop top, striped pants\n- Frame 2: white crop top, striped pants (but different pose, not new outfit)\n- Frame 3: white crop top, striped pants (same as before)\n- Frame 4: sailor outfit (white top with blue, white skirt, blue belt, hat)\n- Frame 5: sailor outfit (same as 4)\n- Frame 6: white shirt, plaid skirt, cat ears\n- Frame 7: blurred (not clear, maybe transition)\n- Frame 8: black dress (sleeveless, cutout)\n- Frame 9: black dress (same as 8)\n- Frame 10: black dress (same)\n- Frame 11: black dress (same)\n- Frame 12: white shirt, plaid skirt, bow (different from frame 6)\n- Frame 13: black dress (same)\n- Frame 14: white shirt, plaid skirt, bow (no, frame 12 is white shirt, frame 13 is black)\n- Frame 15: black dress (same)\n- Frame 16: black dress (same)\n- Frame 17: black dress (same)\n- Frame 18: black dress (same)\n- Frame 19: black dress (same)\n- Frame 20: black dress (same)\n- Frame 21: black dress (same)\n- Frame 22: black dress (same)\n- Frame 23: black dress (same)\n- Frame 24: black dress (same)\n- Frame 25: black dress (same)\n- Frame 26: black dress (same)\n- Frame 27: black dress (same)\n- Frame 28: black dress (same)\n- Frame 29: black dress (same)\n- Frame 30: black dress (same)\n- Frame 31: black dress (same)\n- Frame 32: black dress (same)\n- Frame 33: black dress (same)\n- Frame 34: black dress (same)\n- Frame 35: black dress (same)\n- Frame 36: black dress (same)\n- Frame 37: black dress (same)\n- Frame 38: black dress (same)\n- Frame 39: black dress (same)\n- Frame 40: black dress (same)\n- Frame 41: black dress (same)\n- Frame 42: black dress (same)\n- Frame 43: black dress (same)\n- Frame 44: black dress (same)\n- Frame 45: black dress (same)\n- Frame 46: black dress (same)\n- Frame 47: black dress (same)\n- Frame 48: black dress (same)\n- Frame 49: black dress (same)\n- Frame 50: black dress (same)\n- Frame 51: black dress (same)\n- Frame 52: black dress (same)\n- Frame 53: black dress (same)\n- Frame 54: black dress (same)\n- Frame 55: black dress (same)\n- Frame 56: black dress (same)\n- Frame 57: black dress (same)\n- Frame 58: black dress (same)\n- Frame 59: black dress (same)\n- Frame 60: black dress (same)\n- Frame 61: black dress (same)\n- Frame 62: black dress (same)\n- Frame 63: black dress (same)\n- Frame 64: black dress (same)\n- Frame 65: black dress (same)\n- Frame 66: black dress (same)\n- Frame 67: black dress (same)\n- Frame 68: black dress (same)\n- Frame 69: black dress (same)\n- Frame 70: black dress (same)\n- Frame 71: black dress (same)\n- Frame 72: black dress (same)\n- Frame 73: black dress (same)\n- Frame",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 22,
+      "kind": "target",
+      "question": "Did the top-right girl appear in five outfits?",
+      "gt": "Yes",
+      "pred": "Yes. The top - right girl appeared in five distinct outfits: 1) blue long - sleeve over white t - shirt (initial frames), 2) white shirt with blue bow and plaid skirt, 3) black shirt and black shorts, 4) white shirt with beige pants, 5) black maid outfit with cat ears. These can be verified by observing the changes in her attire across the sequence of frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 22,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the top-right girl appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The top - right girl (wearing a blue - and - white long - sleeve shirt with a rabbit graphic and gray shorts) is present in all the video frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 22,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the top-right girl appear in exactly four outfits?",
+      "gt": "Yes",
+      "pred": "No, the top-right girl appeared in more than four distinct outfits (e.g., blue long - sleeve over white t - shirt, white shirt with blue bow tie and plaid skirt, black dress, white shirt with beige pants, black maid outfit, etc.).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 22,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the top-right girl wear more than four outfits?",
+      "gt": "No",
+      "pred": "Yes. The top - right girl wore multiple distinct outfits. For example, she was seen in a blue long - sleeve with a rabbit - themed tee, a white shirt with a bow tie and plaid skirt, a black dress, a white shirt with beige pants, and a black maid outfit (with cat ears and corset). This is more than four outfits.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 23,
+      "kind": "target",
+      "question": "Did the bottom-right girl appear in fewer outfits than the top-right girl?",
+      "gt": "No",
+      "pred": "So, let's check how many outfits each girl has. First, the top-right girl: in the video, her outfit changes. Let's count. The top-right girl's outfits: \n\n1. Blue long-sleeve with white tee and gray shorts (in the first few frames)\n2. Then, later, she changes to a white shirt with a blue bow and plaid skirt (around the 12th frame maybe)\n3. Then black dress (13th frame)\n4. White shirt with beige pants (14th)\n5. Then a black maid outfit (16th)\n6. Wait, no, let's check the top-right panel. The top-right girl's outfits change multiple times. Let's list all top-right outfits:\n\n- Blue long-sleeve + white tee + gray shorts (initial)\n- White shirt + blue bow + plaid skirt (when the top-right is in the 12th image)\n- Black dress (13th)\n- White shirt + beige pants (14th)\n- Black maid outfit (16th)\n- Wait, no, in the sequence, the top-right girl changes outfits. Let's count the distinct outfits for top-right:\n\nLooking at the frames, the top-right girl has multiple outfit changes. Let's see:\n\n1. Blue long-sleeve, white tee, gray shorts (many frames)\n2. White shirt, blue bow, plaid skirt (12th frame)\n3. Black dress (13th)\n4. White shirt, beige pants (14th)\n5. Black maid outfit (16th)\n6. Wait, no, in frame 18, the top-right is still in the black maid outfit? Wait, no. Let's check each frame's top-right:\n\nFrame 1: blue long-sleeve, white tee, gray shorts\nFrame 2: same\n...\nFrame 12: white shirt, blue bow, plaid skirt\nFrame 13: black dress\nFrame 14: white shirt, beige pants\nFrame 15: white shirt, beige pants (same as 14)\nFrame 16: black maid outfit\nFrame 17: black maid outfit (same as 16)\nFrame 18: black maid outfit (same)\nFrame 19: black maid outfit (same)\nFrame 20: black maid outfit (same)\nFrame 21: black maid outfit (same)\nFrame 22: black maid outfit (same)\nFrame 23: black maid outfit (same)\nFrame 24: black maid outfit (same)\nFrame 25: black maid outfit (same)\nFrame 26: black maid outfit (same)\nFrame 27: black maid outfit (same)\nFrame 28: black maid outfit (same)\nFrame 29: black maid outfit (same)\nFrame 30: black maid outfit (same)\nFrame 31: black maid outfit (same)\nFrame 32: black maid outfit (same)\nFrame 33: black maid outfit (same)\nFrame 34: black maid outfit (same)\nFrame 35: black maid outfit (same)\nFrame 36: black maid outfit (same)\nFrame 37: black maid outfit (same)\nFrame 38: black maid outfit (same)\nFrame 39: black maid outfit (same)\nFrame 40: black maid outfit (same)\nWait, no, actually, the top-right girl changes outfits multiple times. Let's count distinct outfits for top-right:\n\n- Blue long-sleeve with white tee (1st set)\n- White shirt with blue bow and plaid skirt (12th frame)\n- Black dress (13th)\n- White shirt with beige pants (14th)\n- Black maid outfit (16th)\nSo that's 5 distinct outfits for top-right.\n\nNow bottom-right girl: let's count her outfits.\n\nBottom-right panel:\n\n1. Beige t-shirt + striped shorts (initial, many frames)\n2. Then, in frame 17, she's still in the same? Wait, no. Let's check:\n\nFrame 1: beige t-shirt + striped shorts\nFrame 2: same\n...\nFrame 17: beige t-shirt + striped shorts (same)\nFrame 18: beige t-shirt + striped shorts (same)\n...\nWait, no. Wait in the bottom-right, when does she change? Let's check:\n\nLooking at the frames, the bottom-right girl's outfit changes in some frames. Let's list:\n\n1. Beige t-shirt + striped shorts (most frames)\n2. In frame 17, she's still the same? No, wait in frame 17, the bottom-right is the same as before. Wait, no, in frame 17, the bottom-right is the same. Wait, no, let's check the bottom",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 23,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the bottom-right girl appear in exactly five outfits?",
+      "gt": "Yes",
+      "pred": "So, let's count how many different outfits the bottom-right girl has. Let's go through each frame where she's in the bottom-right.\n\nFirst, check the sequence:\n\n1. The first few frames: she's in a beige t-shirt and striped shorts. (This is the initial outfit)\n2. Then, in some frames, she's in a beige t-shirt but with different poses, but the outfit is the same.\n3. Wait, when does her outfit change? Let's check the timestamps or the frames.\n\nLooking at the images:\n\n- The bottom-right girl's outfit changes in some frames. Let's count distinct outfits.\n\nWait, the problem is to count how many different outfits she has. Let's list all the bottom-right images:\n\n1. First image: beige t-shirt, striped shorts (1)\n2. Then, in some frames, she's in the same outfit, so no change.\n3. When does she change? Let's check the later frames. Wait, in the 24th image (from the list), the bottom-right girl is in a different outfit? Wait, no, let's check the provided images.\n\nWait, the user provided a series of images. Let's count the distinct outfits for the bottom-right girl.\n\nLooking at the bottom-right quadrant:\n\n- The first set of images (first few): she's in a beige t-shirt and striped shorts. (1)\n- Then, in some frames, she's in the same outfit. When does she change?\n\nWait, in the 19th image (the one with \"2023-06-12 12:30:00\" maybe?), no, the images are sequential. Let's check the frames where her outfit changes.\n\nWait, in the 15th image (the one with the bottom-right girl in a different pose but same outfit), then in the 20th image, is there a change? No, the bottom-right girl's outfit only changes in some cases.\n\nWait, actually, in the provided images, the bottom-right girl's outfit changes multiple times? Let's check:\n\n- The first several images: beige t-shirt + striped shorts (1)\n- Then, in one of the images, she's in a different outfit? Wait, no. Let's check the last few images:\n\nLooking at the 23rd image (the one with \"2023-06-12 12:45:00\"), the bottom-right girl is in a white top and denim shorts. (2)\n- Then, in the 24th image: white top and denim shorts (2)\n- 25th: white top and denim shorts (2)\n- 26th: white top and denim shorts (2)\n- 27th: black and white top with black shorts (3)\n- 28th: white top and denim shorts (2)\n- 29th: white top and denim shorts (2)\n- 30th: black and white top with black shorts (3)\n- 31st: white top and denim shorts (2)\n- 32nd: white top and denim shorts (2)\n- 33rd: white top and denim shorts (2)\n- 34th: white top and denim shorts (2)\n- 35th: white top and denim shorts (2)\n- 36th: white top and denim shorts (2)\n- 37th: white top and denim shorts (2)\n- 38th: white top and denim shorts (2)\n- 39th: white top and denim shorts (2)\n- 40th: white top and denim shorts (2)\n- 41st: white top and denim shorts (2)\n- 42nd: white top and denim shorts (2)\n- 43rd: white top and denim shorts (2)\n- 44th: white top and denim shorts (2)\n- 45th: white top and denim shorts (2)\n- 46th: white top and denim shorts (2)\n- 47th: white top and denim shorts (2)\n- 48th: white top and denim shorts (2)\n- 49th: white top and denim shorts (2)\n- 50th: white top and denim shorts (2)\n- 51st: white top and denim shorts (2)\n- 52nd: white top and denim shorts (2)\n- 53rd: white top and denim shorts (2)\n- 54th: white top and denim shorts (2)\n- 55th: white top and denim shorts (2)\n- 56th: white top and denim shorts (2)\n- 57th: white top and denim shorts (2)\n- 58th: white top and denim shorts (",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 23,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the top-right girl appear in exactly four outfits?",
+      "gt": "Yes",
+      "pred": "No, the top-right girl appeared in more than four distinct outfits (e.g., blue long - sleeve over white t - shirt, white shirt with blue bow tie and plaid skirt, black dress, white shirt with beige pants, black maid outfit, etc.).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 23,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the bottom-right girl appear in more outfits than the top-right girl?",
+      "gt": "Yes",
+      "pred": "So, let's count the outfits for each girl. First, the top-right girl: looking at the frames, her outfits change. Let's see the sequence. In the first frames, she's in a blue and white top with gray shorts. Then later, she changes to a white shirt with a blue bow and plaid skirt, then a black dress, then a white shirt with beige pants, then a black maid outfit, etc. Wait, but how many distinct outfits does she have? Let's check the frames.\n\nWait, the top-right girl's outfits: the first few frames she's in the blue/white top (1), then in some frames she's in a white shirt with blue bow (2), black dress (3), white shirt with beige pants (4), black maid outfit (5). So that's 5 outfits.\n\nNow the bottom-right girl: let's count her outfits. In the first frames, she's in a beige top and striped shorts (1). Then later, she changes to a different pose but same outfit? Wait no, looking at the frames: in some frames, she's in the same beige top and striped shorts, but then in later frames, she changes to a white top and denim shorts (2), then a white top with black shorts and a cap (3), etc. Wait, let's list the distinct outfits for bottom-right:\n\n1. Beige t-shirt + striped shorts (appears in many frames, but that's one outfit)\n2. White top + denim shorts (in some frames)\n3. White top + black shorts + black cap (in some frames)\n4. White crop top + denim shorts (in some frames)\n5. Wait, in the last frames, she's in a white crop top and denim shorts, but also in the beige top. Wait, no, let's count the number of times her outfit changes.\n\nWait, the top-right girl: let's check the sequence of her outfits. Let's list the top-right girl's outfits across the frames:\n\n- Frame 1: blue/white long-sleeve top, gray shorts (1)\n- Frame 2: same as 1 (1)\n- ...\n- Then in frame 12 (the 12th image), she's in a white shirt with blue bow, plaid skirt (2)\n- Frame 13: black dress (3)\n- Frame 14: white shirt, beige pants (4)\n- Frame 15: same as 14 (4)\n- Frame 16: black maid outfit (5)\n- Then in later frames, does she change again? Let's see, in frame 17, she's in the black maid outfit (5), then in frame 18, same. So top-right has 5 distinct outfits.\n\nNow bottom-right girl: her outfits:\n\n- In the first many frames, she's in beige t-shirt + striped shorts (1)\n- In frame 14: she's in a white top + denim shorts (2)\n- In frame 15: white top + black shorts + cap (3)\n- In frame 16: white crop top + denim shorts (4)\n- In frame 17: same as 16 (4)\n- In frame 18: same as 16 (4)\n- In frame 19: same as 16 (4)\n- In frame 20: same as 16 (4)\n- In frame 21: same as 16 (4)\n- In frame 22: same as 16 (4)\n- In frame 23: same as 16 (4)\n- In frame 24: same as 16 (4)\n- Wait, no, let's check the frames where she changes. Let's look at the bottom-right:\n\n- The first 12 frames: beige top and striped shorts (1)\n- Then, in frame 13 (13th image), she's in a white top and denim shorts (2)\n- Frame 14: same as 13 (2)\n- Frame 15: white top with black shorts and cap (3)\n- Frame 16: white crop top and denim shorts (4)\n- Frame 17: same as 16 (4)\n- So bottom-right has 4 distinct outfits.\n\nWait, but wait, in the top-right, how many distinct outfits? Let's count again. Top-right:\n\n1. Blue/white long-sleeve top + gray shorts (appears in frames 1-11)\n2. White shirt + blue bow + plaid skirt (frame 12)\n3. Black dress (frame 13)\n4. White shirt + beige pants (frame 14)\n5. Black maid outfit (frame 15)\n6. Then, in frame 16: the same as frame",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 24,
+      "kind": "target",
+      "question": "Did the bottom-left girl appear in fewer outfits than the top-left girl?",
+      "gt": "No",
+      "pred": "So, let's check the number of outfits for each. First, the top-left girl: looking at the sequence, each frame shows a different outfit. Let's count the top-left changes. The first few frames: white crop top, then sailor outfit, then cat-ear school uniform, then black dress, then... wait, actually, the top-left has many different outfits. Now the bottom-left girl: her outfits change too. Let's see. The bottom-left starts with a white crop top, then in some frames she has a red headband, then later a purple dress, red dress, etc. Wait, but the question is if bottom-left appeared in fewer outfits than top-left.\n\nWait, no—wait, the top-left girl's outfit changes multiple times (each frame where top-left is different is a new outfit). The bottom-left also changes. Let's count the distinct outfits for each.\n\nTop-left: Let's list the outfits:\n\n1. White crop top + striped pants (first frames)\n2. White crop top + striped pants (but different pose? No, same outfit, but later changes)\nWait, no, the top-left changes to sailor uniform, then cat-ear, then black dress, then... Let's count the number of distinct outfits in top-left. Each time the top-left image is a new outfit. Looking at the sequence, top-left has multiple outfit changes: white crop top (initial), then sailor, then cat-ear, then black dress, then black dress (no, different), then... Let's count how many times the top-left outfit changes. From the provided frames, the top-left has many different outfits—each time it's a new look. Now bottom-left: the bottom-left also changes, but let's see. The bottom-left has: white crop top (with red bow), then purple dress, red dress, striped dress, then red top with \"candy\", then white fringed dress, then... but wait, the question is whether bottom-left has fewer.\n\nWait, but the key is: the top-left girl has a lot of outfit changes (each frame shows a new outfit for her), while the bottom-left also changes. But do we have enough data to count?\n\nWait, the problem says \"only use information you can directly verify from the video frames.\" Let's check the number of distinct outfits.\n\nTop-left: Let's count the number of different outfits in the top-left position across all frames.\n\n1. White strapless crop top + striped pants (first few frames)\n2. White sailor outfit + cap (later frames)\n3. White shirt + plaid skirt + cat ears (another frame)\n4. Black dress (with cut-out) (several frames)\n5. Black dress with different style (another frame)\n6. White shirt + plaid skirt (another frame)\n7. Black dress (another style)\n8. White shirt + beige pants (another frame)\n9. Black maid outfit (another frame)\n10. Purple dress (another frame)\n11. Striped dress (another frame)\n12. Red top + red skirt (another frame)\n13. White fringed dress (another frame)\n14. White top + denim shorts (another frame)\n\nWait, no, each frame's top-left is a new outfit. Let's count the number of top-left outfit changes. The first frame has a white crop top, then the next frames change: sailor, cat-ear, black dress, etc. So top-left has many outfits.\n\nBottom-left: The bottom-left position. Let's see:\n\n1. White crop top + gray pants (with red bow)\n2. White crop top + gray pants (different pose, same outfit)\n3. Purple dress\n4. Striped dress\n5. Red top + red skirt\n6. White fringed dress\n7. White crop top + denim shorts (in some frames)\n8. White crop top + gray pants (again, but different pose)\nWait, but the bottom-left also has multiple outfits. However, the key is: does bottom-left have fewer than top-left?\n\nWait, no. Wait, in the sequence, the top-left girl's outfit changes more frequently. Let's count the number of distinct outfits for each.\n\nTop-left: Let's see how many different outfits. From the frames:\n\n- White crop top (1)\n- Sailor outfit (2)\n- Cat-ear school uniform (3)\n- Black cut-out dress (4)\n- Black dress (5)\n- White shirt + plaid skirt (6)\n- Black dress (7)\n- White shirt + beige pants (8)\n- Black maid outfit (9)\n- Purple dress (10)\n- Striped dress (11)\n- Red top + red skirt (12)\n- White fringed dress (13)\n- White top + denim shorts (14)\n- (and more, but the count is high)\n\nBottom-left: Let's count:\n\n- White crop top + gray pants (",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 24,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the first girl perform four outfit transformations?",
+      "gt": "Yes",
+      "pred": "Yes. The first girl (top-left) shows multiple outfit changes:  \n- Initial: white crop top + striped pants (e.g., first frame).  \n- First transformation: sailor outfit (e.g., frame 4).  \n- Second transformation: school uniform with cat ears (e.g., frame 6).  \n- Third transformation: black dress (e.g., frame 9).  \n- Fourth transformation: other distinct outfits (e.g., red dress, purple dress, etc., in later frames).  \n\nThus, she performed at least four outfit transformations.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 24,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the first transformation segment contain more than three outfits?",
+      "gt": "Yes",
+      "pred": "Yes, the first transformation segment (top-left quadrant) contains more than three outfits. For example, it shows a white crop top with striped pants, a sailor-style outfit, a school uniform with cat ears, a blurred pink outfit, and a black cutout outfit—exceeding three distinct outfits.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 24,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the bottom-left girl complete all her transformations before the bottom-right girl started?",
+      "gt": "Yes",
+      "pred": "No. The bottom-left girl continues changing outfits (e.g., from white camisole to purple dress, red dress",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 24,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the top-left segment play before the top-right segment?",
+      "gt": "Yes",
+      "pred": "No, the top-left and top-right segments appear to be displayed simultaneously (as part of a split-screen format) throughout the sequence, so the top-left did not play before the top-right.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    }
+  ]
+}

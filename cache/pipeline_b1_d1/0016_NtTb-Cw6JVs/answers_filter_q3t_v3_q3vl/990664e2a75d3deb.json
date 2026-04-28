@@ -1,0 +1,182 @@
+{
+  "question": "Does the man on the right side win the game?",
+  "pred": "Evidence: The man on the right side is identified as the host (white-shirt host) in the people list. The context shows Sarah (black-shirt woman) celebrating with \"SARAH 10\" on screen, indicating she won the game. The host facilitates the game but does not compete as a contestant.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "scoreboard_update",
+      "description": "The scoreboard updates from 'SARAH 7' to 'SARAH 8' on the lower right of the screen",
+      "participants": [],
+      "actor": "",
+      "object_before": "SARAH 7",
+      "object_after": "SARAH 8",
+      "on_screen_text": [
+        {
+          "text": "SARAH 8",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Competition",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 65,
+      "start_time": "01:53",
+      "end_time": "01:55",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 8,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "The scoreboard updates from 'NONONG 8' to 'NONONG 9' on the lower right of the screen",
+      "participants": [],
+      "actor": "",
+      "object_before": "NONONG 8",
+      "object_after": "NONONG 9",
+      "on_screen_text": [
+        {
+          "text": "NONONG 9",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Competition",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 67,
+      "start_time": "01:57",
+      "end_time": "01:59",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 8,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "celebration",
+      "description": "black-shirt woman raises both arms high in celebration while standing on the blue platform",
+      "participants": [
+        "black-shirt woman"
+      ],
+      "actor": "black-shirt woman",
+      "on_screen_text": [
+        {
+          "text": "SARAH 10",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Last Man Standing",
+      "continuation_hint": "complete",
+      "event_index": 69,
+      "start_time": "02:00",
+      "end_time": "02:05",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "celebration",
+      "description": "black-shirt woman lowers arms and turns back toward the game area",
+      "participants": [
+        "black-shirt woman"
+      ],
+      "actor": "black-shirt woman",
+      "on_screen_text": [
+        {
+          "text": "SARAH 10",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Last Man Standing",
+      "continuation_hint": "complete",
+      "event_index": 71,
+      "start_time": "02:10",
+      "end_time": "02:15",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "stack",
+      "description": "gray-shirt man stacks a green cup onto the rightmost blue cylinder",
+      "participants": [
+        "blue-shirt man",
+        "gray-shirt man",
+        "black-shirt woman"
+      ],
+      "actor": "gray-shirt man",
+      "object": "green cup",
+      "outcome": "in",
+      "on_screen_text": [
+        {
+          "text": "Kapamilya",
+          "location": "logo"
+        },
+        {
+          "text": "ONLINE LIVE",
+          "location": "logo"
+        },
+        {
+          "text": "HIDEO 5",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Minute to Win It - Cup Stack Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 76,
+      "start_time": "02:15",
+      "end_time": "02:18",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 7,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    },
+    {
+      "event_type": "stack",
+      "description": "close-up of green cup being placed on top of a stack of green cups",
+      "participants": [
+        "blue-shirt man",
+        "gray-shirt man",
+        "black-shirt woman"
+      ],
+      "actor": "gray-shirt man",
+      "object": "green cup",
+      "outcome": "in",
+      "on_screen_text": [
+        {
+          "text": "Kapamilya",
+          "location": "logo"
+        },
+        {
+          "text": "ONLINE LIVE",
+          "location": "logo"
+        },
+        {
+          "text": "NONONG 10",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Minute to Win It - Cup Stack Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 78,
+      "start_time": "02:20",
+      "end_time": "02:22",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 7,
+      "round_index": 4,
+      "segment_label_resolved": "FALL INTO PLACE"
+    }
+  ]
+}

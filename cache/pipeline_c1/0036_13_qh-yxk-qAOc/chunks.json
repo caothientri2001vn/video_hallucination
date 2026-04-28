@@ -1,0 +1,165 @@
+{
+  "video_name": "0036_13_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 9.433333333333334,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 9.433333333333334,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:09",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:01",
+          "event_type": "black_screen",
+          "description": "black screen with channel logo visible in corner",
+          "participants": [],
+          "actor": "",
+          "on_screen_text": [
+            {
+              "text": "TARAF'TAN KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:01",
+          "local_end": "00:02",
+          "event_type": "transition",
+          "description": "transition from black screen to soccer field view",
+          "participants": [],
+          "actor": "",
+          "on_screen_text": [
+            {
+              "text": "TARAF'TAN KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:04",
+          "event_type": "game",
+          "description": "multiple players in maroon jerseys moving on field",
+          "participants": [
+            "maroon-jersey players",
+            "white-jersey players"
+          ],
+          "actor": "maroon-jersey players",
+          "on_screen_text": [
+            {
+              "text": "TARAF'TAN KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:03",
+          "local_end": "00:05",
+          "event_type": "game",
+          "description": "player in white jersey (number 10) receiving and controlling the ball",
+          "participants": [
+            "white-jersey player #10",
+            "maroon-jersey players"
+          ],
+          "actor": "white-jersey player #10",
+          "object": "white ball",
+          "on_screen_text": [
+            {
+              "text": "TARAF'TAN KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:07",
+          "event_type": "game",
+          "description": "white-jersey player #10 passing the ball toward the goal area",
+          "participants": [
+            "white-jersey player #10",
+            "maroon-jersey players"
+          ],
+          "actor": "white-jersey player #10",
+          "object": "white ball",
+          "on_screen_text": [
+            {
+              "text": "TARAF'TAN KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:08",
+          "event_type": "game",
+          "description": "goalkeeper in green diving to attempt save",
+          "participants": [
+            "green-jersey goalkeeper"
+          ],
+          "actor": "green-jersey goalkeeper",
+          "object": "white ball",
+          "on_screen_text": [
+            {
+              "text": "TARAF'TAN KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:09",
+          "event_type": "game",
+          "description": "ball entering goal net as goalkeeper lies on ground",
+          "participants": [
+            "green-jersey goalkeeper",
+            "white-jersey players"
+          ],
+          "actor": "white-jersey players",
+          "object": "white ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "TARAF'TAN KANALI",
+              "location": "logo"
+            },
+            {
+              "text": "LACAZETTE",
+              "location": "other"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

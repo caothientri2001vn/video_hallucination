@@ -1,0 +1,106 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0085_9SONaOFEeic.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0085_9SONaOFEeic.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0085_9SONaOFEeic",
+    "n_target": 2,
+    "n_sub": 7,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.5,
+    "sub_accuracy": 0.42857142857142855
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Is the yellow character eating first?",
+      "gt": "No",
+      "pred": "Yes. The yellow character is seen eating first (e.g., in frames showing the two characters at the hot pot, the yellow character uses chopsticks and eats before the red character).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a yellow character in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there is a yellow character in the video. For example, a yellow worm-like character appears in multiple frames (e.g., the frame showing two worms in a snowy landscape, and frames where characters are eating).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the brown character eat first?",
+      "gt": "Yes",
+      "pred": "Yes. The brown character (the bug) is shown eating before the worms start eating, as seen in the sequence where the bug is depicted consuming food while the worms are not yet eating (e.g., around the 19-22 second mark in the video frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the red character eat first?",
+      "gt": "No",
+      "pred": "Yes, the red character ate first. This can be observed in the sequence where both characters are using chopsticks at the hot pot; the red character is the first to consume food (e.g., around the 10 - 15 second mark range in the video, where the red character’s actions precede the yellow character’s).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Is the mouse character the last to eat?",
+      "gt": "Yes",
+      "pred": "Yes. The mouse character is the last to eat, as seen in the sequence where it consumes food after the worm and bug characters, with the final eating actions involving the mouse (e.g., frames showing the mouse with the pot, reacting to the heat, and eating).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the mouse character eat in the video?",
+      "gt": "Yes",
+      "pred": "No, the mouse character did not eat in the video. The video focuses on the worm and bug characters interacting with the hot pot, while the mouse is primarily shown in snowy scenes (e.g., lying in the snow, holding the hot pot) but never depicted consuming food.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did any character eat after the mouse character?",
+      "gt": "No",
+      "pred": "Yes. After the mouse character interacts with the hot pot (e.g., holding it, eating from it), the red and yellow worm - like characters are shown eating from the hot pot (e.g., using chopsticks to take food from the pot, as seen in frames showing them with the hot pot and food).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the mouse character the final one to eat?",
+      "gt": "Yes",
+      "pred": "Yes. The mouse character is the final one to eat, as seen in the later frames where the mouse interacts with the hot pot and consumes food (e.g., around the 29-31 second mark, the mouse is shown with the hot pot and eating, and the sequence concludes with the mouse's action).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the mouse character eat before the red character?",
+      "gt": "No",
+      "pred": "To determine if the mouse character ate before the red character, we analyze the sequence of events:  \n\n1. **Mouse eating**: The mouse is shown in snowy scenes (e.g., timestamps with the mouse in the snow, interacting with food like the orange piece, and later eating it). For example, in frames showing the mouse with a red nose in the snow, it is depicted eating food (e.g., the orange piece is seen near the mouse, and the mouse’s tongue is out, indicating consumption).  \n\n2. **Red character (worm) eating**: The red character (the worm) is shown eating from the hot pot later in the sequence (e.g., frames with the worm using chopsticks, interacting with the hot pot, and eating).  \n\nSince the mouse is depicted eating in snowy scenes **before** the red character is shown eating from the hot pot, the answer is yes.  \n\n**Answer**: Yes. The mouse character ate before the red character (evidenced by the mouse’s snow-based eating scenes occurring prior to the red character’s hot pot eating sequences).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    }
+  ]
+}

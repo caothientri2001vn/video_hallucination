@@ -1,0 +1,117 @@
+{
+  "question": "Did she appear in exactly five distinct outfits?",
+  "pred": "The video shows a red-haired woman participating in an outfit transition challenge. We can count the distinct outfits by observing the initial state and each subsequent transition marked by on-screen text:\n\n1.  **Initial Outfit:** A grey and white sweatshirt with a graphic pattern and black-rimmed glasses (visible from the start until the first transition).\n2.  **Outfit ONE:** A black leather dress (revealed at ~00:06).\n3.  **Outfit TWO:** A black tank top with headphones around her neck and a red skirt (revealed at ~00:07).\n4.  **Outfit THREE:** A black top featuring a large bow on the chest, paired with silver headphones (revealed at ~00:08).\n5.  **Outfit FOUR:** A white hoodie/zip-up and a white knit hat (revealed at ~00:10).\n\nThe total number of distinct outfits shown is five.\n\nEvidence: The video begins with the woman in a grey and white sweatshirt, followed by four transitions labeled \"ONE\" through \"FOUR\" on-screen, each showing a new outfit.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "reveal",
+      "description": "The red-haired woman transitions from a grey and white sweatshirt to a black leather dress.",
+      "participants": [
+        "red-haired woman"
+      ],
+      "actor": "red-haired woman",
+      "object_before": "grey and white sweatshirt",
+      "object_after": "black leather dress",
+      "on_screen_text": [
+        {
+          "text": "ONE",
+          "location": "title"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Outfit Transition Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:06",
+      "end_time": "00:07",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Transition Challenge"
+    },
+    {
+      "event_type": "reveal",
+      "description": "The red-haired woman transitions from a black leather dress to a black tank top with headphones around her neck.",
+      "participants": [
+        "red-haired woman"
+      ],
+      "actor": "red-haired woman",
+      "object_before": "black leather dress",
+      "object_after": "black tank top",
+      "on_screen_text": [
+        {
+          "text": "TWO",
+          "location": "title"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Outfit Transition Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 7,
+      "start_time": "00:07",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Transition Challenge"
+    },
+    {
+      "event_type": "reveal",
+      "description": "The red-haired woman transitions from a black tank top to a black top with a large bow and silver headphones.",
+      "participants": [
+        "red-haired woman"
+      ],
+      "actor": "red-haired woman",
+      "object_before": "black tank top",
+      "object_after": "black top",
+      "object_after_pattern": "large bow on chest",
+      "on_screen_text": [
+        {
+          "text": "THREE",
+          "location": "title"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Outfit Transition Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 8,
+      "start_time": "00:08",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Transition Challenge"
+    },
+    {
+      "event_type": "reveal",
+      "description": "The red-haired woman transitions from a black top to a white hoodie and a white knit hat.",
+      "participants": [
+        "red-haired woman"
+      ],
+      "actor": "red-haired woman",
+      "object_before": "black top",
+      "object_after": "white hoodie",
+      "on_screen_text": [
+        {
+          "text": "FOUR",
+          "location": "title"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Outfit Transition Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 9,
+      "start_time": "00:10",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Transition Challenge"
+    }
+  ]
+}

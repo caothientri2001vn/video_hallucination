@@ -1,0 +1,106 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0036_15_qh-yxk-qAOc.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0036_15_qh-yxk-qAOc.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0036_15_qh-yxk-qAOc",
+    "n_target": 2,
+    "n_sub": 7,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 1.0,
+    "sub_accuracy": 1.0
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "When the dark blue team plays against white and black team, does the player with dark blue shirt number 13 score the goal?",
+      "gt": "Yes",
+      "pred": "Yes, the player with dark blue shirt number 13 (Maicon) scores the goal. This is evident from the sequence where the ball enters the net and the player celebrates (e.g., timestamps showing the goal and subsequent celebration, including close - ups of the player with number 13).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the dark blue team play against the white and black team?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows the dark blue team (with players wearing dark blue jerseys, e.g., the player with the number 13 \"MAICON\") playing against the team in white and black striped jerseys. This is evident in multiple frames where both teams are on the field during the match.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is there a player wearing dark blue shirt number 13?",
+      "gt": "Yes",
+      "pred": "Yes, there is a player wearing a dark blue shirt with the number 13. This can be observed in multiple frames, such as when the player is involved in the play (e.g., kicking the ball) and during the celebration sequences (e.g., around the 20-25 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the player wearing dark blue shirt number 13 score a goal?",
+      "gt": "Yes",
+      "pred": "Yes, the player wearing dark blue shirt number 13 (Maicon) scores a goal. This is evident from the sequence where the ball enters the goal and the player celebrates (e.g., frames showing the goal and subsequent celebration around 10-15 seconds into the action).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "When the dark blue team plays against white and black team, does the player with dark blue shirt number 19 score the goal?",
+      "gt": "No",
+      "pred": "No, the player with dark blue shirt number 19 does not score the goal. In the video, the goal is scored by a different dark blue - team player (evidenced by the celebration and actions of the player with number 13, \"Maicon\", as seen in the frames around the goal sequence and celebration). No player with the number 19 is visible as the scorer in the provided frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the dark blue team play against the white and black team?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows the dark blue team (with players wearing dark blue jerseys, e.g., the player with the number 13 \"MAICON\") playing against the team in white and black striped jerseys. This is evident in multiple frames where both teams are on the field during the match.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the player wearing dark blue shirt number 13 score a goal?",
+      "gt": "Yes",
+      "pred": "Yes, the player wearing dark blue shirt number 13 (Maicon) scores a goal. This is evident from the sequence where the ball enters the goal and the player celebrates (e.g., frames showing the goal and subsequent celebration around 10-15 seconds into the action).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the player wearing dark blue shirt number 19 score a goal?",
+      "gt": "No",
+      "pred": "No. The player who scores the goal is wearing a dark blue shirt with the number 13 (identified as \"MAICON\" in on-screen text during the sequence). There is no evidence in the video frames of a player wearing a dark blue shirt with number 19 scoring a goal. The goal is taken by the player in the dark blue #13 jersey (e.g., visible in frames around 0:03–0:05, 0:10–0:12, and the replay sequences).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Is there a player wearing dark blue shirt number 19 visible in the video?",
+      "gt": "No",
+      "pred": "No, there is no player wearing a dark blue shirt with number 19 visible in any of the provided video frames. The visible numbers on dark blue shirts include 13 (Maicon), 10, 9, 18, and 22, but 19 is not present.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

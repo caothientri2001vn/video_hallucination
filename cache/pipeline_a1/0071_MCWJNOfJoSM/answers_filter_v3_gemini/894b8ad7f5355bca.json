@@ -1,0 +1,168 @@
+{
+  "question": "Did the player wearing blue number 12 fail in Round 4?",
+  "pred": "The question asks if the player wearing blue number 12 failed in Round 4. According to Rule 3d, we identify the 4th round of the penalty shootout by counting the repeating core action (penalty kicks).\n\n1.  **Round 1 (France):** Player #10 (Mbappe) scores (frames at ~04:10).\n2.  **Round 1 (Argentina):** Player #10 (Messi) scores (frames at ~04:15).\n3.  **Round 2 (France):** Player #20 (Coman) misses/saved (frames at ~04:20).\n4.  **Round 2 (Argentina):** Player #21 (Dybala) scores (frames at ~04:25).\n5.  **Round 3 (France):** Player #8 (Tchouameni) misses (frames at ~04:35).\n6.  **Round 3 (Argentina):** Player #5 (Paredes) scores (frames at ~04:45).\n7.  **Round 4 (France):** Player #12 (Randal Kolo Muani) takes his turn. Context events 145 and 146 explicitly state that he \"kicks it into the center of the goal\" and the ball \"goes into the net\" while the goalkeeper dives the wrong way.\n\nThe player wearing blue number 12 (Kolo Muani) successfully scored his penalty in the 4th round for France. Therefore, he did not fail.\n\nEvidence: event 145 states \"The blue-shirt player (Kolo Muani, #12) runs toward the ball and kicks it into the center of the goal.\"\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "look",
+      "description": "A French player, Randal Kolo Muani, looks focused and serious before his penalty kick.",
+      "participants": [
+        "Randal Kolo Muani",
+        "blue-shirt player"
+      ],
+      "actor": "Randal Kolo Muani",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 3 - 1 FRANCE",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 142,
+      "start_time": "04:50",
+      "end_time": "04:53",
+      "sub_events": [],
+      "subtype_order": 31,
+      "subtype_total": 39,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "Randal Kolo Muani prepares to take his penalty kick as the goalkeeper and referee wait.",
+      "participants": [
+        "Randal Kolo Muani",
+        "Emiliano Martínez",
+        "referee"
+      ],
+      "actor": "Randal Kolo Muani",
+      "object": "soccer ball",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 3 - 1 FRANCE",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 143,
+      "start_time": "04:53",
+      "end_time": "05:00",
+      "sub_events": [],
+      "subtype_order": 29,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "The blue-shirt player (Kolo Muani, #12) stands at the penalty spot, preparing for his kick.",
+      "participants": [
+        "blue-shirt player",
+        "green-shirt goalkeeper",
+        "orange-shirt referee"
+      ],
+      "actor": "blue-shirt player",
+      "object": "white ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 144,
+      "start_time": "05:00",
+      "end_time": "05:03",
+      "sub_events": [],
+      "subtype_order": 30,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "The blue-shirt player (Kolo Muani, #12) runs toward the ball and kicks it into the center of the goal.",
+      "participants": [
+        "blue-shirt player",
+        "green-shirt goalkeeper"
+      ],
+      "actor": "blue-shirt player",
+      "object": "white ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 145,
+      "start_time": "05:03",
+      "end_time": "05:05",
+      "sub_events": [],
+      "subtype_order": 31,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "The green-shirt goalkeeper dives to his right (the kicker's left) as the ball goes into the net.",
+      "participants": [
+        "green-shirt goalkeeper"
+      ],
+      "actor": "green-shirt goalkeeper",
+      "object": "white ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 146,
+      "start_time": "05:04",
+      "end_time": "05:05",
+      "sub_events": [],
+      "subtype_order": 32,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "look",
+      "description": "A close-up shot of the blue-shirt player (Kolo Muani) looking ahead after his successful penalty.",
+      "participants": [
+        "blue-shirt player"
+      ],
+      "actor": "blue-shirt player",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 147,
+      "start_time": "05:05",
+      "end_time": "05:07",
+      "sub_events": [],
+      "subtype_order": 32,
+      "subtype_total": 39,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "look",
+      "description": "A close-up of the blue-shirt player (Kolo Muani) walking back with a serious expression.",
+      "participants": [
+        "blue-shirt player"
+      ],
+      "actor": "blue-shirt player",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 149,
+      "start_time": "05:10",
+      "end_time": "05:13",
+      "sub_events": [],
+      "subtype_order": 34,
+      "subtype_total": 39,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

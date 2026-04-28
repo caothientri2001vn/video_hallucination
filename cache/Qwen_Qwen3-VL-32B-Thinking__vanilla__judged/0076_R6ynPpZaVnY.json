@@ -1,0 +1,350 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0076_R6ynPpZaVnY.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0076_R6ynPpZaVnY.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0076_R6ynPpZaVnY",
+    "n_target": 8,
+    "n_sub": 26,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.875,
+    "sub_accuracy": 0.8846153846153846
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Does the man open the blue circle first?",
+      "gt": "Yes",
+      "pred": "Yes. In the second frame (around 0:02), the man lifts a cup to reveal the first blue circle.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the man open the blue circle?",
+      "gt": "Yes",
+      "pred": "Yes, the man opened the blue circle. In the second frame (roughly 0:02), the man lifts a cup to reveal a small blue circle.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the blue circle the first thing opened in the game?",
+      "gt": "Yes",
+      "pred": "Yes. In the second frame (after the initial setup), the man lifts a cup to reveal a small blue circle, which is the first circle revealed in the game.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the man make the first move?",
+      "gt": "Yes",
+      "pred": "Yes, the man made the first move. In the initial frames (e.g., the first image), the man’s hand is seen interacting with the cups, indicating he initiated the action.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Does the man open the yellow circle first?",
+      "gt": "No",
+      "pred": "No. The first circle revealed (when a cup is lifted) is blue (evident in the second frame of the sequence, where a small blue circle appears after the man lifts a cup). The yellow circle is revealed later (e.g., in the third frame, a small yellow circle is shown after the man lifts another cup). Thus, the man does not open the yellow circle first.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the man open the blue circle first?",
+      "gt": "Yes",
+      "pred": "Yes, the man opened the blue circle first. In the second frame (after the initial setup), the man lifts a cup to reveal a small blue circle.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man open a yellow circle at any point?",
+      "gt": "No",
+      "pred": "Yes. In the third frame (approx. 2.5 seconds into the sequence), the man lifts a cup to reveal a small yellow circle on the left side of the table. This action directly shows the man opening a yellow circle.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was a yellow circle opened in the game?",
+      "gt": "Yes",
+      "pred": "Yes, a yellow circle was opened. This is visible when a cup is lifted, revealing a small yellow circle (e.g., in the sequence where the woman lifts a cup, a small yellow circle appears on the right side of the table).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Does the woman open the yellow circle first?",
+      "gt": "No",
+      "pred": "No. The first small yellow circle is revealed by the man (in frame 3, where he lifts a cup to expose a small yellow circle on the left side of the table). The woman does not open a yellow circle first.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the woman open a yellow circle?",
+      "gt": "Yes",
+      "pred": "So, let's check the video frames. We need to see if the woman opened a yellow circle. Let's look at the actions. In the frames, when the woman lifts a cup, what's revealed? Let's check the sequence.\n\nFirst, find when the woman is lifting a cup. Let's see the frames where she's holding a cup. For example, in frame 13 (the 13th image), she's lifting a cup, and what's revealed? Let's check the colors. The yellow circle—when does a yellow circle get revealed by her action?\n\nWait, the question is: Did the woman open a yellow circle? So we need to see if when she lifts a cup, a yellow circle is underneath.\n\nLooking at the frames:\n\n- In frame 6 (6th image), the woman is lifting a cup, and the revealed circle is red (the small red one on the right). Wait, no. Let's check frame 12 (12th image): she lifts a cup, and the revealed circle is... let's see. The circles: there's a yellow circle on the right, but when she lifts a cup, what's under it?\n\nWait, maybe better to check each action where a cup is lifted by the woman.\n\nFrame 5: woman lifts a cup, reveals a small yellow circle? No, frame 5 shows a yellow circle on the right, but the action is her lifting a cup. Wait, no—let's check the frame where the cup is lifted and the color revealed.\n\nWait, in frame 14 (14th image), the woman is lifting a cup, and the revealed circle is yellow? Let's check. The 14th image: the woman is holding a cup, and the circle under it is yellow. Wait, no, the yellow circle on the right is already there. Wait, the game seems to be that they have cups covering some circles, and when you lift the cup, you reveal a circle. The original setup has some circles, and then cups are placed over some, and when you lift the cup, you see the circle under it.\n\nWait, looking at the first frame: the circles are in a row: pink, green, purple, red, blue, yellow (all large). Then, as the video progresses, small circles of the same colors are added on the sides. For example, in frame 2, there's a small blue circle on the left. So the game might be that when you lift a cup, you reveal a circle, and if it's the same color as the large one, you get a point or something.\n\nNow, the question is: Did the woman open a yellow circle? So when the woman lifts a cup, is the circle under it yellow?\n\nLet's check the frames where the woman lifts a cup. Let's go through the frames:\n\n- Frame 2: man lifts a cup, reveals a small blue circle. Not woman.\n\n- Frame 3: man lifts a cup, reveals a small yellow circle. Not woman.\n\n- Frame 4: woman places a cup over a red circle. Then in frame 5: woman lifts a cup (the one she placed), what's under it? The red circle. So that's red, not yellow.\n\n- Frame 6: woman lifts a cup, reveals a small yellow circle? Let's check frame 6. The 6th image: the woman is lifting a cup, and the circle revealed is yellow (the small one on the right). Yes! Let's confirm. In frame 6 (6th image), the woman is holding a cup, and the circle under it is yellow (the small yellow circle on the right side). So that's a yellow circle.\n\nWait, let's check the exact frame. The 6th image (counting from the first one) is:\n\nImage 6: \"the 6th image shows the woman lifting a cup, and the revealed circle is yellow.\"\n\nYes. Let's check the sequence:\n\n1. First image: initial setup.\n\n2. Second: man lifts cup, blue small circle appears.\n\n3. Third: man lifts cup, yellow small circle appears.\n\n4. Fourth: woman places cup over red.\n\n5. Fifth: woman lifts cup (the one she placed), red circle revealed.\n\n6. Sixth: woman lifts a cup, and the revealed circle is yellow (the small yellow on the right).\n\nSo in frame 6, the woman opens a yellow circle.\n\nWait, but let's confirm the frame number. The user provided 27 frames. Let's list the frames:\n\n1. First frame (00:00)\n2. Second frame (00:01)\n3. Third frame (00:02)\n4. Fourth frame (00:03)\n5. Fifth frame (00:04)\n6. Sixth frame (00:05) — here, the woman is lifting a",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the woman make the first move in the game?",
+      "gt": "No",
+      "pred": "No. The first move (lifting a cup to reveal a circle) was made by the man, as seen in the second frame (where he lifts a cup, revealing a blue circle). The woman’s first move occurs later (e.g., in the fifth frame, she begins interacting with cups). Thus, the woman did not make the first move.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the woman open the red color?",
+      "gt": "Yes",
+      "pred": "Yes, the woman opened the red color. This is evident when a small red circle is revealed next to the large red circle during her action of lifting a cup (e.g., around the 9th frame in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Does the woman open the red color last?",
+      "gt": "Yes",
+      "pred": "Yes, the woman opens the red color last. In the sequence of actions, the woman reveals a red circle in the final steps (e.g., frame 27 shows her lifting a cup to reveal a red circle, and subsequent frames confirm no further red circles are revealed after this).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the woman open the red color?",
+      "gt": "Yes",
+      "pred": "Yes, the woman opened the red color. This is evident when a small red circle is revealed next to the large red circle during her action of lifting a cup (e.g., around the 9th frame in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the red color opened last in the game?",
+      "gt": "Yes",
+      "pred": "So, let's check the video frames to see when the red color was opened. Looking at the sequence:\n\n- In the first frames, the blue cup is lifted (frame 2: blue small circle appears).\n- Then yellow (frame 3: yellow small circle).\n- Then pink (frame 7: pink small circle), red (frame 8: red small circle), green (frame 12: green small circle), purple (frame 13: purple small circle), etc.\n\nWait, let's track the order of small circles appearing. The small circles are placed when the cups are lifted. Let's list the order of the small circles:\n\n1. Blue (frame 2)\n2. Yellow (frame 3)\n3. Pink (frame 7)\n4. Red (frame 8)\n5. Green (frame 12)\n6. Purple (frame 13)\n7. Then later, the red on the left (frame 28: red small circle on left side)\n8. Then the red on the right (frame 30: red small circle on right side)\n\nWait, the question is \"Was the red color opened last in the game?\" Let's check the last actions. The last frames show the red small circles being placed. Let's see the final frames:\n\nIn frame 35, there's a red small circle on the left, and frame 36 shows red on the right. But the very last action—let's check the order of when each color's small circle is revealed.\n\nLooking at the frames:\n\n- The red color (the main red circle in the middle) has two small red circles: one on the left (frame 28) and one on the right (frame 30). The right red small circle appears later than others. Let's check the sequence:\n\nThe order of small circles (from first to last):\n\n1. Blue (2)\n2. Yellow (3)\n3. Pink (7)\n4. Red (8)\n5. Green (12)\n6. Purple (13)\n7. Blue (18: another blue on right)\n8. Red (28: left red)\n9. Red (30: right red)\n10. Green (26: left green)\n11. Purple (27: left purple)\n12. Red (30: right red? Wait, no, let's check frame 30: the right red is there. Then frame 35 has a red on left, frame 36 has red on right.\n\nWait, the last small circle to appear is the red one on the right? Let's check the frames:\n\nFrame 30: \"red\" on the right is revealed (when the cup is lifted, the red small circle is there).\n\nFrame 35: the red on the left is revealed.\n\nFrame 36: the red on the right is revealed. Wait, no, in frame 30, the right red is there. Let's check the sequence of when the cups are lifted and the small circles appear.\n\nThe game seems to be that each cup is lifted to reveal a small circle of the same color as the main circle (but smaller). The main circles are in a line: pink, green, purple, red, blue, yellow (from top to bottom in the first frame).\n\nEach cup is placed over a main circle, and when lifted, a small circle of the same color is revealed.\n\nLet's list the order of cup lifts and the small circles:\n\n1. First cup lift (frame 2): blue main circle (4th from top? Wait, first frame: the main circles are (from top to bottom) pink, green, purple, red, blue, yellow. So blue is the 5th. When the cup is lifted, a blue small circle is revealed on the left (frame 2).\n\n2. Frame 3: cup lift for yellow main circle (6th), reveals yellow small circle on the left.\n\n3. Frame 7: cup lift for pink main circle (1st), reveals pink small circle on the right.\n\n4. Frame 8: cup lift for red main circle (4th), reveals red small circle on the left.\n\n5. Frame 12: cup lift for green main circle (2nd), reveals green small circle on the right.\n\n6. Frame 13: cup lift for purple main circle (3rd), reveals purple small circle on the right.\n\n7. Frame 18: cup lift for blue main circle (5th), reveals blue small circle on the right.\n\n8. Frame 26: cup lift for green main circle (2nd), reveals green small circle on the left.\n\n9. Frame 27: cup lift for purple main circle (3rd), reveals purple small circle on the left.\n\n10. Frame 28: cup lift for red main circle (4th), reveals red small circle on",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the woman make the final move?",
+      "gt": "Yes",
+      "pred": "Yes, the woman made the final move. This is evident in the later frames where she is the one performing the last action with the cup (e.g., around the final segments of the video sequence where she is seen holding and using the cup for the move).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Does the man win the game with red color?",
+      "gt": "No",
+      "pred": "No, the man does not win the game with red color. The red large circle has two small red circles (one on each side), indicating both players placed one small red circle, so there is no \"win\" for red in favor of the man. This is observable in frames where red small circles are placed (e.g., around timestamp 10 and 15, where both sides have red small circles).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the man win the game?",
+      "gt": "No",
+      "pred": "No, the man did not win the game. In the final frames (e.g., around the 24th image), the woman is seen drinking from a cup, indicating she likely won, while the man has his hand on his head, suggesting he did not.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the woman win the game?",
+      "gt": "Yes",
+      "pred": "Yes, the woman won the game. In the final frames (e.g., around timestamp 27-28), the man is seen with his head in his hand (a common gesture of losing or being outwitted), while the woman is holding a cup and appears to have completed the game successfully. The sequence of actions shows the woman placing cups over the colored circles in a way that results in her victory.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the woman win the game with the red color?",
+      "gt": "Yes",
+      "pred": "Yes. In the sequence, when the woman lifts cups, small red circles are revealed (e.g., around the 15th–20th frames, a small red circle appears on the right side after her cup is lifted). This indicates she successfully revealed the red color during her turn.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the man reveal the wrong color last?",
+      "gt": "Yes",
+      "pred": "Yes. In the final reveal actions (toward the end of the video sequence), the man's last revealed color did not match the expected pattern, indicating it was wrong.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Does the woman win the game with red color?",
+      "gt": "Yes",
+      "pred": "So, let's check the video. The question is whether the woman wins with red color. Let's look at the frames where the red circles are involved. \n\nFirst, in the sequence, when the woman is playing, we need to see if her action with red leads to a win. Let's check the frames. \n\nLooking at the frames, there's a part where a small red circle is placed, and then the woman's actions. Wait, the key is to see if the red color is the one that results in a win. Let's check the last few frames. \n\nIn the frame where the woman is holding a cup, and there's a red circle on the table. Wait, but the question is about winning. Let's see: when the woman places the cup, does the red color win? \n\nWait, the game seems to involve placing small colored circles next to the large ones. Let's check the red color. In the frames, when the red small circle is placed, does that count as a win? \n\nLooking at the frames: in the 9th frame (from the list), there's a small red circle next to the large red. Then, in the 10th frame, the woman places a cup, and then a small red circle appears. Then, in the 16th frame, there's a small red circle on the left. Wait, but the question is if the woman wins with red. \n\nWait, the last frame (the 25th one) shows the woman holding a cup, and there's a red circle on the left. But how do we determine the win? The key is to see if the woman's action with red leads to a win. \n\nWait, let's check the action where the woman places the cup and the red circle is revealed. In the frame where the woman lifts the cup, if a red circle is under it, and that's the winning move. \n\nLooking at the frames: in the 25th frame (the one with the woman holding the cup to her mouth), the red circles are placed. But the question is: does the woman win with red? \n\nWait, let's check the sequence of the red circles. The large red circle is in the middle. The small red circles are placed on both sides. The woman's actions: when she places the cup, the small red circle is revealed. \n\nIn the frame where the woman is lifting the cup (frame 8), a small red circle appears. Then, in frame 10, the man places a cup, and a small red circle appears on the left. Then, in frame 16, the woman places a cup, and a small red circle appears. \n\nWait, the question is \"Does the woman win the game with red color?\" So we need to see if the woman's move with red results in a win. \n\nLooking at the frames, when the woman is the one placing the cup that reveals a red circle, and if that's the winning move. \n\nIn frame 7: woman lifts cup, red circle appears. Then in frame 9: woman places cup, then in frame 10, the man places a cup, red on left. Then in frame 16, woman places cup, red on left. Wait, no. Let's check the exact frame where the red is revealed by the woman. \n\nIn the 7th frame (the one with \"7\" in the list), the woman is lifting the cup, and a small red circle is revealed. Then, in the 16th frame, the woman is placing a cup, and a red circle is on the left. \n\nBut the key is: does the woman win with red? The answer would be yes if her action with red leads to a win. \n\nWait, looking at the frames, the last frame (25) shows the woman holding a cup, and the red circles are present. But the question is about winning. \n\nWait, let's check the frame where the woman's move with red is the winning move. In the 25th frame, the woman is holding a cup, and there's a red circle on the left. But how do we know? \n\nAlternatively, let's check the sequence: the game seems to be about placing small circles next to the large ones. The large circles are in a row: yellow, blue, red, purple, green, pink. The small circles are placed on either side. \n\nThe woman's actions: when she lifts a cup, a small circle is revealed. The question is if red is the color that wins for her. \n\nIn the frames, the woman reveals a red circle (in frame 7), and then later, the red circle is on the left. But does that count as a win? \n\nWait, the answer is yes. Because in the sequence, when the woman is the one who reveals the red circle (or places the red circle), and",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the woman win the game?",
+      "gt": "Yes",
+      "pred": "Yes, the woman won the game. In the final frames (e.g., around timestamp 27-28), the man is seen with his head in his hand (a common gesture of losing or being outwitted), while the woman is holding a cup and appears to have completed the game successfully. The sequence of actions shows the woman placing cups over the colored circles in a way that results in her victory.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the woman open the red color?",
+      "gt": "Yes",
+      "pred": "Yes, the woman opened the red color. This is evident when a small red circle is revealed next to the large red circle during her action of lifting a cup (e.g., around the 9th frame in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the red color the winning move for the woman?",
+      "gt": "Yes",
+      "pred": "Yes. In the video sequence, the woman's move involving the red color (evident in frames where a small red circle appears and is placed, e.g., around the 24th frame in the provided sequence) corresponds to a winning outcome, as indicated by the subsequent reactions and the game's progression.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Did the man win because the woman revealed the wrong color last?",
+      "gt": "No",
+      "pred": "Yes. The final sequence (around the 35-36 second mark) shows the woman revealing a color, and the man’s reaction (e.g., holding his head) indicates he won, implying the woman’s last revealed color was incorrect.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the man win the game?",
+      "gt": "No",
+      "pred": "No, the man did not win the game. In the final frames (e.g., around the 24th image), the woman is seen drinking from a cup, indicating she likely won, while the man has his hand on his head, suggesting he did not.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the woman reveal the wrong color last?",
+      "gt": "No",
+      "pred": "Yes. In the final sequence (around the 32nd frame), the woman reveals a small red circle to the right of the large red circle. The correct placement for the small red circle (as observed in the sequence of other colors like blue and yellow) should be to the left of the large red circle. Thus, the last revealed color (red) was placed in the wrong position.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the man reveal the wrong color last?",
+      "gt": "Yes",
+      "pred": "Yes. In the final reveal actions (toward the end of the video sequence), the man's last revealed color did not match the expected pattern, indicating it was wrong.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the woman win the game?",
+      "gt": "Yes",
+      "pred": "Yes, the woman won the game. In the final frames (e.g., around timestamp 27-28), the man is seen with his head in his hand (a common gesture of losing or being outwitted), while the woman is holding a cup and appears to have completed the game successfully. The sequence of actions shows the woman placing cups over the colored circles in a way that results in her victory.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Did the woman win because the man revealed the wrong color last?",
+      "gt": "Yes",
+      "pred": "Yes. In the final sequence (around the 26th-28th frames), the man reveals a color, and the subsequent reactions (e.g., the man’s head-in-hand gesture and the woman’s celebratory drinking) indicate the man revealed the wrong color last, resulting in the woman winning.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the woman win the game?",
+      "gt": "Yes",
+      "pred": "Yes, the woman won the game. In the final frames (e.g., around timestamp 27-28), the man is seen with his head in his hand (a common gesture of losing or being outwitted), while the woman is holding a cup and appears to have completed the game successfully. The sequence of actions shows the woman placing cups over the colored circles in a way that results in her victory.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man reveal the wrong color last?",
+      "gt": "Yes",
+      "pred": "Yes. In the final reveal actions (toward the end of the video sequence), the man's last revealed color did not match the expected pattern, indicating it was wrong.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the woman's win caused by the man revealing the wrong color last?",
+      "gt": "Yes",
+      "pred": "Yes. The man's final cup reveal (around the last few frames) showed a color that did not match the expected pattern, resulting in the woman's win.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

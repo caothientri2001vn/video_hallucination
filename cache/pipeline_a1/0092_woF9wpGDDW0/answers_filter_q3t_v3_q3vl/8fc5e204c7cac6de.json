@@ -1,0 +1,80 @@
+{
+  "question": "Did the woman win the game?",
+  "pred": "Evidence: On-screen text \"Winner: Justice!\" appears, and the light-blue-shirt man (Justice) gives two thumbs up in celebration while the woman reacts with her hands to her head.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "react",
+      "description": "The red-shirt woman reacts by putting her hands to her head.",
+      "participants": [
+        "light-blue-shirt man",
+        "red-shirt woman"
+      ],
+      "actor": "red-shirt woman",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Spinning Wheel Game",
+      "continuation_hint": "middle",
+      "event_index": 51,
+      "start_time": "01:07",
+      "end_time": "01:08",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Last Color Standing Wins!"
+    },
+    {
+      "event_type": "graphic",
+      "description": "On-screen text 'Winner: Justice!' appears.",
+      "participants": [
+        "light-blue-shirt man",
+        "red-shirt woman"
+      ],
+      "on_screen_text": [
+        {
+          "text": "Winner: Justice!",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Spinning Wheel Game",
+      "continuation_hint": "middle",
+      "event_index": 54,
+      "start_time": "01:10",
+      "end_time": "01:11",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Last Color Standing Wins!"
+    },
+    {
+      "event_type": "celebration",
+      "description": "The light-blue-shirt man gives two thumbs up in celebration.",
+      "participants": [
+        "light-blue-shirt man",
+        "red-shirt woman"
+      ],
+      "actor": "light-blue-shirt man",
+      "on_screen_text": [
+        {
+          "text": "Winner: Justice!",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Spinning Wheel Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 55,
+      "start_time": "01:11",
+      "end_time": "01:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Last Color Standing Wins!"
+    }
+  ]
+}

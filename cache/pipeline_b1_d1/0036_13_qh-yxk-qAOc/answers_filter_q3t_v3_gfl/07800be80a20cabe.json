@@ -1,0 +1,120 @@
+{
+  "question": "When the white team plays against the red team, does the player with white shirt, white pant number 10 score the goal into the red shirt goalkeeper?",
+  "pred": "The video shows a soccer match between a team in white jerseys and a team in maroon (reddish) jerseys. The goalkeeper for the maroon team is wearing a green jersey. In the sequence starting around 00:05, the player in the white jersey with number 10 (identified in Context as \"white-jersey player #10\") receives the ball, controls it, and shoots it past the green-jersey goalkeeper into the net.\n\nEvidence: Context event 7 states \"ball entering goal net as goalkeeper lies on ground\" with actor \"white-jersey players\" and on-screen text \"LACAZETTE\"; frames at ~00:08 show the ball in the net while the green-jersey goalkeeper is on the ground.\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "game",
+      "description": "player in white jersey (number 10) receiving and controlling the ball",
+      "participants": [
+        "white-jersey player #10",
+        "maroon-jersey players"
+      ],
+      "actor": "white-jersey player #10",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "TARAF'TAN KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 4,
+      "start_time": "00:03",
+      "end_time": "00:05",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "game",
+      "description": "white-jersey player #10 passing the ball toward the goal area",
+      "participants": [
+        "white-jersey player #10",
+        "maroon-jersey players"
+      ],
+      "actor": "white-jersey player #10",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "TARAF'TAN KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 5,
+      "start_time": "00:05",
+      "end_time": "00:07",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "game",
+      "description": "goalkeeper in green diving to attempt save",
+      "participants": [
+        "green-jersey goalkeeper"
+      ],
+      "actor": "green-jersey goalkeeper",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "TARAF'TAN KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:06",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "game",
+      "description": "ball entering goal net as goalkeeper lies on ground",
+      "participants": [
+        "green-jersey goalkeeper",
+        "white-jersey players"
+      ],
+      "actor": "white-jersey players",
+      "object": "white ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "TARAF'TAN KANALI",
+          "location": "logo"
+        },
+        {
+          "text": "LACAZETTE",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 7,
+      "start_time": "00:07",
+      "end_time": "00:09",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    }
+  ]
+}

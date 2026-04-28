@@ -1,0 +1,216 @@
+{
+  "question": "Are there in toal 1 cake?",
+  "pred": "The question asks if there is a total of exactly one cake in the video. Based on the Context and frames, we must enumerate all distinct items revealed to be cake:\n\n1.  **Black bag cake**: At 03:34, the plaid-shirt woman reveals white cake inside the black bag from the first pedestal (Event 87).\n2.  **Yellow banana cake**: At 06:12, the black-shirt woman reveals that the yellow banana on the third pedestal is cake (Event 167).\n3.  **White and red shoe cake**: At 08:45, the yellow-shirt woman cuts into the leftmost shoe (Shoe 1), revealing it is made of cake (Event 232).\n\nThere are at least three distinct items revealed to be cake in this video.\n\nEvidence: Event 87 reveals a black bag cake, Event 167 reveals a banana cake, and Event 232 reveals a shoe cake.\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "cut",
+      "description": "the plaid-shirt woman uses a knife to cut into the top of the black bag on the first pedestal",
+      "participants": [
+        "plaid-shirt woman"
+      ],
+      "actor": "plaid-shirt woman",
+      "object": "black bag",
+      "on_screen_text": [
+        {
+          "text": "PHIL & HOLLY PLAY 'IS IT CAKE?'",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 77,
+      "start_time": "03:13",
+      "end_time": "03:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Intro"
+    },
+    {
+      "event_type": "reveal",
+      "description": "The plaid-shirt woman pulls back a section of the black bag to reveal white cake inside.",
+      "participants": [
+        "plaid-shirt woman"
+      ],
+      "actor": "plaid-shirt woman",
+      "object_before": "black bag",
+      "object_after": "white cake",
+      "on_screen_text": [
+        {
+          "text": "PHIL & HOLLY PLAY 'IS IT CAKE?'",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "complete",
+      "event_index": 87,
+      "start_time": "03:34",
+      "end_time": "03:37",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Intro"
+    },
+    {
+      "event_type": "cut",
+      "description": "the black-shirt woman cuts the yellow banana on the rightmost pedestal (Pedestal 4) with a knife",
+      "participants": [
+        "black-shirt woman"
+      ],
+      "actor": "black-shirt woman",
+      "object": "yellow banana",
+      "on_screen_text": [
+        {
+          "text": "PHIL & HOLLY PLAY 'IS IT CAKE?'",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "middle",
+      "event_index": 158,
+      "start_time": "05:57",
+      "end_time": "05:59",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Meet Britain's Best Novelty Cake Makers"
+    },
+    {
+      "event_type": "reveal",
+      "description": "The black-shirt woman reveals the inside of the yellow banana object on the third pedestal, showing it is cake.",
+      "participants": [
+        "black-shirt woman"
+      ],
+      "actor": "black-shirt woman",
+      "object_before": "yellow banana object",
+      "object_after": "yellow banana cake",
+      "on_screen_text": [
+        {
+          "text": "PHIL & HOLLY PLAY 'IS IT CAKE?'",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 167,
+      "start_time": "06:12",
+      "end_time": "06:14",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 2,
+      "segment_label_resolved": "Meet Britain's Best Novelty Cake Makers"
+    },
+    {
+      "event_type": "cut",
+      "description": "the yellow-shirt woman cuts into the leftmost shoe (Shoe 1) with a black knife",
+      "participants": [
+        "yellow-shirt woman"
+      ],
+      "actor": "yellow-shirt woman",
+      "object": "white and red shoe",
+      "on_screen_text": [
+        {
+          "text": "CAN YOU SPOT WHICH ITEM IS MADE OF CAKE?",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Can You Spot Which Item Is Made Of Cake?",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 231,
+      "start_time": "08:41",
+      "end_time": "08:45",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Meet Britain's Best Novelty Cake Makers"
+    },
+    {
+      "event_type": "cut",
+      "description": "the yellow-shirt woman cuts into the white and red shoe (item 1) with a knife, revealing it is made of cake",
+      "participants": [
+        "yellow-shirt woman"
+      ],
+      "actor": "yellow-shirt woman",
+      "object": "white and red shoe",
+      "on_screen_text": [
+        {
+          "text": "CAN YOU SPOT WHICH ITEM IS MADE OF CAKE?",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 232,
+      "start_time": "08:45",
+      "end_time": "08:47",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Meet Britain's Best Novelty Cake Makers"
+    },
+    {
+      "event_type": "lift",
+      "description": "the yellow-shirt woman lifts a large slice of the shoe cake with her knife",
+      "participants": [
+        "yellow-shirt woman"
+      ],
+      "actor": "yellow-shirt woman",
+      "object": "white and red shoe",
+      "on_screen_text": [
+        {
+          "text": "CAN YOU SPOT WHICH ITEM IS MADE OF CAKE?",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "complete",
+      "event_index": 236,
+      "start_time": "08:55",
+      "end_time": "08:58",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 2,
+      "segment_label_resolved": "Meet Britain's Best Novelty Cake Makers"
+    }
+  ]
+}

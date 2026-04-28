@@ -1,0 +1,87 @@
+{
+  "question": "Did a girl appear wearing a hat exactly once in the entire video?",
+  "pred": "Evidence: frames show a woman in the bottom-right panel wearing a black cap in one sequence, with the Context confirming \"the white-tank-top woman in the bottom-right panel performs a visual state change, appearing in a black cap and black-and-white shirt\" (event 42), followed by reverting to the original outfit without the cap (event 43).\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "gesture",
+      "description": "the white-tank-top woman in the bottom-right panel continues dancing, swaying her hips",
+      "participants": [
+        "white-tank-top woman"
+      ],
+      "actor": "white-tank-top woman",
+      "on_screen_text": [
+        {
+          "text": "@Short_Senpai",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Four-Panel Dance",
+      "continuation_hint": "middle",
+      "event_index": 41,
+      "start_time": "00:47",
+      "end_time": "00:48",
+      "sub_events": [],
+      "subtype_order": 18,
+      "subtype_total": 20,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Transition Dance"
+    },
+    {
+      "event_type": "gesture",
+      "description": "the white-tank-top woman in the bottom-right panel performs a visual state change, appearing in a black cap and black-and-white shirt",
+      "participants": [
+        "white-tank-top woman"
+      ],
+      "actor": "white-tank-top woman",
+      "object_before": "white tank top",
+      "object_after": "black and white shirt",
+      "on_screen_text": [
+        {
+          "text": "@Short_Senpai",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Four-Panel Dance",
+      "continuation_hint": "middle",
+      "event_index": 42,
+      "start_time": "00:48",
+      "end_time": "00:49",
+      "sub_events": [],
+      "subtype_order": 19,
+      "subtype_total": 20,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Transition Dance"
+    },
+    {
+      "event_type": "gesture",
+      "description": "the white-tank-top woman in the bottom-right panel reverts to her original white tank top and denim shorts while dancing",
+      "participants": [
+        "white-tank-top woman"
+      ],
+      "actor": "white-tank-top woman",
+      "object_before": "black and white shirt",
+      "object_after": "white tank top",
+      "on_screen_text": [
+        {
+          "text": "@Short_Senpai",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Four-Panel Dance",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 43,
+      "start_time": "00:49",
+      "end_time": "00:50",
+      "sub_events": [],
+      "subtype_order": 20,
+      "subtype_total": 20,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Transition Dance"
+    }
+  ]
+}

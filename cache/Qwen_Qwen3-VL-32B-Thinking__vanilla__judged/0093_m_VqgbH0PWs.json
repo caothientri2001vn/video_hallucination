@@ -1,0 +1,350 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0093_m_VqgbH0PWs.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0093_m_VqgbH0PWs.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0093_m_VqgbH0PWs",
+    "n_target": 8,
+    "n_sub": 26,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 1.0,
+    "sub_accuracy": 0.9615384615384616
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Was black sand used first?",
+      "gt": "Yes",
+      "pred": "Yes, black sand was used first. This is evident from the sequence where the black sand is applied to the drawing (e.g., around the 4-6 second mark, the black sand is spread on the character's hair area).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was black sand used in the video?",
+      "gt": "Yes",
+      "pred": "Yes, black sand was used. This is evident when black sand is applied to the drawing (e.g., in the frame where the drawing is covered in black sand, around the 5th frame). The black sand container is also visible among the color options on the right side of the screen.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was black sand used before any other color of sand?",
+      "gt": "Yes",
+      "pred": "Yes. Black sand was used first; it is visible being applied in the early frames (e.g., around the 2 - 6 second mark sequence where black sand is spread over the drawing).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was black sand used before gray sand?",
+      "gt": "Yes",
+      "pred": "Yes. Black sand was used first (e.g., in frames showing black sand application on the character’s face and hair, around the 4–6 second mark), and gray sand was used later (e.g., when coloring parts of the character or background, visible in subsequent frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Was red sand used second?",
+      "gt": "No",
+      "pred": "No. The sequence shows black sand used first (e.g., frames 4-7), then white sand (e.g., frames 8-11), so red sand was not used second.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was red sand used in the video?",
+      "gt": "Yes",
+      "pred": "Yes, red sand was used. A red sand container is visible on the left side of the frames, and red sand is applied to the character's lips (e.g., around the 19-21 second mark in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was gray sand used after black sand?",
+      "gt": "Yes",
+      "pred": "Yes. Black sand is applied first (e.g., visible in frames 4–7 as the dark area on the drawing), and gray sand is used later for the hair (e.g., frame 10 shows gray sand being applied to the hair section). This sequence confirms gray sand was used after black sand.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was gray sand the second sand used?",
+      "gt": "Yes",
+      "pred": "To determine if gray sand was the second sand used, we analyze the sequence of sand application in the video:  \n\n1. **First sand used**: Black sand (evident in frames 4–7, where black sand is applied to cover large areas of the drawing).  \n2. **Second sand used**: White sand (seen in frames 8–10, where white sand is applied to the bird and parts of the character’s hair).  \n\nGray sand (in the left column, second row) is not used as the second sand. The second sand used is white.  \n\nAnswer: No. The second sand used was white (e.g., timestamps showing white sand application after black).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Was the brown sand used after the gray sand",
+      "gt": "Yes",
+      "pred": "Yes. The gray sand was used first (e.g., around frames 10-13 for applying to the hair), and the brown sand was used afterward (e.g., around frames 14-17 for coloring the hair). Thus, brown sand was used after gray sand.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was brown sand used in the video?",
+      "gt": "Yes",
+      "pred": "Yes, brown sand was used. For example, when coloring the character's hair (e.g., around the 11–14 second mark, where the hair is filled with brown sand).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was gray sand used in the video?",
+      "gt": "Yes",
+      "pred": "Yes, gray sand was used. The gray sand container is visible on the left side of the frames, and it is applied to the drawing (e.g., in the sequence where the hand uses tools to place sand, the gray sand is utilized).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did gray sand come before brown sand?",
+      "gt": "Yes",
+      "pred": "Yes. Gray sand was applied to the hair (e.g., around timestamp 0:10-0:12) before brown sand was used for the hair (e.g., around timestamp 0:13).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Was organe sand used last?",
+      "gt": "Yes",
+      "pred": "Yes. The orange sand was used for the background in the final steps, as seen in the frames where the background is filled with orange sand (e.g., around the 22-25 second mark in the sequence), and the completed artwork shows the orange background as the last applied color.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was orange sand used in the video?",
+      "gt": "Yes",
+      "pred": "Yes, orange sand was used. This is visible when the hand applies orange sand to the background (e.g., around 22 - 24 seconds, where orange sand is spread over the paper).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was orange sand the final sand color used?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows orange sand being used to fill the background, and the final frames (e.g., around 26-29 seconds) display the completed artwork with an orange background, indicating it was the final sand color used.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was beige sand used before orange sand?",
+      "gt": "Yes",
+      "pred": "Yes. Beige sand was used for the skin (e.g., around timestamp 26-27) before orange sand was used for the background (e.g., around timestamp 33-34).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Was blue sand used last?",
+      "gt": "No",
+      "pred": "No. The last color used in the video is orange sand for the background (evident in the final steps, e.g., timestamps 28-32 show orange sand being applied to the background, and the completed artwork has an orange background). Blue sand is visible in the color palette but is not used in the final steps.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was blue sand used in the video?",
+      "gt": "No",
+      "pred": "No. The video shows various colored sands (e.g., black, white, brown, yellow, red, orange), but blue sand is not used in any of the steps. The blue container is present but not utilized for coloring in the frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was orange sand the last sand used?",
+      "gt": "Yes",
+      "pred": "Yes. The final steps (around 28-30 seconds) show orange sand being used to fill the background, and the completed artwork has an orange background, indicating it was the last sand used.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did any sand come after orange sand?",
+      "gt": "No",
+      "pred": "No. After the orange sand is applied (around 27.0s - 29.0s), the paper is flipped (30.0s) to reveal the final image with an orange background, and no additional sand is added afterward.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Was the blue sand used after the gray sand?",
+      "gt": "No",
+      "pred": "No. The blue sand was not used at any point in the video. The sequence of sand colors used includes black, gray, brown, yellow, red, and orange, but blue sand is never applied (e.g., the blue container remains unused throughout all frames). Therefore, blue sand was not used after gray sand.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was blue sand used in the video?",
+      "gt": "No",
+      "pred": "No. The video shows various colored sands (e.g., black, white, brown, yellow, red, orange), but blue sand is not used in any of the steps. The blue container is present but not utilized for coloring in the frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was gray sand used in the video?",
+      "gt": "Yes",
+      "pred": "Yes, gray sand was used. The gray sand container is visible on the left side of the frames, and it is applied to the drawing (e.g., in the sequence where the hand uses tools to place sand, the gray sand is utilized).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was gray sand used before brown sand?",
+      "gt": "Yes",
+      "pred": "Yes. Gray sand was used for the hair (e.g., around the 7th frame sequence) before brown sand was applied to the hair (e.g., around the 12th frame sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Was black sand used before gray and then brown?",
+      "gt": "Yes",
+      "pred": "Yes. Black sand was used first (e.g., in frames showing black sand application on the face and other areas early in the sequence), followed by gray (e.g., when coloring the hair, as seen in later frames with gray sand), and then brown (e.g., when adding brown to the hair and other sections).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was black sand used in the video?",
+      "gt": "Yes",
+      "pred": "Yes, black sand was used. This is evident when black sand is applied to the drawing (e.g., in the frame where the drawing is covered in black sand, around the 5th frame). The black sand container is also visible among the color options on the right side of the screen.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was black sand used before gray sand?",
+      "gt": "Yes",
+      "pred": "Yes. Black sand was used first (e.g., in frames showing black sand application on the character’s face and hair, around the 4–6 second mark), and gray sand was used later (e.g., when coloring parts of the character or background, visible in subsequent frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was gray sand used before brown sand?",
+      "gt": "Yes",
+      "pred": "Yes. Gray sand was used for the hair (e.g., around the 7th frame sequence) before brown sand was applied to the hair (e.g., around the 12th frame sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was black sand used first?",
+      "gt": "Yes",
+      "pred": "Yes, black sand was used first. This is evident from the sequence where the black sand is applied to the drawing (e.g., around the 4-6 second mark, the black sand is spread on the character's hair area).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Was orange sand used before gray and then black?",
+      "gt": "No",
+      "pred": "No. Orange sand was used after gray and black sands. Black sand was used first (e.g., around 4-7 seconds for background), gray sand was used later for the hair (e.g., around 10-13 seconds), and orange sand was used at the end (e.g., around 27-30 seconds for the background).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was orange sand used in the video?",
+      "gt": "Yes",
+      "pred": "Yes, orange sand was used. This is visible when the hand applies orange sand to the background (e.g., around 22 - 24 seconds, where orange sand is spread over the paper).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was orange sand used last?",
+      "gt": "Yes",
+      "pred": "Yes, orange sand was used last. This is evident in the later frames where the background is filled with orange sand (e.g., around the 25-29 second mark, the orange sand is applied to the background, and the final image shows the orange background as the last layer).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was black sand used first?",
+      "gt": "Yes",
+      "pred": "Yes, black sand was used first. This is evident from the sequence where the black sand is applied to the drawing (e.g., around the 4-6 second mark, the black sand is spread on the character's hair area).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was black sand used before gray sand?",
+      "gt": "Yes",
+      "pred": "Yes. Black sand was used first (e.g., in frames showing black sand application on the character’s face and hair, around the 4–6 second mark), and gray sand was used later (e.g., when coloring parts of the character or background, visible in subsequent frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

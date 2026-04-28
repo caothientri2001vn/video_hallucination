@@ -1,0 +1,73 @@
+{
+  "question": "Did the main male character use a computer to look up information?",
+  "pred": "The main male character (the blue-tie man) is shown using a laptop at a desk, but he is not looking up information. Instead, the screen explicitly displays a solitaire card game layout, and he subsequently closes the laptop.\n\nEvidence: event 150 describes the blue-tie man sitting at a desk with a laptop displaying a solitaire card game layout.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "speak",
+      "description": "blue-tie man speaks while seated at desk with laptop",
+      "participants": [
+        "blue-tie man"
+      ],
+      "actor": "blue-tie man",
+      "segment_boundary": "middle",
+      "segment_label": "business meeting",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 147,
+      "start_time": "06:15",
+      "end_time": "06:20",
+      "sub_events": [],
+      "subtype_order": 29,
+      "subtype_total": 49,
+      "round_index": 8,
+      "segment_label_resolved": "New Meeting Room"
+    },
+    {
+      "event_type": "game",
+      "description": "sits at desk with laptop displaying a solitaire card game with visible playing cards",
+      "participants": [
+        "blue-tie man"
+      ],
+      "actor": "blue-tie man",
+      "object": "laptop",
+      "on_screen_text": [
+        {
+          "text": "solitaire card game layout",
+          "location": "laptop screen"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Card Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 150,
+      "start_time": "06:30",
+      "end_time": "06:37",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 8,
+      "segment_label_resolved": "New Meeting Room"
+    },
+    {
+      "event_type": "close",
+      "description": "closes the laptop with both hands",
+      "participants": [
+        "blue-tie man"
+      ],
+      "actor": "blue-tie man",
+      "object": "laptop",
+      "segment_boundary": "end",
+      "segment_label": "Card Game",
+      "continuation_hint": "complete",
+      "event_index": 151,
+      "start_time": "06:37",
+      "end_time": "06:40",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 8,
+      "segment_label_resolved": "New Meeting Room"
+    }
+  ]
+}

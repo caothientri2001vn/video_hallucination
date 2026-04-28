@@ -1,0 +1,198 @@
+{
+  "video_name": "0036_3_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 15.0,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:01",
+          "event_type": "transition",
+          "description": "black screen with a circular logo visible in the top right corner",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "segment_boundary": "start",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "starts_before_chunk",
+          "on_screen_text": [
+            {
+              "text": "TARAFSPOR KANALI",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "00:01",
+          "local_end": "00:03",
+          "event_type": "game",
+          "description": "soccer match in progress with players in yellow and white jerseys moving across the field",
+          "participants": [
+            "yellow-jersey players",
+            "white-jersey players"
+          ],
+          "actor": "yellow-jersey players",
+          "object": "white soccer ball",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "SUNDBORN",
+              "location": "other"
+            },
+            {
+              "text": "TARAFSPOR KANALI",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "00:03",
+          "local_end": "00:05",
+          "event_type": "game",
+          "description": "player in yellow jersey with number 10 receives the ball and prepares to shoot",
+          "participants": [
+            "yellow-jersey #10",
+            "white-jersey defenders"
+          ],
+          "actor": "yellow-jersey #10",
+          "object": "white soccer ball",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "TARAFSPOR KANALI",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:07",
+          "event_type": "game",
+          "description": "player in yellow jersey with number 10 executes a powerful shot toward the goal",
+          "participants": [
+            "yellow-jersey #10",
+            "white-jersey goalkeeper"
+          ],
+          "actor": "yellow-jersey #10",
+          "object": "white soccer ball",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "TARAFSPOR KANALI",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:09",
+          "event_type": "game",
+          "description": "goalkeeper in black uniform dives to attempt to save the shot",
+          "participants": [
+            "black-uniform goalkeeper"
+          ],
+          "actor": "black-uniform goalkeeper",
+          "object": "white soccer ball",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "TARAFSPOR KANALI",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "00:09",
+          "local_end": "00:11",
+          "event_type": "scored",
+          "description": "soccer ball enters the goal net past the diving goalkeeper",
+          "participants": [
+            "white soccer ball",
+            "goal net"
+          ],
+          "actor": "white soccer ball",
+          "object": "white soccer ball",
+          "outcome": "scored",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "IBRAHIMOVIC",
+              "location": "other"
+            },
+            {
+              "text": "TARAFSPOR KANALI",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "00:11",
+          "local_end": "00:15",
+          "event_type": "celebration",
+          "description": "player in yellow jersey with number 10 celebrates with arms extended wide",
+          "participants": [
+            "yellow-jersey #10"
+          ],
+          "actor": "yellow-jersey #10",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "IBRAHIMOVIC",
+              "location": "other"
+            },
+            {
+              "text": "TARAFSPOR KANALI",
+              "location": "logo"
+            }
+          ]
+        },
+        {
+          "local_start": "00:11",
+          "local_end": "00:15",
+          "event_type": "applaud",
+          "description": "crowd in yellow jerseys reacts with applause and celebration",
+          "participants": [
+            "yellow-jersey spectators"
+          ],
+          "actor": "yellow-jersey spectators",
+          "object": "",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "TARAFSPOR KANALI",
+              "location": "logo"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

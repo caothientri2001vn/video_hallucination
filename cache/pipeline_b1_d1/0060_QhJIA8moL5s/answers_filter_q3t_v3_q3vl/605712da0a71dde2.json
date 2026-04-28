@@ -1,0 +1,136 @@
+{
+  "question": "Did the person who revealed the jelly later reveal the guitar doll?",
+  "pred": "Evidence: The woman (blonde-woman) revealed the jelly by opening box 8 (Context event 30), while the man in suit (black-suit man) revealed the guitar doll by pulling and displaying the yellow Full House box (Context events 69–71, 105–106).\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "open_box",
+      "description": "The woman opens the leftmost lower box (labeled 8) on her side of the table and retrieves a bowl.",
+      "participants": [
+        "blonde-woman",
+        "man-in-suit"
+      ],
+      "actor": "blonde-woman",
+      "object": "beige box",
+      "cover": "beige box",
+      "hidden": "white bowl with colorful object",
+      "segment_boundary": "middle",
+      "segment_label": "Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 30,
+      "start_time": "01:00",
+      "end_time": "01:04",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "pull_box",
+      "description": "black-suit man pulls a yellow Full House box from a larger beige container",
+      "participants": [
+        "black-suit man",
+        "black-dress woman"
+      ],
+      "actor": "black-suit man",
+      "object": "yellow box",
+      "segment_boundary": "middle",
+      "segment_label": "Full House Box Reveal",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 69,
+      "start_time": "02:30",
+      "end_time": "02:35",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "lift",
+      "description": "black-suit man lifts the Full House box to display it to the camera and the woman",
+      "participants": [
+        "black-suit man",
+        "black-dress woman"
+      ],
+      "actor": "black-suit man",
+      "object": "yellow box",
+      "segment_boundary": "middle",
+      "segment_label": "Full House Box Reveal",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 70,
+      "start_time": "02:35",
+      "end_time": "02:41",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "place",
+      "description": "black-suit man places the Full House box on the table surface between himself and the woman",
+      "participants": [
+        "black-suit man",
+        "black-dress woman"
+      ],
+      "actor": "black-suit man",
+      "object": "yellow box",
+      "segment_boundary": "middle",
+      "segment_label": "Full House Box Reveal",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 71,
+      "start_time": "02:41",
+      "end_time": "02:43",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "hold_object",
+      "description": "man holds a yellow 'Full House' Jesse toy box",
+      "participants": [
+        "dark-suit man",
+        "blonde-woman"
+      ],
+      "actor": "dark-suit man",
+      "object": "yellow 'Full House' Jesse toy box",
+      "segment_boundary": "middle",
+      "segment_label": "Game with numbered screens",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 105,
+      "start_time": "03:45",
+      "end_time": "04:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "kiss_object",
+      "description": "man kisses the yellow 'Full House' Jesse toy box",
+      "participants": [
+        "dark-suit man",
+        "blonde-woman"
+      ],
+      "actor": "dark-suit man",
+      "object": "yellow 'Full House' Jesse toy box",
+      "segment_boundary": "middle",
+      "segment_label": "Game with numbered screens",
+      "continuation_hint": "complete",
+      "event_index": 106,
+      "start_time": "03:52",
+      "end_time": "03:56",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    }
+  ]
+}

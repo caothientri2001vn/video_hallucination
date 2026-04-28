@@ -1,0 +1,813 @@
+{
+  "question": "Did the woman win because the man revealed the wrong color last?",
+  "pred": "The video shows a game where the players must reveal a small colored circle that matches the large circle in the central column. The woman (pink-sweater woman) and the man (black-hoodie man) take turns. In the final turn of the game, the man lifts a cup to reveal a small red circle (event 32), which matches the large red circle in the column. However, the woman then lifts a cup to reveal a small pink circle (event 26), which matches the large pink circle at the top of the column, completing the set. The man's final action is not a \"wrong color\" reveal that causes a loss; rather, the woman completes the final match herself. The man's reaction of putting his hand to his forehead (event 36) and the woman's celebration (event 37) indicate her victory, but it was achieved by her own correct reveal, not his mistake.\n\nEvidence: Event 32 shows the man correctly revealing a red circle, and event 26 shows the woman correctly revealing the final pink circle to win.\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": {
+    "subtype_counts": {
+      "place": 7,
+      "reveal": 7,
+      "react": 7,
+      "lift": 4,
+      "cover": 3,
+      "reach": 2,
+      "move": 2,
+      "listen": 1,
+      "point": 1,
+      "object_move": 1,
+      "hand_raise": 1,
+      "drink": 1
+    },
+    "events": [
+      {
+        "event_type": "place",
+        "description": "black-hoodie man places white cup on the leftmost position beside the colored circle column",
+        "participants": [
+          "black-hoodie man"
+        ],
+        "actor": "black-hoodie man",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:02",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "reveal",
+        "description": "black-hoodie man lifts leftmost white cup to reveal small blue circle beside the blue circle in the column",
+        "participants": [
+          "black-hoodie man"
+        ],
+        "actor": "black-hoodie man",
+        "cover": "white cup",
+        "hidden": "blue circle",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 2,
+        "start_time": "00:02",
+        "end_time": "00:04",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "react",
+        "description": "pink-sweater woman reacts with surprise to the revealed blue circle",
+        "participants": [
+          "pink-sweater woman"
+        ],
+        "actor": "pink-sweater woman",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 3,
+        "start_time": "00:04",
+        "end_time": "00:06",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "place",
+        "description": "black-hoodie man places white cup on the second position from the left beside the colored circle column",
+        "participants": [
+          "black-hoodie man"
+        ],
+        "actor": "black-hoodie man",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 4,
+        "start_time": "00:06",
+        "end_time": "00:08",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "reveal",
+        "description": "black-hoodie man lifts second white cup from the left to reveal small yellow circle beside the yellow circle in the column",
+        "participants": [
+          "black-hoodie man"
+        ],
+        "actor": "black-hoodie man",
+        "cover": "white cup",
+        "hidden": "yellow circle",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 5,
+        "start_time": "00:08",
+        "end_time": "00:10",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "place",
+        "description": "pink-sweater woman places white cup on the rightmost position beside the colored circle column",
+        "participants": [
+          "pink-sweater woman"
+        ],
+        "actor": "pink-sweater woman",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 6,
+        "start_time": "00:10",
+        "end_time": "00:12",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "reveal",
+        "description": "pink-sweater woman lifts rightmost white cup to reveal small yellow circle beside the yellow circle in the column",
+        "participants": [
+          "pink-sweater woman"
+        ],
+        "actor": "pink-sweater woman",
+        "cover": "white cup",
+        "hidden": "yellow circle",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 7,
+        "start_time": "00:12",
+        "end_time": "00:14",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "reach",
+        "description": "pink-sweater woman reaches toward black-hoodie man without making contact",
+        "participants": [
+          "pink-sweater woman",
+          "black-hoodie man"
+        ],
+        "actor": "pink-sweater woman",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 8,
+        "start_time": "00:14",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "listen",
+        "description": "holds a white cup to her ear as if listening for something",
+        "participants": [
+          "bearded man in black shirt",
+          "woman in pink top"
+        ],
+        "actor": "woman in pink top",
+        "object": "white cup",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 9,
+        "start_time": "00:15",
+        "end_time": "00:21",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "place",
+        "description": "places the white cup on the 4th circle from the top in the vertical line (red circle), covering it",
+        "participants": [
+          "bearded man in black shirt",
+          "woman in pink top"
+        ],
+        "actor": "woman in pink top",
+        "object": "white cup",
+        "cover": "white cup",
+        "hidden": "red circle",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 10,
+        "start_time": "00:21",
+        "end_time": "00:25",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "reveal",
+        "description": "lifts the white cup from the 4th circle position to reveal a small red circle underneath",
+        "participants": [
+          "bearded man in black shirt",
+          "woman in pink top"
+        ],
+        "actor": "woman in pink top",
+        "object": "white cup",
+        "cover": "white cup",
+        "hidden": "red circle",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 11,
+        "start_time": "00:25",
+        "end_time": "00:28",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "react",
+        "description": "reacts with an expression of surprise after revealing the small red circle",
+        "participants": [
+          "bearded man in black shirt",
+          "woman in pink top"
+        ],
+        "actor": "woman in pink top",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 12,
+        "start_time": "00:25",
+        "end_time": "00:28",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "react",
+        "description": "smiles while watching the woman reveal the small red circle",
+        "participants": [
+          "bearded man in black shirt",
+          "woman in pink top"
+        ],
+        "actor": "bearded man in black shirt",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 13,
+        "start_time": "00:25",
+        "end_time": "00:28",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "cover",
+        "description": "places the white cup back down on the small red circle at the 4th circle position",
+        "participants": [
+          "bearded man in black shirt",
+          "woman in pink top"
+        ],
+        "actor": "woman in pink top",
+        "object": "white cup",
+        "cover": "white cup",
+        "hidden": "red circle",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 14,
+        "start_time": "00:28",
+        "end_time": "00:30",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "reach",
+        "description": "reaches for a white cup from the left-side group of cups on the table",
+        "participants": [
+          "bearded man in black shirt",
+          "woman in pink top"
+        ],
+        "actor": "bearded man in black shirt",
+        "object": "white cup",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 15,
+        "start_time": "00:28",
+        "end_time": "00:30",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "place",
+        "description": "pink-shirt woman places white cup on right side of table covering a blue circle",
+        "participants": [
+          "black-shirt man",
+          "pink-shirt woman"
+        ],
+        "actor": "pink-shirt woman",
+        "object": "white cup",
+        "cover": "white cup",
+        "hidden": "blue circle",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 16,
+        "start_time": "00:30",
+        "end_time": "00:32",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "lift",
+        "description": "pink-shirt woman lifts white cup from right side of table revealing a blue circle",
+        "participants": [
+          "black-shirt man",
+          "pink-shirt woman"
+        ],
+        "actor": "pink-shirt woman",
+        "object": "white cup",
+        "cover": "white cup",
+        "hidden": "blue circle",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 17,
+        "start_time": "00:33",
+        "end_time": "00:34",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "place",
+        "description": "pink-shirt woman places white cup back on right side of table covering blue circle",
+        "participants": [
+          "black-shirt man",
+          "pink-shirt woman"
+        ],
+        "actor": "pink-shirt woman",
+        "object": "white cup",
+        "cover": "white cup",
+        "hidden": "blue circle",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 18,
+        "start_time": "00:35",
+        "end_time": "00:36",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "move",
+        "description": "black-shirt man moves white cup on left side of table",
+        "participants": [
+          "black-shirt man",
+          "pink-shirt woman"
+        ],
+        "actor": "black-shirt man",
+        "object": "white cup",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 19,
+        "start_time": "00:37",
+        "end_time": "00:39",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "lift",
+        "description": "black-shirt man lifts white cup from left side of table and looks underneath",
+        "participants": [
+          "black-shirt man",
+          "pink-shirt woman"
+        ],
+        "actor": "black-shirt man",
+        "object": "white cup",
+        "cover": "white cup",
+        "hidden": "uncertain: red circle",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 20,
+        "start_time": "00:40",
+        "end_time": "00:43",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "react",
+        "description": "both laugh and react to the revealed circles",
+        "participants": [
+          "black-shirt man",
+          "pink-shirt woman"
+        ],
+        "actor": "both",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 21,
+        "start_time": "00:44",
+        "end_time": "00:45",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "lift",
+        "description": "woman lifts white cup from the right side of the table",
+        "participants": [
+          "bearded man in black shirt",
+          "woman in pink sweater"
+        ],
+        "actor": "woman in pink sweater",
+        "cover": "white cup",
+        "hidden": "purple circle",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 22,
+        "start_time": "00:45",
+        "end_time": "00:48",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "reveal",
+        "description": "woman holds white cup up showing purple circle underneath",
+        "participants": [
+          "bearded man in black shirt",
+          "woman in pink sweater"
+        ],
+        "actor": "woman in pink sweater",
+        "cover": "white cup",
+        "hidden": "purple circle",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 23,
+        "start_time": "00:48",
+        "end_time": "00:51",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "place",
+        "description": "woman places white cup back down on the right side of the table",
+        "participants": [
+          "bearded man in black shirt",
+          "woman in pink sweater"
+        ],
+        "actor": "woman in pink sweater",
+        "cover": "white cup",
+        "hidden": "purple circle",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 24,
+        "start_time": "00:51",
+        "end_time": "00:54",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "lift",
+        "description": "man lifts white cup from the left side of the table",
+        "participants": [
+          "bearded man in black shirt",
+          "woman in pink sweater"
+        ],
+        "actor": "bearded man in black shirt",
+        "cover": "white cup",
+        "hidden": "pink circle",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 25,
+        "start_time": "00:54",
+        "end_time": "00:57",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "reveal",
+        "description": "man holds white cup up showing pink circle underneath",
+        "participants": [
+          "bearded man in black shirt",
+          "woman in pink sweater"
+        ],
+        "actor": "bearded man in black shirt",
+        "cover": "white cup",
+        "hidden": "pink circle",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 26,
+        "start_time": "00:57",
+        "end_time": "01:00",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "react",
+        "description": "woman shows surprised expression while lifting cup",
+        "participants": [
+          "woman in pink sweater"
+        ],
+        "actor": "woman in pink sweater",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 27,
+        "start_time": "00:45",
+        "end_time": "00:50",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "react",
+        "description": "bearded man smiles while watching the revealed pink circle",
+        "participants": [
+          "bearded man in black shirt"
+        ],
+        "actor": "bearded man in black shirt",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 28,
+        "start_time": "00:55",
+        "end_time": "01:00",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "cover",
+        "description": "The woman in the pink sweater places a white cup over the left small green circle",
+        "participants": [
+          "black-shirt man",
+          "pink-sweater woman"
+        ],
+        "actor": "pink-sweater woman",
+        "cover": "white cup",
+        "hidden": "green circle",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 29,
+        "start_time": "01:00",
+        "end_time": "01:02",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "move",
+        "description": "The man in the black shirt takes the white cup and moves it to a new position on the table",
+        "participants": [
+          "black-shirt man",
+          "pink-sweater woman"
+        ],
+        "actor": "black-shirt man",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 30,
+        "start_time": "01:03",
+        "end_time": "01:05",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "reveal",
+        "description": "The man in the black shirt lifts the white cup to reveal a green circle underneath",
+        "participants": [
+          "black-shirt man",
+          "pink-sweater woman"
+        ],
+        "actor": "black-shirt man",
+        "cover": "white cup",
+        "hidden": "green circle",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 31,
+        "start_time": "01:06",
+        "end_time": "01:08",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "cover",
+        "description": "The man in the black shirt places the white cup over the left small red circle",
+        "participants": [
+          "black-shirt man",
+          "pink-sweater woman"
+        ],
+        "actor": "black-shirt man",
+        "cover": "white cup",
+        "hidden": "red circle",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 32,
+        "start_time": "01:09",
+        "end_time": "01:11",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "react",
+        "description": "The woman in the pink sweater shows surprise with her mouth open",
+        "participants": [
+          "black-shirt man",
+          "pink-sweater woman"
+        ],
+        "actor": "pink-sweater woman",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 33,
+        "start_time": "01:11",
+        "end_time": "01:13",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "point",
+        "description": "The man in the black shirt points toward the left side of the table with his right hand",
+        "participants": [
+          "black-shirt man",
+          "pink-sweater woman"
+        ],
+        "actor": "black-shirt man",
+        "segment_boundary": "middle",
+        "segment_label": "Cup and Circle Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 34,
+        "start_time": "01:13",
+        "end_time": "01:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "object_move",
+        "description": "woman moves white cup from left side of table to right side",
+        "participants": [
+          "black-shirt man",
+          "pink-shirt woman"
+        ],
+        "actor": "pink-shirt woman",
+        "object": "white cup",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 35,
+        "start_time": "01:15",
+        "end_time": "01:19",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "man places left hand on forehead",
+        "participants": [
+          "black-shirt man",
+          "pink-shirt woman"
+        ],
+        "actor": "black-shirt man",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 36,
+        "start_time": "01:20",
+        "end_time": "01:22",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      },
+      {
+        "event_type": "drink",
+        "description": "woman brings white cup to her mouth",
+        "participants": [
+          "black-shirt man",
+          "pink-shirt woman"
+        ],
+        "actor": "pink-shirt woman",
+        "object": "white cup",
+        "segment_boundary": "middle",
+        "segment_label": "Cup Game",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 37,
+        "start_time": "01:22",
+        "end_time": "01:23",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Cup and Circle Game"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Cup and Circle Game",
+        "event_index_range": [
+          1,
+          37
+        ]
+      }
+    ]
+  }
+}

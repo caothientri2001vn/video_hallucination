@@ -1,0 +1,211 @@
+{
+  "question": "In the video, did the team in white fail to score any points?",
+  "top_k": 10,
+  "indices": [
+    12,
+    32,
+    43,
+    49,
+    66,
+    86,
+    105
+  ],
+  "events": [
+    {
+      "event_type": "scoreboard_update",
+      "description": "the scoreboard updates Japan's score from 9 to 10",
+      "participants": [],
+      "object_before": "9",
+      "object_after": "10",
+      "on_screen_text": [
+        {
+          "text": "JPN 2 10",
+          "location": "scoreboard"
+        },
+        {
+          "text": "CAN 2 9",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Volleyball Match",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 12,
+      "start_time": "00:16",
+      "end_time": "00:17",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Volleyball Match"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "The scoreboard updates to show Japan leading Canada 11 to 9 in the current set.",
+      "participants": [],
+      "on_screen_text": [
+        {
+          "text": "JPN 2 11",
+          "location": "scoreboard"
+        },
+        {
+          "text": "CAN 2 9",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Volleyball Match",
+      "continuation_hint": "middle",
+      "event_index": 32,
+      "start_time": "00:51",
+      "end_time": "00:53",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Volleyball Match"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "The on-screen scoreboard shows Japan leading Canada 11 to 9 in the current set.",
+      "participants": [],
+      "on_screen_text": [
+        {
+          "text": "JPN 2 11",
+          "location": "scoreboard"
+        },
+        {
+          "text": "CAN 2 9",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Volleyball Match",
+      "continuation_hint": "middle",
+      "event_index": 43,
+      "start_time": "01:10",
+      "end_time": "01:12",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Volleyball Match"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "The scoreboard updates to show Japan leading 12-9 in the set.",
+      "participants": [],
+      "object_before": "JPN 2 11",
+      "object_after": "JPN 2 12",
+      "on_screen_text": [
+        {
+          "text": "JPN 2 12",
+          "location": "scoreboard"
+        },
+        {
+          "text": "CAN 2 9",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Volleyball Match",
+      "continuation_hint": "complete",
+      "event_index": 49,
+      "start_time": "01:23",
+      "end_time": "01:25",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Volleyball Match"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "the scoreboard updates to show Japan leading 13 to 9 in the set",
+      "participants": [],
+      "on_screen_text": [
+        {
+          "text": "JPN 2 13",
+          "location": "scoreboard"
+        },
+        {
+          "text": "CAN 2 9",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Volleyball Match",
+      "continuation_hint": "complete",
+      "event_index": 66,
+      "start_time": "01:52",
+      "end_time": "01:54",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Volleyball Match"
+    },
+    {
+      "event_type": "scoreboard_update",
+      "description": "The scoreboard updates to show Japan leading 14 to 9 in the set.",
+      "participants": [],
+      "on_screen_text": [
+        {
+          "text": "JPN 2 14",
+          "location": "scoreboard"
+        },
+        {
+          "text": "CAN 2 9",
+          "location": "scoreboard"
+        },
+        {
+          "text": "MATCH POINT",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Volleyball Match",
+      "continuation_hint": "complete",
+      "event_index": 86,
+      "start_time": "02:37",
+      "end_time": "02:39",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Volleyball Match"
+    },
+    {
+      "event_type": "game",
+      "description": "The ball hits the floor on the white-shirt team's side, ending the rally.",
+      "participants": [
+        "white-shirt players",
+        "red-shirt players"
+      ],
+      "actor": "white-shirt players",
+      "object": "volleyball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "JPN 3 15",
+          "location": "scoreboard"
+        },
+        {
+          "text": "CAN 2 9",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Volleyball Match",
+      "continuation_hint": "complete",
+      "event_index": 105,
+      "start_time": "03:20",
+      "end_time": "03:21",
+      "sub_events": [],
+      "subtype_order": 25,
+      "subtype_total": 25,
+      "round_index": 1,
+      "segment_label_resolved": "Volleyball Match"
+    }
+  ]
+}

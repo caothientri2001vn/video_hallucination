@@ -1,0 +1,114 @@
+{
+  "question": "Does the player with red shirt, red pant number 27 score the goal?",
+  "pred": "Evidence: The Context states, \"The ball enters the net after being shot by the Liverpool player\" with participants including \"red-shirt Liverpool player (27)\" and outcome \"scored\". Additionally, it notes, \"The Liverpool player who scored the goal (27) raises his arms in celebration\".\n\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "goal",
+      "description": "The ball enters the net after being shot by the Liverpool player",
+      "participants": [
+        "red-shirt Liverpool player (27)",
+        "yellow-shirt Barcelona goalkeeper",
+        "white and orange soccer ball"
+      ],
+      "actor": "white and orange soccer ball",
+      "object": "white and orange soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "TARAFITAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 8,
+      "start_time": "00:15",
+      "end_time": "00:18",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match - Corner Kick"
+    },
+    {
+      "event_type": "goalkeeping",
+      "description": "The Barcelona goalkeeper dives to save the shot but fails to stop the ball",
+      "participants": [
+        "yellow-shirt Barcelona goalkeeper"
+      ],
+      "actor": "yellow-shirt Barcelona goalkeeper",
+      "object": "white and orange soccer ball",
+      "outcome": "miss",
+      "on_screen_text": [
+        {
+          "text": "TARAFITAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 9,
+      "start_time": "00:15",
+      "end_time": "00:17",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match - Corner Kick"
+    },
+    {
+      "event_type": "celebration",
+      "description": "The Liverpool player who scored the goal (27) raises his arms in celebration",
+      "participants": [
+        "red-shirt Liverpool player (27)"
+      ],
+      "actor": "red-shirt Liverpool player (27)",
+      "on_screen_text": [
+        {
+          "text": "TARAFITAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 10,
+      "start_time": "00:18",
+      "end_time": "00:20",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match - Corner Kick"
+    },
+    {
+      "event_type": "celebration",
+      "description": "Multiple Liverpool players embrace each other in celebration of the goal",
+      "participants": [
+        "red-shirt Liverpool players"
+      ],
+      "actor": "red-shirt Liverpool players",
+      "on_screen_text": [
+        {
+          "text": "TARAFITAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 11,
+      "start_time": "00:20",
+      "end_time": "00:22",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match - Corner Kick"
+    }
+  ]
+}

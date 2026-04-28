@@ -1,0 +1,232 @@
+{
+  "question": "Is the number 4 statue a cacke?",
+  "pred": "The video shows a competition where contestants must identify which of several identical-looking objects is actually a cake. In this segment, there are four pedestals numbered 1 through 4, each holding a tombstone-shaped statue.\n\n1.  **Statue 3:** The man in the black suit (RIGHT player) cuts into the statue on pedestal 3 at approximately 01:48 (Event 54). The reveal at 02:30 (Event 76) and subsequent frames clearly show the interior of the statue is made of layered cake.\n2.  **Statue 4:** While the statue on pedestal 4 is visible throughout the segment (e.g., frames at 01:00, 02:22), there is no event in the Context or any visual evidence in the frames showing it being cut or revealed as a cake. The only statue confirmed as cake in this sequence is statue 3.\n\nEvidence: frames at ~02:30 show the statue on pedestal 3 being cut to reveal cake layers, while statue 4 remains uncut.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "statue_display",
+      "description": "Close-up of pedestal with number 3 and statue on top",
+      "participants": [],
+      "actor": "",
+      "object": "pedestal",
+      "on_screen_text": [
+        {
+          "text": "3",
+          "location": "pedestal"
+        },
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Competition Round",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 25,
+      "start_time": "00:43",
+      "end_time": "00:45",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake? Halloween"
+    },
+    {
+      "event_type": "visual_state_change",
+      "description": "The number on the pedestal changes from 3 to 4",
+      "participants": [],
+      "actor": "pedestal",
+      "object_before": "3",
+      "object_after": "4",
+      "on_screen_text": [
+        {
+          "text": "3",
+          "location": "pedestal"
+        },
+        {
+          "text": "4",
+          "location": "pedestal"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Pedestal Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 26,
+      "start_time": "00:45",
+      "end_time": "00:48",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake? Halloween"
+    },
+    {
+      "event_type": "graphic",
+      "description": "Wide shot shows all four numbered pedestals (1, 2, 3, 4) on a circular stage with blue background",
+      "participants": [],
+      "actor": "stage",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "pedestal"
+        },
+        {
+          "text": "2",
+          "location": "pedestal"
+        },
+        {
+          "text": "3",
+          "location": "pedestal"
+        },
+        {
+          "text": "4",
+          "location": "pedestal"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Pedestal Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 31,
+      "start_time": "00:57",
+      "end_time": "01:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake? Halloween"
+    },
+    {
+      "event_type": "point",
+      "description": "Man in black tuxedo points at the small green figure at the base of the tombstone statue on podium 3 with his right index finger",
+      "participants": [
+        "man in black tuxedo"
+      ],
+      "actor": "man in black tuxedo",
+      "segment_boundary": "middle",
+      "segment_label": "Tombstone Comparison",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "event_index": 40,
+      "start_time": "01:18",
+      "end_time": "01:21",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake? Halloween"
+    },
+    {
+      "event_type": "cut",
+      "description": "The man in black suit brings down the knife onto the middle tombstone structure (labeled 3)",
+      "participants": [
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "object": "knife",
+      "on_screen_text": [
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        },
+        {
+          "text": "3",
+          "location": "podium"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Tombstone Cutting Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 54,
+      "start_time": "01:48",
+      "end_time": "01:52",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake? Halloween"
+    },
+    {
+      "event_type": "point",
+      "description": "the black-suited man points with his right hand toward the leftmost pedestal labeled '2'",
+      "participants": [
+        "black-suited man"
+      ],
+      "actor": "black-suited man",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "2",
+          "location": "podium"
+        },
+        {
+          "text": "3",
+          "location": "podium"
+        },
+        {
+          "text": "4",
+          "location": "podium"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 74,
+      "start_time": "02:22",
+      "end_time": "02:28",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake? Halloween"
+    },
+    {
+      "event_type": "reveal",
+      "description": "A person in a black suit cuts into a tombstone-shaped structure with a knife, revealing it is made of cake with visible layers",
+      "participants": [
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "object": "tombstone-shaped cake",
+      "object_before": "gray tombstone structure",
+      "object_after": "layered cake",
+      "object_before_pattern": "RIP engraving with grim reaper figure",
+      "segment_boundary": "middle",
+      "segment_label": "Tombstone Cake Reveal",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 76,
+      "start_time": "02:30",
+      "end_time": "02:36",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake? Halloween"
+    },
+    {
+      "event_type": "cut",
+      "description": "The person continues cutting through the cake structure, revealing more of the layered cake interior",
+      "participants": [
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "object": "cake layers",
+      "segment_boundary": "middle",
+      "segment_label": "Tombstone Cake Reveal",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 77,
+      "start_time": "02:36",
+      "end_time": "02:40",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake? Halloween"
+    }
+  ]
+}

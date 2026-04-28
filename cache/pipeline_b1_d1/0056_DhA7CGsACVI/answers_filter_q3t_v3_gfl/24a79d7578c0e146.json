@@ -1,0 +1,114 @@
+{
+  "question": "Was the lipstick inside the box opened by the man on the left?",
+  "pred": "The video features a game where two players take turns opening numbered boxes. According to the alias map, the man on the left is the \"brown-suit man\" (also described as \"blue-suit man\" in some events, but visually positioned on the left).\n\n1.  At approximately 02:25, the man on the left (brown-suit man) opens a small golden object (lipstick tube) that he had in front of him, revealing a light-colored product inside.\n2.  At 04:30, the man on the left (gray-suit man/brown-suit man) opens a white box on the table.\n3.  At 04:52, the man on the left (blue-suited man) opens Box 1.\n4.  At 05:15, the man on the left opens another box (unnamed in Context) which contains a red-headed doll/toy.\n\nThe lipstick was not inside any of the boxes opened by the man on the left; it was a separate small golden object he held and opened independently of the numbered boxes. The boxes he opened contained other items, such as the doll.\n\nEvidence: frames at ~02:25 show the man on the left opening a small golden lipstick tube that was already on the table, not inside a box.\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "open_object",
+      "description": "gray-suited person opens the small golden object revealing a light-colored product inside",
+      "participants": [
+        "gray-suited person"
+      ],
+      "actor": "gray-suited person",
+      "object_before": "closed golden object",
+      "object_after": "open golden object",
+      "segment_boundary": "middle",
+      "segment_label": "Object Exchange",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 65,
+      "start_time": "02:25",
+      "end_time": "02:30",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "hold_object",
+      "description": "The hand of the man in the dark suit holds and displays a lipstick to the camera, with slight movements of the hand.",
+      "participants": [
+        "dark-suit man"
+      ],
+      "actor": "dark-suit man",
+      "object": "gold lipstick tube",
+      "segment_boundary": "middle",
+      "segment_label": "Lipstick Display Segment",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 66,
+      "start_time": "02:30",
+      "end_time": "02:33",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "man in gray suit opens the white box on the right side of the table",
+      "participants": [
+        "blue-suit man",
+        "gray-suit man"
+      ],
+      "actor": "gray-suit man",
+      "object": "white box",
+      "cover": "white box",
+      "hidden": "uncertain",
+      "segment_boundary": "middle",
+      "segment_label": "Box Opening Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 107,
+      "start_time": "04:30",
+      "end_time": "04:34",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "lift",
+      "description": "the blue-suited man lifts the leftmost box (labeled 1) from the top shelf",
+      "participants": [
+        "blue-suited man",
+        "gray-suited man"
+      ],
+      "actor": "blue-suited man",
+      "object": "box labeled 1",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 112,
+      "start_time": "04:45",
+      "end_time": "04:49",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "the blue-suited man opens the box labeled 1",
+      "participants": [
+        "blue-suited man",
+        "gray-suited man"
+      ],
+      "actor": "blue-suited man",
+      "object": "box labeled 1",
+      "object_before": "closed box",
+      "object_after": "open box",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 114,
+      "start_time": "04:52",
+      "end_time": "04:55",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    }
+  ]
+}

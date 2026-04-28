@@ -1,0 +1,317 @@
+{
+  "question": "Did exactly two goals occur between France's two misses?",
+  "top_k": 15,
+  "indices": [
+    124,
+    125,
+    133,
+    134,
+    143,
+    145,
+    155,
+    156,
+    166,
+    192,
+    193
+  ],
+  "events": [
+    {
+      "event_type": "penalty_kick",
+      "description": "blue-jersey player #12 runs up to take a penalty kick while goalkeeper stands ready in goal",
+      "participants": [
+        "blue-jersey player",
+        "goalkeeper",
+        "referee"
+      ],
+      "actor": "blue-jersey player",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "start",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 124,
+      "start_time": "05:00",
+      "end_time": "05:03",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "goal",
+      "description": "the white soccer ball enters the net as the goalkeeper dives to the left",
+      "participants": [
+        "goalkeeper"
+      ],
+      "actor": "none",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 125,
+      "start_time": "05:03",
+      "end_time": "05:04",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "kicker in dark uniform runs toward and strikes the soccer ball",
+      "participants": [
+        "kicker in dark uniform",
+        "goalkeeper in green uniform"
+      ],
+      "actor": "kicker in dark uniform",
+      "object": "white soccer ball",
+      "object_before": "",
+      "object_after": "",
+      "outcome": "",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 133,
+      "start_time": "05:19",
+      "end_time": "05:21",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "goalkeeper in green uniform dives to his right attempting to save the penalty kick",
+      "participants": [
+        "goalkeeper in green uniform"
+      ],
+      "actor": "goalkeeper in green uniform",
+      "object": "white soccer ball",
+      "object_before": "",
+      "object_after": "",
+      "outcome": "miss",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 134,
+      "start_time": "05:20",
+      "end_time": "05:23",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "kick",
+      "description": "player in blue and white striped jersey runs up and strikes the soccer ball for the penalty kick",
+      "participants": [
+        "blue and white striped jersey player"
+      ],
+      "actor": "blue and white striped jersey player",
+      "object": "soccer ball",
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "event_index": 143,
+      "start_time": "05:38",
+      "end_time": "05:40",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 8,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "react",
+      "description": "goalkeeper in yellow jersey stands and looks toward the field after making the save",
+      "participants": [
+        "yellow jersey goalkeeper"
+      ],
+      "actor": "yellow jersey goalkeeper",
+      "segment_boundary": "end",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "event_index": 145,
+      "start_time": "05:42",
+      "end_time": "05:45",
+      "sub_events": [],
+      "subtype_order": 16,
+      "subtype_total": 16,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "run",
+      "description": "Two players wearing yellow FIFA World Cup vests run across the field while embracing",
+      "participants": [
+        "player with yellow vest",
+        "player with yellow vest"
+      ],
+      "actor": "player with yellow vest",
+      "object": "",
+      "object_before": "",
+      "object_after": "",
+      "on_screen_text": [
+        {
+          "text": "FIFA WORLD CUP Qatar 2022",
+          "location": "other"
+        },
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match Celebration",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 155,
+      "start_time": "06:10",
+      "end_time": "06:13",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 5,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "group_celebration",
+      "description": "Multiple players gather in a pile formation at the center circle of the soccer field while celebrating",
+      "participants": [
+        "multiple players in white jerseys",
+        "multiple players in blue jerseys"
+      ],
+      "actor": "multiple players",
+      "object": "",
+      "object_before": "",
+      "object_after": "",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Soccer Match Celebration",
+      "continuation_hint": "complete",
+      "event_index": 156,
+      "start_time": "06:13",
+      "end_time": "06:15",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "hug",
+      "description": "Players in white and blue striped jerseys along with players in blue and yellow training bibs continue to embrace in celebration",
+      "participants": [
+        "white and blue striped jersey players",
+        "blue and yellow training bib players"
+      ],
+      "actor": "white and blue striped jersey players and blue and yellow training bib players",
+      "segment_boundary": "end",
+      "segment_label": "Soccer Match Conclusion",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 166,
+      "start_time": "06:36",
+      "end_time": "06:39",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 14,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "emotional_reaction",
+      "description": "Player in dark blue jersey places hand over face while looking toward the field",
+      "participants": [
+        "player in dark blue jersey"
+      ],
+      "actor": "player in dark blue jersey",
+      "on_screen_text": [
+        {
+          "text": "MBAPPE",
+          "location": "jersey"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Post-match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 192,
+      "start_time": "07:08",
+      "end_time": "07:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "look",
+      "description": "Player in dark blue jersey turns head while keeping hand near face",
+      "participants": [
+        "player in dark blue jersey"
+      ],
+      "actor": "player in dark blue jersey",
+      "on_screen_text": [
+        {
+          "text": "MBAPPE",
+          "location": "jersey"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Post-match",
+      "continuation_hint": "complete",
+      "event_index": 193,
+      "start_time": "07:10",
+      "end_time": "07:15",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

@@ -1,0 +1,961 @@
+{
+  "question": "Did the man in the red t-shirt start playing after the man in the red hoodie?",
+  "pred": "The question asks if the man in the red t-shirt started playing after the man in the red hoodie. \n\nAccording to the Context, the red-hoodie man begins active participation early in the video with event 6 (\"the red-hoodie man throws the red balloon into the air\") at 00:01-00:02. He continues with multiple game actions throughout the video (lifting cups, placing cups, catching the balloon).\n\nThe man in the red t-shirt (referred to as \"red-shirt man\" in the Context) is listed as a participant in early events but is only shown actively participating in event 43 (\"The tan-shirt man reacts with surprise\") at 00:22-00:23, which appears to be the red-shirt man reacting rather than performing core game mechanics. \n\nThe red-shirt man's only documented active engagement (beyond being present) occurs much later than the red-hoodie man's first game action. While the red-shirt man was present from the beginning, the evidence shows he began actively participating in the game mechanics after the red-hoodie man had already been playing for some time.\n\nEvidence: The red-hoodie man starts throwing the balloon in event 6 (00:01-00:02), while the red-shirt man's first documented active participation is event 43 (00:22-00:23).\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "place": 11,
+      "throw": 9,
+      "lift": 8,
+      "look": 6,
+      "catch": 6,
+      "celebration": 2,
+      "react": 2
+    },
+    "events": [
+      {
+        "event_type": "look",
+        "description": "the blue-shirt woman (left) looks at the blue balloon",
+        "participants": [
+          "blue-shirt woman",
+          "blue-shirt woman (center)",
+          "red-shirt man",
+          "red-hoodie man"
+        ],
+        "actor": "blue-shirt woman",
+        "object": "blue balloon",
+        "on_screen_text": [],
+        "segment_boundary": "start",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:01",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "look",
+        "description": "the blue-shirt woman (center) looks at the blue balloon",
+        "participants": [
+          "blue-shirt woman",
+          "blue-shirt woman (center)",
+          "red-shirt man",
+          "red-hoodie man"
+        ],
+        "actor": "blue-shirt woman (center)",
+        "object": "blue balloon",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 2,
+        "start_time": "00:00",
+        "end_time": "00:01",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "look",
+        "description": "the red-shirt man looks at the red balloon",
+        "participants": [
+          "blue-shirt woman",
+          "blue-shirt woman (center)",
+          "red-shirt man",
+          "red-hoodie man"
+        ],
+        "actor": "red-shirt man",
+        "object": "red balloon",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 3,
+        "start_time": "00:00",
+        "end_time": "00:01",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "look",
+        "description": "the red-hoodie man looks at the red balloon",
+        "participants": [
+          "blue-shirt woman",
+          "blue-shirt woman (center)",
+          "red-shirt man",
+          "red-hoodie man"
+        ],
+        "actor": "red-hoodie man",
+        "object": "red balloon",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 4,
+        "start_time": "00:00",
+        "end_time": "00:01",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "throw",
+        "description": "the blue-shirt woman (center) throws the blue balloon into the air",
+        "participants": [
+          "blue-shirt woman (center)"
+        ],
+        "actor": "blue-shirt woman (center)",
+        "object": "blue balloon",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 5,
+        "start_time": "00:01",
+        "end_time": "00:02",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "throw",
+        "description": "the red-hoodie man throws the red balloon into the air",
+        "participants": [
+          "red-hoodie man"
+        ],
+        "actor": "red-hoodie man",
+        "object": "red balloon",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 6,
+        "start_time": "00:01",
+        "end_time": "00:02",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "lift",
+        "description": "the blue-shirt woman (center) lifts the leftmost blue cup from the front row",
+        "participants": [
+          "blue-shirt woman (center)"
+        ],
+        "actor": "blue-shirt woman (center)",
+        "object": "blue cup",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 7,
+        "start_time": "00:02",
+        "end_time": "00:03",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "lift",
+        "description": "the red-hoodie man lifts the rightmost red cup from the front row",
+        "participants": [
+          "red-hoodie man"
+        ],
+        "actor": "red-hoodie man",
+        "object": "red cup",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 8,
+        "start_time": "00:02",
+        "end_time": "00:03",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "place",
+        "description": "the blue-shirt woman (center) places the blue cup onto the second blue cup from the left in the front row",
+        "participants": [
+          "blue-shirt woman (center)"
+        ],
+        "actor": "blue-shirt woman (center)",
+        "object": "blue cup",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 9,
+        "start_time": "00:03",
+        "end_time": "00:04",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 11,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "place",
+        "description": "the red-hoodie man places the red cup onto the second red cup from the right in the front row",
+        "participants": [
+          "red-hoodie man"
+        ],
+        "actor": "red-hoodie man",
+        "object": "red cup",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 10,
+        "start_time": "00:03",
+        "end_time": "00:04",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 11,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "catch",
+        "description": "the blue-shirt woman (center) catches the blue balloon",
+        "participants": [
+          "blue-shirt woman (center)"
+        ],
+        "actor": "blue-shirt woman (center)",
+        "object": "blue balloon",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 11,
+        "start_time": "00:04",
+        "end_time": "00:05",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "catch",
+        "description": "the red-hoodie man catches the red balloon",
+        "participants": [
+          "red-hoodie man"
+        ],
+        "actor": "red-hoodie man",
+        "object": "red balloon",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 12,
+        "start_time": "00:04",
+        "end_time": "00:05",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "throw",
+        "description": "the blue-shirt woman (center) throws the blue balloon into the air again",
+        "participants": [
+          "blue-shirt woman (center)"
+        ],
+        "actor": "blue-shirt woman (center)",
+        "object": "blue balloon",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 13,
+        "start_time": "00:05",
+        "end_time": "00:06",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "throw",
+        "description": "the red-hoodie man throws the red balloon into the air again",
+        "participants": [
+          "red-hoodie man"
+        ],
+        "actor": "red-hoodie man",
+        "object": "red balloon",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 14,
+        "start_time": "00:05",
+        "end_time": "00:06",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "lift",
+        "description": "the blue-shirt woman (center) lifts the stack of two blue cups",
+        "participants": [
+          "blue-shirt woman (center)"
+        ],
+        "actor": "blue-shirt woman (center)",
+        "object": "blue cups",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 15,
+        "start_time": "00:06",
+        "end_time": "00:07",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "lift",
+        "description": "the red-hoodie man lifts the stack of two red cups",
+        "participants": [
+          "red-hoodie man"
+        ],
+        "actor": "red-hoodie man",
+        "object": "red cups",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 16,
+        "start_time": "00:06",
+        "end_time": "00:07",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "place",
+        "description": "the blue-shirt woman (center) places the stack of blue cups onto the third blue cup from the left in the front row",
+        "participants": [
+          "blue-shirt woman (center)"
+        ],
+        "actor": "blue-shirt woman (center)",
+        "object": "blue cups",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 17,
+        "start_time": "00:07",
+        "end_time": "00:08",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 11,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "place",
+        "description": "the red-hoodie man places the stack of red cups onto the third red cup from the right in the front row",
+        "participants": [
+          "red-hoodie man"
+        ],
+        "actor": "red-hoodie man",
+        "object": "red cups",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 18,
+        "start_time": "00:07",
+        "end_time": "00:08",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 11,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "catch",
+        "description": "the blue-shirt woman (center) catches the blue balloon again",
+        "participants": [
+          "blue-shirt woman (center)"
+        ],
+        "actor": "blue-shirt woman (center)",
+        "object": "blue balloon",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 19,
+        "start_time": "00:08",
+        "end_time": "00:09",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "catch",
+        "description": "the red-hoodie man catches the red balloon again",
+        "participants": [
+          "red-hoodie man"
+        ],
+        "actor": "red-hoodie man",
+        "object": "red balloon",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 20,
+        "start_time": "00:08",
+        "end_time": "00:09",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "throw",
+        "description": "the blue-shirt woman (center) throws the blue balloon into the air for the third time",
+        "participants": [
+          "blue-shirt woman (center)"
+        ],
+        "actor": "blue-shirt woman (center)",
+        "object": "blue balloon",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 21,
+        "start_time": "00:09",
+        "end_time": "00:10",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "throw",
+        "description": "the red-hoodie man throws the red balloon into the air for the third time",
+        "participants": [
+          "red-hoodie man"
+        ],
+        "actor": "red-hoodie man",
+        "object": "red balloon",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 22,
+        "start_time": "00:09",
+        "end_time": "00:10",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "lift",
+        "description": "the blue-shirt woman (center) lifts the stack of three blue cups",
+        "participants": [
+          "blue-shirt woman (center)"
+        ],
+        "actor": "blue-shirt woman (center)",
+        "object": "blue cups",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 23,
+        "start_time": "00:10",
+        "end_time": "00:11",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "lift",
+        "description": "the red-hoodie man lifts the stack of three red cups",
+        "participants": [
+          "red-hoodie man"
+        ],
+        "actor": "red-hoodie man",
+        "object": "red cups",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 24,
+        "start_time": "00:10",
+        "end_time": "00:11",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "place",
+        "description": "the blue-shirt woman (center) places the stack of blue cups onto the fourth blue cup from the left in the front row",
+        "participants": [
+          "blue-shirt woman (center)"
+        ],
+        "actor": "blue-shirt woman (center)",
+        "object": "blue cups",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 25,
+        "start_time": "00:11",
+        "end_time": "00:12",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 11,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "place",
+        "description": "the red-hoodie man places the stack of red cups onto the fourth red cup from the right in the front row",
+        "participants": [
+          "red-hoodie man"
+        ],
+        "actor": "red-hoodie man",
+        "object": "red cups",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 26,
+        "start_time": "00:11",
+        "end_time": "00:12",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 11,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "catch",
+        "description": "the blue-shirt woman (center) catches the blue balloon for the third time",
+        "participants": [
+          "blue-shirt woman (center)"
+        ],
+        "actor": "blue-shirt woman (center)",
+        "object": "blue balloon",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 27,
+        "start_time": "00:12",
+        "end_time": "00:13",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "catch",
+        "description": "the red-hoodie man catches the red balloon for the third time",
+        "participants": [
+          "red-hoodie man"
+        ],
+        "actor": "red-hoodie man",
+        "object": "red balloon",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 28,
+        "start_time": "00:12",
+        "end_time": "00:13",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "throw",
+        "description": "the blue-shirt woman (center) throws the blue balloon into the air for the fourth time",
+        "participants": [
+          "blue-shirt woman (center)"
+        ],
+        "actor": "blue-shirt woman (center)",
+        "object": "blue balloon",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 29,
+        "start_time": "00:13",
+        "end_time": "00:14",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "throw",
+        "description": "the red-hoodie man throws the red balloon into the air for the fourth time",
+        "participants": [
+          "red-hoodie man"
+        ],
+        "actor": "red-hoodie man",
+        "object": "red balloon",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 30,
+        "start_time": "00:13",
+        "end_time": "00:14",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "lift",
+        "description": "the blue-shirt woman (center) lifts the stack of four blue cups",
+        "participants": [
+          "blue-shirt woman (center)"
+        ],
+        "actor": "blue-shirt woman (center)",
+        "object": "blue cups",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 31,
+        "start_time": "00:14",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "lift",
+        "description": "the red-hoodie man lifts the stack of four red cups",
+        "participants": [
+          "red-hoodie man"
+        ],
+        "actor": "red-hoodie man",
+        "object": "red cups",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Game",
+        "continuation_hint": "complete",
+        "event_index": 32,
+        "start_time": "00:14",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "look",
+        "description": "The blue-shirt woman looks down at the blue cups on the table.",
+        "participants": [
+          "blue-shirt woman"
+        ],
+        "actor": "blue-shirt woman",
+        "object": "blue cups",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Stack",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 33,
+        "start_time": "00:15",
+        "end_time": "00:16",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "look",
+        "description": "The red-hoodie man looks down at the red cups on the table.",
+        "participants": [
+          "red-hoodie man"
+        ],
+        "actor": "red-hoodie man",
+        "object": "red cups",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Stack",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 34,
+        "start_time": "00:15",
+        "end_time": "00:16",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 6,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "throw",
+        "description": "The blue-shirt woman throws the blue balloon into the air.",
+        "participants": [
+          "blue-shirt woman"
+        ],
+        "actor": "blue-shirt woman",
+        "object": "blue balloon",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Stack",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 35,
+        "start_time": "00:16",
+        "end_time": "00:17",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "place",
+        "description": "The blue-shirt woman places the second blue cup from the left onto the leftmost blue cup stack.",
+        "participants": [
+          "blue-shirt woman"
+        ],
+        "actor": "blue-shirt woman",
+        "object": "blue cup",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Stack",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 36,
+        "start_time": "00:17",
+        "end_time": "00:18",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 11,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "place",
+        "description": "The blue-shirt woman places the third blue cup from the left onto the leftmost blue cup stack.",
+        "participants": [
+          "blue-shirt woman"
+        ],
+        "actor": "blue-shirt woman",
+        "object": "blue cup",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Stack",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 37,
+        "start_time": "00:18",
+        "end_time": "00:19",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 11,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "place",
+        "description": "The blue-shirt woman places the fourth blue cup from the left onto the leftmost blue cup stack.",
+        "participants": [
+          "blue-shirt woman"
+        ],
+        "actor": "blue-shirt woman",
+        "object": "blue cup",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Stack",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 38,
+        "start_time": "00:19",
+        "end_time": "00:20",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 11,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "place",
+        "description": "The blue-shirt woman places the fifth blue cup from the left onto the leftmost blue cup stack.",
+        "participants": [
+          "blue-shirt woman"
+        ],
+        "actor": "blue-shirt woman",
+        "object": "blue cup",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Stack",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 39,
+        "start_time": "00:20",
+        "end_time": "00:21",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 11,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "place",
+        "description": "The blue-shirt woman places the sixth blue cup from the left onto the leftmost blue cup stack.",
+        "participants": [
+          "blue-shirt woman"
+        ],
+        "actor": "blue-shirt woman",
+        "object": "blue cup",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Stack",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 40,
+        "start_time": "00:21",
+        "end_time": "00:22",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 11,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "celebration",
+        "description": "The blue-shirt woman celebrates by jumping and raising her arms.",
+        "participants": [
+          "blue-shirt woman"
+        ],
+        "actor": "blue-shirt woman",
+        "on_screen_text": [],
+        "segment_boundary": "end",
+        "segment_label": "Balloon Cup Stack",
+        "continuation_hint": "complete",
+        "event_index": 41,
+        "start_time": "00:22",
+        "end_time": "00:23",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "react",
+        "description": "The red-hoodie man reacts with surprise, opening his mouth and pointing at the blue-shirt woman.",
+        "participants": [
+          "red-hoodie man"
+        ],
+        "actor": "red-hoodie man",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Stack",
+        "continuation_hint": "complete",
+        "event_index": 42,
+        "start_time": "00:22",
+        "end_time": "00:23",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "react",
+        "description": "The tan-shirt man reacts with surprise, opening his mouth and looking at the blue-shirt woman.",
+        "participants": [
+          "tan-shirt man"
+        ],
+        "actor": "tan-shirt man",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Stack",
+        "continuation_hint": "complete",
+        "event_index": 43,
+        "start_time": "00:22",
+        "end_time": "00:23",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      },
+      {
+        "event_type": "celebration",
+        "description": "The long-haired blue-shirt woman celebrates by jumping and raising her arms.",
+        "participants": [
+          "long-haired blue-shirt woman"
+        ],
+        "actor": "long-haired blue-shirt woman",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Balloon Cup Stack",
+        "continuation_hint": "complete",
+        "event_index": 44,
+        "start_time": "00:22",
+        "end_time": "00:23",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Balloon Cup Game"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Balloon Cup Game",
+        "event_index_range": [
+          1,
+          44
+        ]
+      }
+    ]
+  }
+}

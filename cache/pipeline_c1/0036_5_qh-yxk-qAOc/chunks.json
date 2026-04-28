@@ -1,0 +1,244 @@
+{
+  "video_name": "0036_5_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 21.0,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:02",
+          "event_type": "goalkeeper_dive",
+          "description": "Goalkeeper in blue uniform dives to attempt to save a soccer ball heading toward the goal",
+          "participants": [
+            "blue-uniform goalkeeper"
+          ],
+          "actor": "blue-uniform goalkeeper",
+          "object": "soccer ball",
+          "outcome": "miss",
+          "on_screen_text": [
+            {
+              "text": "TRT SPOR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match - Penalty Kick",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:03",
+          "event_type": "goal",
+          "description": "Soccer ball enters the goal net as the goalkeeper dives",
+          "participants": [],
+          "actor": "soccer ball",
+          "object": "soccer ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "TRT SPOR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match - Penalty Kick",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:04",
+          "local_end": "00:08",
+          "event_type": "reaction",
+          "description": "Goalkeeper in yellow uniform shows focused and concerned expression while standing in goal",
+          "participants": [
+            "yellow-uniform goalkeeper"
+          ],
+          "actor": "yellow-uniform goalkeeper",
+          "object": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "TRT SPOR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match - Penalty Kick",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:09",
+          "local_end": "00:15",
+          "event_type": "concentration",
+          "description": "Player with shaved head shows serious expression while looking downward",
+          "participants": [
+            "shaved-head player"
+          ],
+          "actor": "shaved-head player",
+          "object": "",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "TRT SPOR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match - Penalty Kick",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:11",
+          "local_end": "00:15",
+          "event_type": "penalty_kick_setup",
+          "description": "Player in white uniform prepares to take a penalty kick while goalkeeper in yellow positions in goal",
+          "participants": [
+            "white-uniform player",
+            "yellow-uniform goalkeeper",
+            "referee"
+          ],
+          "actor": "white-uniform player",
+          "object": "soccer ball",
+          "outcome": "",
+          "on_screen_text": [
+            {
+              "text": "TRT SPOR KANALI",
+              "location": "logo"
+            },
+            {
+              "text": "ZINÉDINE ZIDANE",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match - Penalty Kick",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 21.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:21",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:17",
+          "event_type": "goal_scored",
+          "description": "the ball enters the net as the goalkeeper in yellow lies on the ground",
+          "participants": [
+            "blue-jersey players",
+            "white-jersey players",
+            "yellow-jersey goalkeeper"
+          ],
+          "actor": "white-jersey player",
+          "object": "white ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "TARAFINDIR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:17",
+          "local_end": "00:18",
+          "event_type": "hand_raise",
+          "description": "a white-jersey player (number 10) raises their arm in celebration",
+          "participants": [
+            "white-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "object": "white jersey with blue and red stripes",
+          "on_screen_text": [
+            {
+              "text": "TARAFINDIR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:18",
+          "local_end": "00:19",
+          "event_type": "point",
+          "description": "a white-jersey player (number 10) points with their index finger while celebrating",
+          "participants": [
+            "white-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "object": "white jersey with blue and red stripes",
+          "on_screen_text": [
+            {
+              "text": "TARAFINDIR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:19",
+          "local_end": "00:20",
+          "event_type": "run",
+          "description": "a white-jersey player (number 10) runs while celebrating",
+          "participants": [
+            "white-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "object": "white jersey with blue and red stripes",
+          "on_screen_text": [
+            {
+              "text": "TARAFINDIR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:20",
+          "local_end": "00:21",
+          "event_type": "transition",
+          "description": "the scene transitions to a black screen",
+          "participants": [],
+          "actor": "camera",
+          "object": "screen",
+          "object_before": "game footage",
+          "object_after": "black screen",
+          "on_screen_text": [
+            {
+              "text": "TARAFINDIR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

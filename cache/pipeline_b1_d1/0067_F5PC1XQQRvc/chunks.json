@@ -1,0 +1,72 @@
+{
+  "video_name": "0067_F5PC1XQQRvc.mp4",
+  "video_duration_sec": 9.2,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 9.2,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:09",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:03",
+          "event_type": "hold",
+          "description": "A woman holds multiple dresses in front of her with both hands",
+          "participants": [
+            "white-tshirt woman"
+          ],
+          "actor": "white-tshirt woman",
+          "object": "multiple dresses",
+          "on_screen_text": [
+            {
+              "text": "my top 10 dresses of 2024",
+              "location": "center"
+            }
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Dress showcase",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:03",
+          "local_end": "00:06",
+          "event_type": "posture_shift",
+          "description": "The woman shifts her stance, causing the dresses to move slightly",
+          "participants": [
+            "white-tshirt woman"
+          ],
+          "actor": "white-tshirt woman",
+          "object": "multiple dresses",
+          "segment_boundary": "middle",
+          "segment_label": "Dress showcase",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:09",
+          "event_type": "reveal",
+          "description": "The woman's purple slippers with cat designs become visible as she shifts position",
+          "participants": [
+            "white-tshirt woman"
+          ],
+          "actor": "white-tshirt woman",
+          "object": "slippers",
+          "object_after": "purple slippers with cat designs",
+          "segment_boundary": "middle",
+          "segment_label": "Dress showcase",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

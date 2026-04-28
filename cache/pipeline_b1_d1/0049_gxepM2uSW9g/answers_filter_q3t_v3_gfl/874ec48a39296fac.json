@@ -1,0 +1,114 @@
+{
+  "question": "Was the judge who spoke to the man at the beginning seated on the far left?",
+  "pred": "The video begins with a man in a comic-book print shirt (the performer) standing on stage. A wide shot of the judges' table at ~00:22 and ~00:40 shows four judges seated behind nameplates. From the audience's perspective (left to right), the judges are: SIMON, AMANDA, ALESHA, and DAVID. The judge who speaks to the performer at the beginning (starting at ~00:25) is the man in the black shirt seated behind the \"SIMON\" nameplate. As shown in the wide shots, Simon is seated on the far left of the panel.\n\nEvidence: Wide shots at ~00:22 and ~00:40 show the judge named SIMON (the black-shirt man who speaks at 00:25) seated at the leftmost position of the judges' table.\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "react",
+      "description": "Four judges sit at table with 'X' symbols, watching the stage attentively",
+      "participants": [
+        "man in black suit",
+        "woman in blue jacket",
+        "woman in white jacket",
+        "man in black shirt"
+      ],
+      "actor": "judges",
+      "segment_boundary": "middle",
+      "segment_label": "Talent Show - Performance Segment",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 2,
+      "start_time": "00:08",
+      "end_time": "00:13",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 13,
+      "round_index": 1,
+      "segment_label_resolved": "Talent Show - Performance Segment"
+    },
+    {
+      "event_type": "stage_view",
+      "description": "Wide shot of Britain's Got Talent stage showing judges' table, performer, and audience",
+      "participants": [
+        "performer",
+        "judges",
+        "audience"
+      ],
+      "actor": "N/A",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "SIMON",
+          "location": "screen"
+        },
+        {
+          "text": "AMANDA",
+          "location": "screen"
+        },
+        {
+          "text": "ALESHA",
+          "location": "screen"
+        },
+        {
+          "text": "DAVID",
+          "location": "screen"
+        },
+        {
+          "text": "BRITAIN'S GOT TALENT",
+          "location": "screen"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Britain's Got Talent Performance",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 5,
+      "start_time": "00:20",
+      "end_time": "00:24",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Talent Show - Performance Segment"
+    },
+    {
+      "event_type": "speak",
+      "description": "Man in black shirt speaks while seated at judges' table with microphone",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "object": "microphone",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Britain's Got Talent Performance",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:25",
+      "end_time": "00:30",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Talent Show - Performance Segment"
+    },
+    {
+      "event_type": "sit",
+      "description": "A man in a black shirt sits still at the judge's panel with a microphone in front of him",
+      "participants": [
+        "black-shirt man"
+      ],
+      "actor": "black-shirt man",
+      "segment_boundary": "middle",
+      "segment_label": "Britain's Got Talent judging",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 7,
+      "start_time": "00:30",
+      "end_time": "00:36",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Talent Show - Performance Segment"
+    }
+  ]
+}

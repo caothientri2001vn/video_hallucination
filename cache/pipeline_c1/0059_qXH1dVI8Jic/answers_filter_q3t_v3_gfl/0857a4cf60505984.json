@@ -1,0 +1,80 @@
+{
+  "question": "Did the blonde woman choose box number 5?",
+  "pred": "The blonde woman in the checkered jumpsuit (LEFT player) does not choose box number 5. According to the Context and frames, the man in the black hat (black-outfit man) is the one who opens the panel for number 5. The blonde woman is seen choosing and opening box number 3 and box number 7 later in the video.\n\nEvidence: Context event 107 states \"man in black hat opens the third panel in the left column of the Charades board revealing the number 5\".\n\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "open_box",
+      "description": "man in black hat opens the third panel in the left column of the Charades board revealing the number 5",
+      "participants": [
+        "man in black hat",
+        "blonde woman in checkered outfit",
+        "dark-haired woman in black outfit",
+        "man in suit"
+      ],
+      "actor": "man in black hat",
+      "object": "wooden panel",
+      "object_before": "star panel",
+      "object_after": "panel with 5",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 107,
+      "start_time": "03:45",
+      "end_time": "03:48",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "reveal",
+      "description": "man in black hat holds up the opened panel showing the number 5 to the audience",
+      "participants": [
+        "man in black hat",
+        "blonde woman in checkered outfit",
+        "dark-haired woman in black outfit",
+        "man in suit"
+      ],
+      "actor": "man in black hat",
+      "object": "wooden panel",
+      "object_before": "star panel",
+      "object_after": "panel with 5",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 108,
+      "start_time": "03:48",
+      "end_time": "03:50",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "speak",
+      "description": "man in black hat speaks while holding the panel with number 5",
+      "participants": [
+        "man in black hat"
+      ],
+      "actor": "man in black hat",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 109,
+      "start_time": "03:50",
+      "end_time": "03:52",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    }
+  ]
+}

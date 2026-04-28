@@ -1,0 +1,756 @@
+{
+  "question": "Are the eggs put into the egg holder after put the butter into the bowl?",
+  "pred": "The video shows a sequence of kitchen organization tasks. The butter is placed into a marble butter crock (bowl) starting at approximately 00:06 (as seen in the frames showing the butter being spread into the container). The eggs are subsequently placed into a clear plastic egg holder starting at approximately 00:20 (events 10-12).\n\nEvidence: Frames at ~00:06 show butter being put into a marble bowl, and frames at ~00:20 show eggs being placed into a clear plastic holder.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "place": 13,
+      "pour": 4,
+      "open_container": 3,
+      "remove": 2,
+      "open": 2,
+      "lift": 2,
+      "manipulate": 1,
+      "open_bottle": 1,
+      "seal_container": 1,
+      "open_box": 1,
+      "close_box": 1,
+      "hold": 1,
+      "introduce": 1,
+      "close": 1,
+      "pull": 1,
+      "adjust_position": 1
+    },
+    "events": [
+      {
+        "event_type": "place",
+        "description": "A hand places a clear glass honey container on the white surface between the vase and the kettle",
+        "participants": [
+          "person with white-tipped nails"
+        ],
+        "actor": "person with white-tipped nails",
+        "object": "clear glass honey container",
+        "segment_boundary": "middle",
+        "segment_label": "Honey preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:02",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 13,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "manipulate",
+        "description": "The hand adjusts the glass lid on the honey container, placing it slightly askew",
+        "participants": [
+          "person with white-tipped nails"
+        ],
+        "actor": "person with white-tipped nails",
+        "object": "glass honey container lid",
+        "segment_boundary": "middle",
+        "segment_label": "Honey preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 2,
+        "start_time": "00:02",
+        "end_time": "00:04",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "remove",
+        "description": "The hand removes the glass honey dipper from the container and places it on the surface",
+        "participants": [
+          "person with white-tipped nails"
+        ],
+        "actor": "person with white-tipped nails",
+        "object": "glass honey dipper",
+        "segment_boundary": "middle",
+        "segment_label": "Honey preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 3,
+        "start_time": "00:04",
+        "end_time": "00:06",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "A hand places a brown honey container labeled 'Lune de Miel' on the white surface",
+        "participants": [
+          "person with white-tipped nails"
+        ],
+        "actor": "person with white-tipped nails",
+        "object": "brown honey container",
+        "on_screen_text": [
+          {
+            "text": "100% PUR ET NATUREL",
+            "location": "container label"
+          },
+          {
+            "text": "Lune de Miel",
+            "location": "container label"
+          },
+          {
+            "text": "Miel Fleurs",
+            "location": "container label"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Honey preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 4,
+        "start_time": "00:06",
+        "end_time": "00:08",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 13,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "open",
+        "description": "The hand peels back the paper seal on the honey container, revealing the honey inside",
+        "participants": [
+          "person with white-tipped nails"
+        ],
+        "actor": "person with white-tipped nails",
+        "object": "honey container seal",
+        "segment_boundary": "middle",
+        "segment_label": "Honey preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 5,
+        "start_time": "00:08",
+        "end_time": "00:10",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "pour",
+        "description": "Honey is poured from the brown container into the clear glass honey pot",
+        "participants": [
+          "person with white-tipped nails"
+        ],
+        "actor": "person with white-tipped nails",
+        "object": "thick amber honey",
+        "segment_boundary": "middle",
+        "segment_label": "Honey preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 6,
+        "start_time": "00:10",
+        "end_time": "00:13",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "The hand places the glass honey dipper back into the honey-filled container",
+        "participants": [
+          "person with white-tipped nails"
+        ],
+        "actor": "person with white-tipped nails",
+        "object": "glass honey dipper",
+        "segment_boundary": "middle",
+        "segment_label": "Honey preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 7,
+        "start_time": "00:13",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 13,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "A hand places a clear plastic container on the white surface",
+        "participants": [
+          "white-shirt person"
+        ],
+        "actor": "white-shirt person",
+        "object": "clear plastic container",
+        "segment_boundary": "middle",
+        "segment_label": "Container Organization",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 8,
+        "start_time": "00:15",
+        "end_time": "00:18",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 13,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "lift",
+        "description": "A hand lifts the white lid off the clear plastic container",
+        "participants": [
+          "white-shirt person"
+        ],
+        "actor": "white-shirt person",
+        "object": "white lid",
+        "segment_boundary": "middle",
+        "segment_label": "Container Organization",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 9,
+        "start_time": "00:18",
+        "end_time": "00:20",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "A hand places a brown egg on the upper level of the clear plastic container, where it rolls down to the lower level",
+        "participants": [
+          "white-shirt person"
+        ],
+        "actor": "white-shirt person",
+        "object": "brown egg",
+        "segment_boundary": "middle",
+        "segment_label": "Container Organization",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 10,
+        "start_time": "00:20",
+        "end_time": "00:24",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 13,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "A hand places another brown egg on the upper level of the clear plastic container, where it rolls down to join other eggs",
+        "participants": [
+          "white-shirt person"
+        ],
+        "actor": "white-shirt person",
+        "object": "brown egg",
+        "segment_boundary": "middle",
+        "segment_label": "Container Organization",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 11,
+        "start_time": "00:24",
+        "end_time": "00:26",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 13,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "A hand places multiple brown eggs into the clear plastic container, filling both the upper and lower levels",
+        "participants": [
+          "white-shirt person"
+        ],
+        "actor": "white-shirt person",
+        "object": "brown eggs",
+        "segment_boundary": "middle",
+        "segment_label": "Container Organization",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 12,
+        "start_time": "00:26",
+        "end_time": "00:29",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 13,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "A hand places the white lid back on the clear plastic container now filled with brown eggs",
+        "participants": [
+          "white-shirt person"
+        ],
+        "actor": "white-shirt person",
+        "object": "white lid",
+        "segment_boundary": "middle",
+        "segment_label": "Container Organization",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 13,
+        "start_time": "00:29",
+        "end_time": "00:30",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 13,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "open_bottle",
+        "description": "opens the orange cap of a Tropicana orange juice bottle",
+        "participants": [
+          "person with white nail polish"
+        ],
+        "actor": "person with white nail polish",
+        "object": "Tropicana orange juice bottle",
+        "segment_boundary": "middle",
+        "segment_label": "Container Filling",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 14,
+        "start_time": "00:30",
+        "end_time": "00:33",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "pour",
+        "description": "pours orange juice from Tropicana bottle into a tall rectangular clear container",
+        "participants": [
+          "person with white nail polish"
+        ],
+        "actor": "person with white nail polish",
+        "object": "orange juice, Tropicana bottle, clear container",
+        "segment_boundary": "middle",
+        "segment_label": "Container Filling",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 15,
+        "start_time": "00:33",
+        "end_time": "00:44",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "seal_container",
+        "description": "places the clear lid with white cap onto the filled rectangular container",
+        "participants": [
+          "person with white nail polish"
+        ],
+        "actor": "person with white nail polish",
+        "object": "clear container lid",
+        "segment_boundary": "middle",
+        "segment_label": "Container Filling",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 16,
+        "start_time": "00:44",
+        "end_time": "00:45",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "places a white cow-patterned box with black spots on the surface",
+        "participants": [],
+        "actor": "hand with light-colored nail polish",
+        "object": "cow-patterned box",
+        "segment_boundary": "middle",
+        "segment_label": "kitchen organization sequence",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 17,
+        "start_time": "00:45",
+        "end_time": "00:46",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 13,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "open_box",
+        "description": "opens the lid of the cow-patterned box",
+        "participants": [],
+        "actor": "two hands with light-colored nail polish",
+        "object_before": "closed cow-patterned box",
+        "object_after": "open cow-patterned box",
+        "segment_boundary": "middle",
+        "segment_label": "kitchen organization sequence",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 18,
+        "start_time": "00:46",
+        "end_time": "00:48",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "remove",
+        "description": "removes a package of cheese slices from the cow-patterned box",
+        "participants": [],
+        "actor": "hand with light-colored nail polish",
+        "object": "cheese package",
+        "segment_boundary": "middle",
+        "segment_label": "kitchen organization sequence",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 19,
+        "start_time": "00:48",
+        "end_time": "00:49",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "places yellow cheese slices into the cow-patterned box",
+        "participants": [],
+        "actor": "hand with light-colored nail polish",
+        "object": "cheese slices",
+        "segment_boundary": "middle",
+        "segment_label": "kitchen organization sequence",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 20,
+        "start_time": "00:49",
+        "end_time": "00:53",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 13,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "close_box",
+        "description": "closes the lid of the cow-patterned box",
+        "participants": [],
+        "actor": "hand with light-colored nail polish",
+        "object_before": "open cow-patterned box",
+        "object_after": "closed cow-patterned box",
+        "segment_boundary": "middle",
+        "segment_label": "kitchen organization sequence",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 21,
+        "start_time": "00:54",
+        "end_time": "00:55",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "places a cylindrical bamboo container on the surface",
+        "participants": [],
+        "actor": "hand with light-colored nail polish",
+        "object": "bamboo container",
+        "segment_boundary": "middle",
+        "segment_label": "kitchen organization sequence",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 22,
+        "start_time": "00:55",
+        "end_time": "00:56",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 13,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "hold",
+        "description": "holds a pink bag labeled 'SEL DE ROCH' (rock salt)",
+        "participants": [],
+        "actor": "two hands with light-colored nail polish",
+        "object": "pink salt bag",
+        "segment_boundary": "middle",
+        "segment_label": "kitchen organization sequence",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 23,
+        "start_time": "00:56",
+        "end_time": "00:58",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "open_container",
+        "description": "opens the lid of the bamboo container",
+        "participants": [],
+        "actor": "hand with light-colored nail polish",
+        "object_before": "closed bamboo container",
+        "object_after": "open bamboo container",
+        "segment_boundary": "middle",
+        "segment_label": "kitchen organization sequence",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 24,
+        "start_time": "00:58",
+        "end_time": "00:59",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "pour",
+        "description": "pours pink Himalayan salt from the bag into the bamboo container",
+        "participants": [],
+        "actor": "hand with light-colored nail polish",
+        "object": "pink salt",
+        "segment_boundary": "middle",
+        "segment_label": "kitchen organization sequence",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 25,
+        "start_time": "00:59",
+        "end_time": "01:00",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "open_container",
+        "description": "opens the cap of the blue Lenor laundry detergent bottle",
+        "participants": [
+          "hand with white nail polish"
+        ],
+        "actor": "hand with white nail polish",
+        "object": "blue Lenor bottle",
+        "event_index": 26,
+        "start_time": "01:00",
+        "end_time": "01:01",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "open_container",
+        "description": "opens the cap of the orange Lenor laundry detergent bottle",
+        "participants": [
+          "hand with white nail polish"
+        ],
+        "actor": "hand with white nail polish",
+        "object": "orange Lenor bottle",
+        "event_index": 27,
+        "start_time": "01:01",
+        "end_time": "01:02",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "pour",
+        "description": "pours white laundry detergent beads from the Lenor bottle into a large glass container with wooden stand",
+        "participants": [
+          "hand with white nail polish"
+        ],
+        "actor": "hand with white nail polish",
+        "object": "white laundry detergent beads",
+        "object_before": "empty glass container",
+        "object_after": "glass container partially filled with white beads",
+        "event_index": 28,
+        "start_time": "01:02",
+        "end_time": "01:15",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "places a white rectangular container with wooden top on the counter",
+        "participants": [
+          "white-shirt person"
+        ],
+        "actor": "white-shirt person",
+        "object": "white rectangular container with wooden top",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 29,
+        "start_time": "01:15",
+        "end_time": "01:17",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 13,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "open",
+        "description": "opens the wooden top of the white container",
+        "participants": [
+          "white-shirt person"
+        ],
+        "actor": "white-shirt person",
+        "object": "wooden top",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 30,
+        "start_time": "01:17",
+        "end_time": "01:18",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "lift",
+        "description": "lifts the wooden top completely off the white container",
+        "participants": [
+          "white-shirt person"
+        ],
+        "actor": "white-shirt person",
+        "object": "wooden top",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 31,
+        "start_time": "01:18",
+        "end_time": "01:19",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "introduce",
+        "description": "brings a blue box of tissues into the frame",
+        "participants": [
+          "white-shirt person"
+        ],
+        "actor": "white-shirt person",
+        "object": "blue tissue box",
+        "on_screen_text": [
+          {
+            "text": "sensitive",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 32,
+        "start_time": "01:19",
+        "end_time": "01:21",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "place",
+        "description": "places tissues from the blue box into the white container",
+        "participants": [
+          "white-shirt person"
+        ],
+        "actor": "white-shirt person",
+        "object": "tissues",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 33,
+        "start_time": "01:21",
+        "end_time": "01:24",
+        "sub_events": [],
+        "subtype_order": 13,
+        "subtype_total": 13,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "close",
+        "description": "places the wooden top back on the white container",
+        "participants": [
+          "white-shirt person"
+        ],
+        "actor": "white-shirt person",
+        "object": "wooden top",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 34,
+        "start_time": "01:24",
+        "end_time": "01:26",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "pull",
+        "description": "pulls a white tissue from the container through the opening in the wooden top",
+        "participants": [
+          "white-shirt person"
+        ],
+        "actor": "white-shirt person",
+        "object": "white tissue",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 35,
+        "start_time": "01:26",
+        "end_time": "01:28",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      },
+      {
+        "event_type": "adjust_position",
+        "description": "A hand adjusts the position of the wooden trash bag holder by moving it leftward on the surface",
+        "participants": [
+          "white-sleeve hand"
+        ],
+        "actor": "white-sleeve hand",
+        "object": "wooden trash bag holder",
+        "segment_boundary": "middle",
+        "segment_label": "trash bag holder demonstration",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 36,
+        "start_time": "01:30",
+        "end_time": "01:32",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Honey preparation"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Honey preparation",
+        "event_index_range": [
+          1,
+          36
+        ]
+      }
+    ]
+  }
+}

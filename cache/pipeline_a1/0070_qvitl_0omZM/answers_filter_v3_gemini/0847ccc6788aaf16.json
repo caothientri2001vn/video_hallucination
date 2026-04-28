@@ -1,0 +1,394 @@
+{
+  "question": "Did the torso close-up showing the star hoodie appear before the face close-up transformation?",
+  "pred": "The video features a series of rapid outfit transformations. To determine the chronological order of the specific close-ups:\n\n1.  **Torso close-up with star hoodie:** This occurs during the transition sequence. The Context (event 6) and the frames show a close-up of the grey hoodie with a large cream star on the front.\n2.  **Face close-up transformation:** This occurs later in the sequence. The Context (event 8) describes the woman's appearance changing to include a grey hoodie with the hood up and brown-rimmed glasses. The frames show this as a direct close-up on her face where the outfit \"snaps\" into place.\n\nComparing the timestamps and event order, the torso close-up of the star hoodie (event 6, ~00:06-00:07) appears before the face close-up transformation involving the hood and glasses (event 8, ~00:08-00:09).\n\nEvidence: Context events 6 and 8 show the star hoodie torso close-up occurs at 00:06, while the face close-up transformation with glasses occurs at 00:08.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "transition": 5,
+      "walk": 3,
+      "gesture": 2,
+      "look": 2,
+      "react": 2
+    },
+    "events": [
+      {
+        "event_type": "walk",
+        "description": "the white-jacket woman walks into the frame from the left",
+        "participants": [
+          "white-jacket woman"
+        ],
+        "actor": "white-jacket woman",
+        "on_screen_text": [
+          {
+            "text": "me literally within 0.2 secs of getting home",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Getting Home Transformation",
+        "continuation_hint": "complete",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:01",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Getting Home Transformation"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the white-jacket woman gestures with both hands while walking",
+        "participants": [
+          "white-jacket woman"
+        ],
+        "actor": "white-jacket woman",
+        "on_screen_text": [
+          {
+            "text": "me literally within 0.2 secs of getting home",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Getting Home Transformation",
+        "continuation_hint": "complete",
+        "event_index": 2,
+        "start_time": "00:01",
+        "end_time": "00:03",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Getting Home Transformation"
+      },
+      {
+        "event_type": "transition",
+        "description": "the woman's outfit changes from a white jacket and light blue jeans to a grey hoodie and dark blue cargo pants",
+        "participants": [
+          "white-jacket woman",
+          "grey-hoodie woman"
+        ],
+        "actor": "white-jacket woman",
+        "object_before": "white jacket",
+        "object_after": "grey hoodie",
+        "on_screen_text": [
+          {
+            "text": "me literally within 0.2 secs of getting home",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Getting Home Transformation",
+        "continuation_hint": "complete",
+        "event_index": 3,
+        "start_time": "00:03",
+        "end_time": "00:04",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Getting Home Transformation"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the grey-hoodie woman gestures with her right hand toward the camera",
+        "participants": [
+          "grey-hoodie woman"
+        ],
+        "actor": "grey-hoodie woman",
+        "on_screen_text": [
+          {
+            "text": "me literally within 0.2 secs of getting home",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Getting Home Transformation",
+        "continuation_hint": "complete",
+        "event_index": 4,
+        "start_time": "00:04",
+        "end_time": "00:05",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Getting Home Transformation"
+      },
+      {
+        "event_type": "transition",
+        "description": "the woman's outfit changes back from the grey hoodie to the white jacket",
+        "participants": [
+          "grey-hoodie woman",
+          "white-jacket woman"
+        ],
+        "actor": "grey-hoodie woman",
+        "object_before": "grey hoodie",
+        "object_after": "white jacket",
+        "on_screen_text": [
+          {
+            "text": "me literally within 0.2 secs of getting home",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Getting Home Transformation",
+        "continuation_hint": "complete",
+        "event_index": 5,
+        "start_time": "00:05",
+        "end_time": "00:06",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Getting Home Transformation"
+      },
+      {
+        "event_type": "transition",
+        "description": "the woman's outfit changes from the white jacket to the grey hoodie with a large cream star on the front",
+        "participants": [
+          "white-jacket woman",
+          "grey-hoodie woman"
+        ],
+        "actor": "white-jacket woman",
+        "object_before": "white jacket",
+        "object_after": "grey hoodie",
+        "object_after_pattern": "large cream star",
+        "on_screen_text": [
+          {
+            "text": "me literally within 0.2 secs of getting home",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Getting Home Transformation",
+        "continuation_hint": "complete",
+        "event_index": 6,
+        "start_time": "00:06",
+        "end_time": "00:07",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Getting Home Transformation"
+      },
+      {
+        "event_type": "look",
+        "description": "the woman looks directly at the camera with a neutral expression",
+        "participants": [
+          "white-jacket woman"
+        ],
+        "actor": "white-jacket woman",
+        "on_screen_text": [
+          {
+            "text": "me literally within 0.2 secs of getting home",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Getting Home Transformation",
+        "continuation_hint": "complete",
+        "event_index": 7,
+        "start_time": "00:07",
+        "end_time": "00:08",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Getting Home Transformation"
+      },
+      {
+        "event_type": "transition",
+        "description": "the woman's appearance changes to wearing a grey hoodie with the hood up and brown-rimmed glasses",
+        "participants": [
+          "white-jacket woman",
+          "grey-hoodie woman"
+        ],
+        "actor": "white-jacket woman",
+        "object_before": "white jacket",
+        "object_after": "grey hoodie",
+        "object_after_pattern": "hood up and glasses",
+        "on_screen_text": [
+          {
+            "text": "me literally within 0.2 secs of getting home",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Getting Home Transformation",
+        "continuation_hint": "complete",
+        "event_index": 8,
+        "start_time": "00:08",
+        "end_time": "00:09",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Getting Home Transformation"
+      },
+      {
+        "event_type": "walk",
+        "description": "the white-jacket woman walks across the room from left to right",
+        "participants": [
+          "white-jacket woman"
+        ],
+        "actor": "white-jacket woman",
+        "on_screen_text": [
+          {
+            "text": "me literally within 0.2 secs of getting home",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Getting Home Transformation",
+        "continuation_hint": "complete",
+        "event_index": 9,
+        "start_time": "00:09",
+        "end_time": "00:11",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Getting Home Transformation"
+      },
+      {
+        "event_type": "transition",
+        "description": "the woman's outfit changes from the white jacket to the grey hoodie as she turns around",
+        "participants": [
+          "white-jacket woman",
+          "grey-hoodie woman"
+        ],
+        "actor": "white-jacket woman",
+        "object_before": "white jacket",
+        "object_after": "grey hoodie",
+        "on_screen_text": [
+          {
+            "text": "me literally within 0.2 secs of getting home",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Getting Home Transformation",
+        "continuation_hint": "complete",
+        "event_index": 10,
+        "start_time": "00:11",
+        "end_time": "00:13",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Getting Home Transformation"
+      },
+      {
+        "event_type": "react",
+        "description": "the grey-hoodie woman stands still and looks around the room",
+        "participants": [
+          "grey-hoodie woman"
+        ],
+        "actor": "grey-hoodie woman",
+        "on_screen_text": [
+          {
+            "text": "me literally within 0.2 secs of getting home",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Getting Home Transformation",
+        "continuation_hint": "complete",
+        "event_index": 11,
+        "start_time": "00:13",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Getting Home Transformation"
+      },
+      {
+        "event_type": "look",
+        "description": "the grey-hoodie woman looks around the room with a confused expression",
+        "participants": [
+          "grey-hoodie woman"
+        ],
+        "actor": "grey-hoodie woman",
+        "on_screen_text": [
+          {
+            "text": "me literally within 0.2 secs of getting home",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Getting Home Reaction",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 12,
+        "start_time": "00:15",
+        "end_time": "00:16",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Getting Home Transformation"
+      },
+      {
+        "event_type": "react",
+        "description": "the grey-hoodie woman makes a disgusted or confused facial expression while looking down",
+        "participants": [
+          "grey-hoodie woman"
+        ],
+        "actor": "grey-hoodie woman",
+        "on_screen_text": [
+          {
+            "text": "me literally within 0.2 secs of getting home",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Getting Home Reaction",
+        "continuation_hint": "complete",
+        "event_index": 13,
+        "start_time": "00:16",
+        "end_time": "00:18",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Getting Home Transformation"
+      },
+      {
+        "event_type": "walk",
+        "description": "the grey-hoodie woman walks out of the frame to the right",
+        "participants": [
+          "grey-hoodie woman"
+        ],
+        "actor": "grey-hoodie woman",
+        "on_screen_text": [
+          {
+            "text": "me literally within 0.2 secs of getting home",
+            "location": "caption"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Getting Home Reaction",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 14,
+        "start_time": "00:18",
+        "end_time": "00:20",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Getting Home Transformation"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Getting Home Transformation",
+        "event_index_range": [
+          1,
+          14
+        ]
+      }
+    ]
+  }
+}

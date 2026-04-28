@@ -1,0 +1,555 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0092_woF9wpGDDW0.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0092_woF9wpGDDW0.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0092_woF9wpGDDW0",
+    "n_target": 13,
+    "n_sub": 42,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.8461538461538461,
+    "sub_accuracy": 0.9523809523809523
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Did it land on the number 4 on the first spin?",
+      "gt": "Yes",
+      "pred": "Yes. In the second frame (after the title screen), the wheel's red pointer lands on the blue section labeled \"4\".",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a first spin in the game?",
+      "gt": "Yes",
+      "pred": "Yes, there was a first spin in the game. This is evident from the sequence of frames where the wheel's position changes (e.g., comparing the initial frame with subsequent frames showing the wheel in different orientations), indicating the wheel was spun.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the first spin land on the number 4?",
+      "gt": "Yes",
+      "pred": "Yes. In the second frame (after the initial setup with \"Last Color Standing Wins! Justice vs Susannah\" text), the wheel's red pointer lands on the section labeled \"4\".",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the first spin land on a number other than 4?",
+      "gt": "No",
+      "pred": "Yes. The first spin (as seen in the sequence of frames) lands on a number other than 4. This can be verified by observing the wheel's position after the initial spin in the early frames (e.g., the first spin result is not 4, as seen in the frame where the wheel stops for the first turn).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Did it land on blue on the first spin?",
+      "gt": "Yes",
+      "pred": "Yes, the first spin landed on blue. This can be verified by observing the wheel's position in the early frames where the wheel is stationary after spinning.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a first spin in the game?",
+      "gt": "Yes",
+      "pred": "Yes, there was a first spin in the game. This is evident from the sequence of frames where the wheel's position changes (e.g., comparing the initial frame with subsequent frames showing the wheel in different orientations), indicating the wheel was spun.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the first spin land on blue?",
+      "gt": "Yes",
+      "pred": "Yes. The first spin lands on blue (visible in the frame where the wheel is stationary after the initial spin, approximately at the 1.0s mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the first spin land on a color other than blue?",
+      "gt": "No",
+      "pred": "Yes. The first spin (as seen in the sequence of frames) lands on a color other than blue. For example, in the early frames where the wheel stops, it is not on the blue section.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Did the women start playing first?",
+      "gt": "No",
+      "pred": "No. The man (Justice) is the first to take a cup, as seen in the sequence of frames where he begins interacting with the cups before the woman does (e.g., around the 3rd frame in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Were there women playing in the game?",
+      "gt": "Yes",
+      "pred": "Yes. The text \"Justice vs Susannah\" in the first frame identifies a woman (Susannah) as a participant, and she is visible in the video interacting with the game.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man start playing first?",
+      "gt": "Yes",
+      "pred": "Yes. The man is the first to interact with the cups (e.g., in the early frames, he is seen picking up and stacking pink cups before the woman does the same with yellow cups).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the women play before the man?",
+      "gt": "No",
+      "pred": "No. The man was the first to interact with the cups (e.g., in frame 3, he picks up a pink cup; frame 4, he moves it). The woman’s first cup interaction occurs later (e.g., frame 7, she handles yellow cups). Thus, the woman did not play before the man.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Did the man start playing second?",
+      "gt": "No",
+      "pred": "No. The man is the first to take a cup (e.g., in the sequence of frames, the man is seen interacting with the pink cups before the woman takes her turn). Thus, he did not start second.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a man playing in the game?",
+      "gt": "Yes",
+      "pred": "Yes. The man in the light blue shirt is seen participating in the game (e.g., spinning the wheel, removing cups) across multiple frames, including the first frame where he is standing next to the woman.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man start playing first?",
+      "gt": "Yes",
+      "pred": "Yes. The man is the first to interact with the cups (e.g., in the early frames, he is seen picking up and stacking pink cups before the woman does the same with yellow cups).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the women start playing second?",
+      "gt": "Yes",
+      "pred": "Yes. The man (Justice) is seen taking the first actions (spinning the wheel, interacting with cups) before the woman (Susannah) begins her turn. For example, the man’s actions with the cups and wheel precede the woman’s first cup - related actions in the sequence of frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Did the women start playing second?",
+      "gt": "Yes",
+      "pred": "Yes. The man (Justice) is seen taking the first actions (spinning the wheel, interacting with cups) before the woman (Susannah) begins her turn. For example, the man’s actions with the cups and wheel precede the woman’s first cup - related actions in the sequence of frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Were there women playing in the game?",
+      "gt": "Yes",
+      "pred": "Yes. The text \"Justice vs Susannah\" in the first frame identifies a woman (Susannah) as a participant, and she is visible in the video interacting with the game.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did someone play before the women?",
+      "gt": "Yes",
+      "pred": "Yes. The man (Justice) is seen interacting with the cups (e.g., removing cups, spinning the wheel) before the woman (Susannah) takes her turns. For example, in frames where the man is handling pink cups (e.g., around the 3rd - 5th images), the woman has not yet taken her turn, indicating the man played first.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the man start playing before the women?",
+      "gt": "Yes",
+      "pred": "Yes. The man is seen interacting with the cups (e.g., picking up a pink cup) in earlier frames (e.g., around the 3rd frame sequence), while the woman begins her actions with the cups later in the sequence.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Did the man start playing first?",
+      "gt": "Yes",
+      "pred": "Yes. The man is the first to interact with the cups (e.g., in the early frames, he is seen picking up and stacking pink cups before the woman does the same with yellow cups).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a man playing the game?",
+      "gt": "Yes",
+      "pred": "Yes, there was a man playing the game. He is visible in multiple frames (e.g., the first frame shows him next to the wheel, and subsequent frames show him spinning the wheel and interacting with the cups).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man take the first turn?",
+      "gt": "Yes",
+      "pred": "Yes, the man took the first turn. In the sequence of frames, the man is the first to interact with the cups (e.g., reaching for and tilting a pink cup, as seen in the early frames like the 3rd and 4th images).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the women start playing before the man?",
+      "gt": "No",
+      "pred": "No. The man is seen interacting with the cups (e.g., removing a pink cup) before the woman begins her actions with the yellow cups. For example, the man’s first cup - removal action occurs in the early sequence (e.g., around the 3rd frame), while the woman’s first cup - related action (with yellow cups) happens later. Thus, the woman did not start playing before the man.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Did it land on the number 3 on the third spin?",
+      "gt": "No",
+      "pred": "So, let's check the video frames. The question is about whether the wheel landed on 3 on the third spin. First, we need to identify the spins. Let's look at the sequence.\n\nLooking at the frames, when does the wheel spin? Let's find the third spin. Let's check the frames:\n\nFirst, the wheel is spun, then we see the result. Let's track the spins. The third spin—wait, need to count the spins.\n\nWait, in the video, the first spin: let's see. The first spin where the wheel is shown spinning. Let's check the frames.\n\nLooking at the frames, the third spin—let's see. Let's check the timestamps. But since we have frames, let's see which frame shows the third spin.\n\nWait, the question is: Did it land on 3 on the third spin?\n\nLet's check the frames where the wheel is spun. Let's count the spins:\n\n1. First spin: when the wheel is shown (e.g., frame where the wheel is spinning, then lands on a number)\n2. Second spin\n3. Third spin\n\nNow, check if the third spin lands on 3.\n\nLooking at the frames, let's see. The third spin—let's check the frame where the wheel is spun and lands. For example, in the frame where the wheel is at 3. Let's check:\n\nLooking at the frames, one of the spins: in frame 5, the wheel is shown with the pointer on 3. But we need to know if that's the third spin.\n\nWait, the video shows multiple spins. Let's count the spins:\n\n- The first spin: when the wheel is spun, then lands. Let's say the first time the wheel is spun (e.g., the first time we see it spinning), then the result.\n\n- Second spin: another spin.\n\n- Third spin: the next one.\n\nNow, check if on the third spin, it landed on 3.\n\nLooking at the frames, in frame 5 (the fifth image in the sequence), the wheel shows the pointer on 3. But we need to confirm if that's the third spin.\n\nAlternatively, let's check the frames where the wheel is spun. Let's list the spin events:\n\n1. The first spin: in one of the early frames, the wheel is spun (e.g., frame 2: the wheel is shown with a spin, then in frame 3, it's landing on a number? Wait, no. Let's check the frames:\n\nLooking at the provided frames (22 images total), let's see:\n\n- Image 2: The wheel is shown with the pointer on 4 (or 5? Let's check). Wait, the wheel has sections: 1,2,3,4,5,6, \"Lose a Turn\", \"Win\". Let's check the sections.\n\nIn image 2, the wheel is positioned with the pointer on 4 (the blue section). Then, in image 3, the person is taking a cup. So that's the result of the spin.\n\nThen, the next spin: image 5, the wheel is spun again (the wheel is moving), then lands. Let's check the spin count.\n\nThe key is to count how many times the wheel is spun. Let's see:\n\n1. First spin: the wheel is spun (image 2 shows the wheel after spin, then the person takes cups). So first spin lands on a number.\n\n2. Second spin: then the next time the wheel is spun (image 5: the wheel is shown with the pointer on 3). So that's the second spin?\n\nWait, the question is about the third spin. Let's count:\n\n- Spin 1: when the first time the wheel is spun (e.g., image 2: the wheel is in a position, then the person acts based on the spin)\n\n- Spin 2: next time the wheel is spun (e.g., image 5: wheel shows 3)\n\n- Spin 3: next time.\n\nNow, check if the third spin lands on 3.\n\nWait, let's look for the third spin. Let's check the frames where the wheel is spun.\n\nLooking at the frames:\n\n- Image 1: initial setup.\n\n- Image 2: wheel is set, then spin? No, image 2 shows the wheel with the pointer on 4 (blue section), which is the result of a spin.\n\n- Image 3: person takes a cup (so that's the action after the first spin).\n\n- Image 4: same as 3, action.\n\n- Image 5: wheel is shown with the pointer on 3 (red section). So this is the result of the second spin.\n\n- Image 6: person acts (taking cups).\n\n- Then, image 7: next spin?\n\nWait, image 7: the wheel is shown with the pointer on 1 (pink",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the spinner land on the number 3 at any point during the game?",
+      "gt": "Yes",
+      "pred": "Yes, the spinner landed on the number 3 at multiple points during the game (e.g., visible in several frames where the spinner is stationary, such as the 5th frame from the top).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the spinner land on the number 4 on the first spin?",
+      "gt": "Yes",
+      "pred": "Yes, the spinner landed on the number 4 on the first spin. This is visible in the second frame (roughly 0.3s), where the red pointer is aligned with the blue section labeled \"4\" on the wheel.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the spinner land on the number 6 on the last spin?",
+      "gt": "Yes",
+      "pred": "Yes. In the final spin sequence (around the frame before \"Winner: Justice!\" is displayed), the spinner lands on the number 6.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the spinner land on the number 4 before it landed on the number 3?",
+      "gt": "Yes",
+      "pred": "Yes. The spinner landed on the number 4 (e.g., in frames where the wheel stops at the blue section labeled \"4\") before it landed on the number 3 (e.g., in frames where the wheel stops at the red section labeled \"3\"). This sequence is verifiable by observing the spinner's position across the video frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Did it land on the number 4 before it land on the number 3?",
+      "gt": "Yes",
+      "pred": "To determine if the wheel landed on the number 4 before the number 3, we analyze the sequence of frames:  \n\n- The wheel lands on the number 4 (blue section) in the **2nd frame** (second image).  \n- The wheel lands on the number 3 (red section) in the **5th frame** (fifth image).  \n\nSince the 2nd frame (4) occurs before the 5th frame (3), the answer is yes.  \n\n**Answer:** Yes. The wheel landed on 4 in the 2nd frame and on 3 in the 5th frame.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the spinner land on the number 4 during the game?",
+      "gt": "Yes",
+      "pred": "To determine if the spinner landed on the number 4, we analyze the video frames:  \n\n- In the **second frame** (after the initial title card), the spinner is stationary, and the red pointer clearly rests on the blue segment labeled \"4\".  \n\nThus, the spinner did land on the number 4 during the game.  \n\nAnswer: Yes (evident in the second frame, where the spinner is stationary on the \"4\" segment).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the spinner land on the number 3 during the game?",
+      "gt": "Yes",
+      "pred": "Yes, the spinner landed on the number 3 during the game. This can be verified in the 5th frame (from the sequence of images provided), where the spinner is clearly stopped on the red section labeled \"3\".",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the number 4 appear before the number 3 in the sequence of spins?",
+      "gt": "Yes",
+      "pred": "Yes. In the sequence of spins, the number 4 appears (e.g., in the second frame where the wheel shows 4 in the blue section) before the number 3 (e.g., in the fifth frame where the wheel stops on 3 in the red section).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "target",
+      "question": "Did it land on the number 4 after it land on the number 3?",
+      "gt": "No",
+      "pred": "So, let's check the video frames. First, we need to see when the wheel lands on 3 and then if it lands on 4 next. Let's look at the sequence. \n\nIn the frames, there's a part where the wheel is shown. Let's check the timestamps. The question is about the order: after 3, does it land on 4? \n\nLooking at the frames, we need to find the order of the numbers. Let's see: the wheel is spun, and the landing numbers. Let's check the frames where the wheel stops. \n\nWait, the problem is to check if after landing on 3, it lands on 4. Let's look at the frames. \n\nFirst, find when it lands on 3. Then check the next spin. \n\nLooking at the frames, for example, in one frame, the wheel shows 3 (red section), then later, does it show 4 (blue section)? Let's check. \n\nIn the sequence, after a 3, the next number might not be 4. Let's check the video frames. \n\nWait, the key is to see the order of the wheel spins. Let's check the frames where the wheel stops. \n\nLooking at the frames:\n\n- There's a frame where the wheel is on 3 (e.g., when the woman is moving cups, the wheel shows 3). Then, is the next spin 4? Let's check.\n\nAnother approach: look for consecutive landings. Let's check the frames in order. \n\nFrom the video, the wheel is spun multiple times. The question is whether after landing on 3, it lands on 4. \n\nLooking at the frames, there's no indication that after 3, it's 4. Let's check specific frames. \n\nFor example, in frame 6 (if we count the provided images), but since the user provided multiple images, we need to check the order. \n\nWait, the problem is to verify if \"it land on the number 4 after it land on the number 3\". So, did the wheel first land on 3, then later on 4? Or in the same sequence? \n\nWait, the wheel is spun each time, so each spin is a separate event. The question is: after a spin that landed on 3, did the next spin land on 4? \n\nLooking at the video frames, let's check the order of the wheel's landings. \n\nIn the images, there are multiple spins. Let's check:\n\n- In some frames, the wheel shows 3 (e.g., when the woman is moving yellow cups, the wheel is on 3). Then, later, when the wheel is spun again, does it show 4? \n\nLooking at the frames, for example, in the frame where the wheel is on 4 (blue section), but was that after a 3? Let's see.\n\nWait, the answer depends on whether in the video, after the wheel lands on 3, the next landing is 4. Let's check the sequence.\n\nFrom the provided images, let's check the order. The user provided 22 images. Let's list the wheel's landing numbers (when the wheel is stopped, not spinning):\n\n1. First image: wheel has \"2, 6, 1, 5, 4, 3, 9, 1\" (but maybe not the landing, but the first frame is the start with text \"Last Color Standing Wins!\").\n\n2. Second image: wheel shows numbers, but the pointer is on \"1\" (pink section). Wait, the wheel has sections with numbers. Let's check the positions.\n\nWait, the wheel has sections: 1 (pink), 3 (red), 5 (purple), 4 (blue), 2 (green), 6 (yellow), \"Lose a Turn\" (orange), 9 (another yellow), etc. \n\nLooking at the frames where the wheel is stopped (not spinning), the pointer is on a specific number. \n\nFor example:\n\n- In frame 3 (third image), the wheel is stopped, and the pointer is on 1 (pink section).\n\n- In frame 4, the man is moving a pink cup, wheel is still on 1.\n\n- In frame 5, the wheel is spinning? No, the wheel is stopped on 3 (red section), and the woman is moving her hand.\n\n- In frame 6, the wheel is stopped on 3 (red section), and the man is standing next to it.\n\n- In frame 7, the woman is moving a yellow cup, and the wheel is on 3 (red section).\n\n- In frame 8, the man is spinning the wheel (so the wheel is in motion), then in frame 9, the wheel is stopped on 1 (pink section).\n\n- In frame 10, the wheel is stopped on 4",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the spinner land on the number 4 at some point?",
+      "gt": "Yes",
+      "pred": "Yes, the spinner landed on the number 4. This can be verified in the second frame (where the spinner is clearly showing the number 4).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the spinner land on the number 3 at some point?",
+      "gt": "Yes",
+      "pred": "Yes, the spinner landed on the number 3. This can be verified in frames where the spinner's red section labeled \"3\" is visible (e.g., around the 5th frame in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the number 3 appear before the number 4 in the sequence of spins?",
+      "gt": "No",
+      "pred": "To determine if the number 3 appeared before the number 4 in the sequence of spins, we analyze the order of wheel results in the frames:  \n\n- The **first visible spin result** (after the initial setup) shows the wheel stopping on **4** (blue section, seen in the 2nd frame of the sequence).  \n- A subsequent spin result shows the wheel stopping on **3** (red section, seen in the 5th frame of the sequence).  \n\nSince 4 appears in the sequence *before* 3, the number 3 did **not** appear before the number 4.  \n\n**Answer:** No.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the number 4 come before the number 3 in the game?",
+      "gt": "Yes",
+      "pred": "Yes, the number 4 came before the number 3. In the sequence, the wheel shows the number 4 (e.g., in frame 2, the red pointer is on 4) before the number 3 appears (e.g., in frame 5, the red pointer is on 3).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "target",
+      "question": "Did it land on the number 6 on the last spin?",
+      "gt": "Yes",
+      "pred": "Yes. In the frame where the wheel stops before the \"Winner: Justice!\" text, the wheel lands on the number 6 (the yellow section labeled \"6\").",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the spinner land on the number 6 during the game?",
+      "gt": "Yes",
+      "pred": "Yes, the spinner landed on the number 6 during the game. This can be verified in the frame where the spinner is stationary and displays the number 6 (e.g., early frames showing the spinner with 6 visible).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the number 6 the result of the final spin?",
+      "gt": "Yes",
+      "pred": "To determine if the number 6 was the result of the final spin, we examine the frame where the winner is announced (the last frame with “Winner: Justice!”). In this frame, the wheel clearly shows the number 6 as the result of the spin. \n\nYes, the number 6 was the result of the final spin.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the game end after landing on the number 6?",
+      "gt": "Yes",
+      "pred": "Yes, the game ended after landing on the number 6, as indicated by the final frame showing \"Winner: Justice!\" with the wheel pointing to 6.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "target",
+      "question": "Did it land on black on the first spin?",
+      "gt": "No",
+      "pred": "No. The wheel in the video has colored sections (e.g., red, orange, yellow, green, blue, purple, pink) and no black section. All visible sections of the wheel are bright colors, so it could not have landed on black.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a first spin in the game?",
+      "gt": "Yes",
+      "pred": "Yes, there was a first spin in the game. This is evident from the sequence of frames where the wheel's position changes (e.g., comparing the initial frame with subsequent frames showing the wheel in different orientations), indicating the wheel was spun.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the spinner land on blue on the first spin?",
+      "gt": "Yes",
+      "pred": "To determine if the spinner landed on blue on the first spin, we analyze the sequence:  \n\n1. The first frame after the title (image 2) shows the spinner’s position after the first spin.  \n2. In this frame, the red arrow of the spinner is aligned with the **blue section** (labeled “4”).  \n\nThus, the spinner did land on blue on the first spin.  \n\nAnswer: Yes (verified in the second frame, ~0:02).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the spinner land on black on the first spin?",
+      "gt": "No",
+      "pred": "No, the spinner does not have a black section (all sections are colored), so it could not have landed on black.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "target",
+      "question": "Did the woman win the game?",
+      "gt": "No",
+      "pred": "No. The final frame (last image) displays the text \"Winner: Justice!\", indicating the man (Justice) won, so the woman did not win.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a woman play in the game?",
+      "gt": "Yes",
+      "pred": "Yes, the woman (wearing a red shirt) participated in the game, as seen in multiple frames where she interacts with the cups and the wheel (e.g., removing cups, spinning the wheel).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the game have a winner?",
+      "gt": "Yes",
+      "pred": "Yes. The final frame (timestamp ~32.0s) displays the text \"Winner: Justice!\" indicating the game had a winner.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the man win the game?",
+      "gt": "Yes",
+      "pred": "Yes, the man won the game. This is confirmed by the text \"Winner: Justice!\" displayed in the final frame of the video.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the woman win the game?",
+      "gt": "No",
+      "pred": "No. The final frame (last image) displays the text \"Winner: Justice!\", indicating the man (Justice) won, so the woman did not win.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "target",
+      "question": "Did the man win the game?",
+      "gt": "Yes",
+      "pred": "Yes, the man won the game. This is confirmed by the text \"Winner: Justice!\" displayed in the final frame of the video.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a man play in the game?",
+      "gt": "Yes",
+      "pred": "Yes. The man (Justice) is seen participating in the game, including spinning the wheel and interacting with the cups (e.g., in frames where he handles pink cups). The text \"Justice vs Susannah\" in the first frame also identifies him as a player.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man start playing first?",
+      "gt": "Yes",
+      "pred": "Yes. The man is the first to interact with the cups (e.g., in the early frames, he is seen picking up and stacking pink cups before the woman does the same with yellow cups).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the man win the game?",
+      "gt": "Yes",
+      "pred": "Yes, the man won the game. This is confirmed by the text \"Winner: Justice!\" displayed in the final frame of the video.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

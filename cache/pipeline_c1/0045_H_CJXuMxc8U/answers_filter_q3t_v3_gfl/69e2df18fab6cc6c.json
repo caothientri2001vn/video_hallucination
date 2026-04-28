@@ -1,0 +1,122 @@
+{
+  "question": "Is the woman who walks toward us at the beginning the one who later stands up and leaves?",
+  "pred": "The woman who walks toward the camera at the beginning of the video (00:00-00:10) is wearing a white pinstripe suit. The woman who later stands up and leaves the mahjong table (04:15-04:25) is wearing a white floral dress. These are two different people.\n\nEvidence: Frames at 00:00 show the white-pinstripe-suit woman walking toward the camera, while frames at 04:15 show the white-floral-dress woman standing up to leave.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "walk",
+      "description": "woman in white pinstripe suit enters building and walks toward the interior",
+      "participants": [
+        "white-pinstripe-suit woman"
+      ],
+      "actor": "white-pinstripe-suit woman",
+      "segment_boundary": "middle",
+      "segment_label": "mahjong game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:04",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "mahjong game"
+    },
+    {
+      "event_type": "walk",
+      "description": "woman in white pinstripe suit continues walking through the room toward the foreground mahjong table",
+      "participants": [
+        "white-pinstripe-suit woman"
+      ],
+      "actor": "white-pinstripe-suit woman",
+      "segment_boundary": "middle",
+      "segment_label": "mahjong game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 4,
+      "start_time": "00:04",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "mahjong game"
+    },
+    {
+      "event_type": "stand",
+      "description": "woman in white pinstripe suit stands behind the mahjong table observing the game",
+      "participants": [
+        "white-pinstripe-suit woman"
+      ],
+      "actor": "white-pinstripe-suit woman",
+      "segment_boundary": "middle",
+      "segment_label": "mahjong game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 5,
+      "start_time": "00:10",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "mahjong game"
+    },
+    {
+      "event_type": "sit",
+      "description": "Woman in white pinstripe suit sits down at the table facing other players",
+      "participants": [
+        "white-pinstripe-suit woman"
+      ],
+      "actor": "white-pinstripe-suit woman",
+      "segment_boundary": "middle",
+      "segment_label": "Mahjong Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 10,
+      "start_time": "00:23",
+      "end_time": "00:26",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "mahjong game"
+    },
+    {
+      "event_type": "stand",
+      "description": "A woman in a white floral dress stands up from her chair at a mahjong table.",
+      "participants": [
+        "white-floral-dress woman"
+      ],
+      "actor": "white-floral-dress woman",
+      "segment_boundary": "middle",
+      "segment_label": "Mahjong Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 84,
+      "start_time": "04:15",
+      "end_time": "04:20",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 2,
+      "segment_label_resolved": "Mahjong Game"
+    },
+    {
+      "event_type": "walk",
+      "description": "The woman in the white floral dress walks away from the mahjong table toward the background of the room.",
+      "participants": [
+        "white-floral-dress woman"
+      ],
+      "actor": "white-floral-dress woman",
+      "segment_boundary": "middle",
+      "segment_label": "Mahjong Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 85,
+      "start_time": "04:20",
+      "end_time": "04:25",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Mahjong Game"
+    }
+  ]
+}

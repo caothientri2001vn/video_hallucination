@@ -1,0 +1,380 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0094_itC2lurwGGg.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0094_itC2lurwGGg.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0094_itC2lurwGGg",
+    "n_target": 8,
+    "n_sub": 29,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.75,
+    "sub_accuracy": 0.7931034482758621
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Was black sand used first?",
+      "gt": "Yes",
+      "pred": "Yes, black sand was used first. The first instance of sand being poured onto the butterfly outline occurs with black sand (0:05), as seen when a hand pours black sand over the butterfly design. No other sand color is applied before this step.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did black sand appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. Black sand is visible in the bowls around the butterfly (e.g., in the second frame, the black sand bowl is present in the background, and in the sixth frame, black sand is being poured over the butterfly).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was black sand the first sand used?",
+      "gt": "Yes",
+      "pred": "Yes. Black sand was the first sand used, as seen when a hand pours black sand over the butterfly outline (frame 5, roughly 0:05-0:06).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did any other sand get used before black sand?",
+      "gt": "No",
+      "pred": "Yes. Before black sand was used (e.g., in the frame where black sand is poured over the butterfly, around the 0:05-0:06 mark), other sands were used. For example, green sand is shown being poured (0:02), pink sand is shown (0:03), and other sand applications (like using a stick to place sand) occur prior to the black sand step.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Was red sand used second?",
+      "gt": "No",
+      "pred": "No. The second sand used is pink (evident at 0:03, where a hand holds a bowl of pink sand), not red. Red sand is used later (e.g., 0:21–0:22).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did red sand appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. Red sand is visible in the container arrangement (e.g., first frame, left column, second from top) and is used to color parts of the butterfly (e.g., around timestamp 21, when red sand is applied to the lower wings).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was black sand used first?",
+      "gt": "Yes",
+      "pred": "Yes, black sand was used first. The first instance of sand being poured onto the butterfly outline occurs with black sand (0:05), as seen when a hand pours black sand over the butterfly design. No other sand color is applied before this step.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was red sand used immediately after black sand?",
+      "gt": "No",
+      "pred": "To determine if red sand was used immediately after black sand, we analyze the sequence of actions:  \n\n1. **Black sand use**: In frame 5, a hand spreads black sand over the butterfly design.  \n2. **Subsequent step**: In frame 6, a hand uses a small tool to *remove* black sand from the butterfly outline (not apply red sand).  \n3. **Red sand use**: Red sand is applied later (e.g., frame 17 shows red sand being spread on the lower part of the butterfly).  \n\nSince black sand is *removed* before red sand is applied (with other steps in between), red sand was **not** used immediately after black sand.  \n\nAnswer: No.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was red sand used before green sand?",
+      "gt": "Yes",
+      "pred": "No. Green sand was used before red sand. For example, green sand is shown being poured and applied in early frames (e.g., the second frame shows a hand holding a container of green sand, and subsequent frames show green sand being used on the butterfly design). Red sand is applied later (e.g., in frames where red sand is poured onto the lower wings of the butterfly, such as around the 17th frame). Thus, green sand was used first.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Was blue used last?",
+      "gt": "Yes",
+      "pred": "Yes. Blue was used to fill the background in the final steps, as seen when blue sand is poured around the butterfly (e.g., frames around 26-29 seconds) and the completed artwork has a blue background.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did blue sand appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, blue sand appeared in the video. For example, in the initial frame (0:00), there is a container of blue sand among the color options, and later (around 28-30 seconds), blue sand is poured as the background for the butterfly.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was blue sand used last?",
+      "gt": "Yes",
+      "pred": "Yes. Blue sand is poured onto the background in the later frames (around 28-32 seconds), and the final completed artwork shows the blue background, indicating it was the last color used.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was any sand used after blue sand?",
+      "gt": "No",
+      "pred": "No, after blue sand is used (e.g., around the 25-27 second mark when filling the background), no additional sand is applied. The subsequent frames show the completed artwork without further sand application.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Was purple used third?",
+      "gt": "Yes",
+      "pred": "No. The sequence of color application for the butterfly design shows purple was used first (e.g., frames 9-10 show purple sand being poured into the center of the butterfly). Green was the second color (frames 11-12), and yellow was the third (frames 13-14). Thus, purple was not used third.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did purple sand appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. Purple sand is visible in the containers (e.g., first frame, left column, second row) and is used to fill sections of the butterfly (e.g., when the hand applies purple sand to the butterfly’s center, around timestamp 8-9).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was purple sand used third?",
+      "gt": "Yes",
+      "pred": "No. The sequence of sand application for the butterfly's sections shows purple sand is used first (e.g., frame 10 shows purple sand being applied to the center of the butterfly). Thus, it was not used third.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was black sand used before purple sand?",
+      "gt": "Yes",
+      "pred": "Yes, black sand was used before purple sand. Black sand is applied in the frame showing the hand pouring black sand over the butterfly (e.g., around the 5th frame in the sequence), while purple sand is applied later when filling the butterfly's body (e.g., around the 9th frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was blue sand used after purple sand?",
+      "gt": "Yes",
+      "pred": "Yes. Purple sand was used for the butterfly's central body (e.g., around 9-10s), and blue sand was later used for the background (e.g., 28-29s).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Was the blue sand used before the red sand?",
+      "gt": "No",
+      "pred": "No. The red sand was used for the lower wings of the butterfly (e.g., around timestamps 18-20 seconds), while the blue sand was used later for the background (e.g., around timestamps 28-30 seconds). Thus, blue sand was not used before red sand.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did blue sand appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, blue sand appeared in the video. For example, in the initial frame (0:00), there is a container of blue sand among the color options, and later (around 28-30 seconds), blue sand is poured as the background for the butterfly.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did red sand appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes. Red sand is visible in the container arrangement (e.g., first frame, left column, second from top) and is used to color parts of the butterfly (e.g., around timestamp 21, when red sand is applied to the lower wings).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was red sand used before green sand?",
+      "gt": "Yes",
+      "pred": "No. Green sand was used before red sand. For example, green sand is shown being poured and applied in early frames (e.g., the second frame shows a hand holding a container of green sand, and subsequent frames show green sand being used on the butterfly design). Red sand is applied later (e.g., in frames where red sand is poured onto the lower wings of the butterfly, such as around the 17th frame). Thus, green sand was used first.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was green sand used before blue sand?",
+      "gt": "Yes",
+      "pred": "Yes. Green sand was used (e.g., in the sequence where green sand is applied to the butterfly’s body and other sections, visible in frames showing green sand being poured and spread) before blue sand (which is used later to fill the background, as seen in frames where blue sand is poured around the butterfly). This order is verifiable from the sequence of actions in the video.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Was blue sand used after red sand?",
+      "gt": "Yes",
+      "pred": "Yes. Red sand was used to color the lower wings of the butterfly (evident in frames showing red sand application, e.g., around the sequence where the lower wing sections are filled with red). Blue sand was later used to fill the background area (evident in frames where blue sand is spread over the background, e.g., around the sequence where the blue background is applied after the butterfly’s wings are colored). Thus, blue sand was used after red sand.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Was the yellow sand used before the blue sand?",
+      "gt": "Yes",
+      "pred": "Yes. The yellow sand was used to fill parts of the butterfly (e.g., the upper wing sections, visible in frames showing yellow sand application), and the blue sand was used later for the background (e.g., the frame where blue sand is poured around the butterfly, timestamp ~25-30 seconds). Thus, yellow sand was used before blue sand.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was yellow sand used in the video?",
+      "gt": "Yes",
+      "pred": "Yes, yellow sand was used. This is evident when yellow sand is applied to the butterfly's wings (e.g., around the 15–17 second mark in the sequence, where yellow sand is visible on the butterfly design).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was blue sand used in the video?",
+      "gt": "Yes",
+      "pred": "Yes, blue sand was used. This is evident in the frames where blue sand is poured onto the surface (e.g., around 27 - 29 seconds) and in the final artwork with a blue background (e.g., frame 31 - 32).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the yellow sand appear before the blue sand?",
+      "gt": "Yes",
+      "pred": "Yes. The yellow sand is used to color parts of the butterfly's wings (e.g., around the 13–14 second mark), while the blue sand is used later to fill the background (e.g., around the 22–25 second mark). Thus, yellow sand appears before blue sand.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Was pink sand used after yellow sand?",
+      "gt": "Yes",
+      "pred": "Yes. Pink sand was used after yellow sand. For example, yellow sand is applied to the main wing sections (e.g., around timestamp 13–14), and pink sand is later used for the outer wing edges (e.g., around timestamp 16–17).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was pink sand used in the video?",
+      "gt": "Yes",
+      "pred": "Yes, pink sand was used in the video. For example, at timestamp 0:15, pink sand is poured onto the butterfly design, and at 0:16, it is applied to the wings.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was yellow sand used in the video?",
+      "gt": "Yes",
+      "pred": "Yes, yellow sand was used. This is evident when yellow sand is applied to the butterfly's wings (e.g., around the 15–17 second mark in the sequence, where yellow sand is visible on the butterfly design).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the pink sand appear after the yellow sand?",
+      "gt": "Yes",
+      "pred": "Yes. The yellow sand is applied to the butterfly's wings (e.g., around timestamp 15-16), and the pink sand is applied later (e.g., around timestamp 18-19).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Was pink sand used before black and then green?",
+      "gt": "No",
+      "pred": "Yes. Pink sand is shown in frame 3 (0:03), black sand is applied in frame 6 (0:06), and green sand is applied in frame 13 (0:13), confirming the sequence of pink before black and then green.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was black sand used first in the video?",
+      "gt": "Yes",
+      "pred": "Yes. Black sand is first used in the video, as seen when black sand is poured onto the butterfly outline (e.g., frame 5, where black sand covers parts of the butterfly design).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was pink sand used in the video?",
+      "gt": "Yes",
+      "pred": "Yes, pink sand was used in the video. For example, at timestamp 0:15, pink sand is poured onto the butterfly design, and at 0:16, it is applied to the wings.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the pink sand appear before the black sand?",
+      "gt": "No",
+      "pred": "Yes. The pink sand is shown in frame 3 (a hand holding a bowl of pink sand), while the black sand is first used in frame 5 (black sand is poured over the butterfly outline). Therefore, pink sand appears before black sand.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the black sand appear before the green sand?",
+      "gt": "Yes",
+      "pred": "No. The green sand is first shown in a cup being held (around 0:02), while black sand is used later (e.g., in the frame at 0:05 where black sand is poured). Thus, green sand appeared before black sand.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0024_224Hhx-5QyE.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0024_224Hhx-5QyE.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0024_224Hhx-5QyE",
+    "n_target": 6,
+    "n_sub": 15,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 1.0,
+    "sub_accuracy": 0.8666666666666667
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Does the woman throw a purple ballon?",
+      "gt": "No",
+      "pred": "No. The video shows the woman interacting with a green balloon, not a purple one. All visible balloons in the frames are green.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the woman throw a balloon?",
+      "gt": "Yes",
+      "pred": "Yes, the woman throws the balloon. This is evident in frames where the green balloon is seen in mid-air, such as around the 22nd image (where the balloon is airborne and the woman’s arm position suggests she released it).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is there a purple balloon in the video?",
+      "gt": "No",
+      "pred": "No, there is no purple balloon in the video. The only balloon visible in all frames is green.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Does the man throw a purple balloon?",
+      "gt": "No",
+      "pred": "No, the balloon used in the video is green, not purple. The man does not throw a purple balloon.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the man throw a balloon?",
+      "gt": "No",
+      "pred": "Yes. The man throws the green balloon, as seen in the sequence where the balloon is in mid-air and the man's hand is in a throwing motion (e.g., around the 4th frame in the provided sequence).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is there a purple balloon in the video?",
+      "gt": "No",
+      "pred": "No, there is no purple balloon in the video. The only balloon visible in all frames is green.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the man perform any throwing action?",
+      "gt": "No",
+      "pred": "Yes, the man performs a throwing action. For example, in the frame where the green ball is in mid-air (e.g., around the 4th image in the sequence), the man’s hand position and the ball’s trajectory indicate a throw.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Does the woman stack the green cup?",
+      "gt": "Yes",
+      "pred": "Yes. The woman is seen stacking the green cups in multiple frames, such as when she arranges and stacks the green cups on the table (e.g., in frames where she is actively placing cups on top of each other).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the woman stack a cup?",
+      "gt": "Yes",
+      "pred": "Yes, the woman stacks a cup. This can be observed in multiple frames where she is arranging the green cups (e.g., when she is seen placing cups on top of each other).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is there a green cup in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there are green cups visible in the video (e.g., in the first frame and multiple subsequent frames where the person in the red shirt interacts with them).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Is the cup that the woman stacks green?",
+      "gt": "Yes",
+      "pred": "Yes. The woman is stacking green cups, which can be observed in the video frames where she manipulates the cups (e.g., when she is seen arranging or stacking the cups on the left side of the table, the cups are green).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Does the woman stack the purple cup?",
+      "gt": "No",
+      "pred": "No, the woman does not stack the purple cups; she stacks the green cups while the man handles the purple cups. This can be observed throughout the video sequence (e.g., in frames where the woman is arranging green cups and the man is arranging purple cups).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the woman stack a cup?",
+      "gt": "Yes",
+      "pred": "Yes, the woman stacks a cup. This can be observed in multiple frames where she is arranging the green cups (e.g., when she is seen placing cups on top of each other).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is there a purple cup in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there are purple cups visible in the video (e.g., on the right side of the table in multiple frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Does the man stack the green cup?",
+      "gt": "No",
+      "pred": "No. The man is only seen stacking or arranging purple cups throughout the video, while the green cups are associated with the woman's actions. For example, in frames where the man is actively working with cups (e.g., around the 20-30 second mark), he is handling purple cups, and the green cups remain on the woman’s side. There is no evidence in the video of the man stacking green cups.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the man stack a cup?",
+      "gt": "Yes",
+      "pred": "Yes. The man stacks purple cups, as seen in multiple frames (e.g., when he arranges and stacks the purple cups on the table).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is there a green cup in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there are green cups visible in the video (e.g., in the first frame and multiple subsequent frames where the person in the red shirt interacts with them).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Does the man stack the purple cup?",
+      "gt": "Yes",
+      "pred": "Yes, the man stacks the purple cups. This can be observed in multiple frames where he is seen arranging and stacking the purple cups (e.g., when he is actively placing purple cups on top of each other during the game).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the man stack a cup?",
+      "gt": "Yes",
+      "pred": "Yes. The man stacks purple cups, as seen in multiple frames (e.g., when he arranges and stacks the purple cups on the table).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is there a purple cup in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there are purple cups visible in the video (e.g., on the right side of the table in multiple frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Is the cup that the man stacks purple?",
+      "gt": "Yes",
+      "pred": "Yes. The man stacks purple cups, as seen in multiple frames where he is arranging the purple cups on the right side of the table (e.g., timestamps showing his actions with the purple cups).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

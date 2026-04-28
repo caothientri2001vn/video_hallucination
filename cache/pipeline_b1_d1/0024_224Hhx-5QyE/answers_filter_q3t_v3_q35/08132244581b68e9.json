@@ -1,0 +1,138 @@
+{
+  "question": "Does the woman throw a purple ballon?",
+  "pred": "Evidence: The woman is seen holding and throwing a green balloon throughout the video (e.g., frames 00:00, 00:01, 01:06), but there is no purple balloon visible in any of the frames.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "hold",
+      "description": "woman in orange shirt holds green balloon in front of her face",
+      "participants": [
+        "orange-shirt woman",
+        "pink-hoodie man"
+      ],
+      "actor": "orange-shirt woman",
+      "object": "green balloon",
+      "on_screen_text": [
+        {
+          "text": "First to stack their cups wins!",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:01",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Game"
+    },
+    {
+      "event_type": "throw",
+      "description": "woman in orange shirt throws green balloon upward",
+      "participants": [
+        "orange-shirt woman",
+        "pink-hoodie man"
+      ],
+      "actor": "orange-shirt woman",
+      "object": "green balloon",
+      "on_screen_text": [
+        {
+          "text": "First to stack their cups wins!",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 2,
+      "start_time": "00:01",
+      "end_time": "00:02",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Game"
+    },
+    {
+      "event_type": "catch",
+      "description": "woman in orange shirt catches the green balloon as it falls",
+      "participants": [
+        "orange-shirt woman",
+        "pink-hoodie man"
+      ],
+      "actor": "orange-shirt woman",
+      "object": "green balloon",
+      "on_screen_text": [
+        {
+          "text": "First to stack their cups wins!",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 4,
+      "start_time": "00:06",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Game"
+    },
+    {
+      "event_type": "hold",
+      "description": "woman in orange shirt holds green balloon in front of her",
+      "participants": [
+        "orange-shirt woman",
+        "pink-hoodie man"
+      ],
+      "actor": "orange-shirt woman",
+      "object": "green balloon",
+      "on_screen_text": [
+        {
+          "text": "First to stack their cups wins!",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 5,
+      "start_time": "00:08",
+      "end_time": "00:13",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Game"
+    },
+    {
+      "event_type": "throw",
+      "description": "woman in orange shirt throws green balloon upward into the air",
+      "participants": [
+        "orange-shirt woman",
+        "pink-hoodie man"
+      ],
+      "actor": "orange-shirt woman",
+      "object": "green balloon",
+      "outcome": "in_air",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 32,
+      "start_time": "01:06",
+      "end_time": "01:07",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Game"
+    }
+  ]
+}

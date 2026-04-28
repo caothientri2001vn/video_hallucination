@@ -1,0 +1,199 @@
+{
+  "question": "Is it correct that the gold-medal team swam in lane 4?",
+  "pred": "Evidence: Context event 88 states \"On-screen graphic showing 'USA' with lane number 5 indicator appearing\" and event 107 identifies \"UNITED STATES OF AMERICA\" as the winner of the Men's 4 x 100m Medley Relay.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "graphic",
+      "description": "On-screen graphic showing 'USA' with lane number 5 indicator appearing",
+      "participants": [],
+      "actor": "on-screen graphic",
+      "object": "graphic",
+      "on_screen_text": [
+        {
+          "text": "5 USA",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Swimming Competition - Freestyle Race",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 88,
+      "start_time": "04:15",
+      "end_time": "04:20",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 13,
+      "round_index": 2,
+      "segment_label_resolved": "Swimming Race"
+    },
+    {
+      "event_type": "graphic",
+      "description": "On-screen graphic showing 'GBR +1.01' behind USA appearing",
+      "participants": [],
+      "actor": "on-screen graphic",
+      "object": "graphic",
+      "on_screen_text": [
+        {
+          "text": "4 GBR +1.01",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Swimming Competition - Freestyle Race",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 89,
+      "start_time": "04:16",
+      "end_time": "04:20",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 13,
+      "round_index": 2,
+      "segment_label_resolved": "Swimming Race"
+    },
+    {
+      "event_type": "goggles_adjust",
+      "description": "A swimmer adjusts his goggles while holding a black swim cap",
+      "participants": [
+        "goggles-adjusting swimmer"
+      ],
+      "actor": "goggles-adjusting swimmer",
+      "object": "black swim cap",
+      "on_screen_text": [
+        {
+          "text": "SWIMMING",
+          "location": "lower_third"
+        },
+        {
+          "text": "WINNER - MEN'S 4 X 100M MEDLEY RELAY",
+          "location": "lower_third"
+        },
+        {
+          "text": "UNITED STATES OF AMERICA",
+          "location": "lower_third"
+        },
+        {
+          "text": "OR 3:27.95",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Men's 4 x 100m Medley Relay",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 107,
+      "start_time": "05:00",
+      "end_time": "05:02",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "Swimming Race"
+    },
+    {
+      "event_type": "on_screen_text",
+      "description": "Text appears showing event name and rankings: United States of America (gold), Great Britain (silver), Australia (bronze)",
+      "participants": [],
+      "actor": "on_screen_text",
+      "on_screen_text": [
+        {
+          "text": "Men's 4 x 100m Medley Relay",
+          "location": "lower_third"
+        },
+        {
+          "text": "VICTORY CEREMONY",
+          "location": "lower_third"
+        },
+        {
+          "text": "UNITED STATES OF AMERICA",
+          "location": "lower_third"
+        },
+        {
+          "text": "GREAT BRITAIN",
+          "location": "lower_third"
+        },
+        {
+          "text": "AUSTRALIA",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Men's 4 x 100m Medley Relay Victory Ceremony",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 189,
+      "start_time": "07:57",
+      "end_time": "08:00",
+      "sub_events": [],
+      "subtype_order": 16,
+      "subtype_total": 16,
+      "round_index": 2,
+      "segment_label_resolved": "Swimming Race"
+    },
+    {
+      "event_type": "medal_distribution",
+      "description": "Ceremony official in dark clothing distributes medals to Australian team members in green uniforms",
+      "participants": [
+        "green-uniform athlete",
+        "dark-clothing official"
+      ],
+      "actor": "dark-clothing official",
+      "on_screen_text": [
+        {
+          "text": "Men's 4 x 100m Medley Relay",
+          "location": "lower_third"
+        },
+        {
+          "text": "VICTORY CEREMONY",
+          "location": "lower_third"
+        },
+        {
+          "text": "UNITED STATES OF AMERICA",
+          "location": "lower_third"
+        },
+        {
+          "text": "GREAT BRITAIN",
+          "location": "lower_third"
+        },
+        {
+          "text": "AUSTRALIA",
+          "location": "lower_third"
+        },
+        {
+          "text": "Rio2016",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Men's 4 x 100m Medley Relay VICTORY CEREMONY",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 190,
+      "start_time": "08:00",
+      "end_time": "08:03",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "Swimming Race"
+    },
+    {
+      "event_type": "handshake",
+      "description": "Australian team member in green uniform shakes hands with ceremony official in dark clothing",
+      "participants": [
+        "green-uniform athlete",
+        "dark-clothing official"
+      ],
+      "actor": "green-uniform athlete",
+      "segment_boundary": "middle",
+      "segment_label": "Men's 4 x 100m Medley Relay VICTORY CEREMONY",
+      "continuation_hint": "complete",
+      "event_index": 193,
+      "start_time": "08:07",
+      "end_time": "08:10",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 5,
+      "round_index": 2,
+      "segment_label_resolved": "Swimming Race"
+    }
+  ]
+}

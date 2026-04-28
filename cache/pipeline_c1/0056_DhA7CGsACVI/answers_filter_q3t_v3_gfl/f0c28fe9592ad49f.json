@@ -1,0 +1,198 @@
+{
+  "question": "Were there exactly two boxes opened between the lipstick box and the doll head box?",
+  "pred": "The video shows a game where boxes are opened in sequence. Based on the frames and Context:\n\n1.  **Lipstick box**: The brown-suit man opens a box at ~00:55 (Context event 15 describes the start of this turn) which reveals a gold lipstick tube containing a tiny hand (seen clearly in frames at 01:00 and 02:25).\n2.  **Box with figurines**: The dark-suited man opens a box at ~03:00 (Context event 78) which reveals green praying mantis and bee figurines (seen in frames at 03:05 and 03:10).\n3.  **Unnamed box**: The dark-suited man opens another box at ~04:30 (Context event 107).\n4.  **Doll head box**: The brown-suit man opens box #1 at ~04:52 (Context event 114), which reveals a doll head with a blue bandana (seen in frame at 05:15).\n\nThere were exactly two boxes opened (the figurine box and the unnamed box) between the opening of the lipstick box and the opening of the doll head box.\n\nEvidence: Frames at 03:05 show the figurine box being opened and frames at 04:30 show another box being opened before the doll head is revealed at 05:15.\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "open_box",
+      "description": "blue-suited man begins to open the lid of box #4 that is now on the table",
+      "participants": [
+        "blue-suited man"
+      ],
+      "actor": "blue-suited man",
+      "object": "box #4",
+      "segment_boundary": "middle",
+      "segment_label": "Box Reveal Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 15,
+      "start_time": "00:43",
+      "end_time": "00:45",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "place",
+      "description": "The man in dark suit places the white box (previously labeled '3') on the table surface between the two men",
+      "participants": [
+        "dark-suit man"
+      ],
+      "actor": "dark-suit man",
+      "object": "white box",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 77,
+      "start_time": "02:58",
+      "end_time": "03:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "The dark-suited man opens the large center box on the table by lifting its lid upward",
+      "participants": [
+        "blue-suited man",
+        "dark-suited man"
+      ],
+      "actor": "dark-suited man",
+      "cover": "beige box",
+      "hidden": "green praying mantis figurines and black-yellow bee figurines",
+      "segment_boundary": "middle",
+      "segment_label": "Figurine Display",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 78,
+      "start_time": "03:00",
+      "end_time": "03:03",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "reveal",
+      "description": "The opened box reveals green praying mantis figurines and black-yellow bee figurines arranged on a gray platform",
+      "participants": [
+        "blue-suited man",
+        "dark-suited man"
+      ],
+      "actor": "dark-suited man",
+      "object_before": "closed beige box",
+      "object_after": "beige box with lid open revealing figurines",
+      "segment_boundary": "middle",
+      "segment_label": "Figurine Display",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 79,
+      "start_time": "03:02",
+      "end_time": "03:08",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "present_object",
+      "description": "Jimmy Fallon holds up a green and black object on a white tray",
+      "participants": [
+        "blue-suit man",
+        "dark-suit man"
+      ],
+      "actor": "dark-suit man",
+      "object": "green and black object",
+      "segment_boundary": "middle",
+      "segment_label": "Interview",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 106,
+      "start_time": "04:28",
+      "end_time": "04:30",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "man in gray suit opens the white box on the right side of the table",
+      "participants": [
+        "blue-suit man",
+        "gray-suit man"
+      ],
+      "actor": "gray-suit man",
+      "object": "white box",
+      "cover": "white box",
+      "hidden": "uncertain",
+      "segment_boundary": "middle",
+      "segment_label": "Box Opening Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 107,
+      "start_time": "04:30",
+      "end_time": "04:34",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "lift",
+      "description": "the blue-suited man lifts the leftmost box (labeled 1) from the top shelf",
+      "participants": [
+        "blue-suited man",
+        "gray-suited man"
+      ],
+      "actor": "blue-suited man",
+      "object": "box labeled 1",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 112,
+      "start_time": "04:45",
+      "end_time": "04:49",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "place",
+      "description": "the blue-suited man places the box labeled 1 on the table",
+      "participants": [
+        "blue-suited man",
+        "gray-suited man"
+      ],
+      "actor": "blue-suited man",
+      "object": "box labeled 1",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 113,
+      "start_time": "04:49",
+      "end_time": "04:52",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "the blue-suited man opens the box labeled 1",
+      "participants": [
+        "blue-suited man",
+        "gray-suited man"
+      ],
+      "actor": "blue-suited man",
+      "object": "box labeled 1",
+      "object_before": "closed box",
+      "object_after": "open box",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 114,
+      "start_time": "04:52",
+      "end_time": "04:55",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    }
+  ]
+}

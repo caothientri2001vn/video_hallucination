@@ -1,0 +1,211 @@
+{
+  "question": "Does the woman win the game?",
+  "pred": "The video shows a game where a woman in a gray shirt and a man in a dark green shirt reveal numbers hidden under beige discs. The woman reveals several numbers (3, 6, 5, 1, 7, 8, 6, 10) and expresses excitement, but there is no on-screen text, scoreboard, or definitive action (like a final reveal or a specific score reached) that confirms a \"win\" according to the grounding constraints. While she smiles and reacts positively, Rule 0 and Rule 1 specify that reactions are not sufficient evidence for a game outcome.\n\nEvidence: none\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "reveal",
+      "description": "Woman flips the rightmost disc in the second row to reveal the number 3",
+      "participants": [
+        "man in dark green shirt",
+        "woman in gray shirt"
+      ],
+      "actor": "woman in gray shirt",
+      "cover": "beige disc",
+      "hidden": "disc with number 3",
+      "segment_boundary": "middle",
+      "segment_label": "Disc Number Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:01",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 11,
+      "round_index": 1,
+      "segment_label_resolved": "Disc Number Game"
+    },
+    {
+      "event_type": "reveal",
+      "description": "Woman flips the rightmost disc in the top row to reveal the number 6",
+      "participants": [
+        "man in dark green shirt",
+        "woman in gray shirt"
+      ],
+      "actor": "woman in gray shirt",
+      "cover": "beige disc",
+      "hidden": "disc with number 6",
+      "segment_boundary": "middle",
+      "segment_label": "Disc Number Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 5,
+      "start_time": "00:04",
+      "end_time": "00:05",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 11,
+      "round_index": 1,
+      "segment_label_resolved": "Disc Number Game"
+    },
+    {
+      "event_type": "reveal",
+      "description": "Woman flips the rightmost disc in the bottom row to reveal the number 5",
+      "participants": [
+        "man in dark green shirt",
+        "woman in gray shirt"
+      ],
+      "actor": "woman in gray shirt",
+      "cover": "beige disc",
+      "hidden": "disc with number 5",
+      "segment_boundary": "middle",
+      "segment_label": "Disc Number Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 11,
+      "start_time": "00:11",
+      "end_time": "00:13",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 11,
+      "round_index": 1,
+      "segment_label_resolved": "Disc Number Game"
+    },
+    {
+      "event_type": "reveal",
+      "description": "lifts a beige circular token to reveal number 1 underneath",
+      "participants": [
+        "gray-sweater woman",
+        "dark-green-shirt man"
+      ],
+      "actor": "gray-sweater woman",
+      "cover": "beige token",
+      "hidden": "beige token with number 1",
+      "segment_boundary": "middle",
+      "segment_label": "Number Token Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 32,
+      "start_time": "00:58",
+      "end_time": "01:00",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 11,
+      "round_index": 1,
+      "segment_label_resolved": "Disc Number Game"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the woman flips the middle disc in the top row to reveal number 7",
+      "participants": [
+        "blue-shirt man",
+        "gray-shirt woman"
+      ],
+      "actor": "gray-shirt woman",
+      "object_before": "beige disc",
+      "object_after": "beige disc with number 7",
+      "cover": "beige disc",
+      "hidden": "beige disc with number 7",
+      "segment_boundary": "middle",
+      "segment_label": "Number Reveal Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 33,
+      "start_time": "01:00",
+      "end_time": "01:02",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 11,
+      "round_index": 1,
+      "segment_label_resolved": "Disc Number Game"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the woman flips the leftmost disc in the top row to reveal number 8",
+      "participants": [
+        "blue-shirt man",
+        "gray-shirt woman"
+      ],
+      "actor": "gray-shirt woman",
+      "object_before": "beige disc",
+      "object_after": "beige disc with number 8",
+      "cover": "beige disc",
+      "hidden": "beige disc with number 8",
+      "segment_boundary": "middle",
+      "segment_label": "Number Reveal Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 34,
+      "start_time": "01:03",
+      "end_time": "01:05",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 11,
+      "round_index": 1,
+      "segment_label_resolved": "Disc Number Game"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the woman flips the rightmost disc in the top row to reveal number 6",
+      "participants": [
+        "blue-shirt man",
+        "gray-shirt woman"
+      ],
+      "actor": "gray-shirt woman",
+      "object_before": "beige disc",
+      "object_after": "beige disc with number 6",
+      "cover": "beige disc",
+      "hidden": "beige disc with number 6",
+      "segment_boundary": "middle",
+      "segment_label": "Number Reveal Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 35,
+      "start_time": "01:06",
+      "end_time": "01:07",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 11,
+      "round_index": 1,
+      "segment_label_resolved": "Disc Number Game"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the woman flips the leftmost disc in the middle row to reveal number 10",
+      "participants": [
+        "blue-shirt man",
+        "gray-shirt woman"
+      ],
+      "actor": "gray-shirt woman",
+      "object_before": "beige disc",
+      "object_after": "beige disc with number 10",
+      "cover": "beige disc",
+      "hidden": "beige disc with number 10",
+      "segment_boundary": "middle",
+      "segment_label": "Number Reveal Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 36,
+      "start_time": "01:08",
+      "end_time": "01:09",
+      "sub_events": [],
+      "subtype_order": 11,
+      "subtype_total": 11,
+      "round_index": 1,
+      "segment_label_resolved": "Disc Number Game"
+    },
+    {
+      "event_type": "react",
+      "description": "the woman smiles and shows excitement about the revealed numbers",
+      "participants": [
+        "gray-shirt woman"
+      ],
+      "actor": "gray-shirt woman",
+      "segment_boundary": "middle",
+      "segment_label": "Number Reveal Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 38,
+      "start_time": "01:00",
+      "end_time": "01:09",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Disc Number Game"
+    }
+  ]
+}

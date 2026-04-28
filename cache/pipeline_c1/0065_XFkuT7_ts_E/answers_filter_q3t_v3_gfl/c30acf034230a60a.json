@@ -1,0 +1,583 @@
+{
+  "question": "Were raspberries crushed before kiwi?",
+  "pred": "The chronological order of fruit muddling (crushing) events in the video is as follows:\n\n1.  **Green Grapes**: Crushed at 00:13–00:15 (Event 8).\n2.  **Blueberries**: Crushed at 00:15–00:17 (Event 9).\n3.  **Kiwi**: Crushed at 00:20–00:22 (Event 13).\n4.  **Raspberries**: Crushed at 00:25–00:27 (Event 17).\n5.  **Mandarins**: Crushed at 00:29–00:30 (Event 20).\n\nThe raspberries were crushed after the kiwi pieces.\n\nEvidence: Event 13 shows kiwi being crushed at 00:20, while Event 17 shows raspberries being crushed later at 00:25.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "place": 7,
+      "muddle": 4,
+      "lift": 3,
+      "insert": 3,
+      "pour_liquids": 2,
+      "pour_liquid": 2,
+      "adjust": 1,
+      "take": 1,
+      "display": 1,
+      "remove": 1,
+      "add_ice": 1,
+      "stir": 1
+    },
+    "events": [
+      {
+        "event_type": "place",
+        "description": "a glass filled with various fruits enters the frame from the right side",
+        "participants": [],
+        "actor": "",
+        "object": "glass with fruits",
+        "segment_boundary": "start",
+        "segment_label": "Fruit Muddling",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:02",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "place",
+        "description": "a gloved hand places the glass filled with fruits on the wooden surface",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "glass with fruits",
+        "segment_boundary": "middle",
+        "segment_label": "Fruit Muddling",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 2,
+        "start_time": "00:02",
+        "end_time": "00:04",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "adjust",
+        "description": "the gloved hand moves the glass to the center of the wooden surface",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "glass with fruits",
+        "segment_boundary": "middle",
+        "segment_label": "Fruit Muddling",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 3,
+        "start_time": "00:04",
+        "end_time": "00:05",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "take",
+        "description": "the gloved hand takes a bunch of green grapes from the top of the fruit arrangement",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "green grapes",
+        "segment_boundary": "middle",
+        "segment_label": "Fruit Muddling",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 4,
+        "start_time": "00:05",
+        "end_time": "00:07",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "display",
+        "description": "the gloved hand holds the bunch of green grapes against the black background",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "green grapes",
+        "segment_boundary": "middle",
+        "segment_label": "Fruit Muddling",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 5,
+        "start_time": "00:07",
+        "end_time": "00:09",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "remove",
+        "description": "the gloved hand removes individual grapes from the bunch",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "green grapes",
+        "segment_boundary": "middle",
+        "segment_label": "Fruit Muddling",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 6,
+        "start_time": "00:09",
+        "end_time": "00:11",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "place",
+        "description": "the gloved hand places the green grapes into an empty clear glass",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "green grapes and glass",
+        "segment_boundary": "middle",
+        "segment_label": "Fruit Muddling",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 7,
+        "start_time": "00:11",
+        "end_time": "00:13",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "muddle",
+        "description": "the gloved hand uses a metal muddler tool to crush the green grapes in the glass",
+        "participants": [
+          "black-gloved person"
+        ],
+        "actor": "black-gloved person",
+        "object": "green grapes",
+        "object_before": "whole green grapes",
+        "object_after": "crushed green grapes",
+        "segment_boundary": "middle",
+        "segment_label": "Fruit Muddling",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 8,
+        "start_time": "00:13",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "muddle",
+        "description": "continues pressing metal muddler into blueberries to crush them further",
+        "participants": [
+          "black-glove person"
+        ],
+        "actor": "black-glove person",
+        "object": "blueberries",
+        "object_before": "partially crushed blueberries",
+        "object_after": "more crushed blueberries",
+        "segment_boundary": "middle",
+        "segment_label": "fruit muddling",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 9,
+        "start_time": "00:15",
+        "end_time": "00:17",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "lift",
+        "description": "lifts metal muddler from blueberry mixture in glass",
+        "participants": [
+          "black-glove person"
+        ],
+        "actor": "black-glove person",
+        "segment_boundary": "middle",
+        "segment_label": "fruit muddling",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 10,
+        "start_time": "00:17",
+        "end_time": "00:18",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "place",
+        "description": "places green kiwi pieces into clear glass",
+        "participants": [
+          "black-glove person"
+        ],
+        "actor": "black-glove person",
+        "object": "kiwi pieces",
+        "object_before": "empty glass",
+        "object_after": "glass with kiwi pieces",
+        "segment_boundary": "middle",
+        "segment_label": "fruit muddling",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 11,
+        "start_time": "00:18",
+        "end_time": "00:19",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "insert",
+        "description": "inserts metal muddler into glass containing kiwi pieces",
+        "participants": [
+          "black-glove person"
+        ],
+        "actor": "black-glove person",
+        "object": "metal muddler",
+        "segment_boundary": "middle",
+        "segment_label": "fruit muddling",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 12,
+        "start_time": "00:19",
+        "end_time": "00:20",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "muddle",
+        "description": "presses metal muddler into kiwi pieces to crush them",
+        "participants": [
+          "black-glove person"
+        ],
+        "actor": "black-glove person",
+        "object": "kiwi pieces",
+        "object_before": "whole kiwi pieces",
+        "object_after": "crushed kiwi mixture",
+        "segment_boundary": "middle",
+        "segment_label": "fruit muddling",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 13,
+        "start_time": "00:20",
+        "end_time": "00:22",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "lift",
+        "description": "lifts metal muddler from crushed kiwi mixture",
+        "participants": [
+          "black-glove person"
+        ],
+        "actor": "black-glove person",
+        "segment_boundary": "middle",
+        "segment_label": "fruit muddling",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 14,
+        "start_time": "00:22",
+        "end_time": "00:23",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "place",
+        "description": "places red raspberries into clear glass",
+        "participants": [
+          "black-glove person"
+        ],
+        "actor": "black-glove person",
+        "object": "raspberries",
+        "object_before": "empty glass",
+        "object_after": "glass with raspberries",
+        "segment_boundary": "middle",
+        "segment_label": "fruit muddling",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 15,
+        "start_time": "00:23",
+        "end_time": "00:24",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "insert",
+        "description": "inserts metal muddler into glass containing raspberries",
+        "participants": [
+          "black-glove person"
+        ],
+        "actor": "black-glove person",
+        "object": "metal muddler",
+        "segment_boundary": "middle",
+        "segment_label": "fruit muddling",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 16,
+        "start_time": "00:24",
+        "end_time": "00:25",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "muddle",
+        "description": "presses metal muddler into raspberries to crush them",
+        "participants": [
+          "black-glove person"
+        ],
+        "actor": "black-glove person",
+        "object": "raspberries",
+        "object_before": "whole raspberries",
+        "object_after": "crushed raspberry mixture",
+        "segment_boundary": "middle",
+        "segment_label": "fruit muddling",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 17,
+        "start_time": "00:25",
+        "end_time": "00:27",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "lift",
+        "description": "lifts metal muddler from crushed raspberry mixture",
+        "participants": [
+          "black-glove person"
+        ],
+        "actor": "black-glove person",
+        "segment_boundary": "middle",
+        "segment_label": "fruit muddling",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 18,
+        "start_time": "00:27",
+        "end_time": "00:28",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "place",
+        "description": "places orange mandarins into clear glass",
+        "participants": [
+          "black-glove person"
+        ],
+        "actor": "black-glove person",
+        "object": "mandarins",
+        "object_before": "empty glass",
+        "object_after": "glass with mandarins",
+        "segment_boundary": "middle",
+        "segment_label": "fruit muddling",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 19,
+        "start_time": "00:28",
+        "end_time": "00:29",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "insert",
+        "description": "inserts metal muddler into glass containing mandarins",
+        "participants": [
+          "black-glove person"
+        ],
+        "actor": "black-glove person",
+        "object": "metal muddler",
+        "segment_boundary": "middle",
+        "segment_label": "fruit muddling",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 20,
+        "start_time": "00:29",
+        "end_time": "00:30",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "place",
+        "description": "places a clear glass pitcher on the wooden table",
+        "participants": [
+          "black-glove hand"
+        ],
+        "actor": "black-glove hand",
+        "object": "clear glass pitcher",
+        "segment_boundary": "middle",
+        "segment_label": "drink preparation",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 21,
+        "start_time": "00:30",
+        "end_time": "00:32",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 7,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "add_ice",
+        "description": "adds ice cubes to the pitcher using a metal scoop",
+        "participants": [
+          "black-glove hand"
+        ],
+        "actor": "black-glove hand",
+        "object": "ice cubes",
+        "segment_boundary": "middle",
+        "segment_label": "drink preparation",
+        "continuation_hint": "complete",
+        "event_index": 22,
+        "start_time": "00:32",
+        "end_time": "00:34",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "pour_liquids",
+        "description": "pours yellow and red liquids simultaneously into the pitcher",
+        "participants": [
+          "black-glove hands"
+        ],
+        "actor": "black-glove hands",
+        "object": "yellow liquid and red liquid",
+        "segment_boundary": "middle",
+        "segment_label": "drink preparation",
+        "continuation_hint": "complete",
+        "event_index": 23,
+        "start_time": "00:34",
+        "end_time": "00:37",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "pour_liquids",
+        "description": "pours dark red and green liquids simultaneously into the pitcher",
+        "participants": [
+          "black-glove hands"
+        ],
+        "actor": "black-glove hands",
+        "object": "dark red liquid and green liquid",
+        "segment_boundary": "middle",
+        "segment_label": "drink preparation",
+        "continuation_hint": "complete",
+        "event_index": 24,
+        "start_time": "00:37",
+        "end_time": "00:40",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "pour_liquid",
+        "description": "pours red liquid from a container into the pitcher",
+        "participants": [
+          "black-glove hand"
+        ],
+        "actor": "black-glove hand",
+        "object": "red liquid",
+        "segment_boundary": "middle",
+        "segment_label": "drink preparation",
+        "continuation_hint": "complete",
+        "event_index": 25,
+        "start_time": "00:40",
+        "end_time": "00:42",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "pour_liquid",
+        "description": "pours coconut water from a cut coconut into the pitcher",
+        "participants": [
+          "black-glove hand"
+        ],
+        "actor": "black-glove hand",
+        "object": "coconut water",
+        "segment_boundary": "middle",
+        "segment_label": "drink preparation",
+        "continuation_hint": "complete",
+        "event_index": 26,
+        "start_time": "00:42",
+        "end_time": "00:44",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      },
+      {
+        "event_type": "stir",
+        "description": "stirs the liquid mixture in the pitcher with an orange stir stick",
+        "participants": [
+          "black-glove hand"
+        ],
+        "actor": "black-glove hand",
+        "object": "orange stir stick",
+        "segment_boundary": "middle",
+        "segment_label": "drink preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 27,
+        "start_time": "00:44",
+        "end_time": "00:45",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Fruit Muddling"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Fruit Muddling",
+        "event_index_range": [
+          1,
+          27
+        ]
+      }
+    ]
+  }
+}

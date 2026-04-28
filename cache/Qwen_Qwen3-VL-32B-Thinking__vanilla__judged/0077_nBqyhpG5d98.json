@@ -1,0 +1,203 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0077_nBqyhpG5d98.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0077_nBqyhpG5d98.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0077_nBqyhpG5d98",
+    "n_target": 5,
+    "n_sub": 14,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.6,
+    "sub_accuracy": 0.6428571428571429
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Does the man play the game first?",
+      "gt": "No",
+      "pred": "Yes. In the second frame (where the man holds a disc with \"8\"), the man is the first to place a numbered disc. Subsequent actions show the woman placing the next number (\"6\") after the man's initial move.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the man play the game?",
+      "gt": "Yes",
+      "pred": "Yes, the man plays the game. For example, in the second frame (timestamp ~0:02), he is holding a circular disk with the number \"8\" on it, indicating his participation in placing numbers during the game.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the woman play the game before the man?",
+      "gt": "Yes",
+      "pred": "No. The man places the first numbered disc (8) before the woman places her first numbered disc (6). For example, in the second frame (showing the man with the \"8\" disc) and the third frame (showing the woman with the \"6\" disc), the man’s action precedes the woman’s.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the woman take her first turn before the man?",
+      "gt": "Yes",
+      "pred": "No. The man places the first numbered disc (8) in the second frame (roughly 0:01), and the woman places her first numbered disc (6) in the third frame (roughly 0:02), so the woman does not take her first turn before the man.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Does the woman play the game first?",
+      "gt": "Yes",
+      "pred": "No, the man plays first. In the second frame (showing the man holding the \"8\" tile), he is the first to place a numbered tile. The woman’s first move (placing the \"6\" tile) occurs in the third frame, after the man’s initial move.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the woman play the game?",
+      "gt": "Yes",
+      "pred": "Yes, the woman plays the game. She is seen placing numbered discs on the table (e.g., placing the \"6\" disc, \"3\" disc, and other numbered discs in multiple frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the man take a turn before the woman?",
+      "gt": "No",
+      "pred": "Yes. The man takes a turn first, as seen when he places the disc with \"8\" (e.g., in the second image), before the woman places the disc with \"6\" (e.g., in the third image).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Does the man reveal number 0 first in his first turn?",
+      "gt": "No",
+      "pred": "No. In the second frame (roughly timestamp 2), the man reveals the number 8 on his first turn, not 0.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the man play the game?",
+      "gt": "Yes",
+      "pred": "Yes, the man plays the game. For example, in the second frame (timestamp ~0:02), he is holding a circular disk with the number \"8\" on it, indicating his participation in placing numbers during the game.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the man reveal number 8 in his first turn?",
+      "gt": "Yes",
+      "pred": "Yes, in the second frame (first action sequence), the man reveals the number 8.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Is there a number that the woman reveals before number 0?",
+      "gt": "Yes",
+      "pred": "No. The numbers revealed in the video (e.g., 1, 2, 3, 4, 5, 6, 7, 8, 9, 10) do not include 0, so there is no number revealed before 0.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Does the man win the game?",
+      "gt": "No",
+      "pred": "No, the video does not show the man winning the game. The sequence of frames depicts the two individuals placing numbered discs on a table, but there is no explicit indication of a winner or the man achieving a victory condition. The final arrangement of numbers (e.g., 8, 1, 6; 10, 7; 2, 4, 3; 9, 5) does not include any visual or contextual cues confirming the man’s win. \n\nAnswer: No.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the man play the game?",
+      "gt": "Yes",
+      "pred": "Yes, the man plays the game. For example, in the second frame (timestamp ~0:02), he is holding a circular disk with the number \"8\" on it, indicating his participation in placing numbers during the game.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the woman win the game?",
+      "gt": "Yes",
+      "pred": "Yes. In the final frames (e.g., around the 27th frame), the woman places the final number and the arrangement is completed, indicating she wins the game.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the woman lose the game?",
+      "gt": "No",
+      "pred": "Yes. In the 66th frame (timestamp context: later in the sequence), the woman covers her face with her hand, a common gesture indicating a loss or frustration in a game. This visual cue directly verifies she loses.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Does the woman win the game?",
+      "gt": "Yes",
+      "pred": "Yes. In the final frames (e.g., around the 27th frame), the woman places the final number and the arrangement is completed, indicating she wins the game.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Does the woman play the game?",
+      "gt": "Yes",
+      "pred": "Yes, the woman plays the game. She is seen placing numbered discs on the table (e.g., placing the \"6\" disc, \"3\" disc, and other numbered discs in multiple frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is there a winner in the game?",
+      "gt": "Yes",
+      "pred": "Yes, the game appears to be completed with all numbers placed (e.g., by the final frame showing all numbered discs arranged), indicating a winner. The players' expressions and actions suggest the game has concluded. (Refer to the final frames, e.g., timestamp ~29-30, where all discs are placed and the players react to the outcome.)",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the man lose the game?",
+      "gt": "Yes",
+      "pred": "Yes, the man loses the game. This is evident from his body language in the later frames (e.g., the 27th frame shows him resting his head in his hand, a gesture indicating frustration or defeat), while the woman displays a happy expression (e.g., smiling in the 27th and 28th frames), suggesting she won.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

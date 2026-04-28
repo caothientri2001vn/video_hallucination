@@ -1,0 +1,270 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0017_riSrqS-r608.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0017_riSrqS-r608.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0017_riSrqS-r608",
+    "n_target": 8,
+    "n_sub": 18,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.75,
+    "sub_accuracy": 0.9444444444444444
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Does the man on the left first blow the green ball?",
+      "gt": "Yes",
+      "pred": "Yes, the man on the left first blows the green ball. This can be observed in the frame where the man in the red shirt (left) and a woman in a pink shirt are leaning over the table with cups and balls, indicating the man on the left is the first to interact with the green ball in that sequence. (Refer to the frame with the two participants blowing near the cups, where the green ball is visible on a cup.)",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a man on the left side in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there are men on the left side in the video. For example, in the frame showing the stage with the audience (around timestamp 0:03), a man in a red shirt is visible on the left side of the stage.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the man on the left blow a green ball?",
+      "gt": "Yes",
+      "pred": "So, let's check the video frames. In the frame where there's a man in red and a woman in pink, they're looking at cups with balls. The green ball is visible. Let's see if the man on the left (in red) is blowing the green ball. Wait, in frame 4, the man in red is next to the woman in pink, and there's a green ball in a cup. Then in frame 5, the man in red is leaning over, and the green ball is there. But do we see him blowing it? Let's check. The question is whether the man on the left blows a green ball. Looking at the frames, in some shots, they are blowing. Let's check frame 9: split screen, left side has a woman blowing a pink ball, right side a man blowing a green ball. Wait, the man on the left in the split screen is the one with the green ball? Wait, the question is about the man on the left. Let's clarify. In frame 9, the right panel shows a man (in red) blowing a green ball. But is that the man on the left? Wait, the question says \"the man on the left\" — which man? Let's check the context. In the game, there are teams. The red team has two men. Let's check the frames. In frame 4, the man in red (left side of the two in red) is next to the woman in pink. In frame 9, the right panel shows a man (in red) blowing a green ball. The left panel shows a woman blowing a pink ball. So the man in the right panel (which is part of the red team) is blowing the green ball. But the question is \"Does the man on the left blow a green ball?\" So we need to see if the man on the left (of the red team) is blowing the green ball. Let's check other frames. Frame 5: the man in red is leaning over, and the green ball is in a cup. Frame 6: two people bending over, the man in red is there. Frame 7: cups with green and pink balls. Frame 8: the man in red is bending over the table. Frame 9: split screen, right side man blowing green ball. So the man blowing the green ball is the one in red, but is he the man on the left? Let's check the positioning. In the split screen, the right panel's man is the one blowing the green ball. The left panel's person is a woman blowing a pink ball. So the man who blows the green ball is not the man on the left (if \"man on the left\" refers to the leftmost man in the red team). Wait, in frame 10, the three men in red: left, middle, right. The one in the middle is the one in the split screen (frame 9) blowing the green ball. So the man on the left (of the three red men) is not the one blowing the green ball. Wait, but maybe \"the man on the left\" refers to a different context. Let's check all frames. In frame 4, the man in red (left of the two in the close-up) is next to the woman in pink. The green ball is in a cup. Then in frame 5, the man in red is leaning over, and the green ball is there. Is he blowing it? The action of blowing — the man in frame 9 (right panel) is blowing the green ball. So the man blowing the green ball is present, and he is a man in red. Now, the question is \"Does the man on the left blow a green ball?\" So we need to determine if the man on the left (in the context of the game) is the one blowing the green ball. Let's check the frames again. In frame 9, the split screen: left is a woman blowing a pink ball, right is a man (in red) blowing a green ball. So the man blowing the green ball is the one in the right panel. Now, in the context of the red team, are there two men? Let's check frame 3: two men in red, two in pink. So red team has two men. In frame 4, the man in red on the left (of the two) is next to the woman in pink. The other man in red is on the right. In frame 9, the man blowing the green ball is the one on the right side of the red team? Or left? The split screen's right panel shows a man in red, so that's one of the red team members. Now, the question is whether \"the man on the left\" (of the two red team members) is the one blowing the green ball. Let's check frame 10: three men in red, so",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Does the woman on the right first blow the green ball?",
+      "gt": "No",
+      "pred": "No. In the frame where the two individuals are blowing, the woman on the right (wearing a pink shirt) is blowing a pink ball, while the man in the red shirt is blowing a green ball. Therefore, the woman on the right does not first blow the green ball.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a woman on the right side in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there is a woman on the right side in the video. For example, in the frame at approximately 0:02, a woman in a pink shirt is positioned on the right side of the frame.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Does the woman on the right blow a ball in the video?",
+      "gt": "Yes",
+      "pred": "Yes. In the video, a woman in a pink shirt (on the right in some close - up shots, such as the split - screen frame where she is blowing a pink ball) is shown blowing a ball. This action is visible in frames where participants are engaged in the cup - and - ball challenge.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Is the first ball blown by the woman on the right a green ball?",
+      "gt": "No",
+      "pred": "No. In the sequence, the woman on the right (in the pink shirt) is shown blowing a **pink ball** (e.g., visible in the split - screen frame where she is blowing into a cup with a pink ball). The green ball is associated with the other participant (in the red shirt). Thus, the first ball blown by the woman on the right is not green.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "In the first game, did the man win?",
+      "gt": "Yes",
+      "pred": "So, let's check the first game. The first game shown is the one with cups and balls. Looking at the frames, in the first game, the participants are trying to do something with the cups. Then, later, there's a scene where a man in red is celebrating, but wait, we need to see if the man won the first game.\n\nWait, the first game: the first part with the cups. Let's check the frames. The first game is the one where people are blowing or trying to move balls into cups. Then, in the later frames, when the man in red is shown with the text \"₱ 50,000\", that's a different game. Wait, the question is about the first game.\n\nLooking at the sequence: the first game (cups and balls) – let's see the outcome. In frame 8 (the split screen), one of the participants (in pink) has a ball in their mouth, and the other (in red) is looking. Then, in frame 10, there's a man in red (the host maybe) talking, and frame 11 shows two women in pink, one with a mic, and the other whispering. Then, in frame 12, a person in black and red shorts is on stage, and then in frame 15, that person is lying on the ground. So the first game's outcome: the man (in red) – did he win? Let's see.\n\nWait, the first game: the first set of challenges. The first game is the cup game. Let's check if the man (in red) succeeded. In the frames, when the first game is over, the next part is the bottle game. The text \"₱ 50,000\" appears when the bottle game is completed (frame 22). So the first game (cups) – did the man win?\n\nWait, the first game: the participants are two women (in pink) and two men (in red). The game is \"4st Tandem Standing\" as per the text. Let's check the outcome of the first game. In frame 19, a person in black and red shorts is lying on the ground (the one in the black shirt and red shorts), so that person lost. Then, the two women in pink (the team) – but the question is about \"the man\" – which man?\n\nWait, the first game: the two men in red. Let's see. The first game's result: in frame 20, the person in black and red shorts is on the ground, so that team (the one with the person in black) lost. The other team (the two women in pink) – but the question is \"did the man win?\" Maybe the man in red.\n\nWait, the first game: the first challenge (cups) – the two teams (red and pink). The pink team (women) – did they win? Let's check. In frame 12, the two women in pink are celebrating (one is hugging the other, holding a mic). So maybe the pink team won the first game. But the question is about \"the man\" – so if the man is on the red team, then he didn't win. Wait, the red team – the two men in red. Let's see.\n\nWait, the problem is: the question is \"In the first game, did the man win?\" We need to see if the man (in red) won the first game. Let's check the first game's outcome.\n\nLooking at the frames: after the first game (cups), the next part shows the person in black and red shorts (from the other team) lying on the ground (frame 17-19). So the pink team (the two women) won the first game, and the man (in red) was on the losing team? Wait, no: the red team and pink team. The red team has two men, pink team has two women.\n\nIn frame 15: the two women in pink are on stage with the person in black (who is part of the red team? No, the red team is two men. The person in black and red shorts is a different person. Wait, the teams: the first game is \"4st Tandem Standing\" (4th Tandem Standing). The teams are two people each.\n\nIn frame 3: the stage has four people: two in red (men) and two in pink (women). So two teams: red team (two men) and pink team (two women).\n\nIn the first game (cups), the outcome: in frame 14, the two women in pink are holding the person in black (who is part of the red team? No, the red team is two men. The person in black is a different contestant. Wait, maybe the first game's result",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a first game shown in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The first game shown involves participants interacting with cups and balls (e.g., blowing to move balls into cups), visible in frames such as 0:03–0:05.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is the man the winner of the first game?",
+      "gt": "Yes",
+      "pred": "Yes, the man is the winner of the first game. This is evident from the frame showing \"₱ 50,000\" (a prize) displayed for two men in red shirts (around the 22nd frame in the sequence), indicating they won the game.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "In the first game, did the woman win?",
+      "gt": "No",
+      "pred": "To determine if the woman won the first game, we analyze key frames:  \n\n- The first game involves a cup-and-ball challenge (evident from frames 3–8, showing participants interacting with cups and balls).  \n- In frame 12, two women in pink shirts (from the same team) are seen hugging and celebrating, with one holding a microphone—indicating a victory moment.  \n- Subsequent frames (e.g., frame 15) show the audience and other participants reacting with laughter and celebration, consistent with a win.  \n\nThus, the woman (and her team) won the first game.  \n\n**Answer:** Yes.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a first game in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The first game involved participants interacting with cups and balls on a table (e.g., frames showing people leaning over cups with balls, such as around the 2-7 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man win the first game?",
+      "gt": "Yes",
+      "pred": "So, let's check the video. The first game seems to be the cup and ball challenge. Looking at the frames, there's a part where a man in red is involved, and later we see a prize of ₱50,000. But we need to see if he won the first game. Wait, the first game—let's see the sequence. The first game is the one with cups and balls. Then, in the later part, when they do the bottle game, they win 50k. But the question is about the first game. Wait, no—wait, the video shows different challenges. Let's check the order.\n\nFirst, the two women in pink, then the men in red. The first challenge: the one with cups. Then, after that, the next challenge is the bottle one. The prize of 50k is shown when they finish the bottle game. But the question is \"Did the man win the first game?\" So we need to see if the first game was won by a man.\n\nLooking at the frames: the first game (cup challenge) has a man and a woman. Then, in the later part, the two men in red (from the red team) do the bottle game and win 50k. But the question is about the first game. Wait, maybe the first game was a win. Let's check the frames where the first game is played.\n\nIn the video, after the first game (cup challenge), there's a part where the two men in red are shown with the 50k prize. But the first game's result—how do we know? Wait, the problem is to check if the man won the first game. Let's see the frames:\n\n- The first game: the man in red (with the woman in pink) are doing the cup challenge. Then, in the next part, they move to another challenge. The key is to see if the first game was won.\n\nWait, the video shows that the first game (cup) might have been won, but the main win is the 50k. But the question is about the first game. Let's check the frames where the first game ends.\n\nWait, in the video, after the first game, there's a scene where the two men in red are clapping, and then the next challenge. But the answer might be yes. Wait, no—wait, the first game: when they do the cup challenge, the man is part of the team. Let's see the frame where it says \"45T TANDEM STANDING\" and the man is playing. Then, the next part is the bottle game where they win 50k. But the question is about the first game.\n\nWait, the problem is to answer based on the video. Let's check if there's a frame indicating the first game was won. The first game's result—maybe the man did win. But how?\n\nWait, the video shows that in the first game (cup challenge), the man is involved, and then later they have a win. But the question is \"Did the man win the first game?\" So we need to see if the first game's winner was a man.\n\nLooking at the frames: the first game (cup) has two teams: one with two women in pink, and one with two men in red. The two men in red—did they win the first game? The video shows that after the first game, the next challenge is played, and then the 50k is awarded. But the 50k is for the second challenge (bottle game). So the first game's result: maybe the red team won, so the man won the first game.\n\nWait, the frame where it says \"₱ 50,000\" is when they win the second game (bottle game). But the question is about the first game. So maybe the first game was won by the man. How to confirm?\n\nWait, the video shows the first game (cup challenge) where the two men in red are playing. Then, the next part is the bottle game where they win 50k. But the question is about the first game. Let's check the sequence:\n\n1. The two women in pink (first frame with two women).\n2. The stage with teams (3rd frame: two teams, red and pink).\n3. The cup challenge (4th, 5th, 6th, 7th, 8th, 9th frames).\n4. Then, the next challenge (bottle game) where they win 50k (22nd frame: \"₱ 50,000\").\n\nSo the first game (cup challenge) was part of the round, and the red team (with men) would have won that to proceed. Since they are in the next challenge, it's likely they won the first game. Therefore, the answer",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "In the second game, did the man on the left side throw a red liquid bottle?",
+      "gt": "Yes",
+      "pred": "Yes. In the second game, the man on the left side is shown throwing red liquid bottles (evident in frames with the timer counts like 54, 38, 23, and 7, where red bottles are being thrown and scattered).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a second game in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there was a second game. The first game involved cups and balls (evident in frames showing participants with colorful cups and balls, e.g., frames 3–12). A second game with red bottles, blue tables, and a countdown timer (e.g., frames 27–33 showing timers like “54”, “38”, “23”, “7” and participants interacting with bottles) is clearly depicted.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did a man on the left side participate in the second game?",
+      "gt": "Yes",
+      "pred": "Yes. In the frames showing the second game (e.g., around 22 - 28 seconds), a man on the left side (wearing a red shirt and gray shorts) is seen participating by throwing bottles.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the man on the left side throw a red liquid bottle in the second game?",
+      "gt": "Yes",
+      "pred": "Yes, in the second game, the man on the left side threw a red liquid bottle. This is evident in frames showing the timer (e.g., timestamp with \"54\" and subsequent frames where the bottle is in motion and later seen on the ground).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "In the second game, did the man on the right side throw a red liquid bottle?",
+      "gt": "Yes",
+      "pred": "Yes. In the second game, the man on the right side threw a red liquid bottle, as seen in the frames showing the bottle-throwing challenge (e.g., around the 38-second countdown and subsequent action frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a man on the right side in the second game?",
+      "gt": "Yes",
+      "pred": "Yes. In the frame showing the game with the timer displaying \"38\" (around the 30-35 second mark of the video sequence), there is a man on the right side of the stage.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man on the right side throw something in the second game?",
+      "gt": "Yes",
+      "pred": "Yes, in the second game, the man on the right side threw something. This is visible in the frames showing the game with the countdown (e.g., timestamp around 22:07-22:10, where the man in red throws an object, causing bottles to fall).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "In the second game, did the man on the left side throw a blue liquid bottle?",
+      "gt": "No",
+      "pred": "No. In the second game, the bottles contain red liquid, not blue. The man on the left side throws red liquid bottles (evident in frames showing the game with blue tables and red bottles, e.g., around 22–27 seconds).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the man on the left side throw something in the second game?",
+      "gt": "Yes",
+      "pred": "Yes. In the frames showing the game with red bottles (e.g., around the 38 - 40 second mark where the timer displays “38” and the text “45T TANDEM STANDING” is visible), the man on the left side is seen throwing bottles.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man on the left side throw a blue liquid bottle in the second game?",
+      "gt": "No",
+      "pred": "No. In the second game, the bottles being thrown are red (evident in frames 22-27), not blue. The blue bottle in frame 20 is a 3D graphic, not the actual bottle used in the game.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "In the second game, did the man on the right side throw a blue liquid bottle?",
+      "gt": "No",
+      "pred": "No. In the second game (evident from frames showing bottle-throwing with timers like 38, 23, and 7 seconds remaining), the bottles used are red, not blue. The blue bottle appears only in a diagram (20th frame), which is not part of the live game action.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a second game in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there was a second game. The first game involved cups and balls (evident in frames showing participants with colorful cups and balls, e.g., frames 3–12). A second game with red bottles, blue tables, and a countdown timer (e.g., frames 27–33 showing timers like “54”, “38”, “23”, “7” and participants interacting with bottles) is clearly depicted.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man on the right side throw a liquid bottle in the second game?",
+      "gt": "Yes",
+      "pred": "Yes. In the frames showing the second game (e.g., around the 29th to 33rd images), the man on the right side of the game setup is seen throwing a liquid bottle.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

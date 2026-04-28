@@ -1,0 +1,68 @@
+{
+  "question": "Did the red shirt man throw the red tire?",
+  "pred": "The red-shirt man and the blue-shirt man participate in an obstacle course race. In the final stage of the course, they reach a green mat where stacks of silver bowls are placed. The red-shirt man picks up a red tire from a stack on the right and rolls it forward along the ground to knock over the bowls. He does not throw the tire.\n\nEvidence: Context event 37 states \"The red-shirt man rolls the red tire forward, knocking over several silver bowls stacked on the green mat.\"\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "game",
+      "description": "The red-shirt man picks up a red tire from a stack on the right side of the course.",
+      "participants": [
+        "red-shirt man"
+      ],
+      "actor": "red-shirt man",
+      "object": "red tire",
+      "segment_boundary": "middle",
+      "segment_label": "Obstacle Course Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 35,
+      "start_time": "00:50",
+      "end_time": "00:52",
+      "sub_events": [],
+      "subtype_order": 16,
+      "subtype_total": 30,
+      "round_index": 1,
+      "segment_label_resolved": "Ladder Balloon Pop Race"
+    },
+    {
+      "event_type": "game",
+      "description": "The blue-shirt man rolls the yellow tire forward, knocking over several silver bowls stacked on the green mat.",
+      "participants": [
+        "blue-shirt man"
+      ],
+      "actor": "blue-shirt man",
+      "object": "yellow tire",
+      "segment_boundary": "middle",
+      "segment_label": "Obstacle Course Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 36,
+      "start_time": "00:51",
+      "end_time": "00:54",
+      "sub_events": [],
+      "subtype_order": 17,
+      "subtype_total": 30,
+      "round_index": 1,
+      "segment_label_resolved": "Ladder Balloon Pop Race"
+    },
+    {
+      "event_type": "game",
+      "description": "The red-shirt man rolls the red tire forward, knocking over several silver bowls stacked on the green mat.",
+      "participants": [
+        "red-shirt man"
+      ],
+      "actor": "red-shirt man",
+      "object": "red tire",
+      "segment_boundary": "middle",
+      "segment_label": "Obstacle Course Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 37,
+      "start_time": "00:52",
+      "end_time": "00:55",
+      "sub_events": [],
+      "subtype_order": 18,
+      "subtype_total": 30,
+      "round_index": 1,
+      "segment_label_resolved": "Ladder Balloon Pop Race"
+    }
+  ]
+}

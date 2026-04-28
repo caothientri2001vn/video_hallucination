@@ -1,0 +1,126 @@
+{
+  "question": "Where there two students who raised their hand to speak?",
+  "pred": "The question asks if there were at least two students who raised their hand to speak. According to the Context and frames:\n\n1.  At approximately 00:08, the Context records an event where \"multiple students raise their hands,\" specifically naming the \"red-jacket student,\" \"beige-jacket student,\" and \"dark-shirt student\" (Event 5).\n2.  The frames around this time (e.g., the third frame) confirm multiple students with raised hands in the lecture hall.\n3.  Throughout the video, the \"red-hoodie student\" (also referred to as \"red-jacket student\") is seen raising his hand multiple times (Events 4, 12, 37, 52, 55).\n\nSince at least three distinct students (red-jacket, beige-jacket, and dark-shirt) are identified as raising their hands in a single event, the requirement for at least two students is met.\n\nEvidence: Event 5 in the Context states \"multiple students raise their hands,\" including the \"red-jacket student,\" \"beige-jacket student,\" and \"dark-shirt student.\"\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "hand_raise",
+      "description": "student in red jacket raises their hand while holding a pen",
+      "participants": [
+        "red-jacket student"
+      ],
+      "actor": "red-jacket student",
+      "segment_boundary": "middle",
+      "segment_label": "lecture",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 4,
+      "start_time": "00:07",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "lecture"
+    },
+    {
+      "event_type": "hand_raise",
+      "description": "multiple students raise their hands",
+      "participants": [
+        "red-jacket student",
+        "beige-jacket student",
+        "dark-shirt student"
+      ],
+      "actor": "multiple students",
+      "segment_boundary": "middle",
+      "segment_label": "lecture",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 5,
+      "start_time": "00:08",
+      "end_time": "00:09",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "lecture"
+    },
+    {
+      "event_type": "hand_raise",
+      "description": "the red-hoodie student raises their hand while holding a pen",
+      "participants": [
+        "red-hoodie student"
+      ],
+      "actor": "red-hoodie student",
+      "object": "pen",
+      "segment_boundary": "middle",
+      "segment_label": "classroom lecture",
+      "continuation_hint": "complete",
+      "event_index": 12,
+      "start_time": "00:20",
+      "end_time": "00:23",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "lecture"
+    },
+    {
+      "event_type": "hand_raise",
+      "description": "student in red hoodie raises their hand",
+      "participants": [
+        "red-hoodie student"
+      ],
+      "actor": "red-hoodie student",
+      "segment_boundary": "middle",
+      "segment_label": "classroom lecture",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 37,
+      "start_time": "01:22",
+      "end_time": "01:24",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "lecture"
+    },
+    {
+      "event_type": "hand_raise",
+      "description": "The student in red hoodie raises their hand (holding a pen)",
+      "participants": [
+        "student in red hoodie"
+      ],
+      "actor": "student in red hoodie",
+      "segment_boundary": "middle",
+      "segment_label": "Lecture",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 52,
+      "start_time": "02:05",
+      "end_time": "02:07",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "lecture"
+    },
+    {
+      "event_type": "hand_raise",
+      "description": "the red-hoodie student raises their hand holding a blue pen",
+      "participants": [
+        "red-hoodie student"
+      ],
+      "actor": "red-hoodie student",
+      "object": "blue pen",
+      "segment_boundary": "middle",
+      "segment_label": "Classroom Lecture",
+      "continuation_hint": "complete",
+      "event_index": 55,
+      "start_time": "02:16",
+      "end_time": "02:17",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "lecture"
+    }
+  ]
+}

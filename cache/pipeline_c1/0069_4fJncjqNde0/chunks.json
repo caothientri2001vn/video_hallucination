@@ -1,0 +1,98 @@
+{
+  "video_name": "0069_4fJncjqNde0.mp4",
+  "video_duration_sec": 10.866666666666667,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 10.866666666666667,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:11",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:02",
+          "event_type": "pose",
+          "description": "woman stands with right hand on hip while holding black clothing in left arm",
+          "participants": [
+            "woman in light blue top"
+          ],
+          "actor": "woman in light blue top",
+          "on_screen_text": [
+            {
+              "text": "this trend but it's my favourite black dresses",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "fashion showcase",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:06",
+          "event_type": "hand_raise",
+          "description": "woman raises right hand to make a 'call me' gesture (thumb and pinky extended) while holding black clothing",
+          "participants": [
+            "woman in light blue top"
+          ],
+          "actor": "woman in light blue top",
+          "on_screen_text": [
+            {
+              "text": "this trend but it's my favourite black dresses",
+              "location": "caption"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "fashion showcase",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:07",
+          "event_type": "costume_change",
+          "description": "woman transitions from holding black clothing to wearing a black strapless dress with white ruffled detail",
+          "participants": [
+            "woman"
+          ],
+          "actor": "woman",
+          "object_before": "light blue top and white skirt",
+          "object_after": "black strapless dress with white ruffle"
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:09",
+          "event_type": "pose",
+          "description": "woman stands in black strapless dress with white ruffled detail, making small posture adjustments",
+          "participants": [
+            "woman in black strapless dress"
+          ],
+          "actor": "woman in black strapless dress",
+          "segment_boundary": "middle",
+          "segment_label": "fashion showcase",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:09",
+          "local_end": "00:10",
+          "event_type": "costume_change",
+          "description": "woman transitions to wearing a short black dress with thin straps",
+          "participants": [
+            "woman"
+          ],
+          "actor": "woman",
+          "object_before": "black strapless dress with white ruffle",
+          "object_after": "short black dress with thin straps"
+        }
+      ]
+    }
+  ]
+}

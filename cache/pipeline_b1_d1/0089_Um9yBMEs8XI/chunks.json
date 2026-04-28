@@ -1,0 +1,480 @@
+{
+  "video_name": "0089_Um9yBMEs8XI.mp4",
+  "video_duration_sec": 76.4,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:02",
+          "event_type": "hold",
+          "description": "A person wearing black gloves holds a large block of raw marbled beef over a wooden surface.",
+          "participants": [
+            "black-gloved person"
+          ],
+          "actor": "black-gloved person",
+          "object": "marbled beef block",
+          "segment_boundary": "middle",
+          "segment_label": "Beef preparation",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:03",
+          "local_end": "00:10",
+          "event_type": "poke",
+          "description": "The black-gloved person repeatedly pokes the raw marbled beef block with a metal fork from multiple angles.",
+          "participants": [
+            "black-gloved person"
+          ],
+          "actor": "black-gloved person",
+          "object": "metal fork",
+          "segment_boundary": "middle",
+          "segment_label": "Beef preparation",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:11",
+          "local_end": "00:13",
+          "event_type": "sprinkle",
+          "description": "Salt is sprinkled over the surface of the raw marbled beef block.",
+          "participants": [],
+          "actor": "",
+          "object": "salt",
+          "segment_boundary": "middle",
+          "segment_label": "Beef preparation",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:14",
+          "local_end": "00:16",
+          "event_type": "adjust",
+          "description": "The black-gloved person adjusts the position of the salted beef block on the wooden surface.",
+          "participants": [
+            "black-gloved person"
+          ],
+          "actor": "black-gloved person",
+          "object": "beef block",
+          "segment_boundary": "middle",
+          "segment_label": "Beef preparation",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:17",
+          "local_end": "00:22",
+          "event_type": "submerge",
+          "description": "The black-gloved person places the beef block into a pan of hot oil, causing vigorous bubbling and splashing.",
+          "participants": [
+            "black-gloved person"
+          ],
+          "actor": "black-gloved person",
+          "object": "beef block",
+          "segment_boundary": "middle",
+          "segment_label": "Beef cooking",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:23",
+          "local_end": "00:30",
+          "event_type": "lift",
+          "description": "The black-gloved person lifts the cooked beef block out of the hot oil using tongs.",
+          "participants": [
+            "black-gloved person"
+          ],
+          "actor": "black-gloved person",
+          "object": "cooked beef block",
+          "object_before": "red and white marbled beef block",
+          "object_after": "browned cooked beef block",
+          "segment_boundary": "middle",
+          "segment_label": "Beef cooking",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:31",
+          "local_end": "00:33",
+          "event_type": "pour",
+          "description": "Uncooked white rice is poured into a metal strainer.",
+          "participants": [],
+          "actor": "",
+          "object": "white rice",
+          "segment_boundary": "start",
+          "segment_label": "Rice preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:34",
+          "local_end": "00:36",
+          "event_type": "wash",
+          "description": "Water is poured over the rice in the metal strainer to wash it.",
+          "participants": [],
+          "actor": "",
+          "object": "water",
+          "segment_boundary": "middle",
+          "segment_label": "Rice preparation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 30.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:30",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:17",
+          "event_type": "pour",
+          "description": "water is poured over white rice in a metal strainer",
+          "participants": [],
+          "actor": "",
+          "object": "clear water",
+          "segment_boundary": "middle",
+          "segment_label": "rice preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:17",
+          "local_end": "00:22",
+          "event_type": "wash",
+          "description": "gloved hand agitates rice in water inside a strainer, causing water to become cloudy",
+          "participants": [
+            "black-gloved hand"
+          ],
+          "actor": "black-gloved hand",
+          "object": "white rice",
+          "segment_boundary": "middle",
+          "segment_label": "rice preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:22",
+          "local_end": "00:24",
+          "event_type": "transfer",
+          "description": "rinsed rice is poured from metal strainer into black rice cooker pot",
+          "participants": [
+            "black-gloved hand"
+          ],
+          "actor": "black-gloved hand",
+          "object": "white rice",
+          "segment_boundary": "middle",
+          "segment_label": "rice preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:24",
+          "local_end": "00:26",
+          "event_type": "pour",
+          "description": "water is poured into the rice cooker pot containing rice",
+          "participants": [],
+          "actor": "",
+          "object": "clear water",
+          "segment_boundary": "middle",
+          "segment_label": "rice preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:26",
+          "local_end": "00:27",
+          "event_type": "close",
+          "description": "rice cooker lid is closed",
+          "participants": [],
+          "actor": "",
+          "object": "black rice cooker lid",
+          "segment_boundary": "middle",
+          "segment_label": "rice preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:27",
+          "local_end": "00:28",
+          "event_type": "press_button",
+          "description": "black-gloved hand presses the start button on a TIGER rice cooker",
+          "participants": [
+            "black-gloved hand"
+          ],
+          "actor": "black-gloved hand",
+          "object": "rice cooker button",
+          "on_screen_text": [
+            {
+              "text": "TIGER",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "rice preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:28",
+          "local_end": "00:29",
+          "event_type": "take",
+          "description": "black-gloved hand takes a brown egg from a white egg carton",
+          "participants": [
+            "black-gloved hand"
+          ],
+          "actor": "black-gloved hand",
+          "object": "brown egg",
+          "segment_boundary": "start",
+          "segment_label": "egg separation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:29",
+          "local_end": "00:29",
+          "event_type": "place",
+          "description": "orange and white basketball hoop-shaped egg separator is positioned over a clear glass bowl",
+          "participants": [],
+          "actor": "",
+          "object": "egg separator",
+          "segment_boundary": "middle",
+          "segment_label": "egg separation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:29",
+          "local_end": "00:30",
+          "event_type": "crack",
+          "description": "brown egg is cracked over the basketball hoop separator, with egg white dripping through and yolk remaining in the separator",
+          "participants": [
+            "black-gloved hand"
+          ],
+          "actor": "black-gloved hand",
+          "object": "brown egg",
+          "segment_boundary": "middle",
+          "segment_label": "egg separation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 2,
+      "chunk_start_sec": 30.0,
+      "chunk_end_sec": 45.0,
+      "chunk_start_mmss": "00:30",
+      "chunk_end_mmss": "00:45",
+      "events": [
+        {
+          "local_start": "00:30",
+          "local_end": "00:34",
+          "event_type": "place",
+          "description": "places two blue chopsticks with white patterns on either side of the raw marbled beef block",
+          "participants": [
+            "black-gloved person"
+          ],
+          "actor": "black-gloved person",
+          "object": "blue chopsticks with white patterns",
+          "segment_boundary": "middle",
+          "segment_label": "beef slicing",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:34",
+          "local_end": "00:41",
+          "event_type": "slice",
+          "description": "slices the raw marbled beef using a large knife, cutting thin even slices from top to bottom while guided by the chopsticks",
+          "participants": [
+            "black-gloved person"
+          ],
+          "actor": "black-gloved person",
+          "object": "large knife",
+          "segment_boundary": "middle",
+          "segment_label": "beef slicing",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:41",
+          "local_end": "00:45",
+          "event_type": "adjust",
+          "description": "adjusts the position of the raw marbled beef block between the chopsticks with the left hand",
+          "participants": [
+            "black-gloved person"
+          ],
+          "actor": "black-gloved person",
+          "object": "marbled beef block",
+          "segment_boundary": "middle",
+          "segment_label": "beef slicing",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 3,
+      "chunk_start_sec": 45.0,
+      "chunk_end_sec": 60.0,
+      "chunk_start_mmss": "00:45",
+      "chunk_end_mmss": "01:00",
+      "events": [
+        {
+          "local_start": "00:45",
+          "local_end": "00:45",
+          "event_type": "place",
+          "description": "a gloved hand places cooked steak on a black plate",
+          "participants": [
+            "gloved hand"
+          ],
+          "actor": "gloved hand",
+          "segment_boundary": "end",
+          "segment_label": "steak cooking",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:46",
+          "local_end": "00:47",
+          "event_type": "hold",
+          "description": "a pair of gloved hands holds a bundle of green onions vertically on a dark wooden surface",
+          "participants": [
+            "gloved hands"
+          ],
+          "actor": "gloved hands",
+          "segment_boundary": "start",
+          "segment_label": "green onion preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:48",
+          "local_end": "00:59",
+          "event_type": "cut",
+          "description": "a knife makes horizontal cuts through the bundle of green onions, starting from the white base and progressing downward through the green stalks",
+          "participants": [
+            "gloved hands",
+            "knife"
+          ],
+          "actor": "knife",
+          "object": "green onions",
+          "segment_boundary": "middle",
+          "segment_label": "green onion preparation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 4,
+      "chunk_start_sec": 60.0,
+      "chunk_end_sec": 75.0,
+      "chunk_start_mmss": "01:00",
+      "chunk_end_mmss": "01:15",
+      "events": [
+        {
+          "local_start": "01:00",
+          "local_end": "01:02",
+          "event_type": "gather_ingredients",
+          "description": "uses wooden spatula to gather chopped green onions from the cutting board",
+          "participants": [],
+          "actor": "wooden spatula",
+          "segment_boundary": "middle",
+          "segment_label": "food preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:02",
+          "local_end": "01:03",
+          "event_type": "move_ingredients",
+          "description": "moves chopped green onions off the cutting board with wooden spatula",
+          "participants": [],
+          "actor": "wooden spatula",
+          "segment_boundary": "middle",
+          "segment_label": "food preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:03",
+          "local_end": "01:05",
+          "event_type": "add_ingredient",
+          "description": "adds chopped green onions on top of a cooked steak",
+          "participants": [
+            "black-gloved hand"
+          ],
+          "actor": "black-gloved hand",
+          "segment_boundary": "middle",
+          "segment_label": "food plating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:05",
+          "local_end": "01:07",
+          "event_type": "place_ingredient",
+          "description": "places raw egg yolk on top of the steak",
+          "participants": [
+            "black-gloved hand"
+          ],
+          "actor": "black-gloved hand",
+          "segment_boundary": "middle",
+          "segment_label": "food plating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:07",
+          "local_end": "01:11",
+          "event_type": "pour_liquid",
+          "description": "pours brown sauce over the steak, egg yolk, and green onions",
+          "participants": [],
+          "actor": "sauce stream",
+          "segment_boundary": "middle",
+          "segment_label": "food plating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:11",
+          "local_end": "01:13",
+          "event_type": "break_egg",
+          "description": "uses chopsticks to press down on the egg yolk, causing it to break and spread",
+          "participants": [
+            "chopsticks"
+          ],
+          "actor": "chopsticks",
+          "segment_boundary": "middle",
+          "segment_label": "food preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:13",
+          "local_end": "01:15",
+          "event_type": "take_bite",
+          "description": "uses chopsticks to pick up a piece of steak with sauce and green onions",
+          "participants": [
+            "chopsticks"
+          ],
+          "actor": "chopsticks",
+          "segment_boundary": "middle",
+          "segment_label": "food preparation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 5,
+      "chunk_start_sec": 75.0,
+      "chunk_end_sec": 76.4,
+      "chunk_start_mmss": "01:15",
+      "chunk_end_mmss": "01:16",
+      "events": [
+        {
+          "local_start": "01:15",
+          "local_end": "01:16",
+          "event_type": "place",
+          "description": "Chopsticks place a piece of sauced meat with green garnish onto a bowl of white rice",
+          "participants": [],
+          "actor": "chopsticks",
+          "object": "sauced meat with green garnish",
+          "segment_boundary": "middle",
+          "segment_label": "meat and rice preparation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

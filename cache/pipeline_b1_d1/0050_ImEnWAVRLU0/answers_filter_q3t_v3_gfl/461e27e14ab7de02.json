@@ -1,0 +1,85 @@
+{
+  "question": "Did he use the stairs to go upstairs?",
+  "pred": "The video shows a man in a dark suit carrying a briefcase who uses the stairs, but he is explicitly shown descending them. The Context records this as \"man in dark suit descends staircase\" (event 62) and \"maroon-uniform man continues descending the staircase\" (event 67). There is no evidence of a man using the stairs to go upstairs.\n\nEvidence: Context event 62 states \"man in dark suit descends staircase while holding black briefcase\".\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "descend_stairs",
+      "description": "man in dark suit descends staircase while holding black briefcase",
+      "participants": [
+        "dark-suit man"
+      ],
+      "actor": "dark-suit man",
+      "object": "black briefcase",
+      "segment_boundary": "middle",
+      "segment_label": "",
+      "continuation_hint": "complete",
+      "event_index": 62,
+      "start_time": "02:53",
+      "end_time": "02:57",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 6,
+      "segment_label_resolved": "Hotel Sign Display"
+    },
+    {
+      "event_type": "ascend_stairs",
+      "description": "man in red uniform appears through door and walks up staircase",
+      "participants": [
+        "red-uniform man"
+      ],
+      "actor": "red-uniform man",
+      "segment_boundary": "middle",
+      "segment_label": "",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 65,
+      "start_time": "02:58",
+      "end_time": "03:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 6,
+      "segment_label_resolved": "Hotel Sign Display"
+    },
+    {
+      "event_type": "walk",
+      "description": "A man in a maroon uniform walks down a staircase while holding the handrail with his right hand",
+      "participants": [
+        "maroon-uniform man"
+      ],
+      "actor": "maroon-uniform man",
+      "segment_boundary": "middle",
+      "segment_label": "Staircase Descent",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 66,
+      "start_time": "03:00",
+      "end_time": "03:03",
+      "sub_events": [],
+      "subtype_order": 13,
+      "subtype_total": 34,
+      "round_index": 6,
+      "segment_label_resolved": "Hotel Sign Display"
+    },
+    {
+      "event_type": "walk",
+      "description": "The maroon-uniform man continues descending the staircase, viewed from a top-down perspective showing multiple floors",
+      "participants": [
+        "maroon-uniform man"
+      ],
+      "actor": "maroon-uniform man",
+      "segment_boundary": "middle",
+      "segment_label": "Staircase Descent",
+      "continuation_hint": "middle",
+      "event_index": 67,
+      "start_time": "03:04",
+      "end_time": "03:08",
+      "sub_events": [],
+      "subtype_order": 14,
+      "subtype_total": 34,
+      "round_index": 6,
+      "segment_label_resolved": "Hotel Sign Display"
+    }
+  ]
+}

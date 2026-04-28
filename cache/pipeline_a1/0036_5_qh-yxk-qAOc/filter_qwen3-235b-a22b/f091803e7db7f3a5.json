@@ -1,0 +1,107 @@
+{
+  "question": "In the penalty short, does the bold head player with white shirt number 1 score the goal?",
+  "top_k": 15,
+  "indices": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "events": [
+    {
+      "event_type": "look",
+      "description": "A close-up shot shows the player in a white jersey looking focused and intense.",
+      "participants": [
+        "white-jersey player"
+      ],
+      "actor": "white-jersey player",
+      "on_screen_text": [
+        {
+          "text": "ZINÉDINE ZIDANE",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 6,
+      "start_time": "00:09",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "A wide shot shows the player in a white jersey preparing to take another penalty kick.",
+      "participants": [
+        "white-jersey player",
+        "blue-jersey goalkeeper",
+        "referee"
+      ],
+      "actor": "white-jersey player",
+      "object": "white soccer ball",
+      "on_screen_text": [
+        {
+          "text": "ZINÉDINE ZIDANE",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 7,
+      "start_time": "00:12",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "The white-jersey player (Zidane) takes a penalty kick, chipping the ball into the goal.",
+      "participants": [
+        "white-jersey player",
+        "blue-jersey goalkeeper"
+      ],
+      "actor": "white-jersey player",
+      "object": "white ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Kick",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 8,
+      "start_time": "00:15",
+      "end_time": "00:17",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "celebration",
+      "description": "The white-jersey player (Zidane) raises his right arm and points his finger upward while running.",
+      "participants": [
+        "white-jersey player"
+      ],
+      "actor": "white-jersey player",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Kick",
+      "continuation_hint": "complete",
+      "event_index": 9,
+      "start_time": "00:17",
+      "end_time": "00:19",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

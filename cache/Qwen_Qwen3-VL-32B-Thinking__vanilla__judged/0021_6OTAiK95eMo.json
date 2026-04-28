@@ -1,0 +1,492 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0021_6OTAiK95eMo.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0021_6OTAiK95eMo.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0021_6OTAiK95eMo",
+    "n_target": 16,
+    "n_sub": 33,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 1.0,
+    "sub_accuracy": 1.0
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Did the white shirt man win money?",
+      "gt": "Yes",
+      "pred": "Yes. The white shirt man (Ethan) won $2, as indicated by the \"$2\" text overlay when he pulled the string and collected the money (visible in the sequence where he picks up the dollar bills).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a man wearing a white shirt in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A man wearing a white shirt (Ethan) is visible in multiple frames, such as the initial frames where he interacts with the \"Mystery String!\" setup (e.g., around the 0–5 second mark in the video sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man in the white shirt win something?",
+      "gt": "Yes",
+      "pred": "Yes, the man in the white shirt (Ethan) won $2, as indicated by the “$2” text overlay and him taking the money from the plate (visible in frames around the 5th - 7th sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Did the white shirt man win the cookie?",
+      "gt": "No",
+      "pred": "No, the white shirt man (Ethan) did not win the cookie. During his turn, the text “$2” appears, and he selects the plate with $2 bills (e.g., around the 5th - 7th frames). The cookie is won by Lauren (in the blue “Franklin Cross Country” sweatshirt) during her turn (evident when the text “Cookies” appears and she interacts with the cookie plate, around the 11th - 14th frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a man wearing a white shirt in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A man wearing a white shirt (Ethan) is visible in multiple frames, such as the initial frames where he interacts with the \"Mystery String!\" setup (e.g., around the 0–5 second mark in the video sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man winning a cookie wear white shirt?",
+      "gt": "No",
+      "pred": "No. The person who won a cookie was Lauren (wearing a blue \"Franklin Cross Country\" sweatshirt), not a man. No man in the video won a cookie. (Verified from frames showing \"Cookies\" text with Lauren, and all other winners: Ethan won $2, Mattie won $300, Brian got whipped cream.)",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Did the white shirt man win the black chocolate?",
+      "gt": "No",
+      "pred": "No. The white shirt man (Ethan) selected the plate with \"$2\" (as indicated by the on-screen text and his action of taking the money), not the black chocolate plate. The black chocolate plate was not the result of his selection.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a man wearing a white shirt in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A man wearing a white shirt (Ethan) is visible in multiple frames, such as the initial frames where he interacts with the \"Mystery String!\" setup (e.g., around the 0–5 second mark in the video sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man in the white shirt win black chocolate?",
+      "gt": "No",
+      "pred": "No, the man in the white shirt (Ethan) did not win black chocolate. During his turn, the text “$2” appears, and he selects the plate with $2 bills (as seen in frames around 0:04–0:07), while the black chocolate is on a separate plate that is not selected by him.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Did the white shirt man put cream on his face?",
+      "gt": "No",
+      "pred": "No, the white shirt man (Ethan) did not put cream on his face. The \"Whip Cream Face\" action occurred with Brian (the man in the black \"Create Your Legacy\" shirt), as seen in the frames where Brian is doused with whipped cream (e.g., around the 20-25 second mark of the sequence). Ethan's turn resulted in him receiving $2 (as indicated by the \"$2\" text overlay), and there is no evidence in the video that he interacted with the whipped cream.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a man wearing a white shirt in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A man wearing a white shirt (Ethan) is visible in multiple frames, such as the initial frames where he interacts with the \"Mystery String!\" setup (e.g., around the 0–5 second mark in the video sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did someone put cream on their face?",
+      "gt": "Yes",
+      "pred": "Yes. In the frames showing Brian's turn, the text \"Whip Cream Face\" appears, and later frames show Brian with cream on his face (e.g., the frame where he has white cream on his face after interacting with the plate of cream).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Did the blue hoodie woman win money?",
+      "gt": "No",
+      "pred": "No, the blue hoodie woman (Lauren) did not win money; she won cookies, as indicated by the \"Cookies\" text overlay when she played (around the 8–12 second mark in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a woman wearing a blue hoodie in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A woman wearing a blue \"FRANKLIN CROSS COUNTRY\" hoodie is visible in multiple frames (e.g., when Lauren is playing, and in earlier scenes with the group).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the woman in the blue hoodie win something?",
+      "gt": "Yes",
+      "pred": "Yes. When Lauren (the woman in the blue hoodie) played, the text \"Cookies\" appeared, and she interacted with the plate of cookies, indicating she won the cookies (around the frames where \"Lauren\" is labeled and \"Cookies\" text is displayed).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Did the blue hoodie woman win cookie?",
+      "gt": "Yes",
+      "pred": "Yes. In the sequence where Lauren (the woman in the blue \"FRANKLIN CROSS COUNTRY\" hoodie) plays, a text overlay \"Cookies\" appears, and she interacts with the plate containing cookies, indicating she won the cookies. This occurs around the frames showing Lauren pulling the string and the \"Cookies\" text (e.g., timestamp context of her turn with the \"Cookies\" label).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a woman wearing a blue hoodie in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A woman wearing a blue \"FRANKLIN CROSS COUNTRY\" hoodie is visible in multiple frames (e.g., when Lauren is playing, and in earlier scenes with the group).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the woman in the blue hoodie win a prize?",
+      "gt": "Yes",
+      "pred": "Yes. The woman in the blue hoodie (Lauren) won cookies, as indicated by the text \"Cookies\" appearing when she played (around the 10-12 second mark in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Did the blue hoodie woman win the black chocolate?",
+      "gt": "No",
+      "pred": "No. The blue hoodie woman (Lauren) won \"Cookies\" as indicated by the text overlay when she played (around the 10-13 second mark in the sequence), not the black chocolate.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a woman wearing a blue hoodie in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A woman wearing a blue \"FRANKLIN CROSS COUNTRY\" hoodie is visible in multiple frames (e.g., when Lauren is playing, and in earlier scenes with the group).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was black chocolate mentioned as a prize in the video?",
+      "gt": "No",
+      "pred": "No. The video does not mention \"black chocolate\" as a prize. The prizes shown include cookies, money (e.g., $2, $300), and a plate with a chocolate bar (without specifying \"black chocolate\" in any on-screen text or narration). The only labeled prizes are \"$2\", \"Cookies\", \"$300\", and \"Whip Cream Face\".",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Did the blue hoodie woman put cream on here face?",
+      "gt": "No",
+      "pred": "No. The blue hoodie woman (Lauren) selected the \"Cookies\" plate (as indicated by the text \"Cookies\" in the frames where she plays), and there is no visual evidence of her applying cream to her face. The whipped cream face challenge occurs for Brian (the man in the \"Create Your Legacy\" shirt), not Lauren.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a woman wearing a blue hoodie in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A woman wearing a blue \"FRANKLIN CROSS COUNTRY\" hoodie is visible in multiple frames (e.g., when Lauren is playing, and in earlier scenes with the group).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did anyone put cream on their face in the video?",
+      "gt": "Yes",
+      "pred": "Yes. In the sequence featuring Brian (labeled \"Brian\" in the frames), he is shown with whipped cream on his face after interacting with the plate of whipped cream. This occurs around the frames where the text \"Whip Cream Face\" appears (e.g., 21.4s - 22.2s and subsequent frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "target",
+      "question": "Did the black hoodie woman win the money?",
+      "gt": "Yes",
+      "pred": "Yes. In the frames where the woman in the black hoodie (labeled \"Mattie\") plays, the text \"$300\" appears, and she is shown taking the money from the plate. This occurs around the sequence of images where \"Mattie\" is the labeled participant and the \"$300\" text is displayed.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a woman wearing a black hoodie in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A woman wearing a black hoodie is visible in multiple frames (e.g., when Mattie is playing, and in other segments where she is part of the group).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the woman in the black hoodie win a prize?",
+      "gt": "Yes",
+      "pred": "Yes. The woman in the black hoodie (labeled \"Mattie\") won a prize, as indicated by the \"$300\" text overlay when she pulled the string (around the 14th–18th frames of the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "target",
+      "question": "Did the black hoodie woman win the cookie?",
+      "gt": "No",
+      "pred": "No. The woman in the black hoodie (Mattie) won $300 (as indicated by the \"$300\" text during her turn), while the cookies were won by Lauren (the woman in the blue \"Franklin Cross Country\" hoodie, with the \"Cookies\" text appearing during her turn).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a woman wearing a black hoodie in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A woman wearing a black hoodie is visible in multiple frames (e.g., when Mattie is playing, and in other segments where she is part of the group).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the woman in the black hoodie win a prize?",
+      "gt": "Yes",
+      "pred": "Yes. The woman in the black hoodie (labeled \"Mattie\") won a prize, as indicated by the \"$300\" text overlay when she pulled the string (around the 14th–18th frames of the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "target",
+      "question": "Did the black hoodie woman win the black chocolate?",
+      "gt": "No",
+      "pred": "No. The woman in the black hoodie (labeled \"Mattie\" in the video) pulled the string and won the plate with \"$300\" (evident in frames where she reacts to the \"$300\" text overlay and grabs the money). The black chocolate is on a separate plate, and there is no indication she selected that plate.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a woman wearing a black hoodie in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A woman wearing a black hoodie is visible in multiple frames (e.g., when Mattie is playing, and in other segments where she is part of the group).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 10,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was black chocolate one of the prizes won by anyone?",
+      "gt": "No",
+      "pred": "No, black chocolate was not won by anyone. The prizes won were $2 (Ethan), cookies (Lauren), $300 (Mattie), and whipped cream (Brian). The chocolate bar plate was present but not selected by any participant.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "target",
+      "question": "Did the black hoodie woman put cream on here face?",
+      "gt": "No",
+      "pred": "No. The black hoodie woman (Mattie) selected the plate with $300 (money) during her turn, not the whip cream plate. The whip cream face occurred during Brian’s turn, not Mattie’s.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a woman wearing a black hoodie in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A woman wearing a black hoodie is visible in multiple frames (e.g., when Mattie is playing, and in other segments where she is part of the group).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 11,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did anyone put cream on their face?",
+      "gt": "Yes",
+      "pred": "Yes. In the sequence with Brian (labeled \"Brian\"), he takes a plate of whip cream and smashes it onto his face (evident in the frames where \"Whip Cream Face\" text appears and he applies the cream).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "target",
+      "question": "Did the black shirt man win the money?",
+      "gt": "No",
+      "pred": "No. The black shirt man (Brian) was assigned the \"Whip Cream Face\" plate (as indicated by the text overlay during his turn), and he received whipped cream on his face, not money. Other participants (Ethan, Mattie, Lauren) were associated with money or cookies, but Brian’s outcome was whipped cream.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a man wearing a black shirt in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A man wearing a black shirt (with \"Create Your Legacy\" text) is visible when Brian is playing the game (e.g., in frames showing Brian's turn, around the 19-25 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 12,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did anyone win money?",
+      "gt": "Yes",
+      "pred": "Yes. Ethan won $2 (evident when the “$2” text appears and he picks up the money), and Mattie won $300 (evident when the “$300” text appears and she takes the money).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "target",
+      "question": "Did the black shirt man win the cookie?",
+      "gt": "No",
+      "pred": "No, the black shirt man (Brian) did not win the cookie. He was assigned \"Whip Cream Face\" (evident from the text overlay and subsequent action of him getting whipped cream on his face), while the cookie was won by Lauren (as indicated by the \"Cookies\" text overlay when she played).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a man wearing a black shirt in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A man wearing a black shirt (with \"Create Your Legacy\" text) is visible when Brian is playing the game (e.g., in frames showing Brian's turn, around the 19-25 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 13,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did anyone win a cookie?",
+      "gt": "Yes",
+      "pred": "Yes, Lauren won a cookie. This is shown when the text \"Cookies\" appears on the screen as Lauren interacts with the plate of cookies (around the segment where Lauren is the one pulling the string, approximately in the middle of the video sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 14,
+      "kind": "target",
+      "question": "Did the black shirt man win the black chocolate?",
+      "gt": "No",
+      "pred": "No. During Brian's turn, the string led to the \"Whip Cream Face\" plate (evident from the text overlay and his action of getting whipped cream on his face), not the black chocolate plate. The black chocolate plate was not selected by Brian.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a man wearing a black shirt in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A man wearing a black shirt (with \"Create Your Legacy\" text) is visible when Brian is playing the game (e.g., in frames showing Brian's turn, around the 19-25 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man in the black shirt win any prize?",
+      "gt": "No",
+      "pred": "No. The man in the black shirt (Brian) had \"Whip Cream Face\" as the result (evident from the text overlay and him getting whipped cream on his face in the later frames), which is not a prize win.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 14,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was black chocolate mentioned as a prize won by anyone?",
+      "gt": "No",
+      "pred": "No, black chocolate was not mentioned as a prize won by anyone in the video. The prizes referenced in text overlays or shown are \"$2\", \"$300\", \"Cookies\", and \"Whip Cream Face\" (for the whipped cream plate). No mention of black chocolate appears in the video frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "target",
+      "question": "Did the black shirt man put cream on his face?",
+      "gt": "Yes",
+      "pred": "Yes, the black shirt man (Brian) put cream on his face. This is shown in the sequence where the text \"Whip Cream Face\" appears, and he applies the cream from the plate to his face (e.g., frames around the 20-25 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a man wearing a black shirt in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A man wearing a black shirt (with \"Create Your Legacy\" text) is visible when Brian is playing the game (e.g., in frames showing Brian's turn, around the 19-25 second mark).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 15,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the man in the black shirt put cream on his face?",
+      "gt": "Yes",
+      "pred": "Yes. In the sequence of frames showing Brian (the man in the black \"Create Your Legacy\" shirt), he picks up the plate with whipped cream and smashes it onto his face (evident in the frames where cream is on his face, around the segment labeled \"Whip Cream Face\").",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

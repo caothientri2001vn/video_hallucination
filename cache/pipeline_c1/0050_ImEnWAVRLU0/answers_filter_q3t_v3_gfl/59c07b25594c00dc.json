@@ -1,0 +1,76 @@
+{
+  "question": "Was the waiter who was standing in front of room 2410 not wearing gloves?",
+  "pred": "The person standing in front of room 2410 is identified in the Context as the \"man in red uniform\" or \"red-uniform bellhop\" (event 46). While the question refers to him as a \"waiter,\" he is the same individual shown in the frames at 02:10 and 02:15. Inspection of these frames shows that he is not wearing gloves; his bare hands are clearly visible as he manipulates the door handle and gestures while speaking.\n\nEvidence: Frames at 02:10 and 02:15 show the man in the red uniform standing in front of room 2410 with bare hands.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "open",
+      "description": "man in red uniform opens door marked 2410",
+      "participants": [
+        "man in red uniform"
+      ],
+      "actor": "man in red uniform",
+      "object": "door",
+      "segment_boundary": "middle",
+      "segment_label": "",
+      "continuation_hint": "complete",
+      "event_index": 46,
+      "start_time": "02:10",
+      "end_time": "02:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 5,
+      "segment_label_resolved": "Hallway Walk"
+    },
+    {
+      "event_type": "speak",
+      "description": "man in red uniform speaks to the two men in dark suits",
+      "participants": [
+        "man in red uniform",
+        "man in dark suit",
+        "man in dark suit"
+      ],
+      "actor": "man in red uniform",
+      "segment_boundary": "middle",
+      "segment_label": "",
+      "continuation_hint": "complete",
+      "event_index": 47,
+      "start_time": "02:12",
+      "end_time": "02:13",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 49,
+      "round_index": 5,
+      "segment_label_resolved": "Hallway Walk"
+    },
+    {
+      "event_type": "graphic",
+      "description": "black and white sign reading 'THE POOL IS CLOSED' is displayed with explanatory text",
+      "participants": [],
+      "actor": "sign",
+      "on_screen_text": [
+        {
+          "text": "THE POOL IS CLOSED",
+          "location": "sign"
+        },
+        {
+          "text": "apologize for any inconvenience. guests who would enjoy a swim come to use the facilities of the olitan Health and Racquet Club around the corner on 55th street.",
+          "location": "sign"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Pool Closure Notice",
+      "continuation_hint": "complete",
+      "event_index": 48,
+      "start_time": "02:13",
+      "end_time": "02:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 5,
+      "round_index": 5,
+      "segment_label_resolved": "Hallway Walk"
+    }
+  ]
+}

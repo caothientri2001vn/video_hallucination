@@ -1,0 +1,142 @@
+{
+  "question": "Did the man on the left open two boxes?",
+  "top_k": 15,
+  "indices": [
+    11,
+    12,
+    13,
+    15,
+    16,
+    17
+  ],
+  "events": [
+    {
+      "event_type": "gesture",
+      "description": "the tie man raises his right hand in a gesture while speaking",
+      "participants": [
+        "checkered-shirt man",
+        "tie man"
+      ],
+      "actor": "tie man",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 11,
+      "start_time": "00:25",
+      "end_time": "00:28",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 13,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "the blue-shirted man opens the leftmost box in the middle row (Box 4)",
+      "participants": [
+        "blue-shirted man",
+        "black-suited man"
+      ],
+      "actor": "blue-shirted man",
+      "object": "box",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 12,
+      "start_time": "00:30",
+      "end_time": "00:35",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "remove",
+      "description": "the blue-shirted man pulls a large white box from inside Box 4",
+      "participants": [
+        "blue-shirted man",
+        "black-suited man"
+      ],
+      "actor": "blue-shirted man",
+      "object": "white box",
+      "cover": "box 4",
+      "hidden": "white box",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 13,
+      "start_time": "00:34",
+      "end_time": "00:38",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "sit",
+      "description": "both men sit down at the table, positioning themselves on opposite sides",
+      "participants": [
+        "blue-shirted man",
+        "black-suited man"
+      ],
+      "actor": "blue-shirted man",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 15,
+      "start_time": "00:39",
+      "end_time": "00:42",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "the blue-shirted man opens the white box that's now on the table",
+      "participants": [
+        "blue-shirted man",
+        "black-suited man"
+      ],
+      "actor": "blue-shirted man",
+      "object": "white box",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 16,
+      "start_time": "00:42",
+      "end_time": "00:44",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "remove",
+      "description": "the blue-shirted man takes a flat rectangular object from inside the white box",
+      "participants": [
+        "blue-shirted man",
+        "black-suited man"
+      ],
+      "actor": "blue-shirted man",
+      "object": "rectangular object",
+      "cover": "white box",
+      "hidden": "rectangular object",
+      "segment_boundary": "middle",
+      "segment_label": "Numbered Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 17,
+      "start_time": "00:43",
+      "end_time": "00:45",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    }
+  ]
+}

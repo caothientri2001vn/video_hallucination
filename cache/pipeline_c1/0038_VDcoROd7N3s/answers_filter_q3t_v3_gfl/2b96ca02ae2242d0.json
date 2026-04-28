@@ -1,0 +1,71 @@
+{
+  "question": "Does the white object teleport from the pink object to the brown object?",
+  "pred": "The video demonstrates a magic trick involving a white patterned cup and two cylinders (pink and brown). According to the Context and visual evidence:\n\n1.  At **02:05**, the woman reveals the white patterned cup from inside the **pink cylinder** (Event 32).\n2.  At **02:09**, she places the white cup back into the **pink cylinder** (Event 34).\n3.  At **02:17**, she is described as placing the **brown cylinder** down over the white cup (Event 37). \n\nThe transition of the white object being hidden under the pink cylinder and subsequently being revealed or covered by the brown cylinder without a visible physical transfer constitutes a \"teleport\" effect in the context of this magic demonstration.\n\nEvidence: Event 34 shows the woman placing the white cup into the pink cylinder, and Event 37 shows her covering the same white cup with the brown cylinder.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "reveal",
+      "description": "woman removes a white patterned cup from inside the pink cylinder",
+      "participants": [
+        "red-dress woman"
+      ],
+      "actor": "red-dress woman",
+      "cover": "pink cylinder",
+      "hidden": "white cup with green patterns",
+      "segment_boundary": "middle",
+      "segment_label": "math education demonstration",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 32,
+      "start_time": "02:05",
+      "end_time": "02:08",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Bé vui học toán (Children happy to learn math)"
+    },
+    {
+      "event_type": "place",
+      "description": "woman places the white patterned cup back into the pink cylinder",
+      "participants": [
+        "red-dress woman"
+      ],
+      "actor": "red-dress woman",
+      "object": "white cup with green patterns",
+      "cover": "pink cylinder",
+      "segment_boundary": "middle",
+      "segment_label": "math education demonstration",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 34,
+      "start_time": "02:09",
+      "end_time": "02:12",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Bé vui học toán (Children happy to learn math)"
+    },
+    {
+      "event_type": "cover",
+      "description": "places the brown cylinder back down over the white cup with floral patterns",
+      "participants": [
+        "red-dress woman"
+      ],
+      "actor": "red-dress woman",
+      "cover": "brown cylinder",
+      "hidden": "white cup with green patterns",
+      "segment_boundary": "middle",
+      "segment_label": "cylinder reveal demo",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 37,
+      "start_time": "02:17",
+      "end_time": "02:18",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Bé vui học toán (Children happy to learn math)"
+    }
+  ]
+}

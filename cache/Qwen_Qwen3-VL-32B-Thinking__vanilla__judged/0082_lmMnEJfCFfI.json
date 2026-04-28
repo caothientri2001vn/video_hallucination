@@ -1,0 +1,301 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0082_lmMnEJfCFfI.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0082_lmMnEJfCFfI.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0082_lmMnEJfCFfI",
+    "n_target": 7,
+    "n_sub": 22,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 1.0,
+    "sub_accuracy": 0.7727272727272727
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Are the strawberries mashed first?",
+      "gt": "Yes",
+      "pred": "Yes, the strawberries are mashed first. This is evident from the sequence where strawberries are cut into smaller pieces and then mashed on the cold plate (e.g., frames showing the strawberries being chopped and then further broken down into a mashed consistency, approximately from the 7th to 12th frames in the video).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Are strawberries mashed in the video?",
+      "gt": "Yes",
+      "pred": "Yes, strawberries are mashed in the video. This is visible in the sequence where strawberries are cut and then processed into a pulp (e.g., around the 9–12 second mark, the strawberries are mashed into smaller, pulpy pieces).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Do the strawberries get mashed before any other ingredient is added or processed?",
+      "gt": "Yes",
+      "pred": "Yes. The strawberries are added (e.g., frame 3) and then mashed (e.g., frames 7–11, where the spatula cuts and mashes the strawberries into small pieces) before the Oreo cookies are processed (e.g., frames 13–15, where the Oreos are cut and crushed).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Are the strawberries mashed before the cookies are crushed?",
+      "gt": "Yes",
+      "pred": "Yes. The strawberries are added, cut, and mashed (as seen in frames 7-12), and the cookies are crushed later (in frames 13-15).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Are the cookies crushed first?",
+      "gt": "No",
+      "pred": "No. The strawberries are cut into pieces (0:07–0:12) before the cookies are crushed (0:13–0:16).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Are cookies crushed in the video?",
+      "gt": "Yes",
+      "pred": "Yes. Oreo cookies are placed on the ice cream base and then crushed (e.g., visible in frames showing the cookies being broken into smaller pieces, such as around the sequence where the cookies are mixed with the ice cream mixture).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Are the strawberries mashed before the cookies are crushed?",
+      "gt": "Yes",
+      "pred": "Yes. The strawberries are added, cut, and mashed (as seen in frames 7-12), and the cookies are crushed later (in frames 13-15).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Do the cookies get processed before the strawberries?",
+      "gt": "No",
+      "pred": "Yes. The strawberries are cut and processed (e.g., sliced and mashed) starting around the 7th frame, while the cookies are crushed and mixed later, starting around the 13th frame. Thus, the strawberries are processed before the cookies.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Is strawberry milk added before fresh milk?",
+      "gt": "No",
+      "pred": "No. Fresh milk is poured first (e.g., in the frame where a white liquid is poured onto the cold plate), and strawberry milk is added later (e.g., the frame showing a pink liquid poured from a pink bottle). Thus, strawberry milk is not added before fresh milk.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is strawberry milk added in the video?",
+      "gt": "Yes",
+      "pred": "Yes, strawberry milk is added. A pink liquid (strawberry milk) is poured from a pink container into the mixture at approximately 19 - 22 seconds.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is fresh milk added in the video?",
+      "gt": "Yes",
+      "pred": "So, let's check the video. The question is whether fresh milk is added. Let's look at the steps. \n\nFirst, in the video, there's a step where a liquid is poured (like in the 4th frame, a light-colored liquid is poured). But then, later, there's a pink bottle with Korean text. The pink liquid might be a different ingredient. Wait, the question is about fresh milk. Let's see if any milk is added. \n\nLooking at the frames: when they pour the liquid (4th frame), that might be a base like cream or milk. But the video shows a pink bottle (19th frame) with \"strawberry\" or similar, so that's probably a strawberry drink. The initial liquid poured (4th frame) could be milk. But does the video show fresh milk? Let's check the ingredients. The video has steps where a liquid is poured, but the key is if it's fresh milk. \n\nWait, the problem says \"only use information you can directly verify\". The video doesn't explicitly say \"fresh milk\", but does it show a milk container? Let's check. The 19th frame has a pink bottle, which is not milk. The 4th frame shows a liquid being poured, but we can't confirm it's milk. Wait, maybe the initial liquid is milk. But the question is \"is fresh milk added\". Let's see if there's any indication. \n\nWait, in the 4th frame, a light-colored liquid is poured. The next steps involve mixing with Oreos and strawberries. The pink bottle (19th frame) is a different liquid. So the first liquid might be milk. But the video doesn't label it, so we can't be 100% sure. However, the problem says \"only use information you can directly verify\". Since the video shows a liquid being added (4th frame, timestamp around 4 seconds), and the question is about fresh milk. But do we have direct evidence? \n\nWait, the answer must be based on what's in the video. The video shows a liquid being poured (4th frame), but is it fresh milk? The video doesn't specify, but maybe the context is that it's a milk-based mixture. However, the question is \"is fresh milk added\". Let's check all frames. \n\nLooking at the frames: \n\n- Frame 4: pouring a light liquid (could be milk, cream, etc.)\n- Frame 19: pouring a pink liquid from a bottle (strawberry drink, not milk)\n- Other steps: no other milk. \n\nBut the problem is, we can't confirm if it's fresh milk. However, the question is a yes/no. Wait, maybe the first liquid is milk. But the video doesn't say. However, in the context of making ice cream, the base is often milk or cream. But the question is \"is fresh milk added\". Since the video shows a liquid being added, and the process is for ice cream, which typically uses milk, but we need to check if the video directly shows milk. \n\nWait, the video shows a liquid being poured (4th frame). Let's assume that's the milk. But the problem says \"only use information you can directly verify\". The video doesn't show a milk carton or label, so we can't confirm. However, the answer might be yes because that's the typical step. But wait, the problem says \"only use information you can directly verify\". So if the video doesn't show \"fresh milk\" explicitly, then maybe no. But wait, in the 4th frame, the liquid is poured, and in ice cream making, that's usually a milk-based mixture. But the question is about fresh milk. \n\nWait, the user is asking if fresh milk is added. Let's check the frames again. The 4th frame: a light-colored liquid is poured. The next step (5th frame) adds Oreos. The 19th frame adds a pink liquid. So the first liquid is likely the base, which could be milk. But the video doesn't state it's fresh milk. However, the problem says \"only use information you can directly verify\". So if there's no explicit mention, but the action of pouring a liquid (which is a common step for milk in ice cream), but we can't be sure. Wait, but maybe the answer is yes, because that's the first step. Let's check the timestamps. The 4th frame (which is the 4th image in the sequence) shows the liquid being poured. So the answer would be yes, as that liquid is likely fresh milk. \n\nBut the problem says \"only use information you can directly verify\". The video shows a liquid being added, but we don't know if it's fresh milk. However, in the context of making ice cream, the base is milk or cream, so it",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Is fresh milk added before strawberry milk?",
+      "gt": "Yes",
+      "pred": "Yes. A white liquid (fresh milk) is poured onto the Oreo mixture before the pink liquid (strawberry milk) is added. This is visible in the sequence where the white liquid is poured (e.g., around the 14th frame) and later the pink strawberry milk is poured (e.g., around the 17th frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Is fresh milk added before strawberry milk?",
+      "gt": "Yes",
+      "pred": "Yes. A white liquid (fresh milk) is poured onto the Oreo mixture before the pink liquid (strawberry milk) is added. This is visible in the sequence where the white liquid is poured (e.g., around the 14th frame) and later the pink strawberry milk is poured (e.g., around the 17th frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is fresh milk added in the video?",
+      "gt": "Yes",
+      "pred": "So, let's check the video. The question is whether fresh milk is added. Let's look at the steps. \n\nFirst, in the video, there's a step where a liquid is poured (like in the 4th frame, a light-colored liquid is poured). But then, later, there's a pink bottle with Korean text. The pink liquid might be a different ingredient. Wait, the question is about fresh milk. Let's see if any milk is added. \n\nLooking at the frames: when they pour the liquid (4th frame), that might be a base like cream or milk. But the video shows a pink bottle (19th frame) with \"strawberry\" or similar, so that's probably a strawberry drink. The initial liquid poured (4th frame) could be milk. But does the video show fresh milk? Let's check the ingredients. The video has steps where a liquid is poured, but the key is if it's fresh milk. \n\nWait, the problem says \"only use information you can directly verify\". The video doesn't explicitly say \"fresh milk\", but does it show a milk container? Let's check. The 19th frame has a pink bottle, which is not milk. The 4th frame shows a liquid being poured, but we can't confirm it's milk. Wait, maybe the initial liquid is milk. But the question is \"is fresh milk added\". Let's see if there's any indication. \n\nWait, in the 4th frame, a light-colored liquid is poured. The next steps involve mixing with Oreos and strawberries. The pink bottle (19th frame) is a different liquid. So the first liquid might be milk. But the video doesn't label it, so we can't be 100% sure. However, the problem says \"only use information you can directly verify\". Since the video shows a liquid being added (4th frame, timestamp around 4 seconds), and the question is about fresh milk. But do we have direct evidence? \n\nWait, the answer must be based on what's in the video. The video shows a liquid being poured (4th frame), but is it fresh milk? The video doesn't specify, but maybe the context is that it's a milk-based mixture. However, the question is \"is fresh milk added\". Let's check all frames. \n\nLooking at the frames: \n\n- Frame 4: pouring a light liquid (could be milk, cream, etc.)\n- Frame 19: pouring a pink liquid from a bottle (strawberry drink, not milk)\n- Other steps: no other milk. \n\nBut the problem is, we can't confirm if it's fresh milk. However, the question is a yes/no. Wait, maybe the first liquid is milk. But the video doesn't say. However, in the context of making ice cream, the base is often milk or cream. But the question is \"is fresh milk added\". Since the video shows a liquid being added, and the process is for ice cream, which typically uses milk, but we need to check if the video directly shows milk. \n\nWait, the video shows a liquid being poured (4th frame). Let's assume that's the milk. But the problem says \"only use information you can directly verify\". The video doesn't show a milk carton or label, so we can't confirm. However, the answer might be yes because that's the typical step. But wait, the problem says \"only use information you can directly verify\". So if the video doesn't show \"fresh milk\" explicitly, then maybe no. But wait, in the 4th frame, the liquid is poured, and in ice cream making, that's usually a milk-based mixture. But the question is about fresh milk. \n\nWait, the user is asking if fresh milk is added. Let's check the frames again. The 4th frame: a light-colored liquid is poured. The next step (5th frame) adds Oreos. The 19th frame adds a pink liquid. So the first liquid is likely the base, which could be milk. But the video doesn't state it's fresh milk. However, the problem says \"only use information you can directly verify\". So if there's no explicit mention, but the action of pouring a liquid (which is a common step for milk in ice cream), but we can't be sure. Wait, but maybe the answer is yes, because that's the first step. Let's check the timestamps. The 4th frame (which is the 4th image in the sequence) shows the liquid being poured. So the answer would be yes, as that liquid is likely fresh milk. \n\nBut the problem says \"only use information you can directly verify\". The video shows a liquid being added, but we don't know if it's fresh milk. However, in the context of making ice cream, the base is milk or cream, so it",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is strawberry milk added in the video?",
+      "gt": "Yes",
+      "pred": "Yes, strawberry milk is added. A pink liquid (strawberry milk) is poured from a pink container into the mixture at approximately 19 - 22 seconds.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does fresh milk get added before strawberry milk?",
+      "gt": "Yes",
+      "pred": "Yes. A light-colored liquid (fresh milk) is poured first (around frame 4), and strawberry milk (pink liquid) is added later (around frame 19).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Are the cookies mashed before the strawberries?",
+      "gt": "No",
+      "pred": "No. The strawberries are cut and mashed first (e.g., frames 7–12 show strawberry preparation and mashing), and the cookies (Oreos) are crushed later (e.g., frames 12–15 show Oreo crushing). Thus, cookies are not mashed before strawberries.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Are the strawberries mashed in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the strawberries are mashed. This is shown in the video sequence where strawberries are first cut (e.g., 0:07–0:09) and then further processed into a mashed consistency (e.g., 0:10–0:12).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Are the cookies processed in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the cookies are processed. They are placed on the mixture, then crushed and mixed in (evident in frames showing cookies being broken into pieces and incorporated, e.g., around the 12–16 second range).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Are the strawberries mashed before the cookies are processed?",
+      "gt": "Yes",
+      "pred": "Yes. The strawberries are cut and mashed (evident in frames 7-11, where strawberries are sliced and then reduced to a mashed texture) before the cookies are processed (cookies are broken and mixed starting from frame 12).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Are the strawberries mashed before the cookies?",
+      "gt": "Yes",
+      "pred": "Yes. The strawberries are cut and mashed (as seen in frames 7-12), and the cookies are crushed later (frames 14-15). Thus, the strawberries are mashed before the cookies.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Are the strawberries mashed in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the strawberries are mashed. This is shown in the video sequence where strawberries are first cut (e.g., 0:07–0:09) and then further processed into a mashed consistency (e.g., 0:10–0:12).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Do cookies appear in the video?",
+      "gt": "Yes",
+      "pred": "Yes, cookies (Oreos) appear in the video. For example, at around the 5th frame, an Oreo cookie is placed on the mixture, and additional Oreos are added in subsequent frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Does the mashing of strawberries happen before anything is done with the cookies?",
+      "gt": "Yes",
+      "pred": "No. The mashing of strawberries occurs after the cookies are placed on the liquid. The cookies are placed starting around frame 5-6, and the strawberry mashing begins around frame 7-11. Thus, the mashing of strawberries happens after actions with the cookies (placing them) have started.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Are the crushed strawberries and crushed cookies mixed before adding the milk?",
+      "gt": "No",
+      "pred": "No. The crushed strawberries and crushed cookies are not mixed before adding milk. The crushed cookies are first mixed with milk (after being crushed, as seen in frames 18-23), while the crushed strawberries are processed separately (frames 7-12) and then combined with a pink liquid (frame 24-25) before being mixed with the cookie-milk mixture (frames 26-29).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Are the strawberries mashed in the video?",
+      "gt": "Yes",
+      "pred": "Yes, the strawberries are mashed. This is shown in the video sequence where strawberries are first cut (e.g., 0:07–0:09) and then further processed into a mashed consistency (e.g., 0:10–0:12).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is milk added to the mixture?",
+      "gt": "Yes",
+      "pred": "Yes. A white liquid (likely milk or a milk - based mixture) is poured onto the cold plate in the early steps (e.g., around the 4th frame), and later a pink liquid (which may also be a milk - based product like yogurt) is added (e.g., around the 16th frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Are cookies crushed or processed before the milk is added?",
+      "gt": "No",
+      "pred": "Yes. The cookies (Oreos) are placed on the base, then crushed (evident in frames showing the hand using a tool to break the cookies into smaller pieces, e.g., around the 12–15 second mark), and afterward, milk is poured over the crushed cookies (as seen in the frame where liquid is added to the crushed cookies).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Does the milk get added before anything happens with the cookies?",
+      "gt": "Yes",
+      "pred": "Yes. The milk is poured (e.g., frame 4) before any action with the cookies occurs (e.g., cookies are placed on the milk in frame 5).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

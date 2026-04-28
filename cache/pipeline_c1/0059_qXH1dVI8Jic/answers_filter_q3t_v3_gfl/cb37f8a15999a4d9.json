@@ -1,0 +1,94 @@
+{
+  "question": "Was the woman standing in the center on the same team as the host?",
+  "pred": "The video shows a game of Charades with four participants: a woman in a checkered jumpsuit, a man in a black outfit and hat, a woman in a floral corset top, and the host in a suit. In the initial lineup (e.g., frame at 00:00), the woman in the floral corset top is standing in the center-right position, while the host is on the far right. As the game progresses, the teams are revealed through their interactions: the woman in the checkered jumpsuit and the man in the black outfit sit on the left sofa together, while the woman in the floral corset top and the host sit on the right sofa together (visible in frames from 04:50 onwards). Furthermore, when the woman in the floral corset top successfully completes her charade, she celebrates specifically with the host (hugging him at 05:52), confirming they are on the same team.\n\nEvidence: Frames at 05:52 show the woman in the floral corset top (who stood in the center during the intro) hugging the host in celebration after her turn.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "stand",
+      "description": "Four people stand in front of blue curtain with Charades board visible",
+      "participants": [
+        "checkered-jumpsuit woman",
+        "black-outfit man",
+        "corset-top woman",
+        "suit man"
+      ],
+      "actor": "all",
+      "segment_boundary": "start",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:02",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "gesture",
+      "description": "The man in the suit gestures with both hands while speaking to the guests",
+      "participants": [
+        "suit man",
+        "black and gold top woman",
+        "checkered jumpsuit woman",
+        "black outfit man"
+      ],
+      "actor": "suit man",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 60,
+      "start_time": "01:45",
+      "end_time": "01:55",
+      "sub_events": [],
+      "subtype_order": 27,
+      "subtype_total": 53,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "manipulate_panel",
+      "description": "The woman in the checkered jumpsuit touches panel 7 on the Charades board",
+      "participants": [
+        "checkered jumpsuit woman",
+        "suit man"
+      ],
+      "actor": "checkered jumpsuit woman",
+      "object": "panel 7",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 126,
+      "start_time": "04:30",
+      "end_time": "04:34",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "game",
+      "description": "man holds up wooden tile with number 7 to show the charade prompt",
+      "participants": [
+        "checkered-jumpsuit woman",
+        "suit-man man"
+      ],
+      "actor": "suit-man man",
+      "object": "wooden tile with number 7",
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 130,
+      "start_time": "04:45",
+      "end_time": "04:50",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    }
+  ]
+}

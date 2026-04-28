@@ -1,0 +1,99 @@
+{
+  "question": "Did exactly four boxes get opened during the game?",
+  "pred": "Evidence: The Context explicitly records three box-opening events (Box 9 by the woman, Box 3 by the man, and a third box revealing a bird's nest with cannoli), and the frames show only these three distinct box openings with corresponding score updates (JENNIFER 1, JIMMY 2).\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "open_box",
+      "description": "the blue-dress woman opens the lid of the white box (Box 9)",
+      "participants": [
+        "blue-dress woman"
+      ],
+      "actor": "blue-dress woman",
+      "object": "white box",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 31,
+      "start_time": "00:59",
+      "end_time": "01:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Box of Lies"
+    },
+    {
+      "event_type": "open_box",
+      "description": "the black-suit man opens the side panel of the white box (Box 3)",
+      "participants": [
+        "black-suit man"
+      ],
+      "actor": "black-suit man",
+      "object": "white box (Box 3)",
+      "on_screen_text": [
+        {
+          "text": "JENNIFER 1",
+          "location": "lower_third"
+        },
+        {
+          "text": "JIMMY 0",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "complete",
+      "event_index": 71,
+      "start_time": "02:25",
+      "end_time": "02:27",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Box of Lies"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the blue-dress woman opens the box in front of her to reveal a bird's nest with a cannoli inside",
+      "participants": [
+        "blue-dress woman",
+        "black-suit man"
+      ],
+      "actor": "blue-dress woman",
+      "cover": "white box",
+      "hidden": "bird's nest with cannoli",
+      "on_screen_text": [
+        {
+          "text": "JENNIFER",
+          "location": "lower_third"
+        },
+        {
+          "text": "1",
+          "location": "lower_third"
+        },
+        {
+          "text": "JIMMY",
+          "location": "lower_third"
+        },
+        {
+          "text": "1",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Box of Lies",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 113,
+      "start_time": "04:15",
+      "end_time": "04:18",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Box of Lies"
+    }
+  ]
+}

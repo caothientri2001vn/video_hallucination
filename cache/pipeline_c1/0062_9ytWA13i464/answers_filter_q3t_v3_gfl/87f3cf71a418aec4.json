@@ -1,0 +1,102 @@
+{
+  "question": "Did she change from a dress to a sporty outfit afterward?",
+  "pred": "The video shows a red-haired person transitioning through several different outfits. In the segment labeled \"ONE\" (around 00:09), she is wearing a black dress with puff sleeves and a bow. In the subsequent segment labeled \"TWO\" (around 00:11), she transitions to a sporty outfit consisting of a black tank top, a red skirt, and headphones around her neck.\n\nEvidence: frames at ~00:09 show the person in a black dress (labeled \"ONE\"), and frames at ~00:11 show her in a black tank top and red skirt with headphones (labeled \"TWO\").\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "stand",
+      "description": "person stands still wearing a white and gray shark-design sweatshirt with red hair visible",
+      "participants": [
+        "red-haired person"
+      ],
+      "actor": "red-haired person",
+      "segment_boundary": "middle",
+      "segment_label": "",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:02",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": ""
+    },
+    {
+      "event_type": "pose",
+      "description": "person poses wearing black outfit with pink neon outline and 'ONE' text overlay visible",
+      "participants": [
+        "red-haired person"
+      ],
+      "actor": "red-haired person",
+      "segment_boundary": "middle",
+      "segment_label": "ONE",
+      "on_screen_text": [
+        {
+          "text": "ONE",
+          "location": "title"
+        }
+      ],
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:09",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "ONE"
+    },
+    {
+      "event_type": "transition",
+      "description": "scene transitions with blue neon outline around person and 'TWO' text overlay appearing",
+      "participants": [
+        "red-haired person"
+      ],
+      "actor": "red-haired person",
+      "segment_boundary": "start",
+      "segment_label": "TWO",
+      "on_screen_text": [
+        {
+          "text": "TWO",
+          "location": "title"
+        }
+      ],
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 7,
+      "start_time": "00:10",
+      "end_time": "00:11",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 2,
+      "segment_label_resolved": "TWO"
+    },
+    {
+      "event_type": "pose",
+      "description": "person poses wearing black top and red skirt with blue neon outline and 'TWO' text overlay visible",
+      "participants": [
+        "red-haired person"
+      ],
+      "actor": "red-haired person",
+      "segment_boundary": "middle",
+      "segment_label": "TWO",
+      "on_screen_text": [
+        {
+          "text": "TWO",
+          "location": "title"
+        }
+      ],
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 8,
+      "start_time": "00:11",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 2,
+      "segment_label_resolved": "TWO"
+    }
+  ]
+}

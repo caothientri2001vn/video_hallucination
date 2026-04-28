@@ -1,0 +1,100 @@
+{
+  "question": "Does the player in teal shirt number 23 score goal?",
+  "top_k": 15,
+  "indices": [
+    9,
+    10,
+    11
+  ],
+  "events": [
+    {
+      "event_type": "celebration",
+      "description": "Player in teal uniform with number 27 celebrates with arms raised high",
+      "participants": [
+        "teal uniform player"
+      ],
+      "actor": "teal uniform player",
+      "on_screen_text": [
+        {
+          "text": "AIA",
+          "location": "jersey"
+        },
+        {
+          "text": "27",
+          "location": "jersey_number"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 9,
+      "start_time": "00:15",
+      "end_time": "00:17",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Channel Intro"
+    },
+    {
+      "event_type": "hug",
+      "description": "Teammate in teal uniform with number 20 embraces the celebrating player from behind",
+      "participants": [
+        "teal uniform player with 20",
+        "teal uniform player with 27"
+      ],
+      "actor": "teal uniform player with 20",
+      "on_screen_text": [
+        {
+          "text": "AIA",
+          "location": "jersey"
+        },
+        {
+          "text": "20",
+          "location": "jersey_number"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "middle",
+      "event_index": 10,
+      "start_time": "00:17",
+      "end_time": "00:19",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Channel Intro"
+    },
+    {
+      "event_type": "hug",
+      "description": "Additional teammate in teal uniform embraces the celebrating player while others join the celebration",
+      "participants": [
+        "teal uniform player with 27",
+        "teammate in teal uniform"
+      ],
+      "actor": "teammate in teal uniform",
+      "on_screen_text": [
+        {
+          "text": "AIA",
+          "location": "jersey"
+        },
+        {
+          "text": "4",
+          "location": "jersey_number"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "middle",
+      "event_index": 11,
+      "start_time": "00:19",
+      "end_time": "00:22",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Channel Intro"
+    }
+  ]
+}

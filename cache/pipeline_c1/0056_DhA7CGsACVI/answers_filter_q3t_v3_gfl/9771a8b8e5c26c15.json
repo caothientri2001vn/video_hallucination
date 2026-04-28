@@ -1,0 +1,111 @@
+{
+  "question": "Was the doll head toy inside box number 1?",
+  "pred": "The Context and frames provide evidence regarding the contents of box number 1. According to the event timeline, the blue-suited man lifts the box labeled 1 from the shelf (event 112), places it on the table (event 113), and opens it (event 114). Event 115 explicitly states that he \"takes out a red-headed figurine from the box.\" This is confirmed by the frames at approximately 05:52, which show a red-headed doll head toy being revealed from the box labeled 1.\n\nEvidence: event 115 states \"the blue-suited man takes out a red-headed figurine from the box [labeled 1]\"; frames at ~05:52 show this red-headed doll head toy.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "lift",
+      "description": "the blue-suited man lifts the leftmost box (labeled 1) from the top shelf",
+      "participants": [
+        "blue-suited man",
+        "gray-suited man"
+      ],
+      "actor": "blue-suited man",
+      "object": "box labeled 1",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 112,
+      "start_time": "04:45",
+      "end_time": "04:49",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "place",
+      "description": "the blue-suited man places the box labeled 1 on the table",
+      "participants": [
+        "blue-suited man",
+        "gray-suited man"
+      ],
+      "actor": "blue-suited man",
+      "object": "box labeled 1",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 113,
+      "start_time": "04:49",
+      "end_time": "04:52",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "open_box",
+      "description": "the blue-suited man opens the box labeled 1",
+      "participants": [
+        "blue-suited man",
+        "gray-suited man"
+      ],
+      "actor": "blue-suited man",
+      "object": "box labeled 1",
+      "object_before": "closed box",
+      "object_after": "open box",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 114,
+      "start_time": "04:52",
+      "end_time": "04:55",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the blue-suited man takes out a red-headed figurine from the box",
+      "participants": [
+        "blue-suited man",
+        "gray-suited man"
+      ],
+      "actor": "blue-suited man",
+      "object": "figurine",
+      "cover": "box labeled 1",
+      "hidden": "red-headed figurine",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 115,
+      "start_time": "04:55",
+      "end_time": "04:58",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "react",
+      "description": "the gray-suited man leans forward and shows interest in the revealed figurine",
+      "participants": [
+        "blue-suited man",
+        "gray-suited man"
+      ],
+      "actor": "gray-suited man",
+      "segment_boundary": "middle",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 116,
+      "start_time": "04:55",
+      "end_time": "05:00",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    }
+  ]
+}

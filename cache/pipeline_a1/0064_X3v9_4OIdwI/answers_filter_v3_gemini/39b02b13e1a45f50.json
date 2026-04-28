@@ -1,0 +1,1157 @@
+{
+  "question": "Did the top-left segment play before the top-right segment?",
+  "pred": "The video is a four-panel compilation where different segments are introduced sequentially. According to the event timeline:\n1. The **top-left segment** begins at **00:00** (Event 1: \"The woman in the top-left panel begins dancing...\").\n2. The **top-right segment** begins at **00:05** (Event 6: \"The woman in the top-right panel begins dancing...\").\n\nSince the top-left segment starts at 00:00 and the top-right segment starts at 00:05, the top-left segment played before the top-right segment.\n\nEvidence: Event 1 starts at 00:00 (top-left) and Event 6 starts at 00:05 (top-right).\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "gesture": 20,
+      "outfit_change": 10,
+      "transform": 5,
+      "reveal": 5,
+      "dance": 3
+    },
+    "events": [
+      {
+        "event_type": "dance",
+        "description": "The woman in the top-left panel begins dancing while wearing a white crop top and grey striped pants.",
+        "participants": [
+          "white-top woman",
+          "blue-sleeved woman",
+          "white-tank-top woman",
+          "tan-shirt woman"
+        ],
+        "actor": "white-top woman",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Outfit Transition Dance",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:01",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "outfit_change",
+        "description": "The woman in the top-left panel transitions from a white crop top and grey striped pants to a white sailor-style crop top and white shorts.",
+        "participants": [
+          "white-top woman"
+        ],
+        "actor": "white-top woman",
+        "object_before": "white crop top",
+        "object_after": "white sailor top",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Transition Dance",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 2,
+        "start_time": "00:01",
+        "end_time": "00:02",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "outfit_change",
+        "description": "The woman in the top-left panel transitions from a white sailor top to a white button-down shirt and a blue and yellow plaid skirt.",
+        "participants": [
+          "white-top woman"
+        ],
+        "actor": "white-top woman",
+        "object_before": "white sailor top",
+        "object_after": "white button-down shirt",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Transition Dance",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 3,
+        "start_time": "00:02",
+        "end_time": "00:03",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "outfit_change",
+        "description": "The woman in the top-left panel transitions from a white button-down shirt to a purple lace dress.",
+        "participants": [
+          "white-top woman"
+        ],
+        "actor": "white-top woman",
+        "object_before": "white button-down shirt",
+        "object_after": "purple lace dress",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Transition Dance",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 4,
+        "start_time": "00:03",
+        "end_time": "00:04",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "outfit_change",
+        "description": "The woman in the top-left panel transitions from a purple lace dress to a black halter-style dress.",
+        "participants": [
+          "white-top woman"
+        ],
+        "actor": "white-top woman",
+        "object_before": "purple lace dress",
+        "object_after": "black halter dress",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Transition Dance",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 5,
+        "start_time": "00:04",
+        "end_time": "00:05",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "dance",
+        "description": "The woman in the top-right panel begins dancing while wearing a white t-shirt with blue sleeves and grey shorts.",
+        "participants": [
+          "blue-sleeved woman"
+        ],
+        "actor": "blue-sleeved woman",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Transition Dance",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 6,
+        "start_time": "00:05",
+        "end_time": "00:07",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "outfit_change",
+        "description": "The woman in the top-right panel transitions from a blue-sleeved t-shirt to a white crop top and blue denim shorts.",
+        "participants": [
+          "blue-sleeved woman"
+        ],
+        "actor": "blue-sleeved woman",
+        "object_before": "blue-sleeved t-shirt",
+        "object_after": "white crop top",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Transition Dance",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 7,
+        "start_time": "00:07",
+        "end_time": "00:08",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "outfit_change",
+        "description": "The woman in the top-right panel transitions from a white crop top to a black t-shirt and black shorts.",
+        "participants": [
+          "blue-sleeved woman"
+        ],
+        "actor": "blue-sleeved woman",
+        "object_before": "white crop top",
+        "object_after": "black t-shirt",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Transition Dance",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 8,
+        "start_time": "00:08",
+        "end_time": "00:09",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "outfit_change",
+        "description": "The woman in the top-right panel transitions from a black t-shirt to a red floral dress.",
+        "participants": [
+          "blue-sleeved woman"
+        ],
+        "actor": "blue-sleeved woman",
+        "object_before": "black t-shirt",
+        "object_after": "red floral dress",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Transition Dance",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 9,
+        "start_time": "00:09",
+        "end_time": "00:10",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "outfit_change",
+        "description": "The woman in the top-right panel transitions from a red floral dress to a blue off-the-shoulder dress.",
+        "participants": [
+          "blue-sleeved woman"
+        ],
+        "actor": "blue-sleeved woman",
+        "object_before": "red floral dress",
+        "object_after": "blue off-the-shoulder dress",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Transition Dance",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 10,
+        "start_time": "00:10",
+        "end_time": "00:11",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "dance",
+        "description": "The woman in the bottom-left panel begins dancing while wearing a white tank top and grey sweatpants.",
+        "participants": [
+          "white-tank-top woman"
+        ],
+        "actor": "white-tank-top woman",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Transition Dance",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 11,
+        "start_time": "00:11",
+        "end_time": "00:13",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "outfit_change",
+        "description": "The woman in the bottom-left panel transitions from a white tank top to a black lace dress.",
+        "participants": [
+          "white-tank-top woman"
+        ],
+        "actor": "white-tank-top woman",
+        "object_before": "white tank top",
+        "object_after": "black lace dress",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Transition Dance",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 12,
+        "start_time": "00:13",
+        "end_time": "00:14",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "outfit_change",
+        "description": "The woman in the bottom-left panel transitions from a black lace dress to a pink silk dress.",
+        "participants": [
+          "white-tank-top woman"
+        ],
+        "actor": "white-tank-top woman",
+        "object_before": "black lace dress",
+        "object_after": "pink silk dress",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Outfit Transition Dance",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 13,
+        "start_time": "00:14",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 10,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the blue-sleeved woman gestures with her hands while standing",
+        "participants": [
+          "blue-sleeved woman",
+          "black-dress woman",
+          "white-top woman",
+          "tan-shirt woman"
+        ],
+        "actor": "blue-sleeved woman",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Dance Performance",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 14,
+        "start_time": "00:15",
+        "end_time": "00:16",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 20,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the blue-sleeved woman moves her arms out to her sides",
+        "participants": [
+          "blue-sleeved woman"
+        ],
+        "actor": "blue-sleeved woman",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Dance Performance",
+        "continuation_hint": "complete",
+        "event_index": 15,
+        "start_time": "00:16",
+        "end_time": "00:17",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 20,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the blue-sleeved woman brings her hands behind her back",
+        "participants": [
+          "blue-sleeved woman"
+        ],
+        "actor": "blue-sleeved woman",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Dance Performance",
+        "continuation_hint": "complete",
+        "event_index": 16,
+        "start_time": "00:17",
+        "end_time": "00:18",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 20,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the blue-sleeved woman tilts her head to the side",
+        "participants": [
+          "blue-sleeved woman"
+        ],
+        "actor": "blue-sleeved woman",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Dance Performance",
+        "continuation_hint": "complete",
+        "event_index": 17,
+        "start_time": "00:18",
+        "end_time": "00:19",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 20,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "transform",
+        "description": "the blue-sleeved woman changes her outfit to a white shirt and blue plaid skirt",
+        "participants": [
+          "blue-sleeved woman"
+        ],
+        "actor": "blue-sleeved woman",
+        "object_before": "blue-sleeved shirt",
+        "object_after": "white shirt",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Dance Performance",
+        "continuation_hint": "complete",
+        "event_index": 18,
+        "start_time": "00:19",
+        "end_time": "00:20",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the white-shirt woman (top right) poses with her hands behind her back",
+        "participants": [
+          "white-shirt woman"
+        ],
+        "actor": "white-shirt woman",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Dance Performance",
+        "continuation_hint": "complete",
+        "event_index": 19,
+        "start_time": "00:20",
+        "end_time": "00:21",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 20,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "transform",
+        "description": "the white-shirt woman (top right) changes her outfit to a black shirt and black skirt",
+        "participants": [
+          "white-shirt woman"
+        ],
+        "actor": "white-shirt woman",
+        "object_before": "white shirt",
+        "object_after": "black shirt",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Dance Performance",
+        "continuation_hint": "complete",
+        "event_index": 20,
+        "start_time": "00:21",
+        "end_time": "00:22",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the black-shirt woman (top right) poses with her hands behind her back",
+        "participants": [
+          "black-shirt woman"
+        ],
+        "actor": "black-shirt woman",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Dance Performance",
+        "continuation_hint": "complete",
+        "event_index": 21,
+        "start_time": "00:22",
+        "end_time": "00:23",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 20,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "transform",
+        "description": "the black-shirt woman (top right) changes her outfit to a white shirt and tan pants",
+        "participants": [
+          "black-shirt woman"
+        ],
+        "actor": "black-shirt woman",
+        "object_before": "black shirt",
+        "object_after": "white shirt",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Dance Performance",
+        "continuation_hint": "complete",
+        "event_index": 22,
+        "start_time": "00:23",
+        "end_time": "00:24",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the white-shirt woman (top right) poses with her hands behind her back",
+        "participants": [
+          "white-shirt woman"
+        ],
+        "actor": "white-shirt woman",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Dance Performance",
+        "continuation_hint": "complete",
+        "event_index": 23,
+        "start_time": "00:24",
+        "end_time": "00:25",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 20,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "transform",
+        "description": "the white-shirt woman (top right) changes her outfit to a black dress with white trim",
+        "participants": [
+          "white-shirt woman"
+        ],
+        "actor": "white-shirt woman",
+        "object_before": "white shirt",
+        "object_after": "black dress",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Dance Performance",
+        "continuation_hint": "complete",
+        "event_index": 24,
+        "start_time": "00:25",
+        "end_time": "00:26",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the white-top woman (bottom left) crosses her arms in front of her face",
+        "participants": [
+          "white-top woman"
+        ],
+        "actor": "white-top woman",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Dance Performance",
+        "continuation_hint": "complete",
+        "event_index": 25,
+        "start_time": "00:26",
+        "end_time": "00:27",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 20,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the white-top woman (bottom left) moves her arms out to her sides",
+        "participants": [
+          "white-top woman"
+        ],
+        "actor": "white-top woman",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Dance Performance",
+        "continuation_hint": "complete",
+        "event_index": 26,
+        "start_time": "00:27",
+        "end_time": "00:28",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 20,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the white-top woman (bottom left) brings her hands together in front of her",
+        "participants": [
+          "white-top woman"
+        ],
+        "actor": "white-top woman",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Dance Performance",
+        "continuation_hint": "complete",
+        "event_index": 27,
+        "start_time": "00:28",
+        "end_time": "00:29",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 20,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "transform",
+        "description": "the white-top woman (bottom left) changes her outfit to a purple dress",
+        "participants": [
+          "white-top woman"
+        ],
+        "actor": "white-top woman",
+        "object_before": "white top",
+        "object_after": "purple dress",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Dance Performance",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 28,
+        "start_time": "00:29",
+        "end_time": "00:30",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the purple-dress woman (bottom-left) leans forward and sways her hips while looking at the camera",
+        "participants": [
+          "purple-dress woman"
+        ],
+        "actor": "purple-dress woman",
+        "object": "purple dress",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "outfit transition dance",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 29,
+        "start_time": "00:30",
+        "end_time": "00:31",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 20,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the tan-shirt woman (bottom-right) stands still and looks at the camera",
+        "participants": [
+          "tan-shirt woman"
+        ],
+        "actor": "tan-shirt woman",
+        "object": "tan shirt",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "outfit transition dance",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 30,
+        "start_time": "00:30",
+        "end_time": "00:31",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 20,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "reveal",
+        "description": "the purple-dress woman (bottom-left) transitions into a black and white striped dress",
+        "participants": [
+          "black and white striped dress woman"
+        ],
+        "actor": "black and white striped dress woman",
+        "object_before": "purple dress",
+        "object_after": "black and white striped dress",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "outfit transition dance",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 31,
+        "start_time": "00:31",
+        "end_time": "00:32",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "reveal",
+        "description": "the black and white striped dress woman (bottom-left) transitions into a red top and skirt",
+        "participants": [
+          "red-outfit woman"
+        ],
+        "actor": "red-outfit woman",
+        "object_before": "black and white striped dress",
+        "object_after": "red outfit",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "outfit transition dance",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 32,
+        "start_time": "00:32",
+        "end_time": "00:33",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "reveal",
+        "description": "the red-outfit woman (bottom-left) transitions into a white knit outfit",
+        "participants": [
+          "white-knit-outfit woman"
+        ],
+        "actor": "white-knit-outfit woman",
+        "object_before": "red outfit",
+        "object_after": "white knit outfit",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "outfit transition dance",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 33,
+        "start_time": "00:33",
+        "end_time": "00:34",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the tan-shirt woman (bottom-right) raises her hands and begins to dance",
+        "participants": [
+          "tan-shirt woman"
+        ],
+        "actor": "tan-shirt woman",
+        "object": "tan shirt",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "outfit transition dance",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 34,
+        "start_time": "00:34",
+        "end_time": "00:35",
+        "sub_events": [],
+        "subtype_order": 13,
+        "subtype_total": 20,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "reveal",
+        "description": "the tan-shirt woman (bottom-right) transitions into a black dress",
+        "participants": [
+          "black-dress woman"
+        ],
+        "actor": "black-dress woman",
+        "object_before": "tan shirt",
+        "object_after": "black dress",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "outfit transition dance",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 35,
+        "start_time": "00:35",
+        "end_time": "00:36",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "reveal",
+        "description": "the black-dress woman (bottom-right) transitions into a white tank top and denim shorts",
+        "participants": [
+          "white-tank-top woman"
+        ],
+        "actor": "white-tank-top woman",
+        "object_before": "black dress",
+        "object_after": "white tank top",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "outfit transition dance",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 36,
+        "start_time": "00:36",
+        "end_time": "00:37",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the white-tank-top woman (bottom-right) continues to dance and sway her hips",
+        "participants": [
+          "white-tank-top woman"
+        ],
+        "actor": "white-tank-top woman",
+        "object": "white tank top",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "outfit transition dance",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 37,
+        "start_time": "00:37",
+        "end_time": "00:45",
+        "sub_events": [],
+        "subtype_order": 14,
+        "subtype_total": 20,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the white-knit-outfit woman (bottom-left) continues to sway her hips and look at the camera",
+        "participants": [
+          "white-knit-outfit woman"
+        ],
+        "actor": "white-knit-outfit woman",
+        "object": "white knit outfit",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "outfit transition dance",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 38,
+        "start_time": "00:37",
+        "end_time": "00:45",
+        "sub_events": [],
+        "subtype_order": 15,
+        "subtype_total": 20,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the white-tank-top woman in the bottom-right panel gestures with her hands while dancing",
+        "participants": [
+          "white-tank-top woman"
+        ],
+        "actor": "white-tank-top woman",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Four-Panel Dance",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 39,
+        "start_time": "00:45",
+        "end_time": "00:46",
+        "sub_events": [],
+        "subtype_order": 16,
+        "subtype_total": 20,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the white-tank-top woman in the bottom-right panel turns her head and looks to the side",
+        "participants": [
+          "white-tank-top woman"
+        ],
+        "actor": "white-tank-top woman",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Four-Panel Dance",
+        "continuation_hint": "middle",
+        "event_index": 40,
+        "start_time": "00:46",
+        "end_time": "00:47",
+        "sub_events": [],
+        "subtype_order": 17,
+        "subtype_total": 20,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the white-tank-top woman in the bottom-right panel continues dancing, swaying her hips",
+        "participants": [
+          "white-tank-top woman"
+        ],
+        "actor": "white-tank-top woman",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Four-Panel Dance",
+        "continuation_hint": "middle",
+        "event_index": 41,
+        "start_time": "00:47",
+        "end_time": "00:48",
+        "sub_events": [],
+        "subtype_order": 18,
+        "subtype_total": 20,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the white-tank-top woman in the bottom-right panel performs a visual state change, appearing in a black cap and black-and-white shirt",
+        "participants": [
+          "white-tank-top woman"
+        ],
+        "actor": "white-tank-top woman",
+        "object_before": "white tank top",
+        "object_after": "black and white shirt",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Four-Panel Dance",
+        "continuation_hint": "middle",
+        "event_index": 42,
+        "start_time": "00:48",
+        "end_time": "00:49",
+        "sub_events": [],
+        "subtype_order": 19,
+        "subtype_total": 20,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the white-tank-top woman in the bottom-right panel reverts to her original white tank top and denim shorts while dancing",
+        "participants": [
+          "white-tank-top woman"
+        ],
+        "actor": "white-tank-top woman",
+        "object_before": "black and white shirt",
+        "object_after": "white tank top",
+        "on_screen_text": [
+          {
+            "text": "@Short_Senpai",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Four-Panel Dance",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 43,
+        "start_time": "00:49",
+        "end_time": "00:50",
+        "sub_events": [],
+        "subtype_order": 20,
+        "subtype_total": 20,
+        "round_index": 1,
+        "segment_label_resolved": "Outfit Transition Dance"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Outfit Transition Dance",
+        "event_index_range": [
+          1,
+          43
+        ]
+      }
+    ]
+  }
+}

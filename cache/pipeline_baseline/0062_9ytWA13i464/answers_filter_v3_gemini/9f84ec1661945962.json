@@ -1,0 +1,90 @@
+{
+  "question": "Between Outfit 1 and Outfit 3, did she wear glasses at any point?",
+  "pred": "The video shows a red-haired woman performing an outfit transition challenge. She begins the video wearing a grey and white sweatshirt and black-rimmed glasses. As the transitions occur, marked by on-screen text \"ONE\", \"TWO\", and \"THREE\", she changes her clothing.\n\n1.  **Outfit 1 (On-screen text \"ONE\"):** She transitions into a black leather dress. In the frames associated with this outfit (starting around 00:06), she is no longer wearing glasses.\n2.  **Outfit 2 (On-screen text \"TWO\"):** She transitions into a black tank top with headphones. She is not wearing glasses.\n3.  **Outfit 3 (On-screen text \"THREE\"):** She transitions into a black top with a large bow and silver headphones. She is not wearing glasses.\n\nThe only time she is seen wearing glasses is at the very beginning of the video, before the first transition to Outfit 1 occurs. Once the sequence of numbered outfits begins, she does not wear glasses at any point.\n\nEvidence: The frames from the start of the \"ONE\" transition (00:06) through the \"THREE\" transition (00:10) show the woman without glasses.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "reveal",
+      "description": "The red-haired woman transitions from a grey and white sweatshirt to a black leather dress.",
+      "participants": [
+        "red-haired woman"
+      ],
+      "actor": "red-haired woman",
+      "object_before": "grey and white sweatshirt",
+      "object_after": "black leather dress",
+      "on_screen_text": [
+        {
+          "text": "ONE",
+          "location": "title"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Outfit Transition Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:06",
+      "end_time": "00:07",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Transition Challenge"
+    },
+    {
+      "event_type": "reveal",
+      "description": "The red-haired woman transitions from a black leather dress to a black tank top with headphones around her neck.",
+      "participants": [
+        "red-haired woman"
+      ],
+      "actor": "red-haired woman",
+      "object_before": "black leather dress",
+      "object_after": "black tank top",
+      "on_screen_text": [
+        {
+          "text": "TWO",
+          "location": "title"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Outfit Transition Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 7,
+      "start_time": "00:07",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Transition Challenge"
+    },
+    {
+      "event_type": "reveal",
+      "description": "The red-haired woman transitions from a black tank top to a black top with a large bow and silver headphones.",
+      "participants": [
+        "red-haired woman"
+      ],
+      "actor": "red-haired woman",
+      "object_before": "black tank top",
+      "object_after": "black top",
+      "object_after_pattern": "large bow on chest",
+      "on_screen_text": [
+        {
+          "text": "THREE",
+          "location": "title"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Outfit Transition Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 8,
+      "start_time": "00:08",
+      "end_time": "00:10",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Transition Challenge"
+    }
+  ]
+}

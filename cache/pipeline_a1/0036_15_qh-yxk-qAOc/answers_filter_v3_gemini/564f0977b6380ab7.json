@@ -1,0 +1,163 @@
+{
+  "question": "When the dark blue team plays against white and black team, does the player with dark blue shirt number 13 score the goal?",
+  "pred": "The video shows a soccer match between a team in dark blue and black striped jerseys and a team in white and black striped jerseys. The player in the dark blue and black striped jersey with number 13 (identified as Maicon in the Context) is seen kicking the ball toward the goal. The ball enters the net as the goalkeeper dives but fails to save it. Following the goal, the same player (number 13) is shown celebrating his score.\n\nEvidence: Context event 5 states \"The ball enters the goal as the green-shirt goalkeeper dives but misses\" following event 3 where \"A blue-shirt player (Maicon, #13) kicks the ball toward the goal.\"\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "kick",
+      "description": "A blue-shirt player (Maicon, #13) kicks the ball toward the goal.",
+      "participants": [
+        "blue-shirt man"
+      ],
+      "actor": "blue-shirt man",
+      "object": "soccer ball",
+      "on_screen_text": [
+        {
+          "text": "MAICON",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "middle",
+      "event_index": 3,
+      "start_time": "00:03",
+      "end_time": "00:05",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "header",
+      "description": "A striped-shirt player attempts to head the ball away from the goal.",
+      "participants": [
+        "striped-shirt man"
+      ],
+      "actor": "striped-shirt man",
+      "object": "soccer ball",
+      "on_screen_text": [
+        {
+          "text": "MAICON",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "middle",
+      "event_index": 4,
+      "start_time": "00:05",
+      "end_time": "00:07",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "goal",
+      "description": "The ball enters the goal as the green-shirt goalkeeper dives but misses.",
+      "participants": [
+        "green-shirt man"
+      ],
+      "actor": "green-shirt man",
+      "object": "soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "MAICON",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "middle",
+      "event_index": 5,
+      "start_time": "00:07",
+      "end_time": "00:09",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "The blue-shirt player (Maicon, #13) runs toward the camera celebrating the goal.",
+      "participants": [
+        "blue-shirt man"
+      ],
+      "actor": "blue-shirt man",
+      "on_screen_text": [
+        {
+          "text": "MAICON",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "middle",
+      "event_index": 6,
+      "start_time": "00:09",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "gesture",
+      "description": "The blue-shirt player (Maicon, #13) kisses his hand and points to the crowd.",
+      "participants": [
+        "blue-shirt man"
+      ],
+      "actor": "blue-shirt man",
+      "on_screen_text": [
+        {
+          "text": "MAICON",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 7,
+      "start_time": "00:12",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "The blue-and-black-striped jersey player (number 13) celebrates by putting his hand to his mouth.",
+      "participants": [
+        "blue-and-black-striped jersey player (number 13)"
+      ],
+      "actor": "blue-and-black-striped jersey player (number 13)",
+      "object": "hand",
+      "on_screen_text": [
+        {
+          "text": "13",
+          "location": "jersey_number"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match Celebration",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 8,
+      "start_time": "00:15",
+      "end_time": "00:16",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    }
+  ]
+}

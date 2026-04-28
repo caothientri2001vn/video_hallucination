@@ -1,0 +1,177 @@
+{
+  "question": "Was the team that lifted the trophy the one that successfully saved the penalty?",
+  "pred": "Evidence: The green goalkeeper (associated with the blue/red striped team per the alias map) successfully saved the penalty (event 80), and the blue/red striped jersey players later lifted the Emirates FA Cup trophy (events 141, 144, 167, 176, 179).\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "kick",
+      "description": "player in light blue uniform with number 7 runs toward and strikes the soccer ball",
+      "participants": [
+        "light blue uniform player #7"
+      ],
+      "actor": "light blue uniform player #7",
+      "object": "white soccer ball",
+      "outcome": "kicked",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 78,
+      "start_time": "02:23",
+      "end_time": "02:25",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Corner Kick"
+    },
+    {
+      "event_type": "dive",
+      "description": "goalkeeper in light green uniform dives to his left to save the penalty kick",
+      "participants": [
+        "light green uniform goalkeeper"
+      ],
+      "actor": "light green uniform goalkeeper",
+      "object": "white soccer ball",
+      "outcome": "dived",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 79,
+      "start_time": "02:25",
+      "end_time": "02:27",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Corner Kick"
+    },
+    {
+      "event_type": "save",
+      "description": "goalkeeper in light green uniform successfully saves the penalty by deflecting the ball with his hands",
+      "participants": [
+        "light green uniform goalkeeper"
+      ],
+      "actor": "light green uniform goalkeeper",
+      "object": "white soccer ball",
+      "outcome": "saved",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 80,
+      "start_time": "02:26",
+      "end_time": "02:28",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Corner Kick"
+    },
+    {
+      "event_type": "celebration",
+      "description": "Players in red and blue striped jerseys stand on a podium with medals around their necks, some with yellow and blue flags draped over their shoulders",
+      "participants": [
+        "red and blue striped jersey players",
+        "men in suits"
+      ],
+      "actor": "red and blue striped jersey players",
+      "segment_boundary": "middle",
+      "segment_label": "Trophy Presentation",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 141,
+      "start_time": "04:30",
+      "end_time": "04:32",
+      "sub_events": [],
+      "subtype_order": 21,
+      "subtype_total": 26,
+      "round_index": 2,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "hold",
+      "description": "Multiple players in red and blue striped jerseys grasp the trophy handles and lift it upward",
+      "participants": [
+        "red and blue striped jersey players"
+      ],
+      "actor": "red and blue striped jersey players",
+      "segment_boundary": "middle",
+      "segment_label": "Trophy Presentation",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 144,
+      "start_time": "04:35",
+      "end_time": "04:37",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 2,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "trophy_lift",
+      "description": "A player in blue and red striped jersey lifts the Emirates FA Cup trophy high above his head",
+      "participants": [
+        "blue-and-red striped jersey player",
+        "yellow-draped player",
+        "red-draped player"
+      ],
+      "actor": "blue-and-red striped jersey player",
+      "object": "Emirates FA Cup trophy",
+      "segment_boundary": "middle",
+      "segment_label": "FA Cup Victory Celebration",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 167,
+      "start_time": "05:00",
+      "end_time": "05:03",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "trophy_display",
+      "description": "A player in blue and red striped jersey holds the Emirates FA Cup trophy above head while standing with teammates",
+      "participants": [
+        "blue-and-red striped jersey trophy holder",
+        "yellow-draped teammates",
+        "red-draped teammates"
+      ],
+      "actor": "blue-and-red striped jersey trophy holder",
+      "object": "Emirates FA Cup trophy",
+      "segment_boundary": "middle",
+      "segment_label": "FA Cup Victory Celebration",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 176,
+      "start_time": "05:09",
+      "end_time": "05:14",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "lift",
+      "description": "The same player lifts the trophy high above his head while shouting",
+      "participants": [
+        "blue and red striped jersey player with yellow scarf"
+      ],
+      "actor": "blue and red striped jersey player with yellow scarf",
+      "object": "silver trophy",
+      "segment_boundary": "end",
+      "segment_label": "Trophy Celebration",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 179,
+      "start_time": "05:17",
+      "end_time": "05:21",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 2,
+      "segment_label_resolved": "Soccer Match"
+    }
+  ]
+}

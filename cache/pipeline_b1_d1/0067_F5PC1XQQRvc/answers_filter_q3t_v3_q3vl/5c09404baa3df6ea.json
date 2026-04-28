@@ -1,0 +1,75 @@
+{
+  "question": "Did the red embroidered gown appear between the pink one-shoulder dress and the white off-shoulder dress?",
+  "pred": "Evidence: The frames show the pink one-shoulder dress (frames 33-36), followed by the red embroidered gown (frames 37-40), followed by the white off-shoulder dress (frames 41-44).\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "hold",
+      "description": "A woman holds multiple dresses in front of her with both hands",
+      "participants": [
+        "white-tshirt woman"
+      ],
+      "actor": "white-tshirt woman",
+      "object": "multiple dresses",
+      "on_screen_text": [
+        {
+          "text": "my top 10 dresses of 2024",
+          "location": "center"
+        }
+      ],
+      "segment_boundary": "start",
+      "segment_label": "Dress showcase",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:03",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Dress showcase"
+    },
+    {
+      "event_type": "posture_shift",
+      "description": "The woman shifts her stance, causing the dresses to move slightly",
+      "participants": [
+        "white-tshirt woman"
+      ],
+      "actor": "white-tshirt woman",
+      "object": "multiple dresses",
+      "segment_boundary": "middle",
+      "segment_label": "Dress showcase",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 2,
+      "start_time": "00:03",
+      "end_time": "00:06",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Dress showcase"
+    },
+    {
+      "event_type": "reveal",
+      "description": "The woman's purple slippers with cat designs become visible as she shifts position",
+      "participants": [
+        "white-tshirt woman"
+      ],
+      "actor": "white-tshirt woman",
+      "object": "slippers",
+      "object_after": "purple slippers with cat designs",
+      "segment_boundary": "middle",
+      "segment_label": "Dress showcase",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 3,
+      "start_time": "00:06",
+      "end_time": "00:09",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Dress showcase"
+    }
+  ]
+}

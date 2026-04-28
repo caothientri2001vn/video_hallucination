@@ -1,0 +1,99 @@
+{
+  "question": "Is the number 2 banana a cake?",
+  "pred": "Evidence: The Context shows the woman in black cutting into the banana-shaped object on platform #2, which is then revealed to have a dark cake interior.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "walk",
+      "description": "The woman in black walks from the center toward platform #2 while holding a large knife",
+      "participants": [
+        "black-shirt woman",
+        "white-shirt man",
+        "floral-dress woman"
+      ],
+      "actor": "black-shirt woman",
+      "object": "large knife",
+      "on_screen_text": [
+        {
+          "text": "PHIL & HOLLY PLAY 'IS IT CAKE?'",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 129,
+      "start_time": "06:00",
+      "end_time": "06:03",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 16,
+      "round_index": 4,
+      "segment_label_resolved": "Is It Cake?"
+    },
+    {
+      "event_type": "cut",
+      "description": "The woman in black cuts into the banana-shaped object on platform #2",
+      "participants": [
+        "black-shirt woman"
+      ],
+      "actor": "black-shirt woman",
+      "object": "banana-shaped object",
+      "on_screen_text": [
+        {
+          "text": "PHIL & HOLLY PLAY 'IS IT CAKE?'",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 130,
+      "start_time": "06:03",
+      "end_time": "06:07",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 7,
+      "round_index": 4,
+      "segment_label_resolved": "Is It Cake?"
+    },
+    {
+      "event_type": "reveal",
+      "description": "Close-up shows the banana-shaped object cut in half revealing a dark cake interior",
+      "participants": [],
+      "actor": null,
+      "object_before": "yellow banana-shaped object",
+      "object_after": "yellow cake with dark interior",
+      "on_screen_text": [
+        {
+          "text": "PHIL & HOLLY PLAY 'IS IT CAKE?'",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 131,
+      "start_time": "06:07",
+      "end_time": "06:10",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 6,
+      "round_index": 4,
+      "segment_label_resolved": "Is It Cake?"
+    }
+  ]
+}

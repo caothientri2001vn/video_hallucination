@@ -1,0 +1,454 @@
+{
+  "question": "Is the number 2 handbag a cake?",
+  "pred": "The video features a game segment where participants identify which of several items on numbered pedestals is made of cake. In the handbag round (starting around 02:36), four handbags are displayed on blue pedestals numbered 1 through 4. The handbag on pedestal #2 is a pink quilted handbag. Later in the segment (around 03:39), a woman in a plaid shirt cuts into the black bag on pedestal #1, revealing it to be cake (Event 88). The pink handbag on pedestal #2 is shown to be a real handbag, as the woman in the plaid shirt picks it up by its handle and moves it aside to make room for the next round (visible in frames around 04:00-04:10), which would not be possible if it were a delicate cake structure.\n\nEvidence: Frames at ~04:00 show the woman in the plaid shirt picking up the pink handbag from pedestal #2 by its handle and moving it, confirming it is a real bag.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "camera_movement",
+      "description": "camera pans from black bag to pink quilted handbag on pedestal #2",
+      "participants": [],
+      "actor": "camera",
+      "on_screen_text": [
+        {
+          "text": "PHIL & HOLLY PLAY 'IS IT CAKE?'",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        },
+        {
+          "text": "itv",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 69,
+      "start_time": "02:36",
+      "end_time": "02:39",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 8,
+      "round_index": 2,
+      "segment_label_resolved": "Studio Discussion"
+    },
+    {
+      "event_type": "camera_movement",
+      "description": "camera zooms out to show all four handbags on blue pedestals again",
+      "participants": [],
+      "actor": "camera",
+      "on_screen_text": [
+        {
+          "text": "PHIL & HOLLY PLAY 'IS IT CAKE?'",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        },
+        {
+          "text": "itv",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 72,
+      "start_time": "02:44",
+      "end_time": "02:45",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 8,
+      "round_index": 2,
+      "segment_label_resolved": "Studio Discussion"
+    },
+    {
+      "event_type": "point",
+      "description": "The woman in the pink dress points toward the display area with her right hand",
+      "participants": [
+        "white-shirt man",
+        "checkered-shirt woman"
+      ],
+      "actor": "pink-dress woman",
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 73,
+      "start_time": "02:45",
+      "end_time": "02:55",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 2,
+      "segment_label_resolved": "Studio Discussion"
+    },
+    {
+      "event_type": "look",
+      "description": "The man in the white shirt looks toward where the woman in the pink dress is pointing",
+      "participants": [
+        "pink-dress woman"
+      ],
+      "actor": "white-shirt man",
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 74,
+      "start_time": "02:45",
+      "end_time": "03:00",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 2,
+      "segment_label_resolved": "Studio Discussion"
+    },
+    {
+      "event_type": "stand",
+      "description": "The woman in the checkered shirt stands on the left side of the set observing the display area",
+      "participants": [
+        "pink-dress woman",
+        "white-shirt man"
+      ],
+      "actor": "checkered-shirt woman",
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 75,
+      "start_time": "02:45",
+      "end_time": "03:00",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 7,
+      "round_index": 2,
+      "segment_label_resolved": "Studio Discussion"
+    },
+    {
+      "event_type": "walk",
+      "description": "woman in plaid shirt walks from left side of studio toward the blue display with numbered pedestals",
+      "participants": [
+        "plaid-shirt woman",
+        "pink-dress woman",
+        "light-pink-shirt man"
+      ],
+      "actor": "plaid-shirt woman",
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "PHIL & HOLLY PLAY 'IS IT CAKE?'",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        },
+        {
+          "text": "itv",
+          "location": "logo"
+        }
+      ],
+      "event_index": 77,
+      "start_time": "03:00",
+      "end_time": "03:04",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 16,
+      "round_index": 2,
+      "segment_label_resolved": "Studio Discussion"
+    },
+    {
+      "event_type": "reveal",
+      "description": "Woman in plaid shirt cuts through the bag revealing it is made of cake",
+      "participants": [
+        "plaid-shirt woman",
+        "white-shirt man",
+        "pink-dress woman"
+      ],
+      "actor": "plaid-shirt woman",
+      "object_before": "black bag",
+      "object_after": "cake",
+      "cover": "black bag",
+      "hidden": "cake",
+      "on_screen_text": [
+        {
+          "text": "PHIL & HOLLY PLAY 'IS IT CAKE?'",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 88,
+      "start_time": "03:39",
+      "end_time": "03:42",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Studio Discussion"
+    },
+    {
+      "event_type": "hand_raise",
+      "description": "Phil raises his hand (holding a yellow object)",
+      "participants": [
+        "pink-shirt man",
+        "pink-dress woman",
+        "plaid-shirt person"
+      ],
+      "actor": "pink-shirt man",
+      "object": "yellow object",
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "PHIL & HOLLY PLAY 'IS IT CAKE?'",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        },
+        {
+          "text": "itv",
+          "location": "logo"
+        }
+      ],
+      "event_index": 90,
+      "start_time": "03:45",
+      "end_time": "03:47",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 2,
+      "segment_label_resolved": "Studio Discussion"
+    },
+    {
+      "event_type": "walk",
+      "description": "Holly walks from the right side toward the center while holding a yellow envelope",
+      "participants": [
+        "pink-dress woman",
+        "pink-shirt man",
+        "plaid-shirt person"
+      ],
+      "actor": "pink-dress woman",
+      "object": "yellow envelope",
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "PHIL & HOLLY PLAY 'IS IT CAKE?'",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        },
+        {
+          "text": "itv",
+          "location": "logo"
+        }
+      ],
+      "event_index": 91,
+      "start_time": "03:47",
+      "end_time": "03:50",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 16,
+      "round_index": 2,
+      "segment_label_resolved": "Studio Discussion"
+    },
+    {
+      "event_type": "gesture",
+      "description": "Holly makes expressive hand movements while speaking to the plaid-shirt person",
+      "participants": [
+        "pink-dress woman",
+        "plaid-shirt person",
+        "pink-shirt man"
+      ],
+      "actor": "pink-dress woman",
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "continues_after_chunk",
+      "on_screen_text": [
+        {
+          "text": "PHIL & HOLLY PLAY 'IS IT CAKE?'",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        },
+        {
+          "text": "itv",
+          "location": "logo"
+        }
+      ],
+      "event_index": 94,
+      "start_time": "03:56",
+      "end_time": "03:58",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 18,
+      "round_index": 2,
+      "segment_label_resolved": "Studio Discussion"
+    },
+    {
+      "event_type": "graphic",
+      "description": "on-screen text changes from only showing '#ThisMorning' to displaying 'PHIL & HOLLY PLAY 'IS IT CAKE?''",
+      "participants": [],
+      "actor": "",
+      "object": "",
+      "object_before": "",
+      "object_after": "",
+      "on_screen_text": [
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        },
+        {
+          "text": "PHIL & HOLLY PLAY 'IS IT CAKE?'",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "start",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 117,
+      "start_time": "05:00",
+      "end_time": "05:01",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 11,
+      "round_index": 4,
+      "segment_label_resolved": "Is It Cake?"
+    },
+    {
+      "event_type": "game",
+      "description": "Camera pans across four blue numbered pedestals (1-4) displaying cake items designed to look like bananas",
+      "participants": [],
+      "actor": "camera",
+      "object": "blue pedestals",
+      "on_screen_text": [
+        {
+          "text": "PHIL & HOLLY PLAY 'IS IT CAKE?'",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        },
+        {
+          "text": "itv",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 120,
+      "start_time": "05:15",
+      "end_time": "05:30",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 4,
+      "segment_label_resolved": "Is It Cake?"
+    },
+    {
+      "event_type": "game_setup",
+      "description": "Camera pans across four blue numbered platforms (1-4) displaying banana-shaped objects on top of each platform",
+      "participants": [],
+      "actor": "camera",
+      "object": "banana-shaped objects",
+      "on_screen_text": [
+        {
+          "text": "PHIL & HOLLY PLAY 'IS IT CAKE?'",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        },
+        {
+          "text": "itv",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 121,
+      "start_time": "05:30",
+      "end_time": "05:34",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 4,
+      "segment_label_resolved": "Is It Cake?"
+    },
+    {
+      "event_type": "camera_movement",
+      "description": "The camera focuses on the blue circular structure with numbered platforms (1-4) displaying sneakers",
+      "participants": [],
+      "actor": "camera",
+      "on_screen_text": [
+        {
+          "text": "CAN YOU SPOT WHICH ITEM IS MADE OF CAKE?",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cake Identification Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 162,
+      "start_time": "07:33",
+      "end_time": "07:40",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 8,
+      "round_index": 5,
+      "segment_label_resolved": "MEET BRITAIN'S BEST NOVELTY CAKE MAKERS"
+    },
+    {
+      "event_type": "pan",
+      "description": "The camera pans from left to right across the four numbered platforms showing sneakers on blue pedestals",
+      "participants": [],
+      "actor": "camera",
+      "on_screen_text": [
+        {
+          "text": "CAN YOU SPOT WHICH ITEM IS MADE OF CAKE?",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cake Identification Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 163,
+      "start_time": "07:36",
+      "end_time": "07:45",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 5,
+      "segment_label_resolved": "MEET BRITAIN'S BEST NOVELTY CAKE MAKERS"
+    }
+  ]
+}

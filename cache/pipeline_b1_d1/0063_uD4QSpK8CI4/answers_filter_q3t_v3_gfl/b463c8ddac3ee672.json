@@ -1,0 +1,123 @@
+{
+  "question": "Did the girls add handbags in the middle of the video?",
+  "pred": "The video shows a woman (presented as two versions of herself, \"American\" and \"Korean\") comparing fashion styles. Throughout the video, she adds various items to her outfit. Handbags are introduced toward the end of the sequence.\n\n1.  **Jeans:** Shown at the beginning (00:00).\n2.  **Tops:** Added after the jeans (around 00:18).\n3.  **Outerwear:** A blue shirt and pink cardigan are added (around 00:25).\n4.  **Shoes:** Sneakers and loafers are shown (around 00:30).\n5.  **Handbags:** A cream handbag and a pink handbag are added last (around 00:38).\n\nEvidence: Frames at ~00:38 show the woman holding up and then carrying a cream handbag (left) and a pink handbag (right).\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "display",
+      "description": "both women hold high waisted jeans up in front of them to display the style difference",
+      "participants": [
+        "American woman",
+        "Korean woman"
+      ],
+      "actor": "both women",
+      "object": "blue jeans",
+      "on_screen_text": [
+        {
+          "text": "Style Difference",
+          "location": "title"
+        },
+        {
+          "text": "high waisted jeans",
+          "location": "caption"
+        },
+        {
+          "text": "American",
+          "location": "caption"
+        },
+        {
+          "text": "Korean",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Style Difference comparison",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 1,
+      "start_time": "00:00",
+      "end_time": "00:01",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Style Difference comparison"
+    },
+    {
+      "event_type": "reposition",
+      "description": "American woman changes orientation of jeans to show different angle",
+      "participants": [
+        "American woman"
+      ],
+      "actor": "American woman",
+      "object": "blue jeans",
+      "on_screen_text": [
+        {
+          "text": "Style Difference",
+          "location": "title"
+        },
+        {
+          "text": "high waisted jeans",
+          "location": "caption"
+        },
+        {
+          "text": "American",
+          "location": "caption"
+        },
+        {
+          "text": "Korean",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Style Difference comparison",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 4,
+      "start_time": "00:03",
+      "end_time": "00:05",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Style Difference comparison"
+    },
+    {
+      "event_type": "hold",
+      "description": "Korean woman maintains consistent hold on jeans while making minor adjustments",
+      "participants": [
+        "Korean woman"
+      ],
+      "actor": "Korean woman",
+      "object": "blue jeans",
+      "on_screen_text": [
+        {
+          "text": "Style Difference",
+          "location": "title"
+        },
+        {
+          "text": "high waisted jeans",
+          "location": "caption"
+        },
+        {
+          "text": "American",
+          "location": "caption"
+        },
+        {
+          "text": "Korean",
+          "location": "caption"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Style Difference comparison",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 7,
+      "start_time": "00:05",
+      "end_time": "00:07",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Style Difference comparison"
+    }
+  ]
+}

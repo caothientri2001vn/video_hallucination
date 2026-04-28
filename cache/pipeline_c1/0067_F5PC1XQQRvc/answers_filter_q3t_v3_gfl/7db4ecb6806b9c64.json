@@ -1,0 +1,92 @@
+{
+  "question": "Did the black lace dress appear after the white lace halter dress but before the pink one-shoulder dress?",
+  "pred": "The video shows a woman showcasing a series of dresses. By observing the sequence of dresses she wears:\n1.  **Yellow halter dress**\n2.  **Red strapless dress** with a high slit\n3.  **Light blue strapless dress** with a matching neck scarf\n4.  **White lace halter dress** with floral patterns and a high slit\n5.  **Black lace dress** with long bell sleeves and a tie-front detail\n6.  **Pink one-shoulder dress** with floral accents on the shoulder and hip\n7.  **Red strapless dress** with floral textures and a high slit\n8.  **White off-the-shoulder dress** with a ruffled neckline\n9.  **Pink strapless satin dress**\n10. **White off-the-shoulder lace dress** with long bell sleeves\n\nThe black lace dress (5) appears immediately after the white lace halter dress (4) and immediately before the pink one-shoulder dress (6).\n\nEvidence: The woman wears the white lace halter dress, then the black lace dress, then the pink one-shoulder dress.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "hold": 1,
+      "posture_shift": 1,
+      "reveal": 1
+    },
+    "events": [
+      {
+        "event_type": "hold",
+        "description": "A woman holds multiple dresses in front of her with both hands",
+        "participants": [
+          "white-tshirt woman"
+        ],
+        "actor": "white-tshirt woman",
+        "object": "multiple dresses",
+        "on_screen_text": [
+          {
+            "text": "my top 10 dresses of 2024",
+            "location": "center"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Dress showcase",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:03",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Dress showcase"
+      },
+      {
+        "event_type": "posture_shift",
+        "description": "The woman shifts her stance, causing the dresses to move slightly",
+        "participants": [
+          "white-tshirt woman"
+        ],
+        "actor": "white-tshirt woman",
+        "object": "multiple dresses",
+        "segment_boundary": "middle",
+        "segment_label": "Dress showcase",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 2,
+        "start_time": "00:03",
+        "end_time": "00:06",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Dress showcase"
+      },
+      {
+        "event_type": "reveal",
+        "description": "The woman's purple slippers with cat designs become visible as she shifts position",
+        "participants": [
+          "white-tshirt woman"
+        ],
+        "actor": "white-tshirt woman",
+        "object": "slippers",
+        "object_after": "purple slippers with cat designs",
+        "segment_boundary": "middle",
+        "segment_label": "Dress showcase",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 3,
+        "start_time": "00:06",
+        "end_time": "00:09",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Dress showcase"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Dress showcase",
+        "event_index_range": [
+          1,
+          3
+        ]
+      }
+    ]
+  }
+}

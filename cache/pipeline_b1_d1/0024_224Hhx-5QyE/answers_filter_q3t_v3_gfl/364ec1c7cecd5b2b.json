@@ -1,0 +1,77 @@
+{
+  "question": "Does the woman stack the green cup?",
+  "pred": "The video shows a woman in an orange shirt and a man in a pink hoodie competing in a cup-stacking game. The woman is responsible for the green cups on the left side of the table. Throughout the video, she is seen picking up green cups and placing them on top of each other to form a single stack.\n\nEvidence: Context events 3, 8, and 33 describe the orange-shirt woman stacking and rearranging green cups on the left side of the table.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "stack",
+      "description": "woman in orange shirt begins stacking green cups on the left side of the table",
+      "participants": [
+        "orange-shirt woman",
+        "pink-hoodie man"
+      ],
+      "actor": "orange-shirt woman",
+      "object": "green cups",
+      "on_screen_text": [
+        {
+          "text": "First to stack their cups wins!",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 3,
+      "start_time": "00:01",
+      "end_time": "00:06",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Game"
+    },
+    {
+      "event_type": "stack",
+      "description": "woman in orange shirt stacks a green cup on top of other green cups on the left side of the table",
+      "participants": [
+        "orange-shirt woman",
+        "pink-hoodie man"
+      ],
+      "actor": "orange-shirt woman",
+      "object": "green cup",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 8,
+      "start_time": "00:15",
+      "end_time": "00:18",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Game"
+    },
+    {
+      "event_type": "arrange",
+      "description": "woman in orange shirt rearranges green cups on the left side of the table, stacking multiple cups",
+      "participants": [
+        "orange-shirt woman",
+        "pink-hoodie man"
+      ],
+      "actor": "orange-shirt woman",
+      "object": "green cups",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 33,
+      "start_time": "01:07",
+      "end_time": "01:08",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Game"
+    }
+  ]
+}

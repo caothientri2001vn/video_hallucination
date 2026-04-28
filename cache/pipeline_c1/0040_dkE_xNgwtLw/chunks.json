@@ -1,0 +1,1428 @@
+{
+  "video_name": "0040_dkE_xNgwtLw.mp4",
+  "video_duration_sec": 239.82291666666666,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:05",
+          "event_type": "graphic",
+          "description": "stage backdrop displays large 'SOLANGE' text with pink and purple lighting",
+          "participants": [],
+          "actor": "stage",
+          "on_screen_text": [
+            {
+              "text": "SOLANGE",
+              "location": "title"
+            }
+          ],
+          "segment_boundary": "start",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:00",
+          "local_end": "00:15",
+          "event_type": "watch",
+          "description": "audience and judges observe the stage performance",
+          "participants": [
+            "yellow-dress judge",
+            "black-suit judge",
+            "white-shirt judge",
+            "light-dress judge",
+            "audience"
+          ],
+          "actor": "audience and judges",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:10",
+          "event_type": "hand_raise",
+          "description": "red-haired performer raises left hand holding a red object",
+          "participants": [
+            "red-haired performer"
+          ],
+          "actor": "red-haired performer",
+          "object": "red object",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:11",
+          "local_end": "00:13",
+          "event_type": "place",
+          "description": "red-haired performer places red object into wine glass",
+          "participants": [
+            "red-haired performer"
+          ],
+          "actor": "red-haired performer",
+          "object": "red object",
+          "cover": "wine glass",
+          "hidden": "red object",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:14",
+          "local_end": "00:15",
+          "event_type": "reveal",
+          "description": "red-haired performer opens black jacket to reveal red dress underneath",
+          "participants": [
+            "red-haired performer"
+          ],
+          "actor": "red-haired performer",
+          "object_before": "black jacket (closed)",
+          "object_after": "black jacket (opened) revealing red dress",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 30.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:30",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:18",
+          "event_type": "remove_jacket",
+          "description": "The woman in red dress begins removing her black jacket, pulling it from her shoulders",
+          "participants": [
+            "red-dress woman"
+          ],
+          "actor": "red-dress woman",
+          "object": "black jacket",
+          "object_before": "black jacket",
+          "object_after": "black jacket (partially removed)",
+          "segment_boundary": "middle",
+          "segment_label": "fashion_show",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:18",
+          "local_end": "00:22",
+          "event_type": "remove_jacket",
+          "description": "The woman continues removing the black jacket, pulling it down past her elbows",
+          "participants": [
+            "red-dress woman"
+          ],
+          "actor": "red-dress woman",
+          "object": "black jacket",
+          "object_before": "black jacket (partially removed)",
+          "object_after": "black jacket (nearly removed)",
+          "segment_boundary": "middle",
+          "segment_label": "fashion_show",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:22",
+          "local_end": "00:24",
+          "event_type": "costume_change",
+          "description": "The woman completely removes the black jacket, revealing a black dress with gold patterns underneath",
+          "participants": [
+            "red-dress woman"
+          ],
+          "actor": "red-dress woman",
+          "object_before": "black jacket",
+          "object_after": "black dress with gold patterns",
+          "object_after_pattern": "gold filigree patterns on black dress",
+          "segment_boundary": "middle",
+          "segment_label": "fashion_show",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:23",
+          "local_end": "00:25",
+          "event_type": "place",
+          "description": "The woman drops the black jacket on the stage floor",
+          "participants": [
+            "red-dress woman"
+          ],
+          "actor": "red-dress woman",
+          "object": "black jacket",
+          "segment_boundary": "middle",
+          "segment_label": "fashion_show",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:25",
+          "local_end": "00:28",
+          "event_type": "walk",
+          "description": "The woman walks from center stage toward the right side of the stage",
+          "participants": [
+            "red-dress woman"
+          ],
+          "actor": "red-dress woman",
+          "segment_boundary": "middle",
+          "segment_label": "fashion_show",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:26",
+          "local_end": "00:29",
+          "event_type": "pose",
+          "description": "The woman strikes a pose with arms outstretched, showcasing the black dress with gold patterns",
+          "participants": [
+            "red-dress woman"
+          ],
+          "actor": "red-dress woman",
+          "segment_boundary": "middle",
+          "segment_label": "fashion_show",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:28",
+          "local_end": "00:30",
+          "event_type": "retrieve_cloth",
+          "description": "The woman approaches a display and pulls a pink cloth from it",
+          "participants": [
+            "red-dress woman"
+          ],
+          "actor": "red-dress woman",
+          "object": "pink cloth",
+          "segment_boundary": "middle",
+          "segment_label": "fashion_show",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 2,
+      "chunk_start_sec": 30.0,
+      "chunk_end_sec": 45.0,
+      "chunk_start_mmss": "00:30",
+      "chunk_end_mmss": "00:45",
+      "events": [
+        {
+          "local_start": "00:30",
+          "local_end": "00:36",
+          "event_type": "manipulate_fabric",
+          "description": "The woman with red hair holds and manipulates a pink fabric in front of her body while standing on stage",
+          "participants": [
+            "red-hair woman"
+          ],
+          "actor": "red-hair woman",
+          "object": "pink fabric",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:36",
+          "local_end": "00:41",
+          "event_type": "transform_fabric",
+          "description": "The woman puts the pink fabric over her body, transforming it into a new outfit",
+          "participants": [
+            "red-hair woman"
+          ],
+          "actor": "red-hair woman",
+          "object_before": "pink fabric",
+          "object_after": "pink outfit",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:40",
+          "local_end": "00:45",
+          "event_type": "reveal_outfit",
+          "description": "The woman reveals a new pink outfit with 'SR' text while discarding parts of the original black dress",
+          "participants": [
+            "red-hair woman"
+          ],
+          "actor": "red-hair woman",
+          "object_before": "black dress with gold patterns",
+          "object_after": "pink outfit with 'SR' text",
+          "on_screen_text": [
+            {
+              "text": "SR",
+              "location": "outfit"
+            }
+          ],
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 3,
+      "chunk_start_sec": 45.0,
+      "chunk_end_sec": 60.0,
+      "chunk_start_mmss": "00:45",
+      "chunk_end_mmss": "01:00",
+      "events": [
+        {
+          "local_start": "00:45",
+          "local_end": "00:50",
+          "event_type": "point",
+          "description": "the woman points at the upper-left piece of the dress design on the board",
+          "participants": [
+            "pink-dress woman"
+          ],
+          "actor": "pink-dress woman",
+          "object": "leopard-print dress design board",
+          "segment_boundary": "middle",
+          "segment_label": "Dress Design Presentation",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:50",
+          "local_end": "00:53",
+          "event_type": "manipulate",
+          "description": "the woman adjusts the position of the board to better display the dress pieces",
+          "participants": [
+            "pink-dress woman"
+          ],
+          "actor": "pink-dress woman",
+          "object": "leopard-print dress design board",
+          "segment_boundary": "middle",
+          "segment_label": "Dress Design Presentation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:53",
+          "local_end": "00:56",
+          "event_type": "transform",
+          "description": "the separate pieces on the board combine into a complete dress design",
+          "participants": [
+            "pink-dress woman"
+          ],
+          "actor": "board",
+          "object_before": "leopard-print dress pieces (separate)",
+          "object_after": "leopard-print dress (complete)",
+          "segment_boundary": "middle",
+          "segment_label": "Dress Design Presentation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:56",
+          "local_end": "01:00",
+          "event_type": "point",
+          "description": "the woman points at the completed dress design on the board while gesturing with her other hand",
+          "participants": [
+            "pink-dress woman"
+          ],
+          "actor": "pink-dress woman",
+          "object": "leopard-print dress design board",
+          "segment_boundary": "middle",
+          "segment_label": "Dress Design Presentation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 4,
+      "chunk_start_sec": 60.0,
+      "chunk_end_sec": 75.0,
+      "chunk_start_mmss": "01:00",
+      "chunk_end_mmss": "01:15",
+      "events": [
+        {
+          "local_start": "01:00",
+          "local_end": "01:03",
+          "event_type": "pull_board",
+          "description": "The woman pulls up the right side of the board to reveal a new image underneath.",
+          "participants": [
+            "red-hair woman"
+          ],
+          "actor": "red-hair woman",
+          "object": "white board",
+          "segment_boundary": "middle",
+          "segment_label": "Dress Transformation Act",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:03",
+          "local_end": "01:06",
+          "event_type": "costume_change",
+          "description": "The woman's pink dress begins to transform into a leopard print dress as she continues manipulating the board.",
+          "participants": [
+            "red-hair woman"
+          ],
+          "actor": "red-hair woman",
+          "object_before": "pink dress",
+          "object_after": "leopard print dress",
+          "segment_boundary": "middle",
+          "segment_label": "Dress Transformation Act",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:06",
+          "local_end": "01:09",
+          "event_type": "hand_raise",
+          "description": "The woman raises her right hand (holding the board) upward while maintaining the board in her left hand.",
+          "participants": [
+            "red-hair woman"
+          ],
+          "actor": "red-hair woman",
+          "object": "white board",
+          "segment_boundary": "middle",
+          "segment_label": "Dress Transformation Act",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:09",
+          "local_end": "01:12",
+          "event_type": "reveal",
+          "description": "The woman reveals the text 'Dress up!' on the board by pulling up another section.",
+          "participants": [
+            "red-hair woman"
+          ],
+          "actor": "red-hair woman",
+          "object_before": "leopard print dress image",
+          "object_after": "text display",
+          "object_after_pattern": "'Dress up!' in black script",
+          "segment_boundary": "middle",
+          "segment_label": "Dress Transformation Act",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:12",
+          "local_end": "01:15",
+          "event_type": "costume_complete",
+          "description": "The woman's dress is now fully transformed into the leopard print pattern as she continues holding the board.",
+          "participants": [
+            "red-hair woman"
+          ],
+          "actor": "red-hair woman",
+          "object_before": "partially transformed dress",
+          "object_after": "leopard print dress",
+          "segment_boundary": "middle",
+          "segment_label": "Dress Transformation Act",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 5,
+      "chunk_start_sec": 75.0,
+      "chunk_end_sec": 90.0,
+      "chunk_start_mmss": "01:15",
+      "chunk_end_mmss": "01:30",
+      "events": [
+        {
+          "local_start": "01:15",
+          "local_end": "01:18",
+          "event_type": "hand_raise",
+          "description": "red-haired woman raises her right hand holding a small red box",
+          "participants": [
+            "red-haired woman"
+          ],
+          "actor": "red-haired woman",
+          "object": "red box",
+          "segment_boundary": "middle",
+          "segment_label": "product_presentation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:19",
+          "local_end": "01:22",
+          "event_type": "open_object",
+          "description": "red-haired woman opens the red box with both hands",
+          "participants": [
+            "red-haired woman"
+          ],
+          "actor": "red-haired woman",
+          "object": "red box",
+          "segment_boundary": "middle",
+          "segment_label": "product_presentation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:23",
+          "local_end": "01:26",
+          "event_type": "hand_raise",
+          "description": "red-haired woman raises her right hand holding a white card",
+          "participants": [
+            "red-haired woman"
+          ],
+          "actor": "red-haired woman",
+          "object": "white card",
+          "segment_boundary": "middle",
+          "segment_label": "product_presentation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:27",
+          "local_end": "01:30",
+          "event_type": "gesture",
+          "description": "red-haired woman gestures with her left hand while holding the white card in her right hand",
+          "participants": [
+            "red-haired woman"
+          ],
+          "actor": "red-haired woman",
+          "segment_boundary": "middle",
+          "segment_label": "product_presentation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 6,
+      "chunk_start_sec": 90.0,
+      "chunk_end_sec": 105.0,
+      "chunk_start_mmss": "01:30",
+      "chunk_end_mmss": "01:45",
+      "events": [
+        {
+          "local_start": "01:30",
+          "local_end": "01:32",
+          "event_type": "state_change",
+          "description": "The woman transitions from holding a red card in her right hand to holding a blue case in her left hand",
+          "participants": [
+            "woman in leopard print dress"
+          ],
+          "actor": "woman in leopard print dress",
+          "object_before": "red card",
+          "object_after": "blue case",
+          "segment_boundary": "middle",
+          "segment_label": "Card Trick",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:33",
+          "local_end": "01:36",
+          "event_type": "reveal",
+          "description": "The woman opens the blue case to reveal a yellow card inside",
+          "participants": [
+            "woman in leopard print dress"
+          ],
+          "actor": "woman in leopard print dress",
+          "cover": "blue case",
+          "hidden": "yellow card",
+          "segment_boundary": "middle",
+          "segment_label": "Card Trick",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:37",
+          "local_end": "01:39",
+          "event_type": "place",
+          "description": "The woman places the yellow card on the black platform to her left",
+          "participants": [
+            "woman in leopard print dress"
+          ],
+          "actor": "woman in leopard print dress",
+          "object": "yellow card",
+          "segment_boundary": "middle",
+          "segment_label": "Card Trick",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:40",
+          "local_end": "01:42",
+          "event_type": "pickup",
+          "description": "The woman picks up the yellow card from the black platform",
+          "participants": [
+            "woman in leopard print dress"
+          ],
+          "actor": "woman in leopard print dress",
+          "object": "yellow card",
+          "segment_boundary": "middle",
+          "segment_label": "Card Trick",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:42",
+          "local_end": "01:45",
+          "event_type": "display",
+          "description": "The woman holds the yellow card in her right hand and the black case in her left hand, showing both to the audience",
+          "participants": [
+            "woman in leopard print dress"
+          ],
+          "actor": "woman in leopard print dress",
+          "object": "yellow card, black case",
+          "segment_boundary": "middle",
+          "segment_label": "Card Trick",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 7,
+      "chunk_start_sec": 105.0,
+      "chunk_end_sec": 120.0,
+      "chunk_start_mmss": "01:45",
+      "chunk_end_mmss": "02:00",
+      "events": [
+        {
+          "local_start": "01:45",
+          "local_end": "01:47",
+          "event_type": "place",
+          "description": "The red-haired woman places a stack of money into a black bag on a stand to her left",
+          "participants": [
+            "red-haired woman"
+          ],
+          "actor": "red-haired woman",
+          "object": "money",
+          "segment_boundary": "middle",
+          "segment_label": "stage performance",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:47",
+          "local_end": "01:49",
+          "event_type": "walk",
+          "description": "The red-haired woman walks away from the black bag toward the center of the stage",
+          "participants": [
+            "red-haired woman"
+          ],
+          "actor": "red-haired woman",
+          "segment_boundary": "middle",
+          "segment_label": "stage performance",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:49",
+          "local_end": "01:51",
+          "event_type": "point",
+          "description": "The red-haired woman points with her right hand toward something off-stage to her left",
+          "participants": [
+            "red-haired woman"
+          ],
+          "actor": "red-haired woman",
+          "segment_boundary": "middle",
+          "segment_label": "stage performance",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:52",
+          "local_end": "01:56",
+          "event_type": "confetti",
+          "description": "Money flies out from the black bag on the stand, scattering through the air like confetti",
+          "participants": [
+            "red-haired woman"
+          ],
+          "actor": "black bag",
+          "object": "money",
+          "segment_boundary": "middle",
+          "segment_label": "stage performance",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:57",
+          "local_end": "01:59",
+          "event_type": "walk",
+          "description": "The red-haired woman walks across the stage from right to left",
+          "participants": [
+            "red-haired woman"
+          ],
+          "actor": "red-haired woman",
+          "segment_boundary": "middle",
+          "segment_label": "stage performance",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:58",
+          "local_end": "02:00",
+          "event_type": "graphic",
+          "description": "The word 'SOLANGE' is visible in large pink letters on the stage backdrop",
+          "participants": [],
+          "actor": "backdrop",
+          "on_screen_text": [
+            {
+              "text": "SOLANGE",
+              "location": "title"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "stage performance",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 8,
+      "chunk_start_sec": 120.0,
+      "chunk_end_sec": 135.0,
+      "chunk_start_mmss": "02:00",
+      "chunk_end_mmss": "02:15",
+      "events": [
+        {
+          "local_start": "02:00",
+          "local_end": "02:03",
+          "event_type": "walk",
+          "description": "The woman in the pink dress walks forward from the back of the stage toward the center",
+          "participants": [
+            "pink-dress woman"
+          ],
+          "actor": "pink-dress woman",
+          "segment_boundary": "middle",
+          "segment_label": "Fashion presentation",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "02:02",
+          "local_end": "02:05",
+          "event_type": "gesture",
+          "description": "The woman in the pink dress makes a hand gesture with her right hand while walking",
+          "participants": [
+            "pink-dress woman"
+          ],
+          "actor": "pink-dress woman",
+          "segment_boundary": "middle",
+          "segment_label": "Fashion presentation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:00",
+          "local_end": "02:15",
+          "event_type": "applaud",
+          "description": "The audience members are clapping while watching the performance",
+          "participants": [
+            "audience members"
+          ],
+          "actor": "audience members",
+          "segment_boundary": "middle",
+          "segment_label": "Fashion presentation",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "ORANGE",
+              "location": "banner"
+            }
+          ]
+        },
+        {
+          "local_start": "02:04",
+          "local_end": "02:08",
+          "event_type": "walk",
+          "description": "The woman in the pink dress continues walking across the stage toward the judges' table",
+          "participants": [
+            "pink-dress woman"
+          ],
+          "actor": "pink-dress woman",
+          "segment_boundary": "middle",
+          "segment_label": "Fashion presentation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:07",
+          "local_end": "02:10",
+          "event_type": "gesture",
+          "description": "The woman in the pink dress makes a hand gesture with both hands while walking",
+          "participants": [
+            "pink-dress woman"
+          ],
+          "actor": "pink-dress woman",
+          "segment_boundary": "middle",
+          "segment_label": "Fashion presentation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:10",
+          "local_end": "02:13",
+          "event_type": "walk",
+          "description": "The woman in the pink dress approaches the judges' table at the front of the stage",
+          "participants": [
+            "pink-dress woman"
+          ],
+          "actor": "pink-dress woman",
+          "segment_boundary": "middle",
+          "segment_label": "Fashion presentation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:12",
+          "local_end": "02:15",
+          "event_type": "gesture",
+          "description": "The woman in the pink dress gestures toward the judges at the table while speaking",
+          "participants": [
+            "pink-dress woman",
+            "judges"
+          ],
+          "actor": "pink-dress woman",
+          "segment_boundary": "middle",
+          "segment_label": "Fashion presentation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 9,
+      "chunk_start_sec": 135.0,
+      "chunk_end_sec": 150.0,
+      "chunk_start_mmss": "02:15",
+      "chunk_end_mmss": "02:30",
+      "events": [
+        {
+          "local_start": "02:15",
+          "local_end": "02:18",
+          "event_type": "hand_raise",
+          "description": "woman raises her right hand holding a red card",
+          "participants": [
+            "red-hair woman"
+          ],
+          "actor": "red-hair woman",
+          "object": "red card",
+          "segment_boundary": "middle",
+          "segment_label": "Card Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:18",
+          "local_end": "02:21",
+          "event_type": "point",
+          "description": "woman points to the red card in her left hand while holding a black card in her right hand",
+          "participants": [
+            "red-hair woman"
+          ],
+          "actor": "red-hair woman",
+          "object": "red card and black card",
+          "segment_boundary": "middle",
+          "segment_label": "Card Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:21",
+          "local_end": "02:24",
+          "event_type": "card_transform",
+          "description": "woman demonstrates card transformation from red card to black card",
+          "participants": [
+            "red-hair woman"
+          ],
+          "actor": "red-hair woman",
+          "object_before": "red card",
+          "object_after": "black card",
+          "segment_boundary": "middle",
+          "segment_label": "Card Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:24",
+          "local_end": "02:27",
+          "event_type": "show_card",
+          "description": "woman holds up black card with red heart patterns visible",
+          "participants": [
+            "red-hair woman"
+          ],
+          "actor": "red-hair woman",
+          "object": "black card with red hearts",
+          "segment_boundary": "middle",
+          "segment_label": "Card Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:27",
+          "local_end": "02:30",
+          "event_type": "show_card",
+          "description": "woman holds up card displaying \"AGT\" logo while speaking",
+          "participants": [
+            "red-hair woman"
+          ],
+          "actor": "red-hair woman",
+          "object": "black card with AGT logo",
+          "on_screen_text": [
+            {
+              "text": "AGT",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Card Demonstration",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 10,
+      "chunk_start_sec": 150.0,
+      "chunk_end_sec": 165.0,
+      "chunk_start_mmss": "02:30",
+      "chunk_end_mmss": "02:45",
+      "events": [
+        {
+          "local_start": "02:30",
+          "local_end": "02:33",
+          "event_type": "hand_over",
+          "description": "The woman with red hair hands a card to the man in the white shirt",
+          "participants": [
+            "red-hair woman",
+            "white-shirt man"
+          ],
+          "actor": "red-hair woman",
+          "object": "card with AGT text",
+          "segment_boundary": "middle",
+          "segment_label": "SOLANGE performance",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:33",
+          "local_end": "02:35",
+          "event_type": "examine",
+          "description": "The man in the white shirt examines the card he received",
+          "participants": [
+            "white-shirt man"
+          ],
+          "actor": "white-shirt man",
+          "object": "card",
+          "segment_boundary": "middle",
+          "segment_label": "SOLANGE performance",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:35",
+          "local_end": "02:37",
+          "event_type": "turn",
+          "description": "The woman with red hair turns away from the judge table toward the stage",
+          "participants": [
+            "red-hair woman"
+          ],
+          "actor": "red-hair woman",
+          "segment_boundary": "middle",
+          "segment_label": "SOLANGE performance",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:37",
+          "local_end": "02:39",
+          "event_type": "grab",
+          "description": "The woman with red hair grabs a white dress suspended from the ceiling",
+          "participants": [
+            "red-hair woman"
+          ],
+          "actor": "red-hair woman",
+          "object": "white dress",
+          "segment_boundary": "middle",
+          "segment_label": "SOLANGE performance",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:39",
+          "local_end": "02:42",
+          "event_type": "ascend",
+          "description": "The woman with red hair begins to rise vertically while holding the white dress",
+          "participants": [
+            "red-hair woman"
+          ],
+          "actor": "red-hair woman",
+          "segment_boundary": "middle",
+          "segment_label": "SOLANGE performance",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:42",
+          "local_end": "02:44",
+          "event_type": "rise",
+          "description": "The woman with red hair continues to ascend higher above the stage",
+          "participants": [
+            "red-hair woman"
+          ],
+          "actor": "red-hair woman",
+          "segment_boundary": "middle",
+          "segment_label": "SOLANGE performance",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:44",
+          "local_end": "02:45",
+          "event_type": "confetti_release",
+          "description": "White confetti or particles begin to fall around the woman as she reaches height",
+          "participants": [
+            "red-hair woman",
+            "audience"
+          ],
+          "actor": "stage lighting/technical crew (implied by the confetti release)",
+          "segment_boundary": "middle",
+          "segment_label": "SOLANGE performance",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 11,
+      "chunk_start_sec": 165.0,
+      "chunk_end_sec": 180.0,
+      "chunk_start_mmss": "02:45",
+      "chunk_end_mmss": "03:00",
+      "events": [
+        {
+          "local_start": "02:45",
+          "local_end": "02:50",
+          "event_type": "suspension",
+          "description": "Woman with red hair continues descending while suspended from above by a thin line",
+          "participants": [
+            "red-hair woman"
+          ],
+          "actor": "red-hair woman",
+          "segment_boundary": "middle",
+          "segment_label": "Stage Performance",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "02:45",
+          "local_end": "02:55",
+          "event_type": "confetti_fall",
+          "description": "White confetti pieces continue to fall throughout the stage area",
+          "participants": [],
+          "actor": "stage",
+          "segment_boundary": "middle",
+          "segment_label": "Stage Performance",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:50",
+          "local_end": "02:55",
+          "event_type": "hand_raise",
+          "description": "Woman with red hair raises both arms above shoulder level while landing on stage",
+          "participants": [
+            "red-hair woman"
+          ],
+          "actor": "red-hair woman",
+          "segment_boundary": "middle",
+          "segment_label": "Stage Performance",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:55",
+          "local_end": "03:00",
+          "event_type": "celebration",
+          "description": "Close-up shows woman with red hair maintaining raised arm position with confetti falling around her",
+          "participants": [
+            "red-hair woman"
+          ],
+          "actor": "red-hair woman",
+          "segment_boundary": "middle",
+          "segment_label": "Stage Performance",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:45",
+          "local_end": "03:00",
+          "event_type": "applaud",
+          "description": "Audience members visible in background raise hands and move arms in celebratory motion",
+          "participants": [
+            "audience members"
+          ],
+          "actor": "audience members",
+          "segment_boundary": "middle",
+          "segment_label": "Stage Performance",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:50",
+          "local_end": "03:00",
+          "event_type": "reaction",
+          "description": "Four judges seated at circular table raise arms and react to the performance",
+          "participants": [
+            "white-shirt judge",
+            "dark-shirt judge",
+            "green-shirt judge",
+            "black-shirt judge"
+          ],
+          "actor": "judges",
+          "segment_boundary": "middle",
+          "segment_label": "Stage Performance",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 12,
+      "chunk_start_sec": 180.0,
+      "chunk_end_sec": 195.0,
+      "chunk_start_mmss": "03:00",
+      "chunk_end_mmss": "03:15",
+      "events": [
+        {
+          "local_start": "03:00",
+          "local_end": "03:04",
+          "event_type": "applaud",
+          "description": "bald man in black suit claps with hands raised to shoulder height",
+          "participants": [
+            "black-suit man"
+          ],
+          "actor": "black-suit man",
+          "segment_boundary": "middle",
+          "segment_label": "Judges' Reaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:00",
+          "local_end": "03:04",
+          "event_type": "applaud",
+          "description": "woman in green sequined top claps with hands raised to chest level",
+          "participants": [
+            "green-sequined-top woman"
+          ],
+          "actor": "green-sequined-top woman",
+          "segment_boundary": "middle",
+          "segment_label": "Judges' Reaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:00",
+          "local_end": "03:04",
+          "event_type": "applaud",
+          "description": "woman in light dress claps with hands moving in a rhythmic pattern",
+          "participants": [
+            "light-dress woman"
+          ],
+          "actor": "light-dress woman",
+          "segment_boundary": "middle",
+          "segment_label": "Judges' Reaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:00",
+          "local_end": "03:04",
+          "event_type": "applaud",
+          "description": "man in white shirt claps with hands raised to shoulder height",
+          "participants": [
+            "white-shirt man"
+          ],
+          "actor": "white-shirt man",
+          "segment_boundary": "middle",
+          "segment_label": "Judges' Reaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:05",
+          "local_end": "03:10",
+          "event_type": "walk",
+          "description": "red-haired woman in white dress walks toward the judges' table on the circular stage",
+          "participants": [
+            "red-haired woman"
+          ],
+          "actor": "red-haired woman",
+          "segment_boundary": "middle",
+          "segment_label": "Stage Performance",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:05",
+          "local_end": "03:10",
+          "event_type": "gesture",
+          "description": "red-haired woman raises arms in a celebratory motion while standing near the judges' table",
+          "participants": [
+            "red-haired woman"
+          ],
+          "actor": "red-haired woman",
+          "segment_boundary": "middle",
+          "segment_label": "Stage Performance",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:11",
+          "local_end": "03:15",
+          "event_type": "applaud",
+          "description": "group of women in audience clap rhythmically with hands raised to shoulder height",
+          "participants": [
+            "blue-dress woman",
+            "yellow-top woman",
+            "black-top woman"
+          ],
+          "actor": "blue-dress woman",
+          "segment_boundary": "middle",
+          "segment_label": "Audience Reaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:11",
+          "local_end": "03:15",
+          "event_type": "applaud",
+          "description": "group of women in audience clap rhythmically with hands raised to shoulder height",
+          "participants": [
+            "blue-dress woman",
+            "yellow-top woman",
+            "black-top woman"
+          ],
+          "actor": "yellow-top woman",
+          "segment_boundary": "middle",
+          "segment_label": "Audience Reaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:11",
+          "local_end": "03:15",
+          "event_type": "applaud",
+          "description": "group of women in audience clap rhythmically with hands raised to shoulder height",
+          "participants": [
+            "blue-dress woman",
+            "yellow-top woman",
+            "black-top woman"
+          ],
+          "actor": "black-top woman",
+          "segment_boundary": "middle",
+          "segment_label": "Audience Reaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:14",
+          "local_end": "03:15",
+          "event_type": "on_screen_text",
+          "description": "show logo with four X symbols displayed on the large background screen",
+          "participants": [],
+          "actor": "",
+          "on_screen_text": [
+            {
+              "text": "X",
+              "location": "banner"
+            },
+            {
+              "text": "X",
+              "location": "banner"
+            },
+            {
+              "text": "X",
+              "location": "banner"
+            },
+            {
+              "text": "X",
+              "location": "banner"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Show Identification",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 13,
+      "chunk_start_sec": 195.0,
+      "chunk_end_sec": 210.0,
+      "chunk_start_mmss": "03:15",
+      "chunk_end_mmss": "03:30",
+      "events": [
+        {
+          "local_start": "03:15",
+          "local_end": "03:30",
+          "event_type": "hold_microphone",
+          "description": "The host in black tuxedo holds a microphone toward the red-haired woman",
+          "participants": [
+            "black-tuxedo host",
+            "red-haired woman"
+          ],
+          "actor": "black-tuxedo host",
+          "segment_boundary": "middle",
+          "segment_label": "America's Got Talent performance",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:15",
+          "local_end": "03:22",
+          "event_type": "speak",
+          "description": "The red-haired woman begins speaking into the microphone held by the host",
+          "participants": [
+            "red-haired woman"
+          ],
+          "actor": "red-haired woman",
+          "segment_boundary": "middle",
+          "segment_label": "America's Got Talent performance",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:22",
+          "local_end": "03:24",
+          "event_type": "hand_raise",
+          "description": "The red-haired woman raises her hand to adjust her red hair",
+          "participants": [
+            "red-haired woman"
+          ],
+          "actor": "red-haired woman",
+          "segment_boundary": "middle",
+          "segment_label": "America's Got Talent performance",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:24",
+          "local_end": "03:28",
+          "event_type": "gesture",
+          "description": "The red-haired woman makes expressive hand gestures while speaking",
+          "participants": [
+            "red-haired woman"
+          ],
+          "actor": "red-haired woman",
+          "segment_boundary": "middle",
+          "segment_label": "America's Got Talent performance",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:28",
+          "local_end": "03:30",
+          "event_type": "facial_expression",
+          "description": "The red-haired woman laughs while speaking into the microphone",
+          "participants": [
+            "red-haired woman"
+          ],
+          "actor": "red-haired woman",
+          "segment_boundary": "middle",
+          "segment_label": "America's Got Talent performance",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 14,
+      "chunk_start_sec": 210.0,
+      "chunk_end_sec": 225.0,
+      "chunk_start_mmss": "03:30",
+      "chunk_end_mmss": "03:45",
+      "events": [
+        {
+          "local_start": "03:30",
+          "local_end": "03:33",
+          "event_type": "graphic",
+          "description": "AGT logo animation begins with confetti and light effects",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "on_screen_text": [],
+          "segment_boundary": "end",
+          "segment_label": "Show Closing Graphics",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:33",
+          "local_end": "03:35",
+          "event_type": "graphic",
+          "description": "Broadcast schedule text appears below the AGT logo",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "TUESDAY 8/7c",
+              "location": "banner"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Show Closing Graphics",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:35",
+          "local_end": "03:38",
+          "event_type": "graphic",
+          "description": "NBC logo and streaming information appears on screen",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "TUESDAY 8/7c",
+              "location": "banner"
+            },
+            {
+              "text": "NBC",
+              "location": "logo"
+            },
+            {
+              "text": "streaming on peacock",
+              "location": "banner"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Show Closing Graphics",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "03:38",
+          "local_end": "03:45",
+          "event_type": "title_card",
+          "description": "Complete promotional graphic remains on screen with animated confetti and light effects",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "on_screen_text": [
+            {
+              "text": "TUESDAY 8/7c",
+              "location": "banner"
+            },
+            {
+              "text": "AGT",
+              "location": "title"
+            },
+            {
+              "text": "NBC",
+              "location": "logo"
+            },
+            {
+              "text": "streaming on peacock",
+              "location": "banner"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Show Closing Graphics",
+          "continuation_hint": "complete"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 15,
+      "chunk_start_sec": 225.0,
+      "chunk_end_sec": 239.82291666666666,
+      "chunk_start_mmss": "03:45",
+      "chunk_end_mmss": "04:00",
+      "events": [
+        {
+          "local_start": "03:45",
+          "local_end": "03:48",
+          "event_type": "graphic",
+          "description": "American Idol logo and show information fade out as end screen elements begin to appear",
+          "participants": [],
+          "actor": "",
+          "on_screen_text": [
+            {
+              "text": "TUESDAY 8/7c",
+              "location": "other"
+            },
+            {
+              "text": "NBC",
+              "location": "logo"
+            },
+            {
+              "text": "peacock",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "American Idol",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "03:48",
+          "local_end": "04:00",
+          "event_type": "graphic",
+          "description": "End screen appears with text overlays reading \"SUBSCRIBE\", \"WATCH MORE\", and \"STREAM ANYTIME\" against animated background",
+          "participants": [],
+          "actor": "",
+          "on_screen_text": [
+            {
+              "text": "SUBSCRIBE",
+              "location": "banner"
+            },
+            {
+              "text": "WATCH MORE",
+              "location": "banner"
+            },
+            {
+              "text": "STREAM ANYTIME",
+              "location": "banner"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "American Idol",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

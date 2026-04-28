@@ -1,0 +1,118 @@
+{
+  "question": "Did the player wearing white number 5 shoot toward the center?",
+  "pred": "Evidence: Context event 167 states \"the ball enters the goal on the left side\" and event 127 notes \"the yellow-jersey goalkeeper dives to his right but the ball enters the net,\" indicating the shot went to the goalkeeper's left side rather than the center.\n\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "walk",
+      "description": "The white-jersey player (Argentina #5) walks toward the penalty spot carrying the ball.",
+      "participants": [
+        "white-jersey player (Argentina #5)"
+      ],
+      "actor": "white-jersey player (Argentina #5)",
+      "object": "white ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 115,
+      "start_time": "03:53",
+      "end_time": "03:55",
+      "sub_events": [],
+      "subtype_order": 18,
+      "subtype_total": 27,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "The white-and-blue-striped jersey player (PAREDES, #5) runs toward the ball and kicks it toward the goal.",
+      "participants": [
+        "white-and-blue-striped jersey player",
+        "yellow-jersey goalkeeper"
+      ],
+      "actor": "white-and-blue-striped jersey player",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 2 - 1",
+          "location": "scoreboard"
+        },
+        {
+          "text": "FIFA WORLD CUP Qatar2022",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 126,
+      "start_time": "04:15",
+      "end_time": "04:18",
+      "sub_events": [],
+      "subtype_order": 25,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "The yellow-jersey goalkeeper dives to his right but the ball enters the net.",
+      "participants": [
+        "yellow-jersey goalkeeper"
+      ],
+      "actor": "yellow-jersey goalkeeper",
+      "object": "white ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 2 - 1",
+          "location": "scoreboard"
+        },
+        {
+          "text": "FIFA WORLD CUP Qatar2022",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 127,
+      "start_time": "04:18",
+      "end_time": "04:19",
+      "sub_events": [],
+      "subtype_order": 26,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "the ball enters the goal on the left side",
+      "participants": [
+        "white-and-blue-jersey player",
+        "yellow-jersey goalkeeper"
+      ],
+      "object": "white ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "ARGENTINA 3 - 2 FRANCE",
+          "location": "scoreboard"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "middle",
+      "event_index": 167,
+      "start_time": "05:49",
+      "end_time": "05:50",
+      "sub_events": [],
+      "subtype_order": 38,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

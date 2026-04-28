@@ -1,0 +1,1921 @@
+{
+  "question": "Is the first used color green?",
+  "pred": "The first color used in the sand art is black, not green. According to the Context and frames, the person first peels off the outlines of the rainbow and clouds and then pours black sand to create the border.\n\n1. At 00:18, the person lifts the **black sand container** (Event 10).\n2. At 00:21, the person **pours black sand** onto the drawing (Event 11).\n3. Subsequent colors used are red (00:49), orange (01:00), yellow (01:08), green (01:23), light blue (01:31), blue (01:41), purple (01:46), and white (01:58).\n\nEvidence: Event 11: \"The person pours black sand from the container onto the rainbow drawing, covering the arches and the right cloud.\"\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": {
+    "subtype_counts": {
+      "gesture": 33,
+      "lift": 17,
+      "place": 9,
+      "reveal": 8,
+      "pour": 8,
+      "peel": 5,
+      "shake": 4,
+      "look": 3,
+      "sand_pouring": 3,
+      "graphic": 2,
+      "throw": 1
+    },
+    "events": [
+      {
+        "event_type": "look",
+        "description": "The person looks at the yellow paper with a rainbow and cloud outline.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "yellow paper",
+        "segment_boundary": "start",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "complete",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:01",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person adjusts the yellow paper with both hands.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "yellow paper",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "complete",
+        "event_index": 2,
+        "start_time": "00:01",
+        "end_time": "00:03",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "look",
+        "description": "The person looks at the arrangement of colorful sand containers around the paper.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "sand containers",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "complete",
+        "event_index": 3,
+        "start_time": "00:03",
+        "end_time": "00:05",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person places their hands on the bottom corners of the yellow paper.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "yellow paper",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "complete",
+        "event_index": 4,
+        "start_time": "00:05",
+        "end_time": "00:07",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "look",
+        "description": "The person examines the outline on the yellow paper.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "yellow paper",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "complete",
+        "event_index": 5,
+        "start_time": "00:07",
+        "end_time": "00:09",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person picks up a small white tool with their right hand.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "white tool",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "complete",
+        "event_index": 6,
+        "start_time": "00:09",
+        "end_time": "00:11",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "reveal",
+        "description": "The person uses the tool to peel off the top layer of the right cloud outline.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object_before": "yellow paper",
+        "object_after": "white adhesive surface",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "complete",
+        "event_index": 7,
+        "start_time": "00:11",
+        "end_time": "00:13",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "reveal",
+        "description": "The person continues peeling the top layer from the rainbow and cloud outlines.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object_before": "yellow paper",
+        "object_after": "white adhesive surface",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 8,
+        "start_time": "00:13",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person uses a small tool to peel off the protective layer from the right cloud of the rainbow drawing.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "small tool",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 9,
+        "start_time": "00:15",
+        "end_time": "00:18",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "lift",
+        "description": "The person lifts the black sand container from its position on the right side of the frame.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "black sand container",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "middle",
+        "event_index": 10,
+        "start_time": "00:18",
+        "end_time": "00:21",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 17,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "throw",
+        "description": "The person pours black sand from the container onto the rainbow drawing, covering the arches and the right cloud.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "black sand",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "middle",
+        "event_index": 11,
+        "start_time": "00:21",
+        "end_time": "00:25",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "place",
+        "description": "The person places the black sand container back into its original position on the right side.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "black sand container",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "middle",
+        "event_index": 12,
+        "start_time": "00:25",
+        "end_time": "00:26",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person uses their hand to spread the black sand evenly across the sticky areas of the rainbow drawing.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "black sand",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 13,
+        "start_time": "00:26",
+        "end_time": "00:30",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person rubs their hands over the black sand on the yellow paper to spread it across the rainbow design.",
+        "participants": [
+          "person with a red bracelet"
+        ],
+        "actor": "person with a red bracelet",
+        "object": "black sand",
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 14,
+        "start_time": "00:30",
+        "end_time": "00:32",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "lift",
+        "description": "The person lifts the yellow paper from the right side to shake off excess black sand.",
+        "participants": [
+          "person with a red bracelet"
+        ],
+        "actor": "person with a red bracelet",
+        "object": "yellow paper",
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 15,
+        "start_time": "00:32",
+        "end_time": "00:34",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 17,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "lift",
+        "description": "The person lifts the yellow paper from the left side to continue shaking off excess black sand.",
+        "participants": [
+          "person with a red bracelet"
+        ],
+        "actor": "person with a red bracelet",
+        "object": "yellow paper",
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 16,
+        "start_time": "00:34",
+        "end_time": "00:36",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 17,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "shake",
+        "description": "The person shakes the yellow paper vigorously to remove all loose black sand, revealing the black outline of the rainbow.",
+        "participants": [
+          "person with a red bracelet"
+        ],
+        "actor": "person with a red bracelet",
+        "object": "yellow paper",
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 17,
+        "start_time": "00:36",
+        "end_time": "00:38",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "graphic",
+        "description": "A blue 'Subscribe!' graphic appears on the white background as the paper is moved away.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "Subscribe!",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 18,
+        "start_time": "00:38",
+        "end_time": "00:40",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "reveal",
+        "description": "The person places the yellow paper back down, revealing the clean black sand outline of the rainbow and clouds.",
+        "participants": [
+          "person with a red bracelet"
+        ],
+        "actor": "person with a red bracelet",
+        "object": "yellow paper",
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 19,
+        "start_time": "00:40",
+        "end_time": "00:42",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "peel",
+        "description": "The person uses a white tool to peel off the protective layer from the outermost arc of the rainbow on the yellow paper.",
+        "participants": [
+          "person with a red bracelet"
+        ],
+        "actor": "person with a red bracelet",
+        "object": "white tool",
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 20,
+        "start_time": "00:42",
+        "end_time": "00:45",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person's left hand gestures over the rainbow drawing.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "rainbow drawing",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 21,
+        "start_time": "00:45",
+        "end_time": "00:46",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person's left hand moves away from the drawing.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "rainbow drawing",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "middle",
+        "event_index": 22,
+        "start_time": "00:46",
+        "end_time": "00:47",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person's left hand reaches toward the red sand cup.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "red sand cup",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "middle",
+        "event_index": 23,
+        "start_time": "00:47",
+        "end_time": "00:48",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "lift",
+        "description": "The person lifts the red sand cup with their left hand.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "red sand cup",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "middle",
+        "event_index": 24,
+        "start_time": "00:48",
+        "end_time": "00:49",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 17,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "sand_pouring",
+        "description": "The person pours red sand from the cup onto the outermost arc of the rainbow.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "red sand",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "middle",
+        "event_index": 25,
+        "start_time": "00:49",
+        "end_time": "00:51",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "sand_pouring",
+        "description": "The person continues pouring red sand along the top of the outermost arc.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "red sand",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "middle",
+        "event_index": 26,
+        "start_time": "00:51",
+        "end_time": "00:53",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "sand_pouring",
+        "description": "The person finishes pouring red sand onto the right side of the outermost arc.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "red sand",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "middle",
+        "event_index": 27,
+        "start_time": "00:53",
+        "end_time": "00:55",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "place",
+        "description": "The person places the red sand cup back in its original position.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "red sand cup",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "middle",
+        "event_index": 28,
+        "start_time": "00:55",
+        "end_time": "00:56",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person uses both hands to lift and shake the paper to spread the sand.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "paper",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "middle",
+        "event_index": 29,
+        "start_time": "00:56",
+        "end_time": "00:57",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person continues shaking the paper to distribute the red sand evenly.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "paper",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "middle",
+        "event_index": 30,
+        "start_time": "00:57",
+        "end_time": "00:58",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person uses their right hand to peel off the next adhesive strip on the rainbow.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "adhesive strip",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "middle",
+        "event_index": 31,
+        "start_time": "00:58",
+        "end_time": "00:59",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "lift",
+        "description": "The person lifts the orange sand cup with their right hand.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "orange sand cup",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 32,
+        "start_time": "00:59",
+        "end_time": "01:00",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 17,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "pour",
+        "description": "The person pours orange sand from a small cup onto the second arc from the top of the rainbow drawing.",
+        "participants": [
+          "person with a pink bracelet"
+        ],
+        "actor": "person with a pink bracelet",
+        "object": "orange sand",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 33,
+        "start_time": "01:00",
+        "end_time": "01:02",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "lift",
+        "description": "The person lifts the yellow paper to let the excess orange sand slide down across the drawing.",
+        "participants": [
+          "person with a pink bracelet"
+        ],
+        "actor": "person with a pink bracelet",
+        "object": "yellow paper",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "complete",
+        "event_index": 34,
+        "start_time": "01:02",
+        "end_time": "01:03",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 17,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "shake",
+        "description": "The person shakes the yellow paper vertically to remove loose orange sand.",
+        "participants": [
+          "person with a pink bracelet"
+        ],
+        "actor": "person with a pink bracelet",
+        "object": "yellow paper",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "complete",
+        "event_index": 35,
+        "start_time": "01:03",
+        "end_time": "01:05",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "reveal",
+        "description": "The person uses a small metal tool to peel off the protective strip from the third arc from the top of the rainbow.",
+        "participants": [
+          "person with a pink bracelet"
+        ],
+        "actor": "person with a pink bracelet",
+        "object": "protective strip",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "complete",
+        "event_index": 36,
+        "start_time": "01:05",
+        "end_time": "01:07",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person reaches for the cup of yellow sand on the left side of the table.",
+        "participants": [
+          "person with a pink bracelet"
+        ],
+        "actor": "person with a pink bracelet",
+        "object": "yellow sand cup",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "complete",
+        "event_index": 37,
+        "start_time": "01:07",
+        "end_time": "01:08",
+        "sub_events": [],
+        "subtype_order": 13,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "pour",
+        "description": "The person pours yellow sand from the cup onto the newly revealed adhesive arc of the rainbow.",
+        "participants": [
+          "person with a pink bracelet"
+        ],
+        "actor": "person with a pink bracelet",
+        "object": "yellow sand",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "complete",
+        "event_index": 38,
+        "start_time": "01:08",
+        "end_time": "01:12",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "lift",
+        "description": "The person lifts the yellow paper again to let the excess yellow sand slide off the drawing.",
+        "participants": [
+          "person with a pink bracelet"
+        ],
+        "actor": "person with a pink bracelet",
+        "object": "yellow paper",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 39,
+        "start_time": "01:12",
+        "end_time": "01:15",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 17,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "shake",
+        "description": "the person shakes the yellow paper to remove excess yellow sand from the rainbow drawing",
+        "participants": [
+          "person with a pink bracelet"
+        ],
+        "actor": "person with a pink bracelet",
+        "object": "yellow paper",
+        "event_index": 40,
+        "start_time": "01:15",
+        "end_time": "01:17",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "place",
+        "description": "the person places the yellow paper back on the white surface",
+        "participants": [
+          "person with a pink bracelet"
+        ],
+        "actor": "person with a pink bracelet",
+        "object": "yellow paper",
+        "event_index": 41,
+        "start_time": "01:17",
+        "end_time": "01:19",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "peel",
+        "description": "the person peels off the fourth arc from the top of the rainbow on the yellow paper using a white tool",
+        "participants": [
+          "person with a pink bracelet"
+        ],
+        "actor": "person with a pink bracelet",
+        "object": "fourth arc from the top",
+        "event_index": 42,
+        "start_time": "01:19",
+        "end_time": "01:21",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "lift",
+        "description": "the person lifts the green sand cup from the right side of the paper",
+        "participants": [
+          "person with a pink bracelet"
+        ],
+        "actor": "person with a pink bracelet",
+        "object": "green sand cup",
+        "event_index": 43,
+        "start_time": "01:21",
+        "end_time": "01:23",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 17,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "pour",
+        "description": "the person pours green sand onto the newly exposed fourth arc of the rainbow",
+        "participants": [
+          "person with a pink bracelet"
+        ],
+        "actor": "person with a pink bracelet",
+        "object": "green sand",
+        "event_index": 44,
+        "start_time": "01:23",
+        "end_time": "01:26",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "place",
+        "description": "the person places the green sand cup back in its original position on the right",
+        "participants": [
+          "person with a pink bracelet"
+        ],
+        "actor": "person with a pink bracelet",
+        "object": "green sand cup",
+        "event_index": 45,
+        "start_time": "01:26",
+        "end_time": "01:27",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "shake",
+        "description": "the person shakes the yellow paper to remove excess green sand from the rainbow drawing",
+        "participants": [
+          "person with a pink bracelet"
+        ],
+        "actor": "person with a pink bracelet",
+        "object": "yellow paper",
+        "event_index": 46,
+        "start_time": "01:27",
+        "end_time": "01:28",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 4,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "place",
+        "description": "the person places the yellow paper back on the white surface",
+        "participants": [
+          "person with a pink bracelet"
+        ],
+        "actor": "person with a pink bracelet",
+        "object": "yellow paper",
+        "event_index": 47,
+        "start_time": "01:28",
+        "end_time": "01:29",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "peel",
+        "description": "the person peels off the fifth arc from the top of the rainbow on the yellow paper using a white tool",
+        "participants": [
+          "person with a pink bracelet"
+        ],
+        "actor": "person with a pink bracelet",
+        "object": "fifth arc from the top",
+        "event_index": 48,
+        "start_time": "01:29",
+        "end_time": "01:30",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "lift",
+        "description": "the person lifts the light blue sand cup from the left side of the paper",
+        "participants": [
+          "person with a pink bracelet"
+        ],
+        "actor": "person with a pink bracelet",
+        "object": "light blue sand cup",
+        "event_index": 49,
+        "start_time": "01:30",
+        "end_time": "01:30",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 17,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "lift",
+        "description": "the woman lifts the light-blue cup from the left side of the table",
+        "participants": [
+          "woman"
+        ],
+        "actor": "woman",
+        "object": "light-blue cup",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 50,
+        "start_time": "01:30",
+        "end_time": "01:31",
+        "sub_events": [],
+        "subtype_order": 10,
+        "subtype_total": 17,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "pour",
+        "description": "the woman pours light-blue sand from the cup onto the fourth arc of the rainbow",
+        "participants": [
+          "woman"
+        ],
+        "actor": "woman",
+        "object": "light-blue sand",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "middle",
+        "event_index": 51,
+        "start_time": "01:31",
+        "end_time": "01:33",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "place",
+        "description": "the woman places the light-blue cup back on the left side of the table",
+        "participants": [
+          "woman"
+        ],
+        "actor": "woman",
+        "object": "light-blue cup",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "middle",
+        "event_index": 52,
+        "start_time": "01:33",
+        "end_time": "01:34",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the woman spreads the light-blue sand across the fourth arc with her hand",
+        "participants": [
+          "woman"
+        ],
+        "actor": "woman",
+        "object": "light-blue sand",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "middle",
+        "event_index": 53,
+        "start_time": "01:34",
+        "end_time": "01:35",
+        "sub_events": [],
+        "subtype_order": 14,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "lift",
+        "description": "the woman lifts the yellow paper and shakes it to remove excess light-blue sand",
+        "participants": [
+          "woman"
+        ],
+        "actor": "woman",
+        "object": "yellow paper",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "middle",
+        "event_index": 54,
+        "start_time": "01:35",
+        "end_time": "01:37",
+        "sub_events": [],
+        "subtype_order": 11,
+        "subtype_total": 17,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the woman presses down on the light-blue sand on the rainbow with both hands",
+        "participants": [
+          "woman"
+        ],
+        "actor": "woman",
+        "object": "light-blue sand",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "middle",
+        "event_index": 55,
+        "start_time": "01:37",
+        "end_time": "01:38",
+        "sub_events": [],
+        "subtype_order": 15,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "peel",
+        "description": "the woman uses a white tool to peel off the protective layer from the fifth arc of the rainbow",
+        "participants": [
+          "woman"
+        ],
+        "actor": "woman",
+        "object": "white tool",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "middle",
+        "event_index": 56,
+        "start_time": "01:38",
+        "end_time": "01:40",
+        "sub_events": [],
+        "subtype_order": 4,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "lift",
+        "description": "the woman lifts the blue cup from the top row of cups",
+        "participants": [
+          "woman"
+        ],
+        "actor": "woman",
+        "object": "blue cup",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "middle",
+        "event_index": 57,
+        "start_time": "01:40",
+        "end_time": "01:41",
+        "sub_events": [],
+        "subtype_order": 12,
+        "subtype_total": 17,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "pour",
+        "description": "the woman pours blue sand from the cup onto the newly exposed fifth arc of the rainbow",
+        "participants": [
+          "woman"
+        ],
+        "actor": "woman",
+        "object": "blue sand",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "middle",
+        "event_index": 58,
+        "start_time": "01:41",
+        "end_time": "01:43",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "place",
+        "description": "the woman places the blue cup back in the top row",
+        "participants": [
+          "woman"
+        ],
+        "actor": "woman",
+        "object": "blue cup",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "middle",
+        "event_index": 59,
+        "start_time": "01:43",
+        "end_time": "01:44",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "lift",
+        "description": "the woman lifts the yellow paper and shakes it to remove excess blue sand",
+        "participants": [
+          "woman"
+        ],
+        "actor": "woman",
+        "object": "yellow paper",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 60,
+        "start_time": "01:44",
+        "end_time": "01:45",
+        "sub_events": [],
+        "subtype_order": 13,
+        "subtype_total": 17,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "lift",
+        "description": "the woman lifts the purple sand container from the top row",
+        "participants": [
+          "woman"
+        ],
+        "actor": "woman",
+        "object": "purple sand container",
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 61,
+        "start_time": "01:45",
+        "end_time": "01:46",
+        "sub_events": [],
+        "subtype_order": 14,
+        "subtype_total": 17,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "pour",
+        "description": "the woman pours purple sand onto the innermost arc of the rainbow",
+        "participants": [
+          "woman"
+        ],
+        "actor": "woman",
+        "object": "purple sand",
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "complete",
+        "event_index": 62,
+        "start_time": "01:46",
+        "end_time": "01:48",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "place",
+        "description": "the woman places the purple sand container back into its position in the top row",
+        "participants": [
+          "woman"
+        ],
+        "actor": "woman",
+        "object": "purple sand container",
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "complete",
+        "event_index": 63,
+        "start_time": "01:48",
+        "end_time": "01:49",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the woman spreads the purple sand across the arc with her fingers",
+        "participants": [
+          "woman"
+        ],
+        "actor": "woman",
+        "object": "purple sand",
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "complete",
+        "event_index": 64,
+        "start_time": "01:49",
+        "end_time": "01:51",
+        "sub_events": [],
+        "subtype_order": 16,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "lift",
+        "description": "the woman lifts the yellow paper to shake off excess purple sand",
+        "participants": [
+          "woman"
+        ],
+        "actor": "woman",
+        "object": "yellow paper",
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "complete",
+        "event_index": 65,
+        "start_time": "01:51",
+        "end_time": "01:53",
+        "sub_events": [],
+        "subtype_order": 15,
+        "subtype_total": 17,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "place",
+        "description": "the woman places the yellow paper back down on the white surface",
+        "participants": [
+          "woman"
+        ],
+        "actor": "woman",
+        "object": "yellow paper",
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "complete",
+        "event_index": 66,
+        "start_time": "01:53",
+        "end_time": "01:54",
+        "sub_events": [],
+        "subtype_order": 9,
+        "subtype_total": 9,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "peel",
+        "description": "the woman uses a tool to peel off the adhesive covers from the two cloud shapes",
+        "participants": [
+          "woman"
+        ],
+        "actor": "woman",
+        "object": "adhesive cloud covers",
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "complete",
+        "event_index": 67,
+        "start_time": "01:54",
+        "end_time": "01:57",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 5,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "lift",
+        "description": "the woman lifts the white sand container from the top row",
+        "participants": [
+          "woman"
+        ],
+        "actor": "woman",
+        "object": "white sand container",
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "complete",
+        "event_index": 68,
+        "start_time": "01:57",
+        "end_time": "01:58",
+        "sub_events": [],
+        "subtype_order": 16,
+        "subtype_total": 17,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "pour",
+        "description": "the woman pours white sand onto the exposed adhesive cloud areas",
+        "participants": [
+          "woman"
+        ],
+        "actor": "woman",
+        "object": "white sand",
+        "segment_boundary": "middle",
+        "segment_label": "Sand Art Rainbow",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 69,
+        "start_time": "01:58",
+        "end_time": "02:00",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person uses their right hand to pour white sand from a small container onto the right cloud of the rainbow drawing.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "white sand",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 70,
+        "start_time": "02:00",
+        "end_time": "02:01",
+        "sub_events": [],
+        "subtype_order": 17,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person uses their right hand to spread the white sand across the right cloud of the rainbow drawing.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "white sand",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "complete",
+        "event_index": 71,
+        "start_time": "02:01",
+        "end_time": "02:02",
+        "sub_events": [],
+        "subtype_order": 18,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person uses both hands to spread the white sand across both clouds of the rainbow drawing.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "white sand",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "complete",
+        "event_index": 72,
+        "start_time": "02:02",
+        "end_time": "02:03",
+        "sub_events": [],
+        "subtype_order": 19,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person lifts the yellow paper and shakes it to remove excess white sand from the clouds.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "yellow paper",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "complete",
+        "event_index": 73,
+        "start_time": "02:03",
+        "end_time": "02:05",
+        "sub_events": [],
+        "subtype_order": 20,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person uses their fingers to press down on the white sand on the clouds to ensure it adheres to the drawing.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "white sand",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "complete",
+        "event_index": 74,
+        "start_time": "02:05",
+        "end_time": "02:07",
+        "sub_events": [],
+        "subtype_order": 21,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "reveal",
+        "description": "The person uses their hands and a small wooden stick to peel off the yellow protective layer from the rainbow drawing, revealing the colorful sand underneath.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object_before": "yellow paper",
+        "object_after": "colorful rainbow drawing",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 75,
+        "start_time": "02:07",
+        "end_time": "02:15",
+        "sub_events": [],
+        "subtype_order": 5,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "reveal",
+        "description": "the person peels off the top-left yellow protective layer from the rainbow drawing",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "yellow protective layer",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 76,
+        "start_time": "02:15",
+        "end_time": "02:17",
+        "sub_events": [],
+        "subtype_order": 6,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the person uses a wooden stick to lift the edge of the top-right yellow protective layer",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "wooden stick",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "complete",
+        "event_index": 77,
+        "start_time": "02:17",
+        "end_time": "02:19",
+        "sub_events": [],
+        "subtype_order": 22,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "reveal",
+        "description": "the person peels off the top-right yellow protective layer from the rainbow drawing",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "yellow protective layer",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "complete",
+        "event_index": 78,
+        "start_time": "02:19",
+        "end_time": "02:21",
+        "sub_events": [],
+        "subtype_order": 7,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "the person uses a wooden stick to lift the edge of the bottom-middle yellow protective layer",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "wooden stick",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "complete",
+        "event_index": 79,
+        "start_time": "02:21",
+        "end_time": "02:23",
+        "sub_events": [],
+        "subtype_order": 23,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "reveal",
+        "description": "the person peels off the bottom-middle yellow protective layer from the rainbow drawing",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "yellow protective layer",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "complete",
+        "event_index": 80,
+        "start_time": "02:23",
+        "end_time": "02:25",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "lift",
+        "description": "the person picks up the light-blue sand container from the second row, first position on the left",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "light-blue sand container",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "complete",
+        "event_index": 81,
+        "start_time": "02:25",
+        "end_time": "02:27",
+        "sub_events": [],
+        "subtype_order": 17,
+        "subtype_total": 17,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "pour",
+        "description": "the person pours light-blue sand onto the left side and top-right corner of the drawing",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "light-blue sand",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 82,
+        "start_time": "02:27",
+        "end_time": "02:30",
+        "sub_events": [],
+        "subtype_order": 8,
+        "subtype_total": 8,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person uses their left hand to smooth down the light blue sand on the left cloud of the rainbow drawing.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "light blue sand",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 83,
+        "start_time": "02:30",
+        "end_time": "02:31",
+        "sub_events": [],
+        "subtype_order": 24,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person uses their right hand to pour light blue sand from a small cup onto the right cloud of the rainbow drawing.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "light blue sand",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 84,
+        "start_time": "02:30",
+        "end_time": "02:32",
+        "sub_events": [],
+        "subtype_order": 25,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person uses their right hand to spread and smooth the light blue sand across the right cloud and the bottom area of the drawing.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "light blue sand",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "middle",
+        "event_index": 85,
+        "start_time": "02:32",
+        "end_time": "02:35",
+        "sub_events": [],
+        "subtype_order": 26,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person uses their left hand to pick up the small cup of light blue sand from the left side of the table.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "light blue cup",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "middle",
+        "event_index": 86,
+        "start_time": "02:35",
+        "end_time": "02:36",
+        "sub_events": [],
+        "subtype_order": 27,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person uses their left hand to smooth the light blue sand on the left cloud while holding the cup.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "light blue sand",
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "middle",
+        "event_index": 87,
+        "start_time": "02:36",
+        "end_time": "02:38",
+        "sub_events": [],
+        "subtype_order": 28,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person uses both hands to lift the paper and shake off the excess light blue sand, revealing the word 'Subscribe!' written in red underneath.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "rainbow drawing paper",
+        "on_screen_text": [
+          {
+            "text": "Subscribe!",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "middle",
+        "event_index": 88,
+        "start_time": "02:38",
+        "end_time": "02:41",
+        "sub_events": [],
+        "subtype_order": 29,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "graphic",
+        "description": "The word 'Subscribe!' appears clearly in red on the white surface after the sand is cleared.",
+        "participants": [],
+        "on_screen_text": [
+          {
+            "text": "Subscribe!",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "middle",
+        "event_index": 89,
+        "start_time": "02:41",
+        "end_time": "02:43",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person brings the rainbow drawing paper back into the frame, holding it over the 'Subscribe!' text.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "rainbow drawing paper",
+        "on_screen_text": [
+          {
+            "text": "Subscribe!",
+            "location": "other"
+          }
+        ],
+        "segment_boundary": "end",
+        "segment_label": "Rainbow Sand Art",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 90,
+        "start_time": "02:43",
+        "end_time": "02:45",
+        "sub_events": [],
+        "subtype_order": 30,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person holds up a light-blue paper with a colorful rainbow drawing, showing it to the camera.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "light-blue paper",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Drawing",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 91,
+        "start_time": "02:45",
+        "end_time": "02:47",
+        "sub_events": [],
+        "subtype_order": 31,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person moves the light-blue paper closer to the camera, filling more of the frame.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "light-blue paper",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Drawing",
+        "continuation_hint": "complete",
+        "event_index": 92,
+        "start_time": "02:47",
+        "end_time": "02:49",
+        "sub_events": [],
+        "subtype_order": 32,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      },
+      {
+        "event_type": "gesture",
+        "description": "The person uses their hands to smooth out the light-blue paper on the white surface.",
+        "participants": [
+          "person"
+        ],
+        "actor": "person",
+        "object": "light-blue paper",
+        "on_screen_text": [],
+        "segment_boundary": "middle",
+        "segment_label": "Rainbow Drawing",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 93,
+        "start_time": "02:49",
+        "end_time": "02:52",
+        "sub_events": [],
+        "subtype_order": 33,
+        "subtype_total": 33,
+        "round_index": 1,
+        "segment_label_resolved": "Rainbow Sand Art"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Rainbow Sand Art",
+        "event_index_range": [
+          1,
+          93
+        ]
+      }
+    ]
+  }
+}

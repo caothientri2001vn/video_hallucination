@@ -1,0 +1,78 @@
+{
+  "question": "Does the woman throw a purple ballon?",
+  "pred": "The video shows a woman in an orange shirt and a man in a pink hoodie playing a cup-stacking game. Throughout the entire video, the woman only interacts with a green balloon. While there are purple cups on the table, no purple balloon is ever present or thrown.\n\nEvidence: The frames and Context (events 2, 14, 32) consistently show the woman throwing and holding a green balloon; no purple balloon appears in the video.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "throw",
+      "description": "woman in orange shirt throws green balloon upward",
+      "participants": [
+        "orange-shirt woman",
+        "pink-hoodie man"
+      ],
+      "actor": "orange-shirt woman",
+      "object": "green balloon",
+      "on_screen_text": [
+        {
+          "text": "First to stack their cups wins!",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 2,
+      "start_time": "00:01",
+      "end_time": "00:02",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Game"
+    },
+    {
+      "event_type": "throw",
+      "description": "woman throws green balloon upward",
+      "participants": [
+        "orange-shirt woman",
+        "pink-hoodie man"
+      ],
+      "actor": "orange-shirt woman",
+      "object": "green balloon",
+      "segment_boundary": "middle",
+      "segment_label": "Balloon and Cups Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 14,
+      "start_time": "00:31",
+      "end_time": "00:33",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Game"
+    },
+    {
+      "event_type": "throw",
+      "description": "woman in orange shirt throws green balloon upward into the air",
+      "participants": [
+        "orange-shirt woman",
+        "pink-hoodie man"
+      ],
+      "actor": "orange-shirt woman",
+      "object": "green balloon",
+      "outcome": "in_air",
+      "segment_boundary": "middle",
+      "segment_label": "Cup Stacking Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 32,
+      "start_time": "01:06",
+      "end_time": "01:07",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Cup Stacking Game"
+    }
+  ]
+}

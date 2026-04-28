@@ -1,0 +1,66 @@
+{
+  "question": "Did time run out exactly twice during the game?",
+  "pred": "Evidence: frames show timer at \":0\" during \"BORN TO RUN\" round and during \"DANCING ON THE CEILING\" round, indicating time ran out in two separate rounds.\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "walk",
+      "description": "the black-top woman takes a step forward while gesturing",
+      "participants": [
+        "black-top woman"
+      ],
+      "actor": "black-top woman",
+      "on_screen_text": [
+        {
+          "text": "\" BORN TO RUN \"",
+          "location": "subtitle"
+        },
+        {
+          "text": ": 1",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 70,
+      "start_time": "01:39",
+      "end_time": "01:40",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 12,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    },
+    {
+      "event_type": "point",
+      "description": "the suit man points downward with both hands",
+      "participants": [
+        "suit man"
+      ],
+      "actor": "suit man",
+      "on_screen_text": [
+        {
+          "text": "\"DANCING ON THE CEILING \"",
+          "location": "subtitle"
+        },
+        {
+          "text": ": 1",
+          "location": "timer"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Charades",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 213,
+      "start_time": "05:33",
+      "end_time": "05:34",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Charades"
+    }
+  ]
+}

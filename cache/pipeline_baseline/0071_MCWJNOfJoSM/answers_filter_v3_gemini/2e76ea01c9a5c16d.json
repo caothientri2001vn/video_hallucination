@@ -1,0 +1,139 @@
+{
+  "question": "Did the goalkeeper in green fail to save the shot in Round 2?",
+  "pred": "The video shows a penalty shootout. To determine what happened in Round 2, we identify the sequence of turns:\n1. Round 1: France #10 scores; Argentina #10 scores.\n2. Round 2: France #20 (Kingsley Coman) takes the shot. The green-jersey goalkeeper (Emiliano Martínez) dives to his right and saves the ball.\n\nThe goalkeeper in green successfully saved the shot in Round 2, so he did not fail to save it.\n\nEvidence: Event 60 in the Context states \"The green-jersey goalkeeper (Emiliano Martínez) dives to his right and saves the penalty\" at 01:55.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "game",
+      "description": "The dark-blue-shirt player (Kingsley Coman) runs toward the ball to take the penalty.",
+      "participants": [
+        "dark-blue-shirt player",
+        "green-jersey goalkeeper"
+      ],
+      "actor": "dark-blue-shirt player",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 58,
+      "start_time": "01:52",
+      "end_time": "01:54",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "throw",
+      "description": "The dark-blue-shirt player (Kingsley Coman) kicks the white ball toward the goal.",
+      "participants": [
+        "dark-blue-shirt player",
+        "green-jersey goalkeeper"
+      ],
+      "actor": "dark-blue-shirt player",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 59,
+      "start_time": "01:54",
+      "end_time": "01:55",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "game",
+      "description": "The green-jersey goalkeeper (Emiliano Martínez) dives to his right and saves the penalty.",
+      "participants": [
+        "green-jersey goalkeeper"
+      ],
+      "actor": "green-jersey goalkeeper",
+      "object": "white ball",
+      "outcome": "miss",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 60,
+      "start_time": "01:55",
+      "end_time": "01:56",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 38,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "celebration",
+      "description": "The green-jersey goalkeeper (Emiliano Martínez) celebrates the save by jumping and pumping his fists.",
+      "participants": [
+        "green-jersey goalkeeper"
+      ],
+      "actor": "green-jersey goalkeeper",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "complete",
+      "event_index": 61,
+      "start_time": "01:56",
+      "end_time": "01:58",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 35,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    },
+    {
+      "event_type": "look",
+      "description": "The green-jersey goalkeeper (Emiliano Martínez) looks toward the crowd with a determined expression.",
+      "participants": [
+        "green-jersey goalkeeper"
+      ],
+      "actor": "green-jersey goalkeeper",
+      "on_screen_text": [
+        {
+          "text": "FIFA",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 62,
+      "start_time": "01:58",
+      "end_time": "02:00",
+      "sub_events": [],
+      "subtype_order": 16,
+      "subtype_total": 39,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Shootout"
+    }
+  ]
+}

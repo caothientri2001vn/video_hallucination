@@ -1,0 +1,190 @@
+{
+  "question": "Does the player with white shirt number 7 score the goal?",
+  "pred": "The video shows a corner kick being taken, followed by a header in the penalty area that results in a goal. In the frames showing the header (around 00:04-00:06), the player who jumps and heads the ball into the net is wearing a white jersey with the number 4 clearly visible on his back. The player with number 7 is also present on the field but is not the one who scores the goal.\n\nEvidence: frames at ~00:04 show the player in the white jersey with number 4 heading the ball into the goal.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "header",
+      "description": "Multiple players from both teams jump to contest the ball in the penalty area",
+      "participants": [
+        "white-jersey players",
+        "red-white-striped players"
+      ],
+      "actor": "white-jersey player",
+      "object": "white soccer ball",
+      "outcome": "contested",
+      "on_screen_text": [
+        {
+          "text": "TNT",
+          "location": "logo"
+        },
+        {
+          "text": "TURKSPOR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 3,
+      "start_time": "00:02",
+      "end_time": "00:04",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "header",
+      "description": "Player in white jersey heads the ball toward the goal",
+      "participants": [
+        "white-jersey player",
+        "red-white-striped players"
+      ],
+      "actor": "white-jersey player",
+      "object": "white soccer ball",
+      "outcome": "shot on goal",
+      "on_screen_text": [
+        {
+          "text": "TNT",
+          "location": "logo"
+        },
+        {
+          "text": "TURKSPOR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 4,
+      "start_time": "00:04",
+      "end_time": "00:06",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "save_attempt",
+      "description": "Goalkeeper in blue jersey dives to attempt save",
+      "participants": [
+        "blue-jersey goalkeeper"
+      ],
+      "actor": "blue-jersey goalkeeper",
+      "object": "white soccer ball",
+      "outcome": "missed save",
+      "on_screen_text": [
+        {
+          "text": "TNT",
+          "location": "logo"
+        },
+        {
+          "text": "TURKSPOR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 5,
+      "start_time": "00:05",
+      "end_time": "00:07",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "goal",
+      "description": "Ball enters the goal net past the diving goalkeeper",
+      "participants": [
+        "white-jersey player",
+        "blue-jersey goalkeeper"
+      ],
+      "actor": "white soccer ball",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "TNT",
+          "location": "logo"
+        },
+        {
+          "text": "TURKSPOR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:06",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "Player in white jersey raises arms in celebration after scoring",
+      "participants": [
+        "white-jersey player"
+      ],
+      "actor": "white-jersey player",
+      "object": "",
+      "outcome": "celebration",
+      "on_screen_text": [
+        {
+          "text": "TNT",
+          "location": "logo"
+        },
+        {
+          "text": "TURKSPOR KANALI",
+          "location": "logo"
+        },
+        {
+          "text": "SERGIO RAMOS",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 7,
+      "start_time": "00:07",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    },
+    {
+      "event_type": "celebration",
+      "description": "multiple players in white jerseys embrace and celebrate together while standing on field",
+      "participants": [
+        "white-jersey players",
+        "black-and-orange-jacketed staff"
+      ],
+      "actor": "white-jersey players",
+      "segment_boundary": "middle",
+      "segment_label": "Champions League Trophy Celebration",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 8,
+      "start_time": "00:15",
+      "end_time": "00:20",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Soccer Match"
+    }
+  ]
+}

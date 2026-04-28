@@ -1,0 +1,196 @@
+{
+  "question": "Is the number 3 sewing machine a cake?",
+  "top_k": 10,
+  "indices": [
+    27,
+    28,
+    73,
+    74,
+    77,
+    85,
+    86
+  ],
+  "events": [
+    {
+      "event_type": "answer_question",
+      "description": "A hand presses the button for option 4 on a touchscreen interface.",
+      "participants": [
+        "uncertain: blue-shirt man"
+      ],
+      "actor": "uncertain: blue-shirt man",
+      "object": "touchscreen",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "other"
+        },
+        {
+          "text": "2",
+          "location": "other"
+        },
+        {
+          "text": "3",
+          "location": "other"
+        },
+        {
+          "text": "4",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 27,
+      "start_time": "00:49",
+      "end_time": "00:50",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake?"
+    },
+    {
+      "event_type": "graphic",
+      "description": "The touchscreen displays 'ANSWER LOCKED!' after option 4 is selected.",
+      "participants": [],
+      "on_screen_text": [
+        {
+          "text": "ANSWER LOCKED!",
+          "location": "other"
+        },
+        {
+          "text": "4",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 28,
+      "start_time": "00:50",
+      "end_time": "00:51",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake?"
+    },
+    {
+      "event_type": "game",
+      "description": "The pink-shirt woman stabs a large knife into the base of the leftmost sewing machine (Podium 1).",
+      "participants": [
+        "pink-shirt woman"
+      ],
+      "actor": "pink-shirt woman",
+      "object": "silver knife",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 73,
+      "start_time": "02:14",
+      "end_time": "02:15",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake?"
+    },
+    {
+      "event_type": "cut",
+      "description": "The camera cuts from a wide shot of the stage to a close-up of the pink-shirt woman cutting into the base of the sewing machine.",
+      "participants": [
+        "pink-shirt woman",
+        "black-suit man"
+      ],
+      "actor": "pink-shirt woman",
+      "on_screen_text": [
+        {
+          "text": "1",
+          "location": "podium"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 74,
+      "start_time": "02:15",
+      "end_time": "02:16",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake?"
+    },
+    {
+      "event_type": "cut",
+      "description": "The camera cuts to a close-up of the pink-shirt woman's hands as she uses a knife to slice through the brown base of the sewing machine, revealing cake layers inside.",
+      "participants": [
+        "pink-shirt woman"
+      ],
+      "actor": "pink-shirt woman",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 77,
+      "start_time": "02:18",
+      "end_time": "02:20",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake?"
+    },
+    {
+      "event_type": "reveal",
+      "description": "the pink-shirt woman lifts a slice of cake from the sewing machine base, revealing the interior layers",
+      "participants": [
+        "pink-shirt woman"
+      ],
+      "actor": "pink-shirt woman",
+      "object_before": "brown sewing machine base",
+      "object_after": "layered cake",
+      "on_screen_text": [
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "complete",
+      "event_index": 85,
+      "start_time": "02:34",
+      "end_time": "02:36",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake?"
+    },
+    {
+      "event_type": "graphic",
+      "description": "a close-up shot shows the cross-section of the layered cake inside the sewing machine base",
+      "participants": [],
+      "object": "layered cake",
+      "on_screen_text": [
+        {
+          "text": "NETFLIX",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "complete",
+      "event_index": 86,
+      "start_time": "02:36",
+      "end_time": "02:38",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 7,
+      "round_index": 1,
+      "segment_label_resolved": "Is It Cake?"
+    }
+  ]
+}

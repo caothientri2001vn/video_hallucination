@@ -1,0 +1,69 @@
+{
+  "question": "Did the blue shirt man throw the red tire?",
+  "pred": "Evidence: The Context shows the blue-shirt man placing a pink ball on an orange tire, picking up a yellow tire, and rolling the yellow tire to knock over silver bowls, but no event describes him throwing a red tire. Frames show him interacting with yellow tires only.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "place",
+      "description": "The blue-shirt man places the pink ball onto an orange tire on the ground.",
+      "participants": [
+        "blue-shirt man"
+      ],
+      "actor": "blue-shirt man",
+      "object": "pink ball",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Balloon Pop Race",
+      "continuation_hint": "complete",
+      "event_index": 19,
+      "start_time": "00:23",
+      "end_time": "00:25",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Ladder Balloon Pop Race"
+    },
+    {
+      "event_type": "game",
+      "description": "The blue-shirt man picks up a yellow tire from a stack on the left side of the course.",
+      "participants": [
+        "blue-shirt man"
+      ],
+      "actor": "blue-shirt man",
+      "object": "yellow tire",
+      "segment_boundary": "middle",
+      "segment_label": "Obstacle Course Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 34,
+      "start_time": "00:49",
+      "end_time": "00:51",
+      "sub_events": [],
+      "subtype_order": 15,
+      "subtype_total": 30,
+      "round_index": 1,
+      "segment_label_resolved": "Ladder Balloon Pop Race"
+    },
+    {
+      "event_type": "game",
+      "description": "The blue-shirt man rolls the yellow tire forward, knocking over several silver bowls stacked on the green mat.",
+      "participants": [
+        "blue-shirt man"
+      ],
+      "actor": "blue-shirt man",
+      "object": "yellow tire",
+      "segment_boundary": "middle",
+      "segment_label": "Obstacle Course Game",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 36,
+      "start_time": "00:51",
+      "end_time": "00:54",
+      "sub_events": [],
+      "subtype_order": 17,
+      "subtype_total": 30,
+      "round_index": 1,
+      "segment_label_resolved": "Ladder Balloon Pop Race"
+    }
+  ]
+}

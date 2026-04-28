@@ -1,0 +1,246 @@
+{
+  "question": "Are the strawberries mashed first?",
+  "pred": "Evidence: The strawberries are poured onto the tray (event 4), then a creamy liquid is poured (event 5), followed by placing Oreo cookies (event 6), and only then are the strawberries cut into smaller pieces (event 7). The strawberries are cut rather than mashed, and this happens after other preparation steps, not first.\n\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": {
+    "subtype_counts": {
+      "pour": 3,
+      "scrape": 2,
+      "title_card": 1,
+      "place": 1,
+      "cut": 1,
+      "spread": 1,
+      "open_container": 1,
+      "mix": 1
+    },
+    "events": [
+      {
+        "event_type": "title_card",
+        "description": "Text \"Make ice cream with me\" appears on screen with strawberry, cookie, ice cream cone, and ice cube emojis",
+        "participants": [],
+        "actor": "",
+        "object": "",
+        "on_screen_text": [
+          {
+            "text": "Make ice cream with me",
+            "location": "title"
+          }
+        ],
+        "segment_boundary": "start",
+        "segment_label": "Make ice cream with me",
+        "continuation_hint": "complete",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:02",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Make ice cream with me"
+      },
+      {
+        "event_type": "scrape",
+        "description": "A hand holding a white spatula scrapes the metallic surface of the tray from right to left",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "metallic tray surface",
+        "segment_boundary": "middle",
+        "segment_label": "Make ice cream with me",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 2,
+        "start_time": "00:02",
+        "end_time": "00:06",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Make ice cream with me"
+      },
+      {
+        "event_type": "scrape",
+        "description": "The hand continues scraping the tray surface in a different direction",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "metallic tray surface",
+        "segment_boundary": "middle",
+        "segment_label": "Make ice cream with me",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 3,
+        "start_time": "00:06",
+        "end_time": "00:07",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "Make ice cream with me"
+      },
+      {
+        "event_type": "pour",
+        "description": "Strawberries are poured from a metal container onto the metallic tray surface",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "strawberries",
+        "segment_boundary": "middle",
+        "segment_label": "Make ice cream with me",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 4,
+        "start_time": "00:07",
+        "end_time": "00:09",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Make ice cream with me"
+      },
+      {
+        "event_type": "pour",
+        "description": "A creamy liquid is poured onto the left side of the metallic tray, forming a circular puddle",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "creamy liquid",
+        "segment_boundary": "middle",
+        "segment_label": "Make ice cream with me",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 5,
+        "start_time": "00:09",
+        "end_time": "00:11",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Make ice cream with me"
+      },
+      {
+        "event_type": "place",
+        "description": "Oreo cookies are placed on the creamy liquid using metal tongs, with four cookies arranged on the liquid",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "Oreo cookies",
+        "segment_boundary": "middle",
+        "segment_label": "Make ice cream with me",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 6,
+        "start_time": "00:11",
+        "end_time": "00:14",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Make ice cream with me"
+      },
+      {
+        "event_type": "cut",
+        "description": "The hand uses the white spatula to cut strawberries into smaller pieces on the metallic tray",
+        "participants": [
+          "hand"
+        ],
+        "actor": "hand",
+        "object": "strawberries",
+        "segment_boundary": "middle",
+        "segment_label": "Make ice cream with me",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 7,
+        "start_time": "00:14",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Make ice cream with me"
+      },
+      {
+        "event_type": "spread",
+        "description": "spreads a grayish ice cream mixture across a metal tray using a white spatula",
+        "participants": [],
+        "actor": "hand holding spatula",
+        "object": "gray ice cream mixture",
+        "segment_boundary": "middle",
+        "segment_label": "ice cream preparation",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 8,
+        "start_time": "00:15",
+        "end_time": "00:20",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Make ice cream with me"
+      },
+      {
+        "event_type": "open_container",
+        "description": "peels back the foil lid of a pink yogurt cup with Korean text",
+        "participants": [],
+        "actor": "hand holding yogurt cup",
+        "object": "pink yogurt cup",
+        "segment_boundary": "middle",
+        "segment_label": "ice cream preparation",
+        "continuation_hint": "complete",
+        "event_index": 9,
+        "start_time": "00:20",
+        "end_time": "00:22",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Make ice cream with me"
+      },
+      {
+        "event_type": "pour",
+        "description": "pours pink yogurt from the cup onto the ice cream mixture and strawberries in the tray",
+        "participants": [],
+        "actor": "hand holding yogurt cup",
+        "object": "pink yogurt",
+        "segment_boundary": "middle",
+        "segment_label": "ice cream preparation",
+        "continuation_hint": "complete",
+        "event_index": 10,
+        "start_time": "00:22",
+        "end_time": "00:24",
+        "sub_events": [],
+        "subtype_order": 3,
+        "subtype_total": 3,
+        "round_index": 1,
+        "segment_label_resolved": "Make ice cream with me"
+      },
+      {
+        "event_type": "mix",
+        "description": "uses two white spatulas to fold and combine the ice cream mixture, strawberries, and pink yogurt",
+        "participants": [],
+        "actor": "two hands holding spatulas",
+        "object": "ice cream mixture with strawberries",
+        "segment_boundary": "middle",
+        "segment_label": "ice cream preparation",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 11,
+        "start_time": "00:24",
+        "end_time": "00:26",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "Make ice cream with me"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "Make ice cream with me",
+        "event_index_range": [
+          1,
+          11
+        ]
+      }
+    ]
+  }
+}

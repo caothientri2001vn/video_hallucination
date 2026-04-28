@@ -1,0 +1,350 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0050_ImEnWAVRLU0.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0050_ImEnWAVRLU0.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0050_ImEnWAVRLU0",
+    "n_target": 8,
+    "n_sub": 26,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.25,
+    "sub_accuracy": 0.6153846153846154
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Did the interviewer use a computer during the interview?",
+      "gt": "No",
+      "pred": "Yes. In the frame showing a woman at a desk (third image), a laptop is visible in front of her, indicating the interviewer used a computer during the interview.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did an interview take place in the video?",
+      "gt": "Yes",
+      "pred": "Yes. A sign indicating \"HARVARD LAW INTERVIEWS Room 2005\" is visible in one of the frames (around timestamp 10), confirming an interview context.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was there a book on the table during the interview?",
+      "gt": "Yes",
+      "pred": "Yes, a book was on the table during the interview. This can be observed in frames such as the one showing a man in a suit seated at a table with a book visible (e.g., around the 18th frame in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the interviewer read a book during the interview?",
+      "gt": "Yes",
+      "pred": "Yes. In frames showing the interview (e.g., around 19-22 seconds), a book is visible on the desk in front of the interviewer, and the interviewer is seen looking at the book, indicating reading during the interview.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the interviewer use a computer during the interview?",
+      "gt": "No",
+      "pred": "Yes. In the frame showing a woman at a desk (third image), a laptop is visible in front of her, indicating the interviewer used a computer during the interview.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Did the main male character use a computer to look up information?",
+      "gt": "No",
+      "pred": "Yes. In frame 25 (showing the male character seated at a desk with a laptop), the main male character is using a computer.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a main male character in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there were main male characters in the video. For example, the man in the suit appears in multiple frames (e.g., 0:02, 0:05, 0:08, 0:10, 0:13, 0:15, 0:17, 0:19, 0:21, 0:23, 0:25, 0:27, 0:29, 0:31, 0:33, 0:35, 0:37, 0:39, 0:41, 0:43, 0:45, 0:47, 0:49, 0:51, 0:53, 0:55, 0:57, 0:59, 1:01, 1:03, 1:05, 1:07, 1:09, 1:11, 1:13, 1:15, 1:17, 1:19, 1:21, 1:23, 1:25, 1:27, 1:29, 1:31, 1:33, 1:35, 1:37, 1:39, 1:41, 1:43, 1:45, 1:47, 1:49, 1:51, 1:53, 1:55, 1:57, 1:59, 2:01, 2:03, 2:05, 2:07, 2:09, 2:11, 2:13, 2:15, 2:17, 2:19, 2:21, 2:23, 2:25, 2:27, 2:29, 2:31, 2:33, 2:35, 2:37, 2:39, 2:41, 2:43, 2:45, 2:47, 2:49, 2:51, 2:53, 2:55, 2:57, 2:59, 3:01, 3:03, 3:05, 3:07, 3:09, 3:11, 3:13, 3:15, 3:17, 3:19, 3:21, 3:23, 3:25, 3:27, 3:29, 3:31, 3:33, 3:35, 3:37, 3:39, 3:41, 3:43, 3:45, 3:47, 3:49, 3:51, 3:53, 3:55, 3:57, 3:59, 4:01, 4:03, 4:05, 4:07, 4:09, 4:11, 4:13, 4:15, 4:17, 4:19, 4:21, 4:23, 4:25, 4:27, 4:29, 4:31, 4:33, 4:35, 4:37, 4:39, 4:41, 4:43, 4:45, 4:47, 4:49, 4:51, 4:53, 4:55, 4:57, 4:59, 5:01,",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the main character take an elevator?",
+      "gt": "Yes",
+      "pred": "Yes, the main character took an elevator. This is shown in the frame where a man in a suit (the main character) is walking towards an elevator with a doorman holding the door open (timestamp reference: 6th image in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the main character stop to talk to two men?",
+      "gt": "Yes",
+      "pred": "Yes, the main character stopped to talk to two men (evident in the frame showing the hallway interaction with two other men, around the 9th frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the main male character use a computer at any point in the video?",
+      "gt": "No",
+      "pred": "Yes, the main male character used a computer. In frame 24 (a scene showing a man in a suit seated at a desk with a laptop), the main male character is positioned at a desk with a laptop, indicating computer use.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Was the room where the main character stopped to talk to two men Room 2410?",
+      "gt": "Yes",
+      "pred": "No. The only room number directly visible in the video is \"Room 2005\" (on the sign in frame 10, which reads \"Pearson Hardman HARVARD LAW INTERVIEWS Room 2005\"). There is no visual evidence of \"Room 2410\" in any frame.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the main character stop to talk to two men?",
+      "gt": "Yes",
+      "pred": "Yes, the main character stopped to talk to two men (evident in the frame showing the hallway interaction with two other men, around the 9th frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the room where the main character stopped Room 2410?",
+      "gt": "Yes",
+      "pred": "No. A sign in the video (around the 10th frame) reads \"HARVARD LAW INTERVIEWS Room 2005\", indicating the room number is 2005, not 2410.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the main character talk to two men in Room 2410?",
+      "gt": "Yes",
+      "pred": "No. The only room number explicitly shown in the video is \"Room 2005\" (in the frame with the \"HARVARD LAW INTERVIEWS\" sign). There is no visual evidence of \"Room 2410\" or the main character talking to two men in a room labeled 2410.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Did he use the stairs to go upstairs?",
+      "gt": "No",
+      "pred": "Yes, there is a frame (11th in sequence) showing a man on stairs, indicating he used the stairs to go upstairs.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the main character go upstairs?",
+      "gt": "Yes",
+      "pred": "No, the video frames do not show the main character going upstairs. There is no scene depicting a staircase or the character ascending stairs. The closest related frame (11th image) shows a man near a window with a fire escape, but this does not indicate the character going upstairs.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the main character take the elevator?",
+      "gt": "Yes",
+      "pred": "Yes. In the frame at approximately 0:06, the main character is seen walking towards an elevator with his hand outstretched, indicating he is using the elevator.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the main character use stairs to go upstairs?",
+      "gt": "No",
+      "pred": "No, there is no frame showing the main character using stairs to go upstairs. The only frame with a staircase-like structure (11th frame) shows a fire escape, not the character ascending stairs.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Did he take the elevator to go upstairs?",
+      "gt": "Yes",
+      "pred": "No, the video frames do not show him taking the elevator. The frame at approximately 6 seconds shows a man in a suit walking toward an elevator, but there is no visual confirmation of him entering or using the elevator. Therefore, it cannot be verified that he took the elevator to go upstairs.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the main character take the elevator?",
+      "gt": "Yes",
+      "pred": "Yes. In the frame at approximately 0:06, the main character is seen walking towards an elevator with his hand outstretched, indicating he is using the elevator.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the main character go upstairs?",
+      "gt": "Yes",
+      "pred": "No, the video frames do not show the main character going upstairs. There is no scene depicting a staircase or the character ascending stairs. The closest related frame (11th image) shows a man near a window with a fire escape, but this does not indicate the character going upstairs.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the main character use the elevator to travel upstairs?",
+      "gt": "Yes",
+      "pred": "No, the video frames do not show the main character using the elevator to travel upstairs. While frame 6 depicts a man in a suit approaching an elevator, there is no visual evidence (e.g., entering the elevator, the elevator moving) confirming he used it for upward travel.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Was the waiter not wearing gloves?",
+      "gt": "Yes",
+      "pred": "In frame 9 (showing a man in a red suit in a hallway), the individual (potentially a waiter or doorman) is not wearing gloves. Thus, the answer is yes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a fake waiter in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there was a fake waiter in the video. This is evident in the 9th frame (and related scenes), where a person in a maroon waiter’s uniform is shown interacting with other characters in a context consistent with the show’s plot (e.g., the 9th frame depicts a man in a maroon suit, typical of a waiter, engaging with two men in suits). The presence of the \"SUITS\" title card in the final frames confirms the show’s context, where such a scenario occurs.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the fake waiter wearing gloves?",
+      "gt": "No",
+      "pred": "No. The video frames do not show the \"fake waiter\" (or any person in a waiter-like role) wearing gloves. For example, in the frame where a person in a maroon suit (resembling a waiter's uniform) appears (e.g., around the 9th frame), no gloves are visible on their hands.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the fake waiter appear without gloves?",
+      "gt": "Yes",
+      "pred": "To determine if the fake waiter appeared without gloves, we examine frames showing a waiter. In **frame 9** (and related frames with the maroon-suited individual), the waiter’s hands are visible, and no gloves are present. Thus, the fake waiter appeared without gloves.  \n\nAnswer: Yes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Was the waiter who was standing in front of room 2410 not wearing gloves?",
+      "gt": "Yes",
+      "pred": "To determine if the waiter in front of room 2410 was not wearing gloves, we examine the relevant frame. In frame 9 (showing a man in a suit in a hallway with two others, one in a red vest), the waiter’s hands are visible and **no gloves are present**. \n\nYes, the waiter was not wearing gloves.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a waiter in the video?",
+      "gt": "Yes",
+      "pred": "Yes, there was a person in a red vest (likely a waiter or hotel staff) visible in some frames, such as in the scene where a man in a suit is interacting with others in a hallway (around the 9th frame).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the waiter wearing gloves?",
+      "gt": "No",
+      "pred": "No, the waiter was not wearing gloves. This can be observed in frames where the waiter (in the maroon suit) appears, such as around timestamp 9 and 15, where no gloves are visible on the waiter's hands.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was a waiter standing in front of Room 2410?",
+      "gt": "Yes",
+      "pred": "No. The video shows a sign for \"HARVARD LAW INTERVIEWS Room 2005\" (around timestamp 10-11 seconds) and a man in a red vest (resembling a waiter or doorman) in a hallway, but there is no frame showing a room numbered 2410 or a waiter in front of such a room. The room number 2410 is not present in any of the provided frames.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Did the interviewer read the book on the table during the interview?",
+      "gt": "Yes",
+      "pred": "No, the video frames do not show the interviewer reading the book on the table during the interview. While a book is visible on the table in several scenes (e.g., frames 19–20, 24), there is no visual evidence of the interviewer interacting with or reading the book. The focus of the interactions shown is on conversation, not book reading.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a book on the table?",
+      "gt": "Yes",
+      "pred": "Yes, there was a book on the table. For example, in the frame showing a person at a desk (around the 20-25 second mark), a book is visible on the table.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the interviewer read the book?",
+      "gt": "Yes",
+      "pred": "No, the video frames do not show the interviewer reading the book. While a book is visible in scenes (e.g., frames 19–22), there is no visual evidence of the interviewer reading it. The absence of reading action in the provided frames confirms this.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the reading happen during the interview?",
+      "gt": "Yes",
+      "pred": "No. The video frames do not show any explicit reading occurring during the interview. The \"HARVARD LAW INTERVIEWS\" sign (frame 10) indicates the interview context, but no frames depict reading as part of the interview process.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    }
+  ]
+}

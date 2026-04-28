@@ -1,0 +1,218 @@
+{
+  "video_name": "0036_12_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 19.9,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:02",
+          "event_type": "screen_transition",
+          "description": "screen brightens from dark to reveal a soccer field with players positioned for a free kick",
+          "participants": [],
+          "actor": "screen",
+          "object_before": "dark screen",
+          "object_after": "visible soccer field",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:08",
+          "event_type": "run",
+          "description": "player in white jersey with number 7 runs toward the ball to take the free kick",
+          "participants": [
+            "white-jersey player 7"
+          ],
+          "actor": "white-jersey player 7",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:08",
+          "local_end": "00:10",
+          "event_type": "kick",
+          "description": "player in white jersey with number 7 strikes the ball for the free kick",
+          "participants": [
+            "white-jersey player 7"
+          ],
+          "actor": "white-jersey player 7",
+          "object": "white and red soccer ball",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:09",
+          "local_end": "00:12",
+          "event_type": "dive",
+          "description": "goalkeeper in red uniform dives to the right attempting to save the shot",
+          "participants": [
+            "red-uniform goalkeeper"
+          ],
+          "actor": "red-uniform goalkeeper",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:10",
+          "local_end": "00:13",
+          "event_type": "ball_trajectory",
+          "description": "soccer ball travels through the air over the defensive wall toward the goal",
+          "participants": [],
+          "actor": "soccer ball",
+          "object": "white and red soccer ball",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:12",
+          "local_end": "00:14",
+          "event_type": "score",
+          "description": "soccer ball enters the goal net, resulting in a score",
+          "participants": [],
+          "actor": "soccer ball",
+          "object": "white and red soccer ball",
+          "outcome": "scored",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:13",
+          "local_end": "00:15",
+          "event_type": "celebration",
+          "description": "player in white jersey with number 7 begins celebrating after scoring the goal",
+          "participants": [
+            "white-jersey player 7"
+          ],
+          "actor": "white-jersey player 7",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:15",
+          "event_type": "on_screen_text",
+          "description": "text \"RIYAD MAHREZ\" appears in bottom left corner of screen",
+          "participants": [],
+          "actor": "screen",
+          "on_screen_text": [
+            {
+              "text": "RIYAD MAHREZ",
+              "location": "lower_third"
+            },
+            {
+              "text": "TRABZONSPOR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:00",
+          "local_end": "00:15",
+          "event_type": "game",
+          "description": "soccer match showing a free kick situation with defensive wall and goalkeeper in position",
+          "participants": [
+            "white-jersey players",
+            "dark-jersey players",
+            "referee in yellow",
+            "goalkeeper in red"
+          ],
+          "actor": "soccer game",
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 19.9,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:20",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:16",
+          "event_type": "celebration",
+          "description": "Player in white jersey with number 7 celebrates with arms outstretched while running",
+          "participants": [
+            "white-jersey player #7"
+          ],
+          "actor": "white-jersey player #7",
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:15",
+          "local_end": "00:20",
+          "event_type": "crouch",
+          "description": "Player in green jersey with number 18 crouches on the field with hands on knees",
+          "participants": [
+            "green-jersey player #18"
+          ],
+          "actor": "green-jersey player #18",
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:17",
+          "local_end": "00:20",
+          "event_type": "group_celebration",
+          "description": "Multiple players in white jerseys with green stripes and brown training vests embrace and celebrate together",
+          "participants": [
+            "white-jersey players with green stripes",
+            "players wearing brown training vests"
+          ],
+          "actor": "white-jersey players with green stripes and brown training vests",
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Soccer Match Celebration",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

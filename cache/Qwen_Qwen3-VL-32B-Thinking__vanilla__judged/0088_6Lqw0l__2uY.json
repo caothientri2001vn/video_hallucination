@@ -1,0 +1,418 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0088_6Lqw0l__2uY.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0088_6Lqw0l__2uY.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0088_6Lqw0l__2uY",
+    "n_target": 10,
+    "n_sub": 31,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.8,
+    "sub_accuracy": 0.967741935483871
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Does the blue team start playing first?",
+      "gt": "Yes",
+      "pred": "Yes. The blue team begins their turn first, as seen when the blue balloon is thrown (e.g., around the 4th frame in the sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a blue team in the video?",
+      "gt": "Yes",
+      "pred": "Yes. The blue team is evident from the blue cups and blue balloons used by participants (e.g., blue cups on the left side of the table and individuals holding blue balloons throughout the video, such as in the first frame and multiple subsequent frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the blue team begin playing before any other team?",
+      "gt": "Yes",
+      "pred": "Yes. The blue team began arranging cups and interacting with the blue balloon (e.g., stacking cups, preparing to throw the balloon) before the red team started similar actions. This is evident in the sequence of frames where the blue team’s cup-stacking and balloon-related activities initiate earlier than the red team’s comparable actions. For example, early frames show the blue team actively handling cups while the red team is still holding the red balloon without yet engaging in cup-stacking.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the blue team the first to start the game?",
+      "gt": "Yes",
+      "pred": "Yes. The blue team's member is seen holding the blue balloon and initiating the first action (e.g., throwing the blue balloon to knock down cups) before the red team's actions, as observed in the early frames (e.g., the blue balloon is in motion in the 4th frame of the sequence, indicating the blue team started first).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Does the red team start playing first?",
+      "gt": "No",
+      "pred": "No, the blue team starts playing first. The blue balloon is seen in mid-air in the second frame (roughly 0.5–1 second), indicating the blue team initiated the action first. The red team’s actions (e.g., arranging cups, throwing the red balloon) occur after the blue team’s initial move.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the blue team start playing first?",
+      "gt": "Yes",
+      "pred": "Yes. The blue team started playing first, as evidenced by the blue balloon being thrown and blue cups being interacted with before the red team's actions (e.g., blue balloon throws and blue cup manipulations occur in earlier frames than red team’s similar actions). For example, blue balloon-related actions (e.g., throwing, cup interactions) are visible in the sequence before red team’s corresponding moves.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was there a team other than the red team that started playing first?",
+      "gt": "Yes",
+      "pred": "Yes, the blue team started playing first. This is evident from the sequence where the blue team (with blue cups and blue balloon) is seen arranging cups and throwing the blue balloon before the red team's corresponding actions. For example, in the early frames (e.g., around the 3rd - 5th images), the blue team is actively interacting with their cups and balloon, while the red team's similar actions occur later.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the red team begin the game before the blue team?",
+      "gt": "No",
+      "pred": "No. The blue team began the game first, as evidenced by the blue team members moving blue cups earlier in the sequence (e.g., in the 2nd frame, the blue team member holds a blue cup and starts rearranging them, while the red team’s initial cup movement occurs later). The red team did not begin before the blue team.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Does the black hair women start playing first?",
+      "gt": "No",
+      "pred": "No. The woman with long dark hair (in the blue top on the left) does not start playing first. The woman in the center (wearing the \"Hana Kauai\" shirt) is the first to throw a blue balloon (evident in early frames, e.g., around the 4th frame sequence). The dark-haired woman begins playing later, as seen when she holds and throws the blue balloon in subsequent frames (e.g., frame 11 and later).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the blonde woman start playing first?",
+      "gt": "Yes",
+      "pred": "Yes, the blonde woman (associated with the blue balloon and blue cups) started playing first. This is evident as the sequence of actions begins with her interacting with the blue cups and blue balloon, with the red team's actions following later. For example, in the initial frames (e.g., the first image where she holds the blue balloon), her team's play initiates the sequence of events.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the dark-haired woman start playing before the blonde woman?",
+      "gt": "No",
+      "pred": "No. The blonde woman (wearing the \"Kauai\" shirt) is seen interacting with the cups and blue balloon first (e.g., in early frames like the second image where she holds a blue cup and the blue balloon is in play). The dark-haired woman (long black hair, blue top) begins her actions later in the sequence, indicating the blonde woman started playing first.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the dark-haired woman the first player to start?",
+      "gt": "No",
+      "pred": "No. The first player to start was the woman with brown hair wearing the \"Kauai\" shirt (e.g., she is seen holding a blue cup and initiating actions in early frames like 0:02–0:04). The dark-haired woman (in the blue top) starts later (e.g., visible in action from ~0:10 onwards).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "Did the blonde woman start playing first?",
+      "gt": "Yes",
+      "pred": "Yes, the blonde woman (associated with the blue balloon and blue cups) started playing first. This is evident as the sequence of actions begins with her interacting with the blue cups and blue balloon, with the red team's actions following later. For example, in the initial frames (e.g., the first image where she holds the blue balloon), her team's play initiates the sequence of events.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Is there a blonde woman playing in the video?",
+      "gt": "Yes",
+      "pred": "No. The video features two women; one has long dark hair, and the other has light brown hair with highlights. There is no blonde woman visible in any of the frames.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the blonde woman the first person to start playing?",
+      "gt": "Yes",
+      "pred": "Yes, the blonde woman was the first to start playing. In the early frames (e.g., around the 2nd image), she is seen holding the blue balloon and initiating the action (e.g., throwing the balloon toward the cups). This is the first gameplay action observed in the sequence.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did any other player start before the blonde woman?",
+      "gt": "No",
+      "pred": "No. The blonde woman (in the blue “Kauai” shirt) is the first to initiate actions with the blue balloon, as seen in the initial sequence of frames where she is the first to handle and throw the balloon (e.g., early frames show her holding/throwing the blue balloon while others observe or prepare). No other player starts before her.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "Did the blonde woman start playing before the dark-haired woman?",
+      "gt": "Yes",
+      "pred": "Yes. The blonde woman (wearing the blue “Hana Kauai” shirt) is seen initiating actions with the blue balloon earlier in the sequence (e.g., throwing the blue balloon at around the 4th frame, where the blue balloon is in mid-air). The dark-haired woman (in the blue top) begins her actions later, such as when she starts stacking cups and throwing the blue balloon in later frames (e.g., around the 20th frame and beyond). Thus, the blonde woman started playing before the dark-haired woman.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the blonde woman start playing first?",
+      "gt": "Yes",
+      "pred": "Yes, the blonde woman (associated with the blue balloon and blue cups) started playing first. This is evident as the sequence of actions begins with her interacting with the blue cups and blue balloon, with the red team's actions following later. For example, in the initial frames (e.g., the first image where she holds the blue balloon), her team's play initiates the sequence of events.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Is there a dark-haired woman in the video?",
+      "gt": "Yes",
+      "pred": "Yes. There is a dark-haired woman visible in multiple frames (e.g., the woman with long dark hair on the left side of the group in the initial frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the dark-haired woman begin playing after the blonde woman?",
+      "gt": "Yes",
+      "pred": "Yes. The blonde woman (wearing the “Kauai” shirt) is seen interacting with the blue balloon and cups first in the sequence (e.g., early frames show her holding the blue balloon and arranging cups). The dark-haired woman (in blue with long black hair) begins playing with the blue balloon later, after the blonde woman’s turn (e.g., visible in frames where the dark-haired woman holds the blue balloon and interacts with cups, following the blonde woman’s actions).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did the dark-haired woman start playing before the blonde woman?",
+      "gt": "No",
+      "pred": "No. The blonde woman (wearing the \"Kauai\" shirt) is seen interacting with the cups and blue balloon first (e.g., in early frames like the second image where she holds a blue cup and the blue balloon is in play). The dark-haired woman (long black hair, blue top) begins her actions later in the sequence, indicating the blonde woman started playing first.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "Did the dark-haired woman start playing before the blonde woman?",
+      "gt": "No",
+      "pred": "No. The blonde woman (wearing the \"Kauai\" shirt) is seen interacting with the cups and blue balloon first (e.g., in early frames like the second image where she holds a blue cup and the blue balloon is in play). The dark-haired woman (long black hair, blue top) begins her actions later in the sequence, indicating the blonde woman started playing first.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the blonde woman start playing first?",
+      "gt": "Yes",
+      "pred": "Yes, the blonde woman (associated with the blue balloon and blue cups) started playing first. This is evident as the sequence of actions begins with her interacting with the blue cups and blue balloon, with the red team's actions following later. For example, in the initial frames (e.g., the first image where she holds the blue balloon), her team's play initiates the sequence of events.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the blonde woman start playing before the dark-haired woman?",
+      "gt": "Yes",
+      "pred": "Yes. The blonde woman (wearing the blue “Hana Kauai” shirt) is seen initiating actions with the blue balloon earlier in the sequence (e.g., throwing the blue balloon at around the 4th frame, where the blue balloon is in mid-air). The dark-haired woman (in the blue top) begins her actions later, such as when she starts stacking cups and throwing the blue balloon in later frames (e.g., around the 20th frame and beyond). Thus, the blonde woman started playing before the dark-haired woman.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the dark-haired woman the first player to start?",
+      "gt": "No",
+      "pred": "No. The first player to start was the woman with brown hair wearing the \"Kauai\" shirt (e.g., she is seen holding a blue cup and initiating actions in early frames like 0:02–0:04). The dark-haired woman (in the blue top) starts later (e.g., visible in action from ~0:10 onwards).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Did the man in the red hoodie start playing after the man in the red t-shirt?",
+      "gt": "No",
+      "pred": "Yes. The man in the red t - shirt (e.g., seen arranging cups in frame 7) engaged in the game actions before the man in the red hoodie (e.g., the red hoodie man starts interacting with cups and balloons after the red t - shirt man's initial actions).",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the man in the red t-shirt start playing after the man in the red hoodie?",
+      "gt": "Yes",
+      "pred": "Yes. The man in the red hoodie (wearing the hooded sweatshirt) is seen interacting with the cups and balloon first, and the man in the red t - shirt (non - hooded) starts playing later. For example, the red hoodie man is shown arranging cups and throwing the balloon earlier in the sequence (e.g., around the 7 - 12 second mark in the frame sequence), while the red t - shirt man’s active play with cups and the balloon occurs after that (e.g., around 15 - 20 second mark in the frame sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the man in the red hoodie playing in the game?",
+      "gt": "Yes",
+      "pred": "Yes. The man in the red hoodie was actively participating in the game; for example, he is seen arranging red cups on the table (e.g., around the 7th frame) and holding the red balloon, indicating involvement in the activity.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the man in the red hoodie start before the man in the red t-shirt?",
+      "gt": "Yes",
+      "pred": "Yes. The man in the red hoodie (e.g., seen handling red cups and the red balloon in early frames like 0:00–0:05) initiated actions before the man in the red t - shirt (whose actions, such as handling red cups and the red balloon, occur later in the sequence, e.g., 0:15+).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Did the man in the red t-shirt start playing after the man in the red hoodie?",
+      "gt": "Yes",
+      "pred": "Yes. The man in the red hoodie (wearing the hooded sweatshirt) is seen interacting with the cups and balloon first, and the man in the red t - shirt (non - hooded) starts playing later. For example, the red hoodie man is shown arranging cups and throwing the balloon earlier in the sequence (e.g., around the 7 - 12 second mark in the frame sequence), while the red t - shirt man’s active play with cups and the balloon occurs after that (e.g., around 15 - 20 second mark in the frame sequence).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a man in a red t-shirt playing?",
+      "gt": "Yes",
+      "pred": "Yes. A man in a red t-shirt is visible in multiple frames (e.g., the 10th frame from the start shows him holding a red balloon, and other frames show him interacting with cups).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was there a man in a red hoodie playing?",
+      "gt": "Yes",
+      "pred": "Yes, a man in a red hoodie was playing. He is visible in multiple frames (e.g., the first frame shows him with a red balloon, and he appears throughout the video).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the man in the red hoodie start playing before the man in the red t-shirt?",
+      "gt": "Yes",
+      "pred": "To determine if the man in the red hoodie (R1) started playing before the man in the red t-shirt (R2), we analyze their first actions involving the cups (a key part of the game):  \n\n- **R1 (red hoodie)**: First interacts with the red cups in frame 7 (he is seen arranging/moving the red cups).  \n- **R2 (red t-shirt)**: First interacts with the red cups in frame 17 (he begins arranging/moving the red cups).  \n\nSince R1’s cup-related actions occur earlier (frame 7) than R2’s (frame 17), the man in the red hoodie started playing first.  \n\n**Answer**: Yes (R1 started playing before R2; R1’s first cup action at ~frame 7, R2’s at ~frame 17).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "target",
+      "question": "Did the blue team win the game?",
+      "gt": "Yes",
+      "pred": "Yes, the blue team won the game. This is evident from the celebratory actions of the blue team members in the later frames (e.g., frames 41-44 show them raising arms, cheering, and pointing in victory).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was there a blue team playing in the game?",
+      "gt": "Yes",
+      "pred": "Yes, there was a blue team. This is evident from the blue cups on the table and individuals holding a blue balloon (e.g., in the first frame, a person holds a blue balloon, and blue cups are arranged on the table; multiple frames show blue team members interacting with blue cups and the blue balloon).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the blue team start playing first?",
+      "gt": "Yes",
+      "pred": "Yes. The blue team started playing first, as evidenced by the blue balloon being thrown and blue cups being interacted with before the red team's actions (e.g., blue balloon throws and blue cup manipulations occur in earlier frames than red team’s similar actions). For example, blue balloon-related actions (e.g., throwing, cup interactions) are visible in the sequence before red team’s corresponding moves.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the blue team win?",
+      "gt": "Yes",
+      "pred": "Yes, the blue team won. This is evident in the later frames where the blue cups are stacked into a single tall stack (e.g., around the 20-25 second mark), while the red cups remain unstacked, and the blue team members are seen celebrating (e.g., raising arms, joyful expressions).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "target",
+      "question": "Did the red team win the game?",
+      "gt": "No",
+      "pred": "The red team won the game. This is evident from the celebratory gestures of the red team members (e.g., pointing, raised arms) in the final frames (e.g., ~42–46 seconds), indicating a victory.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did the blue team win the game?",
+      "gt": "Yes",
+      "pred": "Yes, the blue team won the game. This is evident from the celebratory actions of the blue team members in the later frames (e.g., frames 41-44 show them raising arms, cheering, and pointing in victory).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was there a red team playing in the game?",
+      "gt": "Yes",
+      "pred": "Yes, there was a red team. This is evident from the red cups arranged on one side of the table and the person in the red hoodie (and red balloon) participating in the game. For example, in the first frame, the red cups are visible, and the person in the red hoodie is present.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 9,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the red team lose the game?",
+      "gt": "Yes",
+      "pred": "Yes, the red team lost the game. This is evident from the final frames where the blue team members are celebrating (e.g., raising arms, joyful expressions) while the red team does not show similar celebratory actions, indicating the blue team won and the red team lost. For example, in the frame at ~52 seconds, the blue team members are actively celebrating, while the red team is not.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

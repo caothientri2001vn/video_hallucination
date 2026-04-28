@@ -1,0 +1,144 @@
+{
+  "question": "Did the girl change the bottom clothing more than once during the video?",
+  "pred": "The video shows a woman trying on different clothing items. To determine if she changed her bottom clothing more than once, we track the items she wears:\n\n1.  At the start of the video (e.g., 00:00), she is wearing **black pants** (visible behind the items she is holding).\n2.  At approximately 00:12, she is shown wearing **black shorts** (Context event 4: \"wearing the cream-colored top... and black shorts\").\n3.  At approximately 00:15, she puts on a **white ruffled skirt** over the black shorts (visible in the final sequence of frames).\n\nSince she transitions from black pants to black shorts, and then adds a white skirt, she has changed her bottom clothing at least twice.\n\nEvidence: Frames at 00:00 show black pants, 00:12 show black shorts, and the final frames show her putting on a white ruffled skirt.\nAnswer: Yes",
+  "gt": "No",
+  "is_correct": false,
+  "state": {
+    "subtype_counts": {
+      "hold_up_clothing": 2,
+      "hand_raise": 2,
+      "rearrange_clothing": 1,
+      "wear_clothing": 1
+    },
+    "events": [
+      {
+        "event_type": "hold_up_clothing",
+        "description": "A woman holds up a light blue sweater in her left hand and a cream-colored top with white ruffled layer in her right hand, displaying them to the camera",
+        "participants": [
+          "long-haired woman"
+        ],
+        "actor": "long-haired woman",
+        "object": "light blue sweater, cream-colored top with white ruffled layer",
+        "segment_boundary": "middle",
+        "segment_label": "clothing display",
+        "continuation_hint": "starts_before_chunk",
+        "event_index": 1,
+        "start_time": "00:00",
+        "end_time": "00:04",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "clothing display"
+      },
+      {
+        "event_type": "rearrange_clothing",
+        "description": "The woman gathers all clothing items together, bringing the white ruffled layer forward to cover the other items",
+        "participants": [
+          "long-haired woman"
+        ],
+        "actor": "long-haired woman",
+        "object": "light blue sweater, cream-colored top, white ruffled layer",
+        "segment_boundary": "middle",
+        "segment_label": "clothing display",
+        "continuation_hint": "middle",
+        "event_index": 2,
+        "start_time": "00:05",
+        "end_time": "00:08",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "clothing display"
+      },
+      {
+        "event_type": "hold_up_clothing",
+        "description": "The woman separates the clothing items again, holding the light blue sweater in her left hand and the cream-colored top with white ruffled layer in her right hand",
+        "participants": [
+          "long-haired woman"
+        ],
+        "actor": "long-haired woman",
+        "object": "light blue sweater, cream-colored top with white ruffled layer",
+        "segment_boundary": "middle",
+        "segment_label": "clothing display",
+        "continuation_hint": "middle",
+        "event_index": 3,
+        "start_time": "00:09",
+        "end_time": "00:11",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "clothing display"
+      },
+      {
+        "event_type": "wear_clothing",
+        "description": "The woman is now wearing the cream-colored top with yellow collar and black shorts, adjusting the top at her waist",
+        "participants": [
+          "long-haired woman"
+        ],
+        "actor": "long-haired woman",
+        "object": "cream-colored top, black shorts",
+        "segment_boundary": "middle",
+        "segment_label": "clothing display",
+        "continuation_hint": "middle",
+        "event_index": 4,
+        "start_time": "00:12",
+        "end_time": "00:12",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 1,
+        "round_index": 1,
+        "segment_label_resolved": "clothing display"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "The woman raises both hands with palms facing forward, then makes small gestures with her fingers",
+        "participants": [
+          "long-haired woman"
+        ],
+        "actor": "long-haired woman",
+        "segment_boundary": "middle",
+        "segment_label": "clothing display",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 5,
+        "start_time": "00:13",
+        "end_time": "00:15",
+        "sub_events": [],
+        "subtype_order": 1,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "clothing display"
+      },
+      {
+        "event_type": "hand_raise",
+        "description": "raises both hands from waist level to chest level with palms facing forward",
+        "participants": [
+          "woman in light blue sweater"
+        ],
+        "actor": "woman in light blue sweater",
+        "segment_boundary": "middle",
+        "segment_label": "",
+        "continuation_hint": "continues_after_chunk",
+        "event_index": 6,
+        "start_time": "00:15",
+        "end_time": "00:16",
+        "sub_events": [],
+        "subtype_order": 2,
+        "subtype_total": 2,
+        "round_index": 1,
+        "segment_label_resolved": "clothing display"
+      }
+    ],
+    "rounds": [
+      {
+        "round_index": 1,
+        "label": "clothing display",
+        "event_index_range": [
+          1,
+          6
+        ]
+      }
+    ]
+  }
+}

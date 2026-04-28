@@ -1,0 +1,1301 @@
+{
+  "video_name": "0085_9SONaOFEeic.mp4",
+  "video_duration_sec": 170.2,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:01",
+          "event_type": "title_card",
+          "description": "Title card displays episode number and Chinese text",
+          "participants": [],
+          "actor": "",
+          "object": "",
+          "object_before": "",
+          "object_after": "",
+          "on_screen_text": [
+            {
+              "text": "047",
+              "location": "title"
+            },
+            {
+              "text": "吃火锅",
+              "location": "title"
+            }
+          ],
+          "segment_boundary": "start",
+          "segment_label": "Eat Hot Pot",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:05",
+          "event_type": "struggle",
+          "description": "Two larva-like characters struggle to move through deep snow in a snowy forest",
+          "participants": [
+            "red larva",
+            "yellow larva"
+          ],
+          "actor": "red larva, yellow larva",
+          "object": "snow",
+          "object_before": "",
+          "object_after": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Eat Hot Pot",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:08",
+          "event_type": "shiver",
+          "description": "Both characters shiver violently in the cold weather",
+          "participants": [
+            "red larva",
+            "yellow larva"
+          ],
+          "actor": "red larva, yellow larva",
+          "object": "",
+          "object_before": "",
+          "object_after": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Eat Hot Pot",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:08",
+          "local_end": "00:12",
+          "event_type": "nose_growth",
+          "description": "Yellow larva's nose grows larger and turns bright red",
+          "participants": [
+            "yellow larva"
+          ],
+          "actor": "yellow larva",
+          "object": "",
+          "object_before": "small yellow nose",
+          "object_after": "large red nose",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Eat Hot Pot",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:12",
+          "local_end": "00:15",
+          "event_type": "approach",
+          "description": "The two larva characters move toward a sleeping gray rat covered in snow",
+          "participants": [
+            "red larva",
+            "yellow larva",
+            "gray rat"
+          ],
+          "actor": "red larva, yellow larva",
+          "object": "",
+          "object_before": "",
+          "object_after": "",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Eat Hot Pot",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 30.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:30",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:18",
+          "event_type": "tongue_extend",
+          "description": "The pink larva extends its tongue toward the red sausage held by the gray rat",
+          "participants": [
+            "pink larva",
+            "gray rat"
+          ],
+          "actor": "pink larva",
+          "object": "red sausage",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:19",
+          "local_end": "00:21",
+          "event_type": "tongue_grab_attempt",
+          "description": "The pink larva attempts to grab the red sausage with its extended tongue",
+          "participants": [
+            "pink larva",
+            "gray rat"
+          ],
+          "actor": "pink larva",
+          "object": "red sausage",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:22",
+          "local_end": "00:24",
+          "event_type": "expression_change",
+          "description": "The pink larva retracts its tongue and changes from a frustrated expression to looking up with surprise",
+          "participants": [
+            "pink larva"
+          ],
+          "actor": "pink larva",
+          "object_before": "frustrated expression",
+          "object_after": "surprised expression",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:25",
+          "local_end": "00:27",
+          "event_type": "snow_cover",
+          "description": "Snow falls and accumulates on the pink larva, yellow larva, and gray rat",
+          "participants": [
+            "pink larva",
+            "yellow larva",
+            "gray rat"
+          ],
+          "actor": "snow",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:28",
+          "local_end": "00:29",
+          "event_type": "look_up",
+          "description": "The pink larva and yellow larva peer over the snow with surprised expressions",
+          "participants": [
+            "pink larva",
+            "yellow larva"
+          ],
+          "actor": "pink larva",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:29",
+          "local_end": "00:30",
+          "event_type": "bubbling_liquid",
+          "description": "A close-up shows a bubbling red liquid in an orange container with steam rising",
+          "participants": [],
+          "actor": null,
+          "object": "red liquid",
+          "segment_boundary": "middle",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 2,
+      "chunk_start_sec": 30.0,
+      "chunk_end_sec": 45.0,
+      "chunk_start_mmss": "00:30",
+      "chunk_end_mmss": "00:45",
+      "events": [
+        {
+          "local_start": "00:30",
+          "local_end": "00:32",
+          "event_type": "react",
+          "description": "Yellow character displays wide eyes and open mouth showing surprise in snowy environment",
+          "participants": [
+            "yellow character"
+          ],
+          "actor": "yellow character",
+          "segment_boundary": "middle",
+          "segment_label": "Larva interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:32",
+          "local_end": "00:34",
+          "event_type": "gesture",
+          "description": "Pink character places hand over mouth while in snowy environment",
+          "participants": [
+            "pink character"
+          ],
+          "actor": "pink character",
+          "segment_boundary": "middle",
+          "segment_label": "Larva interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:35",
+          "local_end": "00:36",
+          "event_type": "transition",
+          "description": "Cut to cave scene showing steaming bowl over fire with rocks supporting it",
+          "participants": [],
+          "actor": null,
+          "segment_boundary": "middle",
+          "segment_label": "Larva interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:36",
+          "local_end": "00:38",
+          "event_type": "hold",
+          "description": "Red bug character stands near bowl holding tray with white food items",
+          "participants": [
+            "red bug character"
+          ],
+          "actor": "red bug character",
+          "segment_boundary": "middle",
+          "segment_label": "Larva interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:38",
+          "local_end": "00:40",
+          "event_type": "color_change",
+          "description": "Yellow character's body color changes from pinkish to bright yellow",
+          "participants": [
+            "yellow character"
+          ],
+          "actor": "yellow character",
+          "object_before": "pink character",
+          "object_after": "yellow character",
+          "segment_boundary": "middle",
+          "segment_label": "Larva interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:41",
+          "local_end": "00:45",
+          "event_type": "extend_tongue",
+          "description": "Both characters extend their tongues toward the steaming bowl with anticipation",
+          "participants": [
+            "pink character",
+            "yellow character"
+          ],
+          "actor": "both characters",
+          "segment_boundary": "middle",
+          "segment_label": "Larva interaction",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 3,
+      "chunk_start_sec": 45.0,
+      "chunk_end_sec": 60.0,
+      "chunk_start_mmss": "00:45",
+      "chunk_end_mmss": "01:00",
+      "events": [
+        {
+          "local_start": "00:45",
+          "local_end": "00:46",
+          "event_type": "tongue_out",
+          "description": "Red larva extends its tongue toward the hot liquid",
+          "participants": [
+            "red larva",
+            "yellow larva"
+          ],
+          "actor": "red larva",
+          "segment_boundary": "middle",
+          "segment_label": "spicy food challenge",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:45",
+          "local_end": "00:46",
+          "event_type": "tongue_out",
+          "description": "Yellow larva extends its tongue toward the hot liquid",
+          "participants": [
+            "red larva",
+            "yellow larva"
+          ],
+          "actor": "yellow larva",
+          "segment_boundary": "middle",
+          "segment_label": "spicy food challenge",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:46",
+          "local_end": "00:47",
+          "event_type": "expression_change",
+          "description": "Yellow larva closes its eyes while maintaining position near the hot liquid",
+          "participants": [
+            "yellow larva"
+          ],
+          "actor": "yellow larva",
+          "object_before": "yellow larva",
+          "object_after": "yellow larva",
+          "object_before_pattern": "eyes open with tongue out",
+          "object_after_pattern": "eyes closed with tongue out",
+          "segment_boundary": "middle",
+          "segment_label": "spicy food challenge",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:47",
+          "local_end": "00:48",
+          "event_type": "expression_change",
+          "description": "Red larva's face shows signs of discomfort from spiciness",
+          "participants": [
+            "red larva"
+          ],
+          "actor": "red larva",
+          "object_before": "red larva",
+          "object_after": "red larva",
+          "object_before_pattern": "normal expression",
+          "object_after_pattern": "flushed face with discomfort",
+          "segment_boundary": "middle",
+          "segment_label": "spicy food challenge",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:51",
+          "local_end": "00:52",
+          "event_type": "appearance",
+          "description": "Red beetle character appears holding chopsticks near the hot liquid",
+          "participants": [
+            "red beetle"
+          ],
+          "actor": "red beetle",
+          "segment_boundary": "middle",
+          "segment_label": "spicy food challenge",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:52",
+          "local_end": "00:53",
+          "event_type": "food_manipulation",
+          "description": "Red beetle uses chopsticks to pick up a piece of food from the hot liquid",
+          "participants": [
+            "red beetle"
+          ],
+          "actor": "red beetle",
+          "object": "chopsticks",
+          "segment_boundary": "middle",
+          "segment_label": "spicy food challenge",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:53",
+          "local_end": "00:54",
+          "event_type": "eating",
+          "description": "Red beetle brings the food to its mouth using chopsticks",
+          "participants": [
+            "red beetle"
+          ],
+          "actor": "red beetle",
+          "object": "chopsticks with food",
+          "segment_boundary": "middle",
+          "segment_label": "spicy food challenge",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:54",
+          "local_end": "00:55",
+          "event_type": "reaction",
+          "description": "Red beetle shows discomfort after eating the spicy food",
+          "participants": [
+            "red beetle"
+          ],
+          "actor": "red beetle",
+          "segment_boundary": "middle",
+          "segment_label": "spicy food challenge",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:57",
+          "local_end": "00:58",
+          "event_type": "eating",
+          "description": "Red larva uses chopsticks to eat from the hot liquid",
+          "participants": [
+            "red larva"
+          ],
+          "actor": "red larva",
+          "object": "chopsticks",
+          "segment_boundary": "middle",
+          "segment_label": "spicy food challenge",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:57",
+          "local_end": "00:58",
+          "event_type": "eating",
+          "description": "Yellow larva uses chopsticks to eat from the hot liquid",
+          "participants": [
+            "yellow larva"
+          ],
+          "actor": "yellow larva",
+          "object": "chopsticks",
+          "segment_boundary": "middle",
+          "segment_label": "spicy food challenge",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:59",
+          "local_end": "01:00",
+          "event_type": "tongue_manipulation",
+          "description": "Yellow larva uses its tongue to manipulate chopsticks while eating",
+          "participants": [
+            "yellow larva"
+          ],
+          "actor": "yellow larva",
+          "object": "chopsticks",
+          "segment_boundary": "middle",
+          "segment_label": "spicy food challenge",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 4,
+      "chunk_start_sec": 60.0,
+      "chunk_end_sec": 75.0,
+      "chunk_start_mmss": "01:00",
+      "chunk_end_mmss": "01:15",
+      "events": [
+        {
+          "local_start": "01:00",
+          "local_end": "01:09",
+          "event_type": "eat",
+          "description": "Yellow larva uses its tongue to hold chopsticks and eats a yellow cube from the red bowl.",
+          "participants": [
+            "yellow larva"
+          ],
+          "actor": "yellow larva",
+          "object": "yellow cube",
+          "segment_boundary": "middle",
+          "segment_label": "Hot Pot Eating",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "01:09",
+          "local_end": "01:12",
+          "event_type": "eat",
+          "description": "Red larva uses its tongue to hold chopsticks and eats a yellow cube from the red bowl.",
+          "participants": [
+            "red larva"
+          ],
+          "actor": "red larva",
+          "object": "yellow cube",
+          "segment_boundary": "middle",
+          "segment_label": "Hot Pot Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:12",
+          "local_end": "01:14",
+          "event_type": "react",
+          "description": "Red larva sweats, eyes bulge, and tongue swells and turns red due to the heat of the food.",
+          "participants": [
+            "red larva"
+          ],
+          "actor": "red larva",
+          "segment_boundary": "middle",
+          "segment_label": "Hot Pot Eating",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:15",
+          "local_end": "01:15",
+          "event_type": "appear",
+          "description": "Yellow larva appears next to the red larva, both facing the bowl with chopsticks held by their tongues.",
+          "participants": [
+            "yellow larva",
+            "red larva"
+          ],
+          "actor": "yellow larva",
+          "segment_boundary": "middle",
+          "segment_label": "Hot Pot Eating",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 5,
+      "chunk_start_sec": 75.0,
+      "chunk_end_sec": 90.0,
+      "chunk_start_mmss": "01:15",
+      "chunk_end_mmss": "01:30",
+      "events": [
+        {
+          "local_start": "01:15",
+          "local_end": "01:16",
+          "event_type": "mouth_open",
+          "description": "yellow character opens their mouth wide",
+          "participants": [
+            "yellow character"
+          ],
+          "actor": "yellow character",
+          "segment_boundary": "middle",
+          "segment_label": "Cheese Interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:16",
+          "local_end": "01:17",
+          "event_type": "mouth_close",
+          "description": "yellow character closes their mouth",
+          "participants": [
+            "yellow character"
+          ],
+          "actor": "yellow character",
+          "segment_boundary": "middle",
+          "segment_label": "Cheese Interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:18",
+          "local_end": "01:20",
+          "event_type": "inflation",
+          "description": "red dome appears with moving tentacle-like structures visible through its surface",
+          "participants": [
+            "red character"
+          ],
+          "actor": "red character",
+          "segment_boundary": "middle",
+          "segment_label": "Cheese Interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:20",
+          "local_end": "01:22",
+          "event_type": "inflation",
+          "description": "red dome continues to inflate, showing more defined tentacle movements",
+          "participants": [
+            "red character"
+          ],
+          "actor": "red character",
+          "segment_boundary": "middle",
+          "segment_label": "Cheese Interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:22",
+          "local_end": "01:24",
+          "event_type": "inflation",
+          "description": "red dome reaches full inflation with prominent tentacle structures visible",
+          "participants": [
+            "red character"
+          ],
+          "actor": "red character",
+          "segment_boundary": "middle",
+          "segment_label": "Cheese Interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:24",
+          "local_end": "01:26",
+          "event_type": "mouth_open",
+          "description": "red character opens their mouth wide",
+          "participants": [
+            "red character"
+          ],
+          "actor": "red character",
+          "segment_boundary": "middle",
+          "segment_label": "Cheese Interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:26",
+          "local_end": "01:28",
+          "event_type": "mouth_close",
+          "description": "red character closes their mouth",
+          "participants": [
+            "red character"
+          ],
+          "actor": "red character",
+          "segment_boundary": "middle",
+          "segment_label": "Cheese Interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:28",
+          "local_end": "01:29",
+          "event_type": "distressed_expression",
+          "description": "both red and yellow characters display distressed expressions while positioned on the cheese slice",
+          "participants": [
+            "red character",
+            "yellow character"
+          ],
+          "actor": "both characters",
+          "segment_boundary": "middle",
+          "segment_label": "Cheese Interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:29",
+          "local_end": "01:30",
+          "event_type": "distressed_expression",
+          "description": "both characters maintain distressed expressions with the yellow character showing wide-eyed concern",
+          "participants": [
+            "red character",
+            "yellow character"
+          ],
+          "actor": "both characters",
+          "segment_boundary": "middle",
+          "segment_label": "Cheese Interaction",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 6,
+      "chunk_start_sec": 90.0,
+      "chunk_end_sec": 105.0,
+      "chunk_start_mmss": "01:30",
+      "chunk_end_mmss": "01:45",
+      "events": [
+        {
+          "local_start": "01:30",
+          "local_end": "01:33",
+          "event_type": "eat",
+          "description": "Red larva character eats a round food item with chopsticks, showing initial discomfort with wide eyes and strained expression",
+          "participants": [
+            "red larva"
+          ],
+          "actor": "red larva",
+          "object": "round food item",
+          "segment_boundary": "middle",
+          "segment_label": "spicy food challenge",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:33",
+          "local_end": "01:35",
+          "event_type": "react",
+          "description": "Red larva's eyes begin to water with visible moisture droplets forming on the surface",
+          "participants": [
+            "red larva"
+          ],
+          "actor": "red larva",
+          "object_before": "normal eyes",
+          "object_after": "tearing eyes",
+          "segment_boundary": "middle",
+          "segment_label": "spicy food challenge",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:35",
+          "local_end": "01:37",
+          "event_type": "facial_expression_change",
+          "description": "Close-up shows red larva's face with increasingly strained expression, mouth tightly closed, and eyes showing more distress",
+          "participants": [
+            "red larva"
+          ],
+          "actor": "red larva",
+          "object_before": "slightly strained face",
+          "object_after": "highly strained face",
+          "segment_boundary": "middle",
+          "segment_label": "spicy food challenge",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:37",
+          "local_end": "01:40",
+          "event_type": "eat",
+          "description": "Red larva continues eating the round food item despite visible discomfort, pushing it further into mouth",
+          "participants": [
+            "red larva"
+          ],
+          "actor": "red larva",
+          "object": "round food item",
+          "segment_boundary": "middle",
+          "segment_label": "spicy food challenge",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:40",
+          "local_end": "01:42",
+          "event_type": "facial_expression_change",
+          "description": "Red larva's eyes become bloodshot with visible red veins appearing across the whites of the eyes",
+          "participants": [
+            "red larva"
+          ],
+          "actor": "red larva",
+          "object_before": "tearing eyes",
+          "object_after": "bloodshot eyes",
+          "segment_boundary": "middle",
+          "segment_label": "spicy food challenge",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:42",
+          "local_end": "01:44",
+          "event_type": "react",
+          "description": "Red larva appears to struggle with the spiciness, showing heavy breathing and continued eye watering",
+          "participants": [
+            "red larva"
+          ],
+          "actor": "red larva",
+          "segment_boundary": "middle",
+          "segment_label": "spicy food challenge",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:44",
+          "local_end": "01:45",
+          "event_type": "facial_expression_change",
+          "description": "Extreme close-up shows red larva's eyes fully bloodshot with multiple visible red veins and profuse watering",
+          "participants": [
+            "red larva"
+          ],
+          "actor": "red larva",
+          "object_before": "bloodshot eyes",
+          "object_after": "severely bloodshot eyes",
+          "segment_boundary": "middle",
+          "segment_label": "spicy food challenge",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 7,
+      "chunk_start_sec": 105.0,
+      "chunk_end_sec": 120.0,
+      "chunk_start_mmss": "01:45",
+      "chunk_end_mmss": "02:00",
+      "events": [
+        {
+          "local_start": "01:45",
+          "local_end": "01:50",
+          "event_type": "run",
+          "description": "red beetle character runs across sandy beach with red cape flowing behind",
+          "participants": [
+            "red beetle character"
+          ],
+          "actor": "red beetle character",
+          "object": "red cape",
+          "segment_boundary": "middle",
+          "segment_label": "Beach Sequence",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:51",
+          "local_end": "01:53",
+          "event_type": "pose_change",
+          "description": "red beetle character raises both arms and places red cape over head as headwear",
+          "participants": [
+            "red beetle character"
+          ],
+          "actor": "red beetle character",
+          "object_before": "red cape",
+          "object_after": "red cape",
+          "object_before_pattern": "flowing behind character",
+          "object_after_pattern": "positioned over head as headwear",
+          "segment_boundary": "middle",
+          "segment_label": "Beach Sequence",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:54",
+          "local_end": "01:56",
+          "event_type": "environment_change",
+          "description": "red beetle character appears in dark, steamy environment looking distressed",
+          "participants": [
+            "red beetle character"
+          ],
+          "actor": "red beetle character",
+          "segment_boundary": "middle",
+          "segment_label": "Dark Environment",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:57",
+          "local_end": "01:58",
+          "event_type": "cooking",
+          "description": "close-up view of boiling red liquid with food items floating in pot",
+          "participants": [],
+          "actor": "",
+          "object": "boiling pot with red liquid",
+          "segment_boundary": "middle",
+          "segment_label": "Cooking Sequence",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:58",
+          "local_end": "01:59",
+          "event_type": "eat",
+          "description": "red larva and yellow larva use chopsticks to pick food items from boiling pot",
+          "participants": [
+            "red larva",
+            "yellow larva"
+          ],
+          "actor": "red larva and yellow larva",
+          "object": "chopsticks",
+          "segment_boundary": "middle",
+          "segment_label": "Cooking Sequence",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "01:59",
+          "local_end": "02:00",
+          "event_type": "consume",
+          "description": "yellow larva brings food item to mouth with chopsticks and begins consuming",
+          "participants": [
+            "yellow larva"
+          ],
+          "actor": "yellow larva",
+          "object": "food item",
+          "segment_boundary": "middle",
+          "segment_label": "Cooking Sequence",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 8,
+      "chunk_start_sec": 120.0,
+      "chunk_end_sec": 135.0,
+      "chunk_start_mmss": "02:00",
+      "chunk_end_mmss": "02:15",
+      "events": [
+        {
+          "local_start": "02:00",
+          "local_end": "02:02",
+          "event_type": "expression_change",
+          "description": "Yellow larva character changes from wide open mouth to a closed-mouth smile",
+          "participants": [
+            "yellow larva"
+          ],
+          "actor": "yellow larva",
+          "object": "yellow larva",
+          "object_before": "yellow larva with wide open mouth",
+          "object_after": "yellow larva with closed-mouth smile",
+          "segment_boundary": "middle",
+          "segment_label": "Larva interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:02",
+          "local_end": "02:04",
+          "event_type": "transformation",
+          "description": "Yellow larva begins to inflate and grow larger in size",
+          "participants": [
+            "yellow larva"
+          ],
+          "actor": "yellow larva",
+          "object": "yellow larva",
+          "object_before": "yellow larva with closed-mouth smile",
+          "object_after": "inflating yellow larva",
+          "segment_boundary": "middle",
+          "segment_label": "Larva transformation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:04",
+          "local_end": "02:06",
+          "event_type": "visual_effect",
+          "description": "Yellow smoke/mist appears and begins to surround the yellow larva",
+          "participants": [
+            "yellow larva"
+          ],
+          "actor": "yellow smoke",
+          "object": "yellow smoke",
+          "object_before": "clear scene with yellow larva",
+          "object_after": "yellow larva partially obscured by yellow smoke",
+          "segment_boundary": "middle",
+          "segment_label": "Larva transformation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:06",
+          "local_end": "02:08",
+          "event_type": "transformation",
+          "description": "Yellow larva completes transformation into a cylindrical striped shape",
+          "participants": [
+            "yellow larva"
+          ],
+          "actor": "yellow larva",
+          "object": "yellow larva",
+          "object_before": "inflating yellow larva with smoke",
+          "object_after": "cylindrical striped yellow larva",
+          "segment_boundary": "middle",
+          "segment_label": "Larva transformation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:08",
+          "local_end": "02:10",
+          "event_type": "movement",
+          "description": "Transformed cylindrical yellow larva moves through the air leaving a yellow smoke trail",
+          "participants": [
+            "yellow larva"
+          ],
+          "actor": "yellow larva",
+          "object": "yellow larva",
+          "object_before": "cylindrical striped yellow larva",
+          "object_after": "flying cylindrical striped yellow larva",
+          "segment_boundary": "middle",
+          "segment_label": "Larva flight",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:10",
+          "local_end": "02:12",
+          "event_type": "look",
+          "description": "Red larva character looks up at the flying yellow larva",
+          "participants": [
+            "red larva",
+            "yellow larva"
+          ],
+          "actor": "red larva",
+          "object": "yellow larva",
+          "segment_boundary": "middle",
+          "segment_label": "Larva interaction",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:12",
+          "local_end": "02:14",
+          "event_type": "manipulation",
+          "description": "Pink tongue (belonging to red larva) manipulates chopsticks in red liquid",
+          "participants": [
+            "red larva"
+          ],
+          "actor": "red larva",
+          "object": "chopsticks",
+          "segment_boundary": "middle",
+          "segment_label": "Food preparation",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:14",
+          "local_end": "02:15",
+          "event_type": "manipulation",
+          "description": "Chopsticks pick up a small round object from the red liquid",
+          "participants": [
+            "red larva"
+          ],
+          "actor": "red larva",
+          "object": "small round object",
+          "segment_boundary": "middle",
+          "segment_label": "Food preparation",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 9,
+      "chunk_start_sec": 135.0,
+      "chunk_end_sec": 150.0,
+      "chunk_start_mmss": "02:15",
+      "chunk_end_mmss": "02:30",
+      "events": [
+        {
+          "local_start": "02:15",
+          "local_end": "02:18",
+          "event_type": "eat",
+          "description": "The gray cartoon rat eats a small brown object while partially covered in snow",
+          "participants": [
+            "gray rat"
+          ],
+          "actor": "gray rat",
+          "object": "small brown object",
+          "segment_boundary": "middle",
+          "segment_label": "Rat in Snow",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "02:18",
+          "local_end": "02:21",
+          "event_type": "react",
+          "description": "The gray rat shows discomfort from cold, closing its eyes and scrunching its face",
+          "participants": [
+            "gray rat"
+          ],
+          "actor": "gray rat",
+          "segment_boundary": "middle",
+          "segment_label": "Rat in Snow",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:21",
+          "local_end": "02:24",
+          "event_type": "background_change",
+          "description": "The snowy landscape background transitions to a volcanic eruption with red and orange flames",
+          "participants": [],
+          "actor": "background",
+          "segment_boundary": "middle",
+          "segment_label": "Rat in Snow",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:24",
+          "local_end": "02:27",
+          "event_type": "react",
+          "description": "The gray rat reacts positively to the warmth, opening its eyes and looking toward the volcanic eruption",
+          "participants": [
+            "gray rat"
+          ],
+          "actor": "gray rat",
+          "segment_boundary": "middle",
+          "segment_label": "Rat in Snow",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:27",
+          "local_end": "02:29",
+          "event_type": "pose_change",
+          "description": "The gray rat closes its eyes, smiles, and places its paws on its cheeks showing contentment",
+          "participants": [
+            "gray rat"
+          ],
+          "actor": "gray rat",
+          "segment_boundary": "middle",
+          "segment_label": "Rat in Snow",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:29",
+          "local_end": "02:30",
+          "event_type": "scene_transition",
+          "description": "The scene transitions to cartoon worms around a steaming pot with red contents",
+          "participants": [
+            "yellow worm",
+            "red worm",
+            "pink worm"
+          ],
+          "actor": "scene",
+          "segment_boundary": "start",
+          "segment_label": "Worms and Pot",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 10,
+      "chunk_start_sec": 150.0,
+      "chunk_end_sec": 165.0,
+      "chunk_start_mmss": "02:30",
+      "chunk_end_mmss": "02:45",
+      "events": [
+        {
+          "local_start": "02:30",
+          "local_end": "02:33",
+          "event_type": "drink",
+          "description": "The gray rat drinks the red liquid from the bowl.",
+          "participants": [],
+          "actor": "gray rat",
+          "object": "red liquid",
+          "segment_boundary": "middle",
+          "segment_label": "Rat Spicy Challenge",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:33",
+          "local_end": "02:34",
+          "event_type": "react",
+          "description": "The gray rat's eyes become wide and bloodshot.",
+          "participants": [],
+          "actor": "gray rat",
+          "segment_boundary": "middle",
+          "segment_label": "Rat Spicy Challenge",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:34",
+          "local_end": "02:38",
+          "event_type": "breathe_fire",
+          "description": "The gray rat breathes a large flame from its mouth.",
+          "participants": [],
+          "actor": "gray rat",
+          "segment_boundary": "end",
+          "segment_label": "Rat Spicy Challenge",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "02:38",
+          "local_end": "02:39",
+          "event_type": "transition",
+          "description": "The scene transitions to a traditional Chinese-style parchment background with a large container labeled 'WC'.",
+          "participants": [],
+          "actor": "none",
+          "segment_boundary": "start",
+          "segment_label": "Larva WC Challenge",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "WC",
+              "location": "container"
+            },
+            {
+              "text": "元",
+              "location": "container"
+            }
+          ]
+        },
+        {
+          "local_start": "02:39",
+          "local_end": "02:40",
+          "event_type": "walk",
+          "description": "A larva-like character appears on the right and walks toward the container.",
+          "participants": [],
+          "actor": "larva-like character",
+          "segment_boundary": "middle",
+          "segment_label": "Larva WC Challenge",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "WC",
+              "location": "container"
+            },
+            {
+              "text": "元",
+              "location": "container"
+            }
+          ]
+        },
+        {
+          "local_start": "02:40",
+          "local_end": "02:41",
+          "event_type": "enter",
+          "description": "The larva-like character opens the container door and enters.",
+          "participants": [],
+          "actor": "larva-like character",
+          "object": "container door",
+          "segment_boundary": "middle",
+          "segment_label": "Larva WC Challenge",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "WC",
+              "location": "container"
+            },
+            {
+              "text": "元",
+              "location": "container"
+            }
+          ]
+        },
+        {
+          "local_start": "02:41",
+          "local_end": "02:42",
+          "event_type": "exit",
+          "description": "The larva-like character exits the container.",
+          "participants": [],
+          "actor": "larva-like character",
+          "object": "container door",
+          "segment_boundary": "middle",
+          "segment_label": "Larva WC Challenge",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "WC",
+              "location": "container"
+            },
+            {
+              "text": "元",
+              "location": "container"
+            }
+          ]
+        },
+        {
+          "local_start": "02:42",
+          "local_end": "02:45",
+          "event_type": "walk",
+          "description": "A bee-like character appears on the right and walks toward the container.",
+          "participants": [],
+          "actor": "bee-like character",
+          "segment_boundary": "middle",
+          "segment_label": "Larva WC Challenge",
+          "continuation_hint": "continues_after_chunk",
+          "on_screen_text": [
+            {
+              "text": "WC",
+              "location": "container"
+            },
+            {
+              "text": "元",
+              "location": "container"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chunk_idx": 11,
+      "chunk_start_sec": 165.0,
+      "chunk_end_sec": 170.2,
+      "chunk_start_mmss": "02:45",
+      "chunk_end_mmss": "02:50",
+      "events": [
+        {
+          "local_start": "02:45",
+          "local_end": "02:46",
+          "event_type": "open_door",
+          "description": "The small bug-like character opens the refrigerator/WC door",
+          "participants": [
+            "small bug-like character",
+            "larger striped bug-like character",
+            "audience characters"
+          ],
+          "actor": "small bug-like character",
+          "object": "refrigerator/WC door",
+          "segment_boundary": "middle",
+          "segment_label": "Refrigerator Scene",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:46",
+          "local_end": "02:47",
+          "event_type": "enter",
+          "description": "The small bug-like character enters the refrigerator/WC",
+          "participants": [
+            "small bug-like character",
+            "larger striped bug-like character",
+            "audience characters"
+          ],
+          "actor": "small bug-like character",
+          "object": "refrigerator/WC",
+          "segment_boundary": "middle",
+          "segment_label": "Refrigerator Scene",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:47",
+          "local_end": "02:48",
+          "event_type": "close_door",
+          "description": "The small bug-like character closes the refrigerator/WC door from inside",
+          "participants": [
+            "small bug-like character",
+            "larger striped bug-like character",
+            "audience characters"
+          ],
+          "actor": "small bug-like character",
+          "object": "refrigerator/WC door",
+          "segment_boundary": "middle",
+          "segment_label": "Refrigerator Scene",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "02:48",
+          "local_end": "02:50",
+          "event_type": "react",
+          "description": "The larger striped bug-like character shows a surprised reaction to the small character entering the refrigerator",
+          "participants": [
+            "larger striped bug-like character",
+            "small bug-like character",
+            "audience characters"
+          ],
+          "actor": "larger striped bug-like character",
+          "segment_boundary": "middle",
+          "segment_label": "Refrigerator Scene",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "question": "Are there in toal 1 cake?",
+  "pred": "The question asks if there is a total of exactly one cake in the video. Based on the evidence, multiple distinct items are revealed to be made of cake throughout the segments:\n\n1.  **Black Bag Cake**: At approximately 03:39, a woman in a plaid shirt cuts into a black bag, revealing it is a cake (Event 88).\n2.  **Banana Cake**: At approximately 06:07, a yellow banana-shaped object is cut in half, revealing a dark cake interior (Event 131).\n3.  **Sneaker Cake**: At approximately 08:39, a woman in a yellow shirt cuts into a red and white sneaker on pedestal #1, revealing a chocolate cake interior (Events 176, 178).\n\nSince there are at least three distinct items identified as cakes, the total count is not one.\n\nEvidence: Events 88, 131, and 176 describe three different objects (a bag, a banana, and a sneaker) being revealed as cakes.\nAnswer: No",
+  "gt": "Yes",
+  "is_correct": false,
+  "state": [
+    {
+      "event_type": "reveal",
+      "description": "Woman in plaid shirt cuts through the bag revealing it is made of cake",
+      "participants": [
+        "plaid-shirt woman",
+        "white-shirt man",
+        "pink-dress woman"
+      ],
+      "actor": "plaid-shirt woman",
+      "object_before": "black bag",
+      "object_after": "cake",
+      "cover": "black bag",
+      "hidden": "cake",
+      "on_screen_text": [
+        {
+          "text": "PHIL & HOLLY PLAY 'IS IT CAKE?'",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 88,
+      "start_time": "03:39",
+      "end_time": "03:42",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 6,
+      "round_index": 2,
+      "segment_label_resolved": "Studio Discussion"
+    },
+    {
+      "event_type": "reveal",
+      "description": "Close-up shows the banana-shaped object cut in half revealing a dark cake interior",
+      "participants": [],
+      "actor": null,
+      "object_before": "yellow banana-shaped object",
+      "object_after": "yellow cake with dark interior",
+      "on_screen_text": [
+        {
+          "text": "PHIL & HOLLY PLAY 'IS IT CAKE?'",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Is It Cake?",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 131,
+      "start_time": "06:07",
+      "end_time": "06:10",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 6,
+      "round_index": 4,
+      "segment_label_resolved": "Is It Cake?"
+    },
+    {
+      "event_type": "reveal",
+      "description": "A gloved hand uses a tool to cut into the sneaker on pedestal #1, revealing it is actually made of cake",
+      "participants": [
+        "gloved hand"
+      ],
+      "actor": "gloved hand",
+      "object": "sneaker #1",
+      "object_before": "red and white sneaker",
+      "object_after": "cake disguised as sneaker",
+      "segment_boundary": "end",
+      "segment_label": "Sneaker Cake Challenge",
+      "continuation_hint": "complete",
+      "on_screen_text": [
+        {
+          "text": "CAN YOU SPOT WHICH ITEM IS MADE OF CAKE?",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        }
+      ],
+      "event_index": 166,
+      "start_time": "07:55",
+      "end_time": "08:00",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 6,
+      "round_index": 5,
+      "segment_label_resolved": "MEET BRITAIN'S BEST NOVELTY CAKE MAKERS"
+    },
+    {
+      "event_type": "cut",
+      "description": "a hand cuts into the sneaker-like item on pedestal 1 with a large knife, revealing it is actually cake",
+      "participants": [
+        "yellow-shirt woman",
+        "pink-dress woman",
+        "white-shirt man"
+      ],
+      "actor": "yellow-shirt woman",
+      "object": "sneaker-like item",
+      "object_before": "white and red sneaker",
+      "object_after": "white and red cake sneaker",
+      "object_after_pattern": "interior cake texture visible after cut",
+      "on_screen_text": [
+        {
+          "text": "CAN YOU SPOT WHICH ITEM IS MADE OF CAKE?",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Can You Spot Which Item Is Made of Cake?",
+      "continuation_hint": "complete",
+      "event_index": 176,
+      "start_time": "08:39",
+      "end_time": "08:45",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 7,
+      "round_index": 6,
+      "segment_label_resolved": "Spot the Cake Item Challenge"
+    },
+    {
+      "event_type": "reveal",
+      "description": "The cut reveals the interior of the shoe-shaped object is chocolate cake",
+      "participants": [
+        "yellow-shirt woman"
+      ],
+      "actor": "yellow-shirt woman",
+      "object_before": "shoe-shaped object (exterior)",
+      "object_after": "chocolate cake interior",
+      "on_screen_text": [
+        {
+          "text": "CAN YOU SPOT WHICH ITEM IS MADE OF CAKE?",
+          "location": "lower_third"
+        },
+        {
+          "text": "#ThisMorning",
+          "location": "lower_third"
+        },
+        {
+          "text": "itv",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Cake Identification Challenge",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 178,
+      "start_time": "08:48",
+      "end_time": "08:52",
+      "sub_events": [],
+      "subtype_order": 6,
+      "subtype_total": 6,
+      "round_index": 6,
+      "segment_label_resolved": "Spot the Cake Item Challenge"
+    }
+  ]
+}

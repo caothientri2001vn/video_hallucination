@@ -1,0 +1,409 @@
+{
+  "source": "llm_judge_openrouter_gemini_flash",
+  "model": "google/gemini-2.5-flash",
+  "cache_file": "/home/thong/video_hallucination/cache/Qwen_Qwen3-VL-32B-Thinking__vanilla/0053_pyVSUQn3vhM.json",
+  "benchmark_file": "/home/thong/video_hallucination/benchmark/sample_0053_pyVSUQn3vhM.json",
+  "include_subquestions": true,
+  "summary": {
+    "video": "0053_pyVSUQn3vhM",
+    "n_target": 9,
+    "n_sub": 31,
+    "n_target_missing_pred": 0,
+    "n_sub_missing_pred": 0,
+    "target_accuracy": 0.5555555555555556,
+    "sub_accuracy": 0.6774193548387096
+  },
+  "items": [
+    {
+      "group_id": 0,
+      "kind": "target",
+      "question": "Did Crystal Palace score first?",
+      "gt": "Yes",
+      "pred": "Yes, Crystal Palace scored first. This is evident from the sequence where Crystal Palace players are seen celebrating a goal (e.g., frame 6 shows players in red/blue kits hugging in celebration).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Was Crystal Palace playing in this match?",
+      "gt": "Yes",
+      "pred": "Yes, Crystal Palace was playing in this match. This is evident from the red and blue striped jerseys with \"NET88\" (a Crystal Palace sponsor), player names like \"RICHARDS\" (a known Crystal Palace player), and the \"CRYSTAL PALACE\" banner visible during the trophy celebration (e.g., in the frame showing the crowd with \"CRYSTAL PALACE\" signage).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did Crystal Palace score a goal?",
+      "gt": "Yes",
+      "pred": "Yes, Crystal Palace scored a goal. This is evident from the frames showing Crystal Palace players celebrating (e.g., frame 6, where players in the red-and-blue striped kit are hugging), and the subsequent trophy ceremony (frames 24–27) confirming their victory in the FA Cup.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 0,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was Crystal Palace's goal the first goal scored in the match?",
+      "gt": "Yes",
+      "pred": "Yes, Crystal Palace's goal was the first goal scored in the match. This is evident from the sequence where Crystal Palace players are shown celebrating a goal (e.g., frame 6) before other key events like penalty kicks and the final trophy ceremony. The goal celebration occurs early in the video, indicating it was the first goal.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "target",
+      "question": "Did the team wearing red and blue score first?",
+      "gt": "Yes",
+      "pred": "Yes, the team wearing red and blue scored first. This is evident from the sequence where the red and blue team celebrates a goal (e.g., frame 6 shows players huddling in celebration, and frame 5 shows the goal being scored with the ball in the net). The celebration and subsequent actions confirm they scored first.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a team wear red and blue in this match?",
+      "gt": "Yes",
+      "pred": "Yes. Multiple frames show players in red and blue striped jerseys (e.g., the player with “RICHARDS” on the back in the second frame, and team celebrations in later frames).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the team wearing red and blue score a goal?",
+      "gt": "Yes",
+      "pred": "Yes. The team wearing red and blue is shown celebrating a goal (e.g., frame 6) and later lifting the trophy (frames 24-27), indicating they scored.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 1,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was the goal by the team wearing red and blue the first goal of the match?",
+      "gt": "Yes",
+      "pred": "Yes, the goal by the team wearing red and blue was the first goal of the match. This is verified by the sequence: the celebration of the red/blue team (e.g., frame 6 showing players hugging after a goal) occurs before any other goal celebrations or significant scoring actions by the opposing team, and there are no prior goal-related celebrations in the earlier frames (1–5). The goal is shown in the sequence where the ball enters the net (e.g., frame 15), followed immediately by the celebration (frame 6), indicating it was the first goal.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "target",
+      "question": "Did player number 12 provide the assist for the first goal?",
+      "gt": "Yes",
+      "pred": "So, let's check the video. First, find the first goal. Looking at the frames, there's a goal celebration (frame 6: players in blue/red celebrating). Then, check who assisted. The frame with player 12: in frame 20, player 12 (Munoz) is on the field, but we need to see the assist. Wait, the goal sequence—frame 5 shows a goal, and frame 17 shows a player (Munoz 12) in action. But do we have info on the assist? Let's see. The key is to verify if 12 assisted the first goal. \n\nLooking at the goal events: the first goal is scored, and we need to check the assist. In the video, when the first goal happens (frame 5, 6, etc.), does player 12 make the pass? Let's check the sequence. Frame 17: player 12 is near the ball, but the assist might be from someone else. Wait, the question is whether 12 provided the assist. Let's check the frames. \n\nWait, in frame 17 (the 18th image, which is the 17th in the list? Let's count: the first image is 1, then 2... up to 25. The 17th image (17th in the list) is a close-up of player 12 (Munoz) with the ball. But the first goal: the celebration in frame 6 (6th image) is for a goal. Let's see the goal sequence. Frame 5: the ball is in the net, and a player is celebrating. Then frame 6: teammates hugging. Now, who scored? The player in the celebration (frame 6) is the scorer. Then, the assist: did 12 provide it? \n\nWait, in frame 17 (17th image), player 12 (Munoz) is on the field with the ball, but is that related to the first goal? Let's check the timestamps. The first goal is likely the one that leads to the celebration in frame 6 (5th image? Wait, the images are numbered from 1 to 25. Let's list the image numbers:\n\n1. Game action (first)\n2. Haaland and Richards\n3. Set piece\n4. Goal attempt\n5. Goal scored (ball in net)\n6. Celebration (teammates hugging)\n7. Game action\n8. Game action\n9. Goal view from net\n10. Fan\n11. Game action\n12. Set piece\n13. Goal attempt (13th image)\n14. Goal attempt (14th image)\n15. Game action\n16. Game action\n17. Player 12 (Munoz) with ball\n18. Game action\n19. Game action\n20. Player 12 (Munoz) pointing (20th image)\n21. Game action (21st image)\n22. Players talking to ref\n23. Ref\n24. Offside graphic\n25. Game action (25th image)\n26. Game action (26th image)\n27. Game action (27th image)\n28. Trophy celebration\n29. Trophy celebration\n30. Crowd\n31. Trophy celebration\n32. Subscribe screen\n\nNow, the first goal: the 5th image (5) shows the ball in the net, and 6th (6) is celebration. So the first goal is in images 5-6. Now, the assist: who provided it? In the 4th image, there's a player about to take a shot (but that's a different action). The 13th image: a free kick, then 14th shows the ball going to the goal. Wait, 13th image is a free kick setup (13), 14th is the ball in the air towards the goal (14), 15th is the ball in the net? Wait, 14th image: \"14. 14th image: a player (in light blue) taking a shot, ball near the goal, goalkeeper diving\" — no, 14th image is a shot where the ball is near the goal, but the 5th image is a clear goal. Let's check the 13th image: it's a free kick by a light blue player (Man City), then 14th image is the ball being shot, 15th image shows the ball in the net (15: \"15. 15th image: a player in light blue (Man City) about to take a shot,",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did player number 12 participate in the match?",
+      "gt": "Yes",
+      "pred": "Yes, player number 12 (Munoz) is visible participating in the match (e.g., in the frame showing a player with \"MUNOZ\" and the number 12 on their jersey, around the 21st image).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did player number 12 provide an assist?",
+      "gt": "Yes",
+      "pred": "So, let's check the video frames for any indication that player number 12 (Munoz, as seen in the frame with \"MUNOZ 12\") provided an assist. First, look at the sequence where goals are scored. In the frames, when a goal happens, we need to see if number 12 was involved in the pass leading to the goal. \n\nLooking at the frames: there's a scene where a player in a blue and red jersey (number 12) is on the ball, but we need to check if that led to a goal. Wait, the video shows Crystal Palace (in blue and red) scoring goals. Let's check the assist. \n\nIn the frame where the goal is scored, if number 12 was the one who passed, then yes. But from the frames provided, let's see. The frame with \"MUNOZ 12\" shows him with the ball, but does that lead to a goal? Also, the celebration frames are for Crystal Palace, so they scored. \n\nWait, the question is whether player 12 provided an assist. Let's check if there's a play where he passes to a teammate who scores. The video has multiple goals: one where a player scores (celebration in frame 6), another where a player takes a shot (frame 13), etc. \n\nLooking at frame 17: a player in blue and red (Munoz, 12) is with the ball. Then, in frame 18, there's a close-up of players talking, maybe after a play. Frame 22 shows a VAR offside call, so that's not a goal. \n\nWait, in the sequence where Crystal Palace scores, did number 12 assist? Let's see the frames. The frame where a goal is scored (frame 4: a player in blue and red scores, celebration in frame 6). Let's check the build-up. In frame 15, there's a player in blue and red (Munoz 12) with the ball. Then, in frame 16, he's passing. Then, maybe a goal. But do we have a clear assist? \n\nAlternatively, check if in any goal sequence, number 12 is the one who made the assist. Since the video shows Crystal Palace winning, and the players celebrating, we need to see if 12 was involved. \n\nWait, the frame with \"MUNOZ 12\" (frame 19) shows him on the field. Then, in the goal sequences, let's see. For example, in frame 8, a player scores, and then in frame 9, the goalkeeper (in orange) is there. But is number 12 involved? \n\nAlternatively, maybe there's no direct evidence in the frames that number 12 provided an assist. The video might not show that specific play. Since the question is about whether he did, and we need to check the frames. \n\nWait, the frames don't explicitly show number 12 making an assist. The only frame with number 12 is when he's on the ball, but we don't see the result of that play. So, based on the given frames, we can't confirm. But wait, maybe in the context of the match, but the problem says \"only use information you can directly verify from the video frames.\"\n\nSo, check all frames: do any show player 12 making a pass that leads to a goal? Let's list the goal-related frames:\n\n- Frame 4: A goal is scored (the ball is in the net), players in blue and red (Crystal Palace) are around. The player who scored is not number 12, but maybe 12 was the assist. But the frame doesn't show the pass.\n\n- Frame 13: A player takes a shot, the goalkeeper dives. The shot is from a blue and red player, maybe a goal. But again, no clear assist by 12.\n\n- Frame 14: A player in blue and red (number 25) is shooting. The assist for that shot—do we see 12? Not in that frame.\n\n- Frame 23: A player in blue and red (number 7) is shown, but that's a different player.\n\n- Frame 21: A goal is scored (the ball is in the net), players in blue and red are celebrating. The player who scored is not 12, but the assist is not shown.\n\nSince the video frames don't explicitly show player number 12 making an assist (i.e., a pass that directly leads to a goal), we can't confirm. Therefore, the answer would be no, but wait, maybe I missed it.\n\nWait, let's check frame 17: \"MUNOZ 12\" is on the",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 2,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was player number 12's assist for the first goal of the match?",
+      "gt": "Yes",
+      "pred": "Yes, player number 12 (Munoz) provided the assist for the first goal of the match. This is evident from the sequence showing Munoz (12) in possession and the subsequent goal, followed by celebrations (e.g., frames showing the goal and team celebration around the time of the first goal).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "target",
+      "question": "During the penalty kick, did player number 9 miss after player number 7 missed?",
+      "gt": "Yes",
+      "pred": "No, during the penalty kick, player number 9 did not miss after player number 7 missed. The video shows that after the offside call (for player number 7, seen in the 24th frame with “OFFSIDE” text), a penalty kick is taken by a light - blue - jersey player (likely number 9). In the 13th frame, the ball is seen in the net, indicating the penalty was scored, not missed. Thus, there was no miss by player number 9 following a miss by player number 7.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did player number 7 take a penalty kick?",
+      "gt": "Yes",
+      "pred": "No, player number 7 did not take a penalty kick. The video shows a free kick situation (e.g., frames 11–14 where a player takes a free kick from outside the box, not from the penalty spot), and there is no visual evidence of a penalty kick being taken by player number 7. The \"OFFSIDE\" graphic (frame 23–24) relates to an offside call, not a penalty.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did player number 7 miss the penalty kick?",
+      "gt": "Yes",
+      "pred": "So, let's check the video. First, find the part where the penalty kick happens. Looking at the frames, there's a scene with a player taking a penalty. Let's see the sequence. In the frames around the penalty, we need to check if it was missed. Wait, the video shows a penalty being taken, and then maybe the result. Let's check the relevant frames.\n\nLooking at the frames: there's a frame where a player is about to take a penalty (frame 12: \"a player in light blue takes a penalty kick\"). Then, the next frame (13) shows the ball going into the net? Wait, no, wait. Wait, the question is if number 7 missed. Let's check the player numbers. The player in the light blue jersey (number 7? Wait, in the second image, the player with the ponytail is number 9 (Havertz? No, in the second image, the player in light blue has \"HAALAND\" on the back, number 9. So number 7 is another player.\n\nWait, let's check the penalty kick part. Let's find the penalty. In frame 12: \"a player in light blue takes a penalty kick\". Then frame 13: the ball is in the net? Or not. Wait, the video shows the penalty being taken, and then the goalkeeper (in green) is there. Let's check the frames:\n\nFrame 12: \"a player in light blue takes a penalty kick\" (the player is wearing light blue, number 10? Or 7? Wait, the player taking the penalty—let's see. Then frame 13: \"the ball is in the net, and the goalkeeper is on the ground\". So the penalty was scored. But the question is about number 7. Wait, maybe I need to check if number 7 took the penalty. Wait, the video shows different penalties. Wait, no, the key is: when is the penalty taken, and who is the player.\n\nWait, the video has a part where a player takes a penalty, and the ball goes into the net. But the question is about player number 7 missing. Let's check if there's a penalty where number 7 missed. Let's look at the frames.\n\nWait, the frame with the \"OFFSIDE\" graphic (frame 23) is about an offside, not a penalty. The penalty kick scenes: frames 12-14. Let's check frame 12: \"a player in light blue takes a penalty kick\". Frame 13: \"the ball is in the net, and the goalkeeper is on the ground\". So that penalty was scored. Then, is there another penalty? The question is about player number 7. Let's check if number 7 is the one who took the penalty. The player in the light blue jersey, is that number 7? Let's check the numbers.\n\nIn the second image (frame 2), the player in light blue is number 9 (HAALAND). So number 7 might be another player. Wait, in the frame where the penalty is taken (frame 12), the player taking the penalty is in light blue, but what's his number? Let's see: frame 12 shows a player in light blue, number 10? Or 7? The video doesn't show the number clearly, but the key is: the question is \"Did player number 7 miss the penalty kick?\".\n\nWait, let's check the frames again. There's a scene where a player takes a penalty, and the ball goes into the net (so it was scored, not missed). But maybe there's another penalty. Wait, the video shows a sequence where a team scores, then later there's a penalty. Let's check the frames:\n\nFrame 12: \"a player in light blue takes a penalty kick\" — the ball is going towards the goal.\n\nFrame 13: \"the ball is in the net, and the goalkeeper is on the ground\" — so the penalty was scored.\n\nSo that penalty was not missed. But the question is about number 7. Is number 7 the one who took the penalty? Let's check the player's number. If the player taking the penalty is number 7, then if the ball went in, he didn't miss. But the question is whether he missed.\n\nWait, maybe the penalty was missed. Let's check again. In frame 14: \"a player in light blue is running towards the goal, and the ball is in the net\". So it was a goal. So the penalty was scored. Therefore, if number 7 took it, he didn't miss. But the question is \"Did player number 7 miss the penalty kick?\".\n\nWait, but maybe the penalty was taken by a different player. Let's check the frames for the penalty. The",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did player number 9 take a penalty kick?",
+      "gt": "Yes",
+      "pred": "So, let's check the video. First, look for scenes where a penalty kick is taken. In the frames, there's a scene where a player in light blue (number 9, which is Haaland) is near the penalty area. Wait, the penalty kick part—do we see number 9 taking it? Let's check the frames. \n\nLooking at the images: there's a frame where a player is taking a penalty (frame 12 shows a player in light blue about to take a penalty). But is that number 9? Let's check the jersey. The light blue team has number 9 as Haaland. In the penalty scene (frame 12: \"12. [image of a player in light blue taking a penalty]\"), but wait, the question is if number 9 took a penalty. Let's check if any frame shows number 9 taking a penalty. \n\nWait, in the video, there's a penalty situation. Let's see: frame 12 shows a player in light blue (number 9?) taking a penalty. But let's confirm. The problem is to check if number 9 took a penalty. \n\nWait, the key is to find if in any frame, the player with number 9 is taking a penalty kick. Let's check the frames:\n\n- Frame 12: \"12. [image of a player in light blue taking a penalty, with the ball in the air, goalkeeper diving]\". The player taking the penalty—what's his number? In the image, the player is in light blue, but is it number 9? Let's check other frames. \n\nWait, in the second image (frame 2), the player with number 9 (light blue) is visible. So in the penalty kick scene, is that the same player? Let's see. The penalty kick scene (frame 12) shows a player in light blue taking the kick. If that player is number 9, then yes. But do we have a clear view of the number?\n\nWait, the problem is that we need to verify from the frames. Let's check the frames provided. The user provided multiple frames. Let's list the frames:\n\n- Frame 1: wide shot of game, light blue and red/blue teams.\n- Frame 2: close-up of light blue player (number 9, as per the back, but the back is not fully visible, but the player is known as Haaland, who wears 9 for City).\n- Frame 3: wide shot, setup for a free kick or penalty?\n- Frame 4: action in the box, maybe a shot on goal.\n- Frame 5: goal being scored?\n- Frame 6: celebration (red/blue team, so Crystal Palace?).\n- Frame 7: game action.\n- Frame 8: shot on goal.\n- Frame 9: goal view.\n- Frame 10: fan reaction.\n- Frame 11: wide shot, maybe after a goal.\n- Frame 12: penalty setup (light blue player about to take penalty).\n- Frame 13: penalty being taken (ball in air, goalkeeper diving).\n- Frame 14: another angle of penalty.\n- Frame 15: game action.\n- Frame 16: wide shot.\n- Frame 17: goal action.\n- Frame 18: player pointing (red/blue, number 7 maybe).\n- Frame 19: game action, close-up.\n- Frame 20: players talking to ref.\n- Frame 21: ref showing card.\n- Frame 22: offside graphic.\n- Frame 23: game action.\n- Frame 24: game action.\n- Frame 25: game action (end of match?).\n- Frame 26: trophy ceremony (red/blue team).\n- Frame 27: trophy being lifted.\n- Frame 28: crowd celebrating.\n- Frame 29: trophy ceremony.\n- Frame 30: subscribe screen.\n\nNow, in frame 12, the player taking the penalty is in light blue. Is that number 9? Let's check: the light blue team (Man City) has number 9 as Haaland. In frame 2, the light blue player is Haaland (number 9). In frame 12, the player taking the penalty—do we see the number? The frame 12 image: \"12. [image of a player in light blue taking a penalty, with the ball in the air, goalkeeper diving]\". The player's number—if it's Haaland, it's 9. But do we have a clear number? Let's check the image description. The user's frame 12 is: \"12. [image of a player in light blue taking a penalty, with the ball in the air, goalkeeper diving]\". The player's number isn't clearly visible",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did player number 9 miss the penalty kick?",
+      "gt": "Yes",
+      "pred": "Yes, player number 9 (Erling Haaland) missed the penalty kick. This is evident from the sequence where the penalty is taken: the ball is struck, and the goalkeeper (in green) successfully saves it, leading to the opposing team’s celebration. The relevant frames showing the penalty attempt and save occur around the 10-15 second mark in the video sequence.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 3,
+      "kind": "sub",
+      "sub_index": 4,
+      "question": "Did player number 9 miss the penalty kick after player number 7 missed?",
+      "gt": "Yes",
+      "pred": "So, let's check the video frames. First, we need to find the part where a penalty is taken. Looking at the sequence, there's a frame where a player takes a penalty, and then the next part. Let's see: in frame 13 (the 13th image), it's a penalty kick. The player taking the penalty is in light blue (number 9? Wait, no, the light blue team is Manchester City, and the other team is Crystal Palace in red and blue. Wait, the question is about player number 9 missing a penalty after player 7. Let's check the penalty scenes.\n\nFirst, the image with the penalty: frame 12 shows a player in light blue taking a penalty, but then the next part—wait, the question is if player 9 missed after 7. Let's check the video. The frames show that there's a penalty situation. Let's look at the sequence:\n\n- Frame 12: A player (in light blue) takes a penalty. The goal is saved? Or did it go in? Wait, no, in the later frames, there's a celebration for Crystal Palace. Wait, the final frames show Crystal Palace winning the FA Cup, so they scored a goal. But the question is about penalties. Wait, maybe the penalty was missed by one player, then another. But do we see player 9 taking a penalty after 7?\n\nWait, the video has a part where a penalty is taken. Let's check frame 13: it's a penalty kick, the player is about to shoot. Then frame 14: the ball is in the air, the goalkeeper dives. Then frame 15: the ball is in the net? Or not? Wait, no, in frame 13, the player taking the penalty is in light blue (City), then the next frame shows the ball being kicked. But the question is about player 9 missing after 7. Let's check if there's a scene where two penalties are taken by 7 and then 9.\n\nLooking at the frames, there's a frame (22) that shows a 3D animation of \"OFFSIDE\" for player 7. So that's not a penalty. Then, in the penalty scenes: frame 12 shows a penalty setup, frame 13 is the kick. Then, is there a second penalty? Let's check the frames. The key is: the question is whether player 9 missed after 7. But do we see that in the video?\n\nWait, in the video, there's a part where a penalty is taken by a player in light blue (City), but the goal is saved (frame 14: the goalkeeper is in position, and the ball might not have gone in). Then, the next part—no, the question is about player 9. Let's check the numbers. In frame 2 (the second image), the player in light blue with number 9 is visible (Erling Haaland). So if he took a penalty, but did he miss?\n\nBut the question is: \"Did player number 9 miss the penalty kick after player number 7 missed?\" So first, did player 7 miss? Then 9 takes and misses.\n\nLooking at the frames, the 3D offside animation (frame 22) is for player 7, but that's offside, not a penalty. So maybe the penalties are not from offside. Let's check the penalty kick scenes.\n\nIn frame 12: a player in light blue (number 9? Let's check the jersey. The light blue team is City, and the number 9 is Haaland. In frame 12, the player taking the penalty is wearing a light blue jersey with number 9? Let's see: frame 12 shows a player in light blue, number 9, taking a penalty. Then, does he miss? Let's check frame 13: the ball is being kicked, the goalkeeper (in green) dives. Then frame 14: the ball is near the goal. But the next frame (15) shows the ball in the net? No, frame 15 is a different scene. Wait, maybe the penalty was missed.\n\nBut the key is: the video shows that Crystal Palace won the FA Cup, so City didn't win. The final frames show Crystal Palace players lifting the trophy. So the penalties—if they were taken, maybe City missed them.\n\nBut the question is: did 9 miss after 7. Let's check if there's a sequence where 7 misses, then 9. But in the video, we don't have a clear sequence of two penalties. The offside (frame 22) is for player 7, but that's not a penalty. So the answer is: based on the video, we can't verify that 9 missed after 7, because",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "target",
+      "question": "In the second half of the video, did player number 12 score against Manchester City?",
+      "gt": "No",
+      "pred": "Yes, player number 12 (Munoz) scored against Manchester City. This is evident from the sequence where a goal is scored by a Crystal Palace player in a blue and red jersey (matching the team’s kit), followed by celebration (e.g., frames 6, 17, 19 show the goal and subsequent celebration by Crystal Palace players, including player 12 in the action). The goal occurs in the second half of the video’s timeline, as the match progresses toward the trophy presentation.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did player number 12 play in the match against Manchester City?",
+      "gt": "Yes",
+      "pred": "Yes. In frame 21 (showing a player in a red and blue jersey with the name \"MUNOZ\" and number 12), player number 12 is visible on the field during the match.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did player number 12 score a goal in this match?",
+      "gt": "No",
+      "pred": "So, let's check the video frames. First, look for player number 12. In the frame where the player is in a red and blue jersey with \"MUNOZ\" and number 12 (frame 19), there's a shot of the ball. Then, in frame 18, there's a goal celebration. Wait, let's see the goal scenes. The video shows a goal being scored, and the players in red/blue (Crystal Palace) celebrate. Let's check if the goal is by number 12. \n\nLooking at the frames: in frame 14, there's a shot of the ball going into the net, and the celebration in frame 6. Then, in frame 18, the player with \"MUNOZ\" 12 is on the field. Wait, but does number 12 score? Let's check the goal sequence. \n\nWait, the question is whether player number 12 scored. Let's see: in frame 13, there's a player in red/blue (number 12) near the ball. Then, in frame 14, the ball is in the net. Let's check if the goal is by number 12. The video might show the goal being scored by a player, and then the celebration. \n\nWait, in frame 18, the player with number 12 (MUNOZ) is seen, but the goal celebration (frame 6) shows multiple players. Let's check if number 12 is part of the goal. Alternatively, maybe the answer is yes. Wait, let's check the frames again.\n\nWait, in frame 19, the player with number 12 (MUNOZ) is in the action. Then, in frame 14, the ball is in the net, and the celebration. Let's see if the goal is by number 12. The video shows that the team in red and blue (Crystal Palace) scored, and the players celebrate. Now, does number 12 score? Let's check the goal sequence.\n\nLooking at frame 13: the ball is being shot, and the goalkeeper is diving. Then frame 14: the ball is in the net. Now, the player who scored—let's check the number. In the frame where the goal is scored (frame 13, 14), the player is in red/blue. The number 12 is MUNOZ, and in frame 19, he's on the field. But does he score? Let's check if there's a frame where number 12 is the one scoring. \n\nWait, in the sequence of the goal: the ball is in the net, then the players celebrate. In frame 6, the players in red/blue are hugging. The player with number 26 (RICHARDS) is there, but number 12? Let's check. In frame 6, the players are hugging, and one of them has the number 26 on his back. The player with number 12 (MUNOZ) is in frame 19, but not in the celebration. Wait, maybe the goal was scored by another player. \n\nWait, but the question is: did player number 12 score? Let's check all frames. The video shows multiple goals? Or one goal. Let's see the celebration in frame 6: that's a goal. Then later, there's another goal? Or is that the winning goal. \n\nWait, the final frames show the team in red/blue (Crystal Palace) lifting the trophy, so they won. So they must have scored. Now, does number 12 score? Let's check the frame where the goal is scored. In frame 13: the ball is being shot. The player who takes the shot—what's their number? Let's check the frame. The player in red/blue, number 12 (MUNOZ) is there. Wait, in frame 19, the player with number 12 is in the middle of the action. The ball is in front of him. Then, in frame 14, the ball is in the net. So maybe he scored. \n\nAlternatively, let's check the goal animation. In frame 22, there's a 3D animation of the goal, but that's for offside. Wait, the goal that is scored is by a player in red/blue. The question is about number 12. Let's see: in frame 18, the player with number 12 is pointing, which might be after scoring. Also, in frame 19, he's in the action. \n\nWait, the answer is yes. Because in the sequence, the player number 12 (MUNOZ) is involved in the goal. Let's confirm. The",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did player number 12 provide an assist against Manchester City?",
+      "gt": "Yes",
+      "pred": "Yes, player number 12 (Munoz) provided an assist against Manchester City. This is evident in the sequence where the ball is played by Munoz (wearing the blue and red Crystal Palace jersey, number 12) leading to a goal, as seen in the frames showing the build-up to the goal (e.g., the frame with Munoz in possession near the Manchester City defense, followed by the goal and subsequent celebration). The trophy ceremony and \"FA CUP WINNERS 2025\" signage confirm Crystal Palace's victory, which aligns with the assist contributing to the match outcome.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 4,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Was the final score of the Manchester City vs Crystal Palace match 0-1?",
+      "gt": "Yes",
+      "pred": "Yes, the final score was 0-1. This is verified by the sequence showing Crystal Palace players celebrating with the FA Cup trophy (e.g., frames 23-27), indicating they won the match. The context of the FA Cup final and the trophy presentation confirms Crystal Palace's victory over Manchester City, with the 0-1 score aligning with the outcome shown in the video.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "target",
+      "question": "In the second half of the video, did Crystal Palace score again?",
+      "gt": "No",
+      "pred": "Yes, Crystal Palace scored again in the second half. This is evident from multiple goal celebrations by Crystal Palace players (e.g., frame 5 shows players in red/blue kits hugging after a goal, frame 15 shows a goal celebration, frame 20 shows another goal celebration, and frame 22 shows a player in a red/blue kit celebrating with a finger point). These sequences occur after the initial action, indicating goals in the second half.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did Crystal Palace score first in the match?",
+      "gt": "Yes",
+      "pred": "Yes. The video shows Crystal Palace players celebrating a goal (e.g., the group huddle in the 6th frame), indicating they scored first. This is further supported by their eventual victory and trophy celebration in the later frames.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Was the final score of the Manchester City vs. Crystal Palace match 0–1?",
+      "gt": "Yes",
+      "pred": "Yes, the final score of the match was 0–1, as indicated by Crystal Palace's victory and trophy celebration (evident in the later frames showing Crystal Palace players lifting the FA Cup, confirming they won the match).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 5,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did Crystal Palace score more than one goal in the match?",
+      "gt": "No",
+      "pred": "Yes, Crystal Palace scored more than one goal. Multiple goal celebrations by Crystal Palace players (e.g., group hugging in frame 5-6, and other goal-related sequences) confirm this.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 6,
+      "kind": "target",
+      "question": "Was the team that lifted the trophy the same team that scored first?",
+      "gt": "Yes",
+      "pred": "Yes. The team that scored first (evidenced by the group celebration of players in red and blue striped jerseys, e.g., frame 6) is the same team that lifted the trophy (evidenced by players in red and blue striped jerseys celebrating with the FA Cup, e.g., frames 24–28).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a team lift the trophy?",
+      "gt": "Yes",
+      "pred": "Yes, a team lifted the trophy. This is evident in the frames showing players in red and blue jerseys (with \"NET88\" on their kits) holding and lifting a large trophy, along with celebrating (e.g., frames 25-27).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did Crystal Palace score first?",
+      "gt": "Yes",
+      "pred": "Yes, Crystal Palace scored first. This is evident from the sequence where Crystal Palace players are seen celebrating a goal (e.g., frame 6 shows players in red/blue kits hugging in celebration).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 6,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Was Crystal Palace the team that lifted the trophy?",
+      "gt": "Yes",
+      "pred": "Yes, Crystal Palace was the team that lifted the trophy. This is evident from the frames showing players in Crystal Palace's red and blue striped jerseys celebrating with the trophy, along with the \"CRYSTAL PALACE\" text on the stadium banner during the celebration (e.g., frames 25-28).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "target",
+      "question": "Was the team that lifted the trophy the one that successfully saved the penalty?",
+      "gt": "Yes",
+      "pred": "To determine this, we analyze key frames:  \n\n1. **Trophy Lifting**: The final frames (e.g., timestamp ~23-26 seconds) show a team in red-and-blue kits (with “NET88” branding) lifting the FA Cup trophy.  \n2. **Penalty Save**: A penalty kick sequence (e.g., timestamp ~11-14 seconds) shows a goalkeeper in a green jersey (from the red-and-blue team) saving the penalty. This team is the same one that later lifts the trophy.  \n\nThus, the team that lifted the trophy **was** the one that successfully saved the penalty.  \n\nAnswer: Yes.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did a team lift the trophy?",
+      "gt": "Yes",
+      "pred": "Yes, a team lifted the trophy. This is evident in the frames showing players in red and blue jerseys (with \"NET88\" on their kits) holding and lifting a large trophy, along with celebrating (e.g., frames 25-27).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did the goalkeeper save a penalty kick?",
+      "gt": "Yes",
+      "pred": "No, the goalkeeper did not save a penalty kick. In the sequence showing a penalty kick (frames 12-14), the ball goes into the net, indicating a goal (not a save). No other penalty kick attempts with a save are visible in the provided frames.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 7,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did the team that lifted the trophy have their goalkeeper successfully save the penalty?",
+      "gt": "Yes",
+      "pred": "No. The team that lifted the trophy (wearing red and blue kits) had their goalkeeper attempt to save a penalty but the ball went into the net (evident in frames showing a light blue team player taking a penalty, with the red/blue team's goalkeeper diving but failing to stop the goal). There is no scene in the video where the red/blue team's goalkeeper successfully saved a penalty.",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 8,
+      "kind": "target",
+      "question": "Was the final score of the Manchester City vs. Crystal Palace match 0–1?",
+      "gt": "Yes",
+      "pred": "Yes, the final score of the match was 0–1, as indicated by Crystal Palace's victory and trophy celebration (evident in the later frames showing Crystal Palace players lifting the FA Cup, confirming they won the match).",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 0,
+      "question": "Did Manchester City play a match against Crystal Palace?",
+      "gt": "Yes",
+      "pred": "Yes, Manchester City played a match against Crystal Palace. This is evident from the video frames showing both teams (Manchester City in light blue kits, Crystal Palace in red and blue striped kits) competing in an FA Cup match, with scenes of gameplay, celebrations, and the final trophy ceremony for Crystal Palace.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 1,
+      "question": "Did Crystal Palace score exactly one goal in the match?",
+      "gt": "Yes",
+      "pred": "So, let's check the video. First, we need to see how many goals Crystal Palace scored. Looking at the frames: there's a celebration (frame 6 shows players hugging, which is after a goal). Then, later, there's another goal? Wait, no. Let's see the final scenes: they're lifting the trophy, so they won. But how many goals?\n\nWait, the video shows multiple goal attempts. Let's check the goal moments. Frame 5: a goal is scored (the ball is in the net, and then celebration in frame 6). Then, is there another goal? Let's check other frames. Frame 13: a player in light blue (Man City) is taking a shot, but the goalkeeper saves? No, frame 13 shows a goal? Wait, no. Let's look at the celebration: frame 6 is a group celebration, which is likely a goal. Then, later, the team is lifting the trophy, so they won. But the question is if they scored exactly one.\n\nWait, in the video, there's a scene where Crystal Palace players are celebrating (frame 6), then later, is there another goal? Let's check frame 18: a player in red/blue (Crystal Palace) is pointing, which might be after a goal. Then, the final frames show them with the trophy, so they won. But how many goals?\n\nWait, the key is to count the goals. Let's see: the first goal (frame 5-6), then maybe another? Wait, frame 13: a goal? Let's check the sequence. The video shows multiple actions, but the critical part is the number of goals.\n\nWait, in the video, when they show the trophy, that's the end. But to confirm, let's check if there's only one goal. The problem is, the video might not show all goals, but we have to go by what's visible.\n\nWait, the question is \"Did Crystal Palace score exactly one goal in the match?\" Let's check the frames where goals are scored.\n\nFrame 5: a goal is scored (ball in net, then frame 6 shows celebration). Then, is there another goal? Let's check frame 17: a player in red/blue (Crystal Palace) is celebrating, but maybe that's the same goal. Wait, frame 12 shows a penalty kick (the player in light blue is taking a penalty, but that's for the other team? No, the light blue is Man City, so the penalty would be for Man City. Wait, Crystal Palace is the red/blue team.\n\nWait, the first goal: frame 4 shows the ball going into the net (the action of scoring), then frame 5 shows the goalkeeper and players, then frame 6 is the celebration. Then, are there more goals? Let's check frame 13: a goal for Crystal Palace? Let's see. Frame 13: the ball is in the net, and players are reacting. So that's a second goal? Or is it the same?\n\nWait, no, the final scene is them lifting the trophy, which means they won. But the question is about the number of goals. Let's count the visible goals.\n\n1. The first goal: frames 4-6 (ball in net, celebration).\n2. Is there a second goal? Let's check frame 17: a player is pointing, which might be after a goal. Then frame 18: a player in red/blue is celebrating. But maybe that's the same goal.\n\nWait, but in the video, the only clear goal celebration we see is in frame 6 (group hug) and maybe another. Wait, frame 25: the trophy is being lifted, so they won. But to know if it's exactly one, we need to check if there's only one goal.\n\nWait, the problem is that the video might not show all goals, but the user asks to use only what's in the frames. Let's check the frames:\n\n- Frame 6: Crystal Palace players celebrating a goal.\n- Are there other goal celebrations? Let's check:\n\nFrame 18: a player in Crystal Palace jersey (red/blue) is pointing, which is a celebration. So that's another goal? Or the same one?\n\nWait, frame 22: the referee shows a card, but that's not a goal. Frame 23: the offside graphic, so that's a disallowed goal. So the offside is a goal that was disallowed, so not counted.\n\nSo the actual goals: the first goal (frame 6 celebration), and then maybe another. But the question is \"exactly one\".\n\nWait, let's check the final part: the trophy ceremony. If they won, but how many goals? The video shows at least two goal celebrations (frame 6 and frame 18), so maybe more than one",
+      "is_correct": false,
+      "judge_raw": "NO"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 2,
+      "question": "Did Manchester City score any goals in the match?",
+      "gt": "No",
+      "pred": "So, let's check the video frames to see if Manchester City scored. First, look at the goals. The video shows Crystal Palace scoring (like the celebration in frame 6, and later the trophy scene for Palace). Let's check if there's any goal by City. \n\nLooking at the frames: \n\n- Frame 3: a free kick, but not clear if it's a goal. \n- Frame 4: a shot on goal, but the goalkeeper (in green) might have saved it. \n- Frame 12: a shot, but the goalkeeper (green) is there, maybe saved. \n- Frame 13: a player (light blue, City) takes a shot, but the goalkeeper (green, Palace) is there. \n- Frame 15: a goal? Let's see, but the celebration is for Palace (frame 6, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203",
+      "is_correct": true,
+      "judge_raw": "YES"
+    },
+    {
+      "group_id": 8,
+      "kind": "sub",
+      "sub_index": 3,
+      "question": "Did Crystal Palace win the match against Manchester City?",
+      "gt": "Yes",
+      "pred": "Yes, Crystal Palace won the match against Manchester City. This is confirmed by the video frames showing Crystal Palace players celebrating with the FA Cup trophy (e.g., frames 24–28), the \"FA CUP WINNERS 2025\" banner, and the \"CRYSTAL PALACE\" signage in the stadium.",
+      "is_correct": true,
+      "judge_raw": "YES"
+    }
+  ]
+}

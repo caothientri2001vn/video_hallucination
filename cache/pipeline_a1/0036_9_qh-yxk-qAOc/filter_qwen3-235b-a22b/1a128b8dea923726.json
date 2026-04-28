@@ -1,0 +1,209 @@
+{
+  "question": "Does the player with black shirt, white stripes number 12 score a header?",
+  "top_k": 15,
+  "indices": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "events": [
+    {
+      "event_type": "game",
+      "description": "the black-and-white-shirt player (Cristiano Ronaldo) jumps high in the air to meet the cross",
+      "participants": [
+        "black-and-white-shirt player",
+        "blue-shirt player"
+      ],
+      "actor": "black-and-white-shirt player",
+      "object": "yellow ball",
+      "on_screen_text": [
+        {
+          "text": "C. RONALDO",
+          "location": "lower_third"
+        },
+        {
+          "text": "TARAFTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match Highlights",
+      "continuation_hint": "complete",
+      "event_index": 5,
+      "start_time": "00:10",
+      "end_time": "00:12",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match Highlights"
+    },
+    {
+      "event_type": "game",
+      "description": "the black-and-white-shirt player (Cristiano Ronaldo) heads the yellow ball into the top corner of the net",
+      "participants": [
+        "black-and-white-shirt player",
+        "blue-shirt player",
+        "green-shirt goalkeeper"
+      ],
+      "actor": "black-and-white-shirt player",
+      "object": "yellow ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "TARAFTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Football Match Highlights",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:12",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match Highlights"
+    },
+    {
+      "event_type": "header",
+      "description": "the black-and-white-jersey player (Cristiano Ronaldo) headers the yellow ball into the goal",
+      "participants": [
+        "black-and-white-jersey player",
+        "blue-jersey player"
+      ],
+      "actor": "black-and-white-jersey player",
+      "object": "yellow ball",
+      "on_screen_text": [
+        {
+          "text": "TARAPTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 7,
+      "start_time": "00:15",
+      "end_time": "00:16",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match Highlights"
+    },
+    {
+      "event_type": "goal",
+      "description": "the yellow ball enters the goal net",
+      "participants": [
+        "green-jersey goalkeeper",
+        "blue-jersey player"
+      ],
+      "object": "yellow ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "TARAPTAR KANALI",
+          "location": "logo"
+        },
+        {
+          "text": "BANCO BPM",
+          "location": "banner"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "middle",
+      "event_index": 8,
+      "start_time": "00:16",
+      "end_time": "00:18",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match Highlights"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the black-and-white-jersey player (Cristiano Ronaldo) runs toward the camera with his arms out",
+      "participants": [
+        "black-and-white-jersey player"
+      ],
+      "actor": "black-and-white-jersey player",
+      "on_screen_text": [
+        {
+          "text": "TARAPTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "middle",
+      "event_index": 9,
+      "start_time": "00:18",
+      "end_time": "00:20",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match Highlights"
+    },
+    {
+      "event_type": "high_five",
+      "description": "the black-and-white-jersey player (Cristiano Ronaldo) high-fives another black-and-white-jersey player (Adrien Rabiot)",
+      "participants": [
+        "black-and-white-jersey player",
+        "black-and-white-jersey player"
+      ],
+      "actor": "black-and-white-jersey player",
+      "on_screen_text": [
+        {
+          "text": "TARAPTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "middle",
+      "event_index": 10,
+      "start_time": "00:20",
+      "end_time": "00:21",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match Highlights"
+    },
+    {
+      "event_type": "celebration",
+      "description": "the black-and-white-jersey player (Cristiano Ronaldo) performs his signature jump celebration",
+      "participants": [
+        "black-and-white-jersey player"
+      ],
+      "actor": "black-and-white-jersey player",
+      "on_screen_text": [
+        {
+          "text": "TARAPTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 11,
+      "start_time": "00:21",
+      "end_time": "00:23",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match Highlights"
+    }
+  ]
+}

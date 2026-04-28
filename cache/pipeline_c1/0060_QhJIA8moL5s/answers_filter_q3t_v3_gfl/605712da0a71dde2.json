@@ -1,0 +1,93 @@
+{
+  "question": "Did the person who revealed the jelly later reveal the guitar doll?",
+  "pred": "The video shows a game where two players take turns revealing items from numbered boxes.\n\n1.  **Reveal the jelly:** At approximately 01:00, the **blonde woman** (left player) opens box 8 and reveals a white bowl containing a yellow gelatinous object (jelly).\n2.  **Reveal the guitar doll:** At approximately 03:45, the **man in the suit** (right player) opens box 3 and reveals a yellow toy box containing a \"Rockin' Jesse\" doll holding a red guitar.\n\nSince the jelly was revealed by the blonde woman and the guitar doll was revealed by the man in the suit, they are different people.\n\nEvidence: frames at ~01:00 show the blonde woman revealing the jelly from box 8, while frames at ~03:45 show the man in the suit revealing the guitar doll from box 3.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "open_box",
+      "description": "The woman opens the leftmost lower box (labeled 8) on her side of the table and retrieves a bowl.",
+      "participants": [
+        "blonde-woman",
+        "man-in-suit"
+      ],
+      "actor": "blonde-woman",
+      "object": "beige box",
+      "cover": "beige box",
+      "hidden": "white bowl with colorful object",
+      "segment_boundary": "middle",
+      "segment_label": "Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 30,
+      "start_time": "01:00",
+      "end_time": "01:04",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "place",
+      "description": "The woman places the white bowl containing a yellow gelatinous object with red and yellow patterns on the table.",
+      "participants": [
+        "blonde-woman"
+      ],
+      "actor": "blonde-woman",
+      "object": "white bowl",
+      "segment_boundary": "middle",
+      "segment_label": "Box Game",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 31,
+      "start_time": "01:04",
+      "end_time": "01:08",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "hold_object",
+      "description": "man holds a yellow 'Full House' Jesse toy box",
+      "participants": [
+        "dark-suit man",
+        "blonde-woman"
+      ],
+      "actor": "dark-suit man",
+      "object": "yellow 'Full House' Jesse toy box",
+      "segment_boundary": "middle",
+      "segment_label": "Game with numbered screens",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 105,
+      "start_time": "03:45",
+      "end_time": "04:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    },
+    {
+      "event_type": "kiss_object",
+      "description": "man kisses the yellow 'Full House' Jesse toy box",
+      "participants": [
+        "dark-suit man",
+        "blonde-woman"
+      ],
+      "actor": "dark-suit man",
+      "object": "yellow 'Full House' Jesse toy box",
+      "segment_boundary": "middle",
+      "segment_label": "Game with numbered screens",
+      "continuation_hint": "complete",
+      "event_index": 106,
+      "start_time": "03:52",
+      "end_time": "03:56",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Numbered Boxes Game"
+    }
+  ]
+}

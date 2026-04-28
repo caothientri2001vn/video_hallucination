@@ -1,0 +1,186 @@
+{
+  "video_name": "0036_13_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 9.433333333333334,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "gemini-3-flash-preview",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 9.433333333333334,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:09",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:01",
+          "event_type": "game",
+          "description": "The white-jersey player (number 28) dribbles the ball toward the penalty area while being pursued by a maroon-jersey defender.",
+          "participants": [
+            "white-jersey player",
+            "maroon-jersey defender"
+          ],
+          "actor": "white-jersey player",
+          "object": "white ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:01",
+          "local_end": "00:02",
+          "event_type": "game",
+          "description": "The white-jersey player (number 28) passes the ball to a teammate on the right side of the penalty area.",
+          "participants": [
+            "white-jersey player",
+            "white-jersey teammate"
+          ],
+          "actor": "white-jersey player",
+          "object": "white ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:03",
+          "event_type": "game",
+          "description": "The white-jersey teammate (number 10) receives the pass and prepares to shoot as maroon-jersey defenders close in.",
+          "participants": [
+            "white-jersey teammate",
+            "maroon-jersey defenders"
+          ],
+          "actor": "white-jersey teammate",
+          "object": "white ball",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:03",
+          "local_end": "00:04",
+          "event_type": "game",
+          "description": "The white-jersey player (number 10) takes a powerful shot with his right foot toward the top left corner of the goal.",
+          "participants": [
+            "white-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "object": "white ball",
+          "on_screen_text": [
+            {
+              "text": "LACAZETTE",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:04",
+          "local_end": "00:05",
+          "event_type": "game",
+          "description": "The green-jersey goalkeeper dives to his right but cannot reach the ball as it flies into the top corner of the net.",
+          "participants": [
+            "green-jersey goalkeeper"
+          ],
+          "actor": "green-jersey goalkeeper",
+          "object": "white ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "LACAZETTE",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:06",
+          "event_type": "transition",
+          "description": "The camera angle cuts to a wide shot showing the ball hitting the back of the net and the players' reactions.",
+          "participants": [
+            "white-jersey players",
+            "maroon-jersey players",
+            "green-jersey goalkeeper"
+          ],
+          "on_screen_text": [
+            {
+              "text": "LACAZETTE",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:06",
+          "local_end": "00:07",
+          "event_type": "celebration",
+          "description": "The white-jersey player (number 10) begins to celebrate his goal while maroon-jersey defenders look dejected.",
+          "participants": [
+            "white-jersey player",
+            "maroon-jersey defenders"
+          ],
+          "actor": "white-jersey player",
+          "on_screen_text": [
+            {
+              "text": "LACAZETTE",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:09",
+          "event_type": "look",
+          "description": "A close-up shot shows the white-jersey player (Lacazette) looking off-camera with a serious expression after scoring.",
+          "participants": [
+            "white-jersey player"
+          ],
+          "actor": "white-jersey player",
+          "on_screen_text": [
+            {
+              "text": "LACAZETTE",
+              "location": "lower_third"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "continues_after_chunk"
+        },
+        {
+          "local_start": "00:09",
+          "local_end": "00:09",
+          "event_type": "speak",
+          "description": "A teammate in a white jersey approaches Lacazette and says something to him during the celebration.",
+          "participants": [
+            "white-jersey player",
+            "white-jersey teammate"
+          ],
+          "actor": "white-jersey teammate",
+          "on_screen_text": [],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

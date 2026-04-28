@@ -1,0 +1,193 @@
+{
+  "question": "Was the waiter not wearing gloves?",
+  "pred": "The video features a bellhop (referred to as a \"waiter\" in the question) in a maroon/brown uniform. In the present-day scenes (e.g., at 02:01 and 02:15), he is clearly shown with bare hands while manipulating a keycard and a door handle. However, the video also contains a black-and-white flashback (event index 59, start time 02:00) and an earlier scene (event index 6, start time 00:15) where a bellhop is explicitly described and shown wearing white gloves while pushing a luggage cart. Since the question asks if he was *not* wearing gloves, and there are clear instances where he is not wearing them, the answer is Yes.\n\nEvidence: Frames at 02:15 show the maroon-jacket bellhop's bare hands as he stands by the door of room 2410.\n\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "walk",
+      "description": "a bellhop in a brown uniform and white gloves pushes a gold luggage cart through a hotel hallway",
+      "participants": [
+        "brown-uniform bellhop"
+      ],
+      "actor": "brown-uniform bellhop",
+      "object": "gold luggage cart",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Hotel Hallway Scene",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 6,
+      "start_time": "00:15",
+      "end_time": "00:18",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 49,
+      "round_index": 1,
+      "segment_label_resolved": "Hotel Arrival"
+    },
+    {
+      "event_type": "walk",
+      "description": "the black-suit man walks down the hallway toward two other men",
+      "participants": [
+        "black-suit man",
+        "dark-suit man",
+        "brown-uniform man"
+      ],
+      "actor": "black-suit man",
+      "object": "hallway",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Hallway Confrontation",
+      "continuation_hint": "complete",
+      "event_index": 54,
+      "start_time": "01:50",
+      "end_time": "01:53",
+      "sub_events": [],
+      "subtype_order": 16,
+      "subtype_total": 49,
+      "round_index": 2,
+      "segment_label_resolved": "hotel hallway"
+    },
+    {
+      "event_type": "gesture",
+      "description": "the dark-suit man gestures with his hand toward the brown-uniform man",
+      "participants": [
+        "dark-suit man",
+        "brown-uniform man"
+      ],
+      "actor": "dark-suit man",
+      "object": "hand",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Hallway Confrontation",
+      "continuation_hint": "complete",
+      "event_index": 55,
+      "start_time": "01:50",
+      "end_time": "01:53",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 25,
+      "round_index": 2,
+      "segment_label_resolved": "hotel hallway"
+    },
+    {
+      "event_type": "gesture",
+      "description": "the brown-uniform man manipulates the door lock with a card",
+      "participants": [
+        "brown-uniform man"
+      ],
+      "actor": "brown-uniform man",
+      "object": "key card",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Hallway Confrontation",
+      "continuation_hint": "complete",
+      "event_index": 57,
+      "start_time": "01:56",
+      "end_time": "01:58",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 25,
+      "round_index": 2,
+      "segment_label_resolved": "hotel hallway"
+    },
+    {
+      "event_type": "transition",
+      "description": "the scene transitions to a black and white flashback of a bellhop with a luggage cart",
+      "participants": [
+        "bellhop"
+      ],
+      "actor": "bellhop",
+      "object": "luggage cart",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Flashback",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 59,
+      "start_time": "02:00",
+      "end_time": "02:00",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "hotel hallway"
+    },
+    {
+      "event_type": "unlock",
+      "description": "the maroon-jacket bellhop slides a white keycard into the door lock of room 2410",
+      "participants": [
+        "maroon-jacket bellhop"
+      ],
+      "actor": "maroon-jacket bellhop",
+      "object": "white keycard",
+      "on_screen_text": [
+        {
+          "text": "2410",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "hotel hallway confrontation",
+      "continuation_hint": "complete",
+      "event_index": 61,
+      "start_time": "02:01",
+      "end_time": "02:03",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 2,
+      "segment_label_resolved": "hotel hallway"
+    },
+    {
+      "event_type": "look",
+      "description": "the maroon-jacket bellhop looks back over his shoulder at the black-suit man",
+      "participants": [
+        "maroon-jacket bellhop",
+        "black-suit man"
+      ],
+      "actor": "maroon-jacket bellhop",
+      "on_screen_text": [
+        {
+          "text": "2410",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "hotel hallway confrontation",
+      "continuation_hint": "complete",
+      "event_index": 64,
+      "start_time": "02:05",
+      "end_time": "02:07",
+      "sub_events": [],
+      "subtype_order": 15,
+      "subtype_total": 54,
+      "round_index": 2,
+      "segment_label_resolved": "hotel hallway"
+    },
+    {
+      "event_type": "speak",
+      "description": "the maroon-jacket bellhop speaks while standing by the door",
+      "participants": [
+        "maroon-jacket bellhop"
+      ],
+      "actor": "maroon-jacket bellhop",
+      "on_screen_text": [
+        {
+          "text": "2410",
+          "location": "other"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "hotel hallway confrontation",
+      "continuation_hint": "complete",
+      "event_index": 66,
+      "start_time": "02:10",
+      "end_time": "02:13",
+      "sub_events": [],
+      "subtype_order": 10,
+      "subtype_total": 67,
+      "round_index": 2,
+      "segment_label_resolved": "hotel hallway"
+    }
+  ]
+}

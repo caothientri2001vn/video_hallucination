@@ -1,0 +1,102 @@
+{
+  "question": "Did the player wearing white number 4 shoot toward the right side?",
+  "top_k": 15,
+  "indices": [
+    108,
+    109,
+    110,
+    117
+  ],
+  "events": [
+    {
+      "event_type": "kick",
+      "description": "Argentina player in blue and white striped jersey kicks the soccer ball toward the goal",
+      "participants": [
+        "blue and white striped jersey player",
+        "yellow jersey goalkeeper"
+      ],
+      "actor": "blue and white striped jersey player",
+      "object": "white soccer ball",
+      "outcome": "in",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 108,
+      "start_time": "04:30",
+      "end_time": "04:33",
+      "sub_events": [],
+      "subtype_order": 7,
+      "subtype_total": 8,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "dive",
+      "description": "Goalkeeper in yellow jersey dives to the right but fails to stop the ball",
+      "participants": [
+        "yellow jersey goalkeeper",
+        "blue and white striped jersey player"
+      ],
+      "actor": "yellow jersey goalkeeper",
+      "object": "white soccer ball",
+      "outcome": "miss",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 109,
+      "start_time": "04:32",
+      "end_time": "04:35",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 6,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "score",
+      "description": "The soccer ball enters the goal net past the diving goalkeeper",
+      "participants": [
+        "yellow jersey goalkeeper",
+        "white soccer ball"
+      ],
+      "actor": "white soccer ball",
+      "object": "white soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [],
+      "segment_boundary": "middle",
+      "segment_label": "Penalty Shootout",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 110,
+      "start_time": "04:33",
+      "end_time": "04:36",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    },
+    {
+      "event_type": "group_celebration",
+      "description": "Multiple Argentina players including those wearing jerseys #8 and #4 gather and raise hands together in celebration",
+      "participants": [
+        "#8 jersey player",
+        "#4 jersey player",
+        "other teammates"
+      ],
+      "actor": "multiple players",
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match Celebration",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 117,
+      "start_time": "04:48",
+      "end_time": "04:50",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Penalty Kick"
+    }
+  ]
+}

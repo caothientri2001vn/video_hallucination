@@ -1,0 +1,74 @@
+{
+  "question": "Did the smallest coin get painted exactly in the middle of the sequence?",
+  "pred": "The video shows five coins being painted with different colored liquids in a specific sequence. To determine if the smallest coin was painted exactly in the middle (3rd) of the sequence, we identify the coins and the order of actions:\n\n1.  **Coin Identification**: There are five coins. Based on the frames, the coin in the middle-left position (labeled '1' and dated 2019) is visibly smaller than the others (which are labeled '2' or '5').\n2.  **Sequence of Painting**:\n    *   **1st**: Top-left coin is painted with black liquid (frames 1-15).\n    *   **2nd**: Top-right coin is painted with yellow liquid (frames 16-25).\n    *   **3rd**: Middle-left coin (the smallest coin) is painted with pink/purple liquid (frames 26-35).\n    *   **4th**: Middle-right coin is painted with blue liquid (frames 36-45).\n    *   **5th**: Bottom-left coin is painted with green liquid (frames 46-55).\n\nThe smallest coin (middle-left) was the 3rd coin painted in a sequence of 5, which is exactly in the middle.\n\nEvidence: Frames 26-35 show the smallest coin (middle-left, labeled '1') being painted with pink liquid, following the top-left and top-right coins.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "liquid_application",
+      "description": "A yellow dropper applies yellow liquid to the top-right silver coin",
+      "participants": [
+        "yellow dropper"
+      ],
+      "actor": "yellow dropper",
+      "object": "dropper",
+      "object_before": "silver coin",
+      "object_after": "yellow liquid",
+      "segment_boundary": "middle",
+      "segment_label": "Colored Liquid Application",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 2,
+      "start_time": "00:02",
+      "end_time": "00:04",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Colored Liquid Application"
+    },
+    {
+      "event_type": "liquid_application",
+      "description": "A pink dropper applies pink liquid to the middle-left silver coin",
+      "participants": [
+        "pink dropper"
+      ],
+      "actor": "pink dropper",
+      "object": "dropper",
+      "object_before": "silver coin",
+      "object_after": "pink liquid",
+      "segment_boundary": "middle",
+      "segment_label": "Colored Liquid Application",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 3,
+      "start_time": "00:04",
+      "end_time": "00:06",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Colored Liquid Application"
+    },
+    {
+      "event_type": "liquid_application",
+      "description": "A blue dropper applies blue liquid to the middle-right silver coin",
+      "participants": [
+        "blue dropper"
+      ],
+      "actor": "blue dropper",
+      "object": "dropper",
+      "object_before": "silver coin",
+      "object_after": "blue liquid",
+      "segment_boundary": "middle",
+      "segment_label": "Colored Liquid Application",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 4,
+      "start_time": "00:06",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Colored Liquid Application"
+    }
+  ]
+}

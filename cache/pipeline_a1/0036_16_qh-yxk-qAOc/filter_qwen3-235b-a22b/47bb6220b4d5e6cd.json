@@ -1,0 +1,88 @@
+{
+  "question": "When the white and red team plays against the blue team, does the player with blue shirt number 44 score the goal?",
+  "top_k": 15,
+  "indices": [
+    6,
+    11,
+    12
+  ],
+  "events": [
+    {
+      "event_type": "game",
+      "description": "The ball hits the back of the net in the top right corner, scoring a goal.",
+      "participants": [
+        "white-shirt player",
+        "black-shirt goalkeeper"
+      ],
+      "object": "football",
+      "outcome": "scored",
+      "segment_boundary": "middle",
+      "segment_label": "Football Match",
+      "continuation_hint": "complete",
+      "event_index": 6,
+      "start_time": "00:07",
+      "end_time": "00:08",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "game",
+      "description": "The white-shirt player heads the ball toward the goal while surrounded by blue-shirt defenders.",
+      "participants": [
+        "white-shirt player",
+        "blue-shirt player",
+        "blue-shirt player",
+        "blue-shirt player",
+        "blue-shirt player"
+      ],
+      "actor": "white-shirt player",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "TARAFTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 11,
+      "start_time": "00:15",
+      "end_time": "00:16",
+      "sub_events": [],
+      "subtype_order": 8,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    },
+    {
+      "event_type": "game",
+      "description": "The white ball enters the goal past the diving goalkeeper.",
+      "participants": [
+        "goalkeeper"
+      ],
+      "actor": "white ball",
+      "object": "white ball",
+      "on_screen_text": [
+        {
+          "text": "TARAFTAR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "complete",
+      "event_index": 12,
+      "start_time": "00:16",
+      "end_time": "00:17",
+      "sub_events": [],
+      "subtype_order": 9,
+      "subtype_total": 9,
+      "round_index": 1,
+      "segment_label_resolved": "Football Match"
+    }
+  ]
+}

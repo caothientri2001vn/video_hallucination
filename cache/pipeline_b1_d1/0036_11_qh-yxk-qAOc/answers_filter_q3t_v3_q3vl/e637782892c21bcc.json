@@ -1,0 +1,166 @@
+{
+  "question": "Does the player with blue shirt, blue pant number 22 score the goal?",
+  "pred": "Evidence: The Context explicitly states \"Player in light blue jersey with number 10 and name Forlán on back celebrates with arms outstretched\" (event #7), and frames 39-46 show a clear close-up of the player with jersey number 10 (Forlán) scoring and celebrating the goal. The player with number 22 is visible in earlier frames but is not shown taking the shot or celebrating as the goal-scorer.\nAnswer: No",
+  "gt": "No",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "game",
+      "description": "Player in light blue jersey shoots the ball toward the goal while the goalkeeper in red prepares to save",
+      "participants": [
+        "light blue-jersey player",
+        "red-jersey goalkeeper"
+      ],
+      "actor": "light blue-jersey player",
+      "object": "soccer ball",
+      "on_screen_text": [
+        {
+          "text": "DIEGO FORLÁN",
+          "location": "caption"
+        },
+        {
+          "text": "TARAFSPOR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 5,
+      "start_time": "00:08",
+      "end_time": "00:11",
+      "sub_events": [],
+      "subtype_order": 3,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Champions League Final"
+    },
+    {
+      "event_type": "game",
+      "description": "Soccer ball enters the goal net as the red-jersey goalkeeper dives but fails to stop it",
+      "participants": [
+        "soccer ball",
+        "red-jersey goalkeeper"
+      ],
+      "actor": "soccer ball",
+      "object": "soccer ball",
+      "outcome": "scored",
+      "on_screen_text": [
+        {
+          "text": "DIEGO FORLÁN",
+          "location": "caption"
+        },
+        {
+          "text": "TARAFSPOR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 6,
+      "start_time": "00:11",
+      "end_time": "00:13",
+      "sub_events": [],
+      "subtype_order": 4,
+      "subtype_total": 4,
+      "round_index": 1,
+      "segment_label_resolved": "Champions League Final"
+    },
+    {
+      "event_type": "celebration",
+      "description": "Player in light blue jersey with number 10 and name Forlán on back celebrates with arms outstretched",
+      "participants": [
+        "light blue-jersey player #10"
+      ],
+      "actor": "light blue-jersey player #10",
+      "object": "light blue jersey",
+      "on_screen_text": [
+        {
+          "text": "TARAFSPOR KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "end",
+      "segment_label": "Soccer Match",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 7,
+      "start_time": "00:13",
+      "end_time": "00:15",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 3,
+      "round_index": 1,
+      "segment_label_resolved": "Champions League Final"
+    },
+    {
+      "event_type": "hand_raise",
+      "description": "player to the right of Forlán raises their hand",
+      "participants": [
+        "blue-shirt player (Forlán)",
+        "bald blue-shirt player"
+      ],
+      "actor": "bald blue-shirt player",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "Forlán",
+          "location": "jersey_number"
+        },
+        {
+          "text": "10",
+          "location": "jersey_number"
+        },
+        {
+          "text": "TARAFINDAN KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match Celebration",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 8,
+      "start_time": "00:15",
+      "end_time": "00:16",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Champions League Final"
+    },
+    {
+      "event_type": "walk",
+      "description": "Forlán (10) walks forward with arms slightly extended",
+      "participants": [
+        "blue-shirt player (Forlán)"
+      ],
+      "actor": "blue-shirt player (Forlán)",
+      "object": "",
+      "on_screen_text": [
+        {
+          "text": "Forlán",
+          "location": "jersey_number"
+        },
+        {
+          "text": "10",
+          "location": "jersey_number"
+        },
+        {
+          "text": "TARAFINDAN KANALI",
+          "location": "logo"
+        }
+      ],
+      "segment_boundary": "middle",
+      "segment_label": "Soccer Match Celebration",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 12,
+      "start_time": "00:15",
+      "end_time": "00:17",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 1,
+      "round_index": 1,
+      "segment_label_resolved": "Champions League Final"
+    }
+  ]
+}

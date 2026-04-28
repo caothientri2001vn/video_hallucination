@@ -1,0 +1,109 @@
+{
+  "question": "Did the bottom-right segment contain exactly five outfits?",
+  "pred": "The video is a four-panel split screen. To determine the number of outfits in the bottom-right segment, we track the changes for the \"bottom-right woman\" (RIGHT player) chronologically:\n\n1.  **Tan t-shirt and striped shorts**: Visible at the start of the video (e.g., 00:00).\n2.  **Black long-sleeved top and black shorts with fur accessory**: Appears at ~00:35 (Context event 22).\n3.  **White sleeveless top and denim shorts**: Appears at ~00:40 (Context event 23).\n4.  **Black long-sleeved top with cut-outs and black shorts**: Appears at ~00:45.\n5.  **White t-shirt and denim shorts**: Appears at ~00:48.\n\nThe segment contains exactly five distinct outfits.\n\nEvidence: Context events 22 and 23 describe the second and third outfits, while frames at 00:00, 00:45, and 00:48 show the first, fourth, and fifth outfits respectively.\nAnswer: Yes",
+  "gt": "Yes",
+  "is_correct": true,
+  "state": [
+    {
+      "event_type": "dance",
+      "description": "Woman in bottom-right quadrant performs dance moves while wearing black outfit with fur accessory",
+      "participants": [
+        "bottom-right woman"
+      ],
+      "actor": "bottom-right woman",
+      "segment_boundary": "middle",
+      "segment_label": "outfit showcase",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 22,
+      "start_time": "00:35",
+      "end_time": "00:40",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Sequence 1"
+    },
+    {
+      "event_type": "outfit_change",
+      "description": "Woman in bottom-right quadrant changes from black outfit to white sleeveless top and denim shorts",
+      "participants": [
+        "bottom-right woman"
+      ],
+      "actor": "bottom-right woman",
+      "object_before": "black outfit",
+      "object_after": "white top and denim shorts",
+      "segment_boundary": "middle",
+      "segment_label": "outfit showcase",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 23,
+      "start_time": "00:38",
+      "end_time": "00:42",
+      "sub_events": [],
+      "subtype_order": 12,
+      "subtype_total": 12,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Sequence 1"
+    },
+    {
+      "event_type": "pose",
+      "description": "Woman in bottom-right quadrant adjusts her pose while wearing white top and denim shorts",
+      "participants": [
+        "bottom-right woman"
+      ],
+      "actor": "bottom-right woman",
+      "segment_boundary": "middle",
+      "segment_label": "outfit showcase",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 24,
+      "start_time": "00:40",
+      "end_time": "00:45",
+      "sub_events": [],
+      "subtype_order": 5,
+      "subtype_total": 5,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Sequence 1"
+    },
+    {
+      "event_type": "costume_change",
+      "description": "woman changes from white top and denim shorts to white and black outfit with cap",
+      "participants": [
+        "woman in white top and denim shorts"
+      ],
+      "actor": "woman in white top and denim shorts",
+      "object_before": "white top and denim shorts",
+      "object_after": "white and black outfit with cap",
+      "segment_boundary": "middle",
+      "segment_label": "fashion showcase",
+      "continuation_hint": "starts_before_chunk",
+      "event_index": 25,
+      "start_time": "00:45",
+      "end_time": "00:46",
+      "sub_events": [],
+      "subtype_order": 1,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Sequence 1"
+    },
+    {
+      "event_type": "costume_change",
+      "description": "woman changes from white and black outfit with cap back to white top and denim shorts",
+      "participants": [
+        "woman in white and black outfit with cap"
+      ],
+      "actor": "woman in white and black outfit with cap",
+      "object_before": "white and black outfit with cap",
+      "object_after": "white top and denim shorts",
+      "segment_boundary": "middle",
+      "segment_label": "fashion showcase",
+      "continuation_hint": "continues_after_chunk",
+      "event_index": 26,
+      "start_time": "00:47",
+      "end_time": "00:48",
+      "sub_events": [],
+      "subtype_order": 2,
+      "subtype_total": 2,
+      "round_index": 1,
+      "segment_label_resolved": "Outfit Sequence 1"
+    }
+  ]
+}

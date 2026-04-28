@@ -1,0 +1,114 @@
+{
+  "video_name": "0068_YoR4SLSyZz0.mp4",
+  "video_duration_sec": 16.466666666666665,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:04",
+          "event_type": "hold_up_clothing",
+          "description": "A woman holds up a light blue sweater in her left hand and a cream-colored top with white ruffled layer in her right hand, displaying them to the camera",
+          "participants": [
+            "long-haired woman"
+          ],
+          "actor": "long-haired woman",
+          "object": "light blue sweater, cream-colored top with white ruffled layer",
+          "segment_boundary": "middle",
+          "segment_label": "clothing display",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:08",
+          "event_type": "rearrange_clothing",
+          "description": "The woman gathers all clothing items together, bringing the white ruffled layer forward to cover the other items",
+          "participants": [
+            "long-haired woman"
+          ],
+          "actor": "long-haired woman",
+          "object": "light blue sweater, cream-colored top, white ruffled layer",
+          "segment_boundary": "middle",
+          "segment_label": "clothing display",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:09",
+          "local_end": "00:11",
+          "event_type": "hold_up_clothing",
+          "description": "The woman separates the clothing items again, holding the light blue sweater in her left hand and the cream-colored top with white ruffled layer in her right hand",
+          "participants": [
+            "long-haired woman"
+          ],
+          "actor": "long-haired woman",
+          "object": "light blue sweater, cream-colored top with white ruffled layer",
+          "segment_boundary": "middle",
+          "segment_label": "clothing display",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:12",
+          "local_end": "00:12",
+          "event_type": "wear_clothing",
+          "description": "The woman is now wearing the cream-colored top with yellow collar and black shorts, adjusting the top at her waist",
+          "participants": [
+            "long-haired woman"
+          ],
+          "actor": "long-haired woman",
+          "object": "cream-colored top, black shorts",
+          "segment_boundary": "middle",
+          "segment_label": "clothing display",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:13",
+          "local_end": "00:15",
+          "event_type": "hand_raise",
+          "description": "The woman raises both hands with palms facing forward, then makes small gestures with her fingers",
+          "participants": [
+            "long-haired woman"
+          ],
+          "actor": "long-haired woman",
+          "segment_boundary": "middle",
+          "segment_label": "clothing display",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 16.466666666666665,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:16",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:16",
+          "event_type": "hand_raise",
+          "description": "raises both hands from waist level to chest level with palms facing forward",
+          "participants": [
+            "woman in light blue sweater"
+          ],
+          "actor": "woman in light blue sweater",
+          "segment_boundary": "middle",
+          "segment_label": "",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}

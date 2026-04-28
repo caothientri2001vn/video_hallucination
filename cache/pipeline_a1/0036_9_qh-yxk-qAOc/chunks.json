@@ -1,0 +1,275 @@
+{
+  "video_name": "0036_9_qh-yxk-qAOc.mp4",
+  "video_duration_sec": 23.0,
+  "chunk_seconds": 15.0,
+  "frames_per_chunk": 60,
+  "chunk_vlm_model": "gemini-3-flash-preview",
+  "planner": {
+    "content_type": "forced",
+    "rationale": "Forced 15s / 60-frame chunking (planner skipped).",
+    "planner_model": "forced"
+  },
+  "chunks": [
+    {
+      "chunk_idx": 0,
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 15.0,
+      "chunk_start_mmss": "00:00",
+      "chunk_end_mmss": "00:15",
+      "events": [
+        {
+          "local_start": "00:00",
+          "local_end": "00:02",
+          "event_type": "look",
+          "description": "the yellow-shirt player (Messi) looks down while touching his head",
+          "participants": [
+            "yellow-shirt player"
+          ],
+          "actor": "yellow-shirt player",
+          "object": "head",
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match Highlights",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:02",
+          "local_end": "00:05",
+          "event_type": "game",
+          "description": "the black-and-white-shirt player (Alex Sandro) dribbles the yellow ball down the right side of the pitch",
+          "participants": [
+            "black-and-white-shirt player",
+            "blue-shirt player"
+          ],
+          "actor": "black-and-white-shirt player",
+          "object": "yellow ball",
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match Highlights",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:05",
+          "local_end": "00:07",
+          "event_type": "throw",
+          "description": "the black-and-white-shirt player (Alex Sandro) crosses the yellow ball into the box from the right wing",
+          "participants": [
+            "black-and-white-shirt player",
+            "blue-shirt player"
+          ],
+          "actor": "black-and-white-shirt player",
+          "object": "yellow ball",
+          "on_screen_text": [
+            {
+              "text": "C. RONALDO",
+              "location": "lower_third"
+            },
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match Highlights",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:07",
+          "local_end": "00:10",
+          "event_type": "game",
+          "description": "the yellow ball flies through the air towards the center of the penalty area",
+          "participants": [
+            "green-shirt goalkeeper",
+            "blue-shirt players",
+            "black-and-white-shirt players"
+          ],
+          "object": "yellow ball",
+          "on_screen_text": [
+            {
+              "text": "C. RONALDO",
+              "location": "lower_third"
+            },
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match Highlights",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:10",
+          "local_end": "00:12",
+          "event_type": "game",
+          "description": "the black-and-white-shirt player (Cristiano Ronaldo) jumps high in the air to meet the cross",
+          "participants": [
+            "black-and-white-shirt player",
+            "blue-shirt player"
+          ],
+          "actor": "black-and-white-shirt player",
+          "object": "yellow ball",
+          "on_screen_text": [
+            {
+              "text": "C. RONALDO",
+              "location": "lower_third"
+            },
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match Highlights",
+          "continuation_hint": "complete"
+        },
+        {
+          "local_start": "00:12",
+          "local_end": "00:15",
+          "event_type": "game",
+          "description": "the black-and-white-shirt player (Cristiano Ronaldo) heads the yellow ball into the top corner of the net",
+          "participants": [
+            "black-and-white-shirt player",
+            "blue-shirt player",
+            "green-shirt goalkeeper"
+          ],
+          "actor": "black-and-white-shirt player",
+          "object": "yellow ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "TARAFTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "end",
+          "segment_label": "Football Match Highlights",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    },
+    {
+      "chunk_idx": 1,
+      "chunk_start_sec": 15.0,
+      "chunk_end_sec": 23.0,
+      "chunk_start_mmss": "00:15",
+      "chunk_end_mmss": "00:23",
+      "events": [
+        {
+          "local_start": "00:15",
+          "local_end": "00:16",
+          "event_type": "header",
+          "description": "the black-and-white-jersey player (Cristiano Ronaldo) headers the yellow ball into the goal",
+          "participants": [
+            "black-and-white-jersey player",
+            "blue-jersey player"
+          ],
+          "actor": "black-and-white-jersey player",
+          "object": "yellow ball",
+          "on_screen_text": [
+            {
+              "text": "TARAPTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "starts_before_chunk"
+        },
+        {
+          "local_start": "00:16",
+          "local_end": "00:18",
+          "event_type": "goal",
+          "description": "the yellow ball enters the goal net",
+          "participants": [
+            "green-jersey goalkeeper",
+            "blue-jersey player"
+          ],
+          "object": "yellow ball",
+          "outcome": "scored",
+          "on_screen_text": [
+            {
+              "text": "TARAPTAR KANALI",
+              "location": "logo"
+            },
+            {
+              "text": "BANCO BPM",
+              "location": "banner"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:18",
+          "local_end": "00:20",
+          "event_type": "celebration",
+          "description": "the black-and-white-jersey player (Cristiano Ronaldo) runs toward the camera with his arms out",
+          "participants": [
+            "black-and-white-jersey player"
+          ],
+          "actor": "black-and-white-jersey player",
+          "on_screen_text": [
+            {
+              "text": "TARAPTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:20",
+          "local_end": "00:21",
+          "event_type": "high_five",
+          "description": "the black-and-white-jersey player (Cristiano Ronaldo) high-fives another black-and-white-jersey player (Adrien Rabiot)",
+          "participants": [
+            "black-and-white-jersey player",
+            "black-and-white-jersey player"
+          ],
+          "actor": "black-and-white-jersey player",
+          "on_screen_text": [
+            {
+              "text": "TARAPTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "middle"
+        },
+        {
+          "local_start": "00:21",
+          "local_end": "00:23",
+          "event_type": "celebration",
+          "description": "the black-and-white-jersey player (Cristiano Ronaldo) performs his signature jump celebration",
+          "participants": [
+            "black-and-white-jersey player"
+          ],
+          "actor": "black-and-white-jersey player",
+          "on_screen_text": [
+            {
+              "text": "TARAPTAR KANALI",
+              "location": "logo"
+            }
+          ],
+          "segment_boundary": "middle",
+          "segment_label": "Football Match",
+          "continuation_hint": "continues_after_chunk"
+        }
+      ]
+    }
+  ]
+}
